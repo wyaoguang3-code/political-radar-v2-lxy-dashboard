@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0b1020;color:#e8ecff;margin:0;padding:16px;max-width:1200px;margin-inline:auto;line-height:1.45}
+header{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+h1{margin:0;font-size:clamp(22px,5vw,32px)}
+#updated{margin:0;color:#b9c3f2;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.card,.panel{background:#121935;border:1px solid #2a335f;border-radius:12px;padding:12px;min-width:0}
+.card h3{margin:0 0 6px 0;font-size:14px;color:#b9c3f2}
+.num{font-size:24px;font-weight:700;word-break:break-word}
+.panel h2{margin:0 0 8px 0;font-size:18px}
+.panel h3{margin:0 0 6px 0;font-size:15px;color:#b9c3f2}
+.panel-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:transparent;border:0;color:inherit;padding:0;cursor:pointer;text-align:left}
+.panel-toggle h2{margin:0}
+.panel-content{margin-top:8px}
+.chev{font-size:18px;color:#9fb0ea;transition:transform .18s ease}
+.collapsible.collapsed .panel-content{display:none}
+.collapsible.collapsed .chev{transform:rotate(-90deg)}
+a{color:#7fc0ff;text-decoration:none;overflow-wrap:anywhere;word-break:break-word}
+a:hover{text-decoration:underline}
+.badge{padding:4px 10px;border-radius:999px;font-weight:700;display:inline-block}
+.紅{background:#5b1d2a;color:#ffb3bf}.黃{background:#594a16;color:#ffe08a}.綠{background:#1a5031;color:#9ff0b5}
+ul,ol{padding-left:20px;margin:0}
+li{margin:8px 0;overflow-wrap:anywhere;word-break:break-word}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+canvas{max-width:100%;margin:4px 0 8px 0}
+.hint{margin:0 0 10px 0;color:#9fb0ea;font-size:13px}
+.platform-box{border:1px solid #2a335f;border-radius:10px;padding:10px;margin:10px 0;background:#0f1630}
+.platform-box h3{margin:0 0 6px 0;font-size:14px;color:#d8e2ff}
+.platform-box ol{margin:0;padding-left:18px}
+.platform-box li{margin:6px 0}
+
+@media (max-width: 640px){
+  body{padding:12px}
+  header{flex-direction:column;align-items:flex-start;gap:6px}
+  h1{font-size:36px;line-height:1.1}
+  #updated{font-size:12px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .two-col{grid-template-columns:1fr}
+  .card,.panel{padding:10px}
+  .num{font-size:22px}
+  .panel h2{font-size:16px}
+}
