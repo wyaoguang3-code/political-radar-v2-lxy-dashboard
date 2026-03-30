@@ -34,11 +34,16 @@ async function run(){
 
   const topNews = pick(d, 'top_news', 'top_news_7d') || [];
   const news = document.getElementById('news'); news.innerHTML='';
+  const displayText = (x)=>{
+    const t=(x.title||'').trim();
+    if(t) return t;
+    try{ return new URL(x.url).hostname + '（原文）'; }catch{ return '來源連結'; }
+  };
   topNews.slice(0,12).forEach(x=>{
     const li=document.createElement('li');
     const a=document.createElement('a');
     a.href=x.url; a.target='_blank'; a.rel='noopener';
-    a.textContent=(x.title || x.url) + (x.time ? `（${x.time.slice(5,16)}）` : '');
+    a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
     li.appendChild(a); news.appendChild(li);
   });
 
@@ -53,7 +58,7 @@ async function run(){
       (detailMap[p]||[]).forEach(x=>{
         const li=document.createElement('li');
         const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
-        a.textContent=(x.title||x.url) + (x.time ? `（${x.time.slice(5,16)}）` : '');
+        a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
         li.appendChild(a); ol.appendChild(li);
       });
       box.appendChild(ol); platformDetail.appendChild(box);
@@ -62,7 +67,7 @@ async function run(){
 
   function renderList(elId, arr){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
-    (arr||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); el.appendChild(li); });
+    (arr||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); el.appendChild(li); });
   }
   const ps = d.person_sections || {};
   renderList('luFb', (ps['盧秀燕']||{}).facebook || []);
