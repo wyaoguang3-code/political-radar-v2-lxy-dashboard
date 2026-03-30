@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>戰情儀表板</title>
+  <title>政治戰情儀表板（lxy）</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header>
-    <h1>戰情儀表板</h1>
+    <h1>政治戰情儀表板（lxy）</h1>
     <p id="updated">更新中...</p>
   </header>
 
@@ -34,7 +34,7 @@
 
   <section class="panel two-col">
     <div>
-      <h2>平台分佈（全資料24h）（含張家俊、嘉郡、劉建國、建國等關鍵字）</h2>
+      <h2>平台分佈（全資料視窗）</h2>
       <canvas id="platformChart" height="170"></canvas>
       <ul id="platforms"></ul>
     </div>
@@ -66,41 +66,13 @@
     </div>
   </section>
 
-  <section class="panel collapsible" id="panel-zhang">
-    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="zhangWrap">
-      <h2>人物專區：張嘉郡</h2>
+  <section class="panel collapsible" id="panel-persons">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="personsWrap">
+      <h2>人物專區（動態）</h2>
       <span class="chev">▾</span>
     </button>
-    <div class="panel-content" id="zhangWrap">
-      <div class="two-col">
-        <div>
-          <h3>張嘉郡 Facebook</h3>
-          <ol id="zhangFb"></ol>
-        </div>
-        <div>
-          <h3>張嘉郡 News</h3>
-          <ol id="zhangNews"></ol>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="panel collapsible" id="panel-liu">
-    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="liuWrap">
-      <h2>人物專區：劉建國</h2>
-      <span class="chev">▾</span>
-    </button>
-    <div class="panel-content" id="liuWrap">
-      <div class="two-col">
-        <div>
-          <h3>劉建國 Facebook</h3>
-          <ol id="liuFb"></ol>
-        </div>
-        <div>
-          <h3>劉建國 News</h3>
-          <ol id="liuNews"></ol>
-        </div>
-      </div>
+    <div class="panel-content" id="personsWrap">
+      <div id="personSections"></div>
     </div>
   </section>
 

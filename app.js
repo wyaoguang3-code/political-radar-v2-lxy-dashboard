@@ -24,8 +24,9 @@ async function run(){
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${level}</span>`;
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
-  const z = cmp['張嘉郡']||0, l = cmp['劉建國']||0;
-  document.getElementById('compare').textContent = `張嘉郡：${z} ｜ 劉建國：${l}`;
+  const names = Object.keys(cmp);
+  const vals = names.map(n => cmp[n] || 0);
+  document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
 
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
@@ -59,15 +60,30 @@ async function run(){
     });
   }
 
-  function renderList(elId, arr){
-    const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
-    (arr||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:''); li.appendChild(a); el.appendChild(li); });
-  }
   const ps = d.person_sections || {};
-  renderList('zhangFb', (ps['張嘉郡']||{}).facebook || []);
-  renderList('zhangNews', (ps['張嘉郡']||{}).news || []);
-  renderList('liuFb', (ps['劉建國']||{}).facebook || []);
-  renderList('liuNews', (ps['劉建國']||{}).news || []);
+  const wrap = document.getElementById('personSections');
+  if (wrap){
+    wrap.innerHTML='';
+    Object.keys(ps).forEach(name=>{
+      const sec=document.createElement('div');
+      sec.className='panel';
+      sec.innerHTML=`<h3>${name}</h3>`;
+      const two=document.createElement('div');
+      two.className='two-col';
+      const left=document.createElement('div');
+      const right=document.createElement('div');
+      left.innerHTML='<h4>Facebook</h4>';
+      right.innerHTML='<h4>News</h4>';
+      const ol1=document.createElement('ol');
+      const ol2=document.createElement('ol');
+      ((ps[name]||{}).facebook||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); ol1.appendChild(li); });
+      ((ps[name]||{}).news||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); ol2.appendChild(li); });
+      left.appendChild(ol1); right.appendChild(ol2);
+      two.appendChild(left); two.appendChild(right);
+      sec.appendChild(two);
+      wrap.appendChild(sec);
+    });
+  }
 
   const byHour = pick(d, 'by_hour', 'by_hour_7d') || [];
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
@@ -84,7 +100,7 @@ async function run(){
 
   mentionChart = upsertChart(mentionChart, document.getElementById('mentionChart'), {
     type:'bar',
-    data:{ labels:['張嘉郡','劉建國'], datasets:[{data:[z,l], backgroundColor:['#20c997','#4f8cff']}] },
+    data:{ labels:names, datasets:[{data:vals, backgroundColor:['#20c997','#4f8cff','#ffc107','#e83e8c','#fd7e14']}] },
     options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}}}}
   });
 }
