@@ -34,7 +34,7 @@
 
   <section class="panel two-col">
     <div>
-      <h2>平台分佈（全資料視窗）</h2>
+      <h2>平台分佈（全資料24h）（含盧秀燕、秀燕、蔣萬安、萬安、陳其邁、其邁、蔡其昌、其昌等關鍵字）</h2>
       <canvas id="platformChart" height="170"></canvas>
       <ul id="platforms"></ul>
     </div>
@@ -66,13 +66,55 @@
     </div>
   </section>
 
-  <section class="panel collapsible" id="panel-persons">
-    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="personsWrap">
-      <h2>人物專區（動態）</h2>
+  <section class="panel collapsible" id="panel-lu">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="luWrap">
+      <h2>人物專區：盧秀燕</h2>
       <span class="chev">▾</span>
     </button>
-    <div class="panel-content" id="personsWrap">
-      <div id="personSections"></div>
+    <div class="panel-content" id="luWrap">
+      <div class="two-col">
+        <div><h3>盧秀燕 Facebook</h3><ol id="luFb"></ol></div>
+        <div><h3>盧秀燕 News</h3><ol id="luNews"></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel collapsible" id="panel-chiang">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="chiangWrap">
+      <h2>人物專區：蔣萬安</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="chiangWrap">
+      <div class="two-col">
+        <div><h3>蔣萬安 Facebook</h3><ol id="chiangFb"></ol></div>
+        <div><h3>蔣萬安 News</h3><ol id="chiangNews"></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel collapsible" id="panel-chen">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="chenWrap">
+      <h2>人物專區：陳其邁</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="chenWrap">
+      <div class="two-col">
+        <div><h3>陳其邁 Facebook</h3><ol id="chenFb"></ol></div>
+        <div><h3>陳其邁 News</h3><ol id="chenNews"></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel collapsible" id="panel-tsai">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="tsaiWrap">
+      <h2>人物專區：蔡其昌</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="tsaiWrap">
+      <div class="two-col">
+        <div><h3>蔡其昌 Facebook</h3><ol id="tsaiFb"></ol></div>
+        <div><h3>蔡其昌 News</h3><ol id="tsaiNews"></ol></div>
+      </div>
     </div>
   </section>
 

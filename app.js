@@ -60,30 +60,19 @@ async function run(){
     });
   }
 
-  const ps = d.person_sections || {};
-  const wrap = document.getElementById('personSections');
-  if (wrap){
-    wrap.innerHTML='';
-    Object.keys(ps).forEach(name=>{
-      const sec=document.createElement('div');
-      sec.className='panel';
-      sec.innerHTML=`<h3>${name}</h3>`;
-      const two=document.createElement('div');
-      two.className='two-col';
-      const left=document.createElement('div');
-      const right=document.createElement('div');
-      left.innerHTML='<h4>Facebook</h4>';
-      right.innerHTML='<h4>News</h4>';
-      const ol1=document.createElement('ol');
-      const ol2=document.createElement('ol');
-      ((ps[name]||{}).facebook||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); ol1.appendChild(li); });
-      ((ps[name]||{}).news||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); ol2.appendChild(li); });
-      left.appendChild(ol1); right.appendChild(ol2);
-      two.appendChild(left); two.appendChild(right);
-      sec.appendChild(two);
-      wrap.appendChild(sec);
-    });
+  function renderList(elId, arr){
+    const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
+    (arr||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=(x.title||x.url)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); el.appendChild(li); });
   }
+  const ps = d.person_sections || {};
+  renderList('luFb', (ps['盧秀燕']||{}).facebook || []);
+  renderList('luNews', (ps['盧秀燕']||{}).news || []);
+  renderList('chiangFb', (ps['蔣萬安']||{}).facebook || []);
+  renderList('chiangNews', (ps['蔣萬安']||{}).news || []);
+  renderList('chenFb', (ps['陳其邁']||{}).facebook || []);
+  renderList('chenNews', (ps['陳其邁']||{}).news || []);
+  renderList('tsaiFb', (ps['蔡其昌']||{}).facebook || []);
+  renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
 
   const byHour = pick(d, 'by_hour', 'by_hour_7d') || [];
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
