@@ -1,6 +1,13 @@
 let hourChart, platformChart, mentionChart;
 let mode = '24h';
 
+const LIGHT_ICON = { '紅':'🔴', '黃':'🟡', '綠':'🟢' };
+function lightLevelByCount(c, avg){
+  if(c >= Math.max(10, avg*1.8)) return '紅';
+  if(c >= Math.max(5, avg*1.2)) return '黃';
+  return '綠';
+}
+
 function upsertChart(instance, ctx, config){
   if(instance){ instance.data=config.data; instance.options=config.options; instance.update(); return instance; }
   return new Chart(ctx, config);
@@ -21,7 +28,7 @@ async function run(){
   document.getElementById('news24').textContent = m.news ?? m.news_24h ?? '-';
 
   const level = (m.anomaly||{}).level || '綠';
-  document.getElementById('light').innerHTML = `<span class="badge ${level}">${level}</span>`;
+  document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
   const names = Object.keys(cmp);
@@ -80,6 +87,25 @@ async function run(){
   renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
 
   const byHour = pick(d, 'by_hour', 'by_hour_7d') || [];
+
+  // 燈號狀態與原因（可視化）
+  const an = m.anomaly || {};
+  const reasons = an.reasons || [];
+  const es = d.event_stream || {};
+  const streamTxt = `分鐘級 ${ (es.minute||[]).length }｜小時級 ${ (es.hour||[]).length }｜日級 ${ (es.day||[]).length }`;
+  const ls = document.getElementById('lightStatus');
+  if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} 今日燈號：${level}</span>`; }
+  const lr = document.getElementById('lightReasons');
+  if(lr){ lr.textContent = reasons.length ? `觸發原因：${reasons.join('；')}` : '觸發原因：無（目前屬常態）'; }
+  const lstream = document.getElementById('lightStreams');
+  if(lstream){ lstream.innerHTML = `<span class="badge 綠">${streamTxt}</span>`; }
+  const lt = document.getElementById('lightTrend');
+  if(lt){
+    const avg = byHour.length ? byHour.reduce((a,b)=>a+(b.count||0),0)/byHour.length : 0;
+    const last = byHour.slice(-12).map(x => ({ h:(x.hour||'').slice(11,16), lv: lightLevelByCount(x.count||0, avg) }));
+    lt.innerHTML = '近12小時：' + last.map(x=>`${x.h} ${LIGHT_ICON[x.lv]}${x.lv}`).join(' ｜ ');
+  }
+
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
     type:'line',
     data:{ labels:byHour.map(x=>(x.hour||'').slice(5,16)), datasets:[{label:'mentions', data:byHour.map(x=>x.count||0), borderColor:'#7fc0ff', backgroundColor:'rgba(127,192,255,0.2)', tension:0.25, fill:true}] },
