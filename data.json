@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-04-18T02:45:39.292202+00:00",
+  "generated_at": "2026-04-18T02:57:08.861636+00:00",
   "metrics": {
-    "total_24h": 0,
-    "prev_24h": 0,
-    "growth_pct": null,
-    "news_24h": 0,
+    "total_24h": 9,
+    "prev_24h": 6,
+    "growth_pct": 50.0,
+    "news_24h": 5,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 47,
+    "total": 62,
     "prev": 317,
-    "growth_pct": -85.17,
-    "news": 30,
+    "growth_pct": -80.44,
+    "news": 37,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -25,14 +25,44 @@
       "reasons": []
     }
   },
-  "by_platform": [],
+  "by_platform": [
+    {
+      "platform": "news",
+      "count": 5
+    }
+  ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 30
+      "count": 37
     }
   ],
-  "by_hour": [],
+  "by_hour": [
+    {
+      "hour": "2026-04-17 11:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 16:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 17:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 21:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-18 09:00",
+      "count": 2
+    },
+    {
+      "hour": "2026-04-18 10:00",
+      "count": 3
+    }
+  ],
   "by_hour_7d": [
     {
       "hour": "2026-04-11 11:00",
@@ -117,26 +147,200 @@
     {
       "hour": "2026-04-13 12:00",
       "count": 3
+    },
+    {
+      "hour": "2026-04-16 13:00",
+      "count": 2
+    },
+    {
+      "hour": "2026-04-16 18:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 05:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 10:00",
+      "count": 2
+    },
+    {
+      "hour": "2026-04-17 11:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 16:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 17:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-17 21:00",
+      "count": 1
+    },
+    {
+      "hour": "2026-04-18 09:00",
+      "count": 2
+    },
+    {
+      "hour": "2026-04-18 10:00",
+      "count": 3
     }
   ],
-  "mention_by_platform_24h": [],
-  "mention_latest_by_platform_24h": {},
-  "alias_by_platform_24h": [],
-  "alias_latest_by_platform_24h": {},
+  "mention_by_platform_24h": [
+    {
+      "platform": "news",
+      "count": 5
+    }
+  ],
+  "mention_latest_by_platform_24h": {
+    "news": [
+      {
+        "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:51:31"
+      },
+      {
+        "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:38:40"
+      },
+      {
+        "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:52:30"
+      },
+      {
+        "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:28:15"
+      },
+      {
+        "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 11:14:57"
+      }
+    ]
+  },
+  "alias_by_platform_24h": [
+    {
+      "platform": "news",
+      "count": 5
+    }
+  ],
+  "alias_latest_by_platform_24h": {
+    "news": [
+      {
+        "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:51:31"
+      },
+      {
+        "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:38:40"
+      },
+      {
+        "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:52:30"
+      },
+      {
+        "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:28:15"
+      },
+      {
+        "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 11:14:57"
+      }
+    ]
+  },
   "mention_compare_24h": {
-    "盧秀燕": 0,
+    "盧秀燕": 5,
     "蔣萬安": 0,
     "蔡其昌": 0,
     "陳其邁": 0
   },
   "mention_compare_7d": {
-    "盧秀燕": 30,
+    "盧秀燕": 37,
     "蔣萬安": 3,
     "蔡其昌": 0,
     "陳其邁": 1
   },
-  "top_news": [],
+  "top_news": [
+    {
+      "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:51:31"
+    },
+    {
+      "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:38:40"
+    },
+    {
+      "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:52:30"
+    },
+    {
+      "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:28:15"
+    },
+    {
+      "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 11:14:57"
+    }
+  ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:51:31"
+    },
+    {
+      "platform": "news",
+      "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:38:40"
+    },
+    {
+      "platform": "news",
+      "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:52:30"
+    },
+    {
+      "platform": "news",
+      "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:28:15"
+    },
+    {
+      "platform": "news",
+      "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 11:14:57"
+    },
+    {
+      "platform": "news",
+      "title": "旱溪媽祖遶境十八庄盧秀燕、劉世芳祈求風調雨順| 地方 - 中央社 CNA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NkQwZzBxclNKWUhibW5zSm9JZzk1ZmNSNTZZd1VOMXNUSlFrNUdnLXE0QVA4ek0wcnM5a19CLVZsVmdYMDZJcW1EMkR3bDRHV1BYQ2Fqa2plNDJzUlJZ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 10:47:00"
+    },
+    {
+      "platform": "news",
+      "title": "盧秀燕遲到5分鐘！旱溪媽祖起駕延誤 信眾騷動現場致歉 - 自由時報",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSUMzaW9pLTQ5ZlU0UUxXOTctVklkWEVHUE9Oa3hhOHpfWFBld2tVUkRISUZ2SXBPT2ZFeEkxTmJsMVJLc2lXSEEtZ0xCeU9jNzJKODhyY01zX01HMjRjT21nZmxNY21hS0paSEVBNGp2cUpJMHhDYkpUczhiX2ZTdUNpVFdsUQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 10:39:00"
+    },
     {
       "platform": "news",
       "title": "政府引進印度移工惹議 盧秀燕：任何政策都要尊重民意 - 聯合新聞網",
@@ -214,51 +418,19 @@
       "title": "鄭習會帶回10利多？盧秀燕喊「圓滿成功」　要民進黨別為反對而反對 - 鏡週刊Mirror Media",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94NnNZRlQzcXJjN0dkZklUMXVweTQ5dVRCczlONmQ3bWJaX0tOYmlyR3ZnRS1qaTNIbF9ILXZCNG1fX0xwaEY5RllZVXdha3lvSkRiT1JZS0NpMzDSAWBBVV95cUxPaWNIMXEyS3dqRmlWbkxNenpGSC1rbGxwM1hfd0lIY2tOOFlrY2NyQUExblVWeGQzc3M3TUtYQnNCZDR5cGloSHMyUElURlZ2VmU3NWpSZk82bEs3WS1GNUU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-13 08:46:00"
-    },
-    {
-      "platform": "news",
-      "title": "鄭麗文聲量暴衝 他分析盧秀燕、蔣萬安需「若即若離」 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0xY2JXem9yM1RJMFZUcExIQ1d1dFdOSWJMdy04QmJZcXV0TWpUa2JXZU94R0xJekc4M2tFZkltVThoX1JhcEtZSHZZQVMxd21R0gFWQVVfeXFMTjJJV19lakVycFd1SktnbGhzSzRyQVdIcEdzWWNwWmdWS3ZCeUhMYXlVY2l5cTZhNXc4MUpaaTFZNThMbTZzckdBblk5R0hONmVfZWlzM2c?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:10:54"
-    },
-    {
-      "platform": "news",
-      "title": "稱鄭麗文訪中圓滿成功 盧秀燕：民進黨政府應盡快對接對台10項措施 - 自由時報",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdi1oaWlNNW9DNExkVF9KbWZqTElpWndSMlJOZHJOSTBjZkVyY1h3aEluSDlrZzNsb09MdGM2VVNDdnVNbHFTdzhGLWJ0ZlVzMnkzRDNSVTJCcklGY2h0VldkZG1NN19yekdJanVlM2R6MDZKSUlvblh2SXRWS2piX2Jkd1F3QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:02:00"
-    },
-    {
-      "platform": "news",
-      "title": "鄭麗文談成惠台10措施 盧秀燕：民進黨別為反對而反對 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPTlVoV1NPSzlSaWhwc3E1Nkk2MFh0elpEXzRUTGNxWmhoSmdqcTBUYnV0SnB1YzMyS0xCLWtBcEpEQjRyUDNJaWxtTnRjZ1FILUJnaXNFYlY5WFlGS05oNEp4SXJMSEwzRXFTTVJkN05wbWIwcnJiMHZyWW9BTmdwRGJHclBUb1FfUk5WT1lyR25PNVBidXN2M3Q4SnFxc2J6dVhwa0JrcGc2dmZoMk1VSTY1RGZmdm4wT3lwTWhsZlZWRko3WWZ2OXNCUWZ2ZHZfZFhjU01HTHpMUTkyOTVyV0UtUUc1bGxSN2VXTDI1RDNFdG42aE9MOXIyeWpFVTZiSHVyVllCdi1RY0o5S3MyQnUwdjJ4cENrSGNDOHJ6NzJ2N1RPeGhGb3RoTExHU1NjWFozY1Vfd1pELUFjVDBpbjRRVVJrWHI4dlpTOFBUMXJGeko0WEdaaUMxekdPMGFq?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 07:43:58"
-    },
-    {
-      "platform": "news",
-      "title": "盧秀燕恭送白沙屯媽祖起駕 籲政府以蒼生為念「別為反對而反對」 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxWmRkU1dQNlVwWWtkaXFqQmRmUjYyTDFDbUxDV2pkYkJTQVR2TEl2R3B2SHVQSEctVjQ1SDRfX1FxR0NyeVRrSGJya3pPSFRSWkHSAVdBVV95cUxQR3JiNVY5anZFZDA2VG10OHRBbjVDZVhFeEUxdFQxU0ZkcDVDaFh1RWVaaTVONEwyc3JEREV4aUVZb3dFemZkc3hLejRZSXJKcm5BRUlyWEk?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 04:19:39"
-    },
-    {
-      "platform": "news",
-      "title": "白沙屯媽進香 賴清德、盧秀燕等接力參拜 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Wa1ZBbEJfNnprUmswU0RkZTRka3o2d0tsamhVWk1FZmgxWTRUeTNkbEpOY2c0NEVPQnJOR3BNY25IQzNjbWxtQUd1aTgyRnFrcEHSAVdBVV95cUxPenp5ckR3OUFQUGdoMTVrS3hxUlhqNDdQYk5IdnB3NklUZ1Q4VUNhVFk5XzlsUzQ0YXVsajhwVUtrMFZ6SUhXZ1ZublNaM1VWQVh2ZTVKNXM?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 02:16:01"
-    },
-    {
-      "platform": "news",
-      "title": "盧秀燕當桶箍　蔣萬安也來了！藍營10餘大咖恭送白沙屯媽祖起駕 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8yM0Npek9nSkhaVXJXdGNMZXg5dGpRQ2x0Z3hFS213eXBZendZejYzV1ZiS3hXRVA4X1FheWNadVJJY2lla0VfR2lsVlnSAVJBVV95cUxNaXFKdE8tS2R4WEJVbmZlc094MW4xTF9tWFM5cWM4VlZOdHNpeDBhV0dtNWlVcl92RnBhUmFpS3RvemZzaERSUEFhS1FZX1hNbXJR?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 00:38:48"
-    },
-    {
-      "platform": "news",
-      "title": "蔣萬安也來了！盧秀燕率藍營送白沙屯媽起駕 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOQ0VyUGpzaXdQNENuVEFtS3ljaWNGYWdfVlhmWnhnUkxZR2dYSmFFak1RMkJFT05oNGNUZ0FPbFFrTTlLZE40UFZJVDlYUVZLMUZtR2V6Q3FNai1xRUtQOGlKemdXbjNHbHpZa1dSNVpsRmdZODlJdHZXVzRmSVE1TVU1c3NxWE45TW1mN3g5Y0l2a2hGM000LU5GeFAybnlVS2Y1OUZMODB5WnVMX0p1R2IxWFN1RE1pRmhkdzNWcmd4Ull3NXdqYkVIbml6dU5uVU1xRVNENFhGOXhRcE9mNTNOTF92ODBLQVh6ZHRrandPcE9KQ2hFX0gwbnRLekpILTEzVEctSGgxQzM5MmNacUt6NmdkUE5WdkJxT3g2b19wMF9Ga1BLTm1UcHRWSC15dUJGZnluUG8?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 00:38:48"
     }
   ],
   "latest_facebook_20": [
+    {
+      "title": "劉建國 - facebook.com",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9sZlNLTXRBT1JRbU9YdU9BNElrOUNmT0RuNktjcjZzdVJCX3N5SVo0QWdCczMzNTdPanQzeTZZWnRJclVZZy13SDFkMndLajZaMkduZXV0RGNUWWc5Z29QeVhaazBtNG9JTHd0bGNtZmg1NFJtNGVnUzRzOA",
+      "time": "2026-04-17 17:37:54"
+    },
+    {
+      "title": "雲林縣政府. . 「白沙屯媽祖徒步進香」16日進入第4天，媽祖鑾轎於上午抵達北港鎮，雲林縣長張麗善、副縣長謝淑亞、陳璧君及縣府團隊於北辰派出所接駕，並與立委張嘉郡一同參拜、換花祈福。張麗善縣長表示，白沙屯媽祖進香活動規模逐年擴大，今年報名人數已達46 - facebook.com",
+      "url": "https://news.google.com/rss/articles/CBMilAhBVV95cUxPM0tPNERGUjVKVld4Y1NVaGpnZUtkWUx1Wkx5M09WVjhJVXh0bFptTjh5UTFTZ0tVZFh5T1BUZzFuMm1iNnpabm9RNXZuUlA3dmxNeWtkX2p3U3pmRkxRc3RYWGg4aks1MXJvQnExdmZPazZRSnlKRHdiRXVWYnVwYmdIU2VYOWlXZC1yamVmN2lsaGh3QUdyZVZ5cWhCd25UM3ZDM3pRNTdhNmhYSnBhcWhYeDVxOUJkV2hrOUxlN3c4NXRfa0ctNnNHQTl1NG1iaUQ3RGNwNjctbVZyZVFnNnB2QXYxM0kwdWlSTXIxdmFnaHA2c1Q4azJycXc0Qm9heFM5b3NOLVpLamNUVHM3TElYQjhhNUNTQTE2SXU1Wk00T3VKcjhCSTFuV2Roc3Azd0tNNHV6NU9FUU5SUEk1RC0tb3pKVmpiOU9GVGs4enJMTnEyaUdwY1NTSm55NC1aalR4ODJSc0REaXduR3RQUFVjRktuOE5XZFVMRVI4SGszQ2EtSzlVa0U4X0RVdDRfakYzYVRBTG52TTFna1FoYnRFMmU5N0NhSmRtYUp2WUtuVjJwRnJ0OEJPVElScDdBaWtnUDdTcWkzd21keUdnZjRKbUJSelpYT2hvU2tGeUpYT0VvQjJtal9BWkJZUzNmSWt4N3ZLaFJmM21uXzZoaGdFNmVFaTd6V3VEMTFsV0lZeG10QmZpYzNnQXd0SDBXSzh1eG9zZWFvVFY5dW5rT0I0NXFYTTYwYUVYZE54S2dRUVYtOG92OC1BVFBodXc5ZThPWTNYT0ZhdDUtSWNKZTJrVExCU3NwdkZUSU1GZ0lJNHpUcS1nX1o0MzJZMFZKU3FscFlSZEI5N1Z2NGxNSmE4YXYybnpCVzdub0prT2wxOWV6MWdDZ0E0RF9tMXFRbHY0dWhJb0JHeWI4eGFmaDlJTWdYQXhDUk9JYmRWeHNkVlZMTENKcGlFdzhmNXRBbGxpeGFBdlE3WHh2di1McTZjWEdRS0xnTUtaOUZTWUdONl94WmlwNVVDcm9NNHBzV2gxUkhtNGNwUnQ3eTRaNEUwTjV1M1BTdXpCNTZuM0IwQ2h2Vl8wYThFR2hwZ0x2WGJuTlJ4bzJmR3czUGI5SkN0ZHBXX3lTVGpWUEt3OXplSmJ5TUxmR21Qek5wQ1g3TDZGOTNRcFJMNDNWSXg1TVZ4Uk8xQVdMa0F1VmdHeFBPRGYxZlZSanBpNzg4UDI2ZGlnVlJlU1htRkc0bjdqT0RDMmRzY25IUVZ5TlRfbHpDUEM5WWlkcUQzeS0wRTBpV3RNUHkwYmxZZ0s4aVM3czdCWFhnUFlEWWRXZTV6RXVKOVlqekxCX21YVkZSYkZCM2VxcW8tdS1yQkZkNkp1MTJMTzQ",
+      "time": "2026-04-17 16:57:35"
+    },
     {
       "title": "禮拜天（4/12）在斗六 上哪兒吃早餐🥣？？ 吃碗粿去⋯太好了 又是我的最愛 我也向觀音佛祖、玄天上帝祈求 保護尹令瑛順遂 打拼市長 尹令瑛問我好不好吃？ 有沒有比北港的碗粿好吃？ 我思考了一下 還是不給答案好⋯ （後記：早上要鹹味的，吃不慣太西式的，比比看北 - Facebook",
       "url": "https://news.google.com/rss/articles/CBMigAhBVV95cUxNRktEeEFnYkJaWDVQNG4xazhxbEozalRJYS16Zk41VXUzZjZTam1pQnAtQVo5czhsSk5nd3hjWFBkbktvLWt5c0J3a3ZfdEJWdnhMc0lOeEhyYVZ1S1FYc0hSUWlTak9wa3V2ZWVjeGE1bkpqRkFMOHRFVFFUMW5tQ2ZKTFNFR3NPcHFDN1pOdVNyT3pqRmpVZXNhem5YSVZfb3poei1KRjUzTm9sX1gtTUZmb1dsUjFlS2trdno2WnFxQ1VrUndHWTJpTC1NQjdZMUlQaXNXc3VINi02VjdGWldMSlVRbTdvNHdybmVldkpQTHFtVVppLVpiQkpqSGQtOHVOdU0zRDNSekZXTXF0SkJnS2Ixc3F1TFlFamtFUFVWN0NrRmZkV0t5VjhDZTB4WkJnMjVDT0F3MXBuLXozNWtvS1NsZ1JSMEdLeUhSd29LdE9WY0FQcnhZcHB3LW9mMEMtelB6VE93TEtKWm5fVklwSDIxZjZZZmdRSE5SdnBiTHZkYmd6M2xDWVAtelBIaFQ1d1FUWjlGbENfTFItVndMdkYxLUlKYk5UTTU2TFY5ZlBSb3N5MU1pRGNBcVlEbWNieWJVUkVZYkFXcF9fSnlqNHptZjFsRDB5WVRqYnRsRlFoaTc0OGpBM1RKbHM5VUhKTDg4VmFvTmJJT1hKaEZpbDNIUG5yZ0hsdk9pM2FQNFpCMFBTVkhZOTd5WVJqYWdwVW1sYjJSa012dTB2bWl3TUk5aXZnV1hpblVtOVFDb1QwRzRXaEh2NUVkbk81TXRyWXVIaVNBNW9qNzVSLWdSb0ZaNUVNZE4xRVY1Q3ZyNnVQSkphemNMR0wxLV92enBLdWtJWk1QX0tnWTNTdWtaRFlPSHFmYWY3dzFhZEl6ZjUtckw2SWV6cTdGbkRVWEpxVVN5WThXaU1ONmtOdFRRczE1ZnZHbVI0cXdrWkJqUjVmVjJKX0NqdkdUREdqSVQ1ZFNoQkZ5S1VhcGMxLW5iQXFmalNmdjk4dGQ4NG1hTGdDTV80cHRPTVZaZnJnM3gwcUo1Wi1OZzVPanJCY0U2b3VLQlY4WVRsc1QyeE84T1l3U2dyLVVjWlY5TTRFUkRaclAxc1VCZ2NiMzVCVE5xTU5fYUdjd0tCcV9XN08xVVBnQTR1RVZxQVpGYi1CbUI4OXpFX1RSUmxXc2o4V2NRM1BYenVqTk1XX3BkdTN0RURjMkowUGNJWWNZd19OeGhtMy1MU3RHLUc5R0kyaGpRRkFzYXlXMFFXR1pydGtQMVlFRGN6MFlzMWJnTGJ2NzFCc2ZLaXA5QVZuSDhnbHBIdDEtMXZhT2wtYjdCU3d3MGZ1dTBRMWZYSXZVekwt",
@@ -348,19 +520,74 @@
       "title": "劉建國 - facebook.com",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE53VC1xbXNXSDVMRXJQN0k3N2VfMGJKN2xXd2wyckpxckNsRjlMNHVxczNfR2VURmxtN1N4NVpPd2NFeWhHaUw0YlJLVktUeGFoQUJNRmtxMW9KWkE4S09wUzAyZEx1SF9WWE83LWtuOTZ3NHp6ZjFlVHpNTQ",
       "time": "2026-04-08 10:48:47"
-    },
-    {
-      "title": "#學忠與嘉郡幫蒜農爭取到了❗️ 農業部公告雲林大蒜啟動天災救助📣 從先前雲林大蒜的病蟲害到清明連假的連日大雨，看到蒜田積水、蒜頭腐爛發酵，學忠與 張嘉郡委員深感焦慮。經多次實地會勘與強力爭取，就在剛剛，終於傳來最新消息！農業部正式公告，咱雲林大 - facebook.com",
-      "url": "https://news.google.com/rss/articles/CBMipghBVV95cUxNdXd5TGU4d1gxbXBVTjdiaUpfb0xET1lQRkJBZnAxXzZwWFl6czR4V1E0S0U4N3hTRl9MQmN3M0NwdGVZZENhcF9ldXc1Rnd3SDR0RDlnSmluV21MQTkwQ2ZvOWRDV0pMV2c3aEtPT0FhMzlLcUE4N1ZiQWdxcWctTzZKUFNYNDM4dVBvcm9CUGladmNGemtqRFQ4cnJXenJxMFNXeC12NnFPS0R6b3dkSWRyWTZieGVQcXoxdGVrLXZwWUxjcFpUaUwya25IVjVKdEFBU3kxUXpXLVFpSmxhNkpRcXE0SXB3Yzl5blo1eWYwcjJTQTF1RzBXbk5lN1JlZWdwT0VzcWRHb0FFVEFHWVNQb0xkWVlxRy1KTmFOVmxCdDJGOGphNlBHalBoRWw0cU1IMTFHOWVhRGlmUU1uRGRocXpqcFlyVENnS2dJcGZmVWE5eGFSZTV6NWdMNlZSamkyLW1ObXRjT3M1OWlOWTI4Q3A1UDhacE9vbEtwcXBzcEx0emozNmFRcjViSklZSi1UZmw3cGpvVUtWLVlvVjVKbjNpN0RaelZ4aTJhNGF0OEJHVUdpOEJWdlJYN1NBX0RlVlhxQXM0Q25FM3VfbGdSVFd6b3BwZlVXNDAzV2o3blM4and2MlJoWEpDQU5ZTHVhT2J3SlJ2LVd6bE15d2U2RkhPMDdibV9JV255M0NQRUxLTlktYnZIUV9UelZ3RVFnT0ExQ1ZmRlVVYlZZU2xJcGVCSkh0bXRiaW1FRUxvY3lDZmhjRDRmOF9jUU9VY3JiV3NEMXdRNDVjbU8zNlZnOEx2N2hidjFVUk5uTnFFbVdVRUJpX0xBTHFtc3ZwMnFhRmI3eUZYazNBbHY0ZVJOU2Y0TG1veEtXNHBjbGJ3NkRhRDdkR2NWQ1NHWUtMcFYwYnVhR3FNQlpISUNqNmhjaVRHdkJuTjVzMmR6bklFRjJONF9LU0dqYVh1QW8wVzhlN1FOMFRFQjVpdkdkb1BpT0FUYTNvU3ZKX2xZa2Z2OGVFc1lHNmRrWE1MNERrZkNNTGpXWkZRaG9Cb2dwZjQxeGNZdVNlQjRsdXgyT2pjYW9MaWxGd1ZBV2lhVF9sOXBfN01mYUFnYTJUN29EXzZySFRzdUM2ZzRvRGszMmlyQm51R1ozd1loODkyRl9XX1o4RGZadnNTaWpzbWtTY05QWnBIZFJlUmxKU0RObV9KRmxxT2hXYVZ2dEtfdWwxeG5HY0JvTnFvNWpvRzZrdUFvU3oxdkJsMDlfM0R6bUtaVnFPWFotV2ViVjdoZmFET0dBS3pza1dOZU1CampyMy1Xd0hIc1NEaHcyUy1GX3BaOE9uQ3VmdzVXQlJibjJFWWxSTF9fWjhEZXp3WHJuYU42d3ZUbzVXLVo4M01sRnBNTXdyckE",
-      "time": "2026-04-08 10:42:56"
-    },
-    {
-      "title": "👉更多新聞👉 地方, 張嘉郡, 農民 好報報導 (雲林大蒜豪雨釀災！張嘉郡籲從速、從優、從簡儘速啟動現金救助) 版權所有 台灣好報 【記者 劉峻文／雲林 報導】雲林縣正值大蒜採收期，近期卻接連遭遇病蟲害與連日降雨雙重打擊，導致大量蒜田泡水受損。為守護農民心血， - facebook.com",
-      "url": "https://news.google.com/rss/articles/CBMi5gdBVV95cUxNOHdTa1lIemFRdFhmYU1qbFVucEhVNlBzckdmc1BzaldBZlNDemxtbTk2ZmpyTWV5dkJ0ZTQ5OGZBN25KZHpBNkxGNG5tMTFsVXRldndpc1ZSSlpaazNNZHZkU1kzbzhVY0xfenB4MzJ0QjlhRmVZUTBIYmVSbWtFdnQxNGFFeWpYdHJXcFQwdU5ZOGY3TktUQXVUMFhIeVJFSlBzbkJMckZTWEd1a2JnNUhuYzRuVE5lcTd6YjBFdlZSTWlqQjdtSTlBLWpXTVJSR2NDNUYxVXRJNVF3TVIwNzRYd1BuaDlFZFY4RjMyeXZzdEFKNjhkWmJYRTNvdjE1MWxLZC1ueGlJOXBMRG4tNUdwa05WOFJOS3F4ejMzX01MMHF6el9ZTTVFeHM4emFPU2N4TkRMUmhqNUlMS3RJUmdfZHkwbjV4clhzWGNSY2VaUEZXTHFUNnRJTkl0cTU5ZVNqdDRSYnFMYW9ISXpYUkNkTmZXcVVVNkQ3bHQxWjlvdGt3aDFSbk95ODVzRkFvTlF6blhWSjdVaUlhU2x6ZlRVR2REbV8zY0RiMTdyMGJ4Nl82NjJGa1RwWTBxMS0zMmRiQ0s4WDI0TXF1cVRBbUVlQXJ5RndmTV9ZbXExY1J4UktHQk41Q3VCX19xS1pOa0hCNlFqdzgxZWp2cGVHampYc083dE0zbWJQSzQzLTZLOVFUeHlNSDNwaFVCUVE1SnJxYkNNaXI3M2l0bktQS2NHZzdkbE5BSjEzd1F3R2FnRjhBem1xODRKR3MzRXR5bThKTkJ2ZTBmQXJhZFhWdC0zWi1MaDdNRXlqQlE5V3pSWkpIMzZDLUZJbjkydUQxOXBSWEFlaHBsa0FHN2JGLW5VRXpSTDQwSHN1cnI0TVZwNnNqNFFEZmduWERJaTFyN3JpS05LQjJvUnRaaTRDSW03eWhRNlc2bnVlUGR6M0RjTjhRbHhXSU5MSGVIV2Zxd25UUE9fUXpWNGlrdW5aaVVRcU5jU0VPV2pOaGE0cTRPb3ZwbWprTU9aekNvdVhMQzNYLUdJaS1HV2JzLV9RYkFmY2pLU0hRMGc1QmkwM0FYSmNlcHgxeWRsUVh1YUpfc25ISjBPX2dBN0pyR0wxa2luVWpwNXRoVHZDNG1IUjV5TlUxUHNOd0NtRGZDRmhmSEhpQmZMWUlFbEpKeGVOdDNxSFFpRldFVndwWWJNd2lUNTN6NGYwNlBMUFk3eHZ5c1VHeEZHNXN5dGQ1X3AzZUZGX3FZNDZRMlJPWEZRVjhyZ1J1bENtMDlsWXRsUENEeGF1Qmk2QjJTT2I0bjRrZzdJOW1tQQ",
-      "time": "2026-04-07 22:24:04"
     }
   ],
   "latest_news_20": [
+    {
+      "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:51:31"
+    },
+    {
+      "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:38:40"
+    },
+    {
+      "title": "與香燈腳相揪雲林！徐國勇、劉建國與在地蕉農設應援站 贈香蕉與飄帶祈平安 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxNYkJlcUJmQ2YtQzRmWUMzbmVKc3VoeF8xak1TaVdSUURSMmRscWcyQlpSeGZDMGNkUDk5Uk9PUVgyczN2NzRFd2VHY1FUdGtKQjFIR0xsb2dOWmlLWmttc2JtUjVLenJFWmpPVG1DN3ZZWUdfb2ZZVDF3NlRGMTJZQjJWSU9NdHI4UWJ0dWUtU1otZEpQOU9IR2t6RkJjYVVxQ0M1NDNjdjhDaHM0SEN5eVl2dmNZMkdwZFJHdFZNWTZ4bS1xelExOWdqb3Zpc2s1T1dCajZDZklmU25nUUhpTjVRZGk1TmxVeExlQ1NwRDBRbndQQXBpTFprWEZTdHJESDdpM2xwRl85NC1Xb2h2VUVLOU5VVUVfZE9JMjBQUmpod1RfVXZHMHBYWjdkVUFTOHM4MTg0YVZZS0lqLXphUmE1SzRRVzRLQmhFMWRnRVduTmNCa29LcFAxVGVPTVdoWVNoYlNSbG1RNGx3bWYxaFItMXBmS0FtMXkzVEV6TnM5OGpVNkRoUjN1cnNwQ2xVVWNOVTBRVjJmRE9xRUg2TUtyWHZCQ1VuLV9LeVZuZW5RM1YwTUtLbXhWYnYyYmcyRWlyaE9odGRZNWZrejV5SkRxU1RselU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 10:23:15"
+    },
+    {
+      "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:52:30"
+    },
+    {
+      "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-18 09:28:15"
+    },
+    {
+      "title": "廢竹變綠金！劉建國爭取千萬補助斗南農業轉型升級再進化- 政府消息新聞 - PChome Online 新聞",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYjl5UF9WVFFPRi1GTkZMZWVOcHRndnhvME9hUmhCckpKOVI5QmRuTXFickpaWjYtOXYtUFJ5bGVPTlN5T0FYdkxlQklqV3lqbUE2cFlKdHdmRUlzWjJzQkhSU25HeXMweFRoUlBNdm4xbHdxaTJSZU1kRXlkcGdiWjBWby1xR0g1MkE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 21:54:07"
+    },
+    {
+      "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 11:14:57"
+    },
+    {
+      "title": "旱溪媽祖遶境十八庄盧秀燕、劉世芳祈求風調雨順| 地方 - 中央社 CNA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NkQwZzBxclNKWUhibW5zSm9JZzk1ZmNSNTZZd1VOMXNUSlFrNUdnLXE0QVA4ek0wcnM5a19CLVZsVmdYMDZJcW1EMkR3bDRHV1BYQ2Fqa2plNDJzUlJZ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 10:47:00"
+    },
+    {
+      "title": "盧秀燕遲到5分鐘！旱溪媽祖起駕延誤 信眾騷動現場致歉 - 自由時報",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSUMzaW9pLTQ5ZlU0UUxXOTctVklkWEVHUE9Oa3hhOHpfWFBld2tVUkRISUZ2SXBPT2ZFeEkxTmJsMVJLc2lXSEEtZ0xCeU9jNzJKODhyY01zX01HMjRjT21nZmxNY21hS0paSEVBNGp2cUpJMHhDYkpUczhiX2ZTdUNpVFdsUQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 10:39:00"
+    },
+    {
+      "title": "強化投資 劉建國邀泰國台商訪雲林 - 自由時報",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wVlVCcFR2eWV3NEtRRXdObUx2MExpcVhJZVdaYWhjTUZBY2FzWkdxWU1waHlEdllsSlZ6UHEwRjN0MGRQaEIwYl9ldlJkTkE4UHlERkRvZDNGVEnSAWBBVV95cUxPNG1GSVEtSkptZGNWYktsenJ3Y3pRVFQ1TEszUmlHM2tKa09fTUhkOVl2eWJqOW54bS1seTVLYUdPVmgzZE5rQ1hDLVJ0Um1iaURhQWs5SGR4RDFjUFYwLWY?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-17 05:30:00"
+    },
+    {
+      "title": "白沙屯媽祖進香應援！徐國勇、劉建國補給香蕉送暖 - ETtoday新聞雲",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE45cDRhcGh4a1ZYQ1hfdnRuQU9IaG9haFo4XzZLWm92SWkxQmxsTndEa3R4Ri15d2NmRkIwM1JLTnBtbzBJcVFvUzhCV2tlLXRiMnJRRHpzdmp6NGlqZlHSAWhBVV95cUxOSGxKTldGV2hZaVA4ZnlWT1I0dGJ4RU1EUWJuYmw2UlBJM2pUQzdYaGZJb0QxZ0pFaGZ3clVJV2NCZDN2dndTQWVCYXViaW1EOTFrZGQ2dExKSVFuRmNpOWVxTWY5UWVfUg?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-16 18:34:00"
+    },
+    {
+      "title": "白沙屯媽祖抵北港 張麗善、張嘉郡迎駕 (圖) - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPTkhiSGNmWUxLZy1QbWpmTW9rLVROcURPc3pGZHctb2NlbXF0STZ5Y1Y4OE9nTlJiR29US0ZEY1FYSmVielFjVVlCd01nUVJwTFVJTldSVkpkZ3RzdDFhYUc0bUJFa0p4WGJVaFQxRnVpR2dzbWVEN1NNcXppeXFpZ28wbEVkMlJydkowNEV0UWZPNUF4NzByVWNRZXhNNTVpNGRjNTYtVy10QlpOcE4yLTZRTjVXYWxhbHBDTUZic3otNVJFTGthOGFQMFotQ0lkdTNOM3IzMXFtQV9TQlJhMVN0S1NpSmFJc2VFOGlHa3F2STVKUXFpMUhGZFNuVUV1SE80cWhfOGw5czZVSE9XVFl6YlVqRXlUMnl0QXlpZ3lnaWM?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-16 13:27:40"
+    },
+    {
+      "title": "白沙屯媽祖抵北港 劉建國分送補給品 (圖) - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOeWI4a0RWbE00UlZEazB1VC01dE5oTkNVZjJyc3gzNnc5bm0tMHk4dy0ySEhuYlFhWDlsc1lZaTRBX3ZxZTY0bmwwYjYtQ2c1cnFJT0c0Z2d5RHpTOWVmd2U3TlJ1R0thVElaTnlwSlVWNmE1alBJRk5NX3RiZGl0dGJxOFZncXcyQVFGYnBlRXBGd2thb056cVJuUmY1VGJwa0tvZEhxNzdGQzdrTHU5ZzNBSjZzN0lvUDl2N0VTTWhfZTBNN2lxYVV2eFVPbmRJVjNvTU9tVUZGNEF3UC1ScDYwVzRMUEM5VUdIT1ZjT3BXdkZGU1V2OUtFT0h0OGZOZk83UHhsTFhnRGoteEVtaDBqTzlGVnpka3JqeXY0UTJwQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-16 13:27:40"
+    },
     {
       "title": "政府引進印度移工惹議 盧秀燕：任何政策都要尊重民意 - 聯合新聞網",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE81MGVUSkNTaUdoMDd6TnVzbXE5c2FnbUFWVUNEeTNUMHpoMVV1bjFhbXJhQktTSWFGYmtIUTdEcjA4NjBvVG5hRUh4aHZmOXZJ0gFWQVVfeXFMTnV3WkhidXBjQnNyUG1OSGhVZVpjejRUYlAyRmJkbVNoMkxCV01MNVAzQ1A1aHRZWUJVb1R1M0Q4SVFESFF5azh1RVppaEt0cC03VTJtMWc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -395,71 +622,6 @@
       "title": "陸十項惠台 盧秀燕籲台官方儘快對接落實 - 中國評論新聞",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83akh3Vjl2RU9WX2Y4U1hvOGJmMUJRdDFzWGNTOS05UlFNZmpNWWVHZjZhdXBqWGVFXzZFbkJNZy1lOTBnZ2lEaDF6QlNhM3JDVmhFWU1wRUlvYTB6VUJ2NlY5eUhBX2s?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-13 09:55:00"
-    },
-    {
-      "title": "白沙屯媽祖進香藍營8縣市首長齊聚 盧秀燕籲政府應以蒼生為念 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxQODN0ckk1eGVkWTVVcGpHbzNfeWJranQ0T3JLZHR5YjFUOHE4Umo2ZC1iWTdnaTJ4TTZXV1FNVHA2WGJfY2cxajVnZFFLLUdFRG9Nak9qTHRnM1A1RHd0aUFKVWhYaWRDOHhIaU9JUzIwN2tTVE55cUdQaFprU2hkdFkzQ3JQTEJBdk54TWlwT045VHRMVlBEMkk3SVdGaUlTU3FOV1NxenJOSUZZbnRTZkUtUVZNMk1qQ0VldzB5aFBTNW8ta0Vicm1CRHRxSmZRM2k3eXA2T1RDZUNFMFpnOWVZdXNnWlp6bEo2WW4zVEE0eWFXc3hibjQyRmFmMTJEcHhncVFhMjItcC1iREdQVWtVWFdjS1JQaXZ4SHZlMTdxUzJLdVBoQkYzY2lKaWp2clpxWnMyTGFNNFJZYUNaRlh6bVQzWWt6SDV5eDNJZ3ZuOWxjWER0SHRJNTV1ZFJZSkRiR1U5b3FZLXZpUWFVWXQ1RUswMTFyWDBsdTNIUlgxWWl0SUlDRGVhX045d0lWVVpOcURaaGhoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 09:34:24"
-    },
-    {
-      "title": "偕藍營市長參拜拱天宮「站C位」成黨內桶箍？ 盧秀燕：白沙屯媽祖很靈驗會讓大家高票當選 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMiigRBVV95cUxQdkhMaVl0bUlvcnhkMUJBenMwOVIxcGk5aklXR2JyeVpXZEptU0tfc05YLUtVemFUQ1gxbmpqTk5Najc2M1RKTE9RRkJodjN3dGlNX0JwbGc1WU51eXBlUnUtNDNwT2cySHpJcHcwdW9SMF9FNnFVTW9keE1JYjVwX2xCZE1UbTY5WE5NRGNLTWVnRUNkZkRTcmswbmtFZ0dOSHVJZERGaVJYek5QVE9UQUVFMUtJcUsxLWtuVE5DRVBaSlctM0VsdWd6am5hZ3N6Y0FoNHNEN0REZ0FPOXhDdURKaXF4NGdrc042RXl2cGh3aHhERE9jQmdqTjhpSUlpSEx6ZmcyeFFOdHFhOVl2WUJlb2x6MGR1Rzlzd1h3OTdoajZyTjdIZVBCMzNxSmJ5UHZuOHZNYnM0cHhpZ1Ryd0V5YmwzSmtXcjRSWEl6ODVUdE9oQTFYRXJVRlhmSUtZMVFUWXpud2N5M2tJbUpjeHBhWjFkVzhTal9LdkU2eEpFQWZSb0NRbGNiaFFvLTFjMWtra19EQnRqWjU3WGNsbHA0N2pLZnJtVDVUZGFmdm1WN1JYVHFoZ0RfZmhBOHZ6dFpzR0dUaC1tenY0bzFXbXhBdWFBaGtwTmwxaWVwanFCc21LVTBJc3RBRFJSM3FZLTUwQkU2ZzkzaGhVTm9LQ195blBSRldZS3c?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 09:21:39"
-    },
-    {
-      "title": "台中市長盧秀燕進香白沙屯媽：不為反對而反對　盡快對接大陸落實 - 鏡週刊Mirror Media",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tU2hkdVdVZmlZSFJ1bWh5aWhfM2pUTnFsWENKbmozeXRJbE5hY1pJeWZQYlJNbUMzTzZEcndqemdkR2pud1FEVXRuVWl3b1BVakdlNmtaRkhxWm_SAWBBVV95cUxOWC1LT3p0RXF5MFVLbEczb3hESFVfN2ZWNWV0SnBxT1hzUDRpOXAyWlRZTF9ER3V6WW41Q0Q4c2xpckdkUTRDTUJjczdWamdMaUluNm5DakExVVFTTG9MX1U?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 09:05:00"
-    },
-    {
-      "title": "影／「粉紅超跑」白沙屯媽祖徒步北港進香 盧秀燕赴拱天宮恭請登轎祈福 - PChome Online新聞",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUXlDX2hXcUs2V1BkLW1tUDNBUEc0bUNSY0UzaExJOGV3b3VaY2JpMEFZSksxRGhOdDJKUlVLbEJERERrWGl2OTRBUy1qb2dQU0FDbmZSRm05YmV3VkZ0QmFKVWJRd1NXVFJicW05ZmJHX3JOQlpaaWUwaURGYWx2eGZrQ1BhbHZsRmNj?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:57:51"
-    },
-    {
-      "title": "白沙屯媽祖鑾轎今早7時10分進入台中 盧秀燕：確保每位信眾平安 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qSUt4bDBuUE9lWGR5Q2pEUlBteFlSLXFFMkxCTWtOV19xM2NrZjNPYWJrSmh1UU83dmVOblMtdThGS0pKRTVrdlNJRHR4LWlUUlHSAVdBVV95cUxPM2QxWC1KRzFiSHpuMTVlNDlqNFNPZTdmMnlYT0wzbVZwUlNXeEtDbmYxams2VldGXzVYVEtYNzIyM2VDZ3dQLUpaT0FHdkFRZ3hiVFdfdFE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:52:28"
-    },
-    {
-      "title": "鄭習會帶回10利多？盧秀燕喊「圓滿成功」　要民進黨別為反對而反對 - 鏡週刊Mirror Media",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94NnNZRlQzcXJjN0dkZklUMXVweTQ5dVRCczlONmQ3bWJaX0tOYmlyR3ZnRS1qaTNIbF9ILXZCNG1fX0xwaEY5RllZVXdha3lvSkRiT1JZS0NpMzDSAWBBVV95cUxPaWNIMXEyS3dqRmlWbkxNenpGSC1rbGxwM1hfd0lIY2tOOFlrY2NyQUExblVWeGQzc3M3TUtYQnNCZDR5cGloSHMyUElURlZ2VmU3NWpSZk82bEs3WS1GNUU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:46:00"
-    },
-    {
-      "title": "鄭麗文聲量暴衝 他分析盧秀燕、蔣萬安需「若即若離」 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0xY2JXem9yM1RJMFZUcExIQ1d1dFdOSWJMdy04QmJZcXV0TWpUa2JXZU94R0xJekc4M2tFZkltVThoX1JhcEtZSHZZQVMxd21R0gFWQVVfeXFMTjJJV19lakVycFd1SktnbGhzSzRyQVdIcEdzWWNwWmdWS3ZCeUhMYXlVY2l5cTZhNXc4MUpaaTFZNThMbTZzckdBblk5R0hONmVfZWlzM2c?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:10:54"
-    },
-    {
-      "title": "稱鄭麗文訪中圓滿成功 盧秀燕：民進黨政府應盡快對接對台10項措施 - 自由時報",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdi1oaWlNNW9DNExkVF9KbWZqTElpWndSMlJOZHJOSTBjZkVyY1h3aEluSDlrZzNsb09MdGM2VVNDdnVNbHFTdzhGLWJ0ZlVzMnkzRDNSVTJCcklGY2h0VldkZG1NN19yekdJanVlM2R6MDZKSUlvblh2SXRWS2piX2Jkd1F3QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 08:02:00"
-    },
-    {
-      "title": "鄭麗文談成惠台10措施 盧秀燕：民進黨別為反對而反對 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPTlVoV1NPSzlSaWhwc3E1Nkk2MFh0elpEXzRUTGNxWmhoSmdqcTBUYnV0SnB1YzMyS0xCLWtBcEpEQjRyUDNJaWxtTnRjZ1FILUJnaXNFYlY5WFlGS05oNEp4SXJMSEwzRXFTTVJkN05wbWIwcnJiMHZyWW9BTmdwRGJHclBUb1FfUk5WT1lyR25PNVBidXN2M3Q4SnFxc2J6dVhwa0JrcGc2dmZoMk1VSTY1RGZmdm4wT3lwTWhsZlZWRko3WWZ2OXNCUWZ2ZHZfZFhjU01HTHpMUTkyOTVyV0UtUUc1bGxSN2VXTDI1RDNFdG42aE9MOXIyeWpFVTZiSHVyVllCdi1RY0o5S3MyQnUwdjJ4cENrSGNDOHJ6NzJ2N1RPeGhGb3RoTExHU1NjWFozY1Vfd1pELUFjVDBpbjRRVVJrWHI4dlpTOFBUMXJGeko0WEdaaUMxekdPMGFq?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 07:43:58"
-    },
-    {
-      "title": "盧秀燕恭送白沙屯媽祖起駕 籲政府以蒼生為念「別為反對而反對」 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxWmRkU1dQNlVwWWtkaXFqQmRmUjYyTDFDbUxDV2pkYkJTQVR2TEl2R3B2SHVQSEctVjQ1SDRfX1FxR0NyeVRrSGJya3pPSFRSWkHSAVdBVV95cUxQR3JiNVY5anZFZDA2VG10OHRBbjVDZVhFeEUxdFQxU0ZkcDVDaFh1RWVaaTVONEwyc3JEREV4aUVZb3dFemZkc3hLejRZSXJKcm5BRUlyWEk?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 04:19:39"
-    },
-    {
-      "title": "白沙屯媽進香 賴清德、盧秀燕等接力參拜 - 聯合新聞網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Wa1ZBbEJfNnprUmswU0RkZTRka3o2d0tsamhVWk1FZmgxWTRUeTNkbEpOY2c0NEVPQnJOR3BNY25IQzNjbWxtQUd1aTgyRnFrcEHSAVdBVV95cUxPenp5ckR3OUFQUGdoMTVrS3hxUlhqNDdQYk5IdnB3NklUZ1Q4VUNhVFk5XzlsUzQ0YXVsajhwVUtrMFZ6SUhXZ1ZublNaM1VWQVh2ZTVKNXM?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 02:16:01"
-    },
-    {
-      "title": "盧秀燕當桶箍　蔣萬安也來了！藍營10餘大咖恭送白沙屯媽祖起駕 - NOWnews今日新聞",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8yM0Npek9nSkhaVXJXdGNMZXg5dGpRQ2x0Z3hFS213eXBZendZejYzV1ZiS3hXRVA4X1FheWNadVJJY2lla0VfR2lsVlnSAVJBVV95cUxNaXFKdE8tS2R4WEJVbmZlc094MW4xTF9tWFM5cWM4VlZOdHNpeDBhV0dtNWlVcl92RnBhUmFpS3RvemZzaERSUEFhS1FZX1hNbXJR?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 00:38:48"
-    },
-    {
-      "title": "蔣萬安也來了！盧秀燕率藍營送白沙屯媽起駕 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOQ0VyUGpzaXdQNENuVEFtS3ljaWNGYWdfVlhmWnhnUkxZR2dYSmFFak1RMkJFT05oNGNUZ0FPbFFrTTlLZE40UFZJVDlYUVZLMUZtR2V6Q3FNai1xRUtQOGlKemdXbjNHbHpZa1dSNVpsRmdZODlJdHZXVzRmSVE1TVU1c3NxWE45TW1mN3g5Y0l2a2hGM000LU5GeFAybnlVS2Y1OUZMODB5WnVMX0p1R2IxWFN1RE1pRmhkdzNWcmd4Ull3NXdqYkVIbml6dU5uVU1xRVNENFhGOXhRcE9mNTNOTF92ODBLQVh6ZHRrandPcE9KQ2hFX0gwbnRLekpILTEzVEctSGgxQzM5MmNacUt6NmdkUE5WdkJxT3g2b19wMF9Ga1BLTm1UcHRWSC15dUJGZnluUG8?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-13 00:38:48"
     }
   ],
   "person_sections": {
@@ -472,6 +634,41 @@
         }
       ],
       "news": [
+        {
+          "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-18 10:51:31"
+        },
+        {
+          "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-18 10:38:40"
+        },
+        {
+          "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-18 09:52:30"
+        },
+        {
+          "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-18 09:28:15"
+        },
+        {
+          "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-17 11:14:57"
+        },
+        {
+          "title": "旱溪媽祖遶境十八庄盧秀燕、劉世芳祈求風調雨順| 地方 - 中央社 CNA",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NkQwZzBxclNKWUhibW5zSm9JZzk1ZmNSNTZZd1VOMXNUSlFrNUdnLXE0QVA4ek0wcnM5a19CLVZsVmdYMDZJcW1EMkR3bDRHV1BYQ2Fqa2plNDJzUlJZ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-17 10:47:00"
+        },
+        {
+          "title": "盧秀燕遲到5分鐘！旱溪媽祖起駕延誤 信眾騷動現場致歉 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSUMzaW9pLTQ5ZlU0UUxXOTctVklkWEVHUE9Oa3hhOHpfWFBld2tVUkRISUZ2SXBPT2ZFeEkxTmJsMVJLc2lXSEEtZ0xCeU9jNzJKODhyY01zX01HMjRjT21nZmxNY21hS0paSEVBNGp2cUpJMHhDYkpUczhiX2ZTdUNpVFdsUQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-17 10:39:00"
+        },
         {
           "title": "政府引進印度移工惹議 盧秀燕：任何政策都要尊重民意 - 聯合新聞網",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE81MGVUSkNTaUdoMDd6TnVzbXE5c2FnbUFWVUNEeTNUMHpoMVV1bjFhbXJhQktTSWFGYmtIUTdEcjA4NjBvVG5hRUh4aHZmOXZJ0gFWQVVfeXFMTnV3WkhidXBjQnNyUG1OSGhVZVpjejRUYlAyRmJkbVNoMkxCV01MNVAzQ1A1aHRZWUJVb1R1M0Q4SVFESFF5azh1RVppaEt0cC03VTJtMWc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -536,41 +733,6 @@
           "title": "鄭習會帶回10利多？盧秀燕喊「圓滿成功」　要民進黨別為反對而反對 - 鏡週刊Mirror Media",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94NnNZRlQzcXJjN0dkZklUMXVweTQ5dVRCczlONmQ3bWJaX0tOYmlyR3ZnRS1qaTNIbF9ILXZCNG1fX0xwaEY5RllZVXdha3lvSkRiT1JZS0NpMzDSAWBBVV95cUxPaWNIMXEyS3dqRmlWbkxNenpGSC1rbGxwM1hfd0lIY2tOOFlrY2NyQUExblVWeGQzc3M3TUtYQnNCZDR5cGloSHMyUElURlZ2VmU3NWpSZk82bEs3WS1GNUU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
           "time": "2026-04-13 08:46:00"
-        },
-        {
-          "title": "鄭麗文聲量暴衝 他分析盧秀燕、蔣萬安需「若即若離」 - 聯合新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0xY2JXem9yM1RJMFZUcExIQ1d1dFdOSWJMdy04QmJZcXV0TWpUa2JXZU94R0xJekc4M2tFZkltVThoX1JhcEtZSHZZQVMxd21R0gFWQVVfeXFMTjJJV19lakVycFd1SktnbGhzSzRyQVdIcEdzWWNwWmdWS3ZCeUhMYXlVY2l5cTZhNXc4MUpaaTFZNThMbTZzckdBblk5R0hONmVfZWlzM2c?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 08:10:54"
-        },
-        {
-          "title": "稱鄭麗文訪中圓滿成功 盧秀燕：民進黨政府應盡快對接對台10項措施 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdi1oaWlNNW9DNExkVF9KbWZqTElpWndSMlJOZHJOSTBjZkVyY1h3aEluSDlrZzNsb09MdGM2VVNDdnVNbHFTdzhGLWJ0ZlVzMnkzRDNSVTJCcklGY2h0VldkZG1NN19yekdJanVlM2R6MDZKSUlvblh2SXRWS2piX2Jkd1F3QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 08:02:00"
-        },
-        {
-          "title": "鄭麗文談成惠台10措施 盧秀燕：民進黨別為反對而反對 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPTlVoV1NPSzlSaWhwc3E1Nkk2MFh0elpEXzRUTGNxWmhoSmdqcTBUYnV0SnB1YzMyS0xCLWtBcEpEQjRyUDNJaWxtTnRjZ1FILUJnaXNFYlY5WFlGS05oNEp4SXJMSEwzRXFTTVJkN05wbWIwcnJiMHZyWW9BTmdwRGJHclBUb1FfUk5WT1lyR25PNVBidXN2M3Q4SnFxc2J6dVhwa0JrcGc2dmZoMk1VSTY1RGZmdm4wT3lwTWhsZlZWRko3WWZ2OXNCUWZ2ZHZfZFhjU01HTHpMUTkyOTVyV0UtUUc1bGxSN2VXTDI1RDNFdG42aE9MOXIyeWpFVTZiSHVyVllCdi1RY0o5S3MyQnUwdjJ4cENrSGNDOHJ6NzJ2N1RPeGhGb3RoTExHU1NjWFozY1Vfd1pELUFjVDBpbjRRVVJrWHI4dlpTOFBUMXJGeko0WEdaaUMxekdPMGFq?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 07:43:58"
-        },
-        {
-          "title": "盧秀燕恭送白沙屯媽祖起駕 籲政府以蒼生為念「別為反對而反對」 - 聯合新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxWmRkU1dQNlVwWWtkaXFqQmRmUjYyTDFDbUxDV2pkYkJTQVR2TEl2R3B2SHVQSEctVjQ1SDRfX1FxR0NyeVRrSGJya3pPSFRSWkHSAVdBVV95cUxQR3JiNVY5anZFZDA2VG10OHRBbjVDZVhFeEUxdFQxU0ZkcDVDaFh1RWVaaTVONEwyc3JEREV4aUVZb3dFemZkc3hLejRZSXJKcm5BRUlyWEk?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 04:19:39"
-        },
-        {
-          "title": "白沙屯媽進香 賴清德、盧秀燕等接力參拜 - 聯合新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Wa1ZBbEJfNnprUmswU0RkZTRka3o2d0tsamhVWk1FZmgxWTRUeTNkbEpOY2c0NEVPQnJOR3BNY25IQzNjbWxtQUd1aTgyRnFrcEHSAVdBVV95cUxPenp5ckR3OUFQUGdoMTVrS3hxUlhqNDdQYk5IdnB3NklUZ1Q4VUNhVFk5XzlsUzQ0YXVsajhwVUtrMFZ6SUhXZ1ZublNaM1VWQVh2ZTVKNXM?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 02:16:01"
-        },
-        {
-          "title": "盧秀燕當桶箍　蔣萬安也來了！藍營10餘大咖恭送白沙屯媽祖起駕 - NOWnews今日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8yM0Npek9nSkhaVXJXdGNMZXg5dGpRQ2x0Z3hFS213eXBZendZejYzV1ZiS3hXRVA4X1FheWNadVJJY2lla0VfR2lsVlnSAVJBVV95cUxNaXFKdE8tS2R4WEJVbmZlc094MW4xTF9tWFM5cWM4VlZOdHNpeDBhV0dtNWlVcl92RnBhUmFpS3RvemZzaERSUEFhS1FZX1hNbXJR?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 00:38:48"
-        },
-        {
-          "title": "蔣萬安也來了！盧秀燕率藍營送白沙屯媽起駕 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOQ0VyUGpzaXdQNENuVEFtS3ljaWNGYWdfVlhmWnhnUkxZR2dYSmFFak1RMkJFT05oNGNUZ0FPbFFrTTlLZE40UFZJVDlYUVZLMUZtR2V6Q3FNai1xRUtQOGlKemdXbjNHbHpZa1dSNVpsRmdZODlJdHZXVzRmSVE1TVU1c3NxWE45TW1mN3g5Y0l2a2hGM000LU5GeFAybnlVS2Y1OUZMODB5WnVMX0p1R2IxWFN1RE1pRmhkdzNWcmd4Ull3NXdqYkVIbml6dU5uVU1xRVNENFhGOXhRcE9mNTNOTF92ODBLQVh6ZHRrandPcE9KQ2hFX0gwbnRLekpILTEzVEctSGgxQzM5MmNacUt6NmdkUE5WdkJxT3g2b19wMF9Ga1BLTm1UcHRWSC15dUJGZnluUG8?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-13 00:38:48"
         }
       ]
     },
@@ -786,9 +948,72 @@
       ]
     }
   },
-  "latest_by_platform_24h": {},
+  "latest_by_platform_24h": {
+    "news": [
+      {
+        "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:51:31"
+      },
+      {
+        "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:38:40"
+      },
+      {
+        "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:52:30"
+      },
+      {
+        "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:28:15"
+      },
+      {
+        "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 11:14:57"
+      }
+    ]
+  },
   "latest_by_platform_7d": {
     "news": [
+      {
+        "title": "柯文哲遭潑辣椒水 盧秀燕：不容許任何人安全受到侵害 - 中時新聞網",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVHVLV1NsWFd2Ni1fdjZ3eGNpZlZWaXRXU0gyYi1sUzBVTWZYVXQzOWs4RFAwVENXdGg0OWJaWVdNdmE2NWV6UTYtMElwSldCV0llbzR5aTZwM1pwRXA0UVk5UFo5TGFKZ1NQdnkwSUNnQzJvcU1QVFd0b3hqM3NkWmZsRy16ejNtOG5pemNIOA?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:51:31"
+      },
+      {
+        "title": "柯文哲逢甲掃街遭噴辣椒水 盧秀燕震怒：不容挑戰台中治安 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPc3puWTlpbzVQUWd4RDhibEVfTnZSTmdFdzNLek5RTFBnQlFxWVQ3ellzLXRUU2o0WDk4SXkycGhIQmRydHFObjdueHVoX2xWVTNDX3kxMFNtOGlzMEQ5OGRpdlNfRzlESWRFSzAtU05TQVVrUXMtQjN3MEhwTTJPZ2kwLTlhcjdZVmwxWGVXWUtSaEJZbWZBNmI2emVjS3RBSm5hVjVYWW8wWEd1bVNOWFRxQUpCTGgxYVE4a0thVGo1NzRfS0g3Sk92Z2g0RWY4ODZWUnZ6OTJYWkg1NDliVHhwRkgwOWM4a28yRDZ2c2VaREVSdEFHN0pwNU41NXltdGdWZnlLRjlYV25IcFktVTlZNFJpTUdpZzBHWWJvSXJkNktYa3JVa2R5VEJpZjRBekxTck81YkZqQmJINkRKTE0xU0E3ZmhQWU5ZZXYtRkZJaE0wVDUxdThLd3M2SkpJM3pxcHpfVHM0VTdwQ3VpNlp3d3YwaFN3YVhBRllCbmtoQQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 10:38:40"
+      },
+      {
+        "title": "柯文哲台中掃街被噴辣椒水！黃國昌：社會無法容忍 曝盧秀燕已與他聯絡 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNaW5ZRGtoRU1WeXdSTkcxVmM5VTYtalBvXzFXZ19DUFlTTHR1anNFdjNpeXhOSFo4ZXJaZzE4dTJDcFZfdjZRYWtGdm5ZVUJDVGc2Nnh3TDFoUDFNSWVON21MbHFSVDVVY2lvV0kzVUwyVFZETG93c2oxak1Mc0l3QlZRRWtOazlBVmNLV2p4bDMySUdsQTVKTEttQVNGRjdzYVdDUnhKMmRZRnhKcG42X1Z2WGxRc2ZHOUxsQl81QkhubGhKbEZXWEtycmEzbjg5RjZWWDBraGhSXzJDWlQ4aWhEa3BKM3BsMl8zNzg3SVByYi1YT0t3dkhoa3BGVXV6YVp0LW1YRXIyNXRpX0syZ2FHV3ZNZGgzWWd0RTJHSDh3VGFTcF80YlhuR3lhLWlYUGM4d2sxWHp6R19OVFVLTHJCSzdzSW1fSU1sY0M2ZV9FWVQxR0VIVGtZOFdlSnl5eGVQYTNPeklYVWhRWjM4eWVLMmx2RDlYbm91NzYtY3pfMWNTNm1QbGJndWNHN1Y5eWRDQ3pFc3lVS180TUxfYkUxdk1KSHBhd0llWHVJWjlNaHlXNjR3S2JCOE1jVU0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:52:30"
+      },
+      {
+        "title": "砰！砰！砰！大甲媽起駕 盧秀燕、韓國瑜、鄭麗文扶轎送駕 9天8夜遶境啟程 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN3hxdjBCSEI2WWxtRVdmWGVCY05xdUVweHFoZ0JLSlhkMVVIODJiODNMVml0SUVLN3RTQ3FhSGVQNHRTRWNvZWRCRjRBWHNydjVjY3NFakR4NjRheGE1UzFIUlJLcUpqcXE0MExZV041NFc4X0cyZW54QTBqS2VqLWR2MlJYbm1tZGhJY0gxSXpkeXJqSG16dUk0cGxEd3dJUXBfOEJyck9WVkxabU9nMDAzenFtbnctSmgyRDFMTV95TXBxX3lZcnRWbnZSelJWVTBpTzFoemc1OWY5?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-18 09:28:15"
+      },
+      {
+        "title": "樂成宮旱溪媽祖遶境起駕 盧秀燕：「雨水媽」靈驗、德基水庫回升 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxOWjZxUGlfTHVwOHdXcEFEUWVtNWpxMGVab2lvNUtISkhObVFmbzkyZlhIbDhBX0N3bEtoQ3lCMk00Z1Y2MDh2NFU5RVhYXzRfdVFJU1RSczYxMkZwVVJuR1hHNC1lYTZWcWVCazhBTHZwRGJDTzlpX3otaFd3WkQyUGhUX0dWTDRkVlhjZFotSmw2WFAxazh2NkpmUk5ZeGZmTXFVZ3h0RUVwWkk2cEdtcGs2cVE2aHpNMTBoV2oybmRadm5ubG9ZSkVsZjlBWUFGdE1GRWZjLWZldnZpQWI0ZDZkekd5RTlrS0VjNnc0ODkwaHFGbzlFaXJnYjBKUklKblpZa0g4cmtoTWNMck1YMi1vSzZSMXBNZ2hrZmJPWXYyc29fd3owMnlIZ2c5Vnp6Mko0UGJrSXJldVk5a2J4bWpaOXV0UU5Rcy1uOU4xNGJvTk1qWEl0VFVoaVpaYlpzM21qNFVidEpXX08zVU9wUm1jVlpFTmVsZ0N5NzVaMDFKSVhU?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 11:14:57"
+      },
+      {
+        "title": "旱溪媽祖遶境十八庄盧秀燕、劉世芳祈求風調雨順| 地方 - 中央社 CNA",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NkQwZzBxclNKWUhibW5zSm9JZzk1ZmNSNTZZd1VOMXNUSlFrNUdnLXE0QVA4ek0wcnM5a19CLVZsVmdYMDZJcW1EMkR3bDRHV1BYQ2Fqa2plNDJzUlJZ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 10:47:00"
+      },
+      {
+        "title": "盧秀燕遲到5分鐘！旱溪媽祖起駕延誤 信眾騷動現場致歉 - 自由時報",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSUMzaW9pLTQ5ZlU0UUxXOTctVklkWEVHUE9Oa3hhOHpfWFBld2tVUkRISUZ2SXBPT2ZFeEkxTmJsMVJLc2lXSEEtZ0xCeU9jNzJKODhyY01zX01HMjRjT21nZmxNY21hS0paSEVBNGp2cUpJMHhDYkpUczhiX2ZTdUNpVFdsUQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-17 10:39:00"
+      },
       {
         "title": "政府引進印度移工惹議 盧秀燕：任何政策都要尊重民意 - 聯合新聞網",
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE81MGVUSkNTaUdoMDd6TnVzbXE5c2FnbUFWVUNEeTNUMHpoMVV1bjFhbXJhQktTSWFGYmtIUTdEcjA4NjBvVG5hRUh4aHZmOXZJ0gFWQVVfeXFMTnV3WkhidXBjQnNyUG1OSGhVZVpjejRUYlAyRmJkbVNoMkxCV01MNVAzQ1A1aHRZWUJVb1R1M0Q4SVFESFF5azh1RVppaEt0cC03VTJtMWc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
