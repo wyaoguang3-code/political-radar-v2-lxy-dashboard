@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-04-21T07:17:52.028518+00:00",
+  "generated_at": "2026-04-21T07:32:57.219970+00:00",
   "metrics": {
-    "total_24h": 26,
-    "prev_24h": 37,
-    "growth_pct": -29.73,
-    "news_24h": 23,
+    "total_24h": 27,
+    "prev_24h": 38,
+    "growth_pct": -28.95,
+    "news_24h": 24,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 135,
-    "prev": 284,
-    "growth_pct": -52.46,
-    "news": 83,
+    "total": 137,
+    "prev": 281,
+    "growth_pct": -51.25,
+    "news": 85,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,20 +28,16 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 23
+      "count": 24
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 83
+      "count": 85
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-04-20 15:00",
-      "count": 1
-    },
     {
       "hour": "2026-04-20 17:00",
       "count": 1
@@ -89,6 +85,10 @@
     {
       "hour": "2026-04-21 14:00",
       "count": 5
+    },
+    {
+      "hour": "2026-04-21 15:00",
+      "count": 2
     }
   ],
   "by_hour_7d": [
@@ -311,16 +311,30 @@
     {
       "hour": "2026-04-21 14:00",
       "count": 5
+    },
+    {
+      "hour": "2026-04-21 15:00",
+      "count": 2
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 23
+      "count": 24
     }
   ],
   "mention_latest_by_platform_24h": {
     "news": [
+      {
+        "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:07:30"
+      },
+      {
+        "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:06:53"
+      },
       {
         "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
         "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -430,22 +444,27 @@
         "title": "鴨子划水！科技圈悄悄點頭　盧秀燕AI布局早已開跑 - ETtoday新聞雲",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlV1FpSkthRW1OaVNNZlpINV92aDNfVjRES3VibUwzeG5uY1UzeWQ0UjVTMEdtTmlleWVndzcwTG8ycFRKWkRsUXZNbkxheE1mc3FiZ3NkY0MwbUdVMFHSAWhBVV95cUxNQWI5X1NtRGhyNHotRHhRNFBsZGplVUxnTTRza2R6eDU1R3BlSURfYUZoMEdCeUFDblNTbnRyNUJ5YUdBSDFRQUlXNUM0alcwZnU4a0ZBWHRuY3BzSmNROEpTTjRjSHU3Xw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
         "time": "2026-04-20 17:54:00"
-      },
-      {
-        "title": "盧秀燕聲援商總：政府別用意識形態卡經濟 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQQ2Ytb2Y5cVltS2FSQXdrUHBtYnNLS3V4OVJqLV82WTJZSTNCNzBuQW15SUNHcFQwUWs0ZWgxRTNldnlUZEM1UHZmWnVUd0hkZGx2d2F0RVVaR3BBWVpSNFh4M1g3S0hXUVBzSDEwN3lQZlE1LXpqS3lMOV9LeGNyMTNZUGxpemFpX3F5dnhpLVJFXzZYbGQ1cEE5dllmWlZudk56UEx2U29yV0JYdE00M0NGYk93aUY0TDBtRDZFV2JWdTkxUjh0RXRlam9oVTFtRzVFUW41ZzB6YXhIU3NqdTE4TloyaDR3bU81U3J5M1BacHdpLTJqS29wbGlZN0JVRzc1cnVURWlfeGtUTWV2bHRUS3plSE1DbWJVTjQ5dHB6OURIU2g1cGZ0SWo?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-04-20 15:32:51"
       }
     ]
   },
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 23
+      "count": 24
     }
   ],
   "alias_latest_by_platform_24h": {
     "news": [
+      {
+        "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:07:30"
+      },
+      {
+        "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:06:53"
+      },
       {
         "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
         "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -555,27 +574,32 @@
         "title": "鴨子划水！科技圈悄悄點頭　盧秀燕AI布局早已開跑 - ETtoday新聞雲",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlV1FpSkthRW1OaVNNZlpINV92aDNfVjRES3VibUwzeG5uY1UzeWQ0UjVTMEdtTmlleWVndzcwTG8ycFRKWkRsUXZNbkxheE1mc3FiZ3NkY0MwbUdVMFHSAWhBVV95cUxNQWI5X1NtRGhyNHotRHhRNFBsZGplVUxnTTRza2R6eDU1R3BlSURfYUZoMEdCeUFDblNTbnRyNUJ5YUdBSDFRQUlXNUM0alcwZnU4a0ZBWHRuY3BzSmNROEpTTjRjSHU3Xw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
         "time": "2026-04-20 17:54:00"
-      },
-      {
-        "title": "盧秀燕聲援商總：政府別用意識形態卡經濟 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQQ2Ytb2Y5cVltS2FSQXdrUHBtYnNLS3V4OVJqLV82WTJZSTNCNzBuQW15SUNHcFQwUWs0ZWgxRTNldnlUZEM1UHZmWnVUd0hkZGx2d2F0RVVaR3BBWVpSNFh4M1g3S0hXUVBzSDEwN3lQZlE1LXpqS3lMOV9LeGNyMTNZUGxpemFpX3F5dnhpLVJFXzZYbGQ1cEE5dllmWlZudk56UEx2U29yV0JYdE00M0NGYk93aUY0TDBtRDZFV2JWdTkxUjh0RXRlam9oVTFtRzVFUW41ZzB6YXhIU3NqdTE4TloyaDR3bU81U3J5M1BacHdpLTJqS29wbGlZN0JVRzc1cnVURWlfeGtUTWV2bHRUS3plSE1DbWJVTjQ5dHB6OURIU2g1cGZ0SWo?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-04-20 15:32:51"
       }
     ]
   },
   "mention_compare_24h": {
-    "盧秀燕": 23,
+    "盧秀燕": 24,
     "蔣萬安": 0,
     "蔡其昌": 0,
     "陳其邁": 0
   },
   "mention_compare_7d": {
-    "盧秀燕": 83,
+    "盧秀燕": 85,
     "蔣萬安": 1,
     "蔡其昌": 0,
     "陳其邁": 1
   },
   "top_news": [
+    {
+      "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:07:30"
+    },
+    {
+      "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:06:53"
+    },
     {
       "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -625,19 +649,21 @@
       "title": "分局長出席專案會議還不承認 盧秀燕曝耗費很多時間：不只是烏龍事件 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMivgNBVV95cUxPOUF2NHpERW5YUV9ydURIaU1feDZ0X2NrM0NabkZ6cUwta0dpUVJucjgtMWFCSTFMTXZ2OTNwbjRpTTIzd0RUY3A2WVNILV9xOG1TNWNGNFFDdDllM3pvcVE5MGFsbENfQWJYQ2JsakRiT2Jsa2hJNkZLWUlOUm9iQ25DbTVVZVpMTEppWkU4V2xjTW82ajROUm41dW5HbjBNa0lIN2dmeVRmazBfQ285UjNIRThWRHNpZ29qNjZDNTE3QWFTRkw1OEJHazlhOHVGclRCVmZ4alFndkY2cWs2WGJETEVsckY5VXpkak0yaGxsSHM0b2RmdEtDa0hKTnFidDRFZ1BacGlUajRhN3ZCOWhOOG1XVXJ3blFjaTVKZnBrRGVLaTVsbXprMmV4bzhITm9kOFV0YnNLYmhTMFUyNjdVWkd4ZTJEVVM5T0NLOFMxWXpYNmFmUmF2aHhYcmpxTTBNT2U5YWg1MjZhVUdOWEtUODBBaS1uUHozaXYwX1JDNk84SDRNbWhTM3RiWmZQZTNxcnhhRzhqYmdwUkRPQ3F5S3pZRUZBSmdzVnJBU0VYLTA4MVdsMWtJMHA0QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-21 13:03:45"
-    },
-    {
-      "title": "中市清潔隊員亂倒廢水遭直擊盧秀燕：記過開罰| 地方 - 中央社 CNA",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56NnVqT2JNR3RWNVRxNkdmeEZMZG9ma1BlLUxzdTdzQ29PU1FISkNOVzBsTW5nTGRZSnppcHZzaDRLcjVhZ0Z2d3V4MzJwUzNONXY4SHlBNlBXU2VJVFVn?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-21 12:36:00"
-    },
-    {
-      "title": "分局長誤噴辣椒水遭拔官 盧秀燕嘆未坦承白耗人力物力 - Yahoo新聞",
-      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxQck9iMGJiRjc4LUk1elF0dFBYTmVBUTRSVDJJYWlvTENRbll3OEhUTnRNTXQzVjlkTnBXYzdLd3p6TW5fb2ctcGdYRmtwWThJbEo1V01oMThJVThUOFp0cFZ3TVNuSjNZd1lUZFAwa25RNFZTcnBqZEJzNXplOThwTFJtYkhwWmNLRWZsTHBpNmw0ZWpFTnMwQUlBTTNUN3FGdkJrV0lfZ25qTDlfWkRGMl9HWFZjcjZFem9EUFAyVjdpSkl5NGEtLXZqT0pBTFpJNnhRLXgwMzJHQXdvelpkNkJFNFkwMW1XblZpMFJ3SHRKdGgxQjhDOS0yeThyeVY5X05valpjTzh4OGlBdTZtZTJjYnJjVVltV09aVGVXbXZIeUotWGVSRnJJcUFsUTdCMG81TjVCRFZyaERGR3k2WDJubFdrZi1RYkNhcE5CaVhnZXkyTkFIT0xFemM0Y1dLQmNOd3M3REt6OGhfanhreEZtX18?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-21 12:30:00"
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:07:30"
+    },
+    {
+      "platform": "news",
+      "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:06:53"
+    },
     {
       "platform": "news",
       "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
@@ -745,18 +771,6 @@
       "title": "盧秀燕：不要用意識形態卡經濟- 其他 - 旺得富理財網",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NNTU1dUdqZDdUOXNveGh3ZTFudmg1ckV3WFVuNEQ3ckQyVTZMMVdMRzdDNG5XeFZxdHFRRHFJMUlob0F1b0lTc2tWeVR0dkNqc3UxcXJ1U0Z3N2tpNTRsa1pBbGx3MGZ0LXc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-21 09:04:44"
-    },
-    {
-      "platform": "news",
-      "title": "盧秀燕：不要用意識形態卡經濟 - 中時新聞網",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KT3B0VVNhVEExVktaTU1EN0s2X3UxdG5BaHdKclRYU3NGSEZocy1peVFIeEZ0bmpYMFFtNG1tR3hocy0zaG1HeTZPMjk3V0xzanlfM3BoaFRNV3FoLUdtWlpMUE9Od01DeWRz?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-21 04:10:00"
-    },
-    {
-      "platform": "news",
-      "title": "盧秀燕為藍白合重懲辣椒水分局長？ 市議會藍、綠、白議員這樣看| 政治焦點 - 太報 TaiSounds",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE12bFhJSGx3QTdzRWRlRFNCSVRqZTJLcUpRSWlmZjJsYkFBLTBXNUgxUTc1U0h5VzRZSkNsaGRxbWNMZlRIRnRRNDIzcnZCckhCWlR5bWZmMUwyUmcz?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-20 20:03:48"
     }
   ],
   "latest_facebook_20": [
@@ -863,6 +877,16 @@
   ],
   "latest_news_20": [
     {
+      "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:07:30"
+    },
+    {
+      "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+      "time": "2026-04-21 15:06:53"
+    },
+    {
       "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
       "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-21 14:45:00"
@@ -951,16 +975,6 @@
       "title": "盧秀燕：不要用意識形態卡經濟- 其他 - 旺得富理財網",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NNTU1dUdqZDdUOXNveGh3ZTFudmg1ckV3WFVuNEQ3ckQyVTZMMVdMRzdDNG5XeFZxdHFRRHFJMUlob0F1b0lTc2tWeVR0dkNqc3UxcXJ1U0Z3N2tpNTRsa1pBbGx3MGZ0LXc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
       "time": "2026-04-21 09:04:44"
-    },
-    {
-      "title": "盧秀燕：不要用意識形態卡經濟 - 中時新聞網",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KT3B0VVNhVEExVktaTU1EN0s2X3UxdG5BaHdKclRYU3NGSEZocy1peVFIeEZ0bmpYMFFtNG1tR3hocy0zaG1HeTZPMjk3V0xzanlfM3BoaFRNV3FoLUdtWlpMUE9Od01DeWRz?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-21 04:10:00"
-    },
-    {
-      "title": "柯文哲雲林參拜多廟 介紹張嘉郡「未來新縣長」 - MSN",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNY0poVUlHQ3dsZTBmdmI0TUFYeVAwd3F0ZWViblNUcU5FMVkwQTB0MHlOMWkyNFNYVXpwdGxwOUpjX1hFTWN1aEs2eGN4QjdJX3ZkeWdyU1lfMFB3UDJUN1BEV1c0ZFhyQWhhY1c5MjBTcm1tejRwNmwwME5vV0dIRUlxNGlqZlFDclRBMXdtZVEzXzFCNnhQcVd4NE1ReWkybWpWei14c180Y2k2NGYzNW16bEtsTzJodm9YOThKREVwbFVzMzFHQXNPVFRNWVBfbFlGdHQ4M3VTeGJvN1NwcWQwQkhZNnR6emdUMkJXWDctc0VmMVBUdnB3TUdKZmtNdFhQWDFKSVFhYmVfWG4tZGpyQ2QxVExWUGNINFJuRVhEQTVBdVd2R0dMenBuZmdINWRxT1NsN1JxMDY3Y2tOSHVFbExJeGc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-      "time": "2026-04-20 21:12:51"
     }
   ],
   "person_sections": {
@@ -973,6 +987,16 @@
         }
       ],
       "news": [
+        {
+          "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-21 15:07:30"
+        },
+        {
+          "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+          "time": "2026-04-21 15:06:53"
+        },
         {
           "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
           "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
@@ -1062,16 +1086,6 @@
           "title": "盧秀燕：不要用意識形態卡經濟- 其他 - 旺得富理財網",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NNTU1dUdqZDdUOXNveGh3ZTFudmg1ckV3WFVuNEQ3ckQyVTZMMVdMRzdDNG5XeFZxdHFRRHFJMUlob0F1b0lTc2tWeVR0dkNqc3UxcXJ1U0Z3N2tpNTRsa1pBbGx3MGZ0LXc?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
           "time": "2026-04-21 09:04:44"
-        },
-        {
-          "title": "盧秀燕：不要用意識形態卡經濟 - 中時新聞網",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KT3B0VVNhVEExVktaTU1EN0s2X3UxdG5BaHdKclRYU3NGSEZocy1peVFIeEZ0bmpYMFFtNG1tR3hocy0zaG1HeTZPMjk3V0xzanlfM3BoaFRNV3FoLUdtWlpMUE9Od01DeWRz?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-21 04:10:00"
-        },
-        {
-          "title": "盧秀燕為藍白合重懲辣椒水分局長？ 市議會藍、綠、白議員這樣看| 政治焦點 - 太報 TaiSounds",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE12bFhJSGx3QTdzRWRlRFNCSVRqZTJLcUpRSWlmZjJsYkFBLTBXNUgxUTc1U0h5VzRZSkNsaGRxbWNMZlRIRnRRNDIzcnZCckhCWlR5bWZmMUwyUmcz?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-04-20 20:03:48"
         }
       ]
     },
@@ -1300,6 +1314,16 @@
   "latest_by_platform_24h": {
     "news": [
       {
+        "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:07:30"
+      },
+      {
+        "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:06:53"
+      },
+      {
         "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
         "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
         "time": "2026-04-21 14:45:00"
@@ -1408,16 +1432,21 @@
         "title": "鴨子划水！科技圈悄悄點頭　盧秀燕AI布局早已開跑 - ETtoday新聞雲",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlV1FpSkthRW1OaVNNZlpINV92aDNfVjRES3VibUwzeG5uY1UzeWQ0UjVTMEdtTmlleWVndzcwTG8ycFRKWkRsUXZNbkxheE1mc3FiZ3NkY0MwbUdVMFHSAWhBVV95cUxNQWI5X1NtRGhyNHotRHhRNFBsZGplVUxnTTRza2R6eDU1R3BlSURfYUZoMEdCeUFDblNTbnRyNUJ5YUdBSDFRQUlXNUM0alcwZnU4a0ZBWHRuY3BzSmNROEpTTjRjSHU3Xw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
         "time": "2026-04-20 17:54:00"
-      },
-      {
-        "title": "盧秀燕聲援商總：政府別用意識形態卡經濟 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQQ2Ytb2Y5cVltS2FSQXdrUHBtYnNLS3V4OVJqLV82WTJZSTNCNzBuQW15SUNHcFQwUWs0ZWgxRTNldnlUZEM1UHZmWnVUd0hkZGx2d2F0RVVaR3BBWVpSNFh4M1g3S0hXUVBzSDEwN3lQZlE1LXpqS3lMOV9LeGNyMTNZUGxpemFpX3F5dnhpLVJFXzZYbGQ1cEE5dllmWlZudk56UEx2U29yV0JYdE00M0NGYk93aUY0TDBtRDZFV2JWdTkxUjh0RXRlam9oVTFtRzVFUW41ZzB6YXhIU3NqdTE4TloyaDR3bU81U3J5M1BacHdpLTJqS29wbGlZN0JVRzc1cnVURWlfeGtUTWV2bHRUS3plSE1DbWJVTjQ5dHB6OURIU2g1cGZ0SWo?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-04-20 15:32:51"
       }
     ]
   },
   "latest_by_platform_7d": {
     "news": [
+      {
+        "title": "台中清潔隊偷倒餿水！議員抱桶怒抗議 盧秀燕：開罰重懲 - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPYTd6MWFNMnJIaEJSN0tmMVE2cXFwNWNRc25RQzV6aExzZ3R2NVBVTWp5OEZIbkFjeVJMNVpMcGJucVJ0Vk5tWjZVcUVET1JxbUdQMkdmcGdaMzQ3X2hnMl9SRVBZa1hQdmxkQl9rM2xOX214V3lYeWVZWllBY3JfRkhlZndObGs5XzFob19lYktpdHhHNTZIT3FQRWhtUFNrcEZsMk1uaXJNTlQ5Y0swZzNpZjNKbElmSFl1VXNpd1JVc3g5MnZ1Vm00UlhTZjEzdVk3OGZZY1B1NUxmSzg4NDQ0SWhEeC1DaDZIa1Z6SzQ4X2lIU2oyT3lWWDR2cEpaRzlISkxsSTI5VGlwM1R4ZjlyODA1WjJLSGtxbm1DS2p6TEx5Nnkwb1pES0hualJnR28zam92RU1Ha2dtX2EyQzljQU5JMy1FT3NiLU1hUEZkQWRYVnhndms3NW9NTzc3YWg0dlpGVWFDd0k?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:07:30"
+      },
+      {
+        "title": "盧秀燕受訪談軍購案 (圖) - Yahoo新聞",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcFpPYVI0V3hELXNqVzh6UHJ1bjYzQ0dqRGhvVW9xdExCMk1jM3lnelJTVFMyMUh2MWxaMVd4Qm5JWkhCanRTMnJFOWcwaHdFN0JQNlphd2w3MmNua3V5Q1pLSmdldzQtSGJ1VVFrWFBheVZmX1UxUkdsbE5WMUNkVnBMLTRtVWFUZE5saXFmUE1hUkh6X0NWaUVuVE5WdWxQSVJZUmNlSTVSWFBEOGliak9Wa2xMODYzUkFRNkdvbXBoaWFEYnF4eTdCOWE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+        "time": "2026-04-21 15:06:53"
+      },
       {
         "title": "台中首推「腸病毒71型疫苗補助」4/27上路 盧秀燕：強化嬰幼兒健康防護 - Yahoo新聞",
         "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQRUw3WmJnQzBtLWZYYi1ob21GLVo4clFXVDJkaFRKQnZ3LTVfMVo5ZTNxU2xOYk9PY0ZVU0t0WmVYbjhSWFF0dE0tY1JzVk5MSFl2cmVvN1RtZlhzNV9ZY0ZhaGd6UXFwSFN1djNLcnZnSnVvWjVleWRESHhac0p4akVsSGVicGRjUGU4OVZBVjNKMUVLd2xjeHBjdkNlcWFkckxjX3BXbGFSTm5ERzN0MnpGMG1fT1RhbWR2cEl3X252dGhCcUhibHlBbHFBY2F5cGJFUU5XWEJXTnh6YzJENWRhbVBrQlNvam9XdE9HZTJnU2Z4RWd0SGdIMGNFVE53N25iVGtySFZfcGNVWHdVV3dQZEUwVDlvYXJBdVMweFp1T216OVlKQUF6QQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
