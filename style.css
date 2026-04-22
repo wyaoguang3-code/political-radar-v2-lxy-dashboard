@@ -29,6 +29,12 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .platform-box ol{margin:0;padding-left:18px}
 .platform-box li{margin:6px 0}
 
+.social-signal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.social-card{border:1px solid #2a335f;border-radius:10px;padding:10px;background:#0f1630}
+.social-card h3{margin:0 0 8px 0;color:#d8e2ff;font-size:15px}
+.social-row{display:flex;gap:8px;align-items:center;justify-content:space-between;font-size:14px;margin:6px 0}
+.social-row .tag{font-weight:700}
+
 @media (max-width: 640px){
   body{padding:12px}
   header{flex-direction:column;align-items:flex-start;gap:6px}

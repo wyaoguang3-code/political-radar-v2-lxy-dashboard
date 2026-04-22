@@ -19,6 +19,12 @@ async function run(){
   const res = await fetch('./data.json?t='+Date.now());
   const d = await res.json();
 
+  let socialSignals = null;
+  try {
+    const sres = await fetch('./social_signals.json?t='+Date.now());
+    if (sres.ok) socialSignals = await sres.json();
+  } catch {}
+
   const m = pick(d, 'metrics', 'metrics_7d') || {};
   document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false});
   document.getElementById('modeHint').textContent = mode==='7d' ? '（近7日聚合）' : '（近24h）';
@@ -38,6 +44,25 @@ async function run(){
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
   byPlatform.forEach(x=>{ const li=document.createElement('li'); li.textContent=`${x.platform}: ${x.count}`; ul.appendChild(li); });
+
+  const sigWrap = document.getElementById('socialSignals');
+  if (sigWrap) {
+    sigWrap.innerHTML = '';
+    const platforms = ['facebook', 'instagram', 'threads'];
+    platforms.forEach((p) => {
+      const s = (socialSignals && socialSignals[p]) || { total: 0, red: 0, yellow: 0, green: 0, updated_at: '-' };
+      const card = document.createElement('div');
+      card.className = 'social-card';
+      card.innerHTML = `
+        <h3>${p.toUpperCase()}（總數 ${s.total || 0}）</h3>
+        <div class="social-row"><span class="tag">🔴 紅燈</span><strong>${s.red || 0}</strong></div>
+        <div class="social-row"><span class="tag">🟡 黃燈</span><strong>${s.yellow || 0}</strong></div>
+        <div class="social-row"><span class="tag">🟢 綠燈</span><strong>${s.green || 0}</strong></div>
+        <div class="social-row" style="opacity:.75;font-size:12px"><span>更新</span><span>${s.updated_at || '-'}</span></div>
+      `;
+      sigWrap.appendChild(card);
+    });
+  }
 
   const topNews = pick(d, 'top_news', 'top_news_7d') || [];
   const news = document.getElementById('news'); news.innerHTML='';
@@ -123,6 +148,32 @@ async function run(){
     data:{ labels:names, datasets:[{data:vals, backgroundColor:['#20c997','#4f8cff','#ffc107','#e83e8c','#fd7e14']}] },
     options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}}}}
   });
+
+  // 盧秀燕社群留言燈號（FB / IG / Threads）
+  const socialWrap = document.getElementById('socialSignals');
+  if (socialWrap) {
+    const ss = d.social_signals || {};
+    const platforms = ['facebook','instagram','threads'];
+    const labels = { facebook: 'Facebook', instagram: 'Instagram', threads: 'Threads' };
+    socialWrap.innerHTML = '';
+    platforms.forEach((k) => {
+      const s = ss[k] || {};
+      const total = Number(s.total || 0);
+      const green = Number(s.green || 0);
+      const yellow = Number(s.yellow || 0);
+      const red = Number(s.red || 0);
+      const card = document.createElement('div');
+      card.className = 'social-card';
+      card.innerHTML = `
+        <h3>${labels[k]}</h3>
+        <div class="social-row"><span>總留言</span><b>${total}</b></div>
+        <div class="social-row"><span class="tag">🟢 綠燈</span><b>${green}</b></div>
+        <div class="social-row"><span class="tag">🟡 黃燈</span><b>${yellow}</b></div>
+        <div class="social-row"><span class="tag">🔴 紅燈</span><b>${red}</b></div>
+      `;
+      socialWrap.appendChild(card);
+    });
+  }
 }
 
 function initCollapsibles(){
