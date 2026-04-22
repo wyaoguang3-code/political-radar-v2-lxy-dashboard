@@ -305,21 +305,45 @@ function renderTrendsChart(topic){
         backgroundColor: 'rgba(127,192,255,0.18)',
         fill: true,
         tension: 0.15,
-        pointRadius: 0,
-        pointHoverRadius: 4,
-        borderWidth: 1.6,
+        pointRadius: 0,           // baseline: dots hidden for a clean line
+        pointHoverRadius: 5,      // highlight the point under the cursor
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#7fc0ff',
+        pointHoverBorderWidth: 2,
+        borderWidth: 1.8,
       }],
     },
     options: {
+      // Index mode: hover anywhere on the x-axis shows the nearest week's
+      // tooltip (instead of requiring a pixel-exact hover on a data point).
+      interaction: { mode: 'index', intersect: false, axis: 'x' },
+      hover: { mode: 'index', intersect: false },
       plugins: {
         legend: { labels: { color: '#b9c3f2' } },
-        tooltip: { callbacks: { label: (ctx) => `${ctx.parsed.y} (${ctx.label})` } },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          backgroundColor: 'rgba(18, 25, 53, 0.96)',
+          borderColor: '#5a79ff',
+          borderWidth: 1,
+          titleColor: '#d8e2ff',
+          bodyColor: '#e8ecff',
+          padding: 10,
+          cornerRadius: 8,
+          titleFont: { weight: '600', size: 13 },
+          bodyFont: { size: 13 },
+          displayColors: false,
+          callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => `熱度：${ctx.parsed.y} / 100`,
+          },
+        },
       },
       scales: {
         x: {
           ticks: {
             color: '#b9c3f2',
-            maxTicksLimit: 8,   // 262 個點不能都顯示 label，Chart.js 挑一個子集
+            maxTicksLimit: 8,   // 262 個點，Chart.js 自動挑子集顯示 label
             maxRotation: 0,
             autoSkip: true,
           },
@@ -333,6 +357,7 @@ function renderTrendsChart(topic){
       },
     },
   });
+  canvas.style.cursor = 'crosshair';   // affordance: hints the line is interactive
   if (meta){
     const fetched = gt.fetched_at ? new Date(gt.fetched_at).toLocaleString('zh-TW', { hour12: false }) : '—';
     const stale = gt.stale ? `<span class="trends-warn">（快取資料，最新一次 fetch 失敗）</span>` : '';
