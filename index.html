@@ -73,6 +73,31 @@
     </div>
   </section>
 
+  <section class="panel collapsible" id="panel-topic-heat">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="topicHeatWrap">
+      <h2>議題熱度追蹤</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="topicHeatWrap">
+      <div class="topic-controls">
+        <label for="topicSelect">選擇議題：</label>
+        <select id="topicSelect"></select>
+        <span class="topic-info" id="topicInfo"></span>
+      </div>
+
+      <h3 class="topic-section-title">Google Trends（過去 5 年，台灣）</h3>
+      <p class="hint">官方 Google Trends 資料（0–100 相對熱度、週頻率彙整）。若下方出現空白，可按右鍵重新載入或直接前往原頁查看。</p>
+      <div class="topic-iframe-wrap">
+        <iframe id="topicTrendsIframe" title="Google Trends" loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      </div>
+
+      <h3 class="topic-section-title">我方爬取之留言提及數（近期 snapshot 覆蓋範圍）</h3>
+      <p class="hint">將各平台 snapshot 中的相對時間（如「4天」「3小時」）換算回絕對日期後，按日彙整的提及筆數。涵蓋日期取決於最近幾次爬取的時間窗。</p>
+      <canvas id="topicOwnChart" height="120"></canvas>
+    </div>
+  </section>
+
   <section class="panel collapsible" id="panel-red-comments">
     <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="redCommentsWrap">
       <h2>紅燈留言清單（最新一輪，所有平台）</h2>

@@ -1,4 +1,4 @@
-let hourChart, platformChart, mentionChart, redTrendChart;
+let hourChart, platformChart, mentionChart, redTrendChart, topicOwnChart;
 let mode = '24h';
 
 // In-memory cache of the latest fetched comment lists + history, so the modal
@@ -7,6 +7,8 @@ const state = {
   socialSignals: null,
   comments: { facebook: [], instagram: [], threads: [] },
   history: { facebook: [], instagram: [], threads: [] },
+  topicHeat: null,
+  selectedTopicId: null,
 };
 
 const LIGHT_ICON = { '紅':'🔴', '黃':'🟡', '綠':'🟢' };
@@ -198,6 +200,88 @@ function renderRedCommentsPanel(){
   }
 }
 
+// --------- Topic heat (Google Trends iframe + our-data chart) ---------
+function buildTrendsIframeUrl(topic){
+  const req = JSON.stringify({
+    comparisonItem: [{ keyword: topic.trends_keyword, geo: topic.geo || 'TW', time: topic.time_range || 'today 5-y' }],
+    category: 0,
+    property: '',
+  });
+  return `https://trends.google.com/trends/embed/explore/TIMESERIES?req=${encodeURIComponent(req)}&hl=zh-TW&tz=-480`;
+}
+
+function renderTopicHeat(){
+  const heat = state.topicHeat;
+  if (!heat || !heat.topics || !heat.topics.length) return;
+  const sel = document.getElementById('topicSelect');
+  if (!sel) return;
+  // Rebuild select options only if changed
+  const existingIds = Array.from(sel.options).map(o => o.value).join(',');
+  const newIds = heat.topics.map(t => t.id).join(',');
+  if (existingIds !== newIds){
+    sel.innerHTML = '';
+    heat.topics.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t.id; opt.textContent = t.label;
+      sel.appendChild(opt);
+    });
+  }
+  if (!state.selectedTopicId || !heat.topics.some(t => t.id === state.selectedTopicId)){
+    state.selectedTopicId = heat.topics[0].id;
+  }
+  sel.value = state.selectedTopicId;
+  const topic = heat.topics.find(t => t.id === state.selectedTopicId) || heat.topics[0];
+  // Google Trends iframe
+  const iframe = document.getElementById('topicTrendsIframe');
+  if (iframe){
+    const url = buildTrendsIframeUrl(topic);
+    if (iframe.src !== url) iframe.src = url;
+  }
+  // Info text
+  const info = document.getElementById('topicInfo');
+  if (info){
+    const total = topic.our_data?.total || 0;
+    const kws = (topic.match_keywords || []).join('、');
+    info.textContent = `（關鍵字：${kws}　我方共 ${total} 則）`;
+  }
+  // Our-data bar chart
+  const canvas = document.getElementById('topicOwnChart');
+  if (!canvas) return;
+  const daily = topic.our_data?.daily || [];
+  const labels = daily.map(d => d.date);
+  const counts = daily.map(d => d.count);
+  topicOwnChart = upsertChart(topicOwnChart, canvas, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: `提及數（${topic.label}）`,
+        data: counts,
+        backgroundColor: '#4f8cff',
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      plugins: { legend: { labels: { color: '#b9c3f2' } } },
+      scales: {
+        x: { ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
+        y: { ticks: { color: '#b9c3f2', precision: 0 }, beginAtZero: true, grid: { color: 'rgba(120,140,200,0.08)' } },
+      },
+    },
+  });
+}
+
+function initTopicHeat(){
+  const sel = document.getElementById('topicSelect');
+  if (sel && !sel.dataset.bound){
+    sel.dataset.bound = '1';
+    sel.addEventListener('change', () => {
+      state.selectedTopicId = sel.value;
+      renderTopicHeat();
+    });
+  }
+}
+
 // --------- Drilldown modal ---------
 const modalState = { platform: 'facebook', filter: 'all' };
 
@@ -298,6 +382,7 @@ async function run(){
   state.comments.facebook = await fetchJSON('./comments_facebook.json') || [];
   state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
   state.comments.threads = await fetchJSON('./comments_threads.json') || [];
+  state.topicHeat = await fetchJSON('./topic_heat.json') || null;
 
   const m = pick(d, 'metrics', 'metrics_7d') || {};
   document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false});
@@ -324,6 +409,7 @@ async function run(){
   updateAlertBanner();
   renderRedTrendChart();
   renderRedCommentsPanel();
+  renderTopicHeat();
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
@@ -437,5 +523,6 @@ function initModes(){
 initCollapsibles();
 initModes();
 initModal();
+initTopicHeat();
 run();
 setInterval(run,60000);
