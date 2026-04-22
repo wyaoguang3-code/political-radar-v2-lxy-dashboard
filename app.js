@@ -27,6 +27,27 @@ function upsertChart(instance, ctx, config){
   return new Chart(ctx, config);
 }
 
+// Shared tooltip style matching the dashboard's dark theme.
+// Pass { callbacks: {...}, mode, displayColors } etc. to override.
+function darkTooltip(overrides){
+  return Object.assign({
+    backgroundColor: 'rgba(18, 25, 53, 0.96)',
+    borderColor: '#5a79ff',
+    borderWidth: 1,
+    titleColor: '#d8e2ff',
+    bodyColor: '#e8ecff',
+    padding: 10,
+    cornerRadius: 8,
+    titleFont: { weight: '600', size: 13 },
+    bodyFont: { size: 13 },
+    displayColors: true,      // default true so multi-series charts still show color dots
+    intersect: false,
+  }, overrides || {});
+}
+
+// For line/bar charts with a time/category x-axis: "hover anywhere on x" behavior.
+const INDEX_HOVER = { mode: 'index', intersect: false, axis: 'x' };
+
 function pick(d, key24, key7){ return mode==='7d' ? (d[key7] ?? d[key24]) : d[key24]; }
 
 function escapeHtml(s){
@@ -146,11 +167,30 @@ function renderRedTrendChart(){
     };
   });
 
+  // Enhance dataset styling for nicer hover markers
+  datasets.forEach(ds => {
+    ds.pointRadius = 0;
+    ds.pointHoverRadius = 5;
+    ds.pointHoverBackgroundColor = '#fff';
+    ds.pointHoverBorderColor = ds.borderColor;
+    ds.pointHoverBorderWidth = 2;
+    ds.borderWidth = 1.8;
+  });
   redTrendChart = upsertChart(redTrendChart, canvas, {
     type: 'line',
     data: { labels: labels.map(fmtLabel), datasets },
     options: {
-      plugins: { legend: { labels: { color: '#b9c3f2' } } },
+      interaction: INDEX_HOVER,
+      hover: INDEX_HOVER,
+      plugins: {
+        legend: { labels: { color: '#b9c3f2' } },
+        tooltip: darkTooltip({
+          mode: 'index',
+          callbacks: {
+            label: (ctx) => ` ${ctx.dataset.label}：${ctx.parsed.y == null ? '—' : ctx.parsed.y.toFixed(1) + '%'}`,
+          },
+        }),
+      },
       scales: {
         x: { ticks: { color: '#b9c3f2', maxRotation: 30 } },
         y: { ticks: { color: '#b9c3f2', callback: v => v + '%' }, beginAtZero: true, suggestedMax: 50 },
@@ -262,11 +302,24 @@ function renderTopicHeat(){
         label: `提及數（${topic.label}）`,
         data: counts,
         backgroundColor: '#4f8cff',
+        hoverBackgroundColor: '#7fc0ff',
         borderRadius: 4,
       }],
     },
     options: {
-      plugins: { legend: { labels: { color: '#b9c3f2' } } },
+      interaction: INDEX_HOVER,
+      hover: INDEX_HOVER,
+      plugins: {
+        legend: { labels: { color: '#b9c3f2' } },
+        tooltip: darkTooltip({
+          mode: 'index',
+          displayColors: false,
+          callbacks: {
+            title: (items) => items[0]?.label || '',
+            label: (ctx) => `提及：${ctx.parsed.y} 則`,
+          },
+        }),
+      },
       scales: {
         x: { ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
         y: { ticks: { color: '#b9c3f2', precision: 0 }, beginAtZero: true, grid: { color: 'rgba(120,140,200,0.08)' } },
@@ -579,20 +632,74 @@ async function run(){
 
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
     type:'line',
-    data:{ labels:byHour.map(x=>(x.hour||'').slice(5,16)), datasets:[{label:'mentions', data:byHour.map(x=>x.count||0), borderColor:'#7fc0ff', backgroundColor:'rgba(127,192,255,0.2)', tension:0.25, fill:true}] },
-    options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}}}}
+    data:{
+      labels:byHour.map(x=>(x.hour||'').slice(5,16)),
+      datasets:[{
+        label:'聲量', data:byHour.map(x=>x.count||0),
+        borderColor:'#7fc0ff', backgroundColor:'rgba(127,192,255,0.2)',
+        tension:0.25, fill:true,
+        pointRadius:0, pointHoverRadius:5,
+        pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#7fc0ff',
+      }],
+    },
+    options:{
+      interaction: INDEX_HOVER,
+      hover: INDEX_HOVER,
+      plugins:{
+        legend:{display:false},
+        tooltip: darkTooltip({
+          mode: 'index',
+          displayColors: false,
+          callbacks: { label: (ctx) => `聲量：${ctx.parsed.y}` },
+        }),
+      },
+      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}}
+    }
   });
 
   platformChart = upsertChart(platformChart, document.getElementById('platformChart'), {
     type:'doughnut',
     data:{ labels:byPlatform.map(x=>x.platform), datasets:[{data:byPlatform.map(x=>x.count), backgroundColor:['#4f8cff','#20c997','#ffc107','#e83e8c','#fd7e14','#6f42c1','#adb5bd']}] },
-    options:{plugins:{legend:{labels:{color:'#b9c3f2'}}}}
+    options:{
+      plugins:{
+        legend:{labels:{color:'#b9c3f2'}},
+        tooltip: darkTooltip({
+          callbacks: {
+            label: (ctx) => {
+              const total = ctx.dataset.data.reduce((a,b)=>a+b, 0);
+              const pct = total ? (ctx.parsed / total * 100).toFixed(1) : 0;
+              return ` ${ctx.label}：${ctx.parsed}（${pct}%）`;
+            },
+          },
+        }),
+      },
+    }
   });
 
   mentionChart = upsertChart(mentionChart, document.getElementById('mentionChart'), {
     type:'bar',
-    data:{ labels:names, datasets:[{data:vals, backgroundColor:['#20c997','#4f8cff','#ffc107','#e83e8c','#fd7e14']}] },
-    options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}}}}
+    data:{
+      labels:names,
+      datasets:[{
+        label:'提及數', data:vals,
+        backgroundColor:['#20c997','#4f8cff','#ffc107','#e83e8c','#fd7e14'],
+        borderRadius:4,
+        hoverBackgroundColor:'#ffffff40',
+      }],
+    },
+    options:{
+      interaction: INDEX_HOVER,
+      hover: INDEX_HOVER,
+      plugins:{
+        legend:{display:false},
+        tooltip: darkTooltip({
+          mode: 'index',
+          displayColors: false,
+          callbacks: { label: (ctx) => `提及：${ctx.parsed.y} 則` },
+        }),
+      },
+      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}}
+    }
   });
 }
 
