@@ -12,6 +12,9 @@
     <p id="updated">更新中...</p>
   </header>
 
+  <!-- Red-ratio alert banner (shown dynamically by app.js) -->
+  <div id="alertBanner" class="alert-banner hidden" role="status" aria-live="polite"></div>
+
   <section class="panel" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
     <strong>資料視窗：</strong>
     <button id="mode24" type="button">24h</button>
@@ -55,8 +58,30 @@
 
   <section class="panel" id="socialSignalPanel">
     <h2>盧秀燕社群留言燈號分佈（FB / IG / Threads）</h2>
+    <p class="hint">點擊卡片查看該平台的實際留言明細；也可以切換上方 [🔴 紅 / 🟡 黃 / 🟢 綠] 篩選。</p>
     <div class="social-signal-grid" id="socialSignals"></div>
-    <p class="hint">來源：各平台爬取留言後之紅黃綠分燈結果（最新一輪）。</p>
+  </section>
+
+  <section class="panel collapsible" id="panel-red-trend">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="redTrendWrap">
+      <h2>紅燈比例趨勢</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="redTrendWrap">
+      <p class="hint">各平台歷次快照的紅燈比例 (%)，越高代表該時段負面言論比重越大。</p>
+      <canvas id="redTrendChart" height="140"></canvas>
+    </div>
+  </section>
+
+  <section class="panel collapsible" id="panel-red-comments">
+    <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="redCommentsWrap">
+      <h2>紅燈留言清單（最新一輪，所有平台）</h2>
+      <span class="chev">▾</span>
+    </button>
+    <div class="panel-content" id="redCommentsWrap">
+      <p class="hint">依平台分組顯示所有被判為紅燈的留言；有原文連結的會以連結呈現。</p>
+      <div id="redComments"></div>
+    </div>
   </section>
 
   <section class="panel collapsible" id="panel-platform-detail">
@@ -131,6 +156,25 @@
       </div>
     </div>
   </section>
+
+  <!-- Drilldown modal: per-platform comment viewer w/ light filter -->
+  <div id="commentsModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h2 id="modalTitle">留言清單</h2>
+        <button id="modalClose" class="modal-close" type="button" aria-label="關閉">✕</button>
+      </div>
+      <div class="modal-filters" id="modalFilters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="red">🔴 紅</button>
+        <button class="filter-btn" data-filter="yellow">🟡 黃</button>
+        <button class="filter-btn" data-filter="green">🟢 綠</button>
+      </div>
+      <div class="modal-summary" id="modalSummary"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./app.js"></script>

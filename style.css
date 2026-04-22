@@ -7,6 +7,7 @@ h1{margin:0;font-size:clamp(22px,5vw,32px)}
 .card,.panel{background:#121935;border:1px solid #2a335f;border-radius:12px;padding:12px;min-width:0}
 .card h3{margin:0 0 6px 0;font-size:14px;color:#b9c3f2}
 .num{font-size:24px;font-weight:700;word-break:break-word}
+.panel{margin-bottom:14px}
 .panel h2{margin:0 0 8px 0;font-size:18px}
 .panel h3{margin:0 0 6px 0;font-size:15px;color:#b9c3f2}
 .panel-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:transparent;border:0;color:inherit;padding:0;cursor:pointer;text-align:left}
@@ -29,11 +30,64 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .platform-box ol{margin:0;padding-left:18px}
 .platform-box li{margin:6px 0}
 
+/* ============ Social signal cards (now clickable) ============ */
 .social-signal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.social-card{border:1px solid #2a335f;border-radius:10px;padding:10px;background:#0f1630}
+.social-card{border:1px solid #2a335f;border-radius:10px;padding:10px;background:#0f1630;cursor:pointer;transition:border-color .15s,transform .1s,background .15s;text-align:left}
+.social-card:hover{border-color:#5a79ff;background:#131d45}
+.social-card:active{transform:scale(0.99)}
+.social-card:focus-visible{outline:2px solid #7fc0ff;outline-offset:2px}
 .social-card h3{margin:0 0 8px 0;color:#d8e2ff;font-size:15px}
 .social-row{display:flex;gap:8px;align-items:center;justify-content:space-between;font-size:14px;margin:6px 0}
 .social-row .tag{font-weight:700}
+.social-card .drill-hint{margin-top:8px;font-size:11px;color:#8da0d8;opacity:.7;font-style:italic}
+
+/* ============ Red-ratio alert banner ============ */
+.alert-banner{padding:12px 16px;border-radius:10px;font-weight:600;margin-bottom:14px;display:flex;gap:10px;align-items:center;animation:alertPulse 2.2s ease-in-out infinite}
+.alert-banner.hidden{display:none}
+.alert-banner.level-red{background:linear-gradient(90deg,#5b1d2a,#7a2235);color:#ffd0d8;border:1px solid #a33348}
+.alert-banner.level-yellow{background:linear-gradient(90deg,#4a3c10,#5e4d18);color:#ffe6a3;border:1px solid #8f721d;animation:none}
+.alert-banner .icon{font-size:22px;line-height:1}
+.alert-banner .msg{flex:1;font-size:14px}
+.alert-banner .platform-chips{display:flex;gap:6px;flex-wrap:wrap}
+.alert-banner .chip{background:rgba(255,255,255,0.1);padding:2px 8px;border-radius:999px;font-size:12px;font-weight:500}
+@keyframes alertPulse{
+  0%, 100% { box-shadow: 0 0 0 0 rgba(163,51,72,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(163,51,72,0); }
+}
+
+/* ============ Red comments list (grouped by platform) ============ */
+.red-group{border:1px solid #3a1f2a;border-radius:10px;padding:10px;margin:10px 0;background:#1a0f16}
+.red-group h3{margin:0 0 6px 0;font-size:14px;color:#ffb3bf}
+.red-group ul{padding-left:18px}
+.red-group li{margin:6px 0;color:#f0e0e4;line-height:1.5}
+.red-group .author{color:#ffb3bf;font-weight:600}
+.red-group .when{color:#9fb0ea;font-size:12px;margin-left:6px}
+
+/* ============ Modal (drilldown viewer) ============ */
+.modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal.hidden{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(4,8,24,0.75);backdrop-filter:blur(4px)}
+.modal-panel{position:relative;background:#121935;border:1px solid #2a335f;border-radius:14px;width:min(820px, 95vw);max-height:85vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid #2a335f}
+.modal-header h2{margin:0;font-size:17px}
+.modal-close{background:transparent;border:0;color:#d8e2ff;font-size:20px;cursor:pointer;padding:4px 8px;line-height:1;border-radius:6px}
+.modal-close:hover{background:#1d2a4f}
+.modal-filters{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid #2a335f;flex-wrap:wrap}
+.filter-btn{background:#1d2a4f;border:1px solid #2a335f;color:#b9c3f2;padding:4px 12px;border-radius:999px;font-size:13px;cursor:pointer;font-weight:500;transition:background .12s,border-color .12s}
+.filter-btn:hover{background:#2a335f}
+.filter-btn.active{background:#2b4b9e;border-color:#5a79ff;color:#fff}
+.modal-summary{padding:8px 18px;color:#9fb0ea;font-size:13px;border-bottom:1px solid #2a335f}
+.modal-body{overflow-y:auto;padding:8px 14px 14px 14px;flex:1}
+.comment-item{padding:10px 12px;border:1px solid #2a335f;border-radius:8px;margin:8px 0;background:#0f1630}
+.comment-item .hdr{display:flex;gap:8px;align-items:center;margin-bottom:4px;font-size:13px;flex-wrap:wrap}
+.comment-item .author{font-weight:600;color:#d8e2ff}
+.comment-item .when{color:#9fb0ea;font-size:12px}
+.comment-item .light-chip{padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700}
+.comment-item .light-chip.red{background:#5b1d2a;color:#ffb3bf}
+.comment-item .light-chip.yellow{background:#594a16;color:#ffe08a}
+.comment-item .light-chip.green{background:#1a5031;color:#9ff0b5}
+.comment-item .text{color:#e8ecff;font-size:14px;line-height:1.55;white-space:pre-wrap}
+.comment-item .linkrow{margin-top:4px;font-size:12px}
 
 @media (max-width: 640px){
   body{padding:12px}
@@ -45,4 +99,6 @@ canvas{max-width:100%;margin:4px 0 8px 0}
   .card,.panel{padding:10px}
   .num{font-size:22px}
   .panel h2{font-size:16px}
+  .modal{padding:10px}
+  .modal-panel{max-height:92vh;width:100%}
 }
