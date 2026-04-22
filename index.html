@@ -86,10 +86,12 @@
       </div>
 
       <h3 class="topic-section-title">Google Trends（過去 5 年，台灣）</h3>
-      <p class="hint">官方 Google Trends 資料（0–100 相對熱度、週頻率彙整）。若下方出現空白，可按右鍵重新載入或直接前往原頁查看。</p>
-      <div class="topic-iframe-wrap">
-        <iframe id="topicTrendsIframe" title="Google Trends" loading="lazy"
-                sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      <p class="hint">點下方按鈕會在新分頁開啟 Google Trends 官方頁面（時間軸 5 年、地區台灣、週頻率彙整）。</p>
+      <div class="topic-external-row">
+        <a id="topicTrendsLink" class="topic-external-btn" href="#" target="_blank" rel="noopener">
+          🔎 <span id="topicTrendsLinkLabel">在 Google Trends 查看</span>
+        </a>
+        <span class="topic-external-hint">資料來源：trends.google.com</span>
       </div>
 
       <h3 class="topic-section-title">我方爬取之留言提及數（近期 snapshot 覆蓋範圍）</h3>

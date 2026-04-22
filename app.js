@@ -201,13 +201,14 @@ function renderRedCommentsPanel(){
 }
 
 // --------- Topic heat (Google Trends iframe + our-data chart) ---------
-function buildTrendsIframeUrl(topic){
-  const req = JSON.stringify({
-    comparisonItem: [{ keyword: topic.trends_keyword, geo: topic.geo || 'TW', time: topic.time_range || 'today 5-y' }],
-    category: 0,
-    property: '',
-  });
-  return `https://trends.google.com/trends/embed/explore/TIMESERIES?req=${encodeURIComponent(req)}&hl=zh-TW&tz=-480`;
+// Link to the public Google Trends explore page (opens in a new tab).
+// trends.google.com blocks iframe embedding from most origins, so we link out
+// instead of iframing — cleaner and always works.
+function buildTrendsExploreUrl(topic){
+  const q = encodeURIComponent(topic.trends_keyword);
+  const geo = encodeURIComponent(topic.geo || 'TW');
+  const date = encodeURIComponent(topic.time_range || 'today 5-y');
+  return `https://trends.google.com/trends/explore?date=${date}&geo=${geo}&q=${q}&hl=zh-TW`;
 }
 
 function renderTopicHeat(){
@@ -231,11 +232,12 @@ function renderTopicHeat(){
   }
   sel.value = state.selectedTopicId;
   const topic = heat.topics.find(t => t.id === state.selectedTopicId) || heat.topics[0];
-  // Google Trends iframe
-  const iframe = document.getElementById('topicTrendsIframe');
-  if (iframe){
-    const url = buildTrendsIframeUrl(topic);
-    if (iframe.src !== url) iframe.src = url;
+  // Google Trends — external link (iframe embed is unreliable cross-origin).
+  const link = document.getElementById('topicTrendsLink');
+  const linkLabel = document.getElementById('topicTrendsLinkLabel');
+  if (link){
+    link.href = buildTrendsExploreUrl(topic);
+    if (linkLabel) linkLabel.textContent = `在 Google Trends 查看「${topic.label}」`;
   }
   // Info text
   const info = document.getElementById('topicInfo');
