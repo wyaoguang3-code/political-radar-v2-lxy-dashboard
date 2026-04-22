@@ -86,12 +86,14 @@
       </div>
 
       <h3 class="topic-section-title">Google Trends（過去 5 年，台灣）</h3>
-      <p class="hint">點下方按鈕會在新分頁開啟 Google Trends 官方頁面（時間軸 5 年、地區台灣、週頻率彙整）。</p>
+      <p class="hint">週頻率相對熱度（0–100，峰值 = 100）。資料透過後端 pytrends 每日一次抓取並快取於 <code>cache/google_trends/</code>；峰值代表該週搜尋量相對最高。</p>
+      <canvas id="topicTrendsChart" height="140"></canvas>
+      <div class="topic-trends-meta" id="topicTrendsMeta"></div>
       <div class="topic-external-row">
         <a id="topicTrendsLink" class="topic-external-btn" href="#" target="_blank" rel="noopener">
-          🔎 <span id="topicTrendsLinkLabel">在 Google Trends 查看</span>
+          🔎 <span id="topicTrendsLinkLabel">在 Google Trends 查看互動版</span>
         </a>
-        <span class="topic-external-hint">資料來源：trends.google.com</span>
+        <span class="topic-external-hint">點此前往官方頁面查看互動式圖表</span>
       </div>
 
       <h3 class="topic-section-title">我方爬取之留言提及數（近期 snapshot 覆蓋範圍）</h3>

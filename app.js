@@ -1,4 +1,4 @@
-let hourChart, platformChart, mentionChart, redTrendChart, topicOwnChart;
+let hourChart, platformChart, mentionChart, redTrendChart, topicOwnChart, topicTrendsChart;
 let mode = '24h';
 
 // In-memory cache of the latest fetched comment lists + history, so the modal
@@ -232,13 +232,15 @@ function renderTopicHeat(){
   }
   sel.value = state.selectedTopicId;
   const topic = heat.topics.find(t => t.id === state.selectedTopicId) || heat.topics[0];
-  // Google Trends — external link (iframe embed is unreliable cross-origin).
+  // Google Trends external link (interactive version, opens in new tab)
   const link = document.getElementById('topicTrendsLink');
   const linkLabel = document.getElementById('topicTrendsLinkLabel');
   if (link){
     link.href = buildTrendsExploreUrl(topic);
-    if (linkLabel) linkLabel.textContent = `在 Google Trends 查看「${topic.label}」`;
+    if (linkLabel) linkLabel.textContent = `在 Google Trends 查看「${topic.label}」互動版`;
   }
+  // Google Trends inline line chart (5y weekly series fetched by pytrends)
+  renderTrendsChart(topic);
   // Info text
   const info = document.getElementById('topicInfo');
   if (info){
@@ -271,6 +273,73 @@ function renderTopicHeat(){
       },
     },
   });
+}
+
+function renderTrendsChart(topic){
+  const canvas = document.getElementById('topicTrendsChart');
+  const meta = document.getElementById('topicTrendsMeta');
+  if (!canvas) return;
+  const gt = topic.google_trends;
+  if (!gt || !gt.points || !gt.points.length){
+    // Nothing to draw — clear canvas and show a note
+    if (topicTrendsChart){ topicTrendsChart.destroy(); topicTrendsChart = null; }
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (meta) meta.innerHTML = '<span class="trends-warn">⚠️ Google Trends 尚未取得資料（可能 Google 暫時封鎖 pytrends）。請稍後重跑 <code>update_topic_heat_lxy.py</code>。</span>';
+    return;
+  }
+  const pts = gt.points;
+  const labels = pts.map(p => p.date);
+  const values = pts.map(p => p.value);
+  const peak = values.reduce((a,b) => a > b ? a : b, 0);
+  const peakIdx = values.indexOf(peak);
+  const peakDate = labels[peakIdx];
+  topicTrendsChart = upsertChart(topicTrendsChart, canvas, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: `${topic.label} 熱度 (0–100)`,
+        data: values,
+        borderColor: '#7fc0ff',
+        backgroundColor: 'rgba(127,192,255,0.18)',
+        fill: true,
+        tension: 0.15,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        borderWidth: 1.6,
+      }],
+    },
+    options: {
+      plugins: {
+        legend: { labels: { color: '#b9c3f2' } },
+        tooltip: { callbacks: { label: (ctx) => `${ctx.parsed.y} (${ctx.label})` } },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#b9c3f2',
+            maxTicksLimit: 8,   // 262 個點不能都顯示 label，Chart.js 挑一個子集
+            maxRotation: 0,
+            autoSkip: true,
+          },
+          grid: { color: 'rgba(120,140,200,0.06)' },
+        },
+        y: {
+          beginAtZero: true, suggestedMax: 100,
+          ticks: { color: '#b9c3f2', stepSize: 25 },
+          grid: { color: 'rgba(120,140,200,0.08)' },
+        },
+      },
+    },
+  });
+  if (meta){
+    const fetched = gt.fetched_at ? new Date(gt.fetched_at).toLocaleString('zh-TW', { hour12: false }) : '—';
+    const stale = gt.stale ? `<span class="trends-warn">（快取資料，最新一次 fetch 失敗）</span>` : '';
+    meta.innerHTML = `
+      共 ${pts.length} 筆（週頻率）　｜　峰值 <b>${peak}</b> @ ${peakDate}　｜　抓取時間：${fetched} ${stale}
+    `;
+  }
 }
 
 function initTopicHeat(){
