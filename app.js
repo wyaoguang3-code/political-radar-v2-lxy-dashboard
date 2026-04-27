@@ -27,16 +27,17 @@ const DEFAULT_HOTSPOTS = [
     source: 'news',
     platform: '新聞',
     note: '社會治安高關注事件'
-  },
+  }
+];
+
+const COMMENT_EVENT_RULES = [
   {
     title: '廚餘山',
     place: '台中市霧峰區',
     lat: 24.046,
     lng: 120.698,
     level: 'red',
-    source: 'comment',
-    platform: '留言（平台待標註）',
-    note: '留言高頻環境議題'
+    keywords: ['廚餘山', '廚餘']
   },
   {
     title: '垃圾山',
@@ -44,9 +45,7 @@ const DEFAULT_HOTSPOTS = [
     lat: 24.104,
     lng: 120.69,
     level: 'red',
-    source: 'comment',
-    platform: '留言（平台待標註）',
-    note: '留言高頻環境議題'
+    keywords: ['垃圾山']
   }
 ];
 
@@ -533,11 +532,54 @@ function renderModalBody(){
   body.appendChild(frag);
 }
 
+function deriveCommentHotspots(){
+  const out = [];
+  COMMENT_EVENT_RULES.forEach(rule => {
+    const platforms = new Set();
+    let hits = 0;
+    ['facebook','instagram','threads'].forEach(p => {
+      (state.comments[p] || []).forEach(c => {
+        const txt = String(c.text || '');
+        if (rule.keywords.some(k => txt.includes(k))) {
+          hits += 1;
+          platforms.add(PLATFORM_LABEL[p] || p);
+        }
+      });
+    });
+    if (hits > 0) {
+      out.push({
+        title: rule.title,
+        place: rule.place,
+        lat: rule.lat,
+        lng: rule.lng,
+        level: rule.level,
+        source: 'comment',
+        platform: `留言：${Array.from(platforms).join(' / ')}`,
+        note: `自動偵測 ${hits} 則相關留言`
+      });
+    }
+  });
+  return out;
+}
+
 function renderIncidentMap(d){
   const mapEl = document.getElementById('incidentMap');
   if (!mapEl || typeof window.L === 'undefined') return;
 
-  const hotspots = (Array.isArray(d.hotspots) && d.hotspots.length) ? d.hotspots : DEFAULT_HOTSPOTS;
+  let hotspots = (Array.isArray(d.hotspots) && d.hotspots.length) ? d.hotspots : [];
+  if (!hotspots.length) {
+    const autoCommentHotspots = deriveCommentHotspots();
+    hotspots = [...DEFAULT_HOTSPOTS, ...(autoCommentHotspots.length ? autoCommentHotspots : COMMENT_EVENT_RULES.map(r => ({
+      title: r.title,
+      place: r.place,
+      lat: r.lat,
+      lng: r.lng,
+      level: r.level,
+      source: 'comment',
+      platform: '留言（暫無偵測到平台）',
+      note: '等待留言資料觸發'
+    })))];
+  }
 
   if (!incidentMap) {
     incidentMap = L.map('incidentMap', { scrollWheelZoom: false }).setView([24.15, 120.67], 11);
