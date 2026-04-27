@@ -1,4 +1,5 @@
 let hourChart, platformChart, mentionChart, redTrendChart, topicOwnChart, topicTrendsChart;
+let incidentMap;
 let mode = '24h';
 
 // In-memory cache of the latest fetched comment lists + history, so the modal
@@ -15,6 +16,36 @@ const LIGHT_ICON = { '紅':'🔴', '黃':'🟡', '綠':'🟢' };
 const PLATFORM_LABEL = { facebook: 'Facebook', instagram: 'Instagram', threads: 'Threads' };
 const RED_RATIO_ALERT = 0.25;     // 25%: show red banner
 const YELLOW_RATIO_WARN = 0.40;   // 40% non-green: yellow banner
+
+const DEFAULT_HOTSPOTS = [
+  {
+    title: '台中槍案',
+    place: '台中市西區府後街',
+    lat: 24.1388,
+    lng: 120.6697,
+    level: 'red',
+    source: 'news',
+    note: '社會治安高關注事件'
+  },
+  {
+    title: '廚餘山',
+    place: '台中市霧峰區',
+    lat: 24.046,
+    lng: 120.698,
+    level: 'red',
+    source: 'comment',
+    note: '留言高頻環境議題'
+  },
+  {
+    title: '垃圾山',
+    place: '台中市大里區',
+    lat: 24.104,
+    lng: 120.69,
+    level: 'red',
+    source: 'comment',
+    note: '留言高頻環境議題'
+  }
+];
 
 function lightLevelByCount(c, avg){
   if(c >= Math.max(10, avg*1.8)) return '紅';
@@ -499,6 +530,53 @@ function renderModalBody(){
   body.appendChild(frag);
 }
 
+function renderIncidentMap(d){
+  const mapEl = document.getElementById('incidentMap');
+  if (!mapEl || typeof window.L === 'undefined') return;
+
+  const hotspots = (Array.isArray(d.hotspots) && d.hotspots.length) ? d.hotspots : DEFAULT_HOTSPOTS;
+
+  if (!incidentMap) {
+    incidentMap = L.map('incidentMap', { scrollWheelZoom: false }).setView([24.15, 120.67], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(incidentMap);
+  }
+
+  if (incidentMap._markerLayer) incidentMap.removeLayer(incidentMap._markerLayer);
+  const layer = L.layerGroup();
+
+  hotspots.forEach(h => {
+    if (h.lat == null || h.lng == null) return;
+    const level = h.level || 'red';
+    const color = level === 'red' ? '#ff4d4f' : level === 'yellow' ? '#f7c948' : '#20c997';
+    const marker = L.circleMarker([h.lat, h.lng], {
+      radius: 9,
+      color,
+      weight: 2,
+      fillColor: color,
+      fillOpacity: 0.65
+    });
+    marker.bindPopup(`
+      <div class="map-popup">
+        <strong>${escapeHtml(h.title || '事件')}</strong><br/>
+        地點：${escapeHtml(h.place || '-') }<br/>
+        等級：${escapeHtml(level.toUpperCase())}<br/>
+        來源：${escapeHtml(h.source || '-') }<br/>
+        備註：${escapeHtml(h.note || '-') }
+      </div>
+    `);
+    layer.addLayer(marker);
+  });
+
+  layer.addTo(incidentMap);
+  incidentMap._markerLayer = layer;
+
+  const bounds = layer.getBounds();
+  if (bounds.isValid()) incidentMap.fitBounds(bounds.pad(0.25));
+}
+
 function initModal(){
   const modal = document.getElementById('commentsModal');
   if (!modal) return;
@@ -559,6 +637,7 @@ async function run(){
   renderRedTrendChart();
   renderRedCommentsPanel();
   renderTopicHeat();
+  renderIncidentMap(d);
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();

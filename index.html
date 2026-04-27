@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -60,6 +61,12 @@
     <h2>盧秀燕社群留言燈號分佈（FB / IG / Threads）</h2>
     <p class="hint">點擊卡片查看該平台的實際留言明細；也可以切換上方 [🔴 紅 / 🟡 黃 / 🟢 綠] 篩選。</p>
     <div class="social-signal-grid" id="socialSignals"></div>
+  </section>
+
+  <section class="panel" id="mapHotspotPanel">
+    <h2>議題地圖熱點（新聞 + 留言）</h2>
+    <p class="hint">以紅色亮點標示高風險事件位置；可點擊查看事件名稱、來源與說明。</p>
+    <div id="incidentMap"></div>
   </section>
 
   <section class="panel collapsible" id="panel-red-trend">
@@ -206,6 +213,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="./app.js"></script>
 </body>
 </html>
