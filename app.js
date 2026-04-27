@@ -637,7 +637,7 @@ function renderIncidentMap(d){
   }
 
   if (incidentMap._markerLayer) incidentMap.removeLayer(incidentMap._markerLayer);
-  const layer = L.layerGroup();
+  const layer = L.featureGroup();
 
   hotspots.forEach(h => {
     if (h.lat == null || h.lng == null) return;
