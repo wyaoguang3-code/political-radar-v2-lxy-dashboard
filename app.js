@@ -45,8 +45,32 @@ const COMMENT_EVENT_RULES = [
     lat: 24.104,
     lng: 120.69,
     level: 'red',
-    keywords: ['垃圾山']
+    keywords: ['垃圾山', '垃圾掩埋場']
+  },
+  {
+    title: '捷運藍線爭議',
+    place: '台中市政府（西屯）',
+    lat: 24.1617,
+    lng: 120.6469,
+    level: 'yellow',
+    keywords: ['捷運', '藍線']
+  },
+  {
+    title: '行人地獄討論',
+    place: '台中市中區',
+    lat: 24.1402,
+    lng: 120.6839,
+    level: 'yellow',
+    keywords: ['行人地獄']
   }
+];
+
+const LOCATION_HINTS = [
+  { k: '府後街', place: '台中市西區府後街', lat: 24.1388, lng: 120.6697 },
+  { k: '霧峰', place: '台中市霧峰區', lat: 24.046, lng: 120.698 },
+  { k: '大里', place: '台中市大里區', lat: 24.104, lng: 120.69 },
+  { k: '西屯', place: '台中市西屯區', lat: 24.1818, lng: 120.6252 },
+  { k: '西區', place: '台中市西區', lat: 24.1437, lng: 120.6626 }
 ];
 
 function lightLevelByCount(c, avg){
@@ -532,26 +556,36 @@ function renderModalBody(){
   body.appendChild(frag);
 }
 
+function inferLocationFromText(text){
+  const t = String(text || '');
+  const hit = LOCATION_HINTS.find(x => t.includes(x.k));
+  return hit || null;
+}
+
 function deriveCommentHotspots(){
   const out = [];
   COMMENT_EVENT_RULES.forEach(rule => {
     const platforms = new Set();
     let hits = 0;
+    let inferred = null;
+
     ['facebook','instagram','threads'].forEach(p => {
       (state.comments[p] || []).forEach(c => {
         const txt = String(c.text || '');
         if (rule.keywords.some(k => txt.includes(k))) {
           hits += 1;
           platforms.add(PLATFORM_LABEL[p] || p);
+          if (!inferred) inferred = inferLocationFromText(txt);
         }
       });
     });
+
     if (hits > 0) {
       out.push({
         title: rule.title,
-        place: rule.place,
-        lat: rule.lat,
-        lng: rule.lng,
+        place: inferred?.place || rule.place,
+        lat: inferred?.lat ?? rule.lat,
+        lng: inferred?.lng ?? rule.lng,
         level: rule.level,
         source: 'comment',
         platform: `留言：${Array.from(platforms).join(' / ')}`,
@@ -579,6 +613,19 @@ function renderIncidentMap(d){
       platform: '留言（暫無偵測到平台）',
       note: '等待留言資料觸發'
     })))];
+
+    const suggestEl = document.getElementById('hotspotSuggestions');
+    if (suggestEl) {
+      const pending = COMMENT_EVENT_RULES.filter(r => !autoCommentHotspots.some(h => h.title === r.title));
+      suggestEl.innerHTML = pending.length
+        ? `半自動建議：以下事件目前尚未在最新留言中達到觸發條件 → ${pending.map(x => `<span class="chip">${escapeHtml(x.title)}</span>`).join('')}`
+        : '半自動建議：目前規則事件皆已觸發。';
+    }
+  }
+
+  if (hotspots.length && Array.isArray(d.hotspots) && d.hotspots.length) {
+    const suggestEl = document.getElementById('hotspotSuggestions');
+    if (suggestEl) suggestEl.textContent = '目前採用 data.json 既有 hotspots 設定（手動/外部來源）。';
   }
 
   if (!incidentMap) {
