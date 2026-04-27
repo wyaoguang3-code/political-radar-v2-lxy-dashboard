@@ -25,6 +25,7 @@ const DEFAULT_HOTSPOTS = [
     lng: 120.6697,
     level: 'red',
     source: 'news',
+    platform: '新聞',
     note: '社會治安高關注事件'
   },
   {
@@ -34,6 +35,7 @@ const DEFAULT_HOTSPOTS = [
     lng: 120.698,
     level: 'red',
     source: 'comment',
+    platform: '留言（平台待標註）',
     note: '留言高頻環境議題'
   },
   {
@@ -43,6 +45,7 @@ const DEFAULT_HOTSPOTS = [
     lng: 120.69,
     level: 'red',
     source: 'comment',
+    platform: '留言（平台待標註）',
     note: '留言高頻環境議題'
   }
 ];
@@ -564,6 +567,7 @@ function renderIncidentMap(d){
         地點：${escapeHtml(h.place || '-') }<br/>
         等級：${escapeHtml(level.toUpperCase())}<br/>
         來源：${escapeHtml(h.source || '-') }<br/>
+        平台：${escapeHtml(h.platform || '-') }<br/>
         備註：${escapeHtml(h.note || '-') }
       </div>
     `);
