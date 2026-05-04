@@ -882,10 +882,13 @@ async function run(){
       .reverse();
     reasons = [`live 24h 資料推估（當前小時 ${cur}，基線 ${baseline.toFixed(2)}）`];
     if(triggers.length){
-      reasonHtml = '<ul>' + triggers.map(t=>{
-        const sample=(newsByHour.get(t.hh)||[])[0] || '（該時段無標題）';
-        return `<li>${t.hh} ${LIGHT_ICON[t.lv]}${t.lv}（${t.count}）→ ${escapeHtml(sample)}</li>`;
-      }).join('') + '</ul>';
+      reasonHtml = '<div style="margin-top:6px">' + triggers.map(t=>{
+        const arr=(newsByHour.get(t.hh)||[]);
+        const lis = arr.length
+          ? '<ul>' + arr.map(x=>`<li>${escapeHtml(x)}</li>`).join('') + '</ul>'
+          : '<div>（該時段無標題）</div>';
+        return `<details><summary>${t.hh} ${LIGHT_ICON[t.lv]}${t.lv}（${t.count}）</summary>${lis}</details>`;
+      }).join('') + '</div>';
     }
   }
   const es = d.event_stream || {};
