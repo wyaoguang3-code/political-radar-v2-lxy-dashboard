@@ -122,6 +122,36 @@ async function fetchJSON(path){
   } catch { return null; }
 }
 
+async function fetchLiveNews(){
+  const feeds = [
+    'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+    'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95+%E5%8F%B0%E4%B8%AD&hl=zh-TW&gl=TW&ceid=TW:zh-Hant'
+  ];
+  const out = [];
+  for (const f of feeds){
+    try {
+      const proxy = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(f);
+      const r = await fetch(proxy + '&t=' + Date.now());
+      if (!r.ok) continue;
+      const xml = await r.text();
+      const doc = new DOMParser().parseFromString(xml, 'text/xml');
+      doc.querySelectorAll('item').forEach(it => {
+        const title = it.querySelector('title')?.textContent?.trim() || '';
+        const url = it.querySelector('link')?.textContent?.trim() || '';
+        const pub = it.querySelector('pubDate')?.textContent || '';
+        const dt = pub ? new Date(pub) : null;
+        const time = dt && !Number.isNaN(dt.getTime())
+          ? `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')} ${String(dt.getHours()).padStart(2,'0')}:${String(dt.getMinutes()).padStart(2,'0')}:00`
+          : '';
+        if (title && url) out.push({ title, url, time });
+      });
+    } catch {}
+  }
+  const uniq = new Map();
+  out.forEach(x=>{ if(!uniq.has(x.url)) uniq.set(x.url, x); });
+  return [...uniq.values()];
+}
+
 // --------- Social signal cards (clickable) ---------
 function renderSocialCards(){
   const wrap = document.getElementById('socialSignals');
@@ -741,7 +771,11 @@ async function run(){
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
 
   const topNewsRaw = pick(d, 'top_news', 'top_news_7d') || [];
-  const topNews = topNewsRaw.length ? topNewsRaw : (pick(d,'latest_news_20') || []);
+  const latestFallback = pick(d,'latest_news_20') || [];
+  const liveNews = await fetchLiveNews();
+  const topNews = [...liveNews, ...topNewsRaw, ...latestFallback]
+    .filter(x=>x && x.url)
+    .filter((x,i,arr)=>arr.findIndex(y=>y.url===x.url)===i);
   const news = document.getElementById('news'); news.innerHTML='';
   const displayText = (x)=>{
     const t=(x.title||'').trim();
