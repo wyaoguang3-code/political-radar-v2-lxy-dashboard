@@ -727,15 +727,21 @@ async function run(){
   };
   const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 48*3600*1000).length;
   const live24hItems = liveNow.filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 24*3600*1000);
+  const livePrev24Items = liveNow.filter(x=>parseTs(x.time)).filter(x=> {
+    const dt = Date.now()-parseTs(x.time);
+    return dt > 24*3600*1000 && dt <= 48*3600*1000;
+  });
   const live24h = live24hItems.length;
+  const livePrev24 = livePrev24Items.length;
   const newsCount = (m.news ?? m.news_24h);
   document.getElementById('news24').textContent = (newsCount===0 && (live24h>0 || latestFallback>0))
     ? `${live24h || latestFallback}（fallback）`
     : (newsCount ?? '-');
   if (mode!=='7d' && mTotal===0 && live24h>0){
+    const growth = livePrev24>0 ? (((live24h-livePrev24)/livePrev24)*100).toFixed(1) : '100.0';
     document.getElementById('total24').textContent = `${live24h}（live）`;
-    document.getElementById('prev24').textContent = '-';
-    document.getElementById('growth').textContent = '-';
+    document.getElementById('prev24').textContent = `${livePrev24}（live）`;
+    document.getElementById('growth').textContent = `${growth}%（live）`;
   }
 
   const level = (m.anomaly||{}).level || '綠';
