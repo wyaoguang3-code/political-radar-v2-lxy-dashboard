@@ -857,8 +857,17 @@ async function run(){
   const byHour = byHour24.length ? byHour24 : (mode==='24h' && byHourLive.length ? byHourLive : (d.by_hour_7d || []));
 
   // 燈號狀態與原因（可視化）
-  const an = m.anomaly || {};
-  const reasons = an.reasons || [];
+  let an = m.anomaly || {};
+  let reasons = an.reasons || [];
+  if (mode==='24h' && (mTotal===0) && live24h>0){
+    const baseline = (d.by_hour_7d||[]).length
+      ? (d.by_hour_7d||[]).reduce((s,x)=>s+(x.count||0),0)/(d.by_hour_7d||[]).length
+      : 2;
+    const cur = byHourLive.length ? (byHourLive[byHourLive.length-1].count||0) : 0;
+    const lv = lightLevelByCount(cur, baseline);
+    an = { level: lv, current_hour_count: cur, baseline_same_hour_7d: Number(baseline.toFixed(3)), reasons: [] };
+    reasons = [`live 24h 資料推估（當前小時 ${cur}，基線 ${baseline.toFixed(2)}）`];
+  }
   const es = d.event_stream || {};
   const streamTxt = `分鐘級 ${ (es.minute||[]).length }｜小時級 ${ (es.hour||[]).length }｜日級 ${ (es.day||[]).length }`;
   const ls = document.getElementById('lightStatus');
