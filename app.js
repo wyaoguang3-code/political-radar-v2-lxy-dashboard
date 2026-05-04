@@ -755,7 +755,8 @@ async function run(){
   const vals = names.map(n => cmp[n] || 0);
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
 
-  const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
+  const byPlatform24 = d.by_platform || [];
+  const byPlatform = byPlatform24.length ? byPlatform24 : (d.by_platform_7d || []);
   const ul = document.getElementById('platforms'); ul.innerHTML='';
   byPlatform.forEach(x=>{ const li=document.createElement('li'); li.textContent=`${x.platform}: ${x.count}`; ul.appendChild(li); });
 
@@ -796,7 +797,8 @@ async function run(){
     });
   }
 
-  const detailMap = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
+  const detailMap24 = d.latest_by_platform_24h || {};
+  const detailMap = Object.keys(detailMap24).length ? detailMap24 : (d.latest_by_platform_7d || {});
   const platformDetail = document.getElementById('platformDetail');
   if(platformDetail){
     platformDetail.innerHTML='';
@@ -828,7 +830,8 @@ async function run(){
   renderList('tsaiFb', (ps['蔡其昌']||{}).facebook || []);
   renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
 
-  const byHour = pick(d, 'by_hour', 'by_hour_7d') || [];
+  const byHour24 = d.by_hour || [];
+  const byHour = byHour24.length ? byHour24 : (d.by_hour_7d || []);
 
   // 燈號狀態與原因（可視化）
   const an = m.anomaly || {};
