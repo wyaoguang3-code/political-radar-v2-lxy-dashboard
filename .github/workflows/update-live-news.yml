@@ -21,10 +21,17 @@ jobs:
           from datetime import datetime, timezone
 
           feeds = [
+            # Full names (high precision)
             'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
             'https://news.google.com/rss/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
             'https://news.google.com/rss/search?q=%E9%99%B3%E5%85%B6%E9%82%81&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
             'https://news.google.com/rss/search?q=%E8%94%A1%E5%85%B6%E6%98%8C&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            # Stats aliases (broader recall)
+            'https://news.google.com/rss/search?q=%E7%A7%80%E7%87%95&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            'https://news.google.com/rss/search?q=%E8%90%AC%E5%AE%89&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            'https://news.google.com/rss/search?q=%E5%85%B6%E9%82%81&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            'https://news.google.com/rss/search?q=%E5%85%B6%E6%98%8C&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            # Context-boosted query
             'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95+%E5%8F%B0%E4%B8%AD&hl=zh-TW&gl=TW&ceid=TW:zh-Hant'
           ]
 
