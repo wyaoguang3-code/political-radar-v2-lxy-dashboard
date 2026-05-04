@@ -859,6 +859,7 @@ async function run(){
   // 燈號狀態與原因（可視化）
   let an = m.anomaly || {};
   let reasons = an.reasons || [];
+  let reasonHtml = '';
   if (mode==='24h' && (mTotal===0) && live24h>0){
     const baseline = (d.by_hour_7d||[]).length
       ? (d.by_hour_7d||[]).reduce((s,x)=>s+(x.count||0),0)/(d.by_hour_7d||[]).length
@@ -866,14 +867,39 @@ async function run(){
     const cur = byHourLive.length ? (byHourLive[byHourLive.length-1].count||0) : 0;
     const lv = lightLevelByCount(cur, baseline);
     an = { level: lv, current_hour_count: cur, baseline_same_hour_7d: Number(baseline.toFixed(3)), reasons: [] };
+
+    const newsByHour = new Map();
+    live24hItems.forEach(it=>{
+      const t = new Date(parseTs(it.time));
+      const hh = `${String(t.getHours()).padStart(2,'0')}:00`;
+      if(!newsByHour.has(hh)) newsByHour.set(hh, []);
+      newsByHour.get(hh).push(it.title || '(無標題)');
+    });
+    const triggers = byHourLive
+      .map(x=>({hh:(x.hour||'').slice(11,16), count:x.count||0, lv:lightLevelByCount(x.count||0, baseline)}))
+      .filter(x=>x.lv!=='綠')
+      .slice(-6)
+      .reverse();
     reasons = [`live 24h 資料推估（當前小時 ${cur}，基線 ${baseline.toFixed(2)}）`];
+    if(triggers.length){
+      reasonHtml = '<ul>' + triggers.map(t=>{
+        const sample=(newsByHour.get(t.hh)||[])[0] || '（該時段無標題）';
+        return `<li>${t.hh} ${LIGHT_ICON[t.lv]}${t.lv}（${t.count}）→ ${escapeHtml(sample)}</li>`;
+      }).join('') + '</ul>';
+    }
   }
   const es = d.event_stream || {};
   const streamTxt = `分鐘級 ${ (es.minute||[]).length }｜小時級 ${ (es.hour||[]).length }｜日級 ${ (es.day||[]).length }`;
   const ls = document.getElementById('lightStatus');
   if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} 今日燈號：${level}</span>`; }
   const lr = document.getElementById('lightReasons');
-  if(lr){ lr.textContent = reasons.length ? `觸發原因：${reasons.join('；')}` : '觸發原因：無（目前屬常態）'; }
+  if(lr){
+    if(reasons.length){
+      lr.innerHTML = `觸發原因：${escapeHtml(reasons.join('；'))}${reasonHtml}`;
+    }else{
+      lr.textContent = '觸發原因：無（目前屬常態）';
+    }
+  }
   const lstream = document.getElementById('lightStreams');
   if(lstream){ lstream.innerHTML = `<span class="badge 綠">${streamTxt}</span>`; }
   const lt = document.getElementById('lightTrend');
