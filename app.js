@@ -710,7 +710,12 @@ async function run(){
   document.getElementById('total24').textContent = m.total ?? m.total_24h ?? '-';
   document.getElementById('prev24').textContent = m.prev ?? m.prev_24h ?? '-';
   document.getElementById('growth').textContent = m.growth_pct==null ? '-' : `${m.growth_pct}%`;
-  document.getElementById('news24').textContent = m.news ?? m.news_24h ?? '-';
+  const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>x.time).filter(x=>{
+    const t = Date.parse(String(x.time).replace(' ','T'));
+    return Number.isFinite(t) && (Date.now()-t) <= 48*3600*1000;
+  }).length;
+  const newsCount = (m.news ?? m.news_24h);
+  document.getElementById('news24').textContent = (newsCount===0 && latestFallback>0) ? `${latestFallback}（48h）` : (newsCount ?? '-');
 
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
@@ -735,20 +740,27 @@ async function run(){
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
 
-  const topNews = pick(d, 'top_news', 'top_news_7d') || [];
+  const topNewsRaw = pick(d, 'top_news', 'top_news_7d') || [];
+  const topNews = topNewsRaw.length ? topNewsRaw : (pick(d,'latest_news_20') || []);
   const news = document.getElementById('news'); news.innerHTML='';
   const displayText = (x)=>{
     const t=(x.title||'').trim();
     if(t) return t;
     try{ return new URL(x.url).hostname + '（原文）'; }catch{ return '來源連結'; }
   };
-  topNews.slice(0,12).forEach(x=>{
+  if(!topNews.length){
     const li=document.createElement('li');
-    const a=document.createElement('a');
-    a.href=x.url; a.target='_blank'; a.rel='noopener';
-    a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
-    li.appendChild(a); news.appendChild(li);
-  });
+    li.textContent='目前資料源暫無可顯示新聞（可檢查 data.json 更新時間）';
+    news.appendChild(li);
+  }else{
+    topNews.slice(0,12).forEach(x=>{
+      const li=document.createElement('li');
+      const a=document.createElement('a');
+      a.href=x.url; a.target='_blank'; a.rel='noopener';
+      a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
+      li.appendChild(a); news.appendChild(li);
+    });
+  }
 
   const detailMap = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
   const platformDetail = document.getElementById('platformDetail');
