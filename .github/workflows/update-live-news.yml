@@ -1,0 +1,64 @@
+name: Update live_news.json
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build live_news.json from Google RSS
+        run: |
+          python - <<'PY'
+          import json, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
+
+          feeds = [
+            'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95&hl=zh-TW&gl=TW&ceid=TW:zh-Hant',
+            'https://news.google.com/rss/search?q=%E7%9B%A7%E7%A7%80%E7%87%95+%E5%8F%B0%E4%B8%AD&hl=zh-TW&gl=TW&ceid=TW:zh-Hant'
+          ]
+
+          out = []
+          for url in feeds:
+            try:
+              req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+              xml = urllib.request.urlopen(req, timeout=30).read().decode('utf-8', 'ignore')
+              root = ET.fromstring(xml)
+              for item in root.findall('.//item'):
+                title = (item.findtext('title') or '').strip()
+                link = (item.findtext('link') or '').strip()
+                pub = (item.findtext('pubDate') or '').strip()
+                dt = None
+                try:
+                  dt = datetime.strptime(pub, '%a, %d %b %Y %H:%M:%S %Z').replace(tzinfo=timezone.utc)
+                except Exception:
+                  pass
+                t = dt.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M:%S') if dt else ''
+                if title and link:
+                  out.append({'title': title, 'url': link, 'time': t})
+            except Exception:
+              continue
+
+          uniq = {}
+          for x in out:
+            uniq[x['url']] = x
+          items = list(uniq.values())[:120]
+          with open('live_news.json','w',encoding='utf-8') as f:
+            json.dump(items,f,ensure_ascii=False,indent=2)
+          print('live_news.json items=', len(items))
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live_news.json
+          git diff --cached --quiet || git commit -m "chore: update live_news.json"
+          git push
