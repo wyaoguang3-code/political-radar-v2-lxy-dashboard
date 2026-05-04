@@ -717,12 +717,17 @@ async function run(){
   document.getElementById('total24').textContent = m.total ?? m.total_24h ?? '-';
   document.getElementById('prev24').textContent = m.prev ?? m.prev_24h ?? '-';
   document.getElementById('growth').textContent = m.growth_pct==null ? '-' : `${m.growth_pct}%`;
-  const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>x.time).filter(x=>{
-    const t = Date.parse(String(x.time).replace(' ','T'));
-    return Number.isFinite(t) && (Date.now()-t) <= 48*3600*1000;
-  }).length;
+  const parseTs = (s)=>{
+    const t = Date.parse(String(s||'').replace(' ','T'));
+    return Number.isFinite(t) ? t : NaN;
+  };
+  const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 48*3600*1000).length;
+  const liveNow = await fetchJSON('./live_news.json') || [];
+  const live24h = liveNow.filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 24*3600*1000).length;
   const newsCount = (m.news ?? m.news_24h);
-  document.getElementById('news24').textContent = (newsCount===0 && latestFallback>0) ? `${latestFallback}（48h）` : (newsCount ?? '-');
+  document.getElementById('news24').textContent = (newsCount===0 && (live24h>0 || latestFallback>0))
+    ? `${live24h || latestFallback}（fallback）`
+    : (newsCount ?? '-');
 
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
