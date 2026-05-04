@@ -756,9 +756,9 @@ async function run(){
       '陳其邁':['陳其邁','其邁'],
       '蔡其昌':['蔡其昌','其昌']
     };
-    const text = live24hItems.map(x=>`${x.title||''} ${(x.url||'')}`).join('\n');
-    const count = (kw)=> (text.match(new RegExp(kw,'g'))||[]).length;
-    cmp = Object.fromEntries(Object.entries(alias).map(([k,arr])=>[k, arr.reduce((s,w)=>s+count(w),0)]));
+    const itemsText = live24hItems.map(x=>`${x.title||''} ${(x.url||'')}`);
+    const countArticleMention = (words)=> itemsText.filter(t => words.some(w => t.includes(w))).length;
+    cmp = Object.fromEntries(Object.entries(alias).map(([k,arr])=>[k, countArticleMention(arr)]));
   }
   const names = Object.keys(cmp);
   const vals = names.map(n => cmp[n] || 0);
