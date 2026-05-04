@@ -702,6 +702,7 @@ function initModal(){
 async function run(){
   const d = await fetchJSON('./data.json');
   if (!d) return;
+  const liveNow = await fetchJSON('./live_news.json') || [];
 
   // New signal/comment/history artefacts — optional, safe if absent
   state.socialSignals = await fetchJSON('./social_signals.json') || null;
@@ -714,20 +715,28 @@ async function run(){
   const m = pick(d, 'metrics', 'metrics_7d') || {};
   document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false});
   document.getElementById('modeHint').textContent = mode==='7d' ? '（近7日聚合）' : '（近24h）';
-  document.getElementById('total24').textContent = m.total ?? m.total_24h ?? '-';
-  document.getElementById('prev24').textContent = m.prev ?? m.prev_24h ?? '-';
-  document.getElementById('growth').textContent = m.growth_pct==null ? '-' : `${m.growth_pct}%`;
+  const mTotal = (m.total ?? m.total_24h);
+  const mPrev = (m.prev ?? m.prev_24h);
+  const mGrowth = m.growth_pct;
+  document.getElementById('total24').textContent = mTotal ?? '-';
+  document.getElementById('prev24').textContent = mPrev ?? '-';
+  document.getElementById('growth').textContent = mGrowth==null ? '-' : `${mGrowth}%`;
   const parseTs = (s)=>{
     const t = Date.parse(String(s||'').replace(' ','T'));
     return Number.isFinite(t) ? t : NaN;
   };
   const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 48*3600*1000).length;
-  const liveNow = await fetchJSON('./live_news.json') || [];
-  const live24h = liveNow.filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 24*3600*1000).length;
+  const live24hItems = liveNow.filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 24*3600*1000);
+  const live24h = live24hItems.length;
   const newsCount = (m.news ?? m.news_24h);
   document.getElementById('news24').textContent = (newsCount===0 && (live24h>0 || latestFallback>0))
     ? `${live24h || latestFallback}（fallback）`
     : (newsCount ?? '-');
+  if (mode!=='7d' && mTotal===0 && live24h>0){
+    document.getElementById('total24').textContent = `${live24h}（live）`;
+    document.getElementById('prev24').textContent = '-';
+    document.getElementById('growth').textContent = '-';
+  }
 
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
@@ -738,7 +747,8 @@ async function run(){
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
 
   const byPlatform24 = d.by_platform || [];
-  const byPlatform = byPlatform24.length ? byPlatform24 : (d.by_platform_7d || []);
+  const byPlatformLive = live24h>0 ? [{ platform:'news', count: live24h }] : [];
+  const byPlatform = byPlatform24.length ? byPlatform24 : (mode==='24h' && byPlatformLive.length ? byPlatformLive : (d.by_platform_7d || []));
   const ul = document.getElementById('platforms'); ul.innerHTML='';
   byPlatform.forEach(x=>{ const li=document.createElement('li'); li.textContent=`${x.platform}: ${x.count}`; ul.appendChild(li); });
 
@@ -780,7 +790,8 @@ async function run(){
   }
 
   const detailMap24 = d.latest_by_platform_24h || {};
-  const detailMap = Object.keys(detailMap24).length ? detailMap24 : (d.latest_by_platform_7d || {});
+  const detailMapLive = live24hItems.length ? { news: live24hItems.slice(0,30) } : {};
+  const detailMap = Object.keys(detailMap24).length ? detailMap24 : (mode==='24h' && Object.keys(detailMapLive).length ? detailMapLive : (d.latest_by_platform_7d || {}));
   const platformDetail = document.getElementById('platformDetail');
   if(platformDetail){
     platformDetail.innerHTML='';
@@ -813,7 +824,16 @@ async function run(){
   renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
 
   const byHour24 = d.by_hour || [];
-  const byHour = byHour24.length ? byHour24 : (d.by_hour_7d || []);
+  const byHourLive = (()=>{
+    const map = new Map();
+    live24hItems.forEach(x=>{
+      const t = new Date(parseTs(x.time));
+      const key = `${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')} ${String(t.getHours()).padStart(2,'0')}:00`;
+      map.set(key, (map.get(key)||0)+1);
+    });
+    return [...map.entries()].sort((a,b)=>a[0].localeCompare(b[0])).map(([hour,count])=>({hour,count}));
+  })();
+  const byHour = byHour24.length ? byHour24 : (mode==='24h' && byHourLive.length ? byHourLive : (d.by_hour_7d || []));
 
   // 燈號狀態與原因（可視化）
   const an = m.anomaly || {};
