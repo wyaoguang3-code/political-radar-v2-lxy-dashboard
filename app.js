@@ -771,9 +771,9 @@ async function run(){
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
 
   const topNewsRaw = pick(d, 'top_news', 'top_news_7d') || [];
-  const latestFallback = pick(d,'latest_news_20') || [];
+  const latestNewsList = pick(d,'latest_news_20') || [];
   const liveNews = await fetchLiveNews();
-  const topNews = [...liveNews, ...topNewsRaw, ...latestFallback]
+  const topNews = [...liveNews, ...topNewsRaw, ...latestNewsList]
     .filter(x=>x && x.url)
     .filter((x,i,arr)=>arr.findIndex(y=>y.url===x.url)===i);
   const news = document.getElementById('news'); news.innerHTML='';
