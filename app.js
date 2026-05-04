@@ -722,7 +722,10 @@ async function run(){
   document.getElementById('prev24').textContent = mPrev ?? '-';
   document.getElementById('growth').textContent = mGrowth==null ? '-' : `${mGrowth}%`;
   const parseTs = (s)=>{
-    const t = Date.parse(String(s||'').replace(' ','T'));
+    const raw = String(s||'').trim();
+    if (!raw) return NaN;
+    let t = Date.parse(raw); // handles RFC2822 (e.g., Mon, 04 May ... GMT)
+    if (!Number.isFinite(t)) t = Date.parse(raw.replace(' ','T')); // handles YYYY-MM-DD HH:mm:ss
     return Number.isFinite(t) ? t : NaN;
   };
   const latestFallback = (pick(d,'latest_news_20')||[]).filter(x=>parseTs(x.time)).filter(x=> (Date.now()-parseTs(x.time)) <= 48*3600*1000).length;
