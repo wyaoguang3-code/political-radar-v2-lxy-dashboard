@@ -747,7 +747,19 @@ async function run(){
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
-  const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
+  let cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
+  const cmpEmpty = mode==='24h' && Object.values(cmp).every(v => !v);
+  if (cmpEmpty && live24hItems.length){
+    const alias = {
+      '盧秀燕':['盧秀燕','秀燕'],
+      '蔣萬安':['蔣萬安','萬安'],
+      '陳其邁':['陳其邁','其邁'],
+      '蔡其昌':['蔡其昌','其昌']
+    };
+    const text = live24hItems.map(x=>`${x.title||''} ${(x.url||'')}`).join('\n');
+    const count = (kw)=> (text.match(new RegExp(kw,'g'))||[]).length;
+    cmp = Object.fromEntries(Object.entries(alias).map(([k,arr])=>[k, arr.reduce((s,w)=>s+count(w),0)]));
+  }
   const names = Object.keys(cmp);
   const vals = names.map(n => cmp[n] || 0);
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
