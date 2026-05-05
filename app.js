@@ -752,12 +752,8 @@ function renderHotspotCards(hotspots, markersByTitle){
       ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
     `;
     card.addEventListener('click', () => {
-      const m = markersByTitle && markersByTitle[h.title];
-      if (m && incidentMap){
-        incidentMap.setView(m.getLatLng(), 13, { animate: true });
-        m.openPopup();
-        document.getElementById('incidentMap')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
-      }
+      // 點卡片 → 開「事件明細」modal（含新聞與留言全文 + 在地圖上定位按鈕）
+      openHotspotDetailModal(h, markersByTitle);
     });
     container.appendChild(card);
   });
@@ -856,6 +852,138 @@ function initMentionModal(){
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeMentionModal();
+  });
+}
+
+// --------- Hotspot detail modal ---------
+const PLATFORM_CHIP_CLASS = { facebook: 'fb', instagram: 'ig', threads: 'th' };
+const PLATFORM_DISPLAY = { facebook: 'FB', instagram: 'IG', threads: 'Threads' };
+
+function openHotspotDetailModal(h, markersByTitle){
+  const modal = document.getElementById('hotspotDetailModal');
+  if (!modal) return;
+  const total = (h.news_count || 0) + (h.comment_count || 0);
+  const level = h.level || 'green';
+  document.getElementById('hotspotDetailTitle').textContent = `${h.title || '事件'}（${total} 則）`;
+
+  const body = document.getElementById('hotspotDetailBody');
+  body.innerHTML = '';
+
+  // 摘要列：等級 chip + 地點 + 平台 + 壽命
+  const meta = document.createElement('div');
+  meta.className = 'hd-meta';
+  const lifetime = formatLifetimeHint(h);
+  meta.innerHTML = `
+    <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+    <span class="hd-meta-place">📍 ${escapeHtml(h.place || '-')}</span>
+    <span class="hd-meta-platform">${escapeHtml(h.platform || '')}</span>
+    ${lifetime ? `<span class="hd-meta-life">⏳ ${escapeHtml(lifetime)}</span>` : ''}
+  `;
+  body.appendChild(meta);
+
+  // 「在地圖上定位」按鈕
+  if (markersByTitle && markersByTitle[h.title]){
+    const locateBtn = document.createElement('button');
+    locateBtn.className = 'hd-locate-btn';
+    locateBtn.type = 'button';
+    locateBtn.textContent = '🗺️ 在地圖上定位 →';
+    locateBtn.addEventListener('click', () => {
+      const m = markersByTitle[h.title];
+      if (m && incidentMap){
+        closeHotspotDetailModal();
+        incidentMap.setView(m.getLatLng(), 13, { animate: true });
+        m.openPopup();
+        document.getElementById('incidentMap')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    });
+    body.appendChild(locateBtn);
+  }
+
+  const articles = Array.isArray(h.news_articles) ? h.news_articles : [];
+  const comments = Array.isArray(h.comments) ? h.comments : [];
+
+  // 新聞區塊
+  const newsSec = document.createElement('section');
+  newsSec.className = 'hd-section';
+  newsSec.innerHTML = `<h3>📰 相關新聞（${articles.length} 則）</h3>`;
+  if (articles.length === 0){
+    newsSec.insertAdjacentHTML('beforeend', '<p class="hint">此事件目前沒有對應的新聞報導。</p>');
+  } else {
+    const ol = document.createElement('ol');
+    ol.className = 'hd-news-list';
+    articles.forEach(x => {
+      const li = document.createElement('li');
+      const meta = document.createElement('span');
+      meta.className = 'mention-meta';
+      meta.textContent = `${(x.time || '').slice(5, 16)}　`;
+      li.appendChild(meta);
+      const a = document.createElement('a');
+      a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = (x.title || '').trim() || '（無標題）';
+      li.appendChild(a);
+      ol.appendChild(li);
+    });
+    newsSec.appendChild(ol);
+  }
+  body.appendChild(newsSec);
+
+  // 留言區塊
+  const cmtSec = document.createElement('section');
+  cmtSec.className = 'hd-section';
+  cmtSec.innerHTML = `<h3>💬 相關留言（${comments.length} 則）</h3>`;
+  if (comments.length === 0){
+    cmtSec.insertAdjacentHTML('beforeend', '<p class="hint">此事件目前沒有對應的留言。</p>');
+  } else {
+    const ul = document.createElement('ul');
+    ul.className = 'hd-comment-list';
+    comments.forEach(c => {
+      const li = document.createElement('li');
+      li.className = 'hd-comment';
+      const platCls = PLATFORM_CHIP_CLASS[c.platform] || '';
+      const platName = PLATFORM_DISPLAY[c.platform] || c.platform;
+      const sigCls = c.signal === 'red' ? 'red' : c.signal === 'yellow' ? 'yellow' : c.signal === 'green' ? 'green' : '';
+      const time = c.time_text ? `<span class="hd-c-time">${escapeHtml(c.time_text)}</span>` : '';
+      const author = c.author ? `<span class="hd-c-author">${escapeHtml(c.author)}</span>` : '';
+      const sigChip = sigCls ? `<span class="light-chip ${sigCls}">${sigCls === 'red' ? '🔴' : sigCls === 'yellow' ? '🟡' : '🟢'}</span>` : '';
+      const link = c.url ? `<a class="hd-c-link" href="${escapeHtml(c.url)}" target="_blank" rel="noopener">原文 →</a>` : '';
+      li.innerHTML = `
+        <div class="hd-c-hdr">
+          <span class="hd-c-platform plat-${platCls}">${platName}</span>
+          ${sigChip}
+          ${author}
+          ${time}
+          ${link}
+        </div>
+        <div class="hd-c-text">${escapeHtml(c.text || '')}</div>
+      `;
+      ul.appendChild(li);
+    });
+    cmtSec.appendChild(ul);
+  }
+  body.appendChild(cmtSec);
+
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeHotspotDetailModal(){
+  const modal = document.getElementById('hotspotDetailModal');
+  if (!modal) return;
+  modal.classList.add('hidden');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function initHotspotDetailModal(){
+  const modal = document.getElementById('hotspotDetailModal');
+  if (!modal) return;
+  document.getElementById('hotspotDetailClose')?.addEventListener('click', closeHotspotDetailModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target?.dataset?.close === 'hotspot') closeHotspotDetailModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeHotspotDetailModal();
   });
 }
 
@@ -1076,6 +1204,7 @@ function initModes(){
 
 initCollapsibles();
 initMentionModal();
+initHotspotDetailModal();
 initModes();
 initModal();
 initTopicHeat();

@@ -231,6 +231,18 @@
     </div>
   </div>
 
+  <!-- Drilldown modal: per-hotspot details (matched news + comments) -->
+  <div id="hotspotDetailModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close="hotspot"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="hotspotDetailTitle">
+      <div class="modal-header">
+        <h2 id="hotspotDetailTitle">事件明細</h2>
+        <button id="hotspotDetailClose" class="modal-close" type="button" aria-label="關閉">✕</button>
+      </div>
+      <div class="modal-body" id="hotspotDetailBody"></div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="./app.js"></script>

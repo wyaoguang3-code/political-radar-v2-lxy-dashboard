@@ -141,6 +141,32 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .hc-platform{color:#9fb0ea;font-size:11px;margin-bottom:4px}
 .hc-lifetime{color:#9fb0ea;font-size:11px;font-style:italic}
 
+/* Hotspot detail modal */
+.hd-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid #2a335f;background:#0c1228;color:#d8e2ff;font-size:13px}
+.hd-meta-place{color:#b9c3f2}
+.hd-meta-platform{color:#9fb0ea;font-size:12px}
+.hd-meta-life{color:#9fb0ea;font-size:11px;font-style:italic;margin-left:auto}
+.hd-locate-btn{margin:10px 14px;padding:8px 14px;background:#1f3a8a;color:#dbe8ff;border:1px solid #3a5cd0;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;align-self:flex-start}
+.hd-locate-btn:hover{background:#2a4ab0}
+.hd-section{padding:10px 14px}
+.hd-section h3{margin:8px 0 8px 0;color:#d8e2ff;font-size:14px;border-bottom:1px solid #2a335f;padding-bottom:6px}
+.hd-news-list{margin:0;padding-left:24px;color:#e8ecff;line-height:1.7}
+.hd-news-list li{margin:6px 0}
+.hd-news-list a{color:#9fc4ff;text-decoration:none}
+.hd-news-list a:hover{text-decoration:underline}
+.hd-comment-list{margin:0;padding:0;list-style:none}
+.hd-comment{padding:8px 10px;border:1px solid #2a335f;border-radius:6px;margin:6px 0;background:#0f1630}
+.hd-c-hdr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;margin-bottom:4px}
+.hd-c-platform{padding:1px 6px;border-radius:4px;font-weight:700;font-size:11px;color:#dbe8ff;background:#2a335f}
+.hd-c-platform.plat-fb{background:#1d3a72;color:#cfe0ff}
+.hd-c-platform.plat-ig{background:#5a1d4f;color:#ffd0ee}
+.hd-c-platform.plat-th{background:#1f1f1f;color:#e8e8e8;border:1px solid #444}
+.hd-c-author{color:#d8e2ff;font-weight:600}
+.hd-c-time{color:#9fb0ea}
+.hd-c-link{color:#9fc4ff;text-decoration:none;margin-left:auto}
+.hd-c-link:hover{text-decoration:underline}
+.hd-c-text{color:#e8ecff;font-size:14px;line-height:1.55;white-space:pre-wrap}
+
 @media (max-width: 640px){
   body{padding:12px}
   header{flex-direction:column;align-items:flex-start;gap:6px}
