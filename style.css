@@ -339,6 +339,14 @@ button.past-day-header:hover{background:#16203f}
 .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before{border-top-color:#121935 !important;border-bottom-color:#121935 !important}
 .ep-strategy-label{color:#9fb0ea;font-size:12px;margin-right:4px}
 .ep-detail-meta h3, #hotspotDetailBody h3{margin:14px 14px 4px 14px;color:#d8e2ff;font-size:14px}
+.ep-prediction-box{margin:8px 14px 12px 14px;padding:12px;background:#0d1a2c;border-left:3px solid #6e8cff;border-radius:6px}
+.ep-prediction-headline{color:#dbe8ff;font-size:13px;font-weight:700;display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
+.ep-prediction-bars{display:flex;flex-direction:column;gap:6px}
+.ep-bar-row{display:flex;align-items:center;gap:10px;font-size:12px;color:#dbe8ff}
+.ep-bar-label{width:36px;color:#9fb0ea;font-weight:600}
+.ep-bar{flex:1;height:14px;background:#16203f;border-radius:3px;overflow:hidden}
+.ep-bar-fill{height:100%;transition:width 0.3s}
+.ep-bar-pct{width:48px;text-align:right;font-feature-settings:"tnum"}
 
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}

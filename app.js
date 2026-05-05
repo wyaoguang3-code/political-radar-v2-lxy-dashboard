@@ -1197,6 +1197,25 @@ const PERSISTENCE_MAP_COLORS = {
   '永藍': '#1d3a72', '永綠': '#1a5031', '永白': '#bbbbbb',
   '翻轉': '#f7c948', '搖擺': '#ff7b1f', '其他': '#444444',
 };
+const PARTY_MAP_COLORS = {
+  KMT: '#1d3a72',  // 藍
+  DPP: '#1a5031',  // 綠
+  TPP: '#bbbbbb',  // 白（民眾黨色）
+  PFP: '#f97316',  // 橘（親民黨）
+};
+function presidentialColorByYear(v, year){
+  const r = (v.presidential_history || []).find(x => x.year === year);
+  if (!r) return '#444';
+  return PARTY_MAP_COLORS[r.winner] || '#444';
+}
+function presidentialColorByPrediction(v){
+  const pred = v.presidential_prediction;
+  if (!pred) return '#444';
+  const base = PARTY_MAP_COLORS[pred.predicted_winner] || '#444';
+  // Confidence 影響飽和度（low = 半透明 — 透過降低 alpha 顯示）
+  // 用 hex+alpha 不通用，這裡簡化：low confidence 直接回 base 但 styleFn 也可以調 fillOpacity
+  return base;
+}
 function priorityToColor(p){
   // 0-100 → 淡藍 → 黃 → 紅
   const x = Math.max(0, Math.min(100, p)) / 100;
@@ -1274,6 +1293,8 @@ async function renderElectionMap(){
         if (mode === 'priority') color = priorityToColor(v.priority);
         else if (mode === 'strategy') color = STRATEGY_COLORS[v.strategy_type] || '#444';
         else if (mode === 'persistence') color = PERSISTENCE_MAP_COLORS[v.persistence] || '#444';
+        else if (mode === 'presidential_2024') color = presidentialColorByYear(v, 2024);
+        else if (mode === 'presidential_predict') color = presidentialColorByPrediction(v);
       }
       return {
         color: '#0a0e1a', weight: 0.4,
@@ -1286,13 +1307,29 @@ async function renderElectionMap(){
       onEachFeature: (feat, layer) => {
         const p = feat.properties || {};
         const v = lookupVillage(p.TOWNNAME, p.VILLAGENAM);
-        const tooltipHtml = v
-          ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
+        let tooltipHtml;
+        if (!v){
+          tooltipHtml = `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（無資料）`;
+        } else if (mode === 'presidential_2024'){
+          const r = (v.presidential_history || []).find(x => x.year === 2024);
+          tooltipHtml = r
+            ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>2024 勝者：<strong>${r.winner}</strong><br>
+               KMT ${r.kmt_pct}%　DPP ${r.dpp_pct}%　TPP ${r.tpp_pct}%`
+            : `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（總統選舉資料缺）`;
+        } else if (mode === 'presidential_predict'){
+          const pred = v.presidential_prediction;
+          tooltipHtml = pred
+            ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
+               預測勝者：<strong>${pred.predicted_winner}</strong>（領先 ${pred.predicted_margin}pt，信心 ${pred.confidence}）<br>
+               KMT ${pred.kmt_pct}%　DPP ${pred.dpp_pct}%　TPP ${pred.tpp_pct}%`
+            : `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（預測資料缺）`;
+        } else {
+          tooltipHtml = `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
              priority: <strong>${v.priority}</strong><br>
              ${v.strategy_label}<br>
              ${v.persistence}　搖擺度 ${v.volatility}<br>
-             人口 ${v.pop.toLocaleString()}　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}`
-          : `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（無資料）`;
+             人口 ${v.pop.toLocaleString()}　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}`;
+        }
         layer.bindTooltip(tooltipHtml, { sticky: true, direction: 'top' });
         layer.on('click', () => {
           if (v){
@@ -1323,6 +1360,17 @@ async function renderElectionMap(){
                             E_AGEING_SATURATED:'E 高齡飽和'};
             return `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${labels[k]}</span>`;
           }).join('')}`;
+      } else if (mode === 'presidential_2024'){
+        html = `<div class="em-legend-title">2024 總統得票（實際勝者）</div>
+          ${Object.entries(PARTY_MAP_COLORS).filter(([k]) => ['KMT','DPP','TPP'].includes(k)).map(([k, c]) =>
+            `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
+          ).join('')}`;
+      } else if (mode === 'presidential_predict'){
+        html = `<div class="em-legend-title">下屆總統預測勝者（基本面模型）</div>
+          ${Object.entries(PARTY_MAP_COLORS).filter(([k]) => ['KMT','DPP','TPP'].includes(k)).map(([k, c]) =>
+            `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
+          ).join('')}
+          <div class="hint" style="margin-top:6px;font-size:11px">模型：加權近 5 屆得票（最近權重 0.55、上一屆 0.30）+ momentum 趨勢延伸 ×0.3。沒考慮民調與全國風向，只看歷史基本盤 — 拿來當「靜態基準預測」用。</div>`;
       } else {
         html = `<div class="em-legend-title">政治屬性</div>
           ${Object.entries(PERSISTENCE_MAP_COLORS).map(([k, c]) =>
@@ -1490,6 +1538,66 @@ async function renderElectionPriority(){
   await renderTable();
 }
 
+function renderPresidentialBlock(v){
+  const hist = v.presidential_history || [];
+  const pred = v.presidential_prediction;
+  if (!hist.length) return '';
+
+  const partyClass = (p) => p === 'KMT' ? 'persist-blue' : p === 'DPP' ? 'persist-green'
+                          : p === 'TPP' ? 'persist-white' : p === 'PFP' ? 'persist-flip' : 'persist-other';
+
+  const histRows = hist.map(r => `
+    <tr>
+      <td>${r.year}</td>
+      <td><span class="ep-persist-pill ${partyClass(r.winner)}">${r.winner || '—'}</span></td>
+      <td class="ep-num">${r.kmt_pct}%</td>
+      <td class="ep-num">${r.dpp_pct}%</td>
+      <td class="ep-num">${r.tpp_pct > 0 ? r.tpp_pct + '%' : '—'}</td>
+      <td class="ep-num">${r.pfp_pct > 0 ? r.pfp_pct + '%' : '—'}</td>
+      <td class="ep-num">${r.total.toLocaleString()}</td>
+    </tr>`).join('');
+
+  let predBlock = '';
+  if (pred){
+    const winCls = partyClass(pred.predicted_winner);
+    const confLabel = { high: '高（差距 ≥15 個百分點）',
+                        medium: '中（差距 5-15 個百分點）',
+                        low: '低（差距 <5 個百分點，視同膠著）' }[pred.confidence] || pred.confidence;
+    predBlock = `
+      <div class="ep-prediction-box">
+        <div class="ep-prediction-headline">
+          🔮 下屆總統預測：
+          <span class="ep-persist-pill ${winCls}" style="font-size:14px">${pred.predicted_winner}</span>
+          <span class="hint">　領先 ${pred.predicted_margin} 個百分點　信心：${confLabel}</span>
+        </div>
+        <div class="ep-prediction-bars">
+          <div class="ep-bar-row"><span class="ep-bar-label">KMT</span>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.kmt_pct}%;background:#4a6fbf"></div></div>
+            <span class="ep-bar-pct">${pred.kmt_pct}%</span></div>
+          <div class="ep-bar-row"><span class="ep-bar-label">DPP</span>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.dpp_pct}%;background:#3aaa6f"></div></div>
+            <span class="ep-bar-pct">${pred.dpp_pct}%</span></div>
+          <div class="ep-bar-row"><span class="ep-bar-label">TPP</span>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.tpp_pct}%;background:#cccccc"></div></div>
+            <span class="ep-bar-pct">${pred.tpp_pct}%</span></div>
+        </div>
+        <div class="hint" style="margin-top:8px">模型：加權近 5 屆得票（最近權重 0.55、上一屆 0.30、再上一屆 0.10）+ momentum（最近 2 屆 vs 之前的趨勢延伸 ×0.3）。沒考慮民調與全國風向，基本面而已 — 拿來當「靜態基準預測」用。</div>
+      </div>
+    `;
+  }
+
+  return `
+    <h3>🗳️ 歷年總統選舉（${hist[0].year}–${hist[hist.length-1].year}，全 ${hist.length} 屆）</h3>
+    <table class="ep-history-table">
+      <thead><tr>
+        <th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th><th>PFP</th><th>總票數</th>
+      </tr></thead>
+      <tbody>${histRows}</tbody>
+    </table>
+    ${predBlock}
+  `;
+}
+
 function openVillageDetail(v){
   // 重用既有 hotspotDetailModal — 把里資訊塞進去顯示
   const years = v.years || [];
@@ -1570,6 +1678,8 @@ function openVillageDetail(v){
       <thead><tr><th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th></tr></thead>
       <tbody>${histRows}</tbody>
     </table>
+
+    ${renderPresidentialBlock(v)}
   `;
 
   const modal = document.getElementById('hotspotDetailModal');
