@@ -213,6 +213,18 @@
     </div>
   </div>
 
+  <!-- Drilldown modal: per-person mention articles -->
+  <div id="mentionModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close="mention"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="mentionModalTitle">
+      <div class="modal-header">
+        <h2 id="mentionModalTitle">人物提及明細</h2>
+        <button id="mentionModalClose" class="modal-close" type="button" aria-label="關閉">✕</button>
+      </div>
+      <div class="modal-body" id="mentionModalBody"></div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="./app.js"></script>

@@ -10,6 +10,7 @@ const state = {
   history: { facebook: [], instagram: [], threads: [] },
   topicHeat: null,
   selectedTopicId: null,
+  mentionArticles: {},
 };
 
 const LIGHT_ICON = { '紅':'🔴', '黃':'🟡', '綠':'🟢' };
@@ -691,6 +692,63 @@ function initModal(){
   });
 }
 
+// --------- Person-mention drilldown modal ---------
+function openMentionModal(name){
+  const modal = document.getElementById('mentionModal');
+  if (!modal) return;
+  const articles = (state.mentionArticles && state.mentionArticles[name]) || [];
+  const windowLabel = mode === '7d' ? '近 7 日' : '近 24h';
+  document.getElementById('mentionModalTitle').textContent = `${name}（${windowLabel} 提及 ${articles.length} 則）`;
+  const body = document.getElementById('mentionModalBody');
+  body.innerHTML = '';
+  if (articles.length === 0){
+    const p = document.createElement('p');
+    p.className = 'hint';
+    p.textContent = '此時段沒有提及紀錄。';
+    body.appendChild(p);
+  } else {
+    const ol = document.createElement('ol');
+    ol.className = 'mention-list';
+    articles.forEach(x => {
+      const li = document.createElement('li');
+      const meta = document.createElement('span');
+      meta.className = 'mention-meta';
+      const t = (x.time || '').slice(5, 16);
+      meta.textContent = `${t}　[${x.platform || '-'}]　`;
+      li.appendChild(meta);
+      const a = document.createElement('a');
+      a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = (x.title || '').trim() || '（無標題）';
+      li.appendChild(a);
+      ol.appendChild(li);
+    });
+    body.appendChild(ol);
+  }
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMentionModal(){
+  const modal = document.getElementById('mentionModal');
+  if (!modal) return;
+  modal.classList.add('hidden');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function initMentionModal(){
+  const modal = document.getElementById('mentionModal');
+  if (!modal) return;
+  document.getElementById('mentionModalClose')?.addEventListener('click', closeMentionModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target?.dataset?.close === 'mention') closeMentionModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeMentionModal();
+  });
+}
+
 // --------- Main render ---------
 async function run(){
   const d = await fetchJSON('./data.json');
@@ -719,6 +777,7 @@ async function run(){
   const names = Object.keys(cmp);
   const vals = names.map(n => cmp[n] || 0);
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
+  state.mentionArticles = pick(d, 'mention_articles_24h', 'mention_articles_7d') || {};
 
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
@@ -867,10 +926,20 @@ async function run(){
         tooltip: darkTooltip({
           mode: 'index',
           displayColors: false,
-          callbacks: { label: (ctx) => `提及：${ctx.parsed.y} 則` },
+          callbacks: { label: (ctx) => `提及：${ctx.parsed.y} 則（點擊查看清單）` },
         }),
       },
-      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}}
+      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}},
+      onHover: (evt, els) => {
+        const target = evt?.native?.target;
+        if (target) target.style.cursor = els.length ? 'pointer' : 'default';
+      },
+      onClick: (evt, els) => {
+        if (!els.length) return;
+        const idx = els[0].index;
+        const name = names[idx];
+        if (name) openMentionModal(name);
+      },
     }
   });
 }
@@ -896,6 +965,7 @@ function initModes(){
 }
 
 initCollapsibles();
+initMentionModal();
 initModes();
 initModal();
 initTopicHeat();
