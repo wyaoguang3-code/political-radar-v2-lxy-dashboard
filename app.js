@@ -661,6 +661,7 @@ function renderIncidentMap(d){
 
   if (incidentMap._markerLayer) incidentMap.removeLayer(incidentMap._markerLayer);
   const layer = L.featureGroup();
+  const markersByTitle = {};
 
   hotspots.forEach(h => {
     if (h.lat == null || h.lng == null) return;
@@ -685,6 +686,7 @@ function renderIncidentMap(d){
         ${lifetime ? `<br/><span class="lifetime-hint">⏳ ${escapeHtml(lifetime)}</span>` : ''}
       </div>
     `);
+    if (h.title) markersByTitle[h.title] = marker;
     layer.addLayer(marker);
   });
 
@@ -693,6 +695,72 @@ function renderIncidentMap(d){
 
   const bounds = layer.getBounds();
   if (bounds.isValid()) incidentMap.fitBounds(bounds.pad(0.25));
+
+  renderHotspotCards(hotspots, markersByTitle);
+}
+
+function renderHotspotCards(hotspots, markersByTitle){
+  const container = document.getElementById('hotspotList');
+  const summary = document.getElementById('hotspotSummary');
+  if (!container) return;
+  container.innerHTML = '';
+
+  // 由急到緩排序：紅 → 黃 → 綠；同等級內依命中數降冪
+  const order = { red: 0, yellow: 1, green: 2 };
+  const sorted = [...(hotspots || [])].sort((a, b) => {
+    const av = order[a.level] ?? 9;
+    const bv = order[b.level] ?? 9;
+    if (av !== bv) return av - bv;
+    const ah = (a.news_count || 0) + (a.comment_count || 0);
+    const bh = (b.news_count || 0) + (b.comment_count || 0);
+    return bh - ah;
+  });
+
+  // 摘要列：🔴 X / 🟡 Y / 🟢 Z
+  if (summary){
+    const counts = { red: 0, yellow: 0, green: 0 };
+    sorted.forEach(h => { if (counts[h.level] != null) counts[h.level] += 1; });
+    summary.textContent = `🔴 ${counts.red} 件　🟡 ${counts.yellow} 件　🟢 ${counts.green} 件`;
+  }
+
+  if (!sorted.length){
+    container.innerHTML = '<p class="hint">目前沒有偵測到熱點事件。</p>';
+    return;
+  }
+
+  sorted.forEach(h => {
+    const card = document.createElement('div');
+    const level = h.level || 'green';
+    card.className = `hotspot-card level-${level}`;
+    card.dataset.title = h.title || '';
+    const total = (h.news_count || 0) + (h.comment_count || 0);
+    const lifetime = formatLifetimeHint(h);
+    const sourceTag = (h.news_count || 0) > 0 && (h.comment_count || 0) > 0 ? '混合'
+                    : (h.news_count || 0) > 0 ? '新聞主導'
+                    : '留言主導';
+    card.innerHTML = `
+      <div class="hc-row1">
+        <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+        <span class="hc-title">${escapeHtml(h.title || '事件')}</span>
+      </div>
+      <div class="hc-row2">
+        <span class="hc-count">${total} 則</span>
+        <span class="hc-source-tag">${sourceTag}</span>
+      </div>
+      <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
+      <div class="hc-platform">${escapeHtml(h.platform || '')}</div>
+      ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
+    `;
+    card.addEventListener('click', () => {
+      const m = markersByTitle && markersByTitle[h.title];
+      if (m && incidentMap){
+        incidentMap.setView(m.getLatLng(), 13, { animate: true });
+        m.openPopup();
+        document.getElementById('incidentMap')?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    });
+    container.appendChild(card);
+  });
 }
 
 function initModal(){
