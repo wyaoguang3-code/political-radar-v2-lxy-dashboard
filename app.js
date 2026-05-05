@@ -1472,10 +1472,28 @@ async function run(){
             label: (ctx) => {
               const total = ctx.dataset.data.reduce((a,b)=>a+b, 0);
               const pct = total ? (ctx.parsed / total * 100).toFixed(1) : 0;
-              return ` ${ctx.label}：${ctx.parsed}（${pct}%）`;
+              return ` ${ctx.label}：${ctx.parsed}（${pct}%）（點擊查看清單）`;
             },
           },
         }),
+      },
+      onHover: (evt, els) => {
+        const target = evt?.native?.target;
+        if (target) target.style.cursor = els.length ? 'pointer' : 'default';
+      },
+      onClick: (evt, els) => {
+        if (!els.length) return;
+        const idx = els[0].index;
+        const plat = byPlatform[idx]?.platform;
+        if (!plat) return;
+        const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
+        const items = (map[plat] || []).map(x => ({
+          title: x.title, url: x.url, time: x.time,
+        }));
+        const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
+        openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
+                          `命中 4 位市長關鍵字，平台 = ${plat}`,
+                          items);
       },
     }
   });
