@@ -167,9 +167,14 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .past-events-content{margin-top:10px}
 .past-events-wrap.collapsed .past-events-content{display:none}
 .past-day{margin-bottom:14px;background:#0f1630;border:1px solid #2a335f;border-radius:6px;padding:10px}
-.past-day-header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;border-bottom:1px solid #2a335f;padding-bottom:6px;margin-bottom:8px}
+button.past-day-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px 4px;background:transparent;border:none;border-bottom:1px solid #2a335f;margin-bottom:8px;cursor:pointer;text-align:left;color:inherit;border-radius:4px;transition:background 0.15s}
+button.past-day-header:hover{background:#16203f}
+.past-day-arrow{font-size:11px;color:#9fb0ea;transition:transform 0.15s;flex-shrink:0}
+.past-day.collapsed .past-day-arrow{transform:rotate(-90deg)}
+.past-day.collapsed > *:not(.past-day-header){display:none}
+.past-day.collapsed > .past-day-header{border-bottom:none;margin-bottom:0}
 .past-day-date{font-weight:700;color:#e8ecff;font-size:14px}
-.past-day-counts{color:#b9c3f2;font-size:12px;font-feature-settings:"tnum"}
+.past-day-counts{color:#b9c3f2;font-size:12px;font-feature-settings:"tnum";margin-left:auto}
 .past-urgent{color:#ffb3bf;font-weight:700}
 .past-day-events{list-style:none;padding:0;margin:0}
 .past-day-events li{padding:6px 0;border-bottom:1px solid #1a2241}

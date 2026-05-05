@@ -869,15 +869,23 @@ function appendPastEventsBatch(count){
 
     const isToday = d.date === todayStr;
     const dateLabel = isToday ? `${d.date}（今日）` : d.date;
-    dayWrap.innerHTML = `
-      <div class="past-day-header">
-        <span class="past-day-date">${escapeHtml(dateLabel)}</span>
-        <span class="past-day-counts">
-          ${urgent ? `<span class="past-urgent">🚨 ${urgent}</span>　` : ''}
-          🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}
-        </span>
-      </div>
+    const dayHeader = document.createElement('button');
+    dayHeader.type = 'button';
+    dayHeader.className = 'past-day-header';
+    dayHeader.setAttribute('aria-expanded', 'true');
+    dayHeader.innerHTML = `
+      <span class="past-day-arrow">▾</span>
+      <span class="past-day-date">${escapeHtml(dateLabel)}</span>
+      <span class="past-day-counts">
+        ${urgent ? `<span class="past-urgent">🚨 ${urgent}</span>　` : ''}
+        🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}
+      </span>
     `;
+    dayHeader.addEventListener('click', () => {
+      const collapsed = dayWrap.classList.toggle('collapsed');
+      dayHeader.setAttribute('aria-expanded', String(!collapsed));
+    });
+    dayWrap.appendChild(dayHeader);
 
     // 依城市分組
     const byCity = {};
