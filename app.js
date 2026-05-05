@@ -1254,11 +1254,20 @@ async function renderElectionMap(){
       return;
     }
 
-    // Lookup by (town, village)
+    // Lookup by (town, village). GeoJSON 用 2010 升格前舊名（淡水鎮、中壢市、美濃鎮），
+    // priority 資料用現行名（淡水區、中壢區、美濃區），所以同時建立正規化 key。
+    const normTown = (s) => (s || '').replace(/(鎮|鄉|市)$/, '區');
+    const normVillage = (s) => (s || '').replace(/村$/, '里');
     const lookup = {};
     cityData.villages.forEach(v => {
       lookup[`${v.town}|${v.village}`] = v;
     });
+    const lookupVillage = (town, village) => {
+      return lookup[`${town}|${village}`]
+          || lookup[`${normTown(town)}|${village}`]
+          || lookup[`${town}|${normVillage(village)}`]
+          || lookup[`${normTown(town)}|${normVillage(village)}`];
+    };
 
     if (electionMapLayer){
       electionMap.removeLayer(electionMapLayer);
@@ -1266,7 +1275,7 @@ async function renderElectionMap(){
 
     const styleFn = (feat) => {
       const p = feat.properties || {};
-      const v = lookup[`${p.TOWNNAME}|${p.VILLAGENAM}`];
+      const v = lookupVillage(p.TOWNNAME, p.VILLAGENAM);
       let color = '#333';
       if (v){
         if (mode === 'priority') color = priorityToColor(v.priority);
@@ -1283,7 +1292,7 @@ async function renderElectionMap(){
       style: styleFn,
       onEachFeature: (feat, layer) => {
         const p = feat.properties || {};
-        const v = lookup[`${p.TOWNNAME}|${p.VILLAGENAM}`];
+        const v = lookupVillage(p.TOWNNAME, p.VILLAGENAM);
         const tooltipHtml = v
           ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
              priority: <strong>${v.priority}</strong><br>
