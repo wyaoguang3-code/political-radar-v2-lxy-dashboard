@@ -183,9 +183,13 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}
-.past-city-header{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;padding:4px 8px;background:#0c1228;border-radius:4px;margin-bottom:4px}
+button.past-city-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px 10px;background:#0c1228;border:1px solid transparent;border-radius:4px;margin-bottom:4px;cursor:pointer;text-align:left;color:inherit}
+button.past-city-header:hover{background:#101933;border-color:#2a335f}
+.past-city-arrow{font-size:11px;color:#9fb0ea;transition:transform 0.15s;flex-shrink:0}
+.past-city-section.collapsed .past-city-arrow{transform:rotate(-90deg)}
 .past-city-name{color:#d8e2ff;font-weight:600;font-size:13px}
-.past-city-counts{color:#9fb0ea;font-size:11px;font-feature-settings:"tnum"}
+.past-city-counts{color:#9fb0ea;font-size:11px;font-feature-settings:"tnum";margin-left:auto}
+.past-city-section.collapsed .past-day-events{display:none}
 .past-event-item{cursor:pointer;border-radius:4px;padding:6px 8px;transition:background 0.15s}
 .past-event-item:hover{background:#16203f}
 

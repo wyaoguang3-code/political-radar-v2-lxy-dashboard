@@ -898,15 +898,20 @@ function appendPastEventsBatch(count){
 
       const citySec = document.createElement('div');
       citySec.className = 'past-city-section';
-      citySec.innerHTML = `
-        <div class="past-city-header">
-          <span class="past-city-name">${escapeHtml(city)}</span>
-          <span class="past-city-counts">
-            ${cityUrg ? `<span class="past-urgent">🚨 ${cityUrg}</span>　` : ''}
-            🔴 ${cityCnts.red}　🟡 ${cityCnts.yellow}　🟢 ${cityCnts.green}
-          </span>
-        </div>
+      // 預設展開；點 header 可收合
+      const headerBtn = document.createElement('button');
+      headerBtn.type = 'button';
+      headerBtn.className = 'past-city-header';
+      headerBtn.setAttribute('aria-expanded', 'true');
+      headerBtn.innerHTML = `
+        <span class="past-city-arrow">▾</span>
+        <span class="past-city-name">${escapeHtml(city)}</span>
+        <span class="past-city-counts">
+          ${cityUrg ? `<span class="past-urgent">🚨 ${cityUrg}</span>　` : ''}
+          🔴 ${cityCnts.red}　🟡 ${cityCnts.yellow}　🟢 ${cityCnts.green}
+        </span>
       `;
+      citySec.appendChild(headerBtn);
 
       const ul = document.createElement('ul');
       ul.className = 'past-day-events';
@@ -916,9 +921,10 @@ function appendPastEventsBatch(count){
         const level = h.level || 'green';
         const total = (h.news_count || 0) + (h.comment_count || 0);
         const urgentMark = h.is_urgent ? '🚨 ' : '';
-        const sample = (h.news_articles_top || [])
+        const sample = (h.sample_titles || [])
+          .filter(t => t)
           .slice(0, 2)
-          .map(a => `<div class="past-sample">・${escapeHtml((a.title || '').slice(0, 60))}</div>`)
+          .map(t => `<div class="past-sample">・${escapeHtml(t)}</div>`)
           .join('');
         li.innerHTML = `
           <div class="past-event-row">
@@ -932,6 +938,13 @@ function appendPastEventsBatch(count){
         ul.appendChild(li);
       });
       citySec.appendChild(ul);
+
+      // toggle：點 header 收合/展開
+      headerBtn.addEventListener('click', () => {
+        const collapsed = citySec.classList.toggle('collapsed');
+        headerBtn.setAttribute('aria-expanded', String(!collapsed));
+      });
+
       dayWrap.appendChild(citySec);
     };
 
@@ -956,22 +969,42 @@ function appendPastEventsBatch(count){
   }
 }
 
-function openPastEventModal(h, dateStr){
-  // 把歷史 entry 轉成 hotspot detail modal 看得懂的格式（沒地圖 marker，所以「在地圖上定位」按鈕不會出現）
+// 每天 archive 的記憶體 cache（避免重複 fetch 同一天）
+const _pastArchiveCache = {};
+
+async function openPastEventModal(h, dateStr){
+  // Lazy-load 該日完整 archive；找不到就 fallback 到 index 裡的 sample_titles
+  let archiveEvents = _pastArchiveCache[dateStr];
+  if (archiveEvents === undefined){
+    const archive = await fetchJSON(`./hotspot_archive/${dateStr}.json`);
+    archiveEvents = (archive && Array.isArray(archive.hotspots)) ? archive.hotspots : null;
+    _pastArchiveCache[dateStr] = archiveEvents;
+  }
+  let news = [];
+  let comments = [];
+  if (archiveEvents){
+    const found = archiveEvents.find(x => x.title === h.title);
+    if (found){
+      news = found.news_articles || [];
+      comments = found.comments || [];
+    }
+  } else if (Array.isArray(h.sample_titles) && h.sample_titles.length){
+    // 舊格式 fallback：只剩標題沒 url
+    news = h.sample_titles.map(t => ({ title: t, url: '', time: '' }));
+  }
+
   const fakeHotspot = {
     title: `[${dateStr}] ${h.title || '事件'}`,
     place: h.place,
     level: h.level,
-    source: ((h.news_articles_top || []).length ? 'news' : '')
-          + ((h.comments_top || []).length ? (((h.news_articles_top || []).length ? ' + ' : '') + 'comment') : ''),
+    source: (news.length ? 'news' : '') + (comments.length ? ((news.length ? ' + ' : '') + 'comment') : ''),
     platform: '',
     note: `${dateStr} 命中 ${(h.news_count || 0) + (h.comment_count || 0)} 則（新聞 ${h.news_count || 0}、留言 ${h.comment_count || 0}）`,
     news_count: h.news_count || 0,
     comment_count: h.comment_count || 0,
-    news_articles: h.news_articles_top || [],
-    comments: h.comments_top || [],
-    // 歷史不算壽命
-    news_full_expires_at: null,
+    news_articles: news,
+    comments: comments,
+    news_full_expires_at: null,  // 歷史不算壽命
   };
   openHotspotDetailModal(fakeHotspot, null);
 }
