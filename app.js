@@ -987,7 +987,7 @@ function appendPastEventsBatch(count){
 // 每天 archive 的記憶體 cache（避免重複 fetch 同一天）
 const _pastArchiveCache = {};
 
-async // 把任意 articles 陣列開到既有 hotspot detail modal
+// 把任意 articles 陣列開到既有 hotspot detail modal
 function openArticlesModal(title, note, articles){
   const news = (articles || []).map(a => ({
     title: a.title || '（無標題）',
@@ -1544,5 +1544,6 @@ initPastEventsToggle();
 initModes();
 initModal();
 initTopicHeat();
-run();
-setInterval(run,60000);
+// run() 失敗時 console.error，避免再發生 silent failure
+run().catch(e => console.error('run() failed:', e));
+setInterval(() => run().catch(e => console.error('run() interval failed:', e)), 60000);
