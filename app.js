@@ -1833,10 +1833,17 @@ function openVillageDetail(v){
   const eduMap = { high: '高教育', mid: '中等教育', low: '基礎教育' };
   const genderMap = { male: '男性偏多', female: '女性偏多', balanced: '性別均衡' };
 
+  // Google Maps 搜尋連結 — 用 city + town + village 直接搜
+  const mapsQuery = encodeURIComponent(`${v.cityName || ''} ${v.town || ''} ${v.village || ''}`.trim());
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+
   const html = `
     <div class="ep-detail-meta">
-      <div><strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong>
-        <span class="ep-priority-tag">priority ${v.priority}</span></div>
+      <div class="ep-detail-meta-headline">
+        <strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong>
+        <span class="ep-priority-tag">priority ${v.priority}</span>
+        <a class="ep-maps-btn" href="${mapsUrl}" target="_blank" rel="noopener noreferrer" title="在 Google Maps 上查看「${escapeHtml((v.cityName||'') + ' ' + (v.town||'') + ' ' + (v.village||''))}」實際地理位置">📍 在 Google Maps 查看</a>
+      </div>
       <div class="hint">人口 ${v.pop.toLocaleString()}（合格選舉人 ${v.voters.toLocaleString()}）　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}　中位年齡 ${v.median_age || '—'} 歲</div>
       <div class="hint">屬性：<span class="ep-persist-pill ${PERSISTENCE_COLORS[v.persistence] || 'persist-other'}">${escapeHtml(v.persistence)}</span>　搖擺度 ${v.volatility}　翻盤 ${v.flips} 次　最近差距 ${v.latest_margin}%　說服空間 ${v.persuadability}</div>
     </div>
