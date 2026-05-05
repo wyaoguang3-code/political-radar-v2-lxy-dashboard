@@ -1249,16 +1249,22 @@ async function renderElectionForecast(){
     container.innerHTML = '<p class="hint">資料載入失敗。</p>';
     return;
   }
+  // 優先顯示全國 22 縣市加總；6 都加總當作備援（缺 country 才用）。
+  const country = data.country_aggregate;
   const six = data.six_cities_aggregate;
-  if (!six || !six.predicted){
+  const agg = country || six;
+  if (!agg || !agg.predicted){
     container.innerHTML = '<p class="hint">沒有預測資料。</p>';
     return;
   }
 
   const fmt = (n) => n.toLocaleString();
-  const pred = six.predicted;
-  const a24 = six.actual_2024;
-  const a20 = six.actual_2020;
+  const pred = agg.predicted;
+  const a24 = agg.actual_2024;
+  const a20 = agg.actual_2020;
+  const isCountry = !!country;
+  const scopeLabel = isCountry ? '全國 22 縣市加總' : '6 都加總';
+  const totalKey = isCountry ? 'total_estimated_votes' : 'total_estimated_votes';
 
   // Delta vs 2024 (預測 - 2024 實際) — 看模型認為哪一黨會漲跌
   const deltaKMT = pred.kmt_pct - a24.kmt_pct;
@@ -1277,13 +1283,14 @@ async function renderElectionForecast(){
 
   const partyClass = (p) => p === 'KMT' ? 'persist-blue' : p === 'DPP' ? 'persist-green' : p === 'TPP' ? 'persist-white' : 'persist-other';
 
-  // 6 都 totals card
+  // 全國 / 6 都 totals card
+  const villageCount = pred.total_villages || pred.sample_villages || '?';
   const totalCard = `
     <div class="forecast-six-card">
       <div class="forecast-headline">
-        <span class="forecast-label">6 都加總預測勝者</span>
+        <span class="forecast-label">${scopeLabel}預測勝者</span>
         <span class="ep-persist-pill ${partyClass(pred.predicted_winner)}" style="font-size:15px">${pred.predicted_winner}</span>
-        <span class="hint">　領先 ${pred.predicted_margin.toFixed(1)} 個百分點</span>
+        <span class="hint">　領先 ${pred.predicted_margin.toFixed(1)} 個百分點　涵蓋 ${villageCount} 里</span>
       </div>
       ${stackBar(pred.kmt_pct, pred.dpp_pct, pred.tpp_pct)}
       <div class="forecast-vote-grid">
@@ -1301,12 +1308,12 @@ async function renderElectionForecast(){
       </div>
       <p class="hint" style="margin-top:8px">
         2020 對照：KMT ${a20 ? a20.kmt_pct.toFixed(1) : '—'}% / DPP ${a20 ? a20.dpp_pct.toFixed(1) : '—'}%
-        ｜${six.note || ''}
+        ｜${agg.note || ''}
       </p>
     </div>`;
 
   // Per-city breakdown
-  const cityRows = (six.by_city || []).map(c => {
+  const cityRows = (agg.by_city || []).map(c => {
     const w = c.winner;
     const confLabel = { high: '高', medium: '中', low: '低' }[c.confidence] || c.confidence;
     return `
@@ -1322,7 +1329,7 @@ async function renderElectionForecast(){
 
   container.innerHTML = `
     ${totalCard}
-    <h3 style="margin-top:18px;color:#d8e2ff;font-size:14px">各都預測明細</h3>
+    <h3 style="margin-top:18px;color:#d8e2ff;font-size:14px">${isCountry ? '各縣市預測明細（22 個）' : '各都預測明細'}</h3>
     <div class="forecast-city-list">${cityRows}</div>
     <p class="hint" style="margin-top:12px">
       <strong>模型方法</strong>：每個里計算下屆總統選舉預測（加權近 5 屆得票 + momentum 趨勢延伸 ×0.3），
