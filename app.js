@@ -711,11 +711,21 @@ function openMentionModal(name){
     ol.className = 'mention-list';
     articles.forEach(x => {
       const li = document.createElement('li');
+      const co = Array.isArray(x.co_mentioned) ? x.co_mentioned : [];
+      if (co.length > 0) li.classList.add('co-mention');
       const meta = document.createElement('span');
       meta.className = 'mention-meta';
       const t = (x.time || '').slice(5, 16);
       meta.textContent = `${t}　[${x.platform || '-'}]　`;
       li.appendChild(meta);
+      if (co.length > 0) {
+        const chip = document.createElement('span');
+        chip.className = 'co-chip';
+        chip.textContent = `🔗 共現：${co.join('、')}`;
+        chip.title = '此篇同時提及多位市長';
+        li.appendChild(chip);
+        li.appendChild(document.createTextNode(' '));
+      }
       const a = document.createElement('a');
       a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
       a.textContent = (x.title || '').trim() || '（無標題）';
@@ -723,6 +733,14 @@ function openMentionModal(name){
       ol.appendChild(li);
     });
     body.appendChild(ol);
+    // 標題加上一行共現摘要
+    const coCount = articles.filter(x => Array.isArray(x.co_mentioned) && x.co_mentioned.length).length;
+    if (coCount > 0) {
+      const note = document.createElement('p');
+      note.className = 'mention-summary-note';
+      note.textContent = `※ 其中 ${coCount} 則同時提及其他市長（已標記🔗）`;
+      body.insertBefore(note, ol);
+    }
   }
   modal.classList.remove('hidden');
   modal.setAttribute('aria-hidden', 'false');
