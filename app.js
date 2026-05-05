@@ -1490,9 +1490,11 @@ async function renderElectionMap(){
             `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
           ).join('')}`;
       }
-      // 非 6 都用總統選舉作為「歷年政黨傾向」基礎（沒 mayoral 同等資料）
-      if (cityData.source === 'presidential'){
-        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆總統選舉（2008-2024）計算 — 因為非 6 都沒有市長選舉。6 都用市長選舉（4-5 屆）。</div>`;
+      // 16 縣市用「縣市長」作為 priority 基礎，6 都用「直轄市長」
+      if (cityData.source === 'local_mayor'){
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆縣市長選舉（2005-2022）計算。獨立候選人（IND）在花蓮/臺東/金門等地常獲勝，會反映在 winner 與 volatility 上。</div>`;
+      } else if (cityData.source === 'presidential'){
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆總統選舉（2008-2024）計算（fallback 來源）。</div>`;
       }
       legendEl.innerHTML = html;
     }
@@ -1792,7 +1794,7 @@ function openVillageDetail(v){
     </div>
 
     ${v.source === 'presidential' ? '' : `
-    <h3>📜 歷次直轄市長選舉</h3>
+    <h3>📜 ${v.source === 'local_mayor' ? '歷次縣市長選舉' : '歷次直轄市長選舉'}</h3>
     <table class="ep-history-table">
       <thead><tr><th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th></tr></thead>
       <tbody>${histRows}</tbody>
