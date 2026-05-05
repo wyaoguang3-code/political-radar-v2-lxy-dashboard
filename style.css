@@ -156,6 +156,31 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .hc-negativity.mid{background:#594a16;color:#ffe08a}
 .hc-negativity.low{background:#1a3a2e;color:#9ff0b5}
 
+/* Past events history */
+.past-events-wrap{margin-top:18px;border-top:1px solid #2a335f;padding-top:12px}
+.past-events-toggle{width:100%;display:flex;align-items:center;gap:8px;background:#16203f;color:#d8e2ff;border:1px solid #2a335f;border-radius:6px;padding:8px 12px;cursor:pointer;font-size:14px;text-align:left}
+.past-events-toggle:hover{background:#1a2750}
+.past-events-toggle .pe-arrow{display:inline-block;transition:transform 0.15s;font-size:12px}
+.past-events-wrap.collapsed .past-events-toggle .pe-arrow{transform:rotate(-90deg)}
+.past-events-toggle .pe-label{font-weight:600}
+.past-events-toggle .pe-meta{margin-left:auto;color:#9fb0ea;font-size:12px}
+.past-events-content{margin-top:10px}
+.past-events-wrap.collapsed .past-events-content{display:none}
+.past-day{margin-bottom:14px;background:#0f1630;border:1px solid #2a335f;border-radius:6px;padding:10px}
+.past-day-header{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;border-bottom:1px solid #2a335f;padding-bottom:6px;margin-bottom:8px}
+.past-day-date{font-weight:700;color:#e8ecff;font-size:14px}
+.past-day-counts{color:#b9c3f2;font-size:12px;font-feature-settings:"tnum"}
+.past-urgent{color:#ffb3bf;font-weight:700}
+.past-day-events{list-style:none;padding:0;margin:0}
+.past-day-events li{padding:6px 0;border-bottom:1px solid #1a2241}
+.past-day-events li:last-child{border-bottom:none}
+.past-event-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.past-event-title{flex:1;color:#e8ecff;font-size:13px}
+.past-event-count{color:#9fb0ea;font-size:11px;font-feature-settings:"tnum"}
+.past-sample{color:#9fb0ea;font-size:11px;margin-left:62px;line-height:1.5}
+.past-load-more{display:block;width:100%;margin-top:8px;padding:8px;background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:6px;cursor:pointer;font-size:13px}
+.past-load-more:hover{background:#1a2750}
+
 /* Hotspot detail modal */
 .hd-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid #2a335f;background:#0c1228;color:#d8e2ff;font-size:13px}
 .hd-meta-place{color:#b9c3f2}

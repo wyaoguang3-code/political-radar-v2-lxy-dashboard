@@ -816,6 +816,119 @@ function renderHotspotCards(hotspots, markersByTitle){
   });
 }
 
+// --------- Past events history ---------
+const PAST_EVENTS_DEFAULT_LIMIT = 14;  // 預設顯示近 14 天
+let _pastEventsAll = [];               // cached全部 days，分頁時用
+let _pastEventsShown = 0;
+
+async function renderPastEvents(){
+  const wrap = document.getElementById('pastEventsWrap');
+  const list = document.getElementById('pastEventsList');
+  const meta = document.getElementById('pastEventsMeta');
+  if (!wrap || !list) return;
+
+  const hist = await fetchJSON('./hotspot_history.json');
+  if (!hist || !Array.isArray(hist.days) || hist.days.length === 0){
+    if (meta) meta.textContent = '（暫無歷史資料）';
+    list.innerHTML = '';
+    return;
+  }
+
+  // 倒序：最新日期在最上
+  _pastEventsAll = [...hist.days].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  _pastEventsShown = 0;
+  if (meta) meta.textContent = `（共 ${_pastEventsAll.length} 天紀錄，預設顯示近 ${PAST_EVENTS_DEFAULT_LIMIT} 天）`;
+
+  list.innerHTML = '';
+  appendPastEventsBatch(PAST_EVENTS_DEFAULT_LIMIT);
+}
+
+function appendPastEventsBatch(count){
+  const list = document.getElementById('pastEventsList');
+  if (!list) return;
+  const todayStr = new Date().toISOString().slice(0, 10);
+
+  // 如果之前有「載入更多」按鈕，先移除
+  list.querySelectorAll('.past-load-more').forEach(b => b.remove());
+
+  const end = Math.min(_pastEventsShown + count, _pastEventsAll.length);
+  for (let i = _pastEventsShown; i < end; i++){
+    const d = _pastEventsAll[i];
+    const dayWrap = document.createElement('div');
+    dayWrap.className = 'past-day';
+
+    const hs = d.hotspots || [];
+    const counts = { red: 0, yellow: 0, green: 0 };
+    let urgent = 0;
+    hs.forEach(h => {
+      if (counts[h.level] != null) counts[h.level] += 1;
+      if (h.is_urgent) urgent += 1;
+    });
+
+    const isToday = d.date === todayStr;
+    const dateLabel = isToday ? `${d.date}（今日）` : d.date;
+    dayWrap.innerHTML = `
+      <div class="past-day-header">
+        <span class="past-day-date">${escapeHtml(dateLabel)}</span>
+        <span class="past-day-counts">
+          ${urgent ? `<span class="past-urgent">🚨 ${urgent}</span>　` : ''}
+          🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}
+        </span>
+      </div>
+    `;
+
+    // 該日 hotspot 簡列（依 urgency 降冪）
+    const sorted = [...hs].sort((a, b) => (b.urgency_score || 0) - (a.urgency_score || 0));
+    const ul = document.createElement('ul');
+    ul.className = 'past-day-events';
+    sorted.forEach(h => {
+      const li = document.createElement('li');
+      const level = h.level || 'green';
+      const total = (h.news_count || 0) + (h.comment_count || 0);
+      const urgentMark = h.is_urgent ? '🚨 ' : '';
+      const cityLabel = h.city ? `[${escapeHtml(h.city)}] ` : '';
+      const sample = (h.sample_news_titles || [])
+        .filter(t => t)
+        .slice(0, 2)
+        .map(t => `<div class="past-sample">・${escapeHtml(t)}</div>`)
+        .join('');
+      li.innerHTML = `
+        <div class="past-event-row">
+          <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+          <span class="past-event-title">${urgentMark}${cityLabel}${escapeHtml(h.title || '事件')}</span>
+          <span class="past-event-count">${total} 則${h.negativity_pct ? ` · ${h.negativity_pct}% 負面` : ''}</span>
+        </div>
+        ${sample}
+      `;
+      ul.appendChild(li);
+    });
+    dayWrap.appendChild(ul);
+    list.appendChild(dayWrap);
+  }
+  _pastEventsShown = end;
+
+  // 還有更多 → 加「載入更多」按鈕
+  if (_pastEventsShown < _pastEventsAll.length){
+    const remaining = _pastEventsAll.length - _pastEventsShown;
+    const btn = document.createElement('button');
+    btn.className = 'past-load-more';
+    btn.type = 'button';
+    btn.textContent = `▾ 顯示更多（還有 ${remaining} 天）`;
+    btn.addEventListener('click', () => appendPastEventsBatch(30));
+    list.appendChild(btn);
+  }
+}
+
+function initPastEventsToggle(){
+  const wrap = document.getElementById('pastEventsWrap');
+  const btn = document.getElementById('pastEventsToggle');
+  if (!btn || !wrap) return;
+  btn.addEventListener('click', () => {
+    const collapsed = wrap.classList.toggle('collapsed');
+    btn.setAttribute('aria-expanded', String(!collapsed));
+  });
+}
+
 function initModal(){
   const modal = document.getElementById('commentsModal');
   if (!modal) return;
@@ -1085,6 +1198,7 @@ async function run(){
   renderRedCommentsPanel();
   renderTopicHeat();
   renderIncidentMap(d);
+  renderPastEvents();
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
@@ -1262,6 +1376,7 @@ function initModes(){
 initCollapsibles();
 initMentionModal();
 initHotspotDetailModal();
+initPastEventsToggle();
 initModes();
 initModal();
 initTopicHeat();
