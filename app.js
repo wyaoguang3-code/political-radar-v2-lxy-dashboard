@@ -853,7 +853,6 @@ async function renderPastEvents(){
 function appendPastEventsBatch(count){
   const list = document.getElementById('pastEventsList');
   if (!list) return;
-  const todayStr = new Date().toISOString().slice(0, 10);
 
   // 如果之前有「載入更多」按鈕，先移除
   list.querySelectorAll('.past-load-more').forEach(b => b.remove());
