@@ -1352,7 +1352,14 @@ async function renderElectionMap(){
   const TW_CENTERS = {
     tpe: [25.05, 121.55], ntpc: [24.99, 121.55], tyc: [24.99, 121.30],
     txg: [24.16, 120.65], tnn: [22.99, 120.21], khh: [22.62, 120.31],
+    kee: [25.13, 121.74], hsz: [24.81, 120.97], cyi: [23.48, 120.45],
+    hsq: [24.70, 121.10], mil: [24.49, 120.92], cha: [24.05, 120.51],
+    nan: [23.91, 120.96], yun: [23.71, 120.43], cyq: [23.45, 120.35],
+    pif: [22.55, 120.62], ila: [24.70, 121.74], hua: [23.83, 121.40],
+    ttt: [22.81, 121.10], peh: [23.57, 119.58],
+    kin: [24.43, 118.31], lja: [26.16, 119.95],
   };
+  const SIX_CITIES = new Set(['tpe', 'ntpc', 'tyc', 'txg', 'tnn', 'khh']);
 
   if (!electionMap){
     electionMap = L.map('electionMap', { scrollWheelZoom: false }).setView([23.7, 121], 7);
@@ -1366,12 +1373,28 @@ async function renderElectionMap(){
 
     if (status) status.textContent = '載入中…';
 
+    // 自動 fallback 到 presidential 模式（非 6 都不支援 priority/strategy/persistence）
+    let activeMode = mode;
+    const isFullPriorityMode = mode === 'priority' || mode === 'strategy' || mode === 'persistence';
+    if (!SIX_CITIES.has(code) && isFullPriorityMode){
+      activeMode = 'presidential_predict';
+      // 同步 select 顯示，這樣 legend 也會跟著切
+      modeSelect.value = activeMode;
+    }
+
     // Lazy fetch geo + city data
     if (!_emGeoCache[code]){
       const geo = await fetchJSON(`./election_priority/geo/${code}.geo.json`);
       _emGeoCache[code] = geo;
     }
-    const cityData = await loadEpCity(code);
+    // 6 都用完整 election_priority/{code}.json（有 priority/strategy 等），
+    // 其他用精簡 presidential_history/{code}.json（只有 town/village + 總統歷史 + 預測）
+    let cityData;
+    if (SIX_CITIES.has(code)){
+      cityData = await loadEpCity(code);
+    } else {
+      cityData = await loadPresidentialOnlyCity(code);
+    }
     if (!cityData || !_emGeoCache[code]){
       if (status) status.textContent = '載入失敗。';
       return;
@@ -1394,11 +1417,11 @@ async function renderElectionMap(){
       const v = lookupVillage(p.TOWNNAME, p.VILLAGENAM);
       let color = '#333';
       if (v){
-        if (mode === 'priority') color = priorityToColor(v.priority);
-        else if (mode === 'strategy') color = STRATEGY_COLORS[v.strategy_type] || '#444';
-        else if (mode === 'persistence') color = PERSISTENCE_MAP_COLORS[v.persistence] || '#444';
-        else if (mode === 'presidential_2024') color = presidentialColorByYear(v, 2024);
-        else if (mode === 'presidential_predict') color = presidentialColorByPrediction(v);
+        if (activeMode === 'priority') color = priorityToColor(v.priority);
+        else if (activeMode === 'strategy') color = STRATEGY_COLORS[v.strategy_type] || '#444';
+        else if (activeMode === 'persistence') color = PERSISTENCE_MAP_COLORS[v.persistence] || '#444';
+        else if (activeMode === 'presidential_2024') color = presidentialColorByYear(v, 2024);
+        else if (activeMode === 'presidential_predict') color = presidentialColorByPrediction(v);
       }
       return {
         color: '#0a0e1a', weight: 0.4,
@@ -1414,13 +1437,13 @@ async function renderElectionMap(){
         let tooltipHtml;
         if (!v){
           tooltipHtml = `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（無資料）`;
-        } else if (mode === 'presidential_2024'){
+        } else if (activeMode === 'presidential_2024'){
           const r = (v.presidential_history || []).find(x => x.year === 2024);
           tooltipHtml = r
             ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>2024 勝者：<strong>${r.winner}</strong><br>
                KMT ${r.kmt_pct}%　DPP ${r.dpp_pct}%　TPP ${r.tpp_pct}%`
             : `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（總統選舉資料缺）`;
-        } else if (mode === 'presidential_predict'){
+        } else if (activeMode === 'presidential_predict'){
           const pred = v.presidential_prediction;
           tooltipHtml = pred
             ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
@@ -1436,8 +1459,12 @@ async function renderElectionMap(){
         }
         layer.bindTooltip(tooltipHtml, { sticky: true, direction: 'top' });
         layer.on('click', () => {
-          if (v){
-            openVillageDetail({ ...v, city: code, cityName: cityData.name });
+          if (!v) return;
+          const enriched = { ...v, city: code, cityName: cityData.name };
+          if (v.priority !== undefined){
+            openVillageDetail(enriched);
+          } else {
+            openVillagePresidentialDetail(enriched);
           }
         });
         layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#5a79ff' }));
@@ -1452,11 +1479,11 @@ async function renderElectionMap(){
     // Render legend
     if (legendEl){
       let html = '';
-      if (mode === 'priority'){
+      if (activeMode === 'priority'){
         html = `<div class="em-legend-title">Priority 分數（高 = 主戰場）</div>
           <div class="em-legend-gradient"></div>
           <div class="em-legend-scale"><span>0（鎖定）</span><span>50</span><span>100（必爭）</span></div>`;
-      } else if (mode === 'strategy'){
+      } else if (activeMode === 'strategy'){
         html = `<div class="em-legend-title">策略類型</div>
           ${Object.entries(STRATEGY_COLORS).map(([k, c]) => {
             const labels = {A_LOCKED:'A 永○鎖定區', B_PURE_SWING:'B 純搖擺主戰場',
@@ -1464,12 +1491,12 @@ async function renderElectionMap(){
                             E_AGEING_SATURATED:'E 高齡飽和'};
             return `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${labels[k]}</span>`;
           }).join('')}`;
-      } else if (mode === 'presidential_2024'){
+      } else if (activeMode === 'presidential_2024'){
         html = `<div class="em-legend-title">2024 總統得票（實際勝者）</div>
           ${Object.entries(PARTY_MAP_COLORS).filter(([k]) => ['KMT','DPP','TPP'].includes(k)).map(([k, c]) =>
             `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
           ).join('')}`;
-      } else if (mode === 'presidential_predict'){
+      } else if (activeMode === 'presidential_predict'){
         html = `<div class="em-legend-title">下屆總統預測勝者（基本面模型）</div>
           ${Object.entries(PARTY_MAP_COLORS).filter(([k]) => ['KMT','DPP','TPP'].includes(k)).map(([k, c]) =>
             `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
@@ -1480,6 +1507,10 @@ async function renderElectionMap(){
           ${Object.entries(PERSISTENCE_MAP_COLORS).map(([k, c]) =>
             `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
           ).join('')}`;
+      }
+      // 非 6 都自動 fallback 到總統預測模式時，提示 user
+      if (!SIX_CITIES.has(code) && isFullPriorityMode){
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#f59e0b">⚠️ 此縣市不是 6 都之一，沒有 priority/策略/政治屬性 資料。已自動切到「下屆總統預測」模式。要做完整 priority 需要村里級 demographics（待補）。</div>`;
       }
       legendEl.innerHTML = html;
     }
@@ -1526,6 +1557,15 @@ async function loadEpCity(code){
   if (_epCityCache[code]) return _epCityCache[code];
   const d = await fetchJSON(`./election_priority/${code}.json`);
   if (d) _epCityCache[code] = d;
+  return d;
+}
+
+// 非 6 都用：載入精簡的「只有總統選舉資料」per-city 檔
+const _presOnlyCityCache = {};
+async function loadPresidentialOnlyCity(code){
+  if (_presOnlyCityCache[code]) return _presOnlyCityCache[code];
+  const d = await fetchJSON(`./presidential_history/${code}.json`);
+  if (d) _presOnlyCityCache[code] = d;
   return d;
 }
 
@@ -1700,6 +1740,25 @@ function renderPresidentialBlock(v){
     </table>
     ${predBlock}
   `;
+}
+
+// 非 6 都用：只有總統選舉資料的精簡 modal（沒 priority/策略/demographics）
+function openVillagePresidentialDetail(v){
+  const html = `
+    <div class="ep-detail-meta">
+      <div><strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong></div>
+      <div class="hint">這個縣市目前沒有 priority/策略/demographics 資料（非 6 都）— 只顯示總統選舉歷史與預測。</div>
+    </div>
+    ${renderPresidentialBlock(v)}
+  `;
+  const modal = document.getElementById('hotspotDetailModal');
+  if (!modal) return;
+  document.getElementById('hotspotDetailTitle').textContent =
+    `${v.cityName || ''} ${v.town || ''} ${v.village || ''}（總統選舉）`;
+  document.getElementById('hotspotDetailBody').innerHTML = html;
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
 }
 
 function openVillageDetail(v){
