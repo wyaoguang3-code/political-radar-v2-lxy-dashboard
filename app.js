@@ -750,8 +750,10 @@ function renderHotspotCards(hotspots, markersByTitle){
     const section = document.createElement('div');
     section.className = 'hotspot-city-section';
 
-    const header = document.createElement('div');
+    const header = document.createElement('button');
+    header.type = 'button';
     header.className = 'hotspot-city-header';
+    header.setAttribute('aria-expanded', 'true');
     const counts = { red: 0, yellow: 0, green: 0 };
     let urgent = 0;
     arr.forEach(h => {
@@ -759,12 +761,17 @@ function renderHotspotCards(hotspots, markersByTitle){
       if (h.is_urgent) urgent += 1;
     });
     header.innerHTML = `
+      <span class="city-arrow">▾</span>
       <h4>${escapeHtml(city)}</h4>
       <span class="city-counts">
         ${urgent ? `<span class="city-urgent">🚨 ${urgent} 件待處理</span>　` : ''}
         🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}
       </span>
     `;
+    header.addEventListener('click', () => {
+      const collapsed = section.classList.toggle('collapsed');
+      header.setAttribute('aria-expanded', String(!collapsed));
+    });
     section.appendChild(header);
 
     const grid = document.createElement('div');

@@ -143,9 +143,13 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 
 /* City grouping */
 .hotspot-city-section{margin-top:14px}
-.hotspot-city-header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:6px 10px;background:#16203f;border-left:3px solid #5a79ff;border-radius:4px;margin-bottom:8px}
+button.hotspot-city-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;padding:6px 10px;background:#16203f;border:1px solid transparent;border-left:3px solid #5a79ff;border-radius:4px;margin-bottom:8px;cursor:pointer;text-align:left;color:inherit;transition:background 0.15s}
+button.hotspot-city-header:hover{background:#1a2750}
+.city-arrow{font-size:11px;color:#9fb0ea;transition:transform 0.15s;flex-shrink:0}
+.hotspot-city-section.collapsed .city-arrow{transform:rotate(-90deg)}
+.hotspot-city-section.collapsed > .hotspot-list{display:none}
 .hotspot-city-header h4{margin:0;color:#d8e2ff;font-size:14px}
-.city-counts{color:#b9c3f2;font-size:12px;font-feature-settings:"tnum"}
+.city-counts{color:#b9c3f2;font-size:12px;font-feature-settings:"tnum";margin-left:auto}
 .city-urgent{color:#ffb3bf;font-weight:700}
 
 /* Urgent card emphasis */
