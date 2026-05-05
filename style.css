@@ -306,6 +306,15 @@ button.past-day-header:hover{background:#16203f}
 /* Strategy box layout */
 .ep-strategy-box, .ep-demo-box{margin:8px 14px 4px 14px;padding:10px 12px;background:#0f1630;border:1px solid #2a335f;border-radius:6px}
 .ep-strategy-row{margin:6px 0;line-height:1.8}
+.ep-strategy-headline{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.ep-strategy-reason{margin:6px 0 12px 0;padding:8px 12px;background:#0c1228;border-left:3px solid #5a79ff;border-radius:4px;color:#dbe8ff;font-size:13px;line-height:1.7}
+.ep-detail-list-title{color:#9fb0ea;font-size:12px;font-weight:700;margin:10px 0 4px 0;border-top:1px solid #2a335f;padding-top:8px}
+.ep-detail-list{list-style:none;margin:0;padding:0}
+.ep-detail-list li{padding:6px 0;border-bottom:1px solid #1a2241}
+.ep-detail-list li:last-child{border-bottom:none}
+.ep-list-num{color:#9fb0ea;font-weight:700;margin-right:6px;font-feature-settings:"tnum"}
+.ep-list-name{color:#dbe8ff;font-weight:700;font-size:13px;margin-right:8px}
+.ep-list-reason{color:#b9c3f2;font-size:12px;line-height:1.6;display:block;margin-top:3px}
 .ep-strategy-label{color:#9fb0ea;font-size:12px;margin-right:4px}
 .ep-detail-meta h3, #hotspotDetailBody h3{margin:14px 14px 4px 14px;color:#d8e2ff;font-size:14px}
 

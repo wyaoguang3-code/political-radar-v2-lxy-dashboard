@@ -1358,24 +1358,31 @@ function openVillageDetail(v){
 
     <h3>🎯 拉票策略建議（給幕僚操作用）</h3>
     <div class="ep-strategy-box">
-      <div class="ep-strategy-row">
-        <span class="ep-strategy-label">分類：</span>
+      <div class="ep-strategy-headline">
         <span class="ep-strategy-pill ${stratCls}">${escapeHtml(v.strategy_label || '—')}</span>
-      </div>
-      <div class="ep-strategy-row">
-        <span class="ep-strategy-label">主要動作：</span>
         <span class="ep-action-pill ${actionCls}">${escapeHtml(v.action || '—')}</span>
-        <span class="ep-strategy-label" style="margin-left:14px">建議預算：</span>
-        <span class="ep-budget-pill ${budgetCls}">${escapeHtml(v.budget_hint || '—')}</span>
+        <span class="ep-budget-pill ${budgetCls}">預算：${escapeHtml(v.budget_hint || '—')}</span>
       </div>
-      <div class="ep-strategy-row">
-        <span class="ep-strategy-label">建議接觸方式：</span>
-        ${(v.outreach || []).map(o => `<span class="ep-outreach-pill">${escapeHtml(o)}</span>`).join('')}
-      </div>
-      <div class="ep-strategy-row">
-        <span class="ep-strategy-label">議題優先序：</span>
-        ${(v.topics || []).map((t, i) => `<span class="ep-topic-pill">${i + 1}. ${escapeHtml(t)}</span>`).join('')}
-      </div>
+      ${v.strategy_reason ? `<p class="ep-strategy-reason">${escapeHtml(v.strategy_reason)}</p>` : ''}
+
+      <div class="ep-detail-list-title">建議接觸方式（${(v.outreach || []).length} 種）</div>
+      <ul class="ep-detail-list">
+        ${(v.outreach || []).map(o => `
+          <li>
+            <span class="ep-list-name">${escapeHtml(o)}</span>
+            <span class="ep-list-reason">${escapeHtml((_epIndexCache.data?.reasons?.outreach || {})[o] || '')}</span>
+          </li>`).join('')}
+      </ul>
+
+      <div class="ep-detail-list-title">議題優先序（${(v.topics || []).length} 個）</div>
+      <ul class="ep-detail-list">
+        ${(v.topics || []).map((t, i) => `
+          <li>
+            <span class="ep-list-num">${i + 1}.</span>
+            <span class="ep-list-name">${escapeHtml(t)}</span>
+            <span class="ep-list-reason">${escapeHtml((_epIndexCache.data?.reasons?.topics || {})[t] || '')}</span>
+          </li>`).join('')}
+      </ul>
     </div>
 
     <h3>👥 人口圖像</h3>
