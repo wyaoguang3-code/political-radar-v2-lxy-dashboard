@@ -995,7 +995,8 @@ function openArticlesModal(title, note, articles){
     time: a.time || '',
   }));
   openHotspotDetailModal({
-    title: `${title}（${news.length} 則）`,
+    // openHotspotDetailModal 會自動在標題後綴 (N 則)，所以這裡只傳乾淨的 title
+    title: title,
     place: '盧秀燕',
     level: 'green',  // 卡片本身沒燈號，給個中性顏色
     source: news.length ? 'news' : '',
