@@ -156,6 +156,25 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .hc-negativity.mid{background:#594a16;color:#ffe08a}
 .hc-negativity.low{background:#1a3a2e;color:#9ff0b5}
 
+/* Hotspot legend (judgment helper) */
+.hotspot-legend{margin:8px 0 14px 0;background:#0c1228;border:1px solid #2a335f;border-left:3px solid #5a79ff;border-radius:6px;padding:10px 14px;font-size:13px}
+.hotspot-legend summary{cursor:pointer;color:#dbe8ff;font-weight:600;font-size:14px;list-style:none;outline:none;user-select:none}
+.hotspot-legend summary::-webkit-details-marker{display:none}
+.hotspot-legend summary::before{content:'▾';display:inline-block;margin-right:6px;font-size:12px;color:#9fb0ea;transition:transform 0.15s}
+.hotspot-legend:not([open]) summary::before{transform:rotate(-90deg)}
+.hotspot-legend summary:hover{color:#ffffff}
+.legend-body{margin-top:10px;padding-top:8px;border-top:1px solid #2a335f}
+.legend-section{margin-bottom:12px}
+.legend-section:last-child{margin-bottom:0}
+.legend-section h5{margin:6px 0 6px 0;color:#d8e2ff;font-size:13px;font-weight:700}
+.legend-section p{margin:4px 0;color:#b9c3f2;line-height:1.55}
+.legend-section ul, .legend-section ol{margin:4px 0;padding-left:22px;color:#b9c3f2;line-height:1.7}
+.legend-section ul li, .legend-section ol li{margin:2px 0}
+.legend-section code{background:#1a2241;padding:1px 6px;border-radius:3px;font-size:12px;color:#d8e2ff}
+.legend-row{display:flex;align-items:center;gap:10px;margin:5px 0;color:#b9c3f2}
+.legend-warn{margin-top:8px !important;padding:6px 10px;background:#3a2f0a;border-left:3px solid #f7c948;border-radius:3px;color:#ffe08a !important;font-size:12px}
+.legend-tip{margin-top:6px !important;padding:6px 10px;background:#1a3a2e;border-left:3px solid #20c997;border-radius:3px;color:#9ff0b5 !important;font-size:12px}
+
 /* Past events history */
 .past-events-wrap{margin-top:18px;border-top:1px solid #2a335f;padding-top:12px}
 .past-events-toggle{width:100%;display:flex;align-items:center;gap:8px;background:#16203f;color:#d8e2ff;border:1px solid #2a335f;border-radius:6px;padding:8px 12px;cursor:pointer;font-size:14px;text-align:left}

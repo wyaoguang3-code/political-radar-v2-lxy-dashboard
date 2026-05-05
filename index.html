@@ -73,6 +73,58 @@
       <h3>目前發生中的事件</h3>
       <span id="hotspotSummary" class="hotspot-summary"></span>
     </div>
+
+    <details class="hotspot-legend" id="hotspotLegend" open>
+      <summary>📖 如何判讀燈號（點擊收合）</summary>
+      <div class="legend-body">
+        <div class="legend-section">
+          <h5>燈號顏色 = 聲量規模</h5>
+          <div class="legend-row">
+            <span class="hc-level-chip red">RED</span>
+            <span>事件有 ≥ 10 則命中（新聞 + 留言加總）</span>
+          </div>
+          <div class="legend-row">
+            <span class="hc-level-chip yellow">YELLOW</span>
+            <span>事件有 ≥ 5 則命中</span>
+          </div>
+          <div class="legend-row">
+            <span class="hc-level-chip green">GREEN</span>
+            <span>事件有 ≥ 1 則命中</span>
+          </div>
+          <p class="legend-warn">⚠️ 紅燈不代表事件「嚴重」 — 它只代表「被討論很多」。例如盧秀燕參加「母親節活動」一天有 10 篇新聞，照樣會是紅色。</p>
+        </div>
+
+        <div class="legend-section">
+          <h5>🚨 緊急徽章 = 真的需要優先處理</h5>
+          <p>滿足以下任一條件才掛上 🚨：</p>
+          <ul>
+            <li><strong>≥ 50% 新聞含負面詞</strong>（如：抗議、車禍、貪污 …）<strong>且 ≥ 2 篇</strong> — 多家媒體都在報這件壞事</li>
+            <li><strong>≥ 3 則紅燈留言</strong>（用戶集中表達不滿、攻擊性留言）</li>
+          </ul>
+          <p class="legend-tip">看 🚨 才是「執政團隊該動手」的訊號，不要被燈號顏色誤導。</p>
+        </div>
+
+        <div class="legend-section">
+          <h5>X% 負面 / 紅黃綠留言</h5>
+          <ul>
+            <li><strong>事件卡片的「X% 負面」</strong>：該事件下，標題含負面詞的新聞佔比</li>
+            <li><strong>留言燈號（modal 內）</strong>：用 3 本字典（攻擊詞 / 質疑詞 / 鼓勵詞）打分，紅優先</li>
+            <li>都是字典比對沒做語境分析 — 「解決鼠患」也會被算成「負面新聞」（因為含「鼠患」）</li>
+          </ul>
+        </div>
+
+        <div class="legend-section">
+          <h5>排序邏輯</h5>
+          <p>事件先按城市分組，每個城市內依下面順序排：</p>
+          <ol>
+            <li><strong>🚨 緊急</strong>事件優先</li>
+            <li>同緊急狀態下，紅 → 黃 → 綠</li>
+            <li>同燈號下，依 <code>urgency_score = 負面新聞×3 + 紅燈留言×2 + 總量×1</code> 降冪</li>
+          </ol>
+        </div>
+      </div>
+    </details>
+
     <div id="hotspotList" class="hotspot-list"></div>
 
     <div class="past-events-wrap collapsed" id="pastEventsWrap">
