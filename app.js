@@ -725,7 +725,16 @@ function renderHotspotCards(hotspots, markersByTitle){
   }
 
   // 依城市分組
-  const CITY_ORDER = ['台中', '台北', '高雄', '其他'];
+  // 顯示順序：盧秀燕主場（台中）首位 → 6 都 → 3 省轄市 → 13 縣 → 其他
+  const CITY_ORDER = [
+    '台中',
+    '台北', '新北', '桃園', '台南', '高雄',
+    '基隆', '新竹市', '嘉義市',
+    '新竹縣', '苗栗', '彰化', '南投', '雲林', '嘉義縣',
+    '屏東', '宜蘭', '花蓮', '台東',
+    '澎湖', '金門', '連江',
+    '其他',
+  ];
   const groups = {};
   list.forEach(h => {
     const city = h.city || '其他';
@@ -858,7 +867,15 @@ function appendPastEventsBatch(count){
   list.querySelectorAll('.past-load-more').forEach(b => b.remove());
 
   const end = Math.min(_pastEventsShown + count, _pastEventsAll.length);
-  const PAST_CITY_ORDER = ['台中', '台北', '高雄', '其他'];
+  const PAST_CITY_ORDER = [
+    '台中',
+    '台北', '新北', '桃園', '台南', '高雄',
+    '基隆', '新竹市', '嘉義市',
+    '新竹縣', '苗栗', '彰化', '南投', '雲林', '嘉義縣',
+    '屏東', '宜蘭', '花蓮', '台東',
+    '澎湖', '金門', '連江',
+    '其他',
+  ];
 
   // 「今日」用台北時區判斷（後端 d.date 也是台北日期），避免 UTC vs +8 跨日誤標
   const todayStr = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Taipei' });
