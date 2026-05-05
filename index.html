@@ -137,6 +137,33 @@
     </div>
   </section>
 
+  <section class="panel" id="electionMapPanel">
+    <h2>里級地理視覺化（priority / 策略 / 政治屬性）</h2>
+    <p class="hint">用顏色直接看出哪些區塊是主戰場、哪些是鎖定區。點任一里 → 完整明細。</p>
+    <div class="em-controls">
+      <label>縣市：
+        <select id="emCitySelect">
+          <option value="tpe">台北市</option>
+          <option value="ntpc">新北市</option>
+          <option value="tyc">桃園市</option>
+          <option value="txg">台中市</option>
+          <option value="tnn">台南市</option>
+          <option value="khh">高雄市</option>
+        </select>
+      </label>
+      <label>顏色依據：
+        <select id="emModeSelect">
+          <option value="priority">Priority 分數</option>
+          <option value="strategy">策略類型</option>
+          <option value="persistence">政治屬性</option>
+        </select>
+      </label>
+      <span id="emStatus" class="hint"></span>
+    </div>
+    <div id="electionMap" style="height:580px;width:100%;border-radius:8px;margin-top:8px"></div>
+    <div id="emLegend" class="em-legend"></div>
+  </section>
+
   <section class="panel" id="electionPriorityPanel">
     <h2>里級黃金戰場版圖（6 都歷年選舉）</h2>
     <div class="ep-disclaimer">

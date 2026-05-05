@@ -315,6 +315,19 @@ button.past-day-header:hover{background:#16203f}
 .ep-list-num{color:#9fb0ea;font-weight:700;margin-right:6px;font-feature-settings:"tnum"}
 .ep-list-name{color:#dbe8ff;font-weight:700;font-size:13px;margin-right:8px}
 .ep-list-reason{color:#b9c3f2;font-size:12px;line-height:1.6;display:block;margin-top:3px}
+
+/* Election village chloropleth map */
+.em-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:10px 0;color:#dbe8ff;font-size:13px}
+.em-controls select{background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:4px;padding:4px 8px;margin-left:6px}
+.em-legend{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:10px;padding:8px 12px;background:#0f1630;border:1px solid #2a335f;border-radius:6px;color:#dbe8ff;font-size:12px}
+.em-legend-title{font-weight:700;color:#d8e2ff;font-size:13px;margin-right:6px}
+.em-legend-item{display:inline-flex;align-items:center;gap:5px;margin-right:6px}
+.em-legend-swatch{display:inline-block;width:14px;height:14px;border-radius:3px;border:1px solid #2a335f}
+.em-legend-gradient{display:inline-block;width:240px;height:14px;border-radius:3px;background:linear-gradient(to right, rgb(70,115,180), rgb(247,201,72), rgb(255,77,79))}
+.em-legend-scale{display:flex;justify-content:space-between;width:240px;font-size:11px;color:#9fb0ea}
+/* Leaflet tooltip dark theme override */
+.leaflet-tooltip{background:#121935 !important;color:#e8ecff !important;border:1px solid #2a335f !important;font-size:12px}
+.leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before{border-top-color:#121935 !important;border-bottom-color:#121935 !important}
 .ep-strategy-label{color:#9fb0ea;font-size:12px;margin-right:4px}
 .ep-detail-meta h3, #hotspotDetailBody h3{margin:14px 14px 4px 14px;color:#d8e2ff;font-size:14px}
 

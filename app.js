@@ -1182,6 +1182,162 @@ function renderMediaFraming(d){
   }
 }
 
+// --------- Election village chloropleth map ---------
+let electionMap;
+let electionMapLayer;
+const _emGeoCache = {};   // code → GeoJSON
+const STRATEGY_COLORS = {
+  'A_LOCKED':            '#1d3a72',  // 深藍：鎖定區
+  'B_PURE_SWING':        '#ff7b1f',  // 橙：純搖擺主戰場
+  'C_FLIPPABLE':         '#f7c948',  // 黃：翻轉潛力
+  'D_LOW_TURNOUT':       '#20c997',  // 綠：低投票率動員
+  'E_AGEING_SATURATED':  '#777777',  // 灰：飽和
+};
+const PERSISTENCE_MAP_COLORS = {
+  '永藍': '#1d3a72', '永綠': '#1a5031', '永白': '#bbbbbb',
+  '翻轉': '#f7c948', '搖擺': '#ff7b1f', '其他': '#444444',
+};
+function priorityToColor(p){
+  // 0-100 → 淡藍 → 黃 → 紅
+  const x = Math.max(0, Math.min(100, p)) / 100;
+  if (x < 0.5){
+    // 淡藍 → 黃
+    const t = x * 2;
+    const r = Math.round(70 + (247-70)*t);
+    const g = Math.round(115 + (201-115)*t);
+    const b = Math.round(180 + (72-180)*t);
+    return `rgb(${r},${g},${b})`;
+  } else {
+    // 黃 → 紅
+    const t = (x - 0.5) * 2;
+    const r = Math.round(247 + (255-247)*t);
+    const g = Math.round(201 + (77-201)*t);
+    const b = Math.round(72 + (79-72)*t);
+    return `rgb(${r},${g},${b})`;
+  }
+}
+
+async function renderElectionMap(){
+  const container = document.getElementById('electionMap');
+  if (!container || typeof window.L === 'undefined') return;
+
+  const citySelect = document.getElementById('emCitySelect');
+  const modeSelect = document.getElementById('emModeSelect');
+  const status = document.getElementById('emStatus');
+  const legendEl = document.getElementById('emLegend');
+
+  const TW_CENTERS = {
+    tpe: [25.05, 121.55], ntpc: [24.99, 121.55], tyc: [24.99, 121.30],
+    txg: [24.16, 120.65], tnn: [22.99, 120.21], khh: [22.62, 120.31],
+  };
+
+  if (!electionMap){
+    electionMap = L.map('electionMap', { scrollWheelZoom: false }).setView([23.7, 121], 7);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                { maxZoom: 18, attribution: '&copy; OpenStreetMap' }).addTo(electionMap);
+  }
+
+  const renderLayer = async () => {
+    const code = citySelect.value;
+    const mode = modeSelect.value;
+
+    if (status) status.textContent = '載入中…';
+
+    // Lazy fetch geo + city data
+    if (!_emGeoCache[code]){
+      const geo = await fetchJSON(`./election_priority/geo/${code}.geo.json`);
+      _emGeoCache[code] = geo;
+    }
+    const cityData = await loadEpCity(code);
+    if (!cityData || !_emGeoCache[code]){
+      if (status) status.textContent = '載入失敗。';
+      return;
+    }
+
+    // Lookup by (town, village)
+    const lookup = {};
+    cityData.villages.forEach(v => {
+      lookup[`${v.town}|${v.village}`] = v;
+    });
+
+    if (electionMapLayer){
+      electionMap.removeLayer(electionMapLayer);
+    }
+
+    const styleFn = (feat) => {
+      const p = feat.properties || {};
+      const v = lookup[`${p.TOWNNAME}|${p.VILLAGENAM}`];
+      let color = '#333';
+      if (v){
+        if (mode === 'priority') color = priorityToColor(v.priority);
+        else if (mode === 'strategy') color = STRATEGY_COLORS[v.strategy_type] || '#444';
+        else if (mode === 'persistence') color = PERSISTENCE_MAP_COLORS[v.persistence] || '#444';
+      }
+      return {
+        color: '#0a0e1a', weight: 0.4,
+        fillColor: color, fillOpacity: v ? 0.75 : 0.25,
+      };
+    };
+
+    electionMapLayer = L.geoJSON(_emGeoCache[code], {
+      style: styleFn,
+      onEachFeature: (feat, layer) => {
+        const p = feat.properties || {};
+        const v = lookup[`${p.TOWNNAME}|${p.VILLAGENAM}`];
+        const tooltipHtml = v
+          ? `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>
+             priority: <strong>${v.priority}</strong><br>
+             ${v.strategy_label}<br>
+             ${v.persistence}　搖擺度 ${v.volatility}<br>
+             人口 ${v.pop.toLocaleString()}　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}`
+          : `<strong>${p.TOWNNAME} ${p.VILLAGENAM}</strong><br>（無資料）`;
+        layer.bindTooltip(tooltipHtml, { sticky: true, direction: 'top' });
+        layer.on('click', () => {
+          if (v){
+            openVillageDetail({ ...v, city: code, cityName: cityData.name });
+          }
+        });
+        layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#5a79ff' }));
+        layer.on('mouseout',  e => e.target.setStyle({ weight: 0.4, color: '#0a0e1a' }));
+      },
+    }).addTo(electionMap);
+
+    // Pan / zoom to city
+    const bounds = electionMapLayer.getBounds();
+    if (bounds.isValid()) electionMap.fitBounds(bounds, { padding: [10, 10] });
+
+    // Render legend
+    if (legendEl){
+      let html = '';
+      if (mode === 'priority'){
+        html = `<div class="em-legend-title">Priority 分數（高 = 主戰場）</div>
+          <div class="em-legend-gradient"></div>
+          <div class="em-legend-scale"><span>0（鎖定）</span><span>50</span><span>100（必爭）</span></div>`;
+      } else if (mode === 'strategy'){
+        html = `<div class="em-legend-title">策略類型</div>
+          ${Object.entries(STRATEGY_COLORS).map(([k, c]) => {
+            const labels = {A_LOCKED:'A 永○鎖定區', B_PURE_SWING:'B 純搖擺主戰場',
+                            C_FLIPPABLE:'C 翻轉潛力', D_LOW_TURNOUT:'D 低投票率動員',
+                            E_AGEING_SATURATED:'E 高齡飽和'};
+            return `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${labels[k]}</span>`;
+          }).join('')}`;
+      } else {
+        html = `<div class="em-legend-title">政治屬性</div>
+          ${Object.entries(PERSISTENCE_MAP_COLORS).map(([k, c]) =>
+            `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
+          ).join('')}`;
+      }
+      legendEl.innerHTML = html;
+    }
+
+    if (status) status.textContent = `${cityData.name} ${cityData.village_count} 里 · 顏色：${modeSelect.options[modeSelect.selectedIndex].text}`;
+  };
+
+  citySelect?.addEventListener('change', renderLayer);
+  modeSelect?.addEventListener('change', renderLayer);
+  await renderLayer();
+}
+
 // --------- Election priority map (黃金戰場版圖) ---------
 const _epIndexCache = { data: null };
 const _epCityCache = {};  // code → full city data
@@ -1720,6 +1876,7 @@ async function run(){
   renderPastEvents();
   renderMediaFraming(d);
   renderElectionPriority();
+  renderElectionMap();
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
