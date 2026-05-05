@@ -1281,10 +1281,11 @@ async function renderElectionPriority(){
         <th>區 / 里</th>
         <th>人口</th>
         <th>屬性</th>
+        <th>策略</th>
+        <th>動作</th>
+        <th>預算</th>
+        <th>投票率</th>
         <th>搖擺度</th>
-        <th>翻盤</th>
-        <th>最近差距</th>
-        <th>說服空間</th>
         <th>Priority</th>
       </tr></thead>`;
     const tbody = document.createElement('tbody');
@@ -1292,16 +1293,20 @@ async function renderElectionPriority(){
       const tr = document.createElement('tr');
       tr.className = 'ep-row';
       const persistCls = PERSISTENCE_COLORS[v.persistence] || 'persist-other';
+      const stratCls = `strategy-${(v.strategy_type || '').toLowerCase().replace('_', '-')}`;
+      const actionCls = `action-${(v.action || '').toLowerCase()}`;
+      const budgetCls = `budget-${(v.budget_hint || '').toLowerCase()}`;
       tr.innerHTML = `
         <td class="ep-rank">${i + 1}</td>
         <td class="ep-city">${escapeHtml(v.cityName)}</td>
         <td class="ep-village"><strong>${escapeHtml(v.town)}</strong> ${escapeHtml(v.village)}</td>
         <td class="ep-num">${v.pop.toLocaleString()}</td>
         <td><span class="ep-persist-pill ${persistCls}">${escapeHtml(v.persistence)}</span></td>
+        <td><span class="ep-strategy-pill ${stratCls}" title="${escapeHtml((v.outreach || []).join('、'))}">${escapeHtml(v.strategy_label || '—')}</span></td>
+        <td><span class="ep-action-pill ${actionCls}">${escapeHtml(v.action || '—')}</span></td>
+        <td><span class="ep-budget-pill ${budgetCls}">${escapeHtml(v.budget_hint || '—')}</span></td>
+        <td class="ep-num">${v.turnout != null ? v.turnout + '%' : '—'}</td>
         <td class="ep-num">${v.volatility}</td>
-        <td class="ep-num">${v.flips} 次</td>
-        <td class="ep-num">${v.latest_margin}%</td>
-        <td class="ep-num">${v.persuadability}</td>
         <td class="ep-priority"><strong>${v.priority}</strong></td>
       `;
       tr.addEventListener('click', () => openVillageDetail(v));
@@ -1335,13 +1340,54 @@ function openVillageDetail(v){
       </tr>`;
   }).join('');
 
+  const stratCls = `strategy-${(v.strategy_type || '').toLowerCase().replace('_', '-')}`;
+  const actionCls = `action-${(v.action || '').toLowerCase()}`;
+  const budgetCls = `budget-${(v.budget_hint || '').toLowerCase()}`;
+  const dp = v.demo_profile || {};
+  const ageMap = { young: '青年化', mid: '中壯年', senior: '高齡化', mixed: '混合' };
+  const eduMap = { high: '高教育', mid: '中等教育', low: '基礎教育' };
+  const genderMap = { male: '男性偏多', female: '女性偏多', balanced: '性別均衡' };
+
   const html = `
     <div class="ep-detail-meta">
-      <div><strong>${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong></div>
-      <div class="hint">人口 ${v.pop.toLocaleString()}（合格選舉人 ${v.voters.toLocaleString()}）｜中位年齡 ${v.median_age || '—'} 歲｜60 歲以上 ${v.a60up_pct}%</div>
-      <div class="hint">大專 ${v.college_pct}%｜研究所 ${v.graduate_pct}%</div>
+      <div><strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong>
+        <span class="ep-priority-tag">priority ${v.priority}</span></div>
+      <div class="hint">人口 ${v.pop.toLocaleString()}（合格選舉人 ${v.voters.toLocaleString()}）　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}　中位年齡 ${v.median_age || '—'} 歲</div>
       <div class="hint">屬性：<span class="ep-persist-pill ${PERSISTENCE_COLORS[v.persistence] || 'persist-other'}">${escapeHtml(v.persistence)}</span>　搖擺度 ${v.volatility}　翻盤 ${v.flips} 次　最近差距 ${v.latest_margin}%　說服空間 ${v.persuadability}</div>
     </div>
+
+    <h3>🎯 拉票策略建議（給幕僚操作用）</h3>
+    <div class="ep-strategy-box">
+      <div class="ep-strategy-row">
+        <span class="ep-strategy-label">分類：</span>
+        <span class="ep-strategy-pill ${stratCls}">${escapeHtml(v.strategy_label || '—')}</span>
+      </div>
+      <div class="ep-strategy-row">
+        <span class="ep-strategy-label">主要動作：</span>
+        <span class="ep-action-pill ${actionCls}">${escapeHtml(v.action || '—')}</span>
+        <span class="ep-strategy-label" style="margin-left:14px">建議預算：</span>
+        <span class="ep-budget-pill ${budgetCls}">${escapeHtml(v.budget_hint || '—')}</span>
+      </div>
+      <div class="ep-strategy-row">
+        <span class="ep-strategy-label">建議接觸方式：</span>
+        ${(v.outreach || []).map(o => `<span class="ep-outreach-pill">${escapeHtml(o)}</span>`).join('')}
+      </div>
+      <div class="ep-strategy-row">
+        <span class="ep-strategy-label">議題優先序：</span>
+        ${(v.topics || []).map((t, i) => `<span class="ep-topic-pill">${i + 1}. ${escapeHtml(t)}</span>`).join('')}
+      </div>
+    </div>
+
+    <h3>👥 人口圖像</h3>
+    <div class="ep-demo-box">
+      <div class="ep-demo-row">
+        <span class="ep-demo-tag">${escapeHtml(ageMap[dp.age_skew] || dp.age_skew || '—')}</span>
+        <span class="ep-demo-tag">${escapeHtml(eduMap[dp.edu_skew] || dp.edu_skew || '—')}</span>
+        <span class="ep-demo-tag">${escapeHtml(genderMap[dp.gender_skew] || dp.gender_skew || '—')}</span>
+      </div>
+      <div class="hint">20-39 歲 ${v.a20_39_pct}%　60+ 歲 ${v.a60up_pct}%　大專以上 ${v.high_edu_pct}%（含研究所 ${v.graduate_pct}%）　男性比例 ${v.male_pct}%</div>
+    </div>
+
     <h3>📜 歷次直轄市長選舉</h3>
     <table class="ep-history-table">
       <thead><tr><th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th></tr></thead>

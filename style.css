@@ -272,6 +272,43 @@ button.past-day-header:hover{background:#16203f}
 .ep-history-table th, .ep-history-table td{padding:4px 8px;border:1px solid #2a335f;text-align:center}
 .ep-history-table thead th{background:#16203f;color:#d8e2ff}
 
+/* Strategy / action / budget / outreach / topic pills */
+.ep-strategy-pill, .ep-action-pill, .ep-budget-pill, .ep-outreach-pill, .ep-topic-pill, .ep-demo-tag, .ep-priority-tag{
+  display:inline-block;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:600;margin:2px 3px
+}
+.ep-priority-tag{background:#3a3a1a;color:#ffe08a;margin-left:10px;font-size:11px}
+
+/* Strategy types */
+.ep-strategy-pill.strategy-a-locked{background:#1d3a72;color:#cfe0ff}
+.ep-strategy-pill.strategy-b-pure-swing{background:#5b3a1a;color:#ffe08a}
+.ep-strategy-pill.strategy-c-flippable{background:#594a16;color:#ffe08a}
+.ep-strategy-pill.strategy-d-low-turnout{background:#1a5031;color:#9ff0b5}
+.ep-strategy-pill.strategy-e-ageing-saturated{background:#3f3f3f;color:#cccccc}
+
+/* Action */
+.ep-action-pill.action-persuasion{background:#5b1d2a;color:#ffb3bf}
+.ep-action-pill.action-gotv{background:#1a5031;color:#9ff0b5}
+.ep-action-pill.action-mixed{background:#3a2f0a;color:#ffe08a}
+.ep-action-pill.action-maintain{background:#2a335f;color:#9fb0ea}
+.ep-action-pill.action-skip{background:#1a2241;color:#5a679a}
+
+/* Budget */
+.ep-budget-pill.budget-high{background:#5b1d2a;color:#ffb3bf}
+.ep-budget-pill.budget-medium{background:#594a16;color:#ffe08a}
+.ep-budget-pill.budget-low{background:#1a3a2e;color:#9ff0b5}
+.ep-budget-pill.budget-minimal{background:#1a2241;color:#5a679a}
+
+/* Outreach / topic pills (neutral) */
+.ep-outreach-pill{background:#1a2241;color:#dbe8ff}
+.ep-topic-pill{background:#0c1228;color:#dbe8ff;border:1px solid #2a335f}
+.ep-demo-tag{background:#16203f;color:#d8e2ff;border:1px solid #2a335f}
+
+/* Strategy box layout */
+.ep-strategy-box, .ep-demo-box{margin:8px 14px 4px 14px;padding:10px 12px;background:#0f1630;border:1px solid #2a335f;border-radius:6px}
+.ep-strategy-row{margin:6px 0;line-height:1.8}
+.ep-strategy-label{color:#9fb0ea;font-size:12px;margin-right:4px}
+.ep-detail-meta h3, #hotspotDetailBody h3{margin:14px 14px 4px 14px;color:#d8e2ff;font-size:14px}
+
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}
 button.past-city-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px 10px;background:#0c1228;border:1px solid transparent;border-radius:4px;margin-bottom:4px;cursor:pointer;text-align:left;color:inherit}
