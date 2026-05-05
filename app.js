@@ -1013,6 +1013,7 @@ function openArticlesModal(title, note, articles){
     title: a.title || '（無標題）',
     url: a.url || '',
     time: a.time || '',
+    is_negative: !!a.is_negative,  // 保留標記讓 modal 可以高亮負面新聞
   }));
   openHotspotDetailModal({
     // openHotspotDetailModal 會自動在標題後綴 (N 則)，所以這裡只傳乾淨的 title
@@ -1345,8 +1346,18 @@ function openHotspotDetailModal(h, markersByTitle){
   } else {
     const ol = document.createElement('ol');
     ol.className = 'hd-news-list';
+    let negCount = 0;
     articles.forEach(x => {
       const li = document.createElement('li');
+      if (x.is_negative){
+        li.classList.add('hd-news-negative');
+        negCount += 1;
+        const badge = document.createElement('span');
+        badge.className = 'hd-news-neg-badge';
+        badge.textContent = '⚠️ 負面';
+        badge.title = '標題命中負面/緊急詞典';
+        li.appendChild(badge);
+      }
       const meta = document.createElement('span');
       meta.className = 'mention-meta';
       meta.textContent = `${(x.time || '').slice(5, 16)}　`;
@@ -1357,6 +1368,12 @@ function openHotspotDetailModal(h, markersByTitle){
       li.appendChild(a);
       ol.appendChild(li);
     });
+    if (negCount > 0){
+      const note = document.createElement('p');
+      note.className = 'hint hd-neg-note';
+      note.textContent = `※ 其中 ${negCount} 則含負面/緊急詞（已標 ⚠️）`;
+      newsSec.appendChild(note);  // 先 append note 再 append ol，順序正確
+    }
     newsSec.appendChild(ol);
   }
   body.appendChild(newsSec);
