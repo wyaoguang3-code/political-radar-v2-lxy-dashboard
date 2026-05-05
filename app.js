@@ -1806,6 +1806,81 @@ function renderPresidentialBlock(v){
   `;
 }
 
+// 把里級地圖聚焦到指定里，加上閃爍高亮 + 開 tooltip
+function focusVillageOnMap({ city, town, village }){
+  if (!city || !town || !village) return;
+  const emCity = document.getElementById('emCitySelect');
+  if (!emCity) return;
+  const needsCityChange = emCity.value !== city;
+  if (needsCityChange){
+    emCity.value = city;
+    emCity.dispatchEvent(new Event('change'));
+  }
+
+  const tryFocus = (attempts = 0) => {
+    if (!electionMapLayer || electionMapLayer.getLayers().length < 2){
+      if (attempts < 30) return setTimeout(() => tryFocus(attempts + 1), 250);
+      console.warn('focusVillageOnMap: layer not loaded');
+      return;
+    }
+    let found = null;
+    electionMapLayer.eachLayer(layer => {
+      const p = (layer.feature && layer.feature.properties) || {};
+      if (p.TOWNNAME === town && p.VILLAGENAM === village){
+        found = layer;
+      }
+    });
+    // 找不到時試正規化（plotdb 偶有 鎮/鄉/市 vs 區、村 vs 里 的差）
+    if (!found){
+      electionMapLayer.eachLayer(layer => {
+        const p = (layer.feature && layer.feature.properties) || {};
+        const normTown = (p.TOWNNAME || '').replace(/[鎮鄉市]$/, '區');
+        const normVil  = (p.VILLAGENAM || '').replace(/村$/, '里');
+        if ((normTown === town || p.TOWNNAME === town) &&
+            (normVil === village || p.VILLAGENAM === village)){
+          found = layer;
+        }
+      });
+    }
+    if (!found){
+      console.warn(`focusVillageOnMap: ${town}|${village} 找不到對應 polygon`);
+      return;
+    }
+    // pan/zoom + 閃爍高亮
+    const bounds = found.getBounds();
+    if (bounds && bounds.isValid()){
+      electionMap.fitBounds(bounds, { maxZoom: 15, padding: [80, 80] });
+    }
+    // 高亮 — 黃色粗邊 3 秒後恢復
+    const origStyle = { weight: 0.4, color: '#0a0e1a' };
+    found.setStyle({ weight: 5, color: '#fbbf24' });
+    setTimeout(() => { try { found.setStyle(origStyle); } catch(e){} }, 3000);
+    if (found.getTooltip()) found.openTooltip();
+    document.getElementById('electionMapPanel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  setTimeout(tryFocus, needsCityChange ? 200 : 0);
+}
+
+// 全域 click handler 處理 .ep-maps-btn — 用 event delegation 因為按鈕在動態 modal 裡
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.ep-maps-btn');
+  if (!btn) return;
+  const payload = btn.getAttribute('data-focus');
+  if (!payload) return;
+  try {
+    const v = JSON.parse(payload);
+    focusVillageOnMap(v);
+    // 關閉 modal
+    const modal = document.getElementById('hotspotDetailModal');
+    if (modal){
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  } catch(err){
+    console.warn('focus btn payload parse failed:', err);
+  }
+});
+
 function openVillageDetail(v){
   // 重用既有 hotspotDetailModal — 把里資訊塞進去顯示
   const years = v.years || [];
@@ -1833,16 +1908,15 @@ function openVillageDetail(v){
   const eduMap = { high: '高教育', mid: '中等教育', low: '基礎教育' };
   const genderMap = { male: '男性偏多', female: '女性偏多', balanced: '性別均衡' };
 
-  // Google Maps 搜尋連結 — 用 city + town + village 直接搜
-  const mapsQuery = encodeURIComponent(`${v.cityName || ''} ${v.town || ''} ${v.village || ''}`.trim());
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+  // 「在里級地圖上查看」— 切到該縣市的 Leaflet 地圖、聚焦該里、高亮並開 tooltip
+  const focusBtnPayload = JSON.stringify({ city: v.city, town: v.town, village: v.village });
 
   const html = `
     <div class="ep-detail-meta">
       <div class="ep-detail-meta-headline">
         <strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong>
         <span class="ep-priority-tag">priority ${v.priority}</span>
-        <a class="ep-maps-btn" href="${mapsUrl}" target="_blank" rel="noopener noreferrer" title="在 Google Maps 上查看「${escapeHtml((v.cityName||'') + ' ' + (v.town||'') + ' ' + (v.village||''))}」實際地理位置">📍 在 Google Maps 查看</a>
+        <button class="ep-maps-btn" type="button" data-focus='${escapeHtml(focusBtnPayload)}' title="在上方「里級地理視覺化」地圖上聚焦此里">📍 在地圖上聚焦</button>
       </div>
       <div class="hint">人口 ${v.pop.toLocaleString()}（合格選舉人 ${v.voters.toLocaleString()}）　投票率 ${v.turnout != null ? v.turnout + '%' : '—'}　中位年齡 ${v.median_age || '—'} 歲</div>
       <div class="hint">屬性：<span class="ep-persist-pill ${PERSISTENCE_COLORS[v.persistence] || 'persist-other'}">${escapeHtml(v.persistence)}</span>　搖擺度 ${v.volatility}　翻盤 ${v.flips} 次　最近差距 ${v.latest_margin}%　說服空間 ${v.persuadability}</div>
