@@ -1373,28 +1373,15 @@ async function renderElectionMap(){
 
     if (status) status.textContent = '載入中…';
 
-    // 自動 fallback 到 presidential 模式（非 6 都不支援 priority/strategy/persistence）
     let activeMode = mode;
-    const isFullPriorityMode = mode === 'priority' || mode === 'strategy' || mode === 'persistence';
-    if (!SIX_CITIES.has(code) && isFullPriorityMode){
-      activeMode = 'presidential_predict';
-      // 同步 select 顯示，這樣 legend 也會跟著切
-      modeSelect.value = activeMode;
-    }
 
     // Lazy fetch geo + city data
     if (!_emGeoCache[code]){
       const geo = await fetchJSON(`./election_priority/geo/${code}.geo.json`);
       _emGeoCache[code] = geo;
     }
-    // 6 都用完整 election_priority/{code}.json（有 priority/strategy 等），
-    // 其他用精簡 presidential_history/{code}.json（只有 town/village + 總統歷史 + 預測）
-    let cityData;
-    if (SIX_CITIES.has(code)){
-      cityData = await loadEpCity(code);
-    } else {
-      cityData = await loadPresidentialOnlyCity(code);
-    }
+    // 22 縣市現在都有 election_priority/{code}.json（完整 priority/strategy/總統 預測都齊）
+    const cityData = await loadEpCity(code);
     if (!cityData || !_emGeoCache[code]){
       if (status) status.textContent = '載入失敗。';
       return;
@@ -1460,12 +1447,7 @@ async function renderElectionMap(){
         layer.bindTooltip(tooltipHtml, { sticky: true, direction: 'top' });
         layer.on('click', () => {
           if (!v) return;
-          const enriched = { ...v, city: code, cityName: cityData.name };
-          if (v.priority !== undefined){
-            openVillageDetail(enriched);
-          } else {
-            openVillagePresidentialDetail(enriched);
-          }
+          openVillageDetail({ ...v, city: code, cityName: cityData.name, source: cityData.source });
         });
         layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#5a79ff' }));
         layer.on('mouseout',  e => e.target.setStyle({ weight: 0.4, color: '#0a0e1a' }));
@@ -1508,9 +1490,9 @@ async function renderElectionMap(){
             `<span class="em-legend-item"><span class="em-legend-swatch" style="background:${c}"></span>${k}</span>`
           ).join('')}`;
       }
-      // 非 6 都自動 fallback 到總統預測模式時，提示 user
-      if (!SIX_CITIES.has(code) && isFullPriorityMode){
-        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#f59e0b">⚠️ 此縣市不是 6 都之一，沒有 priority/策略/政治屬性 資料。已自動切到「下屆總統預測」模式。要做完整 priority 需要村里級 demographics（待補）。</div>`;
+      // 非 6 都用總統選舉作為「歷年政黨傾向」基礎（沒 mayoral 同等資料）
+      if (cityData.source === 'presidential'){
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆總統選舉（2008-2024）計算 — 因為非 6 都沒有市長選舉。6 都用市長選舉（4-5 屆）。</div>`;
       }
       legendEl.innerHTML = html;
     }
@@ -1560,14 +1542,6 @@ async function loadEpCity(code){
   return d;
 }
 
-// 非 6 都用：載入精簡的「只有總統選舉資料」per-city 檔
-const _presOnlyCityCache = {};
-async function loadPresidentialOnlyCity(code){
-  if (_presOnlyCityCache[code]) return _presOnlyCityCache[code];
-  const d = await fetchJSON(`./presidential_history/${code}.json`);
-  if (d) _presOnlyCityCache[code] = d;
-  return d;
-}
 
 async function renderElectionPriority(){
   const wrap = document.getElementById('epTableWrap');
@@ -1742,25 +1716,6 @@ function renderPresidentialBlock(v){
   `;
 }
 
-// 非 6 都用：只有總統選舉資料的精簡 modal（沒 priority/策略/demographics）
-function openVillagePresidentialDetail(v){
-  const html = `
-    <div class="ep-detail-meta">
-      <div><strong style="font-size:15px">${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong></div>
-      <div class="hint">這個縣市目前沒有 priority/策略/demographics 資料（非 6 都）— 只顯示總統選舉歷史與預測。</div>
-    </div>
-    ${renderPresidentialBlock(v)}
-  `;
-  const modal = document.getElementById('hotspotDetailModal');
-  if (!modal) return;
-  document.getElementById('hotspotDetailTitle').textContent =
-    `${v.cityName || ''} ${v.town || ''} ${v.village || ''}（總統選舉）`;
-  document.getElementById('hotspotDetailBody').innerHTML = html;
-  modal.classList.remove('hidden');
-  modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-}
-
 function openVillageDetail(v){
   // 重用既有 hotspotDetailModal — 把里資訊塞進去顯示
   const years = v.years || [];
@@ -1836,11 +1791,13 @@ function openVillageDetail(v){
       <div class="hint">20-39 歲 ${v.a20_39_pct}%　60+ 歲 ${v.a60up_pct}%　大專以上 ${v.high_edu_pct}%（含研究所 ${v.graduate_pct}%）　男性比例 ${v.male_pct}%</div>
     </div>
 
+    ${v.source === 'presidential' ? '' : `
     <h3>📜 歷次直轄市長選舉</h3>
     <table class="ep-history-table">
       <thead><tr><th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th></tr></thead>
       <tbody>${histRows}</tbody>
     </table>
+    `}
 
     ${renderPresidentialBlock(v)}
   `;
