@@ -234,6 +234,8 @@ button.past-day-header:hover{background:#16203f}
 .mf-cell.mf-tone-verybad{background:#5b1d2a}
 .mf-cell.mf-tone-verybad .mf-pct{color:#ffb3bf}
 .mf-cell.mf-tone-verybad .mf-num{color:#ffe5ea}
+.mf-cell.mf-clickable{cursor:pointer;transition:filter 0.15s,outline 0.1s}
+.mf-cell.mf-clickable:hover{filter:brightness(1.25);outline:1px solid #5a79ff;outline-offset:-1px}
 
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}

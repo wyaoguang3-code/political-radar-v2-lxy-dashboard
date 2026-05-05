@@ -1157,11 +1157,17 @@ function renderMediaFraming(d){
         const pct = cell.negativity_pct;
         const tone = pct <= 20 ? 'pos' : pct <= 40 ? 'mid' : pct <= 70 ? 'neg' : 'verybad';
         td.classList.add(`mf-tone-${tone}`);
+        td.classList.add('mf-clickable');
         td.innerHTML = `
           <div class="mf-num">${cell.news_count} 篇</div>
           <div class="mf-pct">負面 ${pct}%</div>
         `;
-        td.title = `news_count=${cell.news_count}\nnegative_count=${cell.negative_count}\nsentiment_score=${cell.sentiment_score}`;
+        td.title = `點擊查看 ${city} × ${cand} 相關新聞清單（news_count=${cell.news_count}, negative=${cell.negative_count}, sentiment=${cell.sentiment_score}）`;
+        td.addEventListener('click', () => {
+          const articles = Array.isArray(cell.articles) ? cell.articles : [];
+          const note = `近 7 日全國新聞中，標題同時提到「${city}」與「${cand}」的命中：${cell.news_count} 篇（負面 ${pct}%）`;
+          openArticlesModal(`${city} × ${cand} · 媒體 framing 樣本`, note, articles);
+        });
       }
       tr.appendChild(td);
     });
