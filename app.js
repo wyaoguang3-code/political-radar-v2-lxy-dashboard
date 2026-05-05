@@ -861,6 +861,9 @@ function appendPastEventsBatch(count){
   const end = Math.min(_pastEventsShown + count, _pastEventsAll.length);
   const PAST_CITY_ORDER = ['台中', '台北', '高雄', '其他'];
 
+  // 「今日」用台北時區判斷（後端 d.date 也是台北日期），避免 UTC vs +8 跨日誤標
+  const todayStr = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Taipei' });
+
   for (let i = _pastEventsShown; i < end; i++){
     const d = _pastEventsAll[i];
     const dayWrap = document.createElement('div');
@@ -988,6 +991,7 @@ function appendPastEventsBatch(count){
 const _pastArchiveCache = {};
 
 // 把任意 articles 陣列開到既有 hotspot detail modal
+// 純清單用途（卡片/圖表 click），沒 level/place/壽命概念，meta 只顯示 note
 function openArticlesModal(title, note, articles){
   const news = (articles || []).map(a => ({
     title: a.title || '（無標題）',
@@ -997,16 +1001,11 @@ function openArticlesModal(title, note, articles){
   openHotspotDetailModal({
     // openHotspotDetailModal 會自動在標題後綴 (N 則)，所以這裡只傳乾淨的 title
     title: title,
-    place: '盧秀燕',
-    level: 'green',  // 卡片本身沒燈號，給個中性顏色
-    source: news.length ? 'news' : '',
-    platform: '',
     note: note,
     news_count: news.length,
     comment_count: 0,
     news_articles: news,
     comments: [],
-    news_full_expires_at: null,
   }, null);
 }
 
@@ -1175,23 +1174,25 @@ function openHotspotDetailModal(h, markersByTitle){
   const modal = document.getElementById('hotspotDetailModal');
   if (!modal) return;
   const total = (h.news_count || 0) + (h.comment_count || 0);
-  const level = h.level || 'green';
   document.getElementById('hotspotDetailTitle').textContent = `${h.title || '事件'}（${total} 則）`;
 
   const body = document.getElementById('hotspotDetailBody');
   body.innerHTML = '';
 
   // 摘要列：等級 chip + 地點 + 平台 + 壽命
+  // 從卡片/圖表開的「純清單」modal 不需要 level/place（會傳 null/undefined），
+  // 此時整列只顯示 note 與 lifetime
   const meta = document.createElement('div');
   meta.className = 'hd-meta';
   const lifetime = formatLifetimeHint(h);
-  meta.innerHTML = `
-    <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
-    <span class="hd-meta-place">📍 ${escapeHtml(h.place || '-')}</span>
-    <span class="hd-meta-platform">${escapeHtml(h.platform || '')}</span>
-    ${lifetime ? `<span class="hd-meta-life">⏳ ${escapeHtml(lifetime)}</span>` : ''}
-  `;
-  body.appendChild(meta);
+  const parts = [];
+  if (h.level) parts.push(`<span class="hc-level-chip ${h.level}">${h.level.toUpperCase()}</span>`);
+  if (h.place) parts.push(`<span class="hd-meta-place">📍 ${escapeHtml(h.place)}</span>`);
+  if (h.platform) parts.push(`<span class="hd-meta-platform">${escapeHtml(h.platform)}</span>`);
+  if (h.note) parts.push(`<span class="hd-meta-note">${escapeHtml(h.note)}</span>`);
+  if (lifetime) parts.push(`<span class="hd-meta-life">⏳ ${escapeHtml(lifetime)}</span>`);
+  meta.innerHTML = parts.join('');
+  if (parts.length) body.appendChild(meta);
 
   // 「在地圖上定位」按鈕
   if (markersByTitle && markersByTitle[h.title]){
