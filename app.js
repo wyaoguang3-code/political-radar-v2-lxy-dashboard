@@ -597,6 +597,28 @@ function deriveCommentHotspots(){
   return out;
 }
 
+function formatLifetimeHint(h){
+  const newsCount = h.news_count || 0;
+  const commentCount = h.comment_count || 0;
+  const expiresIso = h.news_full_expires_at;
+
+  if (newsCount > 0 && expiresIso){
+    const expires = new Date(expiresIso).getTime();
+    const now = Date.now();
+    const hoursLeft = Math.max(0, (expires - now) / 3600000);
+    const hoursStr = hoursLeft >= 1 ? `${hoursLeft.toFixed(0)} 小時` : '不到 1 小時';
+    if (commentCount > 0){
+      return `預估新聞訊號 ${hoursStr}後完全退場（留言訊號可能延長壽命）`;
+    }
+    return `預估 ${hoursStr}後完全退場（新聞滑出 24h 窗）`;
+  }
+
+  if (commentCount > 0){
+    return `依粉專留言下一次抓取結果調整（每小時更新）`;
+  }
+  return '';
+}
+
 function renderIncidentMap(d){
   const mapEl = document.getElementById('incidentMap');
   if (!mapEl || typeof window.L === 'undefined') return;
@@ -651,6 +673,7 @@ function renderIncidentMap(d){
       fillColor: color,
       fillOpacity: 0.65
     });
+    const lifetime = formatLifetimeHint(h);
     marker.bindPopup(`
       <div class="map-popup">
         <strong>${escapeHtml(h.title || '事件')}</strong><br/>
@@ -659,6 +682,7 @@ function renderIncidentMap(d){
         來源：${escapeHtml(h.source || '-') }<br/>
         平台：${escapeHtml(h.platform || '-') }<br/>
         備註：${escapeHtml(h.note || '-') }
+        ${lifetime ? `<br/><span class="lifetime-hint">⏳ ${escapeHtml(lifetime)}</span>` : ''}
       </div>
     `);
     layer.addLayer(marker);
