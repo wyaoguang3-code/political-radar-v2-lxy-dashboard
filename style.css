@@ -181,6 +181,14 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .past-load-more{display:block;width:100%;margin-top:8px;padding:8px;background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:6px;cursor:pointer;font-size:13px}
 .past-load-more:hover{background:#1a2750}
 
+/* Past event city sub-section */
+.past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}
+.past-city-header{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;padding:4px 8px;background:#0c1228;border-radius:4px;margin-bottom:4px}
+.past-city-name{color:#d8e2ff;font-weight:600;font-size:13px}
+.past-city-counts{color:#9fb0ea;font-size:11px;font-feature-settings:"tnum"}
+.past-event-item{cursor:pointer;border-radius:4px;padding:6px 8px;transition:background 0.15s}
+.past-event-item:hover{background:#16203f}
+
 /* Hotspot detail modal */
 .hd-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid #2a335f;background:#0c1228;color:#d8e2ff;font-size:13px}
 .hd-meta-place{color:#b9c3f2}

@@ -852,6 +852,8 @@ function appendPastEventsBatch(count){
   list.querySelectorAll('.past-load-more').forEach(b => b.remove());
 
   const end = Math.min(_pastEventsShown + count, _pastEventsAll.length);
+  const PAST_CITY_ORDER = ['台中', '台北', '高雄', '其他'];
+
   for (let i = _pastEventsShown; i < end; i++){
     const d = _pastEventsAll[i];
     const dayWrap = document.createElement('div');
@@ -877,32 +879,67 @@ function appendPastEventsBatch(count){
       </div>
     `;
 
-    // 該日 hotspot 簡列（依 urgency 降冪）
-    const sorted = [...hs].sort((a, b) => (b.urgency_score || 0) - (a.urgency_score || 0));
-    const ul = document.createElement('ul');
-    ul.className = 'past-day-events';
-    sorted.forEach(h => {
-      const li = document.createElement('li');
-      const level = h.level || 'green';
-      const total = (h.news_count || 0) + (h.comment_count || 0);
-      const urgentMark = h.is_urgent ? '🚨 ' : '';
-      const cityLabel = h.city ? `[${escapeHtml(h.city)}] ` : '';
-      const sample = (h.sample_news_titles || [])
-        .filter(t => t)
-        .slice(0, 2)
-        .map(t => `<div class="past-sample">・${escapeHtml(t)}</div>`)
-        .join('');
-      li.innerHTML = `
-        <div class="past-event-row">
-          <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
-          <span class="past-event-title">${urgentMark}${cityLabel}${escapeHtml(h.title || '事件')}</span>
-          <span class="past-event-count">${total} 則${h.negativity_pct ? ` · ${h.negativity_pct}% 負面` : ''}</span>
-        </div>
-        ${sample}
-      `;
-      ul.appendChild(li);
+    // 依城市分組
+    const byCity = {};
+    hs.forEach(h => {
+      const city = h.city || '其他';
+      (byCity[city] = byCity[city] || []).push(h);
     });
-    dayWrap.appendChild(ul);
+
+    const renderPastCity = (city) => {
+      const arr = byCity[city];
+      if (!arr || !arr.length) return;
+      const cityCnts = { red: 0, yellow: 0, green: 0 };
+      let cityUrg = 0;
+      arr.forEach(h => {
+        if (cityCnts[h.level] != null) cityCnts[h.level] += 1;
+        if (h.is_urgent) cityUrg += 1;
+      });
+
+      const citySec = document.createElement('div');
+      citySec.className = 'past-city-section';
+      citySec.innerHTML = `
+        <div class="past-city-header">
+          <span class="past-city-name">${escapeHtml(city)}</span>
+          <span class="past-city-counts">
+            ${cityUrg ? `<span class="past-urgent">🚨 ${cityUrg}</span>　` : ''}
+            🔴 ${cityCnts.red}　🟡 ${cityCnts.yellow}　🟢 ${cityCnts.green}
+          </span>
+        </div>
+      `;
+
+      const ul = document.createElement('ul');
+      ul.className = 'past-day-events';
+      [...arr].sort((a, b) => (b.urgency_score || 0) - (a.urgency_score || 0)).forEach(h => {
+        const li = document.createElement('li');
+        li.className = 'past-event-item';
+        const level = h.level || 'green';
+        const total = (h.news_count || 0) + (h.comment_count || 0);
+        const urgentMark = h.is_urgent ? '🚨 ' : '';
+        const sample = (h.news_articles_top || [])
+          .slice(0, 2)
+          .map(a => `<div class="past-sample">・${escapeHtml((a.title || '').slice(0, 60))}</div>`)
+          .join('');
+        li.innerHTML = `
+          <div class="past-event-row">
+            <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+            <span class="past-event-title">${urgentMark}${escapeHtml(h.title || '事件')}</span>
+            <span class="past-event-count">${total} 則${h.negativity_pct ? ` · ${h.negativity_pct}% 負面` : ''}</span>
+          </div>
+          ${sample}
+        `;
+        li.addEventListener('click', () => openPastEventModal(h, d.date));
+        ul.appendChild(li);
+      });
+      citySec.appendChild(ul);
+      dayWrap.appendChild(citySec);
+    };
+
+    PAST_CITY_ORDER.forEach(renderPastCity);
+    Object.keys(byCity).forEach(city => {
+      if (!PAST_CITY_ORDER.includes(city)) renderPastCity(city);
+    });
+
     list.appendChild(dayWrap);
   }
   _pastEventsShown = end;
@@ -917,6 +954,26 @@ function appendPastEventsBatch(count){
     btn.addEventListener('click', () => appendPastEventsBatch(30));
     list.appendChild(btn);
   }
+}
+
+function openPastEventModal(h, dateStr){
+  // 把歷史 entry 轉成 hotspot detail modal 看得懂的格式（沒地圖 marker，所以「在地圖上定位」按鈕不會出現）
+  const fakeHotspot = {
+    title: `[${dateStr}] ${h.title || '事件'}`,
+    place: h.place,
+    level: h.level,
+    source: ((h.news_articles_top || []).length ? 'news' : '')
+          + ((h.comments_top || []).length ? (((h.news_articles_top || []).length ? ' + ' : '') + 'comment') : ''),
+    platform: '',
+    note: `${dateStr} 命中 ${(h.news_count || 0) + (h.comment_count || 0)} 則（新聞 ${h.news_count || 0}、留言 ${h.comment_count || 0}）`,
+    news_count: h.news_count || 0,
+    comment_count: h.comment_count || 0,
+    news_articles: h.news_articles_top || [],
+    comments: h.comments_top || [],
+    // 歷史不算壽命
+    news_full_expires_at: null,
+  };
+  openHotspotDetailModal(fakeHotspot, null);
 }
 
 function initPastEventsToggle(){
