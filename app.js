@@ -1197,10 +1197,12 @@ const PERSISTENCE_MAP_COLORS = {
   '永藍': '#1d3a72', '永綠': '#1a5031', '永白': '#bbbbbb',
   '翻轉': '#f7c948', '搖擺': '#ff7b1f', '其他': '#444444',
 };
+// 總統得票/預測的政黨色 — 只用在 presidential_2024 / presidential_predict 兩個模式，
+// 比 PERSISTENCE_MAP_COLORS 亮，方便在地圖上一眼辨認。
 const PARTY_MAP_COLORS = {
-  KMT: '#1d3a72',  // 藍
-  DPP: '#1a5031',  // 綠
-  TPP: '#bbbbbb',  // 白（民眾黨色）
+  KMT: '#3b82f6',  // 亮藍（Tailwind blue-500）
+  DPP: '#22c55e',  // 亮綠（green-500）
+  TPP: '#e5e7eb',  // 亮白（neutral-200，深底也看得見）
   PFP: '#f97316',  // 橘（親民黨）
 };
 function presidentialColorByYear(v, year){
@@ -1234,6 +1236,101 @@ function priorityToColor(p){
     const b = Math.round(72 + (79-72)*t);
     return `rgb(${r},${g},${b})`;
   }
+}
+
+// --------- Election forecast aggregate (6 都/縣市總票數預測) ---------
+async function renderElectionForecast(){
+  const container = document.getElementById('forecastBody');
+  if (!container) return;
+  let data;
+  try {
+    data = await fetchJSON('./election_priority.json');
+  } catch (e) {
+    container.innerHTML = '<p class="hint">資料載入失敗。</p>';
+    return;
+  }
+  const six = data.six_cities_aggregate;
+  if (!six || !six.predicted){
+    container.innerHTML = '<p class="hint">沒有預測資料。</p>';
+    return;
+  }
+
+  const fmt = (n) => n.toLocaleString();
+  const pred = six.predicted;
+  const a24 = six.actual_2024;
+  const a20 = six.actual_2020;
+
+  // Delta vs 2024 (預測 - 2024 實際) — 看模型認為哪一黨會漲跌
+  const deltaKMT = pred.kmt_pct - a24.kmt_pct;
+  const deltaDPP = pred.dpp_pct - a24.dpp_pct;
+  const deltaTPP = pred.tpp_pct - a24.tpp_pct;
+  const fmtDelta = (d) => (d > 0 ? '+' : '') + d.toFixed(1) + 'pt';
+  const arrow = (d) => d > 0.1 ? '▲' : d < -0.1 ? '▼' : '＝';
+
+  // 三黨橫條（一條長條，3 段）
+  const stackBar = (kmt, dpp, tpp) => `
+    <div class="forecast-stack-bar">
+      <div class="forecast-seg" style="width:${kmt}%;background:#3b82f6"  title="KMT ${kmt.toFixed(1)}%">${kmt >= 8 ? 'KMT ' + kmt.toFixed(1) + '%' : ''}</div>
+      <div class="forecast-seg" style="width:${dpp}%;background:#22c55e"  title="DPP ${dpp.toFixed(1)}%">${dpp >= 8 ? 'DPP ' + dpp.toFixed(1) + '%' : ''}</div>
+      <div class="forecast-seg" style="width:${tpp}%;background:#e5e7eb;color:#1a1a1a" title="TPP ${tpp.toFixed(1)}%">${tpp >= 8 ? 'TPP ' + tpp.toFixed(1) + '%' : ''}</div>
+    </div>`;
+
+  const partyClass = (p) => p === 'KMT' ? 'persist-blue' : p === 'DPP' ? 'persist-green' : p === 'TPP' ? 'persist-white' : 'persist-other';
+
+  // 6 都 totals card
+  const totalCard = `
+    <div class="forecast-six-card">
+      <div class="forecast-headline">
+        <span class="forecast-label">6 都加總預測勝者</span>
+        <span class="ep-persist-pill ${partyClass(pred.predicted_winner)}" style="font-size:15px">${pred.predicted_winner}</span>
+        <span class="hint">　領先 ${pred.predicted_margin.toFixed(1)} 個百分點</span>
+      </div>
+      ${stackBar(pred.kmt_pct, pred.dpp_pct, pred.tpp_pct)}
+      <div class="forecast-vote-grid">
+        <div><span class="forecast-vote-label">KMT</span><span class="forecast-vote-num">${fmt(pred.kmt_votes)} 票</span></div>
+        <div><span class="forecast-vote-label">DPP</span><span class="forecast-vote-num">${fmt(pred.dpp_votes)} 票</span></div>
+        <div><span class="forecast-vote-label">TPP</span><span class="forecast-vote-num">${fmt(pred.tpp_votes)} 票</span></div>
+        <div><span class="forecast-vote-label">推估投票數</span><span class="forecast-vote-num">${fmt(pred.total_estimated_votes)} 票</span></div>
+      </div>
+
+      <div class="forecast-compare">
+        <div class="forecast-compare-title">vs 2024 實際得票</div>
+        <div class="forecast-compare-row"><span class="forecast-compare-cell">KMT　${a24.kmt_pct.toFixed(1)}%　→　${pred.kmt_pct.toFixed(1)}%　<span class="forecast-delta ${deltaKMT>=0?'pos':'neg'}">${arrow(deltaKMT)} ${fmtDelta(deltaKMT)}</span></span></div>
+        <div class="forecast-compare-row"><span class="forecast-compare-cell">DPP　${a24.dpp_pct.toFixed(1)}%　→　${pred.dpp_pct.toFixed(1)}%　<span class="forecast-delta ${deltaDPP>=0?'pos':'neg'}">${arrow(deltaDPP)} ${fmtDelta(deltaDPP)}</span></span></div>
+        <div class="forecast-compare-row"><span class="forecast-compare-cell">TPP　${a24.tpp_pct.toFixed(1)}%　→　${pred.tpp_pct.toFixed(1)}%　<span class="forecast-delta ${deltaTPP>=0?'pos':'neg'}">${arrow(deltaTPP)} ${fmtDelta(deltaTPP)}</span></span></div>
+      </div>
+      <p class="hint" style="margin-top:8px">
+        2020 對照：KMT ${a20 ? a20.kmt_pct.toFixed(1) : '—'}% / DPP ${a20 ? a20.dpp_pct.toFixed(1) : '—'}%
+        ｜${six.note || ''}
+      </p>
+    </div>`;
+
+  // Per-city breakdown
+  const cityRows = (six.by_city || []).map(c => {
+    const w = c.winner;
+    const confLabel = { high: '高', medium: '中', low: '低' }[c.confidence] || c.confidence;
+    return `
+      <div class="forecast-city-row">
+        <div class="forecast-city-name">${c.name}</div>
+        <div class="forecast-city-bar">${stackBar(c.kmt_pct, c.dpp_pct, c.tpp_pct)}</div>
+        <div class="forecast-city-meta">
+          <span class="ep-persist-pill ${partyClass(w)}">${w}</span>
+          <span class="hint">領先 ${c.margin.toFixed(1)}pt　信心 ${confLabel}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    ${totalCard}
+    <h3 style="margin-top:18px;color:#d8e2ff;font-size:14px">各都預測明細</h3>
+    <div class="forecast-city-list">${cityRows}</div>
+    <p class="hint" style="margin-top:12px">
+      <strong>模型方法</strong>：每個里計算下屆總統選舉預測（加權近 5 屆得票 + momentum 趨勢延伸 ×0.3），
+      再以該里 2024 投票數作權重加總到縣市 / 6 都。<br>
+      <strong>模型局限</strong>：純基本面，沒考慮民調、現任效應、全國風向、候選人組合差異、突發事件。
+      可當作「如果照歷史趨勢繼續，會這樣」的靜態基準參考。
+    </p>
+  `;
 }
 
 async function renderElectionMap(){
@@ -1572,13 +1669,13 @@ function renderPresidentialBlock(v){
         </div>
         <div class="ep-prediction-bars">
           <div class="ep-bar-row"><span class="ep-bar-label">KMT</span>
-            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.kmt_pct}%;background:#4a6fbf"></div></div>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.kmt_pct}%;background:#3b82f6"></div></div>
             <span class="ep-bar-pct">${pred.kmt_pct}%</span></div>
           <div class="ep-bar-row"><span class="ep-bar-label">DPP</span>
-            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.dpp_pct}%;background:#3aaa6f"></div></div>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.dpp_pct}%;background:#22c55e"></div></div>
             <span class="ep-bar-pct">${pred.dpp_pct}%</span></div>
           <div class="ep-bar-row"><span class="ep-bar-label">TPP</span>
-            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.tpp_pct}%;background:#cccccc"></div></div>
+            <div class="ep-bar"><div class="ep-bar-fill" style="width:${pred.tpp_pct}%;background:#e5e7eb"></div></div>
             <span class="ep-bar-pct">${pred.tpp_pct}%</span></div>
         </div>
         <div class="hint" style="margin-top:8px">模型：加權近 5 屆得票（最近權重 0.55、上一屆 0.30、再上一屆 0.10）+ momentum（最近 2 屆 vs 之前的趨勢延伸 ×0.3）。沒考慮民調與全國風向，基本面而已 — 拿來當「靜態基準預測」用。</div>
@@ -2000,6 +2097,7 @@ async function run(){
   renderPastEvents();
   renderMediaFraming(d);
   renderElectionPriority();
+  renderElectionForecast();
   renderElectionMap();
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');

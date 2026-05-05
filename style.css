@@ -339,6 +339,30 @@ button.past-day-header:hover{background:#16203f}
 .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before{border-top-color:#121935 !important;border-bottom-color:#121935 !important}
 .ep-strategy-label{color:#9fb0ea;font-size:12px;margin-right:4px}
 .ep-detail-meta h3, #hotspotDetailBody h3{margin:14px 14px 4px 14px;color:#d8e2ff;font-size:14px}
+/* Forecast aggregate panel */
+.forecast-six-card{padding:14px 16px;background:#0d1a2c;border-left:3px solid #6e8cff;border-radius:6px;margin-bottom:8px}
+.forecast-headline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;color:#dbe8ff;margin-bottom:10px}
+.forecast-label{color:#9fb0ea;font-weight:600}
+.forecast-stack-bar{display:flex;height:24px;border-radius:4px;overflow:hidden;margin:6px 0;background:#16203f;font-size:11px;font-weight:700}
+.forecast-seg{display:flex;align-items:center;justify-content:center;color:#0a0e1a;white-space:nowrap;overflow:hidden;transition:width 0.3s}
+.forecast-vote-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0;font-size:12px}
+.forecast-vote-grid > div{padding:8px;background:#101a36;border-radius:4px}
+.forecast-vote-label{display:block;color:#9fb0ea;font-size:11px;font-weight:600;margin-bottom:2px}
+.forecast-vote-num{color:#dbe8ff;font-weight:700;font-feature-settings:"tnum"}
+.forecast-compare{margin-top:10px;padding:8px 12px;background:#0c1228;border-radius:4px;font-size:12px}
+.forecast-compare-title{color:#9fb0ea;font-weight:600;margin-bottom:4px}
+.forecast-compare-row{color:#dbe8ff;line-height:1.8;font-feature-settings:"tnum"}
+.forecast-delta.pos{color:#22c55e}
+.forecast-delta.neg{color:#ef4444}
+.forecast-city-list{display:flex;flex-direction:column;gap:8px}
+.forecast-city-row{display:grid;grid-template-columns:80px 1fr 180px;gap:10px;align-items:center;padding:8px;background:#0c1228;border-radius:4px}
+.forecast-city-name{color:#d8e2ff;font-weight:700;font-size:13px}
+.forecast-city-meta{display:flex;align-items:center;gap:8px;font-size:11px;flex-wrap:wrap}
+@media (max-width: 720px){
+  .forecast-city-row{grid-template-columns:1fr}
+  .forecast-vote-grid{grid-template-columns:repeat(2,1fr)}
+}
+
 .ep-prediction-box{margin:8px 14px 12px 14px;padding:12px;background:#0d1a2c;border-left:3px solid #6e8cff;border-radius:6px}
 .ep-prediction-headline{color:#dbe8ff;font-size:13px;font-weight:700;display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
 .ep-prediction-bars{display:flex;flex-direction:column;gap:6px}
