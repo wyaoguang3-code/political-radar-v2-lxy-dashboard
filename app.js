@@ -705,57 +705,114 @@ function renderHotspotCards(hotspots, markersByTitle){
   if (!container) return;
   container.innerHTML = '';
 
-  // 由急到緩排序：紅 → 黃 → 綠；同等級內依命中數降冪
-  const order = { red: 0, yellow: 1, green: 2 };
-  const sorted = [...(hotspots || [])].sort((a, b) => {
-    const av = order[a.level] ?? 9;
-    const bv = order[b.level] ?? 9;
-    if (av !== bv) return av - bv;
-    const ah = (a.news_count || 0) + (a.comment_count || 0);
-    const bh = (b.news_count || 0) + (b.comment_count || 0);
-    return bh - ah;
-  });
+  const list = Array.isArray(hotspots) ? hotspots : [];
 
-  // 摘要列：🔴 X / 🟡 Y / 🟢 Z
+  // 摘要列：🔴 X / 🟡 Y / 🟢 Z + 🚨 緊急 N
   if (summary){
     const counts = { red: 0, yellow: 0, green: 0 };
-    sorted.forEach(h => { if (counts[h.level] != null) counts[h.level] += 1; });
-    summary.textContent = `🔴 ${counts.red} 件　🟡 ${counts.yellow} 件　🟢 ${counts.green} 件`;
+    let urgent = 0;
+    list.forEach(h => {
+      if (counts[h.level] != null) counts[h.level] += 1;
+      if (h.is_urgent) urgent += 1;
+    });
+    const urgentPart = urgent > 0 ? `　🚨 緊急 ${urgent} 件` : '';
+    summary.textContent = `🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}${urgentPart}`;
   }
 
-  if (!sorted.length){
+  if (!list.length){
     container.innerHTML = '<p class="hint">目前沒有偵測到熱點事件。</p>';
     return;
   }
 
-  sorted.forEach(h => {
-    const card = document.createElement('div');
-    const level = h.level || 'green';
-    card.className = `hotspot-card level-${level}`;
-    card.dataset.title = h.title || '';
-    const total = (h.news_count || 0) + (h.comment_count || 0);
-    const lifetime = formatLifetimeHint(h);
-    const sourceTag = (h.news_count || 0) > 0 && (h.comment_count || 0) > 0 ? '混合'
-                    : (h.news_count || 0) > 0 ? '新聞主導'
-                    : '留言主導';
-    card.innerHTML = `
-      <div class="hc-row1">
-        <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
-        <span class="hc-title">${escapeHtml(h.title || '事件')}</span>
-      </div>
-      <div class="hc-row2">
-        <span class="hc-count">${total} 則</span>
-        <span class="hc-source-tag">${sourceTag}</span>
-      </div>
-      <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
-      <div class="hc-platform">${escapeHtml(h.platform || '')}</div>
-      ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
-    `;
-    card.addEventListener('click', () => {
-      // 點卡片 → 開「事件明細」modal（含新聞與留言全文 + 在地圖上定位按鈕）
-      openHotspotDetailModal(h, markersByTitle);
+  // 依城市分組
+  const CITY_ORDER = ['台中', '台北', '高雄', '其他'];
+  const groups = {};
+  list.forEach(h => {
+    const city = h.city || '其他';
+    (groups[city] = groups[city] || []).push(h);
+  });
+
+  // 每城市內排序：緊急 > 級別（紅黃綠）> urgency_score 降冪
+  const levelOrder = { red: 0, yellow: 1, green: 2 };
+  const sortInCity = arr => arr.sort((a, b) => {
+    if (!!a.is_urgent !== !!b.is_urgent) return a.is_urgent ? -1 : 1;
+    const av = levelOrder[a.level] ?? 9;
+    const bv = levelOrder[b.level] ?? 9;
+    if (av !== bv) return av - bv;
+    return (b.urgency_score || 0) - (a.urgency_score || 0);
+  });
+
+  const renderCity = (city) => {
+    const arr = groups[city];
+    if (!arr || !arr.length) return;
+    sortInCity(arr);
+
+    const section = document.createElement('div');
+    section.className = 'hotspot-city-section';
+
+    const header = document.createElement('div');
+    header.className = 'hotspot-city-header';
+    const counts = { red: 0, yellow: 0, green: 0 };
+    let urgent = 0;
+    arr.forEach(h => {
+      if (counts[h.level] != null) counts[h.level] += 1;
+      if (h.is_urgent) urgent += 1;
     });
-    container.appendChild(card);
+    header.innerHTML = `
+      <h4>${escapeHtml(city)}</h4>
+      <span class="city-counts">
+        ${urgent ? `<span class="city-urgent">🚨 ${urgent} 件待處理</span>　` : ''}
+        🔴 ${counts.red}　🟡 ${counts.yellow}　🟢 ${counts.green}
+      </span>
+    `;
+    section.appendChild(header);
+
+    const grid = document.createElement('div');
+    grid.className = 'hotspot-list';
+
+    arr.forEach(h => {
+      const level = h.level || 'green';
+      const card = document.createElement('div');
+      card.className = `hotspot-card level-${level}${h.is_urgent ? ' urgent' : ''}`;
+      card.dataset.title = h.title || '';
+      const total = (h.news_count || 0) + (h.comment_count || 0);
+      const lifetime = formatLifetimeHint(h);
+      const sourceTag = (h.news_count || 0) > 0 && (h.comment_count || 0) > 0 ? '混合'
+                      : (h.news_count || 0) > 0 ? '新聞主導'
+                      : '留言主導';
+      const negPart = (h.news_count || 0) > 0
+        ? `<span class="hc-negativity ${h.negativity_pct >= 50 ? 'high' : h.negativity_pct >= 25 ? 'mid' : 'low'}">${h.negativity_pct || 0}% 負面</span>`
+        : '';
+      const urgentBadge = h.is_urgent ? '<span class="hc-urgent-badge">🚨 緊急</span>' : '';
+      card.innerHTML = `
+        <div class="hc-row1">
+          <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+          <span class="hc-title">${escapeHtml(h.title || '事件')}</span>
+          ${urgentBadge}
+        </div>
+        <div class="hc-row2">
+          <span class="hc-count">${total} 則</span>
+          ${negPart}
+          <span class="hc-source-tag">${sourceTag}</span>
+        </div>
+        <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
+        <div class="hc-platform">${escapeHtml(h.platform || '')}</div>
+        ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
+      `;
+      card.addEventListener('click', () => {
+        openHotspotDetailModal(h, markersByTitle);
+      });
+      grid.appendChild(card);
+    });
+
+    section.appendChild(grid);
+    container.appendChild(section);
+  };
+
+  CITY_ORDER.forEach(renderCity);
+  // 任何沒在 CITY_ORDER 列出的城市
+  Object.keys(groups).forEach(city => {
+    if (!CITY_ORDER.includes(city)) renderCity(city);
   });
 }
 
