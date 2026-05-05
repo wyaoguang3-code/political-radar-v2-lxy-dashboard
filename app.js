@@ -1254,20 +1254,13 @@ async function renderElectionMap(){
       return;
     }
 
-    // Lookup by (town, village). GeoJSON 用 2010 升格前舊名（淡水鎮、中壢市、美濃鎮），
-    // priority 資料用現行名（淡水區、中壢區、美濃區），所以同時建立正規化 key。
-    const normTown = (s) => (s || '').replace(/(鎮|鄉|市)$/, '區');
-    const normVillage = (s) => (s || '').replace(/村$/, '里');
+    // Lookup by (town, village). GeoJSON 來源 plotdb/pdmaptw 已用 2010 升格後新名，
+    // 直接和 priority 資料對齊。
     const lookup = {};
     cityData.villages.forEach(v => {
       lookup[`${v.town}|${v.village}`] = v;
     });
-    const lookupVillage = (town, village) => {
-      return lookup[`${town}|${village}`]
-          || lookup[`${normTown(town)}|${village}`]
-          || lookup[`${town}|${normVillage(village)}`]
-          || lookup[`${normTown(town)}|${normVillage(village)}`];
-    };
+    const lookupVillage = (town, village) => lookup[`${town}|${village}`];
 
     if (electionMapLayer){
       electionMap.removeLayer(electionMapLayer);
