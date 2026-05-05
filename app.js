@@ -1023,7 +1023,7 @@ function bindCardClick(elemId, title, note, getArticlesFn){
 }
 
 async function openPastEventModal(h, dateStr){
-  // Lazy-load 該日完整 archive；找不到就 fallback 到 index 裡的 sample_titles
+  // Lazy-load 該日完整 archive；不存在就 fallback 到 entry 內嵌的舊格式資料
   let archiveEvents = _pastArchiveCache[dateStr];
   if (archiveEvents === undefined){
     const archive = await fetchJSON(`./hotspot_archive/${dateStr}.json`);
@@ -1038,9 +1038,18 @@ async function openPastEventModal(h, dateStr){
       news = found.news_articles || [];
       comments = found.comments || [];
     }
-  } else if (Array.isArray(h.sample_titles) && h.sample_titles.length){
-    // 舊格式 fallback：只剩標題沒 url
-    news = h.sample_titles.map(t => ({ title: t, url: '', time: '' }));
+  } else {
+    // 沒 archive 檔 → 用舊版 index 自帶的資料
+    // 舊格式 1（split 之前）：news_articles_top + comments_top
+    // 舊格式 2（更早）：sample_titles（只剩標題沒 url）
+    if (Array.isArray(h.news_articles_top) && h.news_articles_top.length){
+      news = h.news_articles_top;
+    } else if (Array.isArray(h.sample_titles) && h.sample_titles.length){
+      news = h.sample_titles.map(t => ({ title: t, url: '', time: '' }));
+    }
+    if (Array.isArray(h.comments_top) && h.comments_top.length){
+      comments = h.comments_top;
+    }
   }
 
   const fakeHotspot = {
