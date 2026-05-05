@@ -1347,13 +1347,13 @@ async function renderElectionForecast(){
     const asOfStr = pollsMeta.as_of;
     if (asOfStr){
       const asOfTime = new Date(asOfStr).getTime();
-      const ageDays = Math.floor((Date.now() - asOfTime) / 86400000);
+      const ageDays = Math.max(0, Math.floor((Date.now() - asOfTime) / 86400000));
       if (ageDays > 60){
         staleness = `<span style="color:#ef4444">⚠️ 民調已 ${ageDays} 天未更新（建議 ≤30 天）— 跑 scripts/fetch_polls.py 自動刷新</span>`;
       } else if (ageDays > 30){
         staleness = `<span style="color:#f59e0b">⚠️ 民調已 ${ageDays} 天未更新</span>`;
       } else {
-        staleness = `<span style="color:#22c55e">✓ 民調 ${ageDays} 天前更新</span>`;
+        staleness = `<span style="color:#22c55e">✓ 民調 ${ageDays === 0 ? '今天' : ageDays + ' 天前'}更新</span>`;
       }
     }
 
