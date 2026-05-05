@@ -138,7 +138,7 @@
   </section>
 
   <section class="panel" id="electionMapPanel">
-    <h2>里級地理視覺化（priority / 策略 / 政治屬性）</h2>
+    <h2>里級地理視覺化（priority 綜合分數 / 策略 / 政治屬性）</h2>
     <p class="hint">用顏色直接看出哪些區塊是主戰場、哪些是鎖定區。點任一里 → 完整明細。</p>
     <div class="em-controls">
       <label>縣市：
@@ -153,7 +153,7 @@
       </label>
       <label>顏色依據：
         <select id="emModeSelect">
-          <option value="priority">Priority 分數</option>
+          <option value="priority">Priority 分數（綜合排名）</option>
           <option value="strategy">策略類型</option>
           <option value="persistence">政治屬性</option>
         </select>
@@ -168,8 +168,8 @@
     <h2>里級黃金戰場版圖（6 都歷年選舉）</h2>
     <div class="ep-disclaimer">
       <strong>📊 資料來源</strong>：<a href="https://github.com/ileivoivm/change" target="_blank" rel="noopener">ileivoivm/change</a>（MIT 授權，源自中選會公開選舉結果 + 民政司人口統計）。<br>
-      <strong>用法</strong>：每個里計算了「搖擺度 / 翻轉次數 / 持久屬性 / 說服空間」綜合 priority。
-      Priority 高的里 = 過去最容易翻盤、未來投放資源邊際效益最大的選區。<strong>用來規劃拜票路線、資源分配、議題客製化</strong>。
+      <strong>用法</strong>：每個里計算了「搖擺度 / 翻轉次數 / 持久屬性 / 說服空間」綜合 priority（戰略優先序分數，0-100）。
+      Priority 高的里 = 過去最容易翻盤、未來投放資源邊際效益（marginal benefit，多花 1 元能多拿到的票數）最大的選區。<strong>用來規劃拜票路線、資源分配、議題客製化</strong>。
     </div>
     <details class="ep-glossary">
       <summary>📖 名詞解釋（GOTV / persuasion / mixed / maintain — 點開閱讀）</summary>
@@ -179,7 +179,7 @@
           適用：永藍／永綠等基本盤鎖定區（Type A）、低投票率動員區（Type D）— 這些里說服空間小，把同溫層催出來投票才划算。</p>
 
         <p><strong>persuasion（說服）</strong>　針對<u>中間選民、未表態者、上次投對手者</u>，透過議題與形象改變他們的投票意向。<br>
-          做法：客製化議題傳單、面對面深度對話、家戶拜訪深聊 30 分鐘以上、政策主張電視/網路廣告、KOL 背書。<br>
+          做法：客製化議題傳單、面對面深度對話、家戶拜訪深聊 30 分鐘以上、政策主張電視/網路廣告、KOL（Key Opinion Leader，意見領袖：網紅、社群名人、特定領域權威）背書。<br>
           適用：純搖擺主戰場（Type B）、曾翻轉里（Type C）— 每張票都有翻盤潛力，1 元投入產出最高。</p>
 
         <p><strong>mixed（雙軌）</strong>　同一個里同時跑兩條獨立的線，<u>名單必須分開不要重疊</u>：<br>
@@ -196,11 +196,14 @@
 
         <p><strong>maintain（維護）</strong>　不投放新資源、用既有人脈關係維繫，避免犯錯流失基本盤。<br>
           做法：節慶問候、宗親會出席、里長/樁腳保持聯繫，不主動拉票。<br>
-          適用：高齡飽和區（Type E）— 投票意向已經定型多年，主動拉票 ROI 低，不犯錯比拉票重要。</p>
+          適用：高齡飽和區（Type E）— 投票意向已經定型多年，主動拉票 ROI（投資報酬率，多投入 1 元能多拿到的票）低，不犯錯比拉票重要。</p>
 
-        <p class="hint" style="margin-top:8px">補充名詞：<strong>persuadability（說服空間，0-100）</strong>＝最近一屆 top1 得票率距 50% 越近、分數越高（50% = 100 分）。
-          <strong>volatility（搖擺度）</strong>＝歷年 KMT 得票率的標準差。
-          <strong>flips（翻轉次數）</strong>＝歷次選舉勝者政黨改變的次數。</p>
+        <p class="hint" style="margin-top:8px">補充名詞：<strong>persuadability（說服空間，0-100）</strong>＝最近一屆 top1（得票最高那位）得票率距 50% 越近、分數越高（50% = 100 分）。
+          <strong>volatility（搖擺度）</strong>＝歷年 KMT 得票率的標準差（standard deviation，數值越大代表不同年份起伏越劇烈）。
+          <strong>flips（翻轉次數）</strong>＝歷次選舉勝者政黨改變的次數。
+          <strong>priority</strong>＝戰略優先序綜合分數 = persuadability×0.40 + 搖擺度×0.25 + 翻轉次數×0.15 + 人口×0.20。
+          <strong>ROI（Return on Investment，投資報酬率）</strong>＝多投入 1 元資源能多拿到的票數。
+          <strong>marginal benefit（邊際效益）</strong>＝下 1 元資源投入後預期增加的票數，會隨投入累積遞減。</p>
       </div>
     </details>
     <div class="ep-controls">
