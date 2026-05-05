@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T21:24:07.361267+00:00",
+  "generated_at": "2026-05-05T21:33:34.263188+00:00",
   "source": "ileivoivm/change (MIT) — 中選會公開資料 + 民政司 demographics",
   "top_per_city": 50,
   "methodology": {
@@ -39795,5 +39795,495 @@
       }
     ],
     "note": "6 都加總（涵蓋全國 ~70% 投票人口）。剩 17 個縣市的數據未在本系統中。"
+  },
+  "country_aggregate": {
+    "predicted": {
+      "kmt_pct": 35.55,
+      "dpp_pct": 46.45,
+      "tpp_pct": 18.0,
+      "predicted_winner": "DPP",
+      "predicted_margin": 10.9,
+      "kmt_votes": 9915939,
+      "dpp_votes": 12957388,
+      "tpp_votes": 5021877,
+      "total_estimated_votes": 27895012,
+      "total_villages": 7738
+    },
+    "actual_2024": {
+      "kmt_pct": 33.49,
+      "dpp_pct": 40.05,
+      "tpp_pct": 26.46,
+      "total_votes": 27895012
+    },
+    "actual_2020": {
+      "kmt_pct": 38.62,
+      "dpp_pct": 57.12,
+      "total_votes": 28521974
+    },
+    "by_city": [
+      {
+        "code": "tpe",
+        "name": "臺北市",
+        "kmt_pct": 39.8,
+        "dpp_pct": 44.12,
+        "tpp_pct": 16.07,
+        "winner": "DPP",
+        "margin": 4.32,
+        "confidence": "low",
+        "kmt_votes": 1227526,
+        "dpp_votes": 1360610,
+        "tpp_votes": 495694,
+        "total_votes": 3084022,
+        "sample_villages": 456,
+        "actual_2024": {
+          "kmt_pct": 38.08,
+          "dpp_pct": 38.13,
+          "tpp_pct": 23.79,
+          "total_votes": 3084022
+        }
+      },
+      {
+        "code": "ntpc",
+        "name": "新北市",
+        "kmt_pct": 36.84,
+        "dpp_pct": 45.4,
+        "tpp_pct": 17.77,
+        "winner": "DPP",
+        "margin": 8.56,
+        "confidence": "medium",
+        "kmt_votes": 1811202,
+        "dpp_votes": 2232112,
+        "tpp_votes": 873601,
+        "total_votes": 4916960,
+        "sample_villages": 1032,
+        "actual_2024": {
+          "kmt_pct": 35.17,
+          "dpp_pct": 38.59,
+          "tpp_pct": 26.24,
+          "total_votes": 4916960
+        }
+      },
+      {
+        "code": "tyc",
+        "name": "桃園市",
+        "kmt_pct": 36.65,
+        "dpp_pct": 42.42,
+        "tpp_pct": 20.93,
+        "winner": "DPP",
+        "margin": 5.78,
+        "confidence": "medium",
+        "kmt_votes": 990070,
+        "dpp_votes": 1146102,
+        "tpp_votes": 565365,
+        "total_votes": 2701584,
+        "sample_villages": 516,
+        "actual_2024": {
+          "kmt_pct": 34.11,
+          "dpp_pct": 35.27,
+          "tpp_pct": 30.61,
+          "total_votes": 2701584
+        }
+      },
+      {
+        "code": "txg",
+        "name": "臺中市",
+        "kmt_pct": 34.73,
+        "dpp_pct": 44.87,
+        "tpp_pct": 20.4,
+        "winner": "DPP",
+        "margin": 10.14,
+        "confidence": "medium",
+        "kmt_votes": 1185902,
+        "dpp_votes": 1532055,
+        "tpp_votes": 696444,
+        "total_votes": 3414406,
+        "sample_villages": 625,
+        "actual_2024": {
+          "kmt_pct": 32.37,
+          "dpp_pct": 37.58,
+          "tpp_pct": 30.05,
+          "total_votes": 3414406
+        }
+      },
+      {
+        "code": "tnn",
+        "name": "臺南市",
+        "kmt_pct": 27.05,
+        "dpp_pct": 57.04,
+        "tpp_pct": 15.91,
+        "winner": "DPP",
+        "margin": 29.99,
+        "confidence": "high",
+        "kmt_votes": 606020,
+        "dpp_votes": 1277925,
+        "tpp_votes": 356501,
+        "total_votes": 2240476,
+        "sample_villages": 649,
+        "actual_2024": {
+          "kmt_pct": 25.61,
+          "dpp_pct": 50.95,
+          "tpp_pct": 23.44,
+          "total_votes": 2240476
+        }
+      },
+      {
+        "code": "khh",
+        "name": "高雄市",
+        "kmt_pct": 31.25,
+        "dpp_pct": 53.86,
+        "tpp_pct": 14.89,
+        "winner": "DPP",
+        "margin": 22.61,
+        "confidence": "high",
+        "kmt_votes": 1023084,
+        "dpp_votes": 1763378,
+        "tpp_votes": 487596,
+        "total_votes": 3273924,
+        "sample_villages": 890,
+        "actual_2024": {
+          "kmt_pct": 29.23,
+          "dpp_pct": 48.89,
+          "tpp_pct": 21.88,
+          "total_votes": 3273924
+        }
+      },
+      {
+        "code": "kee",
+        "name": "基隆市",
+        "kmt_pct": 40.75,
+        "dpp_pct": 41.26,
+        "tpp_pct": 17.99,
+        "winner": "DPP",
+        "margin": 0.52,
+        "confidence": "low",
+        "kmt_votes": 178286,
+        "dpp_votes": 180554,
+        "tpp_votes": 78735,
+        "total_votes": 437562,
+        "sample_villages": 157,
+        "actual_2024": {
+          "kmt_pct": 38.63,
+          "dpp_pct": 34.77,
+          "tpp_pct": 26.6,
+          "total_votes": 437562
+        }
+      },
+      {
+        "code": "hsz",
+        "name": "新竹市",
+        "kmt_pct": 34.48,
+        "dpp_pct": 42.45,
+        "tpp_pct": 23.06,
+        "winner": "DPP",
+        "margin": 7.96,
+        "confidence": "medium",
+        "kmt_votes": 183725,
+        "dpp_votes": 226146,
+        "tpp_votes": 122884,
+        "total_votes": 532778,
+        "sample_villages": 122,
+        "actual_2024": {
+          "kmt_pct": 30.9,
+          "dpp_pct": 34.79,
+          "tpp_pct": 34.3,
+          "total_votes": 532778
+        }
+      },
+      {
+        "code": "cyi",
+        "name": "嘉義市",
+        "kmt_pct": 32.74,
+        "dpp_pct": 49.85,
+        "tpp_pct": 17.41,
+        "winner": "DPP",
+        "margin": 17.11,
+        "confidence": "high",
+        "kmt_votes": 103240,
+        "dpp_votes": 157197,
+        "tpp_votes": 54896,
+        "total_votes": 315312,
+        "sample_villages": 86,
+        "actual_2024": {
+          "kmt_pct": 31.4,
+          "dpp_pct": 43.26,
+          "tpp_pct": 25.34,
+          "total_votes": 315312
+        }
+      },
+      {
+        "code": "hsq",
+        "name": "新竹縣",
+        "kmt_pct": 40.83,
+        "dpp_pct": 35.14,
+        "tpp_pct": 24.03,
+        "winner": "KMT",
+        "margin": 5.69,
+        "confidence": "medium",
+        "kmt_votes": 277904,
+        "dpp_votes": 239152,
+        "tpp_votes": 163566,
+        "total_votes": 680620,
+        "sample_villages": 192,
+        "actual_2024": {
+          "kmt_pct": 37.03,
+          "dpp_pct": 27.42,
+          "tpp_pct": 35.55,
+          "total_votes": 680620
+        }
+      },
+      {
+        "code": "mil",
+        "name": "苗栗縣",
+        "kmt_pct": 44.44,
+        "dpp_pct": 35.22,
+        "tpp_pct": 20.34,
+        "winner": "KMT",
+        "margin": 9.22,
+        "confidence": "medium",
+        "kmt_votes": 283230,
+        "dpp_votes": 224461,
+        "tpp_votes": 129663,
+        "total_votes": 637330,
+        "sample_villages": 275,
+        "actual_2024": {
+          "kmt_pct": 41.18,
+          "dpp_pct": 28.81,
+          "tpp_pct": 30.01,
+          "total_votes": 637330
+        }
+      },
+      {
+        "code": "cha",
+        "name": "彰化縣",
+        "kmt_pct": 35.02,
+        "dpp_pct": 45.21,
+        "tpp_pct": 19.78,
+        "winner": "DPP",
+        "margin": 10.18,
+        "confidence": "medium",
+        "kmt_votes": 519259,
+        "dpp_votes": 670275,
+        "tpp_votes": 293271,
+        "total_votes": 1482736,
+        "sample_villages": 591,
+        "actual_2024": {
+          "kmt_pct": 32.93,
+          "dpp_pct": 38.11,
+          "tpp_pct": 28.96,
+          "total_votes": 1482736
+        }
+      },
+      {
+        "code": "nan",
+        "name": "南投縣",
+        "kmt_pct": 40.35,
+        "dpp_pct": 41.8,
+        "tpp_pct": 17.84,
+        "winner": "DPP",
+        "margin": 1.45,
+        "confidence": "low",
+        "kmt_votes": 231852,
+        "dpp_votes": 240199,
+        "tpp_votes": 102533,
+        "total_votes": 574592,
+        "sample_villages": 264,
+        "actual_2024": {
+          "kmt_pct": 38.0,
+          "dpp_pct": 35.95,
+          "tpp_pct": 26.05,
+          "total_votes": 574592
+        }
+      },
+      {
+        "code": "yun",
+        "name": "雲林縣",
+        "kmt_pct": 31.32,
+        "dpp_pct": 50.73,
+        "tpp_pct": 17.94,
+        "winner": "DPP",
+        "margin": 19.41,
+        "confidence": "high",
+        "kmt_votes": 238446,
+        "dpp_votes": 386211,
+        "tpp_votes": 136601,
+        "total_votes": 761238,
+        "sample_villages": 392,
+        "actual_2024": {
+          "kmt_pct": 29.33,
+          "dpp_pct": 44.54,
+          "tpp_pct": 26.13,
+          "total_votes": 761238
+        }
+      },
+      {
+        "code": "cyq",
+        "name": "嘉義縣",
+        "kmt_pct": 30.31,
+        "dpp_pct": 53.85,
+        "tpp_pct": 15.85,
+        "winner": "DPP",
+        "margin": 23.54,
+        "confidence": "high",
+        "kmt_votes": 177306,
+        "dpp_votes": 315032,
+        "tpp_votes": 92740,
+        "total_votes": 585068,
+        "sample_villages": 357,
+        "actual_2024": {
+          "kmt_pct": 29.28,
+          "dpp_pct": 47.69,
+          "tpp_pct": 23.03,
+          "total_votes": 585068
+        }
+      },
+      {
+        "code": "pif",
+        "name": "屏東縣",
+        "kmt_pct": 32.35,
+        "dpp_pct": 52.47,
+        "tpp_pct": 15.18,
+        "winner": "DPP",
+        "margin": 20.12,
+        "confidence": "high",
+        "kmt_votes": 307911,
+        "dpp_votes": 499443,
+        "tpp_votes": 144497,
+        "total_votes": 951854,
+        "sample_villages": 443,
+        "actual_2024": {
+          "kmt_pct": 30.84,
+          "dpp_pct": 47.51,
+          "tpp_pct": 21.65,
+          "total_votes": 951854
+        }
+      },
+      {
+        "code": "ila",
+        "name": "宜蘭縣",
+        "kmt_pct": 30.51,
+        "dpp_pct": 51.53,
+        "tpp_pct": 17.96,
+        "winner": "DPP",
+        "margin": 21.01,
+        "confidence": "high",
+        "kmt_votes": 163021,
+        "dpp_votes": 275286,
+        "tpp_votes": 95947,
+        "total_votes": 534258,
+        "sample_villages": 233,
+        "actual_2024": {
+          "kmt_pct": 28.99,
+          "dpp_pct": 44.74,
+          "tpp_pct": 26.27,
+          "total_votes": 534258
+        }
+      },
+      {
+        "code": "hua",
+        "name": "花蓮縣",
+        "kmt_pct": 53.8,
+        "dpp_pct": 29.35,
+        "tpp_pct": 16.85,
+        "winner": "KMT",
+        "margin": 24.46,
+        "confidence": "high",
+        "kmt_votes": 187401,
+        "dpp_votes": 102217,
+        "tpp_votes": 58691,
+        "total_votes": 348314,
+        "sample_villages": 177,
+        "actual_2024": {
+          "kmt_pct": 50.5,
+          "dpp_pct": 24.78,
+          "tpp_pct": 24.72,
+          "total_votes": 348314
+        }
+      },
+      {
+        "code": "ttt",
+        "name": "臺東縣",
+        "kmt_pct": 52.07,
+        "dpp_pct": 31.39,
+        "tpp_pct": 16.54,
+        "winner": "KMT",
+        "margin": 20.69,
+        "confidence": "high",
+        "kmt_votes": 114497,
+        "dpp_votes": 69014,
+        "tpp_votes": 36372,
+        "total_votes": 219882,
+        "sample_villages": 139,
+        "actual_2024": {
+          "kmt_pct": 49.32,
+          "dpp_pct": 27.41,
+          "tpp_pct": 23.28,
+          "total_votes": 219882
+        }
+      },
+      {
+        "code": "peh",
+        "name": "澎湖縣",
+        "kmt_pct": 38.23,
+        "dpp_pct": 44.74,
+        "tpp_pct": 17.03,
+        "winner": "DPP",
+        "margin": 6.51,
+        "confidence": "medium",
+        "kmt_votes": 37678,
+        "dpp_votes": 44089,
+        "tpp_votes": 16788,
+        "total_votes": 98554,
+        "sample_villages": 96,
+        "actual_2024": {
+          "kmt_pct": 36.63,
+          "dpp_pct": 38.6,
+          "tpp_pct": 24.76,
+          "total_votes": 98554
+        }
+      },
+      {
+        "code": "kin",
+        "name": "金門縣",
+        "kmt_pct": 65.68,
+        "dpp_pct": 15.26,
+        "tpp_pct": 19.05,
+        "winner": "KMT",
+        "margin": 46.63,
+        "confidence": "high",
+        "kmt_votes": 59920,
+        "dpp_votes": 13920,
+        "tpp_votes": 17381,
+        "total_votes": 91224,
+        "sample_villages": 37,
+        "actual_2024": {
+          "kmt_pct": 61.4,
+          "dpp_pct": 10.02,
+          "tpp_pct": 28.58,
+          "total_votes": 91224
+        }
+      },
+      {
+        "code": "lja",
+        "name": "連江縣",
+        "kmt_pct": 67.84,
+        "dpp_pct": 14.37,
+        "tpp_pct": 17.77,
+        "winner": "KMT",
+        "margin": 50.07,
+        "confidence": "high",
+        "kmt_votes": 8357,
+        "dpp_votes": 1770,
+        "tpp_votes": 2189,
+        "total_votes": 12318,
+        "sample_villages": 9,
+        "actual_2024": {
+          "kmt_pct": 62.67,
+          "dpp_pct": 10.52,
+          "tpp_pct": 26.8,
+          "total_votes": 12318
+        }
+      }
+    ],
+    "note": "全國 22 縣市加總（不含外島原住民票分配差異與境外票）。"
   }
 }
