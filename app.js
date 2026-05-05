@@ -1032,11 +1032,17 @@ async function openPastEventModal(h, dateStr){
   }
   let news = [];
   let comments = [];
+  // 給 modal 的 count：優先用 archive 真實值（backfill 後可能比 index 大）
+  let newsCount = h.news_count || 0;
+  let commentCount = h.comment_count || 0;
   if (archiveEvents){
     const found = archiveEvents.find(x => x.title === h.title);
     if (found){
       news = found.news_articles || [];
       comments = found.comments || [];
+      // 用 archive 的實際數
+      if (typeof found.news_count === 'number') newsCount = found.news_count;
+      if (typeof found.comment_count === 'number') commentCount = found.comment_count;
     }
   } else {
     // 沒 archive 檔 → 用舊版 index 自帶的資料
@@ -1058,9 +1064,9 @@ async function openPastEventModal(h, dateStr){
     level: h.level,
     source: (news.length ? 'news' : '') + (comments.length ? ((news.length ? ' + ' : '') + 'comment') : ''),
     platform: '',
-    note: `${dateStr} 命中 ${(h.news_count || 0) + (h.comment_count || 0)} 則（新聞 ${h.news_count || 0}、留言 ${h.comment_count || 0}）`,
-    news_count: h.news_count || 0,
-    comment_count: h.comment_count || 0,
+    note: `${dateStr} 命中 ${newsCount + commentCount} 則（新聞 ${newsCount}、留言 ${commentCount}）`,
+    news_count: newsCount,
+    comment_count: commentCount,
     news_articles: news,
     comments: comments,
     news_full_expires_at: null,  // 歷史不算壽命
