@@ -214,6 +214,27 @@ button.past-day-header:hover{background:#16203f}
 .past-load-more{display:block;width:100%;margin-top:8px;padding:8px;background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:6px;cursor:pointer;font-size:13px}
 .past-load-more:hover{background:#1a2750}
 
+/* Media framing matrix */
+.media-framing-disclaimer{margin:8px 0 12px 0;padding:10px 12px;background:#3a2f0a;border-left:3px solid #f7c948;border-radius:4px;color:#ffe08a;font-size:13px;line-height:1.6}
+.media-framing-matrix{overflow-x:auto;margin-top:8px}
+.mf-table{width:100%;border-collapse:collapse;font-size:13px;color:#e8ecff}
+.mf-table th, .mf-table td{padding:8px 10px;border:1px solid #2a335f;text-align:center;vertical-align:middle}
+.mf-table thead th{background:#16203f;color:#d8e2ff;font-weight:700}
+.mf-table th.mf-col-city, .mf-cell-city{background:#0f1630;font-weight:700;text-align:left;color:#d8e2ff;min-width:80px}
+.mf-cell{min-width:90px}
+.mf-cell.mf-empty{color:#5a679a;background:#0c1228}
+.mf-num{font-weight:700;font-size:14px;color:#e8ecff}
+.mf-pct{font-size:11px;color:#9fb0ea;margin-top:2px}
+.mf-cell.mf-tone-pos{background:#1a3a2e}
+.mf-cell.mf-tone-pos .mf-pct{color:#9ff0b5}
+.mf-cell.mf-tone-mid{background:#3a3a1a}
+.mf-cell.mf-tone-mid .mf-pct{color:#ffe08a}
+.mf-cell.mf-tone-neg{background:#3a2417}
+.mf-cell.mf-tone-neg .mf-pct{color:#ffc09f}
+.mf-cell.mf-tone-verybad{background:#5b1d2a}
+.mf-cell.mf-tone-verybad .mf-pct{color:#ffb3bf}
+.mf-cell.mf-tone-verybad .mf-num{color:#ffe5ea}
+
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}
 button.past-city-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px 10px;background:#0c1228;border:1px solid transparent;border-radius:4px;margin-bottom:4px;cursor:pointer;text-align:left;color:inherit}

@@ -1091,6 +1091,90 @@ async function openPastEventModal(h, dateStr){
   openHotspotDetailModal(fakeHotspot, null);
 }
 
+// --------- Media framing matrix (city × candidate) ---------
+function renderMediaFraming(d){
+  const wrap = document.getElementById('mediaFramingMatrix');
+  const meta = document.getElementById('mediaFramingMeta');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+
+  const data = d.media_framing_7d;
+  if (!data || !Array.isArray(data.cells) || data.cells.length === 0){
+    wrap.innerHTML = '<p class="hint">7 日內樣本不足，無法顯示矩陣。</p>';
+    if (meta) meta.textContent = '';
+    return;
+  }
+
+  const CANDIDATES = ['盧秀燕', '蔣萬安', '陳其邁', '蔡其昌'];
+  const CITY_ORDER = [
+    '台中', '台北', '新北', '桃園', '台南', '高雄',
+    '基隆', '新竹市', '嘉義市',
+    '新竹縣', '苗栗', '彰化', '南投', '雲林', '嘉義縣',
+    '屏東', '宜蘭', '花蓮', '台東',
+    '澎湖', '金門', '連江',
+  ];
+
+  // Build lookup: cells[(city,cand)] = cell
+  const lookup = {};
+  data.cells.forEach(c => { lookup[`${c.city}|${c.candidate}`] = c; });
+
+  // Only show cities that have at least one cell
+  const citiesWithData = CITY_ORDER.filter(city =>
+    CANDIDATES.some(cand => lookup[`${city}|${cand}`])
+  );
+
+  // Build table
+  const table = document.createElement('table');
+  table.className = 'mf-table';
+  // Header
+  const thead = document.createElement('thead');
+  const headRow = document.createElement('tr');
+  headRow.appendChild(Object.assign(document.createElement('th'), { textContent: '縣市', className: 'mf-col-city' }));
+  CANDIDATES.forEach(cand => {
+    const th = document.createElement('th');
+    th.textContent = cand;
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  // Body
+  const tbody = document.createElement('tbody');
+  citiesWithData.forEach(city => {
+    const tr = document.createElement('tr');
+    const cityTd = document.createElement('td');
+    cityTd.className = 'mf-cell-city';
+    cityTd.textContent = city;
+    tr.appendChild(cityTd);
+    CANDIDATES.forEach(cand => {
+      const td = document.createElement('td');
+      td.className = 'mf-cell';
+      const cell = lookup[`${city}|${cand}`];
+      if (!cell){
+        td.classList.add('mf-empty');
+        td.textContent = '—';
+      } else {
+        const pct = cell.negativity_pct;
+        const tone = pct <= 20 ? 'pos' : pct <= 40 ? 'mid' : pct <= 70 ? 'neg' : 'verybad';
+        td.classList.add(`mf-tone-${tone}`);
+        td.innerHTML = `
+          <div class="mf-num">${cell.news_count} 篇</div>
+          <div class="mf-pct">負面 ${pct}%</div>
+        `;
+        td.title = `news_count=${cell.news_count}\nnegative_count=${cell.negative_count}\nsentiment_score=${cell.sentiment_score}`;
+      }
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+
+  if (meta){
+    meta.textContent = `樣本：7 日全國新聞共 ${data.sample_size} 篇 ｜ 顯示門檻：≥ ${data.min_sample} 篇 ｜ 共 ${data.cells.length} 個有效格。`;
+  }
+}
+
 function initPastEventsToggle(){
   const wrap = document.getElementById('pastEventsWrap');
   const btn = document.getElementById('pastEventsToggle');
@@ -1380,6 +1464,7 @@ async function run(){
   renderTopicHeat();
   renderIncidentMap(d);
   renderPastEvents();
+  renderMediaFraming(d);
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
