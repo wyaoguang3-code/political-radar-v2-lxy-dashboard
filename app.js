@@ -1342,12 +1342,27 @@ async function renderElectionForecast(){
       `${s.pollster}（${s.date}${s.n ? '，n=' + s.n : ''}）`
     ).join('、') || '（未填入民調來源）';
 
+    // Staleness: 民調超過 30 天視為過期（顯示橘色警告）
+    let staleness = '';
+    const asOfStr = pollsMeta.as_of;
+    if (asOfStr){
+      const asOfTime = new Date(asOfStr).getTime();
+      const ageDays = Math.floor((Date.now() - asOfTime) / 86400000);
+      if (ageDays > 60){
+        staleness = `<span style="color:#ef4444">⚠️ 民調已 ${ageDays} 天未更新（建議 ≤30 天）— 跑 scripts/fetch_polls.py 自動刷新</span>`;
+      } else if (ageDays > 30){
+        staleness = `<span style="color:#f59e0b">⚠️ 民調已 ${ageDays} 天未更新</span>`;
+      } else {
+        staleness = `<span style="color:#22c55e">✓ 民調 ${ageDays} 天前更新</span>`;
+      }
+    }
+
     pollsCard = `
       <div class="forecast-six-card forecast-polls-card">
         <div class="forecast-headline">
           <span class="forecast-label">民調校正後預測勝者</span>
           <span class="ep-persist-pill ${partyClass(polls.predicted_winner)}" style="font-size:15px">${polls.predicted_winner}</span>
-          <span class="hint">　領先 ${polls.predicted_margin.toFixed(1)} 個百分點　民調日期 ${pollsMeta.as_of || '—'}</span>
+          <span class="hint">　領先 ${polls.predicted_margin.toFixed(1)} 個百分點　民調日期 ${pollsMeta.as_of || '—'}　${staleness}</span>
         </div>
         ${stackBar(polls.kmt_pct, polls.dpp_pct, polls.tpp_pct)}
         <div class="forecast-vote-grid">
