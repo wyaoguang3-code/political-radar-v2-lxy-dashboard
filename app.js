@@ -1358,6 +1358,17 @@ const PERSISTENCE_COLORS = {
   '搖擺': 'persist-swing',
   '其他': 'persist-other',
 };
+// 動作（行動類別）對應的友善 label。第一個欄位是色塊文字，title 提供 hover 補充。
+const ACTION_LABELS = {
+  GOTV:       { short: 'GOTV · 催票',     full: 'GOTV（Get Out The Vote）｜把已支持的選民帶到投票所。手段：簡訊提醒、人工電話、志工挨家催票、長者接送。' },
+  persuasion: { short: 'persuasion · 說服', full: 'persuasion｜針對中間/未表態選民改變投票意向。手段：客製化議題傳單、家戶深度對談、KOL 背書、政策廣告。' },
+  mixed:      { short: 'mixed · 雙軌',     full: 'mixed｜對基本盤打 GOTV、對搖擺者打 persuasion，兩線並進。' },
+  maintain:   { short: 'maintain · 維護',  full: 'maintain｜不投放新資源，靠樁腳/節慶/宗親會維繫關係，不犯錯比拉票更重要。' },
+  skip:       { short: 'skip · 略過',      full: 'skip｜資源效益太低，不主動投放。' },
+};
+function actionLabel(action){
+  return ACTION_LABELS[action] || { short: action || '—', full: '' };
+}
 
 async function loadEpIndex(){
   if (_epIndexCache.data) return _epIndexCache.data;
@@ -1447,7 +1458,7 @@ async function renderElectionPriority(){
         <th>人口</th>
         <th>屬性</th>
         <th>策略</th>
-        <th>動作</th>
+        <th title="GOTV=催票（已支持者）｜persuasion=說服（中間選民）｜mixed=雙軌｜maintain=維護">行動方式</th>
         <th>預算</th>
         <th>投票率</th>
         <th>搖擺度</th>
@@ -1468,7 +1479,7 @@ async function renderElectionPriority(){
         <td class="ep-num">${v.pop.toLocaleString()}</td>
         <td><span class="ep-persist-pill ${persistCls}">${escapeHtml(v.persistence)}</span></td>
         <td><span class="ep-strategy-pill ${stratCls}" title="${escapeHtml((v.outreach || []).join('、'))}">${escapeHtml(v.strategy_label || '—')}</span></td>
-        <td><span class="ep-action-pill ${actionCls}">${escapeHtml(v.action || '—')}</span></td>
+        <td><span class="ep-action-pill ${actionCls}" title="${escapeHtml(actionLabel(v.action).full)}">${escapeHtml(actionLabel(v.action).short)}</span></td>
         <td><span class="ep-budget-pill ${budgetCls}">${escapeHtml(v.budget_hint || '—')}</span></td>
         <td class="ep-num">${v.turnout != null ? v.turnout + '%' : '—'}</td>
         <td class="ep-num">${v.volatility}</td>
@@ -1525,9 +1536,10 @@ function openVillageDetail(v){
     <div class="ep-strategy-box">
       <div class="ep-strategy-headline">
         <span class="ep-strategy-pill ${stratCls}">${escapeHtml(v.strategy_label || '—')}</span>
-        <span class="ep-action-pill ${actionCls}">${escapeHtml(v.action || '—')}</span>
+        <span class="ep-action-pill ${actionCls}" title="${escapeHtml(actionLabel(v.action).full)}">${escapeHtml(actionLabel(v.action).short)}</span>
         <span class="ep-budget-pill ${budgetCls}">預算：${escapeHtml(v.budget_hint || '—')}</span>
       </div>
+      ${actionLabel(v.action).full ? `<p class="ep-action-explainer">${escapeHtml(actionLabel(v.action).full)}</p>` : ''}
       ${v.strategy_reason ? `<p class="ep-strategy-reason">${escapeHtml(v.strategy_reason)}</p>` : ''}
 
       <div class="ep-detail-list-title">建議接觸方式（${(v.outreach || []).length} 種）</div>

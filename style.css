@@ -240,6 +240,14 @@ button.past-day-header:hover{background:#16203f}
 /* Election priority panel */
 .ep-disclaimer{margin:8px 0 12px 0;padding:10px 12px;background:#0f2435;border-left:3px solid #4f8cff;border-radius:4px;color:#dbe8ff;font-size:13px;line-height:1.7}
 .ep-disclaimer a{color:#9fc4ff}
+.ep-glossary{margin:0 0 14px 0;padding:0 12px;background:#0d1a2c;border-left:3px solid #6e8cff;border-radius:4px;color:#cfd8eb;font-size:13px;line-height:1.7}
+.ep-glossary > summary{cursor:pointer;padding:10px 0;font-weight:600;color:#a9b9ff;list-style:none}
+.ep-glossary > summary::-webkit-details-marker{display:none}
+.ep-glossary[open] > summary{border-bottom:1px solid #1d2b48;margin-bottom:6px}
+.ep-glossary-body{padding:6px 0 12px 0}
+.ep-glossary-body p{margin:6px 0}
+.ep-glossary-body strong{color:#e6efff}
+.ep-glossary-body u{text-decoration:underline;text-decoration-color:#5a79ff;text-underline-offset:2px}
 .ep-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:10px 0;color:#dbe8ff;font-size:13px}
 .ep-controls select{background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:4px;padding:4px 8px;margin-left:6px}
 .ep-table-wrap{overflow-x:auto;max-height:600px;overflow-y:auto;border:1px solid #2a335f;border-radius:6px}
@@ -307,6 +315,7 @@ button.past-day-header:hover{background:#16203f}
 .ep-strategy-box, .ep-demo-box{margin:8px 14px 4px 14px;padding:10px 12px;background:#0f1630;border:1px solid #2a335f;border-radius:6px}
 .ep-strategy-row{margin:6px 0;line-height:1.8}
 .ep-strategy-headline{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.ep-action-explainer{margin:4px 0 8px 0;padding:6px 10px;background:#101a36;border-left:3px solid #6e8cff;border-radius:4px;color:#cfd8eb;font-size:12px;line-height:1.6}
 .ep-strategy-reason{margin:6px 0 12px 0;padding:8px 12px;background:#0c1228;border-left:3px solid #5a79ff;border-radius:4px;color:#dbe8ff;font-size:13px;line-height:1.7}
 .ep-detail-list-title{color:#9fb0ea;font-size:12px;font-weight:700;margin:10px 0 4px 0;border-top:1px solid #2a335f;padding-top:8px}
 .ep-detail-list{list-style:none;margin:0;padding:0}
