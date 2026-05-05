@@ -1182,6 +1182,184 @@ function renderMediaFraming(d){
   }
 }
 
+// --------- Election priority map (黃金戰場版圖) ---------
+const _epIndexCache = { data: null };
+const _epCityCache = {};  // code → full city data
+const PERSISTENCE_COLORS = {
+  '永藍': 'persist-blue',
+  '永綠': 'persist-green',
+  '永白': 'persist-white',
+  '翻轉': 'persist-flip',
+  '搖擺': 'persist-swing',
+  '其他': 'persist-other',
+};
+
+async function loadEpIndex(){
+  if (_epIndexCache.data) return _epIndexCache.data;
+  const d = await fetchJSON('./election_priority.json');
+  _epIndexCache.data = d;
+  return d;
+}
+
+async function loadEpCity(code){
+  if (_epCityCache[code]) return _epCityCache[code];
+  const d = await fetchJSON(`./election_priority/${code}.json`);
+  if (d) _epCityCache[code] = d;
+  return d;
+}
+
+async function renderElectionPriority(){
+  const wrap = document.getElementById('epTableWrap');
+  const stats = document.getElementById('epCityStats');
+  const status = document.getElementById('epStatus');
+  if (!wrap) return;
+
+  const idx = await loadEpIndex();
+  if (!idx){
+    wrap.innerHTML = '<p class="hint">尚未產生選舉版圖資料。</p>';
+    return;
+  }
+
+  const citySelect = document.getElementById('epCitySelect');
+  const limitSelect = document.getElementById('epLimitSelect');
+
+  const renderTable = async () => {
+    const cityCode = citySelect.value;
+    const limit = parseInt(limitSelect.value, 10) || 100;
+    if (status) status.textContent = '載入中…';
+
+    let villages = [];
+    if (cityCode === 'all'){
+      // Top N across all cities — 從 index 拿 top_villages 合併
+      idx.cities.forEach(c => {
+        c.top_villages.forEach(v => villages.push({ ...v, city: c.code, cityName: c.name }));
+      });
+      villages.sort((a, b) => b.priority - a.priority);
+    } else {
+      const cityData = await loadEpCity(cityCode);
+      if (!cityData){
+        wrap.innerHTML = '<p class="hint">找不到該縣市資料。</p>';
+        return;
+      }
+      villages = cityData.villages.map(v => ({ ...v, city: cityCode, cityName: cityData.name }));
+    }
+    const display = villages.slice(0, limit);
+
+    if (status) status.textContent = `顯示前 ${display.length} 名（總共 ${cityCode === 'all' ? idx.cities.reduce((s,c)=>s+c.village_count, 0) : villages.length} 里）`;
+
+    // Render city stats
+    if (stats){
+      stats.innerHTML = '';
+      idx.cities.forEach(c => {
+        if (cityCode !== 'all' && c.code !== cityCode) return;
+        const counts = c.persistence_counts || {};
+        const item = document.createElement('div');
+        item.className = 'ep-city-stat';
+        item.innerHTML = `
+          <strong>${escapeHtml(c.name)}</strong>（${c.village_count} 里）
+          <span class="ep-persist-pill persist-blue">永藍 ${counts['永藍']||0}</span>
+          <span class="ep-persist-pill persist-green">永綠 ${counts['永綠']||0}</span>
+          <span class="ep-persist-pill persist-flip">翻轉 ${counts['翻轉']||0}</span>
+          <span class="ep-persist-pill persist-swing">搖擺 ${counts['搖擺']||0}</span>
+        `;
+        stats.appendChild(item);
+      });
+    }
+
+    // Build table
+    wrap.innerHTML = '';
+    if (!display.length){
+      wrap.innerHTML = '<p class="hint">目前沒有資料。</p>';
+      return;
+    }
+    const table = document.createElement('table');
+    table.className = 'ep-table';
+    table.innerHTML = `
+      <thead><tr>
+        <th>排名</th>
+        <th>縣市</th>
+        <th>區 / 里</th>
+        <th>人口</th>
+        <th>屬性</th>
+        <th>搖擺度</th>
+        <th>翻盤</th>
+        <th>最近差距</th>
+        <th>說服空間</th>
+        <th>Priority</th>
+      </tr></thead>`;
+    const tbody = document.createElement('tbody');
+    display.forEach((v, i) => {
+      const tr = document.createElement('tr');
+      tr.className = 'ep-row';
+      const persistCls = PERSISTENCE_COLORS[v.persistence] || 'persist-other';
+      tr.innerHTML = `
+        <td class="ep-rank">${i + 1}</td>
+        <td class="ep-city">${escapeHtml(v.cityName)}</td>
+        <td class="ep-village"><strong>${escapeHtml(v.town)}</strong> ${escapeHtml(v.village)}</td>
+        <td class="ep-num">${v.pop.toLocaleString()}</td>
+        <td><span class="ep-persist-pill ${persistCls}">${escapeHtml(v.persistence)}</span></td>
+        <td class="ep-num">${v.volatility}</td>
+        <td class="ep-num">${v.flips} 次</td>
+        <td class="ep-num">${v.latest_margin}%</td>
+        <td class="ep-num">${v.persuadability}</td>
+        <td class="ep-priority"><strong>${v.priority}</strong></td>
+      `;
+      tr.addEventListener('click', () => openVillageDetail(v));
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+  };
+
+  citySelect?.addEventListener('change', renderTable);
+  limitSelect?.addEventListener('change', renderTable);
+  await renderTable();
+}
+
+function openVillageDetail(v){
+  // 重用既有 hotspotDetailModal — 把里資訊塞進去顯示
+  const years = v.years || [];
+  const histRows = years.map((y, i) => {
+    const kmt = v.kmt_rates?.[i] ?? 0;
+    const dpp = v.dpp_rates?.[i] ?? 0;
+    const tpp = v.tpp_rates?.[i] ?? 0;
+    const winner = v.winner_parties?.[i] || '';
+    const winnerCls = winner === 'KMT' ? 'persist-blue' : winner === 'DPP' ? 'persist-green' : winner === 'TPP' ? 'persist-white' : 'persist-other';
+    return `
+      <tr>
+        <td>${y}</td>
+        <td><span class="ep-persist-pill ${winnerCls}">${winner || '—'}</span></td>
+        <td class="ep-num">${kmt}%</td>
+        <td class="ep-num">${dpp}%</td>
+        <td class="ep-num">${tpp}%</td>
+      </tr>`;
+  }).join('');
+
+  const html = `
+    <div class="ep-detail-meta">
+      <div><strong>${escapeHtml(v.cityName || '')} ${escapeHtml(v.town || '')} ${escapeHtml(v.village || '')}</strong></div>
+      <div class="hint">人口 ${v.pop.toLocaleString()}（合格選舉人 ${v.voters.toLocaleString()}）｜中位年齡 ${v.median_age || '—'} 歲｜60 歲以上 ${v.a60up_pct}%</div>
+      <div class="hint">大專 ${v.college_pct}%｜研究所 ${v.graduate_pct}%</div>
+      <div class="hint">屬性：<span class="ep-persist-pill ${PERSISTENCE_COLORS[v.persistence] || 'persist-other'}">${escapeHtml(v.persistence)}</span>　搖擺度 ${v.volatility}　翻盤 ${v.flips} 次　最近差距 ${v.latest_margin}%　說服空間 ${v.persuadability}</div>
+    </div>
+    <h3>📜 歷次直轄市長選舉</h3>
+    <table class="ep-history-table">
+      <thead><tr><th>年</th><th>勝者</th><th>KMT</th><th>DPP</th><th>TPP</th></tr></thead>
+      <tbody>${histRows}</tbody>
+    </table>
+  `;
+
+  const modal = document.getElementById('hotspotDetailModal');
+  if (!modal) return;
+  document.getElementById('hotspotDetailTitle').textContent =
+    `${v.cityName || ''} ${v.town || ''} ${v.village || ''}（priority ${v.priority}）`;
+  const body = document.getElementById('hotspotDetailBody');
+  body.innerHTML = html;
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
 function initPastEventsToggle(){
   const wrap = document.getElementById('pastEventsWrap');
   const btn = document.getElementById('pastEventsToggle');
@@ -1488,6 +1666,7 @@ async function run(){
   renderIncidentMap(d);
   renderPastEvents();
   renderMediaFraming(d);
+  renderElectionPriority();
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();

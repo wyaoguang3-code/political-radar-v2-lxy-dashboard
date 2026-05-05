@@ -237,6 +237,41 @@ button.past-day-header:hover{background:#16203f}
 .mf-cell.mf-clickable{cursor:pointer;transition:filter 0.15s,outline 0.1s}
 .mf-cell.mf-clickable:hover{filter:brightness(1.25);outline:1px solid #5a79ff;outline-offset:-1px}
 
+/* Election priority panel */
+.ep-disclaimer{margin:8px 0 12px 0;padding:10px 12px;background:#0f2435;border-left:3px solid #4f8cff;border-radius:4px;color:#dbe8ff;font-size:13px;line-height:1.7}
+.ep-disclaimer a{color:#9fc4ff}
+.ep-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:10px 0;color:#dbe8ff;font-size:13px}
+.ep-controls select{background:#16203f;color:#dbe8ff;border:1px solid #2a335f;border-radius:4px;padding:4px 8px;margin-left:6px}
+.ep-table-wrap{overflow-x:auto;max-height:600px;overflow-y:auto;border:1px solid #2a335f;border-radius:6px}
+.ep-table{width:100%;border-collapse:collapse;font-size:12px;color:#e8ecff}
+.ep-table th, .ep-table td{padding:5px 8px;border-bottom:1px solid #1a2241;text-align:center;vertical-align:middle;white-space:nowrap}
+.ep-table thead{position:sticky;top:0;background:#16203f;z-index:1}
+.ep-table thead th{color:#d8e2ff;font-weight:700;font-size:12px}
+.ep-table tbody tr.ep-row{cursor:pointer;transition:background 0.1s}
+.ep-table tbody tr.ep-row:hover{background:#16203f}
+.ep-table .ep-rank{color:#9fb0ea;font-weight:600}
+.ep-table .ep-village{text-align:left;color:#e8ecff}
+.ep-table .ep-village strong{color:#dbe8ff;margin-right:6px}
+.ep-table .ep-num{font-feature-settings:"tnum";color:#dbe8ff}
+.ep-table .ep-priority strong{color:#ffe08a;font-size:13px}
+.ep-persist-pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11px;font-weight:700}
+.persist-blue{background:#1d3a72;color:#cfe0ff}
+.persist-green{background:#1a5031;color:#9ff0b5}
+.persist-white{background:#3f3f3f;color:#e8e8e8}
+.persist-flip{background:#594a16;color:#ffe08a}
+.persist-swing{background:#5b3a1a;color:#ffc09f}
+.persist-other{background:#2a335f;color:#9fb0ea}
+.ep-city-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;font-size:12px;color:#b9c3f2}
+.ep-city-stat{padding:4px 10px;background:#0f1630;border:1px solid #2a335f;border-radius:6px}
+.ep-city-stat strong{color:#dbe8ff;margin-right:6px}
+.ep-city-stat .ep-persist-pill{margin-left:4px}
+/* Detail modal table */
+.ep-detail-meta{padding:10px 14px;background:#0c1228;border-bottom:1px solid #2a335f}
+.ep-detail-meta div{margin:3px 0}
+.ep-history-table{width:calc(100% - 28px);margin:8px 14px;border-collapse:collapse;font-size:12px;color:#e8ecff}
+.ep-history-table th, .ep-history-table td{padding:4px 8px;border:1px solid #2a335f;text-align:center}
+.ep-history-table thead th{background:#16203f;color:#d8e2ff}
+
 /* Past event city sub-section */
 .past-city-section{margin-top:8px;padding-left:8px;border-left:2px solid #2a335f}
 button.past-city-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px 10px;background:#0c1228;border:1px solid transparent;border-radius:4px;margin-bottom:4px;cursor:pointer;text-align:left;color:inherit}
