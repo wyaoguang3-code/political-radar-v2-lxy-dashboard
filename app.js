@@ -987,6 +987,42 @@ function appendPastEventsBatch(count){
 // 每天 archive 的記憶體 cache（避免重複 fetch 同一天）
 const _pastArchiveCache = {};
 
+async // 把任意 articles 陣列開到既有 hotspot detail modal
+function openArticlesModal(title, note, articles){
+  const news = (articles || []).map(a => ({
+    title: a.title || '（無標題）',
+    url: a.url || '',
+    time: a.time || '',
+  }));
+  openHotspotDetailModal({
+    title: `${title}（${news.length} 則）`,
+    place: '盧秀燕',
+    level: 'green',  // 卡片本身沒燈號，給個中性顏色
+    source: news.length ? 'news' : '',
+    platform: '',
+    note: note,
+    news_count: news.length,
+    comment_count: 0,
+    news_articles: news,
+    comments: [],
+    news_full_expires_at: null,
+  }, null);
+}
+
+// 在卡片上 bind click：開 modal 顯示資料
+function bindCardClick(elemId, title, note, getArticlesFn){
+  const num = document.getElementById(elemId);
+  if (!num) return;
+  const card = num.closest('.card');
+  if (!card || card.dataset.clickBound === '1') return;
+  card.dataset.clickBound = '1';
+  card.classList.add('card-clickable');
+  card.addEventListener('click', () => {
+    const articles = getArticlesFn() || [];
+    openArticlesModal(title, note, articles);
+  });
+}
+
 async function openPastEventModal(h, dateStr){
   // Lazy-load 該日完整 archive；找不到就 fallback 到 index 裡的 sample_titles
   let archiveEvents = _pastArchiveCache[dateStr];
@@ -1283,6 +1319,13 @@ async function run(){
   document.getElementById('growth').textContent = m.growth_pct==null ? '-' : `${m.growth_pct}%`;
   document.getElementById('news24').textContent = m.news ?? m.news_24h ?? '-';
 
+  // 卡片點擊 → 開 modal 顯示對應的新聞清單
+  state.articles24h = d.articles_24h || [];
+  state.articlesPrev24h = d.articles_prev_24h || [];
+  bindCardClick('total24', '24h 聲量明細', '近 24 小時所有與盧秀燕有關的事件', () => state.articles24h);
+  bindCardClick('prev24',  '前 24h 聲量明細', '24-48 小時前所有與盧秀燕有關的事件', () => state.articlesPrev24h);
+  bindCardClick('news24',  '今日新聞量明細', '近 24 小時所有與盧秀燕有關的新聞', () => state.articles24h.filter(a => a.platform === 'news'));
+
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
@@ -1383,7 +1426,9 @@ async function run(){
         label:'聲量', data:byHour.map(x=>x.count||0),
         borderColor:'#7fc0ff', backgroundColor:'rgba(127,192,255,0.2)',
         tension:0.25, fill:true,
-        pointRadius:0, pointHoverRadius:5,
+        pointRadius:4, pointHoverRadius:7,                 // 視覺提示可點
+        pointBackgroundColor:'rgba(127,192,255,0.4)',
+        pointBorderColor:'#7fc0ff',
         pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#7fc0ff',
       }],
     },
@@ -1395,10 +1440,23 @@ async function run(){
         tooltip: darkTooltip({
           mode: 'index',
           displayColors: false,
-          callbacks: { label: (ctx) => `聲量：${ctx.parsed.y}` },
+          callbacks: { label: (ctx) => `聲量：${ctx.parsed.y}（點擊查看清單）` },
         }),
       },
-      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}}
+      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}},
+      onHover: (evt, els) => {
+        const target = evt?.native?.target;
+        if (target) target.style.cursor = els.length ? 'pointer' : 'default';
+      },
+      onClick: (evt, els) => {
+        if (!els.length) return;
+        const idx = els[0].index;
+        const hourFull = byHour[idx]?.hour;  // e.g. "2026-05-06 14:00"
+        if (!hourFull) return;
+        const hourArticles = (state.articles24h || []).filter(a => a.hour === hourFull);
+        const hourLabel = hourFull.slice(5, 16);  // 顯示用的「MM-DD HH:00」
+        openArticlesModal(`${hourLabel} 聲量明細`, `該小時內所有與盧秀燕有關的事件`, hourArticles);
+      },
     }
   });
 
