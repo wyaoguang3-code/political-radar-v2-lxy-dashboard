@@ -1031,16 +1031,24 @@ function openArticlesModal(title, note, articles){
 }
 
 // 在卡片上 bind click：開 modal 顯示資料
+// 卡片點擊綁定。重要：每次 run()（mode 切換）都會 re-call bindCardClick；
+// 早期版本用 dataset.clickBound 避免重綁、結果讓 title/note/articles 卡在第一次 bind 時的值（24h），
+// 改成把最新 config 存在 _cardBindings，handler 只綁一次但每次點擊讀最新 config。
+const _cardBindings = {};
 function bindCardClick(elemId, title, note, getArticlesFn){
   const num = document.getElementById(elemId);
   if (!num) return;
   const card = num.closest('.card');
-  if (!card || card.dataset.clickBound === '1') return;
+  if (!card) return;
+  _cardBindings[elemId] = { title, note, getArticlesFn };
+  if (card.dataset.clickBound === '1') return;
   card.dataset.clickBound = '1';
   card.classList.add('card-clickable');
   card.addEventListener('click', () => {
-    const articles = getArticlesFn() || [];
-    openArticlesModal(title, note, articles);
+    const cfg = _cardBindings[elemId];
+    if (!cfg) return;
+    const articles = cfg.getArticlesFn() || [];
+    openArticlesModal(cfg.title, cfg.note, articles);
   });
 }
 
@@ -2269,14 +2277,16 @@ async function run(){
   state.articles24h = d.articles_24h || [];
   state.articlesPrev24h = d.articles_prev_24h || [];
   state.articles7d = d.articles_7d || [];
+  state.articlesPrev7d = d.articles_prev_7d || [];
   const isWeekMode = mode === '7d';
   const totalArticles  = () => isWeekMode ? state.articles7d : state.articles24h;
+  const prevArticles   = () => isWeekMode ? state.articlesPrev7d : state.articlesPrev24h;
   const newsArticles   = () => totalArticles().filter(a => a.platform === 'news');
   bindCardClick('total24', isWeekMode ? '近 7 日聲量明細'  : '24h 聲量明細',
     isWeekMode ? '近 7 日所有與盧秀燕有關的事件' : '近 24 小時所有與盧秀燕有關的事件', totalArticles);
   bindCardClick('prev24',  isWeekMode ? '前 7 日聲量明細'  : '前 24h 聲量明細',
-    isWeekMode ? '7-14 天前所有與盧秀燕有關的事件（無快取，僅顯示總數）' : '24-48 小時前所有與盧秀燕有關的事件',
-    () => isWeekMode ? [] : state.articlesPrev24h);  // 7d 模式沒 prev 詳細快取，僅顯示總數
+    isWeekMode ? '7-14 天前所有與盧秀燕有關的事件' : '24-48 小時前所有與盧秀燕有關的事件',
+    prevArticles);
   bindCardClick('news24',  isWeekMode ? '7 日新聞量明細' : '今日新聞量明細',
     isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
