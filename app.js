@@ -100,8 +100,10 @@ function severityLightOf(articles){
   if (total === 0) return '綠';
   // 紅：≥3 紅 OR （≥2 紅且紅比例 ≥25%）
   if (reds >= 3 || (reds >= 2 && reds / total >= 0.25)) return '紅';
-  // 黃：≥5 負面 OR （≥3 負面且負面比例 ≥30%）
-  if (neg >= 5 || (neg >= 3 && neg / total >= 0.30)) return '黃';
+  // 黃：負面比例 ≥30% 且至少 2 則 — 比例優先（避免 1/N 單則拉成黃，但 2/4 = 50% 必升）
+  if (neg >= 2 && neg / total >= 0.30) return '黃';
+  // 黃 fallback：絕對量大（≥5 負面）即使比例低也算黃
+  if (neg >= 5) return '黃';
   return '綠';
 }
 function combineLights(volumeLight, articles){
