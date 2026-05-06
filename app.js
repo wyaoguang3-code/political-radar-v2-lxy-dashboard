@@ -2264,9 +2264,17 @@ async function run(){
   // 卡片點擊 → 開 modal 顯示對應的新聞清單
   state.articles24h = d.articles_24h || [];
   state.articlesPrev24h = d.articles_prev_24h || [];
-  bindCardClick('total24', '24h 聲量明細', '近 24 小時所有與盧秀燕有關的事件', () => state.articles24h);
-  bindCardClick('prev24',  '前 24h 聲量明細', '24-48 小時前所有與盧秀燕有關的事件', () => state.articlesPrev24h);
-  bindCardClick('news24',  '今日新聞量明細', '近 24 小時所有與盧秀燕有關的新聞', () => state.articles24h.filter(a => a.platform === 'news'));
+  state.articles7d = d.articles_7d || [];
+  const isWeekMode = mode === '7d';
+  const totalArticles  = () => isWeekMode ? state.articles7d : state.articles24h;
+  const newsArticles   = () => totalArticles().filter(a => a.platform === 'news');
+  bindCardClick('total24', isWeekMode ? '近 7 日聲量明細'  : '24h 聲量明細',
+    isWeekMode ? '近 7 日所有與盧秀燕有關的事件' : '近 24 小時所有與盧秀燕有關的事件', totalArticles);
+  bindCardClick('prev24',  isWeekMode ? '前 7 日聲量明細'  : '前 24h 聲量明細',
+    isWeekMode ? '7-14 天前所有與盧秀燕有關的事件（無快取，僅顯示總數）' : '24-48 小時前所有與盧秀燕有關的事件',
+    () => isWeekMode ? [] : state.articlesPrev24h);  // 7d 模式沒 prev 詳細快取，僅顯示總數
+  bindCardClick('news24',  isWeekMode ? '7 日新聞量明細' : '今日新聞量明細',
+    isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
   const level = (m.anomaly||{}).level || '綠';
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
@@ -2344,7 +2352,36 @@ async function run(){
   renderList('tsaiFb', (ps['蔡其昌']||{}).facebook || []);
   renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
 
-  const byHour = pick(d, 'by_hour', 'by_hour_7d') || [];
+  const byHourRaw = pick(d, 'by_hour', 'by_hour_7d') || [];
+  // 7d 模式聚合到「日」（過去 7 天的週幾）；24h 模式維持小時級
+  const isWeek = mode === '7d';
+  const dayWeekdayLabel = (d) => {
+    // d = "2026-04-30"
+    const t = new Date(d + 'T00:00+08:00');  // 假設 Asia/Taipei
+    const wd = ['日','一','二','三','四','五','六'][t.getDay()];
+    return `${d.slice(5)}（週${wd}）`;
+  };
+  let byHour;
+  if (isWeek){
+    // Aggregate by_hour_7d to per-day counts; ensure all 7 days present (zero-fill)
+    const dayCounts = {};
+    byHourRaw.forEach(h => {
+      const day = (h.hour||'').slice(0, 10);
+      if (!day) return;
+      dayCounts[day] = (dayCounts[day] || 0) + (h.count || 0);
+    });
+    // Generate last 7 days in order
+    const today = new Date(); today.setHours(0,0,0,0);
+    const days = [];
+    for (let i = 6; i >= 0; i--){
+      const d2 = new Date(today.getTime() - i*86400000);
+      const ymd = d2.toLocaleDateString('en-CA', { timeZone: 'Asia/Taipei' });
+      days.push(ymd);
+    }
+    byHour = days.map(d => ({ hour: d, day: d, count: dayCounts[d] || 0 }));
+  } else {
+    byHour = byHourRaw;
+  }
 
   // 燈號狀態與原因（可視化）
   const an = m.anomaly || {};
@@ -2365,17 +2402,21 @@ async function run(){
   }
 
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
-    type:'line',
+    type: isWeek ? 'bar' : 'line',
     data:{
-      labels:byHour.map(x=>(x.hour||'').slice(5,16)),
+      labels: isWeek
+        ? byHour.map(x => dayWeekdayLabel(x.day))
+        : byHour.map(x => (x.hour||'').slice(5, 16)),
       datasets:[{
         label:'聲量', data:byHour.map(x=>x.count||0),
-        borderColor:'#7fc0ff', backgroundColor:'rgba(127,192,255,0.2)',
-        tension:0.25, fill:true,
-        pointRadius:4, pointHoverRadius:7,                 // 視覺提示可點
+        borderColor:'#7fc0ff', backgroundColor:isWeek ? '#5a79ff' : 'rgba(127,192,255,0.2)',
+        tension:0.25, fill:!isWeek,
+        pointRadius: isWeek ? 0 : 4,
+        pointHoverRadius: isWeek ? 0 : 7,
         pointBackgroundColor:'rgba(127,192,255,0.4)',
         pointBorderColor:'#7fc0ff',
         pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#7fc0ff',
+        borderRadius: isWeek ? 6 : 0,
       }],
     },
     options:{
@@ -2397,11 +2438,18 @@ async function run(){
       onClick: (evt, els) => {
         if (!els.length) return;
         const idx = els[0].index;
-        const hourFull = byHour[idx]?.hour;  // e.g. "2026-05-06 14:00"
-        if (!hourFull) return;
-        const hourArticles = (state.articles24h || []).filter(a => a.hour === hourFull);
-        const hourLabel = hourFull.slice(5, 16);  // 顯示用的「MM-DD HH:00」
-        openArticlesModal(`${hourLabel} 聲量明細`, `該小時內所有與盧秀燕有關的事件`, hourArticles);
+        if (isWeek){
+          const dayKey = byHour[idx]?.day;
+          if (!dayKey) return;
+          const dayArticles = (state.articles7d || []).filter(a => a.day === dayKey);
+          openArticlesModal(`${dayWeekdayLabel(dayKey)} 聲量明細`, `當日所有與盧秀燕有關的事件`, dayArticles);
+        } else {
+          const hourFull = byHour[idx]?.hour;
+          if (!hourFull) return;
+          const hourArticles = (state.articles24h || []).filter(a => a.hour === hourFull);
+          const hourLabel = hourFull.slice(5, 16);
+          openArticlesModal(`${hourLabel} 聲量明細`, `該小時內所有與盧秀燕有關的事件`, hourArticles);
+        }
       },
     }
   });
@@ -2493,11 +2541,33 @@ function initCollapsibles(){
   });
 }
 
+function applyModeLabels(){
+  const isWeek = mode === '7d';
+  // Active button highlight
+  document.getElementById('mode24')?.classList.toggle('is-active', !isWeek);
+  document.getElementById('mode7d')?.classList.toggle('is-active', isWeek);
+  // 標題裡的 24h/24小時 文字統一替換成 7日
+  document.querySelectorAll('[data-window-label]').forEach(el => {
+    if (!el.dataset.origText) el.dataset.origText = el.textContent;
+    if (isWeek){
+      el.textContent = el.dataset.origText.replaceAll('24h', '7日').replaceAll('24小時', '7日');
+    } else {
+      el.textContent = el.dataset.origText;
+    }
+  });
+  // 「前 24h」card 比較期間 — 7d 模式下要說「前 7 日」
+  document.querySelectorAll('[data-window-label-prev]').forEach(el => {
+    if (!el.dataset.origText) el.dataset.origText = el.textContent;
+    el.textContent = isWeek ? '前 7 日' : el.dataset.origText;
+  });
+}
+
 function initModes(){
   const b24 = document.getElementById('mode24');
   const b7 = document.getElementById('mode7d');
-  if(b24) b24.onclick = async ()=>{ mode='24h'; await run(); };
-  if(b7) b7.onclick = async ()=>{ mode='7d'; await run(); };
+  if(b24) b24.onclick = async ()=>{ mode='24h'; applyModeLabels(); await run(); };
+  if(b7) b7.onclick = async ()=>{ mode='7d'; applyModeLabels(); await run(); };
+  applyModeLabels();  // initial
 }
 
 initCollapsibles();

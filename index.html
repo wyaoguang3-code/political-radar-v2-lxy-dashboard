@@ -18,21 +18,21 @@
 
   <section class="panel" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
     <strong>資料視窗：</strong>
-    <button id="mode24" type="button">24h</button>
-    <button id="mode7d" type="button">近7日</button>
+    <button id="mode24" type="button" class="mode-btn">24h</button>
+    <button id="mode7d" type="button" class="mode-btn">近7日</button>
     <span id="modeHint" style="opacity:.8"></span>
   </section>
 
   <section class="cards">
-    <div class="card"><h3>24h 聲量</h3><div id="total24" class="num">-</div></div>
-    <div class="card"><h3>前 24h</h3><div id="prev24" class="num">-</div></div>
+    <div class="card"><h3 data-window-label>24h 聲量</h3><div id="total24" class="num">-</div></div>
+    <div class="card"><h3 data-window-label-prev>前 24h</h3><div id="prev24" class="num">-</div></div>
     <div class="card"><h3>成長率</h3><div id="growth" class="num">-</div></div>
     <div class="card"><h3>紅黃綠燈</h3><div id="light" class="num">-</div></div>
     <div class="card"><h3>今日新聞量</h3><div id="news24" class="num">-</div></div>
   </section>
 
   <section class="panel">
-    <h2>24h 聲量趨勢</h2>
+    <h2 data-window-label>24h 聲量趨勢</h2>
     <canvas id="hourChart" height="120"></canvas>
   </section>
 
@@ -46,12 +46,12 @@
 
   <section class="panel two-col">
     <div>
-      <h2>平台分佈（全資料24h）（含盧秀燕、秀燕、蔣萬安、萬安、陳其邁、其邁、蔡其昌、其昌等關鍵字）</h2>
+      <h2><span data-window-label>平台分佈（全資料24h）</span>（含盧秀燕、秀燕、蔣萬安、萬安、陳其邁、其邁、蔡其昌、其昌等關鍵字）</h2>
       <canvas id="platformChart" height="170"></canvas>
       <ul id="platforms"></ul>
     </div>
     <div>
-      <h2>人物提及（24h）</h2>
+      <h2 data-window-label>人物提及（24h）</h2>
       <canvas id="mentionChart" height="170"></canvas>
       <div id="compare"></div>
     </div>
@@ -344,7 +344,7 @@
 
   <section class="panel collapsible" id="panel-platform-detail">
     <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="platformDetailWrap">
-      <h2>平台分佈對應明細（24h）</h2>
+      <h2 data-window-label>平台分佈對應明細（24h）</h2>
       <span class="chev">▾</span>
     </button>
     <div class="panel-content" id="platformDetailWrap">
@@ -355,7 +355,7 @@
 
   <section class="panel collapsible" id="panel-latest-news">
     <button class="panel-toggle" type="button" aria-expanded="true" aria-controls="latestNewsWrap">
-      <h2>最新新聞（24h）</h2>
+      <h2 data-window-label>最新新聞（24h）</h2>
       <span class="chev">▾</span>
     </button>
     <div class="panel-content" id="latestNewsWrap">
