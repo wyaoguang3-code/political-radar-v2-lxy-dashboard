@@ -1017,7 +1017,8 @@ function openArticlesModal(title, note, articles){
     title: a.title || '（無標題）',
     url: a.url || '',
     time: a.time || '',
-    is_negative: !!a.is_negative,  // 保留標記讓 modal 可以高亮負面新聞
+    is_negative: !!a.is_negative,
+    severity: a.severity || (a.is_negative ? 'yellow' : null),  // 沒 severity 的舊資料退回二級
   }));
   openHotspotDetailModal({
     // openHotspotDetailModal 會自動在標題後綴 (N 則)，所以這裡只傳乾淨的 title
@@ -2160,16 +2161,26 @@ function openHotspotDetailModal(h, markersByTitle){
   } else {
     const ol = document.createElement('ol');
     ol.className = 'hd-news-list';
-    let negCount = 0;
+    let redCount = 0, yellowCount = 0;
     articles.forEach(x => {
       const li = document.createElement('li');
-      if (x.is_negative){
-        li.classList.add('hd-news-negative');
-        negCount += 1;
+      // 嚴重度分級：red（公共安全/刑事）/ yellow（政治批評/環境）/ none
+      const sev = x.severity || (x.is_negative ? 'yellow' : null);
+      if (sev === 'red'){
+        li.classList.add('hd-news-red');
+        redCount += 1;
         const badge = document.createElement('span');
-        badge.className = 'hd-news-neg-badge';
-        badge.textContent = '⚠️ 負面';
-        badge.title = '標題命中負面/緊急詞典';
+        badge.className = 'hd-news-badge hd-news-badge-red';
+        badge.textContent = '🔴 紅燈';
+        badge.title = '標題命中嚴重事件詞（刑事 / 公共安全 / 重大）';
+        li.appendChild(badge);
+      } else if (sev === 'yellow'){
+        li.classList.add('hd-news-yellow');
+        yellowCount += 1;
+        const badge = document.createElement('span');
+        badge.className = 'hd-news-badge hd-news-badge-yellow';
+        badge.textContent = '🟡 黃燈';
+        badge.title = '標題命中政治批評／環境問題詞';
         li.appendChild(badge);
       }
       const meta = document.createElement('span');
@@ -2182,11 +2193,14 @@ function openHotspotDetailModal(h, markersByTitle){
       li.appendChild(a);
       ol.appendChild(li);
     });
-    if (negCount > 0){
+    if (redCount > 0 || yellowCount > 0){
       const note = document.createElement('p');
       note.className = 'hint hd-neg-note';
-      note.textContent = `※ 其中 ${negCount} 則含負面/緊急詞（已標 ⚠️）`;
-      newsSec.appendChild(note);  // 先 append note 再 append ol，順序正確
+      const parts = [];
+      if (redCount > 0) parts.push(`🔴 紅燈 ${redCount} 則（刑事 / 公共安全 / 重大事件）`);
+      if (yellowCount > 0) parts.push(`🟡 黃燈 ${yellowCount} 則（政治批評 / 環境問題）`);
+      note.textContent = `※ ${parts.join('，')}`;
+      newsSec.appendChild(note);
     }
     newsSec.appendChild(ol);
   }
