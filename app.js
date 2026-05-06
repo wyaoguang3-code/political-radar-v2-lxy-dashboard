@@ -2411,17 +2411,27 @@ async function run(){
   const lt = document.getElementById('lightTrend');
   if(lt){
     const avg = byHour.length ? byHour.reduce((a,b)=>a+(b.count||0),0)/byHour.length : 0;
+    const renderClickable = (label, key, count, lv, kind /* 'hour' | 'day' */) => {
+      const inner = `${label} ${LIGHT_ICON[lv]}${lv}（${count} 則）`;
+      if (count > 0){
+        return `<button type="button" class="light-item" data-${kind}="${escapeHtml(key)}" title="點擊查看當${kind === 'day' ? '日' : '小時'}新聞">${inner}</button>`;
+      }
+      return `<span class="light-item-empty" title="該${kind === 'day' ? '日' : '小時'}沒有新聞">${inner}</span>`;
+    };
     if (isWeek){
-      // 7d 模式：列出 7 天，每天一顆燈
       const items = byHour.map(x => {
         const lv = lightLevelByCount(x.count || 0, avg);
-        return `${dayWeekdayLabel(x.day)} ${LIGHT_ICON[lv]}${lv}（${x.count} 則）`;
+        return renderClickable(dayWeekdayLabel(x.day), x.day, x.count || 0, lv, 'day');
       });
       lt.innerHTML = '近 7 日：' + items.join(' ｜ ');
     } else {
-      // 24h 模式：近 12 小時
-      const last = byHour.slice(-12).map(x => ({ h:(x.hour||'').slice(11,16), lv: lightLevelByCount(x.count||0, avg), c: x.count||0 }));
-      lt.innerHTML = '近 12 小時：' + last.map(x=>`${x.h} ${LIGHT_ICON[x.lv]}${x.lv}（${x.c}）`).join(' ｜ ');
+      const last = byHour.slice(-12);
+      const items = last.map(x => {
+        const lv = lightLevelByCount(x.count || 0, avg);
+        const hourLabel = (x.hour || '').slice(11, 16);
+        return renderClickable(hourLabel, x.hour, x.count || 0, lv, 'hour');
+      });
+      lt.innerHTML = '近 12 小時：' + items.join(' ｜ ');
     }
   }
 
@@ -2591,6 +2601,28 @@ function applyModeLabels(){
   });
 }
 
+function initLightTrendClicks(){
+  const lt = document.getElementById('lightTrend');
+  if (!lt || lt.dataset.boundClicks === '1') return;
+  lt.dataset.boundClicks = '1';
+  lt.addEventListener('click', (e) => {
+    const btn = e.target.closest('button.light-item');
+    if (!btn) return;
+    const day = btn.dataset.day;
+    const hour = btn.dataset.hour;
+    if (day){
+      const arts = (state.articles7d || []).filter(a => a.day === day);
+      // dayWeekdayLabel 在 run() scope；這裡 inline 算一次
+      const t = new Date(day + 'T00:00+08:00');
+      const wd = ['日','一','二','三','四','五','六'][t.getDay()];
+      openArticlesModal(`${day.slice(5)}（週${wd}） 燈號明細`, `當日所有與盧秀燕有關的事件`, arts);
+    } else if (hour){
+      const arts = (state.articles24h || []).filter(a => a.hour === hour);
+      openArticlesModal(`${hour.slice(5, 16)} 燈號明細`, `該小時內所有與盧秀燕有關的事件`, arts);
+    }
+  });
+}
+
 function initModes(){
   const b24 = document.getElementById('mode24');
   const b7 = document.getElementById('mode7d');
@@ -2600,6 +2632,7 @@ function initModes(){
 }
 
 initCollapsibles();
+initLightTrendClicks();
 initMentionModal();
 initHotspotDetailModal();
 initPastEventsToggle();
