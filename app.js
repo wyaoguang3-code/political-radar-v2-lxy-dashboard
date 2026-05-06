@@ -81,7 +81,11 @@ function lightLevelByCount(c, avg){
 }
 
 function upsertChart(instance, ctx, config){
-  if(instance){ instance.data=config.data; instance.options=config.options; instance.update(); return instance; }
+  // 若 type 變了（例如 line ↔ bar），必須 destroy + 重建；否則只更新 data/options。
+  if(instance && instance.config && instance.config.type === config.type){
+    instance.data=config.data; instance.options=config.options; instance.update(); return instance;
+  }
+  if(instance) instance.destroy();
   return new Chart(ctx, config);
 }
 
@@ -2389,7 +2393,7 @@ async function run(){
   const es = d.event_stream || {};
   const streamTxt = `分鐘級 ${ (es.minute||[]).length }｜小時級 ${ (es.hour||[]).length }｜日級 ${ (es.day||[]).length }`;
   const ls = document.getElementById('lightStatus');
-  if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} 今日燈號：${level}</span>`; }
+  if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${level}</span>`; }
   const lr = document.getElementById('lightReasons');
   if(lr){ lr.textContent = reasons.length ? `觸發原因：${reasons.join('；')}` : '觸發原因：無（目前屬常態）'; }
   const lstream = document.getElementById('lightStreams');
@@ -2558,7 +2562,12 @@ function applyModeLabels(){
   // 「前 24h」card 比較期間 — 7d 模式下要說「前 7 日」
   document.querySelectorAll('[data-window-label-prev]').forEach(el => {
     if (!el.dataset.origText) el.dataset.origText = el.textContent;
-    el.textContent = isWeek ? '前 7 日' : el.dataset.origText;
+    el.textContent = isWeek ? '前 7 日聲量' : el.dataset.origText;
+  });
+  // 「今日新聞量」card 標題 — 7d 顯示「7 日新聞量」
+  document.querySelectorAll('[data-window-label-news]').forEach(el => {
+    if (!el.dataset.origText) el.dataset.origText = el.textContent;
+    el.textContent = isWeek ? '7 日新聞量' : el.dataset.origText;
   });
 }
 
