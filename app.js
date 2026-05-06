@@ -80,21 +80,32 @@ function lightLevelByCount(c, avg){
   return '綠';
 }
 
-// 結合「聲量 (volume)」與「該時段內任一新聞的 severity」— 取較嚴重者。
-// 解決外面顯示綠燈但點進去有 黃/紅 新聞的不一致問題。
+// 結合「聲量 (volume)」與「該時段內負面新聞比例」— 取較嚴重者。
+// 解決外面綠燈裡面有負面新聞 的不一致，但用「比例 + 絕對數」雙門檻避免
+// 1 則負面新聞就把整天/整小時拉成黃 — 比例不夠不算。
 const LIGHT_RANK = { '綠': 0, '黃': 1, '紅': 2 };
-function severityToLight(sev){ return sev === 'red' ? '紅' : sev === 'yellow' ? '黃' : '綠'; }
-function maxSeverityOf(articles){
-  let max = '綠';
-  for (const a of (articles || [])){
-    const lv = severityToLight(a.severity || (a.is_negative ? 'yellow' : null));
-    if (LIGHT_RANK[lv] > LIGHT_RANK[max]) max = lv;
-    if (max === '紅') break;
+function severityOf(a){
+  return a.severity || (a.is_negative ? 'yellow' : null);
+}
+function severityLightOf(articles){
+  const arts = articles || [];
+  const total = arts.length;
+  let reds = 0, yellows = 0;
+  for (const a of arts){
+    const s = severityOf(a);
+    if (s === 'red') reds++;
+    else if (s === 'yellow') yellows++;
   }
-  return max;
+  const neg = reds + yellows;
+  if (total === 0) return '綠';
+  // 紅：≥3 紅 OR （≥2 紅且紅比例 ≥25%）
+  if (reds >= 3 || (reds >= 2 && reds / total >= 0.25)) return '紅';
+  // 黃：≥5 負面 OR （≥3 負面且負面比例 ≥30%）
+  if (neg >= 5 || (neg >= 3 && neg / total >= 0.30)) return '黃';
+  return '綠';
 }
 function combineLights(volumeLight, articles){
-  const sevLight = maxSeverityOf(articles);
+  const sevLight = severityLightOf(articles);
   return LIGHT_RANK[volumeLight] >= LIGHT_RANK[sevLight] ? volumeLight : sevLight;
 }
 
@@ -2436,13 +2447,28 @@ async function run(){
   const an = m.anomaly || {};
   const reasons = an.reasons || [];
   const es = d.event_stream || {};
-  const streamTxt = `分鐘級 ${ (es.minute||[]).length }｜小時級 ${ (es.hour||[]).length }｜日級 ${ (es.day||[]).length }`;
+  const minuteN = (es.minute || []).length;
+  const hourN = (es.hour || []).length;
+  const dayN = (es.day || []).length;
+  const totalN = minuteN + hourN + dayN;
+  const streamTxt = totalN === 0
+    ? '✓ 24h 內無事件需處理（資料尚未抓到，或目前確實無新聞）'
+    : `🚨 分鐘級 ${minuteN} ｜ ⚠️ 小時級 ${hourN} ｜ 📅 日級 ${dayN}`;
   const ls = document.getElementById('lightStatus');
   if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${level}</span>`; }
   const lr = document.getElementById('lightReasons');
   if(lr){ lr.textContent = reasons.length ? `觸發原因：${reasons.join('；')}` : '觸發原因：無（目前屬常態）'; }
   const lstream = document.getElementById('lightStreams');
-  if(lstream){ lstream.innerHTML = `<span class="badge 綠">${streamTxt}</span>`; }
+  if(lstream){
+    const explainer = totalN === 0 ? '' : `
+      <div class="hint" style="margin-top:6px;font-size:11px;line-height:1.7">
+        <strong>分流邏輯</strong>：依新聞 severity 分到不同響應級別。
+        <span style="color:#ff8a8a">🚨 分鐘級 = 紅燈事件</span>（刑事 / 公共安全 / 重大 — 候選人 / 服務處應在 30 分鐘內回應）；
+        <span style="color:#ffb84d">⚠️ 小時級 = 黃燈事件</span>（政治批評 / 環境問題 — 當小時內擬好回應稿）；
+        <span style="color:#9fb0ea">📅 日級 = 中性事件</span>（常態露出 — 日結時掃過即可，不必個別回應）。
+      </div>`;
+    lstream.innerHTML = `<span class="badge 綠">${streamTxt}</span>${explainer}`;
+  }
   const lt = document.getElementById('lightTrend');
   if(lt){
     const avg = byHour.length ? byHour.reduce((a,b)=>a+(b.count||0),0)/byHour.length : 0;
