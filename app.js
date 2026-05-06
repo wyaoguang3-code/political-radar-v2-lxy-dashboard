@@ -98,12 +98,12 @@ function severityLightOf(articles){
   }
   const neg = reds + yellows;
   if (total === 0) return '綠';
-  // 紅：≥3 紅 OR （≥2 紅且紅比例 ≥25%）
-  if (reds >= 3 || (reds >= 2 && reds / total >= 0.25)) return '紅';
-  // 黃：負面比例 ≥30% 且至少 2 則 — 比例優先（避免 1/N 單則拉成黃，但 2/4 = 50% 必升）
-  if (neg >= 2 && neg / total >= 0.30) return '黃';
-  // 黃 fallback：絕對量大（≥5 負面）即使比例低也算黃
-  if (neg >= 5) return '黃';
+  // 純比例規則：任一負面新聞，比例夠高就升級。沒有「至少 2 則」門檻，
+  // 因為 1/1 (100%) 也該升黃 — 該時段唯一新聞是負面就是負面。
+  // 紅：≥3 紅 絕對量 OR 紅比例 ≥25%（即使只 1 則但佔比高）
+  if (reds >= 3 || reds / total >= 0.25) return '紅';
+  // 黃：≥5 負面絕對量 OR 負面比例 ≥30%
+  if (neg >= 5 || neg / total >= 0.30) return '黃';
   return '綠';
 }
 function combineLights(volumeLight, articles){
@@ -2335,10 +2335,8 @@ async function run(){
   bindCardClick('news24',  isWeekMode ? '7 日新聞量明細' : '今日新聞量明細',
     isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
-  // 燈號 = max(volume-based anomaly level, 任一新聞 severity)
-  // 解決外面顯示綠燈但裡面有 黃/紅 新聞的不一致問題
-  const baseLevel = (m.anomaly||{}).level || '綠';
-  const level = combineLights(baseLevel, totalArticles());
+  // 頂部燈號 = 該視窗內所有新聞的 severity 分布（純內容，不看聲量）
+  const level = severityLightOf(totalArticles());
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
