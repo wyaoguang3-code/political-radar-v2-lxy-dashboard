@@ -80,6 +80,24 @@ function lightLevelByCount(c, avg){
   return '綠';
 }
 
+// 結合「聲量 (volume)」與「該時段內任一新聞的 severity」— 取較嚴重者。
+// 解決外面顯示綠燈但點進去有 黃/紅 新聞的不一致問題。
+const LIGHT_RANK = { '綠': 0, '黃': 1, '紅': 2 };
+function severityToLight(sev){ return sev === 'red' ? '紅' : sev === 'yellow' ? '黃' : '綠'; }
+function maxSeverityOf(articles){
+  let max = '綠';
+  for (const a of (articles || [])){
+    const lv = severityToLight(a.severity || (a.is_negative ? 'yellow' : null));
+    if (LIGHT_RANK[lv] > LIGHT_RANK[max]) max = lv;
+    if (max === '紅') break;
+  }
+  return max;
+}
+function combineLights(volumeLight, articles){
+  const sevLight = maxSeverityOf(articles);
+  return LIGHT_RANK[volumeLight] >= LIGHT_RANK[sevLight] ? volumeLight : sevLight;
+}
+
 function upsertChart(instance, ctx, config){
   // 若 type 變了（例如 line ↔ bar），必須 destroy + 重建；否則只更新 data/options。
   if(instance && instance.config && instance.config.type === config.type){
@@ -2304,7 +2322,10 @@ async function run(){
   bindCardClick('news24',  isWeekMode ? '7 日新聞量明細' : '今日新聞量明細',
     isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
-  const level = (m.anomaly||{}).level || '綠';
+  // 燈號 = max(volume-based anomaly level, 任一新聞 severity)
+  // 解決外面顯示綠燈但裡面有 黃/紅 新聞的不一致問題
+  const baseLevel = (m.anomaly||{}).level || '綠';
+  const level = combineLights(baseLevel, totalArticles());
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
@@ -2434,14 +2455,16 @@ async function run(){
     };
     if (isWeek){
       const items = byHour.map(x => {
-        const lv = lightLevelByCount(x.count || 0, avg);
+        const dayArticles = (state.articles7d || []).filter(a => a.day === x.day);
+        const lv = combineLights(lightLevelByCount(x.count || 0, avg), dayArticles);
         return renderClickable(dayWeekdayLabel(x.day), x.day, x.count || 0, lv, 'day');
       });
       lt.innerHTML = '近 7 日：' + items.join(' ｜ ');
     } else {
       const last = byHour.slice(-12);
       const items = last.map(x => {
-        const lv = lightLevelByCount(x.count || 0, avg);
+        const hourArticles = (state.articles24h || []).filter(a => a.hour === x.hour);
+        const lv = combineLights(lightLevelByCount(x.count || 0, avg), hourArticles);
         const hourLabel = (x.hour || '').slice(11, 16);
         return renderClickable(hourLabel, x.hour, x.count || 0, lv, 'hour');
       });
