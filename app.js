@@ -2411,8 +2411,18 @@ async function run(){
   const lt = document.getElementById('lightTrend');
   if(lt){
     const avg = byHour.length ? byHour.reduce((a,b)=>a+(b.count||0),0)/byHour.length : 0;
-    const last = byHour.slice(-12).map(x => ({ h:(x.hour||'').slice(11,16), lv: lightLevelByCount(x.count||0, avg) }));
-    lt.innerHTML = '近12小時：' + last.map(x=>`${x.h} ${LIGHT_ICON[x.lv]}${x.lv}`).join(' ｜ ');
+    if (isWeek){
+      // 7d 模式：列出 7 天，每天一顆燈
+      const items = byHour.map(x => {
+        const lv = lightLevelByCount(x.count || 0, avg);
+        return `${dayWeekdayLabel(x.day)} ${LIGHT_ICON[lv]}${lv}（${x.count} 則）`;
+      });
+      lt.innerHTML = '近 7 日：' + items.join(' ｜ ');
+    } else {
+      // 24h 模式：近 12 小時
+      const last = byHour.slice(-12).map(x => ({ h:(x.hour||'').slice(11,16), lv: lightLevelByCount(x.count||0, avg), c: x.count||0 }));
+      lt.innerHTML = '近 12 小時：' + last.map(x=>`${x.h} ${LIGHT_ICON[x.lv]}${x.lv}（${x.c}）`).join(' ｜ ');
+    }
   }
 
   hourChart = upsertChart(hourChart, document.getElementById('hourChart'), {
