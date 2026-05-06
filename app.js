@@ -2481,10 +2481,12 @@ async function run(){
       }
       return `<span class="light-item-empty" title="該${kind === 'day' ? '日' : '小時'}沒有新聞">${inner}</span>`;
     };
+    // 燈號邏輯：純依該時段內負面新聞分布（severity），不混入 volume —
+    // 避免「高聲量但 0 負面」也被標黃。聲量資訊由 chart 柱高 + 旁邊 N 則 數字呈現。
     if (isWeek){
       const items = byHour.map(x => {
         const dayArticles = (state.articles7d || []).filter(a => a.day === x.day);
-        const lv = combineLights(lightLevelByCount(x.count || 0, avg), dayArticles);
+        const lv = severityLightOf(dayArticles);
         return renderClickable(dayWeekdayLabel(x.day), x.day, x.count || 0, lv, 'day');
       });
       lt.innerHTML = '近 7 日：' + items.join(' ｜ ');
@@ -2492,7 +2494,7 @@ async function run(){
       const last = byHour.slice(-12);
       const items = last.map(x => {
         const hourArticles = (state.articles24h || []).filter(a => a.hour === x.hour);
-        const lv = combineLights(lightLevelByCount(x.count || 0, avg), hourArticles);
+        const lv = severityLightOf(hourArticles);
         const hourLabel = (x.hour || '').slice(11, 16);
         return renderClickable(hourLabel, x.hour, x.count || 0, lv, 'hour');
       });
