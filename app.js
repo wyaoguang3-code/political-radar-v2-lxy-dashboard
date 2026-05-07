@@ -2450,7 +2450,8 @@ async function run(){
   // 燈號狀態與原因（可視化）
   const an = m.anomaly || {};
   const reasons = an.reasons || [];
-  const es = d.event_stream || {};
+  // 7d 模式優先用 event_stream_7d；fallback 到 24h（資料還沒重新生成時）
+  const es = (mode === '7d' && d.event_stream_7d) ? d.event_stream_7d : (d.event_stream || {});
   state.eventStream = es;  // 給點擊 handler 用
   const minuteN = (es.minute || []).length;
   const hourN = (es.hour || []).length;
