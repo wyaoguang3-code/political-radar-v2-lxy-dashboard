@@ -1421,8 +1421,20 @@
     },
     {
       "date": "2026-05-07",
-      "snapshot_at": "2026-05-07T13:33:25.206092+00:00",
+      "snapshot_at": "2026-05-07T13:48:31.330044+00:00",
       "hotspots": [
+        {
+          "title": "垃圾山",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 3,
+          "sample_titles": []
+        },
         {
           "title": "台南狼師事件",
           "city": "台南",
@@ -1522,6 +1534,18 @@
           ]
         },
         {
+          "title": "台中市政動態",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 1,
+          "sample_titles": []
+        },
+        {
           "title": "新竹縣鼠患事件",
           "city": "新竹縣",
           "place": "新竹縣政府",
@@ -1582,21 +1606,6 @@
           ]
         },
         {
-          "title": "基隆車禍事件",
-          "city": "基隆",
-          "place": "基隆市政府",
-          "level": "green",
-          "news_count": 2,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
-          "sample_titles": [
-            "基隆女騎士車禍友人開車來關切...引擎突燒起來! 警扮滅火隊 - MSN",
-            "基隆女騎士車禍友人開車來關切...引擎突燒起來! 警扮滅火隊 - MSN"
-          ]
-        },
-        {
           "title": "花蓮車禍事件",
           "city": "花蓮",
           "place": "花蓮縣政府",
@@ -1609,6 +1618,21 @@
           "sample_titles": [
             "壽豐鄉公所回應網路謠言 釐清車禍事故真相並譴責不實指控 - 蕃新聞",
             "影射鄉長參選人劉耀宗諧音｜冒名造假聲稱「劉亞宗」車禍命危，攻擊行政機關漠視公安，壽豐鄉公所嚴正澄清：全為子虛烏有非理性詛"
+          ]
+        },
+        {
+          "title": "基隆車禍事件",
+          "city": "基隆",
+          "place": "基隆市政府",
+          "level": "green",
+          "news_count": 2,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": true,
+          "urgency_score": 8,
+          "sample_titles": [
+            "基隆女騎士車禍友人開車來關切...引擎突燒起來! 警扮滅火隊 - MSN",
+            "基隆女騎士車禍友人開車來關切...引擎突燒起來! 警扮滅火隊 - MSN"
           ]
         },
         {
@@ -1627,18 +1651,6 @@
           ]
         },
         {
-          "title": "台北軍購爭議",
-          "city": "台北",
-          "place": "台北市政府",
-          "level": "green",
-          "news_count": 0,
-          "comment_count": 3,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 5,
-          "sample_titles": []
-        },
-        {
           "title": "高雄鼠患事件",
           "city": "高雄",
           "place": "高雄市政府",
@@ -1655,16 +1667,20 @@
           ]
         },
         {
-          "title": "垃圾山",
-          "city": "台中",
-          "place": "台中市政府",
+          "title": "新北鼠患事件",
+          "city": "新北",
+          "place": "新北市政府",
           "level": "green",
-          "news_count": 0,
-          "comment_count": 4,
-          "negativity_pct": 0,
+          "news_count": 3,
+          "comment_count": 0,
+          "negativity_pct": 100,
           "is_urgent": true,
           "urgency_score": 12,
-          "sample_titles": []
+          "sample_titles": [
+            "新北2590 處鼠患熱點鎖定源頭防治抗漢他病毒 - MSN",
+            "侯友宜急下封殺令！狂掃2千處鼠患熱區 - Yahoo新聞",
+            "討論牆 | 新北議員關切鼠患防治議題(圖) - LINE TODAY"
+          ]
         },
         {
           "title": "高雄漢他病毒",
@@ -1683,22 +1699,6 @@
           ]
         },
         {
-          "title": "新北鼠患事件",
-          "city": "新北",
-          "place": "新北市政府",
-          "level": "yellow",
-          "news_count": 6,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 24,
-          "sample_titles": [
-            "新北2590 處鼠患熱點鎖定源頭防治抗漢他病毒 - MSN",
-            "侯友宜急下封殺令！狂掃2千處鼠患熱區 - Yahoo新聞",
-            "討論牆 | 新北議員關切鼠患防治議題(圖) - LINE TODAY"
-          ]
-        },
-        {
           "title": "桃園墜樓事件",
           "city": "桃園",
           "place": "桃園市政府",
@@ -1713,18 +1713,6 @@
             "快訊／桃園藝文特區豪宅驚傳墜樓 20多歲女子倒路旁死亡 - ETtoday新聞雲",
             "快訊／桃園藝文特區豪宅驚傳墜樓　20多歲女子倒路旁死亡 - ETtoday新聞雲"
           ]
-        },
-        {
-          "title": "台中市政動態",
-          "city": "台中",
-          "place": "台中市西屯區",
-          "level": "yellow",
-          "news_count": 0,
-          "comment_count": 7,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 9,
-          "sample_titles": []
         },
         {
           "title": "台中鼠患事件",
@@ -1748,10 +1736,10 @@
           "place": "台中市政府",
           "level": "red",
           "news_count": 2,
-          "comment_count": 17,
+          "comment_count": 9,
           "negativity_pct": 100,
           "is_urgent": true,
-          "urgency_score": 43,
+          "urgency_score": 27,
           "sample_titles": [
             "台中廚餘之亂未解 民憂恐爆鼠患 - 自由時報",
             "台中廚餘之亂未解 民憂恐爆鼠患 - 自由時報"
