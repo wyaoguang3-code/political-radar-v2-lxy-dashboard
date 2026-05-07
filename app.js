@@ -88,6 +88,9 @@ function severityOf(a){
   return a.severity || (a.is_negative ? 'yellow' : null);
 }
 function severityLightOf(articles){
+  return severityLightWithReason(articles).level;
+}
+function severityLightWithReason(articles){
   const arts = articles || [];
   const total = arts.length;
   let reds = 0, yellows = 0;
@@ -97,14 +100,14 @@ function severityLightOf(articles){
     else if (s === 'yellow') yellows++;
   }
   const neg = reds + yellows;
-  if (total === 0) return '綠';
-  // 純比例規則：任一負面新聞，比例夠高就升級。沒有「至少 2 則」門檻，
-  // 因為 1/1 (100%) 也該升黃 — 該時段唯一新聞是負面就是負面。
-  // 紅：≥3 紅 絕對量 OR 紅比例 ≥25%（即使只 1 則但佔比高）
-  if (reds >= 3 || reds / total >= 0.25) return '紅';
-  // 黃：≥5 負面絕對量 OR 負面比例 ≥30%
-  if (neg >= 5 || neg / total >= 0.30) return '黃';
-  return '綠';
+  if (total === 0) return { level: '綠', reasons: [] };
+  // 紅
+  if (reds >= 3) return { level: '紅', reasons: [`紅燈新聞 ${reds} 則（≥3 即紅）`] };
+  if (reds >= 1 && reds / total >= 0.25) return { level: '紅', reasons: [`紅燈新聞佔比 ${(reds/total*100).toFixed(0)}%（${reds}/${total} 則 ≥ 25%）`] };
+  // 黃
+  if (neg >= 5) return { level: '黃', reasons: [`負面新聞 ${neg} 則（${reds} 紅 + ${yellows} 黃 ≥ 5）`] };
+  if (neg >= 1 && neg / total >= 0.30) return { level: '黃', reasons: [`負面新聞佔比 ${(neg/total*100).toFixed(0)}%（${neg}/${total} 則 ≥ 30%）`] };
+  return { level: '綠', reasons: [] };
 }
 function combineLights(volumeLight, articles){
   const sevLight = severityLightOf(articles);
@@ -2336,7 +2339,8 @@ async function run(){
     isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
   // 頂部燈號 = 該視窗內所有新聞的 severity 分布（純內容，不看聲量）
-  const level = severityLightOf(totalArticles());
+  const sevResult = severityLightWithReason(totalArticles());
+  const level = sevResult.level;
   document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
@@ -2447,27 +2451,47 @@ async function run(){
   const an = m.anomaly || {};
   const reasons = an.reasons || [];
   const es = d.event_stream || {};
+  state.eventStream = es;  // 給點擊 handler 用
   const minuteN = (es.minute || []).length;
   const hourN = (es.hour || []).length;
   const dayN = (es.day || []).length;
   const totalN = minuteN + hourN + dayN;
-  const streamTxt = totalN === 0
-    ? '✓ 24h 內無事件需處理（資料尚未抓到，或目前確實無新聞）'
-    : `🚨 分鐘級 ${minuteN} ｜ ⚠️ 小時級 ${hourN} ｜ 📅 日級 ${dayN}`;
   const ls = document.getElementById('lightStatus');
   if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${level}</span>`; }
   const lr = document.getElementById('lightReasons');
-  if(lr){ lr.textContent = reasons.length ? `觸發原因：${reasons.join('；')}` : '觸發原因：無（目前屬常態）'; }
+  if(lr){
+    // 合併 volume-based reasons (聲量 anomaly) 與 severity-based reasons (新聞嚴重度)
+    const combined = [];
+    const sevReasons = (mode === '7d'
+      ? severityLightWithReason(state.articles7d || []).reasons
+      : severityLightWithReason(state.articles24h || []).reasons);
+    sevReasons.forEach(r => combined.push(`📰 ${r}`));
+    reasons.forEach(r => combined.push(`📈 ${r}`));
+    lr.textContent = combined.length ? `觸發原因：${combined.join('；')}` : '觸發原因：無（目前屬常態 — 聲量未異常 + 無紅黃燈新聞）';
+  }
   const lstream = document.getElementById('lightStreams');
   if(lstream){
-    const explainer = totalN === 0 ? '' : `
-      <div class="hint" style="margin-top:6px;font-size:11px;line-height:1.7">
-        <strong>分流邏輯</strong>：依新聞 severity 分到不同響應級別。
-        <span style="color:#ff8a8a">🚨 分鐘級 = 紅燈事件</span>（刑事 / 公共安全 / 重大 — 候選人 / 服務處應在 30 分鐘內回應）；
-        <span style="color:#ffb84d">⚠️ 小時級 = 黃燈事件</span>（政治批評 / 環境問題 — 當小時內擬好回應稿）；
-        <span style="color:#9fb0ea">📅 日級 = 中性事件</span>（常態露出 — 日結時掃過即可，不必個別回應）。
-      </div>`;
-    lstream.innerHTML = `<span class="badge 綠">${streamTxt}</span>${explainer}`;
+    if (totalN === 0){
+      lstream.innerHTML = `<span class="badge 綠">✓ 24h 內無事件需處理（資料尚未抓到，或目前確實無新聞）</span>`;
+    } else {
+      // 每個分流級別都做成可點按鈕（count > 0 才可點）
+      const btn = (icon, label, kind, n, color) => n > 0
+        ? `<button type="button" class="stream-btn" data-stream="${kind}" style="border-color:${color};color:${color}">${icon} ${label} ${n}</button>`
+        : `<span class="stream-btn-empty">${icon} ${label} ${n}</span>`;
+      const buttons = `
+        ${btn('🚨', '分鐘級', 'minute', minuteN, '#ff8a8a')}
+        ${btn('⚠️', '小時級', 'hour', hourN, '#ffb84d')}
+        ${btn('📅', '日級', 'day', dayN, '#9fb0ea')}
+      `;
+      const explainer = `
+        <div class="hint" style="margin-top:6px;font-size:11px;line-height:1.7">
+          <strong>分流邏輯</strong>：依新聞 severity 分到不同響應級別（點 badge 看該級別所有新聞）。
+          <span style="color:#ff8a8a">🚨 分鐘級 = 紅燈事件</span>（刑事 / 公共安全 / 重大 — 候選人 / 服務處應在 30 分鐘內回應）；
+          <span style="color:#ffb84d">⚠️ 小時級 = 黃燈事件</span>（政治批評 / 環境問題 — 當小時內擬好回應稿）；
+          <span style="color:#9fb0ea">📅 日級 = 中性事件</span>（常態露出 — 日結時掃過即可，不必個別回應）。
+        </div>`;
+      lstream.innerHTML = `<div class="stream-row">${buttons}</div>${explainer}`;
+    }
   }
   const lt = document.getElementById('lightTrend');
   if(lt){
@@ -2666,6 +2690,28 @@ function applyModeLabels(){
   });
 }
 
+function initStreamClicks(){
+  // 全域 event delegation — 處理「分鐘級 / 小時級 / 日級」按鈕點擊
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('button.stream-btn');
+    if (!btn) return;
+    const kind = btn.dataset.stream;
+    const es = state.eventStream || {};
+    const arts = es[kind] || [];
+    const titles = {
+      minute: '🚨 分鐘級事件（紅燈 — 30 分鐘內回應）',
+      hour:   '⚠️ 小時級事件（黃燈 — 當小時內擬回應）',
+      day:    '📅 日級事件（綠燈 / 中性 — 日結時掃過）',
+    };
+    const notes = {
+      minute: '刑事 / 公共安全 / 重大事件詞觸發 — 候選人或服務處主任應 30 分鐘內回應',
+      hour:   '政治批評 / 環境問題詞觸發 — 當小時內擬好回應稿、決定要不要主動發',
+      day:    '一般露出，不必個別回應 — 日結時掃過確認沒有遺漏即可',
+    };
+    openArticlesModal(titles[kind] || kind, notes[kind] || '', arts);
+  });
+}
+
 function initLightTrendClicks(){
   const lt = document.getElementById('lightTrend');
   if (!lt || lt.dataset.boundClicks === '1') return;
@@ -2698,6 +2744,7 @@ function initModes(){
 
 initCollapsibles();
 initLightTrendClicks();
+initStreamClicks();
 initMentionModal();
 initHotspotDetailModal();
 initPastEventsToggle();

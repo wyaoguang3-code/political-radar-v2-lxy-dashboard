@@ -6,6 +6,11 @@ button.mode-btn.is-active{background:#5a79ff;color:#0a0e1a;border-color:#5a79ff;
 button.light-item{display:inline-block;padding:2px 8px;background:transparent;color:inherit;border:1px solid transparent;border-radius:4px;font-size:inherit;cursor:pointer;transition:background 0.12s, border-color 0.12s}
 button.light-item:hover{background:#16203f;border-color:#5a79ff}
 .light-item-empty{display:inline-block;padding:2px 8px;color:#6b7280;font-size:inherit}
+.stream-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+button.stream-btn{padding:5px 12px;background:#0c1228;border:1px solid #2a335f;border-radius:5px;font-size:13px;font-weight:600;cursor:pointer;transition:background 0.12s,transform 0.05s}
+button.stream-btn:hover{background:#16203f;transform:translateY(-1px)}
+button.stream-btn:active{transform:translateY(0)}
+.stream-btn-empty{padding:5px 12px;background:#0c1228;border:1px solid #1a2241;border-radius:5px;font-size:13px;color:#5a679a}
 header{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:16px;flex-wrap:wrap}
 h1{margin:0;font-size:clamp(22px,5vw,32px)}
 #updated{margin:0;color:#b9c3f2;font-size:13px}
