@@ -1051,6 +1051,7 @@ function openArticlesModal(title, note, articles){
     title: a.title || '（無標題）',
     url: a.url || '',
     time: a.time || '',
+    publisher: a.publisher || '',
     is_negative: !!a.is_negative,
     severity: a.severity || (a.is_negative ? 'yellow' : null),  // 沒 severity 的舊資料退回二級
   }));
@@ -2221,6 +2222,12 @@ function openHotspotDetailModal(h, markersByTitle){
       meta.className = 'mention-meta';
       meta.textContent = `${(x.time || '').slice(5, 16)}　`;
       li.appendChild(meta);
+      if (x.publisher){
+        const pub = document.createElement('span');
+        pub.className = 'hd-news-publisher';
+        pub.textContent = x.publisher;
+        li.appendChild(pub);
+      }
       const a = document.createElement('a');
       a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
       a.textContent = (x.title || '').trim() || '（無標題）';
