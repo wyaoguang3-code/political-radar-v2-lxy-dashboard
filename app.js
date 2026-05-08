@@ -182,6 +182,107 @@ async function fetchJSON(path){
   } catch { return null; }
 }
 
+// --------- War-room ranking leaderboard ---------
+// 規則：把每位的「紅+黃」新聞數加總當戰情分數；分數越低戰情越佳。
+// 第 1 名 = 戰情最佳（負面+爭議最少）；最後一名 = 戰情最劣（負面+爭議最多）。
+const SELF_NAME = '盧秀燕';
+function renderWarRoomRanking(voiceBreakdown){
+  const board = document.getElementById('warRoomRankBoard');
+  const verdict = document.getElementById('warRoomVerdict');
+  if (!board) return;
+  board.innerHTML = '';
+  if (verdict) verdict.textContent = '';
+
+  const entries = Object.entries(voiceBreakdown || {})
+    .filter(([, v]) => v && (v.total || 0) > 0)
+    .map(([name, v]) => ({
+      name,
+      red: v.red || 0,
+      yellow: v.yellow || 0,
+      green: v.green || 0,
+      total: v.total || 0,
+      score: (v.red || 0) + (v.yellow || 0),  // 紅+黃 = 戰情分數
+      isSelf: name === SELF_NAME,
+    }));
+
+  if (entries.length === 0) {
+    board.innerHTML = '<p class="hint">無資料</p>';
+    return;
+  }
+
+  // 排序：分數低（戰情佳）的排前
+  entries.sort((a, b) => a.score - b.score);
+  const n = entries.length;
+
+  entries.forEach((e, idx) => {
+    const rank = idx + 1;
+    const isBest = rank === 1;
+    const isWorst = rank === n && n >= 3;
+    const row = document.createElement('div');
+    row.className = 'rank-row' + (e.isSelf ? ' is-self' : '') + (isBest ? ' rank-best' : '') + (isWorst ? ' rank-worst' : '');
+
+    // 排名欄
+    const rankCol = document.createElement('div');
+    rankCol.className = 'rank-num';
+    let label = '';
+    if (isBest) label = '<span class="label">最佳 🏆</span>';
+    else if (isWorst) label = '<span class="label">最劣 🚨</span>';
+    rankCol.innerHTML = `第 ${rank} 名${label}`;
+
+    // 名字 + breakdown
+    const nameCol = document.createElement('div');
+    nameCol.className = 'rank-name';
+    const selfTag = e.isSelf ? '<span class="self-tag">我方</span>' : '';
+    nameCol.innerHTML = `${e.name}${selfTag}<span class="breakdown">總 ${e.total} 則 ｜ 🔴 ${e.red} ／ 🟡 ${e.yellow} ／ 🟢 ${e.green}</span>`;
+
+    // 視覺長條（紅黃綠 比例）
+    const bar = document.createElement('div');
+    bar.className = 'rank-bar';
+    const segs = [
+      { cls: 'seg-red', val: e.red },
+      { cls: 'seg-yellow', val: e.yellow },
+      { cls: 'seg-green', val: e.green },
+    ];
+    segs.forEach(s => {
+      if (s.val > 0) {
+        const span = document.createElement('span');
+        span.className = s.cls;
+        span.style.flex = String(s.val);
+        span.textContent = s.val;
+        bar.appendChild(span);
+      }
+    });
+
+    // 戰情分數
+    const score = document.createElement('div');
+    score.className = 'rank-score';
+    score.innerHTML = `${e.score}<span class="score-label">分數</span>`;
+
+    row.append(rankCol, nameCol, bar, score);
+    board.appendChild(row);
+  });
+
+  // 戰情判讀（針對我方位置）
+  if (verdict) {
+    const selfIdx = entries.findIndex(e => e.isSelf);
+    if (selfIdx >= 0) {
+      const selfRank = selfIdx + 1;
+      const worseCount = n - selfRank;
+      let msg;
+      if (selfRank === 1) {
+        msg = `📊 戰情判讀：我方排第 1/${n}（最佳）→ 戰情最有利，所有對手都比我方慘`;
+      } else if (selfRank === n) {
+        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n}（最劣）→ 戰情最不利，需主動回應、止血為先`;
+      } else if (selfRank <= n / 2) {
+        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n} → 有 ${worseCount} 位對手戰情比我方更劣，戰情中段偏佳`;
+      } else {
+        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n} → 僅 ${worseCount} 位對手戰情比我方更劣，戰情中段偏劣`;
+      }
+      verdict.textContent = msg;
+    }
+  }
+}
+
 // --------- Social signal cards (clickable) ---------
 function renderSocialCards(){
   const wrap = document.getElementById('socialSignals');
@@ -2441,6 +2542,9 @@ async function run(){
   const vals = names.map(n => cmp[n] || 0);
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
   state.mentionArticles = pick(d, 'mention_articles_24h', 'mention_articles_7d') || {};
+
+  // 戰情排名（24h）：用 voice_breakdown_24h 渲染 leaderboard
+  renderWarRoomRanking(d.voice_breakdown_24h || {});
 
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
