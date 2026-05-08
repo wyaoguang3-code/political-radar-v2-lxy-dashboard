@@ -2089,6 +2089,12 @@ function openMentionModal(name){
       const t = (x.time || '').slice(5, 16);
       meta.textContent = `${t}　[${x.platform || '-'}]　`;
       li.appendChild(meta);
+      if (x.publisher){
+        const pub = document.createElement('span');
+        pub.className = 'hd-news-publisher';
+        pub.textContent = x.publisher;
+        li.appendChild(pub);
+      }
       if (co.length > 0) {
         const chip = document.createElement('span');
         chip.className = 'co-chip';
