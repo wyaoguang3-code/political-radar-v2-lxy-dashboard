@@ -2511,7 +2511,43 @@ async function run(){
   const dayN = (es.day || []).length;
   const totalN = minuteN + hourN + dayN;
   const ls = document.getElementById('lightStatus');
-  if(ls){ ls.innerHTML = `<span class="badge ${overallLevel}">${LIGHT_ICON[overallLevel]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${overallLevel}</span>`; }
+  if(ls){
+    // 兩盞燈：今日（綜合：新聞+留言） vs 昨日/前 7 日（新聞 only — 留言沒歷史快取）
+    const todayArts = isWeek ? (state.articles7d || []) : (state.articles24h || []);
+    const prevArts  = isWeek ? (state.articlesPrev7d || []) : (state.articlesPrev24h || []);
+    const prevResult = severityLightWithReason(prevArts);
+    const prevLevel  = prevResult.level;
+    const todayLabel = isWeek ? '7 日燈號' : '今日燈號';
+    const prevLabel  = isWeek ? '前 7 日燈號' : '昨日燈號';
+
+    ls.innerHTML = `
+      <span class="badge ${overallLevel} ls-clickable" data-which="today" style="cursor:pointer" title="點擊查看今日燈號的觸發原因 + 相關新聞">${LIGHT_ICON[overallLevel]||'🟢'} ${todayLabel}：${overallLevel}</span>
+      <span class="badge ${prevLevel} ls-clickable" data-which="prev" style="cursor:pointer;margin-left:10px" title="點擊查看${prevLabel}的觸發原因 + 相關新聞（僅新聞、不含留言）">${LIGHT_ICON[prevLevel]||'🟢'} ${prevLabel}：${prevLevel}</span>
+    `;
+
+    ls.querySelectorAll('.ls-clickable').forEach(el => {
+      el.addEventListener('click', () => {
+        const which = el.dataset.which;
+        const arts = which === 'today' ? todayArts : prevArts;
+        const result = which === 'today'
+          ? severityLightWithReason(todayArts)
+          : prevResult;
+        const noteParts = [];
+        if (which === 'today') {
+          // 含新聞 + 留言原因
+          (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
+          const cmt = commentLightWithReason(state.comments);
+          (cmt.reasons || []).forEach(r => noteParts.push(`💬 ${r}`));
+        } else {
+          (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
+        }
+        const note = noteParts.length ? `觸發原因：${noteParts.join('；')}` : '無觸發原因（綠燈：無紅/黃新聞）';
+        const title = `${which === 'today' ? todayLabel : prevLabel}：${result.level}`;
+        // arts 已含 severity 欄位、openArticlesModal 會自動標紅黃 badge
+        openArticlesModal(title, note, arts);
+      });
+    });
+  }
   const lr = document.getElementById('lightReasons');
   if(lr){
     // 合併 volume-based reasons (聲量 anomaly) 與 severity-based reasons (新聞嚴重度)
