@@ -2401,6 +2401,10 @@ async function run(){
       const ol=document.createElement('ol');
       (detailMap[p]||[]).forEach(x=>{
         const li=document.createElement('li');
+        if (x.publisher){
+          const pub=document.createElement('span'); pub.className='hd-news-publisher';
+          pub.textContent=x.publisher; li.appendChild(pub);
+        }
         const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
         a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
         li.appendChild(a); ol.appendChild(li);
@@ -2411,7 +2415,16 @@ async function run(){
 
   function renderList(elId, arr){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
-    (arr||[]).forEach(x=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener'; a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' ); li.appendChild(a); el.appendChild(li); });
+    (arr||[]).forEach(x=>{
+      const li=document.createElement('li');
+      if (x.publisher){
+        const pub=document.createElement('span'); pub.className='hd-news-publisher';
+        pub.textContent=x.publisher; li.appendChild(pub);
+      }
+      const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
+      a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' );
+      li.appendChild(a); el.appendChild(li);
+    });
   }
   const ps = d.person_sections || {};
   renderList('luFb', (ps['盧秀燕']||{}).facebook || []);
