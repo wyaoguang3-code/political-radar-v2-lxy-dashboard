@@ -2219,6 +2219,14 @@ function openMentionModal(name){
       const t = (x.time || '').slice(5, 16);
       meta.textContent = `${t}　[${x.platform || '-'}]　`;
       li.appendChild(meta);
+      // 燈號 badge：紅 / 黃 / 綠（severity 可能為 'red' / 'yellow' / null/undefined）
+      const sev = x.severity;
+      const sevBadge = document.createElement('span');
+      sevBadge.className = 'sev-badge ' + (sev === 'red' ? 'sev-red' : (sev === 'yellow' ? 'sev-yellow' : 'sev-green'));
+      sevBadge.textContent = sev === 'red' ? '🔴' : (sev === 'yellow' ? '🟡' : '🟢');
+      sevBadge.title = sev === 'red' ? '紅燈：負面/攻擊' : (sev === 'yellow' ? '黃燈：爭議/質疑' : '綠燈：正面/中性');
+      li.appendChild(sevBadge);
+      li.appendChild(document.createTextNode(' '));
       if (x.publisher){
         const pub = document.createElement('span');
         pub.className = 'hd-news-publisher';
@@ -2352,6 +2360,14 @@ function openHotspotDetailModal(h, markersByTitle){
         badge.className = 'hd-news-badge hd-news-badge-yellow';
         badge.textContent = '🟡 黃燈';
         badge.title = '標題命中政治批評／環境問題詞';
+        li.appendChild(badge);
+      } else {
+        // 綠燈：正面 / 中性，仍要 badge 讓使用者一眼看出（避免「沒燈號 = 不知道」）
+        li.classList.add('hd-news-green');
+        const badge = document.createElement('span');
+        badge.className = 'hd-news-badge hd-news-badge-green';
+        badge.textContent = '🟢 綠燈';
+        badge.title = '正面 / 中性 / 利多';
         li.appendChild(badge);
       }
       const meta = document.createElement('span');
@@ -2886,6 +2902,7 @@ async function run(){
         const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
         const items = (map[plat] || []).map(x => ({
           title: x.title, url: x.url, time: x.time, publisher: x.publisher,
+          severity: x.severity,  // 燈號 badge
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
         openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
