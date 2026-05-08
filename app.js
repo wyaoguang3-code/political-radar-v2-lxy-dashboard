@@ -2372,10 +2372,16 @@ async function run(){
   bindCardClick('news24',  isWeekMode ? '7 日新聞量明細' : '今日新聞量明細',
     isWeekMode ? '近 7 日所有與盧秀燕有關的新聞' : '近 24 小時所有與盧秀燕有關的新聞', newsArticles);
 
-  // 頂部燈號 = 該視窗內所有新聞的 severity 分布（純內容，不看聲量）
-  const sevResult = severityLightWithReason(totalArticles());
-  const level = sevResult.level;
-  document.getElementById('light').innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${level}</span>`;
+  // 三盞燈：新聞燈號（純內容）/ 留言燈號（社群情緒）/ 綜合燈號（兩者取較嚴重）
+  const newsResult = severityLightWithReason(totalArticles());
+  const cmtResult = commentLightWithReason(state.comments);
+  const newsLevel = newsResult.level;
+  const cmtLevel = cmtResult.level;
+  const overallLevel = LIGHT_RANK[newsLevel] >= LIGHT_RANK[cmtLevel] ? newsLevel : cmtLevel;
+  const renderBadge = (lvl, tooltip) => `<span class="badge ${lvl}" title="${tooltip || ''}">${LIGHT_ICON[lvl]||'🟢'} ${lvl}</span>`;
+  document.getElementById('light').innerHTML = renderBadge(overallLevel, '新聞 + 留言取較嚴重者');
+  document.getElementById('lightNews').innerHTML = renderBadge(newsLevel, (newsResult.reasons||[]).join('; ') || '依當前視窗內新聞 severity');
+  document.getElementById('lightComments').innerHTML = renderBadge(cmtLevel, (cmtResult.reasons||[]).join('; ') || '依 FB/IG/Threads 留言燈號');
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
   const names = Object.keys(cmp);
