@@ -186,13 +186,14 @@ async function fetchJSON(path){
 // 規則：把每位的「紅+黃」新聞數加總當戰情分數；分數越低戰情越佳。
 // 第 1 名 = 戰情最佳（負面+爭議最少）；最後一名 = 戰情最劣（負面+爭議最多）。
 const SELF_NAME = '盧秀燕';
-function renderWarRoomRanking(voiceBreakdown){
+function renderWarRoomRanking(voiceBreakdown, mentionArticles){
   const board = document.getElementById('warRoomRankBoard');
   const verdict = document.getElementById('warRoomVerdict');
   if (!board) return;
   board.innerHTML = '';
   if (verdict) verdict.textContent = '';
 
+  const articlesByName = mentionArticles || {};
   const entries = Object.entries(voiceBreakdown || {})
     .filter(([, v]) => v && (v.total || 0) > 0)
     .map(([name, v]) => ({
@@ -203,6 +204,7 @@ function renderWarRoomRanking(voiceBreakdown){
       total: v.total || 0,
       score: (v.red || 0) + (v.yellow || 0),  // 紅+黃 = 戰情分數
       isSelf: name === SELF_NAME,
+      articles: articlesByName[name] || [],
     }));
 
   if (entries.length === 0) {
@@ -220,6 +222,15 @@ function renderWarRoomRanking(voiceBreakdown){
     const isWorst = rank === n && n >= 3;
     const row = document.createElement('div');
     row.className = 'rank-row' + (e.isSelf ? ' is-self' : '') + (isBest ? ' rank-best' : '') + (isWorst ? ' rank-worst' : '');
+    // 點 row → 打開該人物 24h 新聞 modal
+    if (e.articles && e.articles.length > 0) {
+      row.classList.add('rank-clickable');
+      row.title = `點擊查看 ${e.name} 24h 內 ${e.articles.length} 則新聞`;
+      row.addEventListener('click', () => {
+        const note = `共 ${e.total} 則 ｜ 🔴 紅 ${e.red} ／ 🟡 黃 ${e.yellow} ／ 🟢 綠 ${e.green} ｜ 戰情分數 ${e.score}（紅+黃）`;
+        openArticlesModal(`${e.name}（第 ${rank} 名）24h 新聞`, note, e.articles, []);
+      });
+    }
 
     // 排名欄
     const rankCol = document.createElement('div');
@@ -647,6 +658,135 @@ function initTopicHeat(){
       renderTopicHeat();
     });
   }
+  initCustomTrendQuery();
+}
+
+// --------- Custom keyword Google Trends query ---------
+const _CUSTOM_TREND_LS_KEY = 'lxy.dashboard.customTrendRecent.v1';
+
+function _loadRecentCustomTrends(){
+  try {
+    const raw = localStorage.getItem(_CUSTOM_TREND_LS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+function _saveRecentCustomTrends(list){
+  try {
+    localStorage.setItem(_CUSTOM_TREND_LS_KEY, JSON.stringify(list.slice(0, 10)));
+  } catch {}
+}
+
+function _renderRecentCustomTrends(){
+  const wrap = document.getElementById('topicCustomRecent');
+  if (!wrap) return;
+  const list = _loadRecentCustomTrends();
+  if (list.length === 0) { wrap.innerHTML = ''; return; }
+  wrap.innerHTML = '<span class="recent-label">最近查過：</span>' +
+    list.map((kw, i) => `<button type="button" class="recent-chip" data-kw="${encodeURIComponent(kw)}">${kw}</button>`).join('') +
+    '<button type="button" class="recent-clear" title="清除歷史">✕</button>';
+  wrap.querySelectorAll('.recent-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const kw = decodeURIComponent(btn.dataset.kw || '');
+      const inp = document.getElementById('topicCustomInput');
+      if (inp) inp.value = kw;
+      _runCustomTrendQuery();
+    });
+  });
+  const clearBtn = wrap.querySelector('.recent-clear');
+  if (clearBtn) clearBtn.addEventListener('click', () => {
+    _saveRecentCustomTrends([]); _renderRecentCustomTrends();
+  });
+}
+
+function _runCustomTrendQuery(){
+  const inp = document.getElementById('topicCustomInput');
+  const geoSel = document.getElementById('topicCustomGeo');
+  const rangeSel = document.getElementById('topicCustomRange');
+  const kw = (inp?.value || '').trim();
+  if (!kw){
+    if (inp) { inp.focus(); inp.placeholder = '請先輸入關鍵字'; }
+    return;
+  }
+  const range = rangeSel?.value || 'today 12-m';
+  const geo = geoSel?.value || 'TW';
+
+  // 內嵌式 Google Trends widget — 用官方 embed URL（tz=-480 = UTC+8）
+  const req = {
+    comparisonItem: [{ keyword: kw, geo: geo, time: range }],
+    category: 0,
+    property: '',
+  };
+  const embedUrl = `https://trends.google.com/trends/embed/explore/TIMESERIES?req=${encodeURIComponent(JSON.stringify(req))}&tz=-480&hl=zh-TW`;
+  const exploreUrl = `https://trends.google.com/trends/explore?date=${encodeURIComponent(range)}&geo=${encodeURIComponent(geo)}&q=${encodeURIComponent(kw)}&hl=zh-TW`;
+
+  const embedWrap = document.getElementById('topicCustomEmbed');
+  if (embedWrap){
+    embedWrap.innerHTML = `
+      <div class="topic-custom-embed-header">
+        🔎 <b>「${_escapeHtml(kw)}」</b> ｜ ${_geoLabel(geo)} ｜ ${_rangeLabel(range)}
+        <span class="topic-custom-embed-hint" id="topicCustomEmbedHint">載入中… <span class="muted">（如數秒未顯示，可點右側「開新分頁」）</span></span>
+      </div>
+      <iframe class="topic-custom-embed-iframe"
+              src="${embedUrl}"
+              loading="lazy"
+              referrerpolicy="no-referrer"></iframe>
+    `;
+    const iframe = embedWrap.querySelector('iframe');
+    if (iframe){
+      iframe.addEventListener('load', () => {
+        const hint = document.getElementById('topicCustomEmbedHint');
+        if (hint) hint.textContent = '';
+      });
+    }
+  }
+
+  // 同時更新「外開新分頁」按鈕（萬一 iframe 被擋）
+  const extBtn = document.getElementById('topicCustomExternalBtn');
+  if (extBtn){
+    extBtn.href = exploreUrl;
+    extBtn.style.display = 'inline-flex';
+    extBtn.title = `在新分頁開啟 Google Trends：${kw}`;
+  }
+
+  // 寫入 localStorage 最近清單（最新在前、去重、最多 10 筆）
+  const list = _loadRecentCustomTrends().filter(x => x !== kw);
+  list.unshift(kw);
+  _saveRecentCustomTrends(list);
+  _renderRecentCustomTrends();
+}
+
+function _escapeHtml(s){
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function _geoLabel(g){ return g === 'TW' ? '台灣' : (g === '' ? '全球' : g); }
+
+function _rangeLabel(r){
+  return ({
+    'now 1-d': '過去 24 小時',
+    'now 7-d': '過去 7 天',
+    'today 1-m': '過去 30 天',
+    'today 3-m': '過去 90 天',
+    'today 12-m': '過去 1 年',
+    'today 5-y': '過去 5 年',
+  })[r] || r;
+}
+
+function initCustomTrendQuery(){
+  const btn = document.getElementById('topicCustomBtn');
+  const inp = document.getElementById('topicCustomInput');
+  if (btn && !btn.dataset.bound){
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', _runCustomTrendQuery);
+  }
+  if (inp && !inp.dataset.bound){
+    inp.dataset.bound = '1';
+    inp.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter'){ e.preventDefault(); _runCustomTrendQuery(); }
+    });
+  }
+  _renderRecentCustomTrends();
 }
 
 // --------- Drilldown modal ---------
@@ -2573,8 +2713,9 @@ async function run(){
   document.getElementById('compare').textContent = names.map(n => `${n}：${cmp[n]||0}`).join(' ｜ ');
   state.mentionArticles = pick(d, 'mention_articles_24h', 'mention_articles_7d') || {};
 
-  // 戰情排名（24h）：用 voice_breakdown_24h 渲染 leaderboard
-  renderWarRoomRanking(d.voice_breakdown_24h || {});
+  // 戰情排名（24h）：用 voice_breakdown_24h 渲染 leaderboard，
+  // 並把 mention_articles_24h 一起傳進去做「排名 row 可點擊看新聞」
+  renderWarRoomRanking(d.voice_breakdown_24h || {}, d.mention_articles_24h || {});
 
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
