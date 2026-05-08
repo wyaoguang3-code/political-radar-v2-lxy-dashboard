@@ -2611,6 +2611,18 @@ async function run(){
     li.appendChild(a); news.appendChild(li);
   });
 
+  // 共用：給 li 加上 hd-news-{red/yellow/green} class + 對應的 hd-news-badge pill
+  // 跟 hotspot modal / 平台 modal 用同一套樣式，視覺一致
+  const attachSeverityBadge = (li, sev) => {
+    const tier = sev === 'red' ? 'red' : (sev === 'yellow' ? 'yellow' : 'green');
+    li.classList.add('hd-news-' + tier);
+    const badge = document.createElement('span');
+    badge.className = 'hd-news-badge hd-news-badge-' + tier;
+    badge.textContent = tier === 'red' ? '🔴 紅燈' : (tier === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
+    badge.title = tier === 'red' ? '紅燈：負面/攻擊' : (tier === 'yellow' ? '黃燈：爭議/質疑' : '綠燈：正面/中性');
+    li.appendChild(badge);
+  };
+
   const detailMap = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
   const platformDetail = document.getElementById('platformDetail');
   if(platformDetail){
@@ -2621,6 +2633,7 @@ async function run(){
       const ol=document.createElement('ol');
       (detailMap[p]||[]).forEach(x=>{
         const li=document.createElement('li');
+        attachSeverityBadge(li, x.severity);
         if (x.publisher){
           const pub=document.createElement('span'); pub.className='hd-news-publisher';
           pub.textContent=x.publisher; li.appendChild(pub);
@@ -2637,6 +2650,7 @@ async function run(){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
     (arr||[]).forEach(x=>{
       const li=document.createElement('li');
+      attachSeverityBadge(li, x.severity);
       if (x.publisher){
         const pub=document.createElement('span'); pub.className='hd-news-publisher';
         pub.textContent=x.publisher; li.appendChild(pub);
