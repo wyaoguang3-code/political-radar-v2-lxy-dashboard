@@ -2214,19 +2214,20 @@ function openMentionModal(name){
       const li = document.createElement('li');
       const co = Array.isArray(x.co_mentioned) ? x.co_mentioned : [];
       if (co.length > 0) li.classList.add('co-mention');
+      // 燈號 badge：紅 / 黃 / 綠 — 用跟平台 modal 同一套 hd-news-badge 樣式（淡背景框＋文字）
+      const sev = x.severity;
+      const sevTier = sev === 'red' ? 'red' : (sev === 'yellow' ? 'yellow' : 'green');
+      li.classList.add('hd-news-' + sevTier);
+      const sevBadge = document.createElement('span');
+      sevBadge.className = 'hd-news-badge hd-news-badge-' + sevTier;
+      sevBadge.textContent = sevTier === 'red' ? '🔴 紅燈' : (sevTier === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
+      sevBadge.title = sevTier === 'red' ? '紅燈：負面/攻擊' : (sevTier === 'yellow' ? '黃燈：爭議/質疑' : '綠燈：正面/中性');
+      li.appendChild(sevBadge);
       const meta = document.createElement('span');
       meta.className = 'mention-meta';
       const t = (x.time || '').slice(5, 16);
       meta.textContent = `${t}　[${x.platform || '-'}]　`;
       li.appendChild(meta);
-      // 燈號 badge：紅 / 黃 / 綠（severity 可能為 'red' / 'yellow' / null/undefined）
-      const sev = x.severity;
-      const sevBadge = document.createElement('span');
-      sevBadge.className = 'sev-badge ' + (sev === 'red' ? 'sev-red' : (sev === 'yellow' ? 'sev-yellow' : 'sev-green'));
-      sevBadge.textContent = sev === 'red' ? '🔴' : (sev === 'yellow' ? '🟡' : '🟢');
-      sevBadge.title = sev === 'red' ? '紅燈：負面/攻擊' : (sev === 'yellow' ? '黃燈：爭議/質疑' : '綠燈：正面/中性');
-      li.appendChild(sevBadge);
-      li.appendChild(document.createTextNode(' '));
       if (x.publisher){
         const pub = document.createElement('span');
         pub.className = 'hd-news-publisher';

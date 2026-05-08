@@ -414,13 +414,19 @@ button.past-city-header:hover{background:#101933;border-color:#2a335f}
 .hd-news-list a{color:#9fc4ff;text-decoration:none}
 .hd-news-list a:hover{text-decoration:underline}
 .hd-news-list li.hd-news-negative,
-.hd-news-list li.hd-news-red{background:#3a1418;border-left:3px solid #ef4444;padding:4px 8px;border-radius:4px;margin:4px 0}
+.hd-news-list li.hd-news-red,
+.mention-list li.hd-news-red{background:#3a1418;border-left:3px solid #ef4444;padding:4px 8px;border-radius:4px;margin:4px 0}
 .hd-news-list li.hd-news-negative a,
-.hd-news-list li.hd-news-red a{color:#ffc09f;font-weight:600}
-.hd-news-list li.hd-news-yellow{background:#332817;border-left:3px solid #f59e0b;padding:4px 8px;border-radius:4px;margin:4px 0}
-.hd-news-list li.hd-news-yellow a{color:#ffd494}
-.hd-news-list li.hd-news-green{background:#0f2a23;border-left:3px solid #20c997;padding:4px 8px;border-radius:4px;margin:4px 0}
-.hd-news-list li.hd-news-green a{color:#a8efd4}
+.hd-news-list li.hd-news-red a,
+.mention-list li.hd-news-red a{color:#ffc09f;font-weight:600}
+.hd-news-list li.hd-news-yellow,
+.mention-list li.hd-news-yellow{background:#332817;border-left:3px solid #f59e0b;padding:4px 8px;border-radius:4px;margin:4px 0}
+.hd-news-list li.hd-news-yellow a,
+.mention-list li.hd-news-yellow a{color:#ffd494}
+.hd-news-list li.hd-news-green,
+.mention-list li.hd-news-green{background:#0f2a23;border-left:3px solid #20c997;padding:4px 8px;border-radius:4px;margin:4px 0}
+.hd-news-list li.hd-news-green a,
+.mention-list li.hd-news-green a{color:#a8efd4}
 .hd-news-badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11px;font-weight:700;margin-right:6px}
 .hd-news-badge-red,
 .hd-news-neg-badge{background:#5b1d2a;color:#ffb3bf}
@@ -460,12 +466,6 @@ button.past-city-header:hover{background:#101933;border-color:#2a335f}
 .mention-chart-wrap{flex:1;min-height:340px;position:relative}
 .mention-chart-wrap canvas{position:absolute;inset:0;width:100% !important;height:100% !important}
 #compare{margin-top:14px;padding-top:10px;border-top:1px solid #2a3360;font-size:13px;color:#9fb0ea}
-
-/* mention modal 內每則新聞前的燈號 badge */
-.sev-badge{display:inline-block;font-size:13px;line-height:1;margin-right:2px;cursor:help;vertical-align:middle}
-.sev-badge.sev-red{filter:drop-shadow(0 0 2px #ff575788)}
-.sev-badge.sev-yellow{filter:drop-shadow(0 0 2px #ffc10788)}
-.sev-badge.sev-green{filter:drop-shadow(0 0 1px #20c99766)}
 
 /* 戰情排名 leaderboard
    欄位比例（避免換行 + 中段留白）：
