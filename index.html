@@ -4,6 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
+  <!-- 密碼 gate (前端 JS, plan 1 弱保護) — 2026-05-08
+       要改密碼：替換下方 PASSWORD 字串。同 session 只問一次（關 tab 後重問）。
+       注意：F12 / view-source 可看到密碼或 sessionStorage key 繞過，僅擋路人。 -->
+  <script>
+    (function(){
+      var PASSWORD = 'lxy2026';
+      if (sessionStorage.getItem('lxy_dashboard_auth') === '1') return;
+      var pw = prompt('請輸入密碼以查看戰情儀表板：');
+      if (pw === PASSWORD) {
+        sessionStorage.setItem('lxy_dashboard_auth', '1');
+      } else {
+        document.documentElement.innerHTML = '<body style="background:#0a0e2a;color:#fff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0"><div style="text-align:center"><h1>🔒 禁止存取</h1><p>密碼錯誤或未提供</p><p style="opacity:.6;font-size:14px">如需存取請聯絡管理員</p></div></body>';
+        throw new Error('auth required');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="./style.css?v=2026-05-07-publisher-chip" />
 </head>
