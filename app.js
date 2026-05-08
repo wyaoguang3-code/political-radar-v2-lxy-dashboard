@@ -90,6 +90,27 @@ function severityOf(a){
 function severityLightOf(articles){
   return severityLightWithReason(articles).level;
 }
+// 留言燈號：跨 FB/IG/Threads 彙總所有 comments 的 signal 計數
+// 用跟新聞同樣的門檻（紅/黃/綠 比例 + 絕對數）
+function commentLightWithReason(commentsState){
+  let total=0, reds=0, yellows=0;
+  for (const plat of ['facebook','instagram','threads']){
+    const arr = (commentsState && commentsState[plat]) || [];
+    for (const c of arr){
+      total++;
+      if (c.signal === 'red') reds++;
+      else if (c.signal === 'yellow') yellows++;
+    }
+  }
+  const neg = reds + yellows;
+  if (total === 0) return { level: '綠', reasons: ['尚無留言資料'], total };
+  if (reds >= 3) return { level: '紅', reasons: [`紅燈留言 ${reds} 則（≥3 即紅）`], total };
+  if (reds >= 1 && reds / total >= 0.10) return { level: '紅', reasons: [`紅燈留言佔比 ${(reds/total*100).toFixed(0)}%（${reds}/${total} 則 ≥10%）`], total };
+  if (neg >= 10) return { level: '黃', reasons: [`負面留言 ${neg} 則（${reds} 紅 + ${yellows} 黃 ≥ 10）`], total };
+  if (neg >= 1 && neg / total >= 0.30) return { level: '黃', reasons: [`負面留言佔比 ${(neg/total*100).toFixed(0)}%（${neg}/${total} 則 ≥ 30%）`], total };
+  return { level: '綠', reasons: [], total };
+}
+function commentLightOf(commentsState){ return commentLightWithReason(commentsState).level; }
 function severityLightWithReason(articles){
   const arts = articles || [];
   const total = arts.length;
