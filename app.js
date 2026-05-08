@@ -2907,6 +2907,8 @@ async function run(){
       }],
     },
     options:{
+      responsive:true,
+      maintainAspectRatio:false,
       interaction: INDEX_HOVER,
       hover: INDEX_HOVER,
       plugins:{

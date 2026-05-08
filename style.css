@@ -452,6 +452,11 @@ button.past-city-header:hover{background:#101933;border-color:#2a335f}
   .modal-panel{max-height:92vh;width:100%}
 }
 
+/* 人物提及 chart 拉高、與左邊 doughnut 對齊（避免大留白）*/
+.mention-col{display:flex;flex-direction:column;height:100%}
+.mention-chart-wrap{flex:1;min-height:340px;position:relative}
+.mention-chart-wrap canvas{position:absolute;inset:0;width:100% !important;height:100% !important}
+
 /* 戰情排名 leaderboard */
 .rank-board{display:flex;flex-direction:column;gap:8px}
 .rank-row{display:grid;grid-template-columns:64px 1fr 220px 80px;gap:14px;align-items:center;
