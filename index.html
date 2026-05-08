@@ -106,20 +106,29 @@
       <summary>📖 如何判讀燈號（點擊收合）</summary>
       <div class="legend-body">
         <div class="legend-section">
-          <h5>燈號顏色 = 聲量規模</h5>
+          <h5>事件燈號 = 嚴重度 OR 聲量規模（取較嚴重）</h5>
           <div class="legend-row">
             <span class="hc-level-chip red">RED</span>
-            <span>事件有 ≥ 10 則命中（新聞 + 留言加總）</span>
+            <span><strong>任一新聞為 🔴 紅燈</strong>（攻擊/刑事/重大事故）<strong>OR</strong> 總命中 ≥ 10 則</span>
           </div>
           <div class="legend-row">
             <span class="hc-level-chip yellow">YELLOW</span>
-            <span>事件有 ≥ 5 則命中</span>
+            <span><strong>任一新聞為 🟡 黃燈</strong>（爭議/批評/治安/政策反彈）<strong>OR</strong> 總命中 ≥ 5 則</span>
           </div>
           <div class="legend-row">
             <span class="hc-level-chip green">GREEN</span>
-            <span>事件有 ≥ 1 則命中</span>
+            <span>所有新聞皆為 🟢 綠燈（正面/中性/利多）<strong>且</strong> 總命中 < 5 則</span>
           </div>
-          <p class="legend-warn">⚠️ 紅燈不代表事件「嚴重」 — 它只代表「被討論很多」。例如盧秀燕參加「母親節活動」一天有 10 篇新聞，照樣會是紅色。</p>
+          <p class="legend-tip">每則新聞的 🔴/🟡/🟢 由 <strong>LLM</strong> 判讀（戰情視角），跟戰情報告/3 大燈號同源 — 不再只看「字典命中負面詞」。</p>
+        </div>
+
+        <div class="legend-section">
+          <h5>🎨 紅黃綠各自代表的意思</h5>
+          <ul>
+            <li><strong>🔴 紅 = 負面 / 攻擊</strong>：直接點名批判、刑事弊案、公共安全事故、重大政治攻防、惡意期待</li>
+            <li><strong>🟡 黃 = 爭議 / 質疑</strong>：政策爭議、民意質疑、批評聲浪、治安事件（詐騙/車禍/犯罪）、環境/民生問題</li>
+            <li><strong>🟢 綠 = 正面 / 中性</strong>：純市政成果、活動行程、政策推廣、利多消息、中性報導</li>
+          </ul>
         </div>
 
         <div class="legend-section">
@@ -133,11 +142,11 @@
         </div>
 
         <div class="legend-section">
-          <h5>X% 負面 / 紅黃綠留言</h5>
+          <h5>X% 負面 / 留言燈號</h5>
           <ul>
-            <li><strong>事件卡片的「X% 負面」</strong>：該事件下，標題含負面詞的新聞佔比</li>
-            <li><strong>留言燈號（modal 內）</strong>：用 3 本字典（攻擊詞 / 質疑詞 / 鼓勵詞）打分，紅優先</li>
-            <li>都是字典比對沒做語境分析 — 「解決鼠患」也會被算成「負面新聞」（因為含「鼠患」）</li>
+            <li><strong>事件卡片的「X% 負面」</strong>：該事件下，含負面詞的新聞佔比（紅+黃詞庫，僅供 quick-look）</li>
+            <li><strong>每則新聞的 🔴/🟡/🟢 燈號</strong>：LLM 判讀（戰情視角），與戰情報告/3 大燈號同源</li>
+            <li><strong>留言燈號（modal 內）</strong>：LLM + 規則混合，能理解反諷/陰諷/同義詞（含 24h 新聞 context + 歷史事件 RAG）</li>
           </ul>
         </div>
 
