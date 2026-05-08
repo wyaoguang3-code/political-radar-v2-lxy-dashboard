@@ -2631,7 +2631,7 @@ async function run(){
         if (!plat) return;
         const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
         const items = (map[plat] || []).map(x => ({
-          title: x.title, url: x.url, time: x.time,
+          title: x.title, url: x.url, time: x.time, publisher: x.publisher,
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
         openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
