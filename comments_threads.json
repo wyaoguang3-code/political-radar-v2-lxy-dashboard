@@ -5,12 +5,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -19,12 +21,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -33,12 +37,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -47,12 +53,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -61,12 +69,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 2
+      "yellow": 0,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -75,12 +85,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0
+      "green": 1,
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -89,12 +101,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -106,9 +120,11 @@
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 1,
-      "red": 0
+      "red": 0,
+      "sarcasm": 2,
+      "llm": "黃"
     }
   },
   {
@@ -117,12 +133,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -131,12 +149,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 1,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -145,12 +165,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -162,9 +184,11 @@
     "signal": "green",
     "signal_zh": "綠燈",
     "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0
+      "green": 2,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠"
     }
   },
   {
@@ -177,8 +201,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -187,12 +213,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -201,12 +229,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -215,12 +245,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -234,7 +266,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 1,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -248,7 +282,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -257,12 +293,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 2,
+      "llm": "黃"
     }
   },
   {
@@ -271,12 +309,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -285,12 +325,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -299,12 +341,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 2,
+      "llm": "黃"
     }
   },
   {
@@ -313,12 +357,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "紅"
     }
   },
   {
@@ -327,12 +373,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -341,12 +389,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "黃"
     }
   },
   {
@@ -359,8 +409,10 @@
     "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2
+      "yellow": 1,
+      "red": 4,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -369,12 +421,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -383,12 +437,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0
+      "green": 1,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -397,12 +453,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0
+      "green": 1,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -415,8 +473,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -425,12 +485,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 4,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -439,12 +501,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -453,12 +517,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -467,12 +533,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -481,12 +549,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -495,12 +565,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -509,12 +581,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -523,12 +597,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "黃"
     }
   },
   {
@@ -537,12 +613,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -551,12 +629,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -565,12 +645,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0
+      "green": 1,
+      "yellow": 3,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -579,12 +661,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -593,12 +677,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0
+      "green": 1,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -607,12 +693,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 1,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -621,12 +709,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -635,12 +725,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -653,8 +745,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -663,12 +757,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -677,12 +773,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -691,12 +789,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -705,12 +805,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -724,7 +826,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 1,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -733,12 +837,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -751,8 +857,10 @@
     "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2
+      "yellow": 2,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -761,12 +869,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -780,7 +890,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -789,12 +901,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -803,12 +917,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "image",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -817,12 +933,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -836,7 +954,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -845,12 +965,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -859,12 +981,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -873,12 +997,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -887,12 +1013,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -901,12 +1029,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -920,7 +1050,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 1,
+      "llm": "紅"
     }
   },
   {
@@ -929,12 +1061,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -943,12 +1077,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -961,8 +1097,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 2,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -971,12 +1109,14 @@
     "time_text": "4天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -985,12 +1125,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1004,7 +1146,9 @@
     "signal_score": {
       "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠"
     }
   },
   {
@@ -1013,12 +1157,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1027,12 +1173,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1041,12 +1189,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1055,12 +1205,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 2
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1069,12 +1221,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -1087,8 +1241,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 2,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1097,12 +1253,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1111,12 +1269,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1130,7 +1290,9 @@
     "signal_score": {
       "green": 0,
       "yellow": 1,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1139,12 +1301,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1153,12 +1317,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -1167,12 +1333,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2
+      "yellow": 1,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1181,12 +1349,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1199,8 +1369,10 @@
     "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2
+      "yellow": 3,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅"
     }
   },
   {
@@ -1212,9 +1384,11 @@
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 1,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1223,12 +1397,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1237,12 +1413,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1251,12 +1429,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1270,7 +1450,9 @@
     "signal_score": {
       "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠"
     }
   },
   {
@@ -1279,12 +1461,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1293,12 +1477,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1307,12 +1493,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1321,12 +1509,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1335,12 +1525,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1349,12 +1541,14 @@
     "time_text": "2026-5-1",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 3,
+      "llm": "黃"
     }
   },
   {
@@ -1367,8 +1561,10 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃"
     }
   },
   {
@@ -1381,8 +1577,10 @@
     "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2
+      "yellow": 2,
+      "red": 2,
+      "sarcasm": 1,
+      "llm": "紅"
     }
   },
   {
@@ -1391,12 +1589,14 @@
     "time_text": "6天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 0,
-      "red": 0
+      "red": 0,
+      "sarcasm": 3,
+      "llm": "黃"
     }
   }
 ]
