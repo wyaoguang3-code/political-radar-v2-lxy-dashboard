@@ -2520,34 +2520,48 @@ async function run(){
   const totalN = minuteN + hourN + dayN;
   const ls = document.getElementById('lightStatus');
   if(ls){
-    // 兩盞燈：今日（綜合：新聞+留言） vs 昨日/前 7 日（新聞 only — 留言沒歷史快取）
+    // 兩盞燈：今日綜合 vs 昨日綜合（新聞 + 留言皆來自 DB 時序快取）
     const todayArts = isWeek ? (state.articles7d || []) : (state.articles24h || []);
     const prevArts  = isWeek ? (state.articlesPrev7d || []) : (state.articlesPrev24h || []);
-    const prevResult = severityLightWithReason(prevArts);
-    const prevLevel  = prevResult.level;
+    const prevNewsResult = severityLightWithReason(prevArts);
+    // 昨日留言：用 data.json 內 comments_history.yesterday aggregate（從 social_comments DB 撈）
+    const yh = (d.comments_history || {}).yesterday || {total:0, red:0, yellow:0, green:0};
+    const prevCmtResult = (function(h){
+      // 跟 commentLightWithReason 同公式：紅 ≥3 或 ≥10%；黃 neg ≥10 或 ≥30%
+      const total = h.total || 0;
+      const red = h.red || 0;
+      const yellow = h.yellow || 0;
+      const neg = red + yellow;
+      if (total === 0) return { level: '綠', reasons: ['昨日尚無留言時序資料（DB cache 累積中）'], total };
+      if (red >= 3) return { level: '紅', reasons: [`昨日紅燈留言 ${red} 則（≥3 即紅）`], total };
+      if (red >= 1 && red/total >= 0.10) return { level: '紅', reasons: [`昨日紅燈留言佔比 ${(red/total*100).toFixed(0)}%（${red}/${total} ≥ 10%）`], total };
+      if (neg >= 10) return { level: '黃', reasons: [`昨日負面留言 ${neg} 則（${red} 紅 + ${yellow} 黃 ≥ 10）`], total };
+      if (neg >= 1 && neg/total >= 0.30) return { level: '黃', reasons: [`昨日負面留言佔比 ${(neg/total*100).toFixed(0)}%（${neg}/${total} ≥ 30%）`], total };
+      return { level: '綠', reasons: [], total };
+    })(yh);
+    const prevCmtLevel = prevCmtResult.level;
+    const prevLevel = LIGHT_RANK[prevNewsResult.level] >= LIGHT_RANK[prevCmtLevel] ? prevNewsResult.level : prevCmtLevel;
     const todayLabel = isWeek ? '7 日燈號' : '今日燈號';
     const prevLabel  = isWeek ? '前 7 日燈號' : '昨日燈號';
 
     ls.innerHTML = `
-      <span class="badge ${overallLevel} ls-clickable" data-which="today" style="cursor:pointer" title="點擊查看今日燈號的觸發原因 + 相關新聞">${LIGHT_ICON[overallLevel]||'🟢'} ${todayLabel}：${overallLevel}</span>
-      <span class="badge ${prevLevel} ls-clickable" data-which="prev" style="cursor:pointer;margin-left:10px" title="點擊查看${prevLabel}的觸發原因 + 相關新聞（僅新聞、不含留言）">${LIGHT_ICON[prevLevel]||'🟢'} ${prevLabel}：${prevLevel}</span>
+      <span class="badge ${overallLevel} ls-clickable" data-which="today" style="cursor:pointer" title="點擊查看今日燈號的觸發原因 + 相關新聞 + 留言">${LIGHT_ICON[overallLevel]||'🟢'} ${todayLabel}：${overallLevel}</span>
+      <span class="badge ${prevLevel} ls-clickable" data-which="prev" style="cursor:pointer;margin-left:10px" title="點擊查看${prevLabel}的觸發原因 + 相關新聞 + 留言">${LIGHT_ICON[prevLevel]||'🟢'} ${prevLabel}：${prevLevel}</span>
     `;
 
     ls.querySelectorAll('.ls-clickable').forEach(el => {
       el.addEventListener('click', () => {
         const which = el.dataset.which;
         const arts = which === 'today' ? todayArts : prevArts;
-        const result = which === 'today'
-          ? severityLightWithReason(todayArts)
-          : prevResult;
         const noteParts = [];
         let commentsForModal = null;
+        let modalLevel;
         if (which === 'today') {
-          // 含新聞 + 留言原因 + 把紅/黃留言帶進 modal
-          (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
+          // 含新聞 + 留言原因 + 把今日紅/黃留言帶進 modal
+          const todayNews = severityLightWithReason(todayArts);
+          (todayNews.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
           const cmt = commentLightWithReason(state.comments);
           (cmt.reasons || []).forEach(r => noteParts.push(`💬 ${r}`));
-          // 跨 3 平台彙總紅+黃留言（綠的不重要、不列）
           commentsForModal = [];
           for (const plat of ['facebook','instagram','threads']) {
             for (const c of (state.comments[plat] || [])) {
@@ -2556,18 +2570,22 @@ async function run(){
               }
             }
           }
-          // 紅優先、再時間倒序
           commentsForModal.sort((a,b) => {
             const ra = a.signal === 'red' ? 0 : 1;
             const rb = b.signal === 'red' ? 0 : 1;
             if (ra !== rb) return ra - rb;
             return (b.time_text || '').localeCompare(a.time_text || '');
           });
+          modalLevel = overallLevel;
         } else {
-          (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
+          // 昨日：新聞 reason + 留言 reason（DB 時序撈出來）+ DB 撈昨日紅黃留言
+          (prevNewsResult.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
+          (prevCmtResult.reasons || []).forEach(r => noteParts.push(`💬 ${r}`));
+          commentsForModal = ((d.comments_history || {}).yesterday_redyellow || []);
+          modalLevel = prevLevel;
         }
-        const note = noteParts.length ? `觸發原因：${noteParts.join('；')}` : '無觸發原因（綠燈：無紅/黃新聞）';
-        const title = `${which === 'today' ? todayLabel : prevLabel}：${result.level}`;
+        const note = noteParts.length ? `觸發原因：${noteParts.join('；')}` : '無觸發原因（綠燈）';
+        const title = `${which === 'today' ? todayLabel : prevLabel}：${modalLevel}`;
         openArticlesModal(title, note, arts, commentsForModal);
       });
     });
