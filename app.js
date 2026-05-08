@@ -2511,7 +2511,7 @@ async function run(){
   const dayN = (es.day || []).length;
   const totalN = minuteN + hourN + dayN;
   const ls = document.getElementById('lightStatus');
-  if(ls){ ls.innerHTML = `<span class="badge ${level}">${LIGHT_ICON[level]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${level}</span>`; }
+  if(ls){ ls.innerHTML = `<span class="badge ${overallLevel}">${LIGHT_ICON[overallLevel]||'🟢'} ${isWeek ? '7 日燈號' : '今日燈號'}：${overallLevel}</span>`; }
   const lr = document.getElementById('lightReasons');
   if(lr){
     // 合併 volume-based reasons (聲量 anomaly) 與 severity-based reasons (新聞嚴重度)
