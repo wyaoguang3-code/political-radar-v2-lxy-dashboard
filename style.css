@@ -144,6 +144,12 @@ canvas{max-width:100%;margin:4px 0 8px 0}
 .hotspot-card.level-red{border-left-color:#ff4d4f}
 .hotspot-card.level-yellow{border-left-color:#f7c948}
 .hotspot-card.level-green{border-left-color:#20c997}
+/* 占位卡（22 縣市覆蓋，今日無新聞）*/
+.hotspot-card.placeholder{opacity:0.55;cursor:default;border-left-color:#3a4a6a;background:#0a1024}
+.hotspot-card.placeholder:hover{background:#0a1024;transform:none}
+.hotspot-card.placeholder .hc-level-chip{background:#1f2541;color:#7a86b8}
+.hotspot-card.placeholder .hc-title{color:#9aa6cc}
+.hc-placeholder-msg{font-size:12px;color:#7a86b8;font-style:italic}
 .hc-row1{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .hc-level-chip{padding:1px 8px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:0.5px;flex-shrink:0}
 .hc-level-chip.red{background:#5b1d2a;color:#ffb3bf}

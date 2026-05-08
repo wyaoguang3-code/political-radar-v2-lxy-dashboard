@@ -948,8 +948,9 @@ function renderHotspotCards(hotspots, markersByTitle){
 
     arr.forEach(h => {
       const level = h.level || 'green';
+      const isPlaceholder = !!h.is_placeholder;
       const card = document.createElement('div');
-      card.className = `hotspot-card level-${level}${h.is_urgent ? ' urgent' : ''}`;
+      card.className = `hotspot-card level-${level}${h.is_urgent ? ' urgent' : ''}${isPlaceholder ? ' placeholder' : ''}`;
       card.dataset.title = h.title || '';
       const total = (h.news_count || 0) + (h.comment_count || 0);
       const lifetime = formatLifetimeHint(h);
@@ -960,22 +961,34 @@ function renderHotspotCards(hotspots, markersByTitle){
         ? `<span class="hc-negativity ${h.negativity_pct >= 50 ? 'high' : h.negativity_pct >= 25 ? 'mid' : 'low'}">${h.negativity_pct || 0}% 負面</span>`
         : '';
       const urgentBadge = h.is_urgent ? '<span class="hc-urgent-badge">🚨 緊急</span>' : '';
-      card.innerHTML = `
-        <div class="hc-row1">
-          <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
-          <span class="hc-title">${escapeHtml(h.title || '事件')}</span>
-          ${urgentBadge}
-        </div>
-        <div class="hc-row2">
-          <span class="hc-count">${total} 則</span>
-          ${negPart}
-          <span class="hc-source-tag">${sourceTag}</span>
-        </div>
-        <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
-        <div class="hc-platform">${escapeHtml(h.platform || '')}</div>
-        ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
-      `;
+      if (isPlaceholder) {
+        card.innerHTML = `
+          <div class="hc-row1">
+            <span class="hc-level-chip green">QUIET</span>
+            <span class="hc-title">${escapeHtml(h.title || '暫無動態')}</span>
+          </div>
+          <div class="hc-row2 hc-placeholder-msg">📭 24h 內未抓到該縣市相關新聞或留言</div>
+          <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
+        `;
+      } else {
+        card.innerHTML = `
+          <div class="hc-row1">
+            <span class="hc-level-chip ${level}">${level.toUpperCase()}</span>
+            <span class="hc-title">${escapeHtml(h.title || '事件')}</span>
+            ${urgentBadge}
+          </div>
+          <div class="hc-row2">
+            <span class="hc-count">${total} 則</span>
+            ${negPart}
+            <span class="hc-source-tag">${sourceTag}</span>
+          </div>
+          <div class="hc-place">📍 ${escapeHtml(h.place || '-')}</div>
+          <div class="hc-platform">${escapeHtml(h.platform || '')}</div>
+          ${lifetime ? `<div class="hc-lifetime">⏳ ${escapeHtml(lifetime)}</div>` : ''}
+        `;
+      }
       card.addEventListener('click', () => {
+        if (isPlaceholder) return;  // 占位卡不打開 modal
         openHotspotDetailModal(h, markersByTitle);
       });
       grid.appendChild(card);
