@@ -2386,10 +2386,55 @@ async function run(){
   const newsLevel = newsResult.level;
   const cmtLevel = cmtResult.level;
   const overallLevel = LIGHT_RANK[newsLevel] >= LIGHT_RANK[cmtLevel] ? newsLevel : cmtLevel;
-  const renderBadge = (lvl, tooltip) => `<span class="badge ${lvl}" title="${tooltip || ''}">${LIGHT_ICON[lvl]||'🟢'} ${lvl}</span>`;
-  document.getElementById('light').innerHTML = renderBadge(overallLevel, '新聞 + 留言取較嚴重者');
-  document.getElementById('lightNews').innerHTML = renderBadge(newsLevel, (newsResult.reasons||[]).join('; ') || '依當前視窗內新聞 severity');
-  document.getElementById('lightComments').innerHTML = renderBadge(cmtLevel, (cmtResult.reasons||[]).join('; ') || '依 FB/IG/Threads 留言燈號');
+  const renderBadge = (lvl, tooltip) => `<span class="badge ${lvl}" style="cursor:pointer" title="${tooltip || ''}">${LIGHT_ICON[lvl]||'🟢'} ${lvl}</span>`;
+  document.getElementById('light').innerHTML = renderBadge(overallLevel, '點擊查看原因 + 相關新聞 + 留言（新聞 + 留言取較嚴重者）');
+  document.getElementById('lightNews').innerHTML = renderBadge(newsLevel, '點擊查看原因 + 相關新聞 — ' + ((newsResult.reasons||[]).join('; ') || '無紅黃新聞'));
+  document.getElementById('lightComments').innerHTML = renderBadge(cmtLevel, '點擊查看原因 + 紅/黃留言 — ' + ((cmtResult.reasons||[]).join('; ') || '無紅黃留言'));
+
+  // 紅+黃留言（跨 3 平台彙總）— 給綜合 / 留言燈號 modal 用
+  const allRedYellowComments = (() => {
+    const out = [];
+    for (const plat of ['facebook','instagram','threads']) {
+      for (const c of (state.comments[plat] || [])) {
+        if (c.signal === 'red' || c.signal === 'yellow') {
+          out.push({...c, platform: plat});
+        }
+      }
+    }
+    out.sort((a,b) => {
+      const ra = a.signal === 'red' ? 0 : 1;
+      const rb = b.signal === 'red' ? 0 : 1;
+      if (ra !== rb) return ra - rb;
+      return (b.time_text || '').localeCompare(a.time_text || '');
+    });
+    return out;
+  })();
+
+  // 三盞燈的 click handler
+  const lightClick = (lvl, kind) => {
+    const titleMap = { overall: '綜合燈號', news: '新聞燈號', comments: '留言燈號' };
+    const noteParts = [];
+    let arts = null, comments = null;
+    if (kind === 'overall') {
+      (newsResult.reasons||[]).forEach(r => noteParts.push(`📰 ${r}`));
+      (cmtResult.reasons||[]).forEach(r => noteParts.push(`💬 ${r}`));
+      arts = totalArticles();
+      comments = allRedYellowComments;
+    } else if (kind === 'news') {
+      (newsResult.reasons||[]).forEach(r => noteParts.push(`📰 ${r}`));
+      arts = totalArticles();
+      comments = null;
+    } else if (kind === 'comments') {
+      (cmtResult.reasons||[]).forEach(r => noteParts.push(`💬 ${r}`));
+      arts = null;
+      comments = allRedYellowComments;
+    }
+    const note = noteParts.length ? `觸發原因：${noteParts.join('；')}` : '無觸發原因（綠燈）';
+    openArticlesModal(`${titleMap[kind]}：${lvl}`, note, arts, comments);
+  };
+  document.getElementById('light').onclick = () => lightClick(overallLevel, 'overall');
+  document.getElementById('lightNews').onclick = () => lightClick(newsLevel, 'news');
+  document.getElementById('lightComments').onclick = () => lightClick(cmtLevel, 'comments');
 
   const cmp = pick(d, 'mention_compare_24h', 'mention_compare_7d') || {};
   const names = Object.keys(cmp);
