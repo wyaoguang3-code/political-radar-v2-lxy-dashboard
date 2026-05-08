@@ -1067,7 +1067,7 @@ const _pastArchiveCache = {};
 
 // 把任意 articles 陣列開到既有 hotspot detail modal
 // 純清單用途（卡片/圖表 click），沒 level/place/壽命概念，meta 只顯示 note
-function openArticlesModal(title, note, articles){
+function openArticlesModal(title, note, articles, commentsList){
   const news = (articles || []).map(a => ({
     title: a.title || '（無標題）',
     url: a.url || '',
@@ -1076,14 +1076,22 @@ function openArticlesModal(title, note, articles){
     is_negative: !!a.is_negative,
     severity: a.severity || (a.is_negative ? 'yellow' : null),  // 沒 severity 的舊資料退回二級
   }));
+  // commentsList 為可選 — 燈號 panel 點擊時會帶（綜合燈號要顯示留言）
+  const comments = (commentsList || []).map(c => ({
+    author: c.author || c.username || '',
+    text: c.text || '',
+    time_text: c.time_text || c.time || '',
+    url: c.url || '',
+    signal: c.signal || 'green',
+    platform: c.platform || '',
+  }));
   openHotspotDetailModal({
-    // openHotspotDetailModal 會自動在標題後綴 (N 則)，所以這裡只傳乾淨的 title
     title: title,
     note: note,
     news_count: news.length,
-    comment_count: 0,
+    comment_count: comments.length,
     news_articles: news,
-    comments: [],
+    comments: comments,
   }, null);
 }
 
@@ -2533,18 +2541,34 @@ async function run(){
           ? severityLightWithReason(todayArts)
           : prevResult;
         const noteParts = [];
+        let commentsForModal = null;
         if (which === 'today') {
-          // 含新聞 + 留言原因
+          // 含新聞 + 留言原因 + 把紅/黃留言帶進 modal
           (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
           const cmt = commentLightWithReason(state.comments);
           (cmt.reasons || []).forEach(r => noteParts.push(`💬 ${r}`));
+          // 跨 3 平台彙總紅+黃留言（綠的不重要、不列）
+          commentsForModal = [];
+          for (const plat of ['facebook','instagram','threads']) {
+            for (const c of (state.comments[plat] || [])) {
+              if (c.signal === 'red' || c.signal === 'yellow') {
+                commentsForModal.push({...c, platform: plat});
+              }
+            }
+          }
+          // 紅優先、再時間倒序
+          commentsForModal.sort((a,b) => {
+            const ra = a.signal === 'red' ? 0 : 1;
+            const rb = b.signal === 'red' ? 0 : 1;
+            if (ra !== rb) return ra - rb;
+            return (b.time_text || '').localeCompare(a.time_text || '');
+          });
         } else {
           (result.reasons || []).forEach(r => noteParts.push(`📰 ${r}`));
         }
         const note = noteParts.length ? `觸發原因：${noteParts.join('；')}` : '無觸發原因（綠燈：無紅/黃新聞）';
         const title = `${which === 'today' ? todayLabel : prevLabel}：${result.level}`;
-        // arts 已含 severity 欄位、openArticlesModal 會自動標紅黃 badge
-        openArticlesModal(title, note, arts);
+        openArticlesModal(title, note, arts, commentsForModal);
       });
     });
   }
