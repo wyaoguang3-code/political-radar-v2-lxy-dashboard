@@ -2185,7 +2185,7 @@
     },
     {
       "date": "2026-05-09",
-      "snapshot_at": "2026-05-09T15:33:12.443583+00:00",
+      "snapshot_at": "2026-05-09T15:48:18.220414+00:00",
       "hotspots": [
         {
           "title": "基隆火災事件",
@@ -2344,6 +2344,20 @@
           ]
         },
         {
+          "title": "台中詐騙案",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "yellow",
+          "news_count": 1,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": false,
+          "urgency_score": 4,
+          "sample_titles": [
+            "白沙屯媽祖結緣品出現詐騙潮 台中已32人受害"
+          ]
+        },
+        {
           "title": "新北詐騙案",
           "city": "新北",
           "place": "新北市政府",
@@ -2373,18 +2387,19 @@
           ]
         },
         {
-          "title": "台中詐騙案",
-          "city": "台中",
-          "place": "台中市政府",
+          "title": "高雄鼠患事件",
+          "city": "高雄",
+          "place": "高雄市政府",
           "level": "yellow",
-          "news_count": 2,
+          "news_count": 4,
           "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
+          "negativity_pct": 25,
+          "is_urgent": false,
+          "urgency_score": 7,
           "sample_titles": [
-            "白沙屯媽祖結緣品出現詐騙潮 台中已32人受害",
-            "社群平台高薪職缺有鬼！ 台中女上工首日先收2000元 險淪詐騙車手"
+            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
+            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
+            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南"
           ]
         },
         {
@@ -2401,22 +2416,6 @@
             "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
             "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
             "赤崁樓驚見老鼠出沒！台南文化局急啟動全面清消、防鼠措施"
-          ]
-        },
-        {
-          "title": "高雄鼠患事件",
-          "city": "高雄",
-          "place": "高雄市政府",
-          "level": "yellow",
-          "news_count": 4,
-          "comment_count": 0,
-          "negativity_pct": 25,
-          "is_urgent": false,
-          "urgency_score": 7,
-          "sample_titles": [
-            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
-            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南",
-            "老鼠打完換淹水？民進黨批盧秀燕影片曝 網灌爆轟：怎不說高雄台南"
           ]
         },
         {
@@ -2452,12 +2451,14 @@
           "city": "台中",
           "place": "台中市政府",
           "level": "yellow",
-          "news_count": 0,
+          "news_count": 1,
           "comment_count": 6,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 6,
-          "sample_titles": []
+          "urgency_score": 7,
+          "sample_titles": [
+            "鄭麗文軍購拆彈與盧秀燕別苗頭？ 2028藍2女競合"
+          ]
         },
         {
           "title": "台中鼠患事件",
@@ -2508,9 +2509,9 @@
           ]
         },
         {
-          "title": "台北弊案爭議",
-          "city": "台北",
-          "place": "台北市政府",
+          "title": "屏東弊案爭議",
+          "city": "屏東",
+          "place": "屏東縣政府",
           "level": "red",
           "news_count": 1,
           "comment_count": 0,
@@ -2518,7 +2519,7 @@
           "is_urgent": false,
           "urgency_score": 4,
           "sample_titles": [
-            "北市議員陳怡君涉貪判刑 高院延境管、科控8月"
+            "屏東車手騙女子4835萬元 遭判刑6年半、全額賠償"
           ]
         },
         {
@@ -2536,9 +2537,9 @@
           ]
         },
         {
-          "title": "屏東弊案爭議",
-          "city": "屏東",
-          "place": "屏東縣政府",
+          "title": "台北弊案爭議",
+          "city": "台北",
+          "place": "台北市政府",
           "level": "red",
           "news_count": 1,
           "comment_count": 0,
@@ -2546,7 +2547,7 @@
           "is_urgent": false,
           "urgency_score": 4,
           "sample_titles": [
-            "屏東車手騙女子4835萬元 遭判刑6年半、全額賠償"
+            "北市議員陳怡君涉貪判刑 高院延境管、科控8月"
           ]
         },
         {
@@ -2656,31 +2657,15 @@
           "sample_titles": []
         },
         {
-          "title": "基隆地方動態",
-          "city": "基隆",
-          "place": "基隆市政府",
-          "level": "red",
-          "news_count": 24,
-          "comment_count": 0,
-          "negativity_pct": 4,
-          "is_urgent": false,
-          "urgency_score": 27,
-          "sample_titles": [
-            "基隆七堵媽聖誕 邱佩琳參拜",
-            "SBL總冠軍賽第4戰 凱撒基隆黑鳶險勝（3） (圖)",
-            "SBL總冠軍賽第4戰 凱撒基隆黑鳶險勝（2） (圖)"
-          ]
-        },
-        {
           "title": "新竹縣地方動態",
           "city": "新竹縣",
           "place": "新竹縣政府",
           "level": "red",
-          "news_count": 24,
+          "news_count": 21,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 24,
+          "urgency_score": 21,
           "sample_titles": [
             "親子捏陶x茶席體驗x奉茶感恩 新竹縣芎林鄉立幼兒園母親節「磚情傳愛」親子捏陶活動傳遞感恩及祝福",
             "竹北市長候選人「藍白合」 邱靖雅率先簽署參選切結書",
@@ -2701,6 +2686,22 @@
             "嘉義縣大林拒菸小勇士，守護媽咪大作戰",
             "嘉義縣衛生局辦理兒童事故傷害防制宣導教育訓練",
             "「阿里山林鐵音樂紀行」台北登場 嘉頌重奏團以音樂傳遞嘉義山城記憶"
+          ]
+        },
+        {
+          "title": "基隆地方動態",
+          "city": "基隆",
+          "place": "基隆市政府",
+          "level": "red",
+          "news_count": 24,
+          "comment_count": 0,
+          "negativity_pct": 4,
+          "is_urgent": false,
+          "urgency_score": 27,
+          "sample_titles": [
+            "基隆七堵媽聖誕 邱佩琳參拜",
+            "SBL總冠軍賽第4戰 凱撒基隆黑鳶險勝（3） (圖)",
+            "SBL總冠軍賽第4戰 凱撒基隆黑鳶險勝（2） (圖)"
           ]
         },
         {
@@ -2820,11 +2821,11 @@
           "city": "台中",
           "place": "台中市西屯區",
           "level": "red",
-          "news_count": 48,
+          "news_count": 50,
           "comment_count": 8,
           "negativity_pct": 0,
           "is_urgent": true,
-          "urgency_score": 66,
+          "urgency_score": 68,
           "sample_titles": [
             "早上宣布全市大清消 盧秀燕傍晚奔市場視察",
             "盧秀燕排第2！縣市長聲量排行出爐 「他」好評影響力奪冠",
@@ -2864,22 +2865,6 @@
           ]
         },
         {
-          "title": "新北地方動態",
-          "city": "新北",
-          "place": "新北市政府",
-          "level": "red",
-          "news_count": 71,
-          "comment_count": 0,
-          "negativity_pct": 6,
-          "is_urgent": false,
-          "urgency_score": 83,
-          "sample_titles": [
-            "世紀工程「淡江大橋」感恩‧美好之夜晚會登場 侯友宜：新北的地標台灣的國門",
-            "通勤4小時變「公司寄生蟲」！新北女跨區南港累翻 網驚：拿命換錢",
-            "新北大漢橋下籃球場男子無故亮刀 警到場逮人送辦"
-          ]
-        },
-        {
           "title": "澎湖地方動態",
           "city": "澎湖",
           "place": "澎湖縣政府",
@@ -2896,15 +2881,31 @@
           ]
         },
         {
+          "title": "新北地方動態",
+          "city": "新北",
+          "place": "新北市政府",
+          "level": "red",
+          "news_count": 71,
+          "comment_count": 0,
+          "negativity_pct": 6,
+          "is_urgent": false,
+          "urgency_score": 83,
+          "sample_titles": [
+            "世紀工程「淡江大橋」感恩‧美好之夜晚會登場 侯友宜：新北的地標台灣的國門",
+            "通勤4小時變「公司寄生蟲」！新北女跨區南港累翻 網驚：拿命換錢",
+            "新北大漢橋下籃球場男子無故亮刀 警到場逮人送辦"
+          ]
+        },
+        {
           "title": "台中地方動態",
           "city": "台中",
           "place": "台中市大里區",
           "level": "red",
           "news_count": 98,
           "comment_count": 0,
-          "negativity_pct": 7,
+          "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 119,
+          "urgency_score": 116,
           "sample_titles": [
             "中市環保局加強清疏整頓環境衛生 盧秀燕親赴視察及慰勞第一線同仁",
             "台中河南路四段拓寬引進民間資源 市府省下8600萬",
@@ -2948,11 +2949,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 106,
+          "news_count": 105,
           "comment_count": 0,
           "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 121,
+          "urgency_score": 120,
           "sample_titles": [
             "立法院長韓國瑜今（9）日起率跨黨派立委訪團前往法國、英國，展開為期9天的國會外交行程，預計出席「歐洲台灣商會聯合總會」第",
             "藤球交流推廣賽桃園登場 期待從地方推向全臺灣",
