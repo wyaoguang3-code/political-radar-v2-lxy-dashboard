@@ -338,8 +338,12 @@ function renderSelfFavorability(history){
         if (!h) return;
         const c = h.comments || {red:0, yellow:0, green:0, total:0};
         const samples = h.comment_samples || [];  // 已按發布日期 group
-        const stagnantNote = c.stagnant ? ' 🟫 留言量低、信號降權' : '';
-        const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 留言 紅${c.red} 黃${c.yellow} 綠${c.green}（共${c.total}）${stagnantNote}`
+        // 顯示「當日真實抓到的 raw 留言數」(不是累計 state)
+        const cR = samples.filter(s => s.signal === 'red').length;
+        const cY = samples.filter(s => s.signal === 'yellow').length;
+        const cG = samples.filter(s => s.signal === 'green').length;
+        const stagnantNote = c.stagnant ? ' 🟫 信號降權' : '';
+        const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 當日留言 ${samples.length} 則（紅${cR} 黃${cY} 綠${cG}）${stagnantNote}`
           + (h.samples_low ? ' ⚠️ 樣本不足' : '');
         openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], samples);
       },
