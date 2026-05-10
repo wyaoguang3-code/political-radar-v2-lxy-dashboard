@@ -79,8 +79,9 @@
   <section class="panel" id="selfFavorabilityPanel">
     <h2>📈 盧秀燕好感度趨勢（過去 7 天）</h2>
     <p class="hint">
-      <strong>公式</strong>：50 + 50×(綠-紅)/總 - 15×黃比 - 20×危機議題比。<strong>0-100、越高越佳</strong>。
-      以「同源比較」為前提（自己跟自己比），避免跨人 sampling bias。樣本 < 10 標 ⚠️。
+      <strong>公式</strong>：50 + 35×新聞情緒淨值 - 10×黃比 - 15×危機議題比 + 20×留言情緒淨值 - 10×留言紅比。
+      <strong>0-100、越高越佳</strong>。以「同源比較」為前提（自己跟自己比），避免跨人 sampling bias。
+      留言信號（FB+IG+Threads）能反映民眾真實 reaction。點圖任一資料點看當日新聞 + 留言摘要。
     </p>
     <canvas id="selfFavorabilityChart" height="100"></canvas>
     <div id="selfFavorabilityMeta" class="hint" style="margin-top:8px"></div>

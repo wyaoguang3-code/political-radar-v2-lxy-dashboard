@@ -328,9 +328,10 @@ function renderSelfFavorability(history){
         const idx = elements[0].index;
         const h = history[idx];
         if (!h) return;
-        const note = `${h.date} ｜ 分數 ${h.score} ｜ 紅 ${h.red} 黃 ${h.yellow} 綠 ${h.green} ｜ 危機議題 ${h.crisis} 條`
+        const c = h.comments || {red:0, yellow:0, green:0, total:0};
+        const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 留言 紅${c.red} 黃${c.yellow} 綠${c.green}（共${c.total}）`
           + (h.samples_low ? ' ⚠️ 樣本不足' : '');
-        openArticlesModal(`📰 ${h.date} 盧秀燕新聞`, note, h.articles || [], []);
+        openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], []);
       },
       onHover: (evt, elements) => {
         evt.native.target.style.cursor = elements && elements.length ? 'pointer' : 'default';
@@ -342,12 +343,13 @@ function renderSelfFavorability(history){
           callbacks: {
             label: (ctx) => {
               const h = history[ctx.dataIndex];
+              const c = h.comments || {red:0, yellow:0, green:0, total:0};
               const flag = h.samples_low ? ' ⚠️ 樣本不足' : '';
               return [
                 `分數: ${h.score}${flag}`,
-                `紅${h.red} 黃${h.yellow} 綠${h.green} (總${h.total})`,
-                `危機議題: ${h.crisis} 條`,
-                `👆 點此查看當日 ${(h.articles || []).length} 則新聞`,
+                `📰 新聞 紅${h.red} 黃${h.yellow} 綠${h.green} (總${h.total}, 危機${h.crisis})`,
+                `💬 留言 紅${c.red} 黃${c.yellow} 綠${c.green} (總${c.total})`,
+                `👆 點此查看當日新聞 ${(h.articles || []).length} 則`,
               ];
             },
           },
