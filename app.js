@@ -329,9 +329,15 @@ function renderSelfFavorability(history){
         const h = history[idx];
         if (!h) return;
         const c = h.comments || {red:0, yellow:0, green:0, total:0};
-        const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 留言 紅${c.red} 黃${c.yellow} 綠${c.green}（共${c.total}）`
-          + (h.samples_low ? ' ⚠️ 樣本不足' : '');
-        openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], []);
+        const samples = h.comment_samples || [];
+        const stagnantNote = c.stagnant ? ' 🟫 留言量低、信號降權' : '';
+        const sampleNote = samples.length === 0 && idx < history.length - 1
+          ? '（往日的留言原文沒有保留、只有計數；點今日才有留言原文）'
+          : '';
+        const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 留言 紅${c.red} 黃${c.yellow} 綠${c.green}（共${c.total}）${stagnantNote}`
+          + (h.samples_low ? ' ⚠️ 樣本不足' : '')
+          + (sampleNote ? '\n' + sampleNote : '');
+        openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], samples);
       },
       onHover: (evt, elements) => {
         evt.native.target.style.cursor = elements && elements.length ? 'pointer' : 'default';
@@ -345,11 +351,12 @@ function renderSelfFavorability(history){
               const h = history[ctx.dataIndex];
               const c = h.comments || {red:0, yellow:0, green:0, total:0};
               const flag = h.samples_low ? ' ⚠️ 樣本不足' : '';
+              const stale = c.stagnant ? '（🟫 留言低、信號降權）' : '';
               return [
                 `分數: ${h.score}${flag}`,
                 `📰 新聞 紅${h.red} 黃${h.yellow} 綠${h.green} (總${h.total}, 危機${h.crisis})`,
-                `💬 留言 紅${c.red} 黃${c.yellow} 綠${c.green} (總${c.total})`,
-                `👆 點此查看當日新聞 ${(h.articles || []).length} 則`,
+                `💬 留言 紅${c.red} 黃${c.yellow} 綠${c.green} (總${c.total})${stale}`,
+                `👆 點此查看新聞 ${(h.articles || []).length} 則 + 留言`,
               ];
             },
           },
