@@ -2964,7 +2964,7 @@
     },
     {
       "date": "2026-05-10",
-      "snapshot_at": "2026-05-10T02:22:29.520804+00:00",
+      "snapshot_at": "2026-05-10T02:37:36.514744+00:00",
       "hotspots": [
         {
           "title": "花蓮車禍事件",
@@ -3037,6 +3037,20 @@
           ]
         },
         {
+          "title": "台中詐騙案",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "yellow",
+          "news_count": 1,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": false,
+          "urgency_score": 4,
+          "sample_titles": [
+            "白沙屯媽祖結緣品出現詐騙潮 台中已32人受害"
+          ]
+        },
+        {
           "title": "彰化詐騙案",
           "city": "彰化",
           "place": "彰化縣政府",
@@ -3051,17 +3065,18 @@
           ]
         },
         {
-          "title": "台中詐騙案",
-          "city": "台中",
-          "place": "台中市政府",
+          "title": "台北漢他病毒",
+          "city": "台北",
+          "place": "台北市政府",
           "level": "yellow",
-          "news_count": 1,
+          "news_count": 2,
           "comment_count": 0,
           "negativity_pct": 100,
-          "is_urgent": false,
-          "urgency_score": 4,
+          "is_urgent": true,
+          "urgency_score": 8,
           "sample_titles": [
-            "白沙屯媽祖結緣品出現詐騙潮 台中已32人受害"
+            "漢他死亡病例拖數月 詹凌瑀批蔣萬安大直典華老鼠亂入才動員",
+            "漢他死亡病例拖數月 詹凌瑀批蔣萬安大直典華老鼠亂入才動員"
           ]
         },
         {
@@ -3214,21 +3229,6 @@
           ]
         },
         {
-          "title": "台北漢他病毒",
-          "city": "台北",
-          "place": "台北市政府",
-          "level": "red",
-          "news_count": 2,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
-          "sample_titles": [
-            "漢他死亡病例拖數月 詹凌瑀批蔣萬安大直典華老鼠亂入才動員",
-            "漢他死亡病例拖數月 詹凌瑀批蔣萬安大直典華老鼠亂入才動員"
-          ]
-        },
-        {
           "title": "彰化狼師事件",
           "city": "彰化",
           "place": "彰化縣政府",
@@ -3327,11 +3327,11 @@
           "city": "台北",
           "place": "台北市政府",
           "level": "red",
-          "news_count": 10,
+          "news_count": 11,
           "comment_count": 3,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 15,
+          "urgency_score": 16,
           "sample_titles": [
             "立院三讀通過7800億軍購條例 蔣萬安：支持必要且合理採購",
             "綠轟打折軍購曝國防缺口 蔣萬安：支持合理及必要採購",
@@ -3387,11 +3387,11 @@
           "city": "台北",
           "place": "台北市中山區",
           "level": "red",
-          "news_count": 21,
+          "news_count": 20,
           "comment_count": 0,
-          "negativity_pct": 52,
+          "negativity_pct": 50,
           "is_urgent": true,
-          "urgency_score": 54,
+          "urgency_score": 50,
           "sample_titles": [
             "民進黨傳將派立委沈伯洋選北市長，對於北市爆發「老鼠之亂」，同黨立委莊瑞雄說，找沈伯洋來當市長，鼠患兩天就解決掉。國民黨北",
             "揪心！北市中山區麻雀啄食老鼠藥還餵雛鳥 醫嘆：生態浩劫揭幕",
@@ -3483,31 +3483,15 @@
           "city": "金門",
           "place": "金門縣政府",
           "level": "red",
-          "news_count": 40,
+          "news_count": 39,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 40,
+          "urgency_score": 39,
           "sample_titles": [
             "金門 台電睦鄰減碳 邀800鄉親騎鐵馬",
             "2026金門迎城隍-資源回收兌換登場",
             "扎根零歲教育 金門衛生局推幼兒專責醫師 舉辦扎根零歲寶寶趣味競賽"
-          ]
-        },
-        {
-          "title": "苗栗地方動態",
-          "city": "苗栗",
-          "place": "苗栗縣政府",
-          "level": "red",
-          "news_count": 43,
-          "comment_count": 0,
-          "negativity_pct": 2,
-          "is_urgent": false,
-          "urgency_score": 46,
-          "sample_titles": [
-            "高鐵苗栗站運量只會多不會少 陳超明爭取離峰2小時3班次",
-            "苗栗市表揚35位模範母親暨34組慈孝家庭 弘揚慈孝美德迎母親節",
-            "苗栗公館老字號烘焙店將新意注入傳統 伴手禮、台式麵包都吸睛"
           ]
         },
         {
@@ -3527,15 +3511,31 @@
           ]
         },
         {
+          "title": "苗栗地方動態",
+          "city": "苗栗",
+          "place": "苗栗縣政府",
+          "level": "red",
+          "news_count": 43,
+          "comment_count": 0,
+          "negativity_pct": 2,
+          "is_urgent": false,
+          "urgency_score": 46,
+          "sample_titles": [
+            "高鐵苗栗站運量只會多不會少 陳超明爭取離峰2小時3班次",
+            "苗栗市表揚35位模範母親暨34組慈孝家庭 弘揚慈孝美德迎母親節",
+            "苗栗公館老字號烘焙店將新意注入傳統 伴手禮、台式麵包都吸睛"
+          ]
+        },
+        {
           "title": "宜蘭地方動態",
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "red",
-          "news_count": 50,
+          "news_count": 47,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 50,
+          "urgency_score": 47,
           "sample_titles": [
             "關心原鄉部落，宜蘭縣長參選人吳宗憲前往大同鄉，與縣議員沈志弘走訪寒溪、崙埤、南山及四季村，參與村校聯合運動會，並與代表、",
             "吳宗憲走訪宜蘭原鄉獲耆老賜名「鐵木」 寓意驍勇善戰的勇士 | 自由電子報",
@@ -3559,6 +3559,22 @@
           ]
         },
         {
+          "title": "澎湖地方動態",
+          "city": "澎湖",
+          "place": "澎湖縣政府",
+          "level": "red",
+          "news_count": 55,
+          "comment_count": 0,
+          "negativity_pct": 4,
+          "is_urgent": false,
+          "urgency_score": 61,
+          "sample_titles": [
+            "澎湖縣表揚20位模範母親 感謝無私奉獻",
+            "老屋蔓延1》澎湖望安平均屋齡近74年 全國最老行政區",
+            "澎湖海上花火施放 無人機受訊號干擾展演失常"
+          ]
+        },
+        {
           "title": "台中市政動態",
           "city": "台中",
           "place": "台中市西屯區",
@@ -3575,19 +3591,19 @@
           ]
         },
         {
-          "title": "澎湖地方動態",
-          "city": "澎湖",
-          "place": "澎湖縣政府",
+          "title": "屏東地方動態",
+          "city": "屏東",
+          "place": "屏東縣政府",
           "level": "red",
-          "news_count": 60,
+          "news_count": 67,
           "comment_count": 0,
           "negativity_pct": 3,
           "is_urgent": false,
-          "urgency_score": 66,
+          "urgency_score": 73,
           "sample_titles": [
-            "澎湖縣表揚20位模範母親 感謝無私奉獻",
-            "老屋蔓延1》澎湖望安平均屋齡近74年 全國最老行政區",
-            "澎湖海上花火施放 無人機受訊號干擾展演失常"
+            "沒看診竟開藥！屏東醫擁7保單「拒繳200萬罰款」 房遭查封家人秒付清",
+            "屏東東南亞餐廳 河粉、米線到春捲 層次豐富輕盈不負擔",
+            "屏東YouBike導入iPASS Money 手機掃碼租車更便利"
           ]
         },
         {
@@ -3595,31 +3611,15 @@
           "city": "新北",
           "place": "新北市政府",
           "level": "red",
-          "news_count": 70,
+          "news_count": 67,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 82,
+          "urgency_score": 79,
           "sample_titles": [
             "母親節前夕 新北市記協、大中華記協至板橋榮家送暖",
             "布丁狗現身板橋 2026新北河濱蝶戀季盛大開幕",
             "今天是母親節，民進黨新北市長參選人蘇巧慧馬不停蹄跑行程，她透露，昨晚我有抽空回娘家一趟，陪媽媽看10分鐘的唱歌節目，珍惜"
-          ]
-        },
-        {
-          "title": "屏東地方動態",
-          "city": "屏東",
-          "place": "屏東縣政府",
-          "level": "red",
-          "news_count": 71,
-          "comment_count": 0,
-          "negativity_pct": 3,
-          "is_urgent": false,
-          "urgency_score": 77,
-          "sample_titles": [
-            "沒看診竟開藥！屏東醫擁7保單「拒繳200萬罰款」 房遭查封家人秒付清",
-            "屏東東南亞餐廳 河粉、米線到春捲 層次豐富輕盈不負擔",
-            "屏東YouBike導入iPASS Money 手機掃碼租車更便利"
           ]
         },
         {
@@ -3643,11 +3643,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 115,
+          "news_count": 113,
           "comment_count": 0,
-          "negativity_pct": 3,
+          "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 127,
+          "urgency_score": 125,
           "sample_titles": [
             "2026神戶馬拉松開放報名 桃園市民參賽限量送「舒華樂桃桃」行李箱",
             "資產變棄嬰2-1》桃園市勞工育樂中心ROT 連市府都不捧場",
@@ -3659,11 +3659,11 @@
           "city": "台北",
           "place": "台北市信義區",
           "level": "red",
-          "news_count": 124,
+          "news_count": 122,
           "comment_count": 0,
-          "negativity_pct": 10,
+          "negativity_pct": 9,
           "is_urgent": false,
-          "urgency_score": 163,
+          "urgency_score": 155,
           "sample_titles": [
             "母親節前夕 新北市記協、大中華記協至板橋榮家送暖",
             "引新聞 剛剛 55歲婦罹子宮內膜癌 台北慈濟籲停經後出血快檢查",
@@ -3675,11 +3675,11 @@
           "city": "高雄",
           "place": "高雄市三民區",
           "level": "red",
-          "news_count": 146,
+          "news_count": 147,
           "comment_count": 0,
           "negativity_pct": 8,
           "is_urgent": false,
-          "urgency_score": 182,
+          "urgency_score": 183,
           "sample_titles": [
             "高雄刑大3警奪全國模範警察殊榮",
             "高雄長庚響應世界手部衛生日 攜手中央打造防疫防線",
