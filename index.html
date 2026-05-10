@@ -75,11 +75,31 @@
     </div>
   </section>
 
+  <!-- 戰情概覽：3 個視角組合 — 同人縱向追蹤、議題敘事、媒體曝光 -->
+  <section class="panel" id="selfFavorabilityPanel">
+    <h2>📈 盧秀燕好感度趨勢（過去 7 天）</h2>
+    <p class="hint">
+      <strong>公式</strong>：50 + 50×(綠-紅)/總 - 15×黃比 - 20×危機議題比。<strong>0-100、越高越佳</strong>。
+      以「同源比較」為前提（自己跟自己比），避免跨人 sampling bias。樣本 < 10 標 ⚠️。
+    </p>
+    <canvas id="selfFavorabilityChart" height="100"></canvas>
+    <div id="selfFavorabilityMeta" class="hint" style="margin-top:8px"></div>
+  </section>
+
+  <section class="panel" id="topicNarrativePanel">
+    <h2>🔥 議題敘事追蹤（過去 7 天）</h2>
+    <p class="hint">
+      看哪些議題在「<strong>發燒</strong>」或「<strong>消退</strong>」。每行紅／黃／綠燈日數，紅色 spike 集中代表該議題正熱燒。
+    </p>
+    <div id="topicNarrativeBoard"></div>
+  </section>
+
   <section class="panel" id="warRoomRankPanel">
-    <h2>🏆 戰情排名（24h，4 人對比）</h2>
+    <h2>📊 媒體曝光熱度（24h，4 人對比）</h2>
     <p class="hint" id="warRoomRule">
-      <strong>排名規則</strong>：把每位的「🔴 紅燈」+「🟡 黃燈」新聞數加總當<strong>戰情分數</strong>（負面 + 爭議）。
-      <strong>分數越低 → 戰情越佳</strong>。第 1 名 = 最有利 🏆，最後一名 = 最不利 🚨。
+      4 人 24h 內<strong>媒體曝光量 + 紅黃綠分布</strong>。
+      ⚠️ <strong>不算分、不排好感度</strong> — 4 人媒體曝光不對等（首都市長 vs 立委），跨人比有 sampling bias。
+      看自己縱向趨勢請看上面兩塊。
     </p>
     <div id="warRoomRankBoard" class="rank-board"></div>
     <p class="hint" id="warRoomVerdict" style="margin-top:10px;font-weight:bold"></p>

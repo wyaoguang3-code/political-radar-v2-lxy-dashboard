@@ -232,13 +232,11 @@ function renderWarRoomRanking(voiceBreakdown, mentionArticles){
       });
     }
 
-    // 排名欄
+    // 不再標「最佳 🏆 / 最劣 🚨」— 跟「不評好感度」原則衝突
+    // 改顯示純粹的順序編號 + 紅黃比例（讓使用者自己判讀，不暗示誰戰情好）
     const rankCol = document.createElement('div');
     rankCol.className = 'rank-num';
-    let label = '';
-    if (isBest) label = '<span class="label">最佳 🏆</span>';
-    else if (isWorst) label = '<span class="label">最劣 🚨</span>';
-    rankCol.innerHTML = `第 ${rank} 名${label}`;
+    rankCol.innerHTML = `${rank}.`;
 
     // 名字 + breakdown
     const nameCol = document.createElement('div');
@@ -264,35 +262,158 @@ function renderWarRoomRanking(voiceBreakdown, mentionArticles){
       }
     });
 
-    // 戰情分數
-    const score = document.createElement('div');
-    score.className = 'rank-score';
-    score.innerHTML = `${e.score}<span class="score-label">分數</span>`;
+    // 改：不再顯示「戰情分數」— 改顯示總曝光量
+    // 原本 (red+yellow) 越低越好的 framing 有 sampling bias 問題（4 人媒體曝光不對等）
+    const total = document.createElement('div');
+    total.className = 'rank-score';
+    total.innerHTML = `${e.total}<span class="score-label">則</span>`;
 
-    row.append(rankCol, nameCol, bar, score);
+    row.append(rankCol, nameCol, bar, total);
     board.appendChild(row);
   });
 
-  // 戰情判讀（針對我方位置）
+  // 改：不再說「排第幾名」(避免暗示 cross-person 排名是好感度比較)
   if (verdict) {
-    const selfIdx = entries.findIndex(e => e.isSelf);
-    if (selfIdx >= 0) {
-      const selfRank = selfIdx + 1;
-      const worseCount = n - selfRank;
-      let msg;
-      if (selfRank === 1) {
-        msg = `📊 戰情判讀：我方排第 1/${n}（最佳）→ 戰情最有利，所有對手都比我方慘`;
-      } else if (selfRank === n) {
-        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n}（最劣）→ 戰情最不利，需主動回應、止血為先`;
-      } else if (selfRank <= n / 2) {
-        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n} → 有 ${worseCount} 位對手戰情比我方更劣，戰情中段偏佳`;
-      } else {
-        msg = `📊 戰情判讀：我方排第 ${selfRank}/${n} → 僅 ${worseCount} 位對手戰情比我方更劣，戰情中段偏劣`;
-      }
-      verdict.textContent = msg;
-    }
+    const totalAll = entries.reduce((s, e) => s + e.total, 0);
+    const selfEntry = entries.find(e => e.isSelf);
+    const selfShare = selfEntry && totalAll ? (selfEntry.total / totalAll * 100).toFixed(0) : '0';
+    verdict.textContent = `📊 24h 曝光分布：盧秀燕 ${selfShare}%（${selfEntry?.total || 0}/${totalAll} 條）｜「曝光量本身不代表好感度，請以上方 7 天好感度趨勢為準」`;
   }
 }
+
+// --------- Self favorability 7-day trend chart ---------
+let selfFavorabilityChart = null;
+function renderSelfFavorability(history){
+  const canvas = document.getElementById('selfFavorabilityChart');
+  if (!canvas) return;
+  if (!history || !history.length) {
+    canvas.style.display = 'none';
+    const meta = document.getElementById('selfFavorabilityMeta');
+    if (meta) meta.textContent = '資料準備中…';
+    return;
+  }
+  canvas.style.display = '';
+  const labels = history.map(h => h.date.slice(5));  // MM-DD
+  const scores = history.map(h => h.score);
+  // 點顏色：< 50 紅 / 50-70 黃 / 70+ 綠；樣本不足空心
+  const pointBg = history.map(h => {
+    if (h.samples_low) return 'rgba(255,255,255,0.3)';
+    if (h.score < 50) return '#ff5757';
+    if (h.score < 70) return '#ffc107';
+    return '#20c997';
+  });
+  selfFavorabilityChart = upsertChart(selfFavorabilityChart, canvas, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: '好感度分數',
+        data: scores,
+        borderColor: '#79a4ff',
+        backgroundColor: 'rgba(121,164,255,0.1)',
+        fill: true,
+        tension: 0.3,
+        pointBackgroundColor: pointBg,
+        pointBorderColor: '#fff',
+        pointRadius: 6,
+        pointHoverRadius: 8,
+      }],
+    },
+    options: {
+      interaction: INDEX_HOVER,
+      hover: INDEX_HOVER,
+      plugins: {
+        legend: { display: false },
+        tooltip: darkTooltip({
+          mode: 'index',
+          callbacks: {
+            label: (ctx) => {
+              const h = history[ctx.dataIndex];
+              const flag = h.samples_low ? ' ⚠️ 樣本不足' : '';
+              return [
+                `分數: ${h.score}${flag}`,
+                `紅${h.red} 黃${h.yellow} 綠${h.green} (總${h.total})`,
+                `危機議題: ${h.crisis} 條`,
+              ];
+            },
+          },
+        }),
+      },
+      scales: {
+        y: { min: 0, max: 100, ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
+        x: { ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
+      },
+    },
+  });
+  // 摘要文字
+  const meta = document.getElementById('selfFavorabilityMeta');
+  if (meta) {
+    const today = history[history.length - 1];
+    const yesterday = history[history.length - 2];
+    let trendIcon = '➡️';
+    let trendText = '持平';
+    if (today && yesterday) {
+      const delta = today.score - yesterday.score;
+      if (delta > 5) { trendIcon = '⬆️'; trendText = `較昨日 +${delta.toFixed(1)}`; }
+      else if (delta < -5) { trendIcon = '⬇️'; trendText = `較昨日 ${delta.toFixed(1)}`; }
+      else trendText = `較昨日 ${delta >= 0 ? '+' : ''}${delta.toFixed(1)}`;
+    }
+    const sevenDayMin = Math.min(...history.map(h => h.score));
+    const sevenDayMax = Math.max(...history.map(h => h.score));
+    meta.innerHTML = `今日 <b>${today.score}</b> ${trendIcon} ${trendText} ｜ 7 天區間 ${sevenDayMin.toFixed(1)} - ${sevenDayMax.toFixed(1)}` +
+      (today.samples_low ? ' ｜ ⚠️ 今日樣本不足、信賴度低' : '');
+  }
+}
+
+
+// --------- Topic narrative 7-day arc rendering ---------
+function renderTopicNarrative(arcs){
+  const wrap = document.getElementById('topicNarrativeBoard');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+  const topics = Object.entries(arcs || {});
+  if (!topics.length) {
+    wrap.innerHTML = '<p class="hint">過去 7 天無重點議題敘事資料</p>';
+    return;
+  }
+  // 按 7 天 total 紅燈比例排序、最先顯示「最危險」議題
+  topics.sort(([, a], [, b]) => {
+    const aRed = a.reduce((s, x) => s + x.red, 0);
+    const bRed = b.reduce((s, x) => s + x.red, 0);
+    if (aRed !== bRed) return bRed - aRed;
+    return b.reduce((s, x) => s + x.total, 0) - a.reduce((s, x) => s + x.total, 0);
+  });
+  for (const [topic, arc] of topics) {
+    const totalRed = arc.reduce((s, x) => s + x.red, 0);
+    const totalYellow = arc.reduce((s, x) => s + x.yellow, 0);
+    const totalGreen = arc.reduce((s, x) => s + x.green, 0);
+    const total = totalRed + totalYellow + totalGreen;
+
+    const row = document.createElement('div');
+    row.className = 'topic-arc-row';
+    // 標題列
+    const headerHtml = `<div class="topic-arc-header">
+      <span class="topic-arc-name">${topic}</span>
+      <span class="topic-arc-summary">7 天 ${total} 條 ｜ 🔴 ${totalRed} ／ 🟡 ${totalYellow} ／ 🟢 ${totalGreen}</span>
+    </div>`;
+    // 7 天 stacked bar
+    const maxDay = Math.max(...arc.map(x => x.total), 1);
+    const cellsHtml = arc.map(x => {
+      const heightPct = (x.total / maxDay) * 100;
+      const segs = [];
+      if (x.red > 0) segs.push(`<span class="seg-red" style="flex:${x.red}" title="紅 ${x.red}"></span>`);
+      if (x.yellow > 0) segs.push(`<span class="seg-yellow" style="flex:${x.yellow}" title="黃 ${x.yellow}"></span>`);
+      if (x.green > 0) segs.push(`<span class="seg-green" style="flex:${x.green}" title="綠 ${x.green}"></span>`);
+      return `<div class="topic-arc-cell" title="${x.date}: 紅${x.red}/黃${x.yellow}/綠${x.green}">
+        <div class="topic-arc-bar" style="height:${heightPct}%">${segs.join('')}</div>
+        <div class="topic-arc-date">${x.date.slice(5)}</div>
+      </div>`;
+    }).join('');
+    row.innerHTML = headerHtml + `<div class="topic-arc-cells">${cellsHtml}</div>`;
+    wrap.appendChild(row);
+  }
+}
+
 
 // --------- Social signal cards (clickable) ---------
 function renderSocialCards(){
@@ -2716,6 +2837,10 @@ async function run(){
   // 戰情排名（24h）：用 voice_breakdown_24h 渲染 leaderboard，
   // 並把 mention_articles_24h 一起傳進去做「排名 row 可點擊看新聞」
   renderWarRoomRanking(d.voice_breakdown_24h || {}, d.mention_articles_24h || {});
+
+  // 同人縱向追蹤 — 比跨人比較務實
+  renderSelfFavorability(d.self_favorability_history_7d || []);
+  renderTopicNarrative(d.topic_narrative_arc_7d || {});
 
   const byPlatform = pick(d, 'by_platform', 'by_platform_7d') || [];
   const ul = document.getElementById('platforms'); ul.innerHTML='';
