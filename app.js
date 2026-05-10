@@ -337,14 +337,20 @@ function renderSelfFavorability(history){
         const h = history[idx];
         if (!h) return;
         const c = h.comments || {red:0, yellow:0, green:0, total:0};
-        const samples = h.comment_samples || [];
+        // 點過去日期：留言 raw text 沒 archive、用今日 snapshot 給使用者 context
+        const isToday = idx === history.length - 1;
+        const samples = isToday
+          ? (h.comment_samples || [])
+          : [
+              ...(state.comments.facebook || []).map(c => ({...c, platform: 'facebook'})),
+              ...(state.comments.instagram || []).map(c => ({...c, platform: 'instagram'})),
+              ...(state.comments.threads || []).map(c => ({...c, platform: 'threads'})),
+            ];
         const stagnantNote = c.stagnant ? ' 🟫 留言量低、信號降權' : '';
-        const sampleNote = samples.length === 0 && idx < history.length - 1
-          ? '（往日的留言原文沒有保留、只有計數；點今日才有留言原文）'
-          : '';
+        const sampleNote = isToday ? '' : `（留言為「今日 snapshot」、非 ${h.date} 當日 raw — 留言原文未按日 archive）`;
         const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 留言 紅${c.red} 黃${c.yellow} 綠${c.green}（共${c.total}）${stagnantNote}`
           + (h.samples_low ? ' ⚠️ 樣本不足' : '')
-          + (sampleNote ? '\n' + sampleNote : '');
+          + (sampleNote ? ' ' + sampleNote : '');
         openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], samples);
       },
       onHover: (evt, elements) => {
@@ -442,27 +448,25 @@ function renderTopicNarrative(arcs){
       </div>`;
     }).join('');
     row.innerHTML = headerHtml + `<div class="topic-arc-cells">${cellsHtml}</div>`;
-    // 綁 cell click → 開 modal 顯示當日該議題新聞 + 留言（今日的）
+    // 綁 cell click → 開 modal 顯示當日該議題新聞 + 今日留言 sample（按 topic filter）
     row.querySelectorAll('.topic-arc-cell-clickable').forEach((cell) => {
       cell.addEventListener('click', () => {
         const t = decodeURIComponent(cell.dataset.topic);
         const dayIdx = parseInt(cell.dataset.day, 10);
         const dayData = arc[dayIdx];
         if (!dayData) return;
-        // 今日點 → 過濾出含該 topic keyword 的留言；其他天無 raw text
+        // 留言 raw text 沒按日 archive、所以無論點哪天、都帶「今日 snapshot」過濾出含該 topic 的
+        // 給使用者 immediate context、但要清楚標出是 today's snapshot 不是 historical
+        const allTodayComments = [
+          ...(state.comments.facebook || []).map(c => ({...c, platform: 'facebook'})),
+          ...(state.comments.instagram || []).map(c => ({...c, platform: 'instagram'})),
+          ...(state.comments.threads || []).map(c => ({...c, platform: 'threads'})),
+        ];
+        const topicComments = allTodayComments.filter(c => (c.text || '').includes(t));
         const todayStr = arc[arc.length - 1].date;
-        let topicComments = [];
-        if (dayData.date === todayStr) {
-          const allTodayComments = [
-            ...(state.comments.facebook || []).map(c => ({...c, platform: 'facebook'})),
-            ...(state.comments.instagram || []).map(c => ({...c, platform: 'instagram'})),
-            ...(state.comments.threads || []).map(c => ({...c, platform: 'threads'})),
-          ];
-          topicComments = allTodayComments.filter(c => (c.text || '').includes(t));
-        }
         const cmtNote = dayData.date === todayStr
           ? (topicComments.length === 0 ? '（今日留言中無命中此議題）' : '')
-          : '（往日的留言原文沒有保留、僅有計數）';
+          : `（留言為「今日 snapshot」按議題 filter、非當日 raw — ${dayData.date} 的留言原文未保留）`;
         const note = `${dayData.date} ｜ 議題「${t}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條 ${cmtNote}`;
         openArticlesModal(`🔥 ${t} — ${dayData.date} 新聞 + 留言`, note, dayData.articles || [], topicComments);
       });
