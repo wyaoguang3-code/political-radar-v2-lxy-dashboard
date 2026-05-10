@@ -2790,6 +2790,8 @@ async function run(){
   state.comments.facebook = await fetchJSON('./comments_facebook.json') || [];
   state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
   state.comments.threads = await fetchJSON('./comments_threads.json') || [];
+  // 留言按發布日期 group（給 topic arc click 用）— backend 已 parse 好
+  state.commentsByDate = d.comments_by_date_7d || {};
   state.topicHeat = await fetchJSON('./topic_heat.json') || null;
 
   const m = pick(d, 'metrics', 'metrics_7d') || {};
