@@ -222,13 +222,21 @@ function renderWarRoomRanking(voiceBreakdown, mentionArticles){
     const row = document.createElement('div');
     // 移除 rank-best / rank-worst class — 跟「不算分」原則衝突
     row.className = 'rank-row' + (e.isSelf ? ' is-self' : '');
-    // 點 row → 打開該人物 24h 新聞 modal
+    // 點 row → 打開該人物 24h 新聞 modal（盧秀燕 row 也帶今日留言）
     if (e.articles && e.articles.length > 0) {
       row.classList.add('rank-clickable');
       row.title = `點擊查看 ${e.name} 24h 內 ${e.articles.length} 則新聞`;
       row.addEventListener('click', () => {
-        const note = `共 ${e.total} 則 ｜ 🔴 紅 ${e.red} ／ 🟡 黃 ${e.yellow} ／ 🟢 綠 ${e.green} ｜ 戰情分數 ${e.score}（紅+黃）`;
-        openArticlesModal(`${e.name}（第 ${rank} 名）24h 新聞`, note, e.articles, []);
+        // 我方（盧秀燕）才有留言可看；對手沒爬留言、留 empty
+        const todayComments = e.isSelf ? [
+          ...(state.comments.facebook || []).map(c => ({...c, platform: 'facebook'})),
+          ...(state.comments.instagram || []).map(c => ({...c, platform: 'instagram'})),
+          ...(state.comments.threads || []).map(c => ({...c, platform: 'threads'})),
+        ] : [];
+        const cmtNote = e.isSelf ? '' : '（對手無爬留言、僅有新聞）';
+        const note = `共 ${e.total} 則新聞 ｜ 🔴 ${e.red} ／ 🟡 ${e.yellow} ／ 🟢 ${e.green} ${cmtNote}`;
+        const titlePrefix = e.isSelf ? '盧秀燕（我方） 24h 新聞 + 留言' : `${e.name} 24h 新聞`;
+        openArticlesModal(titlePrefix, note, e.articles, todayComments);
       });
     }
 
@@ -434,15 +442,29 @@ function renderTopicNarrative(arcs){
       </div>`;
     }).join('');
     row.innerHTML = headerHtml + `<div class="topic-arc-cells">${cellsHtml}</div>`;
-    // 綁 cell click → 開 modal 顯示當日該議題新聞
+    // 綁 cell click → 開 modal 顯示當日該議題新聞 + 留言（今日的）
     row.querySelectorAll('.topic-arc-cell-clickable').forEach((cell) => {
       cell.addEventListener('click', () => {
         const t = decodeURIComponent(cell.dataset.topic);
         const dayIdx = parseInt(cell.dataset.day, 10);
         const dayData = arc[dayIdx];
         if (!dayData) return;
-        const note = `${dayData.date} ｜ 議題「${t}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條`;
-        openArticlesModal(`🔥 ${t} — ${dayData.date} 新聞`, note, dayData.articles || [], []);
+        // 今日點 → 過濾出含該 topic keyword 的留言；其他天無 raw text
+        const todayStr = arc[arc.length - 1].date;
+        let topicComments = [];
+        if (dayData.date === todayStr) {
+          const allTodayComments = [
+            ...(state.comments.facebook || []).map(c => ({...c, platform: 'facebook'})),
+            ...(state.comments.instagram || []).map(c => ({...c, platform: 'instagram'})),
+            ...(state.comments.threads || []).map(c => ({...c, platform: 'threads'})),
+          ];
+          topicComments = allTodayComments.filter(c => (c.text || '').includes(t));
+        }
+        const cmtNote = dayData.date === todayStr
+          ? (topicComments.length === 0 ? '（今日留言中無命中此議題）' : '')
+          : '（往日的留言原文沒有保留、僅有計數）';
+        const note = `${dayData.date} ｜ 議題「${t}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條 ${cmtNote}`;
+        openArticlesModal(`🔥 ${t} — ${dayData.date} 新聞 + 留言`, note, dayData.articles || [], topicComments);
       });
     });
     wrap.appendChild(row);
