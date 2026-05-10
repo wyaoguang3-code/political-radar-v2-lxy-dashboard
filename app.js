@@ -212,16 +212,16 @@ function renderWarRoomRanking(voiceBreakdown, mentionArticles){
     return;
   }
 
-  // 排序：分數低（戰情佳）的排前
-  entries.sort((a, b) => a.score - b.score);
+  // 改：按「總曝光量」由高至低排序 — 純客觀、無「誰戰情好」的暗示
+  // 之前用 (red+yellow) 越少越好 → 暗示 ranking 是好感度比較、有 sampling bias
+  entries.sort((a, b) => b.total - a.total);
   const n = entries.length;
 
   entries.forEach((e, idx) => {
     const rank = idx + 1;
-    const isBest = rank === 1;
-    const isWorst = rank === n && n >= 3;
     const row = document.createElement('div');
-    row.className = 'rank-row' + (e.isSelf ? ' is-self' : '') + (isBest ? ' rank-best' : '') + (isWorst ? ' rank-worst' : '');
+    // 移除 rank-best / rank-worst class — 跟「不算分」原則衝突
+    row.className = 'rank-row' + (e.isSelf ? ' is-self' : '');
     // 點 row → 打開該人物 24h 新聞 modal
     if (e.articles && e.articles.length > 0) {
       row.classList.add('rank-clickable');
