@@ -322,6 +322,19 @@ function renderSelfFavorability(history){
     options: {
       interaction: INDEX_HOVER,
       hover: INDEX_HOVER,
+      // 點擊任一資料點 → 開該日全部新聞 modal
+      onClick: (evt, elements) => {
+        if (!elements || !elements.length) return;
+        const idx = elements[0].index;
+        const h = history[idx];
+        if (!h) return;
+        const note = `${h.date} ｜ 分數 ${h.score} ｜ 紅 ${h.red} 黃 ${h.yellow} 綠 ${h.green} ｜ 危機議題 ${h.crisis} 條`
+          + (h.samples_low ? ' ⚠️ 樣本不足' : '');
+        openArticlesModal(`📰 ${h.date} 盧秀燕新聞`, note, h.articles || [], []);
+      },
+      onHover: (evt, elements) => {
+        evt.native.target.style.cursor = elements && elements.length ? 'pointer' : 'default';
+      },
       plugins: {
         legend: { display: false },
         tooltip: darkTooltip({
@@ -334,6 +347,7 @@ function renderSelfFavorability(history){
                 `分數: ${h.score}${flag}`,
                 `紅${h.red} 黃${h.yellow} 綠${h.green} (總${h.total})`,
                 `危機議題: ${h.crisis} 條`,
+                `👆 點此查看當日 ${(h.articles || []).length} 則新聞`,
               ];
             },
           },
@@ -396,20 +410,32 @@ function renderTopicNarrative(arcs){
       <span class="topic-arc-name">${topic}</span>
       <span class="topic-arc-summary">7 天 ${total} 條 ｜ 🔴 ${totalRed} ／ 🟡 ${totalYellow} ／ 🟢 ${totalGreen}</span>
     </div>`;
-    // 7 天 stacked bar
+    // 7 天 stacked bar — 每個 cell 點擊可看當日該議題新聞
     const maxDay = Math.max(...arc.map(x => x.total), 1);
-    const cellsHtml = arc.map(x => {
+    const cellsHtml = arc.map((x, dayIdx) => {
       const heightPct = (x.total / maxDay) * 100;
       const segs = [];
       if (x.red > 0) segs.push(`<span class="seg-red" style="flex:${x.red}" title="紅 ${x.red}"></span>`);
       if (x.yellow > 0) segs.push(`<span class="seg-yellow" style="flex:${x.yellow}" title="黃 ${x.yellow}"></span>`);
       if (x.green > 0) segs.push(`<span class="seg-green" style="flex:${x.green}" title="綠 ${x.green}"></span>`);
-      return `<div class="topic-arc-cell" title="${x.date}: 紅${x.red}/黃${x.yellow}/綠${x.green}">
+      const clickable = x.total > 0 ? ' topic-arc-cell-clickable' : '';
+      return `<div class="topic-arc-cell${clickable}" data-topic="${encodeURIComponent(topic)}" data-day="${dayIdx}" title="${x.date}: 紅${x.red}/黃${x.yellow}/綠${x.green}${x.total > 0 ? ' — 點擊看新聞' : ''}">
         <div class="topic-arc-bar" style="height:${heightPct}%">${segs.join('')}</div>
         <div class="topic-arc-date">${x.date.slice(5)}</div>
       </div>`;
     }).join('');
     row.innerHTML = headerHtml + `<div class="topic-arc-cells">${cellsHtml}</div>`;
+    // 綁 cell click → 開 modal 顯示當日該議題新聞
+    row.querySelectorAll('.topic-arc-cell-clickable').forEach((cell) => {
+      cell.addEventListener('click', () => {
+        const t = decodeURIComponent(cell.dataset.topic);
+        const dayIdx = parseInt(cell.dataset.day, 10);
+        const dayData = arc[dayIdx];
+        if (!dayData) return;
+        const note = `${dayData.date} ｜ 議題「${t}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條`;
+        openArticlesModal(`🔥 ${t} — ${dayData.date} 新聞`, note, dayData.articles || [], []);
+      });
+    });
     wrap.appendChild(row);
   }
 }
