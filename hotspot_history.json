@@ -3563,7 +3563,7 @@
     },
     {
       "date": "2026-05-11",
-      "snapshot_at": "2026-05-11T03:35:26.937897+00:00",
+      "snapshot_at": "2026-05-11T03:50:33.977273+00:00",
       "hotspots": [
         {
           "title": "捷運藍線爭議",
@@ -3759,8 +3759,8 @@
           "news_count": 0,
           "comment_count": 8,
           "negativity_pct": 0,
-          "is_urgent": true,
-          "urgency_score": 16,
+          "is_urgent": false,
+          "urgency_score": 10,
           "sample_titles": []
         },
         {
@@ -3787,8 +3787,8 @@
           "news_count": 0,
           "comment_count": 9,
           "negativity_pct": 0,
-          "is_urgent": true,
-          "urgency_score": 17,
+          "is_urgent": false,
+          "urgency_score": 13,
           "sample_titles": []
         },
         {
@@ -3962,35 +3962,35 @@
           ]
         },
         {
-          "title": "台北鼠患事件",
-          "city": "台北",
-          "place": "台北市中正區",
-          "level": "yellow",
-          "news_count": 56,
-          "comment_count": 0,
-          "negativity_pct": 41,
-          "is_urgent": false,
-          "urgency_score": 125,
-          "sample_titles": [
-            "鼠患問題未解...驚見麻雀誤食鼠餌　醫師憂：恐釀北市生態浩劫",
-            "美食街老鼠從天花板掉落 台北市府跨局處稽查誠品生活南西店",
-            "台北大滅鼠開始！蔣萬安動員500人「12區大清消」時間曝…發現死鼠「這樣做」避免染病"
-          ]
-        },
-        {
           "title": "宜蘭地方動態",
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "yellow",
-          "news_count": 56,
+          "news_count": 54,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 56,
+          "urgency_score": 54,
           "sample_titles": [
             "童玩護照5月11日開賣～全國國中小學生與宜蘭縣民早鳥100元不限次入園",
             "冠西電宜蘭廠變C-UAS示範基地 切入低空防禦剛性需求",
             "童玩護照5月11日開賣 全台國中小學生與宜蘭縣民早鳥只要100元"
+          ]
+        },
+        {
+          "title": "台北鼠患事件",
+          "city": "台北",
+          "place": "台北市中正區",
+          "level": "yellow",
+          "news_count": 57,
+          "comment_count": 0,
+          "negativity_pct": 40,
+          "is_urgent": false,
+          "urgency_score": 126,
+          "sample_titles": [
+            "自由開講》中央核可不是護身符 看蔣萬安如何回應北市滅鼠",
+            "鼠患問題未解...驚見麻雀誤食鼠餌　醫師憂：恐釀北市生態浩劫",
+            "美食街老鼠從天花板掉落 台北市府跨局處稽查誠品生活南西店"
           ]
         },
         {
@@ -4078,11 +4078,11 @@
           "city": "彰化",
           "place": "彰化縣政府",
           "level": "red",
-          "news_count": 32,
+          "news_count": 30,
           "comment_count": 0,
-          "negativity_pct": 12,
+          "negativity_pct": 13,
           "is_urgent": false,
-          "urgency_score": 44,
+          "urgency_score": 42,
           "sample_titles": [
             "​「靠關係失敗」暴走　彰化醉男買嘸烤鴨竟動手打人",
             "鹿港包棟民宿免費住？ 彰化低碳旅遊隱藏版活動現在進行式",
@@ -4094,11 +4094,11 @@
           "city": "屏東",
           "place": "屏東縣政府",
           "level": "red",
-          "news_count": 33,
+          "news_count": 32,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 39,
+          "urgency_score": 38,
           "sample_titles": [
             "屏東九如路口事故！轎車疑遭撞翻覆、波及民宅車 肇事責任待釐清",
             "家賊難防！屏東男7度盜領阿嬤10萬還偽造哥哥簽名 遭判5月",
@@ -4110,11 +4110,11 @@
           "city": "新北",
           "place": "新北市政府",
           "level": "red",
-          "news_count": 58,
+          "news_count": 56,
           "comment_count": 0,
           "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 61,
+          "urgency_score": 59,
           "sample_titles": [
             "新北推行人友善區 板橋忠孝國中周邊事故降6成",
             "認養新北長照動物 享終身免費醫療照護支持",
@@ -4142,11 +4142,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 67,
+          "news_count": 65,
           "comment_count": 0,
           "negativity_pct": 9,
           "is_urgent": false,
-          "urgency_score": 85,
+          "urgency_score": 83,
           "sample_titles": [
             "延平路三期今通車！桃園至八德全線貫通 預留三鶯延伸線空間",
             "桃園小客車行駛中突冒煙起火！駕駛及時逃生 警消10分鐘撲滅",
@@ -4158,11 +4158,11 @@
           "city": "台南",
           "place": "台南市政府",
           "level": "red",
-          "news_count": 69,
+          "news_count": 67,
           "comment_count": 0,
           "negativity_pct": 3,
           "is_urgent": false,
-          "urgency_score": 75,
+          "urgency_score": 73,
           "sample_titles": [
             "台南住宿優惠懶人包！ 住一晚送一晚＋最高1,100元住宿點數太欠衝",
             "台南室內設計 ｜ 舊宅新織，漫開現代柔美風景 ｜ 三宅一秀設計 郁琇琇",
@@ -4206,15 +4206,15 @@
           "city": "台北",
           "place": "台北市信義區",
           "level": "red",
-          "news_count": 148,
+          "news_count": 147,
           "comment_count": 0,
           "negativity_pct": 11,
           "is_urgent": false,
-          "urgency_score": 196,
+          "urgency_score": 195,
           "sample_titles": [
+            "自由開講》中央核可不是護身符 看蔣萬安如何回應北市滅鼠",
             "台北月中哺乳衛教室遭爆「被裝偵測器」 負責人：是廢線材",
-            "鼠患問題未解...驚見麻雀誤食鼠餌　醫師憂：恐釀北市生態浩劫",
-            "北市信義密室逃脫店出事！店員扮吊死鬼遭勒昏 家屬怒告質疑安全性"
+            "鼠患問題未解...驚見麻雀誤食鼠餌　醫師憂：恐釀北市生態浩劫"
           ]
         },
         {
