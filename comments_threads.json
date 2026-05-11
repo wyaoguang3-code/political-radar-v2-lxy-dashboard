@@ -22,15 +22,15 @@
     "time_text": "1小時",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
-      "green": 2,
+      "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "綠",
-      "source": "llm"
+      "source": "rule(stricter)"
     }
   },
   {
@@ -2045,15 +2045,15 @@
     "time_text": "1小時",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
       "yellow": 0,
       "red": 0,
-      "sarcasm": 0,
+      "sarcasm": 1,
       "llm": "綠",
-      "source": "llm"
+      "source": "rule(stricter)"
     }
   },
   {
