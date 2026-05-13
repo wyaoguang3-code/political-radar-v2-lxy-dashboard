@@ -1,47 +1,43 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-05-13T11:53:01.696871+00:00",
+  "generated_at": "2026-05-13T12:08:11.051722+00:00",
   "metrics": {
-    "total_24h": 59,
-    "prev_24h": 53,
-    "growth_pct": 11.32,
-    "news_24h": 59,
+    "total_24h": 58,
+    "prev_24h": 55,
+    "growth_pct": 5.45,
+    "news_24h": 58,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
-      "baseline_same_hour_7d": 32.5,
+      "baseline_same_hour_7d": 57.0,
       "reasons": []
     }
   },
   "metrics_7d": {
-    "total": 496,
+    "total": 497,
     "prev": 255,
-    "growth_pct": 94.51,
-    "news": 496,
+    "growth_pct": 94.9,
+    "news": 497,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
-      "baseline_same_hour_7d": 32.5,
+      "baseline_same_hour_7d": 57.0,
       "reasons": []
     }
   },
   "by_platform": [
     {
       "platform": "news",
-      "count": 391
+      "count": 388
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2000
+      "count": 1999
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-05-12 20:00",
-      "count": 4
-    },
     {
       "hour": "2026-05-12 21:00",
       "count": 1
@@ -132,7 +128,11 @@
     },
     {
       "hour": "2026-05-13 19:00",
-      "count": 2
+      "count": 3
+    },
+    {
+      "hour": "2026-05-13 20:00",
+      "count": 0
     }
   ],
   "by_hour_7d": [
@@ -538,39 +538,39 @@
     },
     {
       "hour": "2026-05-13 19:00",
-      "count": 3
+      "count": 4
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 391
+      "count": 388
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 391
+      "count": 388
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 78,
+    "盧秀燕": 75,
     "蔣萬安": 264,
-    "蔡其昌": 1,
+    "蔡其昌": 2,
     "陳其邁": 49
   },
   "mention_compare_7d": {
-    "盧秀燕": 496,
-    "蔣萬安": 949,
-    "蔡其昌": 119,
-    "陳其邁": 447
+    "盧秀燕": 497,
+    "蔣萬安": 946,
+    "蔡其昌": 120,
+    "陳其邁": 448
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 78,
+      "total": 75,
       "red": 0,
       "yellow": 48,
-      "green": 30
+      "green": 27
     },
     "蔣萬安": {
       "total": 264,
@@ -579,16 +579,16 @@
       "green": 142
     },
     "蔡其昌": {
-      "total": 1,
+      "total": 2,
       "red": 0,
-      "yellow": 1,
+      "yellow": 2,
       "green": 0
     },
     "陳其邁": {
       "total": 49,
       "red": 0,
-      "yellow": 17,
-      "green": 32
+      "yellow": 18,
+      "green": 31
     }
   },
   "self_favorability_history_7d": [
@@ -14349,11 +14349,11 @@
     },
     {
       "date": "2026-05-13",
-      "score": 48.6,
-      "total": 66,
+      "score": 49.1,
+      "total": 67,
       "red": 0,
       "yellow": 48,
-      "green": 18,
+      "green": 19,
       "crisis": 0,
       "samples_low": false,
       "articles": [
@@ -14371,6 +14371,14 @@
           "time": "2026-05-13 19:37:59",
           "severity": "green",
           "publisher": "Google News→警政時報",
+          "is_crisis": false
+        },
+        {
+          "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+          "time": "2026-05-13 19:37:59",
+          "severity": "green",
+          "publisher": "Google News→Yahoo新聞",
           "is_crisis": false
         },
         {
@@ -28988,6 +28996,15 @@
         "co_mentioned": []
       },
       {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "盧秀燕宣布台中好孕專車升級",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PbE96WGF0NFF6VEpZY0xxbzFiQXVYVElPbjJjNGxTaGV2ZEhRVDdNOXluUTNQRW15djBhekJrd003aHo5Qm14NHFaTnBvY21yOU93?oc=5",
         "time": "2026-05-13 19:16:48",
@@ -29632,42 +29649,6 @@
         "time": "2026-05-12 20:34:59",
         "platform": "news",
         "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNRHJRbENweGIxcno5NzdMRnZ6cm9KYTBMVDhfTEpDQ09PMEd2bkRGRnZ5Q0JpNkU4c3pvRUN5dVNKY3lDazV1Vzd2MWIySktlU2J5OGdRd1hyZVJHSWR0TnhnZ24ySjJkQVV2TmlGbXBzODllaHg5V082Q2s3bVN5YUNCUmVPZWJkTzFfSnpLQmtzX21veFN1VmpndGtjamp0aEZJQk1TMm0zZUNWT3FlQ1ZRSE1vVjczX1JaYWlPQzczVXdjamJqeEdVVmUyNFlPeVgtVlVaUGlpNDFKUVBQanFkSk55N0Z1RXZhdVlfSFJ5RFdJeTlMSzJXcmFkQXpsZy0ybVNjNTNMMVExeWI0bGl5U3Y5cDk4M1FFaWQxbVZiaUhNckpjWnQwaS1ndUtNYVNyWmtpSkE2dDg2VVRZUTN0bHJ4RFpwS0pXN3pDRGFLbHREZXoyZklJLUVjM3pWRXZCTkZnM3lxblotbXczVm43Rm5MVkVV?oc=5",
-        "time": "2026-05-12 20:05:16",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBzWWw1bmNGckkzUDlxTHJINVJXMmtnRUdUSzcxVnRoYXRBU0RQSVNRVWlPN19PM3hiT3lJV3ViSHptUzZubFY2bTZIb2Jrb0pLRy1lZHk3UnMzZVpPcWQwWGhFNW5kdXhIX1HSAW9BVV95cUxPQVVqOVFZSDlZeEpDUzdXMFptSHZfY1VvaW9oWmg1UzZEMWZwN016Rm5fU2E0cWJJdkxqRi16VlZLdzZIeE9vcEpDZ3RxQU5PX3BnV3MzZWRwZEJYeFBsbXNWa3dObk5ROFBsdzJ1SWc?oc=5",
-        "time": "2026-05-12 20:05:16",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5434760",
-        "time": "2026-05-12 20:05:16",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN1Y5Tm1xQmdWbndXeWJBX1JmUkRCUENBSU5TNTZ2Vm9xT1VGTjNacXVadWotQjk5d3NLcC1qU0FxTWxNV0FPdnZwUUdwQUZuZUd5eHNDWVVGTHgxcGY5UXZtVU1SdTdKeFJZaGVzMG0xbVctTjZyZWxDUHZKSXE4NVF1TUdYZw?oc=5",
-        "time": "2026-05-12 20:05:00",
-        "platform": "news",
-        "publisher": "自由時報",
         "severity": null,
         "co_mentioned": []
       }
@@ -32061,6 +32042,17 @@
         "co_mentioned": [
           "陳其邁"
         ]
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "severity": "yellow",
+        "co_mentioned": [
+          "陳其邁"
+        ]
       }
     ],
     "陳其邁": [
@@ -32070,6 +32062,17 @@
         "time": "2026-05-13 19:05:00",
         "platform": "news",
         "publisher": "Google News→上報Up Media",
+        "severity": "yellow",
+        "co_mentioned": [
+          "蔡其昌"
+        ]
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": [
           "蔡其昌"
@@ -32497,15 +32500,6 @@
         "publisher": "Google News→焦點時報",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "郭建盟議員促陳其邁市長卸任前送市民大禮– 地方新聞",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8yZ3oxRFFLTmtTckVPaUQtWmFhOF95Y2ZvWGMwVmxlR1l0UUlJdlJ2emRZazRlSHJ1dmhkVkpLd2dfaXdGMGdzYS1uVzJqWmd4?oc=5",
-        "time": "2026-05-12 20:06:23",
-        "platform": "news",
-        "publisher": "Google News→taidaily.com",
-        "severity": null,
-        "co_mentioned": []
       }
     ]
   },
@@ -32526,6 +32520,15 @@
         "time": "2026-05-13 19:37:59",
         "platform": "news",
         "publisher": "Google News→警政時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
       },
@@ -45516,33 +45519,6 @@
         "publisher": "蕃新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」 | 蕭宥宸 | 新聞 - 風傳媒",
-        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YWXBJd1BHYkU3a3U3cmNsLW1VX2lzLWdKdWxCMVhIemUwdnBocUp4Z011eVVDc3V1RVVUMFYwMXdzQnZUb2dtNmRmUGF1Zw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-06 20:06:34",
-        "platform": "news",
-        "publisher": "風傳媒",
-        "severity": "red",
-        "co_mentioned": []
-      },
-      {
-        "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」",
-        "url": "https://www.storm.mg/article/11128663",
-        "time": "2026-05-06 20:06:00",
-        "platform": "news",
-        "publisher": "風傳媒",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "北市陷「安鼠之亂」！她曝蔣萬安最大對手：不是黑熊 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOak4xZGVja3pWMHFOeVdNUmZvQVdpaVp2eVU0bTBhZF9NeEVuZEJyVEV2cUhXZkNIY0FQSDdnaFdWcFg2S0xDWUJ0QmVqZFYteUVtUndnRWFJR3ZXNjMxQ1VWNmE4OWRaQWlVMHZNbkFNTFhKU1FaLVl2R2xDdGluOVdQZGVWUWlXV3c3MnpzSFBOY3NIblJmQWk3N29ZQzMtYTJaVENLYTZPZndGdFdabXNnOWJ2bmMzRnV1SUlmQTdhUVJaZlhzcUpwa1lrMjNnTTdfZzZWaktmS2xrVTZheDRsaDFoSWJrVkVmUmllTlJpaVd5WF9ydlJvNmthak80RXdZM0s4ZzBzY2pOZWdGdHpFUDZRTk9yWklNOERIcUlWZ0VjWUZEUzVYdURtX3JfRi0xSVdiMU9Rd2dLME5mWWNCNlNGNzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-06 19:53:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -45552,6 +45528,17 @@
         "time": "2026-05-13 19:05:00",
         "platform": "news",
         "publisher": "Google News→上報Up Media",
+        "severity": "yellow",
+        "co_mentioned": [
+          "陳其邁"
+        ]
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": [
           "陳其邁"
@@ -46637,6 +46624,17 @@
         "time": "2026-05-13 19:05:00",
         "platform": "news",
         "publisher": "Google News→上報Up Media",
+        "severity": "yellow",
+        "co_mentioned": [
+          "蔡其昌"
+        ]
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": [
           "蔡其昌"
@@ -50674,6 +50672,11 @@
       "time": "2026-05-13 19:37:59"
     },
     {
+      "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+      "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+      "time": "2026-05-13 19:37:59"
+    },
+    {
       "title": "盧秀燕宣布台中好孕專車升級",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PbE96WGF0NFF6VEpZY0xxbzFiQXVYVElPbjJjNGxTaGV2ZEhRVDdNOXluUTNQRW15djBhekJrd003aHo5Qm14NHFaTnBvY21yOU93?oc=5",
       "time": "2026-05-13 19:16:48"
@@ -50757,11 +50760,6 @@
       "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
       "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPOGRRS0plWll3b1BXSk03MW1yQ0pKdldtLXJYa3E4OEJRMXlNbjZCaE1xdkxuOGRwOGluTXJBWU5JZzVVLXdpVG15ZnJPZ3BlZFpZR1h6TFhBeTVKNnh1OE51NkM1SU5fWFNRZkNWQnFoVWx0ZzJhdzZWY01iR3FWUjRaUTBzSmtod21vZWt1aS0zRjY3bHdPY3d0OWQxMzIyV3E4c0NIbXd0c0FlY3hEZ1RCa2VfRUJ5bU1NYjlodVpQWVJOcDB6ZTE0WVVEVFVSeHp5eUtURzdCbDVvM2t6VW5MTTJGS2FNLTRkR1dnVEpHdzIzX1dlaXdZd2pua1dRZm9aN1B2ek5KY2JEX3JMTmdnU1NOWm53N0F6LXZHWHA5M2JsajhlSUcyNWhsNUp4aV9mc0ltUndkWHl4YjF0TkZ3WmYxRkZMRGhtSERsdWtIWURo?oc=5",
       "time": "2026-05-13 15:00:01"
-    },
-    {
-      "title": "7800億元軍購恐衝擊無人機產業 盧秀燕再籲賴清德關注川習會",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1RzJrZmFlSDZhY1NRSXN0WjFFOFBUZXQtejVNYUZOVVptdXVfTTA0aEVHeXkzOW5Ic2F1UlJ6Y1dWbGJQazd5UWEyQmlpSGgzbUNZcHNRWl9nLWNMcUdScWpuRmJFa3pXQ3pRYUNn?oc=5",
-      "time": "2026-05-13 14:59:50"
     }
   ],
   "top_news_7d": [
@@ -50776,6 +50774,13 @@
       "platform": "news",
       "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TS2RqeHBRVnpSQVY3OEdMSnNFVjY3STZfb3lGWW5LcUpxWmxyVV9VcXJXdU1xa3hydlFJZGhlX096U0t1LVAweWhTcnYtQ0RrSmp4ZE5NRzFNS3c?oc=5",
+      "time": "2026-05-13 19:37:59",
+      "severity": null
+    },
+    {
+      "platform": "news",
+      "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+      "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
       "time": "2026-05-13 19:37:59",
       "severity": null
     },
@@ -50897,13 +50902,6 @@
       "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPOGRRS0plWll3b1BXSk03MW1yQ0pKdldtLXJYa3E4OEJRMXlNbjZCaE1xdkxuOGRwOGluTXJBWU5JZzVVLXdpVG15ZnJPZ3BlZFpZR1h6TFhBeTVKNnh1OE51NkM1SU5fWFNRZkNWQnFoVWx0ZzJhdzZWY01iR3FWUjRaUTBzSmtod21vZWt1aS0zRjY3bHdPY3d0OWQxMzIyV3E4c0NIbXd0c0FlY3hEZ1RCa2VfRUJ5bU1NYjlodVpQWVJOcDB6ZTE0WVVEVFVSeHp5eUtURzdCbDVvM2t6VW5MTTJGS2FNLTRkR1dnVEpHdzIzX1dlaXdZd2pua1dRZm9aN1B2ek5KY2JEX3JMTmdnU1NOWm53N0F6LXZHWHA5M2JsajhlSUcyNWhsNUp4aV9mc0ltUndkWHl4YjF0TkZ3WmYxRkZMRGhtSERsdWtIWURo?oc=5",
       "time": "2026-05-13 15:00:01",
       "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "7800億元軍購恐衝擊無人機產業 盧秀燕再籲賴清德關注川習會",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1RzJrZmFlSDZhY1NRSXN0WjFFOFBUZXQtejVNYUZOVVptdXVfTTA0aEVHeXkzOW5Ic2F1UlJ6Y1dWbGJQazd5UWEyQmlpSGgzbUNZcHNRWl9nLWNMcUdScWpuRmJFa3pXQ3pRYUNn?oc=5",
-      "time": "2026-05-13 14:59:50",
-      "severity": "yellow"
     }
   ],
   "latest_facebook_20": [
@@ -51137,6 +51135,13 @@
           "severity": null
         },
         {
+          "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+          "time": "2026-05-13 19:37:59",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
           "title": "盧秀燕宣布台中好孕專車升級",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PbE96WGF0NFF6VEpZY0xxbzFiQXVYVElPbjJjNGxTaGV2ZEhRVDdNOXluUTNQRW15djBhekJrd003aHo5Qm14NHFaTnBvY21yOU93?oc=5",
           "time": "2026-05-13 19:16:48",
@@ -51254,13 +51259,6 @@
           "time": "2026-05-13 15:00:01",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "7800億元軍購恐衝擊無人機產業 盧秀燕再籲賴清德關注川習會",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1RzJrZmFlSDZhY1NRSXN0WjFFOFBUZXQtejVNYUZOVVptdXVfTTA0aEVHeXkzOW5Ic2F1UlJ6Y1dWbGJQazd5UWEyQmlpSGgzbUNZcHNRWl9nLWNMcUdScWpuRmJFa3pXQ3pRYUNn?oc=5",
-          "time": "2026-05-13 14:59:50",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
         }
       ]
     },
@@ -51463,6 +51461,13 @@
           "severity": "yellow"
         },
         {
+          "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+          "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+          "time": "2026-05-13 19:05:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
           "title": "美國失望的不只藍白！周玉蔻轟卓榮泰「太天真可愛小白」：真正會打仗的是AIT、美國參眾議員和蔡其昌",
           "url": "https://www.fountmedia.io/article/378990",
           "time": "2026-05-12 08:04:56",
@@ -51587,13 +51592,6 @@
           "time": "2026-05-08 18:14:37",
           "publisher": "匯流新聞網",
           "severity": "yellow"
-        },
-        {
-          "title": "爆蔡其昌喬軍購 黃國昌「這句話」開轟 - 政治新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYXRRSUlfWENTeHI5Z2llb25HaDUxNlB2TTZWS29ONVp4UHpJTFdsdlAyczY1R29rWkNaRXNtMGltLTBMMFpUMFZHdDhRSVRUZ3RBMWhDMmhWMlczOG1OWXozeGw4M1BIYVNzdTJ5TTJoOUR4d2NpUlNXQ0s3OHdrR2pHOFYzZmVPX0JXbQ?oc=5",
-          "time": "2026-05-08 18:00:10",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": "yellow"
         }
       ]
     },
@@ -51613,6 +51611,13 @@
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Qb0RfMzh2VV91d2pqdDE5U3hkU21MR19JN01SSnloZFJzT3hHUnAwd3hUbUVYT3lhbmtnbndkMzBDUGM5dmRlcDNmbVZ2bXZPTk40OExYMWF0aGtGM1pKOUM0Q3UteFE?oc=5",
           "time": "2026-05-13 19:05:00",
           "publisher": "Google News→上報Up Media",
+          "severity": "yellow"
+        },
+        {
+          "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+          "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+          "time": "2026-05-13 19:05:00",
+          "publisher": "Yahoo新聞",
           "severity": "yellow"
         },
         {
@@ -51740,13 +51745,6 @@
           "time": "2026-05-13 14:01:15",
           "publisher": "Google News→太報 TaiSounds",
           "severity": "yellow"
-        },
-        {
-          "title": "民代轟AI假片瘋傳害學生轉學陳其邁：將協調平台緊急下架| 教育",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HU1M0NVEyQWZGMXktdkdfRm0wejlQazNjQlR6SFE0cF9ueldKSGg2dDdnTTVXU09QQXRENTE4aXEtMS1NLWZOQ0tXQ2k0b0tpVVJkX3VxZGNDekFI?oc=5",
-          "time": "2026-05-13 14:01:15",
-          "publisher": "Google News→太報 TaiSounds",
-          "severity": "yellow"
         }
       ]
     }
@@ -51768,6 +51766,13 @@
         "severity": null
       },
       {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "publisher": "Yahoo新聞",
+        "severity": null
+      },
+      {
         "title": "蔣萬安連任拚「馬」六成得票門檻？ 綠拍板提名沈伯洋- 政治",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBOTU5mMkt5bHFxTElZcm5GVGMxdW54eGF4YW9EUHotLWNNaVZZVkd0VWFCaXIwZlh5YnVzVkVfM0otd19ZaGhTczBmUDRUcGdhUmFrbkFxYXVEb1hlSnZiQk1oRzdCbXBmdjRYaTl1eVRIZw?oc=5",
         "time": "2026-05-13 19:20:00",
@@ -51786,6 +51791,13 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Qb0RfMzh2VV91d2pqdDE5U3hkU21MR19JN01SSnloZFJzT3hHUnAwd3hUbUVYT3lhbmtnbndkMzBDUGM5dmRlcDNmbVZ2bXZPTk40OExYMWF0aGtGM1pKOUM0Q3UteFE?oc=5",
         "time": "2026-05-13 19:05:00",
         "publisher": "Google News→上報Up Media",
+        "severity": "yellow"
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "publisher": "Yahoo新聞",
         "severity": "yellow"
       },
       {
@@ -54454,41 +54466,6 @@
         "time": "2026-05-12 20:25:55",
         "publisher": "Line Today",
         "severity": null
-      },
-      {
-        "title": "郭建盟議員促陳其邁市長卸任前送市民大禮– 地方新聞",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8yZ3oxRFFLTmtTckVPaUQtWmFhOF95Y2ZvWGMwVmxlR1l0UUlJdlJ2emRZazRlSHJ1dmhkVkpLd2dfaXdGMGdzYS1uVzJqWmd4?oc=5",
-        "time": "2026-05-12 20:06:23",
-        "publisher": "Google News→taidaily.com",
-        "severity": null
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNRHJRbENweGIxcno5NzdMRnZ6cm9KYTBMVDhfTEpDQ09PMEd2bkRGRnZ5Q0JpNkU4c3pvRUN5dVNKY3lDazV1Vzd2MWIySktlU2J5OGdRd1hyZVJHSWR0TnhnZ24ySjJkQVV2TmlGbXBzODllaHg5V082Q2s3bVN5YUNCUmVPZWJkTzFfSnpLQmtzX21veFN1VmpndGtjamp0aEZJQk1TMm0zZUNWT3FlQ1ZRSE1vVjczX1JaYWlPQzczVXdjamJqeEdVVmUyNFlPeVgtVlVaUGlpNDFKUVBQanFkSk55N0Z1RXZhdVlfSFJ5RFdJeTlMSzJXcmFkQXpsZy0ybVNjNTNMMVExeWI0bGl5U3Y5cDk4M1FFaWQxbVZiaUhNckpjWnQwaS1ndUtNYVNyWmtpSkE2dDg2VVRZUTN0bHJ4RFpwS0pXN3pDRGFLbHREZXoyZklJLUVjM3pWRXZCTkZnM3lxblotbXczVm43Rm5MVkVV?oc=5",
-        "time": "2026-05-12 20:05:16",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBzWWw1bmNGckkzUDlxTHJINVJXMmtnRUdUSzcxVnRoYXRBU0RQSVNRVWlPN19PM3hiT3lJV3ViSHptUzZubFY2bTZIb2Jrb0pLRy1lZHk3UnMzZVpPcWQwWGhFNW5kdXhIX1HSAW9BVV95cUxPQVVqOVFZSDlZeEpDUzdXMFptSHZfY1VvaW9oWmg1UzZEMWZwN016Rm5fU2E0cWJJdkxqRi16VlZLdzZIeE9vcEpDZ3RxQU5PX3BnV3MzZWRwZEJYeFBsbXNWa3dObk5ROFBsdzJ1SWc?oc=5",
-        "time": "2026-05-12 20:05:16",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5434760",
-        "time": "2026-05-12 20:05:16",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN1Y5Tm1xQmdWbndXeWJBX1JmUkRCUENBSU5TNTZ2Vm9xT1VGTjNacXVadWotQjk5d3NLcC1qU0FxTWxNV0FPdnZwUUdwQUZuZUd5eHNDWVVGTHgxcGY5UXZtVU1SdTdKeFJZaGVzMG0xbVctTjZyZWxDUHZKSXE4NVF1TUdYZw?oc=5",
-        "time": "2026-05-12 20:05:00",
-        "publisher": "自由時報",
-        "severity": null
       }
     ]
   },
@@ -54506,6 +54483,13 @@
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TS2RqeHBRVnpSQVY3OEdMSnNFVjY3STZfb3lGWW5LcUpxWmxyVV9VcXJXdU1xa3hydlFJZGhlX096U0t1LVAweWhTcnYtQ0RrSmp4ZE5NRzFNS3c?oc=5",
         "time": "2026-05-13 19:37:59",
         "publisher": "Google News→警政時報",
+        "severity": null
+      },
+      {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "publisher": "Yahoo新聞",
         "severity": null
       },
       {
@@ -54527,6 +54511,13 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Qb0RfMzh2VV91d2pqdDE5U3hkU21MR19JN01SSnloZFJzT3hHUnAwd3hUbUVYT3lhbmtnbndkMzBDUGM5dmRlcDNmbVZ2bXZPTk40OExYMWF0aGtGM1pKOUM0Q3UteFE?oc=5",
         "time": "2026-05-13 19:05:00",
         "publisher": "Google News→上報Up Media",
+        "severity": "yellow"
+      },
+      {
+        "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+        "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
+        "time": "2026-05-13 19:05:00",
+        "publisher": "Yahoo新聞",
         "severity": "yellow"
       },
       {
@@ -68472,27 +68463,6 @@
         "time": "2026-05-06 20:10:00",
         "publisher": "蕃新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」 | 蕭宥宸 | 新聞 - 風傳媒",
-        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YWXBJd1BHYkU3a3U3cmNsLW1VX2lzLWdKdWxCMVhIemUwdnBocUp4Z011eVVDc3V1RVVUMFYwMXdzQnZUb2dtNmRmUGF1Zw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-06 20:06:34",
-        "publisher": "風傳媒",
-        "severity": "red"
-      },
-      {
-        "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」",
-        "url": "https://www.storm.mg/article/11128663",
-        "time": "2026-05-06 20:06:00",
-        "publisher": "風傳媒",
-        "severity": "yellow"
-      },
-      {
-        "title": "北市陷「安鼠之亂」！她曝蔣萬安最大對手：不是黑熊 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOak4xZGVja3pWMHFOeVdNUmZvQVdpaVp2eVU0bTBhZF9NeEVuZEJyVEV2cUhXZkNIY0FQSDdnaFdWcFg2S0xDWUJ0QmVqZFYteUVtUndnRWFJR3ZXNjMxQ1VWNmE4OWRaQWlVMHZNbkFNTFhKU1FaLVl2R2xDdGluOVdQZGVWUWlXV3c3MnpzSFBOY3NIblJmQWk3N29ZQzMtYTJaVENLYTZPZndGdFdabXNnOWJ2bmMzRnV1SUlmQTdhUVJaZlhzcUpwa1lrMjNnTTdfZzZWaktmS2xrVTZheDRsaDFoSWJrVkVmUmllTlJpaVd5WF9ydlJvNmthak80RXdZM0s4ZzBzY2pOZWdGdHpFUDZRTk9yWklNOERIcUlWZ0VjWUZEUzVYdURtX3JfRi0xSVdiMU9Rd2dLME5mWWNCNlNGNzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-06 19:53:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
       }
     ]
   },
@@ -68703,37 +68673,6 @@
           "url": "https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=955298",
           "time": "2026-05-13 09:21:00",
           "publisher": "苗栗縣政府",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
-      "title": "宜蘭陳情/抗議",
-      "city": "宜蘭",
-      "place": "宜蘭縣政府",
-      "lat": 24.7021,
-      "lng": 121.7378,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-12T12:00:21+00:00",
-      "news_full_expires_at": "2026-05-13T12:00:21+00:00",
-      "news_articles": [
-        {
-          "title": "監察委員僅憑單方面陳情就否定高鐵延伸宜蘭 宜縣議員批不了解地方",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13UGpSRnNYNlhxNWcwNGVWTm9WVVo2ZFZ5YTBXMjdmU09OYzNsVTJiWFNSTzZnel83dmtSY2lfM3hvaGR1NktleVV2YWpqbnJaZWc?oc=5",
-          "time": "2026-05-12 20:00:21",
-          "publisher": "Google News→蕃新聞",
           "severity": "yellow"
         }
       ],
@@ -69056,8 +68995,8 @@
       "title": "宜蘭詐騙案",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
-      "lat": 24.7051,
-      "lng": 121.7378,
+      "lat": 24.7036,
+      "lng": 121.74039807621135,
       "level": "green",
       "source": "news",
       "platform": "新聞 2",
@@ -70087,9 +70026,9 @@
       "lng": 121.0177,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 18",
-      "note": "24h 命中 18 則（新聞 18、留言 0）",
-      "news_count": 18,
+      "platform": "新聞 16",
+      "note": "24h 命中 16 則（新聞 16、留言 0）",
+      "news_count": 16,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T10:35:19+00:00",
       "news_full_expires_at": "2026-05-14T10:35:19+00:00",
@@ -70205,27 +70144,13 @@
           "time": "2026-05-12 20:36:43",
           "publisher": "Google News→LINE TODAY",
           "severity": null
-        },
-        {
-          "title": "破釜沉舟！藍竹縣3議員放棄連任 拚竹北市長",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5434743",
-          "time": "2026-05-12 19:59:59",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "破釜沉舟！藍竹縣3議員放棄連任 拚竹北市長",
-          "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPTUo4Nzl5ekRwWFlsMEo0NmIyU3JPelVJWXctY3VJVFpkNzd6bDh3aWw5UFgxWXBhRklGVFhLZmNGN0hBMGV5R1RkMkdCcEhWQXp5RTJxbkFmVWpQdzBWUmZMSUZUSURHQXN6SzZsV0ZxYUdQYVR5d09rZk5CYWFnMTZieHNtcWowbERLOUhmM3hMRVNkWUVIdGVvRFY5ZHdPdFZTdTBscENwX2dlTXpDS05idzlOTWxNMVBHbFhwV0lyREU3SGNYNEw1bmdBQTVGQXd3TnBGNVBBaTdIc1dFQXlMbXp4MUMxbXFhU1pCdWVaMDI4SDVGREhXYV9mR1hBeHd3d29iUVVjYjNLLWdtbWxHVHBjbzExRGEwS1dwUDN0bjJEMmk2NXYtUlJTdkE?oc=5",
-          "time": "2026-05-12 19:59:59",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 1,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 21,
+      "urgency_score": 19,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -70387,9 +70312,9 @@
       "lng": 120.97439807621136,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 24",
-      "note": "24h 命中 24 則（新聞 24、留言 0）",
-      "news_count": 24,
+      "platform": "新聞 23",
+      "note": "24h 命中 23 則（新聞 23、留言 0）",
+      "news_count": 23,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:09:33+00:00",
       "news_full_expires_at": "2026-05-14T11:09:33+00:00",
@@ -70554,20 +70479,13 @@
           "time": "2026-05-12 21:00:50",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "南投名間焚化爐環評爆衝突 鄉長衝上主席台遭警架離",
-          "url": "https://news.pts.org.tw/article/808001",
-          "time": "2026-05-12 19:59:55",
-          "publisher": "公視 即時",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 2,
-      "negativity_pct": 8,
+      "negativity_pct": 9,
       "urgent_red_comments": 0,
-      "urgency_score": 30,
+      "urgency_score": 29,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -70579,9 +70497,9 @@
       "lng": 120.8214,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 37",
-      "note": "24h 命中 37 則（新聞 37、留言 0）",
-      "news_count": 37,
+      "platform": "新聞 35",
+      "note": "24h 命中 35 則（新聞 35、留言 0）",
+      "news_count": 35,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T10:46:46+00:00",
       "news_full_expires_at": "2026-05-14T10:46:46+00:00",
@@ -70830,27 +70748,13 @@
           "time": "2026-05-13 00:15:00",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "投放毒餌？苗栗頭份稻田邊疑麻雀、蛇、鼠暴斃 警追下毒者",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtZEs1bU8wa09YMThXRmI3aUJBLXZzcXRmOE0wWng4YVBGa1pGbVhlV1oxS2tWTWRWRTdnWUg3bDFqTlc2bGJyNFE1aFA5MWFj0gFWQVVfeXFMTXQ4QXFENHNPelJJMHlCb3QtNHVoWWp0Y3Z6OHBHQ1RPQTNnWXVlakRwa0d1UjJhZzI4MGxnTGpTYmwxQURXX0xvYzdjdDRkNTE5dnVNTUE?oc=5",
-          "time": "2026-05-12 20:03:08",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "苗栗勘災車墜10米深山谷! 21歲女駕駛「急打方向盤」4 人傷送醫",
-          "url": "https://news.google.com/rss/articles/CBMigANBVV95cUxOSjdwY3hwQjNhanNxMC1xT2pEdWhFVU5WeENjRWxQNk95R3RTZ3hqcHFvLVBUdmxFQTRCdzB0cXNaVnpEQmtWOE9Ealh6QWxMWnEyZzRNb3l3YV9rNUFaRjJULTF3bkEtSThmay1Od09uMGlGSGJuTnExd1BYajFGWFZNMDZ4M2Q0NHBQeXU0Y1VCU0xCOEJtQ3hDOGRGUWxxRm4wb1lTMEV3ZHJ3NmRYc29aZHR3b1NsNWgxMlZfV0YxX3l5TEU0NF8xTVNrQVFJOVJqRUsxekZmbnZMMXJjV1ZDZ3dkQ2FqX3ZrdWJLY3ZqSkRtX0xiLVl3QWNwSXI3ZlZVMU92dzdhTVRlS3BOeDRHejVfdlhMazM0NzVNVVluQlFnbm9LQ2VEQzluRUdRc3Y1Y2pzcDQtWVpSbUpqSVRqbTI0TDZQNEpCTkxDb293RTYtNFdrUE55cXNSTHMyeG5RUkg5UmRrQTNzeWtxbG03bVRaQTBYQzEwVUU4c3o?oc=5",
-          "time": "2026-05-12 19:54:59",
-          "publisher": "Google News→MSN",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 37,
+      "urgency_score": 35,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -70862,9 +70766,9 @@
       "lng": 120.9675,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 39",
-      "note": "24h 命中 39 則（新聞 39、留言 0）",
-      "news_count": 39,
+      "platform": "新聞 38",
+      "note": "24h 命中 38 則（新聞 38、留言 0）",
+      "news_count": 38,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:36:40+00:00",
       "news_full_expires_at": "2026-05-14T11:36:40+00:00",
@@ -71134,20 +71038,13 @@
           "time": "2026-05-12 21:00:50",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "創意金點科技完成新竹市 SBIR 計畫 社區共聘照服員模式 首例上路",
-          "url": "https://news.google.com/rss/articles/CBMilgNBVV95cUxQRlpQMy03QUJkR0tNLVgwMkpKdkoxVUZLMjF1Qlgwc2htWGlGXzNwLTRjVlA3UVpvellkenN3RW5seHVKWC1hVFNNRl9lZXJyX0ctY0taMmppeFNBNFdrVDdMMDhRWmh4SURoNHdERmFHczZpM3pCSUtKcEhhMlAyRWx6STBvU0F1Ul81SlphLVlkRzIyU3Z3cVZlVUpqeXBIRGx2eHZ1UzBMMllxdWR3MlY1MGxzN0YtQ3g1dm5sRndCY09TamZfRGdqQjc2Mi1tQ0w3NHZZbzNpVVFQVjkyYWM2UE1MREFjcW1EeTZoTU81bEpaaTlxU2lDNVdyYUw2NklVUzVRcVpQUndGQ3hrdm9tTmZLaGFqSTFvaXd1bUc0U1ZiLTJfd1JZa1p5WHNBS2RSdER1eC1rTGJYb3ItNEJ4aXdvRThlR2RWVkZOa25udDZqbVFUT2FYUFdpbjRvcm9XeElOWlYyNmhlLUlwdDFjMzJkcnNlM3h5cDNuWWUtTFdKc0p2VEJ2QlJuS19ObEZxckNn?oc=5",
-          "time": "2026-05-12 20:04:29",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 39,
+      "urgency_score": 38,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -71879,9 +71776,9 @@
       "lng": 120.64430192378865,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 55 / Threads 6",
-      "note": "24h 命中 61 則（新聞 55、留言 6）",
-      "news_count": 55,
+      "platform": "新聞 52 / Threads 6",
+      "note": "24h 命中 58 則（新聞 52、留言 6）",
+      "news_count": 52,
       "comment_count": 6,
       "news_latest_at": "2026-05-13T11:43:21+00:00",
       "news_full_expires_at": "2026-05-14T11:43:21+00:00",
@@ -71898,6 +71795,13 @@
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TS2RqeHBRVnpSQVY3OEdMSnNFVjY3STZfb3lGWW5LcUpxWmxyVV9VcXJXdU1xa3hydlFJZGhlX096U0t1LVAweWhTcnYtQ0RrSmp4ZE5NRzFNS3c?oc=5",
           "time": "2026-05-13 19:37:59",
           "publisher": "Google News→警政時報",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+          "time": "2026-05-13 19:37:59",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
@@ -72242,34 +72146,6 @@
           "time": "2026-05-12 21:37:58",
           "publisher": "Google News→UDN",
           "severity": null
-        },
-        {
-          "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-          "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNRHJRbENweGIxcno5NzdMRnZ6cm9KYTBMVDhfTEpDQ09PMEd2bkRGRnZ5Q0JpNkU4c3pvRUN5dVNKY3lDazV1Vzd2MWIySktlU2J5OGdRd1hyZVJHSWR0TnhnZ24ySjJkQVV2TmlGbXBzODllaHg5V082Q2s3bVN5YUNCUmVPZWJkTzFfSnpLQmtzX21veFN1VmpndGtjamp0aEZJQk1TMm0zZUNWT3FlQ1ZRSE1vVjczX1JaYWlPQzczVXdjamJqeEdVVmUyNFlPeVgtVlVaUGlpNDFKUVBQanFkSk55N0Z1RXZhdVlfSFJ5RFdJeTlMSzJXcmFkQXpsZy0ybVNjNTNMMVExeWI0bGl5U3Y5cDk4M1FFaWQxbVZiaUhNckpjWnQwaS1ndUtNYVNyWmtpSkE2dDg2VVRZUTN0bHJ4RFpwS0pXN3pDRGFLbHREZXoyZklJLUVjM3pWRXZCTkZnM3lxblotbXczVm43Rm5MVkVV?oc=5",
-          "time": "2026-05-12 20:05:16",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBzWWw1bmNGckkzUDlxTHJINVJXMmtnRUdUSzcxVnRoYXRBU0RQSVNRVWlPN19PM3hiT3lJV3ViSHptUzZubFY2bTZIb2Jrb0pLRy1lZHk3UnMzZVpPcWQwWGhFNW5kdXhIX1HSAW9BVV95cUxPQVVqOVFZSDlZeEpDUzdXMFptSHZfY1VvaW9oWmg1UzZEMWZwN016Rm5fU2E0cWJJdkxqRi16VlZLdzZIeE9vcEpDZ3RxQU5PX3BnV3MzZWRwZEJYeFBsbXNWa3dObk5ROFBsdzJ1SWc?oc=5",
-          "time": "2026-05-12 20:05:16",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5434760",
-          "time": "2026-05-12 20:05:16",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN1Y5Tm1xQmdWbndXeWJBX1JmUkRCUENBSU5TNTZ2Vm9xT1VGTjNacXVadWotQjk5d3NLcC1qU0FxTWxNV0FPdnZwUUdwQUZuZUd5eHNDWVVGTHgxcGY5UXZtVU1SdTdKeFJZaGVzMG0xbVctTjZyZWxDUHZKSXE4NVF1TUdYZw?oc=5",
-          "time": "2026-05-12 20:05:00",
-          "publisher": "自由時報",
-          "severity": null
         }
       ],
       "comments": [
@@ -72325,7 +72201,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 61,
+      "urgency_score": 58,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -72371,8 +72247,8 @@
       "title": "宜蘭弊案爭議",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
-      "lat": 24.7036,
-      "lng": 121.74039807621135,
+      "lat": 24.7021,
+      "lng": 121.7378,
       "level": "red",
       "source": "news",
       "platform": "新聞 2",
@@ -72907,6 +72783,212 @@
       "is_catchall": false
     },
     {
+      "title": "基隆地方動態",
+      "city": "基隆",
+      "place": "基隆市政府",
+      "lat": 25.1291,
+      "lng": 121.74179807621135,
+      "level": "red",
+      "source": "news",
+      "platform": "新聞 26",
+      "note": "24h 命中 26 則（新聞 26、留言 0）",
+      "news_count": 26,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T11:18:11+00:00",
+      "news_full_expires_at": "2026-05-14T11:18:11+00:00",
+      "news_articles": [
+        {
+          "title": "基隆愛嶼搖滾5/23登場眾星熱身",
+          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E6%84%9B%E5%B6%BC%E6%90%96%E6%BB%BE5-23%E7%99%BB%E5%A0%B4%E7%9C%BE%E6%98%9F%E7%86%B1%E8%BA%AB-111811258.html",
+          "time": "2026-05-13 19:18:11",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆建城400年無人知！謝國樑答詢挨轟 議員怒批「荒腔走板」",
+          "url": "https://news.nextapple.com/politics/20260513/35F645B41FDA84B6FCDADE29BA1192B7",
+          "time": "2026-05-13 18:45:55",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "確定了！「基隆–石垣島」渡輪5／28首航 開賣日、票價一次看",
+          "url": "https://www.taisounds.com/news/content/90/256654",
+          "time": "2026-05-13 18:40:55",
+          "publisher": "太報",
+          "severity": null
+        },
+        {
+          "title": "等好久！基隆直航石垣島渡輪5/28正式首航 2階段開賣時程曝光",
+          "url": "https://newtalk.tw/news/view/2026-05-13/1034965",
+          "time": "2026-05-13 18:31:00",
+          "publisher": "新頭殼",
+          "severity": null
+        },
+        {
+          "title": "「愛嶼搖滾」5月強襲基隆港 日本搖滾新星 Maki、KUZIRA驚喜跨海演出",
+          "url": "https://tw.news.yahoo.com/%E3%80%8C%E6%84%9B%E5%B6%BC%E6%90%96%E6%BB%BE%E3%80%8D5%E6%9C%88%E5%BC%B7%E8%A5%B2%E5%9F%BA%E9%9A%86%E6%B8%AF-%E6%97%A5%E6%9C%AC%E6%90%96%E6%BB%BE%E6%96%B0%E6%98%9F-maki%E3%80%81kuzira%E9%A9%9A%E5%96%9C%E8%B7%A8%E6%B5%B7%E6%BC%94%E5%87%BA-100648342.html",
+          "time": "2026-05-13 18:06:48",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "「愛嶼搖滾」強襲基隆港！跨國卡司解封 日本搖滾Maki、KUZIRA閃電登台",
+          "url": "https://news.tvbs.com.tw/entertainment/3203181",
+          "time": "2026-05-13 17:32:52",
+          "publisher": "TVBS",
+          "severity": null
+        },
+        {
+          "title": "一覺醒來到日本！基隆-石垣島渡輪5/28首航 淡季優惠最低價只要2千",
+          "url": "https://tw.news.yahoo.com/%E8%A6%BA%E9%86%92%E4%BE%86%E5%88%B0%E6%97%A5%E6%9C%AC-%E5%9F%BA%E9%9A%86-%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%B8%A1%E8%BC%AA5-28%E9%A6%96%E8%88%AA-%E6%B7%A1%E5%AD%A3%E5%84%AA%E6%83%A0%E6%9C%80%E4%BD%8E%E5%83%B9%E5%8F%AA%E8%A6%812%E5%8D%83-091700750.html",
+          "time": "2026-05-13 17:17:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "「八重山丸」5月28日首航基隆-石垣島 夜發晨抵來回都省住宿費",
+          "url": "https://finance.ettoday.net/news/3165426",
+          "time": "2026-05-13 17:16:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "基隆到日本「八重山丸」渡輪本週開賣！試營運每人2000元",
+          "url": "https://news.nextapple.com/life/20260513/7AFFD77D9AF833DE96E197E213644C65",
+          "time": "2026-05-13 17:02:45",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "(影)基隆建城400年宣傳不足 謝國樑稱401年再辦 綠營痛批「荒腔走版」",
+          "url": "https://newtalk.tw/news/view/2026-05-13/1034955",
+          "time": "2026-05-13 17:00:12",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "血肉果汁機領軍！「愛嶼搖滾」5月強襲基隆港 日團Maki、KUZIRA跨海演出",
+          "url": "https://news.nextapple.com/entertainment/20260513/762E53ED8BA855485E55BFA3103F2932",
+          "time": "2026-05-13 16:59:49",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "基隆-日本石垣島船班5/28啟航 淡季優惠最低2千元",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5435824",
+          "time": "2026-05-13 16:52:56",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "5000萬買雙層觀光巴士！議員憂成基隆市府「財政黑洞」",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435791",
+          "time": "2026-05-13 16:46:55",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中華209行善協會捐贈1242件民生物資 助基隆弱勢家庭度難關",
+          "url": "https://more-news.tw/614338/",
+          "time": "2026-05-13 15:52:53",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆港邊最強音浪來襲 「愛嶼搖滾」集結42組樂團嗨翻兩夜",
+          "url": "https://more-news.tw/614233/",
+          "time": "2026-05-13 15:16:29",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆漁市驚見「國際瀕危鯊魚」被秤斤秤重賣",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Life/2026-05-13/2343446.html",
+          "time": "2026-05-13 15:12:26",
+          "publisher": "壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆知名泡泡冰員工欠債 4天侵吞11萬營收被判刑1年8月",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435615",
+          "time": "2026-05-13 14:54:23",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "深化志願服務量能桃園與基隆市婦幼志工跨縣市交流參訪- 政府消息新聞",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOS05VlItYkliOWxPRmg2TkczS0x6V0R6VURpYlhJMHVFX3ZoMFBILWIybVRnYXI4NkxISXpkd2FZcmVhMkdiOWc1UThoVzYtX08xSG5lNTRpSjdXVjR1WlhHSTMtUHZyZ2szZHpUX2lMdzlUMTJqc2hXbk9iUTJjNFd6MEl3MmNLXzI0?oc=5",
+          "time": "2026-05-13 14:34:34",
+          "publisher": "Google News→PChome Online 新聞",
+          "severity": null
+        },
+        {
+          "title": "深化志願服務量能 桃園與基隆市婦幼志工跨縣市交流參訪",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1mcF9CWUtVU25xTGx3RFpoNnlnbUIyc0d5RW5DRUFibFFWb0l4c2FhSnlqR3dVcUpaSXZQeF8yR1VCUQ?oc=5",
+          "time": "2026-05-13 14:34:34",
+          "publisher": "Google News→墨新聞-MORE News",
+          "severity": null
+        },
+        {
+          "title": "基隆採購鴨子船遭控違法 謝國樑：絕無圖利問題",
+          "url": "https://taronews.tw/2026/05/13/1186852/",
+          "time": "2026-05-13 11:43:54",
+          "publisher": "芋傳媒",
+          "severity": "yellow"
+        },
+        {
+          "title": "籃協理事長月底改選！辜家第4代辜公怡、基隆議長童子瑋和資深律師3搶1",
+          "url": "https://www.taisounds.com/news/content/103/256544",
+          "time": "2026-05-13 11:43:02",
+          "publisher": "太報",
+          "severity": null
+        },
+        {
+          "title": "謝國樑施政總報告聚焦「有愛城市」 基隆打造宜居永續港都",
+          "url": "https://more-news.tw/613990/",
+          "time": "2026-05-13 10:09:22",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆鴨子船標案分拆 議員告謝國樑圖利",
+          "url": "https://news.ltn.com.tw/news/Keelung/paper/1754659",
+          "time": "2026-05-13 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "退輔會陳進廣走訪社區驗證基隆榮服處安心御老執行",
+          "url": "https://n.yam.com/Article/20260513962042",
+          "time": "2026-05-13 02:29:52",
+          "publisher": "蕃新聞→大成報",
+          "severity": null
+        },
+        {
+          "title": "基隆-石垣島渡輪5／28首航 淡季最低每人2千元",
+          "url": "https://www.chinatimes.com/realtimenews/20260513003933-260405",
+          "time": "2026-05-13 00:39:33",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "吸到ㄎㄧㄤ掉？毒蟲基隆逆向撞警車 還自動交出喪屍煙彈",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5434929",
+          "time": "2026-05-12 23:44:15",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 4,
+      "urgent_red_comments": 0,
+      "urgency_score": 29,
+      "is_urgent": false,
+      "is_catchall": true
+    },
+    {
       "title": "台東地方動態",
       "city": "台東",
       "place": "台東縣政府",
@@ -73113,219 +73195,6 @@
       "is_catchall": true
     },
     {
-      "title": "基隆地方動態",
-      "city": "基隆",
-      "place": "基隆市政府",
-      "lat": 25.1291,
-      "lng": 121.74179807621135,
-      "level": "red",
-      "source": "news",
-      "platform": "新聞 27",
-      "note": "24h 命中 27 則（新聞 27、留言 0）",
-      "news_count": 27,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T11:18:11+00:00",
-      "news_full_expires_at": "2026-05-14T11:18:11+00:00",
-      "news_articles": [
-        {
-          "title": "基隆愛嶼搖滾5/23登場眾星熱身",
-          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E6%84%9B%E5%B6%BC%E6%90%96%E6%BB%BE5-23%E7%99%BB%E5%A0%B4%E7%9C%BE%E6%98%9F%E7%86%B1%E8%BA%AB-111811258.html",
-          "time": "2026-05-13 19:18:11",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆建城400年無人知！謝國樑答詢挨轟 議員怒批「荒腔走板」",
-          "url": "https://news.nextapple.com/politics/20260513/35F645B41FDA84B6FCDADE29BA1192B7",
-          "time": "2026-05-13 18:45:55",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "確定了！「基隆–石垣島」渡輪5／28首航 開賣日、票價一次看",
-          "url": "https://www.taisounds.com/news/content/90/256654",
-          "time": "2026-05-13 18:40:55",
-          "publisher": "太報",
-          "severity": null
-        },
-        {
-          "title": "等好久！基隆直航石垣島渡輪5/28正式首航 2階段開賣時程曝光",
-          "url": "https://newtalk.tw/news/view/2026-05-13/1034965",
-          "time": "2026-05-13 18:31:00",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "「愛嶼搖滾」5月強襲基隆港 日本搖滾新星 Maki、KUZIRA驚喜跨海演出",
-          "url": "https://tw.news.yahoo.com/%E3%80%8C%E6%84%9B%E5%B6%BC%E6%90%96%E6%BB%BE%E3%80%8D5%E6%9C%88%E5%BC%B7%E8%A5%B2%E5%9F%BA%E9%9A%86%E6%B8%AF-%E6%97%A5%E6%9C%AC%E6%90%96%E6%BB%BE%E6%96%B0%E6%98%9F-maki%E3%80%81kuzira%E9%A9%9A%E5%96%9C%E8%B7%A8%E6%B5%B7%E6%BC%94%E5%87%BA-100648342.html",
-          "time": "2026-05-13 18:06:48",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "「愛嶼搖滾」強襲基隆港！跨國卡司解封 日本搖滾Maki、KUZIRA閃電登台",
-          "url": "https://news.tvbs.com.tw/entertainment/3203181",
-          "time": "2026-05-13 17:32:52",
-          "publisher": "TVBS",
-          "severity": null
-        },
-        {
-          "title": "一覺醒來到日本！基隆-石垣島渡輪5/28首航 淡季優惠最低價只要2千",
-          "url": "https://tw.news.yahoo.com/%E8%A6%BA%E9%86%92%E4%BE%86%E5%88%B0%E6%97%A5%E6%9C%AC-%E5%9F%BA%E9%9A%86-%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%B8%A1%E8%BC%AA5-28%E9%A6%96%E8%88%AA-%E6%B7%A1%E5%AD%A3%E5%84%AA%E6%83%A0%E6%9C%80%E4%BD%8E%E5%83%B9%E5%8F%AA%E8%A6%812%E5%8D%83-091700750.html",
-          "time": "2026-05-13 17:17:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "「八重山丸」5月28日首航基隆-石垣島 夜發晨抵來回都省住宿費",
-          "url": "https://finance.ettoday.net/news/3165426",
-          "time": "2026-05-13 17:16:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "基隆到日本「八重山丸」渡輪本週開賣！試營運每人2000元",
-          "url": "https://news.nextapple.com/life/20260513/7AFFD77D9AF833DE96E197E213644C65",
-          "time": "2026-05-13 17:02:45",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "(影)基隆建城400年宣傳不足 謝國樑稱401年再辦 綠營痛批「荒腔走版」",
-          "url": "https://newtalk.tw/news/view/2026-05-13/1034955",
-          "time": "2026-05-13 17:00:12",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "血肉果汁機領軍！「愛嶼搖滾」5月強襲基隆港 日團Maki、KUZIRA跨海演出",
-          "url": "https://news.nextapple.com/entertainment/20260513/762E53ED8BA855485E55BFA3103F2932",
-          "time": "2026-05-13 16:59:49",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "基隆-日本石垣島船班5/28啟航 淡季優惠最低2千元",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5435824",
-          "time": "2026-05-13 16:52:56",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "5000萬買雙層觀光巴士！議員憂成基隆市府「財政黑洞」",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435791",
-          "time": "2026-05-13 16:46:55",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中華209行善協會捐贈1242件民生物資 助基隆弱勢家庭度難關",
-          "url": "https://more-news.tw/614338/",
-          "time": "2026-05-13 15:52:53",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆港邊最強音浪來襲 「愛嶼搖滾」集結42組樂團嗨翻兩夜",
-          "url": "https://more-news.tw/614233/",
-          "time": "2026-05-13 15:16:29",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆漁市驚見「國際瀕危鯊魚」被秤斤秤重賣",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Life/2026-05-13/2343446.html",
-          "time": "2026-05-13 15:12:26",
-          "publisher": "壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆知名泡泡冰員工欠債 4天侵吞11萬營收被判刑1年8月",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435615",
-          "time": "2026-05-13 14:54:23",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "深化志願服務量能桃園與基隆市婦幼志工跨縣市交流參訪- 政府消息新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOS05VlItYkliOWxPRmg2TkczS0x6V0R6VURpYlhJMHVFX3ZoMFBILWIybVRnYXI4NkxISXpkd2FZcmVhMkdiOWc1UThoVzYtX08xSG5lNTRpSjdXVjR1WlhHSTMtUHZyZ2szZHpUX2lMdzlUMTJqc2hXbk9iUTJjNFd6MEl3MmNLXzI0?oc=5",
-          "time": "2026-05-13 14:34:34",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": null
-        },
-        {
-          "title": "深化志願服務量能 桃園與基隆市婦幼志工跨縣市交流參訪",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1mcF9CWUtVU25xTGx3RFpoNnlnbUIyc0d5RW5DRUFibFFWb0l4c2FhSnlqR3dVcUpaSXZQeF8yR1VCUQ?oc=5",
-          "time": "2026-05-13 14:34:34",
-          "publisher": "Google News→墨新聞-MORE News",
-          "severity": null
-        },
-        {
-          "title": "基隆採購鴨子船遭控違法 謝國樑：絕無圖利問題",
-          "url": "https://taronews.tw/2026/05/13/1186852/",
-          "time": "2026-05-13 11:43:54",
-          "publisher": "芋傳媒",
-          "severity": "yellow"
-        },
-        {
-          "title": "籃協理事長月底改選！辜家第4代辜公怡、基隆議長童子瑋和資深律師3搶1",
-          "url": "https://www.taisounds.com/news/content/103/256544",
-          "time": "2026-05-13 11:43:02",
-          "publisher": "太報",
-          "severity": null
-        },
-        {
-          "title": "謝國樑施政總報告聚焦「有愛城市」 基隆打造宜居永續港都",
-          "url": "https://more-news.tw/613990/",
-          "time": "2026-05-13 10:09:22",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆鴨子船標案分拆 議員告謝國樑圖利",
-          "url": "https://news.ltn.com.tw/news/Keelung/paper/1754659",
-          "time": "2026-05-13 05:30:00",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "退輔會陳進廣走訪社區驗證基隆榮服處安心御老執行",
-          "url": "https://n.yam.com/Article/20260513962042",
-          "time": "2026-05-13 02:29:52",
-          "publisher": "蕃新聞→大成報",
-          "severity": null
-        },
-        {
-          "title": "基隆-石垣島渡輪5／28首航 淡季最低每人2千元",
-          "url": "https://www.chinatimes.com/realtimenews/20260513003933-260405",
-          "time": "2026-05-13 00:39:33",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "吸到ㄎㄧㄤ掉？毒蟲基隆逆向撞警車 還自動交出喪屍煙彈",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5434929",
-          "time": "2026-05-12 23:44:15",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆市立泳池跳台脫落害選手受傷 謝國樑道歉了",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5434748",
-          "time": "2026-05-12 19:55:19",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 4,
-      "urgent_red_comments": 0,
-      "urgency_score": 30,
-      "is_urgent": false,
-      "is_catchall": true
-    },
-    {
       "title": "台南地方動態",
       "city": "台南",
       "place": "台南市政府",
@@ -73333,9 +73202,9 @@
       "lng": 120.21589807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 48",
-      "note": "24h 命中 48 則（新聞 48、留言 0）",
-      "news_count": 48,
+      "platform": "新聞 47",
+      "note": "24h 命中 47 則（新聞 47、留言 0）",
+      "news_count": 47,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:34:06+00:00",
       "news_full_expires_at": "2026-05-14T11:34:06+00:00",
@@ -73668,20 +73537,13 @@
           "time": "2026-05-12 22:31:32",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "台南芒果大豐收 陳亭妃要求外銷運費補貼延長加強加工產業收購與冷鏈媒合",
-          "url": "https://newtalk.tw/news/view/2026-05-12/1034765",
-          "time": "2026-05-12 20:03:21",
-          "publisher": "新頭殼",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 57,
+      "urgency_score": 56,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -74070,13 +73932,13 @@
       "title": "宜蘭地方動態",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
-      "lat": 24.7036,
-      "lng": 121.73520192378864,
+      "lat": 24.7051,
+      "lng": 121.7378,
       "level": "red",
       "source": "news",
-      "platform": "新聞 91",
-      "note": "24h 命中 91 則（新聞 91、留言 0）",
-      "news_count": 91,
+      "platform": "新聞 89",
+      "note": "24h 命中 89 則（新聞 89、留言 0）",
+      "news_count": 89,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:46:33+00:00",
       "news_full_expires_at": "2026-05-14T11:46:33+00:00",
@@ -74703,27 +74565,13 @@
           "time": "2026-05-12 20:08:51",
           "publisher": "Google News→中華新聞雲／中華日報",
           "severity": null
-        },
-        {
-          "title": "宜蘭信合社徵才 網友喊終於能回家工作了 | 宜蘭新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44YllzcWp2RDFCQ3NTN0tFcVlSUDhKZ01yOF9mRl9jRThnRkIyN1FUZi11STFhNi1WN2theHNHYmVPekpSeXprOVBjamZ6ZTN5Vm43VkNB?oc=5",
-          "time": "2026-05-12 20:07:43",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "監察委員僅憑單方面陳情就否定高鐵延伸宜蘭 宜縣議員批不了解地方",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13UGpSRnNYNlhxNWcwNGVWTm9WVVo2ZFZ5YTBXMjdmU09OYzNsVTJiWFNSTzZnel83dmtSY2lfM3hvaGR1NktleVV2YWpqbnJaZWc?oc=5",
-          "time": "2026-05-12 20:00:21",
-          "publisher": "Google News→蕃新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
-      "negative_news_count": 13,
-      "negativity_pct": 14,
+      "negative_news_count": 12,
+      "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 130,
+      "urgency_score": 125,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -74735,9 +74583,9 @@
       "lng": 120.32559807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 107",
-      "note": "24h 命中 107 則（新聞 107、留言 0）",
-      "news_count": 107,
+      "platform": "新聞 106",
+      "note": "24h 命中 106 則（新聞 106、留言 0）",
+      "news_count": 106,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:49:37+00:00",
       "news_full_expires_at": "2026-05-14T11:49:37+00:00",
@@ -75445,9 +75293,9 @@
       ],
       "comments": [],
       "negative_news_count": 8,
-      "negativity_pct": 7,
+      "negativity_pct": 8,
       "urgent_red_comments": 0,
-      "urgency_score": 131,
+      "urgency_score": 130,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -75459,9 +75307,9 @@
       "lng": 121.46829807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 133",
-      "note": "24h 命中 133 則（新聞 133、留言 0）",
-      "news_count": 133,
+      "platform": "新聞 131",
+      "note": "24h 命中 131 則（新聞 131、留言 0）",
+      "news_count": 131,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:49:35+00:00",
       "news_full_expires_at": "2026-05-14T11:49:35+00:00",
@@ -76168,10 +76016,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 19,
+      "negative_news_count": 18,
       "negativity_pct": 14,
       "urgent_red_comments": 0,
-      "urgency_score": 190,
+      "urgency_score": 185,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -76183,9 +76031,9 @@
       "lng": 121.29840192378865,
       "level": "red",
       "source": "news",
-      "platform": "新聞 144",
-      "note": "24h 命中 144 則（新聞 144、留言 0）",
-      "news_count": 144,
+      "platform": "新聞 143",
+      "note": "24h 命中 143 則（新聞 143、留言 0）",
+      "news_count": 143,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:45:38+00:00",
       "news_full_expires_at": "2026-05-14T11:45:38+00:00",
@@ -76895,7 +76743,7 @@
       "negative_news_count": 13,
       "negativity_pct": 9,
       "urgent_red_comments": 0,
-      "urgency_score": 183,
+      "urgency_score": 182,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -78355,9 +78203,9 @@
       "lng": 120.72629807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 222",
-      "note": "24h 命中 222 則（新聞 222、留言 0）",
-      "news_count": 222,
+      "platform": "新聞 220",
+      "note": "24h 命中 220 則（新聞 220、留言 0）",
+      "news_count": 220,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:49:35+00:00",
       "news_full_expires_at": "2026-05-14T11:49:35+00:00",
@@ -79067,7 +78915,7 @@
       "negative_news_count": 31,
       "negativity_pct": 14,
       "urgent_red_comments": 0,
-      "urgency_score": 315,
+      "urgency_score": 313,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -79079,9 +78927,9 @@
       "lng": 121.564,
       "level": "red",
       "source": "news",
-      "platform": "新聞 381",
-      "note": "24h 命中 381 則（新聞 381、留言 0）",
-      "news_count": 381,
+      "platform": "新聞 377",
+      "note": "24h 命中 377 則（新聞 377、留言 0）",
+      "news_count": 377,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T11:49:43+00:00",
       "news_full_expires_at": "2026-05-14T11:49:43+00:00",
@@ -79791,7 +79639,7 @@
       "negative_news_count": 18,
       "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 435,
+      "urgency_score": 431,
       "is_urgent": false,
       "is_catchall": true
     }
@@ -79803,6 +79651,16 @@
       "time": "2026-05-13 19:37:59",
       "platform": "news",
       "publisher": "Google News→警政時報",
+      "hour": "2026-05-13 19:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+      "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+      "time": "2026-05-13 19:37:59",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
       "hour": "2026-05-13 19:00",
       "severity": null,
       "is_negative": false
@@ -80366,16 +80224,18 @@
       "hour": "2026-05-12 20:00",
       "severity": null,
       "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_24h": [
     {
       "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
       "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNRHJRbENweGIxcno5NzdMRnZ6cm9KYTBMVDhfTEpDQ09PMEd2bkRGRnZ5Q0JpNkU4c3pvRUN5dVNKY3lDazV1Vzd2MWIySktlU2J5OGdRd1hyZVJHSWR0TnhnZ24ySjJkQVV2TmlGbXBzODllaHg5V082Q2s3bVN5YUNCUmVPZWJkTzFfSnpLQmtzX21veFN1VmpndGtjamp0aEZJQk1TMm0zZUNWT3FlQ1ZRSE1vVjczX1JaYWlPQzczVXdjamJqeEdVVmUyNFlPeVgtVlVaUGlpNDFKUVBQanFkSk55N0Z1RXZhdVlfSFJ5RFdJeTlMSzJXcmFkQXpsZy0ybVNjNTNMMVExeWI0bGl5U3Y5cDk4M1FFaWQxbVZiaUhNckpjWnQwaS1ndUtNYVNyWmtpSkE2dDg2VVRZUTN0bHJ4RFpwS0pXN3pDRGFLbHREZXoyZklJLUVjM3pWRXZCTkZnM3lxblotbXczVm43Rm5MVkVV?oc=5",
       "time": "2026-05-12 20:05:00",
       "platform": "news",
       "publisher": "Yahoo新聞",
-      "hour": "2026-05-12 20:00",
       "severity": null,
-      "is_negative": false
+      "is_negative": false,
+      "hour": "2026-05-12 20:00"
     },
     {
       "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
@@ -80383,12 +80243,9 @@
       "time": "2026-05-12 20:05:00",
       "platform": "news",
       "publisher": "自由時報",
-      "hour": "2026-05-12 20:00",
       "severity": null,
       "is_negative": false
-    }
-  ],
-  "articles_prev_24h": [
+    },
     {
       "title": "中市污水接管戶數突破32萬戶 盧秀燕讚水利局「忍者龜超人」守護城市 | 王秀禾 | 地方新聞",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ZNTZSZWg2M3pibWt3ZUFJYkZhLVNIM0djLXBwdEQzX2l6M3lLYVk0RkdrTEJ6ajVlbllpMEVfUmJzSVdKc1hTWFJ6QlNVUQ?oc=5",
@@ -80883,6 +80740,17 @@
       "time": "2026-05-13 19:37:59",
       "platform": "news",
       "publisher": "Google News→警政時報",
+      "hour": "2026-05-13 19:00",
+      "day": "2026-05-13",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+      "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+      "time": "2026-05-13 19:37:59",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
       "hour": "2026-05-13 19:00",
       "day": "2026-05-13",
       "severity": null,
@@ -87508,7 +87376,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 10496,
+    "sample_size": 10483,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -87549,10 +87417,10 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 496,
+        "news_count": 497,
         "negative_count": 28,
         "negativity_pct": 6,
-        "sentiment_score": 440.0,
+        "sentiment_score": 441.0,
         "articles": [
           {
             "title": "川習會 盧秀燕：密切觀察對台軍購與經濟議題 籲國家應做好準備",
@@ -87563,6 +87431,12 @@
           {
             "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
             "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TS2RqeHBRVnpSQVY3OEdMSnNFVjY3STZfb3lGWW5LcUpxWmxyVV9VcXJXdU1xa3hydlFJZGhlX096U0t1LVAweWhTcnYtQ0RrSmp4ZE5NRzFNS3c?oc=5",
+            "time": "2026-05-13 19:37:59",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+            "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
             "time": "2026-05-13 19:37:59",
             "is_negative": false
           },
@@ -90603,10 +90477,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 949,
+        "news_count": 946,
         "negative_count": 94,
         "negativity_pct": 10,
-        "sentiment_score": 761.0,
+        "sentiment_score": 758.0,
         "articles": [
           {
             "title": "蔣萬安連任拚「馬」六成得票門檻？ 綠拍板提名沈伯洋- 政治",
@@ -96283,24 +96157,6 @@
             "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBUbWxuNFFUdTVXSDdxRWd5VzBLQ2k5STdEWkpOUlc5cDFDR3JmMzA0REtVSGZvTDNlUjZ2dVNVU1BqclZ0WjV5WnpJWkpTU2praVE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
             "time": "2026-05-06 20:10:00",
             "is_negative": false
-          },
-          {
-            "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」 | 蕭宥宸 | 新聞 - 風傳媒",
-            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YWXBJd1BHYkU3a3U3cmNsLW1VX2lzLWdKdWxCMVhIemUwdnBocUp4Z011eVVDc3V1RVVUMFYwMXdzQnZUb2dtNmRmUGF1Zw?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-06 20:06:34",
-            "is_negative": false
-          },
-          {
-            "title": "「蔣萬安的對手不是人」 藍議員喊話不只要滅鼠：務必聘請「專滅鼠輩的偵防師」",
-            "url": "https://www.storm.mg/article/11128663",
-            "time": "2026-05-06 20:06:00",
-            "is_negative": false
-          },
-          {
-            "title": "北市陷「安鼠之亂」！她曝蔣萬安最大對手：不是黑熊 - Yahoo新聞",
-            "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOak4xZGVja3pWMHFOeVdNUmZvQVdpaVp2eVU0bTBhZF9NeEVuZEJyVEV2cUhXZkNIY0FQSDdnaFdWcFg2S0xDWUJ0QmVqZFYteUVtUndnRWFJR3ZXNjMxQ1VWNmE4OWRaQWlVMHZNbkFNTFhKU1FaLVl2R2xDdGluOVdQZGVWUWlXV3c3MnpzSFBOY3NIblJmQWk3N29ZQzMtYTJaVENLYTZPZndGdFdabXNnOWJ2bmMzRnV1SUlmQTdhUVJaZlhzcUpwa1lrMjNnTTdfZzZWaktmS2xrVTZheDRsaDFoSWJrVkVmUmllTlJpaVd5WF9ydlJvNmthak80RXdZM0s4ZzBzY2pOZWdGdHpFUDZRTk9yWklNOERIcUlWZ0VjWUZEUzVYdURtX3JfRi0xSVdiMU9Rd2dLME5mWWNCNlNGNzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-06 19:53:00",
-            "is_negative": false
           }
         ]
       },
@@ -96575,14 +96431,20 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 447,
+        "news_count": 448,
         "negative_count": 76,
         "negativity_pct": 17,
-        "sentiment_score": 295.0,
+        "sentiment_score": 296.0,
         "articles": [
           {
             "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
             "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Qb0RfMzh2VV91d2pqdDE5U3hkU21MR19JN01SSnloZFJzT3hHUnAwd3hUbUVYT3lhbmtnbndkMzBDUGM5dmRlcDNmbVZ2bXZPTk40OExYMWF0aGtGM1pKOUM0Q3UteFE?oc=5",
+            "time": "2026-05-13 19:05:00",
+            "is_negative": false
+          },
+          {
+            "title": "【內幕】賴清德選戰整合釋兵權 陳明文、陳其邁及蔡其昌入列「輔選督導」",
+            "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPYklqc2hsRUtQaG40UDEwVFI5VFFvUjYzWlR5WmpqX2FldlB4OUpxX0c3SEZzRjFDUHNhcy1vQ1Y5X1dEWWoybWJzUjMwWU9CMDBUMHltRmczR2VxTnRMUWpMZ3lFRnppWFJoQ2tLTlY5bjdnNzczaVdQUFcyX0FIQ2hWbDBGU2o4dTRxSXlHaGhHMDk0OURrWVF4OHRsbjVTYXZXSklHZ3RDdXJLd1N5ZEFHYlowMm1nMmpfR053UVdpRy1WS2swb0pLMUNYUDdsRE9yR285RWxYNTd6eE5KbVBaMF9hZ0tLcHNwYzR0bVJnT3Z4LVBaRlBWLXY3V2ZHbW82c29mMktnVUJIMGFIaW5GcDBOWUhxMzBQdEtCRHVVZW96MTVYSXRCMkxhclh0eDBWUFh6S1JaWnYwcWgzNTR1Z3VVOVNlVUd0UUxxWGg5SnhXWm9ITlF3SFVKeDZMSjF2MGZZcE5kMzJlYURQUmZzNGliellNT015b2Y3Q0dsV3ZqT0pVVFBpRjF6MkV1Wkpuek85SjZ1VEFJcmNiSThXVnlhVWZ6?oc=5",
             "time": "2026-05-13 19:05:00",
             "is_negative": false
           },
@@ -99716,6 +99578,16 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-05-13 19:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "盧秀燕宣布台中好孕專車升級",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PbE96WGF0NFF6VEpZY0xxbzFiQXVYVElPbjJjNGxTaGV2ZEhRVDdNOXluUTNQRW15djBhekJrd003aHo5Qm14NHFaTnBvY21yOU93?oc=5",
         "time": "2026-05-13 19:16:48",
@@ -99911,26 +99783,6 @@
         "time": "2026-05-12 20:34:59",
         "platform": "news",
         "publisher": "Yahoo新聞",
-        "hour": "2026-05-12 20:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxNRHJRbENweGIxcno5NzdMRnZ6cm9KYTBMVDhfTEpDQ09PMEd2bkRGRnZ5Q0JpNkU4c3pvRUN5dVNKY3lDazV1Vzd2MWIySktlU2J5OGdRd1hyZVJHSWR0TnhnZ24ySjJkQVV2TmlGbXBzODllaHg5V082Q2s3bVN5YUNCUmVPZWJkTzFfSnpLQmtzX21veFN1VmpndGtjamp0aEZJQk1TMm0zZUNWT3FlQ1ZRSE1vVjczX1JaYWlPQzczVXdjamJqeEdVVmUyNFlPeVgtVlVaUGlpNDFKUVBQanFkSk55N0Z1RXZhdVlfSFJ5RFdJeTlMSzJXcmFkQXpsZy0ybVNjNTNMMVExeWI0bGl5U3Y5cDk4M1FFaWQxbVZiaUhNckpjWnQwaS1ndUtNYVNyWmtpSkE2dDg2VVRZUTN0bHJ4RFpwS0pXN3pDRGFLbHREZXoyZklJLUVjM3pWRXZCTkZnM3lxblotbXczVm43Rm5MVkVV?oc=5",
-        "time": "2026-05-12 20:05:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-05-12 20:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "到底誰才是「大牌」？盧秀燕同台白冰冰 互稱演藝、政壇媽祖婆",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN1Y5Tm1xQmdWbndXeWJBX1JmUkRCUENBSU5TNTZ2Vm9xT1VGTjNacXVadWotQjk5d3NLcC1qU0FxTWxNV0FPdnZwUUdwQUZuZUd5eHNDWVVGTHgxcGY5UXZtVU1SdTdKeFJZaGVzMG0xbVctTjZyZWxDUHZKSXE4NVF1TUdYZw?oc=5",
-        "time": "2026-05-12 20:05:00",
-        "platform": "news",
-        "publisher": "自由時報",
         "hour": "2026-05-12 20:00",
         "severity": null,
         "is_negative": false
@@ -102606,6 +102458,17 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕親臨祝賀 「大雅永興宮」180周年平安福宴湧數千信眾",
+        "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxQWDJzNnBIOWl6Tzg3b2FKcmxvSzAzbGhMZ00zMTNsVTZadnlXd1dOVDNJZ3BjYV95RVprVWd2QVhPbTRJZFQ5RjRfTWs4aGRDR3lGQXJjdlpBcHhHVm84alJXVWgxMmU1ODJtZzVHUUVRRVNRckxFcExBVjJXTXlBeTExNENhWm1fWS1VSC1pSWV1Vl94b2tuQndocS1CMTI2aDRxWHlFdHNHRWd6QjRFZ1A0cG1tM3B0dURDSW55MTlmaWxVMzNvaDB1YnNBR3dqWFFvdEpvNXlKbGJ2Q1Y5Q0hic0t0d1NTc1lyaFMtRGplWDhsV1IxeDRjejBqdk9FWE12cWJSYjFBZFRsT3hlNVZoSWNncDg4M3N0WUFvMHJDOFFVWUl0eUYzbWJjUkR4YnhCRE5XZW53Z2hsOWxUS0ZhMFBLVU1KSkUzUmJCaFZPRkFZUXBZOUIxY2V6cHJxZnFiT2NZNnVFaVpickE?oc=5",
+        "time": "2026-05-13 19:37:59",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-05-13 19:00",
+        "day": "2026-05-13",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "盧秀燕宣布台中好孕專車升級",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PbE96WGF0NFF6VEpZY0xxbzFiQXVYVElPbjJjNGxTaGV2ZEhRVDdNOXluUTNQRW15djBhekJrd003aHo5Qm14NHFaTnBvY21yOU93?oc=5",
         "time": "2026-05-13 19:16:48",
@@ -104452,10 +104315,10 @@
       "total": 254
     },
     "yesterday": {
-      "red": 126,
-      "yellow": 407,
-      "green": 46,
-      "total": 579
+      "red": 123,
+      "yellow": 396,
+      "green": 43,
+      "total": 562
     },
     "yesterday_redyellow": [
       {
@@ -105566,33 +105429,6 @@
         "signal_zh": "紅燈"
       },
       {
-        "platform": "facebook",
-        "author": "洪文松",
-        "text": "垃圾，廚餘已經是很嚴重的問題 請問市長不處理是什麼意思",
-        "time_text": "17分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "蔡志明",
-        "text": "此獠可稱災厄之母，平時酷愛自稱mama，其廢馳職務、怠惰失職導致鼠患、豬瘟、病禽、槍擊、毒販、性侵、貪污、垃圾山、廚餘湖導致民不聊生。",
-        "time_text": "32分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "查看隱藏的回覆",
-        "text": "Gibar Deng 垃圾廚餘杏欽案 處理進度市民盼 市長發文當網紅 自求多福唉聲嘆",
-        "time_text": "13分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
         "platform": "instagram",
         "author": "woshinail0ng",
         "text": "62個讚",
@@ -106254,6 +106090,33 @@
         "author": "psychoouo1123",
         "text": "再半年就拍拍屁股走人了 誰還管你台中市民的四萬 只會說大話的⌚️",
         "time_text": "7小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "facebook",
+        "author": "王意婷",
+        "text": "市長媽媽好",
+        "time_text": "13分鐘",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "threads",
+        "author": "tc2xyrm19_twn",
+        "text": "花了9385萬，結果夢幻溜滑梯變鋼鐵水管？ 3,246",
+        "time_text": "18小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "threads",
+        "author": "okinafa",
+        "text": "你的無能比較狂 3,085",
+        "time_text": "16小時",
         "url": "",
         "signal": "yellow",
         "signal_zh": "黃燈"
