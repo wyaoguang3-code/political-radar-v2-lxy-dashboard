@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-05-13T21:59:12.517783+00:00",
+  "generated_at": "2026-05-13T22:14:20.716740+00:00",
   "metrics": {
-    "total_24h": 65,
+    "total_24h": 66,
     "prev_24h": 62,
-    "growth_pct": 4.84,
-    "news_24h": 65,
+    "growth_pct": 6.45,
+    "news_24h": 66,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 512,
+    "total": 513,
     "prev": 250,
-    "growth_pct": 104.8,
-    "news": 512,
+    "growth_pct": 105.2,
+    "news": 513,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,20 +28,16 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 438
+      "count": 443
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2045
+      "count": 2050
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-05-13 06:00",
-      "count": 1
-    },
     {
       "hour": "2026-05-13 07:00",
       "count": 0
@@ -132,6 +128,10 @@
     },
     {
       "hour": "2026-05-14 05:00",
+      "count": 0
+    },
+    {
+      "hour": "2026-05-14 06:00",
       "count": 0
     }
   ],
@@ -506,7 +506,7 @@
     },
     {
       "hour": "2026-05-13 14:00",
-      "count": 6
+      "count": 7
     },
     {
       "hour": "2026-05-13 15:00",
@@ -548,39 +548,39 @@
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 438
+      "count": 443
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 438
+      "count": 443
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 84,
-    "蔣萬安": 289,
+    "盧秀燕": 85,
+    "蔣萬安": 292,
     "蔡其昌": 3,
-    "陳其邁": 65
+    "陳其邁": 66
   },
   "mention_compare_7d": {
-    "盧秀燕": 512,
-    "蔣萬安": 956,
+    "盧秀燕": 513,
+    "蔣萬安": 959,
     "蔡其昌": 121,
-    "陳其邁": 469
+    "陳其邁": 470
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 84,
+      "total": 85,
       "red": 0,
       "yellow": 57,
-      "green": 27
+      "green": 28
     },
     "蔣萬安": {
-      "total": 289,
+      "total": 292,
       "red": 1,
       "yellow": 140,
-      "green": 148
+      "green": 151
     },
     "蔡其昌": {
       "total": 3,
@@ -589,10 +589,10 @@
       "green": 0
     },
     "陳其邁": {
-      "total": 65,
+      "total": 66,
       "red": 0,
       "yellow": 24,
-      "green": 41
+      "green": 42
     }
   },
   "self_favorability_history_7d": [
@@ -14187,11 +14187,11 @@
     },
     {
       "date": "2026-05-13",
-      "score": 50.8,
-      "total": 81,
+      "score": 51.2,
+      "total": 82,
       "red": 0,
       "yellow": 55,
-      "green": 26,
+      "green": 27,
       "crisis": 0,
       "samples_low": false,
       "articles": [
@@ -14425,6 +14425,14 @@
           "time": "2026-05-13 14:59:50",
           "severity": "yellow",
           "publisher": "Google News→中時新聞網",
+          "is_crisis": false
+        },
+        {
+          "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+          "url": "https://cnews.com.tw/237260513a06/",
+          "time": "2026-05-13 14:51:38",
+          "severity": "green",
+          "publisher": "匯流新聞網(sitemap)",
           "is_crisis": false
         },
         {
@@ -31632,6 +31640,15 @@
         "co_mentioned": []
       },
       {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 14:51:38",
+        "platform": "news",
+        "publisher": "匯流新聞網",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "川習會將登場 盧秀燕籲高層密切觀察因應 (圖)",
         "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOeEJPNXdBYlpSREV3UEZyMFVFM25nNElaSnoxWkJVWjNsWFRtSXFmM0tuMlNHX0ZkSmZNVVJpX3RTMEtoVnRoLXNWellPVGMzRnh5VXN1cVk0cGhsTDYxOHB2VmQyV3I5MkpzLVl3RHBPYnJra3Z2N0I4dnhqRk9lSmhLTmM2cDhWU3JjQTNOcjVuNE1fU01jOVZfVVUycExTTjZVYkFfTlV0MDZhekMtR1V2TzdPTmZveGlqbHZpSExVbE85dWtsZXNIWjNiclJuU2plS0lwWVBZcmZldk5Wd1F3OGtvUXQ1YjNnN3pybGUzUzZhcmZsSTk3TTJfQTFZcWhib3VWeUdaQ0tocEI5YW9hUkZqcjFpYlVjWmx5dDJlT3J2UDRIRkE5V2RCTWdJRXBKOENqWVc1dw?oc=5",
         "time": "2026-05-13 14:39:06",
@@ -32095,6 +32112,33 @@
       {
         "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZGtzNWhlS0lIOURaV2szU0xmalc4cXRlckhLZHViTlBKV3cyVGZVeHV4YjczMTlQQnhaenowOVF3bzBYQnJxRVV1VnhTYnYweTNwZXpuOVFEMXNHVFdoNNIBZkFVX3lxTE91SExGNHpReE82S29jaUZhMVoxakxydXpYVmk3ZnprUUQyZ2ZBck1IeWZJVldDOVZmX1drSTBPMUFnaEd1ZHRXdk94NHoxTS1VTUJEeW5OeWZBaWFYdGgxOUNyR2trUQ?oc=5",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "新聞分析》蔣萬安面臨直球對決",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
         "time": "2026-05-14 05:30:00",
         "platform": "news",
         "publisher": "自由時報",
@@ -35223,6 +35267,15 @@
         "co_mentioned": []
       },
       {
+        "title": "陳其邁：打造在地安老與整合照顧體系 推動社宅結合銀髮家園",
+        "url": "https://n.yam.com/Article/20260513522575",
+        "time": "2026-05-13 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→今傳媒",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "韓國送房救少子化 民代喊「生三胎送房」陳其邁回應了",
         "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxQaWd6QWVzRU5hTGNlRHRRQWJidnNlVnZDdHdtV3REQmYwc1B0WG1qdy1zUEtxRm1jRy1Oam0taUtlUkRkMXNYYXZUaGFvNHA5ay1hQ0V2QS1CRXhkS3NadEprY1JhWnJlbzZFWERHR0M1UjJSckdhMnZyZnUwaGdqb2FxOUcyUUc0Snl3LTBTVjFnbm9LRFkyZmhYZkJSd2VsSDZBd3prY3pVX3o1bXN3Ui1ZT3loRVpOY0NZTGVsanVPYUxIT2E5SVc5NjdSLW5Uc1ZPdjdWSl9MMHptNDJILWlKV3NhcEpUT0tyMnJsOWJBRjdfSEVpRzRUSkFiMVdvS1h1dFBiTmpuUDhWOU9iVjFrcTlKSzZWdXd5MklBSFlYNmx1bGI5MlE2MmVKTk9mejFyRFJSVEZ2OGVyMTRTRGo5RkxvR0MyNW16TzFCb0lSaWc1T3lKclNPelFQQXc?oc=5",
         "time": "2026-05-13 11:17:12",
@@ -35620,6 +35673,15 @@
         "platform": "news",
         "publisher": "中時新聞網",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 14:51:38",
+        "platform": "news",
+        "publisher": "匯流新聞網",
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -39958,6 +40020,33 @@
       {
         "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZGtzNWhlS0lIOURaV2szU0xmalc4cXRlckhLZHViTlBKV3cyVGZVeHV4YjczMTlQQnhaenowOVF3bzBYQnJxRVV1VnhTYnYweTNwZXpuOVFEMXNHVFdoNNIBZkFVX3lxTE91SExGNHpReE82S29jaUZhMVoxakxydXpYVmk3ZnprUUQyZ2ZBck1IeWZJVldDOVZmX1drSTBPMUFnaEd1ZHRXdk94NHoxTS1VTUJEeW5OeWZBaWFYdGgxOUNyR2trUQ?oc=5",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "新聞分析》蔣萬安面臨直球對決",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+        "time": "2026-05-14 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
         "time": "2026-05-14 05:30:00",
         "platform": "news",
         "publisher": "自由時報",
@@ -50167,6 +50256,15 @@
         "co_mentioned": []
       },
       {
+        "title": "陳其邁：打造在地安老與整合照顧體系 推動社宅結合銀髮家園",
+        "url": "https://n.yam.com/Article/20260513522575",
+        "time": "2026-05-13 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→今傳媒",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "韓國送房救少子化 民代喊「生三胎送房」陳其邁回應了",
         "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxQaWd6QWVzRU5hTGNlRHRRQWJidnNlVnZDdHdtV3REQmYwc1B0WG1qdy1zUEtxRm1jRy1Oam0taUtlUkRkMXNYYXZUaGFvNHA5ay1hQ0V2QS1CRXhkS3NadEprY1JhWnJlbzZFWERHR0M1UjJSckdhMnZyZnUwaGdqb2FxOUcyUUc0Snl3LTBTVjFnbm9LRFkyZmhYZkJSd2VsSDZBd3prY3pVX3o1bXN3Ui1ZT3loRVpOY0NZTGVsanVPYUxIT2E5SVc5NjdSLW5Uc1ZPdjdWSl9MMHptNDJILWlKV3NhcEpUT0tyMnJsOWJBRjdfSEVpRzRUSkFiMVdvS1h1dFBiTmpuUDhWOU9iVjFrcTlKSzZWdXd5MklBSFlYNmx1bGI5MlE2MmVKTk9mejFyRFJSVEZ2OGVyMTRTRGo5RkxvR0MyNW16TzFCb0lSaWc1T3lKclNPelFQQXc?oc=5",
         "time": "2026-05-13 11:17:12",
@@ -54246,6 +54344,21 @@
   ],
   "latest_news_20": [
     {
+      "title": "顏旭明涉公務背信…台中地檢署證實「大規模搜索」強調：並非針對業務費支用",
+      "url": "https://www.fountmedia.io/article/379800",
+      "time": "2026-05-14 06:02:24"
+    },
+    {
+      "title": "4 . 父心梗驟逝...台中17歲女休學打2份工養胞弟 警募款送暖",
+      "url": "https://www.mnews.tw/story/20260513nm019",
+      "time": "2026-05-14 06:02:17"
+    },
+    {
+      "title": "老透天厝裡的標本甜點店！「mimi köri cafe ミミ小秘密」用美味鮮奶油與蛋糕打造屏東最療癒午茶時光",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFdjJXMi1GazJlNW15VklHVzA5MXR2YUdVQTkycWdoR0pyNngyZnVDc3NfUHlEdkN0ekdtaE1rckxRRUw0NnJ6RzhsaWVLcXZsbmowMVl5Q1ZaWk3SAWBBVV95cUxPeWdPRmFydlFTLWFFNUxHSXB2ZVMyQWpkTC02M21rMkpCcEJ2Sy1qaDhObnNqNVNHeDhIbkROT1RBWS1lWVZLNzZuYVpMZms4SW9nYVJEckRsdFBaVXM1TjI?oc=5",
+      "time": "2026-05-14 05:47:00"
+    },
+    {
       "title": "新聞分析》蔣萬安面臨直球對決",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jbjJuV1dDZVdKdkNFNGNtWldrQ2JKdnotNHdSQk0yQ2dwSmFRZ2d6QkdxTUQtUHBGcE9SRFpta0RUSnNaYWlKWE9VaW1jdlM3NDZiMzcxMExPQ1FTdml0RtIBZkFVX3lxTE5RYWJYY3NySEhkUlB6VnZ1bWVlUEJRU0dPYkdaX0RGT2ZDS3B0bExQdk9DSWF4MmhFMDdEVHBTUFdhc0FZNlZGVW1USFYwQk50RFdZY1dTR3MtOW4wWnlLZ1FIRlV5QQ?oc=5",
       "time": "2026-05-14 05:30:00"
@@ -54256,94 +54369,79 @@
       "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "觀點投書：蔣萬安的「正常人邏輯」，反襯出民進黨有多白目 | 李子賢 | 評論",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12eTlncG5PbjVrWG12UTJlZWZTYUI1b2YyRzFoVjE5cy1rWm9Lc1FfTmZKb2tXRHdhQWdiSGZabjlTWkE1N29JeGctZlZQZw?oc=5",
-      "time": "2026-05-14 05:28:00"
+      "title": "焦點評論》沈伯洋重新定位台北",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754782",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "陳其邁談兒少數位危機 網路霸凌將列高雄重點政策",
-      "url": "https://n.yam.com/Article/20260514395564",
-      "time": "2026-05-14 04:56:36"
+      "title": "新聞分析》蔣萬安面臨直球對決",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "520新定義？！「一人幸福學」崛起 台中奪6都最愛獨享城市",
-      "url": "https://n.yam.com/Article/20260514393186",
-      "time": "2026-05-14 04:56:36"
+      "title": "《出戰台北市長》愛爆炸頭 沈伯洋︰勿忘批判世局搖滾精神",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754775",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "易遊網5元機票開搶 新北市山林旅遊正夯",
-      "url": "https://n.yam.com/Article/20260514461632",
-      "time": "2026-05-14 04:56:36"
+      "title": "參選台北市長》沈伯洋：勤跑基層多傾聽 讓台北更好",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754778",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "金門消聯合旅運中心演練 構築港區安全防護網",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtWkdRTDdPaXFFTVJJWFRpOEk3RVYtcUtRLUt4RWphQUtaTEI5X2oxTXE5R1hUM2QtTmFIcVVmU1lBNFNvTWstd3IxMFhDclMtX1E?oc=5",
-      "time": "2026-05-14 04:40:00"
+      "title": "蔡壁如表態參選彰化縣長",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754781",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "民進黨徵召沈伯洋選台北市長 挑戰蔣萬安 - 20260514 - 中國",
-      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQc0J6YzhaR2dwWC0xN3UtTFh0c1BPOW14SHZRZEhwX2xETFdENnZJSHE4YnUzSzA5dEN5NTRZLUtFcWI4NWV1RzVkV0d5Q2dvVm00ekl4SFo3WVIxM2JKR2VhWG1ZQ2ZmNjF3S3VKaU9saUZXaGdVRk9sS0tDSldaY0dUak5IUDY3ZVlHRnZTaXVfbFhWRzRfRmxuLVpYaDNtUjZSbGdhRVYyU3JNYlZSNktVMDQ4R2RpcURnZmlGVjZYd0pKQ1VGMDNYT0VScTRHeEJLWWp3VUFQOV9uODhBaDRGQjAxMXJQQ3Bjbm5BcVVrQzEtSzNyMkRfdFFTS1hPc3hsVjJNYjYwMW1nNndVbjZ3cnJBZDA1eE50NFJOOGRpWDFXWEtWdnpTZXRLQjNlWVJkS2FRMVA1c1NKRnQ1eEhuS2tkdWZpYUlHNzNERWpOTDRuWUZ1eVAwdE1CbHNhQklUcWJ3eVM?oc=5",
-      "time": "2026-05-14 04:30:00"
+      "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "陳其邁談兒少數位危機 網路霸凌將列高雄重點政策",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEYTNqTTdVUjkza083WDVYaERMX2pkZXI5Sl9tUWRQODdkOTBYdWI2ZzBqRF9YLWVNNkxNN1psUUU2N0VMdmlGdno4aDhvWW1mM1E?oc=5",
-      "time": "2026-05-14 04:16:00"
+      "title": "《出戰台北市長》選情不利 沈伯洋︰逆境更該力挽狂瀾",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754777",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "金門防暴種子紮根 培訓社區防暴宣講員 | 勁報",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mMlN4QUdWMEZ1SHR2WllrTFJpNVg1VTVCLXNOZHphT1hEd0Y3bVNkcHRJamF2Q25aQUp4S2pNQ2VFUHhrc0RidHh0VF9GWnhZM1hrZlBB?oc=5",
-      "time": "2026-05-14 04:12:31"
+      "title": "《出戰台北市長》改變台北 沈伯洋︰做生態系長遠規劃",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754776",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "石崇良失言 盧秀燕：多挺醫護少助選",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ZaFp6M2tFclNjUzkwZW41bWRyNm93akJ4bEVqOHdtTmZqbHVUSGRleVNrS1Nrd0RDWVk0WlpaLXR1YlROUkd2ejZKR0pCQkh4NEtfNFhycEoxU0ZyX243WHc1ZU43TlZnLVVJ?oc=5",
-      "time": "2026-05-14 04:10:00"
+      "title": "國民黨徵召魏平政 謝衣鳯怨：被當彰化三傻之一",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754779",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "桃園8大公辦園區 帶動千億投資動能",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11ZTR2LUdPNzRzV0V6eWUwdXhhV3U0TmgzMjlHMm5tampZSzNodzRmOVdwQ25sTi12VmdkdFpFbVllM2RiVTlCUk5icDFTckdlUWtPWTBFNXhGamwxbjZYdWJVdFdVVWg0enNJ?oc=5",
-      "time": "2026-05-14 04:10:00"
+      "title": "謠言終結站》內政部憑證中心 寄信要求更新軟體？ 詐騙手法",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754709",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "桃園營養午餐加碼6元 大肉排100克",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1UaXRmTnZOMGNOak5WMVo4N3M2T3NJTG5BempCRGNlbk5HTEVUMFdUby0tdUc0MDlCeTlfVEdDbmJuc0NpRVQ4Mlo1WllKUmlGOVhnUnhHTUs1TmFEUXdkSThxcFBob3BMaUQ0?oc=5",
-      "time": "2026-05-14 04:10:00"
+      "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "苗栗敬老愛心卡搭小黃 8萬人受惠",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLSnJINzAzLTczQ0t3bDI0QTNHaTZydF95NENxVVcyT2ZjQjZmc0ZLM1RQQ1FPb2NHYllwWGhyYWRDaGl2WFFIOGEtazhlN0ZpblR5cDZONnlXR1dCVlhnY1ZQbHVIMU9YdUVV?oc=5",
-      "time": "2026-05-14 04:10:00"
+      "title": "標槍飛彈 首在金門上陣",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754680",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "石崇良失言 盧秀燕：多挺醫護少助選",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxORW1jV3Y2ejM2bGwxbzVXLTY0NWt4UzhtSEZmQ3JxS2ZkYVYtVWRTTGp4bU1ZRkdsX1pHSmI2M0VZUmdSd01sNjRLeHdBUWFpMTRwNTFDc2NSLTV3MU9wM0drbi15NGd1QnV3YlBXZWljcnlPeDRFWnZfNEg5MmU2RXpJZUQ2eEJRZXJnQ0FUMFN2WEt3d2Zkb0pxZHZrM1B1NmRDM3ZmeVM1R3VCdk5XR0pkZWFRb3VjVkN4b1d1S2hpaU1feXloSVBNSnZQa2JBbWJTZmpvYlUzcU5fa0xVQk5XM29NNncyNjY0R0tmNTFULUxyd3NJSENieWMxQXdzWVpfZS1ET2s0UQ?oc=5",
-      "time": "2026-05-14 04:10:00"
+      "title": "《要把宜蘭縣市變綠地》 推精準政見 林國漳、韓瑩聯手",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1754715",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "澎湖海事推社區生命教育 陪伴長者溫馨互動|樂活",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4OTBlMEhJWDNWSjNnOGpUQ2RMLWlpdEpEeWhqMG5QWVNGOENwTE1zOElGd05ncW16NTRyV3h0dmFTNENhQzB6UHVIbw?oc=5",
-      "time": "2026-05-14 04:00:00"
+      "title": "基隆-石垣船班 5/28啟航",
+      "url": "https://news.ltn.com.tw/news/life/paper/1754676",
+      "time": "2026-05-14 05:30:00"
     },
     {
-      "title": "中市雨水下水道維護工程獲肯定 出入坑作業評鑑連4年獲特優",
-      "url": "https://n.yam.com/Article/20260514897519",
-      "time": "2026-05-14 03:50:38"
-    },
-    {
-      "title": "台中登山也能玩尋寶！大坑6款限定徽章一次公開 「我是登山王」打卡開跑",
-      "url": "https://n.yam.com/Article/20260514481757",
-      "time": "2026-05-14 03:50:38"
-    },
-    {
-      "title": "金門防暴種子紮根 培訓社區防暴宣講員",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RYkRMdktxMG5raGw2MUdfM3RNcUFfRjNmN05aeFpMSnpyYXNHVFJPNGRmOFdkdUN2Rm84MEdzanNGNWJsOWRGaVhEYmxBS3RWTlE?oc=5",
-      "time": "2026-05-14 03:40:00"
-    },
-    {
-      "title": "台中 雨水下水道 出入坑作業評鑑連四年獲特優",
-      "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%9B%A8%E6%B0%B4%E4%B8%8B%E6%B0%B4%E9%81%93%E7%B6%AD%E8%AD%B7-%E5%87%BA%E5%85%A5%E5%9D%91%E4%BD%9C%E6%A5%AD%E8%A9%95%E9%91%91%E9%80%A3%E5%9B%9B%E5%B9%B4%E7%8D%B2%E7%89%B9%E5%84%AA-193509116.html",
-      "time": "2026-05-14 03:35:09"
+      "title": "黃世杰戰桃園 與選將合照看板上架",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92WFRURWRpVkN5dERabDRsRVhTN1ZDT1ZYQWh6M1dnWFkzZ1JtU191NTZHZnRMLWRjNU5tVnh0dm1CWTJlZ194bnhQbG1PWTl6MkJCSmVqckFLOGvSAWBBVV95cUxPVmd2QjhYN0F6SzhEdm1DUl85TW1EYndqUnZ5TFliUG43Um5QTUg5NWcyMjNUdjZ1Z2pzTjJMdXZIdW5BUmRfRU5vSWlXVmc5cjgwb1ZIalZoRmJhblNaU1E?oc=5",
+      "time": "2026-05-14 05:30:00"
     }
   ],
   "person_sections": {
@@ -54561,6 +54659,27 @@
           "severity": null
         },
         {
+          "title": "新聞分析》蔣萬安面臨直球對決",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
           "title": "觀點投書：蔣萬安的「正常人邏輯」，反襯出民進黨有多白目 | 李子賢 | 評論",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12eTlncG5PbjVrWG12UTJlZWZTYUI1b2YyRzFoVjE5cy1rWm9Lc1FfTmZKb2tXRHdhQWdiSGZabjlTWkE1N29JeGctZlZQZw?oc=5",
           "time": "2026-05-14 05:28:00",
@@ -54664,27 +54783,6 @@
           "time": "2026-05-13 20:47:00",
           "publisher": "Google News→蕃新聞",
           "severity": null
-        },
-        {
-          "title": "看好誰當選台北市長？蔣萬安獲超過7成支持 輾壓沈伯洋",
-          "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxQSlVHdjU2bFZjdk5HYTM2MzB6cFhXRjVwRkI3a1RDeDBjcHlXR0hPOVdaU050LUNkZXVycEl5UjlyX2lMQ2lEcTRmSnRrNTRESEd3S09BSVVrX1FGMTd1WFhHSzRhVFpLSC1IazZucXlEV0JfZnB2a3pZR2F3Y3pORzc5T2NmdU93Z1VGUldZZ00teTRLM1lLWGdHRHdpbm9qcE9SVnloS2o0VDE5aUtuTmlRRHUwU01xVFl5My1oMUZEVzlrYXRxR3JQdHhsVUVTZnJJcXh3RC1sWWwwR1loVmpyVVVUUU04Mi1SQUYxalhRSFhCLXJPYVRfdVd3TEV6b2djeUNOb242YWlWRThxT0VxdzhaT256MEl6TDViMG1sQUs0MUZ0eWIzUjhSQ2xKUFR2bmRHeXJOeGdxZGhDUWtYcWl0dHlfR0tEQS0yQnVJaThwVzRhTV94U09VQnlVQ0s3NW5LOWJwajg?oc=5",
-          "time": "2026-05-13 20:47:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "【CNEWS】 真心換絕情？周玉蔻控鼠患「幫腔蔣萬安」 王世堅怒：幫妳解圍還鬥爭我",
-          "url": "https://cnews.com.tw/%e3%80%90cnews%e3%80%91-%e7%9c%9f%e5%bf%83%e6%8f%9b%e7%b5%95%e6%83%85%ef%bc%9f%e5%91%a8%e7%8e%89%e8%94%bb%e6%8e%a7%e9%bc%a0%e6%82%a3%e3%80%8c%e5%b9%ab%e8%85%94%e8%94%a3%e8%90%ac%e5%ae%89%e3%80%8d/",
-          "time": "2026-05-13 20:21:38",
-          "publisher": "匯流新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "【CNEWS】 真心換絕情？周玉蔻控鼠患「幫腔蔣萬安」 王世堅怒： 幫妳解圍還鬥爭我",
-          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOZFJOak5FUENVc1hzWWdRSVJmTlZ6bFc0dXBrb0pIb3JzdWtJOU1PbWtqQldqOVhQUDBYSzRzOGtpUDFub2hObXVNTTN5Y0pwZTJEcmZ5NXk0Z1FZNi1lRE5KNTB0aGlsRERHT2U0RS00eHphNXFvNzk0ZDR4VUgxWFBfYkNwZUtxLWZYdGFLSklZMXJlRjFTSzlFSDh5T1FJUW1uSWdLeXJVVWpSSFdiVDRWM0xLTzZXb19CRjhKdUtSa1RiREVOUE55Mi1oVWQ0RFprbmtvdjdrT1FONlI1YUx4TzRUOW5ROWpHT3oyRW9lVzlYaFJFOGtoSmdJbl9JZktrQzZNS2hkNmhOVkg5cVFWSjFoTkVrcFZfLWpQdHFEUFhFalVNSEtBbnJneG1rR0tVN1VjWjdWd25xdkE?oc=5",
-          "time": "2026-05-13 20:21:38",
-          "publisher": "匯流新聞網",
-          "severity": "yellow"
         }
       ]
     },
@@ -54999,6 +55097,27 @@
       {
         "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
         "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZGtzNWhlS0lIOURaV2szU0xmalc4cXRlckhLZHViTlBKV3cyVGZVeHV4YjczMTlQQnhaenowOVF3bzBYQnJxRVV1VnhTYnYweTNwZXpuOVFEMXNHVFdoNNIBZkFVX3lxTE91SExGNHpReE82S29jaUZhMVoxakxydXpYVmk3ZnprUUQyZ2ZBck1IeWZJVldDOVZmX1drSTBPMUFnaEd1ZHRXdk94NHoxTS1VTUJEeW5OeWZBaWFYdGgxOUNyR2trUQ?oc=5",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
+        "title": "新聞分析》蔣萬安面臨直球對決",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
+        "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
+        "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
         "time": "2026-05-14 05:30:00",
         "publisher": "自由時報",
         "severity": null
@@ -56614,6 +56733,13 @@
         "severity": "yellow"
       },
       {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 14:51:38",
+        "publisher": "匯流新聞網",
+        "severity": null
+      },
+      {
         "title": "陳慧文議員關心兒少數位安全陳其邁：召集研擬數位安全治理方案納入兒少保護核心政策– 地方新聞",
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9oUHVIUTJKNE5VVHNYTGticFdYbEZiV1k4WUVLRmRlQTIwWk00N2l1eWdKOTRfTFFhUllmWlJ3ampVeWhFLWRKNVY4Rnp4VHNY?oc=5",
         "time": "2026-05-13 14:51:04",
@@ -57402,6 +57528,13 @@
         "url": "https://n.yam.com/Article/20260513764360",
         "time": "2026-05-13 12:00:00",
         "publisher": "蕃新聞→台灣好新聞",
+        "severity": null
+      },
+      {
+        "title": "陳其邁：打造在地安老與整合照顧體系 推動社宅結合銀髮家園",
+        "url": "https://n.yam.com/Article/20260513522575",
+        "time": "2026-05-13 12:00:00",
+        "publisher": "蕃新聞→今傳媒",
         "severity": null
       },
       {
@@ -58074,6 +58207,27 @@
         "severity": null
       },
       {
+        "title": "新聞分析》蔣萬安面臨直球對決",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
+        "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
+        "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+        "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
+        "time": "2026-05-14 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
+      {
         "title": "觀點投書：蔣萬安的「正常人邏輯」，反襯出民進黨有多白目 | 李子賢 | 評論",
         "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12eTlncG5PbjVrWG12UTJlZWZTYUI1b2YyRzFoVjE5cy1rWm9Lc1FfTmZKb2tXRHdhQWdiSGZabjlTWkE1N29JeGctZlZQZw?oc=5",
         "time": "2026-05-14 05:28:00",
@@ -59684,6 +59838,13 @@
         "severity": "yellow"
       },
       {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 14:51:38",
+        "publisher": "匯流新聞網",
+        "severity": null
+      },
+      {
         "title": "陳慧文議員關心兒少數位安全陳其邁：召集研擬數位安全治理方案納入兒少保護核心政策– 地方新聞",
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9oUHVIUTJKNE5VVHNYTGticFdYbEZiV1k4WUVLRmRlQTIwWk00N2l1eWdKOTRfTFFhUllmWlJ3ampVeWhFLWRKNVY4Rnp4VHNY?oc=5",
         "time": "2026-05-13 14:51:04",
@@ -60472,6 +60633,13 @@
         "url": "https://n.yam.com/Article/20260513764360",
         "time": "2026-05-13 12:00:00",
         "publisher": "蕃新聞→台灣好新聞",
+        "severity": null
+      },
+      {
+        "title": "陳其邁：打造在地安老與整合照顧體系 推動社宅結合銀髮家園",
+        "url": "https://n.yam.com/Article/20260513522575",
+        "time": "2026-05-13 12:00:00",
+        "publisher": "蕃新聞→今傳媒",
         "severity": null
       },
       {
@@ -72409,24 +72577,24 @@
       "is_catchall": false
     },
     {
-      "title": "台東鼠患事件",
-      "city": "台東",
-      "place": "台東縣政府",
-      "lat": 22.7583,
-      "lng": 121.1444,
+      "title": "新竹縣鼠患事件",
+      "city": "新竹縣",
+      "place": "新竹縣政府",
+      "lat": 24.8378,
+      "lng": 121.0177,
       "level": "green",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T05:55:27+00:00",
-      "news_full_expires_at": "2026-05-14T05:55:27+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
         {
-          "title": "台東議員籲善用「貓部隊」抗鼠患 減少用藥護生態",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5435525",
-          "time": "2026-05-13 13:55:27",
+          "title": "楊文科才說沒鼠患 新豐鄉民就傳抱怨",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pazBTVjFxTklGMnhhaVNZZktCcVJQV2cyQndEU0Z6Z0FCbDlHSURIT1dWZEhleXFOVGhFRktwMlhpR0I2SS1qRTBLTGl3bnF6Mlk3NFp0M0dmR1XSAWBBVV95cUxPRmZ1bTVxM1RaZVp5X2RhVENqTk1nbjdDLWwtdHlqalRMUHlQQ2F5cWx3eXE5cmZuTFh0dXlCb3NqdC1WZi1Jal82SlF0Z3dqNVpoUUYxZElQVjhmOENoVUE?oc=5",
+          "time": "2026-05-14 05:30:00",
           "publisher": "自由時報",
           "severity": "yellow"
         }
@@ -72471,6 +72639,37 @@
       "is_catchall": false
     },
     {
+      "title": "台北狼師事件",
+      "city": "台北",
+      "place": "台北市士林區",
+      "lat": 25.088,
+      "lng": 121.525,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T06:44:00+00:00",
+      "news_full_expires_at": "2026-05-14T06:44:00+00:00",
+      "news_articles": [
+        {
+          "title": "NONO遭控性侵案大逆轉！士林地院一審判無罪：非可憑臆測而入人於罪",
+          "url": "https://www.storm.mg/lifestyle/11131086",
+          "time": "2026-05-13 14:44:00",
+          "publisher": "風傳媒",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
       "title": "桃園狼師事件",
       "city": "桃園",
       "place": "桃園市政府",
@@ -72502,25 +72701,25 @@
       "is_catchall": false
     },
     {
-      "title": "台北狼師事件",
-      "city": "台北",
-      "place": "台北市士林區",
-      "lat": 25.088,
-      "lng": 121.525,
+      "title": "花蓮火災事件",
+      "city": "花蓮",
+      "place": "花蓮縣政府",
+      "lat": 23.9871,
+      "lng": 121.6015,
       "level": "green",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T06:44:00+00:00",
-      "news_full_expires_at": "2026-05-14T06:44:00+00:00",
+      "news_latest_at": "2026-05-13T09:30:33+00:00",
+      "news_full_expires_at": "2026-05-14T09:30:33+00:00",
       "news_articles": [
         {
-          "title": "NONO遭控性侵案大逆轉！士林地院一審判無罪：非可憑臆測而入人於罪",
-          "url": "https://www.storm.mg/lifestyle/11131086",
-          "time": "2026-05-13 14:44:00",
-          "publisher": "風傳媒",
+          "title": "花蓮縣政府啟動林田山火災後勘查 協助文化資產保存與再生",
+          "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxNcDNJN2cyak11ZmtqVFBEUmF1TWlPa3dvRk5jNnRFQXNGWmFUTEh5a3hqQUJOUXh6TGd6LWRNTTBsamRuaWc3b0V3aEp6cmtkb3JneERldlhqc2FWUDdVb0tWNVpUU3JrU3BEQ0xtUGc5UFNQUmloSnBoRUFmTXpYVlE0LWNScEh5Z1JCTm9YdEhrWks1dzZ6OGVYc2VlME1TQldyZ3Zfd3k4cWU2ellrZFVPMURraWN3UWFDMG1Za1pjb3FtaGR0Yy1JLVVzWUwyZV82Si1RdnplMFU5WGxrOGVabmhobGQyX3ZhSnA5dTU5TndqeW1LUXZsZlBQYm1FOGR0bGZzTHo0Q29nZEF5SGYxZ19YVllnY3JTS3FkZ1B4M3U4Q3NkcW92b1NUbkVjTXdpUDBsVl9vSDlFVXVha2c3U2VYRXRWZDQ5ZXdsNkdldXVqM1N1SnpTMUE0dVRNN09XNTJXQkh4MGx4aFdkZUpxaF9jeXl0OU81TDZCc05LUmV5RTB0Smt6U3Q?oc=5",
+          "time": "2026-05-13 17:30:33",
+          "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
       ],
@@ -72553,37 +72752,6 @@
           "time": "2026-05-13 14:53:44",
           "publisher": "中時新聞網",
           "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
-      "title": "花蓮火災事件",
-      "city": "花蓮",
-      "place": "花蓮縣政府",
-      "lat": 23.9871,
-      "lng": 121.6015,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T09:30:33+00:00",
-      "news_full_expires_at": "2026-05-14T09:30:33+00:00",
-      "news_articles": [
-        {
-          "title": "花蓮縣政府啟動林田山火災後勘查 協助文化資產保存與再生",
-          "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxNcDNJN2cyak11ZmtqVFBEUmF1TWlPa3dvRk5jNnRFQXNGWmFUTEh5a3hqQUJOUXh6TGd6LWRNTTBsamRuaWc3b0V3aEp6cmtkb3JneERldlhqc2FWUDdVb0tWNVpUU3JrU3BEQ0xtUGc5UFNQUmloSnBoRUFmTXpYVlE0LWNScEh5Z1JCTm9YdEhrWks1dzZ6OGVYc2VlME1TQldyZ3Zfd3k4cWU2ellrZFVPMURraWN3UWFDMG1Za1pjb3FtaGR0Yy1JLVVzWUwyZV82Si1RdnplMFU5WGxrOGVabmhobGQyX3ZhSnA5dTU5TndqeW1LUXZsZlBQYm1FOGR0bGZzTHo0Q29nZEF5SGYxZ19YVllnY3JTS3FkZ1B4M3U4Q3NkcW92b1NUbkVjTXdpUDBsVl9vSDlFVXVha2c3U2VYRXRWZDQ5ZXdsNkdldXVqM1N1SnpTMUE0dVRNN09XNTJXQkh4MGx4aFdkZUpxaF9jeXl0OU81TDZCc05LUmV5RTB0Smt6U3Q?oc=5",
-          "time": "2026-05-13 17:30:33",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
@@ -72688,6 +72856,37 @@
       "is_catchall": false
     },
     {
+      "title": "桃園詐騙案",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "lat": 24.9951,
+      "lng": 121.29840192378865,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-12T23:32:00+00:00",
+      "news_full_expires_at": "2026-05-13T23:32:00+00:00",
+      "news_articles": [
+        {
+          "title": "桃園市文化局呼籲民眾提高警覺 慎防冒用「桃園國際動漫大展」詐騙廣告",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCd2RidndjdXJSWE1WZk5uR2IyNU9HTEV2MWFOY1hXTTN3Nk90N25YYzU3bnlMWmFCMmZyWDBNVGR0UVE1NF80NEF1SHZiS0dodEE?oc=5",
+          "time": "2026-05-13 07:32:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
       "title": "台南詐騙案",
       "city": "台南",
       "place": "台南市政府",
@@ -72750,68 +72949,6 @@
       "is_catchall": false
     },
     {
-      "title": "桃園詐騙案",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "lat": 24.9951,
-      "lng": 121.29840192378865,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-12T23:32:00+00:00",
-      "news_full_expires_at": "2026-05-13T23:32:00+00:00",
-      "news_articles": [
-        {
-          "title": "桃園市文化局呼籲民眾提高警覺 慎防冒用「桃園國際動漫大展」詐騙廣告",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCd2RidndjdXJSWE1WZk5uR2IyNU9HTEV2MWFOY1hXTTN3Nk90N25YYzU3bnlMWmFCMmZyWDBNVGR0UVE1NF80NEF1SHZiS0dodEE?oc=5",
-          "time": "2026-05-13 07:32:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
-      "title": "台中詐騙案",
-      "city": "台中",
-      "place": "台中市豐原區",
-      "lat": 24.2542,
-      "lng": 120.722,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T09:45:00+00:00",
-      "news_full_expires_at": "2026-05-14T09:45:00+00:00",
-      "news_articles": [
-        {
-          "title": "台中銀行腳宣導抵達豐原翁子里 以信託與詐騙防制守護在地長輩",
-          "url": "https://finance.ettoday.net/news/3165400",
-          "time": "2026-05-13 17:45:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
       "title": "桃園鼠患事件",
       "city": "桃園",
       "place": "桃園市政府",
@@ -72850,6 +72987,44 @@
       "is_catchall": false
     },
     {
+      "title": "台東鼠患事件",
+      "city": "台東",
+      "place": "台東縣政府",
+      "lat": 22.7583,
+      "lng": 121.1444,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 2",
+      "note": "24h 命中 2 則（新聞 2、留言 0）",
+      "news_count": 2,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
+      "news_articles": [
+        {
+          "title": "防治鼠患 台東議員籲善用「貓部隊」",
+          "url": "https://news.ltn.com.tw/news/Taitung/paper/1754755",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東議員籲善用「貓部隊」抗鼠患 減少用藥護生態",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5435525",
+          "time": "2026-05-13 13:55:27",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 2,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 8,
+      "is_urgent": true,
+      "is_catchall": false
+    },
+    {
       "title": "宜蘭詐騙案",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
@@ -72876,6 +73051,44 @@
           "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5VUE84UUVXMURBRUR3UWVuTFBWUThnb3ctLUdGM1BYV0x5OUEtRWxzeFZ3MTFmdDVaM3luYkRmVU03YnZrWmQw?oc=5",
           "time": "2026-05-13 15:32:03",
           "publisher": "Google News→台灣新聞雲",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 2,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 8,
+      "is_urgent": true,
+      "is_catchall": false
+    },
+    {
+      "title": "台中詐騙案",
+      "city": "台中",
+      "place": "台中市豐原區",
+      "lat": 24.2542,
+      "lng": 120.722,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 2",
+      "note": "24h 命中 2 則（新聞 2、留言 0）",
+      "news_count": 2,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T09:45:00+00:00",
+      "news_full_expires_at": "2026-05-14T09:45:00+00:00",
+      "news_articles": [
+        {
+          "title": "台中銀行腳宣導抵達豐原翁子里 以信託與詐騙防制守護在地長輩",
+          "url": "https://finance.ettoday.net/news/3165400",
+          "time": "2026-05-13 17:45:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中銀行腳宣導抵達豐原翁子里　以信託與詐騙防制守護在地長輩",
+          "url": "https://n.yam.com/Article/20260513517417",
+          "time": "2026-05-13 12:00:00",
+          "publisher": "蕃新聞→墨新聞",
           "severity": "yellow"
         }
       ],
@@ -73346,37 +73559,6 @@
       "is_catchall": false
     },
     {
-      "title": "台中狼師事件",
-      "city": "台中",
-      "place": "台中市政府",
-      "lat": 24.1632,
-      "lng": 120.64949807621136,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T04:20:56+00:00",
-      "news_full_expires_at": "2026-05-14T04:20:56+00:00",
-      "news_articles": [
-        {
-          "title": "性侵未成年繼女致懷孕產子 台中獸父重判…二審加碼判賠金額出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435368",
-          "time": "2026-05-13 12:20:56",
-          "publisher": "自由時報",
-          "severity": "red"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
       "title": "新北狼師事件",
       "city": "新北",
       "place": "新北市政府",
@@ -73408,25 +73590,25 @@
       "is_catchall": false
     },
     {
-      "title": "彰化弊案爭議",
-      "city": "彰化",
-      "place": "彰化縣政府",
-      "lat": 24.0761,
-      "lng": 120.54549807621136,
+      "title": "台中狼師事件",
+      "city": "台中",
+      "place": "台中市政府",
+      "lat": 24.1632,
+      "lng": 120.64949807621136,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T14:26:00+00:00",
-      "news_full_expires_at": "2026-05-14T14:26:00+00:00",
+      "news_latest_at": "2026-05-13T04:20:56+00:00",
+      "news_full_expires_at": "2026-05-14T04:20:56+00:00",
       "news_articles": [
         {
-          "title": "獨家／豪奢「白富美」律師逃漏稅 彰化律師公會前理事長遭收押",
-          "url": "https://tw.news.yahoo.com/%E7%8D%A8%E5%AE%B6-%E8%B1%AA%E5%A5%A2-%E7%99%BD%E5%AF%8C%E7%BE%8E-%E5%BE%8B%E5%B8%AB%E9%80%83%E6%BC%8F%E7%A8%85-%E5%BD%B0%E5%8C%96%E5%BE%8B%E5%B8%AB%E5%85%AC%E6%9C%83%E5%89%8D%E7%90%86%E4%BA%8B%E9%95%B7%E9%81%AD%E6%94%B6%E6%8A%BC-142600870.html",
-          "time": "2026-05-13 22:26:00",
-          "publisher": "Yahoo新聞",
+          "title": "性侵未成年繼女致懷孕產子 台中獸父重判…二審加碼判賠金額出爐",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435368",
+          "time": "2026-05-13 12:20:56",
+          "publisher": "自由時報",
           "severity": "red"
         }
       ],
@@ -73458,6 +73640,37 @@
           "url": "https://news.ltn.com.tw/news/society/breakingnews/5435615",
           "time": "2026-05-13 14:54:23",
           "publisher": "自由時報",
+          "severity": "red"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
+      "title": "彰化弊案爭議",
+      "city": "彰化",
+      "place": "彰化縣政府",
+      "lat": 24.0761,
+      "lng": 120.54549807621136,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T14:26:00+00:00",
+      "news_full_expires_at": "2026-05-14T14:26:00+00:00",
+      "news_articles": [
+        {
+          "title": "獨家／豪奢「白富美」律師逃漏稅 彰化律師公會前理事長遭收押",
+          "url": "https://tw.news.yahoo.com/%E7%8D%A8%E5%AE%B6-%E8%B1%AA%E5%A5%A2-%E7%99%BD%E5%AF%8C%E7%BE%8E-%E5%BE%8B%E5%B8%AB%E9%80%83%E6%BC%8F%E7%A8%85-%E5%BD%B0%E5%8C%96%E5%BE%8B%E5%B8%AB%E5%85%AC%E6%9C%83%E5%89%8D%E7%90%86%E4%BA%8B%E9%95%B7%E9%81%AD%E6%94%B6%E6%8A%BC-142600870.html",
+          "time": "2026-05-13 22:26:00",
+          "publisher": "Yahoo新聞",
           "severity": "red"
         }
       ],
@@ -73849,8 +74062,8 @@
       "title": "新竹縣地方動態",
       "city": "新竹縣",
       "place": "新竹縣政府",
-      "lat": 24.8378,
-      "lng": 121.0177,
+      "lat": 24.8393,
+      "lng": 121.02029807621136,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 15",
@@ -73982,13 +74195,20 @@
       "lng": 120.43389807621135,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 16",
-      "note": "24h 命中 16 則（新聞 16、留言 0）",
-      "news_count": 16,
+      "platform": "新聞 17",
+      "note": "24h 命中 17 則（新聞 17、留言 0）",
+      "news_count": 17,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:49:02+00:00",
-      "news_full_expires_at": "2026-05-14T16:49:02+00:00",
+      "news_latest_at": "2026-05-13T20:10:00+00:00",
+      "news_full_expires_at": "2026-05-14T20:10:00+00:00",
       "news_articles": [
+        {
+          "title": "雲林 營建廢土管理修法 議會打回票",
+          "url": "https://tw.news.yahoo.com/%E9%9B%B2%E6%9E%97-%E7%87%9F%E5%BB%BA%E5%BB%A2%E5%9C%9F%E7%AE%A1%E7%90%86%E4%BF%AE%E6%B3%95-%E8%AD%B0%E6%9C%83%E6%89%93%E5%9B%9E%E7%A5%A8-201000748.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "雲林街頭警匪追逐！駕駛撞傷母子又波及10多輛機車",
           "url": "https://tw.news.yahoo.com/%E9%9B%B2%E6%9E%97%E8%A1%97%E9%A0%AD%E8%AD%A6%E5%8C%AA%E8%BF%BD%E9%80%90-%E9%A7%95%E9%A7%9B%E6%92%9E%E5%82%B7%E6%AF%8D%E5%AD%90%E5%8F%88%E6%B3%A2%E5%8F%8A10%E5%A4%9A%E8%BC%9B%E6%A9%9F%E8%BB%8A-093408680.html",
@@ -74106,7 +74326,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 16,
+      "urgency_score": 17,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -74118,13 +74338,20 @@
       "lng": 121.526,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 18",
-      "note": "24h 命中 18 則（新聞 18、留言 0）",
-      "news_count": 18,
+      "platform": "新聞 19",
+      "note": "24h 命中 19 則（新聞 19、留言 0）",
+      "news_count": 19,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T19:24:28+00:00",
-      "news_full_expires_at": "2026-05-14T19:24:28+00:00",
+      "news_latest_at": "2026-05-13T20:10:00+00:00",
+      "news_full_expires_at": "2026-05-14T20:10:00+00:00",
       "news_articles": [
+        {
+          "title": "台北 監測老鼠數量 環保局祭籠夜法",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8C%97-%E7%9B%A3%E6%B8%AC%E8%80%81%E9%BC%A0%E6%95%B8%E9%87%8F-%E7%92%B0%E4%BF%9D%E5%B1%80%E7%A5%AD%E7%B1%A0%E5%A4%9C%E6%B3%95-201000514.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "新台派上線-老鼠吃掉蔣萬安形象 已貼上”市政無能”標籤 0513",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5xVFJ4VzhjVF8tV2VZcDNId2l4SzNwVWF3aWJQcGNYc2owYzVOTHFHSXlHWTVYRXpWNUwwenFtZVBfd1ZBT3g5LXpDQVpTS09EMXNUMTFtLWprOUFvbzg2cmhXV25Pakl0aXd4TEhic1BSSERSck9v?oc=5",
@@ -74254,10 +74481,10 @@
       ],
       "comments": [],
       "negative_news_count": 9,
-      "negativity_pct": 50,
+      "negativity_pct": 47,
       "urgent_red_comments": 0,
-      "urgency_score": 45,
-      "is_urgent": true,
+      "urgency_score": 46,
+      "is_urgent": false,
       "is_catchall": false
     },
     {
@@ -74268,13 +74495,20 @@
       "lng": 120.97439807621136,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 18",
-      "note": "24h 命中 18 則（新聞 18、留言 0）",
-      "news_count": 18,
+      "platform": "新聞 19",
+      "note": "24h 命中 19 則（新聞 19、留言 0）",
+      "news_count": 19,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T15:48:42+00:00",
-      "news_full_expires_at": "2026-05-14T15:48:42+00:00",
+      "news_latest_at": "2026-05-13T20:10:00+00:00",
+      "news_full_expires_at": "2026-05-14T20:10:00+00:00",
       "news_articles": [
+        {
+          "title": "南投2成沒自來水 民代促縣府協助",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%952%E6%88%90%E6%B2%92%E8%87%AA%E4%BE%86%E6%B0%B4-%E6%B0%91%E4%BB%A3%E4%BF%83%E7%B8%A3%E5%BA%9C%E5%8D%94%E5%8A%A9-201000100.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "大甲媽祖盃》新北市單場雙響擊敗宜蘭縣！ 臺南市陳揚文陽春砲力退南投縣 | TSNA",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWeTBtZ2lkbnNhdTU5NmlKcnlRSW1wNHRwT0JBRlY2Q0JfaHNSY2dWUy13WGhUUVRuVFJIX19LMHpuanNybWNpM2JnbURWM182cExyM2JB?oc=5",
@@ -74404,9 +74638,9 @@
       ],
       "comments": [],
       "negative_news_count": 1,
-      "negativity_pct": 6,
+      "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 21,
+      "urgency_score": 22,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -74418,13 +74652,20 @@
       "lng": 120.9675,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 41",
-      "note": "24h 命中 41 則（新聞 41、留言 0）",
-      "news_count": 41,
+      "platform": "新聞 42",
+      "note": "24h 命中 42 則（新聞 42、留言 0）",
+      "news_count": 42,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T18:52:22+00:00",
-      "news_full_expires_at": "2026-05-14T18:52:22+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "竹市府稱YouBike增站點 議員︰不要忘了南寮",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xOVFGbk9rQjFLSThYZ3B4NmZiSUdPOExpNXNVZUx6bTNDeDM1eExnaWpxdmxOZV9yYlo5c2dFM0Z5SU9LbGZjNEUwRVRNdkZBd1hUaEg2Ri1kQnJSS1pVWTF4WTHSAWpBVV95cUxNakhaWWw0WFZUZUxBakNpdnRaRW5CRWV1SGQwRXg3eC10STl6QmxHU1ZSNy1uUFZObGZoc3ByYWNLYjdjb1RsNVpYRmZoazZsejl5alg1S1ZOMFcza3pBWk5SbXRXU1dSQmZn?oc=5",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "竹市眷村博物館煥新開館 高虹安市長：延續眷村文化與城市記憶",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vbDRIdmhncHFCVHh0Q2tzUUQ2N0VCOVhORWJpeE9rUXdHNGdhTjlSQ1NOUGlnaUhScUIxR25ERXlNMllVWjZfaVlUdnMwUzhWZkdzTTdIdVB6cjk4Rk1jNTVRWQ?oc=5",
@@ -74717,7 +74958,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 41,
+      "urgency_score": 42,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -74729,9 +74970,9 @@
       "lng": 119.5793,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 44",
-      "note": "24h 命中 44 則（新聞 44、留言 0）",
-      "news_count": 44,
+      "platform": "新聞 45",
+      "note": "24h 命中 45 則（新聞 45、留言 0）",
+      "news_count": 45,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T20:00:00+00:00",
       "news_full_expires_at": "2026-05-14T20:00:00+00:00",
@@ -74760,6 +75001,13 @@
         {
           "title": "防災教育向下扎根 澎湖馬小附幼學童體驗「消防教室」",
           "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNUXo4XzdMU0s5VlB4MlhVYXdPRU1zNE9GZXh2NWRiS0hYSkc0X2F3QXZxVFNRdDJxanYyNnUwT3M1dll2TTVYbHlINUJSRzZRNlpZUzItemJuYVhJdTRCYkN0ckNIYUoybFJjUmJxR2ZOUlVuZEg3aU1mNlFvMlpuOW4tV2JFcWFBejZpMnBNR1JXTEhjckFTMERKLUx1S3g0RFhETXBROU9IYjRxWDVlSzRidzhfZ1ZydnJHQ1pScWpwejBXMUZqTGFJa291Q3plRk9xVEl3Q1dsZU4wUE9yXzhxV0d3LTVBOUZVbERGcEpZbExoRkwyM2FlVjdqaHRlYXNTd0ZHR0VYb0VkV3c0Z0RES2dKZERDNnc1TzNRUFNlWU5kdWxFdVVXbDM3U3VvWk1tMk1pTHRsNk4tSUZZelBEbw?oc=5",
+          "time": "2026-05-14 00:06:39",
+          "publisher": "Google News→澎湖e傳媒",
+          "severity": null
+        },
+        {
+          "title": "體驗澎湖之美 白沙分局竭誠守護「您」的安全！",
+          "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNZ1hWZEtQUkxxekJkNVNPVjRXanFMMTBVMWxaZ0d2RlJBZ1k5SXFUd1lFY08zU3RwaE0zQlNwY3FrMU1lRE1nMUVUYy1TU2g3U3dTYXFpMXhXeEpXV19CTlhTOElJRGJYS1NUbkQ3bGJ4ZXBUVFYyNERpcnJGcHdjaHBHTUZ4eEc4NHNjWkdYVktyRjdCRWloWVhrNUhKTHE1SVl5OWdTT1FhaUx4TzBWN3VkRXhnR19acXdsNl80RElZeGx5VFRWaXdIem5fWFNrN0FGUEo5cWdkM1V5Z19VelRkaXp5Zjc3d3BqTHJreFBfdGtfVm5XSkQ0ZTVUblcwMlljQkRiM0RvaC1PNUpsWmJnUzhHdkxoNU5RSGZGWmMyRlpuTndZRTBqdl96ZVdsakE5LTVpQQ?oc=5",
           "time": "2026-05-14 00:06:39",
           "publisher": "Google News→澎湖e傳媒",
           "severity": null
@@ -75049,7 +75297,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 44,
+      "urgency_score": 45,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -75491,13 +75739,20 @@
       "lng": 118.31989807621136,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 64",
-      "note": "24h 命中 64 則（新聞 64、留言 0）",
-      "news_count": 64,
+      "platform": "新聞 65",
+      "note": "24h 命中 65 則（新聞 65、留言 0）",
+      "news_count": 65,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T20:40:00+00:00",
-      "news_full_expires_at": "2026-05-14T20:40:00+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "標槍飛彈 首在金門上陣",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754680",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "金門消聯合旅運中心演練 構築港區安全防護網",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtWkdRTDdPaXFFTVJJWFRpOEk3RVYtcUtRLUt4RWphQUtaTEI5X2oxTXE5R1hUM2QtTmFIcVVmU1lBNFNvTWstd3IxMFhDclMtX1E?oc=5",
@@ -75951,7 +76206,7 @@
       "negative_news_count": 1,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 67,
+      "urgency_score": 68,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -75963,9 +76218,9 @@
       "lng": 120.6252,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 63 / Threads 6 / FB 1",
-      "note": "24h 命中 70 則（新聞 63、留言 7）",
-      "news_count": 63,
+      "platform": "新聞 64 / Threads 6 / FB 1",
+      "note": "24h 命中 71 則（新聞 64、留言 7）",
+      "news_count": 64,
       "comment_count": 7,
       "news_latest_at": "2026-05-13T20:10:00+00:00",
       "news_full_expires_at": "2026-05-14T20:10:00+00:00",
@@ -76151,6 +76406,13 @@
           "time": "2026-05-13 14:59:50",
           "publisher": "中時新聞網",
           "severity": "yellow"
+        },
+        {
+          "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+          "url": "https://cnews.com.tw/237260513a06/",
+          "time": "2026-05-13 14:51:38",
+          "publisher": "匯流新聞網",
+          "severity": null
         },
         {
           "title": "川習會將登場 盧秀燕籲高層密切觀察因應 (圖)",
@@ -76473,47 +76735,9 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 1,
-      "urgency_score": 72,
+      "urgency_score": 73,
       "is_urgent": false,
       "is_catchall": true
-    },
-    {
-      "title": "桃園弊案爭議",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "lat": 24.9966,
-      "lng": 121.301,
-      "level": "red",
-      "source": "news",
-      "platform": "新聞 2",
-      "note": "24h 命中 2 則（新聞 2、留言 0）",
-      "news_count": 2,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T03:38:00+00:00",
-      "news_full_expires_at": "2026-05-14T03:38:00+00:00",
-      "news_articles": [
-        {
-          "title": "桃園男隨手搶騎士背包 「僅得手2元」搶奪罪起訴",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE40SFpRRnpzNXpHX1RfTWxydndLa29rTmxfYVlfazUwNFI4LXZySjh6NkVHNlJjMldoZUYtbTktNjlKdFBYQ21lX3dWTUhyemx5MGFaYWNOMklYcWFIakHSAWhBVV95cUxOeHl4OW9yMTVIYXVGX0VqN2NFR2xjQklRcGdzWjRzV3RVYTJsYzY4anhkNTVWTHpZT3BxMHRSX1YzUzYzUTU0SDJlYzk3d3JaOGdKNzYyQXpkMnVhT1hkMk9EN3ZNUTdINQ?oc=5",
-          "time": "2026-05-13 11:38:00",
-          "publisher": "ETtoday",
-          "severity": "red"
-        },
-        {
-          "title": "桃園警界採購弊案「燒到調查處」！調查官幫博弈集團寫程式遭押",
-          "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNUDZHLUd0bmRqWlRMSUlTOV9VVlpCNVJERFNhODdYb0NIZWVrWlh4UXd2VFUtWmMyLVdxQUxzYndlSUJQTlprWDdYc0dhdTQ4TFBNZVdaTlJURjVtMWRwazJXMHJsclVjU1c2VmFtWmItbU9PdDYzRmo1WDlla0hrMHE1NmFldG9zMlcwWHo3VE4wNmNkci04UV9oUXZ3THg2NEdIS1R2ejhfV2FncnFIUXVpTG5neVltV2dqWWdTMGdHSjVNTV9fTktPRmtFSS1uaHRoSDRyM2FpUS1OTEwzQlZjc3UzZENOY2RLaDJrVVZoOVpDNm5tZ19DOUVoNGNWX29RN1d5WDEybEZwUmFTVkFINE93a3FfVmFSVEZpTDdWUlZ1YnhkcDFyYXctX0ZCU21zV2w3Y09BWGwzM0RJUy1TaTNhMlRtSFJmVXYxTmoxbC1PZUhsTk5tcURYVWdMM0NKWXJPRENreG9TRUxYaXhQWUNsc2pEbE9yX0FVSjJITzkxYjM1Vktya1pkQQ?oc=5",
-          "time": "2026-05-13 08:15:38",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 2,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 8,
-      "is_urgent": true,
-      "is_catchall": false
     },
     {
       "title": "高雄弊案爭議",
@@ -76554,6 +76778,44 @@
       "is_catchall": false
     },
     {
+      "title": "桃園弊案爭議",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "lat": 24.9966,
+      "lng": 121.301,
+      "level": "red",
+      "source": "news",
+      "platform": "新聞 2",
+      "note": "24h 命中 2 則（新聞 2、留言 0）",
+      "news_count": 2,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T03:38:00+00:00",
+      "news_full_expires_at": "2026-05-14T03:38:00+00:00",
+      "news_articles": [
+        {
+          "title": "桃園男隨手搶騎士背包 「僅得手2元」搶奪罪起訴",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE40SFpRRnpzNXpHX1RfTWxydndLa29rTmxfYVlfazUwNFI4LXZySjh6NkVHNlJjMldoZUYtbTktNjlKdFBYQ21lX3dWTUhyemx5MGFaYWNOMklYcWFIakHSAWhBVV95cUxOeHl4OW9yMTVIYXVGX0VqN2NFR2xjQklRcGdzWjRzV3RVYTJsYzY4anhkNTVWTHpZT3BxMHRSX1YzUzYzUTU0SDJlYzk3d3JaOGdKNzYyQXpkMnVhT1hkMk9EN3ZNUTdINQ?oc=5",
+          "time": "2026-05-13 11:38:00",
+          "publisher": "ETtoday",
+          "severity": "red"
+        },
+        {
+          "title": "桃園警界採購弊案「燒到調查處」！調查官幫博弈集團寫程式遭押",
+          "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNUDZHLUd0bmRqWlRMSUlTOV9VVlpCNVJERFNhODdYb0NIZWVrWlh4UXd2VFUtWmMyLVdxQUxzYndlSUJQTlprWDdYc0dhdTQ4TFBNZVdaTlJURjVtMWRwazJXMHJsclVjU1c2VmFtWmItbU9PdDYzRmo1WDlla0hrMHE1NmFldG9zMlcwWHo3VE4wNmNkci04UV9oUXZ3THg2NEdIS1R2ejhfV2FncnFIUXVpTG5neVltV2dqWWdTMGdHSjVNTV9fTktPRmtFSS1uaHRoSDRyM2FpUS1OTEwzQlZjc3UzZENOY2RLaDJrVVZoOVpDNm5tZ19DOUVoNGNWX29RN1d5WDEybEZwUmFTVkFINE93a3FfVmFSVEZpTDdWUlZ1YnhkcDFyYXctX0ZCU21zV2w3Y09BWGwzM0RJUy1TaTNhMlRtSFJmVXYxTmoxbC1PZUhsTk5tcURYVWdMM0NKWXJPRENreG9TRUxYaXhQWUNsc2pEbE9yX0FVSjJITzkxYjM1Vktya1pkQQ?oc=5",
+          "time": "2026-05-13 08:15:38",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 2,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 8,
+      "is_urgent": true,
+      "is_catchall": false
+    },
+    {
       "title": "宜蘭弊案爭議",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
@@ -76561,9 +76823,9 @@
       "lng": 121.7378,
       "level": "red",
       "source": "news",
-      "platform": "新聞 3",
-      "note": "24h 命中 3 則（新聞 3、留言 0）",
-      "news_count": 3,
+      "platform": "新聞 4",
+      "note": "24h 命中 4 則（新聞 4、留言 0）",
+      "news_count": 4,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T12:49:39+00:00",
       "news_full_expires_at": "2026-05-14T12:49:39+00:00",
@@ -76573,6 +76835,13 @@
           "url": "https://more-news.tw/614746/",
           "time": "2026-05-13 20:49:39",
           "publisher": "墨新聞",
+          "severity": "red"
+        },
+        {
+          "title": "宜蘭 員山鄉長張宜樺收押 牽動議員選情",
+          "url": "https://tw.news.yahoo.com/%E5%AE%9C%E8%98%AD-%E5%93%A1%E5%B1%B1%E9%84%89%E9%95%B7%E5%BC%B5%E5%AE%9C%E6%A8%BA%E6%94%B6%E6%8A%BC-%E7%89%BD%E5%8B%95%E8%AD%B0%E5%93%A1%E9%81%B8%E6%83%85-201000187.html",
+          "time": "2026-05-13 20:10:00",
+          "publisher": "Yahoo新聞",
           "severity": "red"
         },
         {
@@ -76591,10 +76860,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 3,
+      "negative_news_count": 4,
       "negativity_pct": 100,
       "urgent_red_comments": 0,
-      "urgency_score": 12,
+      "urgency_score": 16,
       "is_urgent": true,
       "is_catchall": false
     },
@@ -76731,13 +77000,20 @@
       "lng": 120.72629807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 9",
-      "note": "24h 命中 9 則（新聞 9、留言 0）",
-      "news_count": 9,
+      "platform": "新聞 10",
+      "note": "24h 命中 10 則（新聞 10、留言 0）",
+      "news_count": 10,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T09:53:23+00:00",
-      "news_full_expires_at": "2026-05-14T09:53:23+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "社宅工地上午大火 台中市府下午才空污警報",
+          "url": "https://news.ltn.com.tw/news/Taichung/paper/1754750",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "北屯工地火警影響空品 中市府監測下風處PM2.5數值超標籲民眾加強防護 | 王秀禾 | 地方新聞",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE56MDlpR29ESUd5Qkl6dVl4ZVdkR1ZOblY0Wk9wcWZqOVB6aHRPZUE0TmVoWko2WmdRVUtRNGE1eXBiM21QalFsQkxST3JjZw?oc=5",
@@ -76803,10 +77079,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 2,
-      "negativity_pct": 22,
+      "negative_news_count": 3,
+      "negativity_pct": 30,
       "urgent_red_comments": 0,
-      "urgency_score": 15,
+      "urgency_score": 19,
       "is_urgent": false,
       "is_catchall": false
     },
@@ -77076,13 +77352,20 @@
       "lng": 121.14699807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 24",
-      "note": "24h 命中 24 則（新聞 24、留言 0）",
-      "news_count": 24,
+      "platform": "新聞 26",
+      "note": "24h 命中 26 則（新聞 26、留言 0）",
+      "news_count": 26,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:10:46+00:00",
-      "news_full_expires_at": "2026-05-14T16:10:46+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "防治鼠患 台東議員籲善用「貓部隊」",
+          "url": "https://news.ltn.com.tw/news/Taitung/paper/1754755",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "影／創世40週年親子公益園遊會 5/30彰化延平公園熱鬧登場",
           "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E5%89%B5%E4%B8%9640%E9%80%B1%E5%B9%B4%E8%A6%AA%E5%AD%90%E5%85%AC%E7%9B%8A%E5%9C%92%E9%81%8A%E6%9C%83-5-30%E5%BD%B0%E5%8C%96%E5%BB%B6%E5%B9%B3%E5%85%AC%E5%9C%92%E7%86%B1%E9%AC%A7%E7%99%BB%E5%A0%B4-161046020.html",
@@ -77182,6 +77465,13 @@
           "severity": null
         },
         {
+          "title": "台東熱氣球嘉年華7/4攜手「吉伊卡哇」點亮鹿野！繫留體驗預購時段出爐",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E6%9D%B1%E7%86%B1%E6%B0%A3%E7%90%83%E5%98%89%E5%B9%B4%E8%8F%AF7-4%E6%94%9C%E6%89%8B-%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87-%E9%BB%9E%E4%BA%AE%E9%B9%BF%E9%87%8E-%E7%B9%AB%E7%95%99%E9%AB%94%E9%A9%97%E9%A0%90%E8%B3%BC%E6%99%82%E6%AE%B5%E5%87%BA%E7%88%90-043847849.html",
+          "time": "2026-05-13 12:38:47",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
           "title": "澳洲籍男子受困山區峭壁 台東警消持續挺進救援 (圖)",
           "url": "https://tw.news.yahoo.com/%E6%BE%B3%E6%B4%B2%E7%B1%8D%E7%94%B7%E5%AD%90%E5%8F%97%E5%9B%B0%E5%B1%B1%E5%8D%80%E5%B3%AD%E5%A3%81-%E5%8F%B0%E6%9D%B1%E8%AD%A6%E6%B6%88%E6%8C%81%E7%BA%8C%E6%8C%BA%E9%80%B2%E6%95%91%E6%8F%B4-%E5%9C%96-120624449.html",
           "time": "2026-05-13 12:06:24",
@@ -77253,10 +77543,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 3,
-      "negativity_pct": 12,
+      "negative_news_count": 4,
+      "negativity_pct": 15,
       "urgent_red_comments": 0,
-      "urgency_score": 33,
+      "urgency_score": 38,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -77268,13 +77558,34 @@
       "lng": 121.74179807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 33",
-      "note": "24h 命中 33 則（新聞 33、留言 0）",
-      "news_count": 33,
+      "platform": "新聞 36",
+      "note": "24h 命中 36 則（新聞 36、留言 0）",
+      "news_count": 36,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T17:38:22+00:00",
-      "news_full_expires_at": "2026-05-14T17:38:22+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "基隆-石垣船班 5/28啟航",
+          "url": "https://news.ltn.com.tw/news/life/paper/1754676",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "基隆買觀光巴士 議員憂財政黑洞",
+          "url": "https://news.ltn.com.tw/news/Keelung/paper/1754712",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "魚市遭疑賣保育鯊 基市府澄清",
+          "url": "https://tw.news.yahoo.com/%E9%AD%9A%E5%B8%82%E9%81%AD%E7%96%91%E8%B3%A3%E4%BF%9D%E8%82%B2%E9%AF%8A-%E5%9F%BA%E5%B8%82%E5%BA%9C%E6%BE%84%E6%B8%85-201000601.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "基隆「愛嶼搖滾」5月23日登場 42組卡司齊聚國門廣場拚25萬人潮",
           "url": "https://n.yam.com/Article/20260514995432",
@@ -77511,7 +77822,7 @@
       "negative_news_count": 2,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 39,
+      "urgency_score": 42,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -77523,13 +77834,27 @@
       "lng": 120.21589807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 49",
-      "note": "24h 命中 49 則（新聞 49、留言 0）",
-      "news_count": 49,
+      "platform": "新聞 52",
+      "note": "24h 命中 52 則（新聞 52、留言 0）",
+      "news_count": 52,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:31:48+00:00",
-      "news_full_expires_at": "2026-05-14T16:31:48+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "南市埤塘多語導覽員 免費培訓",
+          "url": "https://news.ltn.com.tw/news/Tainan/paper/1754763",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "老中青19團 台南孔廟鬥南管",
+          "url": "https://tw.news.yahoo.com/%E8%80%81%E4%B8%AD%E9%9D%9219%E5%9C%98-%E5%8F%B0%E5%8D%97%E5%AD%94%E5%BB%9F%E9%AC%A5%E5%8D%97%E7%AE%A1-201000477.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
         {
           "title": "台南農地重劃區土地標售傳捷報 標脫14筆進帳逾1440萬元",
           "url": "https://n.yam.com/Article/20260514937943",
@@ -77578,6 +77903,13 @@
           "time": "2026-05-13 20:21:28",
           "publisher": "自由時報",
           "severity": null
+        },
+        {
+          "title": "台南 杜絕偷拍 衛生局研議行政指引",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8D%97-%E6%9D%9C%E7%B5%95%E5%81%B7%E6%8B%8D-%E8%A1%9B%E7%94%9F%E5%B1%80%E7%A0%94%E8%AD%B0%E8%A1%8C%E6%94%BF%E6%8C%87%E5%BC%95-201000407.html",
+          "time": "2026-05-13 20:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
         },
         {
           "title": "不受乾旱少雨影響！台南白河蓮花季5/23登場 蓮田增至182公頃",
@@ -77878,7 +78210,7 @@
       "negative_news_count": 3,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 58,
+      "urgency_score": 61,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -77890,13 +78222,20 @@
       "lng": 120.5489,
       "level": "red",
       "source": "news",
-      "platform": "新聞 61",
-      "note": "24h 命中 61 則（新聞 61、留言 0）",
-      "news_count": 61,
+      "platform": "新聞 60",
+      "note": "24h 命中 60 則（新聞 60、留言 0）",
+      "news_count": 60,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T17:32:00+00:00",
-      "news_full_expires_at": "2026-05-14T17:32:00+00:00",
+      "news_latest_at": "2026-05-13T21:47:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:47:00+00:00",
       "news_articles": [
+        {
+          "title": "老透天厝裡的標本甜點店！「mimi köri cafe ミミ小秘密」用美味鮮奶油與蛋糕打造屏東最療癒午茶時光",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFdjJXMi1GazJlNW15VklHVzA5MXR2YUdVQTkycWdoR0pyNngyZnVDc3NfUHlEdkN0ekdtaE1rckxRRUw0NnJ6RzhsaWVLcXZsbmowMVl5Q1ZaWk3SAWBBVV95cUxPeWdPRmFydlFTLWFFNUxHSXB2ZVMyQWpkTC02M21rMkpCcEJ2Sy1qaDhObnNqNVNHeDhIbkROT1RBWS1lWVZLNzZuYVpMZms4SW9nYVJEckRsdFBaVXM1TjI?oc=5",
+          "time": "2026-05-14 05:47:00",
+          "publisher": "Google News→鏡週刊Mirror Media",
+          "severity": null
+        },
         {
           "title": "屏東「鹽琉趴」 夏日派對連嗨3天",
           "url": "https://tw.news.yahoo.com/%E5%B1%8F%E6%9D%B1-%E9%B9%BD%E7%90%89%E8%B6%B4-%E5%A4%8F%E6%97%A5%E6%B4%BE%E5%B0%8D%E9%80%A3%E5%97%A83%E5%A4%A9-173200275.html",
@@ -78309,27 +78648,13 @@
           "time": "2026-05-13 06:41:20",
           "publisher": "Google News→LINE TODAY",
           "severity": null
-        },
-        {
-          "title": "客家聲音在發光！ 屏東國小客家歌謠競賽5/19登場",
-          "url": "https://tw.news.yahoo.com/%E5%AE%A2%E5%AE%B6%E8%81%B2%E9%9F%B3%E5%9C%A8%E7%99%BC%E5%85%89-%E5%B1%8F%E6%9D%B1%E5%9C%8B%E5%B0%8F%E5%AE%A2%E5%AE%B6%E6%AD%8C%E8%AC%A0%E7%AB%B6%E8%B3%BD5-19%E7%99%BB%E5%A0%B4-221000879.html",
-          "time": "2026-05-13 06:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "客家聲音在發光！ 屏東國小客家歌謠競賽5/19登場",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0za3h4MEQwQzVJcWN1OHBaYXpqOGlGWG1yRUhZeU5BellrTGZFZ1FEYVRCNGtJLUl5TXN0eHN3clgzZFpURGRtTVdTMW5yRENhLWc?oc=5",
-          "time": "2026-05-13 06:10:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 61,
+      "urgency_score": 60,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -78341,13 +78666,20 @@
       "lng": 121.7378,
       "level": "red",
       "source": "news",
-      "platform": "新聞 90",
-      "note": "24h 命中 90 則（新聞 90、留言 0）",
-      "news_count": 90,
+      "platform": "新聞 93",
+      "note": "24h 命中 93 則（新聞 93、留言 0）",
+      "news_count": 93,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:30:02+00:00",
-      "news_full_expires_at": "2026-05-14T16:30:02+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "《要把宜蘭縣市變綠地》 推精準政見 林國漳、韓瑩聯手",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754715",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
         {
           "title": "宜蘭員山鄉長涉侵占代理村長事務費羈押 恐衝擊選情",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mSWRxbi1NZXZKREcySlRlQkhEUkhicjFvSDdleGN0X1NYNGVJRE5CZkthT0t4SURHNXAzS3Nsc29ZWGl6Wm1yMUt5WGdKWTZX0gFWQVVfeXFMT2V3WlBhMzVITEgxVTV5amZhSmtMSm1UQ2N0X0FwVkNKLThzbEpIYVdRS3BMYnRIUDJqRHR6ZWtNY0QxSjBLWHMweVVITXhOZDNTQ01nUnc?oc=5",
@@ -78408,6 +78740,13 @@
           "title": "員山鄉長涉侵占代理村長事務費 宜蘭地院裁定羈押禁見",
           "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxNT08yc3laeHZQTTJsV2ZNQmxRRzh2M3k5ajVreFNjc0RkLVI4MmtEM2thb1U4MHNfbUFfM2NfRXdXTHNrVmVkSURTelUxcTJfN2p0WGVYczJEWEVnTUN0MklORkhpMDlLTDN6eDM5RU9qU2ZXeVltQkw4UWRsbDl5czhfcVZHdEwyMldIa2lMY1pmQXF4VEhPd09CT1JCYk41VEFzd3kwNHZmcXdCREY1UFZBMWlHUUQzSE94NzF5S0RKTW5yVEJ0Mjg5eEdvRkMxMXNVLXM2emxISHh1Y2xDTE9yaFNQcmwxQXRpT3pjMU5tR0VGMzFfMXZEa0trOEdsQnJKN1MtZ1dlSnB4LUNySkxuSGhyb0xZd2hVTFNtNTBwNlpjRDBxVExmMlU5c3d1SWljN0RqaUl3R21rcHJtSTEwZzlYcjlJd3N3YTYwZVNzd0xvZlZ1dXRWNFl6aDFwOGFqaWVxX0l4VFFzYy14Y18yT3M?oc=5",
           "time": "2026-05-13 20:29:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "宜蘭 員山鄉長張宜樺收押 牽動議員選情",
+          "url": "https://tw.news.yahoo.com/%E5%AE%9C%E8%98%AD-%E5%93%A1%E5%B1%B1%E9%84%89%E9%95%B7%E5%BC%B5%E5%AE%9C%E6%A8%BA%E6%94%B6%E6%8A%BC-%E7%89%BD%E5%8B%95%E8%AD%B0%E5%93%A1%E9%81%B8%E6%83%85-201000187.html",
+          "time": "2026-05-13 20:10:00",
           "publisher": "Yahoo新聞",
           "severity": "red"
         },
@@ -78633,6 +78972,13 @@
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qMVFiNWdTdjJkVUIyVnhDbG4xTjFOZzljdjQ2MURZdW1rcE43eFdUczNJd0M5dXpuLVdiTFhVemRNalBsUzZYMW0yTW9lUmlpTmVrZWx3?oc=5",
           "time": "2026-05-13 14:44:02",
           "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "中午來開匯／從律師、發言人到承擔責任 林國漳與韓瑩合體要光復宜蘭",
+          "url": "https://cnews.com.tw/174260513a03/",
+          "time": "2026-05-13 14:40:45",
+          "publisher": "匯流新聞網",
           "severity": null
         },
         {
@@ -78980,10 +79326,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 11,
-      "negativity_pct": 12,
+      "negative_news_count": 12,
+      "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 123,
+      "urgency_score": 129,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -78995,13 +79341,27 @@
       "lng": 120.33,
       "level": "red",
       "source": "news",
-      "platform": "新聞 109",
-      "note": "24h 命中 109 則（新聞 109、留言 0）",
-      "news_count": 109,
+      "platform": "新聞 112",
+      "note": "24h 命中 112 則（新聞 112、留言 0）",
+      "news_count": 112,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T20:56:36+00:00",
-      "news_full_expires_at": "2026-05-14T20:56:36+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "高雄凹子底「社區輕百貨」 停35明年上半年營運",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/paper/1754758",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "高雄玉荷包又遭竊 仁武警加強巡邏",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/paper/1754760",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "陳其邁談兒少數位危機 網路霸凌將列高雄重點政策",
           "url": "https://n.yam.com/Article/20260514395564",
@@ -79014,6 +79374,20 @@
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEYTNqTTdVUjkza083WDVYaERMX2pkZXI5Sl9tUWRQODdkOTBYdWI2ZzBqRF9YLWVNNkxNN1psUUU2N0VMdmlGdno4aDhvWW1mM1E?oc=5",
           "time": "2026-05-14 04:16:00",
           "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄 救護車裝追蹤器 殯葬業者遭訴",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84-%E6%95%91%E8%AD%B7%E8%BB%8A%E8%A3%9D%E8%BF%BD%E8%B9%A4%E5%99%A8-%E6%AE%AF%E8%91%AC%E6%A5%AD%E8%80%85%E9%81%AD%E8%A8%B4-201000627.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "高市議員選戰 第三勢力拚突圍",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E5%B8%82%E8%AD%B0%E5%93%A1%E9%81%B8%E6%88%B0-%E7%AC%AC%E4%B8%89%E5%8B%A2%E5%8A%9B%E6%8B%9A%E7%AA%81%E5%9C%8D-201000544.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
@@ -79673,41 +80047,13 @@
           "time": "2026-05-13 08:51:53",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "國中會考將登場 高雄教師考前暖心給建議 (圖)",
-          "url": "https://tw.news.yahoo.com/%E5%9C%8B%E4%B8%AD%E6%9C%83%E8%80%83%E5%B0%87%E7%99%BB%E5%A0%B4-%E9%AB%98%E9%9B%84%E6%95%99%E5%B8%AB%E8%80%83%E5%89%8D%E6%9A%96%E5%BF%83%E7%B5%A6%E5%BB%BA%E8%AD%B0-%E5%9C%96-084931994.html",
-          "time": "2026-05-13 08:49:31",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "全台最大好市多來了 高雄1.4萬坪 官方揭開幕時間",
-          "url": "https://tw.news.yahoo.com/%E5%85%A8%E5%8F%B0%E6%9C%80%E5%A4%A7%E5%A5%BD%E5%B8%82%E5%A4%9A%E4%BE%86%E4%BA%86-%E9%AB%98%E9%9B%841-4%E8%90%AC%E5%9D%AA-%E5%AE%98%E6%96%B9%E6%8F%AD%E9%96%8B%E5%B9%95%E6%99%82%E9%96%93-004312014.html",
-          "time": "2026-05-13 08:43:12",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高市議員關切教學設備改善　陳其邁：加強硬體投資，縮短數位落差",
-          "url": "https://n.yam.com/Article/20260513164035",
-          "time": "2026-05-13 08:14:05",
-          "publisher": "蕃新聞→台灣好新聞",
-          "severity": null
-        },
-        {
-          "title": "「今年玩大一點！」 宣傳法國生活節在高雄 陳其邁與法國在台協會主任龍燁拍片熱血踢足球",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xTXhwMFo0SzUybjE0SF8xNndsY0xtSEcxMGdlcXYzXzM2MENUVnNGWDZIQVN5cXJaVjk0dmNnNG5yYTBfbGlXYmRCT1Q1eHFPa2Q3c0N2MlJLQ3AtbXl6aDE1SlBQbVE?oc=5",
-          "time": "2026-05-13 08:09:34",
-          "publisher": "Google News→住展雜誌",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 8,
       "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 133,
+      "urgency_score": 136,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -79719,19 +80065,40 @@
       "lng": 121.46310192378864,
       "level": "red",
       "source": "news",
-      "platform": "新聞 124",
-      "note": "24h 命中 124 則（新聞 124、留言 0）",
-      "news_count": 124,
+      "platform": "新聞 127",
+      "note": "24h 命中 127 則（新聞 127、留言 0）",
+      "news_count": 127,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T20:56:36+00:00",
-      "news_full_expires_at": "2026-05-14T20:56:36+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "6遊程多元 新北推綠色低碳旅遊",
+          "url": "https://news.ltn.com.tw/news/NewTaipei/paper/1754714",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
         {
           "title": "易遊網5元機票開搶 新北市山林旅遊正夯",
           "url": "https://n.yam.com/Article/20260514461632",
           "time": "2026-05-14 04:56:36",
           "publisher": "蕃新聞→卡優新聞網",
           "severity": null
+        },
+        {
+          "title": "低碳永續 新北推綠色旅程",
+          "url": "https://tw.news.yahoo.com/%E4%BD%8E%E7%A2%B3%E6%B0%B8%E7%BA%8C-%E6%96%B0%E5%8C%97%E6%8E%A8%E7%B6%A0%E8%89%B2%E6%97%85%E7%A8%8B-201000037.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北 650公尺索價9萬餘元 拖吊蟑螂被訴檢求重刑",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97-650%E5%85%AC%E5%B0%BA%E7%B4%A2%E5%83%B99%E8%90%AC%E9%A4%98%E5%85%83-%E6%8B%96%E5%90%8A%E8%9F%91%E8%9E%82%E8%A2%AB%E8%A8%B4%E6%AA%A2%E6%B1%82%E9%87%8D%E5%88%91-201000987.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
         },
         {
           "title": "三重後輔中心慰勉新北後備旅教召 彰顯軍民一家精神",
@@ -80404,34 +80771,13 @@
           "time": "2026-05-13 11:39:29",
           "publisher": "Google News→udn房地產",
           "severity": null
-        },
-        {
-          "title": "防治鼠患威脅 新北啟動全市第2次消毒",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5435320",
-          "time": "2026-05-13 11:35:06",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "國民黨新北永和市議員初選 陳以樂出線",
-          "url": "https://www.cna.com.tw/news/aloc/202605130096.aspx",
-          "time": "2026-05-13 11:32:36",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "淡江大橋通車日逢陳世凱生日 傳公路局稱「市府建議」新北反駁",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435237",
-          "time": "2026-05-13 11:07:19",
-          "publisher": "自由時報",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 18,
-      "negativity_pct": 15,
+      "negativity_pct": 14,
       "urgent_red_comments": 0,
-      "urgency_score": 178,
+      "urgency_score": 181,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -80443,13 +80789,27 @@
       "lng": 121.29840192378865,
       "level": "red",
       "source": "news",
-      "platform": "新聞 153",
-      "note": "24h 命中 153 則（新聞 153、留言 0）",
-      "news_count": 153,
+      "platform": "新聞 156",
+      "note": "24h 命中 156 則（新聞 156、留言 0）",
+      "news_count": 156,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T20:10:00+00:00",
-      "news_full_expires_at": "2026-05-14T20:10:00+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "黃世杰戰桃園 與選將合照看板上架",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92WFRURWRpVkN5dERabDRsRVhTN1ZDT1ZYQWh6M1dnWFkzZ1JtU191NTZHZnRMLWRjNU5tVnh0dm1CWTJlZ194bnhQbG1PWTl6MkJCSmVqckFLOGvSAWBBVV95cUxPVmd2QjhYN0F6SzhEdm1DUl85TW1EYndqUnZ5TFliUG43Um5QTUg5NWcyMjNUdjZ1Z2pzTjJMdXZIdW5BUmRfRU5vSWlXVmc5cjgwb1ZIalZoRmJhblNaU1E?oc=5",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "桃園公車評鑑得標商 被爆與工程會黑名單有關",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsS1pEWnAwNFYwRnBNbElFVzdDUUdNLXc4eVdYdF9WMG5wZFNkM0pSWERETHZyd3RGWDdlUHFLa2F6ZGxwS1VQU0dnVE44UmxOTXhTY0lDNXZha2_SAWBBVV95cUxPRkwtNWltcG1sa2tFM0xzcWw0RWdGbHMyQnNFeG9hajg0bk5YdXVhS3A3Tk5YektLQlpBdm5aMU8zaHF3MTRZSnp4RU1fVVNtT0p0cWpYazlHckEzb0E5Rks?oc=5",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "桃園8大公辦園區 帶動千億投資動能",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11ZTR2LUdPNzRzV0V6eWUwdXhhV3U0TmgzMjlHMm5tampZSzNodzRmOVdwQ25sTi12VmdkdFpFbVllM2RiVTlCUk5icDFTckdlUWtPWTBFNXhGamwxbjZYdWJVdFdVVWg0enNJ?oc=5",
@@ -80603,6 +80963,13 @@
           "time": "2026-05-13 20:00:00",
           "publisher": "Google News→寰宇新聞網",
           "severity": "yellow"
+        },
+        {
+          "title": "桃園營養午餐補助調高再升級！每週1次幸福餐、引進名店菜單 | 桃園電子報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tWGtYNU5YQnRtRF9yb2tONC01bHVVSzZ3SC1Ic242ZzNkak9PMGRQai1RY2Z6Si1IY3o4NTJCbnp3TXVGTG5Dc0xyS213Y1Nhbi14eGlR?oc=5",
+          "time": "2026-05-13 19:54:05",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
         },
         {
           "title": "桃園攜手基隆婦幼志工跨市交流 提升志願服務能量",
@@ -81128,34 +81495,13 @@
           "time": "2026-05-13 12:29:18",
           "publisher": "Google News→LINE TODAY",
           "severity": null
-        },
-        {
-          "title": "桃園天光雜貨店盛夏購物節 六大主題16品牌客家亮點",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OeXVIVEpOaEc3eEdkamRXa2JveC1mdHQtR19VRWpLTFAyX3JibjcyQkEyRHRkR0xHQ29tUTkxZUh2WVhJS2ZmSHFKTkRpUTJT0gFWQVVfeXFMUFR3LXdMaEVvMHN1ZGlaTzNtMGZsU0VHQU9KSlhEY2dVUXBjU2JQR0o4cGtvVEE1SXZEdHBMOG5RZ05Ja3oyVTdxblRuUVp6TGRKTVItcWc?oc=5",
-          "time": "2026-05-13 12:04:27",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "桃園天光雜貨店推盛夏購物節！6大主題選品、40款好物一次看",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9aTWVtX0VBN3hMeWxWYWJnSVpraEFObGV0SDNicXFHU1V3M3RUOWNUSEViaHdVc3pZamdTd3pvOU1mVUtNMW9FNHdhWDZYdw?oc=5",
-          "time": "2026-05-13 12:01:20",
-          "publisher": "Google News→記者爆料網",
-          "severity": null
-        },
-        {
-          "title": "桃園舊城再生AI產業布局　市議員林政賢提議市府應超前部署",
-          "url": "https://n.yam.com/Article/20260513353648",
-          "time": "2026-05-13 12:00:00",
-          "publisher": "蕃新聞→亞太新聞網",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 10,
-      "negativity_pct": 7,
+      "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 183,
+      "urgency_score": 186,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -81167,13 +81513,34 @@
       "lng": 120.5429,
       "level": "red",
       "source": "news",
-      "platform": "新聞 157",
-      "note": "24h 命中 157 則（新聞 157、留言 0）",
-      "news_count": 157,
+      "platform": "新聞 161",
+      "note": "24h 命中 161 則（新聞 161、留言 0）",
+      "news_count": 161,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:35:16+00:00",
-      "news_full_expires_at": "2026-05-14T16:35:16+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "蔡壁如表態參選彰化縣長",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754781",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "國民黨徵召魏平政 謝衣鳯怨：被當彰化三傻之一",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754779",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "彰化 王惠美訪歐遭突襲 藍有分裂隱憂",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B0%E5%8C%96-%E7%8E%8B%E6%83%A0%E7%BE%8E%E8%A8%AA%E6%AD%90%E9%81%AD%E7%AA%81%E8%A5%B2-%E8%97%8D%E6%9C%89%E5%88%86%E8%A3%82%E9%9A%B1%E6%86%82-201000718.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "藝生若夢 大葉大學造藝系學生聯展彰化美術館登場",
           "url": "https://tw.news.yahoo.com/%E8%97%9D%E7%94%9F%E8%8B%A5%E5%A4%A2-%E5%A4%A7%E8%91%89%E5%A4%A7%E5%AD%B8%E9%80%A0%E8%97%9D%E7%B3%BB%E5%AD%B8%E7%94%9F%E8%81%AF%E5%B1%95%E5%BD%B0%E5%8C%96%E7%BE%8E%E8%A1%93%E9%A4%A8%E7%99%BB%E5%A0%B4-163516518.html",
@@ -81292,6 +81659,13 @@
           "time": "2026-05-13 20:24:58",
           "publisher": "匯流新聞網",
           "severity": "yellow"
+        },
+        {
+          "title": "千呼萬喚 藍徵召魏平政 參選彰化縣長",
+          "url": "https://tw.news.yahoo.com/%E5%8D%83%E5%91%BC%E8%90%AC%E5%96%9A-%E8%97%8D%E5%BE%B5%E5%8F%AC%E9%AD%8F%E5%B9%B3%E6%94%BF-%E5%8F%83%E9%81%B8%E5%BD%B0%E5%8C%96%E7%B8%A3%E9%95%B7-201000075.html",
+          "time": "2026-05-13 20:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
         },
         {
           "title": "2026.05.13 19:36 沈伯洋披褂戰北市 彰化選情藍白混戰2／藍營徵召「魏平政」參選彰化 鄭麗文：為大局、放下個人",
@@ -81845,41 +82219,13 @@
           "time": "2026-05-13 14:41:00",
           "publisher": "ETtoday",
           "severity": null
-        },
-        {
-          "title": "謝衣鳯出局！ 魏平政參選彰化縣長 謝典霖：大局為重全力輔選",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435600",
-          "time": "2026-05-13 14:39:41",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "蔡壁如表態參選彰化縣長 陳素月這樣說",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435577",
-          "time": "2026-05-13 14:21:36",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "正式徵召魏平政不要謝衣鳳 鄭麗文：彰化絕對不能輸",
-          "url": "https://newtalk.tw/news/view/2026-05-13/1034893",
-          "time": "2026-05-13 14:19:33",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "百位婦女齊聚創作永生花藝 温芝樺：讓終身學習與城市美學在彰化持續綻放",
-          "url": "https://tw.news.yahoo.com/%E7%99%BE%E4%BD%8D%E5%A9%A6%E5%A5%B3%E9%BD%8A%E8%81%9A%E5%89%B5%E4%BD%9C%E6%B0%B8%E7%94%9F%E8%8A%B1%E8%97%9D-%E6%B8%A9%E8%8A%9D%E6%A8%BA-%E8%AE%93%E7%B5%82%E8%BA%AB%E5%AD%B8%E7%BF%92%E8%88%87%E5%9F%8E%E5%B8%82%E7%BE%8E%E5%AD%B8%E5%9C%A8%E5%BD%B0%E5%8C%96%E6%8C%81%E7%BA%8C%E7%B6%BB%E6%94%BE-140738208.html",
-          "time": "2026-05-13 14:07:38",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 6,
       "negativity_pct": 4,
       "urgent_red_comments": 0,
-      "urgency_score": 175,
+      "urgency_score": 179,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -81891,13 +82237,27 @@
       "lng": 121.6015,
       "level": "red",
       "source": "news",
-      "platform": "新聞 174",
-      "note": "24h 命中 174 則（新聞 174、留言 0）",
-      "news_count": 174,
+      "platform": "新聞 179",
+      "note": "24h 命中 179 則（新聞 179、留言 0）",
+      "news_count": 179,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T16:33:38+00:00",
-      "news_full_expires_at": "2026-05-14T16:33:38+00:00",
+      "news_latest_at": "2026-05-13T21:30:00+00:00",
+      "news_full_expires_at": "2026-05-14T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "花蓮瑞穗將發振興禮金 每人3千元",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1GdFdfM0FwMmxMdWw3VVdqYVF1cHR2Vld2UHExOWRHdU5BTTRncmFLMGJHS1FVNkxDVnlMYW50dUJ5amZoczJvYkZwS3VtenZsMGNRd0dwTXhKaEtER0Jj0gFkQVVfeXFMUDVRUW51MzdVZXRVcW5TYk1BMDBSNkZUcHFxME03ekY5WlJ3ZUp6emRBYnBuYXdmUTkxYTgwajUtQW1IX0VqbE50ZXpvSHI3Mkp2UGZDT1djak1RQmVlcFNpUVN6cg?oc=5",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "花蓮2.7億營養午餐招標疑涉弊 教育處遭搜索",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5KOWdCSVBoMDV0U203LXVVaWl4TE9MOXpBSXBtODVXdnk5QzJtVGI4ZFhJOFVqX3pHNnJfVFZHVlBHajl5S0tVT1UyT2Y5SHNKUTJrU3I2a1dIV2fSAWBBVV95cUxQcmdHVUozY0ZkMnp3ZGFnbDJsUkRjR252MEQ2YWhZSTlzVDh0Wk9PcE91MDRlbDJRZUhmWjVFTWtHLVVVd3p2YXR6NG5tY2pfZUNfS3lIMlFaODdKVlUxaEs?oc=5",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "花蓮營養午餐爆圖利廠商 議員、前科長交保",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUZDBLdHdtcnh6VG9iTW1PbHJIZElxVnhDMlk1X3FrM3cxd095T1NjRGFsUWpocVNITk5XUVRQd2psMW5UY0RJTTlDV2pVZ0xB0gFWQVVfeXFMUHpoVlA2SUozUUx5Z2xBTlZMd1RrZW0zUjg5eTJSY2NMcC1CZ2dRS3N6eHVxMHVsaTAwUXpUOW03NzB2Q0lTLXZRQTYwVnFMMVAyZUFZclE?oc=5",
@@ -82473,6 +82833,13 @@
           "severity": null
         },
         {
+          "title": "5/15日前到議會專案報告 花蓮縣政府今回文",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB2cEptLWxfSHhOS2dWQ1M0U2RLWFU0N29PTG82N3lZVVlKWjVJdU9LbktSMldyQk9MZjlLd3pId1JiRUVFLTAtNk93?oc=5",
+          "time": "2026-05-13 17:16:05",
+          "publisher": "Google News→更生新聞網",
+          "severity": null
+        },
+        {
           "title": "花蓮瑞穗鄉普發每人3000元振興禮金 帶動消費與經濟",
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5435804",
           "time": "2026-05-13 17:07:59",
@@ -82491,6 +82858,13 @@
           "url": "https://news.nextapple.com/life/20260513/4EE601D83B717F3AF3E3996CAFB0F9D5",
           "time": "2026-05-13 17:01:19",
           "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "花蓮瑞穗鄉普發每人3000元振興禮金帶動消費與經濟| 基宜花東| 地方",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OckdsVXFLYmpmREcyekpKcWt0OFpNYzBLMEV4NFZFMDZrVlA5NnJZMXRONXpfM1RRNkxQZ0w3SGRjOHdqVXBIaUVIWVgzS3hE?oc=5",
+          "time": "2026-05-13 16:53:29",
+          "publisher": "聯合新聞網",
           "severity": null
         },
         {
@@ -82569,41 +82943,13 @@
           "time": "2026-05-13 15:10:58",
           "publisher": "匯流新聞網",
           "severity": null
-        },
-        {
-          "title": "花蓮中正體育館工安意外 LED燈箱突倒塌砸中工人頭部搶救不治",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWXJFc2tNcE0wUF9BLUdyNUpYT0dBSS1MX3FZR012Q2YzTUMtbGtzMFh1bV9wVVl2ekp2QWRrZ1dBSGgtQzRtWGxMZFJXQlA1NG82eE5zSThHNlFpbFRVcjQyZGRxOVRrRVUwZEdxazVQUDh0N0ZPT3BWNlBWZGxReHZxUUlwMmhiUTZYd2k1RjI2TVdGNTJXQ2E2a29ndGUtVUdlTkpBY1dXQVVhX0pvQkZXcXBfcWg0N1ZQYjV5SThXdVBOVm5DcHVTV1gyUUp6MEZvOC1ic2V6TlJqVTNBYVE0TURQM2ZzdDBULUlB?oc=5",
-          "time": "2026-05-13 14:40:29",
-          "publisher": "Google News→花蓮最速報",
-          "severity": "red"
-        },
-        {
-          "title": "花蓮體育館工安悲劇! 規模5.6地震後⋯工人遭燈箱砸死",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Qa1pPcXZuRHQyODFaek1jOWladnN6MEt0OXpPX0VOdHpSYmMzYVpJTGc1WGE4dm1pb193ZjZsUmxNbDVCa2JaakNWSzd1MjFvRUpPQTNuV1BQeTBEMVRreA?oc=5",
-          "time": "2026-05-13 14:21:50",
-          "publisher": "Google News→民視新聞網",
-          "severity": "red"
-        },
-        {
-          "title": "全國小學田徑錦標賽》21縣市小朋友齊聚花蓮 高市吳鎧均摘3000競走金牌",
-          "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxPT0JRckdpWkNWX0NXLWpoRzNtU2dVblBOeldWb1J1ZWRYYVpqNFZCOVM1ZDloT0E5aFZWREJqRnFLd25Wd180bVJHNjVMUWxIVE9ISGEtLWRhVWcwUFY4ZVN3NVIwcHNQWXNFRHlpRnZxS2hHOHo3aFRmSkdteTE3eXpYN2hnWmN5TmM4TTJVY2xqOVNTQ05HVTJNYkFCQlNiNkxCcWxsQXlzd00xc1YtODFubjlNc2xCY1RtX1BFazNnYUJtVlNVQ250cDFQOUtzS1E2Sk9RUE1iX3MzSWktQ3lVOVhETXFET3Ntby1kRS1wa1ZPd0JaY3NYeGpTVlhKYUNWQlVYTDdNdi1rVV9aRGxSRC1iYTdnU3pjdjh5cnp4UERxR05NbTNxNjgtVDlmeF8yektUcld2aDZyYzROSDJQbFNVVTBHUkh5YVFzSGEyOGdYVGxTS1RwWWNDVVFBV2lRSGlFcFJrb0g3b19jVXlENFI4OWRxUUQ1MGVSWHdNM2hRMlNDd0xlVVQ0S21WU0VWc0JHY2tUZUxTcGxfem9LMGtyTDhJdk1UR2VIZEVjYWNIbk5B?oc=5",
-          "time": "2026-05-13 14:16:53",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "強震後8分鐘奪命！ 花蓮燈箱倒塌重壓工人「重創頭部」傷重不治",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-05-13/2343386.html",
-          "time": "2026-05-13 14:01:57",
-          "publisher": "壹電視",
-          "severity": "red"
         }
       ],
       "comments": [],
-      "negative_news_count": 33,
+      "negative_news_count": 34,
       "negativity_pct": 19,
       "urgent_red_comments": 0,
-      "urgency_score": 273,
+      "urgency_score": 281,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -82615,19 +82961,47 @@
       "lng": 120.72459807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 223",
-      "note": "24h 命中 223 則（新聞 223、留言 0）",
-      "news_count": 223,
+      "platform": "新聞 228",
+      "note": "24h 命中 228 則（新聞 228、留言 0）",
+      "news_count": 228,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T20:56:36+00:00",
-      "news_full_expires_at": "2026-05-14T20:56:36+00:00",
+      "news_latest_at": "2026-05-13T22:02:24+00:00",
+      "news_full_expires_at": "2026-05-14T22:02:24+00:00",
       "news_articles": [
+        {
+          "title": "顏旭明涉公務背信…台中地檢署證實「大規模搜索」強調：並非針對業務費支用",
+          "url": "https://www.fountmedia.io/article/379800",
+          "time": "2026-05-14 06:02:24",
+          "publisher": "放言Fount Media",
+          "severity": "red"
+        },
+        {
+          "title": "4 . 父心梗驟逝...台中17歲女休學打2份工養胞弟 警募款送暖",
+          "url": "https://www.mnews.tw/story/20260513nm019",
+          "time": "2026-05-14 06:02:17",
+          "publisher": "鏡新聞",
+          "severity": null
+        },
+        {
+          "title": "社宅工地上午大火 台中市府下午才空污警報",
+          "url": "https://news.ltn.com.tw/news/Taichung/paper/1754750",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "520新定義？！「一人幸福學」崛起 台中奪6都最愛獨享城市",
           "url": "https://n.yam.com/Article/20260514393186",
           "time": "2026-05-14 04:56:36",
           "publisher": "蕃新聞→大成報",
           "severity": null
+        },
+        {
+          "title": "台中社宅工地大火 市府勒令停工",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E7%A4%BE%E5%AE%85%E5%B7%A5%E5%9C%B0%E5%A4%A7%E7%81%AB-%E5%B8%82%E5%BA%9C%E5%8B%92%E4%BB%A4%E5%81%9C%E5%B7%A5-201000996.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
         },
         {
           "title": "中市雨水下水道維護工程獲肯定 出入坑作業評鑑連4年獲特優",
@@ -83293,41 +83667,13 @@
           "time": "2026-05-13 15:47:30",
           "publisher": "Google News→LINE TODAY",
           "severity": null
-        },
-        {
-          "title": "中市好孕專車2.0攜手Uber 9千輛車隨叫隨到- 政府消息新聞",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYjMyaUFaeF80eTVUN0FNOFN0ZTZ3dnFuT0E5RHJzcndZMHdweEE5OU0wRDRqbDlMY3UxbEp2WGVBc2pRZHduMW9MbXNVYVFlY2tZeVZEVFVqOTZmSUNnOVlrYjliWFlhVWJEQ0N4MGEtXzZwU1drOHY5UmcxM2xjT3o1U0tISC04V1E?oc=5",
-          "time": "2026-05-13 15:28:50",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": null
-        },
-        {
-          "title": "中市好孕專車2.0攜手Uber 9千輛車隨叫隨到",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4tSzVnWlFhTG5NMEpsdWdiMlJld2tGX1k4alo1Um1wbXhfemR5a2FmSnZMQzJCekVMU0hwQ052QUxWQnNGVmk2TURTZ2XSAVJBVV95cUxNYmRXQ1I3SF9YdGtOQ1hLTFA3S19SWUpVNEd5czV1UmQ1MnFPSElkMFdzczBKQ0pZLUVjTjhBMU9peDIwRHF6MFBYX1o0N1Boa3Zn?oc=5",
-          "time": "2026-05-13 15:28:50",
-          "publisher": "Google News→NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "中市青少棒二連霸奪冠「陽信銀行盃」 挺進亞太區賽事爭取世界賽門票",
-          "url": "https://more-news.tw/614308/",
-          "time": "2026-05-13 15:15:42",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "全國地方政府唯一雙職場托嬰中心 中市府帶頭設置友善育兒職場環境",
-          "url": "https://www.storm.mg/article/11131226",
-          "time": "2026-05-13 15:15:00",
-          "publisher": "風傳媒",
-          "severity": null
         }
       ],
       "comments": [],
-      "negative_news_count": 31,
-      "negativity_pct": 14,
+      "negative_news_count": 34,
+      "negativity_pct": 15,
       "urgent_red_comments": 0,
-      "urgency_score": 316,
+      "urgency_score": 330,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -83339,9 +83685,9 @@
       "lng": 121.543,
       "level": "red",
       "source": "news",
-      "platform": "新聞 390",
-      "note": "24h 命中 390 則（新聞 390、留言 0）",
-      "news_count": 390,
+      "platform": "新聞 403",
+      "note": "24h 命中 403 則（新聞 403、留言 0）",
+      "news_count": 403,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T21:30:00+00:00",
       "news_full_expires_at": "2026-05-14T21:30:00+00:00",
@@ -83351,6 +83697,69 @@
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZGtzNWhlS0lIOURaV2szU0xmalc4cXRlckhLZHViTlBKV3cyVGZVeHV4YjczMTlQQnhaenowOVF3bzBYQnJxRVV1VnhTYnYweTNwZXpuOVFEMXNHVFdoNNIBZkFVX3lxTE91SExGNHpReE82S29jaUZhMVoxakxydXpYVmk3ZnprUUQyZ2ZBck1IeWZJVldDOVZmX1drSTBPMUFnaEd1ZHRXdk94NHoxTS1VTUJEeW5OeWZBaWFYdGgxOUNyR2trUQ?oc=5",
           "time": "2026-05-14 05:30:00",
           "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "焦點評論》沈伯洋重新定位台北",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754782",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "《出戰台北市長》愛爆炸頭 沈伯洋︰勿忘批判世局搖滾精神",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754775",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "參選台北市長》沈伯洋：勤跑基層多傾聽 讓台北更好",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754778",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "《出戰台北市長》選情不利 沈伯洋︰逆境更該力挽狂瀾",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754777",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "《出戰台北市長》改變台北 沈伯洋︰做生態系長遠規劃",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1754776",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "自來水接管 北市溪山、平等里高地年底通水",
+          "url": "https://news.ltn.com.tw/news/Taipei/paper/1754773",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "北市鼠類偵防師 5/15起開放社區申請",
+          "url": "https://news.ltn.com.tw/news/Taipei/paper/1754774",
+          "time": "2026-05-14 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "沈伯洋參戰台北市長，賴清德：擁三度空間治理能力「不二人選」！吳怡農力挺：政治不必是你死我活零和遊戲",
+          "url": "https://tw.news.yahoo.com/%E6%B2%88%E4%BC%AF%E6%B4%8B%E5%8F%83%E6%88%B0%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7-%E8%B3%B4%E6%B8%85%E5%BE%B7-%E6%93%81%E4%B8%89%E5%BA%A6%E7%A9%BA%E9%96%93%E6%B2%BB%E7%90%86%E8%83%BD%E5%8A%9B-%E4%B8%8D%E4%BA%8C%E4%BA%BA%E9%81%B8-%E5%90%B3%E6%80%A1%E8%BE%B2%E5%8A%9B%E6%8C%BA-210002502.html",
+          "time": "2026-05-14 05:00:02",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
@@ -83366,6 +83775,27 @@
           "time": "2026-05-14 04:30:00",
           "publisher": "Google News→明報新聞網",
           "severity": "yellow"
+        },
+        {
+          "title": "台北 監測老鼠數量 環保局祭籠夜法",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8C%97-%E7%9B%A3%E6%B8%AC%E8%80%81%E9%BC%A0%E6%95%B8%E9%87%8F-%E7%92%B0%E4%BF%9D%E5%B1%80%E7%A5%AD%E7%B1%A0%E5%A4%9C%E6%B3%95-201000514.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "徵召選北市 賴讚沈伯洋有三度空間治理能力",
+          "url": "https://tw.news.yahoo.com/%E5%BE%B5%E5%8F%AC%E9%81%B8%E5%8C%97%E5%B8%82-%E8%B3%B4%E8%AE%9A%E6%B2%88%E4%BC%AF%E6%B4%8B%E6%9C%89%E4%B8%89%E5%BA%A6%E7%A9%BA%E9%96%93%E6%B2%BB%E7%90%86%E8%83%BD%E5%8A%9B-201000723.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "趣都台北 之十",
+          "url": "https://tw.news.yahoo.com/%E8%B6%A3%E9%83%BD%E5%8F%B0%E5%8C%97-%E4%B9%8B%E5%8D%81-201000883.html",
+          "time": "2026-05-14 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
         },
         {
           "title": "台北愛樂少年樂團6月6日前進馬祖 梅石藝文中心演出 已開放購票",
@@ -83469,6 +83899,13 @@
           "title": "應對「安鼠之亂」 北市首創「鼠類偵防師」5/15上線",
           "url": "https://tw.news.yahoo.com/%E6%87%89%E5%B0%8D-%E5%AE%89%E9%BC%A0%E4%B9%8B%E4%BA%82-%E5%8C%97%E5%B8%82%E9%A6%96%E5%89%B5-%E9%BC%A0%E9%A1%9E%E5%81%B5%E9%98%B2%E5%B8%AB-5-140000657.html",
           "time": "2026-05-13 22:00:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "沈伯洋戰台北市長！徐巧芯酸「敷面膜」 他怒：男生敷面膜有什麼不對嗎",
+          "url": "https://tw.news.yahoo.com/%E6%B2%88%E4%BC%AF%E6%B4%8B%E6%88%B0%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7-%E5%BE%90%E5%B7%A7%E8%8A%AF%E9%85%B8-%E6%95%B7%E9%9D%A2%E8%86%9C-%E4%BB%96%E6%80%92-%E7%94%B7%E7%94%9F%E6%95%B7%E9%9D%A2%E8%86%9C%E6%9C%89%E4%BB%80%E9%BA%BC%E4%B8%8D%E5%B0%8D%E5%97%8E-212500212.html",
+          "time": "2026-05-13 21:25:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
         },
@@ -83596,6 +84033,13 @@
           "url": "https://news.nextapple.com/politics/20260513/75F0221E8CCADC331FAC490C86B2AF79",
           "time": "2026-05-13 20:13:03",
           "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "台北市長選戰的兩種政治修煉",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E6%88%B0%E7%9A%84%E5%85%A9%E7%A8%AE%E6%94%BF%E6%B2%BB%E4%BF%AE%E7%85%89-201000360.html",
+          "time": "2026-05-13 20:10:00",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
@@ -83947,111 +84391,13 @@
           "time": "2026-05-13 17:20:11",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "借鏡「壽司之都」 胡襗洋會長率台北青商會赴北九州姐妹會考察",
-          "url": "https://tw.news.yahoo.com/%E5%80%9F%E9%8F%A1-%E5%A3%BD%E5%8F%B8%E4%B9%8B%E9%83%BD-%E8%83%A1%E8%A5%97%E6%B4%8B%E6%9C%83%E9%95%B7%E7%8E%87%E5%8F%B0%E5%8C%97%E9%9D%92%E5%95%86%E6%9C%83%E8%B5%B4%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%A7%90%E5%A6%B9%E6%9C%83%E8%80%83%E5%AF%9F-091658826.html",
-          "time": "2026-05-13 17:16:58",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "賴清德替沈伯洋披戰袍拚北市 蔣萬安回應：我就是專注市政",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMem9WanhnM00tVlJlWjZXanBJcUZvcGJoMURfcHVDZ0kzOFRrZkh0Y2R3Y1dabzduWjhPdk1ZNUFCbjUtMW5vM1ZOVQ?oc=5",
-          "time": "2026-05-13 17:14:00",
-          "publisher": "Google News→FTNN 新聞網",
-          "severity": null
-        },
-        {
-          "title": "賴清德替沈伯洋披戰袍拚北市 蔣萬安回應：我就是專注市政",
-          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPZUlnRGNxRmJiNmI1bUpHbEhQYTk2M2hibjZ2UGJFUlpNYmM4czR1WWk4cFhwbzVJLUdFVEFkWXEyT0V3RWF5TG9zWTlTbzdiYllDTUx6SmR5MTZwbGZKU3RuS3FrN2xxQlU5MnJDOW8yWkxKNHgzSkZEU0tEN1l6elRlRGIwbFVHeFhoRGo5UC1rZHY5VURiRDZVaC1tTWVxTy1nUlZaV1Rvd3JnSWtuZklaQ1IxZUl5V0hSLU9wUVZtcHd4VUlDTTdJLTM2X3JTb1VpcHYwTkpXOVhWRFlLc0ZVVkpvU1FOY3dWNUtnbElvdE9jRk8zYTVxM1ZJUFZ1OWNxVWFOdDJ2ajM0aV96QUNoWUlyY0NGck1OYk1abWZTQ3c1MEQtRFBrMzNGOW5POTlzMUswVkhGU2s3SWp0ZU1hOWxDaFkyNTRCMlpwSkJZQ3NUdTc4TjF2ZVNxM0RJOFk2eU5wS01sVzFlTXFqTWd5R0tqbVN3Zm8xV21xaTNjUQ?oc=5",
-          "time": "2026-05-13 17:14:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋嘆台北剩貼OK繃能力 簡舒培讚非常有感",
-          "url": "https://tw.news.yahoo.com/%E6%B2%88%E4%BC%AF%E6%B4%8B%E5%98%86%E5%8F%B0%E5%8C%97%E5%89%A9%E8%B2%BCok%E7%B9%83%E8%83%BD%E5%8A%9B-%E7%B0%A1%E8%88%92%E5%9F%B9%E8%AE%9A%E9%9D%9E%E5%B8%B8%E6%9C%89%E6%84%9F-090931969.html",
-          "time": "2026-05-13 17:09:31",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "力薦沈伯洋參選台北市長！賴清德：有跨領域治理能力的社會工程師",
-          "url": "https://news.nextapple.com/politics/20260513/0279790DAB14589C640263D5A977E9BD",
-          "time": "2026-05-13 17:07:56",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "藍白諷沈伯洋「台北伯起，壯洋台灣」！網友一句回敬蔣萬安",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXaWZRM3VXcDg3cl9CSHRqTmpfd1IzVktWTG1rMDFLS2pWdnNWVmRLX1JZTU1SWF9vVzl4MVduVk1oeERHa0VDX1VtemRvTFNSM2tnazdtUEF2Slpjb2xNZUM3NXR2U0gxV3fSAW9BVV95cUxQa19PeDZnbWxMa3pudmtvTFhoTFFxN0NiX3VOZ2FocmE2aWZESzVicklWOG9WM2dWZEd0ZEVqNkNxcjNIa0FORjk5WEZZM1N6ZU5IUGswa1NpMUVHbFZHazQ2N0U4V191R1duNGUwZ1k?oc=5",
-          "time": "2026-05-13 17:07:41",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄台北輸了！遊客最愛國旅縣市是它「美到像歐洲、景點豐富好玩」：一生必去永生難忘",
-          "url": "https://www.storm.mg/lifestyle/11131129",
-          "time": "2026-05-13 16:58:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "民進黨徵召沈伯洋選北市 蔣萬安：持續專注市政",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WQ1dWNU85V2dYNGV6VGFTRHYyTGhzWGtBZzFYajBQM2ZESU10eUVCSFozVUhHTmx5d3dCOHFuaE44dlF6VlpKT1Z4dXpOR0VodWE1NUNjbVJOUdIBX0FVX3lxTFB0MkNXNnVCbC1BRldaMzY4WHc1RmNZMmZXeVhlYVBJV3hJUUllSVlYWEloaGxMeUFlaHJRRUc3SlVzQkNhY0pIWHJvclA2bXAyWVc3Q0lGSGtacndTZHVR?oc=5",
-          "time": "2026-05-13 16:54:34",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "看沈伯洋選北市長 蔣萬安：我每天專注市政",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lbVBXalRSUm92Nk9scDg3SE9WRllLLXFleDIxdlAwcHcxcnctdUM0ak5VWUpNMVByaTYwM0ZfUXlmMjl5U1o4cW9raV9wLTNjNXlyamM0YzlKYTV3MF9JTDNZZEFRSlk?oc=5",
-          "time": "2026-05-13 16:53:02",
-          "publisher": "Google News→中國評論新聞",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋：選台北市長沒勝選方程式 勤跑基層多傾聽",
-          "url": "https://www.cna.com.tw/news/aipl/202605130238.aspx",
-          "time": "2026-05-13 16:50:47",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "民進黨徵召沈伯洋戰北市 媒體人示警蔣萬安「最大問題」",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sT2YtQUFoWkNqNGdGU0FDNEw0aGdEcmZJVW5PWDRHT2RsNzdjWmZ6YzhpTjhDQjlLNGplSTlGanhLeWY0SGVKbVZfUDVobjdraUZyRk00TlFKU2ZuUVVueg?oc=5",
-          "time": "2026-05-13 16:50:35",
-          "publisher": "Google News→民視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨徵召沈伯洋戰北市 媒體人示警蔣萬安「最大問題」",
-          "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxPWklZSW00VHlGaFJuelg2ZEpLQnE1aVJpZnlvdjFqV1pvU09WeWxxMEFWNVhNaC0tUGhoVmExd0ZOT1F1aldWZVR1aGVWelBwU2FNcmNHOTRVT0xLdDRyaWt6SmJTM3hlMjdOOTFqb2pybjFyRllwNGtkNWFiZG9DUVI2WG9fSG16Q3JENWZfa203bGFQdDAtU1pHVHBicjN0N3NqRThyUGVqM1NkV24wQ3VpLTJWTkFlcUlLd0JDREpEcWprY0pySmZzOHBqZm1kTTVTMGFVRUx1enRBQW00NzdkUXdDYkxndVZoLXpHNERmNFpfSnRFVGlfaGJncUd3QkhUcnZPRlRKYTA0S01Md3kxU2xkSE42UTlPRkhJS2ZreW15N3h5WEpKZ2dkbFpIWGdRVGZkLXViNExtblBuaVRGam95VUdiY1dKemdFWWdpTUhqTURZVHZnazlIN21Yck5lc2lVZWtxZw?oc=5",
-          "time": "2026-05-13 16:50:35",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨徵召沈伯洋戰北市 媒體人示警蔣萬安「最大問題」",
-          "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxNSHcxMWZlWWtVQmhOVHhobmpaQ3p2Zk5NdWpxU20wamstUks2WEh4ZW9PemJmZ09DOUxONEpRQUhJaGJrTEpoNWtMd3YxbUpiaWZpY01fbk5kVnZmb0t3VFl4UnNSV0U0c2loZjdsa0ttRFN3dXI1aV9ldnhzM2lzblFoNFJNVUdyek9QWkFPN0hTRG05aXBpZUxfUS1rZnkyTllFZHVNMVpoMVR0YWZ4YlBzWG9aRV9VVU9vZXA4eHI2N2RBUUJuZlpmcnp6U3F0bEU3Wm52X1RsNTA3LTBqeFFOQjZNNjJqU1BWSUMyS1hNM3VnUnVHSnZRZWQyOWh2ODNLUWlCVEZkYXFxeXR4STQ4bG0xYUViRjJ0c1lkTVBVbHAyODdIZHNBMEpCbWM3ZDRZR3JBdU5QMXZYbUNhV0VraWR3eWtBbzM3YjBrZEdOc3ZPT05ZNUlWUEVObTlrd2ZnaXpuM01Idw?oc=5",
-          "time": "2026-05-13 16:50:35",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨徵召沈伯洋選北市 蔣萬安：持續專注市政",
-          "url": "https://www.cna.com.tw/news/aipl/202605130237.aspx",
-          "time": "2026-05-13 16:45:45",
-          "publisher": "中央社",
-          "severity": null
         }
       ],
       "comments": [],
-      "negative_news_count": 19,
+      "negative_news_count": 20,
       "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 447,
+      "urgency_score": 463,
       "is_urgent": false,
       "is_catchall": true
     }
@@ -84706,6 +85052,16 @@
       "hour": "2026-05-13 06:00",
       "severity": null,
       "is_negative": false
+    },
+    {
+      "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+      "url": "https://cnews.com.tw/237260513a06/",
+      "time": "2026-05-13 06:51:38",
+      "platform": "news",
+      "publisher": "匯流新聞網",
+      "hour": "2026-05-13 06:00",
+      "severity": null,
+      "is_negative": false
     }
   ],
   "articles_prev_24h": [
@@ -84925,6 +85281,15 @@
       "time": "2026-05-12 14:35:55",
       "platform": "news",
       "publisher": "NOWnews今日新聞",
+      "severity": "yellow",
+      "is_negative": true
+    },
+    {
+      "title": "盧秀燕推全市大掃除 綠酸防治鼠患淪公關秀",
+      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPXzMyVWNHaVB4a0hOdWd4bjdkVTFjYnlvMXR4SHZybGFhYV9iRnduVkVPOElFYjZDNXl0QnJMX00xSUZFMTVyVWFDMElXcGxTQWZ1NEw3ZUpnb29rYVprb3hydGFsUnY4T19QcnpMSks0aFRZV1hTNW9NTjZSTnlNc1VmZ1NtZHBSWWhmWUp1a3ZsWXVLcExDZDY0LUdxYm1lbmo3Y3ZjS1V2ajB1em50a21TOVd0WUlaV3ROT1J5ZXRtb20tNU5JaWhtWXVSTGN1akdHckN2clBkbGs2dkV6NEtNRUxGbnpOWDhCRlVDQzRvWkRON19ocS1rQlBnajM2VjNrVWVFOFVpSkJoMnd3VldxWkpZNGxFUlVGeHYtQU1yRFYtZkhCejFtTUtINFFMOUZLck9Rc0g?oc=5",
+      "time": "2026-05-12 14:21:49",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
       "severity": "yellow",
       "is_negative": true
     },
@@ -85267,15 +85632,6 @@
       "publisher": "Yahoo新聞",
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "盧秀燕推全市大掃除 綠酸防治鼠患淪公關秀",
-      "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E6%8E%A8%E5%85%A8%E5%B8%82%E5%A4%A7%E6%8E%83%E9%99%A4-%E7%B6%A0%E9%85%B8%E9%98%B2%E6%B2%BB%E9%BC%A0%E6%82%A3%E6%B7%AA%E5%85%AC%E9%97%9C%E7%A7%80-061043326.html",
-      "time": "2026-05-12 06:10:43",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "severity": "yellow",
-      "is_negative": true
     }
   ],
   "articles_7d": [
@@ -85989,6 +86345,17 @@
       "time": "2026-05-13 06:51:38",
       "platform": "news",
       "publisher": "Yahoo新聞",
+      "hour": "2026-05-13 06:00",
+      "day": "2026-05-13",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+      "url": "https://cnews.com.tw/237260513a06/",
+      "time": "2026-05-13 06:51:38",
+      "platform": "news",
+      "publisher": "匯流新聞網",
       "hour": "2026-05-13 06:00",
       "day": "2026-05-13",
       "severity": null,
@@ -91976,7 +92343,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 10806,
+    "sample_size": 10867,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -92017,10 +92384,10 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 512,
+        "news_count": 513,
         "negative_count": 24,
         "negativity_pct": 5,
-        "sentiment_score": 464.0,
+        "sentiment_score": 465.0,
         "articles": [
           {
             "title": "石崇良失言 盧秀燕：多挺醫護少助選",
@@ -92224,6 +92591,12 @@
             "title": "7800億元軍購恐衝擊無人機產業 盧秀燕再籲賴清德關注川習會",
             "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1RzJrZmFlSDZhY1NRSXN0WjFFOFBUZXQtejVNYUZOVVptdXVfTTA0aEVHeXkzOW5Ic2F1UlJ6Y1dWbGJQazd5UWEyQmlpSGgzbUNZcHNRWl9nLWNMcUdScWpuRmJFa3pXQ3pRYUNn?oc=5",
             "time": "2026-05-13 14:59:50",
+            "is_negative": false
+          },
+          {
+            "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+            "url": "https://cnews.com.tw/237260513a06/",
+            "time": "2026-05-13 14:51:38",
             "is_negative": false
           },
           {
@@ -95167,10 +95540,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 956,
+        "news_count": 959,
         "negative_count": 90,
         "negativity_pct": 9,
-        "sentiment_score": 776.0,
+        "sentiment_score": 779.0,
         "articles": [
           {
             "title": "新聞分析》蔣萬安面臨直球對決",
@@ -95181,6 +95554,24 @@
           {
             "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
             "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZGtzNWhlS0lIOURaV2szU0xmalc4cXRlckhLZHViTlBKV3cyVGZVeHV4YjczMTlQQnhaenowOVF3bzBYQnJxRVV1VnhTYnYweTNwZXpuOVFEMXNHVFdoNNIBZkFVX3lxTE91SExGNHpReE82S29jaUZhMVoxakxydXpYVmk3ZnprUUQyZ2ZBck1IeWZJVldDOVZmX1drSTBPMUFnaEd1ZHRXdk94NHoxTS1VTUJEeW5OeWZBaWFYdGgxOUNyR2trUQ?oc=5",
+            "time": "2026-05-14 05:30:00",
+            "is_negative": false
+          },
+          {
+            "title": "新聞分析》蔣萬安面臨直球對決",
+            "url": "https://news.ltn.com.tw/news/politics/paper/1754783",
+            "time": "2026-05-14 05:30:00",
+            "is_negative": false
+          },
+          {
+            "title": "民進黨徵召沈伯洋選北市 蔣萬安：專注市政為市民打拚",
+            "url": "https://news.ltn.com.tw/news/politics/paper/1754784",
+            "time": "2026-05-14 05:30:00",
+            "is_negative": false
+          },
+          {
+            "title": "民進黨提名沈伯洋 對決蔣萬安 賴讚沈：首都市長不二人選",
+            "url": "https://news.ltn.com.tw/news/politics/paper/1754679",
             "time": "2026-05-14 05:30:00",
             "is_negative": false
           },
@@ -101181,10 +101572,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 469,
+        "news_count": 470,
         "negative_count": 78,
         "negativity_pct": 17,
-        "sentiment_score": 313.0,
+        "sentiment_score": 314.0,
         "articles": [
           {
             "title": "陳其邁談兒少數位危機 網路霸凌將列高雄重點政策",
@@ -101513,6 +101904,12 @@
           {
             "title": "高市議員關心兒少數位安全　陳其邁：召集研擬數位安全治理方案",
             "url": "https://n.yam.com/Article/20260513764360",
+            "time": "2026-05-13 12:00:00",
+            "is_negative": false
+          },
+          {
+            "title": "陳其邁：打造在地安老與整合照顧體系 推動社宅結合銀髮家園",
+            "url": "https://n.yam.com/Article/20260513522575",
             "time": "2026-05-13 12:00:00",
             "is_negative": false
           },
@@ -104760,6 +105157,16 @@
         "hour": "2026-05-13 06:00",
         "severity": null,
         "is_negative": false
+      },
+      {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 06:51:38",
+        "platform": "news",
+        "publisher": "匯流新聞網",
+        "hour": "2026-05-13 06:00",
+        "severity": null,
+        "is_negative": false
       }
     ]
   },
@@ -107695,6 +108102,17 @@
         "is_negative": false
       },
       {
+        "title": "川習會14日登場 盧秀燕籲賴清德密切觀察、積極因應",
+        "url": "https://cnews.com.tw/237260513a06/",
+        "time": "2026-05-13 06:51:38",
+        "platform": "news",
+        "publisher": "匯流新聞網",
+        "hour": "2026-05-13 06:00",
+        "day": "2026-05-13",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "五度全國第一 台中閱讀績優勇奪18獎 盧秀燕表揚",
         "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPbHRwYlJLRDlEdGFBNFVwS2ZtLTdPaHFKd3RneUdlZ05OZFVTR21XUkNlc0p5LUo5dERzLXZNa2tKRUs3MVp1WkcxZGc0Ul9kLXBhUUFOWW1vMGZyNXYwbExPVXQ4cDhiTDZBejZsOGh2Q2l5NEhraHh2UlV4ZHNZMnRPTTdEWjJRUVprQ19hM1g5dkhlUElHQzhEbkJNVXhSZVlRUHZEal8xc1o0YmpuS3dEd1hxUnFVU2N1eHh3NkNBaFhyRUxPckRDTllHTDN0WWlxZy1pUzRiVFVvczNFc1FjMktMUTBZc1ZYZmMwTnlidDhqOUlZRl9URnFBZXQ3RkpRWjZoUm43U0dZS2NuQVNtRUM1NnhkRjBfQUl5R3FRVzBPVGtYZ1ZuMVFqNk00eHdMWVIwckFnbU1H?oc=5",
         "time": "2026-05-13 03:06:02",
@@ -109387,10 +109805,10 @@
       "total": 170
     },
     "yesterday": {
-      "red": 49,
-      "yellow": 249,
+      "red": 48,
+      "yellow": 248,
       "green": 32,
-      "total": 330
+      "total": 328
     },
     "yesterday_redyellow": [
       {
@@ -109821,15 +110239,6 @@
         "author": "Yuezhen Laio",
         "text": "紅中 是盧秀燕自大臉充胖子吹噓市政排第一，反倒是所見到將近60年台中最爛市長一位！",
         "time_text": "22分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "濟公爺爺",
-        "text": "作秀、蹭熱度都能看到你，出事避而不見，真的臉皮有夠厚",
-        "time_text": "36分鐘",
         "url": "",
         "signal": "red",
         "signal_zh": "紅燈"
@@ -111188,6 +111597,15 @@
         "platform": "threads",
         "author": "mozart1109tw",
         "text": "臺中鬼故事又多一個了嗎？",
+        "time_text": "1小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "threads",
+        "author": "731bt",
+        "text": "想看媽媽市長打鼓慶祝",
         "time_text": "1小時",
         "url": "",
         "signal": "yellow",
