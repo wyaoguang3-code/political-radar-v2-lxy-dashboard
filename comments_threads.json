@@ -203,14 +203,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 5,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     }
@@ -264,9 +264,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     }
   },
   {
@@ -311,14 +311,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 5,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -329,14 +329,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 5,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -635,14 +635,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "image",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -702,24 +702,6 @@
     }
   },
   {
-    "author": "sheeplin_",
-    "text": "再過不久就會被垃圾廚餘山弄走了吧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    }
-  },
-  {
     "author": "birkinblog",
     "text": "越來越小丑化了",
     "time_text": "2天",
@@ -738,6 +720,42 @@
     }
   },
   {
+    "author": "emilych3n",
+    "text": "先處理一下這個好不好？ 連個新聞都沒有，壓屁壓",
+    "time_text": "6小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "sheeplin_",
+    "text": "再過不久就會被垃圾廚餘山弄走了吧",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "紅",
+      "source": "rule(stricter)"
+    }
+  },
+  {
     "author": "pya720",
     "text": "[圖片] Photo by Lin Pya on May 11, 2026. May be an image of poster and text that says '副除商購、多 委製預算 掘殺90,000個工作機會 韓是 台是 質す 是 不 不慮 盧 中 ま 幕 秀 無 、人 友是！ 人 集 燕 桃 桃機 者 江 園產 園 産 和 業 勞 啟 重 I 臣 鎮 發 張 發張 聲 警善 ？政 보보호 カコ 傷害台灣無人機業！'.",
     "time_text": "2天",
@@ -748,6 +766,24 @@
     "signal_score": {
       "green": 0,
       "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "shuyuiamfine",
+    "text": "好了啦",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
@@ -770,186 +806,6 @@
       "sarcasm": 0,
       "llm": "黃",
       "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "hhoo12.16",
-    "text": "謝謝中央",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "quokkais",
-    "text": "為什麼台中的產業被藍白搞掉，你都沒差",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "marcguman",
-    "text": "你們賣國黨才不要破壞我們的國家好嗎！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "mimidomidoooo",
-    "text": "好想🤮",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "1230nauysirhc",
-    "text": "真的很丟臉，要不要看一下台東的",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "louise_chang215",
-    "text": "政績少的可憐 捷運沒半條 明天淡江大橋要通車了 不等你了",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "aesop_chen",
-    "text": "市長守護獨角仙也守護性侵教練松志彬的生存權！獨角仙比不上被性侵的小朋友們，蒸蚌！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "wassily_ko",
-    "text": "超狂豬瘟媽媽",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bluegisele",
-    "text": "狂你老師",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "keye.wu",
-    "text": "太狂了",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
       "source": "llm"
     }
   },
@@ -1008,38 +864,20 @@
     }
   },
   {
-    "author": "flydish088",
-    "text": "妳不要足額民進黨耍猴戲啦",
+    "author": "hakkapeter",
+    "text": "大嬸不要再裝可愛了，看了很難過。",
     "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
-      "green": 0,
+      "green": 1,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bellaknight_07",
-    "text": "花9385萬 會不會太扯🤪 你那超狂帽子 估計要上萬吧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
+      "rule": "綠",
       "source": "llm"
     }
   },
@@ -1062,20 +900,20 @@
     }
   },
   {
-    "author": "hakkapeter",
-    "text": "大嬸不要再裝可愛了，看了很難過。",
+    "author": "marcguman",
+    "text": "你們賣國黨才不要破壞我們的國家好嗎！",
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
-      "green": 1,
+      "green": 0,
       "yellow": 0,
       "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
+      "sarcasm": 1,
+      "llm": "紅",
+      "rule": "黃",
       "source": "llm"
     }
   },
@@ -1098,8 +936,8 @@
     }
   },
   {
-    "author": "xiu_912",
-    "text": "留友看 一個市長每次發文都被砲 但突然想到台中好像沒市長",
+    "author": "quokkais",
+    "text": "為什麼台中的產業被藍白搞掉，你都沒差",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -1107,115 +945,7 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "tsai_autography",
-    "text": "真是Hito。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "meishu.jing",
-    "text": "不管宣傳什麼，永遠是市長圖像最大！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "shiro_0.0v",
-    "text": "太狂啦 無人機產業被台中立委打趴",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "eneyhsiung",
-    "text": "該不會覺得江啟臣可以躺著選",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "aididilong",
-    "text": "直轄市裡面最討厭蓋公園的酒台中市",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "enerie217",
-    "text": "繼續扮小丑🤡",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
+      "yellow": 2,
       "red": 0,
       "sarcasm": 1,
       "llm": "黃",
@@ -1224,16 +954,34 @@
     }
   },
   {
-    "author": "emilych3n",
-    "text": "先處理一下這個好不好？ 連個新聞都沒有，壓屁壓",
-    "time_text": "5小時",
+    "author": "hhoo12.16",
+    "text": "謝謝中央",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "mimidomidoooo",
+    "text": "好想🤮",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
+      "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
@@ -1260,8 +1008,26 @@
     }
   },
   {
-    "author": "shuyuiamfine",
-    "text": "好了啦",
+    "author": "aesop_chen",
+    "text": "市長守護獨角仙也守護性侵教練松志彬的生存權！獨角仙比不上被性侵的小朋友們，蒸蚌！",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "flydish088",
+    "text": "妳不要足額民進黨耍猴戲啦",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -1278,26 +1044,8 @@
     }
   },
   {
-    "author": "k65213416",
-    "text": "豬瘟媽媽嘔嘔嘔",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "__m_a_r_k",
-    "text": "這邊給到拉完了",
+    "author": "eneyhsiung",
+    "text": "該不會覺得江啟臣可以躺著選",
     "time_text": "1天",
     "url": "",
     "kind": "text",
@@ -1305,47 +1053,11 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "waowupfc3018",
-    "text": "今天賣國了嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
       "yellow": 0,
       "red": 0,
-      "sarcasm": 1,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "peterlin1980",
-    "text": "垃圾山、廚餘湖清完沒？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
       "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
+      "llm": "黃",
+      "rule": "黃",
       "source": "llm"
     }
   },
@@ -1386,9 +1098,9 @@
     }
   },
   {
-    "author": "tuwaya_pasaraadr",
-    "text": "當了8年就這些而已",
-    "time_text": "1天",
+    "author": "louise_chang215",
+    "text": "政績少的可憐 捷運沒半條 明天淡江大橋要通車了 不等你了",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -1404,16 +1116,16 @@
     }
   },
   {
-    "author": "sammyakimo",
-    "text": "[圖片] Photo by Aligator on May 11, 2026. May be an image of text that says '台中清潔隊帶頭違法 餵水倒排水溝 您 來 盧秀燕　柯志恩 盧秀燕 柯志恩 鬼媽媽連線見面會 4/26 4/26上午11點高雄前鎮區慈德 4/26上午11點 上午11點 高雄前鎮區慈德宮'. | Photo by Aligator on May 11, 2026. May be an image of text.",
+    "author": "wassily_ko",
+    "text": "超狂豬瘟媽媽",
     "time_text": "2天",
     "url": "",
-    "kind": "image",
+    "kind": "text",
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 1,
+      "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
