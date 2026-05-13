@@ -2794,6 +2794,34 @@ async function run(){
   state.comments.facebook = await fetchJSON('./comments_facebook.json') || [];
   state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
   state.comments.threads = await fetchJSON('./comments_threads.json') || [];
+
+  // [Supabase Phase A] shadow read 或主動切換 — 不影響預設行為
+  //   - ?source=supabase  → 真的把 socialSignals 切到 Supabase（沒 dual-write 前會凍結）
+  //   - ?source=shadow    → 同時讀但只 console.log 比對（預設、零風險）
+  //   - 不帶 query        → shadow（預設）
+  //   無論哪個模式，window.__lxy_supabase 都會塞 Supabase 那邊的結果，供 debug
+  const SOURCE_MODE = new URLSearchParams(location.search).get('source') || 'shadow';
+  if (typeof LxyDB !== 'undefined') {
+    try {
+      const supaSignals = await LxyDB.signalsByPlatform();
+      window.__lxy_supabase = { signalsByPlatform: supaSignals };
+      const log = (label, obj) => {
+        console.groupCollapsed('%c[LxyDB] ' + label, 'color:#6bd');
+        console.log(obj); console.groupEnd();
+      };
+      log('signalsByPlatform (Supabase)', supaSignals);
+      log('signalsByPlatform (flat JSON)', state.socialSignals);
+      if (SOURCE_MODE === 'supabase') {
+        // 真切換：覆寫 state.socialSignals 成 Supabase shape
+        // social_signals.json 的 shape: { facebook: {red, yellow, green, total, *_pct}, ig:..., th:... }
+        // LxyDB.signalsByPlatform 已是同 shape，直接 assign
+        state.socialSignals = supaSignals;
+        console.warn('%c[LxyDB] socialSignals 已切到 Supabase。dual-write 還沒做，數字會凍結在 migration 時間點', 'color:#fc6');
+      }
+    } catch (e) {
+      console.warn('[LxyDB] signalsByPlatform failed (shadow read 跳過):', e && e.message);
+    }
+  }
   // 留言按發布日期 group（給 topic arc click 用）— backend 已 parse 好
   state.commentsByDate = d.comments_by_date_7d || {};
   state.topicHeat = await fetchJSON('./topic_heat.json') || null;
