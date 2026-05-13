@@ -1,6 +1,6 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-05-13T15:55:32.872731+00:00",
+  "generated_at": "2026-05-13T16:10:41.233817+00:00",
   "metrics": {
     "total_24h": 57,
     "prev_24h": 61,
@@ -28,20 +28,16 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 417
+      "count": 414
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2019
+      "count": 2011
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-05-13 00:00",
-      "count": 0
-    },
     {
       "hour": "2026-05-13 01:00",
       "count": 0
@@ -132,6 +128,10 @@
     },
     {
       "hour": "2026-05-13 23:00",
+      "count": 0
+    },
+    {
+      "hour": "2026-05-14 00:00",
       "count": 0
     }
   ],
@@ -544,26 +544,26 @@
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 417
+      "count": 414
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 417
+      "count": 414
     }
   ],
   "mention_compare_24h": {
     "盧秀燕": 74,
     "蔣萬安": 281,
     "蔡其昌": 2,
-    "陳其邁": 62
+    "陳其邁": 59
   },
   "mention_compare_7d": {
     "盧秀燕": 501,
-    "蔣萬安": 949,
+    "蔣萬安": 947,
     "蔡其昌": 119,
-    "陳其邁": 462
+    "陳其邁": 456
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
@@ -585,499 +585,13 @@
       "green": 0
     },
     "陳其邁": {
-      "total": 62,
+      "total": 59,
       "red": 0,
-      "yellow": 20,
-      "green": 42
+      "yellow": 19,
+      "green": 40
     }
   },
   "self_favorability_history_7d": [
-    {
-      "date": "2026-05-07",
-      "score": 54.8,
-      "total": 57,
-      "red": 1,
-      "yellow": 47,
-      "green": 9,
-      "crisis": 1,
-      "samples_low": false,
-      "articles": [
-        {
-          "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議",
-          "url": "https://www.ctwant.com/article/480136/",
-          "time": "2026-05-07 23:26:26",
-          "severity": "yellow",
-          "publisher": "CTWANT",
-          "is_crisis": false
-        },
-        {
-          "title": "海鯤號操雷震撼射擊 鄭盧「吃麵」談軍購2／軍購表決前夕 鄭麗文向韓負荊請罪後、再約盧秀燕吃麵",
-          "url": "https://www.mnews.tw/story/20260507sot1824001",
-          "time": "2026-05-07 23:26:24",
-          "severity": "yellow",
-          "publisher": "鏡新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "昨向韓國瑜負荊請罪 鄭麗文今奔台中見盧秀燕談軍購、選舉",
-          "url": "https://news.tvbs.com.tw/politics/3198055",
-          "time": "2026-05-07 23:26:21",
-          "severity": "yellow",
-          "publisher": "TVBS新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "台北鬧安鼠之亂 盧秀燕宣布：台中「625里大掃除」不讓鼠患有生存空間",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBrcGZTODE1eFU0bHRQblo3T1lWNHBPbThDR0pzdWtlcWM3RkN0amRPQXZBckNvcEIwZlpFT3d0U2ROSHlEeTU3YkhCejAyQ1FWUkF5MlZCS2rSAV9BVV95cUxOUzI3X3JqRlNzYUJxTzg3dnh3YmlHVWhyVzlNcGJBU1VZODE5M1ZhOXdIa0tibDNqWHBwdHVYMEZNUkF2UkVad2lwdjVzV3lOM21ScWFQRHE1cDZFV25NMA?oc=5",
-          "time": "2026-05-07 23:01:00",
-          "severity": "yellow",
-          "publisher": "Google News→三立新聞網SETN.com",
-          "is_crisis": true
-        },
-        {
-          "title": "盧秀燕喊軍購8千億先過 委製、商購放年度預算",
-          "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQNEZMbUJEa3RBVVF6UHNHRjVyQ1lBVTVFbEtJVjdlZWxLLW1SQ0Z4V29CQVJuMmJBeGF3T2tVeU5JTTlyaFlqYTh0eE1UeWJjajA5ZWl6OEQtc1BnUnUwaEZLQ1RubTN3LWR6Z3dxRnBrUjQ4UWZWaXpQdXZXQl8xYjRsanVNQ1BCczdCeF9WUmdYdmQ2Q0xZR1NkNDJiTVo4eDh1RXBjaXp6NC1JZWVZbjBEcjdjOFo2SVBoUHlYWWZVcmtILVdMZ2VfdlBza2VMM2ZlNUpnMVhVM3lPNlRqeU8wNV91VVNXeFFxNWJXVGQ5MmI0Vy1JZWpTbXQ3ek9PSFpPT0l4VzdQcGctYVByUXVzMEt0VXBwb0RhNmJhNGtrY1FxTjlScXZkbERxWFlEZ1hSVHZTTDRMQlhieXNVR2hETkRiY1U?oc=5",
-          "time": "2026-05-07 22:29:17",
-          "severity": "yellow",
-          "publisher": "Google News→台灣大紀元",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭盧會面／盧秀燕：政府軍購列特別預算 商購回歸年度預算",
-          "url": "https://tw.news.yahoo.com/%E9%84%AD%E7%9B%A7%E6%9C%83%E9%9D%A2-%E7%9B%A7%E7%A7%80%E7%87%95-%E6%94%BF%E5%BA%9C%E8%BB%8D%E8%B3%BC%E5%88%97%E7%89%B9%E5%88%A5%E9%A0%90%E7%AE%97-%E5%95%86%E8%B3%BC%E5%9B%9E%E6%AD%B8%E5%B9%B4%E5%BA%A6%E9%A0%90%E7%AE%97-222825773.html",
-          "time": "2026-05-07 22:28:25",
-          "severity": "yellow",
-          "publisher": "Yahoo TW 政治",
-          "is_crisis": false
-        },
-        {
-          "title": "台中滅鼠總動員！盧秀燕：查獲老鼠未改善 罰單6萬起跳",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5429487",
-          "time": "2026-05-07 21:55:58",
-          "severity": "yellow",
-          "publisher": "自由 政治",
-          "is_crisis": false
-        },
-        {
-          "title": "台中滅鼠總動員！盧秀燕：查獲老鼠未改善 罰單6萬起跳",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wYjdRN09Ucy15UzJIejg4TXhzampvRndGOFQzU1hhX1RjUlJOOTJzcDBjN0E0VmdaYVg2cWJHMEFIRUo2NklJV280RGlIYmN2Y090V1c4QnM4TERGcDE2TjRkYkV6T3NaQVHSAW9BVV95cUxPRktOVkFUZy0ydGJfaTZfNXJaOTl1Q3ktZlJLbXpxT0NzZDZ3VTNicUx5NnptQXVpNVV4RjM2X2syZlVibnlyTjVTQlNMUzlKT3pueGtVaHdMODdJVDcwcmdDSk5UcFV1SXNfajY5cWM?oc=5",
-          "time": "2026-05-07 21:55:58",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭談軍購 盧秀燕喊8千億",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaSGM4SFdjYkkzNFNGVUNWaWFxeGVYMFZtZGVOcXZaZzlnemJYU3J5dTN1VHU2LWtmdHA5MTBiVk11YjVlVkg0dzlyMEdBN0VMaWc?oc=5",
-          "time": "2026-05-07 21:37:06",
-          "severity": "yellow",
-          "publisher": "Google News→中華日報",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭談軍購 盧秀燕喊8千億",
-          "url": "https://www.cdns.com.tw/articles/1397971",
-          "time": "2026-05-07 21:24:03",
-          "severity": "yellow",
-          "publisher": "中華日報",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭談軍購 盧秀燕喊8千億",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVFZCbjN6cjl3UjZOamI5M2o5NTNFanEtUGw2TlJrUm5iZjRSVlhzbkkwNWZPYzhQbTJRaU1DQjdCZlNPeUdkTG5jYU91bGlJTmxlZk9RVWF0eGczSVlCVUFoZ2J3b2pXdXRuSFM2bElZdHBwMUpCcFRYV1ZJc2wtMVMyQVlQLW9CZlZ1QlJ6bHY0REhFT0JqTmhXY2FCdS11UExVc2NPbEFfUjNMNDlfSlhtbnA1Z2pJZ3FsaVdxSUFiRjJpMXRTV0tjVHRLUQ?oc=5",
-          "time": "2026-05-07 21:24:03",
-          "severity": "yellow",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "快訊/鄭麗文南下拜訪盧秀燕「關鍵溝通」！",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iODJvbjczZmMteXFmb0NoNWwxeFp1MkdvdWo2b1h4SUVtUFl0aHZHVF83ODRPUjlTMDB6QURrQUZoUkR3YVoteFhjVGc3UEp5aXBz?oc=5",
-          "time": "2026-05-07 20:42:43",
-          "severity": "green",
-          "publisher": "Google News→中天新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "再拋9千億 盧秀燕籲鄭麗文 站主流民意這邊",
-          "url": "https://tw.news.yahoo.com/%E5%86%8D%E6%8B%8B9%E5%8D%83%E5%84%84-%E7%9B%A7%E7%A7%80%E7%87%95%E7%B1%B2%E9%84%AD%E9%BA%97%E6%96%87-%E7%AB%99%E4%B8%BB%E6%B5%81%E6%B0%91%E6%84%8F%E9%80%99%E9%82%8A-201000921.html",
-          "time": "2026-05-07 20:10:00",
-          "severity": "yellow",
-          "publisher": "Yahoo TW 政治",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文見盧秀燕談軍購郭正亮喊「好的發展」 再爆曾親口對她這樣說- 政治",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hLVJrR0p1VjB0R1J0ZXlXVk1peGRhVWEtN2F4cVFqN0VYVlFKMmhZN1p3bk1uZkJBN1J1NHlkR1c1LXpJckg1YXRuTGx1NWR0Nkg1NzhTNHBYcFFrcjd0Y1UtaEEzb3pnMmxWNHZB?oc=5",
-          "time": "2026-05-07 19:50:25",
-          "severity": "yellow",
-          "publisher": "Google News→中時新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "台中市蟬聯漢他病毒零病例 盧秀燕：絕不鬆懈",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JRTJvdzc3NVA4QWJaNTl2a19McGNoakhtU1ItUTB6RmhZMk9xTXpPUG9BaF9sb2pQbGd5WTZTbWdSZG4xMFh1RWZ6NUdhRG1LNVE?oc=5",
-          "time": "2026-05-07 19:40:28",
-          "severity": "green",
-          "publisher": "Google News→中華日報",
-          "is_crisis": false
-        },
-        {
-          "title": "與鄭麗文談軍購 盧秀燕喊話「跟台灣民意站在一起」、 發價書不應當條件",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5429352",
-          "time": "2026-05-07 19:26:40",
-          "severity": "yellow",
-          "publisher": "自由 政治",
-          "is_crisis": false
-        },
-        {
-          "title": "與鄭麗文談軍購 盧秀燕喊話「跟台灣民意站在一起」、 發價書不應當條件",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kLU1KQzZHMjU1THZPakNnTk9NMEswcFVQcTF6aW5JRW1BRGd6OEtJd19INGgtSkJoZzNXMmQ1R19fZkpqUFAyMV92YThRNHhoM2gtMFpQdEdIbDhUcGdHMWNOcGRwQ3F6Z3fSAW9BVV95cUxOWjVjRmlZMkNqbktJWnp5ZUV4bDJuclp6ZU4xZm5OSHg5WFB1aWU5NnhaZzV1Um8zdmI1aUJNSUc2amFtMXRiN1p4Y3BRUjUzOFJyYmNZd0laMTU5ZXpDb1NxUE56dWhtZlhYNHlOZ1E?oc=5",
-          "time": "2026-05-07 19:26:40",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕才喊話「軍購8、9千億先過」 鄭麗文今赴台中交換意見",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5WTA0SklEM3BnQTJzOFNKS3lmTlVrUjlwRzdFd1d6eGJqVk9haHl5VmQyVFBCMldaWmFDdVJSYl9nRUgySUlUdUpKbGc5djgyN1l4NU5PT2w?oc=5",
-          "time": "2026-05-07 19:02:42",
-          "severity": "yellow",
-          "publisher": "Google News→梅花新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "與鄭麗文討論軍購 盧秀燕提醒：自我防衛能力不能省",
-          "url": "https://news.nextapple.com/politics/20260507/1B97886F1E0002A19FA65609A3DD6F57",
-          "time": "2026-05-07 18:47:32",
-          "severity": "yellow",
-          "publisher": "壹蘋新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕再表態 軍購預算應8、9千億元",
-          "url": "https://more-news.tw/609233/",
-          "time": "2026-05-07 18:20:48",
-          "severity": "yellow",
-          "publisher": "墨新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "憂影響台中無人機產業 盧秀燕挺軍購8千億",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtc2dQZ0MyREpuVVJwTkZCYm8tdG9MSHhxU0VpSElhMU9FODhFR0xxbTA1UXVxSjBXYWNYcnRZNDR2b1JkOXQzVkM3LWQ2bDRsNUx5ZnBpeDBxRjZnRWRmcF9RMEZCUkU?oc=5",
-          "time": "2026-05-07 17:42:43",
-          "severity": "green",
-          "publisher": "Google News→中國評論新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文、盧秀燕吃牛肉麵「交換軍購意見」 地方人士：對1事看法相同",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BclpBWXJOUWxEUUpzOHllc2xwVW1GWFVsMjZaSHFzY3N0T2xoeExOb3kzNFYzOFRyUWlFalhINjZuSWRYZEZXNVJUVlBfYzdKZlZj0gFYQVVfeXFMTnZsejNfcjRiWWt6QkdsajdyOHpUdDJSb2VsUTl6SHNFWUVpN2J6Ym1UUm93Tk9vUDlGMTBaQWpwcmVYMWVnaHllZU0xd3JSMXJYR0FPb1RyTg?oc=5",
-          "time": "2026-05-07 17:29:47",
-          "severity": "yellow",
-          "publisher": "Google News→聯合新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "周永鴻批盧秀燕硬拆軍購和商售、委製 是拿台中產業發展開玩笑",
-          "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNSjV1bHFuUk9VOVNwY3YyMVZhYXRHbXB6dE5CMHlsRXhHd0xFN3hGQThQNHQ3bFdkcDYtWDFXVmJUcVI2UjN2dTRzY3dMS2RrTmMxTjA4R205WUtxcV9vRVBUbWY1VExZOWR0Z1pzUl80cVVBMGRuLTRnQmtrTkQ0c3lYNXAyTW1weUNIakNWUTRWS1dOZjgxVWJMTGstTDB6SmQxRHczaUgzNkFVYlU5T3BQdWJYVDlacFk1Q0RJdm5EQkRMSDFMa29EVFJNM1B4Qks0bmwwbU9uXzZJLTdNMG9MVUp5MTRGOVFvNklsZWZOZHFRZTN0QXZTX2l0X3dxTmNoSlVVR0JqaG85LUNtMTFqZkZraWlRQlFrS29qdDladkRyMkRzdXJIblZlSDRlbVl4T0IyZjRBUEo1VVdzYzYwTWtwNi0waGFlQkY5QjMxSGJDYUZCWl9WbDR2djVqMjNDSUlqQUc4S2VMXzZEZGtMc2E2OHg2ZVFWMEY3YlBIa2NQbWlrUFpLMlRKSUpqbkx2REF3eTVuQQ?oc=5",
-          "time": "2026-05-07 17:22:15",
-          "severity": "yellow",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文南下會盧秀燕談軍購案 中市府：暫不回應",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WSWp2M0NFZm0yUXhBRkdNTGpNZE00ME13VnBicjNGVVNrYWRSRXRtcWV4NHM1aUxDaXR3RTFnZ3pUMXcyYng2OGJwRXBNOFh3VzNrNmZLNUQxTWFDOXB5N08zdklEZjBSdGJueUdR?oc=5",
-          "time": "2026-05-07 17:17:20",
-          "severity": "yellow",
-          "publisher": "Google News→中時新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議",
-          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOMGMxaGlJUmhaMnQ4X0ZER2pxS0w3QnZMOGIwb1MwcEs3R2xuOGxyS0xna0pRZnBKX3dsdENHdGxGLWo2dEZ0SmxEZEdmdldKb3BiNDVUcXBwY1A3ZDM1M0lqUzZINW5OWDBwcUg0QUZ6ZmNOX3ZIZi0tcGgtTnRKeW9rM3c5bkFoRHQ3alA0ajk2dzBWUm1KdE1xTzY2WlRoa05SeExpTTA1ZkZ4cEpOSndJdUdid1ZiVE5XOW80NWZhUVZWRWMxZHAxbkJKLVZaQjFZV3FFSnRaWTZWNzNoX25rcmtUTTVPaG52bGlHdDRaSl9jVDFlTFRWenpWRjVtVEJEeEFhVlE4TFl4ZlhSNlZNNDNRSjVtOXZaVGhJWDVTOVdWOFVLRy1KR3ZZOG1jaS1DaHg0VGtKYlUxSTFNYktMcjlWNTJaOGZFd2gxLWs5ckJBN2tlS2NLQmNEdjk3YlB3T05LeDZFY0lpZjhQZHdOOFV0QQ?oc=5",
-          "time": "2026-05-07 17:11:42",
-          "severity": "green",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議 | 政治 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xLUUxckI1MUpDOU1DZU1YOXpkck02elJ3S0E3RW45VmFUbjhGdXV4eVQwcFdSdjNoODZFakZUcWktSlY1S2tscEQtZlpQX1nSAVRBVV95cUxPUjBwalYtbXV1eTZQM0p0azZTaHdDWXZEbUg1WjV0Yks5YlRnZzBNSnlmbkJtNTNEZHAxWEU0TzJzZTROdGZLNW4zemdpSEhMZFlPQXQ?oc=5",
-          "time": "2026-05-07 17:11:42",
-          "severity": "yellow",
-          "publisher": "Google News→CTWANT",
-          "is_crisis": false
-        },
-        {
-          "title": "與鄭麗文討論軍購 盧秀燕：主流民意很重要、自我防衛能力不能省",
-          "url": "https://www.ettoday.net/news/20260507/3162121.htm",
-          "time": "2026-05-07 17:01:00",
-          "severity": "yellow",
-          "publisher": "ETtoday 即時",
-          "is_crisis": false
-        },
-        {
-          "title": "與鄭麗文討論軍購 盧秀燕：主流民意很重要、自我防衛能力不能省",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5kekU1SFVnWmVLbXNKUzBnMU96NzRGVWxuSC1lRXNSWkxpWHFla2tDTnFOa25VeHUyZ09NRFVvRDBlZVY5eE1LUHJuSm9lOF9wNTd1WDhaWVVYQU4xMFHSAWhBVV95cUxNNkVXb0FvamNlQThpRFBaZ3BNb0l1aGRqNDk2RV91R3RoWDc1N1pyN3RaSkZUMUxrcmhIZG94RUNDaUhRTlI3UDJxSEFLYW4zWEs0dG9JQ21tcTZGdW4wSFBNMkw0OEt0UQ?oc=5",
-          "time": "2026-05-07 17:01:00",
-          "severity": "yellow",
-          "publisher": "Google News→ETtoday新聞雲",
-          "is_crisis": false
-        },
-        {
-          "title": "妙喻母親「阿信、小叮噹」 盧秀燕呼籲：當女神般寵愛媽媽",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5yajJCMFdkeU1UdElyd016SWNxMHI2X3NkYXNOa3pCaVBMNHk0bWVveHZzTlpUZldhcFpJcHVLTmpsRzUtTm1ob3FVSUs0UXNk0gFWQVVfeXFMTUFlaThjSnBMYzNHcTJNTlhRU1c5d2FKenlwUTNsSlQ4SFNYZFNiWGd6OU51eTVaTTBJcnN3aF85OVFMOUJVSVpkVXZveUw4S3F5dEtWQXc?oc=5",
-          "time": "2026-05-07 16:54:47",
-          "severity": "green",
-          "publisher": "Google News→聯合新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "表揚模範婆媳 盧秀燕：媽媽是阿信也是哆啦A夢、家人有需求都會變出來",
-          "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxOYmNLUS1TZG1GYWpEaUhUT25VLWpmWE5taHNMWmlqT2hCZ3lUajJXOWJzZHI2TDZ6VmRXTnJXUHlKX01PVlVxMXhOaG1MRkJVRlFXWXc5ZFViWkdxVEpxNXJsLVFYc3poQnJpZVcxQk5FUG8tWDVXRVhKYTE1R3JVc1gxc0xyay10RWNsUnBIeXFxTnczQUdMdXhmWFNENmZpeHgzRTMwZXN1OWVaMGNGM09HTEpwVnp1MVBsaVVLTm02QWxOaEF2akdLalAtNnJlTGpyVWxyeGJNV0RSQTZGRFJFUXBtdk9FYk1sR3NzcnNCMzFhSWhvbTN1dlEteUhjdTY2VjM2eWR0UThjUC05Q1c1MkNJUUNOOW1Udnk3RXlKNXJDSWhEREZnOWdHT0FqWGZaZ1NKVm1rekVHMm9iZF95eGw5NHJWUjUxUWlSZjdtN0xYSWh1SWtWcElfcTJRTExTemFjSVFJMWtpYll3YWd2c0lFV2JZQnptcHpCdjRQT1MtMWozN2NnOEdrZlE1QW1GV2NfbmFoZDdkV2FkTkdLbnJ1UThidjllWEtnTF9QSmk2?oc=5",
-          "time": "2026-05-07 16:54:10",
-          "severity": "green",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文拜會談軍購 盧秀燕對發價書有異見",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Za3BwTE5aRU95YXVNZ1RpZjNZckpuQTVQcHVBOTgybmxwVzhlWUNJcmc3OTNrRlBZMjhZdUpad3ZXWXVlT0VNM1RwVXM2MVpKQTIxcTlEaTF2U21Ha1A3MlFZYUFSbjg?oc=5",
-          "time": "2026-05-07 16:48:31",
-          "severity": "yellow",
-          "publisher": "Google News→中國評論新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "提軍購8、9千億先過 盧秀燕：商購放明年預算 | 政治 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5JNEI5U0FBaWd0a1FGZWtOdWEtYWstZDZTbXBLUG1kb291Z09CbEdBVU9reVFfazZqd1AwdmdGbGZxbUNodFBDV2hEN0wtZW_SAVRBVV95cUxOdnQ4UVhUVGtKZWk4ckp0aHZaRFdELV8xbTl0T0dndkhHaUtRWC1oREpQb3p2UmwzelZwbmp1ZEI4WXFUN0Vzczc5SU96THFZVVRITmk?oc=5",
-          "time": "2026-05-07 16:33:11",
-          "severity": "yellow",
-          "publisher": "Google News→CTWANT",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購案最快明表決！鄭麗文今中午拜會 盧秀燕早上已表態「8千億軍購優先通過」",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Qck9XWUYzdVdIc3gwQm05am81NEJ3Rkxuemk1YlNMNEh3V2VpS1JCbVI4ZnppbVRjbDRoUTdVYlhudzVuUjRzeVJyMUZoRXdULVFkRVd0RGNGdENQR1hOdlQ1NkFfYVFVR0HSAW9BVV95cUxOVEpJUjZSRUFmbDJmRE1sdFpXMVdyeE8zR0dfNFp1eTUyakNGTFBSTzFtU21yTkZYd256Skh1MHh0Ykt5a3hHZ2lKeTFnb2d4QlRTU2hkYlpod25XamphcS1QNkZTREVDc0dnT21KYzQ?oc=5",
-          "time": "2026-05-07 16:32:16",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "國防特別條例最快明表決！鄭麗文拜會談軍購 盧秀燕：要聽取主流民意聲音",
-          "url": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxPX3pTUFg2STBUdmVLZUVBaHR2Wm9BZVJOTUlsdXJSVDdEY2FjY1lVUHlkakIyT181dXBwclZ1QkFkbi1MUDlhNUQwLVpwZWxKTjFfaElQb3BXR1RqNFRXTVhCcmQ1WmdKa0hsNjhjSW1lR1V0cXFYNFBNbGZMQmtMRG4xS3ZhYmJLbzlTQVpQRnFkNFozMDI1ZWJzMnA2SmpPZ1ZodzNDZmZtYzlQQW5MaWV3SEFPMUVqNG01eEcwTXZpOGpyRjF5ZVhmaENsd2lEbmJJLWxQTDdNV0c1VzJzb3NSSklZVklFd1dMRzRNNWxYRnduTXNhZzY2V21hRDNBdlJtUFQ2RlUtNUVwWXQ3eU9QQlk2dWl1cHA2Q1pHenpfT3ppNFd4aGNnaXpFZGVwV1pPMDlheFprQlVRZUh1ZGZoLTlYd2dhMWRRNWZCRjlFSlBBSXo0NVgtNzVyMGVlQlgtN2hYdlpwQ0NMbXBNVDBVNFozNU5YQXh4LVprQW5GaEc4N1VwbHUzTlFERHBGTDBVb0FxYzI4ZUZOdFFiQUVWMTA0V3ZiZmZueWhKZ3ZQd3pDcFFReEM3OWZNTm5XcUVCbG9naGpQeWU0N3JuQkEtdG9LdlFsTFpRRFVnbkc?oc=5",
-          "time": "2026-05-07 16:18:18",
-          "severity": "yellow",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "昨見韓國瑜「負荊請罪」 鄭麗文今赴台中找盧秀燕談軍購與選舉",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YLUxPRTZQc0FlWWs2VjRibzZXLXpvYWVGN2MtM1kwM3hoN3BkY0hxSktnTlVzdmhMVW5FOElSWkxQdldIT1M0dzBUUFZXUGMwNkJKTjVZdw?oc=5",
-          "time": "2026-05-07 16:16:42",
-          "severity": "green",
-          "publisher": "Google News→台視新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "國防條例最快明表決 盧秀燕：8千億軍購優先通過、商購建議列總預算",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wVnRXYnNwQ1FFVG5IZHFtb2R4NV9HNW1EWU1memFGSzZEczNIZzhhUURTN1dMdHJmSEx4MHdoRkVmdHg1OTVUWTZpZ1BQd1VqWnFrcEZVaEd3djQ?oc=5",
-          "time": "2026-05-07 16:15:48",
-          "severity": "yellow",
-          "publisher": "Google News→zmedia.com.tw",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文拜會談軍購 盧秀燕：要聽取主流民意聲音",
-          "url": "https://www.cna.com.tw/news/aipl/202605070231.aspx",
-          "time": "2026-05-07 16:03:32",
-          "severity": "yellow",
-          "publisher": "中央社 政治",
-          "is_crisis": false
-        },
-        {
-          "title": "鄭麗文拜會談軍購盧秀燕：要聽取主流民意聲音| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1hYWVhQ05rLXdSdDVHYk04YTV6Y1VuaC1oUl9Da2prNU5YM0N1eG90cVNySWtJWkE3aFdnVXJ1dDQzQzIwb1FlUXJ3clAzYkpValE2NTlkUUVyUlpTR1dV?oc=5",
-          "time": "2026-05-07 16:03:00",
-          "severity": "yellow",
-          "publisher": "Google News→中央社 CNA",
-          "is_crisis": false
-        },
-        {
-          "title": "力挺軍購8、9千億 盧秀燕建議商購可放明年度預算",
-          "url": "https://cnews.com.tw/237260507a07/",
-          "time": "2026-05-07 16:00:10",
-          "severity": "yellow",
-          "publisher": "匯流新聞網(sitemap)",
-          "is_crisis": false
-        },
-        {
-          "title": "力挺軍購8、9 千億盧秀燕建議商購可放明年度預算",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1MMEVZcEhpak5Nd2FBZkV4eVVOeTBRX29wSmhGdGpCSmpsV1B6YW9hbzFYWkRLQnpLRk8zcmdFX2xsaXlRQ3BvMVd3?oc=5",
-          "time": "2026-05-07 16:00:10",
-          "severity": "yellow",
-          "publisher": "Google News→匯流新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購最快明表決 鄭麗文今會盧秀燕交換意見",
-          "url": "https://newtalk.tw/news/view/2026-05-07/1033843",
-          "time": "2026-05-07 15:50:20",
-          "severity": "yellow",
-          "publisher": "新頭殼 全站",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購最快明表決鄭麗文今會盧秀燕交換意見| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LYXFZZlh6ajY3M2JkTURKZGRrUHptemRJMnd5S2Y4ZHdmZUlkT0ZMRDVvVU9oTU1BVXc1QzBtV2lLSG5mQ0IzT3FsWUN1SXItRnN4U184bnFvZmc?oc=5",
-          "time": "2026-05-07 15:50:20",
-          "severity": "yellow",
-          "publisher": "Google News→Newtalk新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "軍購最快明表決！鄭麗文昨向韓國瑜求和 今赴台中與盧秀燕面談",
-          "url": "https://www.ettoday.net/news/20260507/3162057.htm",
-          "time": "2026-05-07 15:45:00",
-          "severity": "yellow",
-          "publisher": "ETtoday 即時",
-          "is_crisis": false
-        },
-        {
-          "title": "到台中訪盧秀燕、吃牛肉麵 鄭麗文：對軍購案及選舉交換意見",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZQXZZUk5EM1RWZGlnWThESkRqMVdSWEZ1X19KbUdRclFkZkdiQmV4Slo2Y0Z5LUNaaHFUUzZEcHFJZ0FTdWhlaW1oTkNGMEpadV81SVgtNkVKNTl1TmMzYTA5ZnRTMFV4N0HSAW9BVV95cUxNaTMwdjQ5ZE9BYVRpLUxwRHIyRzNjaUF1X3cyVzBFVzZyOXhGOEpXeWZnNkVHTFhlTm9TN3EwX1BfdzI0X3hwbzdCSGNOdjA5YWhVSzJsc0ozYWQ5MExkeWtEVzh5cHh3RTBtaHpQUjA?oc=5",
-          "time": "2026-05-07 15:41:15",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "赴台中拜訪盧秀燕！ 鄭麗文：對軍購案、選舉充分交換意見- 政治",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ya0tXWUh2bE5hM1p6VmpPSTBhdGlqRGtxTzFDQnBKV3FUX3JhUE90ZW9PdXRkUmhJdjRkeFdfUk5NZExTdlhiN1NBZ0xtM292bU8yeHpWc2lkNnpac0ROTF9nbVVGcDd2bi1EQzQyek9pZw?oc=5",
-          "time": "2026-05-07 15:40:00",
-          "severity": "yellow",
-          "publisher": "Google News→華視新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "倡議「國防預算雙軌制」 盧秀燕：優先通過軍購特別預算",
-          "url": "https://newtalk.tw/news/view/2026-05-07/1033814",
-          "time": "2026-05-07 14:12:47",
-          "severity": "yellow",
-          "publisher": "新頭殼 全站",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕護台中無人機產業 支持軍購預算8、 9千億優先通過",
-          "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxNeVdva1V6OXJvRld1OHY0MzNjdVdHR3J6MWtrdkdGekhHS2cxSzR5UEFqTlhqLTVma21vMzVmVXZVdE96dkkyaEszRDNILTFQblpkN1ZFOUJqaWJ6WWdYQUJYblZaSjI2NUxxZ0MwWnVwRkxPaElEX2JjV2xzaUJuTTVEQndXNTNQak8tZ0NBemhHMTNXUkZyOUpVV3l5ZS0xbE5FZGRZb0Q1RUdELUhIaE85akVkTVdKSkJvM0V1R0ZNT0hjYUxRWGJxMnpKV0RseFFGaU5McE9RUkQ2bnVrOFhKZ2xMZjlqOGkwRFIteG5Kb1haT1U2WmVPcU1IdzVWQzlHWW84RVNGTXVGa0F4WnhSNXV6UFMwTlhCSTh0Wk8xZWNEdHJoMVctM19sY0RoQ082bFJ2dVhsek4zeWZqSU9KOXBqRndHWlpNb0ZHeE5tR1NiYkpCLVUyMllPRHNUeEdVUmNsdzY2bHkt?oc=5",
-          "time": "2026-05-07 13:40:55",
-          "severity": "yellow",
-          "publisher": "Google News→Yahoo新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕：軍購8、9千億優先通過 商購可列年度預算",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1kU3VqN24ta09SbWp6QklkVWhsR0s4emNhaXNKZDl0T3lWQ2xocTMtZV9DQVhpeXFOd2pTMGstb3dUaUhTMWhLUnBETmctN3N0dThNOVNQeUFLdXI1OWpNMmo0S0dHdUdJaHl2aTVMdzFnY09UMjg3S0xB0gFfQVVfeXFMTWpxSzhUVU5nYnM4dTZUQUI1ZUVlWS1JMVB0V3oxN1VVSmV2NTlVWVRSZlRpa1FXWl9uYmZZczI2RFhaYmIwbEZnbWtzUXNSamtFd1FfemF2OGFSM1hObEE?oc=5",
-          "time": "2026-05-07 13:01:23",
-          "severity": "yellow",
-          "publisher": "Google News→經濟日報",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕：軍購8、9千億優先通過商購可列年度預算| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wc1FuNjlTdEZ4djJod1pyc2RVU2YxYlQ5NzN5N1RNcmNaT2d4TGktbGJpaGFOd2RtLThtU1FwVFF2SG9TLS1CMDBFNVpTZzBlZk12dEsxYnVrbV9qaU1r?oc=5",
-          "time": "2026-05-07 12:51:00",
-          "severity": "yellow",
-          "publisher": "Google News→中央社 CNA",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕再表態！軍購8、9000億先通過 委製、商購放年度預算",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xY0twQ0FhZWdaMXpIaHI4N3VPbGV5bGxFZHdMblF5alF5bjY1QXViRkw0cmVXYlpCWU5yOG9UVGNTQ01odThnMGY0SjRONzNrUW5oS2tlX2hKMnhYS0hFOVo3cEgwU3N6Q3fSAW9BVV95cUxPRFJ6dGQ3YjF2NGxTdmhTY3ZpUHY3SHdhLW1MWTRYcERsSnRQMjZOQ1BldmpQd0t1WEdyajRRekJEVDdQVXB6SUlRZjREM3ptY1B4S0NSTGdOeWhxcFZ3WkktQ0xmeEtTMWZ4bjRhWnM?oc=5",
-          "time": "2026-05-07 12:26:44",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕再表態！軍購8、9000億先通過 委製、商購放年度預算",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOUlEbGNJVEIzdUo5bWQ5YWlVRVoydUpaMXM0UUdPaEJRX3NwNHJCQUtlQmlEOHBNci1McTJZWHBXWW9ycHdjcDFCSHB1VENtNWdoRWlGajlnMEVQYlltWVU1bnlWdFFqdE04QnZHclpiRzZYb1ZoVkxPT21NTExpbjBsenBUZw?oc=5",
-          "time": "2026-05-07 12:26:00",
-          "severity": "yellow",
-          "publisher": "Google News→自由時報",
-          "is_crisis": false
-        },
-        {
-          "title": "中市表揚模範婆媳　 盧秀燕讚媽媽是家庭最強後盾",
-          "url": "https://n.yam.com/Article/20260507317014",
-          "time": "2026-05-07 12:00:00",
-          "severity": "green",
-          "publisher": "蕃新聞→創新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "力挺軍購8、9千億　盧秀燕建議商購可放明年度預算",
-          "url": "https://n.yam.com/Article/20260507799823",
-          "time": "2026-05-07 12:00:00",
-          "severity": "yellow",
-          "publisher": "蕃新聞→匯流新聞網",
-          "is_crisis": false
-        },
-        {
-          "title": "盧秀燕再表態軍購應落在8至9千億 委製商購回歸年度預算 國民黨一定要團結",
-          "url": "https://n.yam.com/Article/20260507311442",
-          "time": "2026-05-07 12:00:00",
-          "severity": "yellow",
-          "publisher": "蕃新聞→威傳媒",
-          "is_crisis": false
-        },
-        {
-          "title": "清水鰲峰山「谷溜遊戲場」啟用  盧秀燕：34道溜滑梯全國最多、打造海線親子遊憩新地標",
-          "url": "https://n.yam.com/Article/20260507277975",
-          "time": "2026-05-07 12:00:00",
-          "severity": "green",
-          "publisher": "蕃新聞→波新聞",
-          "is_crisis": false
-        },
-        {
-          "title": "國防軍購預算有解？鄭麗文台中會燕子 盧秀燕晚間參加活動全程笑咪咪",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBlM3AzMFpVTDhsZ3ZSQVI1Q1hYLTNCYk1fQzhyQ2xFQTItMFNxWGxtNDg0UHc2eExFVkg1NWs4YkFQeVdpXzI0d1NwOUpLeHlWUnVyWmc3RHJOMjNXTmw5S2ZQaVVqTzI5cXh3R2E4czBBbmM?oc=5",
-          "time": "2026-05-07 09:47:49",
-          "severity": "yellow",
-          "publisher": "Google News→翻爆",
-          "is_crisis": false
-        },
-        {
-          "title": "嗆安鼠之亂「跟抹黑盧秀燕、柯文哲手法一樣」 醫怒：疫情失控也是你們中央負責 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPd3VSQ19BUkc5ejM3MEc1Um1tTTRmaWx6d2hUdHdVYzFUOENXcExPNW84QXlsOTNhSXVucWdsVDc4ekNpMVdtam8zYnU0d0lrUlRxVGNtSE1EM0lxcVptQ2Z6V1c1NXBKYzQ5Mm5WSi1abWFPSHduY2ZmZmpQeV9kcWF3SEl4SDBMVE5oeURGRWh2djIwM2lEZnRhU3ZITGc2UUVvSER2UjFEdFNkSGhSSS1COXNyM19OTEEwRGVQUEVpLXZ3WkJYU0tJcms3MEdQQVgyN2NTdzc2VUpza2lFNzNZS19XWXBqd2VBM2s0d1pYdHpQN3UyNlBRMFdLWUloNHJFaFB6RldESzNjZndIN1YtMDRnZnBsc1RqNW0wTjN3MnpmRE12aGtmZ2Q5amJ6d1lsN1pUTFU0RWR0?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-          "time": "2026-05-07 00:31:00",
-          "severity": "red",
-          "publisher": "",
-          "is_crisis": false
-        }
-      ],
-      "comments": {
-        "red": 89,
-        "yellow": 87,
-        "green": 356,
-        "total": 532,
-        "delta_total": 47,
-        "stagnant": false
-      },
-      "comment_samples": [
-        {
-          "platform": "threads",
-          "author": "miuccia_lee",
-          "text": "一個百年大黨所有黨員拿你們家神經病般的投共賣台主席沒轍，可以再廢一點",
-          "time_text": "3天",
-          "url": "",
-          "signal": "red"
-        }
-      ]
-    },
     {
       "date": "2026-05-08",
       "score": 58.1,
@@ -15688,341 +15202,30 @@
           "signal": "yellow"
         }
       ]
+    },
+    {
+      "date": "2026-05-14",
+      "score": 50.0,
+      "total": 0,
+      "red": 0,
+      "yellow": 0,
+      "green": 0,
+      "crisis": 0,
+      "samples_low": true,
+      "articles": [],
+      "comments": {
+        "red": 0,
+        "yellow": 0,
+        "green": 0,
+        "total": 0,
+        "delta_total": -390,
+        "stagnant": true
+      },
+      "comment_samples": []
     }
   ],
   "topic_narrative_arc_7d": {
     "軍購": [
-      {
-        "date": "2026-05-07",
-        "red": 0,
-        "yellow": 43,
-        "green": 3,
-        "total": 46,
-        "articles": [
-          {
-            "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議",
-            "url": "https://www.ctwant.com/article/480136/",
-            "time": "2026-05-07 23:26:26",
-            "severity": "yellow",
-            "publisher": "CTWANT"
-          },
-          {
-            "title": "海鯤號操雷震撼射擊 鄭盧「吃麵」談軍購2／軍購表決前夕 鄭麗文向韓負荊請罪後、再約盧秀燕吃麵",
-            "url": "https://www.mnews.tw/story/20260507sot1824001",
-            "time": "2026-05-07 23:26:24",
-            "severity": "yellow",
-            "publisher": "鏡新聞"
-          },
-          {
-            "title": "昨向韓國瑜負荊請罪 鄭麗文今奔台中見盧秀燕談軍購、選舉",
-            "url": "https://news.tvbs.com.tw/politics/3198055",
-            "time": "2026-05-07 23:26:21",
-            "severity": "yellow",
-            "publisher": "TVBS新聞網"
-          },
-          {
-            "title": "盧秀燕喊軍購8千億先過 委製、商購放年度預算",
-            "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQNEZMbUJEa3RBVVF6UHNHRjVyQ1lBVTVFbEtJVjdlZWxLLW1SQ0Z4V29CQVJuMmJBeGF3T2tVeU5JTTlyaFlqYTh0eE1UeWJjajA5ZWl6OEQtc1BnUnUwaEZLQ1RubTN3LWR6Z3dxRnBrUjQ4UWZWaXpQdXZXQl8xYjRsanVNQ1BCczdCeF9WUmdYdmQ2Q0xZR1NkNDJiTVo4eDh1RXBjaXp6NC1JZWVZbjBEcjdjOFo2SVBoUHlYWWZVcmtILVdMZ2VfdlBza2VMM2ZlNUpnMVhVM3lPNlRqeU8wNV91VVNXeFFxNWJXVGQ5MmI0Vy1JZWpTbXQ3ek9PSFpPT0l4VzdQcGctYVByUXVzMEt0VXBwb0RhNmJhNGtrY1FxTjlScXZkbERxWFlEZ1hSVHZTTDRMQlhieXNVR2hETkRiY1U?oc=5",
-            "time": "2026-05-07 22:29:17",
-            "severity": "yellow",
-            "publisher": "Google News→台灣大紀元"
-          },
-          {
-            "title": "鄭盧會面／盧秀燕：政府軍購列特別預算 商購回歸年度預算",
-            "url": "https://tw.news.yahoo.com/%E9%84%AD%E7%9B%A7%E6%9C%83%E9%9D%A2-%E7%9B%A7%E7%A7%80%E7%87%95-%E6%94%BF%E5%BA%9C%E8%BB%8D%E8%B3%BC%E5%88%97%E7%89%B9%E5%88%A5%E9%A0%90%E7%AE%97-%E5%95%86%E8%B3%BC%E5%9B%9E%E6%AD%B8%E5%B9%B4%E5%BA%A6%E9%A0%90%E7%AE%97-222825773.html",
-            "time": "2026-05-07 22:28:25",
-            "severity": "yellow",
-            "publisher": "Yahoo TW 政治"
-          },
-          {
-            "title": "鄭談軍購 盧秀燕喊8千億",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaSGM4SFdjYkkzNFNGVUNWaWFxeGVYMFZtZGVOcXZaZzlnemJYU3J5dTN1VHU2LWtmdHA5MTBiVk11YjVlVkg0dzlyMEdBN0VMaWc?oc=5",
-            "time": "2026-05-07 21:37:06",
-            "severity": "yellow",
-            "publisher": "Google News→中華日報"
-          },
-          {
-            "title": "鄭談軍購 盧秀燕喊8千億",
-            "url": "https://www.cdns.com.tw/articles/1397971",
-            "time": "2026-05-07 21:24:03",
-            "severity": "yellow",
-            "publisher": "中華日報"
-          },
-          {
-            "title": "鄭談軍購 盧秀燕喊8千億",
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVFZCbjN6cjl3UjZOamI5M2o5NTNFanEtUGw2TlJrUm5iZjRSVlhzbkkwNWZPYzhQbTJRaU1DQjdCZlNPeUdkTG5jYU91bGlJTmxlZk9RVWF0eGczSVlCVUFoZ2J3b2pXdXRuSFM2bElZdHBwMUpCcFRYV1ZJc2wtMVMyQVlQLW9CZlZ1QlJ6bHY0REhFT0JqTmhXY2FCdS11UExVc2NPbEFfUjNMNDlfSlhtbnA1Z2pJZ3FsaVdxSUFiRjJpMXRTV0tjVHRLUQ?oc=5",
-            "time": "2026-05-07 21:24:03",
-            "severity": "yellow",
-            "publisher": "Google News→Yahoo新聞"
-          },
-          {
-            "title": "鄭麗文見盧秀燕談軍購郭正亮喊「好的發展」 再爆曾親口對她這樣說- 政治",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hLVJrR0p1VjB0R1J0ZXlXVk1peGRhVWEtN2F4cVFqN0VYVlFKMmhZN1p3bk1uZkJBN1J1NHlkR1c1LXpJckg1YXRuTGx1NWR0Nkg1NzhTNHBYcFFrcjd0Y1UtaEEzb3pnMmxWNHZB?oc=5",
-            "time": "2026-05-07 19:50:25",
-            "severity": "yellow",
-            "publisher": "Google News→中時新聞網"
-          },
-          {
-            "title": "與鄭麗文談軍購 盧秀燕喊話「跟台灣民意站在一起」、 發價書不應當條件",
-            "url": "https://news.ltn.com.tw/news/politics/breakingnews/5429352",
-            "time": "2026-05-07 19:26:40",
-            "severity": "yellow",
-            "publisher": "自由 政治"
-          },
-          {
-            "title": "與鄭麗文談軍購 盧秀燕喊話「跟台灣民意站在一起」、 發價書不應當條件",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kLU1KQzZHMjU1THZPakNnTk9NMEswcFVQcTF6aW5JRW1BRGd6OEtJd19INGgtSkJoZzNXMmQ1R19fZkpqUFAyMV92YThRNHhoM2gtMFpQdEdIbDhUcGdHMWNOcGRwQ3F6Z3fSAW9BVV95cUxOWjVjRmlZMkNqbktJWnp5ZUV4bDJuclp6ZU4xZm5OSHg5WFB1aWU5NnhaZzV1Um8zdmI1aUJNSUc2amFtMXRiN1p4Y3BRUjUzOFJyYmNZd0laMTU5ZXpDb1NxUE56dWhtZlhYNHlOZ1E?oc=5",
-            "time": "2026-05-07 19:26:40",
-            "severity": "yellow",
-            "publisher": "Google News→自由時報"
-          },
-          {
-            "title": "盧秀燕才喊話「軍購8、9千億先過」 鄭麗文今赴台中交換意見",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5WTA0SklEM3BnQTJzOFNKS3lmTlVrUjlwRzdFd1d6eGJqVk9haHl5VmQyVFBCMldaWmFDdVJSYl9nRUgySUlUdUpKbGc5djgyN1l4NU5PT2w?oc=5",
-            "time": "2026-05-07 19:02:42",
-            "severity": "yellow",
-            "publisher": "Google News→梅花新聞網"
-          },
-          {
-            "title": "與鄭麗文討論軍購 盧秀燕提醒：自我防衛能力不能省",
-            "url": "https://news.nextapple.com/politics/20260507/1B97886F1E0002A19FA65609A3DD6F57",
-            "time": "2026-05-07 18:47:32",
-            "severity": "yellow",
-            "publisher": "壹蘋新聞網"
-          },
-          {
-            "title": "盧秀燕再表態 軍購預算應8、9千億元",
-            "url": "https://more-news.tw/609233/",
-            "time": "2026-05-07 18:20:48",
-            "severity": "yellow",
-            "publisher": "墨新聞"
-          },
-          {
-            "title": "憂影響台中無人機產業 盧秀燕挺軍購8千億",
-            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtc2dQZ0MyREpuVVJwTkZCYm8tdG9MSHhxU0VpSElhMU9FODhFR0xxbTA1UXVxSjBXYWNYcnRZNDR2b1JkOXQzVkM3LWQ2bDRsNUx5ZnBpeDBxRjZnRWRmcF9RMEZCUkU?oc=5",
-            "time": "2026-05-07 17:42:43",
-            "severity": "green",
-            "publisher": "Google News→中國評論新聞"
-          },
-          {
-            "title": "鄭麗文、盧秀燕吃牛肉麵「交換軍購意見」 地方人士：對1事看法相同",
-            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BclpBWXJOUWxEUUpzOHllc2xwVW1GWFVsMjZaSHFzY3N0T2xoeExOb3kzNFYzOFRyUWlFalhINjZuSWRYZEZXNVJUVlBfYzdKZlZj0gFYQVVfeXFMTnZsejNfcjRiWWt6QkdsajdyOHpUdDJSb2VsUTl6SHNFWUVpN2J6Ym1UUm93Tk9vUDlGMTBaQWpwcmVYMWVnaHllZU0xd3JSMXJYR0FPb1RyTg?oc=5",
-            "time": "2026-05-07 17:29:47",
-            "severity": "yellow",
-            "publisher": "Google News→聯合新聞網"
-          },
-          {
-            "title": "周永鴻批盧秀燕硬拆軍購和商售、委製 是拿台中產業發展開玩笑",
-            "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNSjV1bHFuUk9VOVNwY3YyMVZhYXRHbXB6dE5CMHlsRXhHd0xFN3hGQThQNHQ3bFdkcDYtWDFXVmJUcVI2UjN2dTRzY3dMS2RrTmMxTjA4R205WUtxcV9vRVBUbWY1VExZOWR0Z1pzUl80cVVBMGRuLTRnQmtrTkQ0c3lYNXAyTW1weUNIakNWUTRWS1dOZjgxVWJMTGstTDB6SmQxRHczaUgzNkFVYlU5T3BQdWJYVDlacFk1Q0RJdm5EQkRMSDFMa29EVFJNM1B4Qks0bmwwbU9uXzZJLTdNMG9MVUp5MTRGOVFvNklsZWZOZHFRZTN0QXZTX2l0X3dxTmNoSlVVR0JqaG85LUNtMTFqZkZraWlRQlFrS29qdDladkRyMkRzdXJIblZlSDRlbVl4T0IyZjRBUEo1VVdzYzYwTWtwNi0waGFlQkY5QjMxSGJDYUZCWl9WbDR2djVqMjNDSUlqQUc4S2VMXzZEZGtMc2E2OHg2ZVFWMEY3YlBIa2NQbWlrUFpLMlRKSUpqbkx2REF3eTVuQQ?oc=5",
-            "time": "2026-05-07 17:22:15",
-            "severity": "yellow",
-            "publisher": "Google News→Yahoo新聞"
-          },
-          {
-            "title": "鄭麗文南下會盧秀燕談軍購案 中市府：暫不回應",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WSWp2M0NFZm0yUXhBRkdNTGpNZE00ME13VnBicjNGVVNrYWRSRXRtcWV4NHM1aUxDaXR3RTFnZ3pUMXcyYng2OGJwRXBNOFh3VzNrNmZLNUQxTWFDOXB5N08zdklEZjBSdGJueUdR?oc=5",
-            "time": "2026-05-07 17:17:20",
-            "severity": "yellow",
-            "publisher": "Google News→中時新聞網"
-          },
-          {
-            "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議",
-            "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOMGMxaGlJUmhaMnQ4X0ZER2pxS0w3QnZMOGIwb1MwcEs3R2xuOGxyS0xna0pRZnBKX3dsdENHdGxGLWo2dEZ0SmxEZEdmdldKb3BiNDVUcXBwY1A3ZDM1M0lqUzZINW5OWDBwcUg0QUZ6ZmNOX3ZIZi0tcGgtTnRKeW9rM3c5bkFoRHQ3alA0ajk2dzBWUm1KdE1xTzY2WlRoa05SeExpTTA1ZkZ4cEpOSndJdUdid1ZiVE5XOW80NWZhUVZWRWMxZHAxbkJKLVZaQjFZV3FFSnRaWTZWNzNoX25rcmtUTTVPaG52bGlHdDRaSl9jVDFlTFRWenpWRjVtVEJEeEFhVlE4TFl4ZlhSNlZNNDNRSjVtOXZaVGhJWDVTOVdWOFVLRy1KR3ZZOG1jaS1DaHg0VGtKYlUxSTFNYktMcjlWNTJaOGZFd2gxLWs5ckJBN2tlS2NLQmNEdjk3YlB3T05LeDZFY0lpZjhQZHdOOFV0QQ?oc=5",
-            "time": "2026-05-07 17:11:42",
-            "severity": "green",
-            "publisher": "Google News→Yahoo新聞"
-          },
-          {
-            "title": "軍購最快明表決！ 鄭麗文赴台中拜會盧秀燕：提供寶貴建議 | 政治 | CTWANT",
-            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xLUUxckI1MUpDOU1DZU1YOXpkck02elJ3S0E3RW45VmFUbjhGdXV4eVQwcFdSdjNoODZFakZUcWktSlY1S2tscEQtZlpQX1nSAVRBVV95cUxPUjBwalYtbXV1eTZQM0p0azZTaHdDWXZEbUg1WjV0Yks5YlRnZzBNSnlmbkJtNTNEZHAxWEU0TzJzZTROdGZLNW4zemdpSEhMZFlPQXQ?oc=5",
-            "time": "2026-05-07 17:11:42",
-            "severity": "yellow",
-            "publisher": "Google News→CTWANT"
-          },
-          {
-            "title": "與鄭麗文討論軍購 盧秀燕：主流民意很重要、自我防衛能力不能省",
-            "url": "https://www.ettoday.net/news/20260507/3162121.htm",
-            "time": "2026-05-07 17:01:00",
-            "severity": "yellow",
-            "publisher": "ETtoday 即時"
-          },
-          {
-            "title": "與鄭麗文討論軍購 盧秀燕：主流民意很重要、自我防衛能力不能省",
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5kekU1SFVnWmVLbXNKUzBnMU96NzRGVWxuSC1lRXNSWkxpWHFla2tDTnFOa25VeHUyZ09NRFVvRDBlZVY5eE1LUHJuSm9lOF9wNTd1WDhaWVVYQU4xMFHSAWhBVV95cUxNNkVXb0FvamNlQThpRFBaZ3BNb0l1aGRqNDk2RV91R3RoWDc1N1pyN3RaSkZUMUxrcmhIZG94RUNDaUhRTlI3UDJxSEFLYW4zWEs0dG9JQ21tcTZGdW4wSFBNMkw0OEt0UQ?oc=5",
-            "time": "2026-05-07 17:01:00",
-            "severity": "yellow",
-            "publisher": "Google News→ETtoday新聞雲"
-          },
-          {
-            "title": "鄭麗文拜會談軍購 盧秀燕對發價書有異見",
-            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Za3BwTE5aRU95YXVNZ1RpZjNZckpuQTVQcHVBOTgybmxwVzhlWUNJcmc3OTNrRlBZMjhZdUpad3ZXWXVlT0VNM1RwVXM2MVpKQTIxcTlEaTF2U21Ha1A3MlFZYUFSbjg?oc=5",
-            "time": "2026-05-07 16:48:31",
-            "severity": "yellow",
-            "publisher": "Google News→中國評論新聞"
-          },
-          {
-            "title": "提軍購8、9千億先過 盧秀燕：商購放明年預算 | 政治 | CTWANT",
-            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5JNEI5U0FBaWd0a1FGZWtOdWEtYWstZDZTbXBLUG1kb291Z09CbEdBVU9reVFfazZqd1AwdmdGbGZxbUNodFBDV2hEN0wtZW_SAVRBVV95cUxOdnQ4UVhUVGtKZWk4ckp0aHZaRFdELV8xbTl0T0dndkhHaUtRWC1oREpQb3p2UmwzelZwbmp1ZEI4WXFUN0Vzczc5SU96THFZVVRITmk?oc=5",
-            "time": "2026-05-07 16:33:11",
-            "severity": "yellow",
-            "publisher": "Google News→CTWANT"
-          },
-          {
-            "title": "軍購案最快明表決！鄭麗文今中午拜會 盧秀燕早上已表態「8千億軍購優先通過」",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Qck9XWUYzdVdIc3gwQm05am81NEJ3Rkxuemk1YlNMNEh3V2VpS1JCbVI4ZnppbVRjbDRoUTdVYlhudzVuUjRzeVJyMUZoRXdULVFkRVd0RGNGdENQR1hOdlQ1NkFfYVFVR0HSAW9BVV95cUxOVEpJUjZSRUFmbDJmRE1sdFpXMVdyeE8zR0dfNFp1eTUyakNGTFBSTzFtU21yTkZYd256Skh1MHh0Ykt5a3hHZ2lKeTFnb2d4QlRTU2hkYlpod25XamphcS1QNkZTREVDc0dnT21KYzQ?oc=5",
-            "time": "2026-05-07 16:32:16",
-            "severity": "yellow",
-            "publisher": "Google News→自由時報"
-          },
-          {
-            "title": "國防特別條例最快明表決！鄭麗文拜會談軍購 盧秀燕：要聽取主流民意聲音",
-            "url": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxPX3pTUFg2STBUdmVLZUVBaHR2Wm9BZVJOTUlsdXJSVDdEY2FjY1lVUHlkakIyT181dXBwclZ1QkFkbi1MUDlhNUQwLVpwZWxKTjFfaElQb3BXR1RqNFRXTVhCcmQ1WmdKa0hsNjhjSW1lR1V0cXFYNFBNbGZMQmtMRG4xS3ZhYmJLbzlTQVpQRnFkNFozMDI1ZWJzMnA2SmpPZ1ZodzNDZmZtYzlQQW5MaWV3SEFPMUVqNG01eEcwTXZpOGpyRjF5ZVhmaENsd2lEbmJJLWxQTDdNV0c1VzJzb3NSSklZVklFd1dMRzRNNWxYRnduTXNhZzY2V21hRDNBdlJtUFQ2RlUtNUVwWXQ3eU9QQlk2dWl1cHA2Q1pHenpfT3ppNFd4aGNnaXpFZGVwV1pPMDlheFprQlVRZUh1ZGZoLTlYd2dhMWRRNWZCRjlFSlBBSXo0NVgtNzVyMGVlQlgtN2hYdlpwQ0NMbXBNVDBVNFozNU5YQXh4LVprQW5GaEc4N1VwbHUzTlFERHBGTDBVb0FxYzI4ZUZOdFFiQUVWMTA0V3ZiZmZueWhKZ3ZQd3pDcFFReEM3OWZNTm5XcUVCbG9naGpQeWU0N3JuQkEtdG9LdlFsTFpRRFVnbkc?oc=5",
-            "time": "2026-05-07 16:18:18",
-            "severity": "yellow",
-            "publisher": "Google News→Yahoo新聞"
-          },
-          {
-            "title": "昨見韓國瑜「負荊請罪」 鄭麗文今赴台中找盧秀燕談軍購與選舉",
-            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YLUxPRTZQc0FlWWs2VjRibzZXLXpvYWVGN2MtM1kwM3hoN3BkY0hxSktnTlVzdmhMVW5FOElSWkxQdldIT1M0dzBUUFZXUGMwNkJKTjVZdw?oc=5",
-            "time": "2026-05-07 16:16:42",
-            "severity": "green",
-            "publisher": "Google News→台視新聞網"
-          },
-          {
-            "title": "國防條例最快明表決 盧秀燕：8千億軍購優先通過、商購建議列總預算",
-            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wVnRXYnNwQ1FFVG5IZHFtb2R4NV9HNW1EWU1memFGSzZEczNIZzhhUURTN1dMdHJmSEx4MHdoRkVmdHg1OTVUWTZpZ1BQd1VqWnFrcEZVaEd3djQ?oc=5",
-            "time": "2026-05-07 16:15:48",
-            "severity": "yellow",
-            "publisher": "Google News→zmedia.com.tw"
-          },
-          {
-            "title": "鄭麗文拜會談軍購 盧秀燕：要聽取主流民意聲音",
-            "url": "https://www.cna.com.tw/news/aipl/202605070231.aspx",
-            "time": "2026-05-07 16:03:32",
-            "severity": "yellow",
-            "publisher": "中央社 政治"
-          },
-          {
-            "title": "鄭麗文拜會談軍購盧秀燕：要聽取主流民意聲音| 政治",
-            "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1hYWVhQ05rLXdSdDVHYk04YTV6Y1VuaC1oUl9Da2prNU5YM0N1eG90cVNySWtJWkE3aFdnVXJ1dDQzQzIwb1FlUXJ3clAzYkpValE2NTlkUUVyUlpTR1dV?oc=5",
-            "time": "2026-05-07 16:03:00",
-            "severity": "yellow",
-            "publisher": "Google News→中央社 CNA"
-          },
-          {
-            "title": "力挺軍購8、9千億 盧秀燕建議商購可放明年度預算",
-            "url": "https://cnews.com.tw/237260507a07/",
-            "time": "2026-05-07 16:00:10",
-            "severity": "yellow",
-            "publisher": "匯流新聞網(sitemap)"
-          },
-          {
-            "title": "力挺軍購8、9 千億盧秀燕建議商購可放明年度預算",
-            "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1MMEVZcEhpak5Nd2FBZkV4eVVOeTBRX29wSmhGdGpCSmpsV1B6YW9hbzFYWkRLQnpLRk8zcmdFX2xsaXlRQ3BvMVd3?oc=5",
-            "time": "2026-05-07 16:00:10",
-            "severity": "yellow",
-            "publisher": "Google News→匯流新聞網"
-          },
-          {
-            "title": "軍購最快明表決 鄭麗文今會盧秀燕交換意見",
-            "url": "https://newtalk.tw/news/view/2026-05-07/1033843",
-            "time": "2026-05-07 15:50:20",
-            "severity": "yellow",
-            "publisher": "新頭殼 全站"
-          },
-          {
-            "title": "軍購最快明表決鄭麗文今會盧秀燕交換意見| 政治",
-            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LYXFZZlh6ajY3M2JkTURKZGRrUHptemRJMnd5S2Y4ZHdmZUlkT0ZMRDVvVU9oTU1BVXc1QzBtV2lLSG5mQ0IzT3FsWUN1SXItRnN4U184bnFvZmc?oc=5",
-            "time": "2026-05-07 15:50:20",
-            "severity": "yellow",
-            "publisher": "Google News→Newtalk新聞"
-          },
-          {
-            "title": "軍購最快明表決！鄭麗文昨向韓國瑜求和 今赴台中與盧秀燕面談",
-            "url": "https://www.ettoday.net/news/20260507/3162057.htm",
-            "time": "2026-05-07 15:45:00",
-            "severity": "yellow",
-            "publisher": "ETtoday 即時"
-          },
-          {
-            "title": "到台中訪盧秀燕、吃牛肉麵 鄭麗文：對軍購案及選舉交換意見",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZQXZZUk5EM1RWZGlnWThESkRqMVdSWEZ1X19KbUdRclFkZkdiQmV4Slo2Y0Z5LUNaaHFUUzZEcHFJZ0FTdWhlaW1oTkNGMEpadV81SVgtNkVKNTl1TmMzYTA5ZnRTMFV4N0HSAW9BVV95cUxNaTMwdjQ5ZE9BYVRpLUxwRHIyRzNjaUF1X3cyVzBFVzZyOXhGOEpXeWZnNkVHTFhlTm9TN3EwX1BfdzI0X3hwbzdCSGNOdjA5YWhVSzJsc0ozYWQ5MExkeWtEVzh5cHh3RTBtaHpQUjA?oc=5",
-            "time": "2026-05-07 15:41:15",
-            "severity": "yellow",
-            "publisher": "Google News→自由時報"
-          },
-          {
-            "title": "赴台中拜訪盧秀燕！ 鄭麗文：對軍購案、選舉充分交換意見- 政治",
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ya0tXWUh2bE5hM1p6VmpPSTBhdGlqRGtxTzFDQnBKV3FUX3JhUE90ZW9PdXRkUmhJdjRkeFdfUk5NZExTdlhiN1NBZ0xtM292bU8yeHpWc2lkNnpac0ROTF9nbVVGcDd2bi1EQzQyek9pZw?oc=5",
-            "time": "2026-05-07 15:40:00",
-            "severity": "yellow",
-            "publisher": "Google News→華視新聞"
-          },
-          {
-            "title": "倡議「國防預算雙軌制」 盧秀燕：優先通過軍購特別預算",
-            "url": "https://newtalk.tw/news/view/2026-05-07/1033814",
-            "time": "2026-05-07 14:12:47",
-            "severity": "yellow",
-            "publisher": "新頭殼 全站"
-          },
-          {
-            "title": "盧秀燕護台中無人機產業 支持軍購預算8、 9千億優先通過",
-            "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxNeVdva1V6OXJvRld1OHY0MzNjdVdHR3J6MWtrdkdGekhHS2cxSzR5UEFqTlhqLTVma21vMzVmVXZVdE96dkkyaEszRDNILTFQblpkN1ZFOUJqaWJ6WWdYQUJYblZaSjI2NUxxZ0MwWnVwRkxPaElEX2JjV2xzaUJuTTVEQndXNTNQak8tZ0NBemhHMTNXUkZyOUpVV3l5ZS0xbE5FZGRZb0Q1RUdELUhIaE85akVkTVdKSkJvM0V1R0ZNT0hjYUxRWGJxMnpKV0RseFFGaU5McE9RUkQ2bnVrOFhKZ2xMZjlqOGkwRFIteG5Kb1haT1U2WmVPcU1IdzVWQzlHWW84RVNGTXVGa0F4WnhSNXV6UFMwTlhCSTh0Wk8xZWNEdHJoMVctM19sY0RoQ082bFJ2dVhsek4zeWZqSU9KOXBqRndHWlpNb0ZHeE5tR1NiYkpCLVUyMllPRHNUeEdVUmNsdzY2bHkt?oc=5",
-            "time": "2026-05-07 13:40:55",
-            "severity": "yellow",
-            "publisher": "Google News→Yahoo新聞"
-          },
-          {
-            "title": "盧秀燕：軍購8、9千億優先通過 商購可列年度預算",
-            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1kU3VqN24ta09SbWp6QklkVWhsR0s4emNhaXNKZDl0T3lWQ2xocTMtZV9DQVhpeXFOd2pTMGstb3dUaUhTMWhLUnBETmctN3N0dThNOVNQeUFLdXI1OWpNMmo0S0dHdUdJaHl2aTVMdzFnY09UMjg3S0xB0gFfQVVfeXFMTWpxSzhUVU5nYnM4dTZUQUI1ZUVlWS1JMVB0V3oxN1VVSmV2NTlVWVRSZlRpa1FXWl9uYmZZczI2RFhaYmIwbEZnbWtzUXNSamtFd1FfemF2OGFSM1hObEE?oc=5",
-            "time": "2026-05-07 13:01:23",
-            "severity": "yellow",
-            "publisher": "Google News→經濟日報"
-          },
-          {
-            "title": "盧秀燕：軍購8、9千億優先通過商購可列年度預算| 政治",
-            "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wc1FuNjlTdEZ4djJod1pyc2RVU2YxYlQ5NzN5N1RNcmNaT2d4TGktbGJpaGFOd2RtLThtU1FwVFF2SG9TLS1CMDBFNVpTZzBlZk12dEsxYnVrbV9qaU1r?oc=5",
-            "time": "2026-05-07 12:51:00",
-            "severity": "yellow",
-            "publisher": "Google News→中央社 CNA"
-          },
-          {
-            "title": "盧秀燕再表態！軍購8、9000億先通過 委製、商購放年度預算",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xY0twQ0FhZWdaMXpIaHI4N3VPbGV5bGxFZHdMblF5alF5bjY1QXViRkw0cmVXYlpCWU5yOG9UVGNTQ01odThnMGY0SjRONzNrUW5oS2tlX2hKMnhYS0hFOVo3cEgwU3N6Q3fSAW9BVV95cUxPRFJ6dGQ3YjF2NGxTdmhTY3ZpUHY3SHdhLW1MWTRYcERsSnRQMjZOQ1BldmpQd0t1WEdyajRRekJEVDdQVXB6SUlRZjREM3ptY1B4S0NSTGdOeWhxcFZ3WkktQ0xmeEtTMWZ4bjRhWnM?oc=5",
-            "time": "2026-05-07 12:26:44",
-            "severity": "yellow",
-            "publisher": "Google News→自由時報"
-          },
-          {
-            "title": "盧秀燕再表態！軍購8、9000億先通過 委製、商購放年度預算",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOUlEbGNJVEIzdUo5bWQ5YWlVRVoydUpaMXM0UUdPaEJRX3NwNHJCQUtlQmlEOHBNci1McTJZWHBXWW9ycHdjcDFCSHB1VENtNWdoRWlGajlnMEVQYlltWVU1bnlWdFFqdE04QnZHclpiRzZYb1ZoVkxPT21NTExpbjBsenBUZw?oc=5",
-            "time": "2026-05-07 12:26:00",
-            "severity": "yellow",
-            "publisher": "Google News→自由時報"
-          },
-          {
-            "title": "力挺軍購8、9千億　盧秀燕建議商購可放明年度預算",
-            "url": "https://n.yam.com/Article/20260507799823",
-            "time": "2026-05-07 12:00:00",
-            "severity": "yellow",
-            "publisher": "蕃新聞→匯流新聞網"
-          },
-          {
-            "title": "盧秀燕再表態軍購應落在8至9千億 委製商購回歸年度預算 國民黨一定要團結",
-            "url": "https://n.yam.com/Article/20260507311442",
-            "time": "2026-05-07 12:00:00",
-            "severity": "yellow",
-            "publisher": "蕃新聞→威傳媒"
-          },
-          {
-            "title": "國防軍購預算有解？鄭麗文台中會燕子 盧秀燕晚間參加活動全程笑咪咪",
-            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBlM3AzMFpVTDhsZ3ZSQVI1Q1hYLTNCYk1fQzhyQ2xFQTItMFNxWGxtNDg0UHc2eExFVkg1NWs4YkFQeVdpXzI0d1NwOUpLeHlWUnVyWmc3RHJOMjNXTmw5S2ZQaVVqTzI5cXh3R2E4czBBbmM?oc=5",
-            "time": "2026-05-07 09:47:49",
-            "severity": "yellow",
-            "publisher": "Google News→翻爆"
-          }
-        ]
-      },
       {
         "date": "2026-05-08",
         "red": 0,
@@ -17014,17 +16217,17 @@
             "publisher": "Google News→聯合新聞網"
           }
         ]
-      }
-    ],
-    "好孕專車": [
+      },
       {
-        "date": "2026-05-07",
+        "date": "2026-05-14",
         "red": 0,
         "yellow": 0,
         "green": 0,
         "total": 0,
         "articles": []
-      },
+      }
+    ],
+    "好孕專車": [
       {
         "date": "2026-05-08",
         "red": 0,
@@ -17108,17 +16311,17 @@
             "publisher": "Google News→Yahoo新聞"
           }
         ]
-      }
-    ],
-    "閱讀績優": [
+      },
       {
-        "date": "2026-05-07",
+        "date": "2026-05-14",
         "red": 0,
         "yellow": 0,
         "green": 0,
         "total": 0,
         "articles": []
-      },
+      }
+    ],
+    "閱讀績優": [
       {
         "date": "2026-05-08",
         "red": 0,
@@ -17210,17 +16413,17 @@
             "publisher": "Yahoo TW 即時"
           }
         ]
-      }
-    ],
-    "污水接管": [
+      },
       {
-        "date": "2026-05-07",
+        "date": "2026-05-14",
         "red": 0,
         "yellow": 0,
         "green": 0,
         "total": 0,
         "articles": []
-      },
+      }
+    ],
+    "污水接管": [
       {
         "date": "2026-05-08",
         "red": 0,
@@ -17362,6 +16565,14 @@
       },
       {
         "date": "2026-05-13",
+        "red": 0,
+        "yellow": 0,
+        "green": 0,
+        "total": 0,
+        "articles": []
+      },
+      {
+        "date": "2026-05-14",
         "red": 0,
         "yellow": 0,
         "green": 0,
@@ -33739,33 +32950,6 @@
         "publisher": "Google News→cnma.org.tw",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPUDZLeWRmSmVtUUdoekpTY3Nod2dIbUluODFTeENRVHNsMDIyNVE2TGFxSUJRQndPVHA3V2daRDhVR2RTVzdMTjZfelM3SEM1LV9NT0tHVGhBVkNRdEpIMWZiUHNxWnVUUk9kZTZXOC1jck1LN0FzMVVZdXVrd2Y4UUkyR2dPLVhjX3VFdnJtbVdCcEE5akh0SWhyNGUyd1ZWV0pqS0NQelp6c3BJSnBLZDJyR0EzbzJMMUNDNkZfR0xIeUdPRlcxeUxYWmdNOWFtTVUxYkdrTS1sVWxGSjdfbDRFa3VhSnEtOFVDTXVyOE1Cd3Jhb3pYekhDVEx5ZW9pUEtSXzNLTlpjZ0RzdmgxRmhMWXpPaG1mT3lPS3F1ZkhFRUsxVnVTOEFQQlJJZnNweFAzYlZfTmREUHNSWU5WNC1uM21MV3M0Rk03eGZMYjFaRUxHMU9pNldRbG1CQXZwVWRucllKa1p5LXNzV3VuR2FhLWI1VW1odkVfaTc5WDFfVUFRU3JKc0s1YXJra2VtSDd5ZmZwXzJscmt0VVhaSXJxRUwwVlhRamdRVk53?oc=5",
-        "time": "2026-05-13 00:08:55",
-        "platform": "news",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxPZk85al8yMDhKcDBPeHZKTTU1YlBhemxIdE5xZzJlM0xOUnM2LVhPSzlEZlZSVk5FN0xtWkxUSUtyekRJU1loOXI0d3RzU3JEVmZxY2Z5ZHpQMlJyN1BPU3NDNFBBOVBPclBSeVktYWhXT29WYjRyUWowRllqeEh6azJBWVpCNW9FSHprNmlEY0NwMG5TNFhad0lmQjlaVTA0eFV5RHhBMEJmNUN1NmlfaFA1N0FGcWFDRnZRMkw4dHBVaGF3Q0ZmRUV0akswMkhhZTRHUXM0R3U4czJYUHZaRE1KcnIyNDdyMEloMXVQLUJyMjZ0MlNURFlZNGVRNkNPMHpVaTh6SFp3a0Jha1JzZ1poaDBjZlZaNFFCN3E0SHo3MFNjVUhFcXA5VUtpejdoNC1DY2hxVF9vcGtscXNMNUxVZEdoYkxfam5rODhhbnkxRWZjenVSM0FreDBNS0hFSjJkTk83VmtSTjhueFhrd1Z2czBKN2NuREdpY2RDaklMT3lIeGRIYWZXdDVTX1FCWXRJbThIUGl1bnc?oc=5",
-        "time": "2026-05-13 00:07:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://tw.news.yahoo.com/%E9%AB%98%E5%B8%82%E8%AD%B0%E5%93%A1%E9%97%9C%E5%88%87%E6%95%99%E5%AD%B8%E8%A8%AD%E5%82%99%E6%94%B9%E5%96%84-%E9%99%B3%E5%85%B6%E9%82%81-%E5%8A%A0%E5%BC%B7%E7%A1%AC%E9%AB%94%E6%8A%95%E8%B3%87-%E7%B8%AE%E7%9F%AD%E6%95%B8%E4%BD%8D%E8%90%BD%E5%B7%AE-160700698.html",
-        "time": "2026-05-13 00:07:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ]
   },
@@ -46830,24 +46014,6 @@
         "publisher": "MSN",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "鼠患是台北人真實的擔憂! 吳沛憶籲蔣萬安：儘速做3 件事 - MSN",
-        "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQWFR0aURudktmd2I5bDhoM21ZTlpTR2VvVFZiZE9NUjJaSzdsOEs5U2ZuLWRVSUJaOU1kTXZMSzNYc2RyMV9SREswLVROYUNsajlxdzRreGVpcndVbzVZTTFnZXNtRFQxNm1JdDFEcTBVNmpScC1yUkJ2QUxoRWtoOHNGMi1STmJNUGlXcTBweVZkaGVham9fZmZoNGZjYmFZTzRIdEhCZDZBS2RXY1pRVGVaYXFSWm1qckVaYk52SXlmTHJtakR5M191aXNJZzlKcFZNSDk2MnlaT2Z4ckZwZWJRZFIxN0Y3ME12QmVESzU3WllnUVBZem53S2dIODRtS1pFYVRuempMeFJrZkMzVDNXODJIS294UnBmUmhxWlB6SmFFWjNzZWJTTmY5a1J1WENCY3NPeFFVMXFXeVRNaHZFUUZORjlfOEE1MVJGTmVnV0xZaFpzNTVNV2NtZXh5ZlprcmZaUktRMXo1anpJU3ZZanZmZzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:07:50",
-        "platform": "news",
-        "publisher": "MSN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "4月縣市首長聲量排行誰進榜？蔣萬安居冠 暖男竟好評影響力最低｜每日調查 - 網路溫度計DailyView",
-        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40UHFQbXMxMllMaURtZFZEZFB0ekRNOEozMGF6TVZ3Ql9ud1Z6VndPbk96dXVJUDRmdy1Wc2Z1VG9MbS0zZUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:00:00",
-        "platform": "news",
-        "publisher": "網路溫度計DailyView",
-        "severity": null,
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -52049,60 +51215,6 @@
         "publisher": "MSN",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxObGtTU2w2cTU4S0EtZnRaLUVvckZjcTFYbGdVNjh3WmRqVWxsbkd6NzI2ekVsaUZfVG9tWTN5YlgtWkRxZXZGbVVyekxjRFE4Z0JXcV9pSjBET0ZjUXd1T3FxN2t3aW91Uk5hSGcyNGdDdWFsdkFfLTB0Z0czc29NbGN3aE9uOTFjV2tYWU9jTUNMd2Q1S0NEaVIwRzNEalhDcUpsd242a0xZOU5YVDZKY083ekFJVEZNSzZmdzltQlVBSmpVRUV5NkFlUFVWQTR6MGl4MWM2UzZibmdicXFCMHhaUzI4em1ZZ1M1RC1IY3ZxX0JGS1Nmc0d0VFQzaFBsRkJkYWpTeDFYcWlGeFRZVFRvbklhdlFYbVEtQ1VqNER6NmFxQ1M2TGRTMGt4VzlKXzd4dTVBbElnblg0R3hjajFSa0VKekhMR1pCYWlyRFhQVlJ0dGkwbkZ0Q0lKZExjQUk3OG81MGtWTVhrM2RIN0E3aVJtRFdaRkp1czVrR3JlTUttS1M1U2hmTEtvMjdhVzhPa1JIM2ZlYkRySm9lWXE4eGtMZFpjNnA1eG1FM1lhbGNvaDdEcmhwNzF5b0gzWVE?oc=5",
-        "time": "2026-05-07 00:09:11",
-        "platform": "news",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:07:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBsQjJyRUhOdE5iU3JhWDB1dHZGUDlMU2lqdXdPd0E0MDl6RzMzV3NTX0RheXJoR1pVOE9qdFJsOTdPOUVWNXRiS1lQY3ZIcU1tT1E?oc=5",
-        "time": "2026-05-07 00:07:00",
-        "platform": "news",
-        "publisher": "Google News→蕃新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5",
-        "time": "2026-05-07 00:07:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看 - 蕃新聞",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:01:00",
-        "platform": "news",
-        "publisher": "蕃新聞",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5",
-        "time": "2026-05-07 00:01:00",
-        "platform": "news",
-        "publisher": "Google News→蕃新聞",
-        "severity": null,
-        "co_mentioned": []
       }
     ]
   },
@@ -56094,27 +55206,6 @@
         "time": "2026-05-13 00:59:01",
         "publisher": "Yahoo新聞",
         "severity": null
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPUDZLeWRmSmVtUUdoekpTY3Nod2dIbUluODFTeENRVHNsMDIyNVE2TGFxSUJRQndPVHA3V2daRDhVR2RTVzdMTjZfelM3SEM1LV9NT0tHVGhBVkNRdEpIMWZiUHNxWnVUUk9kZTZXOC1jck1LN0FzMVVZdXVrd2Y4UUkyR2dPLVhjX3VFdnJtbVdCcEE5akh0SWhyNGUyd1ZWV0pqS0NQelp6c3BJSnBLZDJyR0EzbzJMMUNDNkZfR0xIeUdPRlcxeUxYWmdNOWFtTVUxYkdrTS1sVWxGSjdfbDRFa3VhSnEtOFVDTXVyOE1Cd3Jhb3pYekhDVEx5ZW9pUEtSXzNLTlpjZ0RzdmgxRmhMWXpPaG1mT3lPS3F1ZkhFRUsxVnVTOEFQQlJJZnNweFAzYlZfTmREUHNSWU5WNC1uM21MV3M0Rk03eGZMYjFaRUxHMU9pNldRbG1CQXZwVWRucllKa1p5LXNzV3VuR2FhLWI1VW1odkVfaTc5WDFfVUFRU3JKc0s1YXJra2VtSDd5ZmZwXzJscmt0VVhaSXJxRUwwVlhRamdRVk53?oc=5",
-        "time": "2026-05-13 00:08:55",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxPZk85al8yMDhKcDBPeHZKTTU1YlBhemxIdE5xZzJlM0xOUnM2LVhPSzlEZlZSVk5FN0xtWkxUSUtyekRJU1loOXI0d3RzU3JEVmZxY2Z5ZHpQMlJyN1BPU3NDNFBBOVBPclBSeVktYWhXT29WYjRyUWowRllqeEh6azJBWVpCNW9FSHprNmlEY0NwMG5TNFhad0lmQjlaVTA0eFV5RHhBMEJmNUN1NmlfaFA1N0FGcWFDRnZRMkw4dHBVaGF3Q0ZmRUV0akswMkhhZTRHUXM0R3U4czJYUHZaRE1KcnIyNDdyMEloMXVQLUJyMjZ0MlNURFlZNGVRNkNPMHpVaTh6SFp3a0Jha1JzZ1poaDBjZlZaNFFCN3E0SHo3MFNjVUhFcXA5VUtpejdoNC1DY2hxVF9vcGtscXNMNUxVZEdoYkxfam5rODhhbnkxRWZjenVSM0FreDBNS0hFSjJkTk83VmtSTjhueFhrd1Z2czBKN2NuREdpY2RDaklMT3lIeGRIYWZXdDVTX1FCWXRJbThIUGl1bnc?oc=5",
-        "time": "2026-05-13 00:07:00",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "高市議員關切教學設備改善 陳其邁：加強硬體投資，縮短數位落差",
-        "url": "https://tw.news.yahoo.com/%E9%AB%98%E5%B8%82%E8%AD%B0%E5%93%A1%E9%97%9C%E5%88%87%E6%95%99%E5%AD%B8%E8%A8%AD%E5%82%99%E6%94%B9%E5%96%84-%E9%99%B3%E5%85%B6%E9%82%81-%E5%8A%A0%E5%BC%B7%E7%A1%AC%E9%AB%94%E6%8A%95%E8%B3%87-%E7%B8%AE%E7%9F%AD%E6%95%B8%E4%BD%8D%E8%90%BD%E5%B7%AE-160700698.html",
-        "time": "2026-05-13 00:07:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
       }
     ]
   },
@@ -70196,62 +69287,6 @@
         "time": "2026-05-07 00:11:10",
         "publisher": "MSN",
         "severity": "yellow"
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxObGtTU2w2cTU4S0EtZnRaLUVvckZjcTFYbGdVNjh3WmRqVWxsbkd6NzI2ekVsaUZfVG9tWTN5YlgtWkRxZXZGbVVyekxjRFE4Z0JXcV9pSjBET0ZjUXd1T3FxN2t3aW91Uk5hSGcyNGdDdWFsdkFfLTB0Z0czc29NbGN3aE9uOTFjV2tYWU9jTUNMd2Q1S0NEaVIwRzNEalhDcUpsd242a0xZOU5YVDZKY083ekFJVEZNSzZmdzltQlVBSmpVRUV5NkFlUFVWQTR6MGl4MWM2UzZibmdicXFCMHhaUzI4em1ZZ1M1RC1IY3ZxX0JGS1Nmc0d0VFQzaFBsRkJkYWpTeDFYcWlGeFRZVFRvbklhdlFYbVEtQ1VqNER6NmFxQ1M2TGRTMGt4VzlKXzd4dTVBbElnblg0R3hjajFSa0VKekhMR1pCYWlyRFhQVlJ0dGkwbkZ0Q0lKZExjQUk3OG81MGtWTVhrM2RIN0E3aVJtRFdaRkp1czVrR3JlTUttS1M1U2hmTEtvMjdhVzhPa1JIM2ZlYkRySm9lWXE4eGtMZFpjNnA1eG1FM1lhbGNvaDdEcmhwNzF5b0gzWVE?oc=5",
-        "time": "2026-05-07 00:09:11",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null
-      },
-      {
-        "title": "鼠患是台北人真實的擔憂! 吳沛憶籲蔣萬安：儘速做3 件事 - MSN",
-        "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQWFR0aURudktmd2I5bDhoM21ZTlpTR2VvVFZiZE9NUjJaSzdsOEs5U2ZuLWRVSUJaOU1kTXZMSzNYc2RyMV9SREswLVROYUNsajlxdzRreGVpcndVbzVZTTFnZXNtRFQxNm1JdDFEcTBVNmpScC1yUkJ2QUxoRWtoOHNGMi1STmJNUGlXcTBweVZkaGVham9fZmZoNGZjYmFZTzRIdEhCZDZBS2RXY1pRVGVaYXFSWm1qckVaYk52SXlmTHJtakR5M191aXNJZzlKcFZNSDk2MnlaT2Z4ckZwZWJRZFIxN0Y3ME12QmVESzU3WllnUVBZem53S2dIODRtS1pFYVRuempMeFJrZkMzVDNXODJIS294UnBmUmhxWlB6SmFFWjNzZWJTTmY5a1J1WENCY3NPeFFVMXFXeVRNaHZFUUZORjlfOEE1MVJGTmVnV0xZaFpzNTVNV2NtZXh5ZlprcmZaUktRMXo1anpJU3ZZanZmZzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:07:50",
-        "publisher": "MSN",
-        "severity": "yellow"
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔 - Yahoo新聞",
-        "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:07:00",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBsQjJyRUhOdE5iU3JhWDB1dHZGUDlMU2lqdXdPd0E0MDl6RzMzV3NTX0RheXJoR1pVOE9qdFJsOTdPOUVWNXRiS1lQY3ZIcU1tT1E?oc=5",
-        "time": "2026-05-07 00:07:00",
-        "publisher": "Google News→蕃新聞",
-        "severity": null
-      },
-      {
-        "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-        "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5",
-        "time": "2026-05-07 00:07:00",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看 - 蕃新聞",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:01:00",
-        "publisher": "蕃新聞",
-        "severity": null
-      },
-      {
-        "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5",
-        "time": "2026-05-07 00:01:00",
-        "publisher": "Google News→蕃新聞",
-        "severity": null
-      },
-      {
-        "title": "4月縣市首長聲量排行誰進榜？蔣萬安居冠 暖男竟好評影響力最低｜每日調查 - 網路溫度計DailyView",
-        "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40UHFQbXMxMllMaURtZFZEZFB0ekRNOEozMGF6TVZ3Ql9ud1Z6VndPbk96dXVJUDRmdy1Wc2Z1VG9MbS0zZUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-        "time": "2026-05-07 00:00:00",
-        "publisher": "網路溫度計DailyView",
-        "severity": null
       }
     ]
   },
@@ -70537,37 +69572,6 @@
       "is_catchall": false
     },
     {
-      "title": "台中詐騙案",
-      "city": "台中",
-      "place": "台中市豐原區",
-      "lat": 24.2542,
-      "lng": 120.722,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T09:45:00+00:00",
-      "news_full_expires_at": "2026-05-14T09:45:00+00:00",
-      "news_articles": [
-        {
-          "title": "台中銀行腳宣導抵達豐原翁子里 以信託與詐騙防制守護在地長輩",
-          "url": "https://finance.ettoday.net/news/3165400",
-          "time": "2026-05-13 17:45:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
       "title": "雲林詐騙案",
       "city": "雲林",
       "place": "雲林縣政府",
@@ -70599,6 +69603,37 @@
       "is_catchall": false
     },
     {
+      "title": "台中詐騙案",
+      "city": "台中",
+      "place": "台中市豐原區",
+      "lat": 24.2542,
+      "lng": 120.722,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T09:45:00+00:00",
+      "news_full_expires_at": "2026-05-14T09:45:00+00:00",
+      "news_articles": [
+        {
+          "title": "台中銀行腳宣導抵達豐原翁子里 以信託與詐騙防制守護在地長輩",
+          "url": "https://finance.ettoday.net/news/3165400",
+          "time": "2026-05-13 17:45:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
       "title": "連江詐騙案",
       "city": "連江",
       "place": "連江縣（馬祖）",
@@ -70618,6 +69653,37 @@
           "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5CVVlHVTJPR0wtcEwtQlJzYXAtMFdLOTJKUUlvTmhGaDhPSEs5bmNuMS1zdFVMTzhYYUJFcEJMQjhPclg5dTZV?oc=5",
           "time": "2026-05-13 02:53:24",
           "publisher": "Google News→台灣新聞雲",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
+      "title": "桃園詐騙案",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "lat": 24.9951,
+      "lng": 121.29840192378865,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-12T23:32:00+00:00",
+      "news_full_expires_at": "2026-05-13T23:32:00+00:00",
+      "news_articles": [
+        {
+          "title": "桃園市文化局呼籲民眾提高警覺 慎防冒用「桃園國際動漫大展」詐騙廣告",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCd2RidndjdXJSWE1WZk5uR2IyNU9HTEV2MWFOY1hXTTN3Nk90N25YYzU3bnlMWmFCMmZyWDBNVGR0UVE1NF80NEF1SHZiS0dodEE?oc=5",
+          "time": "2026-05-13 07:32:00",
+          "publisher": "Google News→蕃新聞",
           "severity": "yellow"
         }
       ],
@@ -70732,44 +69798,6 @@
           "url": "https://tw.news.yahoo.com/%E9%81%AD%E6%8C%87%E7%84%9A%E5%8C%96%E7%88%90%E7%A9%BA%E6%B1%A1%E6%A8%A1%E6%93%AC%E6%9C%89%E5%95%8F%E9%A1%8C-%E5%8D%97%E6%8A%95%E7%B8%A3%E5%BA%9C%E8%AB%BE%E5%A2%9E%E5%8A%A0%E6%A8%A1%E5%BC%8F-045841625.html",
           "time": "2026-05-13 04:58:41",
           "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 2,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 8,
-      "is_urgent": true,
-      "is_catchall": false
-    },
-    {
-      "title": "桃園詐騙案",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "lat": 24.9951,
-      "lng": 121.29840192378865,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 2",
-      "note": "24h 命中 2 則（新聞 2、留言 0）",
-      "news_count": 2,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-12T23:32:00+00:00",
-      "news_full_expires_at": "2026-05-13T23:32:00+00:00",
-      "news_articles": [
-        {
-          "title": "桃園市文化局呼籲民眾提高警覺 慎防冒用「桃園國際動漫大展」詐騙廣告",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCd2RidndjdXJSWE1WZk5uR2IyNU9HTEV2MWFOY1hXTTN3Nk90N25YYzU3bnlMWmFCMmZyWDBNVGR0UVE1NF80NEF1SHZiS0dodEE?oc=5",
-          "time": "2026-05-13 07:32:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "桃園國際動漫大展招募 文化局：詐騙廣告籲民眾警覺",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNUXdLRTJkTjVfWHZwY0RsbVZJRFNPUkFpby01NzF5X05XNEhpd3NzS0xTTkx0c2Z2REZ3NUJscWtLQ3hvYVJJMmNYSWNJcDZYUldmSjk3b3d0Z2tCdFHSAWhBVV95cUxPbEhoWmxqc2E0bHNoZTd6ajEtN0UzMlNWY1JtVHQxM0JDenU1VWhXc2EtSUhlamJnNk9SVlhnVXFVWGpnallDYWhpQmNkNFlLejZzZUpZdTk3dlFib3ZhQUpjQ0tjTGg5Xw?oc=5",
-          "time": "2026-05-13 00:01:00",
-          "publisher": "ETtoday",
           "severity": "yellow"
         }
       ],
@@ -71282,37 +70310,6 @@
       "is_catchall": false
     },
     {
-      "title": "台中狼師事件",
-      "city": "台中",
-      "place": "台中市政府",
-      "lat": 24.1647,
-      "lng": 120.6469,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T04:20:56+00:00",
-      "news_full_expires_at": "2026-05-14T04:20:56+00:00",
-      "news_articles": [
-        {
-          "title": "性侵未成年繼女致懷孕產子 台中獸父重判…二審加碼判賠金額出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435368",
-          "time": "2026-05-13 12:20:56",
-          "publisher": "自由時報",
-          "severity": "red"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false
-    },
-    {
       "title": "新北狼師事件",
       "city": "新北",
       "place": "新北市政府",
@@ -71344,24 +70341,24 @@
       "is_catchall": false
     },
     {
-      "title": "基隆弊案爭議",
-      "city": "基隆",
-      "place": "基隆市政府",
-      "lat": 25.1276,
-      "lng": 121.7392,
+      "title": "台中狼師事件",
+      "city": "台中",
+      "place": "台中市政府",
+      "lat": 24.1647,
+      "lng": 120.6469,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-05-13T06:54:23+00:00",
-      "news_full_expires_at": "2026-05-14T06:54:23+00:00",
+      "news_latest_at": "2026-05-13T04:20:56+00:00",
+      "news_full_expires_at": "2026-05-14T04:20:56+00:00",
       "news_articles": [
         {
-          "title": "基隆知名泡泡冰員工欠債 4天侵吞11萬營收被判刑1年8月",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435615",
-          "time": "2026-05-13 14:54:23",
+          "title": "性侵未成年繼女致懷孕產子 台中獸父重判…二審加碼判賠金額出爐",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435368",
+          "time": "2026-05-13 12:20:56",
           "publisher": "自由時報",
           "severity": "red"
         }
@@ -71394,6 +70391,37 @@
           "url": "https://tw.news.yahoo.com/%E7%8D%A8%E5%AE%B6-%E8%B1%AA%E5%A5%A2-%E7%99%BD%E5%AF%8C%E7%BE%8E-%E5%BE%8B%E5%B8%AB%E9%80%83%E6%BC%8F%E7%A8%85-%E5%BD%B0%E5%8C%96%E5%BE%8B%E5%B8%AB%E5%85%AC%E6%9C%83%E5%89%8D%E7%90%86%E4%BA%8B%E9%95%B7%E9%81%AD%E6%94%B6%E6%8A%BC-142600870.html",
           "time": "2026-05-13 22:26:00",
           "publisher": "Yahoo新聞",
+          "severity": "red"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false
+    },
+    {
+      "title": "基隆弊案爭議",
+      "city": "基隆",
+      "place": "基隆市政府",
+      "lat": 25.1276,
+      "lng": 121.7392,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T06:54:23+00:00",
+      "news_full_expires_at": "2026-05-14T06:54:23+00:00",
+      "news_articles": [
+        {
+          "title": "基隆知名泡泡冰員工欠債 4天侵吞11萬營收被判刑1年8月",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5435615",
+          "time": "2026-05-13 14:54:23",
+          "publisher": "自由時報",
           "severity": "red"
         }
       ],
@@ -71820,9 +70848,9 @@
       "lng": 121.0177,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 16",
-      "note": "24h 命中 16 則（新聞 16、留言 0）",
-      "news_count": 16,
+      "platform": "新聞 15",
+      "note": "24h 命中 15 則（新聞 15、留言 0）",
+      "news_count": 15,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T13:04:00+00:00",
       "news_full_expires_at": "2026-05-14T13:04:00+00:00",
@@ -71931,20 +70959,13 @@
           "time": "2026-05-13 00:23:26",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "竹北市長 藍白多人爭 綠仍不明",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FVEVxT1BWVmdWX2llblFMdHYxcUMzUEYyRV9idFhjUjFIQ01WTHFQaTFQYU9sM2hpM1luMmt6dnc2ZzhHM2QwUFV2QkRXM2ZW0gFWQVVfeXFMT3k3dE0tNUFtcU9tUE5ubkg2NTdTSURRdTlNellYcjE2WWlqdWJ5cjJYZ01nSlZhRGxVRTZNR3VwZ2I3U3Mtcng1S3FUdXUxbmpXV2F1OFE?oc=5",
-          "time": "2026-05-13 00:00:00",
-          "publisher": "聯合新聞網",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 1,
-      "negativity_pct": 6,
+      "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 19,
+      "urgency_score": 18,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -72406,9 +71427,9 @@
       "lng": 119.5793,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 38",
-      "note": "24h 命中 38 則（新聞 38、留言 0）",
-      "news_count": 38,
+      "platform": "新聞 37",
+      "note": "24h 命中 37 則（新聞 37、留言 0）",
+      "news_count": 37,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T12:29:00+00:00",
       "news_full_expires_at": "2026-05-14T12:29:00+00:00",
@@ -72671,20 +71692,13 @@
           "time": "2026-05-13 03:00:00",
           "publisher": "Google News→工商時報",
           "severity": null
-        },
-        {
-          "title": "守護澎湖港區安全 縣消、港務消防與岸巡舉行聯合演練",
-          "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNeUhnbUxmVDNKTW1BQU5wdm04ZmdUR0VabFRJVkxZX0V6Sm5mSmw3c2FpR0puWWEwY3Y4NjZwdExjOVhOalZIWU1XeWkzVmtJeG9HSmE1WkZBbDBxLTktRmkwWnNra09yT25XUkswNGRERHI3MTN3VHhIcDRtel9Cdm45Si1NcnBLdFlqUjlmN2x2OFNka0YxR3BuY2dQMXlaZ0VOSVU3MGNLaHJ0aU5LOXczMnRMMGRQTEEzMTNMQWVOU3hsd2tReWFRQUVmOC1zMzVhQzgzY1ZCRXVJUGo3REJ0Vk1FT1M5ckR3cHA4dy1YV2NtVFdSdGYyUUFNN3ZIbjUzXy1GMXdzWjIzZS12TFlncGZ2OVBYVFFYV2xxd3p1NTUyelhRRWFial9NNUwtbzB3YUZ0QkJGNFAwVS04M3otYw?oc=5",
-          "time": "2026-05-13 00:06:41",
-          "publisher": "Google News→澎湖e傳媒",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 38,
+      "urgency_score": 37,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -72982,6 +71996,380 @@
       "negativity_pct": 0,
       "urgent_red_comments": 0,
       "urgency_score": 39,
+      "is_urgent": false,
+      "is_catchall": true
+    },
+    {
+      "title": "金門地方動態",
+      "city": "金門",
+      "place": "金門縣政府",
+      "lat": 24.4337,
+      "lng": 118.31989807621136,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 50",
+      "note": "24h 命中 50 則（新聞 50、留言 0）",
+      "news_count": 50,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-13T14:00:00+00:00",
+      "news_full_expires_at": "2026-05-14T14:00:00+00:00",
+      "news_articles": [
+        {
+          "title": "小三通復甦｜金門組團赴滬廈搶客 拓研學旅遊線",
+          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNSnhiMHd3MF9ON3Jfb2R0NHFwLVlGNDZldC1VSjlRYnNjM0Rsbml1bEF1LTF5YlRJYk9xOWhURDJSQXh4U241MHZCeG1pZnh4TFlYS0k0Z1NSdlpXcE9BWFhCbkw3b2V5ME5EMzViNGhrUEhtQVV0VU1ybjFTU1FhWXpsX01HQl9FVHNYWDlqc2FUR1pTZFFRZmswNXNCSTZNdFY2UkVNN3BaOUNXQ2pHLS1sV0xEMFpvUUtTaS1Ed2JybW5CRS1BYUcwRnlndjRTZnh2MVZxMDFiN3RCMVZqUGNqRGJGeGROZzgzVHpXd3RfUVVjMnlJR0xEaTFCZFFCUjlwSGlhRUhRd0NPemZUOTVpSE91QV9qdkpzeFllOFIxUk1sMTFwTDVSdGVPOFRRWG9WWktSbzl0U2Q1ZHdxTUoycHhIZ0lTdFVnbjR3?oc=5",
+          "time": "2026-05-13 22:00:00",
+          "publisher": "Google News→星島頭條",
+          "severity": null
+        },
+        {
+          "title": "金門縣115年度首次托育制度管理推動 持續優化托育環境提升服務品質",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9aOGtHNVJzOUdyOTJONm5RcUNxbUo2THFnd0JVMmJaZW0ycXBXRHZYendZTHJqbXJLd3JuTmgta3U0bWtZQTNZ?oc=5",
+          "time": "2026-05-13 21:58:54",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": null
+        },
+        {
+          "title": "金門縣府偕金門觀光產業前進上海 廈門旅遊推介拓展觀光市場",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5mYmxSNklnU3pMazJsSkEwbG9FR0Zpbi1zZnJ4YUlDV2NmX2RST1BCMHdFRTVKV25wVU5rTDJLbk1rRjRjc19F?oc=5",
+          "time": "2026-05-13 21:52:48",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": null
+        },
+        {
+          "title": "金中音樂老師呂培光傳承聲樂藝術 深耕樂壇！校慶領唱校歌 譜寫金門音樂史新頁",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5RemRUSHpzZDRIMnpiVzA5T1lYRmcwWWxzZEg0OGpYTjVqejJtN3UzbHNtNUdPTjVMeS1FUVRWc0d0dGVvODkw?oc=5",
+          "time": "2026-05-13 21:21:08",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": null
+        },
+        {
+          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸|國防",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1SQnp0WkxQd0dhc0FzZHNPSzhqbGllSVhpaE1oU25RSkdfRjkybnpIMkZLN3h2OTlYQ2VZZjZ2NVUwaTd3ZjFEdDdudw?oc=5",
+          "time": "2026-05-13 21:00:00",
+          "publisher": "Google News→僑務電子報",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門榮服處賀榮民當選模範母親表彰慈愛無私奉獻精神 | 勁報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waU4yZ3JYZGQzbTRRM01FSFBqQnE1cXVsSkRXMUltUnJYMFhfUzF6ZndtdWVMUVVsVnd2WTJlR3o5alhaVmJkT3JFdjU0NllMVDhtR1ln?oc=5",
+          "time": "2026-05-13 20:56:15",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "上海首批金門馬祖遊已成行 多家滬企與金門旅遊業達成合作意向",
+          "url": "https://news.google.com/rss/articles/CBMixwNBVV95cUxPZ1YzajVlWk9jUGtiY1hOakEzeC1oOVVmeTduRjRYcVFtRFpuRXA3QllMNVB3ZEs1M1hWU2loZVNybUhEenVYVUl4WmpGUnVjTlFvZEdTNUxJaGtaWmduRnktUHJvZnkzWlYzS2pCLTYtTFNYN2J3X1l5MHk5U2c1aUUzaWpMSWVUSGItdFJlYTFNbk9MSWViUmFaU1I5NWhscXdqTlpkdU1ZZF9Fb1lOTGtuNTJyanpOSGlDdXdTeDV6WmtGdURuSEdaUXo1aG9GZ0xtRjNUZFRLbmw3ekpmX0plLUl2cDRDRE1uaTNJX01ESm9CNTVwNldKam0waEdTYU5kazI3OEZNaUc0YU9GNHBqZUxmT3Rxb3lfSlZGQ0FIMXRCTFVEVVhYamxtZXdQa21WUHpfQ3QtX3BLUVhaREJ2OGRpMlJ0MF90WkVQSTFvVjgxWUNHcHlRalJ0RlNyMVBLRHZkR3ExYU5GQkx2aGhIZS04T2dlelFESnhrQ0Zpdk9pbXNrSzM2RUczenhyV0kwTVRoMTh1VzV6LWk5RUp6ckd4X3piTllCNmc5NDN0cnZmMm9Dbjk2OEpVbEJETExiSU1LQQ?oc=5",
+          "time": "2026-05-13 20:30:02",
+          "publisher": "Google News→香港01",
+          "severity": null
+        },
+        {
+          "title": "金門托育量能持續擴充 縣府鎖定校園增設幼幼班減輕家長壓力",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94cHF5eGpsMHNTZXgtVlo4MkRweGdMOVlZcEFBaDdCWVpEcnJ4TjZUTklIWnhwNWtUcjdIRzFjVDFqZTg1OU44WklpUTlHSktIM0FDWGxydnlEUdIBX0FVX3lxTFBoSGtXWlo5eE1wdVBsTVYzNEZhc2JsQVZkWG8tQnNhdWp0cVZxUW5WX3lQRWtIYUtuVVA1eXd4YW54NnZ1RG5TOU01MEhGUGFDSmNtMld5eFQ5M0JCUVRN?oc=5",
+          "time": "2026-05-13 20:27:37",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "金門榮服處賀榮民當選模範母親 表彰慈愛無私奉獻精神",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yc3FxcEhEczFnYUxFV050SDA0UkVJa25pbG52cktlZGI3UnlzSDR2U3ZvOXlQWURRU2JXUVVucWdBTXJRMUU4ZFVodllWNENMblE?oc=5",
+          "time": "2026-05-13 20:27:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "上海啟動赴金門馬祖旅遊簽注申請受理",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4cXlWbWwtdi1sQ2F5d0RRRks4VGI3Q0Iyd2MtYkFDR3pLZm1tQ284MDBzUV9hcUZiSUFIZ2NMTGhmWVhacGVQVjd3WjlsaUp2OWU5cm9Mdk1iRXBBeE1uUjQ4RjFRY1l1dzdNeWR2LU40QQ?oc=5",
+          "time": "2026-05-13 19:26:15",
+          "publisher": "Google News→香港商报",
+          "severity": null
+        },
+        {
+          "title": "走進金門總兵署",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8zdzVORzljc1VQdW5Xb2ZhZVBKekNzVUhuNzl2NnpOVkgzQ3A0NUF0UHIwcUhYVU5qTVRWVmcxREkyVWJweWxiMw?oc=5",
+          "time": "2026-05-13 19:12:00",
+          "publisher": "Google News→peopo.org",
+          "severity": null
+        },
+        {
+          "title": "上海啟動受理居民赴金門馬祖旅遊簽註 申辦出行細則公布",
+          "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxQRjE0VUkxdVAzS3Fsc3FzMW9tQUtGLU5ubHJGb3ZQRFF0azljNUxybHRmcVYxSUNINzBUVFJ2N2RmcWdjNkF4WWFvZEpDcGJmaWJsSEFkSHI2U3p5Q2IzVnR2YzdlSzVhalluNU5vT3FXY1pJOHFYenRNUWk2VzlnZ2p6NE5TV1lTaExlUnpRdVgwRzNCa1FKMjR6WGNIQ1JfXzhYdGFYU05sX0M3R0ViNWRMelhVMkFhejRsc2JIdkRETDduV3Fzd2dvaVB3VmpyWE5sa243OHNjYTJOOUNjR19TMnhMSDB0aXNsMFI1a18yamVJU3F4VW8tQU0wczNwT1ZXN29oNEZ0WHJlV1BORFFabWVQWndZVm5yRkthT1FVWmtxb0xOckFmM2hUQk5JQUxtbnlYbkhzZTFsRncyS3dzck1rN1NReTRFTnE0dVJBYlJYa0VSaXFtWmw0eFNQTmxNd0F3YzBnZk85dWN4ZllZLWcxRXNBUnZpOXpIQjlLOTZXQ0hn?oc=5",
+          "time": "2026-05-13 18:02:13",
+          "publisher": "Google News→橙新聞",
+          "severity": null
+        },
+        {
+          "title": "上海客重返金門！首發團11日抵達 金門縣府急赴滬廈搶攻陸客市場",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80WGxZTzBxSThsSWYtRHBfZ3RGcDE4ZDZpWUFMdERESDFwakg1ZDFmR1RIMzA0dm5Ub2oxMzF1a3BZeTFOZWdvbGdOekNiU0dXeVlqcUdvTUw?oc=5",
+          "time": "2026-05-13 17:45:00",
+          "publisher": "Google News→梅花新聞網",
+          "severity": null
+        },
+        {
+          "title": "金門迎上海首批遊客 縣府：積極拓展旅遊市場",
+          "url": "https://www.cna.com.tw/news/acn/202605130266.aspx",
+          "time": "2026-05-13 17:37:49",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "金門建築透過Equinix推動香港及新加坡 邁向「智慧建築4.0」",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rRkRDbTZDeDhBZ05XZnVyZlZ3ODQ5UC1uVWN0VkJ6ak0zdVVBaG43cV92TTNkY3c4ajhselAxcHpuMjFhSGlDTEtmZndCWWp2M0IxVkZqZkcxcklDMGs4?oc=5",
+          "time": "2026-05-13 17:26:00",
+          "publisher": "Google News→IT PRO Magazine",
+          "severity": null
+        },
+        {
+          "title": "首發上海遊客蒞金旅遊 金門組團赴陸加強推觀光",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ScFpscnhzcDU2aUNFSlF0OEtaWXlBRDRGbkRCYTJnNXdmYVJxWmR6U3JRaVU1VVN5eG5Yc0xMWlpxZDVtdUx5dnBUVGJMaFBZUFByWU4xU0l5bGpaTTdSRmdUVEpiYjI2N3Ruajhn?oc=5",
+          "time": "2026-05-13 17:03:10",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "金門地檢署榮譽觀護人、更生輔導員聯訓 強化輔導毒品個案能力",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNVHRfRGxaMUJKTGtRLW5XeXlQMWFCTlNtbjQ2bFNUMklGVklUYm9hdjRkN1I1LVFzUTAycnNNQXYwRDdnYTZTbmI4T20td2djVDhYQ2swMVZoM1Q4ZmfSAWhBVV95cUxNY1VjSHFrdzlkRXI4SWNZV1UwNmlqMFRJc3VOejZlQ0ZnS3kxNTJmUWYxdUtaZUJfNmFkR1BtRG5Dd2llN3FhRHRSUmhGWlowNzVhVE1QcTF6WmVJR3U1RHVPdHJmWmJOdA?oc=5",
+          "time": "2026-05-13 16:02:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門副縣長陳祥麟率團赴滬推介打造「滬廈金」旅遊黃金線| 兩岸要聞| 兩岸",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rekJiSTVScXQydm5ITDBsUGlhcjVQSDFibzRJLWhXeUlqMnFLUkxHdlJQZzNCU2V4Z0FsOXc3R3N2S19iM3NNNERiMGxkYlRa?oc=5",
+          "time": "2026-05-13 15:55:02",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "上海啟動赴金馬旅遊簽注申請受理 金門縣府：首批上海遊客已抵達",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1RazdYdHk2cks1NkUtQkdla2hpdFg2UW5EcEk1WWcyaE1WNVFQSEZHUGdNcTNVYi1sUzM2UzhJWGRjcFNIVkIzVU10SkpkMkxRRjN2amJiR3dWR0hBdmE0c2c4S0ltcFdtTWVoMHlOV3Rhd9IBVkFVX3lxTFBERXh0am9Yd1dnRE9wMVNnczRKZ2R1RmRBVWRMNkJUUzJCeTlnU3M4VGwwczZ2Zi1reW51emc5TWdZdFZrTlZYQkxHY2lXd0VXRFliOGd3?oc=5",
+          "time": "2026-05-13 15:27:33",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "上海啟動赴金馬旅遊簽注申請受理 金門縣府：首批上海遊客已抵達 | 政經焦點 | 要聞",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3N1RyYzFTaXIxanlFSkl4QWhJcllSRUp3TVFyUXV3bW9MdlhzUTV0WEItNk1kaEU0WDZTcEQ4b2xkZWFpeDBFbVlfaGl2OUhZUzFNWXI2Y1NUQQ?oc=5",
+          "time": "2026-05-13 15:27:28",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "上海啟動赴金門、馬祖旅遊簽注申請受理- 神州 - 香港文匯網",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5LeEx2Y0VZZjVtZkNLZ2oyWmd1VG43alVzTThDc1hRaG51Z01hVm1QTXNqaWtXNEhjWVlhVmxYdnpBV3BlQ3NhaG9vOWZYVUpDOFBDQVprZGs0WlpzOTlvU3JrR09HNS0tQ1ZjaS1wT0xoOU1janZz?oc=5",
+          "time": "2026-05-13 14:54:57",
+          "publisher": "Google News→香港文匯網",
+          "severity": null
+        },
+        {
+          "title": "金門港旅運中心火災搶救演練 驗證跨單位協調機制與應變能量",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kbzNiVmg0RmZnMUtJX1lCeHV3NkxJWWRsY1c1ZG1JcmF1S3lBT3A5ajBsRXJPMkNRYko4TlVlc0tOMzZvaTBGV2s2U0laYzBsSHFCRXI1WWxjM1hkX2EtaDAtUzctd012aEVtbEJR?oc=5",
+          "time": "2026-05-13 14:53:44",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "台灣人65歲領勞保，移工10年就能領勞退？查核中心詳解真實制度：移工退休金門檻超高",
+          "url": "https://www.storm.mg/article/11131077",
+          "time": "2026-05-13 14:23:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "弔金門古戰場",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1naFJ5Z2VCVjgxcF9xQV9IT3JuaU9SQkFMZFFPUENZdGwya0tILWJQbm9DUWRmVjhnZzNGRjRjQ3ZxcEFQd3NyS0oxZXJ1Y21zTWNXOUljY3VseXgzYVhQcF9n0gFnQVVfeXFMTjZoQU9vaVAxN3haSE1Cc2dGYzJmUFNHb21DVzBKaFFKS1FZREFqbnhnQkRuVE5SVjNLVWNiU3c5Ri1jUFNibWpYRFRwbjVEcFMwTTlqNnc0YkJPcUNfejk2TXdzbGhJSQ?oc=5",
+          "time": "2026-05-13 14:00:00",
+          "publisher": "Google News→世界新聞網",
+          "severity": null
+        },
+        {
+          "title": "金門啟動托育制度優化！打造友善生育環境 減輕家庭照顧壓力",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rQnctNUxKZVBmLVdtd1BUSF9xTUp6U0xacGpxenVJM3pMcmJjdklEME9hWHJBRktqMzZPNk9keXFMcjJrS0s2eUo2cm84LVhjTUV6cTJkX1MydE1CQ1RJQXkxWk9NZ3NRTTVPdmdR?oc=5",
+          "time": "2026-05-13 13:46:09",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "不只有戰地碉堡！住進金門歐厝聚落，洋樓裡聽南管，發現遺落半世紀人情風景 專訪金門老屋民宿「時苑」負責人洪亭棣｜微笑款款聽Ep.176 - 微笑台灣編輯室 - 微笑台灣 - 用深度旅遊體驗鄉鎮魅力",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tbTkxU3R3OTA0aGlFOXpfSDdkX1ZfSTlqSUM5c2Juc255WGF4RE1KdFFDbzdvbjF2d2xKdURWWHpmTFlmSkJmN1hhYm8tc0NKRjd2dg?oc=5",
+          "time": "2026-05-13 12:40:43",
+          "publisher": "Google News→微笑台灣",
+          "severity": null
+        },
+        {
+          "title": "金門托育量能持續擴充 縣府鎖定校園增設幼幼班減輕家長壓力",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HLW8wRG5YMF9PYUZHRnRfZGxQNDExTzZiTzZXMks3Z0gwblIxSU0tM01waUN2ZS1BMVVHdThvUm41Z3FqVU5MWWYzZTMtbHB50gFWQVVfeXFMT184LVloUk13VWw4V0x6by0xaEZSMVpfRUs4VmtnSmVfZTFydjZKWkRSUFRzemdCeklLZHVmbHVMc2t2TXlMbElLbzU5ZDZRc0lrbFF3OFE?oc=5",
+          "time": "2026-05-13 12:29:25",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "金門大學學生攜手兒少協會 翻轉學童性平視野",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13MTllMWVLVVpPUk0yeUxuTUozZEpwZnY5c1VhZkFaYmMwUEc1dXRVT0hIdTdkbDF5TGNZX0h2UGhEV1h0TGdtRnNReXJNdDhhLWcycC1lNU1ya1B3RkHSAWhBVV95cUxQbVBNa2FMV1k2SDNGaDZiU1FuZDBsVThhYmhmbzNoczJlVmNZNjY1WVZUUUptTklPUFdsUVZTTnFuYWllVzZBVjdpWU51U0o0SVl6UzY2WmVIdjFMdy01MFZES3d5ZjZFQg?oc=5",
+          "time": "2026-05-13 12:23:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "金門婦人經商匯款險遭詐，警銀合作成功攔阻女子匯款",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQbEdzSGFCMlhfZjJmZEZFeWZvaTkwdGRmMExSOF9VeVJ2N1p6bWtLQmxFX0JEdmlfZXBkSXkxOFRTU3RWcnctcWduODFCLTBEVHRiTHRQbi04bXZacjl4NXVBRm1xYkI2MVZ2UHdwcEtuclZkdlpYSVd1STR1ZG42RzlZc1RLclM2UWRVQTg1WWM4aGdWUlNOUFdvbHJnc2UwU3ZQdjhvdnFKRjNyWS0zNU45d0NZenJaVE84ZTNQcHJ2X0MtVHJjYlZnOE9DdWdpRFg3VnNfUmJfZkdXZzhjMUlHdVNBdWhzRXlCX3NLUE15bDFpMkpIT19WT0hZWE93WHV0dVVQQ2NFb0stVUhuaU9Ecy0?oc=5",
+          "time": "2026-05-13 11:48:47",
+          "publisher": "Google News→金門GO資訊網",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門縣政府116年度施政計畫先期作業啟動 首場審查聚焦城鄉建設與民生工程",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWk5ub1J4N2J4QThMZ1JUblROYkw3dlJSNWZFVXhlUGJCLVhvN0ltbFU5YUJUVkMwQ200aGZmcWttOW5ZZGNLejgzVm1wa202RjRiZndOcFBpX1RNWlJPOXBuOXp6bGtsd2tSa3pPeUVlRnkzTHlXYWFNQzVudm1hSUxONVBWUjd3MTJMQUVoVmMxNjhMRkJCdVRWSGxsMmVPRUJGZDhSR2d3TlNrd015eEZrT3R2QWNlaEJDQ1RwTmlCU1FPQ0tBMVhTcF91c0pKUGhwUlNvVWFkUHQzbmlCdVc3SDhwWV9LNTJCS09EMTZwelJJUGlrMTU4T2tuN2paanJ3N3pfeUM?oc=5",
+          "time": "2026-05-13 11:45:16",
+          "publisher": "Google News→金門GO資訊網",
+          "severity": null
+        },
+        {
+          "title": "金門「太武操演」實彈射擊 標槍飛彈首亮相阻敵搶灘",
+          "url": "https://news.nextapple.com/politics/20260513/BAEB03519B1B372BF19E07ED95851D6C",
+          "time": "2026-05-13 10:47:28",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "上海啟動赴金門、馬祖旅遊簽注申請受理",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBueE5YNlJ1ZUhELU92N21CYW5qYmhZTGx1dElzeXAzdV9rZFFuMUtWSkZsdURmb2tqdmxUVnhfbDE5UDJyd2pJSkRPZW1JaXc?oc=5",
+          "time": "2026-05-13 10:13:10",
+          "publisher": "Google News→news.cnyes.com",
+          "severity": "yellow"
+        },
+        {
+          "title": "中國上海居民可赴金馬旅遊首批遊客抵金門 縣府：積極拓展旅遊市場",
+          "url": "https://news.google.com/rss/articles/CBMivANBVV95cUxOV1U3SGs4SEp5Y2tFTDQ2VkRFSURSUEFxNHNmSjJuVzg5Mk5kVTZpZDNreTVHNzRyZGhyVC12cERfbXQtYzk5X3N5OVlNSldJNkFNU0p5NUxQa09KRzloaVdBQlU2WVVaMjI5MHY0TlhWX2t4NExYZGRBc0ZObXdqUGozYWc0bllDVF8xeHhKelV3MzZHNmVkWFNWb2lKRDgwVzhhWXp0NVJZSzlmVmNNV1pCem5Pc2ZyY2Q5ai1jUzRZQ3Zfb1d5UHFDS0Q2UVg1cTZmZlQwWVVLQm5oQ0haOWlFbmNpQUR4NUdMUzlzb2dNbklraXRBVlNuNWUxeXNWMTRGbWprbG9PUWh1dzMxSFVaalQ3LWg3QzVUT00yaGZ4T25MS0Y3LUFXRVRuTmRGTHlZRzdhdmp1Q29HbTBjalRzTWp2dGFJQkRWanA5el9kWkJ1ZUNmcGZhdkdFZFB3UklZTU9pdF90U2N3azRDdEJnbE45YlZ1UGJhcm5xc2NhWmZ5c0pkekV0TzBtS3ZoRzZtMUJfS0hxSjB3V0ZPNThLTk1WQzR1eFgtenMzWUREWHN2WHJqbm9hZ3Y?oc=5",
+          "time": "2026-05-13 10:13:10",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "金門副縣長陳祥麟率團赴滬推介 打造「滬廈金」旅遊黃金線",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Gb1FBNXVsWllUU0dUNmxhOGVUbUVKajFYZ3FpdVB3ZGRVemhUZ2RWVEJKU1pWR0tIRFhQc2xCUHFuVU1pT29YNWhKbmdtclVXQjBHRW9tZ0dfUdIBX0FVX3lxTE81Yk5DZWxkMzVCMUNkNUVKNzlMUFBSNjlxQ2NnNmpjMS0xVXp5MDlZclg1YU5NakU1TzA4NEZJQmxBZFZJMmF5Qk15SldkQUx3bVRIcm11dkxONFlyOHl3?oc=5",
+          "time": "2026-05-13 10:13:10",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "TVBS信望愛永續基金會攜金門大學 深度剖析金門 AI 智慧未來 | 產學研訓 | 商情",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QMTk2bFlDUURHZTBTeFRWaTlaVHNpN2xUZVhNNjBOZUFrYU1nZmNxMzBNR1JLQ3o5V3lKbHR2ekFSQ3drc2VycklXQU45RzhlWktxMEM5SGZkZw?oc=5",
+          "time": "2026-05-13 10:03:05",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "陸軍金門防衛指揮部今天實施「第2季太武操演」，清晨起在后湖一帶展開大規模實彈射擊演練，動員金門守備大隊、砲兵營、支援營及兩棲偵查排等單位，模擬敵軍登陸進犯情境，運用各式火砲、戰甲車與反裝甲武器，編織灘岸交叉火網，驗證防區聯合作戰與應變能力。其中，首次在金門實射兩枚「標槍飛彈」，成為全場最大亮點。",
+          "url": "https://udn.com/news/story/10930/9499223?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-05-13 09:20:51",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "上海啟動赴金門、馬祖旅游簽注申請受理！辦証指南→",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxdDIxQmVQRmJ6dTRVMHY2TWRiN0VCZ29DS0dFQlBtWXNUckZvZnlPYnZ1RHlfcjFIXzN6dTk3VHJLcHh0azUzMTlmbEFkQWlzMldQdUVBREs1eXR3OWhxM3hQRkR2cXZzeWd6WFB3TUU?oc=5",
+          "time": "2026-05-13 09:17:00",
+          "publisher": "Google News→人民网-上海频道",
+          "severity": null
+        },
+        {
+          "title": "金門太武操演實彈射擊 標槍飛彈、8吋榴砲阻敵搶灘",
+          "url": "https://news.nextapple.com/politics/20260513/C93E93314765FDD3E2AD6D93C1284621",
+          "time": "2026-05-13 09:16:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE14VlFZQjFKLW9DSnFGbmxrXzhkeUFNTVdVdkR4S29NNHhDSkxwZEdQallXWk1VR1BCUFRVT0I4TFF0dXR6TWFyTlowWVo1NUJSd3c?oc=5",
+          "time": "2026-05-13 09:03:08",
+          "publisher": "Google News→放言Fount Media",
+          "severity": null
+        },
+        {
+          "title": "影／金門太武操演震撼登場首度實射兩枚標槍飛彈| 軍事 | 要聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yUEQxN3U2c3VEWjFRQ25TS0hFTnc3NkU3TkQ1cWFkaFRfUnA2djUzdWM5WU1oTHVlZVFmMWJqYWMxQ2NfS2ZsODJrNldEUXA0a0E?oc=5",
+          "time": "2026-05-13 09:02:34",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "影／金門太武操演震撼登場 首度實射兩枚標槍飛彈",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yUEQxN3U2c3VEWjFRQ25TS0hFTnc3NkU3TkQ1cWFkaFRfUnA2djUzdWM5WU1oTHVlZVFmMWJqYWMxQ2NfS2ZsODJrNldEUXA0a0HSAVdBVV95cUxNVjg5dTlvUE1tRklTRm5ZVGZxVjg5X3B0SUxBVW5rQ2ExLTVWRXNwT2pJUjB4OWJpbHhaaG1wYzBvTXpqQTNIeVB5YlBjajJCdVdJVWN0eTA?oc=5",
+          "time": "2026-05-13 09:02:34",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門拂曉太武操演 對海射擊模擬敵軍進犯 (圖)",
+          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOZWlZQ0NKWmpteXV0M2l2VTZ5bms1MU0zYWVVbVNUQTZSQ1NDNDBUd3hHcHpLS1RlbnlUY2Nib0s2OVJLS0lKRHhBcV96VDlLRTNUY251WGwzX0FsRGI5TDl6bVRDaW9uRnNySlVEbTdWajh2YzNNRnRIOTlQblR5MnVQdGxzV003SlFiSUtTYzJXb05UN0dQcG0wTjNLYzQ5dUF1ZW4zRmdrOGVYZzVRX1lLM2o1X0g4RHFuLXpzbUliT2NZVFFZV2s4UDZadjFUWEZsaGRKSTFqak9pMkxFMmEzd1hrOTRtb0E5d3BMMjBsSlVKNnNVb3EtYjNhUWRKeUdDeWVFbUZWNmJwV0VVRENxTm0tTzhRTjZaNGtSQlhJRUlvLTNqRVltNGFJbThkTWNyLWR1V3JHZw?oc=5",
+          "time": "2026-05-13 08:53:59",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "金門太武實彈操演 交叉火網阻敵搶灘",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KVl9tOXpJbm9pekhoMmZpLUYzYXQ5MVlhVk5RZjNYTC1JWW11dFlqT05naVdldUJRMk1LM3BOcHIwZUpoVzQ1WlZQSVlmRlJ4LTdJ?oc=5",
+          "time": "2026-05-13 08:48:00",
+          "publisher": "中央社",
+          "severity": "yellow"
+        },
+        {
+          "title": "金防部「太武操演」 標槍飛彈首度在金門曝光",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90TXVrNzJVWmVELTZ0bkk1SlRnY09VTkptUkJQQ0RUZUtmX2lWXzJrQlVHeURMbnVEM093SnBqbWh0WFViUUdtbW5QaW9QeGhOczVjUk5NZjYzc3h6YkdSZNIBZkFVX3lxTFBkZl9YZDVUWHlUMTd2d0otS1hWZ0o4dElJQS1sclBaWEI4dEdhcHI0Y2VzTU1pSnNTSHhwdnF4OTdoZ3IxMURCWV9iUVJ5QXEwMGhvRjZMZW5sbWRsaGRkamVIRTRVUQ?oc=5",
+          "time": "2026-05-13 08:48:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "有片／太武操演震撼登場！標槍飛彈首度金門實射 火力阻敵搶灘",
+          "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNNy1FZUhFTGFlZmY2Ni0yX0x0Wm1vUVNNak9sRUlxN2pHOTc1d3VJNzNUUllKNi15WnZVSWtjQUFUYnBYM0EyWjR2cE9jQkRjakoxaURnUEx1NFRlaE5STkpUQWVkX0ZHUGp4MGFMRFJLckRabFVDYmplTERZRHI0V1NKZFg3Q21HYlgyNWhMWVJXSXJvSGV4bk9mYVNzZTZjOURGWXQ4dEROd05pbnRKdk9VV243ZHd6dlU3d29wSXBpd0k1WktnNEh2X2RCcHNWS01wTk1DMEMxbFJ1bW5zVVRMM0NGd1VERFpxbGduRFgxU0hmVHdWc1BmTWJxYjhMTjJuTmpRMGZBelBLaFEtbk5wRVJYZVJCbmlKWUhEYzVwOGNRUHRHc3ZOVjFHbVprdzBteGRIMzdBWW1QX0hBb3RFcTFRbnhuYm1EOFloRFZ4N2V4WUY0c0tkNTZQd1BWd0E5NWo2RWhYeHNqdjlQSUFWNVpnOUR6aTcyOENnZU00b3E3NjlPTVo4aFNVYWRnUURuMVZWV29jUWtyQm1uYzlyUFo0Vi1JYXVibVNxci1peWtXT0VuSFRnRG5JS3lzaDZIakZtNUpNbzR5Y2VuaDdnX1hMdjBtcVQ4cDJaSFRrNGg4NTVZbQ?oc=5",
+          "time": "2026-05-13 08:09:00",
+          "publisher": "TVBS",
+          "severity": null
+        },
+        {
+          "title": "-AI導覽結合即時服務 強化在地旅遊體驗 縣府推動智慧觀光有成 金門行動旅服持續升級",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xOU5TODNMRERwR0Z4Vk40RnFSeVItTEpBei1YYlY5RjAzdnFhbkJDWlN0cVA1ZEIzejZZLW1LUjFvNzI1dUVOai1tM3BFVWU2c0pQbm5XN3Q?oc=5",
+          "time": "2026-05-13 04:46:03",
+          "publisher": "Google News→kmdn.gov.tw",
+          "severity": null
+        },
+        {
+          "title": "金防部「太武操演」 標槍飛彈首度在金門曝光",
+          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%98%B2%E9%83%A8-%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94-%E6%A8%99%E6%A7%8D%E9%A3%9B%E5%BD%88%E9%A6%96%E5%BA%A6%E5%9C%A8%E9%87%91%E9%96%80%E6%9B%9D%E5%85%89-004851205.html",
+          "time": "2026-05-13 00:48:51",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "金門拂曉太武操演 對海射擊模擬敵軍進犯 (圖)",
+          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E6%8B%82%E6%9B%89%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94-%E5%B0%8D%E6%B5%B7%E5%B0%84%E6%93%8A%E6%A8%A1%E6%93%AC%E6%95%B5%E8%BB%8D%E9%80%B2%E7%8A%AF-%E5%9C%96-002435305.html",
+          "time": "2026-05-13 00:24:35",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸",
+          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94%E5%AF%A6%E5%BD%88%E5%B0%84%E6%93%8A-%E4%BA%A4%E5%8F%89%E7%81%AB%E7%B6%B2%E9%98%BB%E6%95%B5%E6%90%B6%E7%81%98%E7%99%BB%E9%99%B8-001849709.html",
+          "time": "2026-05-13 00:18:49",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門尋找開鑿翟山坑道老兵",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQNHFoOEdOeHhUSFByb0NDWWNfOF9JM2JLdy1EcGYwUTAyR3lmVC1CTTRqWTRBNDZuOWcyOGJTVDBsOFkzWHpQSjRtZzVsZlhF0gFWQVVfeXFMUGkwdDByZGNySUdHa0Y5eU5JUTBsM0Y1TDRfWS1pcWJ6dWVrcGlHM0RaSXN1cTNIUGV0MHZ5bzJhUXhCVkJ6TzUxd292LVFjSS1XYTFsVUE?oc=5",
+          "time": "2026-05-13 00:16:39",
+          "publisher": "Google News→UDN",
+          "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 2,
+      "urgent_red_comments": 0,
+      "urgency_score": 53,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -73356,436 +72744,6 @@
       "negativity_pct": 0,
       "urgent_red_comments": 0,
       "urgency_score": 50,
-      "is_urgent": false,
-      "is_catchall": true
-    },
-    {
-      "title": "金門地方動態",
-      "city": "金門",
-      "place": "金門縣政府",
-      "lat": 24.4337,
-      "lng": 118.31989807621136,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 58",
-      "note": "24h 命中 58 則（新聞 58、留言 0）",
-      "news_count": 58,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-13T14:00:00+00:00",
-      "news_full_expires_at": "2026-05-14T14:00:00+00:00",
-      "news_articles": [
-        {
-          "title": "小三通復甦｜金門組團赴滬廈搶客 拓研學旅遊線",
-          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNSnhiMHd3MF9ON3Jfb2R0NHFwLVlGNDZldC1VSjlRYnNjM0Rsbml1bEF1LTF5YlRJYk9xOWhURDJSQXh4U241MHZCeG1pZnh4TFlYS0k0Z1NSdlpXcE9BWFhCbkw3b2V5ME5EMzViNGhrUEhtQVV0VU1ybjFTU1FhWXpsX01HQl9FVHNYWDlqc2FUR1pTZFFRZmswNXNCSTZNdFY2UkVNN3BaOUNXQ2pHLS1sV0xEMFpvUUtTaS1Ed2JybW5CRS1BYUcwRnlndjRTZnh2MVZxMDFiN3RCMVZqUGNqRGJGeGROZzgzVHpXd3RfUVVjMnlJR0xEaTFCZFFCUjlwSGlhRUhRd0NPemZUOTVpSE91QV9qdkpzeFllOFIxUk1sMTFwTDVSdGVPOFRRWG9WWktSbzl0U2Q1ZHdxTUoycHhIZ0lTdFVnbjR3?oc=5",
-          "time": "2026-05-13 22:00:00",
-          "publisher": "Google News→星島頭條",
-          "severity": null
-        },
-        {
-          "title": "金門縣115年度首次托育制度管理推動 持續優化托育環境提升服務品質",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9aOGtHNVJzOUdyOTJONm5RcUNxbUo2THFnd0JVMmJaZW0ycXBXRHZYendZTHJqbXJLd3JuTmgta3U0bWtZQTNZ?oc=5",
-          "time": "2026-05-13 21:58:54",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        },
-        {
-          "title": "金門縣府偕金門觀光產業前進上海 廈門旅遊推介拓展觀光市場",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5mYmxSNklnU3pMazJsSkEwbG9FR0Zpbi1zZnJ4YUlDV2NmX2RST1BCMHdFRTVKV25wVU5rTDJLbk1rRjRjc19F?oc=5",
-          "time": "2026-05-13 21:52:48",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        },
-        {
-          "title": "金中音樂老師呂培光傳承聲樂藝術 深耕樂壇！校慶領唱校歌 譜寫金門音樂史新頁",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5RemRUSHpzZDRIMnpiVzA5T1lYRmcwWWxzZEg0OGpYTjVqejJtN3UzbHNtNUdPTjVMeS1FUVRWc0d0dGVvODkw?oc=5",
-          "time": "2026-05-13 21:21:08",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        },
-        {
-          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸|國防",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1SQnp0WkxQd0dhc0FzZHNPSzhqbGllSVhpaE1oU25RSkdfRjkybnpIMkZLN3h2OTlYQ2VZZjZ2NVUwaTd3ZjFEdDdudw?oc=5",
-          "time": "2026-05-13 21:00:00",
-          "publisher": "Google News→僑務電子報",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門榮服處賀榮民當選模範母親表彰慈愛無私奉獻精神 | 勁報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waU4yZ3JYZGQzbTRRM01FSFBqQnE1cXVsSkRXMUltUnJYMFhfUzF6ZndtdWVMUVVsVnd2WTJlR3o5alhaVmJkT3JFdjU0NllMVDhtR1ln?oc=5",
-          "time": "2026-05-13 20:56:15",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "上海首批金門馬祖遊已成行 多家滬企與金門旅遊業達成合作意向",
-          "url": "https://news.google.com/rss/articles/CBMixwNBVV95cUxPZ1YzajVlWk9jUGtiY1hOakEzeC1oOVVmeTduRjRYcVFtRFpuRXA3QllMNVB3ZEs1M1hWU2loZVNybUhEenVYVUl4WmpGUnVjTlFvZEdTNUxJaGtaWmduRnktUHJvZnkzWlYzS2pCLTYtTFNYN2J3X1l5MHk5U2c1aUUzaWpMSWVUSGItdFJlYTFNbk9MSWViUmFaU1I5NWhscXdqTlpkdU1ZZF9Fb1lOTGtuNTJyanpOSGlDdXdTeDV6WmtGdURuSEdaUXo1aG9GZ0xtRjNUZFRLbmw3ekpmX0plLUl2cDRDRE1uaTNJX01ESm9CNTVwNldKam0waEdTYU5kazI3OEZNaUc0YU9GNHBqZUxmT3Rxb3lfSlZGQ0FIMXRCTFVEVVhYamxtZXdQa21WUHpfQ3QtX3BLUVhaREJ2OGRpMlJ0MF90WkVQSTFvVjgxWUNHcHlRalJ0RlNyMVBLRHZkR3ExYU5GQkx2aGhIZS04T2dlelFESnhrQ0Zpdk9pbXNrSzM2RUczenhyV0kwTVRoMTh1VzV6LWk5RUp6ckd4X3piTllCNmc5NDN0cnZmMm9Dbjk2OEpVbEJETExiSU1LQQ?oc=5",
-          "time": "2026-05-13 20:30:02",
-          "publisher": "Google News→香港01",
-          "severity": null
-        },
-        {
-          "title": "金門托育量能持續擴充 縣府鎖定校園增設幼幼班減輕家長壓力",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94cHF5eGpsMHNTZXgtVlo4MkRweGdMOVlZcEFBaDdCWVpEcnJ4TjZUTklIWnhwNWtUcjdIRzFjVDFqZTg1OU44WklpUTlHSktIM0FDWGxydnlEUdIBX0FVX3lxTFBoSGtXWlo5eE1wdVBsTVYzNEZhc2JsQVZkWG8tQnNhdWp0cVZxUW5WX3lQRWtIYUtuVVA1eXd4YW54NnZ1RG5TOU01MEhGUGFDSmNtMld5eFQ5M0JCUVRN?oc=5",
-          "time": "2026-05-13 20:27:37",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "金門榮服處賀榮民當選模範母親 表彰慈愛無私奉獻精神",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5yc3FxcEhEczFnYUxFV050SDA0UkVJa25pbG52cktlZGI3UnlzSDR2U3ZvOXlQWURRU2JXUVVucWdBTXJRMUU4ZFVodllWNENMblE?oc=5",
-          "time": "2026-05-13 20:27:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "上海啟動赴金門馬祖旅遊簽注申請受理",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4cXlWbWwtdi1sQ2F5d0RRRks4VGI3Q0Iyd2MtYkFDR3pLZm1tQ284MDBzUV9hcUZiSUFIZ2NMTGhmWVhacGVQVjd3WjlsaUp2OWU5cm9Mdk1iRXBBeE1uUjQ4RjFRY1l1dzdNeWR2LU40QQ?oc=5",
-          "time": "2026-05-13 19:26:15",
-          "publisher": "Google News→香港商报",
-          "severity": null
-        },
-        {
-          "title": "走進金門總兵署",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8zdzVORzljc1VQdW5Xb2ZhZVBKekNzVUhuNzl2NnpOVkgzQ3A0NUF0UHIwcUhYVU5qTVRWVmcxREkyVWJweWxiMw?oc=5",
-          "time": "2026-05-13 19:12:00",
-          "publisher": "Google News→peopo.org",
-          "severity": null
-        },
-        {
-          "title": "上海啟動受理居民赴金門馬祖旅遊簽註 申辦出行細則公布",
-          "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxQRjE0VUkxdVAzS3Fsc3FzMW9tQUtGLU5ubHJGb3ZQRFF0azljNUxybHRmcVYxSUNINzBUVFJ2N2RmcWdjNkF4WWFvZEpDcGJmaWJsSEFkSHI2U3p5Q2IzVnR2YzdlSzVhalluNU5vT3FXY1pJOHFYenRNUWk2VzlnZ2p6NE5TV1lTaExlUnpRdVgwRzNCa1FKMjR6WGNIQ1JfXzhYdGFYU05sX0M3R0ViNWRMelhVMkFhejRsc2JIdkRETDduV3Fzd2dvaVB3VmpyWE5sa243OHNjYTJOOUNjR19TMnhMSDB0aXNsMFI1a18yamVJU3F4VW8tQU0wczNwT1ZXN29oNEZ0WHJlV1BORFFabWVQWndZVm5yRkthT1FVWmtxb0xOckFmM2hUQk5JQUxtbnlYbkhzZTFsRncyS3dzck1rN1NReTRFTnE0dVJBYlJYa0VSaXFtWmw0eFNQTmxNd0F3YzBnZk85dWN4ZllZLWcxRXNBUnZpOXpIQjlLOTZXQ0hn?oc=5",
-          "time": "2026-05-13 18:02:13",
-          "publisher": "Google News→橙新聞",
-          "severity": null
-        },
-        {
-          "title": "上海客重返金門！首發團11日抵達 金門縣府急赴滬廈搶攻陸客市場",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80WGxZTzBxSThsSWYtRHBfZ3RGcDE4ZDZpWUFMdERESDFwakg1ZDFmR1RIMzA0dm5Ub2oxMzF1a3BZeTFOZWdvbGdOekNiU0dXeVlqcUdvTUw?oc=5",
-          "time": "2026-05-13 17:45:00",
-          "publisher": "Google News→梅花新聞網",
-          "severity": null
-        },
-        {
-          "title": "金門迎上海首批遊客 縣府：積極拓展旅遊市場",
-          "url": "https://www.cna.com.tw/news/acn/202605130266.aspx",
-          "time": "2026-05-13 17:37:49",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "金門建築透過Equinix推動香港及新加坡 邁向「智慧建築4.0」",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rRkRDbTZDeDhBZ05XZnVyZlZ3ODQ5UC1uVWN0VkJ6ak0zdVVBaG43cV92TTNkY3c4ajhselAxcHpuMjFhSGlDTEtmZndCWWp2M0IxVkZqZkcxcklDMGs4?oc=5",
-          "time": "2026-05-13 17:26:00",
-          "publisher": "Google News→IT PRO Magazine",
-          "severity": null
-        },
-        {
-          "title": "首發上海遊客蒞金旅遊 金門組團赴陸加強推觀光",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ScFpscnhzcDU2aUNFSlF0OEtaWXlBRDRGbkRCYTJnNXdmYVJxWmR6U3JRaVU1VVN5eG5Yc0xMWlpxZDVtdUx5dnBUVGJMaFBZUFByWU4xU0l5bGpaTTdSRmdUVEpiYjI2N3Ruajhn?oc=5",
-          "time": "2026-05-13 17:03:10",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "金門地檢署榮譽觀護人、更生輔導員聯訓 強化輔導毒品個案能力",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNVHRfRGxaMUJKTGtRLW5XeXlQMWFCTlNtbjQ2bFNUMklGVklUYm9hdjRkN1I1LVFzUTAycnNNQXYwRDdnYTZTbmI4T20td2djVDhYQ2swMVZoM1Q4ZmfSAWhBVV95cUxNY1VjSHFrdzlkRXI4SWNZV1UwNmlqMFRJc3VOejZlQ0ZnS3kxNTJmUWYxdUtaZUJfNmFkR1BtRG5Dd2llN3FhRHRSUmhGWlowNzVhVE1QcTF6WmVJR3U1RHVPdHJmWmJOdA?oc=5",
-          "time": "2026-05-13 16:02:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門副縣長陳祥麟率團赴滬推介打造「滬廈金」旅遊黃金線| 兩岸要聞| 兩岸",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rekJiSTVScXQydm5ITDBsUGlhcjVQSDFibzRJLWhXeUlqMnFLUkxHdlJQZzNCU2V4Z0FsOXc3R3N2S19iM3NNNERiMGxkYlRa?oc=5",
-          "time": "2026-05-13 15:55:02",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "上海啟動赴金馬旅遊簽注申請受理 金門縣府：首批上海遊客已抵達",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1RazdYdHk2cks1NkUtQkdla2hpdFg2UW5EcEk1WWcyaE1WNVFQSEZHUGdNcTNVYi1sUzM2UzhJWGRjcFNIVkIzVU10SkpkMkxRRjN2amJiR3dWR0hBdmE0c2c4S0ltcFdtTWVoMHlOV3Rhd9IBVkFVX3lxTFBERXh0am9Yd1dnRE9wMVNnczRKZ2R1RmRBVWRMNkJUUzJCeTlnU3M4VGwwczZ2Zi1reW51emc5TWdZdFZrTlZYQkxHY2lXd0VXRFliOGd3?oc=5",
-          "time": "2026-05-13 15:27:33",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "上海啟動赴金馬旅遊簽注申請受理 金門縣府：首批上海遊客已抵達 | 政經焦點 | 要聞",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3N1RyYzFTaXIxanlFSkl4QWhJcllSRUp3TVFyUXV3bW9MdlhzUTV0WEItNk1kaEU0WDZTcEQ4b2xkZWFpeDBFbVlfaGl2OUhZUzFNWXI2Y1NUQQ?oc=5",
-          "time": "2026-05-13 15:27:28",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "上海啟動赴金門、馬祖旅遊簽注申請受理- 神州 - 香港文匯網",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5LeEx2Y0VZZjVtZkNLZ2oyWmd1VG43alVzTThDc1hRaG51Z01hVm1QTXNqaWtXNEhjWVlhVmxYdnpBV3BlQ3NhaG9vOWZYVUpDOFBDQVprZGs0WlpzOTlvU3JrR09HNS0tQ1ZjaS1wT0xoOU1janZz?oc=5",
-          "time": "2026-05-13 14:54:57",
-          "publisher": "Google News→香港文匯網",
-          "severity": null
-        },
-        {
-          "title": "金門港旅運中心火災搶救演練 驗證跨單位協調機制與應變能量",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kbzNiVmg0RmZnMUtJX1lCeHV3NkxJWWRsY1c1ZG1JcmF1S3lBT3A5ajBsRXJPMkNRYko4TlVlc0tOMzZvaTBGV2s2U0laYzBsSHFCRXI1WWxjM1hkX2EtaDAtUzctd012aEVtbEJR?oc=5",
-          "time": "2026-05-13 14:53:44",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "台灣人65歲領勞保，移工10年就能領勞退？查核中心詳解真實制度：移工退休金門檻超高",
-          "url": "https://www.storm.mg/article/11131077",
-          "time": "2026-05-13 14:23:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "弔金門古戰場",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1naFJ5Z2VCVjgxcF9xQV9IT3JuaU9SQkFMZFFPUENZdGwya0tILWJQbm9DUWRmVjhnZzNGRjRjQ3ZxcEFQd3NyS0oxZXJ1Y21zTWNXOUljY3VseXgzYVhQcF9n0gFnQVVfeXFMTjZoQU9vaVAxN3haSE1Cc2dGYzJmUFNHb21DVzBKaFFKS1FZREFqbnhnQkRuVE5SVjNLVWNiU3c5Ri1jUFNibWpYRFRwbjVEcFMwTTlqNnc0YkJPcUNfejk2TXdzbGhJSQ?oc=5",
-          "time": "2026-05-13 14:00:00",
-          "publisher": "Google News→世界新聞網",
-          "severity": null
-        },
-        {
-          "title": "金門啟動托育制度優化！打造友善生育環境 減輕家庭照顧壓力",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rQnctNUxKZVBmLVdtd1BUSF9xTUp6U0xacGpxenVJM3pMcmJjdklEME9hWHJBRktqMzZPNk9keXFMcjJrS0s2eUo2cm84LVhjTUV6cTJkX1MydE1CQ1RJQXkxWk9NZ3NRTTVPdmdR?oc=5",
-          "time": "2026-05-13 13:46:09",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "不只有戰地碉堡！住進金門歐厝聚落，洋樓裡聽南管，發現遺落半世紀人情風景 專訪金門老屋民宿「時苑」負責人洪亭棣｜微笑款款聽Ep.176 - 微笑台灣編輯室 - 微笑台灣 - 用深度旅遊體驗鄉鎮魅力",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8tbTkxU3R3OTA0aGlFOXpfSDdkX1ZfSTlqSUM5c2Juc255WGF4RE1KdFFDbzdvbjF2d2xKdURWWHpmTFlmSkJmN1hhYm8tc0NKRjd2dg?oc=5",
-          "time": "2026-05-13 12:40:43",
-          "publisher": "Google News→微笑台灣",
-          "severity": null
-        },
-        {
-          "title": "金門托育量能持續擴充 縣府鎖定校園增設幼幼班減輕家長壓力",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HLW8wRG5YMF9PYUZHRnRfZGxQNDExTzZiTzZXMks3Z0gwblIxSU0tM01waUN2ZS1BMVVHdThvUm41Z3FqVU5MWWYzZTMtbHB50gFWQVVfeXFMT184LVloUk13VWw4V0x6by0xaEZSMVpfRUs4VmtnSmVfZTFydjZKWkRSUFRzemdCeklLZHVmbHVMc2t2TXlMbElLbzU5ZDZRc0lrbFF3OFE?oc=5",
-          "time": "2026-05-13 12:29:25",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "金門大學學生攜手兒少協會 翻轉學童性平視野",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13MTllMWVLVVpPUk0yeUxuTUozZEpwZnY5c1VhZkFaYmMwUEc1dXRVT0hIdTdkbDF5TGNZX0h2UGhEV1h0TGdtRnNReXJNdDhhLWcycC1lNU1ya1B3RkHSAWhBVV95cUxQbVBNa2FMV1k2SDNGaDZiU1FuZDBsVThhYmhmbzNoczJlVmNZNjY1WVZUUUptTklPUFdsUVZTTnFuYWllVzZBVjdpWU51U0o0SVl6UzY2WmVIdjFMdy01MFZES3d5ZjZFQg?oc=5",
-          "time": "2026-05-13 12:23:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "金門婦人經商匯款險遭詐，警銀合作成功攔阻女子匯款",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQbEdzSGFCMlhfZjJmZEZFeWZvaTkwdGRmMExSOF9VeVJ2N1p6bWtLQmxFX0JEdmlfZXBkSXkxOFRTU3RWcnctcWduODFCLTBEVHRiTHRQbi04bXZacjl4NXVBRm1xYkI2MVZ2UHdwcEtuclZkdlpYSVd1STR1ZG42RzlZc1RLclM2UWRVQTg1WWM4aGdWUlNOUFdvbHJnc2UwU3ZQdjhvdnFKRjNyWS0zNU45d0NZenJaVE84ZTNQcHJ2X0MtVHJjYlZnOE9DdWdpRFg3VnNfUmJfZkdXZzhjMUlHdVNBdWhzRXlCX3NLUE15bDFpMkpIT19WT0hZWE93WHV0dVVQQ2NFb0stVUhuaU9Ecy0?oc=5",
-          "time": "2026-05-13 11:48:47",
-          "publisher": "Google News→金門GO資訊網",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門縣政府116年度施政計畫先期作業啟動 首場審查聚焦城鄉建設與民生工程",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWk5ub1J4N2J4QThMZ1JUblROYkw3dlJSNWZFVXhlUGJCLVhvN0ltbFU5YUJUVkMwQ200aGZmcWttOW5ZZGNLejgzVm1wa202RjRiZndOcFBpX1RNWlJPOXBuOXp6bGtsd2tSa3pPeUVlRnkzTHlXYWFNQzVudm1hSUxONVBWUjd3MTJMQUVoVmMxNjhMRkJCdVRWSGxsMmVPRUJGZDhSR2d3TlNrd015eEZrT3R2QWNlaEJDQ1RwTmlCU1FPQ0tBMVhTcF91c0pKUGhwUlNvVWFkUHQzbmlCdVc3SDhwWV9LNTJCS09EMTZwelJJUGlrMTU4T2tuN2paanJ3N3pfeUM?oc=5",
-          "time": "2026-05-13 11:45:16",
-          "publisher": "Google News→金門GO資訊網",
-          "severity": null
-        },
-        {
-          "title": "金門「太武操演」實彈射擊 標槍飛彈首亮相阻敵搶灘",
-          "url": "https://news.nextapple.com/politics/20260513/BAEB03519B1B372BF19E07ED95851D6C",
-          "time": "2026-05-13 10:47:28",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "上海啟動赴金門、馬祖旅遊簽注申請受理",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBueE5YNlJ1ZUhELU92N21CYW5qYmhZTGx1dElzeXAzdV9rZFFuMUtWSkZsdURmb2tqdmxUVnhfbDE5UDJyd2pJSkRPZW1JaXc?oc=5",
-          "time": "2026-05-13 10:13:10",
-          "publisher": "Google News→news.cnyes.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "中國上海居民可赴金馬旅遊首批遊客抵金門 縣府：積極拓展旅遊市場",
-          "url": "https://news.google.com/rss/articles/CBMivANBVV95cUxOV1U3SGs4SEp5Y2tFTDQ2VkRFSURSUEFxNHNmSjJuVzg5Mk5kVTZpZDNreTVHNzRyZGhyVC12cERfbXQtYzk5X3N5OVlNSldJNkFNU0p5NUxQa09KRzloaVdBQlU2WVVaMjI5MHY0TlhWX2t4NExYZGRBc0ZObXdqUGozYWc0bllDVF8xeHhKelV3MzZHNmVkWFNWb2lKRDgwVzhhWXp0NVJZSzlmVmNNV1pCem5Pc2ZyY2Q5ai1jUzRZQ3Zfb1d5UHFDS0Q2UVg1cTZmZlQwWVVLQm5oQ0haOWlFbmNpQUR4NUdMUzlzb2dNbklraXRBVlNuNWUxeXNWMTRGbWprbG9PUWh1dzMxSFVaalQ3LWg3QzVUT00yaGZ4T25MS0Y3LUFXRVRuTmRGTHlZRzdhdmp1Q29HbTBjalRzTWp2dGFJQkRWanA5el9kWkJ1ZUNmcGZhdkdFZFB3UklZTU9pdF90U2N3azRDdEJnbE45YlZ1UGJhcm5xc2NhWmZ5c0pkekV0TzBtS3ZoRzZtMUJfS0hxSjB3V0ZPNThLTk1WQzR1eFgtenMzWUREWHN2WHJqbm9hZ3Y?oc=5",
-          "time": "2026-05-13 10:13:10",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "金門副縣長陳祥麟率團赴滬推介 打造「滬廈金」旅遊黃金線",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Gb1FBNXVsWllUU0dUNmxhOGVUbUVKajFYZ3FpdVB3ZGRVemhUZ2RWVEJKU1pWR0tIRFhQc2xCUHFuVU1pT29YNWhKbmdtclVXQjBHRW9tZ0dfUdIBX0FVX3lxTE81Yk5DZWxkMzVCMUNkNUVKNzlMUFBSNjlxQ2NnNmpjMS0xVXp5MDlZclg1YU5NakU1TzA4NEZJQmxBZFZJMmF5Qk15SldkQUx3bVRIcm11dkxONFlyOHl3?oc=5",
-          "time": "2026-05-13 10:13:10",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "TVBS信望愛永續基金會攜金門大學 深度剖析金門 AI 智慧未來 | 產學研訓 | 商情",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1QMTk2bFlDUURHZTBTeFRWaTlaVHNpN2xUZVhNNjBOZUFrYU1nZmNxMzBNR1JLQ3o5V3lKbHR2ekFSQ3drc2VycklXQU45RzhlWktxMEM5SGZkZw?oc=5",
-          "time": "2026-05-13 10:03:05",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "陸軍金門防衛指揮部今天實施「第2季太武操演」，清晨起在后湖一帶展開大規模實彈射擊演練，動員金門守備大隊、砲兵營、支援營及兩棲偵查排等單位，模擬敵軍登陸進犯情境，運用各式火砲、戰甲車與反裝甲武器，編織灘岸交叉火網，驗證防區聯合作戰與應變能力。其中，首次在金門實射兩枚「標槍飛彈」，成為全場最大亮點。",
-          "url": "https://udn.com/news/story/10930/9499223?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-05-13 09:20:51",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "上海啟動赴金門、馬祖旅游簽注申請受理！辦証指南→",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxdDIxQmVQRmJ6dTRVMHY2TWRiN0VCZ29DS0dFQlBtWXNUckZvZnlPYnZ1RHlfcjFIXzN6dTk3VHJLcHh0azUzMTlmbEFkQWlzMldQdUVBREs1eXR3OWhxM3hQRkR2cXZzeWd6WFB3TUU?oc=5",
-          "time": "2026-05-13 09:17:00",
-          "publisher": "Google News→人民网-上海频道",
-          "severity": null
-        },
-        {
-          "title": "金門太武操演實彈射擊 標槍飛彈、8吋榴砲阻敵搶灘",
-          "url": "https://news.nextapple.com/politics/20260513/C93E93314765FDD3E2AD6D93C1284621",
-          "time": "2026-05-13 09:16:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE14VlFZQjFKLW9DSnFGbmxrXzhkeUFNTVdVdkR4S29NNHhDSkxwZEdQallXWk1VR1BCUFRVT0I4TFF0dXR6TWFyTlowWVo1NUJSd3c?oc=5",
-          "time": "2026-05-13 09:03:08",
-          "publisher": "Google News→放言Fount Media",
-          "severity": null
-        },
-        {
-          "title": "影／金門太武操演震撼登場首度實射兩枚標槍飛彈| 軍事 | 要聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yUEQxN3U2c3VEWjFRQ25TS0hFTnc3NkU3TkQ1cWFkaFRfUnA2djUzdWM5WU1oTHVlZVFmMWJqYWMxQ2NfS2ZsODJrNldEUXA0a0E?oc=5",
-          "time": "2026-05-13 09:02:34",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "影／金門太武操演震撼登場 首度實射兩枚標槍飛彈",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yUEQxN3U2c3VEWjFRQ25TS0hFTnc3NkU3TkQ1cWFkaFRfUnA2djUzdWM5WU1oTHVlZVFmMWJqYWMxQ2NfS2ZsODJrNldEUXA0a0HSAVdBVV95cUxNVjg5dTlvUE1tRklTRm5ZVGZxVjg5X3B0SUxBVW5rQ2ExLTVWRXNwT2pJUjB4OWJpbHhaaG1wYzBvTXpqQTNIeVB5YlBjajJCdVdJVWN0eTA?oc=5",
-          "time": "2026-05-13 09:02:34",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門拂曉太武操演 對海射擊模擬敵軍進犯 (圖)",
-          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOZWlZQ0NKWmpteXV0M2l2VTZ5bms1MU0zYWVVbVNUQTZSQ1NDNDBUd3hHcHpLS1RlbnlUY2Nib0s2OVJLS0lKRHhBcV96VDlLRTNUY251WGwzX0FsRGI5TDl6bVRDaW9uRnNySlVEbTdWajh2YzNNRnRIOTlQblR5MnVQdGxzV003SlFiSUtTYzJXb05UN0dQcG0wTjNLYzQ5dUF1ZW4zRmdrOGVYZzVRX1lLM2o1X0g4RHFuLXpzbUliT2NZVFFZV2s4UDZadjFUWEZsaGRKSTFqak9pMkxFMmEzd1hrOTRtb0E5d3BMMjBsSlVKNnNVb3EtYjNhUWRKeUdDeWVFbUZWNmJwV0VVRENxTm0tTzhRTjZaNGtSQlhJRUlvLTNqRVltNGFJbThkTWNyLWR1V3JHZw?oc=5",
-          "time": "2026-05-13 08:53:59",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "金門太武實彈操演 交叉火網阻敵搶灘",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KVl9tOXpJbm9pekhoMmZpLUYzYXQ5MVlhVk5RZjNYTC1JWW11dFlqT05naVdldUJRMk1LM3BOcHIwZUpoVzQ1WlZQSVlmRlJ4LTdJ?oc=5",
-          "time": "2026-05-13 08:48:00",
-          "publisher": "中央社",
-          "severity": "yellow"
-        },
-        {
-          "title": "金防部「太武操演」 標槍飛彈首度在金門曝光",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90TXVrNzJVWmVELTZ0bkk1SlRnY09VTkptUkJQQ0RUZUtmX2lWXzJrQlVHeURMbnVEM093SnBqbWh0WFViUUdtbW5QaW9QeGhOczVjUk5NZjYzc3h6YkdSZNIBZkFVX3lxTFBkZl9YZDVUWHlUMTd2d0otS1hWZ0o4dElJQS1sclBaWEI4dEdhcHI0Y2VzTU1pSnNTSHhwdnF4OTdoZ3IxMURCWV9iUVJ5QXEwMGhvRjZMZW5sbWRsaGRkamVIRTRVUQ?oc=5",
-          "time": "2026-05-13 08:48:00",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "有片／太武操演震撼登場！標槍飛彈首度金門實射 火力阻敵搶灘",
-          "url": "https://news.google.com/rss/articles/CBMi6ANBVV95cUxNNy1FZUhFTGFlZmY2Ni0yX0x0Wm1vUVNNak9sRUlxN2pHOTc1d3VJNzNUUllKNi15WnZVSWtjQUFUYnBYM0EyWjR2cE9jQkRjakoxaURnUEx1NFRlaE5STkpUQWVkX0ZHUGp4MGFMRFJLckRabFVDYmplTERZRHI0V1NKZFg3Q21HYlgyNWhMWVJXSXJvSGV4bk9mYVNzZTZjOURGWXQ4dEROd05pbnRKdk9VV243ZHd6dlU3d29wSXBpd0k1WktnNEh2X2RCcHNWS01wTk1DMEMxbFJ1bW5zVVRMM0NGd1VERFpxbGduRFgxU0hmVHdWc1BmTWJxYjhMTjJuTmpRMGZBelBLaFEtbk5wRVJYZVJCbmlKWUhEYzVwOGNRUHRHc3ZOVjFHbVprdzBteGRIMzdBWW1QX0hBb3RFcTFRbnhuYm1EOFloRFZ4N2V4WUY0c0tkNTZQd1BWd0E5NWo2RWhYeHNqdjlQSUFWNVpnOUR6aTcyOENnZU00b3E3NjlPTVo4aFNVYWRnUURuMVZWV29jUWtyQm1uYzlyUFo0Vi1JYXVibVNxci1peWtXT0VuSFRnRG5JS3lzaDZIakZtNUpNbzR5Y2VuaDdnX1hMdjBtcVQ4cDJaSFRrNGg4NTVZbQ?oc=5",
-          "time": "2026-05-13 08:09:00",
-          "publisher": "TVBS",
-          "severity": null
-        },
-        {
-          "title": "-AI導覽結合即時服務 強化在地旅遊體驗 縣府推動智慧觀光有成 金門行動旅服持續升級",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xOU5TODNMRERwR0Z4Vk40RnFSeVItTEpBei1YYlY5RjAzdnFhbkJDWlN0cVA1ZEIzejZZLW1LUjFvNzI1dUVOai1tM3BFVWU2c0pQbm5XN3Q?oc=5",
-          "time": "2026-05-13 04:46:03",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "金防部「太武操演」 標槍飛彈首度在金門曝光",
-          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%98%B2%E9%83%A8-%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94-%E6%A8%99%E6%A7%8D%E9%A3%9B%E5%BD%88%E9%A6%96%E5%BA%A6%E5%9C%A8%E9%87%91%E9%96%80%E6%9B%9D%E5%85%89-004851205.html",
-          "time": "2026-05-13 00:48:51",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "金門拂曉太武操演 對海射擊模擬敵軍進犯 (圖)",
-          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E6%8B%82%E6%9B%89%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94-%E5%B0%8D%E6%B5%B7%E5%B0%84%E6%93%8A%E6%A8%A1%E6%93%AC%E6%95%B5%E8%BB%8D%E9%80%B2%E7%8A%AF-%E5%9C%96-002435305.html",
-          "time": "2026-05-13 00:24:35",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門太武操演實彈射擊 交叉火網阻敵搶灘登陸",
-          "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E5%A4%AA%E6%AD%A6%E6%93%8D%E6%BC%94%E5%AF%A6%E5%BD%88%E5%B0%84%E6%93%8A-%E4%BA%A4%E5%8F%89%E7%81%AB%E7%B6%B2%E9%98%BB%E6%95%B5%E6%90%B6%E7%81%98%E7%99%BB%E9%99%B8-001849709.html",
-          "time": "2026-05-13 00:18:49",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "金門尋找開鑿翟山坑道老兵",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQNHFoOEdOeHhUSFByb0NDWWNfOF9JM2JLdy1EcGYwUTAyR3lmVC1CTTRqWTRBNDZuOWcyOGJTVDBsOFkzWHpQSjRtZzVsZlhF0gFWQVVfeXFMUGkwdDByZGNySUdHa0Y5eU5JUTBsM0Y1TDRfWS1pcWJ6dWVrcGlHM0RaSXN1cTNIUGV0MHZ5bzJhUXhCVkJ6TzUxd292LVFjSS1XYTFsVUE?oc=5",
-          "time": "2026-05-13 00:16:39",
-          "publisher": "Google News→UDN",
-          "severity": null
-        },
-        {
-          "title": "傳承百年指掌藝術嘉禮風華-金門傀儡戲校園巡演6月登場 | 勁報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zVkJyMEJ1aGV5UTRiVk5BSEVsVlVBTVRjblRibjJ6V0RiNWxlNjk0SVB2OVNxQy1aMkNic0o3OVhkMlRycVhnZVc0Wi1rQzFtSV8ycktB?oc=5",
-          "time": "2026-05-13 00:08:09",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "-水獺最愛吃吳郭魚 金門生態調查揭新發現",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ycEt5djlnM0QtN2NuQTd6M3VLa0o1WTJxd25UN0w3aXJheF8wWWNJeUh2N0hwc3JBM3BjWThST0w4S0Y2eXNQMXFuOTNjLXFPQlB0SUgxaEo?oc=5",
-          "time": "2026-05-13 00:07:30",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "-袋袋熱血守護金門 警局前捐血車募得136袋血液",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SNTQzUnZwbEFqcmlZN243TGtwUG03ZDNXQk1VVm1odUhsa2NRUExENUl0TzVFa05fUnlIOTJjTS01eThfajZEWG1YNy1NRlROb3dDVjdYdHo?oc=5",
-          "time": "2026-05-13 00:07:30",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "-DIY高粱帚和鹹雞蛋 農遊金門走入風雞村的日常",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9SX1JxWHRzVmtKTC1ZMVlRNGh0SGduQXUxQVVaLTB1OVhjQkczbTJrUkd5UHpHLUFsN0oxQ0w4dEpjZWtFZC0tNHcyQlVVZHM1YUk4REtGRXo?oc=5",
-          "time": "2026-05-13 00:07:30",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "-金門前進高雄旅展 祭出7大觀光亮點與限定優惠",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uRE1Jbm9DZnRfaS02bXV1SzY0dGpydFJ5WGNMVWlwVzNpVHRXZjdheUs1SnN1LXlJdzlmcFpzMlZLZnQ5WEE0M25DUkRVZ2ZTaHpTSE92Rm1fQQ?oc=5",
-          "time": "2026-05-13 00:04:17",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "-AI導覽結合即時服務 強化在地旅遊體驗 縣府推動智慧觀光有成 金門行動旅服持續升級",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tUXBhekU3ZGNsdHpQaC02TWxhb1RBaGhmR1I5eEZkS1hEYnJ3V1dJdUxObXlMXzlDeHFpYTVNNEF1QnAyLVRKOWRPNW13UG9JTnlPTkZEV2hnQQ?oc=5",
-          "time": "2026-05-13 00:04:16",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "傳承百年指掌藝術 嘉禮風華-金門傀儡戲校園巡演6月登場",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80b2xWOVNYMUV3d2N1RGlVVFNEUTZ2dlBQUkpfdFFlYmxaVEZoWGlhUWk5bGFubnNSVkNtb21EX1VNeUNOdVpuRWxHUmNFOUoyNmZTV1lOeS1RZXRTMGR1Q2V5dWdleU1qZFBkZ08wUQ?oc=5",
-          "time": "2026-05-12 23:59:44",
-          "publisher": "Google News→勁報",
-          "severity": null
-        },
-        {
-          "title": "傳承百年指掌藝術 嘉禮風華-金門傀儡戲校園巡演6月登場",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QSTU3THlhR0tUZFhGLVkwUzhKZU52YWgwZ0hwZXl3MFBQWDFsUmYzTEtVWldSdGZIUExpRTgyT01XajhsUFkwR3I3RFdKRnhEZ0E?oc=5",
-          "time": "2026-05-12 23:59:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 2,
-      "urgent_red_comments": 0,
-      "urgency_score": 61,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -75337,9 +74295,9 @@
       "lng": 120.21589807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 49",
-      "note": "24h 命中 49 則（新聞 49、留言 0）",
-      "news_count": 49,
+      "platform": "新聞 48",
+      "note": "24h 命中 48 則（新聞 48、留言 0）",
+      "news_count": 48,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T12:21:28+00:00",
       "news_full_expires_at": "2026-05-14T12:21:28+00:00",
@@ -75679,20 +74637,13 @@
           "time": "2026-05-13 00:41:14",
           "publisher": "中時新聞網",
           "severity": "yellow"
-        },
-        {
-          "title": "芒果產量大增恐「果賤傷農」 台南啟動產銷調節、屏東推品牌",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92Ny1zb1plVnNjWUV5cnhZX0x5VExPdE84Y3dVRWVjOXFRZkVMVHBIaFpvamExdkc0SE9RX3F1bkRkT1Y3WGNEcXVRZ2UxUzVj0gFWQVVfeXFMT0paR0lfTWNlMFhqZ3FkaGFTUnV0MlJQajFCVU5sRTZQYUczQmpScUV6ckQwU05xQ29DWl93UDJ6VHQ1dmJocnFuSERXc1dnSXRmTzBfSGc?oc=5",
-          "time": "2026-05-13 00:00:00",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 58,
+      "urgency_score": 57,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -75704,9 +74655,9 @@
       "lng": 120.5489,
       "level": "red",
       "source": "news",
-      "platform": "新聞 59",
-      "note": "24h 命中 59 則（新聞 59、留言 0）",
-      "news_count": 59,
+      "platform": "新聞 58",
+      "note": "24h 命中 58 則（新聞 58、留言 0）",
+      "news_count": 58,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T15:15:00+00:00",
       "news_full_expires_at": "2026-05-14T15:15:00+00:00",
@@ -76116,20 +75067,13 @@
           "time": "2026-05-13 00:35:00",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "芒果產量大增恐「果賤傷農」 台南啟動產銷調節、屏東推品牌",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92Ny1zb1plVnNjWUV5cnhZX0x5VExPdE84Y3dVRWVjOXFRZkVMVHBIaFpvamExdkc0SE9RX3F1bkRkT1Y3WGNEcXVRZ2UxUzVj0gFWQVVfeXFMT0paR0lfTWNlMFhqZ3FkaGFTUnV0MlJQajFCVU5sRTZQYUczQmpScUV6ckQwU05xQ29DWl93UDJ6VHQ1dmJocnFuSERXc1dnSXRmTzBfSGc?oc=5",
-          "time": "2026-05-13 00:00:00",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 59,
+      "urgency_score": 58,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -76141,9 +75085,9 @@
       "lng": 121.7378,
       "level": "red",
       "source": "news",
-      "platform": "新聞 91",
-      "note": "24h 命中 91 則（新聞 91、留言 0）",
-      "news_count": 91,
+      "platform": "新聞 90",
+      "note": "24h 命中 90 則（新聞 90、留言 0）",
+      "news_count": 90,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T14:44:52+00:00",
       "news_full_expires_at": "2026-05-14T14:44:52+00:00",
@@ -76777,20 +75721,13 @@
           "time": "2026-05-13 00:10:41",
           "publisher": "中時新聞網",
           "severity": "red"
-        },
-        {
-          "title": "高鐵延伸宜蘭爭議延燒 監委揪五違失",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE11Y25walp2a3lRQkhiZlpzNXFfMnFFYWpyaHpId3ZsemxXclRQQnRqcnJodTRQbmM4cTVJa3NfeVo0YXF5Ynh3SXlCOWdzWkhT0gFWQVVfeXFMTnFrVHVmcWc4Si1UQnlMTnNkZlFwUHRoZ21fbmRaaUkxaVJpNkdIUkh3eUotaGY5YS1PSVdFdEJ5WjlxMXZmRTZsZFlNSFZ4QkNfZXJQQ3c?oc=5",
-          "time": "2026-05-13 00:00:00",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": [],
-      "negative_news_count": 13,
-      "negativity_pct": 14,
+      "negative_news_count": 12,
+      "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 130,
+      "urgency_score": 126,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -76802,9 +75739,9 @@
       "lng": 120.314,
       "level": "red",
       "source": "news",
-      "platform": "新聞 114",
-      "note": "24h 命中 114 則（新聞 114、留言 0）",
-      "news_count": 114,
+      "platform": "新聞 110",
+      "note": "24h 命中 110 則（新聞 110、留言 0）",
+      "news_count": 110,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T15:22:51+00:00",
       "news_full_expires_at": "2026-05-14T15:22:51+00:00",
@@ -77514,7 +76451,7 @@
       "negative_news_count": 8,
       "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 138,
+      "urgency_score": 134,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -77526,9 +76463,9 @@
       "lng": 121.46310192378864,
       "level": "red",
       "source": "news",
-      "platform": "新聞 128",
-      "note": "24h 命中 128 則（新聞 128、留言 0）",
-      "news_count": 128,
+      "platform": "新聞 127",
+      "note": "24h 命中 127 則（新聞 127、留言 0）",
+      "news_count": 127,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T15:09:32+00:00",
       "news_full_expires_at": "2026-05-14T15:09:32+00:00",
@@ -78238,7 +77175,7 @@
       "negative_news_count": 17,
       "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 179,
+      "urgency_score": 178,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -78250,9 +77187,9 @@
       "lng": 121.29840192378865,
       "level": "red",
       "source": "news",
-      "platform": "新聞 150",
-      "note": "24h 命中 150 則（新聞 150、留言 0）",
-      "news_count": 150,
+      "platform": "新聞 148",
+      "note": "24h 命中 148 則（新聞 148、留言 0）",
+      "news_count": 148,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T14:38:27+00:00",
       "news_full_expires_at": "2026-05-14T14:38:27+00:00",
@@ -78959,10 +77896,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 12,
-      "negativity_pct": 8,
+      "negative_news_count": 11,
+      "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 186,
+      "urgency_score": 181,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -79698,9 +78635,9 @@
       "lng": 121.6015,
       "level": "red",
       "source": "news",
-      "platform": "新聞 177",
-      "note": "24h 命中 177 則（新聞 177、留言 0）",
-      "news_count": 177,
+      "platform": "新聞 175",
+      "note": "24h 命中 175 則（新聞 175、留言 0）",
+      "news_count": 175,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T15:19:58+00:00",
       "news_full_expires_at": "2026-05-14T15:19:58+00:00",
@@ -80410,7 +79347,7 @@
       "negative_news_count": 37,
       "negativity_pct": 21,
       "urgent_red_comments": 0,
-      "urgency_score": 288,
+      "urgency_score": 286,
       "is_urgent": false,
       "is_catchall": true
     },
@@ -81146,9 +80083,9 @@
       "lng": 121.543,
       "level": "red",
       "source": "news",
-      "platform": "新聞 410",
-      "note": "24h 命中 410 則（新聞 410、留言 0）",
-      "news_count": 410,
+      "platform": "新聞 409",
+      "note": "24h 命中 409 則（新聞 409、留言 0）",
+      "news_count": 409,
       "comment_count": 0,
       "news_latest_at": "2026-05-13T15:22:46+00:00",
       "news_full_expires_at": "2026-05-14T15:22:46+00:00",
@@ -81858,7 +80795,7 @@
       "negative_news_count": 20,
       "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 470,
+      "urgency_score": 469,
       "is_urgent": false,
       "is_catchall": true
     }
@@ -89623,7 +88560,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 10668,
+    "sample_size": 10647,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -92748,8 +91685,8 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 949,
-        "negative_count": 93,
+        "news_count": 947,
+        "negative_count": 92,
         "negativity_pct": 10,
         "sentiment_score": 763.0,
         "articles": [
@@ -98434,18 +97371,6 @@
             "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxOMnIwblFuclNvcFlobkM1M1Bia3A1dVVtRVN5azNHazUxUm91NVdnOFN1MFdLdEZ0WmUwTHJocGxXX3J6MTZ5S1k1bVNOUkdZWUduWTlQOV84WXlpVkNlbzBSdU5MOEYwcXhsV2YtQUxVa18zell0eHByZkJjdXZWSGdZN3FJcTdodjZFMUhxanlRZGtCWC01cmhHel9GRFBzNGxKcEVzaU9vVnZhSzAyMDRSQTFRMzc5OHd4OTM1SFM5Y01aejdCdlY1M3NITTMxajVkSHpXZllsOV9WYjNyRllNZkZUbEgzT0JRTVQ3eXk3VDlJNVVMTEdHc2VGM3hzcmU5MzhmdktoMEZ3cnVTc0F5cmNJYmtiRTg1QktaRWV3bmctazhkeFpSdHdpN3RwdUUySzh5M3NFQjBkRU5aaS13anJ4TGNqOG4xQVd2TXZQWGRad0lXa0hyd01OU1JkLVlxN20zNnRtZFVMOGF6T1U5Q1NiQWFtRzloZEQxOFd0c01TS01EX18yVExZVWE4cXE5N2tZX1N6M3dVQkE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
             "time": "2026-05-07 00:11:10",
             "is_negative": true
-          },
-          {
-            "title": "鼠患是台北人真實的擔憂! 吳沛憶籲蔣萬安：儘速做3 件事 - MSN",
-            "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQWFR0aURudktmd2I5bDhoM21ZTlpTR2VvVFZiZE9NUjJaSzdsOEs5U2ZuLWRVSUJaOU1kTXZMSzNYc2RyMV9SREswLVROYUNsajlxdzRreGVpcndVbzVZTTFnZXNtRFQxNm1JdDFEcTBVNmpScC1yUkJ2QUxoRWtoOHNGMi1STmJNUGlXcTBweVZkaGVham9fZmZoNGZjYmFZTzRIdEhCZDZBS2RXY1pRVGVaYXFSWm1qckVaYk52SXlmTHJtakR5M191aXNJZzlKcFZNSDk2MnlaT2Z4ckZwZWJRZFIxN0Y3ME12QmVESzU3WllnUVBZem53S2dIODRtS1pFYVRuempMeFJrZkMzVDNXODJIS294UnBmUmhxWlB6SmFFWjNzZWJTTmY5a1J1WENCY3NPeFFVMXFXeVRNaHZFUUZORjlfOEE1MVJGTmVnV0xZaFpzNTVNV2NtZXh5ZlprcmZaUktRMXo1anpJU3ZZanZmZzQ?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-07 00:07:50",
-            "is_negative": true
-          },
-          {
-            "title": "4月縣市首長聲量排行誰進榜？蔣萬安居冠 暖男竟好評影響力最低｜每日調查 - 網路溫度計DailyView",
-            "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40UHFQbXMxMllMaURtZFZEZFB0ekRNOEozMGF6TVZ3Ql9ud1Z6VndPbk96dXVJUDRmdy1Wc2Z1VG9MbS0zZUE?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-07 00:00:00",
-            "is_negative": false
           }
         ]
       },
@@ -98720,10 +97645,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 462,
+        "news_count": 456,
         "negative_count": 76,
-        "negativity_pct": 16,
-        "sentiment_score": 310.0,
+        "negativity_pct": 17,
+        "sentiment_score": 304.0,
         "articles": [
           {
             "title": "高雄出手護兒少 陳其邁要求跨局處整合數位安全防線",
@@ -101459,42 +100384,6 @@
             "title": "「安鼠之亂」高雄警戒! 陳其邁下令跨局處全面圍堵 - MSN",
             "url": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNbzBGTDI2RzJsX3BZV2JPNmg3Wl9fMXZ5M1puQ2ZzR3F6ZGxtQzMtUTlXUEJtTWJoZER6RTA2bkRNMF9oY3hYTVFHSU5wNzdGMUZxNUVVbXNLMU9aWENxaGQ2OFI0X2VzWUpUU2NpVENIWkhHM3YzOGFiSEFUWURGNnVwdlVTU1R3M2NVT2ZQb3FVOUNlbXJCRkdhQWxNWHhKY0ZHYXM2TFNzeUZuWkx6X1hQaU13VjdVRUQ5bnhiZUl2OEtuU2pPU210b0czcEdVb3hIS2lkdXF3TzJZVE5jNmdUVDlLNHdnSzFSWVI5TjM3TmZkdHZpRHNjUTM5WGxnd1YtN24yNVFfMFdyQ1ZFLTlnVlh3M3dhbzRyRnRuTXRhUTVCTHdyMkFjLWpqTlc5amVkTGJnYWYwZDBCOVF6SnBHY1gyV1VzTE9MRDE2dmgwRFBmR1VRa2xiV3V0OUc4TlBUR0N1ajhKYnJ3VXNTY1NWc2o2MTBoZU1mdDNuSmhTeWJsWFpHNnJEeGctbl9JT0RkYUJUZkpyZUFQSm5tS2VDZlBLSDdQcmZWNWpTbjVhNzdZSzc1ZDNRaG1QQklkaDR4SV9wRV80cmh3cHh2Q2ZFOFJQRXRySUFxbTM3c2laZTJva0E?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
             "time": "2026-05-07 00:54:31",
-            "is_negative": false
-          },
-          {
-            "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-            "url": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxObGtTU2w2cTU4S0EtZnRaLUVvckZjcTFYbGdVNjh3WmRqVWxsbkd6NzI2ekVsaUZfVG9tWTN5YlgtWkRxZXZGbVVyekxjRFE4Z0JXcV9pSjBET0ZjUXd1T3FxN2t3aW91Uk5hSGcyNGdDdWFsdkFfLTB0Z0czc29NbGN3aE9uOTFjV2tYWU9jTUNMd2Q1S0NEaVIwRzNEalhDcUpsd242a0xZOU5YVDZKY083ekFJVEZNSzZmdzltQlVBSmpVRUV5NkFlUFVWQTR6MGl4MWM2UzZibmdicXFCMHhaUzI4em1ZZ1M1RC1IY3ZxX0JGS1Nmc0d0VFQzaFBsRkJkYWpTeDFYcWlGeFRZVFRvbklhdlFYbVEtQ1VqNER6NmFxQ1M2TGRTMGt4VzlKXzd4dTVBbElnblg0R3hjajFSa0VKekhMR1pCYWlyRFhQVlJ0dGkwbkZ0Q0lKZExjQUk3OG81MGtWTVhrM2RIN0E3aVJtRFdaRkp1czVrR3JlTUttS1M1U2hmTEtvMjdhVzhPa1JIM2ZlYkRySm9lWXE4eGtMZFpjNnA1eG1FM1lhbGNvaDdEcmhwNzF5b0gzWVE?oc=5",
-            "time": "2026-05-07 00:09:11",
-            "is_negative": false
-          },
-          {
-            "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔 - Yahoo新聞",
-            "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-07 00:07:00",
-            "is_negative": false
-          },
-          {
-            "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBsQjJyRUhOdE5iU3JhWDB1dHZGUDlMU2lqdXdPd0E0MDl6RzMzV3NTX0RheXJoR1pVOE9qdFJsOTdPOUVWNXRiS1lQY3ZIcU1tT1E?oc=5",
-            "time": "2026-05-07 00:07:00",
-            "is_negative": false
-          },
-          {
-            "title": "高市府提追加預算14.23億元 陳其邁：聚焦四大市民優先策略 未增債務負擔",
-            "url": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQQ0dGUS1VWXVvXzFDTXhoTExUM2tuYjByazZuY0pmamNYSGROQURNcUZYNkh2VklLRUl4V1IzUVVtRjdxRzlGa2JGMEVNd09WMjhsamJabXlZeWhid2hZQkNnVUtWdE1YaGtNSXA2UExtT21vcXZhZGZUaUp3cnl6UVFUZzNybkYyV2trYXd4dGFKR3JiemNvQ2hVcnA5d0JuTUVrT00teTZTNVJrY2JZU1Q0MGJzMWU5TEFWeC14Q3hZUHRWaUVJSm16a0pJQXVRYlhfRy1hdVA5bzV3NVFVTkFSUXVGbk1kZEJ5TjJReHU5el9vTFp5VWwxelBra2RROU5nS1VSeEk0QjI0NjhRUC1BTlhYLTAyTWhhZjE5NFdWZzJVdlk5SVVMemZzcnd4V2lHN0ItWHJhTlptbmVaQnY1Tk9SZ3pGYVVuZUZYVDRRRmVDZnhQSDVqcUVMTllOQ3FsMUgxMkc3a3g4WFQ2WE9lODFpSVgtUldqeDJLUGV4bFVuYk1NaHlTMk9sRVlJNlY4N0l0eUV6b3ZONGZsaUtSdlROb0dlZFM1ZHVLTDVVcjJvdzhua1Bn?oc=5",
-            "time": "2026-05-07 00:07:00",
-            "is_negative": false
-          },
-          {
-            "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看 - 蕃新聞",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
-            "time": "2026-05-07 00:01:00",
-            "is_negative": false
-          },
-          {
-            "title": "高雄追加預算14億拍板 陳其邁推四大優先政策一次看",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vNHExTk0yWnFPQ1hBWGFPTi14Q2pPeC1Ua1pMYXJrSHVfRV9SWDB3c1JRUDZHTmd5akdPMDR0X0w2MU9Sa1p2SElJWGpuMHVRN1E?oc=5",
-            "time": "2026-05-07 00:01:00",
             "is_negative": false
           }
         ]
@@ -106689,10 +105578,10 @@
       "total": 249
     },
     "yesterday": {
-      "red": 39,
-      "yellow": 192,
+      "red": 35,
+      "yellow": 184,
       "green": 29,
-      "total": 260
+      "total": 248
     },
     "yesterday_redyellow": [
       {
@@ -107006,42 +105895,6 @@
         "author": "周孟達",
         "text": "AI時代什麼不被取代 笑容、真誠、有道可修吧！ 道亦有道，道是人生正路的方向，為政者沒有道，人民該如何相信，相信什麼依據？ 善道、仁道、天道..？ #在惡不過20年，換來千年萬年苦 #天網恢恢疏不漏，人海茫茫善者強 #司法迫害多位，在野麻木不仁嗎？",
         "time_text": "31分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "葉數",
-        "text": "廚餘池、垃圾山…學童性侵⋯⋯如何處理？",
-        "time_text": "1小時",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "查看隱藏的回覆",
-        "text": "留言可能具有冒犯性、偏離主題或屬於垃圾訊息，因此已遭隱藏。 Gibar Deng 垃圾廚餘杏欽案 處理進度市民盼 市長發文當網紅 自求多福唉聲嘆",
-        "time_text": "4小時",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "紅中",
-        "text": "卸任以前趕緊去把廚餘處理好啦～整天舞豬舞狗的……正經事不處理逃避廚餘不處理～性侵案也蓋很久了～真爛捏還好意思說市政排名第一……",
-        "time_text": "39分鐘",
-        "url": "",
-        "signal": "red",
-        "signal_zh": "紅燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "李佳宇",
-        "text": "正事不做整天都在作秀賣萌真噁心",
-        "time_text": "38分鐘",
         "url": "",
         "signal": "red",
         "signal_zh": "紅燈"
@@ -108491,6 +107344,42 @@
         "author": "woshinail0ng",
         "text": "46個讚",
         "time_text": "12小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "facebook",
+        "author": "張志",
+        "text": "嚇死",
+        "time_text": "39分鐘",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "facebook",
+        "author": "查看隱藏的回覆",
+        "text": "Judy Wang 你的頭上有魔鬼",
+        "time_text": "9小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "threads",
+        "author": "okinafa",
+        "text": "你的無能比較狂 1,954",
+        "time_text": "10小時",
+        "url": "",
+        "signal": "yellow",
+        "signal_zh": "黃燈"
+      },
+      {
+        "platform": "threads",
+        "author": "psychoouo1123",
+        "text": "我盲猜11月底 腦藍選民依然會給其他台中市民 一個繼續死氣沈沈的台中🙂‍↕️",
+        "time_text": "48分鐘",
         "url": "",
         "signal": "yellow",
         "signal_zh": "黃燈"
