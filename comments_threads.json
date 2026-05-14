@@ -55,7 +55,7 @@
   },
   {
     "author": "okinafa",
-    "text": "你的無能比較狂 3,365",
+    "text": "你的無能比較狂 3,366",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -120,9 +120,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     }
   },
   {
@@ -185,14 +185,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 5,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     }
@@ -211,6 +211,24 @@
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "methydur",
+    "text": "還有心情搞這個呀！怎麼台中無人機產業被藍白砍 你怎麼沒出來咳嗽一下呢？！廢了嗎？！",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 3,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     }
@@ -264,9 +282,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     }
   },
   {
@@ -275,32 +293,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "methydur",
-    "text": "還有心情搞這個呀！怎麼台中無人機產業被藍白砍 你怎麼沒出來咳嗽一下呢？！廢了嗎？！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 3,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     }
@@ -319,78 +319,6 @@
       "red": 0,
       "sarcasm": 0,
       "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "khtwsusan",
-    "text": "你們國民黨擋軍購檔成這樣也是非常狂啊！直接幫中國擋無人機產業鏈誒！猛！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "peng2018s",
-    "text": "讚哦 帽子真好看",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 2,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "hawi09241225",
-    "text": "放心，綠油油一定只有綠選民才有持股，藍白支持者鐵定紅通通。😏🤮🤣",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "peng2018s",
-    "text": "反正我沒買 我早知藍白要弄垮無人機",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -486,19 +414,73 @@
     }
   },
   {
-    "author": "gengar780303",
-    "text": "唷 噁心的賣國賊兼癌細胞開口說話了",
-    "time_text": "1天",
+    "author": "peng2018s",
+    "text": "讚哦 帽子真好看",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "green",
+    "signal_zh": "綠燈",
+    "signal_score": {
+      "green": 2,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "hawi09241225",
+    "text": "放心，綠油油一定只有綠選民才有持股，藍白支持者鐵定紅通通。😏🤮🤣",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "peng2018s",
+    "text": "反正我沒買 我早知藍白要弄垮無人機",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
-      "sarcasm": 1,
-      "llm": "紅",
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "khtwsusan",
+    "text": "你們國民黨擋軍購檔成這樣也是非常狂啊！直接幫中國擋無人機產業鏈誒！猛！",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -537,6 +519,240 @@
       "llm": "黃",
       "rule": "黃",
       "source": "llm"
+    }
+  },
+  {
+    "author": "nagee_taiwan",
+    "text": "為什麼稽查偷拍要先通報業者？是不是要給業者有機會湮滅證據？這個偷拍產業鏈水有多深？跟台中國小杏侵案有沒有串在一起？",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "lifemakeover__2520262422",
+    "text": "推👆",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    }
+  },
+  {
+    "author": "gengar780303",
+    "text": "唷 噁心的賣國賊兼癌細胞開口說話了",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "icecubestea",
+    "text": "所以花了9000多萬，然後擋掉3000億的台中無人機產業？",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "4yrealman",
+    "text": "擋你媽的民進黨貪污啦",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "紅",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "whl44_",
+    "text": "不認真上班的報應就是滑到盧秀燕",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "justice_kick",
+    "text": "狂？ 誰能比台中80個學童被性侵更狂？ 80 個家庭一輩子的陰影跟傷口 在妳眼裡不過是一句沒大家想的嚴重 狂？ 肯定是喪心病狂的台中最狂！",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "n048z9",
+    "text": "你們的戴奧辛處理好了沒？爛官",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "verte_autumnleaves",
+    "text": "辣雞鬼母 畜牲政客 殘殺台灣國軍",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "emilych3n",
+    "text": "先處理一下這個好不好？ 連個新聞都沒有，壓屁壓",
+    "time_text": "20小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "m_jhgfds",
+    "text": "獨角仙生態很重要，所以大里居民是ㄙˇ了嗎😉",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "keiko_78",
+    "text": "[圖片] Photo by Keiko Liao on May 11, 2026. May be an image of emu, pie, poster and text that says '金 金 त्मन तोत 台中棒球教練性侵案不能沉 LU ΜΑMΑ STEP MAMASTEPDOWN DOWN'.",
+    "time_text": "2天",
+    "url": "",
+    "kind": "image",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "1230nauysirhc",
+    "text": "真的很丟臉，要不要看一下台東的",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 2,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "紅",
+      "source": "rule(stricter)"
     }
   }
 ]
