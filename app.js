@@ -149,7 +149,7 @@ function upsertChart(instance, ctx, config){
 function darkTooltip(overrides){
   return Object.assign({
     backgroundColor: 'rgba(18, 25, 53, 0.96)',
-    borderColor: '#005584',
+    borderColor: '#5a79ff',
     borderWidth: 1,
     titleColor: '#d8e2ff',
     bodyColor: '#d8e2ff',
@@ -551,7 +551,7 @@ function renderRedTrendChart(){
     threads: new Map((hist.threads||[]).map(x => [x.ts, x.red_pct])),
   };
   const datasets = [
-    { label: 'Facebook', color: '#005584' },
+    { label: 'Facebook', color: '#5a79ff' },
     { label: 'Instagram', color: '#e83e8c' },
     { label: 'Threads', color: '#c08c12' },
   ].map(({label, color}) => {
@@ -700,8 +700,8 @@ function renderTopicHeat(){
       datasets: [{
         label: `提及數（${topic.label}）`,
         data: counts,
-        backgroundColor: '#005584',
-        hoverBackgroundColor: '#005584',
+        backgroundColor: '#5a79ff',
+        hoverBackgroundColor: '#5a79ff',
         borderRadius: 4,
       }],
     },
@@ -753,14 +753,14 @@ function renderTrendsChart(topic){
       datasets: [{
         label: `${topic.label} 熱度 (0–100)`,
         data: values,
-        borderColor: '#005584',
+        borderColor: '#5a79ff',
         backgroundColor: 'rgba(127,192,255,0.18)',
         fill: true,
         tension: 0.15,
         pointRadius: 0,           // baseline: dots hidden for a clean line
         pointHoverRadius: 5,      // highlight the point under the cursor
         pointHoverBackgroundColor: '#ffffff',
-        pointHoverBorderColor: '#005584',
+        pointHoverBorderColor: '#5a79ff',
         pointHoverBorderWidth: 2,
         borderWidth: 1.8,
       }],
@@ -776,7 +776,7 @@ function renderTrendsChart(topic){
           mode: 'index',
           intersect: false,
           backgroundColor: 'rgba(18, 25, 53, 0.96)',
-          borderColor: '#005584',
+          borderColor: '#5a79ff',
           borderWidth: 1,
           titleColor: '#d8e2ff',
           bodyColor: '#d8e2ff',
@@ -1701,7 +1701,7 @@ const PERSISTENCE_MAP_COLORS = {
 // 總統得票/預測的政黨色 — 只用在 presidential_2024 / presidential_predict 兩個模式，
 // 比 PERSISTENCE_MAP_COLORS 亮，方便在地圖上一眼辨認。
 const PARTY_MAP_COLORS = {
-  KMT: '#005584',  // 亮藍（Tailwind blue-500）
+  KMT: '#5a79ff',  // 亮藍（Tailwind blue-500）
   DPP: '#1f8a4c',  // 亮綠（green-500）
   TPP: '#c0d0dd',  // 亮白（neutral-200，深底也看得見）
   PFP: '#f97316',  // 橘（親民黨）
@@ -2021,7 +2021,7 @@ async function renderElectionMap(){
           if (!v) return;
           openVillageDetail({ ...v, city: code, cityName: cityData.name, source: cityData.source });
         });
-        layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#005584' }));
+        layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#5a79ff' }));
         layer.on('mouseout',  e => e.target.setStyle({ weight: 0.4, color: '#9fb0ea' }));
       },
     }).addTo(electionMap);
@@ -3202,13 +3202,13 @@ async function run(){
         : byHour.map(x => (x.hour||'').slice(5, 16)),
       datasets:[{
         label:'聲量', data:byHour.map(x=>x.count||0),
-        borderColor:'#005584', backgroundColor:isWeek ? '#005584' : 'rgba(127,192,255,0.2)',
+        borderColor:'#5a79ff', backgroundColor:isWeek ? '#5a79ff' : 'rgba(127,192,255,0.2)',
         tension:0.25, fill:!isWeek,
         pointRadius: isWeek ? 0 : 4,
         pointHoverRadius: isWeek ? 0 : 7,
         pointBackgroundColor:'rgba(127,192,255,0.4)',
-        pointBorderColor:'#005584',
-        pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#005584',
+        pointBorderColor:'#5a79ff',
+        pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#5a79ff',
         borderRadius: isWeek ? 6 : 0,
       }],
     },
@@ -3249,7 +3249,7 @@ async function run(){
 
   platformChart = upsertChart(platformChart, document.getElementById('platformChart'), {
     type:'doughnut',
-    data:{ labels:byPlatform.map(x=>x.platform), datasets:[{data:byPlatform.map(x=>x.count), backgroundColor:['#005584','#1f8a4c','#c08c12','#e83e8c','#fd7e14','#6f42c1','#adb5bd']}] },
+    data:{ labels:byPlatform.map(x=>x.platform), datasets:[{data:byPlatform.map(x=>x.count), backgroundColor:['#5a79ff','#1f8a4c','#c08c12','#e83e8c','#fd7e14','#6f42c1','#adb5bd']}] },
     options:{
       plugins:{
         legend:{labels:{color:'#b9c3f2'}},
@@ -3291,7 +3291,7 @@ async function run(){
       labels:names,
       datasets:[{
         label:'提及數', data:vals,
-        backgroundColor:['#1f8a4c','#005584','#c08c12','#e83e8c','#fd7e14'],
+        backgroundColor:['#1f8a4c','#5a79ff','#c08c12','#e83e8c','#fd7e14'],
         borderRadius:4,
         hoverBackgroundColor:'#ffffff40',
       }],
