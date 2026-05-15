@@ -149,10 +149,10 @@ function upsertChart(instance, ctx, config){
 function darkTooltip(overrides){
   return Object.assign({
     backgroundColor: 'rgba(18, 25, 53, 0.96)',
-    borderColor: '#5a79ff',
+    borderColor: '#005584',
     borderWidth: 1,
-    titleColor: '#d8e2ff',
-    bodyColor: '#e8ecff',
+    titleColor: '#0f2842',
+    bodyColor: '#0f2842',
     padding: 10,
     cornerRadius: 8,
     titleFont: { weight: '600', size: 13 },
@@ -371,8 +371,8 @@ function renderSelfFavorability(history){
         }),
       },
       scales: {
-        y: { min: 0, max: 100, ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
-        x: { ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
+        y: { min: 0, max: 100, ticks: { color: '#4a6178' }, grid: { color: 'rgba(0,85,132,0.08)' } },
+        x: { ticks: { color: '#4a6178' }, grid: { color: 'rgba(0,85,132,0.08)' } },
       },
     },
   });
@@ -582,7 +582,7 @@ function renderRedTrendChart(){
       interaction: INDEX_HOVER,
       hover: INDEX_HOVER,
       plugins: {
-        legend: { labels: { color: '#b9c3f2' } },
+        legend: { labels: { color: '#4a6178' } },
         tooltip: darkTooltip({
           mode: 'index',
           callbacks: {
@@ -591,8 +591,8 @@ function renderRedTrendChart(){
         }),
       },
       scales: {
-        x: { ticks: { color: '#b9c3f2', maxRotation: 30 } },
-        y: { ticks: { color: '#b9c3f2', callback: v => v + '%' }, beginAtZero: true, suggestedMax: 50 },
+        x: { ticks: { color: '#4a6178', maxRotation: 30 } },
+        y: { ticks: { color: '#4a6178', callback: v => v + '%' }, beginAtZero: true, suggestedMax: 50 },
       },
     }
   });
@@ -701,7 +701,7 @@ function renderTopicHeat(){
         label: `提及數（${topic.label}）`,
         data: counts,
         backgroundColor: '#4f8cff',
-        hoverBackgroundColor: '#7fc0ff',
+        hoverBackgroundColor: '#005584',
         borderRadius: 4,
       }],
     },
@@ -709,7 +709,7 @@ function renderTopicHeat(){
       interaction: INDEX_HOVER,
       hover: INDEX_HOVER,
       plugins: {
-        legend: { labels: { color: '#b9c3f2' } },
+        legend: { labels: { color: '#4a6178' } },
         tooltip: darkTooltip({
           mode: 'index',
           displayColors: false,
@@ -720,8 +720,8 @@ function renderTopicHeat(){
         }),
       },
       scales: {
-        x: { ticks: { color: '#b9c3f2' }, grid: { color: 'rgba(120,140,200,0.08)' } },
-        y: { ticks: { color: '#b9c3f2', precision: 0 }, beginAtZero: true, grid: { color: 'rgba(120,140,200,0.08)' } },
+        x: { ticks: { color: '#4a6178' }, grid: { color: 'rgba(0,85,132,0.08)' } },
+        y: { ticks: { color: '#4a6178', precision: 0 }, beginAtZero: true, grid: { color: 'rgba(0,85,132,0.08)' } },
       },
     },
   });
@@ -753,14 +753,14 @@ function renderTrendsChart(topic){
       datasets: [{
         label: `${topic.label} 熱度 (0–100)`,
         data: values,
-        borderColor: '#7fc0ff',
+        borderColor: '#005584',
         backgroundColor: 'rgba(127,192,255,0.18)',
         fill: true,
         tension: 0.15,
         pointRadius: 0,           // baseline: dots hidden for a clean line
         pointHoverRadius: 5,      // highlight the point under the cursor
         pointHoverBackgroundColor: '#ffffff',
-        pointHoverBorderColor: '#7fc0ff',
+        pointHoverBorderColor: '#005584',
         pointHoverBorderWidth: 2,
         borderWidth: 1.8,
       }],
@@ -771,15 +771,15 @@ function renderTrendsChart(topic){
       interaction: { mode: 'index', intersect: false, axis: 'x' },
       hover: { mode: 'index', intersect: false },
       plugins: {
-        legend: { labels: { color: '#b9c3f2' } },
+        legend: { labels: { color: '#4a6178' } },
         tooltip: {
           mode: 'index',
           intersect: false,
           backgroundColor: 'rgba(18, 25, 53, 0.96)',
-          borderColor: '#5a79ff',
+          borderColor: '#005584',
           borderWidth: 1,
-          titleColor: '#d8e2ff',
-          bodyColor: '#e8ecff',
+          titleColor: '#0f2842',
+          bodyColor: '#0f2842',
           padding: 10,
           cornerRadius: 8,
           titleFont: { weight: '600', size: 13 },
@@ -794,7 +794,7 @@ function renderTrendsChart(topic){
       scales: {
         x: {
           ticks: {
-            color: '#b9c3f2',
+            color: '#4a6178',
             maxTicksLimit: 8,   // 262 個點，Chart.js 自動挑子集顯示 label
             maxRotation: 0,
             autoSkip: true,
@@ -803,8 +803,8 @@ function renderTrendsChart(topic){
         },
         y: {
           beginAtZero: true, suggestedMax: 100,
-          ticks: { color: '#b9c3f2', stepSize: 25 },
-          grid: { color: 'rgba(120,140,200,0.08)' },
+          ticks: { color: '#4a6178', stepSize: 25 },
+          grid: { color: 'rgba(0,85,132,0.08)' },
         },
       },
     },
@@ -1781,7 +1781,7 @@ async function renderElectionForecast(){
     <div class="forecast-stack-bar">
       <div class="forecast-seg" style="width:${kmt}%;background:#3b82f6"  title="KMT ${kmt.toFixed(1)}%">${kmt >= 8 ? 'KMT ' + kmt.toFixed(1) + '%' : ''}</div>
       <div class="forecast-seg" style="width:${dpp}%;background:#22c55e"  title="DPP ${dpp.toFixed(1)}%">${dpp >= 8 ? 'DPP ' + dpp.toFixed(1) + '%' : ''}</div>
-      <div class="forecast-seg" style="width:${tpp}%;background:#e5e7eb;color:#1a1a1a" title="TPP ${tpp.toFixed(1)}%">${tpp >= 8 ? 'TPP ' + tpp.toFixed(1) + '%' : ''}</div>
+      <div class="forecast-seg" style="width:${tpp}%;background:#e5e7eb;color:#0f2842" title="TPP ${tpp.toFixed(1)}%">${tpp >= 8 ? 'TPP ' + tpp.toFixed(1) + '%' : ''}</div>
     </div>`;
 
   const partyClass = (p) => p === 'KMT' ? 'persist-blue' : p === 'DPP' ? 'persist-green' : p === 'TPP' ? 'persist-white' : 'persist-other';
@@ -1891,7 +1891,7 @@ async function renderElectionForecast(){
   container.innerHTML = `
     ${totalCard}
     ${pollsCard}
-    <h3 style="margin-top:18px;color:#d8e2ff;font-size:14px">${isCountry ? '各縣市預測明細（22 個）' : '各都預測明細'}</h3>
+    <h3 style="margin-top:18px;color:#0f2842;font-size:14px">${isCountry ? '各縣市預測明細（22 個）' : '各都預測明細'}</h3>
     <div class="forecast-city-list">${cityRows}</div>
     <p class="hint" style="margin-top:12px">
       <strong>模型方法</strong>：每個里計算下屆總統選舉預測（加權近 5 屆得票 + momentum 趨勢延伸 ×0.3），
@@ -1976,7 +1976,7 @@ async function renderElectionMap(){
         else if (activeMode === 'presidential_predict_polls') color = presidentialColorByPredictionPolls(v);
       }
       return {
-        color: '#0a0e1a', weight: 0.4,
+        color: '#ffffff', weight: 0.4,
         fillColor: color, fillOpacity: v ? 0.75 : 0.25,
       };
     };
@@ -2021,8 +2021,8 @@ async function renderElectionMap(){
           if (!v) return;
           openVillageDetail({ ...v, city: code, cityName: cityData.name, source: cityData.source });
         });
-        layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#5a79ff' }));
-        layer.on('mouseout',  e => e.target.setStyle({ weight: 0.4, color: '#0a0e1a' }));
+        layer.on('mouseover', e => e.target.setStyle({ weight: 2, color: '#005584' }));
+        layer.on('mouseout',  e => e.target.setStyle({ weight: 0.4, color: '#ffffff' }));
       },
     }).addTo(electionMap);
 
@@ -2070,9 +2070,9 @@ async function renderElectionMap(){
       }
       // 16 縣市用「縣市長」作為 priority 基礎，6 都用「直轄市長」
       if (cityData.source === 'local_mayor'){
-        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆縣市長選舉（2005-2022）計算。獨立候選人（IND）在花蓮/臺東/金門等地常獲勝，會反映在 winner 與 volatility 上。</div>`;
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#7b8fa3">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆縣市長選舉（2005-2022）計算。獨立候選人（IND）在花蓮/臺東/金門等地常獲勝，會反映在 winner 與 volatility 上。</div>`;
       } else if (cityData.source === 'presidential'){
-        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#94a3b8">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆總統選舉（2008-2024）計算（fallback 來源）。</div>`;
+        html += `<div class="hint" style="margin-top:6px;font-size:11px;color:#7b8fa3">ℹ️ 此縣市的 priority/策略/政治屬性 是基於 5 屆總統選舉（2008-2024）計算（fallback 來源）。</div>`;
       }
       legendEl.innerHTML = html;
     }
@@ -2353,7 +2353,7 @@ function focusVillageOnMap({ city, town, village }){
       electionMap.fitBounds(bounds, { maxZoom: 15, padding: [80, 80] });
     }
     // 高亮 — 黃色粗邊 3 秒後恢復
-    const origStyle = { weight: 0.4, color: '#0a0e1a' };
+    const origStyle = { weight: 0.4, color: '#ffffff' };
     found.setStyle({ weight: 5, color: '#fbbf24' });
     setTimeout(() => { try { found.setStyle(origStyle); } catch(e){} }, 3000);
     if (found.getTooltip()) found.openTooltip();
@@ -3151,14 +3151,14 @@ async function run(){
       const buttons = `
         ${btn('🚨', '分鐘級', 'minute', minuteN, '#ff8a8a')}
         ${btn('⚠️', '小時級', 'hour', hourN, '#ffb84d')}
-        ${btn('📅', '日級', 'day', dayN, '#9fb0ea')}
+        ${btn('📅', '日級', 'day', dayN, '#7b8fa3')}
       `;
       const explainer = `
         <div class="hint" style="margin-top:6px;font-size:11px;line-height:1.7">
           <strong>分流邏輯</strong>：依新聞 severity 分到不同響應級別（點 badge 看該級別所有新聞）。
           <span style="color:#ff8a8a">🚨 分鐘級 = 紅燈事件</span>（刑事 / 公共安全 / 重大 — 候選人 / 服務處應在 30 分鐘內回應）；
           <span style="color:#ffb84d">⚠️ 小時級 = 黃燈事件</span>（政治批評 / 環境問題 — 當小時內擬好回應稿）；
-          <span style="color:#9fb0ea">📅 日級 = 中性事件</span>（常態露出 — 日結時掃過即可，不必個別回應）。
+          <span style="color:#7b8fa3">📅 日級 = 中性事件</span>（常態露出 — 日結時掃過即可，不必個別回應）。
         </div>`;
       lstream.innerHTML = `<div class="stream-row">${buttons}</div>${explainer}`;
     }
@@ -3202,13 +3202,13 @@ async function run(){
         : byHour.map(x => (x.hour||'').slice(5, 16)),
       datasets:[{
         label:'聲量', data:byHour.map(x=>x.count||0),
-        borderColor:'#7fc0ff', backgroundColor:isWeek ? '#5a79ff' : 'rgba(127,192,255,0.2)',
+        borderColor:'#005584', backgroundColor:isWeek ? '#005584' : 'rgba(127,192,255,0.2)',
         tension:0.25, fill:!isWeek,
         pointRadius: isWeek ? 0 : 4,
         pointHoverRadius: isWeek ? 0 : 7,
         pointBackgroundColor:'rgba(127,192,255,0.4)',
-        pointBorderColor:'#7fc0ff',
-        pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#7fc0ff',
+        pointBorderColor:'#005584',
+        pointHoverBackgroundColor:'#fff', pointHoverBorderColor:'#005584',
         borderRadius: isWeek ? 6 : 0,
       }],
     },
@@ -3223,7 +3223,7 @@ async function run(){
           callbacks: { label: (ctx) => `聲量：${ctx.parsed.y}（點擊查看清單）` },
         }),
       },
-      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}},
+      scales:{x:{ticks:{color:'#4a6178'}}, y:{ticks:{color:'#4a6178'}, beginAtZero:true}},
       onHover: (evt, els) => {
         const target = evt?.native?.target;
         if (target) target.style.cursor = els.length ? 'pointer' : 'default';
@@ -3252,7 +3252,7 @@ async function run(){
     data:{ labels:byPlatform.map(x=>x.platform), datasets:[{data:byPlatform.map(x=>x.count), backgroundColor:['#4f8cff','#20c997','#ffc107','#e83e8c','#fd7e14','#6f42c1','#adb5bd']}] },
     options:{
       plugins:{
-        legend:{labels:{color:'#b9c3f2'}},
+        legend:{labels:{color:'#4a6178'}},
         tooltip: darkTooltip({
           callbacks: {
             label: (ctx) => {
@@ -3309,7 +3309,7 @@ async function run(){
           callbacks: { label: (ctx) => `提及：${ctx.parsed.y} 則（點擊查看清單）` },
         }),
       },
-      scales:{x:{ticks:{color:'#b9c3f2'}}, y:{ticks:{color:'#b9c3f2'}, beginAtZero:true}},
+      scales:{x:{ticks:{color:'#4a6178'}}, y:{ticks:{color:'#4a6178'}, beginAtZero:true}},
       onHover: (evt, els) => {
         const target = evt?.native?.target;
         if (target) target.style.cursor = els.length ? 'pointer' : 'default';
