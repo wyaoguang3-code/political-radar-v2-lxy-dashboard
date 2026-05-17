@@ -180,24 +180,6 @@
     }
   },
   {
-    "author": "wanyatung",
-    "text": "因為你照顧不了孩子只好轉移焦點🥹",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
     "author": "frankfurt_0_0",
     "text": "什麼事都推給中央，台中有妳感到可憐",
     "time_text": "3天",
@@ -212,6 +194,24 @@
       "sarcasm": 0,
       "llm": "黃",
       "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "wanyatung",
+    "text": "因為你照顧不了孩子只好轉移焦點🥹",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
       "source": "llm"
     }
   },
@@ -270,24 +270,6 @@
     }
   },
   {
-    "author": "tsumuzii",
-    "text": "空氣這麼髒孕婦出門怎麼舒適我想請問",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
     "author": "sleepy199990",
     "text": "台中近百名受杏侵的孩子在哭泣 盧豬瘟：偶不知道",
     "time_text": "3天",
@@ -301,6 +283,24 @@
       "red": 0,
       "sarcasm": 0,
       "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "tsumuzii",
+    "text": "空氣這麼髒孕婦出門怎麼舒適我想請問",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     }
@@ -362,7 +362,7 @@
   {
     "author": "kennyaerobababa",
     "text": "性侵、自由落體、火災、戴奧辛、垃圾、水肥、廚餘、空污，這樣的台中，誰能安心生小孩，以後連無人機產業都被你的子弟兵羅廷瑋、廖偉翔、黃健豪、江啟臣砍光了，就業機會直接少了幾千個，妳好意思說喔",
-    "time_text": "2天",
+    "time_text": "3天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -372,9 +372,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     }
   },
   {
@@ -455,14 +455,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 3,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     }
@@ -486,21 +486,21 @@
     }
   },
   {
-    "author": "shinjuw",
-    "text": "怕妳盧秀燕忘了執政時，發生的這些事👇",
-    "time_text": "3天",
+    "author": "tinagolf69",
+    "text": "搞好空氣跟垃圾很難嗎？誰有空購物！",
+    "time_text": "57分鐘",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
-      "red": 0,
+      "red": 2,
       "sarcasm": 0,
       "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
+      "rule": "紅",
+      "source": "rule(stricter)"
     }
   },
   {
@@ -522,8 +522,8 @@
     }
   },
   {
-    "author": "crownether",
-    "text": "一篇文章￼一百多個字媽出現6次孕出現7次台中也媽媽市長￼￼高雄也要選媽媽市長煩不煩",
+    "author": "shinjuw",
+    "text": "怕妳盧秀燕忘了執政時，發生的這些事👇",
     "time_text": "3天",
     "url": "",
     "kind": "text",
@@ -554,6 +554,24 @@
       "sarcasm": 0,
       "llm": "紅",
       "rule": "紅",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "crownether",
+    "text": "一篇文章￼一百多個字媽出現6次孕出現7次台中也媽媽市長￼￼高雄也要選媽媽市長煩不煩",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
       "source": "llm"
     }
   },
@@ -594,6 +612,24 @@
     }
   },
   {
+    "author": "shengmaozhuang",
+    "text": "先幫忙被性侵的孩子吧😩",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
     "author": "gonefishingkimo",
     "text": "把台中市搞得骯髒不堪，是照顧個鬼！",
     "time_text": "3天",
@@ -603,96 +639,6 @@
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "amber.hsiao.58",
-    "text": "市長，請問被教練性侵的孩子們怎麼辦？市府要怎麼照顧？也是呼叫賴祥德嗎？",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "stevewangintaiwan",
-    "text": "盧秀燕說要照顧孩子 請搜尋🔍 台中市國小棒球隊",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 2,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "a8856422",
-    "text": "我剛知道你在被質詢時說台中人太多，所以垃圾沒有辦法處理！？妳不是媽媽嗎？ 怪你小孩太多，然後妳是選來服務台中人的，不是選來作威作福的，請知悉。做不好就檢討，少在那說些有的沒的",
-    "time_text": "1小時",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "smallmountain_520",
-    "text": "妳出去看看台中吧，看看台中被妳治理成什麼爛樣子，倒楣的台中有妳這種市長",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "chengyang20070219",
-    "text": "市長，這個要怎麼處理，要賴給民進黨嗎？還是要推給中央",
-    "time_text": "12小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
@@ -720,8 +666,44 @@
     }
   },
   {
-    "author": "shengmaozhuang",
-    "text": "先幫忙被性侵的孩子吧😩",
+    "author": "king.202107",
+    "text": "垃圾盧八婆",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "紅",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "stevewangintaiwan",
+    "text": "盧秀燕說要照顧孩子 請搜尋🔍 台中市國小棒球隊",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 2,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "amber.hsiao.58",
+    "text": "市長，請問被教練性侵的孩子們怎麼辦？市府要怎麼照顧？也是呼叫賴祥德嗎？",
     "time_text": "3天",
     "url": "",
     "kind": "text",
@@ -738,34 +720,16 @@
     }
   },
   {
-    "author": "t19780627",
-    "text": "你有保護過兒童嗎？虐童，性侵兒童。有嗎？",
-    "time_text": "10小時",
+    "author": "chengyang20070219",
+    "text": "市長，這個要怎麼處理，要賴給民進黨嗎？還是要推給中央",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
     "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "iloveanimals.chang",
-    "text": "什麼事都推給中央的市長，講什麼都沒有公信力！",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
+      "yellow": 1,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
@@ -792,8 +756,26 @@
     }
   },
   {
-    "author": "king.202107",
-    "text": "垃圾盧八婆",
+    "author": "iloveanimals.chang",
+    "text": "什麼事都推給中央的市長，講什麼都沒有公信力！",
+    "time_text": "3天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    }
+  },
+  {
+    "author": "smallmountain_520",
+    "text": "妳出去看看台中吧，看看台中被妳治理成什麼爛樣子，倒楣的台中有妳這種市長",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -801,11 +783,11 @@
     "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
-      "yellow": 0,
-      "red": 2,
+      "yellow": 1,
+      "red": 0,
       "sarcasm": 0,
       "llm": "紅",
-      "rule": "紅",
+      "rule": "黃",
       "source": "llm"
     }
   },
@@ -828,201 +810,21 @@
     }
   },
   {
-    "author": "linnick_310",
-    "text": "豬瘟顧不好，廚餘不會處理，性侵案不當回事，火災要找中央，你這麼廢，台中選民知道嗎？",
+    "author": "maji1040906",
+    "text": "生下來的小寶貝被糟蹋了 你對垃圾犯人屁都不敢放一個 哪來的臉說要照顧孩子照顧媽媽？",
     "time_text": "3天",
     "url": "",
     "kind": "text",
     "signal": "red",
     "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "lesaristote",
-    "text": "執政不難，賴給中央就可以👍",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "millerpho9986",
-    "text": "cdexter2027 盧秀燕：中央一戶社宅都沒有蓋 台中社宅工地發生大火 還是盧秀燕：那個是中央蓋的 要打臉過去的盧秀燕 還得是現在的盧秀燕... 4,331",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "cdexter2027",
-    "text": "盧秀燕：中央一戶社宅都沒有蓋 台中社宅工地發生大火 還是盧秀燕：那個是中央蓋的 要打臉過去的盧秀燕 還得是現在的盧秀燕... 4,331",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "superfeefee",
-    "text": "第一次用stickers覺得恰到好處的精實切題",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "geesonchan",
-    "text": "這次怎麼不是中央的做的了？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "jinrui024",
-    "text": "盧市長 不能風光剪裁完， 出了事就推說是中央要處理， 媽媽會遇到難關時就拋棄自己的小孩嗎？",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "zengkenji",
-    "text": "有擔當一點啦 都政治老鳥了",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "conniehou0209",
-    "text": "台中小孩有你這種市長真可悲，被性侵當沒事、還鼓勵大家多生小孩，爐嬤嬤下地獄",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
+      "yellow": 2,
+      "red": 4,
+      "sarcasm": 1,
       "llm": "紅",
       "rule": "紅",
       "source": "llm"
-    }
-  },
-  {
-    "author": "luka0321",
-    "text": "台中市民覺得羞愧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "karuna.loveyouself",
-    "text": "[圖片] Photo by 從心歸靈❤️慈悲的愛自己 on May 14, 2026. May be an image of garbage, magazine, newspaper, poster and text. | Photo by 從心歸靈❤️慈悲的愛自己 on May 14, 2026. May be an image of one or more people, poster and text.",
-    "time_text": "2天",
-    "url": "",
-    "kind": "image",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
     }
   },
   {
@@ -1036,456 +838,6 @@
     "signal_score": {
       "green": 0,
       "yellow": 2,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "boterschijte",
-    "text": "會致贈匾額嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "ksppfww",
-    "text": "那些被性侵的孩子呢 那些爸爸媽媽承受的痛都不當一回事了嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "neil_wo",
-    "text": "誰知道這專車日後出問題 會不會又是中央負責",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 3,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "mvizzo",
-    "text": "不要再侮辱消費「媽媽」這個身分了！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "hauser.0990888888",
-    "text": "你還是入夜後去火燒山上打非洲鼓吧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bettysue1987",
-    "text": "拜託 市長好孕專車你都最晚才做耶 很好意思誒",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "omgwtfchaosbutwhocare___s",
-    "text": "台中市教練松志彬性侵棒球隊學童",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "liujunwei51",
-    "text": "人家是安居樂業，妳帶領的台中是烏煙瘴氣，可憐那些小孩和父母",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "millerpho9986",
-    "text": "要不要賴清德出來解釋？ 還是市府可以解決？ ftvnews 台中 離譜！ 台中工具機廠遭倒廢土 逾三層樓高、清理費估高達１‧３８億 ftvnews.com.tw 台中人為\"造山運動\"!? 議員踢爆工具機廠建廠土地遭傾倒廢土 - 民視新聞網",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 4,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "ftvnews",
-    "text": "台中 離譜！ 台中工具機廠遭倒廢土 逾三層樓高、清理費估高達１‧３８億 ftvnews.com.tw 台中人為\"造山運動\"!? 議員踢爆工具機廠建廠土地遭傾倒廢土 - 民視新聞網",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "a11210511",
-    "text": "盧市長您的選擇是跟民眾黨一樣都是 賴 清德嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "p670212",
-    "text": "大里垃圾山是要擺爛到卸任留給下一任處理嗎 毫無能力的市長",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "wanzoqoo",
-    "text": "廚餘清好了嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "linhsu4698",
-    "text": "除了擺拍，還會從尛？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "natsuki9042024",
-    "text": "🤮",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "ah_in_52",
-    "text": "今天的電視新聞， 完全沒相關報導",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "high08800990",
-    "text": "噁心市長 有事都不敢扛～🤮",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bki74817",
-    "text": "廚餘湖、垃圾山、豬瘟 誰敢在台中懷孕生子？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "peterchen5250",
-    "text": "社宅火警要處理了沒",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "wcc0613",
-    "text": "紅利剪綵政績都是妳，出了事就賴中央，妳如果妳當上總統妳要賴給誰，都是全體台灣人的問題嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "wantwong",
-    "text": "要不要先處理台中的狼師先!!",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bmwx1nice",
-    "text": "有看到嗎？ 台中德政 2026-5-7 臺灣中部的打鼓市長、鬼婆， 造福了台中53名孩童， 讓53個家庭更加的圓滿！ （在測試會不會被蓋住） 3,365",
-    "time_text": "3天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "bmwx1nice",
-    "text": "台中德政 2026-5-7 臺灣中部的打鼓市長、鬼婆， 造福了台中53名孩童， 讓53個家庭更加的圓滿！ （在測試會不會被蓋住） 3,365",
-    "time_text": "2026-5-7",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "chengyang20070219",
-    "text": "捷運是不是永遠蓋不好呢？為何要選這塊被污染的土地，是有不能說的秘密嗎？",
-    "time_text": "12小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "1_hxxii",
-    "text": "我怎麼知道我生出來的小孩會不會哪天就無外力介入墜樓",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
       "red": 0,
       "sarcasm": 0,
       "llm": "黃",
@@ -1508,168 +860,6 @@
       "sarcasm": 0,
       "llm": "紅",
       "rule": "紅",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "buzzkuo",
-    "text": "脆最大的缺點就是不能噓！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "1106danolo",
-    "text": "人家不要的無人機怎麼辦？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "maji1040906",
-    "text": "生下來的小寶貝被糟蹋了 你對垃圾犯人屁都不敢放一個 哪來的臉說要照顧孩子照顧媽媽？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 2,
-      "red": 4,
-      "sarcasm": 1,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "aileentseng2000",
-    "text": "是說台中狼師信親82位小孩嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "ohyabonnie",
-    "text": "有詐騙市長 難怪台中詐騙這麼多",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "leemina1003",
-    "text": "你先顧好台中吧 沒台中媽媽們能生存下去嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "yousyunkoko",
-    "text": "夏西夏景",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    }
-  },
-  {
-    "author": "jm533838",
-    "text": "那被性侵的孩子呢？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    }
-  },
-  {
-    "author": "jerardolife",
-    "text": "杏欽案好像五十幾個有後續嗎都沒看到👀？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
       "source": "llm"
     }
   }
