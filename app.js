@@ -2878,20 +2878,22 @@ async function run(){
       }
       if (favHistory)     d.self_favorability_history_7d = favHistory;
       if (topicArc) {
-        // RPC 回 {topic: {dates:[], counts:{red:[],yellow:[],green:[]}, total}}
-        // Frontend 期望 {topic: [{date, red, yellow, green, total}, ...]} per-day array
+        // RPC v2 (migration 012) 回 {topic: {dates, counts, articles_by_day, total}}
+        // Frontend 期望 {topic: [{date, red, yellow, green, total, articles}, ...]} per-day array
         const _arcXform = {};
         for (const [_topic, _v] of Object.entries(topicArc)) {
           if (Array.isArray(_v)) { _arcXform[_topic] = _v; continue; }
           if (_v && _v.dates && _v.counts) {
+            const _articlesByDay = _v.articles_by_day || [];
             _arcXform[_topic] = _v.dates.map((_d, _i) => ({
-              date:   _d,
-              red:    (_v.counts.red    || [])[_i] || 0,
-              yellow: (_v.counts.yellow || [])[_i] || 0,
-              green:  (_v.counts.green  || [])[_i] || 0,
-              total:  ((_v.counts.red||[])[_i] || 0) +
-                      ((_v.counts.yellow||[])[_i] || 0) +
-                      ((_v.counts.green||[])[_i] || 0),
+              date:    _d,
+              red:     (_v.counts.red    || [])[_i] || 0,
+              yellow:  (_v.counts.yellow || [])[_i] || 0,
+              green:   (_v.counts.green  || [])[_i] || 0,
+              total:   ((_v.counts.red||[])[_i] || 0) +
+                       ((_v.counts.yellow||[])[_i] || 0) +
+                       ((_v.counts.green||[])[_i] || 0),
+              articles: Array.isArray(_articlesByDay[_i]) ? _articlesByDay[_i] : [],
             }));
           }
         }
