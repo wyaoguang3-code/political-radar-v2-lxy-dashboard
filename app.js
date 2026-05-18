@@ -187,6 +187,16 @@ function isSafeExternalUrl(u){
   return true;
 }
 
+// 拿掉 topic 名前綴的城市名 — hotspot title 多半有「{city}{event}」格式 (e.g. 台北鼠患事件)
+// narrative arc 是「秀燕/台中 圍繞的議題」、顯示時前綴城市反而誤導。
+// 注意：去除後內容才是真議題本身、key (encoded data-topic) 維持原樣用來查 arc[idx]
+const _TOPIC_CITY_PREFIX = /^(新北|新竹[市縣]|嘉義[市縣]|台北|桃園|台中|台南|高雄|基隆|苗栗|彰化|南投|雲林|屏東|宜蘭|花蓮|台東|澎湖|金門|連江)/;
+function prettifyTopic(name){
+  if (!name || typeof name !== 'string') return name;
+  const stripped = name.replace(_TOPIC_CITY_PREFIX, '');
+  return stripped || name;   // 不允許完全空字串
+}
+
 // --------- Data fetching ---------
 async function fetchJSON(path){
   try {
@@ -436,9 +446,10 @@ function renderTopicNarrative(arcs){
 
     const row = document.createElement('div');
     row.className = 'topic-arc-row';
+    const displayName = prettifyTopic(topic);
     // 標題列
     const headerHtml = `<div class="topic-arc-header">
-      <span class="topic-arc-name">${topic}</span>
+      <span class="topic-arc-name">${escapeHtml(displayName)}</span>
       <span class="topic-arc-summary">7 天 ${total} 條 ｜ 🔴 ${totalRed} ／ 🟡 ${totalYellow} ／ 🟢 ${totalGreen}</span>
     </div>`;
     // 7 天 stacked bar — 每個 cell 點擊可看當日該議題新聞
