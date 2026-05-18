@@ -3529,58 +3529,51 @@ initTopicHeat();
 // subscribe 排在第一次 run() 之後)。
 setInterval(() => run().catch(e => console.error('run() interval failed:', e)), 60000);
 
-// --------- Real-time push (新紅燈 toast) ---------
-// 用 Supabase Realtime 訂閱 social_events INSERT、命中條件就跳 toast
-// 條件：severity_llm = '紅燈' AND title/text 含客戶 alias
+// --------- Real-time push (跟 TG 同步、不洗版) ---------
+// 訂閱 notification_queue 表 — cron push_red_alerts 寫進來的、已 LLM dedup + cluster
+// 每筆 = 1 個準備推一次的事件、shape 跟 TG message 對應、不會「同事件多家媒體」洗版
 function initRealtimeToasts() {
-  if (typeof LxyDB === 'undefined' || !LxyDB.subscribeNewEvents) {
-    console.log('[realtime] LxyDB 未載入、跳過 realtime 訂閱');
+  if (typeof LxyDB === 'undefined' || !LxyDB.subscribeNotifications) {
+    console.log('[realtime] LxyDB.subscribeNotifications 未載入、跳過');
     return;
   }
-  const aliases = (window.LxyConfig && window.LxyConfig.CUSTOMER && window.LxyConfig.CUSTOMER.ALIASES) || [];
-  const matchAliases = (row) => {
-    const blob = (row.title || '') + (row.text || '');
-    return aliases.length === 0 || aliases.some(a => blob.indexOf(a) >= 0);
-  };
-  const isRed = (row) => row.severity_llm === '紅燈';
-  const isYellow = (row) => row.severity_llm === '黃燈';
 
   // 顯示 toast，最多並排 5 個
   const MAX_TOASTS = 5;
   const DISMISS_MS = 12000;
-  function showToast(row, level) {
+  function showToast(row) {
     const container = document.getElementById('rtToasts');
     if (!container) return;
-    // limit
     while (container.children.length >= MAX_TOASTS) {
       container.removeChild(container.firstChild);
     }
     const tNow = new Date().toLocaleTimeString('zh-TW', { hour12: false });
+    const level = row.severity || 'red';   // 'red' / 'yellow'
     const div = document.createElement('div');
     div.className = 'rt-toast ' + (level === 'yellow' ? 'rt-yellow' : '');
     const icon = level === 'yellow' ? '🟡' : '🔴';
-    const labelText = level === 'yellow' ? '新黃燈' : '新紅燈';
+    const cluster = row.cluster_count || 0;
+    const bucket = row.bucket_label || (level === 'yellow' ? '新黃燈' : '新紅燈');
+    const clusterTxt = cluster > 0 ? `（同議題另 ${cluster} 則）` : '';
     div.innerHTML = `
       <button class="rt-toast-close" aria-label="關閉">✕</button>
       <div class="rt-toast-header">
         <span class="rt-toast-icon">${icon}</span>
-        <span>${labelText}：${escapeHtml(row.platform || 'news')}</span>
+        <span>${escapeHtml(bucket)}${clusterTxt}</span>
         <span class="rt-toast-time">${tNow}</span>
       </div>
       <div class="rt-toast-title">${escapeHtml((row.title || '(無標題)').slice(0, 140))}</div>
-      <div class="rt-toast-meta">${escapeHtml(row.author_name || row.author_handle || '—')} ｜ 點擊查看</div>
+      <div class="rt-toast-meta">${escapeHtml(row.publisher || row.platform || '—')} ｜ 點擊查看</div>
     `;
-    // close button
     div.querySelector('.rt-toast-close').addEventListener('click', (e) => {
       e.stopPropagation();
       dismiss();
     });
-    // click whole toast → open URL
-    if (row.url) {
-      div.addEventListener('click', () => window.open(row.url, '_blank', 'noopener'));
+    const linkUrl = row.short_url || row.url;
+    if (linkUrl) {
+      div.addEventListener('click', () => window.open(linkUrl, '_blank', 'noopener'));
     }
     container.appendChild(div);
-    // animate in
     requestAnimationFrame(() => div.classList.add('show'));
     function dismiss() {
       div.classList.remove('show');
@@ -3590,29 +3583,23 @@ function initRealtimeToasts() {
     setTimeout(dismiss, DISMISS_MS);
   }
 
-  LxyDB.subscribeNewEvents((row) => {
+  LxyDB.subscribeNotifications((row) => {
     try {
       if (!row) return;
-      if (!matchAliases(row)) return;
-      if (isRed(row))    return showToast(row, 'red');
-      if (isYellow(row)) return showToast(row, 'yellow');
-      // green / null → 不推
+      showToast(row);   // queue 已 dedup、直接 toast 就好
     } catch (e) {
       console.warn('[realtime] toast 處理失敗:', e && e.message);
     }
   });
-  console.log('%c[realtime] subscribed to social_events INSERT (red/yellow toasts)', 'color:#1f8a4c');
+  console.log('%c[realtime] subscribed to notification_queue INSERT', 'color:#1f8a4c');
 }
 // 第一次 run()
 run().catch(e => console.error('run() failed:', e));
 
-// === Realtime subscribe — 目前 DISABLED ===
-// 2026-05-18 嘗試讓 page-init 自動訂閱 social_events INSERT、但碰到 Supabase 怪症：
-//   - channel.state = 'joined' 且 status callback 收到 'SUBSCRIBED'
-//   - 但 server 端 INSERT 事件不會 trigger client callback
-//   - 同 lib 從 DevTools 跑卻能成功
-//   - 試了 unique channel name / delay / load event / 獨立 client / event=* 都不行
-// 已 setup 完整 (publication / toast UI / CSS / lib API)、留待之後 deep dive 修通。
+// === Realtime subscribe ===
+// 訂閱 notification_queue 表 (TG 推送同時寫進來、已 LLM dedup + cluster)
+// 比訂閱 social_events 乾淨：每筆 = 1 個真要推的事件、不會洗版
 //
-// 要試打開：把下面這行 uncomment + 看 console、跑 _smokeRealtime() 用 eval 訂閱看是否能收。
-// initRealtimeToasts();
+// 註：social_events 訂閱有 page-init quirk (state=joined 但收不到 events)。
+// notification_queue 是新建的表、INSERT 頻率低 (cron 才寫)、希望沒同樣 quirk。
+setTimeout(initRealtimeToasts, 1500);
