@@ -2795,73 +2795,133 @@ async function run(){
   state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
   state.comments.threads = await fetchJSON('./comments_threads.json') || [];
 
-  // [Supabase Phase A] shadow read 或主動切換 — 不影響預設行為
-  //   - ?source=supabase  → 真的把 socialSignals 切到 Supabase（沒 dual-write 前會凍結）
-  //   - ?source=shadow    → 同時讀但只 console.log 比對（預設、零風險）
-  //   - 不帶 query        → shadow（預設）
-  //   無論哪個模式，window.__lxy_supabase 都會塞 Supabase 那邊的結果，供 debug
-  const SOURCE_MODE = new URLSearchParams(location.search).get('source') || 'shadow';
-  if (typeof LxyDB !== 'undefined') {
+  // [Migration C — Phase 4] RPC PRIMARY (data.json 變成 fallback only)
+  //
+  // 預設行為：所有 section 用 Supabase RPC 即時資料、data.json 是 boot fallback
+  //   - 一個 RPC 失敗 → 該 section fallback to data.json (其他 section 不受影響)
+  //   - 全部 RPC 失敗 / LxyDB 沒載入 → 整個 fall back to data.json
+  //   - ?source=json → 強制走 data.json (debug / disaster recovery 用)
+  //
+  // 加速：13 個 RPC 並行打、每個 cache 5 分；total cold time ~1-2s、warm 0ms。
+  // data.json 還是會載 (5.8MB 慢)、但裡面所有欄位都被 RPC 覆寫 → 未來把 data.json
+  // 砍到 50KB 也不影響功能。
+  const SOURCE_MODE = new URLSearchParams(location.search).get('source') || 'rpc';
+  const useRpc = (SOURCE_MODE !== 'json') && (typeof LxyDB !== 'undefined');
+  if (useRpc) {
+    const hours = (mode === '7d') ? 168 : 24;
+    const isWeek = (mode === '7d');
     try {
-      const supaSignals = await LxyDB.signalsByPlatform();
-      window.__lxy_supabase = { signalsByPlatform: supaSignals };
-      const log = (label, obj) => {
-        console.groupCollapsed('%c[LxyDB] ' + label, 'color:#6bd');
-        console.log(obj); console.groupEnd();
-      };
-      log('signalsByPlatform (Supabase)', supaSignals);
-      log('signalsByPlatform (flat JSON)', state.socialSignals);
-      if (SOURCE_MODE === 'supabase') {
-        // 真切換：覆寫 state.socialSignals 成 Supabase shape
-        // social_signals.json 的 shape: { facebook: {red, yellow, green, total, *_pct}, ig:..., th:... }
-        // LxyDB.signalsByPlatform 已是同 shape，直接 assign
-        state.socialSignals = supaSignals;
-        console.warn('%c[LxyDB] socialSignals 已切到 Supabase。dual-write 還沒做，數字會凍結在 migration 時間點', 'color:#c08c12');
-      }
-    } catch (e) {
-      console.warn('[LxyDB] signalsByPlatform failed (shadow read 跳過):', e && e.message);
-    }
+      const [signals, metrics, byHour, topNews, articles, articlesPrev,
+             personsSum, byPlatAll, byPlatLu, latestFb, latestNews,
+             favHistory, topicArc, mediaFraming, commentsByDate, personSections]
+        = await Promise.all([
+          LxyDB.signalsByPlatform().catch(() => null),
+          LxyDB.dashboardMetrics(hours).catch(() => null),
+          LxyDB.dashboardByHour(hours).catch(() => null),
+          LxyDB.dashboardTopNews(hours, 20).catch(() => null),
+          LxyDB.dashboardArticles(hours, false).catch(() => null),
+          LxyDB.dashboardArticles(hours, true).catch(() => null),
+          LxyDB.dashboardPersonsSummary(hours).catch(() => null),
+          LxyDB.dashboardByPlatform(hours, false).catch(() => null),
+          LxyDB.dashboardByPlatform(hours, true).catch(() => null),
+          LxyDB.dashboardLatestByPlatform('facebook', null, 20).catch(() => null),
+          LxyDB.dashboardLatestByPlatform('news', null, 20).catch(() => null),
+          LxyDB.dashboardSelfFavorabilityHistory(7).catch(() => null),
+          LxyDB.dashboardTopicNarrativeArc(7).catch(() => null),
+          LxyDB.dashboardMediaFraming(168).catch(() => null),
+          LxyDB.dashboardCommentsByDate(7).catch(() => null),
+          LxyDB.dashboardPersonSections(20, 20).catch(() => null),
+        ]);
 
-    // [Migration 005] Tier 1 RPC shadow read — metrics / by_hour / top_news
-    // Default: 只 log 比對、UI 用 data.json
-    // ?source=supabase: 真切換、覆寫 d.metrics / d.by_hour / d.top_news
-    try {
-      const hours = (mode === '7d') ? 168 : 24;
-      const [rpcMetrics, rpcByHour, rpcTopNews] = await Promise.all([
-        LxyDB.dashboardMetrics(hours),
-        LxyDB.dashboardByHour(hours),
-        LxyDB.dashboardTopNews(hours, 20),
-      ]);
-      window.__lxy_supabase = Object.assign(window.__lxy_supabase || {}, {
-        metrics: rpcMetrics, byHour: rpcByHour, topNews: rpcTopNews,
-      });
-      const lg = (label, obj) => {
-        console.groupCollapsed('%c[LxyDB] ' + label, 'color:#6bd');
-        console.log(obj); console.groupEnd();
-      };
-      lg('metrics (Supabase RPC, ' + hours + 'h)', rpcMetrics);
-      lg('metrics (flat JSON)', pick(d, 'metrics', 'metrics_7d'));
-      lg('by_hour (Supabase RPC)', rpcByHour);
-      lg('by_hour (flat JSON, n=' + (pick(d, 'by_hour', 'by_hour_7d')||[]).length + ')',
-         pick(d, 'by_hour', 'by_hour_7d'));
-      lg('top_news (Supabase RPC, ' + rpcTopNews.length + ' rows)', rpcTopNews);
-
-      if (SOURCE_MODE === 'supabase') {
-        // 真切換：覆蓋 data.json 對應欄位
-        if (mode === '7d') {
-          d.metrics_7d = rpcMetrics;
-          d.by_hour_7d = rpcByHour;
-          d.top_news_7d = rpcTopNews;
+      // 把 RPC 結果覆寫進 d (data.json 對應 key)；null = RPC 失敗、保留 data.json 原值
+      if (signals)      state.socialSignals = signals;
+      if (metrics)      { if (isWeek) d.metrics_7d = metrics; else d.metrics = metrics; }
+      if (byHour)       { if (isWeek) d.by_hour_7d = byHour; else d.by_hour = byHour; }
+      if (topNews)      { if (isWeek) d.top_news_7d = topNews; else d.top_news = topNews; }
+      if (articles)     { if (isWeek) d.articles_7d = articles; else d.articles_24h = articles; }
+      if (articlesPrev) { if (isWeek) d.articles_prev_7d = articlesPrev; else d.articles_prev_24h = articlesPrev; }
+      if (personsSum) {
+        if (isWeek) {
+          d.mention_articles_7d = personsSum.mention_articles;
+          d.mention_compare_7d  = personsSum.mention_compare;
         } else {
-          d.metrics = rpcMetrics;
-          d.by_hour = rpcByHour;
-          d.top_news = rpcTopNews;
+          d.mention_articles_24h = personsSum.mention_articles;
+          d.mention_compare_24h  = personsSum.mention_compare;
+          d.voice_breakdown_24h  = personsSum.voice_breakdown;
         }
-        console.warn('%c[LxyDB] dashboard data 已切到 Supabase RPC (metrics/by_hour/top_news)', 'color:#c08c12');
       }
+      if (byPlatAll) { if (isWeek) d.by_platform_7d = byPlatAll; else d.by_platform = byPlatAll; }
+      if (byPlatLu && !isWeek) d.mention_by_platform_24h = byPlatLu;
+      if (latestFb)   d.latest_facebook_20 = latestFb;
+      if (latestNews) d.latest_news_20 = latestNews;
+      // latest_by_platform_24h/7d (dict)
+      const latestByPlat = {};
+      if (latestFb && latestFb.length) latestByPlat.facebook = latestFb;
+      if (latestNews && latestNews.length) latestByPlat.news = latestNews;
+      if (Object.keys(latestByPlat).length) {
+        if (isWeek) d.latest_by_platform_7d = latestByPlat;
+        else        d.latest_by_platform_24h = latestByPlat;
+      }
+      if (favHistory)     d.self_favorability_history_7d = favHistory;
+      if (topicArc) {
+        // RPC 回 {topic: {dates:[], counts:{red:[],yellow:[],green:[]}, total}}
+        // Frontend 期望 {topic: [{date, red, yellow, green, total}, ...]} per-day array
+        const _arcXform = {};
+        for (const [_topic, _v] of Object.entries(topicArc)) {
+          if (Array.isArray(_v)) { _arcXform[_topic] = _v; continue; }
+          if (_v && _v.dates && _v.counts) {
+            _arcXform[_topic] = _v.dates.map((_d, _i) => ({
+              date:   _d,
+              red:    (_v.counts.red    || [])[_i] || 0,
+              yellow: (_v.counts.yellow || [])[_i] || 0,
+              green:  (_v.counts.green  || [])[_i] || 0,
+              total:  ((_v.counts.red||[])[_i] || 0) +
+                      ((_v.counts.yellow||[])[_i] || 0) +
+                      ((_v.counts.green||[])[_i] || 0),
+            }));
+          }
+        }
+        d.topic_narrative_arc_7d = _arcXform;
+      }
+      if (mediaFraming) {
+        // RPC 用 'window_hours'、data.json 原本 key 是 'window' — 補相容
+        if (mediaFraming.window_hours != null && mediaFraming.window == null) {
+          mediaFraming.window = mediaFraming.window_hours;
+        }
+        d.media_framing_7d = mediaFraming;
+      }
+      if (commentsByDate) d.comments_by_date_7d = commentsByDate;
+      if (personSections) d.person_sections = personSections;
+
+      // 衍生：event_stream 從 articles 按 severity 分流 (data.json 原本是 Python 算的、現在 JS 算)
+      const deriveEventStream = (arts) => ({
+        minute: (arts || []).filter(a => a.severity === 'red'),
+        hour:   (arts || []).filter(a => a.severity === 'yellow'),
+        day:    (arts || []).filter(a => !a.severity || a.severity === 'green'),
+      });
+      if (articles) {
+        if (isWeek) d.event_stream_7d = deriveEventStream(articles);
+        else        d.event_stream    = deriveEventStream(articles);
+      }
+
+      // 結果統計
+      const _results = [signals, metrics, byHour, topNews, articles, articlesPrev,
+                        personsSum, byPlatAll, byPlatLu, latestFb, latestNews,
+                        favHistory, topicArc, mediaFraming, commentsByDate, personSections];
+      const _ok = _results.filter(x => x !== null).length;
+      const _fail = _results.length - _ok;
+      console.log(`%c[LxyDB] RPC primary: ${_ok} ok / ${_fail} fallback (mode=${mode})`,
+                  _fail === 0 ? 'color:#1f8a4c' : 'color:#c08c12');
+      window.__lxy_supabase = {
+        signals, metrics, byHour, topNews, articles, articlesPrev, personsSum,
+        byPlatAll, byPlatLu, latestFb, latestNews,
+        favHistory, topicArc, mediaFraming, commentsByDate, personSections,
+      };
     } catch (e) {
-      console.warn('[LxyDB] dashboard RPC shadow read 失敗:', e && e.message);
+      console.warn('[LxyDB] RPC primary mode 整段失敗、全 fallback 到 data.json:', e && e.message);
     }
+  } else if (SOURCE_MODE === 'json') {
+    console.log('[LxyDB] ?source=json — 跳過 RPC、純 data.json 模式');
   }
   // 留言按發布日期 group（給 topic arc click 用）— backend 已 parse 好
   state.commentsByDate = d.comments_by_date_7d || {};
