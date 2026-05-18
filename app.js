@@ -3525,8 +3525,8 @@ initPastEventsToggle();
 initModes();
 initModal();
 initTopicHeat();
-// run() 失敗時 console.error，避免再發生 silent failure
-run().catch(e => console.error('run() failed:', e));
+// run() interval — 第一次 run() 由下面 _firstRunThenSubscribe() 處理 (確保 Realtime
+// subscribe 排在第一次 run() 之後)。
 setInterval(() => run().catch(e => console.error('run() interval failed:', e)), 60000);
 
 // --------- Real-time push (新紅燈 toast) ---------
@@ -3603,6 +3603,17 @@ function initRealtimeToasts() {
   });
   console.log('%c[realtime] subscribed to social_events INSERT (red/yellow toasts)', 'color:#1f8a4c');
 }
-// Defer realtime subscribe by 2 秒 — 避免 Supabase WS 還沒完全 ready 時提早 subscribe、
-// server-side 可能 dedup 掉這個 channel binding 造成 events 收不到
-setTimeout(initRealtimeToasts, 2000);
+// Realtime subscribe — 等第一次 run() 完成後再訂閱。
+// 早期實驗發現：頁面剛載入時 supabase WS 還沒完全 ready、
+// 即使 channel.state='joined'、server-side 也收不到 events。
+// 確認 run() 至少跑過一輪 (13 個 RPC 都打過、WS 確實熱了)、才訂閱 Realtime。
+let _realtimeInited = false;
+async function _firstRunThenSubscribe() {
+  try { await run(); } catch(e) { console.error('first run failed:', e); }
+  // 即使 run() fail 也 subscribe — Realtime 跟 run() 各自獨立
+  if (!_realtimeInited) {
+    _realtimeInited = true;
+    setTimeout(initRealtimeToasts, 800);
+  }
+}
+_firstRunThenSubscribe();
