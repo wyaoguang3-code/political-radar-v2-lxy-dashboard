@@ -173,6 +173,20 @@ function escapeHtml(s){
   ));
 }
 
+// 擋掉測試殘留 / 空 URL — 只接受 http(s) 且不是 example.* / localhost test domain
+function isSafeExternalUrl(u){
+  if (!u || typeof u !== 'string') return false;
+  let parsed;
+  try { parsed = new URL(u); } catch { return false; }
+  if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+  const host = parsed.hostname.toLowerCase();
+  if (!host) return false;
+  // 擋掉常見測試 / dummy domain
+  if (/^example\.(test|com|net|org)$/.test(host)) return false;
+  if (host === 'localhost' || host === '127.0.0.1') return false;
+  return true;
+}
+
 // --------- Data fetching ---------
 async function fetchJSON(path){
   try {
@@ -3555,6 +3569,11 @@ function initRealtimeToasts() {
     const cluster = row.cluster_count || 0;
     const bucket = row.bucket_label || (level === 'yellow' ? '新黃燈' : '新紅燈');
     const clusterTxt = cluster > 0 ? `（同議題另 ${cluster} 則）` : '';
+    const linkUrl = row.short_url || row.url;
+    const linkOk = isSafeExternalUrl(linkUrl);
+    const metaText = linkOk
+      ? `${row.publisher || row.platform || '—'} ｜ 點擊查看`
+      : `${row.publisher || row.platform || '—'} ｜ (無有效連結)`;
     div.innerHTML = `
       <button class="rt-toast-close" aria-label="關閉">✕</button>
       <div class="rt-toast-header">
@@ -3563,14 +3582,14 @@ function initRealtimeToasts() {
         <span class="rt-toast-time">${tNow}</span>
       </div>
       <div class="rt-toast-title">${escapeHtml((row.title || '(無標題)').slice(0, 140))}</div>
-      <div class="rt-toast-meta">${escapeHtml(row.publisher || row.platform || '—')} ｜ 點擊查看</div>
+      <div class="rt-toast-meta">${escapeHtml(metaText)}</div>
     `;
+    if (!linkOk) div.classList.add('rt-toast-nolink');
     div.querySelector('.rt-toast-close').addEventListener('click', (e) => {
       e.stopPropagation();
       dismiss();
     });
-    const linkUrl = row.short_url || row.url;
-    if (linkUrl) {
+    if (linkOk) {
       div.addEventListener('click', () => window.open(linkUrl, '_blank', 'noopener'));
     }
     container.appendChild(div);

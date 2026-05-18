@@ -643,6 +643,15 @@ li.hd-news-green a{color:#a8efd4}
 .rt-toast.rt-yellow .rt-toast-header {
   color: #ffd76b;
 }
+/* 沒有有效連結時 — 視覺上提示 user 不可點 */
+.rt-toast.rt-toast-nolink {
+  cursor: default;
+  opacity: 0.92;
+}
+.rt-toast.rt-toast-nolink .rt-toast-meta {
+  color: #7a83a6;
+  font-style: italic;
+}
 /* mobile */
 @media (max-width: 500px) {
   .rt-toasts { right: 8px; left: 8px; bottom: 8px; max-width: none; }
