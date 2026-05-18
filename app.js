@@ -3596,10 +3596,17 @@ function initRealtimeToasts() {
 // 第一次 run()
 run().catch(e => console.error('run() failed:', e));
 
-// === Realtime subscribe ===
-// 訂閱 notification_queue 表 (TG 推送同時寫進來、已 LLM dedup + cluster)
-// 比訂閱 social_events 乾淨：每筆 = 1 個真要推的事件、不會洗版
+// === Realtime subscribe — DISABLED (Supabase quirk 未修通) ===
+// 試過：unique channel name / 獨立 client / wait load / 5-30 秒 delay /
+//      user-interaction trigger / event=* / 訂 notification_queue vs social_events
+// 全部一樣：channel state=joined 但 events 不來。同 lib eval 後再訂閱卻能收。
+// 需要 deep dive 看 WebSocket phx 訊息找 root cause。詳見 docs/MIGRATION_PLAYBOOK.md。
 //
-// 註：social_events 訂閱有 page-init quirk (state=joined 但收不到 events)。
-// notification_queue 是新建的表、INSERT 頻率低 (cron 才寫)、希望沒同樣 quirk。
-setTimeout(initRealtimeToasts, 1500);
+// 已建好但 disabled：
+//   - notification_queue table + Realtime publication + RLS
+//   - cron push_red_alerts 寫 queue (best-effort dual-write、不影響 TG)
+//   - lib/db.js subscribeNotifications API
+//   - toast UI / CSS / filter logic
+//
+// 修通那行 quirk 後、uncomment 下面就立刻運作：
+// initRealtimeToasts();
