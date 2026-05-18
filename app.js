@@ -471,17 +471,18 @@ function renderTopicNarrative(arcs){
     row.querySelectorAll('.topic-arc-cell-clickable').forEach((cell) => {
       cell.addEventListener('click', () => {
         const t = decodeURIComponent(cell.dataset.topic);
+        const tDisplay = prettifyTopic(t);
         const dayIdx = parseInt(cell.dataset.day, 10);
         const dayData = arc[dayIdx];
         if (!dayData) return;
-        // 用 data.comments_by_date_7d 取該日留言、再 filter 含 topic 的
+        // 留言用「prettified topic」match — 比 raw (含城市前綴) 寬鬆、抓到更多相關留言
         const dayComments = (state.commentsByDate || {})[dayData.date] || [];
-        const topicComments = dayComments.filter(c => (c.text || '').includes(t));
+        const topicComments = dayComments.filter(c => (c.text || '').includes(tDisplay));
         const cmtNote = topicComments.length === 0
           ? `（${dayData.date} 留言中無命中此議題）`
           : '';
-        const note = `${dayData.date} ｜ 議題「${t}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條 ${cmtNote}`;
-        openArticlesModal(`🔥 ${t} — ${dayData.date} 新聞 + 留言`, note, dayData.articles || [], topicComments);
+        const note = `${dayData.date} ｜ 議題「${tDisplay}」 ｜ 紅 ${dayData.red} ／ 黃 ${dayData.yellow} ／ 綠 ${dayData.green} ｜ 共 ${dayData.total} 條 ${cmtNote}`;
+        openArticlesModal(`🔥 ${tDisplay} — ${dayData.date} 新聞 + 留言`, note, dayData.articles || [], topicComments);
       });
     });
     wrap.appendChild(row);
