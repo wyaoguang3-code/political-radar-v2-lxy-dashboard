@@ -3603,4 +3603,6 @@ function initRealtimeToasts() {
   });
   console.log('%c[realtime] subscribed to social_events INSERT (red/yellow toasts)', 'color:#1f8a4c');
 }
-initRealtimeToasts();
+// Defer realtime subscribe by 2 秒 — 避免 Supabase WS 還沒完全 ready 時提早 subscribe、
+// server-side 可能 dedup 掉這個 channel binding 造成 events 收不到
+setTimeout(initRealtimeToasts, 2000);
