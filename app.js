@@ -3603,17 +3603,16 @@ function initRealtimeToasts() {
   });
   console.log('%c[realtime] subscribed to social_events INSERT (red/yellow toasts)', 'color:#1f8a4c');
 }
-// Realtime subscribe — 等第一次 run() 完成後再訂閱。
-// 早期實驗發現：頁面剛載入時 supabase WS 還沒完全 ready、
-// 即使 channel.state='joined'、server-side 也收不到 events。
-// 確認 run() 至少跑過一輪 (13 個 RPC 都打過、WS 確實熱了)、才訂閱 Realtime。
-let _realtimeInited = false;
-async function _firstRunThenSubscribe() {
-  try { await run(); } catch(e) { console.error('first run failed:', e); }
-  // 即使 run() fail 也 subscribe — Realtime 跟 run() 各自獨立
-  if (!_realtimeInited) {
-    _realtimeInited = true;
-    setTimeout(initRealtimeToasts, 800);
-  }
-}
-_firstRunThenSubscribe();
+// 第一次 run()
+run().catch(e => console.error('run() failed:', e));
+
+// === Realtime subscribe — 目前 DISABLED ===
+// 2026-05-18 嘗試讓 page-init 自動訂閱 social_events INSERT、但碰到 Supabase 怪症：
+//   - channel.state = 'joined' 且 status callback 收到 'SUBSCRIBED'
+//   - 但 server 端 INSERT 事件不會 trigger client callback
+//   - 同 lib 從 DevTools 跑卻能成功
+//   - 試了 unique channel name / delay / load event / 獨立 client / event=* 都不行
+// 已 setup 完整 (publication / toast UI / CSS / lib API)、留待之後 deep dive 修通。
+//
+// 要試打開：把下面這行 uncomment + 看 console、跑 _smokeRealtime() 用 eval 訂閱看是否能收。
+// initRealtimeToasts();
