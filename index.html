@@ -13,7 +13,7 @@
     <p id="updated">更新中...</p>
   </header>
 
-  <!-- Red-ratio alert banner (shown dynamically by app.js) -->
+  <!-- Red-ratio alert banner (shown dynamically by app.js?v=2026-05-18-rpc-tier1) -->
   <div id="alertBanner" class="alert-banner hidden" role="status" aria-live="polite"></div>
 
   <section class="panel" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
@@ -523,10 +523,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <!-- Supabase: 必須在 app.js 前載入。app.js 會用 window.LxyDB 讀 DB（影子讀，預設不影響 UI） -->
+  <!-- Supabase: 必須在 app.js?v=2026-05-18-rpc-tier1 前載入。app.js?v=2026-05-18-rpc-tier1 會用 window.LxyDB 讀 DB（影子讀，預設不影響 UI） -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="./lib/config.js?v=2026-05-13"></script>
-  <script src="./lib/db.js?v=2026-05-13d-window-hours"></script>
-  <script src="./app.js?v=2026-05-13-supabase-shadow"></script>
+  <script src="./lib/db.js?v=2026-05-18-rpc-tier1"></script>
+  <script src="./app.js?v=2026-05-18-rpc-tier1"></script>
 </body>
 </html>

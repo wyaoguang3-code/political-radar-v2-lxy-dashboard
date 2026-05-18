@@ -2821,6 +2821,47 @@ async function run(){
     } catch (e) {
       console.warn('[LxyDB] signalsByPlatform failed (shadow read 跳過):', e && e.message);
     }
+
+    // [Migration 005] Tier 1 RPC shadow read — metrics / by_hour / top_news
+    // Default: 只 log 比對、UI 用 data.json
+    // ?source=supabase: 真切換、覆寫 d.metrics / d.by_hour / d.top_news
+    try {
+      const hours = (mode === '7d') ? 168 : 24;
+      const [rpcMetrics, rpcByHour, rpcTopNews] = await Promise.all([
+        LxyDB.dashboardMetrics(hours),
+        LxyDB.dashboardByHour(hours),
+        LxyDB.dashboardTopNews(hours, 20),
+      ]);
+      window.__lxy_supabase = Object.assign(window.__lxy_supabase || {}, {
+        metrics: rpcMetrics, byHour: rpcByHour, topNews: rpcTopNews,
+      });
+      const lg = (label, obj) => {
+        console.groupCollapsed('%c[LxyDB] ' + label, 'color:#6bd');
+        console.log(obj); console.groupEnd();
+      };
+      lg('metrics (Supabase RPC, ' + hours + 'h)', rpcMetrics);
+      lg('metrics (flat JSON)', pick(d, 'metrics', 'metrics_7d'));
+      lg('by_hour (Supabase RPC)', rpcByHour);
+      lg('by_hour (flat JSON, n=' + (pick(d, 'by_hour', 'by_hour_7d')||[]).length + ')',
+         pick(d, 'by_hour', 'by_hour_7d'));
+      lg('top_news (Supabase RPC, ' + rpcTopNews.length + ' rows)', rpcTopNews);
+
+      if (SOURCE_MODE === 'supabase') {
+        // 真切換：覆蓋 data.json 對應欄位
+        if (mode === '7d') {
+          d.metrics_7d = rpcMetrics;
+          d.by_hour_7d = rpcByHour;
+          d.top_news_7d = rpcTopNews;
+        } else {
+          d.metrics = rpcMetrics;
+          d.by_hour = rpcByHour;
+          d.top_news = rpcTopNews;
+        }
+        console.warn('%c[LxyDB] dashboard data 已切到 Supabase RPC (metrics/by_hour/top_news)', 'color:#c08c12');
+      }
+    } catch (e) {
+      console.warn('[LxyDB] dashboard RPC shadow read 失敗:', e && e.message);
+    }
   }
   // 留言按發布日期 group（給 topic arc click 用）— backend 已 parse 好
   state.commentsByDate = d.comments_by_date_7d || {};
