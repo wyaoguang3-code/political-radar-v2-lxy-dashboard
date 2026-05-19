@@ -3189,23 +3189,12 @@ async function run(){
   };
   const INITIAL_TOP_NEWS = 12;
   topNews.slice(0, INITIAL_TOP_NEWS).forEach(x => news.appendChild(renderTopNewsLi(x)));
-  // top news 來自 RPC dashboard_top_news、初始拉 20 (call site: app.js:2871 LxyDB.dashboardTopNews(hours, 20))
-  // 但只顯示 12、按鈕先用 client-side reveal 補到 20、超過 20 再走 RPC fetch
-  // 簡化：合併 → 看 topNews 是否已 >= INITIAL_TOP_NEWS、>= 才加按鈕
+  // 清掉 run() 上次 append 的舊 button (避免累積)
+  const newsParent = news.parentElement;
+  newsParent?.querySelectorAll('button.platform-more-btn[data-for-list="news"]').forEach(b => b.remove());
   if (topNews.length > INITIAL_TOP_NEWS) {
-    // 先 client-side reveal 剩下的 (data.json 已有資料、不重 fetch)
-    // 但因為 topNews 來自 RPC limit=20、超過 20 要 fetch more via RPC
-    const parent = news.parentElement;   // 包 ol 的容器
-    // 用「client reveal 剩下 + RPC fetch more 串接」策略：
-    // 先 client reveal 全部 topNews
-    let shown = INITIAL_TOP_NEWS;
-    const moreContainer = document.createElement('div');
-    parent.appendChild(moreContainer);
-    // Step A: 已有 data 內 reveal
-    if (shown < topNews.length) {
-      makeShowMoreButton(moreContainer, news, topNews, shown, 20, renderTopNewsLi);
-    }
-    // Step B 留給未來 — 若有需要拉超過 RPC 初始 20 的、可加 RPC fetch button (但 dashboard 首屏夠用、省一層)
+    const btn = makeShowMoreButton(newsParent, news, topNews, INITIAL_TOP_NEWS, 20, renderTopNewsLi);
+    if (btn) btn.dataset.forList = 'news';
   }
 
   // 共用：給 li 加上 hd-news-{red/yellow/green} class + 對應的 hd-news-badge pill
@@ -3315,29 +3304,23 @@ async function run(){
   function renderList(elId, arr, moreCtx){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
     (arr||[]).forEach(x => el.appendChild(renderArticleLiPerson(x)));
-    // 移除「緊鄰 el 後」的舊 more button (only this list 的、不影響同 parent 內其他 list 的)
-    while (el.nextElementSibling && el.nextElementSibling.classList?.contains('platform-more-btn')) {
-      el.nextElementSibling.remove();
-    }
+    // 移除「上次 renderList 為這個 elId 加的 button」(避免 run() 多次跑時累積)
+    const parent = el.parentElement;
+    parent?.querySelectorAll(`button.platform-more-btn[data-for-list="${elId}"]`).forEach(b => b.remove());
     if (moreCtx && (arr||[]).length >= (moreCtx.currentLimit || 20)) {
-      // 8 個 list 共用同一 RPC、click 觸發 global re-fetch
-      // 為了讓 button 緊接在 el 後面、用 Comment 配 insertAdjacentElement
-      const btnHolder = document.createElement('div');
-      btnHolder.style.display = 'contents';   // 不增加 layout、純當容器
-      el.insertAdjacentElement('afterend', btnHolder);
-      makeLoadMoreRPC(btnHolder, el,
+      // 8 個 list 共用同一 RPC、但 per-list 獨立 grow
+      const btn = makeLoadMoreRPC(parent, el,
         async (newLimit) => {
-          // 8 個 list 共用同一 RPC、但 per-list 獨立 grow (不主動 re-render 其他 list、
-          // 避免 double-append)。next time 其他 list 自己點 「more」 才會跟著拿到更多
           const fresh = await LxyDB.dashboardPersonSections(newLimit, newLimit);
           if (!fresh) return arr;
-          d.person_sections = fresh;   // 仍把資料存進 d、給 cache 用
+          d.person_sections = fresh;
           const person = moreCtx.person, listKey = moreCtx.listKey;
           return (fresh[person] || {})[listKey] || [];
         },
         renderArticleLiPerson,
         (arr||[]).length,
         50);
+      if (btn) btn.dataset.forList = elId;
     }
   }
   function renderAllPersonLists(limit) {
