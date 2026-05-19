@@ -441,15 +441,39 @@ function renderSelfFavorability(history){
         const h = history[idx];
         if (!h) return;
         const c = h.comments || {red:0, yellow:0, green:0, total:0};
-        const samples = h.comment_samples || [];  // 已按發布日期 group
-        // 顯示「當日真實抓到的 raw 留言數」(不是累計 state)
+        const samples = h.comment_samples || [];
         const cR = samples.filter(s => s.signal === 'red').length;
         const cY = samples.filter(s => s.signal === 'yellow').length;
         const cG = samples.filter(s => s.signal === 'green').length;
         const stagnantNote = c.stagnant ? ' 🟫 信號降權' : '';
         const note = `${h.date} ｜ 分數 ${h.score} ｜ 新聞 紅${h.red} 黃${h.yellow} 綠${h.green}（危機 ${h.crisis} 條） ｜ 當日留言 ${samples.length} 則（紅${cR} 黃${cY} 綠${cG}）${stagnantNote}`
           + (h.samples_low ? ' ⚠️ 樣本不足' : '');
-        openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note, h.articles || [], samples);
+        // load-more: 用 migration 017 的 day-drilldown RPC、拉同一天更多 articles + comments
+        const dayDate = h.date;
+        const drilldownCache = { lastFetch: null };
+        const makeDayFetcher = (kind) => async (newLimit) => {
+          // 一次 RPC 同時返 articles + comments;
+          // 因為 button 各自獨立、避免兩個 button 都觸發 RPC、用 simple 快取
+          if (!drilldownCache.lastFetch || drilldownCache.lastFetch.limit < newLimit) {
+            const news_n = kind === 'news' ? newLimit : (drilldownCache.lastFetch?.news_n || 50);
+            const cmt_n  = kind === 'cmt'  ? newLimit : (drilldownCache.lastFetch?.cmt_n  || 100);
+            const r = await LxyDB.client().rpc('dashboard_favorability_day_drilldown',
+              { day_date: dayDate, news_n: news_n, cmt_n: cmt_n });
+            if (r.error) throw r.error;
+            drilldownCache.lastFetch = { limit: newLimit, news_n, cmt_n, data: r.data };
+          }
+          return kind === 'news'
+            ? (drilldownCache.lastFetch.data.articles || [])
+            : (drilldownCache.lastFetch.data.comments || []);
+        };
+        openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note,
+                          h.articles || [], samples,
+                          {
+                            newsFetchFn: makeDayFetcher('news'),
+                            cmtFetchFn:  makeDayFetcher('cmt'),
+                            newsBatch:   50,
+                            cmtBatch:    100,
+                          });
       },
       onHover: (evt, elements) => {
         evt.native.target.style.cursor = elements && elements.length ? 'pointer' : 'default';
@@ -1595,7 +1619,14 @@ const _pastArchiveCache = {};
 
 // 把任意 articles 陣列開到既有 hotspot detail modal
 // 純清單用途（卡片/圖表 click），沒 level/place/壽命概念，meta 只顯示 note
-function openArticlesModal(title, note, articles, commentsList){
+// loadMoreCtx (optional 5th arg):
+//   {
+//     newsFetchFn: (newLimit) => Promise<articles[]>   // 給 modal 內新聞區的「載入更多」按鈕用
+//     cmtFetchFn:  (newLimit) => Promise<comments[]>   // 給 modal 內留言區的「載入更多」按鈕用
+//     newsBatch:   50  (default)
+//     cmtBatch:    100 (default)
+//   }
+function openArticlesModal(title, note, articles, commentsList, loadMoreCtx){
   const news = (articles || []).map(a => ({
     title: a.title || '（無標題）',
     url: a.url || '',
@@ -1620,6 +1651,7 @@ function openArticlesModal(title, note, articles, commentsList){
     comment_count: comments.length,
     news_articles: news,
     comments: comments,
+    loadMoreCtx: loadMoreCtx,
   }, null);
 }
 
@@ -2765,6 +2797,43 @@ function openHotspotDetailModal(h, markersByTitle){
 
   const articles = Array.isArray(h.news_articles) ? h.news_articles : [];
   const comments = Array.isArray(h.comments) ? h.comments : [];
+  const loadMoreCtx = h.loadMoreCtx || null;
+
+  // 提出 li 構造邏輯給 load-more append 也能用
+  const renderModalNewsLi = (x) => {
+    const li = document.createElement('li');
+    const sev = x.severity || (x.is_negative ? 'yellow' : null);
+    const origSev = (sev === 'red' || sev === 'yellow' || sev === 'green') ? sev : 'green';
+    li.classList.add('hd-news-' + origSev);
+    const badge = document.createElement('span');
+    badge.className = 'hd-news-badge hd-news-badge-' + origSev;
+    badge.textContent = origSev === 'red' ? '🔴 紅燈' : (origSev === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
+    badge.title = origSev === 'red' ? '標題命中嚴重事件詞（刑事 / 公共安全 / 重大）'
+                : origSev === 'yellow' ? '標題命中政治批評／環境問題詞'
+                : '正面 / 中性 / 利多';
+    li.appendChild(badge);
+    attachCorrectionAffordance(li, {
+      target_type:    'event',
+      target_id:      x.url || x.title || '',
+      original_label: origSev,
+      context:        (x.title || '').slice(0, 80),
+    });
+    const meta = document.createElement('span');
+    meta.className = 'mention-meta';
+    meta.textContent = `${(x.time || '').slice(5, 16)}　`;
+    li.appendChild(meta);
+    if (x.publisher){
+      const pub = document.createElement('span');
+      pub.className = 'hd-news-publisher';
+      pub.textContent = x.publisher;
+      li.appendChild(pub);
+    }
+    const a = document.createElement('a');
+    a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = (x.title || '').trim() || '（無標題）';
+    li.appendChild(a);
+    return li;
+  };
 
   // 新聞區塊
   const newsSec = document.createElement('section');
@@ -2777,57 +2846,10 @@ function openHotspotDetailModal(h, markersByTitle){
     ol.className = 'hd-news-list';
     let redCount = 0, yellowCount = 0;
     articles.forEach(x => {
-      const li = document.createElement('li');
-      // 嚴重度分級：red（公共安全/刑事）/ yellow（政治批評/環境）/ none
       const sev = x.severity || (x.is_negative ? 'yellow' : null);
-      const origSev = (sev === 'red' || sev === 'yellow' || sev === 'green') ? sev : 'green';
-      if (sev === 'red'){
-        li.classList.add('hd-news-red');
-        redCount += 1;
-        const badge = document.createElement('span');
-        badge.className = 'hd-news-badge hd-news-badge-red';
-        badge.textContent = '🔴 紅燈';
-        badge.title = '標題命中嚴重事件詞（刑事 / 公共安全 / 重大）';
-        li.appendChild(badge);
-      } else if (sev === 'yellow'){
-        li.classList.add('hd-news-yellow');
-        yellowCount += 1;
-        const badge = document.createElement('span');
-        badge.className = 'hd-news-badge hd-news-badge-yellow';
-        badge.textContent = '🟡 黃燈';
-        badge.title = '標題命中政治批評／環境問題詞';
-        li.appendChild(badge);
-      } else {
-        // 綠燈：正面 / 中性，仍要 badge 讓使用者一眼看出（避免「沒燈號 = 不知道」）
-        li.classList.add('hd-news-green');
-        const badge = document.createElement('span');
-        badge.className = 'hd-news-badge hd-news-badge-green';
-        badge.textContent = '🟢 綠燈';
-        badge.title = '正面 / 中性 / 利多';
-        li.appendChild(badge);
-      }
-      // LLM feedback loop：admin 登入時、可在每則新聞旁開「標錯了」修正燈號
-      attachCorrectionAffordance(li, {
-        target_type:    'event',
-        target_id:      x.url || x.title || '',  // 用 URL 作 stable key (沒 event_id 也能 match)
-        original_label: origSev,
-        context:        (x.title || '').slice(0, 80),
-      });
-      const meta = document.createElement('span');
-      meta.className = 'mention-meta';
-      meta.textContent = `${(x.time || '').slice(5, 16)}　`;
-      li.appendChild(meta);
-      if (x.publisher){
-        const pub = document.createElement('span');
-        pub.className = 'hd-news-publisher';
-        pub.textContent = x.publisher;
-        li.appendChild(pub);
-      }
-      const a = document.createElement('a');
-      a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
-      a.textContent = (x.title || '').trim() || '（無標題）';
-      li.appendChild(a);
-      ol.appendChild(li);
+      if (sev === 'red') redCount += 1;
+      else if (sev === 'yellow') yellowCount += 1;
+      ol.appendChild(renderModalNewsLi(x));
     });
     if (redCount > 0 || yellowCount > 0){
       const note = document.createElement('p');
@@ -2839,8 +2861,46 @@ function openHotspotDetailModal(h, markersByTitle){
       newsSec.appendChild(note);
     }
     newsSec.appendChild(ol);
+    // Load-more button — 只在 caller 有提供 newsFetchFn 時加
+    if (loadMoreCtx && typeof loadMoreCtx.newsFetchFn === 'function') {
+      makeLoadMoreRPC(newsSec, ol,
+        loadMoreCtx.newsFetchFn,
+        renderModalNewsLi,
+        articles.length,
+        loadMoreCtx.newsBatch || 50);
+    }
   }
   body.appendChild(newsSec);
+
+  const renderModalCmtLi = (c) => {
+    const li = document.createElement('li');
+    li.className = 'hd-comment';
+    const platCls = PLATFORM_CHIP_CLASS[c.platform] || '';
+    const platName = PLATFORM_DISPLAY[c.platform] || c.platform;
+    const sigCls = c.signal === 'red' ? 'red' : c.signal === 'yellow' ? 'yellow' : c.signal === 'green' ? 'green' : '';
+    const time = c.time_text ? `<span class="hd-c-time">${escapeHtml(c.time_text)}</span>` : '';
+    const author = c.author ? `<span class="hd-c-author">${escapeHtml(c.author)}</span>` : '';
+    const sigChip = sigCls ? `<span class="light-chip ${sigCls}">${sigCls === 'red' ? '🔴' : sigCls === 'yellow' ? '🟡' : '🟢'}</span>` : '';
+    const link = c.url ? `<a class="hd-c-link" href="${escapeHtml(c.url)}" target="_blank" rel="noopener">原文 →</a>` : '';
+    li.innerHTML = `
+      <div class="hd-c-hdr">
+        <span class="hd-c-platform plat-${platCls}">${platName}</span>
+        ${sigChip}
+        ${author}
+        ${time}
+        ${link}
+      </div>
+      <div class="hd-c-text">${escapeHtml(c.text || '')}</div>
+    `;
+    const cmtTargetId = c.url || `cmt:${c.platform || '?'}::${(c.text || '').slice(0, 80)}`;
+    attachCorrectionAffordance(li, {
+      target_type:    'comment',
+      target_id:      cmtTargetId,
+      original_label: sigCls || 'green',
+      context:        ((c.author ? c.author + '：' : '') + (c.text || '')).slice(0, 80),
+    });
+    return li;
+  };
 
   // 留言區塊
   const cmtSec = document.createElement('section');
@@ -2851,38 +2911,16 @@ function openHotspotDetailModal(h, markersByTitle){
   } else {
     const ul = document.createElement('ul');
     ul.className = 'hd-comment-list';
-    comments.forEach(c => {
-      const li = document.createElement('li');
-      li.className = 'hd-comment';
-      const platCls = PLATFORM_CHIP_CLASS[c.platform] || '';
-      const platName = PLATFORM_DISPLAY[c.platform] || c.platform;
-      const sigCls = c.signal === 'red' ? 'red' : c.signal === 'yellow' ? 'yellow' : c.signal === 'green' ? 'green' : '';
-      const time = c.time_text ? `<span class="hd-c-time">${escapeHtml(c.time_text)}</span>` : '';
-      const author = c.author ? `<span class="hd-c-author">${escapeHtml(c.author)}</span>` : '';
-      const sigChip = sigCls ? `<span class="light-chip ${sigCls}">${sigCls === 'red' ? '🔴' : sigCls === 'yellow' ? '🟡' : '🟢'}</span>` : '';
-      const link = c.url ? `<a class="hd-c-link" href="${escapeHtml(c.url)}" target="_blank" rel="noopener">原文 →</a>` : '';
-      li.innerHTML = `
-        <div class="hd-c-hdr">
-          <span class="hd-c-platform plat-${platCls}">${platName}</span>
-          ${sigChip}
-          ${author}
-          ${time}
-          ${link}
-        </div>
-        <div class="hd-c-text">${escapeHtml(c.text || '')}</div>
-      `;
-      // LLM feedback loop：admin 登入時可在每則留言旁開「標錯了」修正燈號
-      // target_id 優先用 url；沒 url 的話用 hash(platform + text) 當 stable key
-      const cmtTargetId = c.url || `cmt:${c.platform || '?'}::${(c.text || '').slice(0, 80)}`;
-      attachCorrectionAffordance(li, {
-        target_type:    'comment',
-        target_id:      cmtTargetId,
-        original_label: sigCls || 'green',
-        context:        ((c.author ? c.author + '：' : '') + (c.text || '')).slice(0, 80),
-      });
-      ul.appendChild(li);
-    });
+    comments.forEach(c => ul.appendChild(renderModalCmtLi(c)));
     cmtSec.appendChild(ul);
+    // Load-more button — 只在 caller 有提供 cmtFetchFn 時加
+    if (loadMoreCtx && typeof loadMoreCtx.cmtFetchFn === 'function') {
+      makeLoadMoreRPC(cmtSec, ul,
+        loadMoreCtx.cmtFetchFn,
+        renderModalCmtLi,
+        comments.length,
+        loadMoreCtx.cmtBatch || 100);
+    }
   }
   body.appendChild(cmtSec);
 
@@ -3597,12 +3635,23 @@ async function run(){
         const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
         const items = (map[plat] || []).map(x => ({
           title: x.title, url: x.url, time: x.time, publisher: x.publisher,
-          severity: x.severity,  // 燈號 badge
+          severity: x.severity,
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
+        const hoursForRpc = mode === '7d' ? 168 : 24;
         openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
                           `命中 4 位市長關鍵字，平台 = ${plat}`,
-                          items);
+                          items, null,
+                          {
+                            // load-more: 用 dashboardLatestByPlatform 拉更多
+                            newsFetchFn: (newLimit) =>
+                              LxyDB.dashboardLatestByPlatform(plat, hoursForRpc, newLimit)
+                                .then(arr => (arr || []).map(x => ({
+                                  title: x.title, url: x.url, time: x.time,
+                                  publisher: x.publisher, severity: x.severity,
+                                }))),
+                            newsBatch: 50,
+                          });
       },
     }
   });
