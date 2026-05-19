@@ -3137,22 +3137,67 @@ async function run(){
   const platformDetail = document.getElementById('platformDetail');
   if(platformDetail){
     platformDetail.innerHTML='';
+    const renderArticleLi = (x) => {
+      const li=document.createElement('li');
+      attachSeverityBadge(li, x);
+      if (x.publisher){
+        const pub=document.createElement('span'); pub.className='hd-news-publisher';
+        pub.textContent=x.publisher; li.appendChild(pub);
+      }
+      const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
+      a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
+      li.appendChild(a);
+      return li;
+    };
     Object.keys(detailMap).forEach(p=>{
+      const initialList = detailMap[p] || [];
       const box=document.createElement('div'); box.className='platform-box';
-      const h=document.createElement('h3'); h.textContent=`${p}（${(detailMap[p]||[]).length} 筆）`; box.appendChild(h);
+      const h=document.createElement('h3'); box.appendChild(h);
       const ol=document.createElement('ol');
-      (detailMap[p]||[]).forEach(x=>{
-        const li=document.createElement('li');
-        attachSeverityBadge(li, x);
-        if (x.publisher){
-          const pub=document.createElement('span'); pub.className='hd-news-publisher';
-          pub.textContent=x.publisher; li.appendChild(pub);
-        }
-        const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
-        a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
-        li.appendChild(a); ol.appendChild(li);
-      });
-      box.appendChild(ol); platformDetail.appendChild(box);
+      initialList.forEach(x => ol.appendChild(renderArticleLi(x)));
+      box.appendChild(ol);
+      // 「載入更多」按鈕 — 每次點擊向 RPC fetch 多 50 筆、append 進列表
+      // 只在初始 list 已滿 (=cap 20) 且當前 mode 是 7d 時顯示（24h 預設 20 通常夠看）
+      const isCapped = initialList.length >= 20;
+      if (isCapped) {
+        const moreBtn = document.createElement('button');
+        moreBtn.type = 'button';
+        moreBtn.className = 'platform-more-btn';
+        moreBtn.dataset.platform = p;
+        moreBtn.dataset.loaded = String(initialList.length);
+        moreBtn.textContent = `載入更多（已顯示 ${initialList.length} 筆）`;
+        moreBtn.addEventListener('click', async () => {
+          const cur = parseInt(moreBtn.dataset.loaded, 10) || 20;
+          const next = cur + 50;
+          moreBtn.disabled = true;
+          moreBtn.textContent = '載入中…';
+          try {
+            // 用當前 mode 對應的 hours_back: 7d=168, 24h=24
+            const hours = mode === '7d' ? 168 : 24;
+            const fresh = await LxyDB.dashboardLatestByPlatform(p, hours, next);
+            // 跳過已渲染的、append 剩下的
+            (fresh || []).slice(cur).forEach(x => ol.appendChild(renderArticleLi(x)));
+            const newLen = (fresh || []).length;
+            moreBtn.dataset.loaded = String(newLen);
+            h.textContent = `${p}（${newLen} 筆）`;
+            if (newLen < next) {
+              moreBtn.textContent = '已全部載入';
+              moreBtn.disabled = true;
+              moreBtn.classList.add('exhausted');
+            } else {
+              moreBtn.textContent = `載入更多（已顯示 ${newLen} 筆）`;
+              moreBtn.disabled = false;
+            }
+          } catch (e) {
+            console.error('platform-more fetch failed:', e);
+            moreBtn.textContent = '載入失敗、點此再試';
+            moreBtn.disabled = false;
+          }
+        });
+        box.appendChild(moreBtn);
+      }
+      h.textContent = `${p}（${initialList.length} 筆${isCapped ? '+' : ''}）`;
+      platformDetail.appendChild(box);
     });
   }
 

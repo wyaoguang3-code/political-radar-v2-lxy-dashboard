@@ -747,6 +747,21 @@ li.hd-news-green a{color:#a8efd4}
   margin-right: 14px; cursor: pointer; font-size: 14px;
 }
 
+/* 「載入更多」按鈕 — platform detail box 用 */
+.platform-more-btn {
+  display: block; width: 100%; margin-top: 10px;
+  padding: 8px 12px; background: rgba(255,255,255,0.04);
+  border: 1px dashed rgba(255,255,255,0.2); border-radius: 6px;
+  color: #b9c3f2; cursor: pointer; font-size: 13px;
+}
+.platform-more-btn:hover:not(:disabled) {
+  background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.35);
+}
+.platform-more-btn:disabled { opacity: 0.5; cursor: default; }
+.platform-more-btn.exhausted {
+  border-style: solid; border-color: rgba(31,138,76,0.4); color: #6dd698;
+}
+
 /* Recent corrections feed panel (Day 3) */
 .corrections-feed-actions {
   display: flex; gap: 6px; align-items: center;
