@@ -2695,6 +2695,7 @@ function openHotspotDetailModal(h, markersByTitle){
       const li = document.createElement('li');
       // 嚴重度分級：red（公共安全/刑事）/ yellow（政治批評/環境）/ none
       const sev = x.severity || (x.is_negative ? 'yellow' : null);
+      const origSev = (sev === 'red' || sev === 'yellow' || sev === 'green') ? sev : 'green';
       if (sev === 'red'){
         li.classList.add('hd-news-red');
         redCount += 1;
@@ -2720,6 +2721,13 @@ function openHotspotDetailModal(h, markersByTitle){
         badge.title = '正面 / 中性 / 利多';
         li.appendChild(badge);
       }
+      // LLM feedback loop：admin 登入時、可在每則新聞旁開「標錯了」修正燈號
+      attachCorrectionAffordance(li, {
+        target_type:    'event',
+        target_id:      x.url || x.title || '',  // 用 URL 作 stable key (沒 event_id 也能 match)
+        original_label: origSev,
+        context:        (x.title || '').slice(0, 80),
+      });
       const meta = document.createElement('span');
       meta.className = 'mention-meta';
       meta.textContent = `${(x.time || '').slice(5, 16)}　`;
@@ -3626,6 +3634,222 @@ function initRealtimeToasts() {
   });
   console.log('%c[realtime] subscribed to notification_queue INSERT', 'color:#1f8a4c');
 }
+// ===========================================================================
+// LLM feedback loop — Auth + correction modal
+// ===========================================================================
+const _auth = {
+  user:    null,
+  isAdmin: false,
+  /** Map<"target_type|target_id", correction row> 給 UI render 「已修正」 badge 用 */
+  corrections: new Map(),
+};
+
+function _corrKey(t, id) { return (t || '') + '|' + (id || ''); }
+
+async function refreshCorrectionsCache() {
+  try {
+    const rows = await LxyDB.listCorrections();
+    _auth.corrections.clear();
+    for (const r of rows) {
+      // 同 target 多筆修正、保留最新那筆（rows 已按 created_at desc）
+      const k = _corrKey(r.target_type, r.target_id);
+      if (!_auth.corrections.has(k)) _auth.corrections.set(k, r);
+    }
+  } catch (e) {
+    console.warn('[auth] corrections cache load failed:', e.message);
+  }
+}
+
+function attachCorrectionAffordance(li, ctx) {
+  // ctx: { target_type, target_id, original_label, context (string) }
+  if (!li || !ctx || !ctx.target_id) return;
+  const existing = _auth.corrections.get(_corrKey(ctx.target_type, ctx.target_id));
+  if (existing) {
+    const chip = document.createElement('span');
+    const label = existing.corrected_label;
+    chip.className = 'hd-news-corrected to-' + label;
+    const emoji = label === 'red' ? '🔴' : (label === 'yellow' ? '🟡' : '🟢');
+    chip.textContent = '已修正 → ' + emoji;
+    chip.title = '由 ' + (existing.corrected_by || '?') + ' 在 ' + (existing.created_at || '').slice(0, 16) + ' 修正'
+              + (existing.reason ? '\n原因：' + existing.reason : '');
+    li.appendChild(chip);
+  }
+  if (!_auth.isAdmin) return;
+  const flagBtn = document.createElement('button');
+  flagBtn.type = 'button';
+  flagBtn.className = 'hd-news-flag';
+  flagBtn.textContent = existing ? '🚩 再修一次' : '🚩 標錯了';
+  flagBtn.title = '修正 LLM 判讀的燈號';
+  flagBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openCorrectionModal(ctx);
+  });
+  li.appendChild(flagBtn);
+}
+
+// --- Auth UI ---
+function openAuthModal(tab) {
+  const m = document.getElementById('authModal');
+  if (!m) return;
+  m.classList.remove('hidden');
+  switchAuthTab(tab || 'login');
+  document.getElementById('authError').textContent = '';
+  document.getElementById('authNotice').textContent = '';
+}
+function closeAuthModal() {
+  document.getElementById('authModal')?.classList.add('hidden');
+}
+function switchAuthTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.authTab === tab));
+  const submit = document.getElementById('authSubmit');
+  if (submit) submit.textContent = tab === 'signup' ? '註冊' : '登入';
+  const form = document.getElementById('authForm');
+  if (form) form.dataset.tab = tab;
+  document.getElementById('authPassword')?.setAttribute('autocomplete', tab === 'signup' ? 'new-password' : 'current-password');
+}
+
+async function handleAuthSubmit(e) {
+  e.preventDefault();
+  const tab = document.getElementById('authForm')?.dataset.tab || 'login';
+  const email = document.getElementById('authEmail').value.trim();
+  const pwd = document.getElementById('authPassword').value;
+  const err = document.getElementById('authError');
+  const note = document.getElementById('authNotice');
+  err.textContent = ''; note.textContent = '';
+  try {
+    if (tab === 'signup') {
+      await LxyDB.signUp(email, pwd);
+      note.textContent = '註冊成功！請至 ' + email + ' 收信並確認後再登入。';
+    } else {
+      await LxyDB.signIn(email, pwd);
+      closeAuthModal();
+    }
+  } catch (e2) {
+    err.textContent = e2.message || String(e2);
+  }
+}
+
+async function refreshAuthBar() {
+  const status = document.getElementById('authStatus');
+  const loginBtn = document.getElementById('authLoginBtn');
+  const logoutBtn = document.getElementById('authLogoutBtn');
+  if (!status) return;
+  const user = _auth.user;
+  if (user) {
+    _auth.isAdmin = await LxyDB.isAdmin();
+    status.classList.remove('auth-status-guest');
+    status.classList.toggle('auth-status-admin', _auth.isAdmin);
+    status.classList.toggle('auth-status-user', !_auth.isAdmin);
+    status.textContent = (_auth.isAdmin ? '✓ admin · ' : '已登入 · ') + user.email;
+    loginBtn.style.display = 'none';
+    logoutBtn.style.display = '';
+  } else {
+    _auth.isAdmin = false;
+    status.classList.add('auth-status-guest');
+    status.classList.remove('auth-status-user', 'auth-status-admin');
+    status.textContent = '未登入';
+    loginBtn.style.display = '';
+    logoutBtn.style.display = 'none';
+  }
+}
+
+// --- Correction modal ---
+let _pendingCorrection = null;
+function openCorrectionModal(ctx) {
+  if (!_auth.isAdmin) {
+    openAuthModal('login');
+    return;
+  }
+  _pendingCorrection = ctx;
+  const m = document.getElementById('correctionModal');
+  if (!m) return;
+  document.getElementById('correctionContext').textContent = ctx.context || '';
+  const origLabel = ctx.original_label || 'green';
+  const origEmoji = origLabel === 'red' ? '🔴 紅燈' : (origLabel === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
+  document.getElementById('correctionOriginal').textContent = origEmoji;
+  // reset form
+  document.querySelectorAll('input[name=corr_label]').forEach(r => { r.checked = false; });
+  document.getElementById('correctionReason').value = '';
+  document.getElementById('correctionError').textContent = '';
+  m.classList.remove('hidden');
+}
+function closeCorrectionModal() {
+  document.getElementById('correctionModal')?.classList.add('hidden');
+  _pendingCorrection = null;
+}
+
+async function handleCorrectionSubmit(e) {
+  e.preventDefault();
+  if (!_pendingCorrection) return;
+  const radio = document.querySelector('input[name=corr_label]:checked');
+  const errEl = document.getElementById('correctionError');
+  errEl.textContent = '';
+  if (!radio) { errEl.textContent = '請選一個燈號'; return; }
+  const corrected = radio.value;
+  const reason = document.getElementById('correctionReason').value.trim();
+  try {
+    const saved = await LxyDB.submitCorrection({
+      target_type:    _pendingCorrection.target_type,
+      target_id:      _pendingCorrection.target_id,
+      original_label: _pendingCorrection.original_label,
+      corrected_label: corrected,
+      reason:         reason,
+    });
+    _auth.corrections.set(_corrKey(saved.target_type, saved.target_id), saved);
+    closeCorrectionModal();
+    // 重 render 整個 hotspot detail modal (最簡單的方式讓 badge 顯示出來)
+    const cur = document.getElementById('hotspotDetailModal');
+    if (cur && !cur.classList.contains('hidden')) {
+      // re-trigger 上次 hotspot click — 但我們沒存 last hotspot；改用 location.reload soft refresh?
+      // 簡單做：把該 li 直接加上 badge / flag
+      // 找出這次修正對應的 li、append corrected chip
+      document.querySelectorAll('#hotspotDetailBody li').forEach(li => {
+        const a = li.querySelector('a[href]');
+        if (!a) return;
+        if (a.href !== _pendingCorrection?.target_id && a.getAttribute('href') !== _pendingCorrection?.target_id) {
+          // try title-based match as fallback
+          if (!li.textContent.includes((saved.target_id || '').slice(0, 30))) return;
+        }
+        // 移除舊 corrected chip 跟 flag、重塞新的
+        li.querySelectorAll('.hd-news-corrected, .hd-news-flag').forEach(n => n.remove());
+        attachCorrectionAffordance(li, {
+          target_type: saved.target_type,
+          target_id:   saved.target_id,
+          original_label: saved.original_label,
+          context: '',
+        });
+      });
+    }
+  } catch (e2) {
+    errEl.textContent = e2.message || String(e2);
+  }
+}
+
+// --- bootstrap ---
+async function initAuthUI() {
+  // wire up buttons
+  document.getElementById('authLoginBtn')?.addEventListener('click', () => openAuthModal('login'));
+  document.getElementById('authLogoutBtn')?.addEventListener('click', async () => {
+    try { await LxyDB.signOut(); } catch (e) { console.warn(e); }
+  });
+  document.querySelectorAll('[data-close-auth]').forEach(el => el.addEventListener('click', closeAuthModal));
+  document.querySelectorAll('.auth-tab').forEach(t => t.addEventListener('click', () => switchAuthTab(t.dataset.authTab)));
+  document.getElementById('authForm')?.addEventListener('submit', handleAuthSubmit);
+  document.querySelectorAll('[data-close-correction]').forEach(el => el.addEventListener('click', closeCorrectionModal));
+  document.getElementById('correctionForm')?.addEventListener('submit', handleCorrectionSubmit);
+  // init session
+  _auth.user = await LxyDB.getUser();
+  await refreshCorrectionsCache();
+  await refreshAuthBar();
+  // listen for login/logout
+  LxyDB.onAuthChange(async (event, session) => {
+    _auth.user = session ? session.user : null;
+    await refreshCorrectionsCache();
+    await refreshAuthBar();
+  });
+}
+initAuthUI().catch(e => console.error('initAuthUI failed:', e));
+
 // 第一次 run()
 run().catch(e => console.error('run() failed:', e));
 

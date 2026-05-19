@@ -657,3 +657,111 @@ li.hd-news-green a{color:#a8efd4}
   .rt-toasts { right: 8px; left: 8px; bottom: 8px; max-width: none; }
   .rt-toast { min-width: 0; }
 }
+
+/* ─── Auth bar (header right) ─── */
+.header-row {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+  flex-wrap: wrap;
+}
+.auth-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding-top: 4px; font-size: 13px;
+}
+.auth-status {
+  padding: 4px 10px; border-radius: 12px; font-size: 12px;
+}
+.auth-status-guest { background: rgba(160,160,180,0.18); color: #b9c3f2; }
+.auth-status-user  { background: rgba(31,138,76,0.18); color: #6dd698; }
+.auth-status-admin { background: rgba(255,180,40,0.18); color: #ffd76b; }
+.auth-btn {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);
+  color: #e8eaff; padding: 6px 12px; border-radius: 6px; cursor: pointer;
+  font-size: 13px;
+}
+.auth-btn:hover { background: rgba(255,255,255,0.12); }
+.auth-btn-logout { color: #ffb0b0; border-color: rgba(255,120,120,0.3); }
+.auth-btn-primary { background: #1f8a4c; border-color: #1f8a4c; color: #fff; }
+.auth-btn-primary:hover { background: #26a25b; }
+
+/* ─── Shared modal (auth + correction) ─── */
+.lxy-modal { position: fixed; inset: 0; z-index: 9000; }
+.lxy-modal.hidden { display: none; }
+.lxy-modal-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.6); backdrop-filter: blur(2px);
+}
+.lxy-modal-card {
+  position: relative; max-width: 460px; margin: 8vh auto 0;
+  background: #1d1f2e; border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; padding: 24px 28px; color: #e8eaff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.lxy-modal-card h3 { margin: 0 0 16px; font-size: 18px; }
+.lxy-modal-close {
+  position: absolute; top: 10px; right: 12px;
+  background: none; border: 0; color: #b9c3f2; cursor: pointer;
+  font-size: 18px; padding: 4px 8px; border-radius: 4px;
+}
+.lxy-modal-close:hover { background: rgba(255,255,255,0.08); }
+
+/* Auth tabs */
+.auth-tabs {
+  display: flex; gap: 4px; margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.auth-tab {
+  background: none; border: 0; color: #b9c3f2; cursor: pointer;
+  padding: 8px 14px; font-size: 13px; border-bottom: 2px solid transparent;
+}
+.auth-tab.active { color: #e8eaff; border-bottom-color: #1f8a4c; }
+
+/* Forms */
+.auth-form label, .correction-form label, .correction-form fieldset {
+  display: block; margin-bottom: 12px; font-size: 13px;
+}
+.auth-form input, .correction-form textarea {
+  width: 100%; box-sizing: border-box; margin-top: 4px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 6px; padding: 8px 10px; color: #e8eaff; font-size: 14px;
+}
+.auth-form input:focus, .correction-form textarea:focus {
+  outline: none; border-color: #1f8a4c;
+}
+.auth-error { color: #ff8080; font-size: 12px; min-height: 16px; margin: 6px 0; }
+.auth-notice { color: #6dd698; font-size: 12px; min-height: 16px; margin: 6px 0; }
+
+/* Correction modal specific */
+.correction-context {
+  background: rgba(255,255,255,0.03); border-left: 3px solid #1f8a4c;
+  padding: 8px 12px; font-size: 13px; color: #b9c3f2; margin: 0 0 12px;
+}
+.correction-original { font-size: 13px; color: #b9c3f2; margin: 0 0 14px; }
+.correction-form fieldset {
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 10px 14px;
+}
+.correction-form fieldset legend {
+  padding: 0 6px; font-size: 12px; color: #b9c3f2;
+}
+.correction-radio {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-right: 14px; cursor: pointer; font-size: 14px;
+}
+
+/* 已修正 badge — 在原 hd-news-badge 後面跟著的小 chip */
+.hd-news-corrected {
+  display: inline-block; margin-left: 8px;
+  font-size: 11px; padding: 2px 8px; border-radius: 10px;
+  background: rgba(31,138,76,0.18); color: #6dd698;
+  border: 1px solid rgba(31,138,76,0.4);
+}
+.hd-news-corrected.to-red    { background: rgba(255,87,87,0.18);  color: #ff8a8a; border-color: rgba(255,87,87,0.4); }
+.hd-news-corrected.to-yellow { background: rgba(255,193,7,0.18);  color: #ffd76b; border-color: rgba(255,193,7,0.4); }
+.hd-news-corrected.to-green  { background: rgba(31,138,76,0.18);  color: #6dd698; border-color: rgba(31,138,76,0.4); }
+
+/* 「標錯了」按鈕 — 只在 admin 登入時出現 */
+.hd-news-flag {
+  background: none; border: 0; cursor: pointer;
+  color: #b9c3f2; opacity: 0.6;
+  font-size: 11px; padding: 2px 6px; margin-left: 6px; border-radius: 4px;
+}
+.hd-news-flag:hover { opacity: 1; background: rgba(255,255,255,0.08); }

@@ -5,15 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <link rel="stylesheet" href="./style.css?v=2026-05-18-nolink-guard" />
+  <link rel="stylesheet" href="./style.css?v=2026-05-19-feedback-loop" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
   <script src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
 </head>
 <body>
   <header>
-    <h1 id="dashboardTitle">政治戰情儀表板（lxy）</h1>
-    <p id="updated">更新中...</p>
+    <div class="header-row">
+      <div>
+        <h1 id="dashboardTitle">政治戰情儀表板（lxy）</h1>
+        <p id="updated">更新中...</p>
+      </div>
+      <div id="authBar" class="auth-bar">
+        <span id="authStatus" class="auth-status auth-status-guest">未登入</span>
+        <button id="authLoginBtn" type="button" class="auth-btn">登入 / 註冊</button>
+        <button id="authLogoutBtn" type="button" class="auth-btn auth-btn-logout" style="display:none">登出</button>
+      </div>
+    </div>
   </header>
+
+  <!-- Auth modal (login + signup tabs) -->
+  <div id="authModal" class="lxy-modal hidden" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+    <div class="lxy-modal-backdrop" data-close-auth></div>
+    <div class="lxy-modal-card">
+      <button class="lxy-modal-close" type="button" data-close-auth aria-label="關閉">✕</button>
+      <h3 id="authModalTitle">登入 / 註冊</h3>
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab active" data-auth-tab="login">登入</button>
+        <button type="button" class="auth-tab" data-auth-tab="signup">註冊</button>
+      </div>
+      <form id="authForm" class="auth-form">
+        <label>Email
+          <input type="email" id="authEmail" required autocomplete="email" />
+        </label>
+        <label>密碼
+          <input type="password" id="authPassword" required minlength="6" autocomplete="current-password" />
+        </label>
+        <div id="authError" class="auth-error" role="alert"></div>
+        <div id="authNotice" class="auth-notice"></div>
+        <button type="submit" id="authSubmit" class="auth-btn auth-btn-primary">登入</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Correction modal (LLM feedback loop) -->
+  <div id="correctionModal" class="lxy-modal hidden" role="dialog" aria-modal="true" aria-labelledby="correctionModalTitle">
+    <div class="lxy-modal-backdrop" data-close-correction></div>
+    <div class="lxy-modal-card">
+      <button class="lxy-modal-close" type="button" data-close-correction aria-label="關閉">✕</button>
+      <h3 id="correctionModalTitle">標錯了？修正燈號</h3>
+      <p id="correctionContext" class="correction-context"></p>
+      <p class="correction-original">LLM 原判：<span id="correctionOriginal">-</span></p>
+      <form id="correctionForm" class="correction-form">
+        <fieldset>
+          <legend>正確燈號</legend>
+          <label class="correction-radio"><input type="radio" name="corr_label" value="red" /> 🔴 紅燈</label>
+          <label class="correction-radio"><input type="radio" name="corr_label" value="yellow" /> 🟡 黃燈</label>
+          <label class="correction-radio"><input type="radio" name="corr_label" value="green" /> 🟢 綠燈</label>
+        </fieldset>
+        <label>原因（選填）
+          <textarea id="correctionReason" rows="3" maxlength="500" placeholder="例：標題是諷刺、實際立場是正面"></textarea>
+        </label>
+        <div id="correctionError" class="auth-error" role="alert"></div>
+        <button type="submit" class="auth-btn auth-btn-primary">送出修正</button>
+      </form>
+    </div>
+  </div>
   <!-- Apply customer config to title elements (executed before app.js render) -->
   <script>
     (function() {
@@ -544,7 +601,7 @@
   <!-- Supabase UMD: 必須在 db.js / app.js 前載入 -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- config.js 已提早到 <head> 載入、不需要再載一次 -->
-  <script src="./lib/db.js?v=2026-05-18-notif-queue"></script>
-  <script src="./app.js?v=2026-05-18-narrative-prettify"></script>
+  <script src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
+  <script src="./app.js?v=2026-05-19-feedback-loop"></script>
 </body>
 </html>
