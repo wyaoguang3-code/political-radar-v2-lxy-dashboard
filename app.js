@@ -466,6 +466,8 @@ function renderSelfFavorability(history){
             ? (drilldownCache.lastFetch.data.articles || [])
             : (drilldownCache.lastFetch.data.comments || []);
         };
+        // 真實 total = 當日新聞 + 當日留言 (full count、不是 sample count)
+        const realTotal = (h.total || 0) + ((h.comments && h.comments.total) || 0);
         openArticlesModal(`📰 ${h.date} 盧秀燕新聞 + 留言`, note,
                           h.articles || [], samples,
                           {
@@ -473,7 +475,8 @@ function renderSelfFavorability(history){
                             cmtFetchFn:  makeDayFetcher('cmt'),
                             newsBatch:   50,
                             cmtBatch:    100,
-                          });
+                          },
+                          realTotal);
       },
       onHover: (evt, elements) => {
         evt.native.target.style.cursor = elements && elements.length ? 'pointer' : 'default';
@@ -1626,7 +1629,11 @@ const _pastArchiveCache = {};
 //     newsBatch:   50  (default)
 //     cmtBatch:    100 (default)
 //   }
-function openArticlesModal(title, note, articles, commentsList, loadMoreCtx){
+// totalCountOverride (optional 6th arg):
+//   number — 用真實 total (而非 articles.length + comments.length) 渲染 modal title
+//             給 chart click 場景用：實際資料量可能 100+ 但 modal 只 fetch 了 20、
+//             title 顯示「20 則」會誤導
+function openArticlesModal(title, note, articles, commentsList, loadMoreCtx, totalCountOverride){
   const news = (articles || []).map(a => ({
     title: a.title || '（無標題）',
     url: a.url || '',
@@ -1652,6 +1659,7 @@ function openArticlesModal(title, note, articles, commentsList, loadMoreCtx){
     news_articles: news,
     comments: comments,
     loadMoreCtx: loadMoreCtx,
+    total_count_override: (typeof totalCountOverride === 'number') ? totalCountOverride : null,
   }, null);
 }
 
@@ -2756,7 +2764,10 @@ const PLATFORM_DISPLAY = { facebook: 'FB', instagram: 'IG', threads: 'Threads' }
 function openHotspotDetailModal(h, markersByTitle){
   const modal = document.getElementById('hotspotDetailModal');
   if (!modal) return;
-  const total = (h.news_count || 0) + (h.comment_count || 0);
+  // 用 total_count_override (chart click 場景) 或 fallback 到 news_count + comment_count (hotspot 場景)
+  const total = (typeof h.total_count_override === 'number')
+    ? h.total_count_override
+    : ((h.news_count || 0) + (h.comment_count || 0));
   document.getElementById('hotspotDetailTitle').textContent = `${h.title || '事件'}（${total} 則）`;
 
   const body = document.getElementById('hotspotDetailBody');
@@ -3639,11 +3650,12 @@ async function run(){
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
         const hoursForRpc = mode === '7d' ? 168 : 24;
+        // 真實平台 total (byPlatform[idx].count 是圓餅圖那一塊的實際數字)
+        const realTotal = byPlatform[idx]?.count || items.length;
         openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
                           `命中 4 位市長關鍵字，平台 = ${plat}`,
                           items, null,
                           {
-                            // load-more: 用 dashboardLatestByPlatform 拉更多
                             newsFetchFn: (newLimit) =>
                               LxyDB.dashboardLatestByPlatform(plat, hoursForRpc, newLimit)
                                 .then(arr => (arr || []).map(x => ({
@@ -3651,7 +3663,8 @@ async function run(){
                                   publisher: x.publisher, severity: x.severity,
                                 }))),
                             newsBatch: 50,
-                          });
+                          },
+                          realTotal);
       },
     }
   });
