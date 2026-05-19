@@ -187,6 +187,86 @@ function isSafeExternalUrl(u){
   return true;
 }
 
+// 生成 「載入更多」按鈕 — 純前端 reveal (資料已全部 client-side、只是顯示量受限)
+// container: 按鈕要放進的父節點
+// listEl:    新 li append 到這
+// items:     完整資料陣列
+// alreadyShown: 已渲染數量
+// batchSize: 每次點擊 reveal 多少
+// renderFn:  (item, index) => HTMLElement (li / div)
+function makeShowMoreButton(container, listEl, items, alreadyShown, batchSize, renderFn) {
+  if (alreadyShown >= items.length) return null;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'platform-more-btn';
+  let shown = alreadyShown;
+  const refresh = () => {
+    if (shown >= items.length) {
+      btn.textContent = '已全部顯示';
+      btn.disabled = true;
+      btn.classList.add('exhausted');
+    } else {
+      btn.textContent = `顯示更多（已顯示 ${shown} / ${items.length} 筆）`;
+    }
+  };
+  refresh();
+  btn.addEventListener('click', () => {
+    const next = Math.min(shown + batchSize, items.length);
+    for (let i = shown; i < next; i++) {
+      listEl.appendChild(renderFn(items[i], i));
+    }
+    shown = next;
+    refresh();
+  });
+  container.appendChild(btn);
+  return btn;
+}
+
+// 生成 「載入更多」按鈕 — 走 RPC 重抓 (適合 server-side 資料量大、初始只拿 N)
+// container: 按鈕要放進的父節點
+// listEl:    新 li append 到這
+// fetchFn:   (limit) => Promise<item[]> (回該 limit 內的最新 N 筆)
+// renderFn:  (item, index) => HTMLElement
+// initialCount: 第一輪已渲染的數量
+// batchSize:    每次點擊 fetch 多多少
+// onCountUpdate: optional (newLen) => void  給上層 update heading 等
+function makeLoadMoreRPC(container, listEl, fetchFn, renderFn, initialCount, batchSize, onCountUpdate) {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'platform-more-btn';
+  let loaded = initialCount;
+  btn.textContent = `載入更多（已顯示 ${loaded} 筆）`;
+  btn.addEventListener('click', async () => {
+    const next = loaded + batchSize;
+    btn.disabled = true;
+    btn.textContent = '載入中…';
+    try {
+      const fresh = await fetchFn(next);
+      const arr = fresh || [];
+      // 跳過已渲染、append 新的
+      for (let i = loaded; i < arr.length; i++) {
+        listEl.appendChild(renderFn(arr[i], i));
+      }
+      const newLen = arr.length;
+      loaded = newLen;
+      if (onCountUpdate) onCountUpdate(newLen);
+      if (newLen < next) {
+        btn.textContent = '已全部載入';
+        btn.classList.add('exhausted');
+      } else {
+        btn.textContent = `載入更多（已顯示 ${newLen} 筆）`;
+        btn.disabled = false;
+      }
+    } catch (e) {
+      console.error('load-more fetch failed:', e);
+      btn.textContent = '載入失敗、點此再試';
+      btn.disabled = false;
+    }
+  });
+  container.appendChild(btn);
+  return btn;
+}
+
 // 拿掉 topic 名前綴的城市名 — hotspot title 多半有「{city}{event}」格式 (e.g. 台北鼠患事件)
 // narrative arc 是「秀燕/台中 圍繞的議題」、顯示時前綴城市反而誤導。
 // 注意：去除後內容才是真議題本身、key (encoded data-topic) 維持原樣用來查 arc[idx]
@@ -640,7 +720,8 @@ function renderRedCommentsPanel(){
     title.textContent = `${PLATFORM_LABEL[p]}（${reds.length} 則）`;
     group.appendChild(title);
     const ul = document.createElement('ul');
-    reds.slice(0, 30).forEach(c => {
+    const INITIAL_RED = 30;
+    const renderRedLi = (c) => {
       const li = document.createElement('li');
       const authorHtml = `<span class="author">${escapeHtml(c.author || '匿名')}</span>` +
                         (c.time_text ? `<span class="when">（${escapeHtml(c.time_text)}）</span>` : '');
@@ -649,15 +730,12 @@ function renderRedCommentsPanel(){
         textHtml = `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">${textHtml}</a>`;
       }
       li.innerHTML = `${authorHtml}<br/>${textHtml}`;
-      ul.appendChild(li);
-    });
-    if (reds.length > 30) {
-      const more = document.createElement('li');
-      more.style.opacity = '.7';
-      more.textContent = `... 另 ${reds.length - 30} 筆（點擊上方卡片查看完整清單）`;
-      ul.appendChild(more);
-    }
+      return li;
+    };
+    reds.slice(0, INITIAL_RED).forEach(c => ul.appendChild(renderRedLi(c)));
     group.appendChild(ul);
+    // 客戶端 reveal more (資料已 client-side 全載入、只是 UI 限量)
+    makeShowMoreButton(group, ul, reds, INITIAL_RED, 30, renderRedLi);
     wrap.appendChild(group);
   });
   if (!anyShown){
@@ -3101,13 +3179,34 @@ async function run(){
     if(t) return t;
     try{ return new URL(x.url).hostname + '（原文）'; }catch{ return '來源連結'; }
   };
-  topNews.slice(0,12).forEach(x=>{
+  const renderTopNewsLi = (x) => {
     const li=document.createElement('li');
     const a=document.createElement('a');
     a.href=x.url; a.target='_blank'; a.rel='noopener';
     a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
-    li.appendChild(a); news.appendChild(li);
-  });
+    li.appendChild(a);
+    return li;
+  };
+  const INITIAL_TOP_NEWS = 12;
+  topNews.slice(0, INITIAL_TOP_NEWS).forEach(x => news.appendChild(renderTopNewsLi(x)));
+  // top news 來自 RPC dashboard_top_news、初始拉 20 (call site: app.js:2871 LxyDB.dashboardTopNews(hours, 20))
+  // 但只顯示 12、按鈕先用 client-side reveal 補到 20、超過 20 再走 RPC fetch
+  // 簡化：合併 → 看 topNews 是否已 >= INITIAL_TOP_NEWS、>= 才加按鈕
+  if (topNews.length > INITIAL_TOP_NEWS) {
+    // 先 client-side reveal 剩下的 (data.json 已有資料、不重 fetch)
+    // 但因為 topNews 來自 RPC limit=20、超過 20 要 fetch more via RPC
+    const parent = news.parentElement;   // 包 ol 的容器
+    // 用「client reveal 剩下 + RPC fetch more 串接」策略：
+    // 先 client reveal 全部 topNews
+    let shown = INITIAL_TOP_NEWS;
+    const moreContainer = document.createElement('div');
+    parent.appendChild(moreContainer);
+    // Step A: 已有 data 內 reveal
+    if (shown < topNews.length) {
+      makeShowMoreButton(moreContainer, news, topNews, shown, 20, renderTopNewsLi);
+    }
+    // Step B 留給未來 — 若有需要拉超過 RPC 初始 20 的、可加 RPC fetch button (但 dashboard 首屏夠用、省一層)
+  }
 
   // 共用：給 li 加上 hd-news-{red/yellow/green} class + 對應的 hd-news-badge pill
   // 跟 hotspot modal / 平台 modal 用同一套樣式，視覺一致
@@ -3201,29 +3300,59 @@ async function run(){
     });
   }
 
-  function renderList(elId, arr){
+  const renderArticleLiPerson = (x) => {
+    const li=document.createElement('li');
+    attachSeverityBadge(li, x);
+    if (x.publisher){
+      const pub=document.createElement('span'); pub.className='hd-news-publisher';
+      pub.textContent=x.publisher; li.appendChild(pub);
+    }
+    const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
+    a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' );
+    li.appendChild(a);
+    return li;
+  };
+  function renderList(elId, arr, moreCtx){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
-    (arr||[]).forEach(x=>{
-      const li=document.createElement('li');
-      attachSeverityBadge(li, x);
-      if (x.publisher){
-        const pub=document.createElement('span'); pub.className='hd-news-publisher';
-        pub.textContent=x.publisher; li.appendChild(pub);
-      }
-      const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
-      a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' );
-      li.appendChild(a); el.appendChild(li);
-    });
+    (arr||[]).forEach(x => el.appendChild(renderArticleLiPerson(x)));
+    // 移除「緊鄰 el 後」的舊 more button (only this list 的、不影響同 parent 內其他 list 的)
+    while (el.nextElementSibling && el.nextElementSibling.classList?.contains('platform-more-btn')) {
+      el.nextElementSibling.remove();
+    }
+    if (moreCtx && (arr||[]).length >= (moreCtx.currentLimit || 20)) {
+      // 8 個 list 共用同一 RPC、click 觸發 global re-fetch
+      // 為了讓 button 緊接在 el 後面、用 Comment 配 insertAdjacentElement
+      const btnHolder = document.createElement('div');
+      btnHolder.style.display = 'contents';   // 不增加 layout、純當容器
+      el.insertAdjacentElement('afterend', btnHolder);
+      makeLoadMoreRPC(btnHolder, el,
+        async (newLimit) => {
+          // 8 個 list 共用同一 RPC、但 per-list 獨立 grow (不主動 re-render 其他 list、
+          // 避免 double-append)。next time 其他 list 自己點 「more」 才會跟著拿到更多
+          const fresh = await LxyDB.dashboardPersonSections(newLimit, newLimit);
+          if (!fresh) return arr;
+          d.person_sections = fresh;   // 仍把資料存進 d、給 cache 用
+          const person = moreCtx.person, listKey = moreCtx.listKey;
+          return (fresh[person] || {})[listKey] || [];
+        },
+        renderArticleLiPerson,
+        (arr||[]).length,
+        50);
+    }
   }
-  const ps = d.person_sections || {};
-  renderList('luFb', (ps['盧秀燕']||{}).facebook || []);
-  renderList('luNews', (ps['盧秀燕']||{}).news || []);
-  renderList('chiangFb', (ps['蔣萬安']||{}).facebook || []);
-  renderList('chiangNews', (ps['蔣萬安']||{}).news || []);
-  renderList('chenFb', (ps['陳其邁']||{}).facebook || []);
-  renderList('chenNews', (ps['陳其邁']||{}).news || []);
-  renderList('tsaiFb', (ps['蔡其昌']||{}).facebook || []);
-  renderList('tsaiNews', (ps['蔡其昌']||{}).news || []);
+  function renderAllPersonLists(limit) {
+    const ps = d.person_sections || {};
+    const cfg = (person, listKey) => ({ person, listKey, currentLimit: limit });
+    renderList('luFb',      (ps['盧秀燕']||{}).facebook || [], cfg('盧秀燕','facebook'));
+    renderList('luNews',    (ps['盧秀燕']||{}).news     || [], cfg('盧秀燕','news'));
+    renderList('chiangFb',  (ps['蔣萬安']||{}).facebook || [], cfg('蔣萬安','facebook'));
+    renderList('chiangNews',(ps['蔣萬安']||{}).news     || [], cfg('蔣萬安','news'));
+    renderList('chenFb',    (ps['陳其邁']||{}).facebook || [], cfg('陳其邁','facebook'));
+    renderList('chenNews',  (ps['陳其邁']||{}).news     || [], cfg('陳其邁','news'));
+    renderList('tsaiFb',    (ps['蔡其昌']||{}).facebook || [], cfg('蔡其昌','facebook'));
+    renderList('tsaiNews',  (ps['蔡其昌']||{}).news     || [], cfg('蔡其昌','news'));
+  }
+  renderAllPersonLists(20);  // 初始 RPC 拉 20 / list
 
   const byHourRaw = pick(d, 'by_hour', 'by_hour_7d') || [];
   // 7d 模式聚合到「日」（過去 7 天的週幾）；24h 模式維持小時級
@@ -3977,7 +4106,8 @@ function updateCorrectionAffordanceFor(targetType, targetId) {
 let _correctionsFeedFilter = 'all';
 let _correctionsFeedRows = [];
 
-async function refreshCorrectionsFeed() {
+let _correctionsFeedLoadedCount = 50;   // 累積已 fetch 的最大筆數
+async function refreshCorrectionsFeed(limit) {
   const panel = document.getElementById('correctionsFeedPanel');
   if (!panel) return;
   // 只有 admin 才看得到 panel；非 admin 直接 hide
@@ -3986,11 +4116,13 @@ async function refreshCorrectionsFeed() {
     return;
   }
   panel.style.display = '';
+  const fetchLimit = limit || _correctionsFeedLoadedCount;
   try {
     const c = LxyDB.client();
-    const { data, error } = await c.rpc('recent_label_corrections', { limit_n: 50, target_type_filter: 'all' });
+    const { data, error } = await c.rpc('recent_label_corrections', { limit_n: fetchLimit, target_type_filter: 'all' });
     if (error) throw error;
     _correctionsFeedRows = data || [];
+    _correctionsFeedLoadedCount = fetchLimit;
     renderCorrectionsFeed();
   } catch (e) {
     console.warn('[corrections-feed] load failed:', e.message);
@@ -4032,6 +4164,21 @@ function renderCorrectionsFeed() {
       ${r.reason ? `<div class="corr-reason">${escapeHtml(r.reason)}</div>` : ''}
     </div>
   `).join('');
+  // 載入更多按鈕：如果當前 fetch 滿 limit、就提示可能還有
+  // (rows.length 是 filter 過的、_correctionsFeedRows 是 fetch 回來的、用後者判斷)
+  if (_correctionsFeedRows.length >= _correctionsFeedLoadedCount) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'platform-more-btn';
+    btn.textContent = `載入更多（已顯示 ${_correctionsFeedRows.length} 筆）`;
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      btn.textContent = '載入中…';
+      const newLimit = _correctionsFeedLoadedCount + 50;
+      await refreshCorrectionsFeed(newLimit);
+    });
+    body.appendChild(btn);
+  }
 }
 
 // --- bootstrap ---
