@@ -3650,10 +3650,18 @@ async function refreshCorrectionsCache() {
   try {
     const rows = await LxyDB.listCorrections();
     _auth.corrections.clear();
+    // rows 按 created_at DESC 排序
+    // 每 target 我們要兩件事：最新那筆 (給 chip 顯示) + 最舊那筆的 original_label (=真 LLM 原判)
     for (const r of rows) {
-      // 同 target 多筆修正、保留最新那筆（rows 已按 created_at desc）
       const k = _corrKey(r.target_type, r.target_id);
-      if (!_auth.corrections.has(k)) _auth.corrections.set(k, r);
+      const cur = _auth.corrections.get(k);
+      if (!cur) {
+        // 第一次看到 = 最新一筆 (因為 DESC)
+        _auth.corrections.set(k, { latest: r, true_original_label: r.original_label });
+      } else {
+        // 後續 row 越來越舊；持續覆寫 true_original_label、最終會是最舊那筆 (=真 LLM 原判)
+        cur.true_original_label = r.original_label;
+      }
     }
   } catch (e) {
     console.warn('[auth] corrections cache load failed:', e.message);
@@ -3667,22 +3675,26 @@ function attachCorrectionAffordance(li, ctx) {
   li.dataset.targetType    = ctx.target_type || '';
   li.dataset.targetId      = ctx.target_id || '';
   li.dataset.originalLabel = ctx.original_label || '';
-  const existing = _auth.corrections.get(_corrKey(ctx.target_type, ctx.target_id));
-  if (existing) {
+  const entry = _auth.corrections.get(_corrKey(ctx.target_type, ctx.target_id));
+  // entry shape: { latest: row, true_original_label: 'yellow' }
+  const latest = entry?.latest;
+  if (entry && latest) {
     const chip = document.createElement('span');
-    const label = existing.corrected_label;
+    const label = latest.corrected_label;
     chip.className = 'hd-news-corrected to-' + label;
     const emoji = label === 'red' ? '🔴' : (label === 'yellow' ? '🟡' : '🟢');
     chip.textContent = '已修正 → ' + emoji;
-    chip.title = '由 ' + (existing.corrected_by || '?') + ' 在 ' + (existing.created_at || '').slice(0, 16) + ' 修正'
-              + (existing.reason ? '\n原因：' + existing.reason : '');
+    const origEmoji = entry.true_original_label === 'red' ? '🔴' : (entry.true_original_label === 'yellow' ? '🟡' : '🟢');
+    chip.title = `LLM 原判: ${origEmoji} ${entry.true_original_label || '?'}\n`
+              + '由 ' + (latest.corrected_by || '?') + ' 在 ' + (latest.created_at || '').slice(0, 16) + ' 修正'
+              + (latest.reason ? '\n原因：' + latest.reason : '');
     li.appendChild(chip);
   }
   if (!_auth.isAdmin) return;
   const flagBtn = document.createElement('button');
   flagBtn.type = 'button';
   flagBtn.className = 'hd-news-flag';
-  flagBtn.textContent = existing ? '🚩 再修一次' : '🚩 標錯了';
+  flagBtn.textContent = entry ? '🚩 再修一次' : '🚩 標錯了';
   flagBtn.title = '修正 LLM 判讀的燈號';
   flagBtn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -3764,13 +3776,29 @@ function openCorrectionModal(ctx) {
     openAuthModal('login');
     return;
   }
-  _pendingCorrection = ctx;
+  // 若該 target 已被修過、ctx.original_label 是「現況」、不是「真 LLM 原判」
+  // 從 cache 拉真 LLM 原判 (= 第一次 correction 的 original_label)
+  const entry = _auth.corrections.get(_corrKey(ctx.target_type, ctx.target_id));
+  const trueOrig  = entry?.true_original_label || ctx.original_label || 'green';
+  const currState = entry?.latest?.corrected_label || ctx.original_label || 'green';
+  // 寫進 pending 給 confirm + submit 用
+  _pendingCorrection = Object.assign({}, ctx, {
+    true_original_label: trueOrig,   // 拿來寫 DB 的 original_label
+    current_state_label: currState,  // 拿來算 confirm 「從 X 改為 Y」的 X
+  });
   const m = document.getElementById('correctionModal');
   if (!m) return;
   document.getElementById('correctionContext').textContent = ctx.context || '';
-  const origLabel = ctx.original_label || 'green';
-  const origEmoji = origLabel === 'red' ? '🔴 紅燈' : (origLabel === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
-  document.getElementById('correctionOriginal').textContent = origEmoji;
+  // Modal 顯示「LLM 原判 + 現況」(若已修過、會不同)
+  const origEmoji = _labelChip(trueOrig);
+  const origEl = document.getElementById('correctionOriginal');
+  if (origEl) {
+    if (entry && trueOrig !== currState) {
+      origEl.innerHTML = `${origEmoji} <span style="opacity:.7;font-size:12px">（現況: ${_labelChip(currState)}、已修過）</span>`;
+    } else {
+      origEl.textContent = origEmoji;
+    }
+  }
   // reset form
   document.querySelectorAll('input[name=corr_label]').forEach(r => { r.checked = false; });
   document.getElementById('correctionReason').value = '';
@@ -3807,7 +3835,9 @@ function showCorrectionConfirm() {
   const form = document.getElementById('correctionForm');
   const confirm = document.getElementById('correctionConfirm');
   if (!form || !confirm || !_pendingCorrection) return;
-  document.getElementById('correctionFromLabel').textContent = _labelChip(_pendingCorrection.original_label);
+  // confirm 顯示「從 現況 改為 新選的」(不是真 LLM 原判、那只給 audit 用)
+  const fromLabel = _pendingCorrection.current_state_label || _pendingCorrection.original_label;
+  document.getElementById('correctionFromLabel').textContent = _labelChip(fromLabel);
   document.getElementById('correctionToLabel').textContent   = _labelChip(_pendingCorrection.corrected_label);
   form.style.display = 'none';
   confirm.style.display = '';
@@ -3823,16 +3853,25 @@ async function handleCorrectionConfirm() {
   if (!_pendingCorrection) return;
   const errEl = document.getElementById('correctionError');
   errEl.textContent = '';
+  // original_label 永遠寫「真 LLM 原判」(若已修過、現況不是 LLM 原判、要從 cache 拿)
+  // 這樣 audit query 不用 ORDER BY ASC、隨便挑該 target 任一筆 row 都能看到 LLM 原判
   const ctx = {
     target_type:    _pendingCorrection.target_type,
     target_id:      _pendingCorrection.target_id,
-    original_label: _pendingCorrection.original_label,
+    original_label: _pendingCorrection.true_original_label || _pendingCorrection.original_label,
     corrected_label: _pendingCorrection.corrected_label,
     reason:         _pendingCorrection.reason || '',
   };
   try {
     const saved = await LxyDB.submitCorrection(ctx);
-    _auth.corrections.set(_corrKey(saved.target_type, saved.target_id), saved);
+    // 更新 cache 為新 shape: { latest, true_original_label }
+    // saved.original_label 就是真 LLM 原判 (我們上面確保的)、所以 true_original_label 就抄這值
+    const k = _corrKey(saved.target_type, saved.target_id);
+    const prev = _auth.corrections.get(k);
+    _auth.corrections.set(k, {
+      latest: saved,
+      true_original_label: prev?.true_original_label || saved.original_label,
+    });
     closeCorrectionModal();
     updateCorrectionAffordanceFor(ctx.target_type, ctx.target_id);
   } catch (e2) {
