@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <link rel="stylesheet" href="./style.css?v=2026-05-19-load-more" />
+  <link rel="stylesheet" href="./style.css?v=2026-05-20-legal" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
   <script src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
 </head>
@@ -626,6 +626,20 @@
       <div class="modal-body" id="hotspotDetailBody"></div>
     </div>
   </div>
+
+  <!-- Site footer 法律連結 -->
+  <footer class="site-footer">
+    <div class="site-footer-row">
+      <a href="./terms.html" class="footer-link">服務條款</a>
+      <span class="sep">·</span>
+      <a href="./privacy.html" class="footer-link">隱私權政策</a>
+      <span class="sep">·</span>
+      <a href="./copyright.html" class="footer-link">著作權聲明</a>
+    </div>
+    <div class="site-footer-row site-footer-meta">
+      © 2026 真人股份有限公司　·　政治戰情儀表板
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
