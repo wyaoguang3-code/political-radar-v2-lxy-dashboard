@@ -922,3 +922,32 @@ body.legal-page {
 }
 .legal-footer a:hover { color: #e8eaff; background: rgba(255,255,255,0.06); border-radius: 4px; }
 .legal-footer .sep { color: rgba(255,255,255,0.2); }
+
+/* Legal page accent components */
+.legal-body .callout {
+  background: rgba(255,193,7,0.06);
+  border-left: 3px solid #ffd76b;
+  padding: 12px 16px; border-radius: 4px;
+  color: #ffe6a3; font-weight: 600;
+  margin: 0 0 16px;
+}
+.legal-body .cookie-table,
+.legal-body .contact-table {
+  width: 100%; border-collapse: collapse; margin: 12px 0;
+  font-size: 13px;
+}
+.legal-body .cookie-table th,
+.legal-body .cookie-table td,
+.legal-body .contact-table th,
+.legal-body .contact-table td {
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 8px 10px; text-align: left; vertical-align: top;
+}
+.legal-body .cookie-table th,
+.legal-body .contact-table th {
+  background: rgba(255,255,255,0.04); color: #b9c3f2;
+}
+.legal-body .cookie-table code,
+.legal-body .contact-table code {
+  font-size: 12px;
+}
