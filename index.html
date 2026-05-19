@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <link rel="stylesheet" href="./style.css?v=2026-05-19-two-step-confirm" />
+  <link rel="stylesheet" href="./style.css?v=2026-05-19-day3" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
   <script src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
 </head>
@@ -571,6 +571,19 @@
     </div>
   </section>
 
+  <!-- LLM 修正紀錄 panel (admin 才看得到) -->
+  <section class="panel" id="correctionsFeedPanel" style="display:none">
+    <h2>📝 最近 LLM 燈號修正紀錄</h2>
+    <p class="hint">由 admin 標 🚩 提交的人工修正、按時間倒序。同一則被多次修正只顯示最新一筆。</p>
+    <div class="corrections-feed-actions">
+      <button type="button" class="auth-btn" data-corr-filter="all">全部</button>
+      <button type="button" class="auth-btn" data-corr-filter="event">新聞</button>
+      <button type="button" class="auth-btn" data-corr-filter="comment">留言</button>
+      <span id="correctionsFeedStat" class="hint" style="margin-left:auto"></span>
+    </div>
+    <div id="correctionsFeedBody"></div>
+  </section>
+
   <!-- Drilldown modal: per-platform comment viewer w/ light filter -->
   <div id="commentsModal" class="modal hidden" aria-hidden="true">
     <div class="modal-backdrop" data-close="1"></div>
@@ -620,6 +633,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- config.js 已提早到 <head> 載入、不需要再載一次 -->
   <script src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
-  <script src="./app.js?v=2026-05-19-true-original"></script>
+  <script src="./app.js?v=2026-05-19-day3"></script>
 </body>
 </html>

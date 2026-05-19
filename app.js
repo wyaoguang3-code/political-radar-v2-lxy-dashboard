@@ -2786,6 +2786,15 @@ function openHotspotDetailModal(h, markersByTitle){
         </div>
         <div class="hd-c-text">${escapeHtml(c.text || '')}</div>
       `;
+      // LLM feedback loop：admin 登入時可在每則留言旁開「標錯了」修正燈號
+      // target_id 優先用 url；沒 url 的話用 hash(platform + text) 當 stable key
+      const cmtTargetId = c.url || `cmt:${c.platform || '?'}::${(c.text || '').slice(0, 80)}`;
+      attachCorrectionAffordance(li, {
+        target_type:    'comment',
+        target_id:      cmtTargetId,
+        original_label: sigCls || 'green',
+        context:        ((c.author ? c.author + '：' : '') + (c.text || '')).slice(0, 80),
+      });
       ul.appendChild(li);
     });
     cmtSec.appendChild(ul);
@@ -3874,6 +3883,7 @@ async function handleCorrectionConfirm() {
     });
     closeCorrectionModal();
     updateCorrectionAffordanceFor(ctx.target_type, ctx.target_id);
+    refreshCorrectionsFeed().catch(() => {/* best-effort */});
   } catch (e2) {
     // 失敗時把 form 切回來、顯示錯誤
     showCorrectionForm();
@@ -3899,6 +3909,67 @@ function updateCorrectionAffordanceFor(targetType, targetId) {
   if (matched === 0) console.warn('[corrections] no <li> matched target_id=' + targetId);
 }
 
+// --- Recent corrections panel (Day 3) ---
+let _correctionsFeedFilter = 'all';
+let _correctionsFeedRows = [];
+
+async function refreshCorrectionsFeed() {
+  const panel = document.getElementById('correctionsFeedPanel');
+  if (!panel) return;
+  // 只有 admin 才看得到 panel；非 admin 直接 hide
+  if (!_auth.isAdmin) {
+    panel.style.display = 'none';
+    return;
+  }
+  panel.style.display = '';
+  try {
+    const c = LxyDB.client();
+    const { data, error } = await c.rpc('recent_label_corrections', { limit_n: 50, target_type_filter: 'all' });
+    if (error) throw error;
+    _correctionsFeedRows = data || [];
+    renderCorrectionsFeed();
+  } catch (e) {
+    console.warn('[corrections-feed] load failed:', e.message);
+    document.getElementById('correctionsFeedBody').innerHTML = `<p class="hint">載入失敗：${escapeHtml(e.message || String(e))}</p>`;
+  }
+}
+
+function renderCorrectionsFeed() {
+  const body = document.getElementById('correctionsFeedBody');
+  const stat = document.getElementById('correctionsFeedStat');
+  if (!body) return;
+  const rows = _correctionsFeedRows.filter(r =>
+    _correctionsFeedFilter === 'all' || r.target_type === _correctionsFeedFilter
+  );
+  // active button styling
+  document.querySelectorAll('[data-corr-filter]').forEach(b => {
+    b.classList.toggle('active', b.dataset.corrFilter === _correctionsFeedFilter);
+  });
+  if (stat) {
+    const evCount = _correctionsFeedRows.filter(r => r.target_type === 'event').length;
+    const cmtCount = _correctionsFeedRows.filter(r => r.target_type === 'comment').length;
+    stat.textContent = `共 ${_correctionsFeedRows.length} 筆（新聞 ${evCount}、留言 ${cmtCount}）`;
+  }
+  if (!rows.length) {
+    body.innerHTML = '<p class="hint">尚無修正紀錄</p>';
+    return;
+  }
+  const labelEmoji = en => en === 'red' ? '🔴' : en === 'yellow' ? '🟡' : en === 'green' ? '🟢' : '?';
+  body.innerHTML = rows.map(r => `
+    <div class="corr-item">
+      <div class="corr-row1">
+        <span class="corr-type-${r.target_type}">${r.target_type === 'event' ? '新聞' : '留言'}</span>
+        <span>${labelEmoji(r.original_label)} ${r.original_label}</span>
+        <span class="corr-arrow">→</span>
+        <span>${labelEmoji(r.corrected_label)} ${r.corrected_label}</span>
+        <span class="corr-meta">${(r.created_at || '').slice(0, 16)}</span>
+      </div>
+      <div class="corr-text">${escapeHtml((r.text_content || '').slice(0, 200))}</div>
+      ${r.reason ? `<div class="corr-reason">${escapeHtml(r.reason)}</div>` : ''}
+    </div>
+  `).join('');
+}
+
 // --- bootstrap ---
 async function initAuthUI() {
   // wire up buttons
@@ -3913,15 +3984,24 @@ async function initAuthUI() {
   document.getElementById('correctionForm')?.addEventListener('submit', handleCorrectionSubmit);
   document.getElementById('correctionCancelBtn')?.addEventListener('click', showCorrectionForm);
   document.getElementById('correctionConfirmBtn')?.addEventListener('click', handleCorrectionConfirm);
+  // recent corrections panel filter buttons
+  document.querySelectorAll('[data-corr-filter]').forEach(b => {
+    b.addEventListener('click', () => {
+      _correctionsFeedFilter = b.dataset.corrFilter;
+      renderCorrectionsFeed();
+    });
+  });
   // init session
   _auth.user = await LxyDB.getUser();
   await refreshCorrectionsCache();
   await refreshAuthBar();
+  await refreshCorrectionsFeed();
   // listen for login/logout
   LxyDB.onAuthChange(async (event, session) => {
     _auth.user = session ? session.user : null;
     await refreshCorrectionsCache();
     await refreshAuthBar();
+    await refreshCorrectionsFeed();
   });
 }
 initAuthUI().catch(e => console.error('initAuthUI failed:', e));
