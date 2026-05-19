@@ -2595,6 +2595,13 @@ function openMentionModal(name){
       a.href = x.url; a.target = '_blank'; a.rel = 'noopener';
       a.textContent = (x.title || '').trim() || '（無標題）';
       li.appendChild(a);
+      // LLM feedback loop：mention modal 也能標錯了
+      attachCorrectionAffordance(li, {
+        target_type:    'event',
+        target_id:      x.url || x.title || '',
+        original_label: sevTier,
+        context:        (x.title || '').slice(0, 80),
+      });
       ol.appendChild(li);
     });
     body.appendChild(ol);
@@ -3104,7 +3111,10 @@ async function run(){
 
   // 共用：給 li 加上 hd-news-{red/yellow/green} class + 對應的 hd-news-badge pill
   // 跟 hotspot modal / 平台 modal 用同一套樣式，視覺一致
-  const attachSeverityBadge = (li, sev) => {
+  // 第二個 arg 接受 sev string 或 article object — 後者會順手接上 LLM 修正 🚩
+  const attachSeverityBadge = (li, sevOrArticle) => {
+    const isArticle = sevOrArticle && typeof sevOrArticle === 'object';
+    const sev = isArticle ? sevOrArticle.severity : sevOrArticle;
     const tier = sev === 'red' ? 'red' : (sev === 'yellow' ? 'yellow' : 'green');
     li.classList.add('hd-news-' + tier);
     const badge = document.createElement('span');
@@ -3112,6 +3122,15 @@ async function run(){
     badge.textContent = tier === 'red' ? '🔴 紅燈' : (tier === 'yellow' ? '🟡 黃燈' : '🟢 綠燈');
     badge.title = tier === 'red' ? '紅燈：負面/攻擊' : (tier === 'yellow' ? '黃燈：爭議/質疑' : '綠燈：正面/中性');
     li.appendChild(badge);
+    // LLM feedback loop：admin 登入時、其他列表也能標錯了
+    if (isArticle) {
+      attachCorrectionAffordance(li, {
+        target_type:    'event',
+        target_id:      sevOrArticle.url || sevOrArticle.title || '',
+        original_label: tier,
+        context:        (sevOrArticle.title || '').slice(0, 80),
+      });
+    }
   };
 
   const detailMap = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
@@ -3124,7 +3143,7 @@ async function run(){
       const ol=document.createElement('ol');
       (detailMap[p]||[]).forEach(x=>{
         const li=document.createElement('li');
-        attachSeverityBadge(li, x.severity);
+        attachSeverityBadge(li, x);
         if (x.publisher){
           const pub=document.createElement('span'); pub.className='hd-news-publisher';
           pub.textContent=x.publisher; li.appendChild(pub);
@@ -3141,7 +3160,7 @@ async function run(){
     const el=document.getElementById(elId); if(!el) return; el.innerHTML='';
     (arr||[]).forEach(x=>{
       const li=document.createElement('li');
-      attachSeverityBadge(li, x.severity);
+      attachSeverityBadge(li, x);
       if (x.publisher){
         const pub=document.createElement('span'); pub.className='hd-news-publisher';
         pub.textContent=x.publisher; li.appendChild(pub);
