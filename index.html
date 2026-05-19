@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <link rel="stylesheet" href="./style.css?v=2026-05-19-feedback-loop" />
+  <link rel="stylesheet" href="./style.css?v=2026-05-19-two-step-confirm" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
   <script src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
 </head>
@@ -67,8 +67,26 @@
           <textarea id="correctionReason" rows="3" maxlength="500" placeholder="例：標題是諷刺、實際立場是正面"></textarea>
         </label>
         <div id="correctionError" class="auth-error" role="alert"></div>
-        <button type="submit" class="auth-btn auth-btn-primary">送出修正</button>
+        <button type="submit" class="auth-btn auth-btn-primary" id="correctionSubmitBtn">送出修正</button>
       </form>
+      <!-- Confirm step — 預設 hidden、填完按送出後切過來 -->
+      <div id="correctionConfirm" class="correction-confirm" style="display:none">
+        <p class="correction-confirm-warn">
+          ⚠️ 即將把該則新聞的 LLM 燈號從
+          <span id="correctionFromLabel">-</span> 改為
+          <span id="correctionToLabel">-</span>。
+        </p>
+        <p class="correction-confirm-detail">
+          此修正會：<br>
+          1. 立刻反映在 dashboard 上（議題敘事追蹤的計數、地圖卡片燈號等）<br>
+          2. 進入 LLM few-shot 範例池、影響未來新進新聞的自動判讀<br>
+          3. 此修正會永久記錄、原 LLM 判讀仍保留在 corrections table
+        </p>
+        <div class="correction-confirm-actions">
+          <button type="button" class="auth-btn" id="correctionCancelBtn">返回修改</button>
+          <button type="button" class="auth-btn auth-btn-primary" id="correctionConfirmBtn">確定送出</button>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Apply customer config to title elements (executed before app.js render) -->
@@ -602,6 +620,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- config.js 已提早到 <head> 載入、不需要再載一次 -->
   <script src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
-  <script src="./app.js?v=2026-05-19-feedback-fix1"></script>
+  <script src="./app.js?v=2026-05-19-two-step-confirm"></script>
 </body>
 </html>

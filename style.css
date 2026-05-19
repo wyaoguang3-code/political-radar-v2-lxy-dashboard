@@ -747,6 +747,25 @@ li.hd-news-green a{color:#a8efd4}
   margin-right: 14px; cursor: pointer; font-size: 14px;
 }
 
+/* Correction confirm step (safeguard 1) */
+.correction-confirm {
+  background: rgba(255,193,7,0.06);
+  border: 1px solid rgba(255,193,7,0.3);
+  border-radius: 6px; padding: 14px 16px;
+}
+.correction-confirm-warn {
+  font-size: 14px; margin: 0 0 12px; color: #ffd76b;
+}
+.correction-confirm-warn span {
+  font-weight: 700; padding: 1px 8px; border-radius: 4px;
+}
+.correction-confirm-detail {
+  font-size: 12px; color: #b9c3f2; margin: 0 0 14px; line-height: 1.6;
+}
+.correction-confirm-actions {
+  display: flex; gap: 8px; justify-content: flex-end;
+}
+
 /* 已修正 badge — 在原 hd-news-badge 後面跟著的小 chip */
 .hd-news-corrected {
   display: inline-block; margin-left: 8px;

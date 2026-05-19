@@ -3780,8 +3780,11 @@ function openCorrectionModal(ctx) {
 function closeCorrectionModal() {
   document.getElementById('correctionModal')?.classList.add('hidden');
   _pendingCorrection = null;
+  // 重置回 form 狀態 (下次開時是新一次修正)
+  showCorrectionForm();
 }
 
+// 第一步：表單 submit → 跳出確認頁
 async function handleCorrectionSubmit(e) {
   e.preventDefault();
   if (!_pendingCorrection) return;
@@ -3789,28 +3792,52 @@ async function handleCorrectionSubmit(e) {
   const errEl = document.getElementById('correctionError');
   errEl.textContent = '';
   if (!radio) { errEl.textContent = '請選一個燈號'; return; }
-  const corrected = radio.value;
-  const reason = document.getElementById('correctionReason').value.trim();
-  // 抓 reference 進 local 變數、closeCorrectionModal() 會把 _pendingCorrection 設 null
+  // 把資料先存起、跳到 confirm 頁；不直接寫 DB
+  _pendingCorrection.corrected_label = radio.value;
+  _pendingCorrection.reason = document.getElementById('correctionReason').value.trim();
+  showCorrectionConfirm();
+}
+
+function _labelChip(en) {
+  const map = { red: '🔴 紅燈', yellow: '🟡 黃燈', green: '🟢 綠燈' };
+  return map[en] || (en || '?');
+}
+
+function showCorrectionConfirm() {
+  const form = document.getElementById('correctionForm');
+  const confirm = document.getElementById('correctionConfirm');
+  if (!form || !confirm || !_pendingCorrection) return;
+  document.getElementById('correctionFromLabel').textContent = _labelChip(_pendingCorrection.original_label);
+  document.getElementById('correctionToLabel').textContent   = _labelChip(_pendingCorrection.corrected_label);
+  form.style.display = 'none';
+  confirm.style.display = '';
+}
+
+function showCorrectionForm() {
+  document.getElementById('correctionConfirm').style.display = 'none';
+  document.getElementById('correctionForm').style.display = '';
+}
+
+// 第二步：確認頁點「確定送出」→ 真的寫 DB
+async function handleCorrectionConfirm() {
+  if (!_pendingCorrection) return;
+  const errEl = document.getElementById('correctionError');
+  errEl.textContent = '';
   const ctx = {
     target_type:    _pendingCorrection.target_type,
     target_id:      _pendingCorrection.target_id,
     original_label: _pendingCorrection.original_label,
-    context:        _pendingCorrection.context || '',
+    corrected_label: _pendingCorrection.corrected_label,
+    reason:         _pendingCorrection.reason || '',
   };
   try {
-    const saved = await LxyDB.submitCorrection({
-      target_type:    ctx.target_type,
-      target_id:      ctx.target_id,
-      original_label: ctx.original_label,
-      corrected_label: corrected,
-      reason:         reason,
-    });
+    const saved = await LxyDB.submitCorrection(ctx);
     _auth.corrections.set(_corrKey(saved.target_type, saved.target_id), saved);
     closeCorrectionModal();
-    // 把所有 target_id 命中該 row 的 li 重新插 chip+flag (modal 可能有多份 dup li)
     updateCorrectionAffordanceFor(ctx.target_type, ctx.target_id);
   } catch (e2) {
+    // 失敗時把 form 切回來、顯示錯誤
+    showCorrectionForm();
     errEl.textContent = e2.message || String(e2);
   }
 }
@@ -3845,6 +3872,8 @@ async function initAuthUI() {
   document.getElementById('authForm')?.addEventListener('submit', handleAuthSubmit);
   document.querySelectorAll('[data-close-correction]').forEach(el => el.addEventListener('click', closeCorrectionModal));
   document.getElementById('correctionForm')?.addEventListener('submit', handleCorrectionSubmit);
+  document.getElementById('correctionCancelBtn')?.addEventListener('click', showCorrectionForm);
+  document.getElementById('correctionConfirmBtn')?.addEventListener('click', handleCorrectionConfirm);
   // init session
   _auth.user = await LxyDB.getUser();
   await refreshCorrectionsCache();
