@@ -3663,6 +3663,10 @@ async function refreshCorrectionsCache() {
 function attachCorrectionAffordance(li, ctx) {
   // ctx: { target_type, target_id, original_label, context (string) }
   if (!li || !ctx || !ctx.target_id) return;
+  // 寫到 dataset 上、之後 updateCorrectionAffordanceFor 才能透過 [data-target-id] 找到這個 li
+  li.dataset.targetType    = ctx.target_type || '';
+  li.dataset.targetId      = ctx.target_id || '';
+  li.dataset.originalLabel = ctx.original_label || '';
   const existing = _auth.corrections.get(_corrKey(ctx.target_type, ctx.target_id));
   if (existing) {
     const chip = document.createElement('span');
@@ -3787,42 +3791,46 @@ async function handleCorrectionSubmit(e) {
   if (!radio) { errEl.textContent = '請選一個燈號'; return; }
   const corrected = radio.value;
   const reason = document.getElementById('correctionReason').value.trim();
+  // 抓 reference 進 local 變數、closeCorrectionModal() 會把 _pendingCorrection 設 null
+  const ctx = {
+    target_type:    _pendingCorrection.target_type,
+    target_id:      _pendingCorrection.target_id,
+    original_label: _pendingCorrection.original_label,
+    context:        _pendingCorrection.context || '',
+  };
   try {
     const saved = await LxyDB.submitCorrection({
-      target_type:    _pendingCorrection.target_type,
-      target_id:      _pendingCorrection.target_id,
-      original_label: _pendingCorrection.original_label,
+      target_type:    ctx.target_type,
+      target_id:      ctx.target_id,
+      original_label: ctx.original_label,
       corrected_label: corrected,
       reason:         reason,
     });
     _auth.corrections.set(_corrKey(saved.target_type, saved.target_id), saved);
     closeCorrectionModal();
-    // 重 render 整個 hotspot detail modal (最簡單的方式讓 badge 顯示出來)
-    const cur = document.getElementById('hotspotDetailModal');
-    if (cur && !cur.classList.contains('hidden')) {
-      // re-trigger 上次 hotspot click — 但我們沒存 last hotspot；改用 location.reload soft refresh?
-      // 簡單做：把該 li 直接加上 badge / flag
-      // 找出這次修正對應的 li、append corrected chip
-      document.querySelectorAll('#hotspotDetailBody li').forEach(li => {
-        const a = li.querySelector('a[href]');
-        if (!a) return;
-        if (a.href !== _pendingCorrection?.target_id && a.getAttribute('href') !== _pendingCorrection?.target_id) {
-          // try title-based match as fallback
-          if (!li.textContent.includes((saved.target_id || '').slice(0, 30))) return;
-        }
-        // 移除舊 corrected chip 跟 flag、重塞新的
-        li.querySelectorAll('.hd-news-corrected, .hd-news-flag').forEach(n => n.remove());
-        attachCorrectionAffordance(li, {
-          target_type: saved.target_type,
-          target_id:   saved.target_id,
-          original_label: saved.original_label,
-          context: '',
-        });
-      });
-    }
+    // 把所有 target_id 命中該 row 的 li 重新插 chip+flag (modal 可能有多份 dup li)
+    updateCorrectionAffordanceFor(ctx.target_type, ctx.target_id);
   } catch (e2) {
     errEl.textContent = e2.message || String(e2);
   }
+}
+
+// 找出 DOM 上所有 target_id 命中的 <li>、移掉舊 chip/flag、重 render
+function updateCorrectionAffordanceFor(targetType, targetId) {
+  if (!targetId) return;
+  let matched = 0;
+  document.querySelectorAll('#hotspotDetailBody li').forEach(li => {
+    if (li.dataset.targetId !== targetId) return;
+    li.querySelectorAll('.hd-news-corrected, .hd-news-flag').forEach(n => n.remove());
+    attachCorrectionAffordance(li, {
+      target_type:    targetType,
+      target_id:      targetId,
+      original_label: li.dataset.originalLabel || null,
+      context:        '',
+    });
+    matched += 1;
+  });
+  if (matched === 0) console.warn('[corrections] no <li> matched target_id=' + targetId);
 }
 
 // --- bootstrap ---
