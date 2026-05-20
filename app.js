@@ -1208,6 +1208,17 @@ function renderModalBody(){
       <div class="text">${escapeHtml(c.text || '')}</div>
       ${url}
     `;
+    // LLM feedback loop — admin sees 🚩 標錯了 on each comment.
+    // target_id comes from update_lxy_social_signals.py's _comment_id()
+    // and matches social_comments.comment_id (trigger in migration 015).
+    if (c.comment_id) {
+      attachCorrectionAffordance(div, {
+        target_type:    'comment',
+        target_id:      c.comment_id,
+        original_label: lightClass,
+        context:        (c.text || '').slice(0, 80),
+      });
+    }
     frag.appendChild(div);
   });
   body.appendChild(frag);
