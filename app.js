@@ -975,7 +975,7 @@ function renderTrendsChart(topic){
   });
   canvas.style.cursor = 'crosshair';   // affordance: hints the line is interactive
   if (meta){
-    const fetched = gt.fetched_at ? new Date(gt.fetched_at).toLocaleString('zh-TW', { hour12: false }) : '—';
+    const fetched = gt.fetched_at ? new Date(gt.fetched_at).toLocaleString('zh-TW', { hour12: false, timeZone: 'Asia/Taipei' }) : '—';
     const stale = gt.stale ? `<span class="trends-warn">（快取資料，最新一次 fetch 失敗）</span>` : '';
     meta.innerHTML = `
       共 ${pts.length} 筆（週頻率）　｜　峰值 <b>${peak}</b> @ ${peakDate}　｜　抓取時間：${fetched} ${stale}
@@ -3149,7 +3149,7 @@ async function run(){
   if (!state.topicHeat) state.topicHeat = await fetchJSON('./topic_heat.json') || null;
 
   const m = pick(d, 'metrics', 'metrics_7d') || {};
-  document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false});
+  document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false, timeZone:'Asia/Taipei'});
   document.getElementById('modeHint').textContent = mode==='7d' ? '（近7日聚合）' : '（近24h）';
   document.getElementById('total24').textContent = m.total ?? m.total_24h ?? '-';
   document.getElementById('prev24').textContent = m.prev ?? m.prev_24h ?? '-';
@@ -3874,7 +3874,7 @@ function initRealtimeToasts() {
     while (container.children.length >= MAX_TOASTS) {
       container.removeChild(container.firstChild);
     }
-    const tNow = new Date().toLocaleTimeString('zh-TW', { hour12: false });
+    const tNow = new Date().toLocaleTimeString('zh-TW', { hour12: false, timeZone: 'Asia/Taipei' });
     const level = row.severity || 'red';   // 'red' / 'yellow'
     const div = document.createElement('div');
     div.className = 'rt-toast ' + (level === 'yellow' ? 'rt-yellow' : '');
