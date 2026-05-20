@@ -3093,9 +3093,9 @@ async function run(){
       // declared above (24 / 168 by mode). JSON fallback stays for offline.
       try {
         const [fbCmt, igCmt, threadsCmt] = await Promise.all([
-          LxyDB.recentComments('facebook',  2000, hours).catch(() => null),
-          LxyDB.recentComments('instagram', 2000, hours).catch(() => null),
-          LxyDB.recentComments('threads',   2000, hours).catch(() => null),
+          LxyDB.recentComments('facebook',  5000, hours).catch(() => null),
+          LxyDB.recentComments('instagram', 5000, hours).catch(() => null),
+          LxyDB.recentComments('threads',   5000, hours).catch(() => null),
         ]);
         if (fbCmt)      state.comments.facebook  = fbCmt;
         if (igCmt)      state.comments.instagram = igCmt;
