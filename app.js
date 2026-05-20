@@ -206,6 +206,24 @@ function escapeHtml(s){
   ));
 }
 
+// Format updated_at strings consistently as Taiwan time.
+// Two input shapes coexist (RPC vs JSON fallback):
+//   "2026-05-20 16:41:44.772134+00"  ← Supabase RPC (UTC, postgres tstz)
+//   "2026-05-21 00:41:41"            ← social_signals.json (no TZ, already Taipei)
+// Strings with +HH / Z markers get parsed and re-rendered in Asia/Taipei.
+// Tz-less strings are assumed already Taiwan-local and shown verbatim.
+function formatUpdatedAt(s){
+  if (!s || s === '-') return '-';
+  if (/[+-]\d{2}/.test(s) || /Z$/.test(s)) {
+    const iso = String(s).replace(' ', 'T').replace(/(\.\d{3})\d+/, '$1');
+    const d = new Date(iso);
+    if (!isNaN(d.getTime())) {
+      return d.toLocaleString('zh-TW', { hour12: false, timeZone: 'Asia/Taipei' });
+    }
+  }
+  return s;
+}
+
 // 擋掉測試殘留 / 空 URL — 只接受 http(s) 且不是 example.* / localhost test domain
 function isSafeExternalUrl(u){
   if (!u || typeof u !== 'string') return false;
@@ -647,7 +665,7 @@ function renderSocialCards(){
       <div class="social-row"><span class="tag">🔴 紅燈</span><strong>${s.red || 0}</strong></div>
       <div class="social-row"><span class="tag">🟡 黃燈</span><strong>${s.yellow || 0}</strong></div>
       <div class="social-row"><span class="tag">🟢 綠燈</span><strong>${s.green || 0}</strong></div>
-      <div class="social-row" style="opacity:.75;font-size:12px"><span>更新</span><span>${escapeHtml(s.updated_at || '-')}</span></div>
+      <div class="social-row" style="opacity:.75;font-size:12px"><span>更新</span><span>${escapeHtml(formatUpdatedAt(s.updated_at))}</span></div>
       <div class="drill-hint">▸ 點擊查看完整留言</div>
     `;
     btn.addEventListener('click', () => openModal(p, 'all'));
