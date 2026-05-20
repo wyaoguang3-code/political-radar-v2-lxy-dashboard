@@ -4,8 +4,11 @@ let mode = '24h';
 // First-run JSON cache — mode switch (24h ↔ 7d) re-renders without re-fetching the
 // 6 boot JSON files (~1MB cold). RPCs are still re-called per mode since they're
 // genuinely mode-aware (hours=24 vs 168). topic_heat caches separately via
-// state.topicHeat below. Reset on page reload.
+// state.topicHeat below. hotspot_history cached via _hotspotHistoryCache.
+// election_priority reuses existing _epIndexCache (via loadEpIndex). Reset on
+// page reload.
 let _runJsonCache = null;
+let _hotspotHistoryCache = null;
 
 // In-memory cache of the latest fetched comment lists + history, so the modal
 // and the red-list panel don't need to re-fetch on every interaction.
@@ -1462,7 +1465,7 @@ async function renderPastEvents(){
   const meta = document.getElementById('pastEventsMeta');
   if (!wrap || !list) return;
 
-  const hist = await fetchJSON('./hotspot_history.json');
+  const hist = _hotspotHistoryCache || (_hotspotHistoryCache = await fetchJSON('./hotspot_history.json'));
   if (!hist || !Array.isArray(hist.days) || hist.days.length === 0){
     if (meta) meta.textContent = '（暫無歷史資料）';
     list.innerHTML = '';
@@ -1896,7 +1899,8 @@ async function renderElectionForecast(){
   if (!container) return;
   let data;
   try {
-    data = await fetchJSON('./election_priority.json');
+    // Reuse _epIndexCache via loadEpIndex — avoids re-fetching 4.4MB on mode switch
+    data = await loadEpIndex();
   } catch (e) {
     container.innerHTML = '<p class="hint">資料載入失敗。</p>';
     return;
