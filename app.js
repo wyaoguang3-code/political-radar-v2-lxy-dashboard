@@ -1,6 +1,11 @@
 let hourChart, platformChart, mentionChart, redTrendChart, topicOwnChart, topicTrendsChart;
 let incidentMap;
 let mode = '24h';
+// First-run JSON cache — mode switch (24h ↔ 7d) re-renders without re-fetching the
+// 6 boot JSON files (~1MB cold). RPCs are still re-called per mode since they're
+// genuinely mode-aware (hours=24 vs 168). topic_heat caches separately via
+// state.topicHeat below. Reset on page reload.
+let _runJsonCache = null;
 
 // In-memory cache of the latest fetched comment lists + history, so the modal
 // and the red-list panel don't need to re-fetch on every interaction.
@@ -2962,15 +2967,23 @@ function initHotspotDetailModal(){
 
 // --------- Main render ---------
 async function run(){
-  const d = await fetchJSON('./data.json');
-  if (!d) return;
+  let d;
+  if (_runJsonCache) {
+    // Mode switch (24h ↔ 7d) — reuse cached JSON, skip 6 file fetches.
+    // state.* (socialSignals/history/comments) already populated by first run.
+    d = _runJsonCache.d;
+  } else {
+    d = await fetchJSON('./data.json');
+    if (!d) return;
 
-  // New signal/comment/history artefacts — optional, safe if absent
-  state.socialSignals = await fetchJSON('./social_signals.json') || null;
-  state.history = await fetchJSON('./social_signals_history.json') || { facebook: [], instagram: [], threads: [] };
-  state.comments.facebook = await fetchJSON('./comments_facebook.json') || [];
-  state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
-  state.comments.threads = await fetchJSON('./comments_threads.json') || [];
+    // New signal/comment/history artefacts — optional, safe if absent
+    state.socialSignals = await fetchJSON('./social_signals.json') || null;
+    state.history = await fetchJSON('./social_signals_history.json') || { facebook: [], instagram: [], threads: [] };
+    state.comments.facebook = await fetchJSON('./comments_facebook.json') || [];
+    state.comments.instagram = await fetchJSON('./comments_instagram.json') || [];
+    state.comments.threads = await fetchJSON('./comments_threads.json') || [];
+    _runJsonCache = { d };
+  }
 
   // [Migration C — Phase 4] RPC PRIMARY (data.json 變成 fallback only)
   //
@@ -3104,7 +3117,7 @@ async function run(){
   }
   // 留言按發布日期 group（給 topic arc click 用）— backend 已 parse 好
   state.commentsByDate = d.comments_by_date_7d || {};
-  state.topicHeat = await fetchJSON('./topic_heat.json') || null;
+  if (!state.topicHeat) state.topicHeat = await fetchJSON('./topic_heat.json') || null;
 
   const m = pick(d, 'metrics', 'metrics_7d') || {};
   document.getElementById('updated').textContent = '更新時間：' + new Date(d.generated_at).toLocaleString('zh-TW',{hour12:false});
