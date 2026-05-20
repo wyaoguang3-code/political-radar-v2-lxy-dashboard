@@ -3087,10 +3087,10 @@ async function run(){
 
       // 把 RPC 結果覆寫進 d (data.json 對應 key)；null = RPC 失敗、保留 data.json 原值
       if (signals)      state.socialSignals = signals;
-      // Overwrite state.comments.* with live 24h-window queries so the modal
-      // count matches the card count (both then reflect signals_by_platform's
-      // first_seen_at > NOW() - 24h window). JSON fallback stays for offline.
-      const hours = (mode === '7d') ? 168 : 24;
+      // Overwrite state.comments.* with live N-hour-window queries so the modal
+      // count matches the card count (both reflect signals_by_platform's
+      // first_seen_at > NOW() - hours window). Uses outer `hours` already
+      // declared above (24 / 168 by mode). JSON fallback stays for offline.
       try {
         const [fbCmt, igCmt, threadsCmt] = await Promise.all([
           LxyDB.recentComments('facebook',  2000, hours).catch(() => null),
