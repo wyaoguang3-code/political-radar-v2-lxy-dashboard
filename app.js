@@ -3110,6 +3110,7 @@ async function run(){
         if (isWeek) {
           d.mention_articles_7d = personsSum.mention_articles;
           d.mention_compare_7d  = personsSum.mention_compare;
+          d.voice_breakdown_7d  = personsSum.voice_breakdown;
         } else {
           d.mention_articles_24h = personsSum.mention_articles;
           d.mention_compare_24h  = personsSum.mention_compare;
@@ -3284,7 +3285,10 @@ async function run(){
 
   // 戰情排名（24h）：用 voice_breakdown_24h 渲染 leaderboard，
   // 並把 mention_articles_24h 一起傳進去做「排名 row 可點擊看新聞」
-  renderWarRoomRanking(d.voice_breakdown_24h || {}, d.mention_articles_24h || {});
+  renderWarRoomRanking(
+    pick(d, 'voice_breakdown_24h', 'voice_breakdown_7d') || {},
+    pick(d, 'mention_articles_24h', 'mention_articles_7d') || {}
+  );
 
   // 同人縱向追蹤 — 比跨人比較務實
   renderSelfFavorability(d.self_favorability_history_7d || []);
