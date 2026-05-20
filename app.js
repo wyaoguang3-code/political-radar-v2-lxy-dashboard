@@ -3087,6 +3087,20 @@ async function run(){
 
       // 把 RPC 結果覆寫進 d (data.json 對應 key)；null = RPC 失敗、保留 data.json 原值
       if (signals)      state.socialSignals = signals;
+      // Overwrite state.comments.* with live 24h-window queries so the modal
+      // count matches the card count (both then reflect signals_by_platform's
+      // first_seen_at > NOW() - 24h window). JSON fallback stays for offline.
+      const hours = (mode === '7d') ? 168 : 24;
+      try {
+        const [fbCmt, igCmt, threadsCmt] = await Promise.all([
+          LxyDB.recentComments('facebook',  2000, hours).catch(() => null),
+          LxyDB.recentComments('instagram', 2000, hours).catch(() => null),
+          LxyDB.recentComments('threads',   2000, hours).catch(() => null),
+        ]);
+        if (fbCmt)      state.comments.facebook  = fbCmt;
+        if (igCmt)      state.comments.instagram = igCmt;
+        if (threadsCmt) state.comments.threads   = threadsCmt;
+      } catch (e) { /* keep JSON fallback */ }
       if (metrics)      { if (isWeek) d.metrics_7d = metrics; else d.metrics = metrics; }
       if (byHour)       { if (isWeek) d.by_hour_7d = byHour; else d.by_hour = byHour; }
       if (topNews)      { if (isWeek) d.top_news_7d = topNews; else d.top_news = topNews; }
