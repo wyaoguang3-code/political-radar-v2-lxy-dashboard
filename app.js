@@ -210,18 +210,22 @@ function escapeHtml(s){
 // Two input shapes coexist (RPC vs JSON fallback):
 //   "2026-05-20 16:41:44.772134+00"  ← Supabase RPC (UTC, postgres tstz)
 //   "2026-05-21 00:41:41"            ← social_signals.json (no TZ, already Taipei)
-// Strings with +HH / Z markers get parsed and re-rendered in Asia/Taipei.
+// Only strings ending in ±HH[:MM] or Z are parsed and re-rendered as Asia/Taipei;
+// the date-part hyphens (e.g. -05-20) are NOT mis-detected as TZ markers.
 // Tz-less strings are assumed already Taiwan-local and shown verbatim.
 function formatUpdatedAt(s){
   if (!s || s === '-') return '-';
-  if (/[+-]\d{2}/.test(s) || /Z$/.test(s)) {
-    const iso = String(s).replace(' ', 'T').replace(/(\.\d{3})\d+/, '$1');
-    const d = new Date(iso);
-    if (!isNaN(d.getTime())) {
-      return d.toLocaleString('zh-TW', { hour12: false, timeZone: 'Asia/Taipei' });
-    }
-  }
-  return s;
+  const hasTimezone = /([+-]\d{2}(?::?\d{2})?|Z)$/.test(s);
+  if (!hasTimezone) return s;
+  // Normalise to ISO-8601 the way Date can parse:
+  //   space → T, sub-millisecond digits dropped, naked ±HH padded to ±HH:00
+  const iso = String(s)
+    .replace(' ', 'T')
+    .replace(/(\.\d{3})\d+/, '$1')
+    .replace(/([+-]\d{2})$/, '$1:00');
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return s;
+  return d.toLocaleString('zh-TW', { hour12: false, timeZone: 'Asia/Taipei' });
 }
 
 // 擋掉測試殘留 / 空 URL — 只接受 http(s) 且不是 example.* / localhost test domain
