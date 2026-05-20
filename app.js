@@ -3067,7 +3067,7 @@ async function run(){
              personsSum, byPlatAll, byPlatLu, latestFb, latestNews,
              favHistory, topicArc, mediaFraming, commentsByDate, personSections]
         = await Promise.all([
-          LxyDB.signalsByPlatform().catch(() => null),
+          LxyDB.signalsByPlatform(hours).catch(() => null),
           LxyDB.dashboardMetrics(hours).catch(() => null),
           LxyDB.dashboardByHour(hours).catch(() => null),
           LxyDB.dashboardTopNews(hours, 20).catch(() => null),
