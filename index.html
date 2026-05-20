@@ -4,10 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>政治戰情儀表板（lxy）</title>
+
+  <!-- Performance: preconnect to external hosts so DNS+TLS handshake runs during HTML parse -->
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://ypkhjcbanfizysdnayee.supabase.co" crossorigin>
+
+  <!-- Performance: preload first-paint critical JSON in parallel with vendor JS -->
+  <link rel="preload" href="./data.json" as="fetch" crossorigin>
+  <link rel="preload" href="./social_signals.json" as="fetch" crossorigin>
+  <link rel="preload" href="./topic_heat.json" as="fetch" crossorigin>
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="./style.css?v=2026-05-20-legal" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
-  <script src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
+  <script defer src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
 </head>
 <body>
   <header>
@@ -649,12 +660,12 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- Supabase UMD: 必須在 db.js / app.js 前載入 -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- config.js 已提早到 <head> 載入、不需要再載一次 -->
-  <script src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
-  <script src="./app.js?v=2026-05-20-real-total"></script>
+  <script defer src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
+  <script defer src="./app.js?v=2026-05-20-real-total"></script>
 </body>
 </html>
