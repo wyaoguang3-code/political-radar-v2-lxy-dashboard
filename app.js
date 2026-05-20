@@ -10,6 +10,31 @@ let mode = '24h';
 let _runJsonCache = null;
 let _hotspotHistoryCache = null;
 
+// Lazy-render registry: heavy sections (election + past events) skip eager render
+// in run() — IntersectionObserver triggers their render when the section is ~300px
+// from entering viewport. First render fetches the underlying JSON (4.4MB +
+// 493KB), subsequent calls re-render from cache. Mode switch hits the cached
+// path immediately for already-rendered sections.
+const _lazyState = new Map();  // elementId → 'pending' | 'rendered'
+function lazyRender(elementId, renderFn) {
+  const state = _lazyState.get(elementId);
+  if (state === 'rendered') { renderFn(); return; }
+  if (state === 'pending')  return;          // observer already set up, waiting
+  const el = document.getElementById(elementId);
+  if (!el) { renderFn(); return; }           // element missing → just render
+  _lazyState.set(elementId, 'pending');
+  const obs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        obs.disconnect();
+        _lazyState.set(elementId, 'rendered');
+        renderFn();
+      }
+    }
+  }, { rootMargin: '300px' });
+  obs.observe(el);
+}
+
 // In-memory cache of the latest fetched comment lists + history, so the modal
 // and the red-list panel don't need to re-fetch on every interaction.
 const state = {
@@ -3229,11 +3254,13 @@ async function run(){
   renderRedCommentsPanel();
   renderTopicHeat();
   renderIncidentMap(d);
-  renderPastEvents();
+  // Lazy: 4.9MB of JSON (election_priority 4.4MB + hotspot_history 493KB)
+  // is below the fold. Render only when section approaches viewport.
+  lazyRender('pastEventsWrap',        () => renderPastEvents());
   renderMediaFraming(d);
-  renderElectionPriority();
-  renderElectionForecast();
-  renderElectionMap();
+  lazyRender('electionPriorityPanel', () => renderElectionPriority());
+  lazyRender('electionForecastPanel', () => renderElectionForecast());
+  lazyRender('electionMapPanel',      () => renderElectionMap());
   // If modal is open, re-render its body with fresh data
   const modal = document.getElementById('commentsModal');
   if (modal && !modal.classList.contains('hidden')) renderModalBody();
