@@ -5,14 +5,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -278,9 +278,9 @@
       "yellow": 2,
       "red": 2,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:c623edbb86e9947eecb2"
   },
@@ -306,7 +306,7 @@
   {
     "author": "郭小佑",
     "text": "王小名 台中人喜歡，有媽祖就好！",
-    "time_text": "18小時",
+    "time_text": "19小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -382,7 +382,7 @@
   {
     "author": "Amber Yu",
     "text": "江美美 這就是有建設性的留言，謝謝你.",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "green",
@@ -780,7 +780,7 @@
   },
   {
     "author": "查看隱藏的回覆",
-    "text": "Nissan Huang 台中巨蛋沒捷運站 烏日有五大交通樞紐 重劃都是居家大樓",
+    "text": "徐璇 台中有市府嗎？（什麼都要中央市府要做什麼）",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -795,26 +795,7 @@
       "rule": "黃",
       "source": "llm"
     },
-    "comment_id": "facebook:2d57102907f5c9935e2e"
-  },
-  {
-    "author": "徐璇",
-    "text": "台中有市府嗎？（什麼都要中央市府要做什麼）",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:39a3c0a8c0734215c366"
+    "comment_id": "facebook:5a289a49bd2f78ce5cd9"
   },
   {
     "author": "李仁皓",
@@ -834,25 +815,6 @@
       "source": "rule(stricter)"
     },
     "comment_id": "facebook:0d7282ee947f163eae85"
-  },
-  {
-    "author": "林維駿",
-    "text": "看看沒有捷運的大場館…散場很悲劇",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:b9666e5e1fefb23d7e3c"
   },
   {
     "author": "陳明治",
@@ -876,7 +838,7 @@
   {
     "author": "Amber Yu",
     "text": "陳明治 看青鳥在叫叫叫嗎? 叫什麼叫",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -891,6 +853,44 @@
       "source": "llm"
     },
     "comment_id": "facebook:2908506945bfc54919ba"
+  },
+  {
+    "author": "林維駿",
+    "text": "看看沒有捷運的大場館…散場很悲劇",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "facebook:b9666e5e1fefb23d7e3c"
+  },
+  {
+    "author": "Nissan Huang",
+    "text": "台中巨蛋沒捷運站 烏日有五大交通樞紐 重劃都是居家大樓",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "facebook:b16ee668160eb936edfd"
   },
   {
     "author": "Stephen Yu",
@@ -943,9 +943,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:3f81f20a4b6975c35d97"
   },
@@ -1031,14 +1031,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -1256,7 +1256,7 @@
   {
     "author": "林麗彩",
     "text": "李春生 蓋來養蚊子",
-    "time_text": "18小時",
+    "time_text": "19小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -1636,7 +1636,7 @@
   {
     "author": "張高華",
     "text": "謝謝市長！",
-    "time_text": "16小時",
+    "time_text": "17小時",
     "url": "",
     "kind": "text",
     "signal": "green",
@@ -1672,9 +1672,9 @@
     "comment_id": "facebook:7d60158cb9de6a095add"
   },
   {
-    "author": "蘇 伯翰",
-    "text": "Lumama~~~~~ 燒起來辣~~~~~",
-    "time_text": "2天",
+    "author": "上官渺渺",
+    "text": "空氣感覺了沒？",
+    "time_text": "35分鐘",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -1687,6 +1687,25 @@
       "llm": "黃",
       "rule": "黃",
       "source": "llm"
+    },
+    "comment_id": "facebook:7ecede2952beae92f8a7"
+  },
+  {
+    "author": "蘇 伯翰",
+    "text": "Lumama~~~~~ 燒起來辣~~~~~",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:fdeb505758dccd090c36"
   },
@@ -1708,6 +1727,25 @@
       "source": "rule(stricter)"
     },
     "comment_id": "facebook:5a9efa8f33d1694848e1"
+  },
+  {
+    "author": "陳亮穎",
+    "text": "床墊萬里長城處理好了？",
+    "time_text": "1小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "facebook:097846b4bd74068c53a9"
   },
   {
     "author": "Larry Lin",
@@ -1788,7 +1826,7 @@
   {
     "author": "碗粿李",
     "text": "這次要賴清德嗎？",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -1883,7 +1921,7 @@
   {
     "author": "曾政豪",
     "text": "拿來放垃圾跟床墊嗎？！",
-    "time_text": "20小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -1959,7 +1997,7 @@
   {
     "author": "Yuen Yuan",
     "text": "支持 可以蓋在廚餘坑旁邊",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2035,7 +2073,7 @@
   {
     "author": "張弘楷",
     "text": "民調又要全國第一了",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2073,7 +2111,7 @@
   {
     "author": "Yuka Chen",
     "text": "笑死人 正事不做 只會出一張嘴",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2092,7 +2130,7 @@
   {
     "author": "Felin Chiou",
     "text": "快把垃圾處理好好嗎？ 廚餘什麼時候要認真面對",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -2206,7 +2244,7 @@
   {
     "author": "Hsiang-chih Hsiao",
     "text": "先把擺爛的事情做完",
-    "time_text": "10小時",
+    "time_text": "11小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2225,7 +2263,7 @@
   {
     "author": "柯至濬",
     "text": "交通、垃圾、廚餘不處理",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -2244,17 +2282,17 @@
   {
     "author": "Melissa Lin",
     "text": "盧媽媽，我在台中土生土長30多年了，台中的交通基礎建設一定要先解決，捷運真的是首要處理",
-    "time_text": "18小時",
+    "time_text": "19小時",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "green",
+    "signal_zh": "綠燈",
     "signal_score": {
       "green": 1,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "綠",
       "source": "llm"
     },
@@ -2339,7 +2377,7 @@
   {
     "author": "Tien Chen Chiu",
     "text": "邀功文就敢發，不是要總統公開放棄獨立？ 連台中市都治理不好，還要求別人，笑死人！",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2377,7 +2415,7 @@
   {
     "author": "Cj Wang",
     "text": "無人機產業怎麼辦？！",
-    "time_text": "16小時",
+    "time_text": "17小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2415,7 +2453,7 @@
   {
     "author": "Bristle Thurder",
     "text": "蓋那幹嘛，先把地舖好再說啦",
-    "time_text": "1小時",
+    "time_text": "2小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -2491,7 +2529,7 @@
   {
     "author": "Ashley Yen",
     "text": "最基本的民生問題解決不了，捷運也沒，只會畫大餅…又是想給誰賺錢",
-    "time_text": "11小時",
+    "time_text": "12小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2529,7 +2567,7 @@
   {
     "author": "Chen Ching Long",
     "text": "垃圾沒有在範圍內所以不回應這是原本的市政計畫",
-    "time_text": "14小時",
+    "time_text": "15小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -2605,7 +2643,7 @@
   {
     "author": "鄭玉米",
     "text": "又要給建商賺錢的節奏哈哈哈",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2643,7 +2681,7 @@
   {
     "author": "葉自強",
     "text": "羨慕台中人",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2662,7 +2700,7 @@
   {
     "author": "蘇永宏",
     "text": "台灣就是獨立的國家",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2786,26 +2824,26 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "紅",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:1c463bfee4b40da420f4"
   },
   {
     "author": "MA Luke",
     "text": "感謝盧媽媽仁慈～～給百貨業者兩天時間趕快清掉任何針孔偷拍攝影機 兩天後清查全台中查無不法 又是個美好的一天～～感謝盧媽媽的努力！",
-    "time_text": "14小時",
+    "time_text": "15小時",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 3,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -2833,7 +2871,7 @@
   {
     "author": "賴楓儒",
     "text": "都當兩屆了，卻還不知道台中真正要的是什麼……..",
-    "time_text": "14小時",
+    "time_text": "15小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -2919,9 +2957,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:1edb99d40ea25c2013e2"
   },
@@ -3042,7 +3080,7 @@
   {
     "author": "賴明雄",
     "text": "不蓋那有錢可A",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -3116,6 +3154,25 @@
     "comment_id": "facebook:4014768e3a42e824dc67"
   },
   {
+    "author": "Teresa Huang",
+    "text": "龜岡ㄟ",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "facebook:825a249039e95f26551c"
+  },
+  {
     "author": "楊佩媞",
     "text": "我們要人行道！！！！！！！！！！",
     "time_text": "2天",
@@ -3175,7 +3232,7 @@
   {
     "author": "Innan Lai",
     "text": "拜託垃圾廚餘馬路都搞不定了，有事又都推給別人",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -3185,16 +3242,16 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:a5e2e44b7950dea627d7"
   },
   {
     "author": "呂加麒",
     "text": "先備注一下..出事是市政府的問題還是中央..",
-    "time_text": "20小時",
+    "time_text": "21小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -3251,7 +3308,7 @@
   {
     "author": "Francis Hsu",
     "text": "生雞蛋沒有放雞屎一大堆，還想搞什麼超巨蛋，夏夕夏政",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -3270,7 +3327,7 @@
   {
     "author": "羅孟凱",
     "text": "炒地囉",
-    "time_text": "20小時",
+    "time_text": "21小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -3327,7 +3384,7 @@
   {
     "author": "李正吉",
     "text": "台灣這麽小 真的有需要 那麽多的 大巨蛋嗎？ 是不是有關的 垃圾 廚餘 問題 要優先",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -3444,14 +3501,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -3603,9 +3660,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:034b75293f4867f52692"
   },
@@ -3622,9 +3679,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "紅",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:a41fc0b670f7d550d697"
   },
@@ -3793,16 +3850,16 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:e6a7d91156b3d2e7d9bd"
   },
   {
     "author": "邱慧忻",
     "text": "垃圾山要處理沒？那個捷運沒用啦，從高鐵到松竹要四十多分，區間都比你快",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -3859,7 +3916,7 @@
   {
     "author": "Ken Wang",
     "text": "重要的民生設施都沒搞好，尤其是垃圾，還有閒情逸致去搞巨蛋，有事嗎？",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -3938,14 +3995,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -3973,7 +4030,7 @@
   {
     "author": "陳韋臣",
     "text": "外牆用床墊疊起來的嗎？",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4049,7 +4106,7 @@
   {
     "author": "顏邁珂",
     "text": "果然最後一年當第一年在吹",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4125,7 +4182,7 @@
   {
     "author": "可安",
     "text": "繼垃圾山廚餘山之後又有床墊萬里長城欸 您是大地之母嗎",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -4325,9 +4382,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:a92699a66bfe803b6eca"
   },
@@ -4410,7 +4467,7 @@
   {
     "author": "G Rong Liu",
     "text": "要不蓋個超巨蛋來放垃圾好了",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -4543,7 +4600,7 @@
   {
     "author": "馬啟韶",
     "text": "台中水族館現在營運的怎麼樣了？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4676,7 +4733,7 @@
   {
     "author": "Ziva Huang",
     "text": "太好了 那些床墊和垃圾都能丟進大巨蛋裡",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -4724,9 +4781,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:b1b629bd1c3eb3949c2a"
   },
@@ -4790,7 +4847,7 @@
   {
     "author": "Leo Yang",
     "text": "拿來堆廚餘很好",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4885,7 +4942,7 @@
   {
     "author": "陳彥碩",
     "text": "有病嗎？是要多少顆蛋？確定蓋了能有他的價值，不會變成蚊子館？？要卸任了，開始幫下一任留爛攤子嗎？",
-    "time_text": "16小時",
+    "time_text": "17小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -4923,7 +4980,7 @@
   {
     "author": "Wen-Fen Liang",
     "text": "八年了，連藍色捷運都搞不定的人，又要蓋巨蛋！",
-    "time_text": "1小時",
+    "time_text": "2小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4942,7 +4999,7 @@
   {
     "author": "Naka Chen",
     "text": "又想要剪綵啊",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -4999,7 +5056,7 @@
   {
     "author": "何傑克",
     "text": "現實存在的問題不解決 畫一個大餅先唬弄台中市民",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5075,17 +5132,17 @@
   {
     "author": "Wolf Man",
     "text": "台中火車站已榮登全台最噁火車站",
-    "time_text": "18小時",
+    "time_text": "19小時",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -5161,16 +5218,16 @@
       "yellow": 2,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:5a3342a9c7d3a777ab62"
   },
   {
     "author": "沈婙媛",
     "text": "台中迫切需要的是垃圾、廚餘去化基礎設施 地方首長 做您該做的事",
-    "time_text": "20小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5246,7 +5303,7 @@
   {
     "author": "Johnny Sue",
     "text": "還在巨蛋，先把台中市的垃圾、廚餘處理一下吧！還是妳要卸任了，在擺爛…",
-    "time_text": "1小時",
+    "time_text": "2小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5287,14 +5344,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -5322,7 +5379,7 @@
   {
     "author": "Chien Chien",
     "text": "廚餘山，垃圾山，還有床墊山打算怎麼處理？你都快卸任了，先把這三個最重要的事情解決了好嗎",
-    "time_text": "18小時",
+    "time_text": "20小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5398,7 +5455,7 @@
   {
     "author": "Lin San",
     "text": "你最廢！",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5417,7 +5474,7 @@
   {
     "author": "尤朝蒼",
     "text": "臉皮⋯還在嗎？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5470,6 +5527,25 @@
       "source": "llm"
     },
     "comment_id": "facebook:cbb5576b40c814c8c89b"
+  },
+  {
+    "author": "Martin Peng",
+    "text": "這事情交給中央就好 反正你什麼都不會",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "facebook:9d40ed8d11686e177387"
   },
   {
     "author": "Wang Chih Hsiung",
@@ -5645,7 +5721,7 @@
   {
     "author": "李基邁",
     "text": "垃圾也留在台中！ 一場活動下來產生多少垃圾！ 好意思說基礎！基本連焚化廠去化嚴重不足，市府是如何處理的？ 壓榨，坑殺業者，安撫民眾！ 說真的，這屆是沒屁用了，現在只會做好表面，撐到安全下莊！ 我是比較期待下屆，不知道哪個黨那個人來當倒楣蛋",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5664,7 +5740,7 @@
   {
     "author": "Khu Ik-siâng",
     "text": "要叫中央了嗎？還是要林佳龍出來負責，趕快把既有台詞唸一唸，再強調媽媽跟民調，就可以下班了。",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5693,9 +5769,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:b7602454eea655b67945"
   },
@@ -5759,7 +5835,7 @@
   {
     "author": "簡佑麟",
     "text": "潭子床墊城不處理嗎？真把台中市當成你的垃圾場是嗎？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5778,7 +5854,7 @@
   {
     "author": "森田禾",
     "text": "別在屁了是要演到什麼時候？土地炒完了就快滾，浪費8年時間。",
-    "time_text": "11小時",
+    "time_text": "12小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5816,7 +5892,7 @@
   {
     "author": "Mu Huang",
     "text": "廚餘床墊都搞不好了 還要蓋東西喔？圖利夫家建設公司嗎？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5892,7 +5968,7 @@
   {
     "author": "管管",
     "text": "垃圾、廚餘、狼師、捷運交通拜託搞好好嗎？又再那邊圈地搞不是市民立即性建物到底在搞什麼？作秀一流、建樹沒有",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -5902,16 +5978,16 @@
       "yellow": 3,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:afe084cb5048ce48f04d"
   },
   {
     "author": "王文志",
     "text": "把爛攤子收拾處理好再說吧⋯到底要鬼台中人多久⋯",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5930,7 +6006,7 @@
   {
     "author": "謝家琦",
     "text": "債留下一任是嗎",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5949,7 +6025,7 @@
   {
     "author": "劉文光",
     "text": "看這篇都在罵，到底滿意度7成那來的",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -5971,14 +6047,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -6161,14 +6237,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 2,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -6180,14 +6256,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 3,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -6310,7 +6386,7 @@
   {
     "author": "廖修平",
     "text": "先把垃圾廚餘焚化爐處理好.不要再做一些無關民生的事情了.",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -6332,14 +6408,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -6491,16 +6567,16 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:3feb3329ecd053469730"
   },
   {
     "author": "Summer Yang",
     "text": "蛤？",
-    "time_text": "3小時",
+    "time_text": "5小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6519,7 +6595,7 @@
   {
     "author": "Lo Ej",
     "text": "基礎建設？ 巨蛋是哪門子基礎建設？",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6538,7 +6614,7 @@
   {
     "author": "Kes AI",
     "text": "一直蓋一直賺一直爽",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6557,7 +6633,7 @@
   {
     "author": "江大頭",
     "text": "畫大餅第一",
-    "time_text": "19小時",
+    "time_text": "20小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6586,9 +6662,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:cf5adac923968f6fb6e6"
   },
@@ -6681,9 +6757,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:49f762c8ac808f5cdb26"
   },
@@ -6728,7 +6804,7 @@
   {
     "author": "余軒豪",
     "text": "我們海線的捷運勒？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6747,7 +6823,7 @@
   {
     "author": "Duncan Hikaru",
     "text": "原地不動的台中，只剩下建商勾結跟購物節",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6766,7 +6842,7 @@
   {
     "author": "廖翊婷",
     "text": "做了那麼久現在才在強調基礎建設？",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -6897,25 +6973,6 @@
     "comment_id": "facebook:5ba25b947f3e0128914d"
   },
   {
-    "author": "Teresa Huang",
-    "text": "龜岡ㄟ",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:825a249039e95f26551c"
-  },
-  {
     "author": "林坤弘",
     "text": "交通配套請同步規劃！ 沒捷運和公車少，準備賽爆！",
     "time_text": "2天",
@@ -6975,7 +7032,7 @@
   {
     "author": "蘇盈勳",
     "text": "沒有捷運及相關的大眾運輸配套，如何接駁活動場館的大量人潮",
-    "time_text": "19小時",
+    "time_text": "20小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -7051,7 +7108,7 @@
   {
     "author": "Angel Chen",
     "text": "可以不要了嗎？拜託垃圾雜草趕快清一清比較實在",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -7061,7 +7118,7 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "紅",
       "source": "rule(stricter)"
     },
@@ -7080,9 +7137,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:f293e8e3f0bbb9129e21"
   },
@@ -7251,9 +7308,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:948eccdcad855d9be8c4"
   },
@@ -7336,7 +7393,7 @@
   {
     "author": "蔡明修",
     "text": "Dinnerㄧㄢˋ",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -7431,7 +7488,7 @@
   {
     "author": "水姑娘",
     "text": "廚餘垃圾都無法處理，還敢開口要東西",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -7545,7 +7602,7 @@
   {
     "author": "Reynold Hung",
     "text": "8年了有空玩蛋沒空搞捷運",
-    "time_text": "15小時",
+    "time_text": "16小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -7621,7 +7678,7 @@
   {
     "author": "陳小柚",
     "text": "賣地比較重要，基本的捷運執政8年沒看到半條動工",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -7792,7 +7849,7 @@
   {
     "author": "Anderson As As",
     "text": "中央出來說明一下….",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -7802,9 +7859,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:4643f7a094cabeaf741f"
   },
@@ -8030,9 +8087,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:02e4b7543424dbbc67c9"
   },
@@ -8096,7 +8153,7 @@
   {
     "author": "李雅慧",
     "text": "市長 台中缺一個好的運動場 每次國中小運動田徑賽 都在環境很不優的豐原體育場 還找不到休息區",
-    "time_text": "23小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -8153,17 +8210,17 @@
   {
     "author": "林育仲",
     "text": "雖然還有很多案子待解決 尤其是在地空污問題是最直接的 不過蓋巨蛋是開心的事情， 蠻支持，治不了病，難道還給不了糖XD 讚啦",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 3,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -8258,9 +8315,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:2196be3fdd74944ab847"
   },
@@ -8438,7 +8495,7 @@
   {
     "author": "楊鎮瑋",
     "text": "台中缺的是一個能有效去化垃圾的焚化爐和安全的交通建設！解決空氣品質才是對市民有感的政績。",
-    "time_text": "11小時",
+    "time_text": "12小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -8552,7 +8609,7 @@
   {
     "author": "Georgia Wu",
     "text": "四萬人的相關交通運輸配置呢？",
-    "time_text": "17小時",
+    "time_text": "18小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -8609,7 +8666,7 @@
   {
     "author": "孫敬賢",
     "text": "我們東區也要一個蛋吖！",
-    "time_text": "11小時",
+    "time_text": "12小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -8628,7 +8685,7 @@
   {
     "author": "廖敔翔",
     "text": "所以廚餘跟垃圾的問題都處理完了喔？",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -8647,7 +8704,7 @@
   {
     "author": "卓瓊珠",
     "text": "港區海埔新生地那麼多，為何不把一些大型建設分散在海線，全部建設都在市區。交通打結。市長能否山海屯均衡一下",
-    "time_text": "14小時",
+    "time_text": "15小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -8666,7 +8723,7 @@
   {
     "author": "Johnson Taou",
     "text": "人潮與商機留在台中市，垃圾與廚餘也同樣留在台中市",
-    "time_text": "20小時",
+    "time_text": "21小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -8685,7 +8742,7 @@
   {
     "author": "林把逼",
     "text": "自己花錢可以 別人花錢不行",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -8802,14 +8859,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -8897,14 +8954,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -8916,14 +8973,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 2,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -8987,6 +9044,25 @@
     "comment_id": "facebook:e4b0d1f7b47f5e518c18"
   },
   {
+    "author": "Kai Jay",
+    "text": "嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯",
+    "time_text": "2天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 1,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "facebook:9d63693cc9caac02cea4"
+  },
+  {
     "author": "Wei Wei",
     "text": "台中需要的太多 不需要的也很多",
     "time_text": "2天",
@@ -9046,7 +9122,7 @@
   {
     "author": "Austin Chen",
     "text": "沒有配套，交通塞爆",
-    "time_text": "11小時",
+    "time_text": "12小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9065,7 +9141,7 @@
   {
     "author": "楊凱勛",
     "text": "這樣的能力 選總統",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9106,14 +9182,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 3,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -9198,7 +9274,7 @@
   {
     "author": "查看隱藏的回覆",
     "text": "千風 けこい 靠一己之力把臺中搞爛還能滿面春風，某方面來說你很勇唉！ 公告查驗日期讓偷拍業者有時間刪檔也很猛",
-    "time_text": "16小時",
+    "time_text": "17小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -9255,7 +9331,7 @@
   {
     "author": "Helpper Maganar",
     "text": "空氣要保持對外流通哦！ 要做「病毒防疫」哦！ 晚上要照「紫外線消毒燈」哦！",
-    "time_text": "20小時",
+    "time_text": "21小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9277,14 +9353,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -9293,7 +9369,7 @@
   {
     "author": "黃元吉",
     "text": "土地都快賣完了 還推什麼 都要下台了還推",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -9303,9 +9379,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "紅",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:2fc25c8097b94a9105bc"
   },
@@ -9369,7 +9445,7 @@
   {
     "author": "謝阿財",
     "text": "廚餘大具蛋",
-    "time_text": "1小時",
+    "time_text": "2小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9388,7 +9464,7 @@
   {
     "author": "楊邵婷",
     "text": "所以台中市的垃圾到底什麼時候處理？",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -9464,7 +9540,7 @@
   {
     "author": "愛芒果",
     "text": "市長。你任期都快結束了ㄟ？",
-    "time_text": "20小時",
+    "time_text": "21小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9483,17 +9559,17 @@
   {
     "author": "Mavis Chang",
     "text": "又想海撈一筆了喔？！",
-    "time_text": "22小時",
+    "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -9505,14 +9581,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -9597,7 +9673,7 @@
   {
     "author": "朱武信",
     "text": "早安",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9844,7 +9920,7 @@
   {
     "author": "王瑞明",
     "text": "應設計也能容纳其他體育包括球類或其他活動,否则獨厚職棒是有點狭隘",
-    "time_text": "17小時",
+    "time_text": "18小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9880,28 +9956,9 @@
     "comment_id": "facebook:e6bb65ba769ae882b764"
   },
   {
-    "author": "Martin Peng",
-    "text": "這事情交給中央就好 反正你什麼都不會",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:9d40ed8d11686e177387"
-  },
-  {
     "author": "吳松宜",
     "text": "停車場太少，交通 先解決 在建設地方發展！",
-    "time_text": "12小時",
+    "time_text": "13小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -9977,7 +10034,7 @@
   {
     "author": "葉祐嘉",
     "text": "聽你在鬼叫",
-    "time_text": "19小時",
+    "time_text": "20小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -10113,14 +10170,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 2,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -10184,25 +10241,6 @@
     "comment_id": "facebook:76540addfb5509e11b7c"
   },
   {
-    "author": "Kai Jay",
-    "text": "嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:9d63693cc9caac02cea4"
-  },
-  {
     "author": "Ter Tai",
     "text": "先處理垃圾問題吧￼，長城牀墊￼還在堆。",
     "time_text": "1天",
@@ -10224,7 +10262,7 @@
   {
     "author": "龍龍",
     "text": "要確內哈哈哈",
-    "time_text": "6小時",
+    "time_text": "7小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -10265,14 +10303,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "green",
+    "signal_zh": "綠燈",
     "signal_score": {
       "green": 1,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "綠",
       "source": "llm"
     },
@@ -10471,7 +10509,7 @@
   {
     "author": "萬雅彤",
     "text": "稽查先預告是要稽查個鬼呀",
-    "time_text": "16小時",
+    "time_text": "17小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -10490,7 +10528,7 @@
   {
     "author": "Ping Kuo Chen",
     "text": "不會想要",
-    "time_text": "1天",
+    "time_text": "2天",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -10500,9 +10538,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:06eb4fad7daf3f68830c"
   },
@@ -10557,9 +10595,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "黃",
-      "source": "rule(stricter)"
+      "source": "llm"
     },
     "comment_id": "facebook:c6a25f8906048cb316f6"
   },
@@ -10623,7 +10661,7 @@
   {
     "author": "游淞傑",
     "text": "豬瘟：我不豬道 禽流感：我不雞道 戴奧辛：我不知奧 廚餘：我不知倒⋯",
-    "time_text": "22小時",
+    "time_text": "23小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -10661,7 +10699,7 @@
   {
     "author": "王保皖",
     "text": "用來裝廚餘嗎？",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -10975,9 +11013,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "紅",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:c49a2da19c620cd7a98d"
   },
@@ -11025,14 +11063,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -11098,7 +11136,7 @@
   {
     "author": "林小綺",
     "text": "你除了會浪費錢幹些沒營養沒意義的事你還會幹嘛？要卸任了不怕了是嗎 該還給市民的錢就不要掐著不放！",
-    "time_text": "17小時",
+    "time_text": "18小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -11108,9 +11146,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "紅",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "facebook:30edc9b22d0b7a0a679f"
   },
@@ -11215,14 +11253,14 @@
     "time_text": "2天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -11248,46 +11286,8 @@
     "comment_id": "facebook:b7b90f9ee5d1405201e3"
   },
   {
-    "author": "李仁皓",
-    "text": "陳瑜 中央拿走了75%的财政收入，不找中央要找谁？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:c70ef6cffe116718cc74"
-  },
-  {
-    "author": "陳瑜",
-    "text": "李仁皓 又要找中央了 什麼都找中央",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:7805b81a4e746d0e5b4e"
-  },
-  {
-    "author": "David Hon",
-    "text": "台中不要再有下個一樣的市長可以嗎",
+    "author": "查看 1 則回覆",
+    "text": "David Hon 台中不要再有下個一樣的市長可以嗎",
     "time_text": "2天",
     "url": "",
     "kind": "text",
@@ -11302,7 +11302,7 @@
       "rule": "黃",
       "source": "llm"
     },
-    "comment_id": "facebook:5fba786bce4c4abc948d"
+    "comment_id": "facebook:d94fbdfd5efcbfa2738b"
   },
   {
     "author": "Dickson Chen",
@@ -11348,14 +11348,14 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "黃",
       "source": "llm"
     },
@@ -11535,7 +11535,7 @@
   {
     "author": "林新豐",
     "text": "連基本的廚餘問題都處理不好你到底能幹嘛？",
-    "time_text": "21小時",
+    "time_text": "22小時",
     "url": "",
     "kind": "text",
     "signal": "red",
@@ -11588,1563 +11588,5 @@
       "source": "llm"
     },
     "comment_id": "facebook:76d9b77ecf01c3f934fd"
-  },
-  {
-    "author": "林翔威",
-    "text": "台中缺3座焚化爐，你是要蓋大巨蛋放垃圾嗎？不處理垃圾？台中要進步，環境民生要先顧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:f628099880bcc188a664"
-  },
-  {
-    "author": "陳妙麗",
-    "text": "先把垃圾廚餘處理好吧，畫大餅誰不會都快8年了到底做了什麼啊",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 2,
-      "sarcasm": 1,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:72843529e64206e9b81c"
-  },
-  {
-    "author": "Apple WU",
-    "text": "媽媽市長 機場 先改善 國際 航班 太少了 連市區公車 快捷巴士 太少了 外國人 來台中後 交通不便+公車 難等+路線難坐 下次不來台中了 不要只拼命[服務] 錢 人",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:dd3fbcdba39bf59949af"
-  },
-  {
-    "author": "朱錦龍",
-    "text": "看上去像不像！某種經濟行為的綁架～說實在的！身為台中人．．可悲喔",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:a298cbb6060cda0b1ec4"
-  },
-  {
-    "author": "蔡聖保",
-    "text": "台中換人當看看了",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:ee5fdd63544f717ebc1a"
-  },
-  {
-    "author": "黃元奇",
-    "text": "綠美圖都沒什麼人潮， 還要做什麼蚊子館？ 浪費人民的稅金！",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    },
-    "comment_id": "facebook:b2935dbea4b1d87bad17"
-  },
-  {
-    "author": "Adolfo Ssu",
-    "text": "到時候又要塞爆，穩了",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:f111bf217230b665ed76"
-  },
-  {
-    "author": "Chi Yi Huang",
-    "text": "有很多滿載太空包當建材，請直接翻新使用",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:097c754f9e350ae13c3a"
-  },
-  {
-    "author": "范雙囍",
-    "text": "大巨蛋蓋台中市，廚餘坑、垃圾山、戴奧辛留在台中線。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:f8fe01f41f96f168559f"
-  },
-  {
-    "author": "林明",
-    "text": "有構想就已經80分，加油一下就滿分紅不讓。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "綠",
-      "source": "llm"
-    },
-    "comment_id": "facebook:3d4a93431023c55ad2ef"
-  },
-  {
-    "author": "Lin Tsung-hsien",
-    "text": "大眾運輸都還沒做好……",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:737b90aff6e12d6dc967"
-  },
-  {
-    "author": "Yuan Huang Lao",
-    "text": "這個錢拿來做 垃圾焚化爐 廚餘處理工廠 糞水處理廠對於台中的老百姓不是更好嗎 一顆蛋只有財團會賺錢而已啊",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:d54d908f1d8063d1e46c"
-  },
-  {
-    "author": "張以承",
-    "text": "沒捷運先蓋蛋一定死很慘",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:c5cb86a35c9c60ef1f86"
-  },
-  {
-    "author": "累癱少女",
-    "text": "好多人駡市長，但反對的人，你們支持的政黨又拿不下台中，超好笑",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:c171b34c72dcc8f76da9"
-  },
-  {
-    "author": "王王伯",
-    "text": "先把垃圾山及廚餘包裝好⋯⋯",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:2d38237b13ce0a84cad1"
-  },
-  {
-    "author": "邱澤豐",
-    "text": "蓋核電廠不好嗎",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:d4b00f3bbc3b41c00eee"
-  },
-  {
-    "author": "辜啟成",
-    "text": "不要在浪費錢蓋這些次要設施了好嗎 台灣就那麼大 蓋那麼多巨蛋是要幹嘛 出生率都生不如死了 都要沒有人了，蓋一堆娛樂設施做3小 不把錢拿去救生育率",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    },
-    "comment_id": "facebook:9426731c7b3030bb67af"
-  },
-  {
-    "author": "Wei-cheng Lo",
-    "text": "先普發完五萬再卸任，謝謝",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    },
-    "comment_id": "facebook:21231fcbcb37095fef48"
-  },
-  {
-    "author": "林志麟",
-    "text": "蓋超巨蛋放廚餘嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:d78506995e2ee58c86ec"
-  },
-  {
-    "author": "Lin Syun",
-    "text": "不太相信 看到那個海洋館 嘖嘖",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:1618fba5c5518f8797b2"
-  },
-  {
-    "author": "喬彥綸",
-    "text": "焚化爐先蓋好再來講這些面子工程吧",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:83e412c9c9ae9c5da9ba"
-  },
-  {
-    "author": "金釗鑫",
-    "text": "又在打什麼主意？錢賺不夠嗎？",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:29770171d12479ac367e"
-  },
-  {
-    "author": "白妙鈴",
-    "text": "在天馬行空 亂講一通 廢文",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:f38ce6e20c93a94fe144"
-  },
-  {
-    "author": "曹小騏",
-    "text": "等你下台後再說吧",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    },
-    "comment_id": "facebook:02b888e4267fd91c64ad"
-  },
-  {
-    "author": "王宇鈞",
-    "text": "你的員工輕生 你居然的不知道 你除了賣地會知道還有什麼？",
-    "time_text": "3小時",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:c3fb0cc2baae2c5414e0"
-  },
-  {
-    "author": "許欣怡",
-    "text": "為了台灣的安全，請盧媽媽不要再打鼓了！",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:fa68b53c0672131e86a5"
-  },
-  {
-    "author": "張子逸",
-    "text": "基本民生（垃圾、廚餘、捷運) 搞好再來搞蛋吧 做秀爐",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:9f16ffe764841b3ffbc0"
-  },
-  {
-    "author": "吳孟書",
-    "text": "只會一直蓋王八蛋地賣光光台中真的很可憐",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 3,
-      "red": 4,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    },
-    "comment_id": "facebook:0035bacf3639c6c574a0"
-  },
-  {
-    "author": "Shawn Cheng",
-    "text": "希望把停車場也規劃大一點，不要做半套!",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:a83c51838997674dc5b3"
-  },
-  {
-    "author": "羅明益",
-    "text": "蓋一座中正大公園最好",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:ae45598118d6722cc105"
-  },
-  {
-    "author": "陳續升",
-    "text": "市長口中的基礎建設不包括交通？不然台中哪一個地點可以承受疏散的人潮？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:2b23285251198fa7fb89"
-  },
-  {
-    "author": "Jay Yang",
-    "text": "沒捷運還是先緩緩吧 幾萬人怎麼去 怎麼疏散？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:7bc86fe2781d19ac41f9"
-  },
-  {
-    "author": "賴金庫",
-    "text": "剪綵市長好棒棒",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    },
-    "comment_id": "facebook:d83d49a6a2aa82f372c9"
-  },
-  {
-    "author": "邱柏榕",
-    "text": "台中商場夠多了。那不是民生真正想要的吧..還想圖利？",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:cb2d346c948172af72f8"
-  },
-  {
-    "author": "Abula Yu",
-    "text": "急缺垃圾焚化爐、很缺垃圾掩埋場、好缺完善的大眾運輸配套 ⋯ 而不是小小台灣養一堆蛋 先想好台中市一堆蚊子館怎麼活化啦",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:c283404a719d11146d40"
-  },
-  {
-    "author": "卓長亭",
-    "text": "等我當選市長我要建一座巨蛋焚化爐",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:25ce9d129ab809824993"
-  },
-  {
-    "author": "Megan Chang",
-    "text": "沈伯洋的博士論文不是一篇孤零零的政治作文，而是出自加州大學爾灣分校 UCI 的 Criminology, Law and Society 博士體系。這個領域不是冷門邊角料，它處理的是犯罪、法律、社會控制、懲罰制度與法社會研究；UCI 官方也列出該博士 program 在 U.S. News 犯罪學排名第 2。 更麻煩的是，沈伯洋的論文題目是美中白領犯罪處罰比較，剛好踩在白領犯罪、公司犯罪、比較犯罪學與中國治理研究交界上。這不是隨便找一個題目混畢業，而是正好站在他的博士委員專長範圍內。Henry Pontell 本身就研究白領犯罪、公司犯罪、比較犯罪Benjamin van Rooij 則長期研究中國法律執行、合規與治理問題。所以國民黨如果要抹黑這篇論文，問題不是只得罪沈伯洋而已。你說他論文放水，就等於指控 UCI 博士審查放水。你說他題目沒學術價值，就等於否定白領犯罪、公司犯罪、比較犯罪學這整條研究線。 這就是為什麼這題很難打。沈伯洋的論文江湖地位，不是「他自己說自己厲害」，而是他站在一個有學校、有師承、有審查、有研究脈絡的學術山門裡。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 2,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:1d13ffd0ab26ca7c08d0"
-  },
-  {
-    "author": "KY Lee",
-    "text": "2028，盧媽媽",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:55a9967fd3d758b21884"
-  },
-  {
-    "author": "林玠廷",
-    "text": "台中是缺巨蛋嗎？台中是有缺購物中心嗎？台中有缺這麼多蚊子展覽館嗎？什麼國家藝術中心、高美濕地展覽館…好好笑",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "綠",
-      "source": "llm"
-    },
-    "comment_id": "facebook:e12159bcf77f4ee4f3be"
-  },
-  {
-    "author": "王功修",
-    "text": "話說那是辜董的計畫...不是嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:885563c38c31eb675cb6"
-  },
-  {
-    "author": "Chun-Wei Chang",
-    "text": "基本的都做不好 垃垃山，廚餘，性侵 哪件處理好了",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:c0f705d100f72976103c"
-  },
-  {
-    "author": "Kevin Chang",
-    "text": "最專業的方式審查？還是用專業的方式推給中央？ 說好的五萬呢",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 3,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:46662745fc56c50319b1"
-  },
-  {
-    "author": "Pa In",
-    "text": "是不是真的需要大巨蛋跟妳沒點毛關係，這時候怎麼不提中央了，妳這台中市長只是個屁而已吧，台中市是中央在管的好嗎",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:e08cc650ffc0c78bd5b9"
-  },
-  {
-    "author": "陳 清田",
-    "text": "好奇賣了土地一千多億的錢利用什麼名目藏到那裏去了？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:3a72fbfba2c50ced54fb"
-  },
-  {
-    "author": "Gan Jun",
-    "text": "垃圾？ 廚餘？ 焚化爐？ 在想什麼？",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:06f38b19d9f31470e10f"
-  },
-  {
-    "author": "吳文青",
-    "text": "換人啦 不要亂其爸槽的",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:8bf95ee19091a86ac1ab"
-  },
-  {
-    "author": "黃林盛",
-    "text": "現在不煮路樹山焚化爐 還有廚餘 還有一片萬裡長城喔",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:573743bdad6d174b3914"
-  },
-  {
-    "author": "Lou France",
-    "text": "這八年的表現，完全愧對照片右下角那兩個字",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:089e34dd9ad709286224"
-  },
-  {
-    "author": "林琳",
-    "text": "叫中央政府下來！我們台中市政府是小城市嗎？我要的至少能擁十萬以上的關众的場所，所以叫賴清德不要騙人。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:460eb13d396a380e9828"
-  },
-  {
-    "author": "Kenny Tai",
-    "text": "阿妳不是只有購物節！怎麼又懂市政規劃？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:2f11a09b8be71a69d576"
-  },
-  {
-    "author": "王科比",
-    "text": "建議改名叫宇宙無敵大爆炸巨蛋",
-    "time_text": "18小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:5793ca7267379ad0199c"
-  },
-  {
-    "author": "林宇宏",
-    "text": "先處理好潭子的萬里長城床墊山，再來談花錢的事情",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:81d1b47de08bc618d868"
-  },
-  {
-    "author": "Amy Hung",
-    "text": "爛",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:a7712c1c45860ba39c0f"
-  },
-  {
-    "author": "Jun Sh Eng",
-    "text": "垃圾問題都處理不好了還要搞蛋？臉皮還要嗎？，",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    },
-    "comment_id": "facebook:5cd3e1fd005ca1a8960f"
-  },
-  {
-    "author": "Gming Li",
-    "text": "可憐",
-    "time_text": "17小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:a49b92203f5fb41e9a31"
-  },
-  {
-    "author": "陳小淇",
-    "text": "國民黨，不要再浪費花在建築物了！ 要花也花在老百姓身上吧！ 現在物價對任何老百姓都壓力很大的，比較實在吧！",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:3ad9106c3d57cff31ec6"
-  },
-  {
-    "author": "林希寒",
-    "text": "大家說 我是支持還是不支持",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:e1cd26a5bda31459e2fd"
-  },
-  {
-    "author": "An-Ping Liu",
-    "text": "不要蛋換兩條捷運好嗎 還有台中的兄弟越來越多 是因為兄弟象在台中嗎？ 沒有半甲都不太敢出門",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:c3b057701a6018cbb52b"
-  },
-  {
-    "author": "雅斯多德",
-    "text": "8年前不做 快要退休才說要做 誰相信",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:0b818b0be2b5cbbc32b8"
-  },
-  {
-    "author": "吳格天",
-    "text": "好香喔，醫療大餅",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:bc6a26cc15dc1ec07d64"
-  },
-  {
-    "author": "葉品興",
-    "text": "熟廚餘廠和焚化爐，這基礎建設先做好，你都快卸任了，都還沒做好一座。",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:81d94ca3f9936dc04ac0"
-  },
-  {
-    "author": "Tina Lee",
-    "text": "空污8年也沒解決，谷關空氣瓶很好笑；垃圾山/廚餘/焚化爐；台中棒球教練性侵學童案，檢方近日第三波偵結，受害學童已累積超過80人；愛爾麗針孔偷拍案；台中水湳經貿社宅「新平好室」火災⋯⋯有哪一件做好的？",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:13670826144ff04384ba"
-  },
-  {
-    "author": "施俊傑",
-    "text": "Low show~end 終於快結束了",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:a283d664d0a05122bca2"
-  },
-  {
-    "author": "Johnny Wang",
-    "text": "明年要卸任了 宣稱五年後要完工的工程？ 發包即綁定?",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:1c0fa42dd2b1e7e90eaa"
-  },
-  {
-    "author": "張晉瑞",
-    "text": "蚊子館！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:5ce0f5a36d068cb25fb6"
-  },
-  {
-    "author": "吳新民",
-    "text": "沒有人有那麼空一天到晚的看球賽我們要的是正常生活，垃圾下水道捷運一切城市正常需求",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "紅",
-      "source": "llm"
-    },
-    "comment_id": "facebook:b433c972d790f8e34d30"
-  },
-  {
-    "author": "Raptor Lin",
-    "text": "你有弄出超大型垃圾山、超大廚餘谷兩大建設啊！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:043978395c5f18f5037a"
-  },
-  {
-    "author": "蔡佩霖",
-    "text": "捷運8年還沒有蓋只有垃圾山",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:7d451d485fe1a8c57c9f"
-  },
-  {
-    "author": "Tsung-yu Wei",
-    "text": "不要創造新名詞，管好廚餘跟垃圾！！",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 2,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "紅",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:4505e7baca340e229f4f"
-  },
-  {
-    "author": "廖堉閎",
-    "text": "普法1萬2.0何時？期待",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:6ee32b5cde817b322edc"
-  },
-  {
-    "author": "鄭育朋",
-    "text": "臺中火車站廣場遊民多到可怕 尿騷味比廁所還重",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:2c6281d6be748188a5ab"
-  },
-  {
-    "author": "王威德",
-    "text": "是不是又要跟中央要錢？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:fe3f132376efebbae2a6"
-  },
-  {
-    "author": "王水石",
-    "text": "要卸任了人家普發現金就是不發，還在畫大餅為何任內不做真無腦。",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "red",
-    "signal_zh": "紅燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 2,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "紅",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:774f7a7415752516fdbd"
-  },
-  {
-    "author": "Sam Chen",
-    "text": "市長您好 請問台中那裡有適合帶小孩全家人去玩的地方？",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:f2a16cd7ea9afb8b1276"
-  },
-  {
-    "author": "盧小豪",
-    "text": "如果有4萬戶讓年輕人買的起的社宅不是更好？？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:435d610ba72189c72857"
-  },
-  {
-    "author": "Wei Lun Yen",
-    "text": "廚餘跟戴奧辛妳怎麼搞？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:2902f1621950edff1364"
-  },
-  {
-    "author": "陶謙光",
-    "text": "運動休閒娛樂 經濟觀光旅遊 激勵台中發展",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "綠",
-      "rule": "黃",
-      "source": "rule(stricter)"
-    },
-    "comment_id": "facebook:172e0fca574145923db5"
-  },
-  {
-    "author": "Michael Chen",
-    "text": "總太集團賺多少錢嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:4d2c312ee635366f2f43"
-  },
-  {
-    "author": "Gibbs Wei",
-    "text": "台中最急需的是廚餘處理廠",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:c0413ef4597a8332877b"
-  },
-  {
-    "author": "Ching Shun Huang",
-    "text": "妳老闆顏董有批准了嗎？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:85ab59ff3540eff354ef"
-  },
-  {
-    "author": "裴宇耕",
-    "text": "不敢放來潭子對吧？",
-    "time_text": "2天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:e34815f298d01b28cfbb"
-  },
-  {
-    "author": "Jame Hi",
-    "text": "用賣地的錢蓋 我也贊成 賣地1000多億 蓋大巨蛋沒問題",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 1,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 1,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "facebook:89ff5acd660e0c218c91"
   }
 ]
