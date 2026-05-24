@@ -1,6 +1,6 @@
 {
   "date": "2026-05-24",
-  "snapshot_at": "2026-05-24T12:22:09.988548+00:00",
+  "snapshot_at": "2026-05-24T12:37:28.594066+00:00",
   "hotspots": [
     {
       "title": "捷運藍線爭議",
@@ -25,27 +25,6 @@
       ]
     },
     {
-      "title": "基隆鼠患事件",
-      "city": "基隆",
-      "place": "基隆市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "基隆動保所辦防鼠講座　60位里長齊學「防鼠三不」對抗鼠患",
-          "url": "https://n.yam.com/Article/20260524373583",
-          "time": "2026-05-24 10:32:08",
-          "publisher": "蕃新聞→報新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "苗栗鼠患事件",
       "city": "苗栗",
       "place": "苗栗縣政府",
@@ -61,6 +40,27 @@
           "url": "https://www.chinatimes.com/realtimenews/20260524001878-260421",
           "time": "2026-05-24 15:39:00",
           "publisher": "中時新聞網",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "基隆鼠患事件",
+      "city": "基隆",
+      "place": "基隆市政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "基隆動保所辦防鼠講座　60位里長齊學「防鼠三不」對抗鼠患",
+          "url": "https://n.yam.com/Article/20260524373583",
+          "time": "2026-05-24 10:32:08",
+          "publisher": "蕃新聞→報新聞",
           "severity": "yellow"
         }
       ],
@@ -609,6 +609,27 @@
       "comments": []
     },
     {
+      "title": "苗栗弊案爭議",
+      "city": "苗栗",
+      "place": "苗栗縣政府",
+      "level": "yellow",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "苗栗倉管男好奇改造、持有槍彈 上訴駁回仍判刑6年",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447845",
+          "time": "2026-05-24 16:32:10",
+          "publisher": "自由時報",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "新北弊案爭議",
       "city": "新北",
       "place": "新北市政府",
@@ -651,21 +672,42 @@
       "comments": []
     },
     {
-      "title": "苗栗弊案爭議",
-      "city": "苗栗",
-      "place": "苗栗縣政府",
+      "title": "彰化車禍事件",
+      "city": "彰化",
+      "place": "彰化縣政府",
       "level": "yellow",
-      "news_count": 1,
+      "news_count": 4,
       "comment_count": 0,
       "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
+      "is_urgent": true,
+      "urgency_score": 16,
       "news_articles": [
         {
-          "title": "苗栗倉管男好奇改造、持有槍彈 上訴駁回仍判刑6年",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447845",
-          "time": "2026-05-24 16:32:10",
+          "title": "毒駕致命車禍彰化警加強執法 查扣喪屍煙彈",
+          "url": "https://tw.news.yahoo.com/%E6%AF%92%E9%A7%95%E8%87%B4%E5%91%BD%E8%BB%8A%E7%A6%8D%E5%BD%B0%E5%8C%96%E8%AD%A6%E5%8A%A0%E5%BC%B7%E5%9F%B7%E6%B3%95-%E6%9F%A5%E6%89%A3%E5%96%AA%E5%B1%8D%E7%85%99%E5%BD%88-082318884.html",
+          "time": "2026-05-24 16:23:18",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "毒駕致命車禍 彰化警加強路檢攔查 (圖)",
+          "url": "https://tw.news.yahoo.com/%E6%AF%92%E9%A7%95%E8%87%B4%E5%91%BD%E8%BB%8A%E7%A6%8D-%E5%BD%B0%E5%8C%96%E8%AD%A6%E5%8A%A0%E5%BC%B7%E8%B7%AF%E6%AA%A2%E6%94%94%E6%9F%A5-%E5%9C%96-082307095.html",
+          "time": "2026-05-24 16:23:07",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "彰化1個月3起毒駕重大車禍 議員：下一秒誰被撞？",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447663",
+          "time": "2026-05-24 12:36:08",
           "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "彰化驚悚車禍釀悲劇 疑毒駕男子釀2死2傷遭聲押",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B0%E5%8C%96%E9%A9%9A%E6%82%9A%E8%BB%8A%E7%A6%8D%E9%87%80%E6%82%B2%E5%8A%87-%E7%96%91%E6%AF%92%E9%A7%95%E7%94%B7%E5%AD%90%E9%87%802%E6%AD%BB2%E5%82%B7%E9%81%AD%E8%81%B2%E6%8A%BC-131751336.html",
+          "time": "2026-05-23 21:17:51",
+          "publisher": "Yahoo新聞",
           "severity": "red"
         }
       ],
@@ -3208,11 +3250,11 @@
       "city": "屏東",
       "place": "屏東縣政府",
       "level": "yellow",
-      "news_count": 64,
+      "news_count": 63,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 64,
+      "urgency_score": 63,
       "news_articles": [
         {
           "title": "民進黨今24日舉行黨職改選，民進黨屏東縣黨部主委為同額，立委徐富癸參選，今當選縣黨部主委。徐富癸感謝所有黨員同志支持與肯定，徐富癸表示，接下來全力投入2026五合一選舉，輔選縣長周春米順利連任，團結民進黨在屏東穩健執政、持續進步。",
@@ -3654,62 +3696,6 @@
           "time": "2026-05-23 20:57:55",
           "publisher": "Google News→UDN",
           "severity": null
-        },
-        {
-          "title": "政治 2026/05/23 18:26 賴總統屏東代天宮贈匾 重申成長津貼弱勢照顧",
-          "url": "https://news.cts.com.tw/cna/politics/202605/202605233035174.html",
-          "time": "2026-05-23 20:27:48",
-          "publisher": "華視新聞網",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "彰化車禍事件",
-      "city": "彰化",
-      "place": "彰化縣政府",
-      "level": "red",
-      "news_count": 5,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": true,
-      "urgency_score": 20,
-      "news_articles": [
-        {
-          "title": "毒駕致命車禍彰化警加強執法 查扣喪屍煙彈",
-          "url": "https://tw.news.yahoo.com/%E6%AF%92%E9%A7%95%E8%87%B4%E5%91%BD%E8%BB%8A%E7%A6%8D%E5%BD%B0%E5%8C%96%E8%AD%A6%E5%8A%A0%E5%BC%B7%E5%9F%B7%E6%B3%95-%E6%9F%A5%E6%89%A3%E5%96%AA%E5%B1%8D%E7%85%99%E5%BD%88-082318884.html",
-          "time": "2026-05-24 16:23:18",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "毒駕致命車禍 彰化警加強路檢攔查 (圖)",
-          "url": "https://tw.news.yahoo.com/%E6%AF%92%E9%A7%95%E8%87%B4%E5%91%BD%E8%BB%8A%E7%A6%8D-%E5%BD%B0%E5%8C%96%E8%AD%A6%E5%8A%A0%E5%BC%B7%E8%B7%AF%E6%AA%A2%E6%94%94%E6%9F%A5-%E5%9C%96-082307095.html",
-          "time": "2026-05-24 16:23:07",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "彰化1個月3起毒駕重大車禍 議員：下一秒誰被撞？",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447663",
-          "time": "2026-05-24 12:36:08",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "彰化驚悚車禍釀悲劇 疑毒駕男子釀2死2傷遭聲押",
-          "url": "https://tw.news.yahoo.com/%E5%BD%B0%E5%8C%96%E9%A9%9A%E6%82%9A%E8%BB%8A%E7%A6%8D%E9%87%80%E6%82%B2%E5%8A%87-%E7%96%91%E6%AF%92%E9%A7%95%E7%94%B7%E5%AD%90%E9%87%802%E6%AD%BB2%E5%82%B7%E9%81%AD%E8%81%B2%E6%8A%BC-131751336.html",
-          "time": "2026-05-23 21:17:51",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "彰化車禍釀2死！ 小貨車駕駛毒駕遭羈押、未禁見",
-          "url": "https://www.chinatimes.com/realtimenews/20260523002877-260402",
-          "time": "2026-05-23 20:26:35",
-          "publisher": "中時新聞網",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -3936,11 +3922,11 @@
       "city": "彰化",
       "place": "彰化縣政府",
       "level": "red",
-      "news_count": 47,
+      "news_count": 46,
       "comment_count": 0,
-      "negativity_pct": 15,
+      "negativity_pct": 13,
       "is_urgent": false,
-      "urgency_score": 68,
+      "urgency_score": 64,
       "news_articles": [
         {
           "title": "忘帶鑰匙頂樓垂降進屋？彰化7旬翁「12樓墜下」傷重不治 與住院妻死別",
@@ -4263,13 +4249,6 @@
           "time": "2026-05-23 20:39:00",
           "publisher": "東森新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "彰化車禍釀2死！ 小貨車駕駛毒駕遭羈押、未禁見",
-          "url": "https://www.chinatimes.com/realtimenews/20260523002877-260402",
-          "time": "2026-05-23 20:26:35",
-          "publisher": "中時新聞網",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -4279,11 +4258,11 @@
       "city": "花蓮",
       "place": "花蓮縣政府",
       "level": "red",
-      "news_count": 57,
+      "news_count": 55,
       "comment_count": 0,
-      "negativity_pct": 12,
+      "negativity_pct": 13,
       "is_urgent": false,
-      "urgency_score": 78,
+      "urgency_score": 76,
       "news_articles": [
         {
           "title": "花蓮縣代表隊征戰115年全國身心障礙運動會 開幕前勇奪4銀1銅展現堅強實力",
@@ -4668,20 +4647,6 @@
           "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOVVV4cVQ3b2JwODNjeFQtMHBFeGhTRGhLUFZ4ZzkwZS1wUFFlX3hBTUdiVDZWYkE3RGtTTnZ0TFVvcTB0ZWpZcGp6cW5VUW9lY2k2TW9CNmVWMWxuc0ZlV0RoeUc2Uk1oMVVWell1NllrODZFOEQyTnBNRjgxY2gyLUJaVG9USXl5bm1kMFlvc3RZbGwtM1JvMUdzUTJ5UmRQSTZtcU5jT2g1SExHN2pJWkVMR0dKcWw5M2ZSWXhFOUZPeXZCaTljR1ZEME5BVTBFa1pjR0diU3ZKSXNXWVFUdlJPd2FlenVkWFI3MmNkYw?oc=5",
           "time": "2026-05-23 20:51:18",
           "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "花蓮是運動大縣｜游淑貞：我會將運動經濟化，帶來縣民的商機！",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE51d0xhS2FVSFE1aHhuMGFYS24tTU1uYmJqanVlbkt1aC1pYUVEYmhPcU5jYzFXVGxqc1FoazJUWmxCazFNdUh0Sll1X0tSVUN6WlRRWTNXN3pDdlJGUWhyWWVWdE1HYl9RaWpV?oc=5",
-          "time": "2026-05-23 20:33:37",
-          "publisher": "Google News→台灣華報",
-          "severity": null
-        },
-        {
-          "title": "打造東海岸音樂創作生態系｜吳建志：讓花蓮成為台灣青年音樂文化重鎮！",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA3V0ZJWC00VnZ2OUwtV05TMDlFZVRQbDM5cUpDNGhaMFZGSnlSN0FhVnZpTTBua3ZoU1ppdWE1N0pqa0IzM1V1YnZUcFdaQ2FGSmFPOFZVZnlucU1FczFTODRpS0duVHFldFFr?oc=5",
-          "time": "2026-05-23 20:33:37",
-          "publisher": "Google News→台灣華報",
           "severity": null
         }
       ],
@@ -5105,11 +5070,11 @@
       "city": "新北",
       "place": "新北市政府",
       "level": "red",
-      "news_count": 64,
+      "news_count": 63,
       "comment_count": 0,
       "negativity_pct": 17,
       "is_urgent": false,
-      "urgency_score": 97,
+      "urgency_score": 96,
       "news_articles": [
         {
           "title": "喪屍煙彈氾濫毒駕爆多！新北1天5起奪1命",
@@ -5551,13 +5516,6 @@
           "time": "2026-05-23 21:45:34",
           "publisher": "中時新聞網",
           "severity": null
-        },
-        {
-          "title": "又是喪屍菸彈！新北男毒駕暴衝撞碎機車 雙載姊妹1死1傷",
-          "url": "https://www.taisounds.com/news/content/96/258502",
-          "time": "2026-05-23 20:27:10",
-          "publisher": "太報",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -5567,11 +5525,11 @@
       "city": "桃園",
       "place": "桃園市政府",
       "level": "red",
-      "news_count": 75,
+      "news_count": 73,
       "comment_count": 0,
       "negativity_pct": 3,
       "is_urgent": false,
-      "urgency_score": 81,
+      "urgency_score": 79,
       "news_articles": [
         {
           "title": "桃園崇德佛院落成啟用 張善政盼成品格教育基地",
@@ -6083,20 +6041,6 @@
           "time": "2026-05-23 20:40:10",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "華南金控盃少棒》桃園市單局雙轟 猛灌12分秀火力",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5447260",
-          "time": "2026-05-23 20:33:41",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "華南少棒開打！桃園單局雙轟灌12分 蕭柏恩4安首戰爆發",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PRmEyQ2tyZ19ILVF0R05GY05STTR2ZnF5THYtWnNMekRhT0hoVEVCSUpWOUZ4akpuZXJwMGpMYUh3SUstaS02M1gxUkNLdENr0gFsQVVfeXFMUFJvYWc4Rmc1NWRGMC11MUJBdUxMV0FzVU1vRjRHd2o4a3JhYWtoNU5hRnRYNFVoRUVmenVFa3dpWUhXRW96US05dnBIalByRWYtSENEMTlFaS1HWmxNYWhqbjVLV1NBOUFPdG5x?oc=5",
-          "time": "2026-05-23 20:27:00",
-          "publisher": "ETtoday",
-          "severity": null
         }
       ],
       "comments": []
@@ -6106,11 +6050,11 @@
       "city": "宜蘭",
       "place": "宜蘭縣政府",
       "level": "red",
-      "news_count": 79,
+      "news_count": 76,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 79,
+      "urgency_score": 76,
       "news_articles": [
         {
           "title": "神轎車隊驚魂　宜蘭71歲翁後斗放炮、突墜地送醫不治",
@@ -6643,27 +6587,6 @@
           "time": "2026-05-23 21:05:11",
           "publisher": "Google News→LINE TODAY",
           "severity": null
-        },
-        {
-          "title": "影音／蔣萬安才來輔選！ 盧秀燕奔宜蘭挺吳宗憲 | TVBS",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wOXBiWkFNemlZM2RyMVdlMkZPR3d6YlRXUVYxN1Q4WUVKOVhaZzd2MXNUcmYwZ1g1U3J6TTBPakVYSlRNOHRGdlRVeFBlVWhWRjBwMWZB?oc=5",
-          "time": "2026-05-23 20:32:01",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "宜蘭就博會最高薪6萬5 51家企業徵的就是你 | 宜蘭新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iMG80QW5DQnlhZEk2WWVhU1RFQVRxdFpGRy1kbVN3U1lMcldTeVFXUmd2YUpwT0ZIQnlXMnQyekZaMDY1Z0FDSVk3S0NSLXZDUDlTZzZ3?oc=5",
-          "time": "2026-05-23 20:26:34",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "台中大安港、宜蘭烏石港淨灘",
-          "url": "https://www.cdns.com.tw/articles/1405251",
-          "time": "2026-05-23 20:25:23",
-          "publisher": "中華日報",
-          "severity": null
         }
       ],
       "comments": []
@@ -6673,11 +6596,11 @@
       "city": "台北",
       "place": "台北市南港區",
       "level": "red",
-      "news_count": 114,
+      "news_count": 112,
       "comment_count": 0,
       "negativity_pct": 6,
       "is_urgent": false,
-      "urgency_score": 135,
+      "urgency_score": 133,
       "news_articles": [
         {
           "title": "掌民進黨北市黨部 吳沛憶親揭重要任務",
@@ -7462,1035 +7385,6 @@
           "time": "2026-05-23 21:09:09",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "影音／蔣萬安才來輔選！ 盧秀燕奔宜蘭挺吳宗憲 | TVBS",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wOXBiWkFNemlZM2RyMVdlMkZPR3d6YlRXUVYxN1Q4WUVKOVhaZzd2MXNUcmYwZ1g1U3J6TTBPakVYSlRNOHRGdlRVeFBlVWhWRjBwMWZB?oc=5",
-          "time": "2026-05-23 20:32:01",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "台北當代館邀青年策展 綠色乖乖作品入列",
-          "url": "https://news.cts.com.tw/cna/life/202605/202605233035185.html",
-          "time": "2026-05-23 20:27:48",
-          "publisher": "華視新聞網",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "台中地方動態",
-      "city": "台中",
-      "place": "台中市北屯區",
-      "level": "red",
-      "news_count": 143,
-      "comment_count": 0,
-      "negativity_pct": 1,
-      "is_urgent": false,
-      "urgency_score": 149,
-      "news_articles": [
-        {
-          "title": "藝術新聲看見未來 中市府攜手畫廊共育明日之星",
-          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOc3dPMXRDdHZfdVRwa2V0b2dSa3RVTkRBMXlsZU5GZHFFSHVVeUVvYUh2MFV0WElHenBGR3hNZGNoVVNYbno3eXladEdpa2hQZnlaUWdQZzJqb2cwd2Y5a1pRcjZMWHdhTGRUa19qOWR3ZnRwa2xhYjN5RmFqb1dEQmdrNWw1aXR3MFpnMTFhRUJQVDdhZHBDN0VFajFwZWp2X25oSGJxT1AxMm9qYk9va2RSMWQtMTlGNm5Od1I2Zm5XenhNWFFTd0t2MmdmT1duMHBoT3g0UHpOU1NXcVRaZ2Ywcm04Q3lXZS1rRWptRk16UDlQV0p0bzVXZ09wMWs1S2dZcmNTTUxaanNmZWczUDFBNEM2b2l1cnM0a3FBajNmOW5EM3NBOUNlOUhNVjVqZDB2YzFya3BWMzBMazFob2FCbnZxeWJwNEtfMGhvdnc?oc=5",
-          "time": "2026-05-24 19:56:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "2026.05.24 19:15 屏東駕車至台中旅遊 沿路燒胎繞圈竄煙",
-          "url": "https://www.mnews.tw/story/20260524sot1914002",
-          "time": "2026-05-24 19:22:57",
-          "publisher": "鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中北屯區藥局起火2人受困 警消破門搶救送醫",
-          "url": "https://www.cdns.com.tw/articles/1405536",
-          "time": "2026-05-24 19:18:47",
-          "publisher": "中華日報",
-          "severity": "red"
-        },
-        {
-          "title": "屏東駕車至台中旅遊 沿路燒胎繞圈竄煙",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4yclNGUktXRlM4N0JwLUJFcGltNXprdmpLTkR2UTRIeG9QdUJFdm9uSlBBYkFNQ1pudENxZS1faEZNdE1hbEtPZHBUclc3OUoweVd6bUNIbljSAV5BVV95cUxNVXU2QWhqMjR4bnhZZmtORHdiLUhQVnBoN2lZZjVjaVR3UkNVcEdlSEc1RnpSclJkQ3hkeFQzYlMtVXBXbElqTGNxTTlYUlFkX19QUlk1QjcxVGpQQWd3?oc=5",
-          "time": "2026-05-24 19:15:00",
-          "publisher": "Google News→鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中果菜批發市場「冷鏈配銷中心二期工程」完工",
-          "url": "https://taiwanreports.com/archives/988355",
-          "time": "2026-05-24 19:09:43",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "7旬翁搭台中客運「頭夾車門外」行駛30秒 市府：扣罰並嚴評",
-          "url": "https://www.cdns.com.tw/articles/1405521",
-          "time": "2026-05-24 19:08:14",
-          "publisher": "中華日報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中市公車司機暖心 背負病患就醫獲投書表揚",
-          "url": "https://www.cdns.com.tw/articles/1405519",
-          "time": "2026-05-24 19:06:38",
-          "publisher": "中華日報",
-          "severity": null
-        },
-        {
-          "title": "台中莽男與醫院保全衝突持械滋事 開車逃逸遭警攔截逮捕",
-          "url": "https://news.nextapple.com/local/20260524/C6414B76A256184CD973BEBFCC2E63DD",
-          "time": "2026-05-24 18:57:31",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨台中市黨職改選投票率高達62％ 許木桂連任主委",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447983",
-          "time": "2026-05-24 17:59:58",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台中豐原醫院急診室驚魂！民眾疑持器械 全身潑灑不明液體",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447989",
-          "time": "2026-05-24 17:58:08",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "影/台中公車駕駛脫序！70歲老翁頭被夾30秒 全車乘客驚喊開門",
-          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E9%A7%95%E9%A7%9B%E8%84%AB%E5%BA%8F-70%E6%AD%B2%E8%80%81%E7%BF%81%E9%A0%AD%E8%A2%AB%E5%A4%BE30%E7%A7%92-%E5%85%A8%E8%BB%8A%E4%B9%98%E5%AE%A2%E9%A9%9A%E5%96%8A%E9%96%8B%E9%96%80-095201643.html",
-          "time": "2026-05-24 17:52:01",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中清水農會110週年慶 「清水好美、幸福稻來」",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%B8%85%E6%B0%B4%E8%BE%B2%E6%9C%83110%E9%80%B1%E5%B9%B4%E6%85%B6-%E6%B8%85%E6%B0%B4%E5%A5%BD%E7%BE%8E-%E5%B9%B8%E7%A6%8F%E7%A8%BB%E4%BE%86-095036293.html",
-          "time": "2026-05-24 17:50:36",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "看見未來的聲音！ 藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE10cHhaQ1hsZW1yX3NKaGRseFRHUDFUbTlVV0MtaGJRVC1ReU5OemRJRWNyajZtcVQtOVhKRTVqXy1Kdw?oc=5",
-          "time": "2026-05-24 17:38:23",
-          "publisher": "Google News→墨新聞-MORE News",
-          "severity": null
-        },
-        {
-          "title": "看見未來的聲音！ 藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
-          "url": "https://more-news.tw/623508/",
-          "time": "2026-05-24 17:38:23",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "台中客運72路車門誤夾傷乘客 中市府交通局：依規扣罰、納入年度評鑑",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wMnc0bktta0hHa19RMlMtdmxQUkpyQUoxaTdqeDVPU1hMZGdJRVBydmY1c2VXTE1EaVlKd2kzcFYydHJDNGtEOUJwckN3Q1B1b1lLRXZYS0g?oc=5",
-          "time": "2026-05-24 17:35:00",
-          "publisher": "Google News→新華報導",
-          "severity": "yellow"
-        },
-        {
-          "title": "看見未來的聲音！藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95R0k5d0VqaU1qUzF2aHFnb0l0MnBGS0Q2VGpQTWFick02aVpqYlBmOWdyM0w5Xy1GWDVtWXItV0w2dXdWcFlMYWdja3VsOW1YLXZnVFRTN0w4Rl83aEZGalpacjdyNVAx?oc=5",
-          "time": "2026-05-24 17:34:54",
-          "publisher": "Google News→元丰傳媒",
-          "severity": null
-        },
-        {
-          "title": "台中國際會展營運半年創137萬人次、650億元商機 全年估逾倍數成長",
-          "url": "https://finance.ettoday.net/news/3171286",
-          "time": "2026-05-24 17:05:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "台中最強景點大洗牌！全新亞軍3個月吸746萬遊客 一中街跌到第3 | 生活",
-          "url": "https://www.nownews.com/news/6839517",
-          "time": "2026-05-24 16:56:38",
-          "publisher": "NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "2026.05.24 16:24 台中清潔隊員赴廠交貨涉偷拍警偵辦 環保局調職記大過",
-          "url": "https://www.mnews.tw/story/20260524nm007",
-          "time": "2026-05-24 16:55:42",
-          "publisher": "鏡新聞",
-          "severity": "red"
-        },
-        {
-          "title": "台中阿伯遭夾頭！公車30秒後才停車開門 交通局要扣罰＋嚴審",
-          "url": "https://www.mnews.tw/story/20260524nm003",
-          "time": "2026-05-24 16:55:42",
-          "publisher": "鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "（影）海警船強闖東沙限制水域嗆主權 海巡署台中艦一對一近迫攔截、強勢驅離",
-          "url": "https://newtalk.tw/news/view/2026-05-24/1037036",
-          "time": "2026-05-24 16:39:57",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "海風＋老街太加分！台中單身聯誼爆紅 89.5％高配對率超驚人",
-          "url": "https://tw.news.yahoo.com/%E6%B5%B7%E9%A2%A8-%E8%80%81%E8%A1%97%E5%A4%AA%E5%8A%A0%E5%88%86-%E5%8F%B0%E4%B8%AD%E5%96%AE%E8%BA%AB%E8%81%AF%E8%AA%BC%E7%88%86%E7%B4%85-89-5-083455480.html",
-          "time": "2026-05-24 16:34:55",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中豐原燒臘店遭竊 損失現金2.7萬",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447856",
-          "time": "2026-05-24 16:28:50",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
-          "url": "https://news.nextapple.com/local/20260524/8E06410EED0EBB4ABB307787AACD4D47",
-          "time": "2026-05-24 16:28:26",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "生人迴避！台中東海送肉粽當晚高中生亡 今晚辦祭吊索",
-          "url": "https://tw.news.yahoo.com/%E7%94%9F%E4%BA%BA%E8%BF%B4%E9%81%BF-%E5%8F%B0%E4%B8%AD%E6%9D%B1%E6%B5%B7%E9%80%81%E8%82%89%E7%B2%BD%E7%95%B6%E6%99%9A%E9%AB%98%E4%B8%AD%E7%94%9F%E4%BA%A1-%E4%BB%8A%E6%99%9A%E8%BE%A6%E7%A5%AD%E5%90%8A%E7%B4%A2-082504027.html",
-          "time": "2026-05-24 16:25:04",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oajVsTGRadEdXUzU3QmtheUlxb0xiN0hsdlRjSmk3bVF6bjY5Y2ZCanhmb3VwUFYzYWRiZlA2R1ZiUE15Q0pzREwtc1ExTWtLWUdlUDBBSkZtUXBnallxZUZqWnpxbFZEYWlZRVM0Wk52NWYyOXJaRVhlcDlZNXc?oc=5",
-          "time": "2026-05-24 16:24:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPOTBWaVJqNDVtVkszVEtpVUc3SWFpeVQ5Nk9KQVIwYnpSTGRTSWhyU01ka0dwYmZiQnNmMWNVdzEyS2h5bjVBRzhBRkx5dlpuWVlBSnhwN2k4aGNnUVhud09yajEyNkZVanVTWFdSMnk0aGRid2dmTTNBYWF6dw?oc=5",
-          "time": "2026-05-24 16:24:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中清潔隊員赴廠交貨涉偷拍警偵辦 環保局調職記大過",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%B8%85%E6%BD%94%E9%9A%8A%E5%93%A1%E8%B5%B4%E5%BB%A0%E4%BA%A4%E8%B2%A8%E6%B6%89%E5%81%B7%E6%8B%8D%E8%AD%A6%E5%81%B5%E8%BE%A6-%E7%92%B0%E4%BF%9D%E5%B1%80%E8%AA%BF%E8%81%B7%E8%A8%98%E5%A4%A7%E9%81%8E-082400284.html",
-          "time": "2026-05-24 16:24:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "台中「龍井捷運機廠」用地噴漆變綠地？ 捷運局：是噴防塵抑制劑",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD-%E9%BE%8D%E4%BA%95%E6%8D%B7%E9%81%8B%E6%A9%9F%E5%BB%A0-%E7%94%A8%E5%9C%B0%E5%99%B4%E6%BC%86%E8%AE%8A%E7%B6%A0%E5%9C%B0-%E6%8D%B7%E9%81%8B%E5%B1%80-%E6%98%AF%E5%99%B4%E9%98%B2%E5%A1%B5%E6%8A%91%E5%88%B6%E5%8A%91-082040398.html",
-          "time": "2026-05-24 16:20:40",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "看見未來的聲音！藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MWEo2cG9DSl9mamU3TTJ3QVI4ZDZVcVRVR29MWHp5aEZZT2IzeTRmSE5Pam9vYm01ZS1kcGJGUHF4UHFBR0dlekx5XzRVYlBWdWc?oc=5",
-          "time": "2026-05-24 16:17:45",
-          "publisher": "Google News→taichung.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "中國海警船闖入東沙水域！我海巡台中艦強硬回擊 爆發主權對嗆",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5447843",
-          "time": "2026-05-24 16:14:11",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中市果菜市場30年升級 冷鏈二期啟用護食安",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5DXzNvRExKZzdIRUFlbHppSEMwaTI2UC01dG9ISTRPRHRHazV4MVZhUE82U1FVYnVOQmtldnktYk4xOXRPRW1nX0RTT21mSVRhcXc?oc=5",
-          "time": "2026-05-24 15:44:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "「我絕對會告死你！」女遭清潔隊員偷拍裙底氣炸 中市環保局重懲出爐",
-          "url": "https://tw.news.yahoo.com/%E6%88%91%E7%B5%95%E5%B0%8D%E6%9C%83%E5%91%8A%E6%AD%BB%E4%BD%A0-%E5%A5%B3%E9%81%AD%E6%B8%85%E6%BD%94%E9%9A%8A%E5%93%A1%E5%81%B7%E6%8B%8D%E8%A3%99%E5%BA%95%E6%B0%A3%E7%82%B8-%E4%B8%AD%E5%B8%82%E7%92%B0%E4%BF%9D%E5%B1%80%E9%87%8D%E6%87%B2%E5%87%BA%E7%88%90-074000055.html",
-          "time": "2026-05-24 15:40:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "驚險30秒！台中翁搭公車「被車門夾頭」 乘客怕爆大喊：司機快開門",
-          "url": "https://www.taisounds.com/news/content/96/258583",
-          "time": "2026-05-24 15:39:03",
-          "publisher": "太報",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨中市黨部改選 英系許木桂將連任主委",
-          "url": "https://www.chinatimes.com/realtimenews/20260524001871-260407",
-          "time": "2026-05-24 15:39:00",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "台中果菜批發市場冷鏈配銷中心二期完工 邁向現代化農產新里程",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E6%89%B9%E7%99%BC%E5%B8%82%E5%A0%B4%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E9%82%81%E5%90%91%E7%8F%BE%E4%BB%A3%E5%8C%96%E8%BE%B2%E7%94%A2%E6%96%B0%E9%87%8C%E7%A8%8B-073158767.html",
-          "time": "2026-05-24 15:31:58",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中十大伴手禮 25家人氣品牌快閃南投服務區",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE-25%E5%AE%B6%E4%BA%BA%E6%B0%A3%E5%93%81%E7%89%8C%E5%BF%AB%E9%96%83%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-073045887.html",
-          "time": "2026-05-24 15:30:45",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中市環境知識競賽 6/1起開放網路報名",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%B8%82%E7%92%B0%E5%A2%83%E7%9F%A5%E8%AD%98%E7%AB%B6%E8%B3%BD-6-1%E8%B5%B7%E9%96%8B%E6%94%BE%E7%B6%B2%E8%B7%AF%E5%A0%B1%E5%90%8D-073015999.html",
-          "time": "2026-05-24 15:30:15",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "中市雙奪國家建築金獎 建設局獲總統接見表揚",
-          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E5%B8%82%E9%9B%99%E5%A5%AA%E5%9C%8B%E5%AE%B6%E5%BB%BA%E7%AF%89%E9%87%91%E7%8D%8E-%E5%BB%BA%E8%A8%AD%E5%B1%80%E7%8D%B2%E7%B8%BD%E7%B5%B1%E6%8E%A5%E8%A6%8B%E8%A1%A8%E6%8F%9A-072952621.html",
-          "time": "2026-05-24 15:29:52",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中果菜批發市場遷場30週年 冷鏈配銷中心邁向現代化農產新里程",
-          "url": "https://more-news.tw/623423/",
-          "time": "2026-05-24 15:20:52",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "快訊/81歲楊燕24日母親106歲生日.已提前慶祝.感念來台時住過台中火車站走向富足的歲月",
-          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-81%E6%AD%B2%E6%A5%8A%E7%87%9524%E6%97%A5%E6%AF%8D%E8%A6%AA106%E6%AD%B2%E7%94%9F%E6%97%A5-%E5%B7%B2%E6%8F%90%E5%89%8D%E6%85%B6%E7%A5%9D-%E6%84%9F%E5%BF%B5%E4%BE%86%E5%8F%B0%E6%99%82%E4%BD%8F%E9%81%8E%E5%8F%B0%E4%B8%AD%E7%81%AB%E8%BB%8A%E7%AB%99%E8%B5%B0%E5%90%91%E5%AF%8C%E8%B6%B3%E7%9A%84%E6%AD%B2%E6%9C%88-071853323.html",
-          "time": "2026-05-24 15:18:53",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "AI精準栽培時代來臨 台中農改場助農民開發國際市場",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447789",
-          "time": "2026-05-24 15:14:16",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "AI神助攻！台中農改場文心蘭育種有Gemini輔助 2026橫掃國際大獎",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447784",
-          "time": "2026-05-24 15:11:24",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "「哆啦A夢路跑」睽違10年回歸台中 4000人朝聖",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447783",
-          "time": "2026-05-24 14:55:11",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "記得儲水！5/25台中、台南、高雄7縣市停水 影響時間範圍一次看 | 生活",
-          "url": "https://www.nownews.com/news/6839482",
-          "time": "2026-05-24 14:25:14",
-          "publisher": "NOWnews今日新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中北屯藥局清晨惡火 1男1女受困吸入濃煙嗆傷",
-          "url": "https://www.ctwant.com/article/482423/",
-          "time": "2026-05-24 14:24:58",
-          "publisher": "CTWANT",
-          "severity": "red"
-        },
-        {
-          "title": "台中爺爺「頭夾公車外」行駛30秒 全車乘客急吼：司機快開門",
-          "url": "https://news.tvbs.com.tw/local/3212194",
-          "time": "2026-05-24 14:24:49",
-          "publisher": "TVBS",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中小夫妻離世獨留4月女!他承諾會養大她",
-          "url": "https://www.setn.com/News.aspx?NewsID=1843357",
-          "time": "2026-05-24 14:24:48",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "今年第6度入侵！海巡台中艦硬對峙陸海警 驅離喊話曝光",
-          "url": "https://www.chinatimes.com/realtimenews/20260524001682-260407",
-          "time": "2026-05-24 14:24:48",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "梧棲海風牽紅線 中市單身聯誼配對率近9成",
-          "url": "https://tw.news.yahoo.com/%E6%A2%A7%E6%A3%B2%E6%B5%B7%E9%A2%A8%E7%89%BD%E7%B4%85%E7%B7%9A-%E4%B8%AD%E5%B8%82%E5%96%AE%E8%BA%AB%E8%81%AF%E8%AA%BC%E9%85%8D%E5%B0%8D%E7%8E%87%E8%BF%919%E6%88%90-055737658.html",
-          "time": "2026-05-24 13:57:37",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中翁搭公車遭\"車門夾頭\" 客運坦承疏失將懲處",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E7%BF%81%E6%90%AD%E5%85%AC%E8%BB%8A%E9%81%AD-%E8%BB%8A%E9%96%80%E5%A4%BE%E9%A0%AD-%E5%AE%A2%E9%81%8B%E5%9D%A6%E6%89%BF%E7%96%8F%E5%A4%B1%E5%B0%87%E6%87%B2%E8%99%95-050723674.html",
-          "time": "2026-05-24 13:55:02",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中21歲夫妻驟逝「留下4月大女嬰」！伯父盼接手扶養",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%A4%AB%E5%A6%BB%E9%A9%9F%E9%80%9D-%E7%95%99%E4%B8%8B4%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0-%E4%BC%AF%E7%88%B6%E7%9B%BC%E6%8E%A5%E6%89%8B%E6%89%B6%E9%A4%8A-055228574.html",
-          "time": "2026-05-24 13:52:28",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中超暖運將「暖心一背」 送客就醫",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E8%B6%85%E6%9A%96%E9%81%8B%E5%B0%87-%E6%9A%96%E5%BF%83-%E8%83%8C-%E9%80%81%E5%AE%A2%E5%B0%B1%E9%86%AB-054503272.html",
-          "time": "2026-05-24 13:45:03",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "全車沒人抱怨等待！台中司機背病患就醫 乘客感動投書1999",
-          "url": "https://tw.news.yahoo.com/%E5%85%A8%E8%BB%8A%E6%B2%92%E4%BA%BA%E6%8A%B1%E6%80%A8%E7%AD%89%E5%BE%85-%E5%8F%B0%E4%B8%AD%E5%8F%B8%E6%A9%9F%E8%83%8C%E7%97%85%E6%82%A3%E5%B0%B1%E9%86%AB-%E4%B9%98%E5%AE%A2%E6%84%9F%E5%8B%95%E6%8A%95%E6%9B%B81999-053629054.html",
-          "time": "2026-05-24 13:36:29",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中公車司機暖心救人 獲乘客投書表揚 (圖)",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E5%8F%B8%E6%A9%9F%E6%9A%96%E5%BF%83%E6%95%91%E4%BA%BA-%E7%8D%B2%E4%B9%98%E5%AE%A2%E6%8A%95%E6%9B%B8%E8%A1%A8%E6%8F%9A-%E5%9C%96-053623055.html",
-          "time": "2026-05-24 13:36:23",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "澎湖大型義診 台中慈院不負使命",
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQlhKbTZXandPMDdoRFYyaEl1djFtWVl3bktKQmw5NDV0QkRhb3g2NDJXRl9seFdjZndFV000ZVh6RS11REp1Ry14YV94SEVyWW5OU0VlNUxRbTJxdlRvQnlEc0ZXeEFzY05iVHp4T3RUODM5RjAxbE9ZV0E4RXRUcWRwblkzbTFDX2xoNFFjWDBCOVg5Wl8xU3ZUajk2TVNTX3NVLUdLTl93cWJkMGNyWWJDaWUyT0s3VWdEVTZMTklCWk5UdjFBdWVqOFpOVURKaUNjbUlBVW50SG10b1F2NWs3YW9wc2M5Q2s3S0RFSHBfaGR5SmktclRn?oc=5",
-          "time": "2026-05-24 13:35:27",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "長者頭遭夾公車門外行駛30秒 台中客運：涉案司機記過處分",
-          "url": "https://news.pts.org.tw/article/809756",
-          "time": "2026-05-24 13:30:08",
-          "publisher": "公視 即時",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中年輕夫妻雙亡4月女嬰獨活 將解剖釐清死因",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447718",
-          "time": "2026-05-24 13:16:41",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "作家苦苓昨晚在臉書貼文指台中市長盧秀燕幫宜蘭縣長參選人吳宗憲造勢時，硬拗吳是開蘭先賢吳沙的後代，苦苓說「立委吳宗憲祖籍廣東」，但吳沙是福建漳州人，批盧秀燕騙選票。但今天卻被查出，綜藝天王吳宗憲的祖籍才是廣東，立委吳宗憲的祖籍確實是福建漳浦，藍營民代反譏烏龍貼文，打臉苦苓大翻車。",
-          "url": "https://udn.com/news/story/124652/9522304?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-05-24 13:10:04",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "高齡乘客下公車遭車門夾住近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
-          "url": "https://news.google.com/rss/articles/CBMizANBVV95cUxONVN2NGItcjdFYWIwdkpqdFJCUGM1bTlRaFA2TjlEQjhUUVlOdVQxTllpNkFYbWdydjFRTE1NSHUyOWNjd0xBSXhjYVRGWlctYXZUVEpvZnVDSEdfVkN2NUdwNlYtblc4S3dQcERqVkNOVko3TlU0VG5ndDBJcUd5UEVGWDBaTlpFZEcwZmt0R1Q0QUdFSkhrUEd1VkFjWW1ZcWFwb2VNdGNuWUxIajRRdV9kUFBwd3FieGREbFpPVzZtNi1ZTjh4cWhuQ25iZjU4aEdXd21ZSmtyQzNVQnVWNEpkWnpmYlF4NWVmR05IaWE5WkNRTjJvVUtyNjdHQWNmSGE2WjdmOEJpczVXSzhjaFpWVGN2Y1RwWnc0OEVOS3p0cDE1ajExcFA4aFViM2ZZelh3X3NMRk45RmhsTnV2WkQ1OHQ2ZWdBM1JPenJ5Ymlza0FPQ3VjNUxOTUQ2RGxaV2w5NDNJal91YXhXX0pPeTJyWkMzRDdYZDR1S0hkVUZJMzMtMlRld3l0eXI3X1oxZ0x6U0huQW1OaGpHdHNEangxU0FUZ1FYTW5wOUVtc25JU1pXd0NkdU12Q1VuVU94bU8weTlBQVhXZnla?oc=5",
-          "time": "2026-05-24 13:08:51",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
-          "url": "https://news.nextapple.com/local/20260524/EFE8E1370E7A8ED32A361CA845F163EC",
-          "time": "2026-05-24 13:05:49",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TdHFVZFVoNE9hLVNPaVFMM3RMUXFMQVkzM3hCekNGU01uV3BrUzJjTTc2U1ViZ0t5YVczSS1ReGF4WFN4OUFpRG0wMHRwMDc1YzhjOUtOTklCYVRhTGd0Y3BPT25XQjZaVEhIaEJ6N3NqUUlnNkZMbTVxTEllRms?oc=5",
-          "time": "2026-05-24 13:02:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE15Z3RqbGFOUmxZdHptOXFtS2lNR0h1VUtmVFdWRDNuRmJlTXg1cG1HYmxiSnFnN0tUU05NYjJXY19KdF9wVkk4enBWTlVDZ0JyYTd3Y3hVMXRXU2RpSlNFOUltTDAtUHZ2R1ZyQ0F6SFM1SmNvX1hZajRXc202QQ?oc=5",
-          "time": "2026-05-24 13:02:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "高齡乘客下公車遭車門夾頭近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
-          "url": "https://news.google.com/rss/articles/CBMizANBVV95cUxPQzVrQzJzcTU1RTEzcTYyVTFOUE1lOEdDV3Bxb2cyME5hMmcxYmc1M2dEQngyVG40c3ZRalJLTGdnZjdJRnByTF9SQzlpN2RpeU83dC04T05vUVJ2bElSTG9ZLTVHaHI1UlRKVi1GT1dWckNfbGpVRUNMd0xVNHd0NDBJTEpJVTBwZkJua296RnZLSEN6ZzdmUVFKV0hDeHNXRmhZYnpFcERpMVVPNjlHbVFnckpkSzk5UzZsbE5VdkhDTElrVUp2WVpWUERMYTR1S2RxQnN2akFoWk1uZ1VWWk1sc1J2bVlTNWRHbTltYjJJcUd2YlppSVlBWGRMcEpNR3BfTnhKQU0wT1BYMTNib0ViZFlfX1RJczM1WWF2NjJWN3lQeWthSG5uVTRXM3dlLUJFeEMwNDdkU1YtVTRvMl9jckZaTVZqQnN2ak5tdFUwLTJRb0J4Z1FneDNDdjB4YlkzOURyTzByMnAtZTJiZm5LR3JHNktleXNucTJwT25jNmM3VGh6eDE4VWtwOXFIWDVOTDFBNENQamdfbVhjLWJTZG9pUkJvMXJoZGZtSWFFXzNMeGVlQVFMNzJGY2FDM3lqS1hFZUxsTlF1?oc=5",
-          "time": "2026-05-24 12:50:13",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "偷拍女子裙底風光 中市清潔隊職員遭調職靜待調查",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447673",
-          "time": "2026-05-24 12:48:41",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "高齡乘客下公車遭車門夾頭近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
-          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%BD%A1%E4%B9%98%E5%AE%A2%E4%B8%8B%E5%85%AC%E8%BB%8A%E9%81%AD%E8%BB%8A%E9%96%80%E5%A4%BE%E9%A0%AD%E8%BF%9130%E7%A7%92-%E9%A7%95%E9%A7%9B%E8%A8%98%E9%81%8E%E8%99%95%E5%88%86-%E4%B8%AD%E5%B8%82%E5%BA%9C%EF%BC%9A%E6%89%A3%E7%BD%B0%E4%B8%A6%E5%9A%B4%E5%8A%A0%E8%A9%95%E9%91%91-044824160.html",
-          "time": "2026-05-24 12:48:24",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中21歲小夫妻離世獨留4月女！他將爭取扶養權 霸氣承諾養大她",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%B0%8F%E5%A4%AB%E5%A6%BB%E9%9B%A2%E4%B8%96%E7%8D%A8%E7%95%994%E6%9C%88%E5%A5%B3-%E4%BB%96%E5%B0%87%E7%88%AD%E5%8F%96%E6%89%B6%E9%A4%8A%E6%AC%8A-%E9%9C%B8%E6%B0%A3%E6%89%BF%E8%AB%BE%E9%A4%8A%E5%A4%A7%E5%A5%B9-044500215.html",
-          "time": "2026-05-24 12:45:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "中市觀旅局推進友善寵物城市 打造人寵共享、友善互動寵物公園",
-          "url": "https://more-news.tw/623403/",
-          "time": "2026-05-24 12:12:35",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90d0ZlZHFmeEZTUlBPMHllTThZeVA3WHphMUVJdEZVZHpGOEpOZEhNMGF2QlJGWkxKa2s5b19STkJfRnZhSVE?oc=5",
-          "time": "2026-05-24 12:09:31",
-          "publisher": "Google News→台灣新聞雲報",
-          "severity": null
-        },
-        {
-          "title": "活化閒置市有地 台中推公私協力停車場創造逾9千平方公尺停車空間",
-          "url": "https://n.yam.com/Article/20260524446903",
-          "time": "2026-05-24 12:00:00",
-          "publisher": "蕃新聞→今傳媒",
-          "severity": null
-        },
-        {
-          "title": "中市果菜市場30年升級 冷鏈二期啟用護食安",
-          "url": "https://n.yam.com/Article/20260524458073",
-          "time": "2026-05-24 12:00:00",
-          "publisher": "蕃新聞→創新聞",
-          "severity": null
-        },
-        {
-          "title": "海風吹起戀愛氛圍！台中單身聯誼梧棲登場　39人參加成功促成17對心動配對",
-          "url": "https://n.yam.com/Article/20260524611506",
-          "time": "2026-05-24 12:00:00",
-          "publisher": "蕃新聞→今傳媒",
-          "severity": null
-        },
-        {
-          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長現身力挺「宜蘭走新路」 | 政治快訊 | 要聞",
-          "url": "https://www.nownews.com/news/6839440",
-          "time": "2026-05-24 11:55:33",
-          "publisher": "NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
-          "url": "https://more-news.tw/623378/",
-          "time": "2026-05-24 11:53:44",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "台中北屯藥局傳火警 消防架梯、破門救出2人送醫",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447634",
-          "time": "2026-05-24 11:51:04",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長力挺",
-          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxObjhWM3A3WTA1TXZEdnRwNUNRcGpPcDVpNVlhY2hWWFFMcEU2SG9DTEc0bUtyc1pIZHZZMEZNaXZYRHV3LUxicU9BU3ZKWS1WaEhfaVBMSDVKZFJkR0t5NTFjUGhSLVl6amQ2Uk14bjRYblJYdWV3N1ZpTnF5anJXaktSMzVJcFMxN1ZJRHZKM2RLVC1qa2pKS1RYd3FKdFVSYm5IUTBPLXhMMDZ6LXlUVm9fck5nWmFYYnFSdkxDelJuNHd3Um1DWGs2Nk5nRExEOGZKNTVqUDNtWGZ0b1B6bVduYlFMcExNUzV3Ui1uQml4ZkF0b2lXTmxDNHlrV19feHNMNlRDTFdmamRLNGRtYzlldVQ0RHp4dzEySmRnQm0zZ01ybEt5eWN1Yzk?oc=5",
-          "time": "2026-05-24 11:43:46",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "中市民進黨員因投票所近百貨公司怕塞車 一大早就去投票",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447588",
-          "time": "2026-05-24 11:38:30",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "聽到啪一聲！台中燒打雞被打到骨折 金剛刀「十字固定」發威獲勝",
-          "url": "https://tw.news.yahoo.com/%E8%81%BD%E5%88%B0%E5%95%AA-%E8%81%B2-%E5%8F%B0%E4%B8%AD%E7%87%92%E6%89%93%E9%9B%9E%E8%A2%AB%E6%89%93%E5%88%B0%E9%AA%A8%E6%8A%98-%E9%87%91%E5%89%9B%E5%88%80-%E5%8D%81%E5%AD%97%E5%9B%BA%E5%AE%9A-033700034.html",
-          "time": "2026-05-24 11:37:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中清水鰲峰山谷溜遊戲場「熱」度不減 民眾笑喊︰裝冷氣啦",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447611",
-          "time": "2026-05-24 11:32:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "BMW路口「急轉3圈」甩尾燒胎 用路人驚呆：台中等紅燈真好玩",
-          "url": "https://news.nextapple.com/local/20260524/213156F0D8283252A496E1F03B37AC3C",
-          "time": "2026-05-24 11:26:16",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長現身力挺「宜蘭走新路」",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10cjZWQ25sMTZCZkJyV0lHbUxOdDM0VmJaZFVZZmxScnlJRDlKc1d6VFFBX2pYUExhWkVSQUc5Tm9rTWpMM0NsWVVBQjfSAVJBVV95cUxOUk5id19TU0lDMTIxczZMR2ZWV0ZvR1dLREhjdHZ0emllYzlaN1h0VFhfUXNVcWVFdEFBZ21aT1JNWkV5dGFFdUxidHNRN25oWmlR?oc=5",
-          "time": "2026-05-24 11:23:59",
-          "publisher": "Google News→NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "台中公車司機暖心救人 背負乘客協助診所就醫",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E5%8F%B8%E6%A9%9F%E6%9A%96%E5%BF%83%E6%95%91%E4%BA%BA-%E8%83%8C%E8%B2%A0%E4%B9%98%E5%AE%A2%E5%8D%94%E5%8A%A9%E8%A8%BA%E6%89%80%E5%B0%B1%E9%86%AB-032242102.html",
-          "time": "2026-05-24 11:22:42",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "影/台中三媽會遶境爆衝突！逢甲夜市搶獻花揮拳遭逮",
-          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E5%8F%B0%E4%B8%AD%E4%B8%89%E5%AA%BD%E6%9C%83%E9%81%B6%E5%A2%83%E7%88%86%E8%A1%9D%E7%AA%81-%E9%80%A2%E7%94%B2%E5%A4%9C%E5%B8%82%E6%90%B6%E7%8D%BB%E8%8A%B1%E6%8F%AE%E6%8B%B3%E9%81%AD%E9%80%AE-031820646.html",
-          "time": "2026-05-24 11:18:20",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中女乘客疑似身體不適 駕駛陳子正停車背負至診所感動所有乘客",
-          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447534",
-          "time": "2026-05-24 10:51:49",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台中公車脫班2-２》業者想留駕駛 學者：若採聯營需市府整合",
-          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447440",
-          "time": "2026-05-24 10:51:30",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台中公車脫班2-1》聯營是解方？交通局：年底前會再增加",
-          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447439",
-          "time": "2026-05-24 10:51:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台中21歲夫妻陳屍床上「女嬰倖存」！高大成推測：身亡前有餵飽女兒 2026-05-24 08:28",
-          "url": "https://www.ctwant.com/article/482393/",
-          "time": "2026-05-24 10:40:55",
-          "publisher": "CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中小夫妻共赴黃泉「獨留4月女嬰」 高大成：先餵飽孩子才尋短",
-          "url": "https://www.taisounds.com/news/content/96/258532",
-          "time": "2026-05-24 10:40:17",
-          "publisher": "太報",
-          "severity": "yellow"
-        },
-        {
-          "title": "快訊／台中男豐原醫院急診室外「叫囂自灑液體」 院方啟動防護機制報警",
-          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E5%8F%B0%E4%B8%AD%E7%94%B7%E8%B1%90%E5%8E%9F%E9%86%AB%E9%99%A2%E6%80%A5%E8%A8%BA%E5%AE%A4%E5%A4%96-%E5%8F%AB%E5%9B%82%E8%87%AA%E7%81%91%E6%B6%B2%E9%AB%94-%E9%99%A2%E6%96%B9%E5%95%9F%E5%8B%95%E9%98%B2%E8%AD%B7%E6%A9%9F%E5%88%B6%E5%A0%B1%E8%AD%A6-100700558.html",
-          "time": "2026-05-24 10:07:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中21歲夫妻雙亡！獨留4月大女嬰 高大成分析命案細節",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%A4%AB%E5%A6%BB%E9%9B%99%E4%BA%A1-%E7%8D%A8%E7%95%994%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0-%E9%AB%98%E5%A4%A7%E6%88%90%E5%88%86%E6%9E%90%E5%91%BD%E6%A1%88%E7%B4%B0%E7%AF%80-020400286.html",
-          "time": "2026-05-24 10:04:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "老翁要下車遭車門夾頭 台中客運:駕駛長坦承未注意 將會記過處分",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447503",
-          "time": "2026-05-24 10:02:18",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中市海線單身聯誼 配對率達89.5％",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447471",
-          "time": "2026-05-24 09:48:24",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0ZXZFdF9Wa2lKeFhJQVh0Ul9neGVaWE9wUXRoQlZSMVNtQ3lwck9FOURVVGpLdlRNeU9FS0NBOVJmZDIzejNWYmQwWkthWWIyVWg3Vk55dUo0WGo0NkRaMjBEeHlDMnc?oc=5",
-          "time": "2026-05-24 09:36:00",
-          "publisher": "Google News→新華報導",
-          "severity": null
-        },
-        {
-          "title": "馬路當賽車場！BMW路口甩尾燒胎 駕駛稱「台中的路很大條」一時興起",
-          "url": "https://www.thehubnews.net/archives/627557",
-          "time": "2026-05-24 09:33:00",
-          "publisher": "新頭條",
-          "severity": "yellow"
-        },
-        {
-          "title": "影/一時興起...台中深夜BMW路口甩尾燒胎 最高罰3萬6+扣牌半年",
-          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E6%99%82%E8%88%88%E8%B5%B7-%E5%8F%B0%E4%B8%AD%E6%B7%B1%E5%A4%9Cbmw%E8%B7%AF%E5%8F%A3%E7%94%A9%E5%B0%BE%E7%87%92%E8%83%8E-%E6%9C%80%E9%AB%98%E7%BD%B03%E8%90%AC6-%E6%89%A3%E7%89%8C%E5%8D%8A%E5%B9%B4-090940348.html",
-          "time": "2026-05-24 09:09:40",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中女「裝瞎」詐保近450萬 一句「鞋鞋穿錯」讓她破功全吐回還要關",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447459",
-          "time": "2026-05-24 08:57:55",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中市持續推動10元平價保險套 年底販賣機將增至103台",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mRHd1RE5UYTdIMGdtQXlOcldMSDdwOEFDbEw3RTMwaXR2OXI2aUZ0U29rTVdNODcxMEJQRk52SmhaTnZmNkwzdWRoMkg4ekdkU1Fmc01hNnRxVWph?oc=5",
-          "time": "2026-05-24 08:43:00",
-          "publisher": "Google News→新華報導",
-          "severity": null
-        },
-        {
-          "title": "台中夫妻屋內雙亡！4個月大女嬰倖存 高大成：有先餵飽她才尋短",
-          "url": "https://www.mirrormedia.mg/story/20260524edi008",
-          "time": "2026-05-24 07:46:00",
-          "publisher": "鏡週刊",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕赴宜蘭相挺吳宗憲！PO文挺「吳敵鐵金剛」網不領情狂提一件事",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PUFpNMDMzMTVQNDhYWVllc2hWU1ZFbHQ5b1N2aDJZUWxoMDIwaTRoV0RUck9seFRjUnpFRmdLdmVobW9nRTZWSnRJYVZuVUVnTUdhX2pqMURrOFlHUWJDYg?oc=5",
-          "time": "2026-05-24 07:44:56",
-          "publisher": "Google News→民視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中慈濟跨海整篩義診兩日 守護菊島鄉親健康",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8weWw0bXFzLWxWMGxVQ09NdjNZUFAxTnBfaVpDU0RJUVJWUGhzb2dzVzhHWmNXaEJRVm1uMkp6eEpoZndKWjl2UTNqWXlqNHp0a3pvZU95cFFhSmo1NkF5YTdNOHlvYndtTlE?oc=5",
-          "time": "2026-05-24 07:32:18",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "台中果菜公司冷鏈配銷中心二期完工 (圖)",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E5%85%AC%E5%8F%B8%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E5%9C%96-065552594.html",
-          "time": "2026-05-24 06:55:52",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中果菜公司冷鏈配銷中心二期完工 提升保鮮期",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E5%85%AC%E5%8F%B8%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E6%8F%90%E5%8D%87%E4%BF%9D%E9%AE%AE%E6%9C%9F-065540431.html",
-          "time": "2026-05-24 06:55:40",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "民進黨今改選黨職 中市有1萬7千黨員設4個投開所",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447407",
-          "time": "2026-05-24 06:05:44",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "棒球／華南金控盃少棒亞太開打！桃園市單局雙轟狂灌12分、台中市逆轉戰局奪勝",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41WUJOal9FVzFBakEzQkRSbFU1UW5BZWZ0bVpTN3BlOXFUejBZeVBMZ1pkQnd6NzR6MFJLUFdoZlVzU2lHRVJ2V3NrVUwxejRzWkJ6OVVlR21iR25lcXR0cg?oc=5",
-          "time": "2026-05-24 06:03:54",
-          "publisher": "Google News→民視新聞網",
-          "severity": null
-        },
-        {
-          "title": "台中21歲小夫妻陳屍租處 4月嬰險餓死",
-          "url": "https://news.ltn.com.tw/news/society/paper/1755987",
-          "time": "2026-05-24 05:30:00",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "台中長輩下公車遭車門夾住近30秒 市府：扣罰並嚴評",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%95%B7%E8%BC%A9%E4%B8%8B%E5%85%AC%E8%BB%8A%E9%81%AD%E8%BB%8A%E9%96%80%E5%A4%BE%E4%BD%8F%E8%BF%9130%E7%A7%92-%E5%B8%82%E5%BA%9C-%E6%89%A3%E7%BD%B0%E4%B8%A6%E5%9A%B4%E8%A9%95-042311966.html",
-          "time": "2026-05-24 04:23:11",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長力挺",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E8%B5%B4%E5%AE%9C%E8%98%AD%E5%90%88%E9%AB%94%E5%90%B3%E5%AE%97%E6%86%B2-%E5%89%8D%E5%BE%8C%E4%BB%BB%E8%AD%B0%E9%95%B7%E5%8A%9B%E6%8C%BA-032928122.html",
-          "time": "2026-05-24 03:29:28",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中女車禍假失明真詐財！法院判「須返還」還得坐牢2年",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%A5%B3%E8%BB%8A%E7%A6%8D%E5%81%87%E5%A4%B1%E6%98%8E%E7%9C%9F%E8%A9%90%E8%B2%A1-%E6%B3%95%E9%99%A2%E5%88%A4-%E9%A0%88%E8%BF%94%E9%82%84-%E9%82%84%E5%BE%97%E5%9D%90%E7%89%A22%E5%B9%B4-015143828.html",
-          "time": "2026-05-24 01:51:43",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "中市西區梅川人行道改善進入最後階段提醒用路人提前改道",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5adHdmUW5SUGJPVHNGWXg5VUpJMzBwU0p6SDQwNUkxc3dnYjVfR0R4T3I1OU1EVEJIVmFFbUdIVVVVSk5Sa2ZsWmxHRlhranByRXFvOWFYaGlVQ1lwT0F5dDZNY2NtN1UwME1SR1VVaVZhdVU?oc=5",
-          "time": "2026-05-24 01:51:27",
-          "publisher": "Google News→環球日報社",
-          "severity": null
-        },
-        {
-          "title": "暗夜狂徒！台中街頭BMW甩尾燒胎 耍帥下場出爐",
-          "url": "https://www.chinatimes.com/realtimenews/20260524002520-260402",
-          "time": "2026-05-24 00:25:20",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "毛孩放風新去處！台中潭雅神「寵物專區」落成",
-          "url": "https://www.chinatimes.com/realtimenews/20260524001910-260421",
-          "time": "2026-05-24 00:19:10",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個 | 自由電子報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZzdHQ0x5UXBDQVZybG9mN09Lb3dJb1hjYTZIS2dyM2xXWldQN1h3Z3pFRWMyYmF4ZG9fazBrOWVYcVNsUzYwdWZocWZVaVctdTNHTHZR?oc=5",
-          "time": "2026-05-24 00:03:02",
-          "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北21歲夫妻剛搬到台中爆雙亡 4月女嬰險餓死",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%9721%E6%AD%B2%E5%A4%AB%E5%A6%BB%E5%89%9B%E6%90%AC%E5%88%B0%E5%8F%B0%E4%B8%AD%E7%88%86%E9%9B%99%E4%BA%A1-4%E6%9C%88%E5%A5%B3%E5%AC%B0%E9%9A%AA%E9%A4%93%E6%AD%BB-154400739.html",
-          "time": "2026-05-23 23:44:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03eVdRaW41dnR5RlIxeG1QY0lhMEVmR1VEVDlibFJvazZ0dUNMNmdYQThScWRpdzhJWHhnQ0hkYURsWHoycVZaQm5XLTFrVXRqdUM5SUIyNzJ5WndvQXJSYjJJQVVqemhuZnfSAW9BVV95cUxNUW1HWU1DNUNMUFNHcV9aR3UtNmRvb1pKWm9mUk9xMTlRMG44Y29mUnllLVpqS212U25QeWV5SVU4ZDZHTjE2TnNTU01tYS1MWVRzdWZkZGVONFE5SWFKOHFOQW5SWmhTWEgyZ2t4ZDg?oc=5",
-          "time": "2026-05-23 23:38:04",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447367",
-          "time": "2026-05-23 23:38:04",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
-          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxPQ1R1TERlV0pXeXNvVDNDTWpYTVltYlA0OHJNQTBGNDl3b0tLblRhSFZrY2hsVXIzczVfT2txN3BTY0ZmWUFwWU5rUTVUUjF1dkdGRXBhVzJmUTQ2dV85VHRGVko1QmFjYXoxeFI4aExDaDFuN1ZpZ21WTERPek9qRC1JbGN5OTRLblJLM1cwWWNFS1FaOHZtVXlSMFZsQU5iRW1Xa0l5QWpUekctU0tvWnQ3VXVpVDF1UWVFVUVIV29kRHZLZTlLdHF3cngyUnBCOU9Sb0lORjJNRkhuYkZhM3BrUTA0V09OSU9rVDJ0VGpfQkoyWVVIcGhWUkFpSHNJUEVveFgtNmZnSS1LSUxRZEU0dVlXTHdiOFFKT2h0bmdtM191d0VRajFzQlZNSThRdGZLNnJZZnBfa2Y2WXNUU0Y5ZHhVVzYybkU5TUc4V012eUdVVU95YkxoWmZwdG15Y1pUeDVoeVN3N3htbmc?oc=5",
-          "time": "2026-05-23 23:38:04",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中工廠「堆回收雜物」陷火海 400坪全燒光",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%B7%A5%E5%BB%A0-%E5%A0%86%E5%9B%9E%E6%94%B6%E9%9B%9C%E7%89%A9-%E9%99%B7%E7%81%AB%E6%B5%B7-400%E5%9D%AA%E5%85%A8%E7%87%92%E5%85%89-153000238.html",
-          "time": "2026-05-23 23:30:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "台中建設局獲賴總統表揚 運動中心奪國家建築獎",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%BB%BA%E8%A8%AD%E5%B1%80%E7%8D%B2%E8%B3%B4%E7%B8%BD%E7%B5%B1%E8%A1%A8%E6%8F%9A-%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83%E5%A5%AA%E5%9C%8B%E5%AE%B6%E5%BB%BA%E7%AF%89%E7%8D%8E-150743180.html",
-          "time": "2026-05-23 23:07:43",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中十大伴手禮前進南投服務區 25品牌快閃吸客",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE%E5%89%8D%E9%80%B2%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-25%E5%93%81%E7%89%8C%E5%BF%AB%E9%96%83%E5%90%B8%E5%AE%A2-150512126.html",
-          "time": "2026-05-23 23:05:12",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "快訊／台中彩券行8旬婦突倒地 送醫搶救中",
-          "url": "https://news.ebc.net.tw/news/society/553099",
-          "time": "2026-05-23 22:57:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中雙屍命案！4月大女嬰獨留次臥室倖存 高大成：小夫妻先餵飽她才走",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%9B%99%E5%B1%8D%E5%91%BD%E6%A1%88-4%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0%E7%8D%A8%E7%95%99%E6%AC%A1%E8%87%A5%E5%AE%A4%E5%80%96%E5%AD%98-%E9%AB%98%E5%A4%A7%E6%88%90-%E5%B0%8F%E5%A4%AB%E5%A6%BB%E5%85%88%E9%A4%B5%E9%A3%BD%E5%A5%B9%E6%89%8D%E8%B5%B0-145000215.html",
-          "time": "2026-05-23 22:50:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "超勵志紀錄！台中視障選手易浩程全障運終結13連霸強敵奪金",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5447295",
-          "time": "2026-05-23 22:44:06",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "賴清德將發5000成長津貼 何欣純喊台中0到6歲加碼1500元營養津貼",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447313",
-          "time": "2026-05-23 22:33:58",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "國道「破洞」？ 國1彰化到台中北上狂塞10公里 工程人員漏夜搶修",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447272",
-          "time": "2026-05-23 22:25:58",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "獨家／榴槤之亂！台中電商被冒名「一顆2百」 老闆報警",
-          "url": "https://tw.news.yahoo.com/%E7%8D%A8%E5%AE%B6-%E6%A6%B4%E6%A7%A4%E4%B9%8B%E4%BA%82-%E5%8F%B0%E4%B8%AD%E9%9B%BB%E5%95%86%E8%A2%AB%E5%86%92%E5%90%8D-%E9%A1%862%E7%99%BE-%E8%80%81%E9%97%86%E5%A0%B1%E8%AD%A6-142400454.html",
-          "time": "2026-05-23 22:24:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "快訊／救護車急駛赴台中逢甲商圈⋯彩券行停下引騷動！1女OHCA身份曝光",
-          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E6%95%91%E8%AD%B7%E8%BB%8A%E6%80%A5%E9%A7%9B%E8%B5%B4%E5%8F%B0%E4%B8%AD%E9%80%A2%E7%94%B2%E5%95%86%E5%9C%88-%E5%BD%A9%E5%88%B8%E8%A1%8C%E5%81%9C%E4%B8%8B%E5%BC%95%E9%A8%B7%E5%8B%95-1%E5%A5%B3ohca%E8%BA%AB%E4%BB%BD%E6%9B%9D%E5%85%89-141300734.html",
-          "time": "2026-05-23 22:13:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "5/23今彩539頭獎開1注！800萬獎落台中",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447322",
-          "time": "2026-05-23 22:08:52",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "搶攻國道商機台中十大伴手禮快閃南投服務區",
-          "url": "https://tw.news.yahoo.com/%E6%90%B6%E6%94%BB%E5%9C%8B%E9%81%93%E5%95%86%E6%A9%9F%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE%E5%BF%AB%E9%96%83%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-140414710.html",
-          "time": "2026-05-23 22:04:14",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "盧秀燕到宜蘭挺吳宗憲 無人機議題引攻防 林國漳批吳轉移汙名化無人機焦點",
-          "url": "https://www.thehubnews.net/archives/627514",
-          "time": "2026-05-23 21:45:22",
-          "publisher": "新頭條",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕到宜蘭挺吳宗憲 無人機議題引攻防 林國漳批吳轉移汙名化無人機焦點",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE83alkzVzVXMWRQQjVNTDRVWUNPVUdhSEgyZVJMWWRZaWJ0ZHFLb0t6WXhkY2xaUElOdHY4bkwwaGlreXpkS2JvNEY5MHZWcTVRUmc?oc=5",
-          "time": "2026-05-23 21:45:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "市政路延伸二標管冪施工遭遇地質挑戰 中市府全力應變確保國道行車安全",
-          "url": "https://more-news.tw/622980/",
-          "time": "2026-05-23 21:31:53",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "市政路延伸二標管冪施工遭遇地質挑戰 中市府全力應變確保國道行車安全",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5KeE9ORGh5WW15Z0pRQ0NaYUExUmRrS09QQzg5QTJyTmF2UnZWT2F6R09ueGNydE40b1djdmZyUF9odw?oc=5",
-          "time": "2026-05-23 21:31:53",
-          "publisher": "Google News→墨新聞-MORE News",
-          "severity": null
-        },
-        {
-          "title": "台中西屯傍晚驚險對撞！BMW左轉猛撞直行福斯 3人掛彩送醫",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447280",
-          "time": "2026-05-23 21:27:59",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕合體吳宗憲昭應宮參拜 力挺宜蘭走新路",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%90%88%E9%AB%94%E5%90%B3%E5%AE%97%E6%86%B2%E6%98%AD%E6%87%89%E5%AE%AE%E5%8F%83%E6%8B%9C-%E5%8A%9B%E6%8C%BA%E5%AE%9C%E8%98%AD%E8%B5%B0%E6%96%B0%E8%B7%AF-131032945.html",
-          "time": "2026-05-23 21:10:32",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "盧秀燕合體吳宗憲昭應宮參拜 力挺宜蘭走新路",
-          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxORlhTWEhSUlpZcFUxMlBMbUZTaDhuZGVNSWxNMTVVR0ljM0xVbmVvZXlvMDNoVVZlYVJmV2NOZlFHZmF1UDJ4UUJFcVRjbzRYMVlZMTd4cmR5RkVvTXFFMFd0RmhxTXJ2TWtvQmpselFQSzZ2MlV2eEpXM09BN0tya0VLb2x6U2Q3bDU1SGhfbGVDbmRmVGI1ekVWY3JCVGd5T3hqak1VTk1Pc0M2ajBOOEJJOUZQN1EzNTk5bldkbUtOMUF0Y1QyanFFSXhnQXZ3bExjZXB2NkZLcGRxTkJPN3g4RzlncHBkOEdpOXRBaTc0WjhzaFd5R1lVRURFMWQtODRlRExuWWdnUFRnSXRoNlB1YTJtOW9CMGdXbk9NaC1MZUVNYVJiYnA3UlJPN3NRQlNJck10eGhNN0l6M1IzQmtCVUo?oc=5",
-          "time": "2026-05-23 21:10:32",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "台中大安港、宜蘭烏石港淨灘 | 中華日報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBXYmNHVEZQQjhJUE9wYzRvSWZtTHJXREJwRVFOZFZBTEt1NTJRTDV2QjR1NF9fZF9fNmN0ZmhBLWNBTHYyWnlJLWF4eTdUaHJMUlZNU0F3?oc=5",
-          "time": "2026-05-23 21:05:11",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "台中垃圾、廚餘去化不力連綠資材也擺爛 海線廢樹枝堆置半年沒人清",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447246",
-          "time": "2026-05-23 21:01:04",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中年輕爸媽走絕路 4月女嬰獨活",
-          "url": "https://www.cdns.com.tw/articles/1405315",
-          "time": "2026-05-23 20:55:30",
-          "publisher": "中華日報",
-          "severity": "yellow"
-        },
-        {
-          "title": "獨家／台中烏日展覽館6月將拆！ 改裝車展「最後狂歡」",
-          "url": "https://news.ebc.net.tw/news/living/553064",
-          "time": "2026-05-23 20:35:00",
-          "publisher": "東森新聞",
-          "severity": null
-        },
-        {
-          "title": "台中小夫妻雙亡獨留4月女嬰 高大成：懷疑將她餵飽才尋短",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447255",
-          "time": "2026-05-23 20:32:01",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "影音／蔣萬安才來輔選！ 盧秀燕奔宜蘭挺吳宗憲 | TVBS",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wOXBiWkFNemlZM2RyMVdlMkZPR3d6YlRXUVYxN1Q4WUVKOVhaZzd2MXNUcmYwZ1g1U3J6TTBPakVYSlRNOHRGdlRVeFBlVWhWRjBwMWZB?oc=5",
-          "time": "2026-05-23 20:32:01",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "拋4月大女嬰獨活 台中雙屍小夫妻身份曝",
-          "url": "https://www.setn.com/News.aspx?NewsID=1843131",
-          "time": "2026-05-23 20:26:35",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中大安港、宜蘭烏石港淨灘",
-          "url": "https://www.cdns.com.tw/articles/1405251",
-          "time": "2026-05-23 20:25:23",
-          "publisher": "中華日報",
-          "severity": null
         }
       ],
       "comments": []
@@ -8500,11 +7394,11 @@
       "city": "高雄",
       "place": "高雄市鳳山區",
       "level": "red",
-      "news_count": 146,
+      "news_count": 138,
       "comment_count": 0,
       "negativity_pct": 3,
       "is_urgent": false,
-      "urgency_score": 158,
+      "urgency_score": 150,
       "news_articles": [
         {
           "title": "獨家／霧鎖金門！ 華信2度返小港　旅客滯留嗆地勤",
@@ -9471,62 +8365,986 @@
           "time": "2026-05-23 20:55:44",
           "publisher": "Yahoo新聞",
           "severity": "red"
-        },
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "台中地方動態",
+      "city": "台中",
+      "place": "台中市北屯區",
+      "level": "red",
+      "news_count": 138,
+      "comment_count": 0,
+      "negativity_pct": 1,
+      "is_urgent": false,
+      "urgency_score": 144,
+      "news_articles": [
         {
-          "title": "出席《失樂園》公益特映 賴瑞隆：攜手打造高雄完整社會安全網",
-          "url": "https://newtalk.tw/news/view/2026-05-23/1036939",
-          "time": "2026-05-23 20:33:37",
-          "publisher": "新頭殼",
+          "title": "藝術新聲看見未來 中市府攜手畫廊共育明日之星",
+          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOc3dPMXRDdHZfdVRwa2V0b2dSa3RVTkRBMXlsZU5GZHFFSHVVeUVvYUh2MFV0WElHenBGR3hNZGNoVVNYbno3eXladEdpa2hQZnlaUWdQZzJqb2cwd2Y5a1pRcjZMWHdhTGRUa19qOWR3ZnRwa2xhYjN5RmFqb1dEQmdrNWw1aXR3MFpnMTFhRUJQVDdhZHBDN0VFajFwZWp2X25oSGJxT1AxMm9qYk9va2RSMWQtMTlGNm5Od1I2Zm5XenhNWFFTd0t2MmdmT1duMHBoT3g0UHpOU1NXcVRaZ2Ywcm04Q3lXZS1rRWptRk16UDlQV0p0bzVXZ09wMWs1S2dZcmNTTUxaanNmZWczUDFBNEM2b2l1cnM0a3FBajNmOW5EM3NBOUNlOUhNVjVqZDB2YzFya3BWMzBMazFob2FCbnZxeWJwNEtfMGhvdnc?oc=5",
+          "time": "2026-05-24 19:56:00",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
-          "title": "今年首例本土登革熱現蹤！高雄60多歲男「肌肉痠痛」 篩檢確診 | 生活焦點 | 要聞",
-          "url": "https://www.nownews.com/news/6839317",
-          "time": "2026-05-23 20:27:59",
+          "title": "2026.05.24 19:15 屏東駕車至台中旅遊 沿路燒胎繞圈竄煙",
+          "url": "https://www.mnews.tw/story/20260524sot1914002",
+          "time": "2026-05-24 19:22:57",
+          "publisher": "鏡新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中北屯區藥局起火2人受困 警消破門搶救送醫",
+          "url": "https://www.cdns.com.tw/articles/1405536",
+          "time": "2026-05-24 19:18:47",
+          "publisher": "中華日報",
+          "severity": "red"
+        },
+        {
+          "title": "屏東駕車至台中旅遊 沿路燒胎繞圈竄煙",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4yclNGUktXRlM4N0JwLUJFcGltNXprdmpLTkR2UTRIeG9QdUJFdm9uSlBBYkFNQ1pudENxZS1faEZNdE1hbEtPZHBUclc3OUoweVd6bUNIbljSAV5BVV95cUxNVXU2QWhqMjR4bnhZZmtORHdiLUhQVnBoN2lZZjVjaVR3UkNVcEdlSEc1RnpSclJkQ3hkeFQzYlMtVXBXbElqTGNxTTlYUlFkX19QUlk1QjcxVGpQQWd3?oc=5",
+          "time": "2026-05-24 19:15:00",
+          "publisher": "Google News→鏡新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中果菜批發市場「冷鏈配銷中心二期工程」完工",
+          "url": "https://taiwanreports.com/archives/988355",
+          "time": "2026-05-24 19:09:43",
+          "publisher": "臺灣導報",
+          "severity": null
+        },
+        {
+          "title": "7旬翁搭台中客運「頭夾車門外」行駛30秒 市府：扣罰並嚴評",
+          "url": "https://www.cdns.com.tw/articles/1405521",
+          "time": "2026-05-24 19:08:14",
+          "publisher": "中華日報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中市公車司機暖心 背負病患就醫獲投書表揚",
+          "url": "https://www.cdns.com.tw/articles/1405519",
+          "time": "2026-05-24 19:06:38",
+          "publisher": "中華日報",
+          "severity": null
+        },
+        {
+          "title": "台中莽男與醫院保全衝突持械滋事 開車逃逸遭警攔截逮捕",
+          "url": "https://news.nextapple.com/local/20260524/C6414B76A256184CD973BEBFCC2E63DD",
+          "time": "2026-05-24 18:57:31",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "民進黨台中市黨職改選投票率高達62％ 許木桂連任主委",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447983",
+          "time": "2026-05-24 17:59:58",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台中豐原醫院急診室驚魂！民眾疑持器械 全身潑灑不明液體",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447989",
+          "time": "2026-05-24 17:58:08",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "影/台中公車駕駛脫序！70歲老翁頭被夾30秒 全車乘客驚喊開門",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E9%A7%95%E9%A7%9B%E8%84%AB%E5%BA%8F-70%E6%AD%B2%E8%80%81%E7%BF%81%E9%A0%AD%E8%A2%AB%E5%A4%BE30%E7%A7%92-%E5%85%A8%E8%BB%8A%E4%B9%98%E5%AE%A2%E9%A9%9A%E5%96%8A%E9%96%8B%E9%96%80-095201643.html",
+          "time": "2026-05-24 17:52:01",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中清水農會110週年慶 「清水好美、幸福稻來」",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%B8%85%E6%B0%B4%E8%BE%B2%E6%9C%83110%E9%80%B1%E5%B9%B4%E6%85%B6-%E6%B8%85%E6%B0%B4%E5%A5%BD%E7%BE%8E-%E5%B9%B8%E7%A6%8F%E7%A8%BB%E4%BE%86-095036293.html",
+          "time": "2026-05-24 17:50:36",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "看見未來的聲音！ 藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE10cHhaQ1hsZW1yX3NKaGRseFRHUDFUbTlVV0MtaGJRVC1ReU5OemRJRWNyajZtcVQtOVhKRTVqXy1Kdw?oc=5",
+          "time": "2026-05-24 17:38:23",
+          "publisher": "Google News→墨新聞-MORE News",
+          "severity": null
+        },
+        {
+          "title": "看見未來的聲音！ 藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
+          "url": "https://more-news.tw/623508/",
+          "time": "2026-05-24 17:38:23",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "台中客運72路車門誤夾傷乘客 中市府交通局：依規扣罰、納入年度評鑑",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1wMnc0bktta0hHa19RMlMtdmxQUkpyQUoxaTdqeDVPU1hMZGdJRVBydmY1c2VXTE1EaVlKd2kzcFYydHJDNGtEOUJwckN3Q1B1b1lLRXZYS0g?oc=5",
+          "time": "2026-05-24 17:35:00",
+          "publisher": "Google News→新華報導",
+          "severity": "yellow"
+        },
+        {
+          "title": "看見未來的聲音！藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95R0k5d0VqaU1qUzF2aHFnb0l0MnBGS0Q2VGpQTWFick02aVpqYlBmOWdyM0w5Xy1GWDVtWXItV0w2dXdWcFlMYWdja3VsOW1YLXZnVFRTN0w4Rl83aEZGalpacjdyNVAx?oc=5",
+          "time": "2026-05-24 17:34:54",
+          "publisher": "Google News→元丰傳媒",
+          "severity": null
+        },
+        {
+          "title": "台中國際會展營運半年創137萬人次、650億元商機 全年估逾倍數成長",
+          "url": "https://finance.ettoday.net/news/3171286",
+          "time": "2026-05-24 17:05:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "台中最強景點大洗牌！全新亞軍3個月吸746萬遊客 一中街跌到第3 | 生活",
+          "url": "https://www.nownews.com/news/6839517",
+          "time": "2026-05-24 16:56:38",
           "publisher": "NOWnews今日新聞",
-          "severity": "yellow"
+          "severity": null
         },
         {
-          "title": "獨家／ 高雄竊賊耍手段故意觸發警鈴　逼關閉登門行竊得逞",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-05-23/2355315.html",
-          "time": "2026-05-23 20:27:51",
-          "publisher": "壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄現115年首例本土登革熱 基因定序釐清感染源",
-          "url": "https://news.cts.com.tw/cna/life/202605/202605233035193.html",
-          "time": "2026-05-23 20:27:48",
-          "publisher": "華視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄出現今年首例本土登革熱 衛生局公告2行政區高風險警戒",
-          "url": "https://www.ctwant.com/article/482373/",
-          "time": "2026-05-23 20:27:48",
-          "publisher": "CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "2026.05.23 19:54 今年首例本土登革熱現跡高雄 6旬男汽修工高燒、肌肉痠痛確診",
-          "url": "https://www.mnews.tw/story/20260523nm013",
-          "time": "2026-05-23 20:27:13",
+          "title": "2026.05.24 16:24 台中清潔隊員赴廠交貨涉偷拍警偵辦 環保局調職記大過",
+          "url": "https://www.mnews.tw/story/20260524nm007",
+          "time": "2026-05-24 16:55:42",
           "publisher": "鏡新聞",
           "severity": "red"
         },
         {
-          "title": "高雄出現今年首例 60多歲男頭痛發燒住院",
-          "url": "https://today.line.me/tw/v2/article/281624225",
-          "time": "2026-05-23 20:27:11",
-          "publisher": "Line Today",
+          "title": "台中阿伯遭夾頭！公車30秒後才停車開門 交通局要扣罰＋嚴審",
+          "url": "https://www.mnews.tw/story/20260524nm003",
+          "time": "2026-05-24 16:55:42",
+          "publisher": "鏡新聞",
           "severity": "yellow"
         },
         {
-          "title": "名醫曹賜斌獲邀美國美容外科醫學會演講 再奪高市十大傑出市民傳馨獎",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5447136",
-          "time": "2026-05-23 20:27:10",
+          "title": "（影）海警船強闖東沙限制水域嗆主權 海巡署台中艦一對一近迫攔截、強勢驅離",
+          "url": "https://newtalk.tw/news/view/2026-05-24/1037036",
+          "time": "2026-05-24 16:39:57",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "海風＋老街太加分！台中單身聯誼爆紅 89.5％高配對率超驚人",
+          "url": "https://tw.news.yahoo.com/%E6%B5%B7%E9%A2%A8-%E8%80%81%E8%A1%97%E5%A4%AA%E5%8A%A0%E5%88%86-%E5%8F%B0%E4%B8%AD%E5%96%AE%E8%BA%AB%E8%81%AF%E8%AA%BC%E7%88%86%E7%B4%85-89-5-083455480.html",
+          "time": "2026-05-24 16:34:55",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中豐原燒臘店遭竊 損失現金2.7萬",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447856",
+          "time": "2026-05-24 16:28:50",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
+          "url": "https://news.nextapple.com/local/20260524/8E06410EED0EBB4ABB307787AACD4D47",
+          "time": "2026-05-24 16:28:26",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "生人迴避！台中東海送肉粽當晚高中生亡 今晚辦祭吊索",
+          "url": "https://tw.news.yahoo.com/%E7%94%9F%E4%BA%BA%E8%BF%B4%E9%81%BF-%E5%8F%B0%E4%B8%AD%E6%9D%B1%E6%B5%B7%E9%80%81%E8%82%89%E7%B2%BD%E7%95%B6%E6%99%9A%E9%AB%98%E4%B8%AD%E7%94%9F%E4%BA%A1-%E4%BB%8A%E6%99%9A%E8%BE%A6%E7%A5%AD%E5%90%8A%E7%B4%A2-082504027.html",
+          "time": "2026-05-24 16:25:04",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oajVsTGRadEdXUzU3QmtheUlxb0xiN0hsdlRjSmk3bVF6bjY5Y2ZCanhmb3VwUFYzYWRiZlA2R1ZiUE15Q0pzREwtc1ExTWtLWUdlUDBBSkZtUXBnallxZUZqWnpxbFZEYWlZRVM0Wk52NWYyOXJaRVhlcDlZNXc?oc=5",
+          "time": "2026-05-24 16:24:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "清潔隊員回收場偷拍裙底挨轟「變態」 中市府：記大過調職",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPOTBWaVJqNDVtVkszVEtpVUc3SWFpeVQ5Nk9KQVIwYnpSTGRTSWhyU01ka0dwYmZiQnNmMWNVdzEyS2h5bjVBRzhBRkx5dlpuWVlBSnhwN2k4aGNnUVhud09yajEyNkZVanVTWFdSMnk0aGRid2dmTTNBYWF6dw?oc=5",
+          "time": "2026-05-24 16:24:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中清潔隊員赴廠交貨涉偷拍警偵辦 環保局調職記大過",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%B8%85%E6%BD%94%E9%9A%8A%E5%93%A1%E8%B5%B4%E5%BB%A0%E4%BA%A4%E8%B2%A8%E6%B6%89%E5%81%B7%E6%8B%8D%E8%AD%A6%E5%81%B5%E8%BE%A6-%E7%92%B0%E4%BF%9D%E5%B1%80%E8%AA%BF%E8%81%B7%E8%A8%98%E5%A4%A7%E9%81%8E-082400284.html",
+          "time": "2026-05-24 16:24:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "台中「龍井捷運機廠」用地噴漆變綠地？ 捷運局：是噴防塵抑制劑",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD-%E9%BE%8D%E4%BA%95%E6%8D%B7%E9%81%8B%E6%A9%9F%E5%BB%A0-%E7%94%A8%E5%9C%B0%E5%99%B4%E6%BC%86%E8%AE%8A%E7%B6%A0%E5%9C%B0-%E6%8D%B7%E9%81%8B%E5%B1%80-%E6%98%AF%E5%99%B4%E9%98%B2%E5%A1%B5%E6%8A%91%E5%88%B6%E5%8A%91-082040398.html",
+          "time": "2026-05-24 16:20:40",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "看見未來的聲音！藝術新聲邁入第13載 中市府攜手頂尖畫廊 共育藝壇明日之星",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MWEo2cG9DSl9mamU3TTJ3QVI4ZDZVcVRVR29MWHp5aEZZT2IzeTRmSE5Pam9vYm01ZS1kcGJGUHF4UHFBR0dlekx5XzRVYlBWdWc?oc=5",
+          "time": "2026-05-24 16:17:45",
+          "publisher": "Google News→taichung.gov.tw",
+          "severity": null
+        },
+        {
+          "title": "中國海警船闖入東沙水域！我海巡台中艦強硬回擊 爆發主權對嗆",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5447843",
+          "time": "2026-05-24 16:14:11",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中市果菜市場30年升級 冷鏈二期啟用護食安",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5DXzNvRExKZzdIRUFlbHppSEMwaTI2UC01dG9ISTRPRHRHazV4MVZhUE82U1FVYnVOQmtldnktYk4xOXRPRW1nX0RTT21mSVRhcXc?oc=5",
+          "time": "2026-05-24 15:44:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "「我絕對會告死你！」女遭清潔隊員偷拍裙底氣炸 中市環保局重懲出爐",
+          "url": "https://tw.news.yahoo.com/%E6%88%91%E7%B5%95%E5%B0%8D%E6%9C%83%E5%91%8A%E6%AD%BB%E4%BD%A0-%E5%A5%B3%E9%81%AD%E6%B8%85%E6%BD%94%E9%9A%8A%E5%93%A1%E5%81%B7%E6%8B%8D%E8%A3%99%E5%BA%95%E6%B0%A3%E7%82%B8-%E4%B8%AD%E5%B8%82%E7%92%B0%E4%BF%9D%E5%B1%80%E9%87%8D%E6%87%B2%E5%87%BA%E7%88%90-074000055.html",
+          "time": "2026-05-24 15:40:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "驚險30秒！台中翁搭公車「被車門夾頭」 乘客怕爆大喊：司機快開門",
+          "url": "https://www.taisounds.com/news/content/96/258583",
+          "time": "2026-05-24 15:39:03",
+          "publisher": "太報",
+          "severity": "yellow"
+        },
+        {
+          "title": "民進黨中市黨部改選 英系許木桂將連任主委",
+          "url": "https://www.chinatimes.com/realtimenews/20260524001871-260407",
+          "time": "2026-05-24 15:39:00",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "台中果菜批發市場冷鏈配銷中心二期完工 邁向現代化農產新里程",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E6%89%B9%E7%99%BC%E5%B8%82%E5%A0%B4%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E9%82%81%E5%90%91%E7%8F%BE%E4%BB%A3%E5%8C%96%E8%BE%B2%E7%94%A2%E6%96%B0%E9%87%8C%E7%A8%8B-073158767.html",
+          "time": "2026-05-24 15:31:58",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中十大伴手禮 25家人氣品牌快閃南投服務區",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE-25%E5%AE%B6%E4%BA%BA%E6%B0%A3%E5%93%81%E7%89%8C%E5%BF%AB%E9%96%83%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-073045887.html",
+          "time": "2026-05-24 15:30:45",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中市環境知識競賽 6/1起開放網路報名",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%B8%82%E7%92%B0%E5%A2%83%E7%9F%A5%E8%AD%98%E7%AB%B6%E8%B3%BD-6-1%E8%B5%B7%E9%96%8B%E6%94%BE%E7%B6%B2%E8%B7%AF%E5%A0%B1%E5%90%8D-073015999.html",
+          "time": "2026-05-24 15:30:15",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "中市雙奪國家建築金獎 建設局獲總統接見表揚",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E5%B8%82%E9%9B%99%E5%A5%AA%E5%9C%8B%E5%AE%B6%E5%BB%BA%E7%AF%89%E9%87%91%E7%8D%8E-%E5%BB%BA%E8%A8%AD%E5%B1%80%E7%8D%B2%E7%B8%BD%E7%B5%B1%E6%8E%A5%E8%A6%8B%E8%A1%A8%E6%8F%9A-072952621.html",
+          "time": "2026-05-24 15:29:52",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中果菜批發市場遷場30週年 冷鏈配銷中心邁向現代化農產新里程",
+          "url": "https://more-news.tw/623423/",
+          "time": "2026-05-24 15:20:52",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "快訊/81歲楊燕24日母親106歲生日.已提前慶祝.感念來台時住過台中火車站走向富足的歲月",
+          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-81%E6%AD%B2%E6%A5%8A%E7%87%9524%E6%97%A5%E6%AF%8D%E8%A6%AA106%E6%AD%B2%E7%94%9F%E6%97%A5-%E5%B7%B2%E6%8F%90%E5%89%8D%E6%85%B6%E7%A5%9D-%E6%84%9F%E5%BF%B5%E4%BE%86%E5%8F%B0%E6%99%82%E4%BD%8F%E9%81%8E%E5%8F%B0%E4%B8%AD%E7%81%AB%E8%BB%8A%E7%AB%99%E8%B5%B0%E5%90%91%E5%AF%8C%E8%B6%B3%E7%9A%84%E6%AD%B2%E6%9C%88-071853323.html",
+          "time": "2026-05-24 15:18:53",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "AI精準栽培時代來臨 台中農改場助農民開發國際市場",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447789",
+          "time": "2026-05-24 15:14:16",
           "publisher": "自由時報",
           "severity": null
+        },
+        {
+          "title": "AI神助攻！台中農改場文心蘭育種有Gemini輔助 2026橫掃國際大獎",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447784",
+          "time": "2026-05-24 15:11:24",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "「哆啦A夢路跑」睽違10年回歸台中 4000人朝聖",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447783",
+          "time": "2026-05-24 14:55:11",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "記得儲水！5/25台中、台南、高雄7縣市停水 影響時間範圍一次看 | 生活",
+          "url": "https://www.nownews.com/news/6839482",
+          "time": "2026-05-24 14:25:14",
+          "publisher": "NOWnews今日新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中北屯藥局清晨惡火 1男1女受困吸入濃煙嗆傷",
+          "url": "https://www.ctwant.com/article/482423/",
+          "time": "2026-05-24 14:24:58",
+          "publisher": "CTWANT",
+          "severity": "red"
+        },
+        {
+          "title": "台中爺爺「頭夾公車外」行駛30秒 全車乘客急吼：司機快開門",
+          "url": "https://news.tvbs.com.tw/local/3212194",
+          "time": "2026-05-24 14:24:49",
+          "publisher": "TVBS",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中小夫妻離世獨留4月女!他承諾會養大她",
+          "url": "https://www.setn.com/News.aspx?NewsID=1843357",
+          "time": "2026-05-24 14:24:48",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "今年第6度入侵！海巡台中艦硬對峙陸海警 驅離喊話曝光",
+          "url": "https://www.chinatimes.com/realtimenews/20260524001682-260407",
+          "time": "2026-05-24 14:24:48",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "梧棲海風牽紅線 中市單身聯誼配對率近9成",
+          "url": "https://tw.news.yahoo.com/%E6%A2%A7%E6%A3%B2%E6%B5%B7%E9%A2%A8%E7%89%BD%E7%B4%85%E7%B7%9A-%E4%B8%AD%E5%B8%82%E5%96%AE%E8%BA%AB%E8%81%AF%E8%AA%BC%E9%85%8D%E5%B0%8D%E7%8E%87%E8%BF%919%E6%88%90-055737658.html",
+          "time": "2026-05-24 13:57:37",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中翁搭公車遭\"車門夾頭\" 客運坦承疏失將懲處",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E7%BF%81%E6%90%AD%E5%85%AC%E8%BB%8A%E9%81%AD-%E8%BB%8A%E9%96%80%E5%A4%BE%E9%A0%AD-%E5%AE%A2%E9%81%8B%E5%9D%A6%E6%89%BF%E7%96%8F%E5%A4%B1%E5%B0%87%E6%87%B2%E8%99%95-050723674.html",
+          "time": "2026-05-24 13:55:02",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中21歲夫妻驟逝「留下4月大女嬰」！伯父盼接手扶養",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%A4%AB%E5%A6%BB%E9%A9%9F%E9%80%9D-%E7%95%99%E4%B8%8B4%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0-%E4%BC%AF%E7%88%B6%E7%9B%BC%E6%8E%A5%E6%89%8B%E6%89%B6%E9%A4%8A-055228574.html",
+          "time": "2026-05-24 13:52:28",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中超暖運將「暖心一背」 送客就醫",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E8%B6%85%E6%9A%96%E9%81%8B%E5%B0%87-%E6%9A%96%E5%BF%83-%E8%83%8C-%E9%80%81%E5%AE%A2%E5%B0%B1%E9%86%AB-054503272.html",
+          "time": "2026-05-24 13:45:03",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "全車沒人抱怨等待！台中司機背病患就醫 乘客感動投書1999",
+          "url": "https://tw.news.yahoo.com/%E5%85%A8%E8%BB%8A%E6%B2%92%E4%BA%BA%E6%8A%B1%E6%80%A8%E7%AD%89%E5%BE%85-%E5%8F%B0%E4%B8%AD%E5%8F%B8%E6%A9%9F%E8%83%8C%E7%97%85%E6%82%A3%E5%B0%B1%E9%86%AB-%E4%B9%98%E5%AE%A2%E6%84%9F%E5%8B%95%E6%8A%95%E6%9B%B81999-053629054.html",
+          "time": "2026-05-24 13:36:29",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中公車司機暖心救人 獲乘客投書表揚 (圖)",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E5%8F%B8%E6%A9%9F%E6%9A%96%E5%BF%83%E6%95%91%E4%BA%BA-%E7%8D%B2%E4%B9%98%E5%AE%A2%E6%8A%95%E6%9B%B8%E8%A1%A8%E6%8F%9A-%E5%9C%96-053623055.html",
+          "time": "2026-05-24 13:36:23",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "澎湖大型義診 台中慈院不負使命",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQlhKbTZXandPMDdoRFYyaEl1djFtWVl3bktKQmw5NDV0QkRhb3g2NDJXRl9seFdjZndFV000ZVh6RS11REp1Ry14YV94SEVyWW5OU0VlNUxRbTJxdlRvQnlEc0ZXeEFzY05iVHp4T3RUODM5RjAxbE9ZV0E4RXRUcWRwblkzbTFDX2xoNFFjWDBCOVg5Wl8xU3ZUajk2TVNTX3NVLUdLTl93cWJkMGNyWWJDaWUyT0s3VWdEVTZMTklCWk5UdjFBdWVqOFpOVURKaUNjbUlBVW50SG10b1F2NWs3YW9wc2M5Q2s3S0RFSHBfaGR5SmktclRn?oc=5",
+          "time": "2026-05-24 13:35:27",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "長者頭遭夾公車門外行駛30秒 台中客運：涉案司機記過處分",
+          "url": "https://news.pts.org.tw/article/809756",
+          "time": "2026-05-24 13:30:08",
+          "publisher": "公視 即時",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中年輕夫妻雙亡4月女嬰獨活 將解剖釐清死因",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447718",
+          "time": "2026-05-24 13:16:41",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "作家苦苓昨晚在臉書貼文指台中市長盧秀燕幫宜蘭縣長參選人吳宗憲造勢時，硬拗吳是開蘭先賢吳沙的後代，苦苓說「立委吳宗憲祖籍廣東」，但吳沙是福建漳州人，批盧秀燕騙選票。但今天卻被查出，綜藝天王吳宗憲的祖籍才是廣東，立委吳宗憲的祖籍確實是福建漳浦，藍營民代反譏烏龍貼文，打臉苦苓大翻車。",
+          "url": "https://udn.com/news/story/124652/9522304?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-05-24 13:10:04",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "高齡乘客下公車遭車門夾住近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
+          "url": "https://news.google.com/rss/articles/CBMizANBVV95cUxONVN2NGItcjdFYWIwdkpqdFJCUGM1bTlRaFA2TjlEQjhUUVlOdVQxTllpNkFYbWdydjFRTE1NSHUyOWNjd0xBSXhjYVRGWlctYXZUVEpvZnVDSEdfVkN2NUdwNlYtblc4S3dQcERqVkNOVko3TlU0VG5ndDBJcUd5UEVGWDBaTlpFZEcwZmt0R1Q0QUdFSkhrUEd1VkFjWW1ZcWFwb2VNdGNuWUxIajRRdV9kUFBwd3FieGREbFpPVzZtNi1ZTjh4cWhuQ25iZjU4aEdXd21ZSmtyQzNVQnVWNEpkWnpmYlF4NWVmR05IaWE5WkNRTjJvVUtyNjdHQWNmSGE2WjdmOEJpczVXSzhjaFpWVGN2Y1RwWnc0OEVOS3p0cDE1ajExcFA4aFViM2ZZelh3X3NMRk45RmhsTnV2WkQ1OHQ2ZWdBM1JPenJ5Ymlza0FPQ3VjNUxOTUQ2RGxaV2w5NDNJal91YXhXX0pPeTJyWkMzRDdYZDR1S0hkVUZJMzMtMlRld3l0eXI3X1oxZ0x6U0huQW1OaGpHdHNEangxU0FUZ1FYTW5wOUVtc25JU1pXd0NkdU12Q1VuVU94bU8weTlBQVhXZnla?oc=5",
+          "time": "2026-05-24 13:08:51",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
+          "url": "https://news.nextapple.com/local/20260524/EFE8E1370E7A8ED32A361CA845F163EC",
+          "time": "2026-05-24 13:05:49",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TdHFVZFVoNE9hLVNPaVFMM3RMUXFMQVkzM3hCekNGU01uV3BrUzJjTTc2U1ViZ0t5YVczSS1ReGF4WFN4OUFpRG0wMHRwMDc1YzhjOUtOTklCYVRhTGd0Y3BPT25XQjZaVEhIaEJ6N3NqUUlnNkZMbTVxTEllRms?oc=5",
+          "time": "2026-05-24 13:02:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "7旬翁遭公車門夾頭30秒 司機反應讓人怒！中市府回應了",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE15Z3RqbGFOUmxZdHptOXFtS2lNR0h1VUtmVFdWRDNuRmJlTXg1cG1HYmxiSnFnN0tUU05NYjJXY19KdF9wVkk4enBWTlVDZ0JyYTd3Y3hVMXRXU2RpSlNFOUltTDAtUHZ2R1ZyQ0F6SFM1SmNvX1hZajRXc202QQ?oc=5",
+          "time": "2026-05-24 13:02:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "高齡乘客下公車遭車門夾頭近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
+          "url": "https://news.google.com/rss/articles/CBMizANBVV95cUxPQzVrQzJzcTU1RTEzcTYyVTFOUE1lOEdDV3Bxb2cyME5hMmcxYmc1M2dEQngyVG40c3ZRalJLTGdnZjdJRnByTF9SQzlpN2RpeU83dC04T05vUVJ2bElSTG9ZLTVHaHI1UlRKVi1GT1dWckNfbGpVRUNMd0xVNHd0NDBJTEpJVTBwZkJua296RnZLSEN6ZzdmUVFKV0hDeHNXRmhZYnpFcERpMVVPNjlHbVFnckpkSzk5UzZsbE5VdkhDTElrVUp2WVpWUERMYTR1S2RxQnN2akFoWk1uZ1VWWk1sc1J2bVlTNWRHbTltYjJJcUd2YlppSVlBWGRMcEpNR3BfTnhKQU0wT1BYMTNib0ViZFlfX1RJczM1WWF2NjJWN3lQeWthSG5uVTRXM3dlLUJFeEMwNDdkU1YtVTRvMl9jckZaTVZqQnN2ak5tdFUwLTJRb0J4Z1FneDNDdjB4YlkzOURyTzByMnAtZTJiZm5LR3JHNktleXNucTJwT25jNmM3VGh6eDE4VWtwOXFIWDVOTDFBNENQamdfbVhjLWJTZG9pUkJvMXJoZGZtSWFFXzNMeGVlQVFMNzJGY2FDM3lqS1hFZUxsTlF1?oc=5",
+          "time": "2026-05-24 12:50:13",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "偷拍女子裙底風光 中市清潔隊職員遭調職靜待調查",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447673",
+          "time": "2026-05-24 12:48:41",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "高齡乘客下公車遭車門夾頭近30秒 駕駛記過處分 中市府：扣罰並嚴加評鑑",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%BD%A1%E4%B9%98%E5%AE%A2%E4%B8%8B%E5%85%AC%E8%BB%8A%E9%81%AD%E8%BB%8A%E9%96%80%E5%A4%BE%E9%A0%AD%E8%BF%9130%E7%A7%92-%E9%A7%95%E9%A7%9B%E8%A8%98%E9%81%8E%E8%99%95%E5%88%86-%E4%B8%AD%E5%B8%82%E5%BA%9C%EF%BC%9A%E6%89%A3%E7%BD%B0%E4%B8%A6%E5%9A%B4%E5%8A%A0%E8%A9%95%E9%91%91-044824160.html",
+          "time": "2026-05-24 12:48:24",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中21歲小夫妻離世獨留4月女！他將爭取扶養權 霸氣承諾養大她",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%B0%8F%E5%A4%AB%E5%A6%BB%E9%9B%A2%E4%B8%96%E7%8D%A8%E7%95%994%E6%9C%88%E5%A5%B3-%E4%BB%96%E5%B0%87%E7%88%AD%E5%8F%96%E6%89%B6%E9%A4%8A%E6%AC%8A-%E9%9C%B8%E6%B0%A3%E6%89%BF%E8%AB%BE%E9%A4%8A%E5%A4%A7%E5%A5%B9-044500215.html",
+          "time": "2026-05-24 12:45:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "中市觀旅局推進友善寵物城市 打造人寵共享、友善互動寵物公園",
+          "url": "https://more-news.tw/623403/",
+          "time": "2026-05-24 12:12:35",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90d0ZlZHFmeEZTUlBPMHllTThZeVA3WHphMUVJdEZVZHpGOEpOZEhNMGF2QlJGWkxKa2s5b19STkJfRnZhSVE?oc=5",
+          "time": "2026-05-24 12:09:31",
+          "publisher": "Google News→台灣新聞雲報",
+          "severity": null
+        },
+        {
+          "title": "活化閒置市有地 台中推公私協力停車場創造逾9千平方公尺停車空間",
+          "url": "https://n.yam.com/Article/20260524446903",
+          "time": "2026-05-24 12:00:00",
+          "publisher": "蕃新聞→今傳媒",
+          "severity": null
+        },
+        {
+          "title": "中市果菜市場30年升級 冷鏈二期啟用護食安",
+          "url": "https://n.yam.com/Article/20260524458073",
+          "time": "2026-05-24 12:00:00",
+          "publisher": "蕃新聞→創新聞",
+          "severity": null
+        },
+        {
+          "title": "海風吹起戀愛氛圍！台中單身聯誼梧棲登場　39人參加成功促成17對心動配對",
+          "url": "https://n.yam.com/Article/20260524611506",
+          "time": "2026-05-24 12:00:00",
+          "publisher": "蕃新聞→今傳媒",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長現身力挺「宜蘭走新路」 | 政治快訊 | 要聞",
+          "url": "https://www.nownews.com/news/6839440",
+          "time": "2026-05-24 11:55:33",
+          "publisher": "NOWnews今日新聞",
+          "severity": null
+        },
+        {
+          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
+          "url": "https://more-news.tw/623378/",
+          "time": "2026-05-24 11:53:44",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "台中北屯藥局傳火警 消防架梯、破門救出2人送醫",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447634",
+          "time": "2026-05-24 11:51:04",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長力挺",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxObjhWM3A3WTA1TXZEdnRwNUNRcGpPcDVpNVlhY2hWWFFMcEU2SG9DTEc0bUtyc1pIZHZZMEZNaXZYRHV3LUxicU9BU3ZKWS1WaEhfaVBMSDVKZFJkR0t5NTFjUGhSLVl6amQ2Uk14bjRYblJYdWV3N1ZpTnF5anJXaktSMzVJcFMxN1ZJRHZKM2RLVC1qa2pKS1RYd3FKdFVSYm5IUTBPLXhMMDZ6LXlUVm9fck5nWmFYYnFSdkxDelJuNHd3Um1DWGs2Nk5nRExEOGZKNTVqUDNtWGZ0b1B6bVduYlFMcExNUzV3Ui1uQml4ZkF0b2lXTmxDNHlrV19feHNMNlRDTFdmamRLNGRtYzlldVQ0RHp4dzEySmRnQm0zZ01ybEt5eWN1Yzk?oc=5",
+          "time": "2026-05-24 11:43:46",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "中市民進黨員因投票所近百貨公司怕塞車 一大早就去投票",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447588",
+          "time": "2026-05-24 11:38:30",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "聽到啪一聲！台中燒打雞被打到骨折 金剛刀「十字固定」發威獲勝",
+          "url": "https://tw.news.yahoo.com/%E8%81%BD%E5%88%B0%E5%95%AA-%E8%81%B2-%E5%8F%B0%E4%B8%AD%E7%87%92%E6%89%93%E9%9B%9E%E8%A2%AB%E6%89%93%E5%88%B0%E9%AA%A8%E6%8A%98-%E9%87%91%E5%89%9B%E5%88%80-%E5%8D%81%E5%AD%97%E5%9B%BA%E5%AE%9A-033700034.html",
+          "time": "2026-05-24 11:37:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中清水鰲峰山谷溜遊戲場「熱」度不減 民眾笑喊︰裝冷氣啦",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447611",
+          "time": "2026-05-24 11:32:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "BMW路口「急轉3圈」甩尾燒胎 用路人驚呆：台中等紅燈真好玩",
+          "url": "https://news.nextapple.com/local/20260524/213156F0D8283252A496E1F03B37AC3C",
+          "time": "2026-05-24 11:26:16",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長現身力挺「宜蘭走新路」",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10cjZWQ25sMTZCZkJyV0lHbUxOdDM0VmJaZFVZZmxScnlJRDlKc1d6VFFBX2pYUExhWkVSQUc5Tm9rTWpMM0NsWVVBQjfSAVJBVV95cUxOUk5id19TU0lDMTIxczZMR2ZWV0ZvR1dLREhjdHZ0emllYzlaN1h0VFhfUXNVcWVFdEFBZ21aT1JNWkV5dGFFdUxidHNRN25oWmlR?oc=5",
+          "time": "2026-05-24 11:23:59",
+          "publisher": "Google News→NOWnews今日新聞",
+          "severity": null
+        },
+        {
+          "title": "台中公車司機暖心救人 背負乘客協助診所就醫",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%85%AC%E8%BB%8A%E5%8F%B8%E6%A9%9F%E6%9A%96%E5%BF%83%E6%95%91%E4%BA%BA-%E8%83%8C%E8%B2%A0%E4%B9%98%E5%AE%A2%E5%8D%94%E5%8A%A9%E8%A8%BA%E6%89%80%E5%B0%B1%E9%86%AB-032242102.html",
+          "time": "2026-05-24 11:22:42",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "影/台中三媽會遶境爆衝突！逢甲夜市搶獻花揮拳遭逮",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E5%8F%B0%E4%B8%AD%E4%B8%89%E5%AA%BD%E6%9C%83%E9%81%B6%E5%A2%83%E7%88%86%E8%A1%9D%E7%AA%81-%E9%80%A2%E7%94%B2%E5%A4%9C%E5%B8%82%E6%90%B6%E7%8D%BB%E8%8A%B1%E6%8F%AE%E6%8B%B3%E9%81%AD%E9%80%AE-031820646.html",
+          "time": "2026-05-24 11:18:20",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中女乘客疑似身體不適 駕駛陳子正停車背負至診所感動所有乘客",
+          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447534",
+          "time": "2026-05-24 10:51:49",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台中公車脫班2-２》業者想留駕駛 學者：若採聯營需市府整合",
+          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447440",
+          "time": "2026-05-24 10:51:30",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台中公車脫班2-1》聯營是解方？交通局：年底前會再增加",
+          "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5447439",
+          "time": "2026-05-24 10:51:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台中21歲夫妻陳屍床上「女嬰倖存」！高大成推測：身亡前有餵飽女兒 2026-05-24 08:28",
+          "url": "https://www.ctwant.com/article/482393/",
+          "time": "2026-05-24 10:40:55",
+          "publisher": "CTWANT",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中小夫妻共赴黃泉「獨留4月女嬰」 高大成：先餵飽孩子才尋短",
+          "url": "https://www.taisounds.com/news/content/96/258532",
+          "time": "2026-05-24 10:40:17",
+          "publisher": "太報",
+          "severity": "yellow"
+        },
+        {
+          "title": "快訊／台中男豐原醫院急診室外「叫囂自灑液體」 院方啟動防護機制報警",
+          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E5%8F%B0%E4%B8%AD%E7%94%B7%E8%B1%90%E5%8E%9F%E9%86%AB%E9%99%A2%E6%80%A5%E8%A8%BA%E5%AE%A4%E5%A4%96-%E5%8F%AB%E5%9B%82%E8%87%AA%E7%81%91%E6%B6%B2%E9%AB%94-%E9%99%A2%E6%96%B9%E5%95%9F%E5%8B%95%E9%98%B2%E8%AD%B7%E6%A9%9F%E5%88%B6%E5%A0%B1%E8%AD%A6-100700558.html",
+          "time": "2026-05-24 10:07:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中21歲夫妻雙亡！獨留4月大女嬰 高大成分析命案細節",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD21%E6%AD%B2%E5%A4%AB%E5%A6%BB%E9%9B%99%E4%BA%A1-%E7%8D%A8%E7%95%994%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0-%E9%AB%98%E5%A4%A7%E6%88%90%E5%88%86%E6%9E%90%E5%91%BD%E6%A1%88%E7%B4%B0%E7%AF%80-020400286.html",
+          "time": "2026-05-24 10:04:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "老翁要下車遭車門夾頭 台中客運:駕駛長坦承未注意 將會記過處分",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447503",
+          "time": "2026-05-24 10:02:18",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中市海線單身聯誼 配對率達89.5％",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447471",
+          "time": "2026-05-24 09:48:24",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "中市公私協力活化市有空置土地 紓解停車需求提升區域便利",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0ZXZFdF9Wa2lKeFhJQVh0Ul9neGVaWE9wUXRoQlZSMVNtQ3lwck9FOURVVGpLdlRNeU9FS0NBOVJmZDIzejNWYmQwWkthWWIyVWg3Vk55dUo0WGo0NkRaMjBEeHlDMnc?oc=5",
+          "time": "2026-05-24 09:36:00",
+          "publisher": "Google News→新華報導",
+          "severity": null
+        },
+        {
+          "title": "馬路當賽車場！BMW路口甩尾燒胎 駕駛稱「台中的路很大條」一時興起",
+          "url": "https://www.thehubnews.net/archives/627557",
+          "time": "2026-05-24 09:33:00",
+          "publisher": "新頭條",
+          "severity": "yellow"
+        },
+        {
+          "title": "影/一時興起...台中深夜BMW路口甩尾燒胎 最高罰3萬6+扣牌半年",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E6%99%82%E8%88%88%E8%B5%B7-%E5%8F%B0%E4%B8%AD%E6%B7%B1%E5%A4%9Cbmw%E8%B7%AF%E5%8F%A3%E7%94%A9%E5%B0%BE%E7%87%92%E8%83%8E-%E6%9C%80%E9%AB%98%E7%BD%B03%E8%90%AC6-%E6%89%A3%E7%89%8C%E5%8D%8A%E5%B9%B4-090940348.html",
+          "time": "2026-05-24 09:09:40",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中女「裝瞎」詐保近450萬 一句「鞋鞋穿錯」讓她破功全吐回還要關",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447459",
+          "time": "2026-05-24 08:57:55",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中市持續推動10元平價保險套 年底販賣機將增至103台",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mRHd1RE5UYTdIMGdtQXlOcldMSDdwOEFDbEw3RTMwaXR2OXI2aUZ0U29rTVdNODcxMEJQRk52SmhaTnZmNkwzdWRoMkg4ekdkU1Fmc01hNnRxVWph?oc=5",
+          "time": "2026-05-24 08:43:00",
+          "publisher": "Google News→新華報導",
+          "severity": null
+        },
+        {
+          "title": "台中夫妻屋內雙亡！4個月大女嬰倖存 高大成：有先餵飽她才尋短",
+          "url": "https://www.mirrormedia.mg/story/20260524edi008",
+          "time": "2026-05-24 07:46:00",
+          "publisher": "鏡週刊",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕赴宜蘭相挺吳宗憲！PO文挺「吳敵鐵金剛」網不領情狂提一件事",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PUFpNMDMzMTVQNDhYWVllc2hWU1ZFbHQ5b1N2aDJZUWxoMDIwaTRoV0RUck9seFRjUnpFRmdLdmVobW9nRTZWSnRJYVZuVUVnTUdhX2pqMURrOFlHUWJDYg?oc=5",
+          "time": "2026-05-24 07:44:56",
+          "publisher": "Google News→民視新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中慈濟跨海整篩義診兩日 守護菊島鄉親健康",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8weWw0bXFzLWxWMGxVQ09NdjNZUFAxTnBfaVpDU0RJUVJWUGhzb2dzVzhHWmNXaEJRVm1uMkp6eEpoZndKWjl2UTNqWXlqNHp0a3pvZU95cFFhSmo1NkF5YTdNOHlvYndtTlE?oc=5",
+          "time": "2026-05-24 07:32:18",
+          "publisher": "Google News→澎湖日報",
+          "severity": null
+        },
+        {
+          "title": "台中果菜公司冷鏈配銷中心二期完工 (圖)",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E5%85%AC%E5%8F%B8%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E5%9C%96-065552594.html",
+          "time": "2026-05-24 06:55:52",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中果菜公司冷鏈配銷中心二期完工 提升保鮮期",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E6%9E%9C%E8%8F%9C%E5%85%AC%E5%8F%B8%E5%86%B7%E9%8F%88%E9%85%8D%E9%8A%B7%E4%B8%AD%E5%BF%83%E4%BA%8C%E6%9C%9F%E5%AE%8C%E5%B7%A5-%E6%8F%90%E5%8D%87%E4%BF%9D%E9%AE%AE%E6%9C%9F-065540431.html",
+          "time": "2026-05-24 06:55:40",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "民進黨今改選黨職 中市有1萬7千黨員設4個投開所",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447407",
+          "time": "2026-05-24 06:05:44",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "棒球／華南金控盃少棒亞太開打！桃園市單局雙轟狂灌12分、台中市逆轉戰局奪勝",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41WUJOal9FVzFBakEzQkRSbFU1UW5BZWZ0bVpTN3BlOXFUejBZeVBMZ1pkQnd6NzR6MFJLUFdoZlVzU2lHRVJ2V3NrVUwxejRzWkJ6OVVlR21iR25lcXR0cg?oc=5",
+          "time": "2026-05-24 06:03:54",
+          "publisher": "Google News→民視新聞網",
+          "severity": null
+        },
+        {
+          "title": "台中21歲小夫妻陳屍租處 4月嬰險餓死",
+          "url": "https://news.ltn.com.tw/news/society/paper/1755987",
+          "time": "2026-05-24 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "台中長輩下公車遭車門夾住近30秒 市府：扣罰並嚴評",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%95%B7%E8%BC%A9%E4%B8%8B%E5%85%AC%E8%BB%8A%E9%81%AD%E8%BB%8A%E9%96%80%E5%A4%BE%E4%BD%8F%E8%BF%9130%E7%A7%92-%E5%B8%82%E5%BA%9C-%E6%89%A3%E7%BD%B0%E4%B8%A6%E5%9A%B4%E8%A9%95-042311966.html",
+          "time": "2026-05-24 04:23:11",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕赴宜蘭合體吳宗憲！前後任議長力挺",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E8%B5%B4%E5%AE%9C%E8%98%AD%E5%90%88%E9%AB%94%E5%90%B3%E5%AE%97%E6%86%B2-%E5%89%8D%E5%BE%8C%E4%BB%BB%E8%AD%B0%E9%95%B7%E5%8A%9B%E6%8C%BA-032928122.html",
+          "time": "2026-05-24 03:29:28",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中女車禍假失明真詐財！法院判「須返還」還得坐牢2年",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%A5%B3%E8%BB%8A%E7%A6%8D%E5%81%87%E5%A4%B1%E6%98%8E%E7%9C%9F%E8%A9%90%E8%B2%A1-%E6%B3%95%E9%99%A2%E5%88%A4-%E9%A0%88%E8%BF%94%E9%82%84-%E9%82%84%E5%BE%97%E5%9D%90%E7%89%A22%E5%B9%B4-015143828.html",
+          "time": "2026-05-24 01:51:43",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "中市西區梅川人行道改善進入最後階段提醒用路人提前改道",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5adHdmUW5SUGJPVHNGWXg5VUpJMzBwU0p6SDQwNUkxc3dnYjVfR0R4T3I1OU1EVEJIVmFFbUdIVVVVSk5Sa2ZsWmxHRlhranByRXFvOWFYaGlVQ1lwT0F5dDZNY2NtN1UwME1SR1VVaVZhdVU?oc=5",
+          "time": "2026-05-24 01:51:27",
+          "publisher": "Google News→環球日報社",
+          "severity": null
+        },
+        {
+          "title": "暗夜狂徒！台中街頭BMW甩尾燒胎 耍帥下場出爐",
+          "url": "https://www.chinatimes.com/realtimenews/20260524002520-260402",
+          "time": "2026-05-24 00:25:20",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "毛孩放風新去處！台中潭雅神「寵物專區」落成",
+          "url": "https://www.chinatimes.com/realtimenews/20260524001910-260421",
+          "time": "2026-05-24 00:19:10",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個 | 自由電子報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZzdHQ0x5UXBDQVZybG9mN09Lb3dJb1hjYTZIS2dyM2xXWldQN1h3Z3pFRWMyYmF4ZG9fazBrOWVYcVNsUzYwdWZocWZVaVctdTNHTHZR?oc=5",
+          "time": "2026-05-24 00:03:02",
+          "publisher": "Google News→LINE TODAY",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北21歲夫妻剛搬到台中爆雙亡 4月女嬰險餓死",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%9721%E6%AD%B2%E5%A4%AB%E5%A6%BB%E5%89%9B%E6%90%AC%E5%88%B0%E5%8F%B0%E4%B8%AD%E7%88%86%E9%9B%99%E4%BA%A1-4%E6%9C%88%E5%A5%B3%E5%AC%B0%E9%9A%AA%E9%A4%93%E6%AD%BB-154400739.html",
+          "time": "2026-05-23 23:44:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03eVdRaW41dnR5RlIxeG1QY0lhMEVmR1VEVDlibFJvazZ0dUNMNmdYQThScWRpdzhJWHhnQ0hkYURsWHoycVZaQm5XLTFrVXRqdUM5SUIyNzJ5WndvQXJSYjJJQVVqemhuZnfSAW9BVV95cUxNUW1HWU1DNUNMUFNHcV9aR3UtNmRvb1pKWm9mUk9xMTlRMG44Y29mUnllLVpqS212U25QeWV5SVU4ZDZHTjE2TnNTU01tYS1MWVRzdWZkZGVONFE5SWFKOHFOQW5SWmhTWEgyZ2t4ZDg?oc=5",
+          "time": "2026-05-23 23:38:04",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447367",
+          "time": "2026-05-23 23:38:04",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕宜蘭站台PO文挺「吳敵鐵金剛」底下網友卻刷一排這個",
+          "url": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxPQ1R1TERlV0pXeXNvVDNDTWpYTVltYlA0OHJNQTBGNDl3b0tLblRhSFZrY2hsVXIzczVfT2txN3BTY0ZmWUFwWU5rUTVUUjF1dkdGRXBhVzJmUTQ2dV85VHRGVko1QmFjYXoxeFI4aExDaDFuN1ZpZ21WTERPek9qRC1JbGN5OTRLblJLM1cwWWNFS1FaOHZtVXlSMFZsQU5iRW1Xa0l5QWpUekctU0tvWnQ3VXVpVDF1UWVFVUVIV29kRHZLZTlLdHF3cngyUnBCOU9Sb0lORjJNRkhuYkZhM3BrUTA0V09OSU9rVDJ0VGpfQkoyWVVIcGhWUkFpSHNJUEVveFgtNmZnSS1LSUxRZEU0dVlXTHdiOFFKT2h0bmdtM191d0VRajFzQlZNSThRdGZLNnJZZnBfa2Y2WXNUU0Y5ZHhVVzYybkU5TUc4V012eUdVVU95YkxoWmZwdG15Y1pUeDVoeVN3N3htbmc?oc=5",
+          "time": "2026-05-23 23:38:04",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中工廠「堆回收雜物」陷火海 400坪全燒光",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%B7%A5%E5%BB%A0-%E5%A0%86%E5%9B%9E%E6%94%B6%E9%9B%9C%E7%89%A9-%E9%99%B7%E7%81%AB%E6%B5%B7-400%E5%9D%AA%E5%85%A8%E7%87%92%E5%85%89-153000238.html",
+          "time": "2026-05-23 23:30:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "台中建設局獲賴總統表揚 運動中心奪國家建築獎",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%BB%BA%E8%A8%AD%E5%B1%80%E7%8D%B2%E8%B3%B4%E7%B8%BD%E7%B5%B1%E8%A1%A8%E6%8F%9A-%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83%E5%A5%AA%E5%9C%8B%E5%AE%B6%E5%BB%BA%E7%AF%89%E7%8D%8E-150743180.html",
+          "time": "2026-05-23 23:07:43",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中十大伴手禮前進南投服務區 25品牌快閃吸客",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE%E5%89%8D%E9%80%B2%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-25%E5%93%81%E7%89%8C%E5%BF%AB%E9%96%83%E5%90%B8%E5%AE%A2-150512126.html",
+          "time": "2026-05-23 23:05:12",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "快訊／台中彩券行8旬婦突倒地 送醫搶救中",
+          "url": "https://news.ebc.net.tw/news/society/553099",
+          "time": "2026-05-23 22:57:00",
+          "publisher": "東森新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中雙屍命案！4月大女嬰獨留次臥室倖存 高大成：小夫妻先餵飽她才走",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%9B%99%E5%B1%8D%E5%91%BD%E6%A1%88-4%E6%9C%88%E5%A4%A7%E5%A5%B3%E5%AC%B0%E7%8D%A8%E7%95%99%E6%AC%A1%E8%87%A5%E5%AE%A4%E5%80%96%E5%AD%98-%E9%AB%98%E5%A4%A7%E6%88%90-%E5%B0%8F%E5%A4%AB%E5%A6%BB%E5%85%88%E9%A4%B5%E9%A3%BD%E5%A5%B9%E6%89%8D%E8%B5%B0-145000215.html",
+          "time": "2026-05-23 22:50:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "超勵志紀錄！台中視障選手易浩程全障運終結13連霸強敵奪金",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5447295",
+          "time": "2026-05-23 22:44:06",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "賴清德將發5000成長津貼 何欣純喊台中0到6歲加碼1500元營養津貼",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5447313",
+          "time": "2026-05-23 22:33:58",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "國道「破洞」？ 國1彰化到台中北上狂塞10公里 工程人員漏夜搶修",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447272",
+          "time": "2026-05-23 22:25:58",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "獨家／榴槤之亂！台中電商被冒名「一顆2百」 老闆報警",
+          "url": "https://tw.news.yahoo.com/%E7%8D%A8%E5%AE%B6-%E6%A6%B4%E6%A7%A4%E4%B9%8B%E4%BA%82-%E5%8F%B0%E4%B8%AD%E9%9B%BB%E5%95%86%E8%A2%AB%E5%86%92%E5%90%8D-%E9%A1%862%E7%99%BE-%E8%80%81%E9%97%86%E5%A0%B1%E8%AD%A6-142400454.html",
+          "time": "2026-05-23 22:24:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "快訊／救護車急駛赴台中逢甲商圈⋯彩券行停下引騷動！1女OHCA身份曝光",
+          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E6%95%91%E8%AD%B7%E8%BB%8A%E6%80%A5%E9%A7%9B%E8%B5%B4%E5%8F%B0%E4%B8%AD%E9%80%A2%E7%94%B2%E5%95%86%E5%9C%88-%E5%BD%A9%E5%88%B8%E8%A1%8C%E5%81%9C%E4%B8%8B%E5%BC%95%E9%A8%B7%E5%8B%95-1%E5%A5%B3ohca%E8%BA%AB%E4%BB%BD%E6%9B%9D%E5%85%89-141300734.html",
+          "time": "2026-05-23 22:13:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "5/23今彩539頭獎開1注！800萬獎落台中",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447322",
+          "time": "2026-05-23 22:08:52",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "搶攻國道商機台中十大伴手禮快閃南投服務區",
+          "url": "https://tw.news.yahoo.com/%E6%90%B6%E6%94%BB%E5%9C%8B%E9%81%93%E5%95%86%E6%A9%9F%E5%8F%B0%E4%B8%AD%E5%8D%81%E5%A4%A7%E4%BC%B4%E6%89%8B%E7%A6%AE%E5%BF%AB%E9%96%83%E5%8D%97%E6%8A%95%E6%9C%8D%E5%8B%99%E5%8D%80-140414710.html",
+          "time": "2026-05-23 22:04:14",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕到宜蘭挺吳宗憲 無人機議題引攻防 林國漳批吳轉移汙名化無人機焦點",
+          "url": "https://www.thehubnews.net/archives/627514",
+          "time": "2026-05-23 21:45:22",
+          "publisher": "新頭條",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕到宜蘭挺吳宗憲 無人機議題引攻防 林國漳批吳轉移汙名化無人機焦點",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE83alkzVzVXMWRQQjVNTDRVWUNPVUdhSEgyZVJMWWRZaWJ0ZHFLb0t6WXhkY2xaUElOdHY4bkwwaGlreXpkS2JvNEY5MHZWcTVRUmc?oc=5",
+          "time": "2026-05-23 21:45:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "市政路延伸二標管冪施工遭遇地質挑戰 中市府全力應變確保國道行車安全",
+          "url": "https://more-news.tw/622980/",
+          "time": "2026-05-23 21:31:53",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "市政路延伸二標管冪施工遭遇地質挑戰 中市府全力應變確保國道行車安全",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5KeE9ORGh5WW15Z0pRQ0NaYUExUmRrS09QQzg5QTJyTmF2UnZWT2F6R09ueGNydE40b1djdmZyUF9odw?oc=5",
+          "time": "2026-05-23 21:31:53",
+          "publisher": "Google News→墨新聞-MORE News",
+          "severity": null
+        },
+        {
+          "title": "台中西屯傍晚驚險對撞！BMW左轉猛撞直行福斯 3人掛彩送醫",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5447280",
+          "time": "2026-05-23 21:27:59",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕合體吳宗憲昭應宮參拜 力挺宜蘭走新路",
+          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%90%88%E9%AB%94%E5%90%B3%E5%AE%97%E6%86%B2%E6%98%AD%E6%87%89%E5%AE%AE%E5%8F%83%E6%8B%9C-%E5%8A%9B%E6%8C%BA%E5%AE%9C%E8%98%AD%E8%B5%B0%E6%96%B0%E8%B7%AF-131032945.html",
+          "time": "2026-05-23 21:10:32",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕合體吳宗憲昭應宮參拜 力挺宜蘭走新路",
+          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxORlhTWEhSUlpZcFUxMlBMbUZTaDhuZGVNSWxNMTVVR0ljM0xVbmVvZXlvMDNoVVZlYVJmV2NOZlFHZmF1UDJ4UUJFcVRjbzRYMVlZMTd4cmR5RkVvTXFFMFd0RmhxTXJ2TWtvQmpselFQSzZ2MlV2eEpXM09BN0tya0VLb2x6U2Q3bDU1SGhfbGVDbmRmVGI1ekVWY3JCVGd5T3hqak1VTk1Pc0M2ajBOOEJJOUZQN1EzNTk5bldkbUtOMUF0Y1QyanFFSXhnQXZ3bExjZXB2NkZLcGRxTkJPN3g4RzlncHBkOEdpOXRBaTc0WjhzaFd5R1lVRURFMWQtODRlRExuWWdnUFRnSXRoNlB1YTJtOW9CMGdXbk9NaC1MZUVNYVJiYnA3UlJPN3NRQlNJck10eGhNN0l6M1IzQmtCVUo?oc=5",
+          "time": "2026-05-23 21:10:32",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "台中大安港、宜蘭烏石港淨灘 | 中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBXYmNHVEZQQjhJUE9wYzRvSWZtTHJXREJwRVFOZFZBTEt1NTJRTDV2QjR1NF9fZF9fNmN0ZmhBLWNBTHYyWnlJLWF4eTdUaHJMUlZNU0F3?oc=5",
+          "time": "2026-05-23 21:05:11",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "台中垃圾、廚餘去化不力連綠資材也擺爛 海線廢樹枝堆置半年沒人清",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5447246",
+          "time": "2026-05-23 21:01:04",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中年輕爸媽走絕路 4月女嬰獨活",
+          "url": "https://www.cdns.com.tw/articles/1405315",
+          "time": "2026-05-23 20:55:30",
+          "publisher": "中華日報",
+          "severity": "yellow"
         }
       ],
       "comments": []
