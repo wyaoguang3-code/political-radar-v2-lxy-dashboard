@@ -17456,12 +17456,24 @@
     },
     {
       "date": "2026-05-26",
-      "snapshot_at": "2026-05-26T12:45:03.137252+00:00",
+      "snapshot_at": "2026-05-26T13:04:22.655486+00:00",
       "hotspots": [
         {
           "title": "台北軍購爭議",
           "city": "台北",
           "place": "台北市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 1,
+          "sample_titles": []
+        },
+        {
+          "title": "藍營路線爭議",
+          "city": "台中",
+          "place": "台中市政府",
           "level": "green",
           "news_count": 0,
           "comment_count": 1,
@@ -17513,30 +17525,6 @@
           ]
         },
         {
-          "title": "海線立委戰局",
-          "city": "台中",
-          "place": "台中市政府",
-          "level": "green",
-          "news_count": 0,
-          "comment_count": 2,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 2,
-          "sample_titles": []
-        },
-        {
-          "title": "藍營路線爭議",
-          "city": "台中",
-          "place": "台中市政府",
-          "level": "green",
-          "news_count": 0,
-          "comment_count": 2,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 2,
-          "sample_titles": []
-        },
-        {
           "title": "新竹縣車禍事件",
           "city": "新竹縣",
           "place": "新竹縣政府",
@@ -17572,11 +17560,11 @@
           "city": "嘉義市",
           "place": "嘉義市政府",
           "level": "green",
-          "news_count": 14,
+          "news_count": 13,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 14,
+          "urgency_score": 13,
           "sample_titles": [
             "嘉義市社區營造獲文化部評鑑優等 「嘉義新日常」17組提案共享宜居城市",
             "旺旺中時台灣旅遊大賞揭曉 嘉義市「城隍夜巡」勇奪特色活動獎",
@@ -17584,19 +17572,47 @@
           ]
         },
         {
+          "title": "垃圾山",
+          "city": "台中",
+          "place": "台中市霧峰區",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 17,
+          "negativity_pct": 0,
+          "is_urgent": true,
+          "urgency_score": 51,
+          "sample_titles": []
+        },
+        {
           "title": "台東地方動態",
           "city": "台東",
           "place": "台東縣政府",
           "level": "green",
-          "news_count": 19,
+          "news_count": 17,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 19,
+          "urgency_score": 17,
           "sample_titles": [
             "台東杉原海邊驚悚自撞！金龜車猛撞護欄 3女受傷送醫",
             "台東的土很黏！「療癒經濟」吸人潮 花蓮遊客雪崩式下滑",
             "華南金控盃少棒》台東縣單局狂攻8分！大逆轉勝衛冕軍臺北市"
+          ]
+        },
+        {
+          "title": "新竹縣地方動態",
+          "city": "新竹縣",
+          "place": "新竹縣政府",
+          "level": "green",
+          "news_count": 19,
+          "comment_count": 0,
+          "negativity_pct": 5,
+          "is_urgent": false,
+          "urgency_score": 22,
+          "sample_titles": [
+            "2026新竹縣鄧雨賢紀念音樂會 5/30金曲交響、眾星雲集，共享跨世代樂音 | 民視新聞網",
+            "新竹縣敬老愛心卡10月起升級擴大用途 每月補助點數加碼至1000點",
+            "2026新竹縣鄧雨賢紀念音樂會 5/30金曲交響、眾星雲集，共享跨世代樂音"
           ]
         },
         {
@@ -17722,31 +17738,15 @@
           ]
         },
         {
-          "title": "新竹縣地方動態",
-          "city": "新竹縣",
-          "place": "新竹縣政府",
-          "level": "yellow",
-          "news_count": 20,
-          "comment_count": 0,
-          "negativity_pct": 5,
-          "is_urgent": false,
-          "urgency_score": 23,
-          "sample_titles": [
-            "2026新竹縣鄧雨賢紀念音樂會 5/30金曲交響、眾星雲集，共享跨世代樂音 | 民視新聞網",
-            "新竹縣敬老愛心卡10月起升級擴大用途 每月補助點數加碼至1000點",
-            "2026新竹縣鄧雨賢紀念音樂會 5/30金曲交響、眾星雲集，共享跨世代樂音"
-          ]
-        },
-        {
-          "title": "垃圾山",
+          "title": "廚餘山",
           "city": "台中",
           "place": "台中市霧峰區",
           "level": "yellow",
           "news_count": 0,
-          "comment_count": 25,
+          "comment_count": 23,
           "negativity_pct": 0,
           "is_urgent": true,
-          "urgency_score": 75,
+          "urgency_score": 57,
           "sample_titles": []
         },
         {
@@ -17754,11 +17754,11 @@
           "city": "嘉義縣",
           "place": "嘉義縣政府",
           "level": "yellow",
-          "news_count": 27,
+          "news_count": 26,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 27,
+          "urgency_score": 26,
           "sample_titles": [
             "115年嘉義縣配天宮聖母暨議長盃國際籃球錦標賽盛大開幕",
             "嘉義縣竹崎高中蕭安宇克服障礙 榮獲2026總統教育獎",
@@ -17770,11 +17770,11 @@
           "city": "澎湖",
           "place": "澎湖縣政府",
           "level": "yellow",
-          "news_count": 34,
+          "news_count": 33,
           "comment_count": 0,
-          "negativity_pct": 3,
+          "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 37,
+          "urgency_score": 33,
           "sample_titles": [
             "全台最強音樂祭8月空降澎湖 金曲天團告五人領軍30組卡司",
             "澎湖區漁會借助水下無人機海洋保育深入海底| 高屏離島| 地方",
@@ -17782,16 +17782,20 @@
           ]
         },
         {
-          "title": "廚餘山",
-          "city": "台中",
-          "place": "台中市霧峰區",
+          "title": "新竹市地方動態",
+          "city": "新竹市",
+          "place": "新竹市政府",
           "level": "yellow",
-          "news_count": 0,
-          "comment_count": 36,
+          "news_count": 35,
+          "comment_count": 0,
           "negativity_pct": 0,
-          "is_urgent": true,
-          "urgency_score": 88,
-          "sample_titles": []
+          "is_urgent": false,
+          "urgency_score": 35,
+          "sample_titles": [
+            "竹市本週市務會議聚焦治安與育兒照顧　高虹安市長：持續守護治安與市民安全",
+            "新竹市國際風箏節榮獲「2026旺旺中時台灣旅遊大賞」肯定　展現城市觀光亮點",
+            "新竹市國際風箏節榮獲「2026旺旺中時台灣旅遊大賞」肯定 城市觀光大亮點！"
+          ]
         },
         {
           "title": "雲林地方動態",
@@ -17810,19 +17814,19 @@
           ]
         },
         {
-          "title": "新竹市地方動態",
-          "city": "新竹市",
-          "place": "新竹市政府",
+          "title": "台中市政動態",
+          "city": "台中",
+          "place": "台中市政府",
           "level": "yellow",
-          "news_count": 37,
-          "comment_count": 0,
-          "negativity_pct": 0,
+          "news_count": 32,
+          "comment_count": 6,
+          "negativity_pct": 16,
           "is_urgent": false,
-          "urgency_score": 37,
+          "urgency_score": 55,
           "sample_titles": [
-            "竹市本週市務會議聚焦治安與育兒照顧　高虹安市長：持續守護治安與市民安全",
-            "新竹市國際風箏節榮獲「2026旺旺中時台灣旅遊大賞」肯定　展現城市觀光亮點",
-            "新竹市國際風箏節榮獲「2026旺旺中時台灣旅遊大賞」肯定 城市觀光大亮點！"
+            "市政質詢變互嗆現場！盧秀燕一句「妳也零進度」綠營炸鍋 | 政治快訊 | 要聞",
+            "世界室內拔河錦標賽臺中選手奪6金 盧秀燕表揚肯定 | 青年日報",
+            "議員批市府施政跳票 盧秀燕稱年底達92％"
           ]
         },
         {
@@ -17842,31 +17846,15 @@
           ]
         },
         {
-          "title": "台中市政動態",
-          "city": "台中",
-          "place": "台中市政府",
-          "level": "yellow",
-          "news_count": 35,
-          "comment_count": 16,
-          "negativity_pct": 14,
-          "is_urgent": true,
-          "urgency_score": 72,
-          "sample_titles": [
-            "市政質詢變互嗆現場！盧秀燕一句「妳也零進度」綠營炸鍋 | 政治快訊 | 要聞",
-            "世界室內拔河錦標賽臺中選手奪6金 盧秀燕表揚肯定 | 青年日報",
-            "議員批市府施政跳票 盧秀燕稱年底達92％"
-          ]
-        },
-        {
           "title": "苗栗地方動態",
           "city": "苗栗",
           "place": "苗栗縣政府",
           "level": "yellow",
-          "news_count": 65,
+          "news_count": 64,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 65,
+          "urgency_score": 64,
           "sample_titles": [
             "鄭麗文：苗栗是國民黨執政金字招牌 團結拚年底全面勝利",
             "苗栗中港區都市文健站啟用 強化都市地區原民照顧服務",
@@ -18050,11 +18038,11 @@
           "city": "基隆",
           "place": "基隆市政府",
           "level": "red",
-          "news_count": 21,
+          "news_count": 19,
           "comment_count": 0,
-          "negativity_pct": 10,
+          "negativity_pct": 11,
           "is_urgent": false,
-          "urgency_score": 27,
+          "urgency_score": 25,
           "sample_titles": [
             "親民黨今公布首波九合一選舉提名名單，包含現任基隆市副議長楊秀玉、前宜蘭縣議員陳傑麟，以及新人劉成謙參選新北三重、蘆洲、陳",
             "冷氣剛換新！基隆仁愛市場「天花板下雨」 6攤商慘泡水",
@@ -18066,11 +18054,11 @@
           "city": "彰化",
           "place": "彰化縣政府",
           "level": "red",
-          "news_count": 35,
+          "news_count": 33,
           "comment_count": 0,
           "negativity_pct": 9,
           "is_urgent": false,
-          "urgency_score": 44,
+          "urgency_score": 42,
           "sample_titles": [
             "彰化銀行公司治理連續五年躋身上市公司前5％績優企業",
             "彰化119線上DA-CPR成功指導！ 消防與家屬攜手搶命、3月大男嬰成功恢復心跳",
@@ -18082,11 +18070,11 @@
           "city": "屏東",
           "place": "屏東縣政府",
           "level": "red",
-          "news_count": 65,
+          "news_count": 63,
           "comment_count": 0,
           "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 74,
+          "urgency_score": 72,
           "sample_titles": [
             "中科院、軍備局202廠今（26）日動員209廠所屬雲豹CM-33、CM-34甲車，在屏東加祿堂防訓靶場實施30鏈砲塔、T",
             "國軍依年度演訓計畫在全台丶外島實施重砲射擊訓練，根據射擊通報發布訊息指出，6月2日台南、屏東地區將異地、近同時實施5項實",
@@ -18110,6 +18098,22 @@
           ]
         },
         {
+          "title": "宜蘭地方動態",
+          "city": "宜蘭",
+          "place": "宜蘭縣政府",
+          "level": "red",
+          "news_count": 82,
+          "comment_count": 0,
+          "negativity_pct": 26,
+          "is_urgent": false,
+          "urgency_score": 145,
+          "sample_titles": [
+            "蔣萬安雲林、宜蘭輔選趴趴走 綠議員送「萬安輔選箱」狠酸",
+            "親民黨今公布首波九合一選舉提名名單，包含現任基隆市副議長楊秀玉、前宜蘭縣議員陳傑麟，以及新人劉成謙參選新北三重、蘆洲、陳",
+            "宜蘭消防局疑採購案涉弊 檢調直搗災害搶救科約談前科長等６人"
+          ]
+        },
+        {
           "title": "花蓮地方動態",
           "city": "花蓮",
           "place": "花蓮縣政府",
@@ -18126,31 +18130,15 @@
           ]
         },
         {
-          "title": "宜蘭地方動態",
-          "city": "宜蘭",
-          "place": "宜蘭縣政府",
-          "level": "red",
-          "news_count": 88,
-          "comment_count": 0,
-          "negativity_pct": 24,
-          "is_urgent": false,
-          "urgency_score": 151,
-          "sample_titles": [
-            "蔣萬安雲林、宜蘭輔選趴趴走 綠議員送「萬安輔選箱」狠酸",
-            "親民黨今公布首波九合一選舉提名名單，包含現任基隆市副議長楊秀玉、前宜蘭縣議員陳傑麟，以及新人劉成謙參選新北三重、蘆洲、陳",
-            "宜蘭消防局疑採購案涉弊 檢調直搗災害搶救科約談前科長等６人"
-          ]
-        },
-        {
           "title": "新北地方動態",
           "city": "新北",
           "place": "新北市政府",
           "level": "red",
-          "news_count": 107,
+          "news_count": 104,
           "comment_count": 0,
-          "negativity_pct": 11,
+          "negativity_pct": 12,
           "is_urgent": false,
-          "urgency_score": 143,
+          "urgency_score": 140,
           "sample_titles": [
             "蕭旭岑捧現金照震撼全台！「台商捐款去哪」新北文化局要查了 | 要聞",
             "親民黨今公布首波九合一選舉提名名單，包含現任基隆市副議長楊秀玉、前宜蘭縣議員陳傑麟，以及新人劉成謙參選新北三重、蘆洲、陳",
@@ -18178,11 +18166,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 133,
+          "news_count": 128,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 157,
+          "urgency_score": 152,
           "sample_titles": [
             "親民黨今公布首波九合一選舉提名名單，包含現任基隆市副議長楊秀玉、前宜蘭縣議員陳傑麟，以及新人劉成謙參選新北三重、蘆洲、陳",
             "捷運三鶯線延伸桃園八德 新北捷：預計6月招標",
@@ -18194,11 +18182,11 @@
           "city": "台中",
           "place": "台中市豐原區",
           "level": "red",
-          "news_count": 143,
+          "news_count": 141,
           "comment_count": 0,
-          "negativity_pct": 15,
+          "negativity_pct": 14,
           "is_urgent": false,
-          "urgency_score": 206,
+          "urgency_score": 201,
           "sample_titles": [
             "團膳業者出包　台中國小營養午餐湯品「30多人分9顆脆丸」",
             "家長傻眼！台中國小營養午餐爆「全班30人抽籤分9顆貢丸」",
@@ -18210,11 +18198,11 @@
           "city": "台北",
           "place": "台北市松山區",
           "level": "red",
-          "news_count": 226,
+          "news_count": 224,
           "comment_count": 0,
           "negativity_pct": 17,
           "is_urgent": false,
-          "urgency_score": 343,
+          "urgency_score": 341,
           "sample_titles": [
             "沈伯洋說台北需要「生態系」被藍營嗆 蔣萬安2週後照抄被酸爆！",
             "蔣萬安雲林、宜蘭輔選趴趴走 綠議員送「萬安輔選箱」狠酸",
