@@ -1,6 +1,6 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-05-28T20:36:08.184812+00:00",
+  "generated_at": "2026-05-28T20:51:27.923947+00:00",
   "metrics": {
     "total_24h": 65,
     "prev_24h": 97,
@@ -34,7 +34,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2809
+      "count": 2807
     }
   ],
   "by_hour": [
@@ -625,9 +625,9 @@
   },
   "mention_compare_7d": {
     "盧秀燕": 678,
-    "蔣萬安": 1574,
+    "蔣萬安": 1573,
     "蔡其昌": 125,
-    "陳其邁": 470
+    "陳其邁": 469
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
@@ -92822,15 +92822,6 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "今天程序走完今天就發文！蔣萬安：撤銷京華城20%容積",
-        "url": "https://tw.news.yahoo.com/%E4%BB%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E8%B5%B0%E5%AE%8C%E4%BB%8A%E5%A4%A9%E5%B0%B1%E7%99%BC%E6%96%87-%E8%94%A3%E8%90%AC%E5%AE%89-%E6%92%A4%E9%8A%B7%E4%BA%AC%E8%8F%AF%E5%9F%8E20-%E5%AE%B9%E7%A9%8D-044142199.html",
-        "time": "2026-05-22 04:41:42",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -98218,15 +98209,6 @@
         "time": "2026-05-22 08:43:37",
         "platform": "news",
         "publisher": "Google News→ENN台灣電報",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "高雄強化兒虐防線　陳其邁：及早預判潛在風險",
-        "url": "https://n.yam.com/Article/20260522901170",
-        "time": "2026-05-22 04:42:05",
-        "platform": "news",
-        "publisher": "蕃新聞→News586",
         "severity": null,
         "co_mentioned": []
       }
@@ -121698,30 +121680,55 @@
         "time": "2026-05-22 05:30:00",
         "publisher": "自由時報",
         "severity": "yellow"
-      },
-      {
-        "title": "高雄強化兒虐防線　陳其邁：及早預判潛在風險",
-        "url": "https://n.yam.com/Article/20260522901170",
-        "time": "2026-05-22 04:42:05",
-        "publisher": "蕃新聞→News586",
-        "severity": null
-      },
-      {
-        "title": "今天程序走完今天就發文！蔣萬安：撤銷京華城20%容積",
-        "url": "https://tw.news.yahoo.com/%E4%BB%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E8%B5%B0%E5%AE%8C%E4%BB%8A%E5%A4%A9%E5%B0%B1%E7%99%BC%E6%96%87-%E8%94%A3%E8%90%AC%E5%AE%89-%E6%92%A4%E9%8A%B7%E4%BA%AC%E8%8F%AF%E5%9F%8E20-%E5%AE%B9%E7%A9%8D-044142199.html",
-        "time": "2026-05-22 04:41:42",
-        "publisher": "Yahoo新聞",
-        "severity": null
       }
     ]
   },
   "hotspots": [
     {
-      "title": "台中鼠患事件",
+      "title": "藍營路線爭議",
       "city": "台中",
       "place": "台中市政府",
       "lat": 24.1602,
       "lng": 120.64430192378865,
+      "level": "green",
+      "source": "comment",
+      "platform": "Threads 1",
+      "note": "24h 命中 1 則（新聞 0、留言 1）",
+      "news_count": 0,
+      "comment_count": 1,
+      "news_latest_at": null,
+      "news_full_expires_at": null,
+      "news_articles": [],
+      "comments": [
+        {
+          "platform": "threads",
+          "text": "2026-5-15 鄭麗文到中國去見習近平的時候為什麼不是台灣重要的國安問題？美國跟習近平的川習會，既然是重要的國安問題？",
+          "author": "wmeijane",
+          "url": "",
+          "time_text": "2026-5-15",
+          "signal": "yellow"
+        }
+      ],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 1,
+      "is_urgent": false,
+      "is_catchall": false,
+      "keywords": [
+        "鄭麗文",
+        "黨團大會",
+        "開除韓國瑜",
+        "舔共"
+      ],
+      "red_news_count": 0
+    },
+    {
+      "title": "台中鼠患事件",
+      "city": "台中",
+      "place": "台中市政府",
+      "lat": 24.1587,
+      "lng": 120.6469,
       "level": "green",
       "source": "news",
       "platform": "新聞 1",
@@ -121904,7 +121911,7 @@
       "title": "台中槍擊事件",
       "city": "台中",
       "place": "台中市政府",
-      "lat": 24.1602,
+      "lat": 24.1632,
       "lng": 120.64949807621136,
       "level": "green",
       "source": "news",
@@ -121939,8 +121946,8 @@
       "title": "台中車禍事件",
       "city": "台中",
       "place": "台中市政府",
-      "lat": 24.1632,
-      "lng": 120.64949807621136,
+      "lat": 24.1647,
+      "lng": 120.6469,
       "level": "green",
       "source": "news",
       "platform": "新聞 1",
@@ -122043,41 +122050,6 @@
       "red_news_count": 0
     },
     {
-      "title": "桃園詐騙案",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "lat": 24.9951,
-      "lng": 121.30359807621136,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-28T03:51:14+00:00",
-      "news_full_expires_at": "2026-05-29T03:51:14+00:00",
-      "news_articles": [
-        {
-          "title": "豪華休旅Alphard因詐騙案遭查扣 桃園分署6/9公開拍賣",
-          "url": "https://more-news.tw/626960/",
-          "time": "2026-05-28 11:51:14",
-          "publisher": "墨新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false,
-      "keywords": [
-        "詐騙"
-      ],
-      "red_news_count": 0
-    },
-    {
       "title": "新北詐騙案",
       "city": "新北",
       "place": "新北市政府",
@@ -122098,6 +122070,41 @@
           "time": "2026-05-28 13:25:10",
           "publisher": "中華日報",
           "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false,
+      "keywords": [
+        "詐騙"
+      ],
+      "red_news_count": 0
+    },
+    {
+      "title": "桃園詐騙案",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "lat": 24.9951,
+      "lng": 121.30359807621136,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-28T03:51:14+00:00",
+      "news_full_expires_at": "2026-05-29T03:51:14+00:00",
+      "news_articles": [
+        {
+          "title": "豪華休旅Alphard因詐騙案遭查扣 桃園分署6/9公開拍賣",
+          "url": "https://more-news.tw/626960/",
+          "time": "2026-05-28 11:51:14",
+          "publisher": "墨新聞",
+          "severity": "yellow"
         }
       ],
       "comments": [],
@@ -122202,7 +122209,7 @@
           "text": "台中沒有藍線捷運可以坐 好可憐",
           "author": "wiwzoz963",
           "url": "",
-          "time_text": "12小時",
+          "time_text": "13小時",
           "signal": "yellow"
         }
       ],
@@ -122295,10 +122302,10 @@
       "lng": 120.6469,
       "level": "green",
       "source": "comment",
-      "platform": "IG 3 / FB 2 / Threads 2",
-      "note": "24h 命中 7 則（新聞 0、留言 7）",
+      "platform": "IG 3 / Threads 3 / FB 2",
+      "note": "24h 命中 8 則（新聞 0、留言 8）",
       "news_count": 0,
-      "comment_count": 7,
+      "comment_count": 8,
       "news_latest_at": null,
       "news_full_expires_at": null,
       "news_articles": [],
@@ -122358,12 +122365,20 @@
           "url": "",
           "time_text": "2026-5-14",
           "signal": "red"
+        },
+        {
+          "platform": "threads",
+          "text": "2026-5-15 廚餘清好了嗎",
+          "author": "wanzoqoo",
+          "url": "",
+          "time_text": "2026-5-15",
+          "signal": "yellow"
         }
       ],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 7,
-      "urgency_score": 21,
+      "urgency_score": 22,
       "is_urgent": true,
       "is_catchall": false,
       "keywords": [
@@ -122408,48 +122423,6 @@
       "red_news_count": 1
     },
     {
-      "title": "台北墜樓事件",
-      "city": "台北",
-      "place": "台北市政府",
-      "lat": 25.0376,
-      "lng": 121.5654,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 2",
-      "note": "24h 命中 2 則（新聞 2、留言 0）",
-      "news_count": 2,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-28T06:23:55+00:00",
-      "news_full_expires_at": "2026-05-29T06:23:55+00:00",
-      "news_articles": [
-        {
-          "title": "台北101女大生墜樓身亡！最後發文「化作飛鳥飛向高空」 網湧入哀悼",
-          "url": "https://newtalk.tw/news/view/2026-05-28/1037893",
-          "time": "2026-05-28 14:23:55",
-          "publisher": "新頭殼",
-          "severity": "red"
-        },
-        {
-          "title": "女大生台北101墜樓亡！最後發文曝「化作飛鳥飛向高空」",
-          "url": "https://news.nextapple.com/local/20260528/4997A42F125D65652DDD287AE7B375EF",
-          "time": "2026-05-28 09:27:09",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 2,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 8,
-      "is_urgent": true,
-      "is_catchall": false,
-      "keywords": [
-        "墜樓"
-      ],
-      "red_news_count": 1
-    },
-    {
       "title": "新北墜樓事件",
       "city": "新北",
       "place": "新北市政府",
@@ -122476,6 +122449,48 @@
           "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%B7%B1%E5%A4%9C%E9%A9%9A%E5%82%B3%E5%A2%9C%E6%A8%93-%E4%B8%AD%E5%B9%B4%E7%94%B7%E5%80%92%E5%9C%B0-%E6%B2%92%E5%91%BC%E5%90%B8%E5%BF%83%E8%B7%B3-%E5%91%BD%E5%8D%B1%E9%80%81%E9%86%AB%E6%90%B6%E6%95%91-%E8%BA%AB%E5%88%86%E5%BE%85%E6%9F%A5-222500382.html",
           "time": "2026-05-28 06:25:00",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 2,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 8,
+      "is_urgent": true,
+      "is_catchall": false,
+      "keywords": [
+        "墜樓"
+      ],
+      "red_news_count": 1
+    },
+    {
+      "title": "台北墜樓事件",
+      "city": "台北",
+      "place": "台北市政府",
+      "lat": 25.0376,
+      "lng": 121.5654,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 2",
+      "note": "24h 命中 2 則（新聞 2、留言 0）",
+      "news_count": 2,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-28T06:23:55+00:00",
+      "news_full_expires_at": "2026-05-29T06:23:55+00:00",
+      "news_articles": [
+        {
+          "title": "台北101女大生墜樓身亡！最後發文「化作飛鳥飛向高空」 網湧入哀悼",
+          "url": "https://newtalk.tw/news/view/2026-05-28/1037893",
+          "time": "2026-05-28 14:23:55",
+          "publisher": "新頭殼",
+          "severity": "red"
+        },
+        {
+          "title": "女大生台北101墜樓亡！最後發文曝「化作飛鳥飛向高空」",
+          "url": "https://news.nextapple.com/local/20260528/4997A42F125D65652DDD287AE7B375EF",
+          "time": "2026-05-28 09:27:09",
+          "publisher": "壹蘋新聞網",
           "severity": "yellow"
         }
       ],
@@ -124239,10 +124254,10 @@
       "lng": 120.566,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 61 / FB 6 / Threads 2",
-      "note": "24h 命中 69 則（新聞 61、留言 8）",
+      "platform": "新聞 61 / FB 6 / Threads 3",
+      "note": "24h 命中 70 則（新聞 61、留言 9）",
       "news_count": 61,
-      "comment_count": 8,
+      "comment_count": 9,
       "news_latest_at": "2026-05-28T13:17:08+00:00",
       "news_full_expires_at": "2026-05-29T13:17:08+00:00",
       "news_articles": [
@@ -124733,6 +124748,14 @@
         },
         {
           "platform": "threads",
+          "text": "2026-5-14 怕妳盧秀燕忘了執政時，發生的這些事👇",
+          "author": "shinjuw",
+          "url": "",
+          "time_text": "2026-5-14",
+          "signal": "yellow"
+        },
+        {
+          "platform": "threads",
           "text": "2026-5-14 盧秀燕說要照顧孩子 請搜尋🔍 台中市國小棒球隊",
           "author": "stevewangintaiwan",
           "url": "",
@@ -124743,7 +124766,7 @@
       "negative_news_count": 2,
       "negativity_pct": 3,
       "urgent_red_comments": 1,
-      "urgency_score": 77,
+      "urgency_score": 78,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -124901,8 +124924,8 @@
       "title": "台中狼師事件",
       "city": "台中",
       "place": "台中市政府",
-      "lat": 24.1587,
-      "lng": 120.6469,
+      "lat": 24.1602,
+      "lng": 120.64949807621136,
       "level": "red",
       "source": "news",
       "platform": "新聞 13",
@@ -126576,9 +126599,9 @@
       "lng": 120.9675,
       "level": "red",
       "source": "news",
-      "platform": "新聞 59",
-      "note": "24h 命中 59 則（新聞 59、留言 0）",
-      "news_count": 59,
+      "platform": "新聞 58",
+      "note": "24h 命中 58 則（新聞 58、留言 0）",
+      "news_count": 58,
       "comment_count": 0,
       "news_latest_at": "2026-05-28T15:08:16+00:00",
       "news_full_expires_at": "2026-05-29T15:08:16+00:00",
@@ -126988,20 +127011,13 @@
           "time": "2026-05-28 06:20:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "民調／2026新竹市長選舉！6成5支持高虹安連任 本人回應了",
-          "url": "https://tw.news.yahoo.com/%E6%B0%91%E8%AA%BF-2026%E6%96%B0%E7%AB%B9%E5%B8%82%E9%95%B7%E9%81%B8%E8%88%89-6%E6%88%905%E6%94%AF%E6%8C%81%E9%AB%98%E8%99%B9%E5%AE%89%E9%80%A3%E4%BB%BB-%E6%9C%AC%E4%BA%BA%E5%9B%9E%E6%87%89%E4%BA%86-044000489.html",
-          "time": "2026-05-28 04:40:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 59,
+      "urgency_score": 58,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -149865,7 +149881,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 14241,
+    "sample_size": 14234,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -154242,10 +154258,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 1574,
+        "news_count": 1573,
         "negative_count": 58,
         "negativity_pct": 4,
-        "sentiment_score": 1458.0,
+        "sentiment_score": 1457.0,
         "articles": [
           {
             "title": "沈伯洋、吳思瑤 「曾幫協調變電所」？ 蔣萬安：沒有",
@@ -163684,12 +163700,6 @@
             "url": "https://tw.news.yahoo.com/%E6%B2%88%E4%BC%AF%E6%B4%8B%E8%AB%87%E7%A4%BE%E5%AD%90%E5%B3%B6%E8%A2%AB%E8%AD%B0%E5%93%A1%E8%BD%9F-%E8%81%BD%E4%B8%8D%E6%87%82-%E8%94%A3%E8%90%AC%E5%AE%89%E8%A6%AA%E6%9B%9D-%E6%9C%80%E5%BF%AB%E5%B9%B4%E5%BA%95%E5%95%9F%E5%8B%95%E5%8D%80%E6%AE%B5%E5%BE%B5%E6%94%B6-060000398.html",
             "time": "2026-05-22 06:00:00",
             "is_negative": false
-          },
-          {
-            "title": "今天程序走完今天就發文！蔣萬安：撤銷京華城20%容積",
-            "url": "https://tw.news.yahoo.com/%E4%BB%8A%E5%A4%A9%E7%A8%8B%E5%BA%8F%E8%B5%B0%E5%AE%8C%E4%BB%8A%E5%A4%A9%E5%B0%B1%E7%99%BC%E6%96%87-%E8%94%A3%E8%90%AC%E5%AE%89-%E6%92%A4%E9%8A%B7%E4%BA%AC%E8%8F%AF%E5%9F%8E20-%E5%AE%B9%E7%A9%8D-044142199.html",
-            "time": "2026-05-22 04:41:42",
-            "is_negative": false
           }
         ]
       },
@@ -165052,10 +165062,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 470,
+        "news_count": 469,
         "negative_count": 26,
         "negativity_pct": 6,
-        "sentiment_score": 418.0,
+        "sentiment_score": 417.0,
         "articles": [
           {
             "title": "師疑遭霸凌墜樓 陳其邁提3改善措施",
@@ -167869,12 +167879,6 @@
             "title": "高巿議員關切農特產展售 陳其邁：旗山糖廠成立展售中心 兼具活化糖廠效益",
             "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE12Mk95YkhzeDFYNU56WTRiT1pxM2JmWDBhMGlMQldLeWNYTkdDOXBWYkpOdnZSWUdOdUE?oc=5",
             "time": "2026-05-22 08:43:37",
-            "is_negative": false
-          },
-          {
-            "title": "高雄強化兒虐防線　陳其邁：及早預判潛在風險",
-            "url": "https://n.yam.com/Article/20260522901170",
-            "time": "2026-05-22 04:42:05",
             "is_negative": false
           }
         ]
