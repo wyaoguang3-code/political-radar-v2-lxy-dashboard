@@ -157,18 +157,37 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 1,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
     "comment_id": "instagram:0ecca121dd349f59f892"
+  },
+  {
+    "author": "japanandcow",
+    "text": "軟蛋一個",
+    "time_text": "9小時",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "instagram:5615b628e090ad5c8bc6"
   },
   {
     "author": "lees__3858",
@@ -190,25 +209,6 @@
     "comment_id": "instagram:c61d2fcf89aa4a45e7d6"
   },
   {
-    "author": "japanandcow",
-    "text": "軟蛋一個",
-    "time_text": "8小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "instagram:5615b628e090ad5c8bc6"
-  },
-  {
     "author": "ericchou._",
     "text": "😮😮",
     "time_text": "2週",
@@ -221,9 +221,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "instagram:3f8e3dbdbbffa8a8a18b"
   },
@@ -233,14 +233,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 3,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -271,14 +271,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 2,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -290,14 +290,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 2,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -316,16 +316,16 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "instagram:6a4d56570c7fe606c296"
   },
   {
     "author": "1212______c",
     "text": "民調六都第一？？這個民調是侯友宜那家嗎？ㄩ",
-    "time_text": "5小時",
+    "time_text": "7小時",
     "url": "",
     "kind": "text",
     "signal": "yellow",
@@ -354,9 +354,9 @@
       "yellow": 0,
       "red": 2,
       "sarcasm": 1,
-      "llm": "紅",
+      "llm": "黃",
       "rule": "紅",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "instagram:8a22329d467125199bb4"
   },
@@ -366,14 +366,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "green",
-    "signal_zh": "綠燈",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
     "signal_score": {
       "green": 2,
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "綠",
+      "llm": "黃",
       "rule": "綠",
       "source": "llm"
     },
@@ -411,9 +411,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "instagram:2a2acc4e3d7a7b80e01b"
   },
@@ -423,14 +423,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 3,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -442,14 +442,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 2,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -480,14 +480,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 1,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -499,14 +499,14 @@
     "time_text": "1 週",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
@@ -551,41 +551,41 @@
     "comment_id": "instagram:63aae8aed08931773935"
   },
   {
-    "author": "migo90493",
-    "text": "台中火災？又要中央說明！！什麼都中央中央中央是欠你的嗎？？廚餘不處理老鼠滿街也要中央你不會當市長就換人",
-    "time_text": "2週",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "instagram:5b423981e2657078d7b0"
-  },
-  {
     "author": "1212______c",
     "text": "捷運藍線是你盧秀燕的政見真的臉皮很厚跟你的妝一樣厚團購卸妝油給你卸…還卸不掉！！！",
-    "time_text": "13小時",
+    "time_text": "14小時",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 2,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
     "comment_id": "instagram:b523bd2873c10c403310"
+  },
+  {
+    "author": "migo90493",
+    "text": "台中火災？又要中央說明！！什麼都中央中央中央是欠你的嗎？？廚餘不處理老鼠滿街也要中央你不會當市長就換人",
+    "time_text": "2週",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "instagram:5b423981e2657078d7b0"
   }
 ]
