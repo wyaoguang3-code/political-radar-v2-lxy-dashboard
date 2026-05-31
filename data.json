@@ -1,47 +1,43 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-05-31T11:48:39.423643+00:00",
+  "generated_at": "2026-05-31T12:03:59.850513+00:00",
   "metrics": {
-    "total_24h": 8,
-    "prev_24h": 52,
-    "growth_pct": -84.62,
-    "news_24h": 8,
+    "total_24h": 7,
+    "prev_24h": 53,
+    "growth_pct": -86.79,
+    "news_24h": 7,
     "anomaly": {
       "level": "綠",
-      "current_hour_count": 4,
-      "baseline_same_hour_7d": 149.5,
+      "current_hour_count": 0,
+      "baseline_same_hour_7d": 78.5,
       "reasons": []
     }
   },
   "metrics_7d": {
     "total": 681,
-    "prev": 827,
-    "growth_pct": -17.65,
+    "prev": 825,
+    "growth_pct": -17.45,
     "news": 681,
     "anomaly": {
       "level": "綠",
-      "current_hour_count": 4,
-      "baseline_same_hour_7d": 149.5,
+      "current_hour_count": 0,
+      "baseline_same_hour_7d": 78.5,
       "reasons": []
     }
   },
   "by_platform": [
     {
       "platform": "news",
-      "count": 213
+      "count": 212
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2712
+      "count": 2713
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-05-30 20:00",
-      "count": 1
-    },
     {
       "hour": "2026-05-30 21:00",
       "count": 0
@@ -132,6 +128,10 @@
     },
     {
       "hour": "2026-05-31 19:00",
+      "count": 0
+    },
+    {
+      "hour": "2026-05-31 20:00",
       "count": 0
     }
   ],
@@ -580,33 +580,33 @@
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 213
+      "count": 212
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 213
+      "count": 212
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 9,
+    "盧秀燕": 8,
     "蔣萬安": 191,
     "蔡其昌": 0,
     "陳其邁": 13
   },
   "mention_compare_7d": {
     "盧秀燕": 681,
-    "蔣萬安": 1541,
+    "蔣萬安": 1542,
     "蔡其昌": 90,
     "陳其邁": 433
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 9,
+      "total": 8,
       "red": 0,
       "yellow": 0,
-      "green": 9
+      "green": 8
     },
     "蔣萬安": {
       "total": 191,
@@ -62398,15 +62398,6 @@
         "publisher": "Google News→LINE TODAY",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-        "time": "2026-05-30 19:58:40",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": []
       }
     ],
     "蔣萬安": [
@@ -72187,6 +72178,15 @@
         "platform": "news",
         "publisher": "壹蘋新聞網",
         "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "首都市長只是讀稿機? 蔣萬安被酸\"依法行政\"最好用",
+        "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQVmxzcDJUNXJldVRUZlQ2SkhXN1psU1NfRVZTT0dLcy1kcjUtYnl0ZkVGRFl4U29tWGZkTFNteXdaanlRU3FXOUxqTUhPQU9KOUUyV3p1QzJkZWs3S3htLWFwSXZ1d2JYU0VCWEgwUmRmOGpHdTRIMnVYTlN6Z2c0QkFDODhkT01KV0xwcnBVTE1TNGZMT1ZyazAzX2dNS2liaEtKZVJBbnM3VTB6X2tKbDI5Q3FiREVySmllN1o5V2o0NDZWekEzSktPUWJhTHJubVBzcG5yeDF4VU1ldVY1YzAwUE9EQTJqRTY4cmN0QjkzT1BFcFJvanpyR1VPY1FFeEU0T3VacFo3RDZ2UHVzOUhOc0ZNUkZkTno0NWxUcTFOM3IzRGZRblJXM1Z1WUNvbk1PYV9QM25NV2t2YUJXSDVwYm50SEp0elczLW1LODFnWG8?oc=5",
+        "time": "2026-05-30 17:46:50",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "severity": "yellow",
         "co_mentioned": []
       },
       {
@@ -89139,11 +89139,6 @@
       "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區 | 自由電子報",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOZmduNFljYlFIeHEydnFHemtvcHdqNmkwLUJ1MVpoM1lZWEtKSmNlZlFsekcyaTBwWldraGZEbUdFYkZ3WkhXMFRiZ0tiRzIzc3NHWEhn?oc=5",
       "time": "2026-05-30 20:30:10"
-    },
-    {
-      "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-      "time": "2026-05-30 19:58:40"
     }
   ],
   "top_news_7d": [
@@ -91618,13 +91613,6 @@
         "time": "2026-05-30 20:15:07",
         "publisher": "Yahoo新聞",
         "severity": null
-      },
-      {
-        "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-        "time": "2026-05-30 19:58:40",
-        "publisher": "自由時報",
-        "severity": null
       }
     ]
   },
@@ -93253,6 +93241,13 @@
         "time": "2026-05-30 17:49:32",
         "publisher": "Yahoo新聞",
         "severity": null
+      },
+      {
+        "title": "首都市長只是讀稿機? 蔣萬安被酸\"依法行政\"最好用",
+        "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQVmxzcDJUNXJldVRUZlQ2SkhXN1psU1NfRVZTT0dLcy1kcjUtYnl0ZkVGRFl4U29tWGZkTFNteXdaanlRU3FXOUxqTUhPQU9KOUUyV3p1QzJkZWs3S3htLWFwSXZ1d2JYU0VCWEgwUmRmOGpHdTRIMnVYTlN6Z2c0QkFDODhkT01KV0xwcnBVTE1TNGZMT1ZyazAzX2dNS2liaEtKZVJBbnM3VTB6X2tKbDI5Q3FiREVySmllN1o5V2o0NDZWekEzSktPUWJhTHJubVBzcG5yeDF4VU1ldVY1YzAwUE9EQTJqRTY4cmN0QjkzT1BFcFJvanpyR1VPY1FFeEU0T3VacFo3RDZ2UHVzOUhOc0ZNUkZkTno0NWxUcTFOM3IzRGZRblJXM1Z1WUNvbk1PYV9QM25NV2t2YUJXSDVwYm50SEp0elczLW1LODFnWG8?oc=5",
+        "time": "2026-05-30 17:46:50",
+        "publisher": "Yahoo新聞",
+        "severity": "yellow"
       },
       {
         "title": "高雄鳳荔季盛大登場 陳其邁力推大樹玉荷包與金鑽鳳梨 打造夏日農遊盛會",
@@ -110903,40 +110898,40 @@
       "red_news_count": 0
     },
     {
-      "title": "嘉義市地方動態",
-      "city": "嘉義市",
-      "place": "嘉義市政府",
-      "lat": 23.4801,
-      "lng": 120.4491,
+      "title": "台東地方動態",
+      "city": "台東",
+      "place": "台東縣政府",
+      "lat": 22.7583,
+      "lng": 121.1444,
       "level": "green",
       "source": "news",
       "platform": "新聞 3",
       "note": "24h 命中 3 則（新聞 3、留言 0）",
       "news_count": 3,
       "comment_count": 0,
-      "news_latest_at": "2026-05-31T09:10:00+00:00",
-      "news_full_expires_at": "2026-06-01T09:10:00+00:00",
+      "news_latest_at": "2026-05-31T08:18:28+00:00",
+      "news_full_expires_at": "2026-06-01T08:18:28+00:00",
       "news_articles": [
         {
-          "title": "嘉義市嘉中獅子會交接 貴賓冠蓋雲集",
-          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E5%98%89%E4%B8%AD%E7%8D%85%E5%AD%90%E6%9C%83%E4%BA%A4%E6%8E%A5-%E8%B2%B4%E8%B3%93%E5%86%A0%E8%93%8B%E9%9B%B2%E9%9B%86-091000067.html",
-          "time": "2026-05-31 17:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "炎炎夏日 嘉義市衛生局3招防熱傷害 (圖)",
-          "url": "https://tw.news.yahoo.com/%E7%82%8E%E7%82%8E%E5%A4%8F%E6%97%A5-%E5%98%89%E7%BE%A9%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%803%E6%8B%9B%E9%98%B2%E7%86%B1%E5%82%B7%E5%AE%B3-%E5%9C%96-054629863.html",
-          "time": "2026-05-31 13:46:29",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "嘉市已有1起熱傷害救護 衛生局：三高族群提高警覺",
-          "url": "https://tw.news.yahoo.com/%E5%98%89%E5%B8%82%E5%B7%B2%E6%9C%891%E8%B5%B7%E7%86%B1%E5%82%B7%E5%AE%B3%E6%95%91%E8%AD%B7-%E8%A1%9B%E7%94%9F%E5%B1%80-%E4%B8%89%E9%AB%98%E6%97%8F%E7%BE%A4%E6%8F%90%E9%AB%98%E8%AD%A6%E8%A6%BA-054333124.html",
-          "time": "2026-05-31 13:43:33",
+          "title": "中颱薔蜜發威！台東漁民繫繩落海獲救 綠島蘭嶼船班停航",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E9%A2%B1%E8%96%94%E8%9C%9C%E7%99%BC%E5%A8%81-%E5%8F%B0%E6%9D%B1%E6%BC%81%E6%B0%91%E7%B9%AB%E7%B9%A9%E8%90%BD%E6%B5%B7%E7%8D%B2%E6%95%91-%E7%B6%A0%E5%B3%B6%E8%98%AD%E5%B6%BC%E8%88%B9%E7%8F%AD%E5%81%9C%E8%88%AA-081828052.html",
+          "time": "2026-05-31 16:18:28",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
+        },
+        {
+          "title": "薔蜜影響台東沿岸出現長浪！ 綠島、蘭嶼5/31、6/1船班停航",
+          "url": "https://tw.news.yahoo.com/%E8%96%94%E8%9C%9C%E5%BD%B1%E9%9F%BF%E5%8F%B0%E6%9D%B1%E6%B2%BF%E5%B2%B8%E5%87%BA%E7%8F%BE%E9%95%B7%E6%B5%AA-%E7%B6%A0%E5%B3%B6-%E8%98%AD%E5%B6%BC5-31-6-043206248.html",
+          "time": "2026-05-31 12:32:06",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "獨困台東峭壁獲救！澳洲女婿馬修自省：千萬別獨自上山",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455445",
+          "time": "2026-05-31 08:57:40",
+          "publisher": "自由時報",
+          "severity": null
         }
       ],
       "comments": [],
@@ -110981,40 +110976,40 @@
       "red_news_count": 0
     },
     {
-      "title": "台東地方動態",
-      "city": "台東",
-      "place": "台東縣政府",
-      "lat": 22.7583,
-      "lng": 121.1444,
+      "title": "嘉義市地方動態",
+      "city": "嘉義市",
+      "place": "嘉義市政府",
+      "lat": 23.4801,
+      "lng": 120.4491,
       "level": "green",
       "source": "news",
       "platform": "新聞 3",
       "note": "24h 命中 3 則（新聞 3、留言 0）",
       "news_count": 3,
       "comment_count": 0,
-      "news_latest_at": "2026-05-31T08:18:28+00:00",
-      "news_full_expires_at": "2026-06-01T08:18:28+00:00",
+      "news_latest_at": "2026-05-31T09:10:00+00:00",
+      "news_full_expires_at": "2026-06-01T09:10:00+00:00",
       "news_articles": [
         {
-          "title": "中颱薔蜜發威！台東漁民繫繩落海獲救 綠島蘭嶼船班停航",
-          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E9%A2%B1%E8%96%94%E8%9C%9C%E7%99%BC%E5%A8%81-%E5%8F%B0%E6%9D%B1%E6%BC%81%E6%B0%91%E7%B9%AB%E7%B9%A9%E8%90%BD%E6%B5%B7%E7%8D%B2%E6%95%91-%E7%B6%A0%E5%B3%B6%E8%98%AD%E5%B6%BC%E8%88%B9%E7%8F%AD%E5%81%9C%E8%88%AA-081828052.html",
-          "time": "2026-05-31 16:18:28",
+          "title": "嘉義市嘉中獅子會交接 貴賓冠蓋雲集",
+          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E5%98%89%E4%B8%AD%E7%8D%85%E5%AD%90%E6%9C%83%E4%BA%A4%E6%8E%A5-%E8%B2%B4%E8%B3%93%E5%86%A0%E8%93%8B%E9%9B%B2%E9%9B%86-091000067.html",
+          "time": "2026-05-31 17:10:00",
           "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "薔蜜影響台東沿岸出現長浪！ 綠島、蘭嶼5/31、6/1船班停航",
-          "url": "https://tw.news.yahoo.com/%E8%96%94%E8%9C%9C%E5%BD%B1%E9%9F%BF%E5%8F%B0%E6%9D%B1%E6%B2%BF%E5%B2%B8%E5%87%BA%E7%8F%BE%E9%95%B7%E6%B5%AA-%E7%B6%A0%E5%B3%B6-%E8%98%AD%E5%B6%BC5-31-6-043206248.html",
-          "time": "2026-05-31 12:32:06",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "獨困台東峭壁獲救！澳洲女婿馬修自省：千萬別獨自上山",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455445",
-          "time": "2026-05-31 08:57:40",
-          "publisher": "自由時報",
           "severity": null
+        },
+        {
+          "title": "炎炎夏日 嘉義市衛生局3招防熱傷害 (圖)",
+          "url": "https://tw.news.yahoo.com/%E7%82%8E%E7%82%8E%E5%A4%8F%E6%97%A5-%E5%98%89%E7%BE%A9%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%803%E6%8B%9B%E9%98%B2%E7%86%B1%E5%82%B7%E5%AE%B3-%E5%9C%96-054629863.html",
+          "time": "2026-05-31 13:46:29",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "嘉市已有1起熱傷害救護 衛生局：三高族群提高警覺",
+          "url": "https://tw.news.yahoo.com/%E5%98%89%E5%B8%82%E5%B7%B2%E6%9C%891%E8%B5%B7%E7%86%B1%E5%82%B7%E5%AE%B3%E6%95%91%E8%AD%B7-%E8%A1%9B%E7%94%9F%E5%B1%80-%E4%B8%89%E9%AB%98%E6%97%8F%E7%BE%A4%E6%8F%90%E9%AB%98%E8%AD%A6%E8%A6%BA-054333124.html",
+          "time": "2026-05-31 13:43:33",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
         }
       ],
       "comments": [],
@@ -111110,6 +111105,105 @@
       "red_news_count": 0
     },
     {
+      "title": "嘉義縣地方動態",
+      "city": "嘉義縣",
+      "place": "嘉義縣政府",
+      "lat": 23.4517,
+      "lng": 120.2554,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 6",
+      "note": "24h 命中 6 則（新聞 6、留言 0）",
+      "news_count": 6,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-31T10:54:43+00:00",
+      "news_full_expires_at": "2026-06-01T10:54:43+00:00",
+      "news_articles": [
+        {
+          "title": "南華大學連續三年承辦嘉義縣骨鬆肌少運動營養班 守護高齡健康",
+          "url": "https://taiwanreports.com/archives/989891",
+          "time": "2026-05-31 18:54:43",
+          "publisher": "臺灣導報",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣YouBike 2.0再升級 新港、大林10站點即將啟用",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZZnVFUGRMTFM3dDlIbUNzZTZTYjFRS0dmU05CeFJuemtCOU1zZzMtT1U1RXpLTUVNRTVNQXJ5V1EtZW1yS3JBMzRoNU1QdGJIcjk3NmFrLUdOb3ZpNUHSAWhBVV95cUxNVFVsY0hSUkt2VHk2LUt2ampHMU1pd2tfeG5WaDRhd0NpX1NZeFpsT0NBX29xOTVQZ3BpZnNUSjdfbTZBVnpUMlRKR0x5bTVaUGdoZThLVkUwcG1JTjZGZzVCWmMwSW51SQ?oc=5",
+          "time": "2026-05-31 11:47:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣幸福社區計畫出爐！20社區獲補助助力在地生活",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBHVlhaVFUzUWl5N2xYYVA5U0RscUNPc2xlUFpHZ1RDMHVzMTZnenQ2bnhhR0NSR1ZZS0RwRlJieFFwcWxhR2tfcU5nTURlalNLRDNSdDVlTkFJdk9JcUHSAWhBVV95cUxPSlhaMlFSMm5uQnVNRkdjOS1kMldRMnd2QVkwT09WTEVyLThTaW5OTVlCcVJOUHBtZ1JfOFlXRUE1bVVwZE84clhYSWZBb2pSdXo3eW5GWWEyekpPejZ0TmptSDVNTGk5dg?oc=5",
+          "time": "2026-05-31 10:13:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣2026城鎮韌性演習開跑 民生物資配售、防空避難全實戰",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54bGtPOUp2NXhyZXd1cExTQTBSSjlVbWlfakhNVm1HcndKTlN3a3QxZkZnbllEY1ZVWVRSVkZER1dHTTctdVYzYVkzd256cnV3TTM1dzc3VkM1bVZkY2fSAWhBVV95cUxQWFRwaHl6VFlrMG5JaUhkX1k5eWFLdHlDMEV0bTZ6eGl2aHljUG1fZm1vdlhCUnlYUlZnREVZa29DNjZUZG1zZDhxS3BYQVBINGFfREtlcUFpazhFQWlIbWFnV0piZVkzMA?oc=5",
+          "time": "2026-05-31 09:48:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣冰品食安抽驗 兩件不合格限期改善",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE91a1JCV0ppalJHSzJ6S0JSblBPdkNERDhlRU5yaUMtcmFqTGVSMEFZaV9UelNLT01sUGUtX3VYTTU2OExEVzFkdWtxSDlRQ0NwR1NfZWk1TnFYRVRMVVHSAWhBVV95cUxNTUNXb213bG81ZG9xMGhNWGVrb3k1OGpUZTRia2dyRUFscDEzS2xOUUJVTnhxQXBDT1FVVUVHVGJCZl9Qa0lhaGYtMnNqU0t5YmRNVy1OQjBCaks4d0FNZnZqVHQ4Y0ltUQ?oc=5",
+          "time": "2026-05-31 09:25:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        },
+        {
+          "title": "蕭美琴副總統出席嘉義縣第20屆台灣國際農機展 見證智慧農業與低碳轉型成果！",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ES1BuWFdxd29wd3V5QzQ2WnpaSFJuX3ZoM1gtR1ZJc1VBQy1QN0tSald4bjMxZy1UbkpxQTZuT1poSXZqcktYLV9OX0IwSVBfRVI3Y3h3UUs1QXEtdjdKY1M5LWRUeXBqYkV3?oc=5",
+          "time": "2026-05-31 00:42:35",
+          "publisher": "Google News→台灣華報",
+          "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 6,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
       "title": "垃圾山",
       "city": "台中",
       "place": "台中市政府",
@@ -111191,119 +111285,6 @@
       "keywords": [
         "垃圾山",
         "垃圾掩埋場"
-      ],
-      "red_news_count": 0
-    },
-    {
-      "title": "嘉義縣地方動態",
-      "city": "嘉義縣",
-      "place": "嘉義縣政府",
-      "lat": 23.4517,
-      "lng": 120.2554,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 8",
-      "note": "24h 命中 8 則（新聞 8、留言 0）",
-      "news_count": 8,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-31T10:54:43+00:00",
-      "news_full_expires_at": "2026-06-01T10:54:43+00:00",
-      "news_articles": [
-        {
-          "title": "南華大學連續三年承辦嘉義縣骨鬆肌少運動營養班 守護高齡健康",
-          "url": "https://taiwanreports.com/archives/989891",
-          "time": "2026-05-31 18:54:43",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "嘉義縣YouBike 2.0再升級 新港、大林10站點即將啟用",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZZnVFUGRMTFM3dDlIbUNzZTZTYjFRS0dmU05CeFJuemtCOU1zZzMtT1U1RXpLTUVNRTVNQXJ5V1EtZW1yS3JBMzRoNU1QdGJIcjk3NmFrLUdOb3ZpNUHSAWhBVV95cUxNVFVsY0hSUkt2VHk2LUt2ampHMU1pd2tfeG5WaDRhd0NpX1NZeFpsT0NBX29xOTVQZ3BpZnNUSjdfbTZBVnpUMlRKR0x5bTVaUGdoZThLVkUwcG1JTjZGZzVCWmMwSW51SQ?oc=5",
-          "time": "2026-05-31 11:47:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "嘉義縣幸福社區計畫出爐！20社區獲補助助力在地生活",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBHVlhaVFUzUWl5N2xYYVA5U0RscUNPc2xlUFpHZ1RDMHVzMTZnenQ2bnhhR0NSR1ZZS0RwRlJieFFwcWxhR2tfcU5nTURlalNLRDNSdDVlTkFJdk9JcUHSAWhBVV95cUxPSlhaMlFSMm5uQnVNRkdjOS1kMldRMnd2QVkwT09WTEVyLThTaW5OTVlCcVJOUHBtZ1JfOFlXRUE1bVVwZE84clhYSWZBb2pSdXo3eW5GWWEyekpPejZ0TmptSDVNTGk5dg?oc=5",
-          "time": "2026-05-31 10:13:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "嘉義縣2026城鎮韌性演習開跑 民生物資配售、防空避難全實戰",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54bGtPOUp2NXhyZXd1cExTQTBSSjlVbWlfakhNVm1HcndKTlN3a3QxZkZnbllEY1ZVWVRSVkZER1dHTTctdVYzYVkzd256cnV3TTM1dzc3VkM1bVZkY2fSAWhBVV95cUxQWFRwaHl6VFlrMG5JaUhkX1k5eWFLdHlDMEV0bTZ6eGl2aHljUG1fZm1vdlhCUnlYUlZnREVZa29DNjZUZG1zZDhxS3BYQVBINGFfREtlcUFpazhFQWlIbWFnV0piZVkzMA?oc=5",
-          "time": "2026-05-31 09:48:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "嘉義縣冰品食安抽驗 兩件不合格限期改善",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE91a1JCV0ppalJHSzJ6S0JSblBPdkNERDhlRU5yaUMtcmFqTGVSMEFZaV9UelNLT01sUGUtX3VYTTU2OExEVzFkdWtxSDlRQ0NwR1NfZWk1TnFYRVRMVVHSAWhBVV95cUxNTUNXb213bG81ZG9xMGhNWGVrb3k1OGpUZTRia2dyRUFscDEzS2xOUUJVTnhxQXBDT1FVVUVHVGJCZl9Qa0lhaGYtMnNqU0t5YmRNVy1OQjBCaks4d0FNZnZqVHQ4Y0ltUQ?oc=5",
-          "time": "2026-05-31 09:25:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        },
-        {
-          "title": "蕭美琴副總統出席嘉義縣第20屆台灣國際農機展 見證智慧農業與低碳轉型成果！",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ES1BuWFdxd29wd3V5QzQ2WnpaSFJuX3ZoM1gtR1ZJc1VBQy1QN0tSald4bjMxZy1UbkpxQTZuT1poSXZqcktYLV9OX0IwSVBfRVI3Y3h3UUs1QXEtdjdKY1M5LWRUeXBqYkV3?oc=5",
-          "time": "2026-05-31 00:42:35",
-          "publisher": "Google News→台灣華報",
-          "severity": null
-        },
-        {
-          "title": "黃金療育期！ 嘉義縣對未滿 7 歲兒童提供免費發展篩檢",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1CLUF1cU9PSkM5cDM4RE5QYlFXVm5tQ0pvY2FuN29yM1RPcnNobzRUOUp5U09xMVNKVy14UmNCdmRxMjEwYXFxRTUzUkVGelZqV0pua3pmX0VqWjFqYWfSAWhBVV95cUxNQ2ZaQ3lzUTJFVnJSVVRPZWszYllncTA0UWd0UUtjNEJPT2ExckVYVWNxcnhOZm05emZ2OWFPTDdwSlFLNDFkV01CWlRfQmVwTmFYS256RmF0QVlmZnpmUkFwaVNsQWdNWA?oc=5",
-          "time": "2026-05-30 20:02:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "長照3.0新突破 嘉義縣擴大口腔健康推動",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBfd3ZqMUF0RVFuenlFRW5lZEl2dGpRazVvV2xPbGxKY3JsWHRfTjBuNENGV015RF8za0Ftd05vcEJwYmRDQVlvQWxKcmxhbmRhRFc1YmNVQjd3YzM3R1HSAWhBVV95cUxNU2MyUzZqSEQ1Y0lzVk8xaTRHSlJTNXUwVFh5ZTZvQVppRVpXYVBOck5VYjMxZ3lONzV0RTExNjRsb2ZKY19oTDVoYUdzZUxLZmFORWZkSE03Rk1SSEUzaElqX1hGaWM3ag?oc=5",
-          "time": "2026-05-30 20:01:00",
-          "publisher": "ETtoday",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 8,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
       ],
       "red_news_count": 0
     },
@@ -111401,7 +111382,7 @@
           "author": "migo90493",
           "url": "",
           "time_text": "2週",
-          "signal": "red"
+          "signal": "yellow"
         },
         {
           "platform": "threads",
@@ -111422,8 +111403,8 @@
       ],
       "negative_news_count": 0,
       "negativity_pct": 0,
-      "urgent_red_comments": 10,
-      "urgency_score": 32,
+      "urgent_red_comments": 9,
+      "urgency_score": 30,
       "is_urgent": true,
       "is_catchall": false,
       "keywords": [
@@ -111440,9 +111421,9 @@
       "lng": 120.9718,
       "level": "green",
       "source": "news",
-      "platform": "新聞 14",
-      "note": "24h 命中 14 則（新聞 14、留言 0）",
-      "news_count": 14,
+      "platform": "新聞 13",
+      "note": "24h 命中 13 則（新聞 13、留言 0）",
+      "news_count": 13,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T09:31:15+00:00",
       "news_full_expires_at": "2026-06-01T09:31:15+00:00",
@@ -111537,20 +111518,13 @@
           "time": "2026-05-31 13:07:44",
           "publisher": "中時新聞網",
           "severity": null
-        },
-        {
-          "title": "115年南投縣教育產業工會 辦理SUPER教師獎頒獎典禮",
-          "url": "https://more-news.tw/629252/",
-          "time": "2026-05-30 20:00:34",
-          "publisher": "墨新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 14,
+      "urgency_score": 13,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -111711,9 +111685,9 @@
       "lng": 121.0177,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 13",
-      "note": "24h 命中 13 則（新聞 13、留言 0）",
-      "news_count": 13,
+      "platform": "新聞 12",
+      "note": "24h 命中 12 則（新聞 12、留言 0）",
+      "news_count": 12,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T09:48:21+00:00",
       "news_full_expires_at": "2026-06-01T09:48:21+00:00",
@@ -111801,12 +111775,336 @@
           "time": "2026-05-30 20:07:36",
           "publisher": "Google News→atanews.net",
           "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 12,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
+      "title": "澎湖地方動態",
+      "city": "澎湖",
+      "place": "澎湖縣政府",
+      "lat": 23.5712,
+      "lng": 119.5793,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 15",
+      "note": "24h 命中 15 則（新聞 15、留言 0）",
+      "news_count": 15,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-31T07:57:42+00:00",
+      "news_full_expires_at": "2026-06-01T07:57:42+00:00",
+      "news_articles": [
+        {
+          "title": "澎湖翁放網失蹤4天！千人搜救盼奇蹟 沙灘尋獲遺體畫下句點",
+          "url": "https://tw.news.yahoo.com/%E6%BE%8E%E6%B9%96%E7%BF%81%E6%94%BE%E7%B6%B2%E5%A4%B1%E8%B9%A44%E5%A4%A9-%E5%8D%83%E4%BA%BA%E6%90%9C%E6%95%91%E7%9B%BC%E5%A5%87%E8%B9%9F-%E6%B2%99%E7%81%98%E5%B0%8B%E7%8D%B2%E9%81%BA%E9%AB%94%E7%95%AB%E4%B8%8B%E5%8F%A5%E9%BB%9E-075742369.html",
+          "time": "2026-05-31 15:57:42",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
         },
         {
-          "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-          "time": "2026-05-30 19:58:40",
+          "title": "澎湖翁放網失蹤4天！千人搜救盼奇蹟 沙灘尋獲遺體畫下句點 | 社會 | CTWANT",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE44QUNlYVhpajhWX3BrZ3pNTFcwZWw2YWc5OUt4cm1pb3dqSTZMV0ZhaHV0dlFrYTM1TlZ1M1JyMkJhTjZMSm4tSkNfcjFKdU3SAVRBVV95cUxNWTVUX095RnlUcENfWG4wT2tHYThrV3hPOTdETndiWHB0cjBubjI2dkNzMExWbFZDSmZqVTJHZFFybGtIQjFmQlY2aDRPdGQ0dlhHNnI?oc=5",
+          "time": "2026-05-31 15:57:42",
+          "publisher": "Google News→CTWANT",
+          "severity": "yellow"
+        },
+        {
+          "title": "宜蘭、屏東、澎湖攜手地方創生 編纂《海路順風》推AI海村知識系統",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1aaWVmUGhBWG1xSkVHdlVlcGxVT3RJc3gxMzgteW96NUNGVldrY1R4aGVHb3VJbnRyblhTUDVUczlfWFZzOTQ4?oc=5",
+          "time": "2026-05-31 15:30:03",
+          "publisher": "Google News→ENews新聞網",
+          "severity": null
+        },
+        {
+          "title": "煙波湖濱館5日起推澎湖海味吃到飽 迎暑假生態住房專案",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Pek0yMXJSQlRRVFBoVHNLSjJtMHZ2VFlsQURoVjBUSGNBR3NxUkhhQ09hX2lhSU9NTUZnMDF5Mkx3QjJuRC0yVWxsamdwc0xCaXdrSThNUG9FZ9IBX0FVX3lxTE5mQ01jek1RbVNkMmJ2eG9aTXZPYmQ3QzdXeEdzUTUtVDNPZkNVLTVpRVpPZVEyTWl0S0FNTk1xZjhNRzJNNUMwd1VjS18xb1MwT0RqWFZOWHJSV0xSZUhF?oc=5",
+          "time": "2026-05-31 14:35:02",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "澎湖湖西菓葉落海失蹤老翁 大體在龍門沙灘被發現",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455685",
+          "time": "2026-05-31 13:33:18",
           "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "115年澎湖縣白沙鄉白沙幼兒園防火防災擴大宣導",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOMmRxRDFCQVhYRWdtM3hCNzBKY24tXzFSZ2dWVlJkZHlTUFNoSU9BejFXZkoxRUwxbFplMlhqbFhxLXN6SHNoclVPczNJMm9lWnpWVUZxak1USGROempDNld3LVl1NkxFY2t5dTloVkkxUlNlNm9IWmRwejB4RnowXzdNdnpVcHVmaFlGb3hXREV5dHJKY0pVOS1RUDNwMS1QX3YtTEZ6ZGdkUmFwcGlPSFpmZEtUbjhDQ1p3YTJLS1RVeDEyeU5DbWJxMUFRRTJCWjJPeEhNeGsySExDR2JDSWM2aUZQeDVRc0VaaDMxZUFvRXdlbm9oTUZ6RzdyNFptNVlraFRfdWZoS2tyWGhRTmlzaXRqcExLNHY1dVZtQ0JERG5UeG43VjZ2TzNFUQ?oc=5",
+          "time": "2026-05-31 10:19:42",
+          "publisher": "Google News→澎湖e傳媒",
+          "severity": null
+        },
+        {
+          "title": "爽吃23道澎湖海鮮吃到飽！2026新竹親子飯店推薦，煙波湖濱館生態房費用行程攻略。|美食",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9hMDF3YmFONEJfYjhheEwwWWpQYl9EN01mOTY1QTZzX0NMOWZtYkJkc3NkcEx5dzZrbkVORHRCZzB1WVQ5TVpQZEo0U1ZpMnBYMldOQXF6MjRwS05jeHc?oc=5",
+          "time": "2026-05-31 08:00:00",
+          "publisher": "Google News→WalkerLand 窩客島",
+          "severity": null
+        },
+        {
+          "title": "民眾SUP立槳遭漂走 澎湖海巡火速救援平安返港",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jTGNEbUF4bXc1NzZoZG9yMkxYN3RPS3hCREY4LV9QMTljdEJ0cWJBVG9sdjZUanljNkZCU3NpRnl3c3YyOERNOUlUN0pQYWtpempTa3NQMnYxVFFtWUE?oc=5",
+          "time": "2026-05-31 07:50:41",
+          "publisher": "Google News→澎湖日報",
+          "severity": "yellow"
+        },
+        {
+          "title": "澎湖縣教育產業工會召開第一屆第一次會員大會暨教師研習",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2N3B6ZXdxVG1ZR1FPeUphSVdrTFdZNW5fS3lETk56eEpuSHFBS0s5RFRZODdWcXZIcXVoc2ZUcGkyM2pmZHhDeTNLUzdEZjVGNU5TcVRRYmJaVS1PRFVsVVVRZzVjMGsxTEZfRw?oc=5",
+          "time": "2026-05-31 07:35:41",
+          "publisher": "Google News→澎湖日報",
+          "severity": null
+        },
+        {
+          "title": "澎湖新秀獎美術創作比賽頒獎 展現多元媒材",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02RTRpenp1QW95ZE4wZngwVnhzS2tFZm5KLUdRclQ2MHl2MXRoajZua2FmMzdWWU45djFSLTgxUzdvaUpNSUExUmVpR3dtSE51RGhGaFNFT0xXRDdLbTc4ei1iRk96T0xkR3otbg?oc=5",
+          "time": "2026-05-31 07:35:41",
+          "publisher": "Google News→澎湖日報",
+          "severity": null
+        },
+        {
+          "title": "NTSO臺灣交響樂團「2026澎湖吸館-萬花競音樂市集」登場!",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15NnhBZzFWdWVCdDBYYmVRdmpCalFtVzJKbXlnUTZ0S0h3V2FYR0NyaWliejFYdDFhOC04a1lPTGtibUxnRVZzeDZ6eWlOZ1RxSzRvTEc0M0FjZ000cURWNkpUWlg?oc=5",
+          "time": "2026-05-31 07:35:41",
+          "publisher": "Google News→澎湖日報",
+          "severity": null
+        },
+        {
+          "title": "拚留才 澎湖促修久任獎金制度",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZaHZYVi05MHVzelh5dmE3SU5NV1lUYjQza3BLeVBkczVObHdYM1J1Vm1KZGJVX2FEZUpmSE5YWko1TVlGRHdrc0s2QlJMNzZEUFJDQjZRcnJUd2pRaXJsWWxhdjhURTFMaUxJ?oc=5",
+          "time": "2026-05-31 04:10:00",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "煙波「盛夏澎湖海鮮季」 23道美味吃到飽 | 青年日報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9seWVwcUpIOWlaRGZuRGJtUnBrSjBlbms4SlB3RnQ0WnhjR0d5X3JZdU9SQkFXeUpFZnhmUkVJYW9mdVpyUkRQUjNlTGJXREtaNUhGc09R?oc=5",
+          "time": "2026-05-31 03:35:12",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "煙波「盛夏澎湖海鮮季」 23道美味吃到飽",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GNkltVE1wcEtmMHpGZ3hFOTRicHlROGV5dkpFVm5SQ2JFR1NIVVBZdFd2THVEZUJxNFVZUi1kZklVdTRpdHlJUVFCektBSVNyZTJBZ3lJRmRvNXVhcDNEcUxncUp5LVNBYjc5MUhR?oc=5",
+          "time": "2026-05-31 02:02:00",
+          "publisher": "Google News→青年日報",
+          "severity": null
+        },
+        {
+          "title": "澎湖翁菓葉村海域放網失蹤4天 陳屍龍門沙灘海空搜救告終",
+          "url": "https://www.chinatimes.com/realtimenews/20260531001935-260402",
+          "time": "2026-05-31 00:19:35",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 15,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 1
+    },
+    {
+      "title": "連江地方動態",
+      "city": "連江",
+      "place": "連江縣（馬祖）",
+      "lat": 26.1601,
+      "lng": 119.9514,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 16",
+      "note": "24h 命中 16 則（新聞 16、留言 0）",
+      "news_count": 16,
+      "comment_count": 0,
+      "news_latest_at": "2026-05-31T08:37:02+00:00",
+      "news_full_expires_at": "2026-06-01T08:37:02+00:00",
+      "news_articles": [
+        {
+          "title": "海纜船員疑似中風 馬祖海巡艇緊急馳援成功後送就醫",
+          "url": "https://cnews.com.tw/204260531a01/",
+          "time": "2026-05-31 16:37:02",
+          "publisher": "匯流新聞網",
+          "severity": null
+        },
+        {
+          "title": "台馬4號海纜工程印度籍船員疑中風 馬祖海巡馳援",
+          "url": "https://www.chinatimes.com/realtimenews/20260531001675-260402",
+          "time": "2026-05-31 14:17:45",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "光鼎捐贈海大馬祖校區科研設備 深化產學合作與ESG布局",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UMF9DMHZibDN2NzJxUXBNRi1RUnQ0QTVYWkt0SDhwaWZCSl8zWXpzdkNRaDNiU3hzY1lTOXREV25hWC1QNVVJUkhJeEtKZkVUTHhNd1M3c2xJSW9PT0VB?oc=5",
+          "time": "2026-05-31 13:31:00",
+          "publisher": "Google News→工商時報",
+          "severity": null
+        },
+        {
+          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援",
+          "url": "https://www.ctwant.com/article/483355/",
+          "time": "2026-05-31 13:07:49",
+          "publisher": "CTWANT",
+          "severity": null
+        },
+        {
+          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援 | CTWANT",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4weVFZb0VuX2dpdjRHRGx2Unk0cEhJdmowNTN3blUyWDhhWGdWRFlTQVBZNC1zT2h5aks0d1R6T3F6UU13cDU4ZHpaVnVVRUlwcW9WYnVB?oc=5",
+          "time": "2026-05-31 12:07:30",
+          "publisher": "Google News→LINE TODAY",
+          "severity": "yellow"
+        },
+        {
+          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援 | 社會 | CTWANT",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBVZUpDY1JFMTdZUjhkZ2h4akRyOXprX3R0SDB2cnkyV1JUUk1fUE5GTHZUUXc2YTBycXdodnBkOXZuN3Y0VmxhNFhUWnNmVEXSAVRBVV95cUxQa0p4eWVDMFQ2am11UVk2b2JZeFBpLW1zanYyUllSRllEeUVMWFkxaHdVdW5OMWVMckwyR3hfZVV0R3NPYjNiVl9VeG5FOEU0cXRjdVk?oc=5",
+          "time": "2026-05-31 11:42:15",
+          "publisher": "Google News→CTWANT",
+          "severity": "yellow"
+        },
+        {
+          "title": "台馬4號布纜外籍船員疑中風 馬祖海巡馳援送醫",
+          "url": "https://newtalk.tw/news/view/2026-05-31/1038404",
+          "time": "2026-05-31 11:30:03",
+          "publisher": "新頭殼",
+          "severity": null
+        },
+        {
+          "title": "海纜船外籍船員疑中風 馬祖海巡隊緊急救援至東引",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455522",
+          "time": "2026-05-31 11:17:50",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台馬4號海纜布設作業外籍船員疑似中風 馬祖海巡緊急出動救援送醫",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAyVkRGTjFuZ0JzR2JyaWFrX2NjQlBZNXdCclp5WURLb1ZYM3RRb3RkS01hek9hbV9DbGFUZXZvM1lISEJHN3JRR2NwaHhYYl9KNU53Q3FXOXF0LUxaUUE?oc=5",
+          "time": "2026-05-31 11:00:00",
+          "publisher": "Google News→鉅聞天下",
+          "severity": "yellow"
+        },
+        {
+          "title": "海纜工程船印度籍船員疑中風 馬祖海巡火速馳援後送就醫",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE56Y1pqYjBFV1JOQm0wMlVIQVdfWTJjOW5BWHFab3haRzhKQTExNm1rRHJSNXJkZ1B3aXBEZXJEbEFlUXpGTkJUWGIxa0hxWDdRRlRjVjAwUEc1WWFQOHfSAWhBVV95cUxPc1Zpb0QzS0d6d2lZV1c2Sk1uaHI3NG9GUGFsZ3BtY01rNEU2UW9LNExFNWowSS1Pa0JJd2Z5Mkl4aE04VlF0Uzk0UlpMbFE5MFVNSUk0eTdmNkt3MlV3SXN0dEl6N0djQw?oc=5",
+          "time": "2026-05-31 10:46:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        },
+        {
+          "title": "台馬4號布纜外籍船員疑中風馬祖海巡馳援送醫| 社會",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Jakh6YVdEN2U3cnQ4ZEN1ald5QUpFTkJGVkRGVFloUERKdVZYTkRvdERUQWZqdzY2WUo3WWNQQ2FreS1XQ2NEeG9RLVF3T25hdjlpNEU1empPVEl5X3FR?oc=5",
+          "time": "2026-05-31 10:45:00",
+          "publisher": "中央社",
+          "severity": "yellow"
+        },
+        {
+          "title": "必收！馬祖藍眼淚熱點 「這段時間」是最佳觀賞時機",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2M201aGZ2TVpTeDRZSTZrZGVOWURGSUtxc1AyVG12YnRNclczUkd5ZktmcDh3Q3VlMHFVNlBBVW9LOUJ0S2kwVWh6UkFFejA?oc=5",
+          "time": "2026-05-31 02:56:00",
+          "publisher": "TVBS",
+          "severity": null
+        },
+        {
+          "title": "馬祖國際藝術島「簍光．竹影」作品不敵強風倒塌 文化處派員拆除",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5vLXBYNGpjQWplMndJaUFhckRjd3duNXpvWjZwRGRmZ1pUcmJKTU9KWmE2VjdGT0FMUHF4ZUQ5el9uOVBBdHVF?oc=5",
+          "time": "2026-05-31 02:40:28",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": "yellow"
+        },
+        {
+          "title": "連江縣警局成功阻詐 民眾受騙50萬匯款攔下 守住金庫",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBadDdSRWtMQnJ0SUNJNDVXRF9kb1gzUExZMW1VVVh0dllEY2Q0OHhaeDB2WjExNHJzV01KRGdvbVZTM0dXQ3d3?oc=5",
+          "time": "2026-05-31 02:14:57",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": "yellow"
+        },
+        {
+          "title": "小公視「口袋影展」首度登陸馬祖 反響熱烈",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80cWVkYk9DcXVRT2ZLclhuMUpCYUxKQnVvRHNROWNBREZ3OGl4WGJVbEZrVDhsZG5aR2E4d1R6dFA4bHltVkRiNDhhci0wUVNuZjIyZVBCZ3RaazRFUVE?oc=5",
+          "time": "2026-05-31 00:30:32",
+          "publisher": "Google News→matsu-news.gov.tw",
+          "severity": null
+        },
+        {
+          "title": "國艦國造千噸級巡防艦連江艦 6/7將讓民眾登艦參觀",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wN016Y0xObHdvZkVnS2ZNTHhsWXY4ODZ1YXdGcTJCcGhJZlpOQmk4d3B2ci1veFJldkpTQ2NtNmJGcVNXYTdJNE81QjRIQzhxdVE?oc=5",
+          "time": "2026-05-30 23:28:00",
+          "publisher": "Google News→蕃新聞",
           "severity": null
         }
       ],
@@ -111814,7 +112112,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 13,
+      "urgency_score": 16,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -111976,175 +112274,6 @@
           "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPVjJIOVZuQVBqRGwzeWhjVTdlTk0wWnhObjBISE1jYi16VVI5c0tqTFRIVnpXUmt5ZEIyYWhjODA5d3hiOWN3NEc0N1d1REpydl9nMno0MWlteks4NV9Da01xbjlBZ1ozNmowSVVMbGxqaWkxOXFkWkdub3VKV1I3QUxPT3ItUEVXaGJGaGtia0tXTVgtRldydTZjWXBmZXdIXzhKbFNNd204YkdNdW5OVkE3amtrRjJfTnlGbi04RU1kZm9oUFhOTWMteWprMXVfc053SUZ6WVliTFJDQ2RtaTZIMEN3RzVwTUxwOVFFZm1UMnZTUmQ3NG1kTk9pVmQ3R0MtTGlNN1lSZGo2NGpJY3lVdE9kaFlWX29NT0RQZXNmaFVFdEhQWDdsRno?oc=5",
           "time": "2026-05-30 21:14:19",
           "publisher": "Yahoo新聞",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 16,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 0
-    },
-    {
-      "title": "連江地方動態",
-      "city": "連江",
-      "place": "連江縣（馬祖）",
-      "lat": 26.1601,
-      "lng": 119.9514,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 16",
-      "note": "24h 命中 16 則（新聞 16、留言 0）",
-      "news_count": 16,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-31T08:37:02+00:00",
-      "news_full_expires_at": "2026-06-01T08:37:02+00:00",
-      "news_articles": [
-        {
-          "title": "海纜船員疑似中風 馬祖海巡艇緊急馳援成功後送就醫",
-          "url": "https://cnews.com.tw/204260531a01/",
-          "time": "2026-05-31 16:37:02",
-          "publisher": "匯流新聞網",
-          "severity": null
-        },
-        {
-          "title": "台馬4號海纜工程印度籍船員疑中風 馬祖海巡馳援",
-          "url": "https://www.chinatimes.com/realtimenews/20260531001675-260402",
-          "time": "2026-05-31 14:17:45",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "光鼎捐贈海大馬祖校區科研設備 深化產學合作與ESG布局",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UMF9DMHZibDN2NzJxUXBNRi1RUnQ0QTVYWkt0SDhwaWZCSl8zWXpzdkNRaDNiU3hzY1lTOXREV25hWC1QNVVJUkhJeEtKZkVUTHhNd1M3c2xJSW9PT0VB?oc=5",
-          "time": "2026-05-31 13:31:00",
-          "publisher": "Google News→工商時報",
-          "severity": null
-        },
-        {
-          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援",
-          "url": "https://www.ctwant.com/article/483355/",
-          "time": "2026-05-31 13:07:49",
-          "publisher": "CTWANT",
-          "severity": null
-        },
-        {
-          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4weVFZb0VuX2dpdjRHRGx2Unk0cEhJdmowNTN3blUyWDhhWGdWRFlTQVBZNC1zT2h5aks0d1R6T3F6UU13cDU4ZHpaVnVVRUlwcW9WYnVB?oc=5",
-          "time": "2026-05-31 12:07:30",
-          "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
-        },
-        {
-          "title": "台馬4號海纜工程船印度籍船員「外海作業突中風」 馬祖海巡外海緊急接駁救援 | 社會 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBVZUpDY1JFMTdZUjhkZ2h4akRyOXprX3R0SDB2cnkyV1JUUk1fUE5GTHZUUXc2YTBycXdodnBkOXZuN3Y0VmxhNFhUWnNmVEXSAVRBVV95cUxQa0p4eWVDMFQ2am11UVk2b2JZeFBpLW1zanYyUllSRllEeUVMWFkxaHdVdW5OMWVMckwyR3hfZVV0R3NPYjNiVl9VeG5FOEU0cXRjdVk?oc=5",
-          "time": "2026-05-31 11:42:15",
-          "publisher": "Google News→CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "台馬4號布纜外籍船員疑中風 馬祖海巡馳援送醫",
-          "url": "https://newtalk.tw/news/view/2026-05-31/1038404",
-          "time": "2026-05-31 11:30:03",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "海纜船外籍船員疑中風 馬祖海巡隊緊急救援至東引",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455522",
-          "time": "2026-05-31 11:17:50",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台馬4號海纜布設作業外籍船員疑似中風 馬祖海巡緊急出動救援送醫",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAyVkRGTjFuZ0JzR2JyaWFrX2NjQlBZNXdCclp5WURLb1ZYM3RRb3RkS01hek9hbV9DbGFUZXZvM1lISEJHN3JRR2NwaHhYYl9KNU53Q3FXOXF0LUxaUUE?oc=5",
-          "time": "2026-05-31 11:00:00",
-          "publisher": "Google News→鉅聞天下",
-          "severity": "yellow"
-        },
-        {
-          "title": "海纜工程船印度籍船員疑中風 馬祖海巡火速馳援後送就醫",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE56Y1pqYjBFV1JOQm0wMlVIQVdfWTJjOW5BWHFab3haRzhKQTExNm1rRHJSNXJkZ1B3aXBEZXJEbEFlUXpGTkJUWGIxa0hxWDdRRlRjVjAwUEc1WWFQOHfSAWhBVV95cUxPc1Zpb0QzS0d6d2lZV1c2Sk1uaHI3NG9GUGFsZ3BtY01rNEU2UW9LNExFNWowSS1Pa0JJd2Z5Mkl4aE04VlF0Uzk0UlpMbFE5MFVNSUk0eTdmNkt3MlV3SXN0dEl6N0djQw?oc=5",
-          "time": "2026-05-31 10:46:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        },
-        {
-          "title": "台馬4號布纜外籍船員疑中風馬祖海巡馳援送醫| 社會",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Jakh6YVdEN2U3cnQ4ZEN1ald5QUpFTkJGVkRGVFloUERKdVZYTkRvdERUQWZqdzY2WUo3WWNQQ2FreS1XQ2NEeG9RLVF3T25hdjlpNEU1empPVEl5X3FR?oc=5",
-          "time": "2026-05-31 10:45:00",
-          "publisher": "中央社",
-          "severity": "yellow"
-        },
-        {
-          "title": "必收！馬祖藍眼淚熱點 「這段時間」是最佳觀賞時機",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2M201aGZ2TVpTeDRZSTZrZGVOWURGSUtxc1AyVG12YnRNclczUkd5ZktmcDh3Q3VlMHFVNlBBVW9LOUJ0S2kwVWh6UkFFejA?oc=5",
-          "time": "2026-05-31 02:56:00",
-          "publisher": "TVBS",
-          "severity": null
-        },
-        {
-          "title": "馬祖國際藝術島「簍光．竹影」作品不敵強風倒塌 文化處派員拆除",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5vLXBYNGpjQWplMndJaUFhckRjd3duNXpvWjZwRGRmZ1pUcmJKTU9KWmE2VjdGT0FMUHF4ZUQ5el9uOVBBdHVF?oc=5",
-          "time": "2026-05-31 02:40:28",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": "yellow"
-        },
-        {
-          "title": "連江縣警局成功阻詐 民眾受騙50萬匯款攔下 守住金庫",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBadDdSRWtMQnJ0SUNJNDVXRF9kb1gzUExZMW1VVVh0dllEY2Q0OHhaeDB2WjExNHJzV01KRGdvbVZTM0dXQ3d3?oc=5",
-          "time": "2026-05-31 02:14:57",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": "yellow"
-        },
-        {
-          "title": "小公視「口袋影展」首度登陸馬祖 反響熱烈",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80cWVkYk9DcXVRT2ZLclhuMUpCYUxKQnVvRHNROWNBREZ3OGl4WGJVbEZrVDhsZG5aR2E4d1R6dFA4bHltVkRiNDhhci0wUVNuZjIyZVBCZ3RaazRFUVE?oc=5",
-          "time": "2026-05-31 00:30:32",
-          "publisher": "Google News→matsu-news.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "國艦國造千噸級巡防艦連江艦 6/7將讓民眾登艦參觀",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wN016Y0xObHdvZkVnS2ZNTHhsWXY4ODZ1YXdGcTJCcGhJZlpOQmk4d3B2ci1veFJldkpTQ2NtNmJGcVNXYTdJNE81QjRIQzhxdVE?oc=5",
-          "time": "2026-05-30 23:28:00",
-          "publisher": "Google News→蕃新聞",
           "severity": null
         }
       ],
@@ -112738,9 +112867,9 @@
       "lng": 120.55149807621136,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 42",
-      "note": "24h 命中 42 則（新聞 42、留言 0）",
-      "news_count": 42,
+      "platform": "新聞 40",
+      "note": "24h 命中 40 則（新聞 40、留言 0）",
+      "news_count": 40,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T10:30:00+00:00",
       "news_full_expires_at": "2026-06-01T10:30:00+00:00",
@@ -113024,27 +113153,13 @@
           "time": "2026-05-30 20:16:39",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "屏東同鄉會拚場 蘇巧慧強調政績李四川聚焦AI",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhQU9ITURTNHBkMk82OHFFUVA0dlBZRGxKWkt1MXlfZ21Ta3VtVjBSNkg2M3B3SlpJVzZWWV93QzF5Vk9jOUJSak5LTUpDd0ZFUVRIcUFKeUllRE9qbGpN?oc=5",
-          "time": "2026-05-30 20:01:00",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "屏東愛文甜蜜登場 周春米率隊助攻行銷",
-          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOSGQ1MVU1VFdndkVNMDAtNEE0aGtrOUVCNGtMQlZtTnN4X3JvSmFKbE9KTXJvS0hqUTdHSXZ0Z2dEUGIxT1dNeFBKeDlvVjBVM1R4Q29HS09WenhHNTVIVlZvbXF2WVcxdnIwd3RuXzhFVmNVQnNqa0lLSnE4TnRPOFpFRjJNT1ZYMW5CQ2s0TGNCa1JzQkE0cHlReUZPcVhqMmVHMFhnWmEwS2kxYl80OFRUUWVoYzktN0JHalpUR3I4d2RNa25XZ2VxVG1zOUExeDlJVkw5RkJlS1NwVTZveEg1eDJ6aGRjYnRtN2JjTC1NaXlzRTh5VXk2NmlpeC1oLUZWU2kwV01fcmFKTmE5ZXUtR0RqWnc0QnZ1VUJPWFU?oc=5",
-          "time": "2026-05-30 19:49:54",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 42,
+      "urgency_score": 40,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -113909,175 +114024,6 @@
         "性侵"
       ],
       "red_news_count": 3
-    },
-    {
-      "title": "澎湖地方動態",
-      "city": "澎湖",
-      "place": "澎湖縣政府",
-      "lat": 23.5712,
-      "lng": 119.5793,
-      "level": "red",
-      "source": "news",
-      "platform": "新聞 16",
-      "note": "24h 命中 16 則（新聞 16、留言 0）",
-      "news_count": 16,
-      "comment_count": 0,
-      "news_latest_at": "2026-05-31T07:57:42+00:00",
-      "news_full_expires_at": "2026-06-01T07:57:42+00:00",
-      "news_articles": [
-        {
-          "title": "澎湖翁放網失蹤4天！千人搜救盼奇蹟 沙灘尋獲遺體畫下句點",
-          "url": "https://tw.news.yahoo.com/%E6%BE%8E%E6%B9%96%E7%BF%81%E6%94%BE%E7%B6%B2%E5%A4%B1%E8%B9%A44%E5%A4%A9-%E5%8D%83%E4%BA%BA%E6%90%9C%E6%95%91%E7%9B%BC%E5%A5%87%E8%B9%9F-%E6%B2%99%E7%81%98%E5%B0%8B%E7%8D%B2%E9%81%BA%E9%AB%94%E7%95%AB%E4%B8%8B%E5%8F%A5%E9%BB%9E-075742369.html",
-          "time": "2026-05-31 15:57:42",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "澎湖翁放網失蹤4天！千人搜救盼奇蹟 沙灘尋獲遺體畫下句點 | 社會 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE44QUNlYVhpajhWX3BrZ3pNTFcwZWw2YWc5OUt4cm1pb3dqSTZMV0ZhaHV0dlFrYTM1TlZ1M1JyMkJhTjZMSm4tSkNfcjFKdU3SAVRBVV95cUxNWTVUX095RnlUcENfWG4wT2tHYThrV3hPOTdETndiWHB0cjBubjI2dkNzMExWbFZDSmZqVTJHZFFybGtIQjFmQlY2aDRPdGQ0dlhHNnI?oc=5",
-          "time": "2026-05-31 15:57:42",
-          "publisher": "Google News→CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "宜蘭、屏東、澎湖攜手地方創生 編纂《海路順風》推AI海村知識系統",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1aaWVmUGhBWG1xSkVHdlVlcGxVT3RJc3gxMzgteW96NUNGVldrY1R4aGVHb3VJbnRyblhTUDVUczlfWFZzOTQ4?oc=5",
-          "time": "2026-05-31 15:30:03",
-          "publisher": "Google News→ENews新聞網",
-          "severity": null
-        },
-        {
-          "title": "煙波湖濱館5日起推澎湖海味吃到飽 迎暑假生態住房專案",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Pek0yMXJSQlRRVFBoVHNLSjJtMHZ2VFlsQURoVjBUSGNBR3NxUkhhQ09hX2lhSU9NTUZnMDF5Mkx3QjJuRC0yVWxsamdwc0xCaXdrSThNUG9FZ9IBX0FVX3lxTE5mQ01jek1RbVNkMmJ2eG9aTXZPYmQ3QzdXeEdzUTUtVDNPZkNVLTVpRVpPZVEyTWl0S0FNTk1xZjhNRzJNNUMwd1VjS18xb1MwT0RqWFZOWHJSV0xSZUhF?oc=5",
-          "time": "2026-05-31 14:35:02",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "澎湖湖西菓葉落海失蹤老翁 大體在龍門沙灘被發現",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5455685",
-          "time": "2026-05-31 13:33:18",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "115年澎湖縣白沙鄉白沙幼兒園防火防災擴大宣導",
-          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOMmRxRDFCQVhYRWdtM3hCNzBKY24tXzFSZ2dWVlJkZHlTUFNoSU9BejFXZkoxRUwxbFplMlhqbFhxLXN6SHNoclVPczNJMm9lWnpWVUZxak1USGROempDNld3LVl1NkxFY2t5dTloVkkxUlNlNm9IWmRwejB4RnowXzdNdnpVcHVmaFlGb3hXREV5dHJKY0pVOS1RUDNwMS1QX3YtTEZ6ZGdkUmFwcGlPSFpmZEtUbjhDQ1p3YTJLS1RVeDEyeU5DbWJxMUFRRTJCWjJPeEhNeGsySExDR2JDSWM2aUZQeDVRc0VaaDMxZUFvRXdlbm9oTUZ6RzdyNFptNVlraFRfdWZoS2tyWGhRTmlzaXRqcExLNHY1dVZtQ0JERG5UeG43VjZ2TzNFUQ?oc=5",
-          "time": "2026-05-31 10:19:42",
-          "publisher": "Google News→澎湖e傳媒",
-          "severity": null
-        },
-        {
-          "title": "爽吃23道澎湖海鮮吃到飽！2026新竹親子飯店推薦，煙波湖濱館生態房費用行程攻略。|美食",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9hMDF3YmFONEJfYjhheEwwWWpQYl9EN01mOTY1QTZzX0NMOWZtYkJkc3NkcEx5dzZrbkVORHRCZzB1WVQ5TVpQZEo0U1ZpMnBYMldOQXF6MjRwS05jeHc?oc=5",
-          "time": "2026-05-31 08:00:00",
-          "publisher": "Google News→WalkerLand 窩客島",
-          "severity": null
-        },
-        {
-          "title": "民眾SUP立槳遭漂走 澎湖海巡火速救援平安返港",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jTGNEbUF4bXc1NzZoZG9yMkxYN3RPS3hCREY4LV9QMTljdEJ0cWJBVG9sdjZUanljNkZCU3NpRnl3c3YyOERNOUlUN0pQYWtpempTa3NQMnYxVFFtWUE?oc=5",
-          "time": "2026-05-31 07:50:41",
-          "publisher": "Google News→澎湖日報",
-          "severity": "yellow"
-        },
-        {
-          "title": "澎湖縣教育產業工會召開第一屆第一次會員大會暨教師研習",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2N3B6ZXdxVG1ZR1FPeUphSVdrTFdZNW5fS3lETk56eEpuSHFBS0s5RFRZODdWcXZIcXVoc2ZUcGkyM2pmZHhDeTNLUzdEZjVGNU5TcVRRYmJaVS1PRFVsVVVRZzVjMGsxTEZfRw?oc=5",
-          "time": "2026-05-31 07:35:41",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "澎湖新秀獎美術創作比賽頒獎 展現多元媒材",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02RTRpenp1QW95ZE4wZngwVnhzS2tFZm5KLUdRclQ2MHl2MXRoajZua2FmMzdWWU45djFSLTgxUzdvaUpNSUExUmVpR3dtSE51RGhGaFNFT0xXRDdLbTc4ei1iRk96T0xkR3otbg?oc=5",
-          "time": "2026-05-31 07:35:41",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "NTSO臺灣交響樂團「2026澎湖吸館-萬花競音樂市集」登場!",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15NnhBZzFWdWVCdDBYYmVRdmpCalFtVzJKbXlnUTZ0S0h3V2FYR0NyaWliejFYdDFhOC04a1lPTGtibUxnRVZzeDZ6eWlOZ1RxSzRvTEc0M0FjZ000cURWNkpUWlg?oc=5",
-          "time": "2026-05-31 07:35:41",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "拚留才 澎湖促修久任獎金制度",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZaHZYVi05MHVzelh5dmE3SU5NV1lUYjQza3BLeVBkczVObHdYM1J1Vm1KZGJVX2FEZUpmSE5YWko1TVlGRHdrc0s2QlJMNzZEUFJDQjZRcnJUd2pRaXJsWWxhdjhURTFMaUxJ?oc=5",
-          "time": "2026-05-31 04:10:00",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "煙波「盛夏澎湖海鮮季」 23道美味吃到飽 | 青年日報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9seWVwcUpIOWlaRGZuRGJtUnBrSjBlbms4SlB3RnQ0WnhjR0d5X3JZdU9SQkFXeUpFZnhmUkVJYW9mdVpyUkRQUjNlTGJXREtaNUhGc09R?oc=5",
-          "time": "2026-05-31 03:35:12",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "煙波「盛夏澎湖海鮮季」 23道美味吃到飽",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GNkltVE1wcEtmMHpGZ3hFOTRicHlROGV5dkpFVm5SQ2JFR1NIVVBZdFd2THVEZUJxNFVZUi1kZklVdTRpdHlJUVFCektBSVNyZTJBZ3lJRmRvNXVhcDNEcUxncUp5LVNBYjc5MUhR?oc=5",
-          "time": "2026-05-31 02:02:00",
-          "publisher": "Google News→青年日報",
-          "severity": null
-        },
-        {
-          "title": "澎湖翁菓葉村海域放網失蹤4天 陳屍龍門沙灘海空搜救告終",
-          "url": "https://www.chinatimes.com/realtimenews/20260531001935-260402",
-          "time": "2026-05-31 00:19:35",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "划槳漂走了！澎湖男玩SUP遭風浪推向外海急求救 | 三立新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IVm9HZEpCQ2o3V2NWb3ZXdTJjU2xwQ1dYTTNmbHdVWG1faUJ6WERzT1JUOHJmbndwNUQ5Z2NxcGlMR2lMTExZSFBreDlBXzRqVE1MbEFn?oc=5",
-          "time": "2026-05-30 20:00:14",
-          "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 16,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 1
     },
     {
       "title": "基隆墜樓事件",
@@ -115512,9 +115458,9 @@
       "lng": 121.46829807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 57",
-      "note": "24h 命中 57 則（新聞 57、留言 0）",
-      "news_count": 57,
+      "platform": "新聞 56",
+      "note": "24h 命中 56 則（新聞 56、留言 0）",
+      "news_count": 56,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T10:59:36+00:00",
       "news_full_expires_at": "2026-06-01T10:59:36+00:00",
@@ -115910,20 +115856,13 @@
           "time": "2026-05-30 22:23:00",
           "publisher": "ETtoday",
           "severity": null
-        },
-        {
-          "title": "蘇巧慧出席新北市景觀工程公會活動 會員盛讚有專業、懂基層",
-          "url": "https://newtalk.tw/news/view/2026-05-30/1038358",
-          "time": "2026-05-30 19:58:02",
-          "publisher": "新頭殼",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 7,
       "negativity_pct": 12,
       "urgent_red_comments": 0,
-      "urgency_score": 78,
+      "urgency_score": 77,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -117342,9 +117281,9 @@
       "lng": 120.6231,
       "level": "red",
       "source": "news",
-      "platform": "新聞 102",
-      "note": "24h 命中 102 則（新聞 102、留言 0）",
-      "news_count": 102,
+      "platform": "新聞 101",
+      "note": "24h 命中 101 則（新聞 101、留言 0）",
+      "news_count": 101,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T10:59:36+00:00",
       "news_full_expires_at": "2026-06-01T10:59:36+00:00",
@@ -118055,20 +117994,13 @@
           "time": "2026-05-30 20:10:56",
           "publisher": "Google News→觀傳媒",
           "severity": null
-        },
-        {
-          "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-          "time": "2026-05-30 19:58:40",
-          "publisher": "自由時報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 13,
       "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 141,
+      "urgency_score": 140,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -118113,9 +118045,9 @@
       "lng": 121.607,
       "level": "red",
       "source": "news",
-      "platform": "新聞 140",
-      "note": "24h 命中 140 則（新聞 140、留言 0）",
-      "news_count": 140,
+      "platform": "新聞 139",
+      "note": "24h 命中 139 則（新聞 139、留言 0）",
+      "news_count": 139,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T10:18:07+00:00",
       "news_full_expires_at": "2026-06-01T10:18:07+00:00",
@@ -119092,20 +119024,13 @@
           "time": "2026-05-30 20:04:11",
           "publisher": "中央社",
           "severity": null
-        },
-        {
-          "title": "蘇巧慧出席新北市景觀工程公會活動 會員盛讚有專業、懂基層",
-          "url": "https://newtalk.tw/news/view/2026-05-30/1038358",
-          "time": "2026-05-30 19:58:02",
-          "publisher": "新頭殼",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 17,
       "negativity_pct": 12,
       "urgent_red_comments": 0,
-      "urgency_score": 191,
+      "urgency_score": 190,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -119213,19 +119138,18 @@
       "hour": "2026-05-30 20:00",
       "severity": null,
       "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_24h": [
     {
       "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
       "time": "2026-05-30 19:58:40",
       "platform": "news",
       "publisher": "自由時報",
-      "hour": "2026-05-30 19:00",
       "severity": null,
       "is_negative": false
-    }
-  ],
-  "articles_prev_24h": [
+    },
     {
       "title": "新竹縣立委徐欣瑩參訪台中國際會展中心、綠美圖盧秀燕說共同讓市民生活幸福宜居| 王秀禾 | 地方新聞",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ZTVhkTWJpUEV2RXFhXzdEMF91QlMtTlRUYWtlMXN1a1Z5V1ZUXzVJdm5GX24tUVp1ZTlsNTVNZW9BeDhTcTNGMTI0a1Fydw?oc=5",
@@ -131631,6 +131555,15 @@
       "hour": "2026-05-17 21:00"
     },
     {
+      "title": "北屯松竹寺香火綿延近兩世紀 盧秀燕贈匾「慈悲濟世」感謝護佑地方",
+      "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1jSXNsc1pGMTh3RGFMb24tZDFWZ3RHOUNBRThTZ2plM0drbWJnTVljY2FSSnhhYkdOVUE?oc=5",
+      "time": "2026-05-17 21:11:10",
+      "platform": "news",
+      "publisher": "Google News→ENN台灣電報",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "盧秀燕感謝朝元宮護佑地方",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZU9nSUhCclNOdEM1NmxCMENxZ1pGbmFzdVBfOXpxUEIyYUlwa1N1ZVdoQjE1ODJuMkFiZG1QRjV4VlBLbFd3RnJIZDh1MDhLVDlaQ0NTeWwyaXZpN29PQVB4ZlQ5S3dDVnJ6M1NEZHU3V1BkTTM3aXJCZmZTeGVwVVZ0R1dvaUhqNmV6ZUZ4Y2doWFl6VWNXWkZ5MVJxLUwtLXA1MWN6cXdqUzU5cE83dTdjTVhzZ1dXWHViWTQ0VmtTRjZ2RGJPdzhIWC15M0RpNWJaRzAtcThVMWxGTlZkN1VtUQ?oc=5",
       "time": "2026-05-17 20:33:42",
@@ -131638,39 +131571,10 @@
       "publisher": "Yahoo新聞",
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "北屯松竹寺香火綿延近兩世紀 盧秀燕贈匾「慈悲濟世」感謝護佑地方",
-      "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1jSXNsc1pGMTh3RGFMb24tZDFWZ3RHOUNBRThTZ2plM0drbWJnTVljY2FSSnhhYkdOVUE?oc=5",
-      "time": "2026-05-17 19:55:00",
-      "platform": "news",
-      "publisher": "Google News→ENN台灣電報",
-      "severity": null,
-      "is_negative": false,
-      "hour": "2026-05-17 19:00"
-    },
-    {
-      "title": "北屯松竹寺香火綿延近兩世紀 盧秀燕贈匾「慈悲濟世」感謝護佑地方",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1fU1h1aGNoTm53UnhTNGRVXzJfRkRFcXJwQ1dzM0VSOVhUYWJVNFlTTFlqVExQU0tySkM0bEtEYWYzeFl4LVdFQkpIVFhOSk5rQTRlU1l4Z0xvdDhKWHBXNHlBNA?oc=5",
-      "time": "2026-05-17 19:55:00",
-      "platform": "news",
-      "publisher": "Google News→波新聞",
-      "severity": null,
-      "is_negative": false,
-      "hour": "2026-05-17 19:00"
-    },
-    {
-      "title": "北屯松竹寺香火綿延近兩世紀 盧秀燕贈匾「慈悲濟世」感謝護佑地方",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hblVkRmRsTnh4VVFYb2NCRDhoS2k2elR5eU1pTzBva3I0SFVxQTdFemNoNVpuUEZYdjVUc2I2WE1rMmo1QWg2c3FDdWRiZmFuU0E?oc=5",
-      "time": "2026-05-17 19:55:00",
-      "platform": "news",
-      "publisher": "Google News→蕃新聞",
-      "severity": null,
-      "is_negative": false
     }
   ],
   "media_framing_7d": {
-    "sample_size": 13225,
+    "sample_size": 13205,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -135993,10 +135897,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 1541,
+        "news_count": 1542,
         "negative_count": 81,
         "negativity_pct": 5,
-        "sentiment_score": 1379.0,
+        "sentiment_score": 1380.0,
         "articles": [
           {
             "title": "「蔣稿機」新稱號？ 網揪蔣萬安2段發言複製貼上",
@@ -137172,6 +137076,12 @@
             "title": "同台蔣萬安出席屏東同鄉會活動 李四川：不忘初心為新北打拚",
             "url": "https://news.nextapple.com/politics/20260530/C612EF8D137852B108B350FB4B542CC4",
             "time": "2026-05-30 18:29:15",
+            "is_negative": false
+          },
+          {
+            "title": "首都市長只是讀稿機? 蔣萬安被酸\"依法行政\"最好用",
+            "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQVmxzcDJUNXJldVRUZlQ2SkhXN1psU1NfRVZTT0dLcy1kcjUtYnl0ZkVGRFl4U29tWGZkTFNteXdaanlRU3FXOUxqTUhPQU9KOUUyV3p1QzJkZWs3S3htLWFwSXZ1d2JYU0VCWEgwUmRmOGpHdTRIMnVYTlN6Z2c0QkFDODhkT01KV0xwcnBVTE1TNGZMT1ZyazAzX2dNS2liaEtKZVJBbnM3VTB6X2tKbDI5Q3FiREVySmllN1o5V2o0NDZWekEzSktPUWJhTHJubVBzcG5yeDF4VU1ldVY1YzAwUE9EQTJqRTY4cmN0QjkzT1BFcFJvanpyR1VPY1FFeEU0T3VacFo3RDZ2UHVzOUhOc0ZNUkZkTno0NWxUcTFOM3IzRGZRblJXM1Z1WUNvbk1PYV9QM25NV2t2YUJXSDVwYm50SEp0elczLW1LODFnWG8?oc=5",
+            "time": "2026-05-30 17:46:50",
             "is_negative": false
           },
           {
@@ -149009,16 +148919,6 @@
         "platform": "news",
         "publisher": "Google News→LINE TODAY",
         "hour": "2026-05-30 20:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "向盧秀燕請益、參觀綠美圖 徐欣瑩：新竹縣不只是要有科技園區",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02QXhuS2JGRHdNSTJKMUk5b2xsa2pNckd1M2RtUEVZOUdyTWYwR1lDaDM2VDlxVmpNelowanhCVWg5MkxKV1BDTmlTN2VRam55N05JTXRBLTM1cl9LX2RUcnF3T2VES0hPclHSAW9BVV95cUxOZkRJejNsQjAwMkJWV3ZQX3BadDI4b0lGendHXzdNNTdtMHhwamowNWpoMDZqZnVBNGVEeTRjUG5xdThZcVMwSENFUzFpeWRLbXpLZzdZR2hIR3FsRm1QbXZpbmt4M3lhRmQyWGFNODA?oc=5",
-        "time": "2026-05-30 19:58:40",
-        "platform": "news",
-        "publisher": "自由時報",
-        "hour": "2026-05-30 19:00",
         "severity": null,
         "is_negative": false
       }
