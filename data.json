@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-06-01T01:08:12.666310+00:00",
+  "generated_at": "2026-06-01T01:24:42.420681+00:00",
   "metrics": {
-    "total_24h": 8,
+    "total_24h": 9,
     "prev_24h": 43,
-    "growth_pct": -81.4,
-    "news_24h": 8,
+    "growth_pct": -79.07,
+    "news_24h": 9,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 687,
-    "prev": 823,
-    "growth_pct": -16.52,
-    "news": 687,
+    "total": 688,
+    "prev": 824,
+    "growth_pct": -16.5,
+    "news": 688,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,13 +28,13 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 226
+      "count": 217
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 2755
+      "count": 2756
     }
   ],
   "by_hour": [
@@ -132,13 +132,13 @@
     },
     {
       "hour": "2026-06-01 09:00",
-      "count": 0
+      "count": 1
     }
   ],
   "by_hour_7d": [
     {
       "hour": "2026-05-25 09:00",
-      "count": 14
+      "count": 13
     },
     {
       "hour": "2026-05-25 10:00",
@@ -330,7 +330,7 @@
     },
     {
       "hour": "2026-05-27 16:00",
-      "count": 15
+      "count": 16
     },
     {
       "hour": "2026-05-27 17:00",
@@ -571,44 +571,48 @@
     {
       "hour": "2026-05-31 22:00",
       "count": 2
+    },
+    {
+      "hour": "2026-06-01 09:00",
+      "count": 1
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 226
+      "count": 217
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 226
+      "count": 217
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 9,
-    "蔣萬安": 207,
+    "盧秀燕": 10,
+    "蔣萬安": 197,
     "蔡其昌": 0,
     "陳其邁": 10
   },
   "mention_compare_7d": {
-    "盧秀燕": 687,
+    "盧秀燕": 688,
     "蔣萬安": 1577,
     "蔡其昌": 91,
     "陳其邁": 433
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 9,
+      "total": 10,
       "red": 0,
       "yellow": 0,
-      "green": 9
+      "green": 10
     },
     "蔣萬安": {
-      "total": 207,
+      "total": 197,
       "red": 3,
-      "yellow": 164,
-      "green": 40
+      "yellow": 158,
+      "green": 36
     },
     "蔡其昌": {
       "total": 0,
@@ -2120,11 +2124,11 @@
     },
     {
       "date": "2026-05-27",
-      "score": 53.5,
-      "total": 123,
+      "score": 53.7,
+      "total": 124,
       "red": 1,
       "yellow": 67,
-      "green": 55,
+      "green": 56,
       "crisis": 1,
       "samples_low": false,
       "articles": [
@@ -2438,6 +2442,14 @@
           "time": "2026-05-27 17:00:00",
           "severity": "yellow",
           "publisher": "Google News→LINE TODAY",
+          "is_crisis": false
+        },
+        {
+          "title": "歐盟駐台代表谷力哲讚台中美麗 盧秀燕市長出席歐洲日晚宴熱邀「See you in Taichung」",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uWkZWWURFWGVjTHlZQmtpcnBCQVFXS3lUNkE4MmMyQUt4TG92d0E1THdOUERmaFFXM2FPTV9vc3daLUpnMjBGcEZMbnlZY0JrN0ptWDF6NWZDemJuMmJhczU0RlBnOU0ybVRR?oc=5",
+          "time": "2026-05-27 16:59:16",
+          "severity": "green",
+          "publisher": "Google News→台灣華報",
           "is_crisis": false
         },
         {
@@ -17878,14 +17890,23 @@
     },
     {
       "date": "2026-06-01",
-      "score": 36.2,
-      "total": 0,
+      "score": 75.8,
+      "total": 1,
       "red": 0,
       "yellow": 0,
-      "green": 0,
+      "green": 1,
       "crisis": 0,
       "samples_low": false,
-      "articles": [],
+      "articles": [
+        {
+          "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+          "time": "2026-06-01 09:00:30",
+          "severity": "green",
+          "publisher": "Google News→中時新聞網",
+          "is_crisis": false
+        }
+      ],
       "comments": {
         "red": 227,
         "yellow": 385,
@@ -63212,6 +63233,15 @@
   "mention_articles_24h": {
     "盧秀燕": [
       {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
         "time": "2026-05-31 22:34:41",
@@ -65066,96 +65096,6 @@
         "publisher": "中時新聞網",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "租屋補貼擬回歸由中央及地方共同負擔 蔣萬安回應了",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pZHRUQTRzVVNyOS1pTnpGSngtckI2czdzMXgwdENYS1hYYU1MTTZsWjdjdHU1UXVNLVVwNGR2WlFMeGpkN2hIVWhvdG5zXzlnWVFjOHdYdWhuV3RjNl9DTTFQc3RQWVZmanFJOUNB?oc=5",
-        "time": "2026-05-31 09:21:35",
-        "platform": "news",
-        "publisher": "中時新聞網",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "徐國勇稱「批評總統搞不好還打電話稱讚你」接過賴電話？蔣萬安反應曝| 政治 | 要聞",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qaTBCS1c0TE5ibEtNeWtqcXBORDlnVWtFcnpSejZRS2tBdjNNTjJvRW1icElrODVqeGxJcDRGX2JSZW5MRmNoVjJCaVh6c283?oc=5",
-        "time": "2026-05-31 09:21:00",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "徐國勇稱「批評總統搞不好還打電話稱讚你」接過賴電話？蔣萬安反應曝",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qaTBCS1c0TE5ibEtNeWtqcXBORDlnVWtFcnpSejZRS2tBdjNNTjJvRW1icElrODVqeGxJcDRGX2JSZW5MRmNoVjJCaVh6c2830gFWQVVfeXFMUE9veUxTQVVyVVpJdmFhdENlS0FBY2wySC02LVVGUmNGNEhTbUl3RHFGX1Z5UHhRcXVQZkh5QVhwWE5YNExmbVhUbGV1Ui1pQXRrdm9hNkE?oc=5",
-        "time": "2026-05-31 09:21:00",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "租金補貼2027年回歸中央地方共同分擔 蔣萬安：地方都不同意改變",
-        "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxOclhTTkpZWG1QRTdLTzdmWjUtX043endfNHlvdmx1QnhHbUQ0SWxzOXIwZjNlOEVENHV5dTdwemhEVFVGU25aSkpVTk1YWG5haC1hMDcyWHJRWV96Tjk2ekJGWFNHcWh6Tm5wcDhpRndnZG5lTVJfek9DT0pYY08xYl9VZWRVZjNLOG1VRDJzcUdNbDdPazhiVjNYNVV3Y1FfN1AwTDYxejlOVDl5N0dQaE5weS0wcE1FN1Y1M18xblBRY0k3bDV1RE9QWmZ5Tld0YUhDVXRqSERBaWRHbWdtczRMbHAyajBFZnFmMC1kUDVEbnZfNDBCNmN0U3RubTZ6NlI1cXoyNl81SV92bVE1NFpyX3VXOTFvX3NtVVMwUnNkMnBUQmdUZ0xiNHFoZVRfaFFDX1RQTmNYUmxDNTBBV3R3eXZVYnlHZ1U1MENoVTJNOWlsTENSaEZIOWJyN3pFWlNFQzZoaWhqSnNjSXM2SC1jVVhTOFVYM1R6dTZUZ016bjV1VzVTOWNRb0VsNGZSNGFj?oc=5",
-        "time": "2026-05-31 09:18:45",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "搶攻年輕爸媽選票！沈伯洋拋親子卡政策 蔣萬安：北市勇於開路可討論",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SRzRGSVpSaXphUjctZm5WcUNYeU9UakF0UjdIaWgtMUU3WGF1WkN2UlZ5TTZWLURRUE5kSTh2U2djMTh5VGlVbDVuUjF4QTFzWm8tZmFGNk_SAV9BVV95cUxNUFBEYWVTYV9xSFM3LVZIMk82N1dRbWhGTVI5ZXFUS2NIY0c1Z1I0YXVtdmRpWVFHaGlRN0xGZWlMbmtZcmM2WkV1TmhpaFNyNE5XemJMc2ZIay0zcjBnRQ?oc=5",
-        "time": "2026-05-31 09:15:00",
-        "platform": "news",
-        "publisher": "三立新聞網",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yM1gyZ0RxOHVaWS0wbFlRXzlObjZmblh3X200UC1rZFJWaDJaZllodjlWcEw5VUFKd1VnVGE4MW5HNHBQZnNPMEFNX29nVE1XbzRONlp1eEFBTFBzRlZodlk0eDE5RDAyOVHSAW9BVV95cUxPdHRfY2RZTjBfekZpdWFDTjljOFhlZDU0R2cxVFhsTi1qQW1EX2htVlNvVHdER0J0TWNVd3JhWGlDRmYtSlZvSHkyWGxnNnFsOUZVR1pYbkd2V3QwcUtrQ0FacHdFTncydFV3ZXZsVjg?oc=5",
-        "time": "2026-05-31 09:14:18",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5455459",
-        "time": "2026-05-31 09:14:18",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安批分攤租金補貼是「中央請客地方買單」 國土署：地方財源已提高",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%89%B9%E5%88%86%E6%94%A4%E7%A7%9F%E9%87%91%E8%A3%9C%E8%B2%BC%E6%98%AF-%E4%B8%AD%E5%A4%AE%E8%AB%8B%E5%AE%A2%E5%9C%B0%E6%96%B9%E8%B2%B7%E5%96%AE-%E5%9C%8B%E5%9C%9F%E7%BD%B2-%E5%9C%B0%E6%96%B9%E8%B2%A1%E6%BA%90%E5%B7%B2%E6%8F%90%E9%AB%98-091300284.html",
-        "time": "2026-05-31 09:13:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "租金補貼要地方政府分攤引反彈 蔣萬安：中央請客、地方買單？",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqc0Y0aFNOV0labjRoWldZbnJDODNNZk1JWjl5ZTRZOUNQMGF6T0Q0dGxmNzJqSV8yOW1aX1FqS0ZNd0JuUlVEWFFGckJTR0tZNm9DdWkzVkJWZFRiX0hGdXJEYXRZNWlXN1hlTE13OA?oc=5",
-        "time": "2026-05-31 09:12:00",
-        "platform": "news",
-        "publisher": "Google News→知新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "成長津貼擬地方分攤？總統推家庭支持新戰略 蔣萬安開轟：別變成中央請客地方買單",
-        "url": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxQc2owTURVTjlhV3pGVnVOLXgwTUZVUWxCanVvMXJ0Rm9HY092cndVanRYcjRhc0NaamFkUXQ5cWpFc1padjRBUDZvcGFDTjhWa2dqSzlWemxpVzd2RVBsa3lCSTdnWVBtdDBLaDc2S1I3Z2ZqMGtKSVdLYUt1RGdnT1lqOUs0MjJxU3BpY0dyb2VlVGZSakZWdWdqUEZyY3haWFhENnRoMnJGemFTeW5qSHpieHR5MjF3QzBJZV9NUldVTzhLTmlNWENVN0liSVBDRlVSNm9CeDFCTnVxb2NJbWhTclFoU0FUUDc1ZGVvYXR2Y2RHRXJoUGMyOXNxQ0I5b3BHOHhYZU1MdXEwZ3BIWGFwclhEOGFvVDhjaUNORnIzWUY1VExPYUU1RFZHNkhJdjBYZTREMkJ3RTFoMFUtcUdXR0ViZEZ6Q0t3ejJzbzBqRi1QTnBhTXNSeS1WNUM2RTFrcnB6SkZycUxDYVpzbGM2TENZZmlGU09Bd2twbTNtZnJrSFY3R1d2T3NPZGg1MTZ4N1lBWUpYQWlMMk5HVzVYdjVWS19tY2x2cWdjZV9Oem4wLU53ZDRUVllJSmF0bzF3TldlcmhuQUFsZGNjaVpXQkJDSngwOWlJTzdqekMyOXA0RUcwSTB4ZDUtYlBkRGlMamE2NmVmeUE?oc=5",
-        "time": "2026-05-31 09:09:18",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [],
@@ -65254,6 +65194,15 @@
   },
   "mention_articles_7d": {
     "盧秀燕": [
+      {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "severity": null,
+        "co_mentioned": []
+      },
       {
         "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
@@ -68029,6 +67978,15 @@
         "platform": "news",
         "publisher": "Google News→LINE TODAY",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "歐盟駐台代表谷力哲讚台中美麗 盧秀燕市長出席歐洲日晚宴熱邀「See you in Taichung」",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uWkZWWURFWGVjTHlZQmtpcnBCQVFXS3lUNkE4MmMyQUt4TG92d0E1THdOUERmaFFXM2FPTV9vc3daLUpnMjBGcEZMbnlZY0JrN0ptWDF6NWZDemJuMmJhczU0RlBnOU0ybVRR?oc=5",
+        "time": "2026-05-27 16:59:16",
+        "platform": "news",
+        "publisher": "Google News→台灣華報",
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -71466,15 +71424,6 @@
         "time": "2026-05-25 09:33:52",
         "platform": "news",
         "publisher": "中時新聞網",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
-        "url": "https://tw.news.yahoo.com/%E5%B7%9D%E8%B3%B4%E8%8B%A5%E9%80%9A%E8%A9%B1-%E7%9B%A7%E7%A7%80%E7%87%95%E5%BB%BA%E8%AD%B0%E8%B3%B4%E6%B8%85%E5%BE%B7-%E5%82%B3%E9%81%94%E5%8F%B0%E7%81%A3%E9%9D%9E%E9%BA%BB%E7%85%A9%E8%A3%BD%E9%80%A0%E8%80%85%E7%AB%8B%E5%A0%B4-091429829.html",
-        "time": "2026-05-25 09:14:29",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
       }
@@ -90489,6 +90438,11 @@
   },
   "top_news": [
     {
+      "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+      "time": "2026-06-01 09:00:30"
+    },
+    {
       "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
       "time": "2026-05-31 22:34:41"
@@ -90535,6 +90489,13 @@
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+      "time": "2026-06-01 09:00:30",
+      "severity": null
+    },
     {
       "platform": "news",
       "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
@@ -90665,13 +90626,6 @@
       "platform": "news",
       "title": "徐欣瑩取經台中市政治理經驗 盧秀燕致贈「必勝御守」預祝包中必勝",
       "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxOdUdVTFhNdXlhYVFUOEtPWVl6V1BVQjZBWFl4NzFmVzRaOXdpellTa1pVQTB1dXRqVWY5UmpoRTk3cmpIbF9lWFllYlp5dXlOZGlCUWV2c3FfR2x1dWRqemRBM2MyaUxHMllwUUc4RnhBS1NPNUNXX2ZKQXNRbk9MVWN5d1Y0czNpWElTQUlwaFpZcjRnNDY5QXdtWFp4aGFZTGVQTmJTdVowVHRxa0J4NktkblJxME5jNnZVOHRNZ0JneDJSb1g4NUlDd2UzbWszRzYwYWhCX3otblFzU3haYmg0QjdaSVE1R3ZMWV9wYkdqZy00MWxmN3lQalF6Wll4bmlxTmVHVDJCY01PMzVaMEJsR0hpMC1MYzhhNjUxMzJ1dXFudnJQRTVZTkVQVV9wM2JzUXAtZEVlSFBLaVRqRjdmVV9RbS1paFRRVzRiZkhodmRCaTdZYk1QMjcwTXNmUDdpYUlUa0lMUkUxbWMxT1EwNDBVQnNsbXR6U2lIQkFZRmxfdTVoNDdhN0JkZ1BZa09oYm9Tc3RweUl6UUNwd3ljVm5XYkk?oc=5",
-      "time": "2026-05-30 18:48:18",
-      "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "徐欣瑩取經台中市政治理經驗盧秀燕致贈「必勝御守」預祝包中必勝- 政府消息新聞- PChome Online 新聞",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbzFLdFc1bmdtcklJdzBhOHB1cFZPbGdZSlNwZWduUXNqc2t6b3RPMWRNS0hUYTRVZE9DZTZwb1ZETTBDQzNCaWFveGNhZnhURkZLQnYzdVJPSi1FRmlka2Fka3MwUGRXQTlhTFhpZ0hOeWV5VlRXUnBDR1o0WUx6UWlMQXZoZXdoUmFR?oc=5",
       "time": "2026-05-30 18:48:18",
       "severity": null
     }
@@ -90820,6 +90774,11 @@
       "time": "2026-06-01 09:02:44"
     },
     {
+      "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+      "time": "2026-06-01 09:00:30"
+    },
+    {
       "title": "炎炎夏日流浪貓躲轎車引擎室 高雄警民合力救出受困貓",
       "url": "https://news.ltn.com.tw/news/society/breakingnews/5456190",
       "time": "2026-06-01 08:57:47"
@@ -90873,11 +90832,6 @@
       "title": "颱風薔蜜直撲沖繩 基隆石垣島渡輪提早返台",
       "url": "https://news.pts.org.tw/article/810898",
       "time": "2026-06-01 08:33:21"
-    },
-    {
-      "title": "網友見面要保證金？桃園女準備匯6000 超商店員機警報案阻詐",
-      "url": "https://news.ltn.com.tw/news/society/breakingnews/5456182",
-      "time": "2026-06-01 08:32:38"
     }
   ],
   "person_sections": {
@@ -90892,6 +90846,13 @@
         }
       ],
       "news": [
+        {
+          "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+          "time": "2026-06-01 09:00:30",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
         {
           "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
@@ -91023,13 +90984,6 @@
           "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxOdUdVTFhNdXlhYVFUOEtPWVl6V1BVQjZBWFl4NzFmVzRaOXdpellTa1pVQTB1dXRqVWY5UmpoRTk3cmpIbF9lWFllYlp5dXlOZGlCUWV2c3FfR2x1dWRqemRBM2MyaUxHMllwUUc4RnhBS1NPNUNXX2ZKQXNRbk9MVWN5d1Y0czNpWElTQUlwaFpZcjRnNDY5QXdtWFp4aGFZTGVQTmJTdVowVHRxa0J4NktkblJxME5jNnZVOHRNZ0JneDJSb1g4NUlDd2UzbWszRzYwYWhCX3otblFzU3haYmg0QjdaSVE1R3ZMWV9wYkdqZy00MWxmN3lQalF6Wll4bmlxTmVHVDJCY01PMzVaMEJsR0hpMC1MYzhhNjUxMzJ1dXFudnJQRTVZTkVQVV9wM2JzUXAtZEVlSFBLaVRqRjdmVV9RbS1paFRRVzRiZkhodmRCaTdZYk1QMjcwTXNmUDdpYUlUa0lMUkUxbWMxT1EwNDBVQnNsbXR6U2lIQkFZRmxfdTVoNDdhN0JkZ1BZa09oYm9Tc3RweUl6UUNwd3ljVm5XYkk?oc=5",
           "time": "2026-05-30 18:48:18",
           "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "徐欣瑩取經台中市政治理經驗盧秀燕致贈「必勝御守」預祝包中必勝- 政府消息新聞- PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbzFLdFc1bmdtcklJdzBhOHB1cFZPbGdZSlNwZWduUXNqc2t6b3RPMWRNS0hUYTRVZE9DZTZwb1ZETTBDQzNCaWFveGNhZnhURkZLQnYzdVJPSi1FRmlka2Fka3MwUGRXQTlhTFhpZ0hOeWV5VlRXUnBDR1o0WUx6UWlMQXZoZXdoUmFR?oc=5",
-          "time": "2026-05-30 18:48:18",
-          "publisher": "Google News→PChome Online 新聞",
           "severity": null
         }
       ]
@@ -91536,6 +91490,13 @@
         "time": "2026-06-01 09:02:55",
         "publisher": "放言Fount Media",
         "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "publisher": "中時新聞網",
+        "severity": null
       },
       {
         "title": "快新聞／蔣萬安怨租補改制遭秒打臉！周軒轟「沒資格哀哀叫」：台北市分走最多錢",
@@ -93034,76 +92995,6 @@
         "time": "2026-05-31 09:27:50",
         "publisher": "中時新聞網",
         "severity": null
-      },
-      {
-        "title": "租屋補貼擬回歸由中央及地方共同負擔 蔣萬安回應了",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pZHRUQTRzVVNyOS1pTnpGSngtckI2czdzMXgwdENYS1hYYU1MTTZsWjdjdHU1UXVNLVVwNGR2WlFMeGpkN2hIVWhvdG5zXzlnWVFjOHdYdWhuV3RjNl9DTTFQc3RQWVZmanFJOUNB?oc=5",
-        "time": "2026-05-31 09:21:35",
-        "publisher": "中時新聞網",
-        "severity": null
-      },
-      {
-        "title": "徐國勇稱「批評總統搞不好還打電話稱讚你」接過賴電話？蔣萬安反應曝| 政治 | 要聞",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qaTBCS1c0TE5ibEtNeWtqcXBORDlnVWtFcnpSejZRS2tBdjNNTjJvRW1icElrODVqeGxJcDRGX2JSZW5MRmNoVjJCaVh6c283?oc=5",
-        "time": "2026-05-31 09:21:00",
-        "publisher": "Google News→UDN",
-        "severity": "yellow"
-      },
-      {
-        "title": "徐國勇稱「批評總統搞不好還打電話稱讚你」接過賴電話？蔣萬安反應曝",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qaTBCS1c0TE5ibEtNeWtqcXBORDlnVWtFcnpSejZRS2tBdjNNTjJvRW1icElrODVqeGxJcDRGX2JSZW5MRmNoVjJCaVh6c2830gFWQVVfeXFMUE9veUxTQVVyVVpJdmFhdENlS0FBY2wySC02LVVGUmNGNEhTbUl3RHFGX1Z5UHhRcXVQZkh5QVhwWE5YNExmbVhUbGV1Ui1pQXRrdm9hNkE?oc=5",
-        "time": "2026-05-31 09:21:00",
-        "publisher": "Google News→UDN",
-        "severity": "yellow"
-      },
-      {
-        "title": "租金補貼2027年回歸中央地方共同分擔 蔣萬安：地方都不同意改變",
-        "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxOclhTTkpZWG1QRTdLTzdmWjUtX043endfNHlvdmx1QnhHbUQ0SWxzOXIwZjNlOEVENHV5dTdwemhEVFVGU25aSkpVTk1YWG5haC1hMDcyWHJRWV96Tjk2ekJGWFNHcWh6Tm5wcDhpRndnZG5lTVJfek9DT0pYY08xYl9VZWRVZjNLOG1VRDJzcUdNbDdPazhiVjNYNVV3Y1FfN1AwTDYxejlOVDl5N0dQaE5weS0wcE1FN1Y1M18xblBRY0k3bDV1RE9QWmZ5Tld0YUhDVXRqSERBaWRHbWdtczRMbHAyajBFZnFmMC1kUDVEbnZfNDBCNmN0U3RubTZ6NlI1cXoyNl81SV92bVE1NFpyX3VXOTFvX3NtVVMwUnNkMnBUQmdUZ0xiNHFoZVRfaFFDX1RQTmNYUmxDNTBBV3R3eXZVYnlHZ1U1MENoVTJNOWlsTENSaEZIOWJyN3pFWlNFQzZoaWhqSnNjSXM2SC1jVVhTOFVYM1R6dTZUZ016bjV1VzVTOWNRb0VsNGZSNGFj?oc=5",
-        "time": "2026-05-31 09:18:45",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "搶攻年輕爸媽選票！沈伯洋拋親子卡政策 蔣萬安：北市勇於開路可討論",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SRzRGSVpSaXphUjctZm5WcUNYeU9UakF0UjdIaWgtMUU3WGF1WkN2UlZ5TTZWLURRUE5kSTh2U2djMTh5VGlVbDVuUjF4QTFzWm8tZmFGNk_SAV9BVV95cUxNUFBEYWVTYV9xSFM3LVZIMk82N1dRbWhGTVI5ZXFUS2NIY0c1Z1I0YXVtdmRpWVFHaGlRN0xGZWlMbmtZcmM2WkV1TmhpaFNyNE5XemJMc2ZIay0zcjBnRQ?oc=5",
-        "time": "2026-05-31 09:15:00",
-        "publisher": "三立新聞網",
-        "severity": null
-      },
-      {
-        "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yM1gyZ0RxOHVaWS0wbFlRXzlObjZmblh3X200UC1rZFJWaDJaZllodjlWcEw5VUFKd1VnVGE4MW5HNHBQZnNPMEFNX29nVE1XbzRONlp1eEFBTFBzRlZodlk0eDE5RDAyOVHSAW9BVV95cUxPdHRfY2RZTjBfekZpdWFDTjljOFhlZDU0R2cxVFhsTi1qQW1EX2htVlNvVHdER0J0TWNVd3JhWGlDRmYtSlZvSHkyWGxnNnFsOUZVR1pYbkd2V3QwcUtrQ0FacHdFTncydFV3ZXZsVjg?oc=5",
-        "time": "2026-05-31 09:14:18",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5455459",
-        "time": "2026-05-31 09:14:18",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安批分攤租金補貼是「中央請客地方買單」 國土署：地方財源已提高",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%89%B9%E5%88%86%E6%94%A4%E7%A7%9F%E9%87%91%E8%A3%9C%E8%B2%BC%E6%98%AF-%E4%B8%AD%E5%A4%AE%E8%AB%8B%E5%AE%A2%E5%9C%B0%E6%96%B9%E8%B2%B7%E5%96%AE-%E5%9C%8B%E5%9C%9F%E7%BD%B2-%E5%9C%B0%E6%96%B9%E8%B2%A1%E6%BA%90%E5%B7%B2%E6%8F%90%E9%AB%98-091300284.html",
-        "time": "2026-05-31 09:13:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "租金補貼要地方政府分攤引反彈 蔣萬安：中央請客、地方買單？",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqc0Y0aFNOV0labjRoWldZbnJDODNNZk1JWjl5ZTRZOUNQMGF6T0Q0dGxmNzJqSV8yOW1aX1FqS0ZNd0JuUlVEWFFGckJTR0tZNm9DdWkzVkJWZFRiX0hGdXJEYXRZNWlXN1hlTE13OA?oc=5",
-        "time": "2026-05-31 09:12:00",
-        "publisher": "Google News→知新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "成長津貼擬地方分攤？總統推家庭支持新戰略 蔣萬安開轟：別變成中央請客地方買單",
-        "url": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxQc2owTURVTjlhV3pGVnVOLXgwTUZVUWxCanVvMXJ0Rm9HY092cndVanRYcjRhc0NaamFkUXQ5cWpFc1padjRBUDZvcGFDTjhWa2dqSzlWemxpVzd2RVBsa3lCSTdnWVBtdDBLaDc2S1I3Z2ZqMGtKSVdLYUt1RGdnT1lqOUs0MjJxU3BpY0dyb2VlVGZSakZWdWdqUEZyY3haWFhENnRoMnJGemFTeW5qSHpieHR5MjF3QzBJZV9NUldVTzhLTmlNWENVN0liSVBDRlVSNm9CeDFCTnVxb2NJbWhTclFoU0FUUDc1ZGVvYXR2Y2RHRXJoUGMyOXNxQ0I5b3BHOHhYZU1MdXEwZ3BIWGFwclhEOGFvVDhjaUNORnIzWUY1VExPYUU1RFZHNkhJdjBYZTREMkJ3RTFoMFUtcUdXR0ViZEZ6Q0t3ejJzbzBqRi1QTnBhTXNSeS1WNUM2RTFrcnB6SkZycUxDYVpzbGM2TENZZmlGU09Bd2twbTNtZnJrSFY3R1d2T3NPZGg1MTZ4N1lBWUpYQWlMMk5HVzVYdjVWS19tY2x2cWdjZV9Oem4wLU53ZDRUVllJSmF0bzF3TldlcmhuQUFsZGNjaVpXQkJDSngwOWlJTzdqekMyOXA0RUcwSTB4ZDUtYlBkRGlMamE2NmVmeUE?oc=5",
-        "time": "2026-05-31 09:09:18",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
       }
     ]
   },
@@ -93122,6 +93013,13 @@
         "time": "2026-06-01 09:02:55",
         "publisher": "放言Fount Media",
         "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "publisher": "中時新聞網",
+        "severity": null
       },
       {
         "title": "快新聞／蔣萬安怨租補改制遭秒打臉！周軒轟「沒資格哀哀叫」：台北市分走最多錢",
@@ -103022,6 +102920,13 @@
         "severity": "yellow"
       },
       {
+        "title": "歐盟駐台代表谷力哲讚台中美麗 盧秀燕市長出席歐洲日晚宴熱邀「See you in Taichung」",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uWkZWWURFWGVjTHlZQmtpcnBCQVFXS3lUNkE4MmMyQUt4TG92d0E1THdOUERmaFFXM2FPTV9vc3daLUpnMjBGcEZMbnlZY0JrN0ptWDF6NWZDemJuMmJhczU0RlBnOU0ybVRR?oc=5",
+        "time": "2026-05-27 16:59:16",
+        "publisher": "Google News→台灣華報",
+        "severity": null
+      },
+      {
         "title": "台中被評為無可取代的幸福城市 盧秀燕近3分鐘感言曝",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ObTQzMkFndG1OLU5EQU1wNDd4RmxxZDNMMmxia0duZmtVbkZ3WEhGMmRhUkNxQ3ZoVG1oenZlSU1ud281VVloMEpyYW4tbFdpcTBEQWF3RmNLNUlOajhTdmZ6UkU5a2Y3N19wbmRn?oc=5",
         "time": "2026-05-27 16:52:15",
@@ -112386,13 +112291,6 @@
         "time": "2026-05-25 09:33:52",
         "publisher": "中時新聞網",
         "severity": null
-      },
-      {
-        "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
-        "url": "https://tw.news.yahoo.com/%E5%B7%9D%E8%B3%B4%E8%8B%A5%E9%80%9A%E8%A9%B1-%E7%9B%A7%E7%A7%80%E7%87%95%E5%BB%BA%E8%AD%B0%E8%B3%B4%E6%B8%85%E5%BE%B7-%E5%82%B3%E9%81%94%E5%8F%B0%E7%81%A3%E9%9D%9E%E9%BA%BB%E7%85%A9%E8%A3%BD%E9%80%A0%E8%80%85%E7%AB%8B%E5%A0%B4-091429829.html",
-        "time": "2026-05-25 09:14:29",
-        "publisher": "Yahoo新聞",
-        "severity": null
       }
     ]
   },
@@ -113482,203 +113380,6 @@
       "red_news_count": 0
     },
     {
-      "title": "南投地方動態",
-      "city": "南投",
-      "place": "南投縣政府",
-      "lat": 23.9609,
-      "lng": 120.9718,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 20",
-      "note": "24h 命中 20 則（新聞 20、留言 0）",
-      "news_count": 20,
-      "comment_count": 0,
-      "news_latest_at": "2026-06-01T00:25:56+00:00",
-      "news_full_expires_at": "2026-06-02T00:25:56+00:00",
-      "news_articles": [
-        {
-          "title": "南投市長盃棒球賽開打 12支球隊打球拼經濟",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-12%E6%94%AF%E7%90%83%E9%9A%8A%E6%89%93%E7%90%83%E6%8B%BC%E7%B6%93%E6%BF%9F-002556935.html",
-          "time": "2026-06-01 08:25:56",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投免費癌症篩檢 iPad等百項好禮等你拿",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5456141",
-          "time": "2026-06-01 06:41:28",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "南投聯合教甄 國小錄取率四成六",
-          "url": "https://news.ltn.com.tw/news/Nantou/paper/1757077",
-          "time": "2026-06-01 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "少子化 南投教甄錄取率37％創高",
-          "url": "https://tw.news.yahoo.com/%E5%B0%91%E5%AD%90%E5%8C%96-%E5%8D%97%E6%8A%95%E6%95%99%E7%94%84%E9%8C%84%E5%8F%96%E7%8E%8737-%E5%89%B5%E9%AB%98-201000977.html",
-          "time": "2026-06-01 04:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "-凝聚旅外力量 陳福海與南投鄉親共話家鄉發展",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWSkRLaGRFQ3ZsYkF6aWx6cEJLX3FXemZkU1FpbWFCUWVrQUkyZjktRWxiV1JFTFJIakhtVHd6RE5MbXc1eTlwNFlCMW5qTUJ3MEFleElYaks?oc=5",
-          "time": "2026-06-01 00:03:47",
-          "publisher": "Google News→kmdn.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "華南青少棒 | 三重怪風助新竹2度敲下大局擊敗南投 教頭：球是圓的",
-          "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNN0hBNVlrQmVpS1RiVnVRM2dZTXphNW1YaDZHN1l3c2hodElNUnhZcG95ek5odEdKb3ZrZDlXdHdfeVdTcTFfWFZ3cjhiSmlzdW0wNGd3eHVOWkpXT0tDWjJuUWlDZ1dtZ3NueVR3Y3h6Z1hvYktoalk5bTg2SERKVmkwWW02b040REJJWmZRZkM5Y1dWN2JraFV0TVh4M0RGMnFJMnNldFR1eXF6dFptYllvZzM4Z0xZdS1aNWJIbGxtZFFRYTAtMVJINlhOUlhfcXljdXlITEpBMUdUTmRhRkE1VTMwOHFuYzNIUXcycTlLYnRnVTFRVXRvUDByWTZRQUpGbVdiZjNGc2hjcU9EQzZmZWt2TU9kd1pTY2E4NGZkNnp2Wm9ya1pIRklrUG5HakFJS3dYNnpBTXhRNTVaMk41WTl4SjFJczdXWEhCRllLTV9seTVwOEhjaXVfYzc3dUxUOFZNZGpZY25GYUVMZkpkd0s3WS0xNFd3SnJxdC1XcWthM2lRcmdqQlo4SzVfQldTM1VERjVwZkFac08zaUdubUdYQQ?oc=5",
-          "time": "2026-05-31 19:23:30",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投市長盃棒球賽開打 首創報名費轉在地消費基金",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-%E9%A6%96%E5%89%B5%E5%A0%B1%E5%90%8D%E8%B2%BB%E8%BD%89%E5%9C%A8%E5%9C%B0%E6%B6%88%E8%B2%BB%E5%9F%BA%E9%87%91-093115591.html",
-          "time": "2026-05-31 17:31:15",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投市長盃棒球賽烈日下開打 12支勁旅打球拼經濟",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E7%83%88%E6%97%A5%E4%B8%8B%E9%96%8B%E6%89%93-12%E6%94%AF%E5%8B%81%E6%97%85%E6%89%93%E7%90%83%E6%8B%BC%E7%B6%93%E6%BF%9F-091808917.html",
-          "time": "2026-05-31 17:18:08",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投埔里與日本出水市慶祝締結姊妹市9週年 (圖)",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%9F%94%E9%87%8C%E8%88%87%E6%97%A5%E6%9C%AC%E5%87%BA%E6%B0%B4%E5%B8%82%E6%85%B6%E7%A5%9D%E7%B7%A0%E7%B5%90%E5%A7%8A%E5%A6%B9%E5%B8%829%E9%80%B1%E5%B9%B4-%E5%9C%96-091740650.html",
-          "time": "2026-05-31 17:17:40",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投國民中小學暨附設幼兒園教師聯合甄選初試登場",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E9%99%84%E8%A8%AD%E5%B9%BC%E5%85%92%E5%9C%92%E6%95%99%E5%B8%AB%E8%81%AF%E5%90%88%E7%94%84%E9%81%B8%E5%88%9D%E8%A9%A6%E7%99%BB%E5%A0%B4-091000415.html",
-          "time": "2026-05-31 17:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "教育環境丕變！南投教甄兩樣情 國小錄取46％、幼兒園13％",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5455867",
-          "time": "2026-05-31 16:57:08",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "南投區愛老人運動會青銀同樂 展現世代共融與青春活力",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%8D%80%E6%84%9B%E8%80%81%E4%BA%BA%E9%81%8B%E5%8B%95%E6%9C%83%E9%9D%92%E9%8A%80%E5%90%8C%E6%A8%82-%E5%B1%95%E7%8F%BE%E4%B8%96%E4%BB%A3%E5%85%B1%E8%9E%8D%E8%88%87%E9%9D%92%E6%98%A5%E6%B4%BB%E5%8A%9B-082724228.html",
-          "time": "2026-05-31 16:27:24",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "從服務到舞台 救國團南投縣團委會辦理主持司儀課程 培育儀典主持人才",
-          "url": "https://tw.news.yahoo.com/%E5%BE%9E%E6%9C%8D%E5%8B%99%E5%88%B0%E8%88%9E%E5%8F%B0-%E6%95%91%E5%9C%8B%E5%9C%98%E5%8D%97%E6%8A%95%E7%B8%A3%E5%9C%98%E5%A7%94%E6%9C%83%E8%BE%A6%E7%90%86%E4%B8%BB%E6%8C%81%E5%8F%B8%E5%84%80%E8%AA%B2%E7%A8%8B-%E5%9F%B9%E8%82%B2%E5%84%80%E5%85%B8%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%89%8D-082616307.html",
-          "time": "2026-05-31 16:26:16",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投市長盃棒球賽開打 12支勁旅打球拚經濟",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-12%E6%94%AF%E5%8B%81%E6%97%85%E6%89%93%E7%90%83%E6%8B%9A%E7%B6%93%E6%BF%9F-082435076.html",
-          "time": "2026-05-31 16:24:35",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "南投縣115學年度國中小暨附幼教師聯合甄選初試登場",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E7%B8%A3115%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%9C%8B%E4%B8%AD%E5%B0%8F%E6%9A%A8%E9%99%84%E5%B9%BC%E6%95%99%E5%B8%AB%E8%81%AF%E5%90%88%E7%94%84%E9%81%B8%E5%88%9D%E8%A9%A6%E7%99%BB%E5%A0%B4-082344443.html",
-          "time": "2026-05-31 16:23:44",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "115年南投縣教育產業工會辦理SUPER教師獎頒獎",
-          "url": "https://tw.news.yahoo.com/115%E5%B9%B4%E5%8D%97%E6%8A%95%E7%B8%A3%E6%95%99%E8%82%B2%E7%94%A2%E6%A5%AD%E5%B7%A5%E6%9C%83%E8%BE%A6%E7%90%86super%E6%95%99%E5%B8%AB%E7%8D%8E%E9%A0%92%E7%8D%8E-082245593.html",
-          "time": "2026-05-31 16:22:45",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "華南青少棒》三重怪風助新竹2度敲下大局擊敗南投 教頭：球是圓的 | 麗台運動",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sU192OXpQSjh1RE9pMlV3NlVWM0pHaklhc0RhZ05ra1Y2TExLNUhuSHBnMXBMUnhvV3A2N21hTndMbURmUUdCYVFFNF8yRUZoVzIwbzd3?oc=5",
-          "time": "2026-05-31 14:33:45",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "南投縣115學年度國民中小學暨附設幼兒園教師聯合甄選初試登場",
-          "url": "https://more-news.tw/629552/",
-          "time": "2026-05-31 13:09:01",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "南投市長盃乙組棒球賽開打 12隊齊聚拚球技",
-          "url": "https://www.chinatimes.com/realtimenews/20260531001492-260403",
-          "time": "2026-05-31 13:07:44",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "南投教甄初試登場 副縣長巡視考場關注缺額",
-          "url": "https://n.yam.com/Article/20260531652437",
-          "time": "2026-05-31 12:00:00",
-          "publisher": "蕃新聞→創新聞",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 20,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 0
-    },
-    {
       "title": "連江地方動態",
       "city": "連江",
       "place": "連江縣（馬祖）",
@@ -113832,6 +113533,203 @@
           "time": "2026-05-31 10:45:00",
           "publisher": "中央社",
           "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 20,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
+      "title": "南投地方動態",
+      "city": "南投",
+      "place": "南投縣政府",
+      "lat": 23.9609,
+      "lng": 120.9718,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 20",
+      "note": "24h 命中 20 則（新聞 20、留言 0）",
+      "news_count": 20,
+      "comment_count": 0,
+      "news_latest_at": "2026-06-01T00:25:56+00:00",
+      "news_full_expires_at": "2026-06-02T00:25:56+00:00",
+      "news_articles": [
+        {
+          "title": "南投市長盃棒球賽開打 12支球隊打球拼經濟",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-12%E6%94%AF%E7%90%83%E9%9A%8A%E6%89%93%E7%90%83%E6%8B%BC%E7%B6%93%E6%BF%9F-002556935.html",
+          "time": "2026-06-01 08:25:56",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投免費癌症篩檢 iPad等百項好禮等你拿",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5456141",
+          "time": "2026-06-01 06:41:28",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "南投聯合教甄 國小錄取率四成六",
+          "url": "https://news.ltn.com.tw/news/Nantou/paper/1757077",
+          "time": "2026-06-01 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "少子化 南投教甄錄取率37％創高",
+          "url": "https://tw.news.yahoo.com/%E5%B0%91%E5%AD%90%E5%8C%96-%E5%8D%97%E6%8A%95%E6%95%99%E7%94%84%E9%8C%84%E5%8F%96%E7%8E%8737-%E5%89%B5%E9%AB%98-201000977.html",
+          "time": "2026-06-01 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "-凝聚旅外力量 陳福海與南投鄉親共話家鄉發展",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBWSkRLaGRFQ3ZsYkF6aWx6cEJLX3FXemZkU1FpbWFCUWVrQUkyZjktRWxiV1JFTFJIakhtVHd6RE5MbXc1eTlwNFlCMW5qTUJ3MEFleElYaks?oc=5",
+          "time": "2026-06-01 00:03:47",
+          "publisher": "Google News→kmdn.gov.tw",
+          "severity": null
+        },
+        {
+          "title": "華南青少棒 | 三重怪風助新竹2度敲下大局擊敗南投 教頭：球是圓的",
+          "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNN0hBNVlrQmVpS1RiVnVRM2dZTXphNW1YaDZHN1l3c2hodElNUnhZcG95ek5odEdKb3ZrZDlXdHdfeVdTcTFfWFZ3cjhiSmlzdW0wNGd3eHVOWkpXT0tDWjJuUWlDZ1dtZ3NueVR3Y3h6Z1hvYktoalk5bTg2SERKVmkwWW02b040REJJWmZRZkM5Y1dWN2JraFV0TVh4M0RGMnFJMnNldFR1eXF6dFptYllvZzM4Z0xZdS1aNWJIbGxtZFFRYTAtMVJINlhOUlhfcXljdXlITEpBMUdUTmRhRkE1VTMwOHFuYzNIUXcycTlLYnRnVTFRVXRvUDByWTZRQUpGbVdiZjNGc2hjcU9EQzZmZWt2TU9kd1pTY2E4NGZkNnp2Wm9ya1pIRklrUG5HakFJS3dYNnpBTXhRNTVaMk41WTl4SjFJczdXWEhCRllLTV9seTVwOEhjaXVfYzc3dUxUOFZNZGpZY25GYUVMZkpkd0s3WS0xNFd3SnJxdC1XcWthM2lRcmdqQlo4SzVfQldTM1VERjVwZkFac08zaUdubUdYQQ?oc=5",
+          "time": "2026-05-31 19:23:30",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投市長盃棒球賽開打 首創報名費轉在地消費基金",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-%E9%A6%96%E5%89%B5%E5%A0%B1%E5%90%8D%E8%B2%BB%E8%BD%89%E5%9C%A8%E5%9C%B0%E6%B6%88%E8%B2%BB%E5%9F%BA%E9%87%91-093115591.html",
+          "time": "2026-05-31 17:31:15",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投市長盃棒球賽烈日下開打 12支勁旅打球拼經濟",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E7%83%88%E6%97%A5%E4%B8%8B%E9%96%8B%E6%89%93-12%E6%94%AF%E5%8B%81%E6%97%85%E6%89%93%E7%90%83%E6%8B%BC%E7%B6%93%E6%BF%9F-091808917.html",
+          "time": "2026-05-31 17:18:08",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投埔里與日本出水市慶祝締結姊妹市9週年 (圖)",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%9F%94%E9%87%8C%E8%88%87%E6%97%A5%E6%9C%AC%E5%87%BA%E6%B0%B4%E5%B8%82%E6%85%B6%E7%A5%9D%E7%B7%A0%E7%B5%90%E5%A7%8A%E5%A6%B9%E5%B8%829%E9%80%B1%E5%B9%B4-%E5%9C%96-091740650.html",
+          "time": "2026-05-31 17:17:40",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投國民中小學暨附設幼兒園教師聯合甄選初試登場",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E9%99%84%E8%A8%AD%E5%B9%BC%E5%85%92%E5%9C%92%E6%95%99%E5%B8%AB%E8%81%AF%E5%90%88%E7%94%84%E9%81%B8%E5%88%9D%E8%A9%A6%E7%99%BB%E5%A0%B4-091000415.html",
+          "time": "2026-05-31 17:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "教育環境丕變！南投教甄兩樣情 國小錄取46％、幼兒園13％",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5455867",
+          "time": "2026-05-31 16:57:08",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "南投區愛老人運動會青銀同樂 展現世代共融與青春活力",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%8D%80%E6%84%9B%E8%80%81%E4%BA%BA%E9%81%8B%E5%8B%95%E6%9C%83%E9%9D%92%E9%8A%80%E5%90%8C%E6%A8%82-%E5%B1%95%E7%8F%BE%E4%B8%96%E4%BB%A3%E5%85%B1%E8%9E%8D%E8%88%87%E9%9D%92%E6%98%A5%E6%B4%BB%E5%8A%9B-082724228.html",
+          "time": "2026-05-31 16:27:24",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "從服務到舞台 救國團南投縣團委會辦理主持司儀課程 培育儀典主持人才",
+          "url": "https://tw.news.yahoo.com/%E5%BE%9E%E6%9C%8D%E5%8B%99%E5%88%B0%E8%88%9E%E5%8F%B0-%E6%95%91%E5%9C%8B%E5%9C%98%E5%8D%97%E6%8A%95%E7%B8%A3%E5%9C%98%E5%A7%94%E6%9C%83%E8%BE%A6%E7%90%86%E4%B8%BB%E6%8C%81%E5%8F%B8%E5%84%80%E8%AA%B2%E7%A8%8B-%E5%9F%B9%E8%82%B2%E5%84%80%E5%85%B8%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%89%8D-082616307.html",
+          "time": "2026-05-31 16:26:16",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投市長盃棒球賽開打 12支勁旅打球拚經濟",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E5%B8%82%E9%95%B7%E7%9B%83%E6%A3%92%E7%90%83%E8%B3%BD%E9%96%8B%E6%89%93-12%E6%94%AF%E5%8B%81%E6%97%85%E6%89%93%E7%90%83%E6%8B%9A%E7%B6%93%E6%BF%9F-082435076.html",
+          "time": "2026-05-31 16:24:35",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "南投縣115學年度國中小暨附幼教師聯合甄選初試登場",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E7%B8%A3115%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%9C%8B%E4%B8%AD%E5%B0%8F%E6%9A%A8%E9%99%84%E5%B9%BC%E6%95%99%E5%B8%AB%E8%81%AF%E5%90%88%E7%94%84%E9%81%B8%E5%88%9D%E8%A9%A6%E7%99%BB%E5%A0%B4-082344443.html",
+          "time": "2026-05-31 16:23:44",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "115年南投縣教育產業工會辦理SUPER教師獎頒獎",
+          "url": "https://tw.news.yahoo.com/115%E5%B9%B4%E5%8D%97%E6%8A%95%E7%B8%A3%E6%95%99%E8%82%B2%E7%94%A2%E6%A5%AD%E5%B7%A5%E6%9C%83%E8%BE%A6%E7%90%86super%E6%95%99%E5%B8%AB%E7%8D%8E%E9%A0%92%E7%8D%8E-082245593.html",
+          "time": "2026-05-31 16:22:45",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "華南青少棒》三重怪風助新竹2度敲下大局擊敗南投 教頭：球是圓的 | 麗台運動",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sU192OXpQSjh1RE9pMlV3NlVWM0pHaklhc0RhZ05ra1Y2TExLNUhuSHBnMXBMUnhvV3A2N21hTndMbURmUUdCYVFFNF8yRUZoVzIwbzd3?oc=5",
+          "time": "2026-05-31 14:33:45",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "南投縣115學年度國民中小學暨附設幼兒園教師聯合甄選初試登場",
+          "url": "https://more-news.tw/629552/",
+          "time": "2026-05-31 13:09:01",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "南投市長盃乙組棒球賽開打 12隊齊聚拚球技",
+          "url": "https://www.chinatimes.com/realtimenews/20260531001492-260403",
+          "time": "2026-05-31 13:07:44",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "南投教甄初試登場 副縣長巡視考場關注缺額",
+          "url": "https://n.yam.com/Article/20260531652437",
+          "time": "2026-05-31 12:00:00",
+          "publisher": "蕃新聞→創新聞",
+          "severity": null
         }
       ],
       "comments": [],
@@ -116072,9 +115970,9 @@
       "lng": 121.7392,
       "level": "red",
       "source": "news",
-      "platform": "新聞 13",
-      "note": "24h 命中 13 則（新聞 13、留言 0）",
-      "news_count": 13,
+      "platform": "新聞 12",
+      "note": "24h 命中 12 則（新聞 12、留言 0）",
+      "news_count": 12,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T15:49:45+00:00",
       "news_full_expires_at": "2026-06-01T15:49:45+00:00",
@@ -116162,20 +116060,13 @@
           "time": "2026-05-31 10:20:00",
           "publisher": "新頭條",
           "severity": "yellow"
-        },
-        {
-          "title": "疑因1件外套釀人倫悲劇 28歲基隆男持刀弒母後墜樓亡",
-          "url": "https://www.mirrormedia.mg/story/20260531edi013",
-          "time": "2026-05-31 09:09:00",
-          "publisher": "鏡週刊",
-          "severity": "yellow"
         }
       ],
       "comments": [],
-      "negative_news_count": 13,
+      "negative_news_count": 12,
       "negativity_pct": 100,
       "urgent_red_comments": 0,
-      "urgency_score": 52,
+      "urgency_score": 48,
       "is_urgent": true,
       "is_catchall": false,
       "keywords": [
@@ -116627,9 +116518,9 @@
       "lng": 118.3173,
       "level": "red",
       "source": "news",
-      "platform": "新聞 37",
-      "note": "24h 命中 37 則（新聞 37、留言 0）",
-      "news_count": 37,
+      "platform": "新聞 36",
+      "note": "24h 命中 36 則（新聞 36、留言 0）",
+      "news_count": 36,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T21:30:00+00:00",
       "news_full_expires_at": "2026-06-01T21:30:00+00:00",
@@ -116885,20 +116776,13 @@
           "time": "2026-05-31 09:37:30",
           "publisher": "Google News→cnma.org.tw",
           "severity": null
-        },
-        {
-          "title": "金門購物嘉年華主檔期正式啟動 商研院攜手縣府推動智慧消費與商圈振興",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5uZ0h4R09hNVVJSUNwRGRJS01FYXM0V0NCZDAzZnpGN0VLWElhalNDNnZ4bVdVMzRTajF5WjNQb0RZWkVsTXIzSw?oc=5",
-          "time": "2026-05-31 09:22:00",
-          "publisher": "Google News→peopo.org",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 2,
-      "negativity_pct": 5,
+      "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 43,
+      "urgency_score": 42,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -117287,9 +117171,9 @@
       "lng": 121.6015,
       "level": "red",
       "source": "news",
-      "platform": "新聞 45",
-      "note": "24h 命中 45 則（新聞 45、留言 0）",
-      "news_count": 45,
+      "platform": "新聞 43",
+      "note": "24h 命中 43 則（新聞 43、留言 0）",
+      "news_count": 43,
       "comment_count": 0,
       "news_latest_at": "2026-05-31T21:30:00+00:00",
       "news_full_expires_at": "2026-06-01T21:30:00+00:00",
@@ -117594,27 +117478,13 @@
           "time": "2026-05-31 09:35:00",
           "publisher": "Google News→蕃新聞",
           "severity": null
-        },
-        {
-          "title": "花蓮保育類麝香貓疑遭流浪犬攻擊亡 檢體送驗查狂犬病",
-          "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxNVUtKWHZObDFlYVZFWXViaWZ6Y3pvdnBWOUFmYW5YS1hneE1HSzROQWw3UTQxbnFtWXlGLWd5eWpYUHFqdUlVNVMtVzR1MXFITWtpV3BvX3JBVkxjQ1FtSjM0OWxFblVqTmZidUVjNkZnc0pjNlR1MmY1Nm9Ib1E3WnZjbWdiQUh4V2lVWUpfcGZyUFA0emVLeFU0cDRNRU5ncGEtbE5vZFprNTNmbWctTFVlY0hlalE1aURsZnI2aGU2dVRTOTY0TUFaV0R1RktBMDlZUXV3Wi00MUJVRTI5MmlPRWdLSzlyREJrSXk1QnVBb0R5MFZIRGNxSzMzZlROV2l1ZXBrd3M3a25aQWFTVnRYY2t4dWFCaEtYZXBLUGplX3pac2dOaGYtVWdwN2NOMHRZNW1TTURyQUZWRWxncjREbUxTZUdRRnkwaVNmOGpPWmt6Mlp3cUJ6N05Sd3JiRGYxdXo2eC1RanZwXzFSQWxNMFY?oc=5",
-          "time": "2026-05-31 09:18:45",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "珍稀「麝香貓」陳屍花蓮路邊！神祕穿刺傷洩兇手身分",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1WM05jRkN3YlFaVmtzalZYcHpQOUNjYnN0N0V3MUNkejFRVGh0WW1adkE1SFhhWm14emJsSk9nRllDTnZMNkxzX0VvbGVpQ1dnSHVZ?oc=5",
-          "time": "2026-05-31 09:11:08",
-          "publisher": "Google News→中天新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 2,
+      "negative_news_count": 0,
+      "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 48,
+      "urgency_score": 43,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -117659,9 +117529,9 @@
       "lng": 121.74179807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 49",
-      "note": "24h 命中 49 則（新聞 49、留言 0）",
-      "news_count": 49,
+      "platform": "新聞 47",
+      "note": "24h 命中 47 則（新聞 47、留言 0）",
+      "news_count": 47,
       "comment_count": 0,
       "news_latest_at": "2026-06-01T00:33:21+00:00",
       "news_full_expires_at": "2026-06-02T00:33:21+00:00",
@@ -117994,27 +117864,13 @@
           "time": "2026-05-31 10:20:00",
           "publisher": "新頭條",
           "severity": "yellow"
-        },
-        {
-          "title": "疑因1件外套釀人倫悲劇 28歲基隆男持刀弒母後墜樓亡",
-          "url": "https://www.mirrormedia.mg/story/20260531edi013",
-          "time": "2026-05-31 09:09:00",
-          "publisher": "鏡週刊",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆廟口夜市遭辣椒水攻擊！醉男持2罐亂噴「民眾狂躲」下場出爐了",
-          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E5%BB%9F%E5%8F%A3%E5%A4%9C%E5%B8%82%E9%81%AD%E8%BE%A3%E6%A4%92%E6%B0%B4%E6%94%BB%E6%93%8A-%E9%86%89%E7%94%B7%E6%8C%812%E7%BD%90%E4%BA%82%E5%99%B4-%E6%B0%91%E7%9C%BE%E7%8B%82%E8%BA%B2-%E4%B8%8B%E5%A0%B4%E5%87%BA%E7%88%90%E4%BA%86-090839700.html",
-          "time": "2026-05-31 09:08:39",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
-      "negative_news_count": 15,
-      "negativity_pct": 31,
+      "negative_news_count": 13,
+      "negativity_pct": 28,
       "urgent_red_comments": 0,
-      "urgency_score": 94,
+      "urgency_score": 86,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -118059,9 +117915,9 @@
       "lng": 121.74039807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 68",
-      "note": "24h 命中 68 則（新聞 68、留言 0）",
-      "news_count": 68,
+      "platform": "新聞 67",
+      "note": "24h 命中 67 則（新聞 67、留言 0）",
+      "news_count": 67,
       "comment_count": 0,
       "news_latest_at": "2026-06-01T01:02:50+00:00",
       "news_full_expires_at": "2026-06-02T01:02:50+00:00",
@@ -118534,20 +118390,13 @@
           "time": "2026-05-31 09:47:33",
           "publisher": "Google News→UDN",
           "severity": "yellow"
-        },
-        {
-          "title": "宜蘭星光滿天 專家帶路觀星",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qZHBuOTNwY0FmVFBQVVpUOXNOWktrWDFMYlFRMlVfc0gydzhuNU9PbWtJd0J0NG9mWHFxR3FKUkhZMm1Pak9UOXBZQjg2VmV4WWl2VDNqcHdac0Ntb0huTWdUbjRSMzg?oc=5",
-          "time": "2026-05-31 09:08:29",
-          "publisher": "Google News→人間福報電子報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 7,
       "negativity_pct": 10,
       "urgent_red_comments": 0,
-      "urgency_score": 89,
+      "urgency_score": 88,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -119770,9 +119619,9 @@
       "lng": 121.30359807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 101",
-      "note": "24h 命中 101 則（新聞 101、留言 0）",
-      "news_count": 101,
+      "platform": "新聞 100",
+      "note": "24h 命中 100 則（新聞 100、留言 0）",
+      "news_count": 100,
       "comment_count": 0,
       "news_latest_at": "2026-06-01T00:32:38+00:00",
       "news_full_expires_at": "2026-06-02T00:32:38+00:00",
@@ -120476,20 +120325,13 @@
           "time": "2026-05-31 09:47:10",
           "publisher": "Google News→桃園電子報",
           "severity": null
-        },
-        {
-          "title": "桃園復興「宇內溪戲水區」6/6開玩 新規劃3區域、導入智慧監控",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12dGFSUTJUVWVoX3NYSklTYlVINTF3UnhOUGxQd0g1UmY4QUd1a3NTbGhRS3hCeUdBV1hOUlpjQ0NMTndoWkIwVkcxQWdkdXczUVR1S1F0OG91UdIBbEFVX3lxTE5DVGhCMWd1Szd3M0Y0cEdTNGFZRXNuNUp6anB2UDQtWjlQaFNaYXpxUXpHQlI3anJUSHVYSEl1bXBxMzA1TDZYZHd2TVRDVjZTbm1RS0p0ZFNRWDFXS2hmUzllaF96T1FaSjJLTQ?oc=5",
-          "time": "2026-05-31 09:23:00",
-          "publisher": "ETtoday",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 4,
       "negativity_pct": 4,
       "urgent_red_comments": 0,
-      "urgency_score": 113,
+      "urgency_score": 112,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -120538,9 +120380,16 @@
       "note": "24h 命中 105 則（新聞 105、留言 0）",
       "news_count": 105,
       "comment_count": 0,
-      "news_latest_at": "2026-05-31T23:54:27+00:00",
-      "news_full_expires_at": "2026-06-01T23:54:27+00:00",
+      "news_latest_at": "2026-06-01T01:00:30+00:00",
+      "news_full_expires_at": "2026-06-02T01:00:30+00:00",
       "news_articles": [
+        {
+          "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+          "time": "2026-06-01 09:00:30",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
         {
           "title": "高雄男想挽回台中女友 大遠百樓梯間、電梯前強吻、猥褻下場慘",
           "url": "https://news.ltn.com.tw/news/society/breakingnews/5456168",
@@ -121268,13 +121117,6 @@
           "time": "2026-05-31 09:26:00",
           "publisher": "Google News→新華報導",
           "severity": null
-        },
-        {
-          "title": "台中76歲翁駕車逆向暴衝 38歲騎士遭撞骨盆碎裂不治",
-          "url": "https://news.nextapple.com/local/20260531/B602A5E1D6A75E179087E6027B226DA8",
-          "time": "2026-05-31 09:22:28",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": [],
@@ -122181,9 +122023,9 @@
       "lng": 121.564,
       "level": "red",
       "source": "news",
-      "platform": "新聞 158",
-      "note": "24h 命中 158 則（新聞 158、留言 0）",
-      "news_count": 158,
+      "platform": "新聞 154",
+      "note": "24h 命中 154 則（新聞 154、留言 0）",
+      "news_count": 154,
       "comment_count": 0,
       "news_latest_at": "2026-06-01T01:02:48+00:00",
       "news_full_expires_at": "2026-06-02T01:02:48+00:00",
@@ -123265,41 +123107,13 @@
           "time": "2026-05-31 09:29:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "搶攻年輕爸媽選票！沈伯洋拋親子卡政策 蔣萬安：北市勇於開路可討論",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SRzRGSVpSaXphUjctZm5WcUNYeU9UakF0UjdIaWgtMUU3WGF1WkN2UlZ5TTZWLURRUE5kSTh2U2djMTh5VGlVbDVuUjF4QTFzWm8tZmFGNk_SAV9BVV95cUxNUFBEYWVTYV9xSFM3LVZIMk82N1dRbWhGTVI5ZXFUS2NIY0c1Z1I0YXVtdmRpWVFHaGlRN0xGZWlMbmtZcmM2WkV1TmhpaFNyNE5XemJMc2ZIay0zcjBnRQ?oc=5",
-          "time": "2026-05-31 09:15:00",
-          "publisher": "三立新聞網",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yM1gyZ0RxOHVaWS0wbFlRXzlObjZmblh3X200UC1rZFJWaDJaZllodjlWcEw5VUFKd1VnVGE4MW5HNHBQZnNPMEFNX29nVE1XbzRONlp1eEFBTFBzRlZodlk0eDE5RDAyOVHSAW9BVV95cUxPdHRfY2RZTjBfekZpdWFDTjljOFhlZDU0R2cxVFhsTi1qQW1EX2htVlNvVHdER0J0TWNVd3JhWGlDRmYtSlZvSHkyWGxnNnFsOUZVR1pYbkd2V3QwcUtrQ0FacHdFTncydFV3ZXZsVjg?oc=5",
-          "time": "2026-05-31 09:14:18",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋推「親子同行卡」 蔣萬安：北市勇於率全國之先開路 政策都可以評估",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5455459",
-          "time": "2026-05-31 09:14:18",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋喊北市絕對有財源補助 藍營批：角色沒轉換過來",
-          "url": "https://tw.news.yahoo.com/%E6%B2%88%E4%BC%AF%E6%B4%8B%E5%96%8A%E5%8C%97%E5%B8%82%E7%B5%95%E5%B0%8D%E6%9C%89%E8%B2%A1%E6%BA%90%E8%A3%9C%E5%8A%A9-%E8%97%8D%E7%87%9F%E6%89%B9-%E8%A7%92%E8%89%B2%E6%B2%92%E8%BD%89%E6%8F%9B%E9%81%8E%E4%BE%86-091340084.html",
-          "time": "2026-05-31 09:13:40",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 20,
       "negativity_pct": 13,
       "urgent_red_comments": 0,
-      "urgency_score": 218,
+      "urgency_score": 214,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -123338,6 +123152,16 @@
     }
   ],
   "articles_24h": [
+    {
+      "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+      "time": "2026-06-01 09:00:30",
+      "platform": "news",
+      "publisher": "中時新聞網",
+      "hour": "2026-06-01 09:00",
+      "severity": null,
+      "is_negative": false
+    },
     {
       "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
@@ -123814,6 +123638,17 @@
     }
   ],
   "articles_7d": [
+    {
+      "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+      "time": "2026-06-01 09:00:30",
+      "platform": "news",
+      "publisher": "中時新聞網",
+      "hour": "2026-06-01 09:00",
+      "day": "2026-06-01",
+      "severity": null,
+      "is_negative": false
+    },
     {
       "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
@@ -128171,6 +128006,17 @@
       "is_negative": true
     },
     {
+      "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPWEExUE5KYzRMb1lXc1lZSHRKeGpaQUZ6XzI5Q2ZjM3dhUDlETV9uaHVHOFFzellnYjRiU3hhLTl6OUJrZjFHdG56Y3pOTzU2My03U1ZNd1FjY0FqQXNtcHdzZGkyMUZ3Q2dFaW5fcmIwVWd0RmdzZ3pvMGprNk5faEZSX3pseUtnQTJaQkJnRXFLZ01pQXZON2ZNbTRjaURzbkRxdjdXbWxGNEk3ZlVvTXpBb3YzOUgwWGcyM0hkaDVNaWJLdmFSSFRDOVA3ZUIyUF9QSUpjdWFxYlAydUg5b254NlBEbmRwY0VzUWhqS2VVMElld3pMeTZQQWlGWEpxRDBQMlQ2SHNtaDZYUWNQQ0U4TVJ0QzgtYmF5VXBvTm5FMWlqYlZ1MklMNF9wN0pFS0VId2ZoV3RWeUdjVThWcGhWZHB6aVdMZWtvTlkyRjJvZUVTRTluY1VwWDlUeC1OUURtMFVqRWw4Sm5iUVBqNFc3UUZ2ZHZNSWFRRWg3cjhIUQ?oc=5",
+      "time": "2026-05-25 17:14:29",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "hour": "2026-05-25 17:00",
+      "day": "2026-05-25",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "快訊/盧秀燕要賴清德「傳話給川普」！",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlOFhlUlhRS05WZktzNlc3R1RfUmVKYkdycUtUb1V4OXRmTW9TejdsZE5Dbml5TE9iemt0NTVTUzFsVWF0ZDJoY1lJcHAwU1lXaGxF?oc=5",
       "time": "2026-05-25 17:14:29",
@@ -129808,20 +129654,18 @@
       "day": "2026-05-25",
       "severity": null,
       "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_7d": [
     {
       "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
       "url": "https://tw.news.yahoo.com/%E5%B7%9D%E8%B3%B4%E8%8B%A5%E9%80%9A%E8%A9%B1-%E7%9B%A7%E7%A7%80%E7%87%95%E5%BB%BA%E8%AD%B0%E8%B3%B4%E6%B8%85%E5%BE%B7-%E5%82%B3%E9%81%94%E5%8F%B0%E7%81%A3%E9%9D%9E%E9%BA%BB%E7%85%A9%E8%A3%BD%E9%80%A0%E8%80%85%E7%AB%8B%E5%A0%B4-091429829.html",
       "time": "2026-05-25 09:14:29",
       "platform": "news",
       "publisher": "Yahoo新聞",
-      "hour": "2026-05-25 09:00",
-      "day": "2026-05-25",
       "severity": null,
       "is_negative": false
-    }
-  ],
-  "articles_prev_7d": [
+    },
     {
       "title": "盧秀燕創新「輔選政治學」！宜蘭在野大團結 兩代議長現身成焦點",
       "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%89%B5%E6%96%B0-%E8%BC%94%E9%81%B8%E6%94%BF%E6%B2%BB%E5%AD%B8-%E5%AE%9C%E8%98%AD%E5%9C%A8%E9%87%8E%E5%A4%A7%E5%9C%98%E7%B5%90-%E5%85%A9%E4%BB%A3%E8%AD%B0%E9%95%B7%E7%8F%BE%E8%BA%AB%E6%88%90%E7%84%A6%E9%BB%9E-074758654.html",
@@ -135821,7 +135665,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 13257,
+    "sample_size": 13244,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -135862,11 +135706,17 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 687,
+        "news_count": 688,
         "negative_count": 82,
         "negativity_pct": 12,
-        "sentiment_score": 523.0,
+        "sentiment_score": 524.0,
         "articles": [
+          {
+            "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+            "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+            "time": "2026-06-01 09:00:30",
+            "is_negative": false
+          },
           {
             "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
             "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
@@ -137707,6 +137557,12 @@
             "title": "憂少子化大禮包地方埋單！盧秀燕：這沒誠意 | NOWNEWS今日新聞",
             "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5elRlOVIxdHJFakJpSXE3VDlQZDdIdGZJNzA4dGJGU1QxT2VEWUp0WDR0WEZ4QjFUczMtNGhIRTBzSThGSUkwVXVXUjQ5TGhsT1FWY2xB?oc=5",
             "time": "2026-05-27 17:00:00",
+            "is_negative": false
+          },
+          {
+            "title": "歐盟駐台代表谷力哲讚台中美麗 盧秀燕市長出席歐洲日晚宴熱邀「See you in Taichung」",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5uWkZWWURFWGVjTHlZQmtpcnBCQVFXS3lUNkE4MmMyQUt4TG92d0E1THdOUERmaFFXM2FPTV9vc3daLUpnMjBGcEZMbnlZY0JrN0ptWDF6NWZDemJuMmJhczU0RlBnOU0ybVRR?oc=5",
+            "time": "2026-05-27 16:59:16",
             "is_negative": false
           },
           {
@@ -139981,12 +139837,6 @@
             "title": "談川賴通話 盧秀燕喊話賴政府主動聯繫 不要被動等消息",
             "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE01RFh2V3FtT2s2VFZFTXVrY3NhM21KTnBMOUpGLVRNSkZSeHVSNTFoUmtUM29YR3ppR3liaFNJeUh3TWgwYXdjbFBCS21maXZJMmpZOTctWkJRb1FwaTZDVXo0a2dBMlhpQm90bVZB?oc=5",
             "time": "2026-05-25 09:33:52",
-            "is_negative": false
-          },
-          {
-            "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
-            "url": "https://tw.news.yahoo.com/%E5%B7%9D%E8%B3%B4%E8%8B%A5%E9%80%9A%E8%A9%B1-%E7%9B%A7%E7%A7%80%E7%87%95%E5%BB%BA%E8%AD%B0%E8%B3%B4%E6%B8%85%E5%BE%B7-%E5%82%B3%E9%81%94%E5%8F%B0%E7%81%A3%E9%9D%9E%E9%BA%BB%E7%85%A9%E8%A3%BD%E9%80%A0%E8%80%85%E7%AB%8B%E5%A0%B4-091429829.html",
-            "time": "2026-05-25 09:14:29",
             "is_negative": false
           }
         ]
@@ -153358,6 +153208,16 @@
     "hour": [],
     "day": [
       {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "hour": "2026-06-01 09:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
         "time": "2026-05-31 22:34:41",
@@ -156625,6 +156485,17 @@
     ],
     "day": [
       {
+        "title": "盧秀燕：積極爭取中央支持台中機場與捷運發展",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zMGFRZGlCbEQxTjhqR3k1WkUxTmRlQnRpNlA4ZUJjS0NkNFJZbWJVOEhOUVZZNGE5d01vQzNKUnlTWWsxWTZxcENtcUVJWndlVHl6NElqbXNWeVJOYm5F?oc=5",
+        "time": "2026-06-01 09:00:30",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "hour": "2026-06-01 09:00",
+        "day": "2026-06-01",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "徐欣瑩赴台中展開市政請益之旅 盧秀燕肯定科技女博士最懂竹縣城市升級 | 勁報",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yY01FalRKNWxnQ2YxbnJxcmRaU1dBRk8yVmhpWU1KT2o2aHJhYVR0SU1MV1U0Ni1GOXY4TFpMZXg2bFB0SFduZGZsQ1dHUnFSN3pabnBR?oc=5",
         "time": "2026-05-31 22:34:41",
@@ -158550,6 +158421,17 @@
         "is_negative": false
       },
       {
+        "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
+        "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxPWEExUE5KYzRMb1lXc1lZSHRKeGpaQUZ6XzI5Q2ZjM3dhUDlETV9uaHVHOFFzellnYjRiU3hhLTl6OUJrZjFHdG56Y3pOTzU2My03U1ZNd1FjY0FqQXNtcHdzZGkyMUZ3Q2dFaW5fcmIwVWd0RmdzZ3pvMGprNk5faEZSX3pseUtnQTJaQkJnRXFLZ01pQXZON2ZNbTRjaURzbkRxdjdXbWxGNEk3ZlVvTXpBb3YzOUgwWGcyM0hkaDVNaWJLdmFSSFRDOVA3ZUIyUF9QSUpjdWFxYlAydUg5b254NlBEbmRwY0VzUWhqS2VVMElld3pMeTZQQWlGWEpxRDBQMlQ2SHNtaDZYUWNQQ0U4TVJ0QzgtYmF5VXBvTm5FMWlqYlZ1MklMNF9wN0pFS0VId2ZoV3RWeUdjVThWcGhWZHB6aVdMZWtvTlkyRjJvZUVTRTluY1VwWDlUeC1OUURtMFVqRWw4Sm5iUVBqNFc3UUZ2ZHZNSWFRRWg3cjhIUQ?oc=5",
+        "time": "2026-05-25 17:14:29",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-05-25 17:00",
+        "day": "2026-05-25",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "盧秀燕中市議會答詢 (圖)",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbDQ2QnZtN0cwRFBXT3EwVXNTdjM0eTZJWXZ1TjhGRG9LSThQSllPN2d1RHJLZ0lLbWoydjh3T1Bzb1dia0VIQXNvXzNwNVlNNnBzOHVhOTFTaXRWeTBzRVlyVlJEUkljU0JVVGo4cE03QUhwVDJ1NVh2d2JmS01meDNmT2E1c0Z6Mm1WcVZyM3ZxTzU1bkFLcldicVpQUTBsYjF3ZWF6MEctcVdDLUpRc0JhaVNNOVBNSzVwdUVrZ082ZktLQW9UeE1VaEQ?oc=5",
         "time": "2026-05-25 16:38:40",
@@ -159435,17 +159317,6 @@
         "time": "2026-05-25 09:33:52",
         "platform": "news",
         "publisher": "中時新聞網",
-        "hour": "2026-05-25 09:00",
-        "day": "2026-05-25",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "川賴若通話 盧秀燕建議賴清德：傳達台灣非麻煩製造者立場",
-        "url": "https://tw.news.yahoo.com/%E5%B7%9D%E8%B3%B4%E8%8B%A5%E9%80%9A%E8%A9%B1-%E7%9B%A7%E7%A7%80%E7%87%95%E5%BB%BA%E8%AD%B0%E8%B3%B4%E6%B8%85%E5%BE%B7-%E5%82%B3%E9%81%94%E5%8F%B0%E7%81%A3%E9%9D%9E%E9%BA%BB%E7%85%A9%E8%A3%BD%E9%80%A0%E8%80%85%E7%AB%8B%E5%A0%B4-091429829.html",
-        "time": "2026-05-25 09:14:29",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
         "hour": "2026-05-25 09:00",
         "day": "2026-05-25",
         "severity": null,
