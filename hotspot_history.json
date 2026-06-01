@@ -21988,7 +21988,7 @@
     },
     {
       "date": "2026-06-01",
-      "snapshot_at": "2026-06-01T11:57:18.748393+00:00",
+      "snapshot_at": "2026-06-01T12:12:37.924269+00:00",
       "hotspots": [
         {
           "title": "廚餘山",
@@ -22012,6 +22012,18 @@
           "negativity_pct": 0,
           "is_urgent": false,
           "urgency_score": 3,
+          "sample_titles": []
+        },
+        {
+          "title": "捷運藍線爭議",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 1,
           "sample_titles": []
         },
         {
@@ -22099,18 +22111,17 @@
           ]
         },
         {
-          "title": "屏東詐騙案",
-          "city": "屏東",
-          "place": "屏東縣政府",
+          "title": "新北詐騙案",
+          "city": "新北",
+          "place": "新北市政府",
           "level": "green",
-          "news_count": 2,
+          "news_count": 1,
           "comment_count": 0,
           "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
+          "is_urgent": false,
+          "urgency_score": 4,
           "sample_titles": [
-            "假投資詐騙最猖獗！屏東執行分署前進營區 強化國軍反詐+法治",
-            "叫聲寶貝送6萬？屏東大叔墜網戀 險落詐騙陷阱"
+            "不是詐騙！新北女暢遊宜蘭抽中百萬汽車 直呼不可思議"
           ]
         },
         {
@@ -22129,35 +22140,19 @@
           ]
         },
         {
-          "title": "嘉義市地方動態",
-          "city": "嘉義市",
-          "place": "嘉義市政府",
-          "level": "green",
-          "news_count": 11,
-          "comment_count": 0,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 11,
-          "sample_titles": [
-            "嘉市毒駕零容忍 公告5名毒駕累犯照片",
-            "華南青少棒曾品閎好投 台中擊退嘉義市保生機",
-            "冷氣別急著開最強！嘉義市環保局教3步驟降溫 公開夏季節電5秘訣"
-          ]
-        },
-        {
           "title": "南投地方動態",
           "city": "南投",
           "place": "南投縣政府",
           "level": "green",
-          "news_count": 11,
+          "news_count": 13,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 11,
+          "urgency_score": 13,
           "sample_titles": [
+            "南投縣府災害情資網上線 結合LINE推播零時差防災",
             "5月底人口數底定 南投縣議員2、3選區席次1增1減",
-            "南投縣府與中央研究院科研團隊攜手 首創跨縣市風廊",
-            "南投災害情資網 停班課訊息結合LINE零時差推播"
+            "南投縣府與中央研究院科研團隊攜手 首創跨縣市風廊"
           ]
         },
         {
@@ -22189,20 +22184,6 @@
           ]
         },
         {
-          "title": "新北弊案爭議",
-          "city": "新北",
-          "place": "新北市政府",
-          "level": "yellow",
-          "news_count": 1,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": false,
-          "urgency_score": 4,
-          "sample_titles": [
-            "新北里長收錢助廠商倒廢瀝青 判刑1年半獲緩刑"
-          ]
-        },
-        {
           "title": "屏東弊案爭議",
           "city": "屏東",
           "place": "屏東縣政府",
@@ -22217,19 +22198,49 @@
           ]
         },
         {
-          "title": "雲林地方動態",
-          "city": "雲林",
-          "place": "雲林縣政府",
+          "title": "新北弊案爭議",
+          "city": "新北",
+          "place": "新北市政府",
           "level": "yellow",
-          "news_count": 23,
+          "news_count": 1,
           "comment_count": 0,
-          "negativity_pct": 4,
+          "negativity_pct": 100,
           "is_urgent": false,
-          "urgency_score": 26,
+          "urgency_score": 4,
           "sample_titles": [
-            "雲林縣推動智農補助見成效 義庄合作農場示範數位管理成果",
-            "雲林祭出全齡健康政策 三大疫苗即日起免費接種守護縣民",
-            "雲林農業KOC（關鍵意見消費者）徵選開跑 社群助攻農產行銷"
+            "新北里長收錢助廠商倒廢瀝青 判刑1年半獲緩刑"
+          ]
+        },
+        {
+          "title": "屏東詐騙案",
+          "city": "屏東",
+          "place": "屏東縣政府",
+          "level": "yellow",
+          "news_count": 3,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": true,
+          "urgency_score": 12,
+          "sample_titles": [
+            "港灣新聞網／假投資、AI變聲詐騙全現形！屏東執行分署前進營區 為國軍築起防詐防線",
+            "假投資詐騙最猖獗！屏東執行分署前進營區 強化國軍反詐+法治",
+            "叫聲寶貝送6萬？屏東大叔墜網戀 險落詐騙陷阱"
+          ]
+        },
+        {
+          "title": "嘉義市地方動態",
+          "city": "嘉義市",
+          "place": "嘉義市政府",
+          "level": "yellow",
+          "news_count": 12,
+          "comment_count": 0,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 12,
+          "sample_titles": [
+            "嘉市警公布5毒駕累犯姓名照片 盼達嚇阻效果",
+            "嘉市毒駕零容忍 公告5名毒駕累犯照片",
+            "華南青少棒曾品閎好投 台中擊退嘉義市保生機"
           ]
         },
         {
@@ -22249,19 +22260,35 @@
           ]
         },
         {
+          "title": "雲林地方動態",
+          "city": "雲林",
+          "place": "雲林縣政府",
+          "level": "yellow",
+          "news_count": 26,
+          "comment_count": 0,
+          "negativity_pct": 4,
+          "is_urgent": false,
+          "urgency_score": 29,
+          "sample_titles": [
+            "雲林首場高齡換照「一站式」啟動 27位長者大讚",
+            "立法院經濟委員會考察雲林農經建設 聚焦虎尾與褒忠產業園區推動進度",
+            "雲林監理站深入四湖守護長者行車安全"
+          ]
+        },
+        {
           "title": "台東地方動態",
           "city": "台東",
           "place": "台東縣政府",
           "level": "yellow",
-          "news_count": 25,
+          "news_count": 26,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 25,
+          "urgency_score": 26,
           "sample_titles": [
+            "台東知本濕地算「縣級」或「中央級」 未有下文",
             "2026台東縣長選舉最新民調 國民黨吳秀華領先、前立委劉櫂豪有吸票能力",
-            "台東推出十五家「療癒角落」 邀請全國民眾來體驗",
-            "台東男子二度無照拒酒測 罰單共42萬元繳清"
+            "台東推出十五家「療癒角落」 邀請全國民眾來體驗"
           ]
         },
         {
@@ -22281,22 +22308,6 @@
           ]
         },
         {
-          "title": "新竹市地方動態",
-          "city": "新竹市",
-          "place": "新竹市政府",
-          "level": "yellow",
-          "news_count": 28,
-          "comment_count": 0,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 28,
-          "sample_titles": [
-            "竹市獲海洋環境管理考核特優6連霸 高虹安市長：多元創新 守護永續海洋",
-            "竹市工藝月系列活動6月登場！邀民眾感受職人匠心與文化魅力",
-            "創新守護永續海洋 竹市榮獲海洋環境管理考核特優6連霸 | 中華日報"
-          ]
-        },
-        {
           "title": "藍營路線爭議",
           "city": "台中",
           "place": "台中市政府",
@@ -22313,19 +22324,35 @@
           ]
         },
         {
+          "title": "新竹市地方動態",
+          "city": "新竹市",
+          "place": "新竹市政府",
+          "level": "yellow",
+          "news_count": 29,
+          "comment_count": 0,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 29,
+          "sample_titles": [
+            "新竹市接棒2028全中運 議員憂自由車場悲劇重演",
+            "竹市獲海洋環境管理考核特優6連霸 高虹安市長：多元創新 守護永續海洋",
+            "竹市工藝月系列活動6月登場！邀民眾感受職人匠心與文化魅力"
+          ]
+        },
+        {
           "title": "嘉義縣地方動態",
           "city": "嘉義縣",
           "place": "嘉義縣政府",
           "level": "yellow",
-          "news_count": 30,
+          "news_count": 33,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 30,
+          "urgency_score": 33,
           "sample_titles": [
+            "游盈隆視察嘉義縣選委會勉勵中央地方共同應對選務新挑戰| 政治",
             "2026年地方選舉布局展開，民進黨嘉義縣黨部今天公布第二波鄉鎮市長徵召與提名名單，其中現任鹿草鄉長嚴珮瑜確定不爭取連任，",
-            "嘉義縣校園小記者頒獎 翁章梁勉勵孩子成為嘉義的「眼睛」",
-            "300台微型感測器守護空氣 嘉義縣環保局即時監測網揪污染 - 生活新聞 - PChome Online 新聞"
+            "嘉義縣校園小記者頒獎 翁章梁勉勵孩子成為嘉義的「眼睛」"
           ]
         },
         {
@@ -22333,15 +22360,15 @@
           "city": "基隆",
           "place": "基隆市政府",
           "level": "yellow",
-          "news_count": 34,
+          "news_count": 35,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 40,
+          "urgency_score": 41,
           "sample_titles": [
+            "97歲失智嬤外出迷途 基市暖警訪查周邊鄰居護送回家",
             "基隆強力取締毒駕 依法公布累犯照片及姓名公告",
-            "2026臺北水舞嘉年華 開幕水火共舞點亮基隆河",
-            "設計連結城市未來 基隆國際青年設計跨域交流工作坊開放報名"
+            "2026臺北水舞嘉年華 開幕水火共舞點亮基隆河"
           ]
         },
         {
@@ -22349,15 +22376,15 @@
           "city": "新竹縣",
           "place": "新竹縣政府",
           "level": "yellow",
-          "news_count": 45,
+          "news_count": 51,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 45,
+          "urgency_score": 51,
           "sample_titles": [
-            "民進黨新竹縣長候選人周三開牌傳鄭朝方點頭同意出戰| 風傳媒",
-            "鄭朝方答應出戰新竹縣長？傳民進黨周三正式提名",
-            "傳本周三正式提名選新竹縣長 鄭朝方回應了"
+            "民進黨新竹縣議員初選民調啟動6搶4戰況激烈| 自由電子報",
+            "民進黨新竹縣議員初選民調啟動 6搶4戰況激烈",
+            "新竹縣長盃龍舟賽6月19日登場 54隊齊聚池和湖競速"
           ]
         },
         {
@@ -22444,11 +22471,11 @@
           "city": "金門",
           "place": "金門縣政府",
           "level": "red",
-          "news_count": 34,
+          "news_count": 37,
           "comment_count": 0,
-          "negativity_pct": 6,
+          "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 40,
+          "urgency_score": 43,
           "sample_titles": [
             "高雄港區新聞網／買翻金門一路抽iPhone！2026金門購物嘉年華開跑 五輪抽獎嗨翻全島",
             "2026金門海上長泳暨金廈泳渡活動招募特約店家 邀在地業者共襄盛舉 迎接夏日觀光熱潮",
@@ -22460,15 +22487,15 @@
           "city": "台南",
           "place": "台南市政府",
           "level": "red",
-          "news_count": 46,
+          "news_count": 51,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 46,
+          "urgency_score": 51,
           "sample_titles": [
-            "台南一期稻作開始收割了 收購開盤100台斤濕穀1090元起跳",
-            "台南組團前進首爾食品展 推廣農特產國際行銷",
-            "台南主要水庫蓄水量持續下降 水利署評估六月底前供水無虞"
+            "今夏將離任 AIT高雄分處長張子霖辭別黃偉哲",
+            "台南隊6/9前進首爾國際食品展",
+            "台股創高帶旺房市！全台5月交易量回升12% 新竹、台南年增最猛"
           ]
         },
         {
@@ -22482,9 +22509,9 @@
           "is_urgent": false,
           "urgency_score": 81,
           "sample_titles": [
-            "卡片不好用？彰化「這張卡」22萬多人持有 1000元月額度全用掉才1300人",
-            "彰化縣榮民服務處防災教育訓練 提升臨災應變力",
-            "知名ADR勞資爭議調解專家與人力資源管理專家鄭哲彰博士蒞臨彰化主講資遣通報宣導會"
+            "2026彰化縣政府馬拉松嘉年華盛大啟動 感受彰化最有人情味的城市魅力",
+            "2026彰化馬拉松嘉年華 5大賽事接力登場",
+            "卡片不好用？彰化「這張卡」22萬多人持有 1000元月額度全用掉才1300人"
           ]
         },
         {
@@ -22492,15 +22519,15 @@
           "city": "苗栗",
           "place": "苗栗縣政府",
           "level": "red",
-          "news_count": 59,
+          "news_count": 64,
           "comment_count": 0,
           "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 62,
+          "urgency_score": 67,
           "sample_titles": [
-            "苗栗棒球場選址後龍溪畔 議員有疑慮",
-            "苗栗縣慶祝女童軍節暨文山魔法光電球場啟用",
-            "林月琴率衛環委員會 考察苗栗醫療"
+            "余文忠籲請部苗升格「台大苗栗分院」 推醫養一體化守護鄉親",
+            "砸21億興建部立苗栗醫院 衛福部、立委現地考察 | 自由電子報",
+            "砸21億興建部立苗栗醫院 衛福部、立委現地考察"
           ]
         },
         {
@@ -22508,15 +22535,15 @@
           "city": "花蓮",
           "place": "花蓮縣政府",
           "level": "red",
-          "news_count": 61,
+          "news_count": 64,
           "comment_count": 0,
           "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 64,
+          "urgency_score": 67,
           "sample_titles": [
-            "守護藍海顯成效！花蓮縣展現海洋環境管理公私協力硬實力",
-            "高雄-花蓮、台中-花蓮航線載客率僅2成 華信航空：估7月前提停飛申請",
-            "高雄、台中飛花蓮2航線載客率僅2成 華信航空：估7月前申請停飛"
+            "花蓮女中畢業典禮引人 經歷0403強震畢業生新生",
+            "華信航空凍未條擬申請停飛花蓮航線- 產業",
+            "守護藍海顯成效！花蓮縣展現海洋環境管理公私協力硬實力"
           ]
         },
         {
@@ -22524,15 +22551,15 @@
           "city": "屏東",
           "place": "屏東縣政府",
           "level": "red",
-          "news_count": 96,
+          "news_count": 102,
           "comment_count": 0,
-          "negativity_pct": 4,
+          "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 108,
+          "urgency_score": 117,
           "sample_titles": [
-            "金融傳愛點亮屏東2026年金融服務愛心公益嘉年華6/13屏東縣立體育館前草皮區登場| 唐可欣 | 地方新聞",
-            "中華電參與自然基礎建設復育屏東車城海岸林韌性| 產經",
-            "屏東縣國小師退休破百人創新高 基層嘆：重建尊師氛圍"
+            "財經 2026/06/01 18:26 中華電參與自然基礎建設 復育屏東車城海岸林韌性",
+            "羽球／永續不只是口號戴資穎隨中華電信屏東植樹| 棒球 | 運動",
+            "港灣新聞網／校園柵欄突降！屏東慈惠醫專大客車進校擦撞 柵欄與照後鏡雙雙受損"
           ]
         },
         {
@@ -22540,31 +22567,15 @@
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "red",
-          "news_count": 99,
+          "news_count": 108,
           "comment_count": 0,
           "negativity_pct": 11,
           "is_urgent": false,
-          "urgency_score": 132,
+          "urgency_score": 144,
           "sample_titles": [
-            "國民黨宜蘭年底選戰布局，縣黨部今天公布鄉鎮市長、縣議員的徵召與提名名單，鄉鎮市長11人、縣議員16人，其中五結鄉長選舉區",
-            "佛光大學微水力綠能成果 亮相宜蘭淨零公正轉型",
-            "國民黨宜蘭2026佈局底定！五結鄉長、平地議員未提名 保留無黨合作"
-          ]
-        },
-        {
-          "title": "台中地方動態",
-          "city": "台中",
-          "place": "台中市大里區",
-          "level": "red",
-          "news_count": 115,
-          "comment_count": 0,
-          "negativity_pct": 6,
-          "is_urgent": false,
-          "urgency_score": 136,
-          "sample_titles": [
-            "節省經費致綠川退化？ 中市水利局曝4大整治工程逐步打造兼具防洪韌性 | 王秀禾 | 地方新聞",
-            "服務逾37載 中市府斥資2000萬元升級龍井老人會館",
-            "服務逾37載 中市府斥資2000萬元升級龍井老人會館"
+            "不是詐騙！新北女暢遊宜蘭抽中百萬汽車 直呼不可思議",
+            "「237宜蘭蓋漳」列車開往羅東 林國漳承諾加速推動鐵路高架化",
+            "萬眾矚目「暢遊宜蘭好禮加倍抽2.0」第2波抽獎揭曉 壓軸大獎汽車得主出爐"
           ]
         },
         {
@@ -22572,31 +22583,47 @@
           "city": "新北",
           "place": "新北市政府",
           "level": "red",
-          "news_count": 116,
+          "news_count": 124,
           "comment_count": 0,
-          "negativity_pct": 5,
+          "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 134,
+          "urgency_score": 145,
           "sample_titles": [
-            "碰幾勒金大聲！新北公車連撞7台機車 乘客嚇壞：以為要死在車上",
-            "房市／信義房屋王煒智先義後利 獲新北傑出經紀人殊榮 | 地產居家 | 生活",
-            "2026/06/01 16:29 新北5月房市交易量比4月增12.4％ 三重區增170棟最多"
+            "新北巴金森社會服務協會辦講座 呼籲對有顫動、僵直和行緩等特徵的巴友 多多包容",
+            "新北敬老愛心卡擴大使用範圍 採分階段、穩健推動",
+            "不是詐騙！新北女暢遊宜蘭抽中百萬汽車 直呼不可思議"
+          ]
+        },
+        {
+          "title": "台中地方動態",
+          "city": "台中",
+          "place": "台中市大里區",
+          "level": "red",
+          "news_count": 127,
+          "comment_count": 0,
+          "negativity_pct": 6,
+          "is_urgent": false,
+          "urgency_score": 151,
+          "sample_titles": [
+            "地方 2026/06/01 18:38 台中補習班廣告帆布鬆脫欲墜 環保局要求處理",
+            "民進黨一名台中市議員被指幫助選民喬病床，並疑似以此換取個人看板，藍營議員要求檢調徹查。被指控的江肇國強調看板為支持者提供",
+            "少子化衝擊！中市國中小新生銳減3千人 明星學校決戰關鍵曝"
           ]
         },
         {
           "title": "高雄地方動態",
           "city": "高雄",
-          "place": "高雄市前金區",
+          "place": "高雄市三民區",
           "level": "red",
-          "news_count": 119,
+          "news_count": 127,
           "comment_count": 0,
           "negativity_pct": 8,
           "is_urgent": false,
-          "urgency_score": 149,
+          "urgency_score": 157,
           "sample_titles": [
-            "高雄看護推輪椅「逆向橫跨4車道」　順向駕駛驚嚇",
-            "大型車死角奪命！ 高雄女騎單車遭聯結車捲入 慘死輪下",
-            "股市狂飆、房市先等等？新竹高雄交易增溫 年輕人瘋開戶拚第一桶金"
+            "今夏將離任 AIT高雄分處長張子霖辭別黃偉哲",
+            "培育金牌人才 協會盃全國兒童體操錦標賽高雄盛大開幕",
+            "6都5月交易量月增5.6% 高雄暴增2成建案交屋潮拉抬成主因"
           ]
         },
         {
@@ -22604,15 +22631,15 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 142,
+          "news_count": 152,
           "comment_count": 0,
           "negativity_pct": 1,
           "is_urgent": false,
-          "urgency_score": 148,
+          "urgency_score": 158,
           "sample_titles": [
-            "暑假衝一波！桃園「玩客星樂園」7大館舍變身特色星球 親子闖關玩翻客家宇宙",
-            "桃園警犬隊廳舍新建工程 大園動土",
-            "神明不只一種長相？桃園「神農豐饒季」開箱：看懂黑面穿樹葉、文青遶境信仰玄機| 王維傑| 地方新聞"
+            "推廣桃園具備市場潛力優質伴手禮桃市經發局全方位多軌輔導桃金好禮提升產品競爭力進軍國際市場",
+            "桃園好禮接軌國際！ 115年桃金好禮通路媒合力助30家在地品牌進軍國內外指標通路",
+            "桃園警犬隊廳舍新建工程動土 打造優質友善環境 展現新風貌"
           ]
         },
         {
@@ -22620,15 +22647,15 @@
           "city": "台北",
           "place": "台北市信義區",
           "level": "red",
-          "news_count": 187,
+          "news_count": 198,
           "comment_count": 0,
           "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 208,
+          "urgency_score": 222,
           "sample_titles": [
-            "蔣萬安備詢背後有人？吳沛憶爆料殷瑋一路打字下指令 網友：原來台北市地下市長姓殷",
-            "歡迎輝達落腳蔣萬安：台北101晚上點燈慶祝| 產經",
-            "民眾黨前主席柯文哲今天現身台北監獄，探望國民黨前立委蔡正元。民眾黨前副秘書長許甫表示，蔡正元對時事的掌握完全零距離，柯文"
+            "知名「送子鳥」疑涉偷拍！台北院區負責人、經理送辦",
+            "「送子鳥」台北院涉偷拍 負責人移送北檢",
+            "又有裝針孔偷拍！北檢搜索送子鳥生殖中心台北院 負責人、經理遭移送"
           ]
         }
       ]
