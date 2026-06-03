@@ -31,9 +31,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "threads:b531625724410927803a"
   },
@@ -69,9 +69,9 @@
       "yellow": 1,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "threads:6fa7ebabe766f5ed281c"
   },
@@ -88,9 +88,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "threads:f7d398e82f2038e6cac2"
   },
@@ -126,9 +126,9 @@
       "yellow": 0,
       "red": 0,
       "sarcasm": 0,
-      "llm": "黃",
+      "llm": "綠",
       "rule": "黃",
-      "source": "llm"
+      "source": "rule(stricter)"
     },
     "comment_id": "threads:e0053ca92643fbf8f206"
   },
@@ -150,6 +150,82 @@
       "source": "llm"
     },
     "comment_id": "threads:9e30675932a1203ee936"
+  },
+  {
+    "author": "lapd_cuh",
+    "text": "[圖片] Photo by 黃誠 on June 01, 2026. May be an image of one or more people and text.",
+    "time_text": "1天",
+    "url": "",
+    "kind": "image",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 1,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:94b1a096b1b13d2c548d"
+  },
+  {
+    "author": "apple_4913",
+    "text": "好親民的市長",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:2720bcf1364c85939885"
+  },
+  {
+    "author": "mmhappyhaha",
+    "text": "除了市長，你其他的事情都做很好。",
+    "time_text": "22小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "threads:6e383323747eab0d4574"
+  },
+  {
+    "author": "jsjsjqikqkqkq111",
+    "text": "2028的總統",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:e77108c27f5ee7c26b4c"
   },
   {
     "author": "maiomiao1121",
@@ -252,94 +328,18 @@
     "time_text": "1天",
     "url": "",
     "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
+    "signal": "red",
+    "signal_zh": "紅燈",
     "signal_score": {
       "green": 0,
       "yellow": 0,
       "red": 0,
       "sarcasm": 1,
-      "llm": "黃",
+      "llm": "紅",
       "rule": "黃",
       "source": "llm"
     },
     "comment_id": "threads:7902187457005fa3c3e0"
-  },
-  {
-    "author": "lapd_cuh",
-    "text": "[圖片] Photo by 黃誠 on June 01, 2026. May be an image of one or more people and text.",
-    "time_text": "1天",
-    "url": "",
-    "kind": "image",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 1,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:94b1a096b1b13d2c548d"
-  },
-  {
-    "author": "apple_4913",
-    "text": "好親民的市長",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:2720bcf1364c85939885"
-  },
-  {
-    "author": "mmhappyhaha",
-    "text": "除了市長，你其他的事情都做很好。",
-    "time_text": "21小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:6e383323747eab0d4574"
-  },
-  {
-    "author": "jsjsjqikqkqkq111",
-    "text": "2028的總統",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:e77108c27f5ee7c26b4c"
   },
   {
     "author": "tsunami_0927",
@@ -361,6 +361,25 @@
     "comment_id": "threads:ed14a5029c340bd07570"
   },
   {
+    "author": "hiroshikure",
+    "text": "你們沒有配合盧媽媽",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:f964780d559c48231c67"
+  },
+  {
     "author": "fan.zhaoming",
     "text": "👍👍恭喜🎉",
     "time_text": "1天",
@@ -378,63 +397,6 @@
       "source": "llm"
     },
     "comment_id": "threads:3252e17a3e7ede8e1e47"
-  },
-  {
-    "author": "hiroshikure",
-    "text": "你們沒有配合盧媽媽",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:f964780d559c48231c67"
-  },
-  {
-    "author": "linay.sin.3",
-    "text": "喬床位找誰？？",
-    "time_text": "19小時",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:c18e5c58473cbfdc6603"
-  },
-  {
-    "author": "ggbox1414",
-    "text": "有沒有覺得市長是他很倒霉",
-    "time_text": "1天",
-    "url": "",
-    "kind": "text",
-    "signal": "yellow",
-    "signal_zh": "黃燈",
-    "signal_score": {
-      "green": 0,
-      "yellow": 0,
-      "red": 0,
-      "sarcasm": 0,
-      "llm": "黃",
-      "rule": "黃",
-      "source": "llm"
-    },
-    "comment_id": "threads:aad4e6d102e332acfc52"
   },
   {
     "author": "someung13140000",
@@ -456,6 +418,63 @@
     "comment_id": "threads:7191a156f416f7faf7c4"
   },
   {
+    "author": "ggbox1414",
+    "text": "有沒有覺得市長是他很倒霉",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:aad4e6d102e332acfc52"
+  },
+  {
+    "author": "linay.sin.3",
+    "text": "喬床位找誰？？",
+    "time_text": "20小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "threads:c18e5c58473cbfdc6603"
+  },
+  {
+    "author": "daniel._.chen0625",
+    "text": "哈哈是我啦",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:49e9988d7baab1dbb215"
+  },
+  {
     "author": "geesonchan",
     "text": "打鼓也是迷因啊",
     "time_text": "1天",
@@ -475,8 +494,46 @@
     "comment_id": "threads:b45f6991fcab345cac0a"
   },
   {
-    "author": "daniel._.chen0625",
-    "text": "哈哈是我啦",
+    "author": "redodieo5o3",
+    "text": "？",
+    "time_text": "18小時",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "綠",
+      "rule": "黃",
+      "source": "rule(stricter)"
+    },
+    "comment_id": "threads:05014ca160a284197fe3"
+  },
+  {
+    "author": "hungc_li",
+    "text": "說到拍照你真的好開心",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 1,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "綠",
+      "source": "llm"
+    },
+    "comment_id": "threads:5782602762a1ddcd410c"
+  },
+  {
+    "author": "chiehroctwpuli",
+    "text": "可以麻煩您好好關心市政，整天搞有些有的沒的",
     "time_text": "1天",
     "url": "",
     "kind": "text",
@@ -491,6 +548,63 @@
       "rule": "黃",
       "source": "llm"
     },
-    "comment_id": "threads:49e9988d7baab1dbb215"
+    "comment_id": "threads:6ed335547c460598e977"
+  },
+  {
+    "author": "ianlim2007",
+    "text": "妳什麼時候要跟進？？",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "yellow",
+    "signal_zh": "黃燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "黃",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "threads:39adfbcf573e1dc21767"
+  },
+  {
+    "author": "hefeixuan28403",
+    "text": "很幽默的市长，可惜她舔共了。",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 2,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "紅",
+      "source": "llm"
+    },
+    "comment_id": "threads:203969dc12b4dde90b57"
+  },
+  {
+    "author": "scott9128",
+    "text": "是八七吧⋯⋯專屬台中市長",
+    "time_text": "1天",
+    "url": "",
+    "kind": "text",
+    "signal": "red",
+    "signal_zh": "紅燈",
+    "signal_score": {
+      "green": 0,
+      "yellow": 0,
+      "red": 0,
+      "sarcasm": 0,
+      "llm": "紅",
+      "rule": "黃",
+      "source": "llm"
+    },
+    "comment_id": "threads:1886f281aedc40614687"
   }
 ]
