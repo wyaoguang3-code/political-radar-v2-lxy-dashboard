@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>事件解構 · 脈絡透明化｜台中輿情鑑識</title>
+<style>
+:root{--bg:#0b1020;--panel:#121935;--panel2:#0c1228;--bd:#2a335f;--tx:#e8ecff;--mut:#b9c3f2;--dim:#6b7494;
+--acc:#5a79ff;--red:#ff5d6c;--yel:#ffc24b;--grn:#3ddc97;--org:#ff9f43}
+*{box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'PingFang TC','Microsoft JhengHei',sans-serif;
+background:var(--bg);color:var(--tx);margin:0;padding:16px;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto}
+h1{font-size:21px;margin:0 0 2px;display:flex;align-items:center;gap:10px}
+h1 .sub{font-size:12px;color:var(--mut);font-weight:400}
+.meta{color:var(--dim);font-size:12px;margin-bottom:14px}
+.panel{background:var(--panel);border:1px solid var(--bd);border-radius:12px;padding:14px;min-width:0}
+.sec-title{font-size:14px;font-weight:700;margin:0 0 10px;display:flex;align-items:center;gap:6px;color:var(--tx)}
+.sec-title .hint{font-weight:400;font-size:11px;color:var(--dim)}
+/* 預警雷達 */
+.watch-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
+.watch-card{flex:0 0 250px;background:var(--panel2);border:1px solid #3d2a2a;border-left:3px solid var(--org);
+border-radius:10px;padding:10px 12px;font-size:12px}
+.watch-card b{font-size:13px}
+.watch-card .wc-meta{color:var(--mut);margin:4px 0}
+.watch-card .wc-note{color:var(--org);font-size:11px;margin-top:6px}
+.watch-card a{color:var(--mut);text-decoration:none;font-size:11px}
+.watch-card a:hover{color:var(--acc)}
+/* 版面 */
+.layout{display:grid;grid-template-columns:330px 1fr;gap:14px;margin-top:14px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+/* 事件清單 */
+.ev-card{background:var(--panel2);border:1px solid var(--bd);border-radius:10px;padding:11px 12px;margin-bottom:9px;
+cursor:pointer;transition:border-color .12s,transform .08s}
+.ev-card:hover{border-color:var(--acc);transform:translateY(-1px)}
+.ev-card.active{border-color:var(--acc);background:#16203f;box-shadow:0 0 0 1px var(--acc)}
+.ev-card .name{font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.ev-card .name .score{font-size:11px;color:var(--dim);white-space:nowrap}
+.ev-row{display:flex;gap:6px;align-items:center;margin-top:5px;flex-wrap:wrap}
+.chip{font-size:10.5px;padding:1px 8px;border-radius:99px;border:1px solid var(--bd);color:var(--mut);white-space:nowrap}
+.chip.topic{border-color:#3a4a8a;color:#9db1ff}
+.chip.fp-高度協同跡象{border-color:var(--red);color:var(--red)}
+.chip.fp-媒體議程推動型{border-color:var(--yel);color:var(--yel)}
+.chip.fp-自然發酵型{border-color:var(--grn);color:var(--grn)}
+.spark{margin-top:7px}
+.ev-card .mini{color:var(--dim);font-size:11px;margin-top:4px}
+/* 詳情 */
+.det-head{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;margin-bottom:4px}
+.det-head h2{font-size:19px;margin:0}
+.statline{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:12.5px;margin:8px 0 2px}
+.statline b{color:var(--tx)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+@media(max-width:1000px){.grid2{grid-template-columns:1fr}}
+.sub-panel{background:var(--panel2);border:1px solid var(--bd);border-radius:10px;padding:12px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+td,th{padding:4px 6px;text-align:left;vertical-align:top;border-bottom:1px solid #1a2241}
+th{color:var(--dim);font-weight:600;font-size:11px}
+a.tl{color:var(--tx);text-decoration:none;border-bottom:1px dotted #44508a}
+a.tl:hover{color:var(--acc);border-color:var(--acc)}
+.sev-紅燈{color:var(--red)}.sev-黃燈{color:var(--yel)}.sev-綠燈{color:var(--grn)}
+.lean-泛藍{color:#7da2ff}.lean-泛綠{color:#5fd9a2}.lean-中性{color:#cfd6f5}.lean-聚合{color:#9aa3c7}.lean-通訊社,.lean-公共{color:#b9c3f2}
+.kv{display:flex;justify-content:space-between;font-size:12px;padding:3px 0;border-bottom:1px dashed #1a2241}
+.kv span:first-child{color:var(--mut)}
+.indic{margin:7px 0;padding:8px 10px;background:#0e1530;border:1px solid #1f2950;border-radius:8px}
+.indic .ir{display:flex;justify-content:space-between;font-size:12.5px;font-weight:600}
+.indic .ev{color:var(--mut);font-size:11.5px;margin-top:2px}
+.bar-bg{height:5px;background:#1a2241;border-radius:99px;margin-top:5px;overflow:hidden}
+.bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--grn),var(--yel) 55%,var(--red))}
+.gauge{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.gauge .num{font-size:30px;font-weight:800}
+.gauge .lbl{font-size:13px;font-weight:700}
+.gauge .desc{font-size:11.5px;color:var(--mut)}
+.lean-bar{display:flex;height:16px;border-radius:6px;overflow:hidden;margin:8px 0;border:1px solid var(--bd)}
+.lean-bar div{height:100%}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--mut);margin-top:4px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px}
+/* 逆轉 / 手冊 */
+.rev-box{border-left:3px solid var(--grn);background:#0e1d18;border-radius:8px;padding:10px 12px;margin-top:12px;font-size:13px}
+.rev-box.none{border-color:var(--dim);background:#10162e;color:var(--mut)}
+.play-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:10px}
+.play-col{background:var(--panel2);border:1px solid var(--bd);border-radius:10px;padding:11px}
+.play-col h4{margin:0 0 7px;font-size:12.5px;color:var(--acc)}
+.play-col ul{margin:0;padding-left:16px;font-size:12px;color:var(--tx)}
+.play-col li{margin-bottom:6px}
+.note-box{background:#1a1430;border:1px solid #3a2a6a;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12.5px}
+.note-box b{color:#c0a8ff}
+.phase-tl{display:flex;gap:0;margin:10px 0 4px;font-size:11px;flex-wrap:wrap}
+.phase-step{flex:1;min-width:110px;padding:7px 9px;background:var(--panel2);border:1px solid var(--bd);position:relative}
+.phase-step:first-child{border-radius:8px 0 0 8px}.phase-step:last-child{border-radius:0 8px 8px 0}
+.phase-step b{display:block;font-size:12px;margin-bottom:2px}
+.phase-step.p-ign b{color:var(--red)}.phase-step.p-peak b{color:var(--yel)}.phase-step.p-rev b{color:var(--grn)}.phase-step.p-lat b{color:var(--mut)}
+.caveats{margin-top:18px;color:var(--dim);font-size:11px;line-height:1.7}
+.hour-hist{display:flex;align-items:flex-end;gap:1px;height:42px;margin-top:6px}
+.hour-hist div{flex:1;background:var(--acc);opacity:.85;border-radius:2px 2px 0 0;min-height:1px}
+.hour-lbl{display:flex;justify-content:space-between;font-size:9.5px;color:var(--dim)}
+.empty{color:var(--dim);font-size:12px;padding:6px 0}
+svg text{font-family:inherit}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔬 事件解構 · 脈絡透明化 <span class="sub">台中輿情事件鑑識（盧秀燕基底）</span></h1>
+  <div class="meta" id="meta">載入中…</div>
+
+  <div class="panel" id="watchPanel" style="border-left:3px solid var(--org)">
+    <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點</span></div>
+    <div class="watch-strip" id="watchStrip"></div>
+  </div>
+
+  <div class="layout">
+    <div>
+      <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案 <span class="hint">按 聲量×嚴重度×引爆強度 排序</span></div>
+      <div id="evList"></div>
+    </div>
+    <div id="detail" class="panel"></div>
+  </div>
+
+  <div class="caveats" id="caveats"></div>
+</div>
+
+<script>
+let DATA=null, CUR=0;
+const $=id=>document.getElementById(id);
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LEAN_COLORS={'泛藍':'#5b8def','泛綠':'#3ddc97','中性':'#aab4d8','聚合':'#5f6a8f','通訊社':'#8fa0d8','公共':'#8fa0d8','地方':'#7d88ad','其他':'#4a5575'};
+
+fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(e=>{
+  $('meta').textContent='⚠️ 資料載入失敗：'+e;
+});
+
+function render(){
+  const d=DATA;
+  $('meta').textContent=`分析窗口 ${d.window.start} ～ ${d.window.end}（${d.window.days} 天）｜基底：去重新聞 ${d.base.articles.toLocaleString()} 篇 + 社群留言 ${d.base.comments.toLocaleString()} 則｜產製於 ${d.generated_at}`;
+  renderWatch(d.watchlist);
+  renderList(d.events);
+  renderDetail(d.events[CUR]);
+  $('caveats').innerHTML='<b>方法說明與限制</b>：'+d.caveats.map(c=>'• '+esc(c)).join('<br>');
+}
+
+function renderWatch(ws){
+  if(!ws||!ws.length){$('watchStrip').innerHTML='<div class="empty">目前無潛伏期訊號 — 雷達持續監測中</div>';return;}
+  $('watchStrip').innerHTML=ws.map(w=>`
+    <div class="watch-card">
+      <b>${esc(w.name)}</b>
+      <div class="wc-meta">${esc(w.topic)}｜首見 ${w.first_seen.slice(5)}｜${w.n} 則（紅 ${w.n_red}）</div>
+      <a class="tl" href="${esc(w.link)}" target="_blank" rel="noopener">${esc(w.sample)} ↗</a>
+      <div class="wc-note">${esc(w.risk_note)}</div>
+    </div>`).join('');
+}
+
+function sparkline(series,w,h){
+  const max=Math.max(...series.map(s=>s.n),1);
+  const bw=Math.max(2,Math.floor(w/series.length)-1);
+  let x=0,bars='';
+  for(const s of series){
+    const bh=Math.max(1,Math.round(s.n/max*(h-2)));
+    const frac=s.n?{r:s.red/s.n,y:s.yellow/s.n}:{r:0,y:0};
+    const col=frac.r>=.4?'var(--red)':(frac.r+frac.y>=.5?'var(--yel)':'#44508a');
+    bars+=`<rect x="${x}" y="${h-bh}" width="${bw}" height="${bh}" fill="${col}" rx="1"/>`;
+    x+=bw+1;
+  }
+  return `<svg class="spark" width="${x}" height="${h}" viewBox="0 0 ${x} ${h}">${bars}</svg>`;
+}
+
+function renderList(evs){
+  $('evList').innerHTML=evs.map((e,i)=>`
+    <div class="ev-card ${i===CUR?'active':''}" onclick="CUR=${i};renderList(DATA.events);renderDetail(DATA.events[${i}])">
+      <div class="name"><span>${esc(e.name)}</span><span class="score">熱度 ${e.score.toLocaleString()}</span></div>
+      <div class="ev-row">
+        <span class="chip topic">${esc(e.topic)}</span>
+        <span class="chip fp-${esc(e.fingerprint.label)}">${esc(e.fingerprint.label)}</span>
+      </div>
+      ${sparkline(e.series,290,30)}
+      <div class="mini">${e.date_start.slice(5)}～${e.date_end.slice(5)}｜${e.n_total} 篇（<span class="sev-紅燈">紅 ${e.n_red}</span>）｜引爆 ${e.phases.ignition.slice(5)} (${e.phases.burst}x)</div>
+    </div>`).join('');
+}
+
+function lifeChart(e){
+  const S=e.series; if(!S.length) return '';
+  const W=Math.max(560,Math.min(860,S.length*26)),H=190,PB=34,PL=30,PT=14;
+  const max=Math.max(...S.map(s=>s.n),1);
+  const cmax=Math.max(...S.map(s=>s.c_n),1);
+  const bw=Math.max(5,Math.floor((W-PL-8)/S.length)-3);
+  let g='',x=PL;
+  const pos={};
+  for(const s of S){
+    const total=s.n, bh=Math.round(total/max*(H-PB-PT));
+    let y=H-PB;
+    for(const [k,col] of [['green','var(--grn)'],['yellow','var(--yel)'],['red','var(--red)']]){
+      const hh=total?Math.round(s[k]/total*bh):0;
+      if(hh>0){y-=hh;g+=`<rect x="${x}" y="${y}" width="${bw}" height="${hh}" fill="${col}" opacity=".9" rx="1"><title>${s.date} ${k==='red'?'紅':k==='yellow'?'黃':'綠'} ${s[k]} 篇</title></rect>`;}
+    }
+    if(bh===0)g+=`<rect x="${x}" y="${H-PB-1}" width="${bw}" height="1" fill="#2a335f"/>`;
+    pos[s.date]=x+bw/2;
+    if(S.length<=20||S.indexOf(s)%Math.ceil(S.length/14)===0)
+      g+=`<text x="${x+bw/2}" y="${H-PB+12}" font-size="9" fill="var(--dim)" text-anchor="middle">${s.date.slice(5)}</text>`;
+    x+=bw+3;
+  }
+  // 留言折線
+  let pts='';
+  x=PL;
+  for(const s of S){pts+=`${pos[s.date]},${H-PB-(s.c_n/cmax*(H-PB-PT))*0.92} `;}
+  if(S.some(s=>s.c_n>0))g+=`<polyline points="${pts}" fill="none" stroke="#c084fc" stroke-width="1.6" stroke-dasharray="3 2" opacity=".9"/>`;
+  // 階段標記
+  const mark=(date,label,col)=>{const px=pos[date];if(px==null)return'';
+    return `<line x1="${px}" y1="${PT-4}" x2="${px}" y2="${H-PB}" stroke="${col}" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="${px}" y="${PT-2}" font-size="9.5" fill="${col}" text-anchor="middle" font-weight="700">${label}</text>`;};
+  g+=mark(e.phases.ignition,'🔥引爆','var(--red)');
+  if(e.phases.peak!==e.phases.ignition)g+=mark(e.phases.peak,'高峰','var(--yel)');
+  if(e.phases.reversal)g+=mark(e.phases.reversal.date,'⏪逆轉','var(--grn)');
+  g+=`<text x="${PL}" y="${H-2}" font-size="9.5" fill="var(--dim)">█紅 █黃 █綠＝每日報導（堆疊）　- - 紫線＝社群留言量</text>`;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px">${g}</svg>`;
+}
+
+function renderDetail(e){
+  if(!e){$('detail').innerHTML='<div class="empty">無事件</div>';return;}
+  const ph=e.phases, ig=e.ignition_detail, fp=e.fingerprint, cp=e.cross_platform, pb=e.playbook;
+  // 階段條
+  const phaseBar=`
+  <div class="phase-tl">
+    <div class="phase-step p-lat"><b>🕯 潛伏期</b>${esc(ph.latent.note)}</div>
+    <div class="phase-step p-ign"><b>🔥 引爆 ${ph.ignition.slice(5)}</b>單日 ${ig.n} 篇，為前 3 日均值 <b>${ph.burst}×</b></div>
+    <div class="phase-step p-peak"><b>📈 高峰 ${ph.peak.slice(5)}</b>聲量最大日，負面框架主導期</div>
+    <div class="phase-step p-rev"><b>${ph.reversal?'⏪ 逆轉 '+ph.reversal.date.slice(5):'⏳ 尚無逆轉'}</b>${ph.reversal?esc(ph.reversal.why.join('；')):'負面框架未被有效翻轉'}</div>
+  </div>`;
+  // first movers
+  const fm=e.first_movers.map(f=>`<tr>
+    <td style="white-space:nowrap">${esc(f.time)}</td>
+    <td><span class="lean-${esc(f.lean)}">${esc(f.outlet)}</span></td>
+    <td class="sev-${esc(f.sev)}">${esc(f.sev).slice(0,1)||'—'}</td>
+    <td>${f.link?`<a class="tl" href="${esc(f.link)}" target="_blank" rel="noopener">${esc(f.title)} ↗</a>`:esc(f.title)}</td></tr>`).join('');
+  // hour hist
+  let hh='';
+  if(ig.timed_n>=3){
+    const vals=Object.values(ig.hour_hist), m=Math.max(...vals,1);
+    hh=`<div style="font-size:11px;color:var(--mut);margin-top:8px">引爆日 24 小時發稿分佈（有時間戳 ${ig.timed_n} 篇）</div>
+    <div class="hour-hist">${vals.map(v=>`<div style="height:${Math.max(2,v/m*100)}%"></div>`).join('')}</div>
+    <div class="hour-lbl"><span>0時</span><span>6</span><span>12</span><span>18</span><span>23時</span></div>`;
+  }
+  // 光譜
+  const lt=e.spectrum.lean_total, ltSum=Object.values(lt).reduce((a,b)=>a+b,0)||1;
+  const leanBar='<div class="lean-bar">'+Object.entries(lt).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+    `<div style="width:${v/ltSum*100}%;background:${LEAN_COLORS[k]||'#4a5575'}" title="${k} ${v} 篇"></div>`).join('')+'</div>'+
+    '<div class="legend">'+Object.entries(lt).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+    `<span><i style="background:${LEAN_COLORS[k]||'#4a5575'}"></i>${k} ${v}（${Math.round(v/ltSum*100)}%）</span>`).join('')+'</div>';
+  const outlets=e.spectrum.top_outlets.slice(0,8).map(o=>`<div class="kv"><span>${esc(o.outlet)}</span><b>${o.n} 篇</b></div>`).join('');
+  // 指紋
+  const indic=fp.indicators.map(i=>`
+    <div class="indic"><div class="ir"><span>${esc(i.name)}</span><span>${esc(i.value)}</span></div>
+    <div class="ev">${esc(i.evidence)}</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:${i.weight}%"></div></div></div>`).join('');
+  // 逆轉
+  const rev=ph.reversal?`
+    <div class="rev-box"><b>⏪ 風向逆轉點：${ph.reversal.date}</b><br>
+    判定依據：${esc(ph.reversal.why.join('；'))}<br>
+    逆轉推手報導：${ph.reversal.drivers.map(d=>`<a class="tl" href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.outlet)}：${esc(d.title)} ↗</a>`).join('　')}
+    </div>`:
+    `<div class="rev-box none">⏳ 本事件尚未出現明確「風向逆轉點」— 澄清/反轉框架報導與留言風向改善均未達閾值。應對手冊中的「逆轉戰術」尚待執行。</div>`;
+  // 手冊
+  const cols=[['⚡ 黃金 4 小時','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線','counter'],['🛡 預防與預警','prevention']];
+  const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4><ul>${pb[k].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'').join('');
+  const notes=(pb.notes||[]).map(n=>`<div class="note-box"><b>📌 本案實證</b>　${esc(n)}</div>`).join('');
+  // 樣本
+  const samples=e.samples.map(s=>`<tr><td style="white-space:nowrap">${esc(s.time)}</td>
+    <td>${esc(s.outlet)}</td><td class="sev-${esc(s.sev)}">${esc(s.sev).slice(0,1)||'—'}</td>
+    <td>${s.link?`<a class="tl" href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)} ↗</a>`:esc(s.title)}</td></tr>`).join('');
+
+  $('detail').innerHTML=`
+  <div class="det-head"><h2>${esc(e.name)}</h2>
+    <span class="chip topic">${esc(e.topic)}</span>
+    <span class="chip fp-${esc(fp.label)}">${esc(fp.label)} ${fp.score}</span></div>
+  <div class="statline">
+    <span>期間 <b>${e.date_start} ～ ${e.date_end}</b></span>
+    <span>報導 <b>${e.n_total}</b> 篇（<b class="sev-紅燈">紅 ${e.n_red}</b>／<b class="sev-黃燈">黃 ${e.n_yellow}</b>）</span>
+    <span>社群留言 <b>${cp.c_total}</b> 則</span>
+    <span>關鍵詞 <b>${e.keywords.join('・')}</b></span>
+  </div>
+  ${phaseBar}
+  ${lifeChart(e)}
+  <div class="grid2">
+    <div class="sub-panel">
+      <div class="sec-title">🔥 引爆解構 <span class="hint">誰點的火、火怎麼燒起來</span></div>
+      <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>第一批報導（按時間）</th></tr>${fm}</table>
+      <div class="kv"><span>引爆日同稿率（${ig.n} 篇 / ${ig.uniq_titles} 個獨立標題）</span><b>${Math.round(ig.copy_rate*100)}%</b></div>
+      <div class="kv"><span>引爆日 3 小時集中度</span><b>${ig.dense3?Math.round(ig.dense3*100)+'%':'樣本不足'}</b></div>
+      <div class="kv"><span>夜間（22-06時）發稿比</span><b>${Math.round(ig.night*100)}%</b></div>
+      ${hh}
+    </div>
+    <div class="sub-panel">
+      <div class="sec-title">🧬 操作指紋 <span class="hint">指標推斷，非定論</span></div>
+      <div class="gauge"><span class="num" style="color:${fp.score>=60?'var(--red)':fp.score>=38?'var(--yel)':'var(--grn)'}">${fp.score}</span>
+        <div><div class="lbl">${esc(fp.label)}</div><div class="desc">${esc(fp.desc)}</div></div></div>
+      ${indic}
+    </div>
+    <div class="sub-panel">
+      <div class="sec-title">📡 跨平台脈動 <span class="hint">誰先燒：社群 vs 媒體</span></div>
+      <div style="font-size:13px;margin-bottom:8px">${esc(cp.verdict)}</div>
+      <div class="kv"><span>事件相關留言總數</span><b>${cp.c_total} 則</b></div>
+      ${cp.c_red_peak!=null?`<div class="kv"><span>高峰日留言紅燈占比</span><b class="sev-紅燈">${Math.round(cp.c_red_peak*100)}%</b></div>`:''}
+      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">紫色虛線（上圖）＝社群留言量走勢，與新聞量對照可見「先後與帶動關係」。</div>
+    </div>
+    <div class="sub-panel">
+      <div class="sec-title">📰 媒體光譜與集中度 <span class="hint">誰在報、誰報最多</span></div>
+      ${leanBar}${outlets}
+    </div>
+  </div>
+  ${rev}
+  <div style="margin-top:14px"><div class="sec-title">🛡️ 應對手冊 <span class="hint">依議題類型 + 本案傳播指紋客製</span></div>
+    <div class="play-grid">${play}</div>${notes}</div>
+  <div style="margin-top:14px"><div class="sec-title">📎 引爆日代表報導</div>
+    <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${samples}</table></div>`;
+}
+</script>
+</body>
+</html>
