@@ -261,6 +261,26 @@ function renderDetail(e){
   const cols=[['⚡ 黃金 4 小時','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線','counter'],['🛡 預防與預警','prevention']];
   const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4><ul>${pb[k].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'').join('');
   const notes=(pb.notes||[]).map(n=>`<div class="note-box"><b>📌 本案實證</b>　${esc(n)}</div>`).join('');
+  // 放大層（節目/論壇）
+  const amp=e.amplifiers||{yt_total:0,ptt_total:0,yt:[],ptt:[]};
+  const ampRows=[
+    ...amp.yt.map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td>
+      <td style="white-space:nowrap">${v.views!=null?'👁 '+Number(v.views).toLocaleString():'—'}</td>
+      <td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a></td></tr>`),
+    ...amp.ptt.map(p=>`<tr><td style="white-space:nowrap">${esc(p.date)}</td><td>💬 ${esc(p.author||'PTT')}</td>
+      <td style="white-space:nowrap">推 ${p.push!=null?p.push:'—'}</td>
+      <td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a></td></tr>`)
+  ].join('');
+  const ampPanel=(amp.yt_total+amp.ptt_total)>0?`
+    <div class="sub-panel">
+      <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇</span></div>
+      <table><tr><th>日期</th><th>來源</th><th>熱度</th><th>內容</th></tr>${ampRows}</table>
+      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">節目談論＝事件被「放大/定調」的關鍵節點；高觀看節目出現後若留言風向改變，即為逆轉推手（如名嘴還原市府作為）。</div>
+    </div>`:`
+    <div class="sub-panel">
+      <div class="sec-title">📺 節目／論壇放大層</div>
+      <div class="empty">本事件期間未偵測到政論/財經節目或 PTT 高熱度討論（放大層自 2026-06-12 起採集，歷史事件無回溯資料）。</div>
+    </div>`;
   // 樣本
   const samples=e.samples.map(s=>`<tr><td style="white-space:nowrap">${esc(s.time)}</td>
     <td>${esc(s.outlet)}</td><td class="sev-${esc(s.sev)}">${esc(s.sev).slice(0,1)||'—'}</td>
@@ -304,6 +324,7 @@ function renderDetail(e){
       <div class="sec-title">📰 媒體光譜與集中度 <span class="hint">誰在報、誰報最多</span></div>
       ${leanBar}${outlets}
     </div>
+    ${ampPanel}
   </div>
   ${rev}
   <div style="margin-top:14px"><div class="sec-title">🛡️ 應對手冊 <span class="hint">依議題類型 + 本案傳播指紋客製</span></div>
