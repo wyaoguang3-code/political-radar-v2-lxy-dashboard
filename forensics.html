@@ -21,7 +21,9 @@ h1 .sub{font-size:12px;color:var(--mut);font-weight:400}
 /* 預警雷達 */
 .watch-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
 .watch-card{flex:0 0 250px;background:var(--panel2);border:1px solid #3d2a2a;border-left:3px solid var(--org);
-border-radius:10px;padding:10px 12px;font-size:12px}
+border-radius:10px;padding:10px 12px;font-size:12px;transition:border-color .12s}
+.watch-card:hover{border-color:var(--org)}
+.watch-card.wc-open{border-color:var(--org);box-shadow:0 0 0 1px var(--org);background:#1a1410}
 .watch-card b{font-size:13px}
 .watch-card .wc-meta{color:var(--mut);margin:4px 0}
 .watch-card .wc-note{color:var(--org);font-size:11px;margin-top:6px}
@@ -104,8 +106,9 @@ svg text{font-family:inherit}
   <div class="meta" id="meta">載入中…</div>
 
   <div class="panel" id="watchPanel" style="border-left:3px solid var(--org)">
-    <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點</span></div>
+    <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點。點卡片展開全部報導與應對</span></div>
     <div class="watch-strip" id="watchStrip"></div>
+    <div id="watchDetail"></div>
   </div>
 
   <div class="layout">
@@ -138,15 +141,45 @@ function render(){
   $('caveats').innerHTML='<b>方法說明與限制</b>：'+d.caveats.map(c=>'• '+esc(c)).join('<br>');
 }
 
+let WATCH_OPEN=-1;
 function renderWatch(ws){
-  if(!ws||!ws.length){$('watchStrip').innerHTML='<div class="empty">目前無潛伏期訊號 — 雷達持續監測中</div>';return;}
-  $('watchStrip').innerHTML=ws.map(w=>`
-    <div class="watch-card">
+  if(!ws||!ws.length){$('watchStrip').innerHTML='<div class="empty">目前無潛伏期訊號 — 雷達持續監測中</div>';$('watchDetail').innerHTML='';return;}
+  $('watchStrip').innerHTML=ws.map((w,i)=>`
+    <div class="watch-card ${i===WATCH_OPEN?'wc-open':''}" onclick="toggleWatch(${i})" style="cursor:pointer">
       <b>${esc(w.name)}</b>
       <div class="wc-meta">${esc(w.topic)}｜首見 ${w.first_seen.slice(5)}｜${w.n} 則（紅 ${w.n_red}）</div>
-      <a class="tl" href="${esc(w.link)}" target="_blank" rel="noopener">${esc(w.sample)} ↗</a>
       <div class="wc-note">${esc(w.risk_note)}</div>
+      <div style="margin-top:6px;font-size:11px;color:var(--acc)">${i===WATCH_OPEN?'▲ 收合':'▼ 點擊展開：全部報導＋預防/應對'}</div>
     </div>`).join('');
+  renderWatchDetail(ws);
+}
+function toggleWatch(i){WATCH_OPEN=(WATCH_OPEN===i?-1:i);renderWatch(DATA.watchlist);}
+function renderWatchDetail(ws){
+  const el=$('watchDetail');
+  if(WATCH_OPEN<0||!ws[WATCH_OPEN]){el.innerHTML='';return;}
+  const w=ws[WATCH_OPEN];
+  const arts=(w.articles||[]).map(a=>`<tr>
+    <td style="white-space:nowrap">${esc(a.time)}</td>
+    <td>${esc(a.outlet)}</td><td class="sev-${esc(a.sev)}">${esc((a.sev||'').slice(0,1))||'—'}</td>
+    <td>${a.link?`<a class="tl" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} ↗</a>`:esc(a.title)}</td></tr>`).join('');
+  const play=w.play||{prevent:[],if_fire:[]};
+  el.innerHTML=`
+  <div class="sub-panel" style="margin-top:10px;border-color:#5a4020">
+    <div class="det-head"><h2 style="font-size:16px">⚠️ ${esc(w.name)}</h2>
+      <span class="chip topic">${esc(w.topic)}</span><span class="chip" style="border-color:var(--org);color:var(--org)">潛伏期訊號</span></div>
+    <div class="grid2" style="margin-top:8px">
+      <div>
+        <div class="sec-title" style="font-size:13px">📎 該訊號全部報導（${(w.articles||[]).length} 則）</div>
+        <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${arts}</table>
+      </div>
+      <div>
+        <div class="play-grid" style="grid-template-columns:1fr;gap:8px;margin-top:0">
+          <div class="play-col"><h4>🛡 現在怎麼預防（還沒炸）</h4><ul>${(play.prevent||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>建立事件卡、每日盯量，出現司法程序/畫面素材立即升級</li>'}</ul></div>
+          <div class="play-col"><h4>⚡ 若引爆了（黃金 4 小時）</h4><ul>${(play.if_fire||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>權責局處首長 4 小時內具名回應＋事實時間軸一頁化</li>'}</ul></div>
+        </div>
+      </div>
+    </div>
+  </div>`;
 }
 
 function sparkline(series,w,h){
@@ -216,13 +249,25 @@ function lifeChart(e){
 function renderDetail(e){
   if(!e){$('detail').innerHTML='<div class="empty">無事件</div>';return;}
   const ph=e.phases, ig=e.ignition_detail, fp=e.fingerprint, cp=e.cross_platform, pb=e.playbook;
-  // 階段條
+  // 階段條（第四格依事件性質：逆轉 / 市府已應對 / 尚無逆轉）
+  const resp=e.responses||[];
+  let box4;
+  if(ph.reversal){
+    box4=`<div class="phase-step p-rev"><b>⏪ 逆轉 ${ph.reversal.date.slice(5)}</b>${esc(ph.reversal.why.join('；'))}</div>`;
+  }else if(ph.nature==='應對主導型'&&resp.length){
+    box4=`<div class="phase-step p-rev"><b>🤝 市府已應對（${resp.length} 項）</b>${esc(resp.map(r=>r.label).join('、'))} — 應對主導型事件，處置即敘事</div>`;
+  }else if(resp.length){
+    box4=`<div class="phase-step p-rev"><b>⏳ 尚無逆轉（已應對 ${resp.length} 項）</b>市府有處置但負面框架尚未翻轉，逆轉戰術待執行</div>`;
+  }else{
+    box4=`<div class="phase-step p-rev"><b>⏳ 尚無逆轉</b>負面框架未被有效翻轉</div>`;
+  }
+  const peakDesc=ph.nature==='應對主導型'?'聲量最大日，市府處置為敘事主體':'聲量最大日，負面框架主導期';
   const phaseBar=`
   <div class="phase-tl">
     <div class="phase-step p-lat"><b>🕯 潛伏期</b>${esc(ph.latent.note)}</div>
     <div class="phase-step p-ign"><b>🔥 引爆 ${ph.ignition.slice(5)}</b>單日 ${ig.n} 篇，為前 3 日均值 <b>${ph.burst}×</b></div>
-    <div class="phase-step p-peak"><b>📈 高峰 ${ph.peak.slice(5)}</b>聲量最大日，負面框架主導期</div>
-    <div class="phase-step p-rev"><b>${ph.reversal?'⏪ 逆轉 '+ph.reversal.date.slice(5):'⏳ 尚無逆轉'}</b>${ph.reversal?esc(ph.reversal.why.join('；')):'負面框架未被有效翻轉'}</div>
+    <div class="phase-step p-peak"><b>📈 高峰 ${ph.peak.slice(5)}</b>${peakDesc}</div>
+    ${box4}
   </div>`;
   // first movers
   const fm=e.first_movers.map(f=>`<tr>
@@ -250,13 +295,26 @@ function renderDetail(e){
     <div class="indic"><div class="ir"><span>${esc(i.name)}</span><span>${esc(i.value)}</span></div>
     <div class="ev">${esc(i.evidence)}</div>
     <div class="bar-bg"><div class="bar-fill" style="width:${i.weight}%"></div></div></div>`).join('');
+  // 市府應對紀錄
+  const respPanel=resp.length?`
+  <div class="sub-panel" style="margin-top:12px">
+    <div class="sec-title">🤝 市府應對紀錄 <span class="hint">從報導中自動偵測的處置動作（每類取最早一筆）</span></div>
+    <table><tr><th>時間</th><th>距引爆</th><th>動作</th><th>報導</th></tr>
+    ${resp.map(r=>`<tr>
+      <td style="white-space:nowrap">${esc(r.time)}</td>
+      <td style="white-space:nowrap">${r.hours_after!=null?(r.hours_after>=0?'+'+r.hours_after+'h':r.hours_after+'h'):'—'}${r.hours_after!=null&&r.hours_after>=0&&r.hours_after<=6?' <span style="color:var(--grn)">黃金窗內</span>':''}</td>
+      <td style="white-space:nowrap"><b>${esc(r.label)}</b></td>
+      <td><a class="tl" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.outlet)}：${esc(r.title)} ↗</a></td></tr>`).join('')}
+    </table></div>`:'';
   // 逆轉
   const rev=ph.reversal?`
     <div class="rev-box"><b>⏪ 風向逆轉點：${ph.reversal.date}</b><br>
     判定依據：${esc(ph.reversal.why.join('；'))}<br>
     逆轉推手報導：${ph.reversal.drivers.map(d=>`<a class="tl" href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.outlet)}：${esc(d.title)} ↗</a>`).join('　')}
     </div>`:
-    `<div class="rev-box none">⏳ 本事件尚未出現明確「風向逆轉點」— 澄清/反轉框架報導與留言風向改善均未達閾值。應對手冊中的「逆轉戰術」尚待執行。</div>`;
+    (ph.nature==='應對主導型'?
+    `<div class="rev-box">🤝 本事件屬「應對主導型」（負面攻擊框架占比僅 ${Math.round((ph.attack_share||0)*100)}%）— 市府處置本身即敘事主體，無需風向逆轉操作；重點是後續（撫卹/檢討/進度）持續供稿到事件收尾。</div>`:
+    `<div class="rev-box none">⏳ 本事件尚未出現明確「風向逆轉點」— 澄清/反轉框架報導與留言風向改善均未達閾值。${resp.length?'市府已有 '+resp.length+' 項處置（見上方應對紀錄），但':''}應對手冊中的「逆轉戰術」尚待執行。</div>`);
   // 手冊
   const cols=[['⚡ 黃金 4 小時','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線','counter'],['🛡 預防與預警','prevention']];
   const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4><ul>${pb[k].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'').join('');
@@ -326,6 +384,7 @@ function renderDetail(e){
     </div>
     ${ampPanel}
   </div>
+  ${respPanel}
   ${rev}
   <div style="margin-top:14px"><div class="sec-title">🛡️ 應對手冊 <span class="hint">依議題類型 + 本案傳播指紋客製</span></div>
     <div class="play-grid">${play}</div>${notes}</div>
