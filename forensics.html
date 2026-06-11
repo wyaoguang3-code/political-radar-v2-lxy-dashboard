@@ -272,7 +272,7 @@ function renderDetail(e){
     <span class="chip fp-${esc(fp.label)}">${esc(fp.label)} ${fp.score}</span></div>
   <div class="statline">
     <span>期間 <b>${e.date_start} ～ ${e.date_end}</b></span>
-    <span>報導 <b>${e.n_total}</b> 篇（<b class="sev-紅燈">紅 ${e.n_red}</b>／<b class="sev-黃燈">黃 ${e.n_yellow}</b>）</span>
+    <span>獨立報導 <b>${e.n_total}</b> 篇（<b class="sev-紅燈">紅 ${e.n_red}</b>／<b class="sev-黃燈">黃 ${e.n_yellow}</b>）${e.n_raw>e.n_total?`，含轉載觸及 <b>${e.n_raw}</b> 筆`:''}</span>
     <span>社群留言 <b>${cp.c_total}</b> 則</span>
     <span>關鍵詞 <b>${e.keywords.join('・')}</b></span>
   </div>
