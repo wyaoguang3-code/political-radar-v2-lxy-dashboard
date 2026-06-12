@@ -101,6 +101,25 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .chain-title{font-size:11.5px;color:var(--acc);font-weight:700}
 .chain-find{font-size:13px;color:var(--tx);font-weight:600;margin:2px 0}
 .chain-ev{font-size:11.5px;color:var(--mut);line-height:1.5}
+.chain-link3{padding:8px 2px;border-bottom:1px dashed #1c2547}
+.chain-link3:last-child{border-bottom:none}
+.chain-link3>summary{cursor:pointer;list-style:none;user-select:none}
+.chain-link3>summary::-webkit-details-marker{display:none}
+.chain-link3>summary:hover .cx-toggle{color:var(--acc)}
+.cx-toggle{font-size:10.5px;color:var(--dim);font-weight:400}
+.chain-link3[open]>summary .cx-toggle::after{content:' (收合)'}
+.cx-wrap{margin:8px 0 4px;padding:10px 12px;background:#0c1228;border:1px solid #232c52;border-radius:8px}
+.cx-h{font-size:12px;font-weight:700;color:var(--acc);margin-bottom:7px}
+.cx-ul{margin:0;padding-left:16px;font-size:12px;line-height:1.65;color:var(--tx)}
+.cx-ul li{margin-bottom:6px}
+.cx-day{margin:4px 0;border-bottom:1px dashed #18203f}
+.cx-day>summary{cursor:pointer;font-size:12px;color:var(--mut);padding:3px 0;font-weight:600}
+.cx-day>summary:hover{color:var(--acc)}
+.cx-rec{border-left:3px solid var(--acc);background:#0e1530;border-radius:8px;padding:9px 11px;margin-top:2px}
+.cx-mode{font-size:14px;font-weight:800;margin-bottom:4px}
+.cx-row{font-size:12px;line-height:1.55;margin-top:3px;color:var(--tx)}
+.cx-row b{color:var(--mut);font-weight:600}
+.cx-opt{margin-top:8px;font-size:12px;line-height:1.6;background:#1a1430;border:1px solid #3a2a6a;border-radius:8px;padding:8px 10px;color:#dcd2ff}
 .amp-why{font-size:10.5px;color:#7fd0a0;margin-top:2px}
 .amp-snip{font-size:10.5px;color:var(--mut);margin-top:1px}
 .cm-narr{background:#1d1530;border-left:3px solid var(--org);border-radius:6px;padding:8px 10px;font-size:12.5px;color:#ffd6a3;line-height:1.5}
@@ -189,16 +208,73 @@ function renderPttPulse(pp){
     ${sams?`<details class="cm-details"><summary>▼ 代表推文（最熱文 ${(pp.samples||[]).length} 則）${pp.top_title?'：'+esc(pp.top_title):''}</summary><div class="cm-list">${sams}</div></details>`:''}
   </div>`;
 }
-function renderChain(chain){
-  if(!chain||!chain.length) return '';
+function playbookHtml(e){
+  const pb=e.playbook||{};
+  const cols=[['⚡ 黃金 4 小時（引爆當天）','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線（被動才用）','counter'],['🛡 預防與預警','prevention']];
+  const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4>${renderCards(pb[k])}</div>`:'').join('');
+  const notes=(pb.notes||[]).map(n=>`<div class="note-box"><b>📌 本案實證</b>　${esc(n)}</div>`).join('');
+  return `<div class="play-grid">${play}</div>${notes}`;
+}
+function newsTable(items){
+  return `<table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${items.map(it=>`<tr><td style="white-space:nowrap">${esc(it.time)}</td><td>${esc(it.outlet)}</td><td class="sev-${esc(it.sev)}">${esc((it.sev||'').slice(0,1))||'—'}</td><td>${it.link?`<a class="tl" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)} ↗</a>`:esc(it.title)}</td></tr>`).join('')}</table>`;
+}
+function chainExpand(e,n){
+  const ph=e.phases||{},ig=e.ignition_detail||{},fp=e.fingerprint||{},amp=e.amplifiers||{};
+  if(n===1){
+    const dn=e.daily_news||[]; if(!dn.length) return '';
+    return `<div class="cx"><div class="cx-h">📅 逐日報導 — 點各天展開當天新聞（附連結）</div>${dn.map(d=>`<details class="cx-day"><summary>${esc(d.date.slice(5))}　${d.n} 篇（🔴 ${d.red}）</summary>${newsTable(d.items)}</details>`).join('')}</div>`;
+  }
+  if(n===2){
+    return `<div class="cx"><div class="cx-h">📖 這些數字代表什麼</div><ul class="cx-ul">
+      <li><b>${ph.burst}× 倍率</b>＝引爆日聲量是前 3 日平均的 ${ph.burst} 倍。${ph.burst>=5?'屬<b style="color:var(--red)">突發爆炸型</b>：一天內炸開、非緩慢累積，黃金回應窗極短（僅引爆當天上午）。':'屬漸進升溫，反應時間相對充裕。'}</li>
+      <li><b>高峰日 ${(ph.peak||'').slice(5)}</b>＝聲量最大、媒體最密集、輿論壓力最高的一天，通常是首長必須表態的關鍵時點。</li>
+      <li><b>實際影響</b>：引爆越陡，媒體框架定型越快（24-48h 內）。一旦「冷血/不作為」這類框架被當成事實傳開，翻轉成本將大增 — 這就是為何 ${ph.burst}× 代表「回應要快」。</li></ul></div>`;
+  }
+  if(n===3){
+    const fm=e.first_movers||[]; if(!fm.length) return '';
+    return `<div class="cx"><div class="cx-h">📰 第一批報導（誰先點火，附連結）</div>${newsTable(fm.map(f=>({time:f.time,outlet:f.outlet,sev:f.sev,title:f.title,link:f.link})))}</div>`;
+  }
+  if(n===4){
+    const hhi=((fp.indicators||[]).find(i=>(i.name||'').includes('集中'))||{}).value||'—';
+    return `<div class="cx"><div class="cx-h">📖 各指標的白話解釋（指標推斷，非定論）</div><ul class="cx-ul">
+      <li><b>操作指紋 ${fp.score} 分</b>（0–100）：越高越像「有組織推動」而非自然新聞。&lt;38＝自然發酵、38–60＝媒體議程推動、≥60＝高度協同跡象 → 本案判為「${esc(fp.label)}」。</li>
+      <li><b>同稿率 ${Math.round((ig.copy_rate||0)*100)}%</b>：引爆日報導裡「重複/通稿」的比例。高（&gt;30%）＝有通稿散播痕跡；低＝各家各自採寫。</li>
+      <li><b>HHI ${esc(hhi)}</b>：<b>赫芬達-赫希曼指數</b>（Herfindahl-Hirschman Index），衡量「來源集中度」的經濟學指標，0–1。越高代表報導越集中在少數幾家媒體（可能由少數媒體帶起）；&lt;0.15 分散、&gt;0.25 集中。</li>
+      <li><b>夜間發稿 ${Math.round((ig.night||0)*100)}%</b>：22:00–06:00 發稿占比。異常高（&gt;35%）代表深夜集中發稿，不太尋常（可能是預排或同一稿源）。</li></ul></div>`;
+  }
+  if(n===5){
+    const rows=[...(amp.yt||[]).map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td><td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${v.hit&&v.hit.length?`<div class="amp-why">✓ ${v.hit.map(esc).join('、')}</div>`:''}</td></tr>`),
+      ...(amp.ptt||[]).map(p=>`<tr><td style="white-space:nowrap">${esc(p.date)}</td><td>💬 推${p.push}</td><td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<div class="amp-why">✓ ${p.hit.map(esc).join('、')}</div>`:''}</td></tr>`)].join('');
+    if(!rows) return `<div class="cx"><div class="empty" style="font-size:12px">經精準比對，本期無確實相關的節目/PTT 放大。</div></div>`;
+    return `<div class="cx"><div class="cx-h">📺 放大層明細（附連結與命中錨點）</div><table><tr><th>日期</th><th>來源</th><th>內容</th></tr>${rows}</table>${renderPttPulse(amp.ptt_pulse)}</div>`;
+  }
+  if(n===6){
+    const rs=e.responses||[],ro=e.resp_optimize||{};
+    const tbl=rs.length?`<table><tr><th>時間</th><th>距引爆</th><th>處置</th><th>報導</th></tr>${rs.map(r=>`<tr><td style="white-space:nowrap">${esc(r.time)}</td><td style="white-space:nowrap">${r.hours_after!=null?'+'+r.hours_after+'h':'—'}${r.hours_after!=null&&r.hours_after<=6?' <span style="color:var(--grn)">黃金窗</span>':''}</td><td><b>${esc(r.label)}</b></td><td>${r.link?`<a class="tl" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.outlet)}：${esc(r.title)} ↗</a>`:esc(r.title)}</td></tr>`).join('')}</table>`:'<div class="empty" style="font-size:12px">報導中未偵測到市府處置動作。</div>';
+    const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化：</b>${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}${(ro.missing&&ro.missing.length)?`尚未觀察到的處置：<b>${ro.missing.map(esc).join('、')}</b> — 可作為補強重點。`:'六類處置皆已執行。'}</div>`;
+    return `<div class="cx"><div class="cx-h">🤝 市府已執行的處置（附報導連結）</div>${tbl}${opt}</div>`;
+  }
+  if(n===7){
+    const f=e.followup||{},rev=ph.reversal;
+    const mc={'冷處理':'var(--grn)','主動處置':'var(--org)','持續供稿':'var(--acc)','收尾維持':'var(--grn)'}[f.mode]||'var(--mut)';
+    return `<div class="cx"><div class="cx-h">🧭 後續該怎麼處理（依數據判定）</div>
+      <div class="cx-rec" style="border-color:${mc}"><div class="cx-mode" style="color:${mc}">建議：${esc(f.mode||'—')}</div>
+        <div class="cx-row"><b>理由</b>　${esc(f.reason||'')}</div>
+        <div class="cx-row"><b>具體做法</b>　${esc(f.action||'')}</div>
+        <div class="cx-row"><b>數據依據</b>　${esc(f.data||'')}</div></div>
+      ${rev?`<div class="cx-row" style="margin-top:6px;color:var(--grn)">⏪ 已偵測逆轉點 ${rev.date}：${esc((rev.why||[]).join('；'))}</div>`:''}
+      <div style="font-size:11px;color:var(--dim);margin-top:6px">判定邏輯：已逆轉→收尾；應對主導型→持續供稿；聲量退潮≥60%且近2日紅燈≤2→冷處理；其餘→主動處置。</div></div>`;
+  }
+  if(n===8) return `<div class="cx"><div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）</div>${playbookHtml(e)}</div>`;
+  return '';
+}
+function renderChain(e){
+  const chain=e&&e.chain; if(!chain||!chain.length) return '';
   return `<div class="sub-panel" style="margin-top:12px;border-color:#39477f">
-    <div class="sec-title">🔗 邏輯鏈路 <span class="hint">從偵測到判讀，每一環的結論都附證據（指標推斷，非定論）</span></div>
-    <div class="chain">${chain.map(l=>`
-      <div class="chain-link"><div class="chain-body">
-        <div class="chain-title">${esc(l.title)}</div>
-        <div class="chain-find">${esc(l.finding)}</div>
-        <div class="chain-ev">↳ 證據：${esc(l.evidence)}</div>
-      </div></div>`).join('')}</div></div>`;
+    <div class="sec-title">🔗 邏輯鏈路 <span class="hint">從偵測到判讀，每一環都可點開看證據、連結與白話說明（指標推斷，非定論）</span></div>
+    <div class="chain">${chain.map((l,i)=>{const exp=chainExpand(e,i+1);
+      return exp?`<details class="chain-link3"><summary><div class="chain-title">${esc(l.title)} <span class="cx-toggle">▼ 展開</span></div><div class="chain-find">${esc(l.finding)}</div><div class="chain-ev">↳ 證據：${esc(l.evidence)}</div></summary><div class="cx-wrap">${exp}</div></details>`
+        :`<div class="chain-link"><div class="chain-body"><div class="chain-title">${esc(l.title)}</div><div class="chain-find">${esc(l.finding)}</div><div class="chain-ev">↳ 證據：${esc(l.evidence)}</div></div></div>`;}).join('')}</div></div>`;
 }
 
 fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(e=>{
@@ -447,7 +523,7 @@ function renderDetail(e){
   </div>
   ${phaseBar}
   ${lifeChart(e)}
-  ${renderChain(e.chain)}
+  ${renderChain(e)}
   <div class="grid2">
     <div class="sub-panel">
       <div class="sec-title">🔥 引爆解構 <span class="hint">誰點的火、火怎麼燒起來</span></div>
@@ -478,10 +554,6 @@ function renderDetail(e){
     ${ampPanel}
   </div>
   ${commentsPanel}
-  ${respPanel}
-  ${rev}
-  <div style="margin-top:14px"><div class="sec-title">🛡️ 應對手冊 <span class="hint">依議題類型 + 本案傳播指紋客製</span></div>
-    <div class="play-grid">${play}</div>${notes}</div>
   <div style="margin-top:14px"><div class="sec-title">📎 引爆日代表報導</div>
     <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${samples}</table></div>`;
 }
