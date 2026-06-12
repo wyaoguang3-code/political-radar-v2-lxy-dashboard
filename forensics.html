@@ -215,7 +215,9 @@ function pttSampleRows(samples){
   return `<div class="cm-list">${samples.map(s=>`<div class="cm-row"><div class="cm-meta">${s.tag==='推'?'🟢 推':s.tag==='噓'?'🔴 噓':'⚪ →'} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('')}</div>`;
 }
 function pttArticleHtml(p){
-  return `<details class="ptt-art"><summary class="ptt-sum"><span class="ptt-meta">💬 ${esc(p.date)} · 推 ${p.push!=null?p.push:'—'}${p.boo?'／噓 '+p.boo:''}${p.arrow?'／→ '+p.arrow:''}</span> <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<span class="amp-why" style="display:inline">✓ ${p.hit.map(esc).join('、')}</span>`:''} <span class="cx-toggle">▼ 看本篇推文</span></summary>${pttSampleRows(p.samples)}</details>`;
+  const tot=(p.push||0)+(p.boo||0)+(p.arrow||0), shown=(p.samples||[]).length;
+  const capNote=(tot>shown)?`<div class="pp-note">本篇共 ${tot} 則推文，此處顯示有內文的 ${shown} 則${shown>=400?'（達 400 則上限，完整見原文）':'（少數純標記/已刪推文略過）'}；完整見 <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">PTT 原文 ↗</a>。</div>`:'';
+  return `<details class="ptt-art"><summary class="ptt-sum"><span class="ptt-meta">💬 ${esc(p.date)} · 推 ${p.push!=null?p.push:'—'}${p.boo?'／噓 '+p.boo:''}${p.arrow?'／→ '+p.arrow:''}</span> <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<span class="amp-why" style="display:inline">✓ ${p.hit.map(esc).join('、')}</span>`:''} <span class="cx-toggle">▼ 看本篇 ${shown} 則推文</span></summary>${capNote}${pttSampleRows(p.samples)}</details>`;
 }
 function pttHourlyBar(hourly){
   if(!hourly||!hourly.length) return '';
