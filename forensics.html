@@ -120,6 +120,16 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .cx-row{font-size:12px;line-height:1.55;margin-top:3px;color:var(--tx)}
 .cx-row b{color:var(--mut);font-weight:600}
 .cx-opt{margin-top:8px;font-size:12px;line-height:1.6;background:#1a1430;border:1px solid #3a2a6a;border-radius:8px;padding:8px 10px;color:#dcd2ff}
+.cx-def{font-size:12.5px;line-height:1.7;color:var(--tx);background:#0e1530;border-left:3px solid var(--acc);border-radius:6px;padding:8px 11px}
+.cx-miss{margin-top:5px;font-size:12px;line-height:1.55}
+.cx-miss>b{color:var(--org)}
+.cx-miss-why{color:var(--mut);margin-top:1px}
+.prop{margin:6px 0 4px}
+.prop-step{background:#0e1530;border:1px solid #28315a;border-radius:7px;padding:7px 10px;font-size:12px}
+.prop-step .prop-k{font-size:10.5px;color:var(--acc);font-weight:700;margin-bottom:2px}
+.prop-step .prop-v{color:var(--tx);line-height:1.45}
+.prop-arrow{text-align:center;font-size:11px;color:var(--org);padding:3px 0}
+.pp-note{font-size:11px;color:var(--dim);line-height:1.55;margin:4px 0 2px;padding:5px 8px;background:#0e1530;border-radius:6px}
 .amp-why{font-size:10.5px;color:#7fd0a0;margin-top:2px}
 .amp-snip{font-size:10.5px;color:var(--mut);margin-top:1px}
 .cm-narr{background:#1d1530;border-left:3px solid var(--org);border-radius:6px;padding:8px 10px;font-size:12.5px;color:#ffd6a3;line-height:1.5}
@@ -205,9 +215,17 @@ function renderPttPulse(pp){
     <div class="sec-title" style="font-size:13px">🔥 PTT 鄉民熱度 <span class="hint">${pp.n_articles} 篇 · 推噓比＝共識方向 · 逐小時＝燒起來速度</span></div>
     <div class="pp-stats"><span class="pp-up">推 ${pp.push}</span><span class="pp-down">噓 ${pp.boo}</span><span class="pp-arrow">→ ${pp.arrow}</span>${pp.ratio!=null?`<span class="pp-ratio">推噓比 ${pp.ratio}:1${pp.ratio>=3?'（一面倒）':(pp.ratio<1?'（負評為主）':'')}</span>`:''}${pp.peak_hour?`<span class="pp-peak">爆文高峰 ${esc(pp.peak_hour)}時</span>`:''}</div>
     ${pttHourlyBar(pp.hourly)}
-    ${sams?`<details class="cm-details"><summary>▼ 代表推文（最熱文 ${(pp.samples||[]).length} 則）${pp.top_title?'：'+esc(pp.top_title):''}</summary><div class="cm-list">${sams}</div></details>`:''}
+    ${sams?`<details class="cm-details"><summary>▼ 代表推文（最熱文 ${(pp.samples||[]).length} 則）${pp.top_title?'：'+esc(pp.top_title):''}</summary><div class="pp-note">代表推文＝本事件<b>推文數最高的那篇</b>，依時間順序取「推 6＋噓 4＋→ 3」則，刻意納入正反兩面（🟢推＝同意/聲援、🔴噓＝反對），不是只挑罵得最兇的。</div><div class="cm-list">${sams}</div></details>`:''}
   </div>`;
 }
+const RESP_WHY={
+  '首長哀悼/慰問表態':'重大傷亡時首長第一時間表態＝展現「重視、有人性」，是阻斷「冷血」框架最快、成本最低、效益最高的一步。',
+  '親赴現場/視察坐鎮':'首長親赴現場＝最強的正面新聞畫面，把報導框架從「慘劇/失職」直接導向「市府全力處理」。對危機事件，「人到場」本身就是訊息（向社會證明有在重視），且能即時下令、安撫家屬與基層。缺這一步＝把最有力的畫面讓給對手去定義事件。判斷依據：本案被歸為「攻防型」+ 高紅燈，這類事件「首長現身」的輿論收益最大，故列為首要補強。',
+  '究責/處分/重罰':'快速強硬的究責＝把市府放在「執法者/受害方代言人」位置（而非被檢討方），導引民怒方向。',
+  '對外說明/澄清':'用事實時間軸主動說明＝搶回定義權，後續報導引用官方版本比例上升，稀釋單一負面框架。',
+  '善後/協助措施':'撫卹/安置/心理支持＝展現「有溫度」，把後續報導餵成正面素材。',
+  '制度檢討/改革承諾':'制度改革＝把敘事從「失職」轉成「改革者」，把責任拉高到中央地方共擔；也是長期選情的關鍵兌現項。'
+};
 function playbookHtml(e){
   const pb=e.playbook||{};
   const cols=[['⚡ 黃金 4 小時（引爆當天）','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線（被動才用）','counter'],['🛡 預防與預警','prevention']];
@@ -225,22 +243,44 @@ function chainExpand(e,n){
     return `<div class="cx"><div class="cx-h">📅 逐日報導 — 點各天展開當天新聞（附連結）</div>${dn.map(d=>`<details class="cx-day"><summary>${esc(d.date.slice(5))}　${d.n} 篇（🔴 ${d.red}）</summary>${newsTable(d.items)}</details>`).join('')}</div>`;
   }
   if(n===2){
-    return `<div class="cx"><div class="cx-h">📖 這些數字代表什麼</div><ul class="cx-ul">
-      <li><b>${ph.burst}× 倍率</b>＝引爆日聲量是前 3 日平均的 ${ph.burst} 倍。${ph.burst>=5?'屬<b style="color:var(--red)">突發爆炸型</b>：一天內炸開、非緩慢累積，黃金回應窗極短（僅引爆當天上午）。':'屬漸進升溫，反應時間相對充裕。'}</li>
-      <li><b>高峰日 ${(ph.peak||'').slice(5)}</b>＝聲量最大、媒體最密集、輿論壓力最高的一天，通常是首長必須表態的關鍵時點。</li>
-      <li><b>實際影響</b>：引爆越陡，媒體框架定型越快（24-48h 內）。一旦「冷血/不作為」這類框架被當成事實傳開，翻轉成本將大增 — 這就是為何 ${ph.burst}× 代表「回應要快」。</li></ul></div>`;
+    const ignN=ig.n||0, base=Math.max(1,Math.round(ignN/(ph.burst||1)));
+    return `<div class="cx"><div class="cx-h">📖 ${ph.burst}× 怎麼算、代表什麼</div><ul class="cx-ul">
+      <li><b>數據來源</b>：引爆日（${(ph.ignition||'').slice(5)}）當天共 <b>${ignN} 篇</b>獨立報導（＝①逐日報導裡該天的篇數，現已可全部展開核對），相對引爆前 3 天的低基期（平均約 <b>${base} 篇/日</b>）暴增 → <b>${ignN} ÷ ${base} ≈ ${ph.burst}×</b>。註：用「獨立報導」去重後計算，含轉載的體感聲量更高。</li>
+      <li><b>${ph.burst}× 的意義</b>：${ph.burst>=5?'屬<b style="color:var(--red)">突發爆炸型</b>（一天內炸開、非緩慢累積），黃金回應窗極短（僅引爆當天上午）。':'屬漸進升溫，反應時間相對充裕。'}</li>
+      <li><b>高峰日 ${(ph.peak||'').slice(5)}</b>＝聲量最大、輿論壓力最高的一天，通常是首長必須表態的關鍵時點。</li>
+      <li><b>實際影響</b>：引爆越陡，媒體框架定型越快（24-48h 內）；一旦「冷血/不作為」被當成事實傳開，翻轉成本大增 — 這就是為何 ${ph.burst}× 代表「回應要快」。</li></ul></div>`;
   }
   if(n===3){
-    const fm=e.first_movers||[]; if(!fm.length) return '';
-    return `<div class="cx"><div class="cx-h">📰 第一批報導（誰先點火，附連結）</div>${newsTable(fm.map(f=>({time:f.time,outlet:f.outlet,sev:f.sev,title:f.title,link:f.link})))}</div>`;
+    const fm=e.first_movers||[],pr=e.propagation;
+    let pathHtml='';
+    if(pr){
+      const nf=pr.news_first,sf=pr.social_first,sp=pr.social_peak;
+      pathHtml=`<div class="cx-h">🔀 傳播路徑：新聞 → 社群（${esc(pr.verdict)}）</div>
+      <div class="prop">
+        <div class="prop-step"><div class="prop-k">①媒體點火</div><div class="prop-v">${esc(nf.time)} ${nf.link?`<a class="tl" href="${esc(nf.link)}" target="_blank" rel="noopener">${esc(nf.outlet)}：${esc(nf.title)} ↗</a>`:esc(nf.outlet+'：'+nf.title)}</div></div>
+        ${sf?`<div class="prop-arrow">↓ ${pr.lag_hours!=null?(pr.lag_hours>=0?'約 '+pr.lag_hours+' 小時後':Math.abs(pr.lag_hours)+' 小時前已有社群討論'):''}</div>
+        <div class="prop-step"><div class="prop-k">②社群首條</div><div class="prop-v">${esc(sf.time)} · ${esc(sf.plat)} · ${esc(sf.author)}：「${esc(sf.text)}」</div></div>`:''}
+        ${sp?`<div class="prop-arrow">↓ 擴散</div>
+        <div class="prop-step"><div class="prop-k">③社群爆量</div><div class="prop-v">${esc(sp.date)} 單日 <b>${sp.n}</b> 則留言（🔴 ${sp.red}）→ 民怒接棒擴大，回壓媒體續報</div></div>`:''}
+      </div>
+      <div style="font-size:11px;color:var(--dim);margin:4px 0 10px">路徑解讀：媒體先發 → 社群在 ${pr.lag_hours!=null&&pr.lag_hours>=0?pr.lag_hours+' 小時內':'同時'}接棒放大 → 留言爆量形成壓力，再回頭推動媒體續報，形成「媒體↔社群」共振迴圈。`+'</div>';
+    }
+    return `<div class="cx">${pathHtml}<div class="cx-h">📰 第一批報導（誰先點火，附連結）</div>${newsTable(fm.map(f=>({time:f.time,outlet:f.outlet,sev:f.sev,title:f.title,link:f.link})))}</div>`;
   }
   if(n===4){
     const hhi=((fp.indicators||[]).find(i=>(i.name||'').includes('集中'))||{}).value||'—';
-    return `<div class="cx"><div class="cx-h">📖 各指標的白話解釋（指標推斷，非定論）</div><ul class="cx-ul">
-      <li><b>操作指紋 ${fp.score} 分</b>（0–100）：越高越像「有組織推動」而非自然新聞。&lt;38＝自然發酵、38–60＝媒體議程推動、≥60＝高度協同跡象 → 本案判為「${esc(fp.label)}」。</li>
-      <li><b>同稿率 ${Math.round((ig.copy_rate||0)*100)}%</b>：引爆日報導裡「重複/通稿」的比例。高（&gt;30%）＝有通稿散播痕跡；低＝各家各自採寫。</li>
-      <li><b>HHI ${esc(hhi)}</b>：<b>赫芬達-赫希曼指數</b>（Herfindahl-Hirschman Index），衡量「來源集中度」的經濟學指標，0–1。越高代表報導越集中在少數幾家媒體（可能由少數媒體帶起）；&lt;0.15 分散、&gt;0.25 集中。</li>
-      <li><b>夜間發稿 ${Math.round((ig.night||0)*100)}%</b>：22:00–06:00 發稿占比。異常高（&gt;35%）代表深夜集中發稿，不太尋常（可能是預排或同一稿源）。</li></ul></div>`;
+    const defs={
+      '自然發酵型':'聲量來自事件本身的新聞價值，各媒體獨立報導、無集中跡象 — 就是「真新聞自己紅」，沒有人在背後推。',
+      '媒體議程推動型':'暴增主要來自「媒體集體大量報導」這個動作本身，<b>不是</b>有人協同操作、也<b>不是</b>鄉民先在社群炒起。學理叫『議程設定（agenda-setting）』：媒體不直接告訴你「該怎麼想」，但它選擇「大篇幅報什麼」就決定了大眾「關注什麼」。白話：這是<b>真實事件</b>，被媒體用正常新聞競爭的力道炒大 — 該防的是「可預測的新聞週期引爆點（如起訴書釋出日）」，而不是陰謀。',
+      '高度協同跡象':'多項指標同時異常（同稿率高、來源集中、深夜集中發稿…），傳播樣態<b>接近有組織推動</b> — 但仍需人工查上游源頭才能定論，不可僅憑指標下定論。'
+    };
+    return `<div class="cx"><div class="cx-h">📖 本案＝「${esc(fp.label)}」是什麼意思</div>
+      <div class="cx-def">${defs[fp.label]||esc(fp.desc||'')}</div>
+      <div class="cx-h" style="margin-top:9px">各指標白話解釋</div><ul class="cx-ul">
+      <li><b>操作指紋 ${fp.score} 分</b>（0–100）：越高越像「有組織推動」。&lt;38＝自然發酵、38–60＝媒體議程推動、≥60＝高度協同跡象。</li>
+      <li><b>同稿率 ${Math.round((ig.copy_rate||0)*100)}%</b>：引爆日報導裡「重複/通稿」比例。高（&gt;30%）＝通稿散播痕跡；低＝各家各自採寫。</li>
+      <li><b>HHI ${esc(hhi)}</b>：<b>赫芬達-赫希曼指數</b>（Herfindahl-Hirschman Index），衡量「來源集中度」的經濟學指標，0–1，越高代表報導越集中在少數媒體手上；&lt;0.15 分散、&gt;0.25 集中。</li>
+      <li><b>夜間發稿 ${Math.round((ig.night||0)*100)}%</b>：22:00–06:00 發稿占比，異常高（&gt;35%）代表深夜集中發稿，不太尋常（可能預排或同一稿源）。</li></ul></div>`;
   }
   if(n===5){
     const rows=[...(amp.yt||[]).map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td><td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${v.hit&&v.hit.length?`<div class="amp-why">✓ ${v.hit.map(esc).join('、')}</div>`:''}</td></tr>`),
@@ -251,7 +291,10 @@ function chainExpand(e,n){
   if(n===6){
     const rs=e.responses||[],ro=e.resp_optimize||{};
     const tbl=rs.length?`<table><tr><th>時間</th><th>距引爆</th><th>處置</th><th>報導</th></tr>${rs.map(r=>`<tr><td style="white-space:nowrap">${esc(r.time)}</td><td style="white-space:nowrap">${r.hours_after!=null?'+'+r.hours_after+'h':'—'}${r.hours_after!=null&&r.hours_after<=6?' <span style="color:var(--grn)">黃金窗</span>':''}</td><td><b>${esc(r.label)}</b></td><td>${r.link?`<a class="tl" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.outlet)}：${esc(r.title)} ↗</a>`:esc(r.title)}</td></tr>`).join('')}</table>`:'<div class="empty" style="font-size:12px">報導中未偵測到市府處置動作。</div>';
-    const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化：</b>${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}${(ro.missing&&ro.missing.length)?`尚未觀察到的處置：<b>${ro.missing.map(esc).join('、')}</b> — 可作為補強重點。`:'六類處置皆已執行。'}</div>`;
+    const missHtml=(ro.missing&&ro.missing.length)?ro.missing.map(m=>`<div class="cx-miss"><b>缺：${esc(m)}</b><div class="cx-miss-why">${RESP_WHY[m]||'可作為補強重點。'}</div></div>`).join(''):'<div style="color:var(--grn)">六類處置皆已執行 ✅</div>';
+    const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化</b>
+      <div style="margin-top:4px">${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}</div>
+      <div style="margin-top:6px;font-weight:700;color:var(--mut)">補強重點（為什麼）：</div>${missHtml}</div>`;
     return `<div class="cx"><div class="cx-h">🤝 市府已執行的處置（附報導連結）</div>${tbl}${opt}</div>`;
   }
   if(n===7){
@@ -263,6 +306,7 @@ function chainExpand(e,n){
         <div class="cx-row"><b>具體做法</b>　${esc(f.action||'')}</div>
         <div class="cx-row"><b>數據依據</b>　${esc(f.data||'')}</div></div>
       ${rev?`<div class="cx-row" style="margin-top:6px;color:var(--grn)">⏪ 已偵測逆轉點 ${rev.date}：${esc((rev.why||[]).join('；'))}</div>`:''}
+      ${f.caveat?`<div class="cx-opt" style="margin-top:8px">⚖️ <b>對選情的影響</b>：${esc(f.caveat)}</div>`:''}
       <div style="font-size:11px;color:var(--dim);margin-top:6px">判定邏輯：已逆轉→收尾；應對主導型→持續供稿；聲量退潮≥60%且近2日紅燈≤2→冷處理；其餘→主動處置。</div></div>`;
   }
   if(n===8) return `<div class="cx"><div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）</div>${playbookHtml(e)}</div>`;
