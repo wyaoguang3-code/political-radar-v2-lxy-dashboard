@@ -87,6 +87,20 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .play-col li{margin-bottom:6px}
 .note-box{background:#1a1430;border:1px solid #3a2a6a;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12.5px}
 .note-box b{color:#c0a8ff}
+.play-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.op-card{background:#0e1530;border:1px solid #28315a;border-radius:8px;padding:9px 10px;margin-bottom:8px}
+.op-card .oc-a{font-weight:700;font-size:12.5px;color:#cdd6ff;margin-bottom:5px;line-height:1.4}
+.op-row{display:flex;gap:6px;font-size:11.5px;line-height:1.55;margin-top:3px}
+.op-row .k{flex:0 0 56px;color:var(--dim);font-weight:600}
+.op-row .v{flex:1;min-width:0}
+.op-row.how .v{color:#dfe6ff}.op-row.cost .v{color:#ffcf8f}.op-row.impact .v{color:#9fe6c0}.op-row.risk .v{color:#ff9ba6}
+.chain{margin:6px 0 2px}
+.chain-link{display:flex;padding:8px 2px;border-bottom:1px dashed #1c2547}
+.chain-link:last-child{border-bottom:none}
+.chain-body{flex:1;min-width:0}
+.chain-title{font-size:11.5px;color:var(--acc);font-weight:700}
+.chain-find{font-size:13px;color:var(--tx);font-weight:600;margin:2px 0}
+.chain-ev{font-size:11.5px;color:var(--mut);line-height:1.5}
 .phase-tl{display:flex;gap:0;margin:10px 0 4px;font-size:11px;flex-wrap:wrap}
 .phase-step{flex:1;min-width:110px;padding:7px 9px;background:var(--panel2);border:1px solid var(--bd);position:relative}
 .phase-step:first-child{border-radius:8px 0 0 8px}.phase-step:last-child{border-radius:0 8px 8px 0}
@@ -127,6 +141,29 @@ let DATA=null, CUR=0;
 const $=id=>document.getElementById(id);
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const LEAN_COLORS={'泛藍':'#5b8def','泛綠':'#3ddc97','中性':'#aab4d8','聚合':'#5f6a8f','通訊社':'#8fa0d8','公共':'#8fa0d8','地方':'#7d88ad','其他':'#4a5575'};
+function renderCards(arr){
+  if(!arr||!arr.length) return '<div class="empty" style="font-size:11.5px">—</div>';
+  return arr.map(c=>{
+    if(typeof c==='string') return `<div class="op-card"><div class="oc-a">▸ ${esc(c)}</div></div>`;
+    return `<div class="op-card"><div class="oc-a">▸ ${esc(c.a)}</div>
+      ${c.how?`<div class="op-row how"><span class="k">怎麼做</span><span class="v">${esc(c.how)}</span></div>`:''}
+      ${c.cost?`<div class="op-row cost"><span class="k">成本</span><span class="v">${esc(c.cost)}</span></div>`:''}
+      ${c.impact?`<div class="op-row impact"><span class="k">預期影響</span><span class="v">${esc(c.impact)}</span></div>`:''}
+      ${c.risk?`<div class="op-row risk"><span class="k">風險注意</span><span class="v">${esc(c.risk)}</span></div>`:''}
+    </div>`;
+  }).join('');
+}
+function renderChain(chain){
+  if(!chain||!chain.length) return '';
+  return `<div class="sub-panel" style="margin-top:12px;border-color:#39477f">
+    <div class="sec-title">🔗 邏輯鏈路 <span class="hint">從偵測到判讀，每一環的結論都附證據（指標推斷，非定論）</span></div>
+    <div class="chain">${chain.map(l=>`
+      <div class="chain-link"><div class="chain-body">
+        <div class="chain-title">${esc(l.title)}</div>
+        <div class="chain-find">${esc(l.finding)}</div>
+        <div class="chain-ev">↳ 證據：${esc(l.evidence)}</div>
+      </div></div>`).join('')}</div></div>`;
+}
 
 fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(e=>{
   $('meta').textContent='⚠️ 資料載入失敗：'+e;
@@ -174,8 +211,8 @@ function renderWatchDetail(ws){
       </div>
       <div>
         <div class="play-grid" style="grid-template-columns:1fr;gap:8px;margin-top:0">
-          <div class="play-col"><h4>🛡 現在怎麼預防（還沒炸）</h4><ul>${(play.prevent||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>建立事件卡、每日盯量，出現司法程序/畫面素材立即升級</li>'}</ul></div>
-          <div class="play-col"><h4>⚡ 若引爆了（黃金 4 小時）</h4><ul>${(play.if_fire||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>權責局處首長 4 小時內具名回應＋事實時間軸一頁化</li>'}</ul></div>
+          <div class="play-col"><h4>🛡 現在怎麼預防（還沒炸）</h4>${renderCards(play.prevent||[])}</div>
+          <div class="play-col"><h4>⚡ 若引爆了（黃金 4 小時）</h4>${renderCards(play.if_fire||[])}</div>
         </div>
       </div>
     </div>
@@ -316,8 +353,8 @@ function renderDetail(e){
     `<div class="rev-box">🤝 本事件屬「應對主導型」（負面攻擊框架占比僅 ${Math.round((ph.attack_share||0)*100)}%）— 市府處置本身即敘事主體，無需風向逆轉操作；重點是後續（撫卹/檢討/進度）持續供稿到事件收尾。</div>`:
     `<div class="rev-box none">⏳ 本事件尚未出現明確「風向逆轉點」— 澄清/反轉框架報導與留言風向改善均未達閾值。${resp.length?'市府已有 '+resp.length+' 項處置（見上方應對紀錄），但':''}應對手冊中的「逆轉戰術」尚待執行。</div>`);
   // 手冊
-  const cols=[['⚡ 黃金 4 小時','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線','counter'],['🛡 預防與預警','prevention']];
-  const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4><ul>${pb[k].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'').join('');
+  const cols=[['⚡ 黃金 4 小時（引爆當天）','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線（被動才用）','counter'],['🛡 預防與預警','prevention']];
+  const play=cols.map(([t,k])=>pb[k]&&pb[k].length?`<div class="play-col"><h4>${t}</h4>${renderCards(pb[k])}</div>`:'').join('');
   const notes=(pb.notes||[]).map(n=>`<div class="note-box"><b>📌 本案實證</b>　${esc(n)}</div>`).join('');
   // 放大層（節目/論壇）
   const amp=e.amplifiers||{yt_total:0,ptt_total:0,yt:[],ptt:[]};
@@ -356,6 +393,7 @@ function renderDetail(e){
   </div>
   ${phaseBar}
   ${lifeChart(e)}
+  ${renderChain(e.chain)}
   <div class="grid2">
     <div class="sub-panel">
       <div class="sec-title">🔥 引爆解構 <span class="hint">誰點的火、火怎麼燒起來</span></div>
