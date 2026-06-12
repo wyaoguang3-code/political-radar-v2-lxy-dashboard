@@ -101,6 +101,18 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .chain-title{font-size:11.5px;color:var(--acc);font-weight:700}
 .chain-find{font-size:13px;color:var(--tx);font-weight:600;margin:2px 0}
 .chain-ev{font-size:11.5px;color:var(--mut);line-height:1.5}
+.amp-why{font-size:10.5px;color:#7fd0a0;margin-top:2px}
+.amp-snip{font-size:10.5px;color:var(--mut);margin-top:1px}
+.cm-narr{background:#1d1530;border-left:3px solid var(--org);border-radius:6px;padding:8px 10px;font-size:12.5px;color:#ffd6a3;line-height:1.5}
+.cm-earliest{background:#0e1530;border:1px solid #2a335f;border-radius:8px;padding:8px 10px;margin-top:8px;font-size:12px}
+.cm-earliest .tag{background:var(--red);color:#fff;font-size:10px;padding:1px 7px;border-radius:99px;font-weight:700;margin-right:4px}
+.cm-details{margin-top:8px}
+.cm-details summary{cursor:pointer;color:var(--acc);font-size:12.5px;font-weight:600;padding:4px 0;user-select:none}
+.cm-list{margin-top:6px;max-height:420px;overflow-y:auto;padding-right:4px}
+.cm-row{padding:7px 2px;border-bottom:1px dashed #1c2547}
+.cm-row:last-child{border-bottom:none}
+.cm-meta{font-size:11px;color:var(--mut)}
+.cm-text{font-size:12.5px;color:var(--tx);margin-top:2px;line-height:1.45;word-break:break-word}
 .phase-tl{display:flex;gap:0;margin:10px 0 4px;font-size:11px;flex-wrap:wrap}
 .phase-step{flex:1;min-width:110px;padding:7px 9px;background:var(--panel2);border:1px solid var(--bd);position:relative}
 .phase-step:first-child{border-radius:8px 0 0 8px}.phase-step:last-child{border-radius:0 8px 8px 0}
@@ -358,23 +370,40 @@ function renderDetail(e){
   const notes=(pb.notes||[]).map(n=>`<div class="note-box"><b>📌 本案實證</b>　${esc(n)}</div>`).join('');
   // 放大層（節目/論壇）
   const amp=e.amplifiers||{yt_total:0,ptt_total:0,yt:[],ptt:[]};
+  const ampWhy=h=>h&&h.length?`<div class="amp-why">✓ 命中錨點：${h.map(esc).join('、')}</div>`:'';
   const ampRows=[
     ...amp.yt.map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td>
       <td style="white-space:nowrap">${v.views!=null?'👁 '+Number(v.views).toLocaleString():'—'}</td>
-      <td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a></td></tr>`),
+      <td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${ampWhy(v.hit)}${v.why?`<div class="amp-snip">相關內容：「${esc(v.why)}」</div>`:''}</td></tr>`),
     ...amp.ptt.map(p=>`<tr><td style="white-space:nowrap">${esc(p.date)}</td><td>💬 ${esc(p.author||'PTT')}</td>
       <td style="white-space:nowrap">推 ${p.push!=null?p.push:'—'}</td>
-      <td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a></td></tr>`)
+      <td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>${ampWhy(p.hit)}</td></tr>`)
   ].join('');
   const ampPanel=(amp.yt_total+amp.ptt_total)>0?`
     <div class="sub-panel">
-      <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇</span></div>
-      <table><tr><th>日期</th><th>來源</th><th>熱度</th><th>內容</th></tr>${ampRows}</table>
-      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">節目談論＝事件被「放大/定調」的關鍵節點；高觀看節目出現後若留言風向改變，即為逆轉推手（如名嘴還原市府作為）。</div>
+      <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇（已精準比對，附命中錨點）</span></div>
+      <table><tr><th>日期</th><th>來源</th><th>熱度</th><th>內容（附命中原因）</th></tr>${ampRows}</table>
+      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">「命中錨點」＝該則為何被歸到本事件（事件專屬詞）；節目談論＝事件被「放大/定調」的節點。YouTube 字幕逐秒定位為下一步（僅約一成影片有官方字幕）。</div>
     </div>`:`
     <div class="sub-panel">
       <div class="sec-title">📺 節目／論壇放大層</div>
-      <div class="empty">本事件期間未偵測到政論/財經節目或 PTT 高熱度討論（放大層自 2026-06-12 起採集，歷史事件無回溯資料）。</div>
+      <div class="empty">經精準比對（事件專屬錨點＋城市閘），本事件期間未偵測到「確實相關」的政論節目或 PTT 高熱度討論。<br>（已排除僅靠通用詞誤配的內容；放大層自 2026-06-12 起採集，更早的事件無回溯資料。）</div>
+    </div>`;
+  // 社群留言實況（最早一篇 + 燒起來敘述 + 可展開代表留言）
+  const sigIcon=s=>s==='red'?'🔴':s==='yellow'?'🟡':s==='green'?'🟢':'⚪';
+  const cmRow=c=>`<div class="cm-row"><div class="cm-meta">${sigIcon(c.sig)} <b>${esc(c.author)}</b> · ${esc(c.plat)} · ${esc(c.time)}</div><div class="cm-text">${esc(c.text)}</div></div>`;
+  const ear=cp.earliest;
+  const commentsPanel=cp.c_total>0?`
+    <div class="sub-panel" style="margin-top:14px">
+      <div class="sec-title">💬 社群留言實況 <span class="hint">FB/IG/Threads 留言 ${cp.c_total} 則 — 最早一篇 → 怎麼燒起來 → 代表留言</span></div>
+      ${cp.narrative?`<div class="cm-narr">🔥 怎麼燒起來：${esc(cp.narrative)}</div>`:''}
+      ${ear?`<div class="cm-earliest"><span class="tag">最早一篇</span> ${sigIcon(ear.sig)} <b>${esc(ear.author)}</b> · ${esc(ear.plat)} · ${esc(ear.time)}<div class="cm-text">${esc(ear.text)}</div></div>`:''}
+      ${(cp.samples&&cp.samples.length)?`<details class="cm-details"><summary>▼ 點擊展開代表留言（紅燈優先，共 ${cp.samples.length} 則）</summary><div class="cm-list">${cp.samples.map(cmRow).join('')}</div></details>`:''}
+      <div style="font-size:11px;color:var(--dim);margin-top:8px">⚠️ 留言目前<b>無單則原文連結</b>（資料源未存 permalink，需抓取端補），故只能呈現內容、無法點回原貼文；互動數（讚/回覆）亦缺，「帶動力」以每日留言量＋紅燈占比近似。</div>
+    </div>`:`
+    <div class="sub-panel" style="margin-top:14px">
+      <div class="sec-title">💬 社群留言實況</div>
+      <div class="empty">經精準比對（事件專屬錨點＋城市閘），本事件期間無確實相關的 FB/IG/Threads 留言。</div>
     </div>`;
   // 樣本
   const samples=e.samples.map(s=>`<tr><td style="white-space:nowrap">${esc(s.time)}</td>
@@ -412,9 +441,10 @@ function renderDetail(e){
     <div class="sub-panel">
       <div class="sec-title">📡 跨平台脈動 <span class="hint">誰先燒：社群 vs 媒體</span></div>
       <div style="font-size:13px;margin-bottom:8px">${esc(cp.verdict)}</div>
+      ${cp.narrative?`<div class="cm-narr" style="margin-bottom:8px">🔥 ${esc(cp.narrative)}</div>`:''}
       <div class="kv"><span>事件相關留言總數</span><b>${cp.c_total} 則</b></div>
       ${cp.c_red_peak!=null?`<div class="kv"><span>高峰日留言紅燈占比</span><b class="sev-紅燈">${Math.round(cp.c_red_peak*100)}%</b></div>`:''}
-      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">紫色虛線（上圖）＝社群留言量走勢，與新聞量對照可見「先後與帶動關係」。</div>
+      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">紫色虛線（上圖）＝社群留言量走勢，與新聞量對照可見「先後與帶動關係」。完整留言見下方「💬 社群留言實況」。</div>
     </div>
     <div class="sub-panel">
       <div class="sec-title">📰 媒體光譜與集中度 <span class="hint">誰在報、誰報最多</span></div>
@@ -422,6 +452,7 @@ function renderDetail(e){
     </div>
     ${ampPanel}
   </div>
+  ${commentsPanel}
   ${respPanel}
   ${rev}
   <div style="margin-top:14px"><div class="sec-title">🛡️ 應對手冊 <span class="hint">依議題類型 + 本案傳播指紋客製</span></div>
