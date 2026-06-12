@@ -202,6 +202,13 @@ function renderCards(arr){
     </div>`;
   }).join('');
 }
+function pttSampleRows(samples){
+  if(!samples||!samples.length) return '<div class="empty" style="font-size:11px;padding:4px 0">此篇暫無推文樣本（可能 0 推文或抓取當下無資料）</div>';
+  return `<div class="cm-list">${samples.map(s=>`<div class="cm-row"><div class="cm-meta">${s.tag==='推'?'🟢 推':s.tag==='噓'?'🔴 噓':'⚪ →'} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('')}</div>`;
+}
+function pttArticleHtml(p){
+  return `<details class="ptt-art"><summary class="ptt-sum"><span class="ptt-meta">💬 ${esc(p.date)} · 推 ${p.push!=null?p.push:'—'}${p.boo?'／噓 '+p.boo:''}${p.arrow?'／→ '+p.arrow:''}</span> <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<span class="amp-why" style="display:inline">✓ ${p.hit.map(esc).join('、')}</span>`:''} <span class="cx-toggle">▼ 看本篇推文</span></summary>${pttSampleRows(p.samples)}</details>`;
+}
 function pttHourlyBar(hourly){
   if(!hourly||!hourly.length) return '';
   const max=Math.max(...hourly.map(h=>h.n),1);
@@ -515,20 +522,17 @@ function renderDetail(e){
   // 放大層（節目/論壇）
   const amp=e.amplifiers||{yt_total:0,ptt_total:0,yt:[],ptt:[]};
   const ampWhy=h=>h&&h.length?`<div class="amp-why">✓ 命中錨點：${h.map(esc).join('、')}</div>`:'';
-  const ampRows=[
-    ...amp.yt.map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td>
+  const ytRows=(amp.yt||[]).map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td>
       <td style="white-space:nowrap">${v.views!=null?'👁 '+Number(v.views).toLocaleString():'—'}</td>
-      <td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${ampWhy(v.hit)}${v.why?`<div class="amp-snip">相關內容：「${esc(v.why)}」</div>`:''}</td></tr>`),
-    ...amp.ptt.map(p=>`<tr><td style="white-space:nowrap">${esc(p.date)}</td><td>💬 ${esc(p.author||'PTT')}</td>
-      <td style="white-space:nowrap">推 ${p.push!=null?p.push:'—'}</td>
-      <td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>${ampWhy(p.hit)}</td></tr>`)
-  ].join('');
+      <td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${ampWhy(v.hit)}${v.why?`<div class="amp-snip">相關內容：「${esc(v.why)}」</div>`:''}</td></tr>`).join('');
+  const ytTable=ytRows?`<div style="font-size:11.5px;color:var(--dim);margin:2px 0">📺 政論/財經節目：</div><table><tr><th>日期</th><th>頻道</th><th>觀看</th><th>內容（附命中原因）</th></tr>${ytRows}</table>`:'';
+  const pttArts=(amp.ptt||[]).length?`<div style="font-size:11.5px;color:var(--dim);margin:8px 0 2px">💬 PTT 討論（<b>點每篇展開看推文內容</b>）：</div>${amp.ptt.map(pttArticleHtml).join('')}`:'';
   const ampPanel=(amp.yt_total+amp.ptt_total)>0?`
     <div class="sub-panel">
       <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇（已精準比對，附命中錨點）</span></div>
-      <table><tr><th>日期</th><th>來源</th><th>熱度</th><th>內容（附命中原因）</th></tr>${ampRows}</table>
+      ${ytTable}${pttArts}
       ${renderPttPulse(amp.ptt_pulse)}
-      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">「命中錨點」＝該則為何被歸到本事件（事件專屬詞）；節目談論＝事件被「放大/定調」的節點。YouTube 字幕逐秒定位為下一步（僅約一成影片有官方字幕）。</div>
+      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">「命中錨點」＝該則為何被歸到本事件（事件專屬詞）。PTT 每篇可點開看實際推文；YouTube 字幕逐秒定位為下一步（僅約一成影片有官方字幕）。</div>
     </div>`:`
     <div class="sub-panel">
       <div class="sec-title">📺 節目／論壇放大層</div>
