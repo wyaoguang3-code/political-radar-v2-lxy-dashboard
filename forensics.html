@@ -113,6 +113,14 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .cm-row:last-child{border-bottom:none}
 .cm-meta{font-size:11px;color:var(--mut)}
 .cm-text{font-size:12.5px;color:var(--tx);margin-top:2px;line-height:1.45;word-break:break-word}
+.pp-stats{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;margin:6px 0}
+.pp-up{color:var(--grn);font-weight:700}.pp-down{color:var(--red);font-weight:700}.pp-arrow{color:var(--mut)}
+.pp-ratio{color:#ffd6a3;font-weight:700}.pp-peak{color:var(--acc)}
+.pp-bars{display:flex;align-items:flex-end;gap:2px;height:54px;margin-top:6px}
+.pp-bar{flex:1;min-width:6px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.pp-fill{background:linear-gradient(180deg,var(--red),var(--org));border-radius:2px 2px 0 0;min-height:3px}
+.pp-lbl{font-size:8px;color:var(--dim);text-align:center;margin-top:1px}
+.pp-axis{font-size:10.5px;color:var(--dim);margin-top:2px}
 .phase-tl{display:flex;gap:0;margin:10px 0 4px;font-size:11px;flex-wrap:wrap}
 .phase-step{flex:1;min-width:110px;padding:7px 9px;background:var(--panel2);border:1px solid var(--bd);position:relative}
 .phase-step:first-child{border-radius:8px 0 0 8px}.phase-step:last-child{border-radius:0 8px 8px 0}
@@ -164,6 +172,22 @@ function renderCards(arr){
       ${c.risk?`<div class="op-row risk"><span class="k">風險注意</span><span class="v">${esc(c.risk)}</span></div>`:''}
     </div>`;
   }).join('');
+}
+function pttHourlyBar(hourly){
+  if(!hourly||!hourly.length) return '';
+  const max=Math.max(...hourly.map(h=>h.n),1);
+  return `<div class="pp-bars">${hourly.map(h=>`<div class="pp-bar" title="${esc(h.h)}時 推噓 ${h.n} 則"><div class="pp-fill" style="height:${Math.max(6,Math.round(h.n/max*100))}%"></div><div class="pp-lbl">${esc((h.h||'').slice(-2))}</div></div>`).join('')}</div><div class="pp-axis">逐小時推文量（看火力集中在發文後第幾小時）</div>`;
+}
+function renderPttPulse(pp){
+  if(!pp) return '';
+  const sigTag=t=>t==='推'?'🟢 推':t==='噓'?'🔴 噓':'⚪ →';
+  const sams=(pp.samples||[]).map(s=>`<div class="cm-row"><div class="cm-meta">${sigTag(s.tag)} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('');
+  return `<div style="margin-top:12px;border-top:1px solid #2a335f;padding-top:10px">
+    <div class="sec-title" style="font-size:13px">🔥 PTT 鄉民熱度 <span class="hint">${pp.n_articles} 篇 · 推噓比＝共識方向 · 逐小時＝燒起來速度</span></div>
+    <div class="pp-stats"><span class="pp-up">推 ${pp.push}</span><span class="pp-down">噓 ${pp.boo}</span><span class="pp-arrow">→ ${pp.arrow}</span>${pp.ratio!=null?`<span class="pp-ratio">推噓比 ${pp.ratio}:1${pp.ratio>=3?'（一面倒）':(pp.ratio<1?'（負評為主）':'')}</span>`:''}${pp.peak_hour?`<span class="pp-peak">爆文高峰 ${esc(pp.peak_hour)}時</span>`:''}</div>
+    ${pttHourlyBar(pp.hourly)}
+    ${sams?`<details class="cm-details"><summary>▼ 代表推文（最熱文 ${(pp.samples||[]).length} 則）${pp.top_title?'：'+esc(pp.top_title):''}</summary><div class="cm-list">${sams}</div></details>`:''}
+  </div>`;
 }
 function renderChain(chain){
   if(!chain||!chain.length) return '';
@@ -383,6 +407,7 @@ function renderDetail(e){
     <div class="sub-panel">
       <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇（已精準比對，附命中錨點）</span></div>
       <table><tr><th>日期</th><th>來源</th><th>熱度</th><th>內容（附命中原因）</th></tr>${ampRows}</table>
+      ${renderPttPulse(amp.ptt_pulse)}
       <div style="font-size:11.5px;color:var(--dim);margin-top:8px">「命中錨點」＝該則為何被歸到本事件（事件專屬詞）；節目談論＝事件被「放大/定調」的節點。YouTube 字幕逐秒定位為下一步（僅約一成影片有官方字幕）。</div>
     </div>`:`
     <div class="sub-panel">

@@ -1,49 +1,104 @@
 {
-  "generated_at": "2026-06-12 18:16",
+  "generated_at": "2026-06-12 18:29",
   "window_days": 120,
   "start": "2026-02-12",
   "overall": {
-    "n": 10,
-    "median": 3.0,
-    "p75": 5.0,
-    "max": 11.6
+    "n_events": 96,
+    "peak_median": 9,
+    "peak_max": 58
   },
   "by_topic": {
-    "人事/言行爭議": {
-      "n": 1,
-      "min": 3.8,
-      "median": 3.8,
-      "p75": 3.8,
-      "max": 3.8
+    "其他": {
+      "n_events": 32,
+      "peak_median": 8,
+      "peak_p75": 11,
+      "peak_max": 58,
+      "burst_median": 8.0
     },
     "議會/預算攻防": {
-      "n": 2,
-      "min": 2.6,
-      "median": 5.0,
-      "p75": 5.0,
-      "max": 5.0
+      "n_events": 21,
+      "peak_median": 11,
+      "peak_p75": 20,
+      "peak_max": 42,
+      "burst_median": 9.0
     },
-    "其他": {
-      "n": 4,
-      "min": 1.2,
-      "median": 1.5,
-      "p75": 11.6,
-      "max": 11.6
+    "疫病/公衛": {
+      "n_events": 4,
+      "peak_median": 8,
+      "peak_p75": 8,
+      "peak_max": 8,
+      "burst_median": 7.0
     },
-    "交通/捷運": {
-      "n": 2,
-      "min": 3.0,
-      "median": 3.8,
-      "p75": 3.8,
-      "max": 3.8
+    "治安/詐騙": {
+      "n_events": 6,
+      "peak_median": 13,
+      "peak_p75": 16,
+      "peak_max": 18,
+      "burst_median": 8.0
+    },
+    "市政/政策": {
+      "n_events": 4,
+      "peak_median": 9,
+      "peak_p75": 18,
+      "peak_max": 18,
+      "burst_median": 8.0
+    },
+    "食安": {
+      "n_events": 2,
+      "peak_median": 6,
+      "peak_p75": 6,
+      "peak_max": 6,
+      "burst_median": 6.0
+    },
+    "人事/言行爭議": {
+      "n_events": 4,
+      "peak_median": 25,
+      "peak_p75": 26,
+      "peak_max": 26,
+      "burst_median": 15.0
+    },
+    "環境/公害": {
+      "n_events": 1,
+      "peak_median": 5,
+      "peak_p75": 5,
+      "peak_max": 5,
+      "burst_median": 5.0
+    },
+    "司法/弊案": {
+      "n_events": 1,
+      "peak_median": 16,
+      "peak_p75": 16,
+      "peak_max": 16,
+      "burst_median": 16.0
     },
     "工安/公安": {
-      "n": 1,
-      "min": 2.5,
-      "median": 2.5,
-      "p75": 2.5,
-      "max": 2.5
+      "n_events": 6,
+      "peak_median": 7,
+      "peak_p75": 12,
+      "peak_max": 43,
+      "burst_median": 6.0
+    },
+    "交通/捷運": {
+      "n_events": 10,
+      "peak_median": 9,
+      "peak_p75": 11,
+      "peak_max": 14,
+      "burst_median": 9.0
+    },
+    "兒虐/社會安全網": {
+      "n_events": 4,
+      "peak_median": 10,
+      "peak_p75": 22,
+      "peak_max": 22,
+      "burst_median": 10.0
+    },
+    "災防": {
+      "n_events": 1,
+      "peak_median": 8,
+      "peak_p75": 8,
+      "peak_max": 8,
+      "burst_median": 8.0
     }
   },
-  "note": "資料密集期約自 2026-03 起；更早稀疏。已過濾「引爆日前 3 日 <3 篇」的稀疏期高估 87 個。倍率＝事件內部「引爆日量/前3日均值」，非跨事件常態水位比。"
+  "note": "資料密集期約自 2026-03 起、更早稀疏，故僅供近半年參考。主指標＝同類事件「峰值單日報導量」分佈（穩健、不受採集密度影響）；burst 倍率為事件內部陡度、稀疏期會高估，僅作參考。"
 }
