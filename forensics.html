@@ -130,6 +130,14 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .prop-step .prop-v{color:var(--tx);line-height:1.45}
 .prop-arrow{text-align:center;font-size:11px;color:var(--org);padding:3px 0}
 .pp-note{font-size:11px;color:var(--dim);line-height:1.55;margin:4px 0 2px;padding:5px 8px;background:#0e1530;border-radius:6px}
+.ptt-art{background:#0e1530;border:1px solid #28315a;border-radius:8px;padding:7px 10px;margin-bottom:6px}
+.ptt-art[open]{border-color:var(--acc)}
+.ptt-art>summary{cursor:pointer;list-style:none;font-size:12px;line-height:1.5}
+.ptt-art>summary::-webkit-details-marker{display:none}
+.ptt-meta{color:var(--mut);font-weight:700;white-space:nowrap}
+.ptt-art>summary:hover .cx-toggle{color:var(--acc)}
+.ptt-art[open]>summary .cx-toggle::after{content:' (收合)'}
+.ptt-art .cm-list{margin-top:7px;max-height:340px}
 .amp-why{font-size:10.5px;color:#7fd0a0;margin-top:2px}
 .amp-snip{font-size:10.5px;color:var(--mut);margin-top:1px}
 .cm-narr{background:#1d1530;border-left:3px solid var(--org);border-radius:6px;padding:8px 10px;font-size:12.5px;color:#ffd6a3;line-height:1.5}
@@ -290,10 +298,11 @@ function chainExpand(e,n){
       <li><b>夜間發稿 ${Math.round((ig.night||0)*100)}%</b>：22:00–06:00 發稿占比，異常高（&gt;35%）代表深夜集中發稿，不太尋常（可能預排或同一稿源）。</li></ul></div>`;
   }
   if(n===5){
-    const rows=[...(amp.yt||[]).map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td><td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${v.hit&&v.hit.length?`<div class="amp-why">✓ ${v.hit.map(esc).join('、')}</div>`:''}</td></tr>`),
-      ...(amp.ptt||[]).map(p=>`<tr><td style="white-space:nowrap">${esc(p.date)}</td><td>💬 推${p.push}</td><td><a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<div class="amp-why">✓ ${p.hit.map(esc).join('、')}</div>`:''}</td></tr>`)].join('');
-    if(!rows) return `<div class="cx"><div class="empty" style="font-size:12px">經精準比對，本期無確實相關的節目/PTT 放大。</div></div>`;
-    return `<div class="cx"><div class="cx-h">📺 放大層明細（附連結與命中錨點）</div><table><tr><th>日期</th><th>來源</th><th>內容</th></tr>${rows}</table>${renderPttPulse(amp.ptt_pulse)}</div>`;
+    const ytR=(amp.yt||[]).map(v=>`<tr><td style="white-space:nowrap">${esc(v.date)}</td><td>📺 ${esc(v.author)}</td><td><a class="tl" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)} ↗</a>${v.hit&&v.hit.length?`<div class="amp-why">✓ ${v.hit.map(esc).join('、')}</div>`:''}</td></tr>`).join('');
+    const ytT=ytR?`<table><tr><th>日期</th><th>頻道</th><th>內容</th></tr>${ytR}</table>`:'';
+    const pttA=(amp.ptt||[]).length?`<div style="font-size:11.5px;color:var(--dim);margin:6px 0 2px">💬 PTT 討論（<b>點每篇展開推文</b>）：</div>${amp.ptt.map(pttArticleHtml).join('')}`:'';
+    if(!ytT&&!pttA) return `<div class="cx"><div class="empty" style="font-size:12px">經精準比對，本期無確實相關的節目/PTT 放大。</div></div>`;
+    return `<div class="cx"><div class="cx-h">📺 放大層明細（附連結、命中錨點、PTT 推文）</div>${ytT}${pttA}${renderPttPulse(amp.ptt_pulse)}</div>`;
   }
   if(n===6){
     const rs=e.responses||[],ro=e.resp_optimize||{};

@@ -11,7 +11,7 @@
 //
 // Bump VERSION when changing SW logic to invalidate old caches.
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const STATIC_CACHE = `lxy-static-${VERSION}`;
 const JSON_CACHE   = `lxy-json-${VERSION}`;
 
@@ -37,7 +37,10 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;  // CDN / Supabase / OSM — let browser handle
 
   const path = url.pathname;
-  if (path.endsWith('.json'))                   event.respondWith(staleWhileRevalidate(req));
+  // 事件解構頁的資料是「按需更新」，要永遠拿最新 → network-first（不可 stale）
+  if (path.endsWith('forensics_lxy.json') || path.endsWith('baseline_bursts_by_topic.json'))
+    event.respondWith(networkFirst(req));
+  else if (path.endsWith('.json'))              event.respondWith(staleWhileRevalidate(req));
   else if (path.endsWith('/') || path.endsWith('.html')) event.respondWith(networkFirst(req));
   else if (/\.(js|css)$/.test(path))            event.respondWith(cacheFirst(req));
   // Other static types (images, fonts) fall through to default browser handling.
