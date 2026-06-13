@@ -137,6 +137,12 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .tl-ul li{margin:5px 0;color:#dfe6ff}
 .tl-ul.prev li{color:#a9e9c8}
 .tl-generic-lbl{font-size:10.5px;color:var(--dim);font-weight:600;margin:9px 0 3px;border-top:1px dashed #2a335f;padding-top:6px}
+/* 非危機議題的「聲量經營」客製（綠色系，與危機紅色系區隔） */
+.tailored.leverage{background:linear-gradient(180deg,#12231a,#0e1812);border-color:#2e6b4a}
+.tailored.leverage .tl-cap{color:#7fe6b0}
+.tl-h.amber{color:var(--org)}
+.tl-ul.amp li{color:#bfe0ff}
+.tl-ul.guard li{color:#ffcf9f}
 .prop{margin:6px 0 4px}
 .prop-step{background:#0e1530;border:1px solid #28315a;border-radius:7px;padding:7px 10px;font-size:12px}
 .prop-step .prop-k{font-size:10.5px;color:var(--acc);font-weight:700;margin-bottom:2px}
@@ -292,8 +298,18 @@ const RESP_WHY={
   '善後/協助措施':'撫卹/安置/心理支持＝展現「有溫度」，把後續報導餵成正面素材。',
   '制度檢討/改革承諾':'制度改革＝把敘事從「失職」轉成「改革者」，把責任拉高到中央地方共擔；也是長期選情的關鍵兌現項。'
 };
+function leverageHtml(t){
+  if(!t||t.kind!=='leverage') return '';
+  const la=t.leverage_actions||[],am=t.amplify_material||[],gr=t.guardrails||[];
+  if(!la.length&&!am.length&&!gr.length) return '';
+  return `<div class="tailored leverage"><div class="tl-cap">🎯 針對「本議題」的聲量經營（非危機，順勢操作）</div>
+    ${la.length?`<div class="tl-h">📈 具體怎麼順勢經營（把高聲量導向施政成績）</div><ul class="tl-ul">${la.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+    ${am.length?`<div class="tl-h">🎤 該主打的素材／訊息點</div><ul class="tl-ul amp">${am.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+    ${gr.length?`<div class="tl-h amber">⚠️ 翻車紅線（過度操作／失言的界線）</div><ul class="tl-ul guard">${gr.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}</div>`;
+}
 function tailoredHtml(t){
   if(!t) return '';
+  if(t.kind==='leverage') return leverageHtml(t);
   const trig=t.ignition_trigger?`<div class="tl-trig">🚨 <b>引爆條件</b>（出現以下任一＝從觀察切入正式危機處理 SOP）<div class="tl-trig-b">${esc(t.ignition_trigger)}</div></div>`:'';
   const acts=(t.tailored_actions&&t.tailored_actions.length)?`<div class="tl-h">⚡ 針對本案的黃金 4 小時首要動作</div><ul class="tl-ul">${t.tailored_actions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
   const prev=(t.tailored_prevent&&t.tailored_prevent.length)?`<div class="tl-h">🛡 針對本案的預防／監測重點</div><ul class="tl-ul prev">${t.tailored_prevent.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
@@ -367,7 +383,8 @@ function chainExpand(e,n){
     const rs=e.responses||[],ro=e.resp_optimize||{};
     const tbl=rs.length?`<table><tr><th>時間</th><th>距引爆</th><th>處置</th><th>報導</th></tr>${rs.map(r=>`<tr><td style="white-space:nowrap">${esc(r.time)}</td><td style="white-space:nowrap">${r.hours_after!=null?'+'+r.hours_after+'h':'—'}${r.hours_after!=null&&r.hours_after<=6?' <span style="color:var(--grn)">黃金窗</span>':''}</td><td><b>${esc(r.label)}</b></td><td>${r.link?`<a class="tl" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.outlet)}：${esc(r.title)} ↗</a>`:esc(r.title)}</td></tr>`).join('')}</table>`:'<div class="empty" style="font-size:12px">報導中未偵測到市府處置動作。</div>';
     if(ro.na) return `<div class="cx"><div class="cx-h">🤝 市府應對研判 <span class="hint">本議題為正向／中性聲量，非危機事件</span></div>${tbl}
-      <div class="cx-opt"><b>🔧 應對研判</b><div style="margin-top:5px;font-size:12.5px;line-height:1.7;color:#a9e9c8">${esc(ro.na_reason||'本議題非危機事件，危機應對 SOP（哀悼／究責／撫卹）不適用。')}</div></div></div>`;
+      <div class="cx-opt"><b>🔧 為何非危機</b><div style="margin-top:5px;font-size:12.5px;line-height:1.7;color:#a9e9c8">${esc(ro.na_reason||'本議題非危機事件，危機應對 SOP（哀悼／究責／撫卹）不適用。')}</div></div>
+      ${leverageHtml(e.tailored)||'<div style="font-size:11.5px;color:var(--dim);margin-top:8px">（本議題尚無客製聲量經營策略，見下方應對手冊通用參考）</div>'}</div>`;
     const missHtml=(ro.missing&&ro.missing.length)?ro.missing.map(m=>`<div class="cx-miss"><b>缺：${esc(m)}</b><div class="cx-miss-why">${RESP_WHY[m]||'可作為補強重點。'}</div></div>`).join(''):'<div style="color:var(--grn)">六類處置皆已執行 ✅</div>';
     const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化</b>
       <div style="margin-top:4px">${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}</div>
@@ -386,7 +403,11 @@ function chainExpand(e,n){
       ${f.caveat?`<div class="cx-opt" style="margin-top:8px">⚖️ <b>對選情的影響</b>：${esc(f.caveat)}</div>`:''}
       <div style="font-size:11px;color:var(--dim);margin-top:6px">判定邏輯：已逆轉→收尾；應對主導型→持續供稿；聲量退潮≥60%且近2日紅燈≤2→冷處理；其餘→主動處置。</div></div>`;
   }
-  if(n===8) return `<div class="cx">${tailoredHtml(e.tailored)}<div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）${e.tailored?'<span class="hint">— 上方為本案專屬研判，下方為同類型通用 SOP 參考</span>':''}</div>${playbookHtml(e)}</div>`;
+  if(n===8){
+    const isNa=e.resp_optimize&&e.resp_optimize.na;
+    const hint=e.tailored?(isNa?'— 上方為本議題客製「聲量經營」；下方手冊偏危機處置，僅供「若翻轉成負面」的風險預案參考':'— 上方為本案專屬研判，下方為同類型通用 SOP 參考'):'';
+    return `<div class="cx">${tailoredHtml(e.tailored)}<div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）${hint?`<span class="hint">${hint}</span>`:''}</div>${playbookHtml(e)}</div>`;
+  }
   return '';
 }
 function renderChain(e){
