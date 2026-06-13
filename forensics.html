@@ -294,7 +294,7 @@ function _pttPushRows(pushes){
 }
 function _pttHourInner(iid,h){
   const hs=(PTT_REG[iid]||{})[h]||[];
-  return `<div class="cn-h">🕐 ${esc(h)}時　${hs.length} 則推文${hs.length>=25?'（取樣前 25 則）':''}</div>${hs.length?_pttPushRows(hs):'<div class="empty" style="font-size:11.5px">該時段無推文樣本</div>'}`;
+  return `<div class="cn-h">🕐 ${esc(h)}時　${hs.length} 則推文</div>${hs.length?_pttPushRows(hs):'<div class="empty" style="font-size:11.5px">該時段無推文樣本（可能只有純標記/已刪推文）</div>'}`;
 }
 function showPttHour(iid,h){
   const box=document.getElementById('ppHourBox_'+iid); if(!box)return;
@@ -306,9 +306,16 @@ function pttHourlyBar(hourly,iid,defH){
   const max=Math.max(...hourly.map(h=>h.n),1);
   return `<div class="pp-bars" data-iid="${iid}">${hourly.map(h=>`<div class="pp-bar${h.h===defH?' sel':''}" data-h="${esc(h.h)}" onclick="showPttHour(${iid},'${esc(h.h)}')" title="${esc(h.h)}時 推噓 ${h.n} 則 — 點看該時段推文"><div class="pp-fill" style="height:${Math.max(6,Math.round(h.n/max*100))}%"></div><div class="pp-lbl">${esc((h.h||'').slice(-2))}</div></div>`).join('')}</div><div class="pp-axis">逐小時推文量 — 點長條看該時段推文</div>`;
 }
-function renderPttPulse(pp){
+function renderPttPulse(pp,pttArts){
   if(!pp) return '';
-  const iid=++_pttIid; PTT_REG[iid]=pp.hour_samples||{};
+  const iid=++_pttIid;
+  // 從各 PTT 文的「全部推文」依「MM/DD HH」分桶（全列、不設上限）；fallback 用引擎的 hour_samples
+  const buckets={};
+  (pttArts||[]).forEach(a=>(a.samples||[]).forEach(s=>{
+    const hk=(s.time||'').slice(0,8);
+    if(hk.length===8&&hk.indexOf(':')<0){(buckets[hk]=buckets[hk]||[]).push(s);}
+  }));
+  PTT_REG[iid]=Object.keys(buckets).length?buckets:(pp.hour_samples||{});
   const hasHS=Object.keys(PTT_REG[iid]).length>0;
   const hrs=pp.hourly||[];
   const defH=pp.peak_hour||(hrs.length?hrs.reduce((a,b)=>b.n>a.n?b:a).h:'');
@@ -408,7 +415,7 @@ function chainExpand(e,n){
     const ytT=ytR?`<table><tr><th>日期</th><th>頻道</th><th>內容</th></tr>${ytR}</table>`:'';
     const pttA=(amp.ptt||[]).length?`<div style="font-size:11.5px;color:var(--dim);margin:6px 0 2px">💬 PTT 討論（<b>點每篇展開推文</b>）：</div>${amp.ptt.map(pttArticleHtml).join('')}`:'';
     if(!ytT&&!pttA) return `<div class="cx"><div class="empty" style="font-size:12px">經精準比對，本期無確實相關的節目/PTT 放大。</div></div>`;
-    return `<div class="cx"><div class="cx-h">📺 放大層明細（附連結、命中錨點、PTT 推文）</div>${ytT}${pttA}${renderPttPulse(amp.ptt_pulse)}</div>`;
+    return `<div class="cx"><div class="cx-h">📺 放大層明細（附連結、命中錨點、PTT 推文）</div>${ytT}${pttA}${renderPttPulse(amp.ptt_pulse, amp.ptt)}</div>`;
   }
   if(n===6){
     const rs=e.responses||[],ro=e.resp_optimize||{};
@@ -712,7 +719,7 @@ function renderDetail(e){
     <div class="sub-panel">
       <div class="sec-title">📺 節目／論壇放大層 <span class="hint">政論財經節目 ${amp.yt_total} 部・PTT ${amp.ptt_total} 篇（已精準比對，附命中錨點）</span></div>
       ${ytTable}${pttArts}
-      ${renderPttPulse(amp.ptt_pulse)}
+      ${renderPttPulse(amp.ptt_pulse, amp.ptt)}
       <div style="font-size:11.5px;color:var(--dim);margin-top:8px">「命中錨點」＝該則為何被歸到本事件（事件專屬詞）。PTT 每篇可點開看實際推文；YouTube 字幕逐秒定位為下一步（僅約一成影片有官方字幕）。</div>
     </div>`:`
     <div class="sub-panel">
