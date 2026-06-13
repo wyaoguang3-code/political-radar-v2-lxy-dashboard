@@ -173,7 +173,9 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .pp-up{color:var(--grn);font-weight:700}.pp-down{color:var(--red);font-weight:700}.pp-arrow{color:var(--mut)}
 .pp-ratio{color:#ffd6a3;font-weight:700}.pp-peak{color:var(--acc)}
 .pp-bars{display:flex;align-items:flex-end;gap:2px;height:54px;margin-top:6px}
-.pp-bar{flex:1;min-width:6px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.pp-bar{flex:1;min-width:6px;display:flex;flex-direction:column;justify-content:flex-end;height:100%;cursor:pointer;border-radius:2px}
+.pp-bar:hover{background:rgba(90,121,255,.14)}
+.pp-bar.sel{background:rgba(90,121,255,.22);box-shadow:inset 0 0 0 1px var(--acc)}
 .pp-fill{background:linear-gradient(180deg,var(--red),var(--org));border-radius:2px 2px 0 0;min-height:3px}
 .pp-lbl{font-size:8px;color:var(--dim);text-align:center;margin-top:1px}
 .pp-axis{font-size:10.5px;color:var(--dim);margin-top:2px}
@@ -285,19 +287,37 @@ function dailyCommentsHtml(cp){
     <div style="font-size:11px;color:var(--dim);margin:4px 0">紫色虛線＝社群留言量走勢；下方按日展開＝當天實際留言（🔴負面／🟡中性偏負／🟢友善）。留言無原文連結（資料源未存 permalink）。</div>
     ${dc.map(d=>`<details class="cx-day"><summary>${esc(d.date.slice(5))}　${d.n} 則（🔴 ${d.red}）</summary><div class="cm-list">${d.items.map(commentRowHtml).join('')}</div></details>`).join('')}</details>`;
 }
-function pttHourlyBar(hourly){
+let _pttIid=0; const PTT_REG={};
+const _pttSig=t=>t==='推'?'🟢 推':t==='噓'?'🔴 噓':'⚪ →';
+function _pttPushRows(pushes){
+  return `<div class="cm-list">${(pushes||[]).map(s=>`<div class="cm-row"><div class="cm-meta">${_pttSig(s.tag)} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('')}</div>`;
+}
+function _pttHourInner(iid,h){
+  const hs=(PTT_REG[iid]||{})[h]||[];
+  return `<div class="cn-h">🕐 ${esc(h)}時　${hs.length} 則推文${hs.length>=25?'（取樣前 25 則）':''}</div>${hs.length?_pttPushRows(hs):'<div class="empty" style="font-size:11.5px">該時段無推文樣本</div>'}`;
+}
+function showPttHour(iid,h){
+  const box=document.getElementById('ppHourBox_'+iid); if(!box)return;
+  document.querySelectorAll('.pp-bars[data-iid="'+iid+'"] .pp-bar').forEach(b=>b.classList.toggle('sel',b.getAttribute('data-h')===h));
+  box.innerHTML=_pttHourInner(iid,h);
+}
+function pttHourlyBar(hourly,iid,defH){
   if(!hourly||!hourly.length) return '';
   const max=Math.max(...hourly.map(h=>h.n),1);
-  return `<div class="pp-bars">${hourly.map(h=>`<div class="pp-bar" title="${esc(h.h)}時 推噓 ${h.n} 則"><div class="pp-fill" style="height:${Math.max(6,Math.round(h.n/max*100))}%"></div><div class="pp-lbl">${esc((h.h||'').slice(-2))}</div></div>`).join('')}</div><div class="pp-axis">逐小時推文量（看火力集中在發文後第幾小時）</div>`;
+  return `<div class="pp-bars" data-iid="${iid}">${hourly.map(h=>`<div class="pp-bar${h.h===defH?' sel':''}" data-h="${esc(h.h)}" onclick="showPttHour(${iid},'${esc(h.h)}')" title="${esc(h.h)}時 推噓 ${h.n} 則 — 點看該時段推文"><div class="pp-fill" style="height:${Math.max(6,Math.round(h.n/max*100))}%"></div><div class="pp-lbl">${esc((h.h||'').slice(-2))}</div></div>`).join('')}</div><div class="pp-axis">逐小時推文量 — 點長條看該時段推文</div>`;
 }
 function renderPttPulse(pp){
   if(!pp) return '';
-  const sigTag=t=>t==='推'?'🟢 推':t==='噓'?'🔴 噓':'⚪ →';
-  const sams=(pp.samples||[]).map(s=>`<div class="cm-row"><div class="cm-meta">${sigTag(s.tag)} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('');
+  const iid=++_pttIid; PTT_REG[iid]=pp.hour_samples||{};
+  const hasHS=Object.keys(PTT_REG[iid]).length>0;
+  const hrs=pp.hourly||[];
+  const defH=pp.peak_hour||(hrs.length?hrs.reduce((a,b)=>b.n>a.n?b:a).h:'');
+  const sams=(pp.samples||[]).map(s=>`<div class="cm-row"><div class="cm-meta">${_pttSig(s.tag)} <b>${esc(s.uid)}</b> · ${esc(s.time)}</div><div class="cm-text">${esc(s.text)}</div></div>`).join('');
   return `<div style="margin-top:12px;border-top:1px solid #2a335f;padding-top:10px">
     <div class="sec-title" style="font-size:13px">🔥 PTT 鄉民熱度 <span class="hint">${pp.n_articles} 篇 · 推噓比＝共識方向 · 逐小時＝燒起來速度</span></div>
     <div class="pp-stats"><span class="pp-up">推 ${pp.push}</span><span class="pp-down">噓 ${pp.boo}</span><span class="pp-arrow">→ ${pp.arrow}</span>${pp.ratio!=null?`<span class="pp-ratio">推噓比 ${pp.ratio}:1${pp.ratio>=3?'（一面倒）':(pp.ratio<1?'（負評為主）':'')}</span>`:''}${pp.peak_hour?`<span class="pp-peak">爆文高峰 ${esc(pp.peak_hour)}時</span>`:''}</div>
-    ${pttHourlyBar(pp.hourly)}
+    ${pttHourlyBar(pp.hourly,iid,defH)}
+    ${hasHS?`<div id="ppHourBox_${iid}" class="chart-news" style="margin-top:6px">${_pttHourInner(iid,defH)}</div>`:''}
     ${sams?`<details class="cm-details"><summary>▼ 代表推文（最熱文 ${(pp.samples||[]).length} 則）${pp.top_title?'：'+esc(pp.top_title):''}</summary><div class="pp-note">代表推文＝本事件<b>推文數最高的那篇</b>，依時間順序取「推 6＋噓 4＋→ 3」則，刻意納入正反兩面（🟢推＝同意/聲援、🔴噓＝反對），不是只挑罵得最兇的。</div><div class="cm-list">${sams}</div></details>`:''}
   </div>`;
 }
