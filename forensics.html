@@ -394,12 +394,16 @@ function chainExpand(e,n){
   }
   if(n===7){
     const f=e.followup||{},rev=ph.reversal;
-    const mc={'冷處理':'var(--grn)','主動處置':'var(--org)','持續供稿':'var(--acc)','收尾維持':'var(--grn)'}[f.mode]||'var(--mut)';
+    const mc={'冷處理':'var(--grn)','主動處置':'var(--org)','持續供稿':'var(--acc)','收尾維持':'var(--grn)','順勢經營':'var(--grn)'}[f.mode]||'var(--mut)';
+    const _t=e.tailored||{};
+    const _mats=(_t.supply_material&&_t.supply_material.length)?_t.supply_material:((_t.kind==='leverage'&&_t.amplify_material&&_t.amplify_material.length)?_t.amplify_material:null);
+    const matHtml=_mats?`<div class="tailored" style="margin-top:9px"><div class="tl-cap">📋 本案可供稿的具體素材（怎麼寫＋用什麼形式＋透過什麼管道提供）</div><ul class="tl-ul">${_mats.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'';
     return `<div class="cx"><div class="cx-h">🧭 後續該怎麼處理（依數據判定）</div>
       <div class="cx-rec" style="border-color:${mc}"><div class="cx-mode" style="color:${mc}">建議：${esc(f.mode||'—')}</div>
         <div class="cx-row"><b>理由</b>　${esc(f.reason||'')}</div>
         <div class="cx-row"><b>具體做法</b>　${esc(f.action||'')}</div>
         <div class="cx-row"><b>數據依據</b>　${esc(f.data||'')}</div></div>
+      ${matHtml}
       ${rev?`<div class="cx-row" style="margin-top:6px;color:var(--grn)">⏪ 已偵測逆轉點 ${rev.date}：${esc((rev.why||[]).join('；'))}</div>`:''}
       ${f.caveat?`<div class="cx-opt" style="margin-top:8px">⚖️ <b>對選情的影響</b>：${esc(f.caveat)}</div>`:''}
       <div style="font-size:11px;color:var(--dim);margin-top:6px">判定邏輯：已逆轉→收尾；應對主導型→持續供稿；聲量退潮≥60%且近2日紅燈≤2→冷處理；其餘→主動處置。</div></div>`;
