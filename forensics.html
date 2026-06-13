@@ -406,8 +406,13 @@ function chainExpand(e,n){
   }
   if(n===8){
     const isNa=e.resp_optimize&&e.resp_optimize.na;
-    const hint=e.tailored?(isNa?'— 上方為本議題客製「聲量經營」；下方手冊偏危機處置，僅供「若翻轉成負面」的風險預案參考':'— 上方為本案專屬研判，下方為同類型通用 SOP 參考'):'';
-    return `<div class="cx">${tailoredHtml(e.tailored)}<div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）${hint?`<span class="hint">${hint}</span>`:''}</div>${playbookHtml(e)}</div>`;
+    const custom=e.playbook&&e.playbook.custom;
+    let hint;
+    if(custom) hint='— 上方為研判要點，下方手冊為「本案客製」（非通用模板，每張卡含步驟/成本/影響/風險）';
+    else if(e.tailored) hint=isNa?'— 上方為本議題客製「聲量經營」；下方手冊偏危機處置，僅供「若翻轉成負面」的風險預案參考':'— 上方為本案專屬研判，下方為同類型通用 SOP 參考';
+    else hint='';
+    const title=custom?'🛡️ 應對手冊（本案客製）':'🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）';
+    return `<div class="cx">${tailoredHtml(e.tailored)}<div class="cx-h">${title}${hint?`<span class="hint">${hint}</span>`:''}</div>${playbookHtml(e)}</div>`;
   }
   return '';
 }
