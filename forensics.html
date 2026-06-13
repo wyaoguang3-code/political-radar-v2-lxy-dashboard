@@ -385,10 +385,11 @@ function chainExpand(e,n){
     if(ro.na) return `<div class="cx"><div class="cx-h">🤝 市府應對研判 <span class="hint">本議題為正向／中性聲量，非危機事件</span></div>${tbl}
       <div class="cx-opt"><b>🔧 為何非危機</b><div style="margin-top:5px;font-size:12.5px;line-height:1.7;color:#a9e9c8">${esc(ro.na_reason||'本議題非危機事件，危機應對 SOP（哀悼／究責／撫卹）不適用。')}</div></div>
       ${leverageHtml(e.tailored)||'<div style="font-size:11.5px;color:var(--dim);margin-top:8px">（本議題尚無客製聲量經營策略，見下方應對手冊通用參考）</div>'}</div>`;
-    const missHtml=(ro.missing&&ro.missing.length)?ro.missing.map(m=>`<div class="cx-miss"><b>缺：${esc(m)}</b><div class="cx-miss-why">${RESP_WHY[m]||'可作為補強重點。'}</div></div>`).join(''):'<div style="color:var(--grn)">六類處置皆已執行 ✅</div>';
+    const missHtml=(ro.missing&&ro.missing.length)?ro.missing.map(m=>`<div class="cx-miss"><b>缺：${esc(m)}</b><div class="cx-miss-why">${RESP_WHY[m]||'可作為補強重點。'}</div></div>`).join(''):'<div style="color:var(--grn)">主要處置皆已執行 ✅</div>';
+    const incNote=(ro.incident===false)?`<div style="font-size:11px;color:var(--dim);margin-top:3px">（本案非實體事故，已略過「哀悼慰問／親赴現場／撫卹善後」等災難應對類別；重點在政策數據反駁與議事說明 — 見上方客製首要動作）</div>`:'';
     const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化</b>
       <div style="margin-top:4px">${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}</div>
-      <div style="margin-top:6px;font-weight:700;color:var(--mut)">補強重點（為什麼）：</div>${missHtml}</div>`;
+      <div style="margin-top:6px;font-weight:700;color:var(--mut)">補強重點（為什麼）：</div>${missHtml}${incNote}</div>`;
     return `<div class="cx"><div class="cx-h">🤝 市府已執行的處置（附報導連結）</div>${tbl}${opt}</div>`;
   }
   if(n===7){
