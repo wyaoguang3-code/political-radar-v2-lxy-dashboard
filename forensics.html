@@ -94,6 +94,8 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .op-row .k{flex:0 0 56px;color:var(--dim);font-weight:600}
 .op-row .v{flex:1;min-width:0}
 .op-row.how .v{color:#dfe6ff}.op-row.cost .v{color:#ffcf8f}.op-row.impact .v{color:#9fe6c0}.op-row.risk .v{color:#ff9ba6}
+.op-row.flow .v{color:#b9c3f2}.op-row.say .v{color:#9fe6c0}.op-row.avoid .v{color:#ff9ba6}.op-row.who .v{color:#c9b8ff}
+.op-row .k{flex:0 0 62px}
 .chain{margin:6px 0 2px}
 .chain-link{display:flex;padding:8px 2px;border-bottom:1px dashed #1c2547}
 .chain-link:last-child{border-bottom:none}
@@ -204,6 +206,10 @@ function renderCards(arr){
     if(typeof c==='string') return `<div class="op-card"><div class="oc-a">▸ ${esc(c)}</div></div>`;
     return `<div class="op-card"><div class="oc-a">▸ ${esc(c.a)}</div>
       ${c.how?`<div class="op-row how"><span class="k">怎麼做</span><span class="v">${esc(c.how)}</span></div>`:''}
+      ${c.flow?`<div class="op-row flow"><span class="k">流程/時序</span><span class="v">${esc(c.flow)}</span></div>`:''}
+      ${c.say?`<div class="op-row say"><span class="k">該講/聚焦</span><span class="v">${esc(c.say)}</span></div>`:''}
+      ${c.avoid?`<div class="op-row avoid"><span class="k">不該講/避免</span><span class="v">${esc(c.avoid)}</span></div>`:''}
+      ${c.who?`<div class="op-row who"><span class="k">人員/帶誰</span><span class="v">${esc(c.who)}</span></div>`:''}
       ${c.cost?`<div class="op-row cost"><span class="k">成本</span><span class="v">${esc(c.cost)}</span></div>`:''}
       ${c.impact?`<div class="op-row impact"><span class="k">預期影響</span><span class="v">${esc(c.impact)}</span></div>`:''}
       ${c.risk?`<div class="op-row risk"><span class="k">風險注意</span><span class="v">${esc(c.risk)}</span></div>`:''}
@@ -218,6 +224,17 @@ function pttArticleHtml(p){
   const tot=(p.push||0)+(p.boo||0)+(p.arrow||0), shown=(p.samples||[]).length;
   const capNote=(tot>shown)?`<div class="pp-note">本篇共 ${tot} 則推文，此處顯示有內文的 ${shown} 則${shown>=400?'（達 400 則上限，完整見原文）':'（少數純標記/已刪推文略過）'}；完整見 <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener">PTT 原文 ↗</a>。</div>`:'';
   return `<details class="ptt-art"><summary class="ptt-sum"><span class="ptt-meta">💬 ${esc(p.date)} · 推 ${p.push!=null?p.push:'—'}${p.boo?'／噓 '+p.boo:''}${p.arrow?'／→ '+p.arrow:''}</span> <a class="tl" href="${esc(p.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(p.title)} ↗</a>${p.hit&&p.hit.length?`<span class="amp-why" style="display:inline">✓ ${p.hit.map(esc).join('、')}</span>`:''} <span class="cx-toggle">▼ 看本篇 ${shown} 則推文</span></summary>${capNote}${pttSampleRows(p.samples)}</details>`;
+}
+function commentRowHtml(c){
+  const ic=c.sig==='red'?'🔴':c.sig==='yellow'?'🟡':c.sig==='green'?'🟢':'⚪';
+  return `<div class="cm-row"><div class="cm-meta">${ic} <b>${esc(c.author)}</b> · ${esc(c.plat)} · ${esc(c.time)}</div><div class="cm-text">${esc(c.text)}</div></div>`;
+}
+function dailyCommentsHtml(cp){
+  const dc=(cp&&cp.daily_comments)||[];
+  if(!dc.length) return `<div style="font-size:11.5px;color:var(--dim);margin-top:8px">紫色虛線（上圖）＝社群留言量走勢。本事件期間無對應留言。</div>`;
+  return `<details class="cm-details" style="margin-top:8px"><summary>▼ 點開每日留言（對照上圖紫線走勢，看每天鄉民實際說什麼）</summary>
+    <div style="font-size:11px;color:var(--dim);margin:4px 0">紫色虛線＝社群留言量走勢；下方按日展開＝當天實際留言（🔴負面／🟡中性偏負／🟢友善）。留言無原文連結（資料源未存 permalink）。</div>
+    ${dc.map(d=>`<details class="cx-day"><summary>${esc(d.date.slice(5))}　${d.n} 則（🔴 ${d.red}）</summary><div class="cm-list">${d.items.map(commentRowHtml).join('')}</div></details>`).join('')}</details>`;
 }
 function pttHourlyBar(hourly){
   if(!hourly||!hourly.length) return '';
@@ -604,7 +621,7 @@ function renderDetail(e){
       ${cp.narrative?`<div class="cm-narr" style="margin-bottom:8px">🔥 ${esc(cp.narrative)}</div>`:''}
       <div class="kv"><span>事件相關留言總數</span><b>${cp.c_total} 則</b></div>
       ${cp.c_red_peak!=null?`<div class="kv"><span>高峰日留言紅燈占比</span><b class="sev-紅燈">${Math.round(cp.c_red_peak*100)}%</b></div>`:''}
-      <div style="font-size:11.5px;color:var(--dim);margin-top:8px">紫色虛線（上圖）＝社群留言量走勢，與新聞量對照可見「先後與帶動關係」。完整留言見下方「💬 社群留言實況」。</div>
+      ${dailyCommentsHtml(cp)}
     </div>
     <div class="sub-panel">
       <div class="sec-title">📰 媒體光譜與集中度 <span class="hint">誰在報、誰報最多</span></div>
