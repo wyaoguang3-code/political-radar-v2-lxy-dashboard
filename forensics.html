@@ -180,20 +180,27 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .hour-hist{display:flex;align-items:flex-end;gap:1px;height:42px;margin-top:6px}
 .hour-hist .hh-col{flex:1;display:flex;align-items:flex-end;height:100%;cursor:pointer;border-radius:2px}
 .hour-hist .hh-col:hover{background:rgba(90,121,255,.14)}
-.hour-hist .hh-col.sel{background:rgba(90,121,255,.22)}
+.hour-hist .hh-col.sel{background:rgba(90,121,255,.30);box-shadow:inset 0 0 0 1px var(--acc)}
+.hour-hist .hh-col.sel .hh-bar{opacity:1}
+.hour-hist .hh-col.hh-static{cursor:default}
+.hour-hist .hh-col.hh-static:hover{background:transparent}
 .hour-hist .hh-bar{width:100%;background:var(--acc);opacity:.85;border-radius:2px 2px 0 0;min-height:1px}
 .hour-lbl{display:flex;justify-content:space-between;font-size:9.5px;color:var(--dim)}
 /* 可點擊圖表：點某天/某時段看該時段新聞 */
 rect.day-hit{fill:transparent}
 rect.day-hit:hover{fill:rgba(90,121,255,.13)}
-rect.day-hit.sel{fill:rgba(90,121,255,.17)}
+rect.day-hit.sel{fill:rgba(90,121,255,.26);stroke:var(--acc);stroke-width:1.4}
 .chart-hint{font-size:11px;color:var(--acc);margin:4px 0 0}
 .chart-news{margin:7px 0 2px;border:1px solid #2a335f;border-radius:9px;padding:9px 11px;background:#0e1430}
 .chart-news .cn-h{font-size:12px;font-weight:700;color:var(--mut);margin-bottom:5px}
 .chart-news .cn-hint{font-weight:400;color:var(--dim);font-size:10.5px;margin-left:6px}
+.chart-news .cn-scroll{max-height:340px;overflow:auto}
+.chart-news .cn-scroll th{position:sticky;top:0;background:#0e1430;z-index:1}
 .chart-news table{margin-top:2px}
 .cn-badge{display:inline-block;background:#7a2630;color:#ffd9dd;font-size:9.5px;font-weight:700;border-radius:4px;padding:0 4px;margin-right:3px}
-tr.cn-first td{background:rgba(255,93,108,.09)}
+tr.cn-first td{background:rgba(255,93,108,.16)}
+tr.cn-first td:first-child{border-left:3px solid var(--red)}
+@media(max-width:1000px){.hour-hist{gap:0}}
 .empty{color:var(--dim);font-size:12px;padding:6px 0}
 svg text{font-family:inherit}
 </style>
@@ -514,32 +521,31 @@ function lifeChart(e){
 
 // ── 可點擊圖表：點某天/某時段 → 顯示該時段新聞（最早一篇標記）──────────────
 function _emin(t){const m=/(\d{1,2}):(\d{2})/.exec(t||'');return m?(+m[1]*60+ +m[2]):99999;}
-function _newsRows(items,firstIdx){
-  return items.map((it,i)=>`<tr class="${i===firstIdx?'cn-first':''}">
+function _newsTable(items){
+  // 依時間遞增排序，🔥 標記最早一篇（僅當該篇真有可解析時間；無時間戳則不標）
+  const arr=items.slice().sort((a,b)=>_emin(a.time)-_emin(b.time));
+  const firstIdx=(arr.length && _emin(arr[0].time)<99999)?0:-1;
+  const rows=arr.map((it,i)=>`<tr class="${i===firstIdx?'cn-first':''}">
     <td style="white-space:nowrap">${i===firstIdx?'<span class="cn-badge">🔥 最早</span> ':''}${esc(it.time)}</td>
     <td>${esc(it.outlet)}</td><td class="sev-${esc(it.sev)}">${esc((it.sev||'').slice(0,1))||'—'}</td>
     <td>${it.link?`<a class="tl" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)} ↗</a>`:esc(it.title)}</td></tr>`).join('');
+  return `<div class="cn-scroll"><table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${rows}</table></div>`;
 }
-function _earliestIdx(items){let fi=-1,best=1e9;items.forEach((it,i)=>{const t=_emin(it.time);if(t<best){best=t;fi=i;}});return fi;}
 function showDayNews(ei,date){
   const box=document.getElementById('lifeNews'); if(!box)return;
   const e=DATA.events[ei]; const dn=(e.daily_news||[]).find(x=>x.date===date);
   document.querySelectorAll('rect.day-hit').forEach(r=>r.classList.toggle('sel',r.getAttribute('data-date')===date));
   if(!dn||!dn.items||!dn.items.length){box.innerHTML=`<div class="chart-news"><div class="cn-h">📅 ${date.slice(5)}　當日無新聞報導</div></div>`;return;}
-  const fi=_earliestIdx(dn.items);
-  box.innerHTML=`<div class="chart-news"><div class="cn-h">📅 ${date.slice(5)} 當日 ${dn.n} 篇報導（🔴 ${dn.red}）<span class="cn-hint">🔥 標記＝當天最早出現的一篇</span></div>
-    <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${_newsRows(dn.items,fi)}</table></div>`;
+  box.innerHTML=`<div class="chart-news"><div class="cn-h">📅 ${date.slice(5)} 當日 ${dn.n} 篇報導（🔴 ${dn.red}）<span class="cn-hint">依時間排序，🔥＝當天最早出現的一篇</span></div>${_newsTable(dn.items)}</div>`;
 }
 function showHourNews(ei,hour){
   const box=document.getElementById('ignHourNews'); if(!box)return;
   const e=DATA.events[ei]; const dn=(e.daily_news||[]).find(x=>x.date===e.phases.ignition);
   document.querySelectorAll('.hour-hist .hh-col').forEach((c,h)=>c.classList.toggle('sel',h===hour));
-  const items=[]; if(dn&&dn.items){for(const it of dn.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm&&+mm[1]===hour)items.push(it);}}
+  const items=[]; if(dn&&dn.items){for(const it of dn.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm){const hr=+mm[1];if(hr===hour&&hr>=0&&hr<24)items.push(it);}}}
   const hh2=(hour<10?'0'+hour:''+hour), hl=hh2+':00–'+hh2+':59';
   if(!items.length){box.innerHTML=`<div class="chart-news"><div class="cn-h">🕐 引爆日 ${hl}　該時段無發稿</div></div>`;return;}
-  const fi=_earliestIdx(items);
-  box.innerHTML=`<div class="chart-news"><div class="cn-h">🕐 引爆日 ${hl}　${items.length} 篇 <span class="cn-hint">🔥 標記＝該時段最早一篇</span></div>
-    <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${_newsRows(items,fi)}</table></div>`;
+  box.innerHTML=`<div class="chart-news"><div class="cn-h">🕐 引爆日 ${hl}　${items.length} 篇 <span class="cn-hint">🔥＝該時段最早一篇</span></div>${_newsTable(items)}</div>`;
 }
 function renderDetail(e){
   if(!e){$('detail').innerHTML='<div class="empty">無事件</div>';return;}
@@ -575,7 +581,7 @@ function renderDetail(e){
   let hh='';
   if(ig.timed_n>=3 && ignDN && ignDN.items){
     const counts=Array.from({length:24},()=>0);
-    for(const it of ignDN.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm)counts[+mm[1]]++;}
+    for(const it of ignDN.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm){const hr=+mm[1];if(hr>=0&&hr<24)counts[hr]++;}}
     const m=Math.max(...counts,1);
     hh=`<div style="font-size:11px;color:var(--mut);margin-top:8px">引爆日 24 小時發稿分佈（有時間戳 ${ig.timed_n} 篇）<span style="color:var(--acc)">— 點任一時段看該時段新聞</span></div>
     <div class="hour-hist">${counts.map((v,h)=>`<div class="hh-col" onclick="showHourNews(CUR,${h})" title="${h}時　${v} 篇 — 點看該時段新聞"><div class="hh-bar" style="height:${Math.max(2,v/m*100)}%"></div></div>`).join('')}</div>
@@ -584,7 +590,7 @@ function renderDetail(e){
   }else if(ig.timed_n>=3){
     const vals=Object.values(ig.hour_hist), m=Math.max(...vals,1);
     hh=`<div style="font-size:11px;color:var(--mut);margin-top:8px">引爆日 24 小時發稿分佈（有時間戳 ${ig.timed_n} 篇）</div>
-    <div class="hour-hist">${vals.map(v=>`<div class="hh-col"><div class="hh-bar" style="height:${Math.max(2,v/m*100)}%"></div></div>`).join('')}</div>
+    <div class="hour-hist">${vals.map(v=>`<div class="hh-col hh-static"><div class="hh-bar" style="height:${Math.max(2,v/m*100)}%"></div></div>`).join('')}</div>
     <div class="hour-lbl"><span>0時</span><span>6</span><span>12</span><span>18</span><span>23時</span></div>`;
   }
   // 光譜
@@ -675,7 +681,7 @@ function renderDetail(e){
   </div>
   ${phaseBar}
   ${lifeChart(e)}
-  <div class="chart-hint">💡 點長條任一天，看當日全部新聞（🔥 標記當天最早出現的一篇）</div>
+  <div class="chart-hint">💡 點任一天的欄位（整欄可點），看當日全部新聞 — 🔥 標記當天最早出現的一篇</div>
   <div id="lifeNews"></div>
   ${renderChain(e)}
   <div class="grid2">
@@ -712,9 +718,9 @@ function renderDetail(e){
     <table><tr><th>時間</th><th>媒體</th><th>燈</th><th>標題</th></tr>${samples}</table></div>`;
   // 預設先選取，讓兩張圖一載入就有內容（生命週期圖→引爆日；逐時圖→篇數最多的時段）
   showDayNews(CUR, ph.ignition);
-  if(ignDN && ignDN.items){
+  if(ig.timed_n>=3 && ignDN && ignDN.items){
     const bk=Array.from({length:24},()=>0);
-    for(const it of ignDN.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm)bk[+mm[1]]++;}
+    for(const it of ignDN.items){const mm=/(\d{1,2}):(\d{2})/.exec(it.time||'');if(mm){const hr=+mm[1];if(hr>=0&&hr<24)bk[hr]++;}}
     let hsel=0,mx=-1; bk.forEach((v,h)=>{if(v>mx){mx=v;hsel=h;}});
     showHourNews(CUR, hsel);
   }
