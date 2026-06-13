@@ -126,6 +126,17 @@ a.tl:hover{color:var(--acc);border-color:var(--acc)}
 .cx-miss{margin-top:5px;font-size:12px;line-height:1.55}
 .cx-miss>b{color:var(--org)}
 .cx-miss-why{color:var(--mut);margin-top:1px}
+/* 事件客製化應對（針對本案，非通用模板） */
+.tailored{background:linear-gradient(180deg,#15193a,#0e1430);border:1px solid #3a4690;border-radius:10px;padding:11px 13px;margin-bottom:11px}
+.tl-cap{font-size:12px;font-weight:800;color:#ffd06b;letter-spacing:.3px;margin-bottom:9px}
+.tl-trig{background:#2a1418;border:1px solid #7a2630;border-left:4px solid var(--red);border-radius:7px;padding:9px 11px;font-size:12.5px;line-height:1.6;color:#ffd9dd;margin-bottom:9px}
+.tl-trig b{color:#ff8e98}
+.tl-trig-b{margin-top:4px;color:#ffe6e9}
+.tl-h{font-size:12px;font-weight:700;color:var(--acc);margin:9px 0 4px}
+.tl-ul{margin:0;padding-left:17px;font-size:12.5px;line-height:1.65}
+.tl-ul li{margin:5px 0;color:#dfe6ff}
+.tl-ul.prev li{color:#a9e9c8}
+.tl-generic-lbl{font-size:10.5px;color:var(--dim);font-weight:600;margin:9px 0 3px;border-top:1px dashed #2a335f;padding-top:6px}
 .prop{margin:6px 0 4px}
 .prop-step{background:#0e1530;border:1px solid #28315a;border-radius:7px;padding:7px 10px;font-size:12px}
 .prop-step .prop-k{font-size:10.5px;color:var(--acc);font-weight:700;margin-bottom:2px}
@@ -260,6 +271,14 @@ const RESP_WHY={
   '善後/協助措施':'撫卹/安置/心理支持＝展現「有溫度」，把後續報導餵成正面素材。',
   '制度檢討/改革承諾':'制度改革＝把敘事從「失職」轉成「改革者」，把責任拉高到中央地方共擔；也是長期選情的關鍵兌現項。'
 };
+function tailoredHtml(t){
+  if(!t) return '';
+  const trig=t.ignition_trigger?`<div class="tl-trig">🚨 <b>引爆條件</b>（出現以下任一＝從觀察切入正式危機處理 SOP）<div class="tl-trig-b">${esc(t.ignition_trigger)}</div></div>`:'';
+  const acts=(t.tailored_actions&&t.tailored_actions.length)?`<div class="tl-h">⚡ 針對本案的黃金 4 小時首要動作</div><ul class="tl-ul">${t.tailored_actions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const prev=(t.tailored_prevent&&t.tailored_prevent.length)?`<div class="tl-h">🛡 針對本案的預防／監測重點</div><ul class="tl-ul prev">${t.tailored_prevent.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  if(!trig&&!acts&&!prev) return '';
+  return `<div class="tailored"><div class="tl-cap">🎯 針對「本事件」客製研判（非通用模板）</div>${trig}${acts}${prev}</div>`;
+}
 function playbookHtml(e){
   const pb=e.playbook||{};
   const cols=[['⚡ 黃金 4 小時（引爆當天）','immediate'],['🕐 24 小時內','short'],['📅 1-3 天','mid'],['🗡 反擊線（被動才用）','counter'],['🛡 預防與預警','prevention']];
@@ -344,7 +363,7 @@ function chainExpand(e,n){
       ${f.caveat?`<div class="cx-opt" style="margin-top:8px">⚖️ <b>對選情的影響</b>：${esc(f.caveat)}</div>`:''}
       <div style="font-size:11px;color:var(--dim);margin-top:6px">判定邏輯：已逆轉→收尾；應對主導型→持續供稿；聲量退潮≥60%且近2日紅燈≤2→冷處理；其餘→主動處置。</div></div>`;
   }
-  if(n===8) return `<div class="cx"><div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）</div>${playbookHtml(e)}</div>`;
+  if(n===8) return `<div class="cx">${tailoredHtml(e.tailored)}<div class="cx-h">🛡️ 應對手冊（依議題類型 + 本案傳播指紋客製；每張卡含步驟/成本/影響/風險）${e.tailored?'<span class="hint">— 上方為本案專屬研判，下方為同類型通用 SOP 參考</span>':''}</div>${playbookHtml(e)}</div>`;
   return '';
 }
 function renderChain(e){
@@ -391,6 +410,10 @@ function renderWatchDetail(ws){
     <td>${esc(a.outlet)}</td><td class="sev-${esc(a.sev)}">${esc((a.sev||'').slice(0,1))||'—'}</td>
     <td>${a.link?`<a class="tl" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} ↗</a>`:esc(a.title)}</td></tr>`).join('');
   const play=w.play||{prevent:[],if_fire:[]};
+  const t=w.tailored||null;
+  const tPrev=(t&&t.tailored_prevent&&t.tailored_prevent.length)?`<ul class="tl-ul prev" style="margin-bottom:4px">${t.tailored_prevent.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const tFire=(t&&t.tailored_actions&&t.tailored_actions.length)?`<ul class="tl-ul" style="margin-bottom:4px">${t.tailored_actions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const tTrig=(t&&t.ignition_trigger)?`<div class="tl-trig">🚨 <b>引爆條件</b>（出現以下任一＝由觀察切入正式危機處理）<div class="tl-trig-b">${esc(t.ignition_trigger)}</div></div>`:'';
   el.innerHTML=`
   <div class="sub-panel" style="margin-top:10px;border-color:#5a4020">
     <div class="det-head"><h2 style="font-size:16px">⚠️ ${esc(w.name)}</h2>
@@ -402,8 +425,8 @@ function renderWatchDetail(ws){
       </div>
       <div>
         <div class="play-grid" style="grid-template-columns:1fr;gap:8px;margin-top:0">
-          <div class="play-col"><h4>🛡 現在怎麼預防（還沒炸）</h4>${renderCards(play.prevent||[])}</div>
-          <div class="play-col"><h4>⚡ 若引爆了（黃金 4 小時）</h4>${renderCards(play.if_fire||[])}</div>
+          <div class="play-col"><h4>🛡 現在怎麼預防（還沒炸）</h4>${tPrev}${tPrev?'<div class="tl-generic-lbl">同類型通用參考</div>':''}${renderCards(play.prevent||[])}</div>
+          <div class="play-col"><h4>⚡ 若引爆了（黃金 4 小時）</h4>${tTrig}${tFire}${tFire?'<div class="tl-generic-lbl">同類型通用參考</div>':''}${renderCards(play.if_fire||[])}</div>
         </div>
       </div>
     </div>
