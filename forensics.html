@@ -366,6 +366,8 @@ function chainExpand(e,n){
   if(n===6){
     const rs=e.responses||[],ro=e.resp_optimize||{};
     const tbl=rs.length?`<table><tr><th>時間</th><th>距引爆</th><th>處置</th><th>報導</th></tr>${rs.map(r=>`<tr><td style="white-space:nowrap">${esc(r.time)}</td><td style="white-space:nowrap">${r.hours_after!=null?'+'+r.hours_after+'h':'—'}${r.hours_after!=null&&r.hours_after<=6?' <span style="color:var(--grn)">黃金窗</span>':''}</td><td><b>${esc(r.label)}</b></td><td>${r.link?`<a class="tl" href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.outlet)}：${esc(r.title)} ↗</a>`:esc(r.title)}</td></tr>`).join('')}</table>`:'<div class="empty" style="font-size:12px">報導中未偵測到市府處置動作。</div>';
+    if(ro.na) return `<div class="cx"><div class="cx-h">🤝 市府應對研判 <span class="hint">本議題為正向／中性聲量，非危機事件</span></div>${tbl}
+      <div class="cx-opt"><b>🔧 應對研判</b><div style="margin-top:5px;font-size:12.5px;line-height:1.7;color:#a9e9c8">${esc(ro.na_reason||'本議題非危機事件，危機應對 SOP（哀悼／究責／撫卹）不適用。')}</div></div></div>`;
     const missHtml=(ro.missing&&ro.missing.length)?ro.missing.map(m=>`<div class="cx-miss"><b>缺：${esc(m)}</b><div class="cx-miss-why">${RESP_WHY[m]||'可作為補強重點。'}</div></div>`).join(''):'<div style="color:var(--grn)">六類處置皆已執行 ✅</div>';
     const opt=`<div class="cx-opt"><b>🔧 還能怎麼優化</b>
       <div style="margin-top:4px">${ro.first_h!=null?`首個動作在引爆後 <b>${ro.first_h}h</b>${ro.in_golden?'（在黃金 4 小時窗內 ✅）':'（<b style="color:var(--org)">晚於黃金 4 小時窗，下次同類事件 SOP 要壓進 4h</b>）'}。`:''}</div>
@@ -553,7 +555,9 @@ function renderDetail(e){
   // 階段條（第四格依事件性質：逆轉 / 市府已應對 / 尚無逆轉）
   const resp=e.responses||[];
   let box4;
-  if(ph.reversal){
+  if(e.n_red===0){
+    box4=`<div class="phase-step p-rev"><b>🟢 正向／中性議題</b>全期紅燈 0、非危機事件，無「風向逆轉」課題</div>`;
+  }else if(ph.reversal){
     box4=`<div class="phase-step p-rev"><b>⏪ 逆轉 ${ph.reversal.date.slice(5)}</b>${esc(ph.reversal.why.join('；'))}</div>`;
   }else if(ph.nature==='應對主導型'&&resp.length){
     box4=`<div class="phase-step p-rev"><b>🤝 市府已應對（${resp.length} 項）</b>${esc(resp.map(r=>r.label).join('、'))} — 應對主導型事件，處置即敘事</div>`;
@@ -562,7 +566,7 @@ function renderDetail(e){
   }else{
     box4=`<div class="phase-step p-rev"><b>⏳ 尚無逆轉</b>負面框架未被有效翻轉</div>`;
   }
-  const peakDesc=ph.nature==='應對主導型'?'聲量最大日，市府處置為敘事主體':'聲量最大日，負面框架主導期';
+  const peakDesc=(e.n_red===0)?'聲量最大日（正向／中性議題、非危機）':(ph.nature==='應對主導型'?'聲量最大日，市府處置為敘事主體':'聲量最大日，負面框架主導期');
   const phaseBar=`
   <div class="phase-tl">
     <div class="phase-step p-lat"><b>🕯 潛伏期</b>${esc(ph.latent.note)}</div>
