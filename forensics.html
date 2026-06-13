@@ -237,20 +237,31 @@ svg text{font-family:inherit}
 let DATA=null, CUR=0;
 const $=id=>document.getElementById(id);
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// 把文字裡的網址轉成精簡可點連結（顯示縮短、href 完整；其餘字照 esc）
+function linkify(s){
+  return String(s||'').split(/(https?:\/\/[^\s，、。；：）)」』】\]＞>]+)/g).map(p=>{
+    if(/^https?:\/\//.test(p)){
+      let label=p.replace(/^https?:\/\//,'').replace(/^www\./,'');
+      if(label.length>30) label=label.slice(0,28)+'…';
+      return `<a class="tl" href="${esc(p)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
+    }
+    return esc(p);
+  }).join('');
+}
 const LEAN_COLORS={'泛藍':'#5b8def','泛綠':'#3ddc97','中性':'#aab4d8','聚合':'#5f6a8f','通訊社':'#8fa0d8','公共':'#8fa0d8','地方':'#7d88ad','其他':'#4a5575'};
 function renderCards(arr){
   if(!arr||!arr.length) return '<div class="empty" style="font-size:11.5px">—</div>';
   return arr.map(c=>{
     if(typeof c==='string') return `<div class="op-card"><div class="oc-a">▸ ${esc(c)}</div></div>`;
     return `<div class="op-card"><div class="oc-a">▸ ${esc(c.a)}</div>
-      ${c.how?`<div class="op-row how"><span class="k">怎麼做</span><span class="v">${esc(c.how)}</span></div>`:''}
-      ${c.flow?`<div class="op-row flow"><span class="k">流程/時序</span><span class="v">${esc(c.flow)}</span></div>`:''}
-      ${c.say?`<div class="op-row say"><span class="k">該講/聚焦</span><span class="v">${esc(c.say)}</span></div>`:''}
-      ${c.avoid?`<div class="op-row avoid"><span class="k">不該講/避免</span><span class="v">${esc(c.avoid)}</span></div>`:''}
-      ${c.who?`<div class="op-row who"><span class="k">人員/帶誰</span><span class="v">${esc(c.who)}</span></div>`:''}
-      ${c.cost?`<div class="op-row cost"><span class="k">成本</span><span class="v">${esc(c.cost)}</span></div>`:''}
-      ${c.impact?`<div class="op-row impact"><span class="k">預期影響</span><span class="v">${esc(c.impact)}</span></div>`:''}
-      ${c.risk?`<div class="op-row risk"><span class="k">風險注意</span><span class="v">${esc(c.risk)}</span></div>`:''}
+      ${c.how?`<div class="op-row how"><span class="k">怎麼做</span><span class="v">${linkify(c.how)}</span></div>`:''}
+      ${c.flow?`<div class="op-row flow"><span class="k">流程/時序</span><span class="v">${linkify(c.flow)}</span></div>`:''}
+      ${c.say?`<div class="op-row say"><span class="k">該講/聚焦</span><span class="v">${linkify(c.say)}</span></div>`:''}
+      ${c.avoid?`<div class="op-row avoid"><span class="k">不該講/避免</span><span class="v">${linkify(c.avoid)}</span></div>`:''}
+      ${c.who?`<div class="op-row who"><span class="k">人員/帶誰</span><span class="v">${linkify(c.who)}</span></div>`:''}
+      ${c.cost?`<div class="op-row cost"><span class="k">成本</span><span class="v">${linkify(c.cost)}</span></div>`:''}
+      ${c.impact?`<div class="op-row impact"><span class="k">預期影響</span><span class="v">${linkify(c.impact)}</span></div>`:''}
+      ${c.risk?`<div class="op-row risk"><span class="k">風險注意</span><span class="v">${linkify(c.risk)}</span></div>`:''}
     </div>`;
   }).join('');
 }
@@ -303,16 +314,16 @@ function leverageHtml(t){
   const la=t.leverage_actions||[],am=t.amplify_material||[],gr=t.guardrails||[];
   if(!la.length&&!am.length&&!gr.length) return '';
   return `<div class="tailored leverage"><div class="tl-cap">🎯 針對「本議題」的聲量經營（非危機，順勢操作）</div>
-    ${la.length?`<div class="tl-h">📈 具體怎麼順勢經營（把高聲量導向施政成績）</div><ul class="tl-ul">${la.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
-    ${am.length?`<div class="tl-h">🎤 該主打的素材／訊息點</div><ul class="tl-ul amp">${am.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
-    ${gr.length?`<div class="tl-h amber">⚠️ 翻車紅線（過度操作／失言的界線）</div><ul class="tl-ul guard">${gr.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}</div>`;
+    ${la.length?`<div class="tl-h">📈 具體怎麼順勢經營（把高聲量導向施政成績）</div><ul class="tl-ul">${la.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:''}
+    ${am.length?`<div class="tl-h">🎤 該主打的素材／訊息點</div><ul class="tl-ul amp">${am.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:''}
+    ${gr.length?`<div class="tl-h amber">⚠️ 翻車紅線（過度操作／失言的界線）</div><ul class="tl-ul guard">${gr.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:''}</div>`;
 }
 function tailoredHtml(t){
   if(!t) return '';
   if(t.kind==='leverage') return leverageHtml(t);
   const trig=t.ignition_trigger?`<div class="tl-trig">🚨 <b>引爆條件</b>（出現以下任一＝從觀察切入正式危機處理 SOP）<div class="tl-trig-b">${esc(t.ignition_trigger)}</div></div>`:'';
-  const acts=(t.tailored_actions&&t.tailored_actions.length)?`<div class="tl-h">⚡ 針對本案的黃金 4 小時首要動作</div><ul class="tl-ul">${t.tailored_actions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
-  const prev=(t.tailored_prevent&&t.tailored_prevent.length)?`<div class="tl-h">🛡 針對本案的預防／監測重點</div><ul class="tl-ul prev">${t.tailored_prevent.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const acts=(t.tailored_actions&&t.tailored_actions.length)?`<div class="tl-h">⚡ 針對本案的黃金 4 小時首要動作</div><ul class="tl-ul">${t.tailored_actions.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:'';
+  const prev=(t.tailored_prevent&&t.tailored_prevent.length)?`<div class="tl-h">🛡 針對本案的預防／監測重點</div><ul class="tl-ul prev">${t.tailored_prevent.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:'';
   if(!trig&&!acts&&!prev) return '';
   return `<div class="tailored"><div class="tl-cap">🎯 針對「本事件」客製研判（非通用模板）</div>${trig}${acts}${prev}</div>`;
 }
@@ -397,7 +408,7 @@ function chainExpand(e,n){
     const mc={'冷處理':'var(--grn)','主動處置':'var(--org)','持續供稿':'var(--acc)','收尾維持':'var(--grn)','順勢經營':'var(--grn)'}[f.mode]||'var(--mut)';
     const _t=e.tailored||{};
     const _mats=(_t.supply_material&&_t.supply_material.length)?_t.supply_material:((_t.kind==='leverage'&&_t.amplify_material&&_t.amplify_material.length)?_t.amplify_material:null);
-    const matHtml=_mats?`<div class="tailored" style="margin-top:9px"><div class="tl-cap">📋 本案可供稿的具體素材（怎麼寫＋用什麼形式＋透過什麼管道提供）</div><ul class="tl-ul">${_mats.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:'';
+    const matHtml=_mats?`<div class="tailored" style="margin-top:9px"><div class="tl-cap">📋 本案可供稿的具體素材（怎麼寫＋用什麼形式＋透過什麼管道提供）</div><ul class="tl-ul">${_mats.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul></div>`:'';
     return `<div class="cx"><div class="cx-h">🧭 後續該怎麼處理（依數據判定）</div>
       <div class="cx-rec" style="border-color:${mc}"><div class="cx-mode" style="color:${mc}">建議：${esc(f.mode||'—')}</div>
         <div class="cx-row"><b>理由</b>　${esc(f.reason||'')}</div>
@@ -470,8 +481,8 @@ function renderWatchDetail(ws){
     <td>${a.link?`<a class="tl" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} ↗</a>`:esc(a.title)}</td></tr>`).join('');
   const play=w.play||{prevent:[],if_fire:[]};
   const t=w.tailored||null;
-  const tPrev=(t&&t.tailored_prevent&&t.tailored_prevent.length)?`<ul class="tl-ul prev" style="margin-bottom:4px">${t.tailored_prevent.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
-  const tFire=(t&&t.tailored_actions&&t.tailored_actions.length)?`<ul class="tl-ul" style="margin-bottom:4px">${t.tailored_actions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const tPrev=(t&&t.tailored_prevent&&t.tailored_prevent.length)?`<ul class="tl-ul prev" style="margin-bottom:4px">${t.tailored_prevent.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:'';
+  const tFire=(t&&t.tailored_actions&&t.tailored_actions.length)?`<ul class="tl-ul" style="margin-bottom:4px">${t.tailored_actions.map(x=>`<li>${linkify(x)}</li>`).join('')}</ul>`:'';
   const tTrig=(t&&t.ignition_trigger)?`<div class="tl-trig">🚨 <b>引爆條件</b>（出現以下任一＝由觀察切入正式危機處理）<div class="tl-trig-b">${esc(t.ignition_trigger)}</div></div>`:'';
   el.innerHTML=`
   <div class="sub-panel" style="margin-top:10px;border-color:#5a4020">
