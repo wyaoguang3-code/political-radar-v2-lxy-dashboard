@@ -606,11 +606,20 @@ function _bodyDistrict(titles){
 }
 function geocodeEvent(e){
   const name=e.name||'', titles=_titleList(e), body=titles.join(' ')+' '+((e.keywords||[]).join(' '));
-  // 1) 名稱裡的明確台中地標/行政區（最可靠）
-  let h=_hitLandmark(name)||_hitDistrict(name); if(h) return h;
-  // 2) 內文裡「≥2 篇標題」都提到的行政區（神岡工安名稱泛台中，但多篇標題寫神岡 → 標到神岡）
+  // 0) 名稱裡的明確台中地標（最精準，勝過 LLM 的區質心，如歌劇院/榮總/市議會）
+  let h=_hitLandmark(name); if(h) return h;
+  // 1) LLM 地理定位（forensics_geocode 步驟寫入 e.geo；可補標題沒寫的區，如夜店案＝南屯）
+  if(e.geo){
+    if(e.geo.kind==='district' && TC_GEO[e.geo.name]) return {lat:TC_GEO[e.geo.name][0],lng:TC_GEO[e.geo.name][1],place:'台中市'+e.geo.name,llm:true};
+    // 「他縣市」只在標題/內文也有他縣市佐證時才採信，避免 LLM 把台中議題（如鼠患）誤判成他縣市而消失
+    if(e.geo.kind==='other' && OTHER_CITY.some(c=>name.includes(c)||body.includes(c))) return {other:'他縣市'};
+    // 其餘（unknown／無佐證的 other）→ 往下走標題啟發式
+  }
+  // 2) 名稱裡的明確行政區
+  h=_hitDistrict(name); if(h) return h;
+  // 3) 內文裡「≥2 篇標題」都提到的行政區（神岡工安名稱泛台中，但多篇標題寫神岡 → 標到神岡）
   h=_bodyDistrict(titles); if(h) return h;
-  // 3) 名稱含他縣市 → 不標於台中地圖
+  // 4) 名稱含他縣市 → 不標於台中地圖
   for(const c of OTHER_CITY){ if(name.includes(c)) return {other:c}; }
   // 4) 名稱泛指台中 → 市中心
   if(/台中|中市|盧秀燕|盧市長/.test(name)) return {lat:TC_CENTER[0],lng:TC_CENTER[1],place:'台中市',generic:true};
@@ -635,7 +644,7 @@ function renderIncidentMap(d){
   const placed={}, unplaced=[], COL={red:'#ff5d6c',yellow:'#ffc24b',green:'#3ddc97'};
   function plot(item,isWatch){
     const g=geocodeEvent(item);
-    if(!g||g.other||g.lat==null){ let uid=null; if(!isWatch){uid=_mapId++; _mapReg[uid]=item.name;} unplaced.push({name:item.name,reason:g&&g.other?('他縣市：'+g.other):'非地點型／無法定位',uid}); return; }
+    if(!g||g.other||g.lat==null){ let uid=null; if(!isWatch){uid=_mapId++; _mapReg[uid]=item.name;} const rsn=g&&g.other?(g.other==='他縣市'?'他縣市（非台中）':('他縣市：'+g.other)):'非地點型／無法定位'; unplaced.push({name:item.name,reason:rsn,uid}); return; }
     let lat=g.lat,lng=g.lng; const key=lat.toFixed(2)+','+lng.toFixed(2); const c=placed[key]=(placed[key]||0)+1;
     if(c>1){const ang=c*2.4,r=0.008*Math.ceil(c/6); lat+=r*Math.cos(ang); lng+=r*Math.sin(ang);}
     const lvl=evLevel(item),col=COL[lvl],nt=item.n_total||item.n||1;
