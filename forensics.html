@@ -30,6 +30,7 @@ border-radius:10px;padding:10px 12px;font-size:12px;transition:border-color .12s
 .watch-card:hover{border-color:var(--org)}
 .watch-card.wc-open{border-color:var(--org);box-shadow:0 0 0 1px var(--org);background:#1a1410}
 .watch-card b{font-size:13px}
+.watch-card .wc-merged{font-size:9.5px;color:var(--acc);border:1px solid #3a4a8a;border-radius:99px;padding:0 6px;margin-left:6px;white-space:nowrap}
 .watch-card .wc-meta{color:var(--mut);margin:4px 0}
 .watch-card .wc-note{color:var(--org);font-size:11px;margin-top:6px}
 .watch-card a{color:var(--mut);text-decoration:none;font-size:11px}
@@ -555,7 +556,7 @@ function renderWatch(ws){
   if(!ws||!ws.length){$('watchStrip').innerHTML='<div class="empty">目前無潛伏期訊號 — 雷達持續監測中</div>';$('watchDetail').innerHTML='';return;}
   $('watchStrip').innerHTML=ws.map((w,i)=>`
     <div class="watch-card ${i===WATCH_OPEN?'wc-open':''}" onclick="toggleWatch(${i})" style="cursor:pointer">
-      <b>${esc(w.name)}</b>
+      <b>${esc(w.name)}</b>${w.merged_n>1?`<span class="wc-merged" title="同一起事件的多張卡片已自動整併">已整併 ${w.merged_n} 則</span>`:''}
       <div class="wc-meta">${esc(w.topic)}｜首見 ${w.first_seen.slice(5)}｜${w.n} 則（紅 ${w.n_red}）</div>
       <div class="wc-note">${esc(w.risk_note)}</div>
       <div style="margin-top:6px;font-size:11px;color:var(--acc)">${i===WATCH_OPEN?'▲ 收合':'▼ 點擊展開：全部報導＋預防/應對'}</div>
