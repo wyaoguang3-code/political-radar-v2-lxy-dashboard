@@ -584,25 +584,39 @@ const TC_LANDMARK={  // 地標 → 專屬座標（比區更精準）
  '逢甲':[24.179,120.646],'清泉崗':[24.264,120.621],'台中車站':[24.137,120.685],'台中火車站':[24.137,120.685],
  '新平好室':[24.126,120.718],'秋紅谷':[24.166,120.639],'一中':[24.150,120.684]};
 const OTHER_CITY=['高雄','台北','臺北','新北','桃園','台南','臺南','基隆','新竹','苗栗','彰化','南投','雲林','嘉義','屏東','宜蘭','花蓮','台東','臺東','澎湖','金門','馬祖','岡山'];
-function _evText(e){
-  let body='';
-  for(const dn of (e.daily_news||[])) for(const it of (dn.items||[])) body+=' '+(it.title||'');
-  for(const a of (e.articles||[])) body+=' '+(a.title||'');
-  for(const s of (e.samples||[])) body+=' '+(s.title||'');
-  body+=' '+(e.sample||'')+' '+((e.keywords||[]).join(' '));
-  return {name:e.name||'', body};
+const DISTRICT_NEEDS_QU={'和平':1,'大安':1};  // 常見詞，須帶「區」才算（避免兩岸和平/台北大安誤中）
+function _titleList(e){
+  const ts=[];
+  for(const dn of (e.daily_news||[])) for(const it of (dn.items||[])) ts.push(it.title||'');
+  for(const a of (e.articles||[])) ts.push(a.title||'');
+  for(const s of (e.samples||[])) ts.push(s.title||'');
+  if(e.sample) ts.push(e.sample);
+  return ts;
 }
-function _hitLandmark(t,skipGov){for(const k in TC_LANDMARK){if(skipGov&&(k.indexOf('市政府')>=0))continue;if(t.includes(k))return{lat:TC_LANDMARK[k][0],lng:TC_LANDMARK[k][1],place:k};}return null;}
-function _hitDistrict(t){for(const dn in TC_GEO){if(t.includes(dn))return{lat:TC_GEO[dn][0],lng:TC_GEO[dn][1],place:'台中市'+dn};}return null;}
+function _hitLandmark(t){for(const k in TC_LANDMARK){if(t.includes(k))return{lat:TC_LANDMARK[k][0],lng:TC_LANDMARK[k][1],place:k};}return null;}
+function _hitDistrict(t){for(const dn in TC_GEO){const ok=DISTRICT_NEEDS_QU[dn]?t.includes(dn+'區'):t.includes(dn);if(ok)return{lat:TC_GEO[dn][0],lng:TC_GEO[dn][1],place:'台中市'+dn};}return null;}
+// 內文行政區：須在 ≥2 篇標題出現才採信（避免單篇順帶提及的區把事件誤置）；不採內文地標（議會/歌劇院常被順帶提及）
+function _bodyDistrict(titles){
+  let best=null,bestC=0;
+  for(const dn in TC_GEO){
+    let c=0; for(const t of titles){const ok=DISTRICT_NEEDS_QU[dn]?t.includes(dn+'區'):t.includes(dn); if(ok)c++;}
+    if(c>=2 && c>bestC){best=dn;bestC=c;}
+  }
+  return best?{lat:TC_GEO[best][0],lng:TC_GEO[best][1],place:'台中市'+best}:null;
+}
 function geocodeEvent(e){
-  const {name,body}=_evText(e);
-  let h=_hitLandmark(name,false)||_hitDistrict(name);
-  if(h) return h;
+  const name=e.name||'', titles=_titleList(e), body=titles.join(' ')+' '+((e.keywords||[]).join(' '));
+  // 1) 名稱裡的明確台中地標/行政區（最可靠）
+  let h=_hitLandmark(name)||_hitDistrict(name); if(h) return h;
+  // 2) 內文裡「≥2 篇標題」都提到的行政區（神岡工安名稱泛台中，但多篇標題寫神岡 → 標到神岡）
+  h=_bodyDistrict(titles); if(h) return h;
+  // 3) 名稱含他縣市 → 不標於台中地圖
   for(const c of OTHER_CITY){ if(name.includes(c)) return {other:c}; }
+  // 4) 名稱泛指台中 → 市中心
   if(/台中|中市|盧秀燕|盧市長/.test(name)) return {lat:TC_CENTER[0],lng:TC_CENTER[1],place:'台中市',generic:true};
-  h=_hitLandmark(body,true)||_hitDistrict(body);   // 內文 fallback：跳過「市政府」避免默哀類誤置
-  if(h) return h;
+  // 5) 內文含他縣市 → 不標於台中地圖（空軍教練機＝高雄岡山；事故不在台中就不該標台中）
   for(const c of OTHER_CITY){ if(body.includes(c)) return {other:c}; }
+  // 6) 內文泛指台中 → 市中心
   if(/台中|中市/.test(body)) return {lat:TC_CENTER[0],lng:TC_CENTER[1],place:'台中市',generic:true};
   return null;
 }
