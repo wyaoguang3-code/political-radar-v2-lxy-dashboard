@@ -43,6 +43,12 @@ border-radius:10px;padding:10px 12px;font-size:12px;transition:border-color .12s
 .map-popup .mp-go{display:inline-block;margin-top:5px;background:var(--acc);color:#fff;border-radius:6px;padding:3px 9px;font-weight:700;cursor:pointer;text-decoration:none}
 .map-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--mut);margin:8px 2px 0}
 .map-legend .ml-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.map-legend .ml-warn{position:relative;display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--org);border:2px solid #fff;margin-right:4px;vertical-align:middle;box-sizing:border-box}
+/* 預警雷達脈動光點（醒目、區別於一般事件的靜態圓點）*/
+.warn-divicon,.warn-divicon.leaflet-div-icon{background:none!important;border:0!important}
+.wm-dot{position:absolute;left:2px;top:2px;width:13px;height:13px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 6px rgba(0,0,0,.65);box-sizing:border-box}
+.wm-ring{position:absolute;left:2px;top:2px;width:13px;height:13px;border-radius:50%;opacity:.6;animation:wmpulse 1.5s ease-out infinite;box-sizing:border-box}
+@keyframes wmpulse{0%{transform:scale(1);opacity:.6}70%{opacity:0}100%{transform:scale(3.2);opacity:0}}
 .map-unplaced{font-size:11px;color:var(--dim);margin:8px 2px 0;line-height:1.6}
 .map-unplaced .mu-chip{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 8px;margin:2px 3px 0;cursor:pointer;color:var(--mut)}
 .map-unplaced .mu-chip:hover{border-color:var(--acc);color:var(--tx)}
@@ -291,7 +297,7 @@ svg text{font-family:inherit}
       <span><span class="ml-dot" style="background:#ff5d6c"></span>紅＝高負面/危機</span>
       <span><span class="ml-dot" style="background:#ffc24b"></span>黃＝爭議/質疑</span>
       <span><span class="ml-dot" style="background:#3ddc97"></span>綠＝正向/中性</span>
-      <span>⚠ 預警雷達事件＝空心點　｜　圈越大＝聲量越高</span>
+      <span><span class="ml-warn"></span>預警雷達＝<b style="color:var(--org)">閃爍脈動點</b>（潛伏訊號）　｜　圈越大＝聲量越高</span>
     </div>
     <div id="mapUnplaced" class="map-unplaced"></div>
   </div>
@@ -633,6 +639,14 @@ function evLevel(e){const nr=e.n_red||0,nt=e.n_total||e.n||1; if(nr===0)return'g
 let incidentMap, _mapReg={}, _mapId=0;
 function selectEventByName(nm){const i=DATA.events.findIndex(e=>e.name===nm); if(i<0)return; CUR=i; renderList(DATA.events); renderDetail(DATA.events[CUR]); const el=$('detail'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
 function selectEventByMapId(id){selectEventByName(_mapReg[id]); if(incidentMap)incidentMap.closePopup();}
+// 預警 marker → 連到「預警雷達」對應卡片：展開該卡（全部報導＋預防/應對＋客製研判）並捲過去
+function selectWatchByName(nm){
+  const i=DATA.watchlist.findIndex(w=>w.name===nm); if(i<0)return;
+  WATCH_OPEN=i; renderWatch(DATA.watchlist);
+  const card=document.querySelectorAll('#watchStrip .watch-card')[i];
+  const el=card||$('watchDetail')||$('watchStrip'); if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function selectWatchByMapId(id){selectWatchByName(_mapReg[id]); if(incidentMap)incidentMap.closePopup();}
 function renderIncidentMap(d){
   const el=document.getElementById('incidentMap'); if(!el||typeof L==='undefined')return;
   if(!incidentMap){
@@ -650,11 +664,19 @@ function renderIncidentMap(d){
     const lvl=evLevel(item),col=COL[lvl],nt=item.n_total||item.n||1;
     const rad=Math.max(7,Math.min(20,6+Math.sqrt(nt)*1.4))*(isWatch?0.72:1);
     const id=_mapId++; _mapReg[id]=item.name;
-    const m=L.circleMarker([lat,lng],{radius:rad,color:col,weight:isWatch?2:1.5,fillColor:col,fillOpacity:isWatch?0.12:0.62,dashArray:isWatch?'3 3':null});
+    let m;
+    if(isWatch){  // 預警雷達：脈動光點（會閃爍的同色警示環＋白邊實心點），疊在事件圓點之上
+      const icon=L.divIcon({className:'warn-divicon',iconSize:[17,17],iconAnchor:[8.5,8.5],
+        html:`<span class="wm-ring" style="background:${col}"></span><span class="wm-dot" style="background:${col}"></span>`});
+      m=L.marker([lat,lng],{icon:icon,zIndexOffset:1000});
+    }else{
+      m=L.circleMarker([lat,lng],{radius:rad,color:col,weight:1.5,fillColor:col,fillOpacity:0.62});
+    }
     const ig=(item.phases&&item.phases.ignition)||'';
     const meta=isWatch?`${esc(item.topic||'')}｜預警雷達｜首見 ${(item.first_seen||'').slice(5)}｜${item.n} 則（紅 ${item.n_red}）`
                       :`${esc(item.topic||'')}｜引爆 ${(ig||'').slice(5)}｜${nt} 篇（紅 ${item.n_red}）`;
-    const btn=isWatch?'':`<a class="mp-go" onclick="selectEventByMapId(${id})">查看完整解構 →</a>`;
+    const btn=isWatch?`<a class="mp-go" onclick="selectWatchByMapId(${id})">展開預警訊號（全部報導＋應對）→</a>`
+                     :`<a class="mp-go" onclick="selectEventByMapId(${id})">查看完整解構 →</a>`;
     m.bindPopup(`<div class="map-popup"><b>${esc(item.name)}</b>${isWatch?' <span style="color:#b06a00">⚠預警</span>':''}<div class="mp-meta">📍 ${esc(g.place)}${g.generic?'（區未定）':''}</div><div class="mp-meta">${meta}</div>${btn}</div>`);
     layer.addLayer(m);
   }
