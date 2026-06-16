@@ -204,6 +204,32 @@ rect.day-hit{fill:transparent}
 rect.day-hit:hover{fill:rgba(90,121,255,.13)}
 rect.day-hit.sel{fill:rgba(90,121,255,.26);stroke:var(--acc);stroke-width:1.4}
 .chart-hint{font-size:11px;color:var(--acc);margin:4px 0 0}
+.life-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:2px 0 2px;flex-wrap:wrap}
+.life-title{font-size:12.5px;font-weight:700;color:var(--mut)}
+.life-toggle{display:inline-flex;border:1px solid var(--bd);border-radius:7px;overflow:hidden}
+.lt-btn{font:600 11px/1 inherit;color:var(--mut);background:transparent;border:0;border-left:1px solid var(--bd);padding:4px 9px;cursor:pointer}
+.lt-btn:first-child{border-left:0}
+.lt-btn:hover{background:rgba(255,255,255,.05);color:var(--tx)}
+.lt-btn.active{color:#0b1020;background:var(--acc)}
+/* 聲量背離面板 */
+.sup-panel .sup-head{display:flex;align-items:center;gap:12px;padding:7px 11px;border-radius:8px;margin:2px 0 8px;flex-wrap:wrap}
+.sup-lvl{font-size:15px;font-weight:800}
+.sup-idx{font-size:12px;color:var(--mut)}.sup-idx b{color:var(--tx);font-size:14px}
+.sup-tag{font-size:10px;color:var(--org);border:1px solid var(--org);border-radius:99px;padding:1px 7px;margin-left:auto}
+.sup-gate{font-size:11px;color:var(--org);background:rgba(214,158,46,.1);border-radius:7px;padding:6px 9px;margin-bottom:8px}
+.sup-rows{display:flex;flex-direction:column;gap:7px}
+.sup-row{border:1px solid #2a335f;border-radius:8px;padding:7px 9px;background:#0e1430}
+.sup-row.sup-dim{opacity:.5}
+.sup-rt{font-size:12px;font-weight:700;color:var(--mut);display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.sup-conf{font-size:9.5px;border-radius:99px;padding:1px 6px;border:1px solid var(--bd);color:var(--dim)}
+.sup-conf.c-high{color:#9db1ff;border-color:#3a4a8a}
+.sup-na{font-size:9.5px;color:var(--dim)}
+.sup-rb{display:flex;align-items:center;gap:8px}
+.sup-bar{flex:0 0 84px;height:7px;border-radius:4px;background:#1b2245;overflow:hidden}
+.sup-fill{display:block;height:100%}
+.sup-ev{font-size:11px;color:var(--mut);line-height:1.4}
+.sup-note{font-size:10.5px;color:var(--dim);margin-top:8px;line-height:1.5;border-top:1px dashed #2a335f;padding-top:7px}
+.ev-supflag{font-size:9.5px;border-radius:99px;padding:0 6px;margin-left:6px;border:1px solid var(--org);color:var(--org)}
 .chart-news{margin:7px 0 2px;border:1px solid #2a335f;border-radius:9px;padding:9px 11px;background:#0e1430}
 .chart-news .cn-h{font-size:12px;font-weight:700;color:var(--mut);margin-bottom:5px}
 .chart-news .cn-hint{font-weight:400;color:var(--dim);font-size:10.5px;margin-left:6px}
@@ -573,7 +599,7 @@ function sparkline(series,w,h){
 function renderList(evs){
   $('evList').innerHTML=evs.map((e,i)=>`
     <div class="ev-card ${i===CUR?'active':''}" onclick="CUR=${i};renderList(DATA.events);renderDetail(DATA.events[${i}])">
-      <div class="name"><span>${esc(e.name)}</span><span class="score">熱度 ${e.score.toLocaleString()}</span></div>
+      <div class="name"><span>${esc(e.name)}${e.suppression&&e.suppression.level&&e.suppression.level!=='正常'?`<span class="ev-supflag" title="聲量背離·待查證">⚠ ${esc(e.suppression.level)}</span>`:''}</span><span class="score">熱度 ${e.score.toLocaleString()}</span></div>
       <div class="ev-row">
         <span class="chip topic">${esc(e.topic)}</span>
         <span class="chip fp-${esc(e.fingerprint.label)}">${esc(e.fingerprint.label)}</span>
@@ -583,42 +609,112 @@ function renderList(evs){
     </div>`).join('');
 }
 
+// 固定 7 日爆量視窗 ⇄ 全期 切換
+let LIFE_FULL=false;
+function setLifeView(full){LIFE_FULL=!!full;renderDetail(DATA.events[CUR]);}
+// JSON 未重跑（無 burst_window）時的後備：由 series + 引爆日補出 7 格
+function deriveWindow(e){
+  const ign=e.phases&&e.phases.ignition; if(!ign) return e.series||[];
+  const map={}; (e.series||[]).forEach(s=>map[s.date]=s);
+  const base=new Date(ign+'T00:00:00'), out=[];
+  for(let k=-1;k<=5;k++){
+    const ds=new Date(base.getTime()+k*86400000).toISOString().slice(0,10), s=map[ds];
+    out.push(s?Object.assign({},s,{rel:k,is_ignition:k===0,slot_kind:'data'})
+              :{date:ds,rel:k,is_ignition:k===0,slot_kind:'empty',n:0,raw:0,red:0,yellow:0,green:0,uniq:0,c_n:0,c_red:0,yt_n:0,ptt_n:0});
+  }
+  return out;
+}
 function lifeChart(e){
-  const S=e.series; if(!S.length) return '';
-  const W=Math.max(560,Math.min(860,S.length*26)),H=190,PB=34,PL=30,PT=14;
+  const FULL=LIFE_FULL;
+  const S = FULL ? (e.series||[]) : ((e.burst_window&&e.burst_window.length)?e.burst_window:deriveWindow(e));
+  if(!S.length) return '';
+  const W=Math.max(560,Math.min(900,S.length*(FULL?26:80))),H=204,PB=48,PL=30,PT=18;
   const max=Math.max(...S.map(s=>s.n),1);
   const cmax=Math.max(...S.map(s=>s.c_n),1);
   const bw=Math.max(5,Math.floor((W-PL-8)/S.length)-3);
-  let g='',x=PL;
-  const pos={};
+  const defs=`<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#161c38"/><line x1="0" y1="0" x2="0" y2="6" stroke="#39427a" stroke-width="1.4"/></pattern></defs>`;
+  let g='',x=PL; const pos={};
   for(const s of S){
-    const total=s.n, bh=Math.round(total/max*(H-PB-PT));
-    let y=H-PB;
-    for(const [k,col] of [['green','var(--grn)'],['yellow','var(--yel)'],['red','var(--red)']]){
-      const hh=total?Math.round(s[k]/total*bh):0;
-      if(hh>0){y-=hh;g+=`<rect x="${x}" y="${y}" width="${bw}" height="${hh}" fill="${col}" opacity=".9" rx="1"><title>${s.date} ${k==='red'?'紅':k==='yellow'?'黃':'綠'} ${s[k]} 篇</title></rect>`;}
+    const sk=s.slot_kind||'data', cx=x+bw/2; pos[s.date]=cx;
+    if(sk==='out_of_range'||sk==='future'){
+      g+=`<rect x="${x}" y="${PT}" width="${bw}" height="${H-PB-PT}" fill="url(#hatch)" opacity=".55"><title>${s.date} ${sk==='future'?'尚未發生':'落在 45 日採集窗外（無法分辨安靜或未採集）'}</title></rect>`;
+      g+=`<text x="${cx}" y="${(PT+H-PB)/2}" font-size="8.5" fill="var(--dim)" text-anchor="middle">${sk==='future'?'尚未發生':'窗外·無採集'}</text>`;
+    } else {
+      const total=s.n, bh=Math.round(total/max*(H-PB-PT)); let y=H-PB;
+      for(const [k,col] of [['green','var(--grn)'],['yellow','var(--yel)'],['red','var(--red)']]){
+        const hh=total?Math.round(s[k]/total*bh):0;
+        if(hh>0){y-=hh;g+=`<rect x="${x}" y="${y}" width="${bw}" height="${hh}" fill="${col}" opacity=".9" rx="1"><title>${s.date} ${k==='red'?'紅':k==='yellow'?'黃':'綠'} ${s[k]} 篇</title></rect>`;}
+      }
+      if(bh===0)g+=`<rect x="${x}" y="${H-PB-1}" width="${bw}" height="1" fill="#2a335f"/>`;
+      g+=`<rect class="day-hit" data-date="${s.date}" x="${x}" y="${PT}" width="${bw}" height="${H-PB-PT}" onclick="showDayNews(CUR,'${s.date}')"><title>${s.date.slice(5)}　${s.n} 篇（紅 ${s.red}）— 點看當日新聞</title></rect>`;
     }
-    if(bh===0)g+=`<rect x="${x}" y="${H-PB-1}" width="${bw}" height="1" fill="#2a335f"/>`;
-    pos[s.date]=x+bw/2;
-    g+=`<rect class="day-hit" data-date="${s.date}" x="${x}" y="${PT}" width="${bw}" height="${H-PB-PT}" onclick="showDayNews(CUR,'${s.date}')"><title>${s.date.slice(5)}　${s.n} 篇（紅 ${s.red}）— 點看當日新聞</title></rect>`;
-    if(S.length<=20||S.indexOf(s)%Math.ceil(S.length/14)===0)
-      g+=`<text x="${x+bw/2}" y="${H-PB+12}" font-size="9" fill="var(--dim)" text-anchor="middle">${s.date.slice(5)}</text>`;
+    // x 軸：日期 + （視窗模式）相對日 + 空欄「無報導」
+    const showDate = FULL ? (S.length<=20||S.indexOf(s)%Math.ceil(S.length/14)===0) : true;
+    if(showDate) g+=`<text x="${cx}" y="${H-PB+12}" font-size="9" fill="var(--dim)" text-anchor="middle">${s.date.slice(5)}</text>`;
+    if(!FULL && s.rel!=null){
+      const rlab = s.rel===0?'':(s.rel===-1?'前一天':('+'+s.rel+'日'));
+      if(rlab) g+=`<text x="${cx}" y="${H-PB+23}" font-size="8.5" fill="#6b76aa" text-anchor="middle">${rlab}</text>`;
+      if(sk==='empty') g+=`<text x="${cx}" y="${H-PB+34}" font-size="8" fill="#55608f" text-anchor="middle">無報導</text>`;
+    }
     x+=bw+3;
   }
-  // 留言折線
+  // 留言折線（只連有資料的欄）
   let pts='';
-  x=PL;
-  for(const s of S){pts+=`${pos[s.date]},${H-PB-(s.c_n/cmax*(H-PB-PT))*0.92} `;}
-  if(S.some(s=>s.c_n>0))g+=`<polyline points="${pts}" fill="none" stroke="#c084fc" stroke-width="1.6" stroke-dasharray="3 2" opacity=".9" pointer-events="none"/>`;
+  for(const s of S){ if((s.slot_kind||'data')==='data') pts+=`${pos[s.date]},${H-PB-(s.c_n/cmax*(H-PB-PT))*0.92} `; }
+  if(S.some(s=>s.c_n>0))g+=`<polyline points="${pts.trim()}" fill="none" stroke="#c084fc" stroke-width="1.6" stroke-dasharray="3 2" opacity=".9" pointer-events="none"/>`;
   // 階段標記（pointer-events:none 讓底下整天的可點區塊收得到點擊）
   const mark=(date,label,col)=>{const px=pos[date];if(px==null)return'';
     return `<line x1="${px}" y1="${PT-4}" x2="${px}" y2="${H-PB}" stroke="${col}" stroke-width="1" stroke-dasharray="2 2" pointer-events="none"/>
-            <text x="${px}" y="${PT-2}" font-size="9.5" fill="${col}" text-anchor="middle" font-weight="700" pointer-events="none">${label}</text>`;};
+            <text x="${px}" y="${PT-3}" font-size="9.5" fill="${col}" text-anchor="middle" font-weight="700" pointer-events="none">${label}</text>`;};
   g+=mark(e.phases.ignition,'🔥引爆','var(--red)');
   if(e.phases.peak!==e.phases.ignition)g+=mark(e.phases.peak,'高峰','var(--yel)');
   if(e.phases.reversal)g+=mark(e.phases.reversal.date,'⏪逆轉','var(--grn)');
-  g+=`<text x="${PL}" y="${H-2}" font-size="9.5" fill="var(--dim)">█紅 █黃 █綠＝每日報導（堆疊）　- - 紫線＝社群留言量</text>`;
-  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px">${g}</svg>`;
+  // 視窗模式：高峰/逆轉落在 7 日窗外 → 提示可切全期
+  if(!FULL){
+    const offs=[];
+    if(e.phases.peak!==e.phases.ignition && pos[e.phases.peak]==null) offs.push('高峰 '+e.phases.peak.slice(5));
+    if(e.phases.reversal && pos[e.phases.reversal.date]==null) offs.push('逆轉 '+e.phases.reversal.date.slice(5));
+    if(offs.length) g+=`<text x="${PL}" y="${PT-5}" font-size="9" fill="var(--yel)">⚠ ${offs.join('、')} 落在 7 日窗外（切「看完整週期」可見）</text>`;
+  }
+  const legend = FULL ? '█紅 █黃 █綠＝每日報導（堆疊）　- - 紫線＝社群留言量　｜全期'
+                      : '█紅 █黃 █綠＝每日報導　- - 紫線＝留言量　｜固定 7 日：引爆前1天＋引爆＋後5天';
+  g+=`<text x="${PL}" y="${H-2}" font-size="9.5" fill="var(--dim)">${legend}</text>`;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px">${defs}${g}</svg>`;
+}
+
+// ── 聲量背離指數（壓稿/撤稿的可能訊號 — 描述性、非定論、待查證）──────────────
+function _supBar(score,col){const w=Math.max(0,Math.min(100,score||0));return `<span class="sup-bar"><span class="sup-fill" style="width:${w}%;background:${col}"></span></span>`;}
+function suppressionPanel(e){
+  const sp=e.suppression; if(!sp) return '';
+  const lvl=sp.level||'正常', strong=lvl.indexOf('明顯')>=0;
+  const lvlCol=strong?'var(--red)':(lvl==='偏低'?'var(--org)':'var(--dim)');
+  const lvlBg=strong?'rgba(229,72,77,.14)':(lvl==='偏低'?'rgba(214,158,46,.13)':'rgba(255,255,255,.04)');
+  const confLbl={high:'信心高',low:'信心低',none:'資料不足'};
+  const subs=[
+    ['🆚 自然聲量 vs 報導量','divergence'],
+    ['📉 引爆後媒體斷崖','decay'],
+    ['📊 預期規模落差','expected'],
+  ];
+  const rows=subs.map(([t,key])=>{
+    const s=sp[key]||{}, none=(s.conf==='none');
+    const col=s.fires?(strong?'var(--red)':'var(--org)'):'#5b67a0';
+    return `<div class="sup-row ${none?'sup-dim':''}">
+      <div class="sup-rt">${t} ${none?'<span class="sup-na">資料不足，未納入</span>':`<span class="sup-conf c-${esc(s.conf||'')}">${confLbl[s.conf]||''}</span>`}${s.fires?'<span class="sup-conf c-high">已開火</span>':''}</div>
+      <div class="sup-rb">${none?'':_supBar(s.score,col)}<span class="sup-ev">${esc(s.evidence||'—')}</span></div>
+    </div>`;
+  }).join('');
+  const gate = !sp.has_organic ? `<div class="sup-gate">⚠ 本案組織聲量（PTT 推文／社群留言）資料稀疏，背離研判信心受限 — 結果以「自然聲量 vs 報導量」為主時可能偏弱。</div>` : '';
+  return `<div class="sub-panel sup-panel" style="border-color:#4a3a5a;margin:10px 0">
+    <div class="sec-title">🔍 聲量背離指數 <span class="hint">「本該更熱卻沒」「報導異常驟降」的可能訊號 — 描述性、非定論、待查證</span></div>
+    <div class="sup-head" style="background:${lvlBg}">
+      <span class="sup-lvl" style="color:${lvlCol}">${esc(lvl)}</span>
+      <span class="sup-idx">背離指數 <b>${sp.index||0}</b> / 100</span>
+      <span class="sup-tag">待查證</span>
+    </div>
+    ${gate}
+    <div class="sup-rows">${rows}</div>
+    <div class="sup-note">${esc(sp.note||'')}</div>
+  </div>`;
 }
 
 // ── 可點擊圖表：點某天/某時段 → 顯示該時段新聞（最早一篇標記）──────────────
@@ -784,9 +880,17 @@ function renderDetail(e){
     <span>關鍵詞 <b>${e.keywords.join('・')}</b></span>
   </div>
   ${phaseBar}
+  <div class="life-head">
+    <span class="life-title">📈 生命週期圖（${LIFE_FULL?'全期':'固定 7 日爆量窗 · 引爆前1天＋引爆＋後5天'}）</span>
+    <span class="life-toggle">
+      <button class="lt-btn ${!LIFE_FULL?'active':''}" onclick="setLifeView(0)">7日爆量窗</button>
+      <button class="lt-btn ${LIFE_FULL?'active':''}" onclick="setLifeView(1)">看完整週期</button>
+    </span>
+  </div>
   ${lifeChart(e)}
-  <div class="chart-hint">💡 點任一天的欄位（整欄可點），看當日全部新聞 — 🔥 標記當天最早出現的一篇</div>
+  <div class="chart-hint">💡 點任一天的欄位（整欄可點），看當日全部新聞 — 🔥 標記當天最早出現的一篇${LIFE_FULL?'':'　｜斜紋格＝窗外未採集／尚未發生'}</div>
   <div id="lifeNews"></div>
+  ${suppressionPanel(e)}
   ${renderChain(e)}
   <div class="grid2">
     <div class="sub-panel">
