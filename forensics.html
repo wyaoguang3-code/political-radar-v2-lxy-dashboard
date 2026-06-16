@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>事件解構 · 脈絡透明化｜台中輿情鑑識</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <style>
 :root{--bg:#0b1020;--panel:#121935;--panel2:#0c1228;--bd:#2a335f;--tx:#e8ecff;--mut:#b9c3f2;--dim:#6b7494;
 --acc:#5a79ff;--red:#ff5d6c;--yel:#ffc24b;--grn:#3ddc97;--org:#ff9f43}
@@ -31,6 +33,19 @@ border-radius:10px;padding:10px 12px;font-size:12px;transition:border-color .12s
 .watch-card.wc-open{border-color:var(--org);box-shadow:0 0 0 1px var(--org);background:#1a1410}
 .watch-card b{font-size:13px}
 .watch-card .wc-merged{font-size:9.5px;color:var(--acc);border:1px solid #3a4a8a;border-radius:99px;padding:0 6px;margin-left:6px;white-space:nowrap}
+/* 議題地圖熱點 */
+.map-panel{margin:14px 0}
+#incidentMap{height:420px;border-radius:12px;border:1px solid var(--bd);overflow:hidden;background:#0c1228}
+.leaflet-container{background:#0c1228;font-family:inherit}
+.map-popup{font-size:12px;color:#0b1020;min-width:180px}
+.map-popup b{font-size:13px}
+.map-popup .mp-meta{color:#3a4366;margin:3px 0}
+.map-popup .mp-go{display:inline-block;margin-top:5px;background:var(--acc);color:#fff;border-radius:6px;padding:3px 9px;font-weight:700;cursor:pointer;text-decoration:none}
+.map-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--mut);margin:8px 2px 0}
+.map-legend .ml-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.map-unplaced{font-size:11px;color:var(--dim);margin:8px 2px 0;line-height:1.6}
+.map-unplaced .mu-chip{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 8px;margin:2px 3px 0;cursor:pointer;color:var(--mut)}
+.map-unplaced .mu-chip:hover{border-color:var(--acc);color:var(--tx)}
 .watch-card .wc-meta{color:var(--mut);margin:4px 0}
 .watch-card .wc-note{color:var(--org);font-size:11px;margin-top:6px}
 .watch-card a{color:var(--mut);text-decoration:none;font-size:11px}
@@ -267,6 +282,18 @@ svg text{font-family:inherit}
     <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點。點卡片展開全部報導與應對</span></div>
     <div class="watch-strip" id="watchStrip"></div>
     <div id="watchDetail"></div>
+  </div>
+
+  <div class="panel map-panel">
+    <div class="sec-title">🗺️ 議題地圖熱點 <span class="hint">以亮點標示事件在台中的發生位置；點亮點看事件、再點「查看完整解構」跳到該事件</span></div>
+    <div id="incidentMap"></div>
+    <div class="map-legend">
+      <span><span class="ml-dot" style="background:#ff5d6c"></span>紅＝高負面/危機</span>
+      <span><span class="ml-dot" style="background:#ffc24b"></span>黃＝爭議/質疑</span>
+      <span><span class="ml-dot" style="background:#3ddc97"></span>綠＝正向/中性</span>
+      <span>⚠ 預警雷達事件＝空心點　｜　圈越大＝聲量越高</span>
+    </div>
+    <div id="mapUnplaced" class="map-unplaced"></div>
   </div>
 
   <div class="layout">
@@ -541,6 +568,83 @@ function setEvSort(mode){
   const h=$('evSortHint'); if(h) h.textContent=_EV_HINT[mode];
   document.querySelectorAll('.ev-sort-btn').forEach(b=>b.classList.toggle('active', b.dataset.sort===mode));
 }
+// ── 議題地圖熱點：把事件 geocode 到台中行政區/地標，畫成 Leaflet 亮點 ──────────
+const TC_CENTER=[24.147,120.673];
+const TC_GEO={  // 台中 29 區概略質心
+ '中區':[24.144,120.679],'東區':[24.139,120.694],'南區':[24.119,120.665],'西區':[24.144,120.663],
+ '北區':[24.166,120.684],'北屯':[24.182,120.736],'西屯':[24.181,120.625],'南屯':[24.138,120.628],
+ '太平':[24.126,120.718],'大里':[24.099,120.677],'霧峰':[24.061,120.700],'烏日':[24.104,120.623],
+ '豐原':[24.254,120.718],'后里':[24.305,120.711],'石岡':[24.275,120.780],'東勢':[24.258,120.827],
+ '和平':[24.181,120.950],'新社':[24.235,120.809],'潭子':[24.211,120.705],'大雅':[24.229,120.648],
+ '神岡':[24.258,120.662],'大肚':[24.154,120.541],'沙鹿':[24.235,120.566],'龍井':[24.193,120.546],
+ '梧棲':[24.255,120.531],'清水':[24.268,120.560],'大甲':[24.349,120.622],'外埔':[24.333,120.654],'大安':[24.347,120.587]};
+const TC_LANDMARK={  // 地標 → 專屬座標（比區更精準）
+ '國家歌劇院':[24.163,120.640],'歌劇院':[24.163,120.640],'台中市議會':[24.162,120.648],'市議會':[24.162,120.648],
+ '台中市政府':[24.162,120.647],'臺中市政府':[24.162,120.647],'台中榮總':[24.179,120.602],'榮總':[24.179,120.602],
+ '逢甲':[24.179,120.646],'清泉崗':[24.264,120.621],'台中車站':[24.137,120.685],'台中火車站':[24.137,120.685],
+ '新平好室':[24.126,120.718],'秋紅谷':[24.166,120.639],'一中':[24.150,120.684]};
+const OTHER_CITY=['高雄','台北','臺北','新北','桃園','台南','臺南','基隆','新竹','苗栗','彰化','南投','雲林','嘉義','屏東','宜蘭','花蓮','台東','臺東','澎湖','金門','馬祖','岡山'];
+function _evText(e){
+  let body='';
+  for(const dn of (e.daily_news||[])) for(const it of (dn.items||[])) body+=' '+(it.title||'');
+  for(const a of (e.articles||[])) body+=' '+(a.title||'');
+  for(const s of (e.samples||[])) body+=' '+(s.title||'');
+  body+=' '+(e.sample||'')+' '+((e.keywords||[]).join(' '));
+  return {name:e.name||'', body};
+}
+function _hitLandmark(t,skipGov){for(const k in TC_LANDMARK){if(skipGov&&(k.indexOf('市政府')>=0))continue;if(t.includes(k))return{lat:TC_LANDMARK[k][0],lng:TC_LANDMARK[k][1],place:k};}return null;}
+function _hitDistrict(t){for(const dn in TC_GEO){if(t.includes(dn))return{lat:TC_GEO[dn][0],lng:TC_GEO[dn][1],place:'台中市'+dn};}return null;}
+function geocodeEvent(e){
+  const {name,body}=_evText(e);
+  let h=_hitLandmark(name,false)||_hitDistrict(name);
+  if(h) return h;
+  for(const c of OTHER_CITY){ if(name.includes(c)) return {other:c}; }
+  if(/台中|中市|盧秀燕|盧市長/.test(name)) return {lat:TC_CENTER[0],lng:TC_CENTER[1],place:'台中市',generic:true};
+  h=_hitLandmark(body,true)||_hitDistrict(body);   // 內文 fallback：跳過「市政府」避免默哀類誤置
+  if(h) return h;
+  for(const c of OTHER_CITY){ if(body.includes(c)) return {other:c}; }
+  if(/台中|中市/.test(body)) return {lat:TC_CENTER[0],lng:TC_CENTER[1],place:'台中市',generic:true};
+  return null;
+}
+function evLevel(e){const nr=e.n_red||0,nt=e.n_total||e.n||1; if(nr===0)return'green'; if(nr>=8||nr/nt>=0.4)return'red'; return'yellow';}
+let incidentMap, _mapReg={}, _mapId=0;
+function selectEventByName(nm){const i=DATA.events.findIndex(e=>e.name===nm); if(i<0)return; CUR=i; renderList(DATA.events); renderDetail(DATA.events[CUR]); const el=$('detail'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
+function selectEventByMapId(id){selectEventByName(_mapReg[id]); if(incidentMap)incidentMap.closePopup();}
+function renderIncidentMap(d){
+  const el=document.getElementById('incidentMap'); if(!el||typeof L==='undefined')return;
+  if(!incidentMap){
+    incidentMap=L.map('incidentMap',{scrollWheelZoom:false}).setView(TC_CENTER,11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap'}).addTo(incidentMap);
+  }
+  if(incidentMap._layer) incidentMap.removeLayer(incidentMap._layer);
+  const layer=L.featureGroup(); _mapReg={}; _mapId=0;
+  const placed={}, unplaced=[], COL={red:'#ff5d6c',yellow:'#ffc24b',green:'#3ddc97'};
+  function plot(item,isWatch){
+    const g=geocodeEvent(item);
+    if(!g||g.other||g.lat==null){ let uid=null; if(!isWatch){uid=_mapId++; _mapReg[uid]=item.name;} unplaced.push({name:item.name,reason:g&&g.other?('他縣市：'+g.other):'非地點型／無法定位',uid}); return; }
+    let lat=g.lat,lng=g.lng; const key=lat.toFixed(2)+','+lng.toFixed(2); const c=placed[key]=(placed[key]||0)+1;
+    if(c>1){const ang=c*2.4,r=0.008*Math.ceil(c/6); lat+=r*Math.cos(ang); lng+=r*Math.sin(ang);}
+    const lvl=evLevel(item),col=COL[lvl],nt=item.n_total||item.n||1;
+    const rad=Math.max(7,Math.min(20,6+Math.sqrt(nt)*1.4))*(isWatch?0.72:1);
+    const id=_mapId++; _mapReg[id]=item.name;
+    const m=L.circleMarker([lat,lng],{radius:rad,color:col,weight:isWatch?2:1.5,fillColor:col,fillOpacity:isWatch?0.12:0.62,dashArray:isWatch?'3 3':null});
+    const ig=(item.phases&&item.phases.ignition)||'';
+    const meta=isWatch?`${esc(item.topic||'')}｜預警雷達｜首見 ${(item.first_seen||'').slice(5)}｜${item.n} 則（紅 ${item.n_red}）`
+                      :`${esc(item.topic||'')}｜引爆 ${(ig||'').slice(5)}｜${nt} 篇（紅 ${item.n_red}）`;
+    const btn=isWatch?'':`<a class="mp-go" onclick="selectEventByMapId(${id})">查看完整解構 →</a>`;
+    m.bindPopup(`<div class="map-popup"><b>${esc(item.name)}</b>${isWatch?' <span style="color:#b06a00">⚠預警</span>':''}<div class="mp-meta">📍 ${esc(g.place)}${g.generic?'（區未定）':''}</div><div class="mp-meta">${meta}</div>${btn}</div>`);
+    layer.addLayer(m);
+  }
+  (d.events||[]).forEach(e=>plot(e,false));
+  (d.watchlist||[]).forEach(w=>plot(w,true));
+  layer.addTo(incidentMap); incidentMap._layer=layer;
+  const b=layer.getBounds(); if(b.isValid()) incidentMap.fitBounds(b.pad(0.2));
+  setTimeout(()=>{try{incidentMap.invalidateSize();}catch(e){}},120);
+  const ue=document.getElementById('mapUnplaced');
+  if(ue) ue.innerHTML = unplaced.length
+    ? '未標於地圖（非台中地點或無法定位，點可看解構）：'+unplaced.map(u=>`<span class="mu-chip"${u.uid!=null?` onclick="selectEventByMapId(${u.uid})"`:''}>${esc(u.name)}（${esc(u.reason)}）</span>`).join('')
+    : '';
+}
 function render(){
   const d=DATA;
   sortEvents();
@@ -548,6 +652,7 @@ function render(){
   renderWatch(d.watchlist);
   renderList(d.events);
   renderDetail(d.events[CUR]);
+  renderIncidentMap(d);
   $('caveats').innerHTML='<b>方法說明與限制</b>：'+d.caveats.map(c=>'• '+esc(c)).join('<br>');
 }
 
