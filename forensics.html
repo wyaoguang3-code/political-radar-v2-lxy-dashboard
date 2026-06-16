@@ -230,6 +230,19 @@ rect.day-hit.sel{fill:rgba(90,121,255,.26);stroke:var(--acc);stroke-width:1.4}
 .sup-ev{font-size:11px;color:var(--mut);line-height:1.4}
 .sup-note{font-size:10.5px;color:var(--dim);margin-top:8px;line-height:1.5;border-top:1px dashed #2a335f;padding-top:7px}
 .ev-supflag{font-size:9.5px;border-radius:99px;padding:0 6px;margin-left:6px;border:1px solid var(--org);color:var(--org)}
+.sup-intro{font-size:11px;color:var(--mut);line-height:1.6;background:rgba(124,138,255,.06);border:1px solid #2a335f;border-radius:7px;padding:8px 10px;margin-bottom:9px}
+.sup-mean{font-size:11px;color:var(--dim);line-height:1.55;margin:2px 0 6px;padding-left:2px;border-left:2px solid #3a4a8a;padding-left:8px}
+.sup-conf.c-fire{color:var(--org);border-color:var(--org)}
+.sup-conf.c-quiet{color:#5b67a0;border-color:#39427a}
+.sup-ev{font-size:11px;color:var(--mut);line-height:1.45}
+.sup-method{margin-top:10px;border-top:1px dashed #2a335f;padding-top:8px}
+.sup-method>summary{font-size:11.5px;font-weight:700;color:var(--acc);cursor:pointer;list-style:none;user-select:none}
+.sup-method>summary::-webkit-details-marker{display:none}
+.sup-method>summary:hover{text-decoration:underline}
+.sup-method-b{font-size:11px;color:var(--mut);line-height:1.75;margin-top:8px;background:#0e1430;border:1px solid #2a335f;border-radius:8px;padding:10px 12px}
+.sup-method-b b{color:var(--tx)}
+.sup-method-b .smh{display:block;margin:9px 0 3px;color:#9db1ff;font-weight:700}
+.sup-method-b .smh:first-child{margin-top:0}
 .chart-news{margin:7px 0 2px;border:1px solid #2a335f;border-radius:9px;padding:9px 11px;background:#0e1430}
 .chart-news .cn-h{font-size:12px;font-weight:700;color:var(--mut);margin-bottom:5px}
 .chart-news .cn-hint{font-weight:400;color:var(--dim);font-size:10.5px;margin-left:6px}
@@ -691,19 +704,41 @@ function suppressionPanel(e){
   const lvlBg=strong?'rgba(229,72,77,.14)':(lvl==='偏低'?'rgba(214,158,46,.13)':'rgba(255,255,255,.04)');
   const confLbl={high:'信心高',low:'信心低',none:'資料不足'};
   const subs=[
-    ['🆚 自然聲量 vs 報導量','divergence'],
-    ['📉 引爆後媒體斷崖','decay'],
-    ['📊 預期規模落差','expected'],
+    {t:'🆚 自然聲量 vs 報導量',k:'divergence',
+     mean:'鄉民（PTT 推文＋社群留言）的熱度，相對於主流媒體報導篇數，是否高得不成比例。<b>高＝鄉民很吵但媒體很冷，可能本該被更多報導卻沒有。</b>',
+     ct:{high:'本案自然聲量 ≥40 則，足以比較',low:'本案自然聲量 20–39 則，可比但偏少',none:'本案自然聲量 <20 則，太少、無從比較'}},
+    {t:'📉 引爆後媒體斷崖',k:'decay',
+     mean:'報導在引爆後是否「斷崖式」停掉。<b>關鍵：光停得快不算</b>（多數市政新聞本就一日週期）—— 要「媒體停了、但鄉民/留言還在燒」才算可疑（撤稿/壓稿的特徵）。',
+     ct:{high:'媒體驟降＋鄉民仍續燒＝真斷崖',low:'媒體掉很快但鄉民沒續燒＝自然退潮',none:'引爆日<8篇／紅燈<4／引爆後不足2天資料'}},
+    {t:'📊 預期規模落差',k:'expected',
+     mean:'本案的單日最高報導量，跟「同類型議題過去的高峰」相比是否偏低。<b>偏低＝可能本該更熱。</b>此為三者中最弱、只供參考（歷史基準本身偏樂觀）。',
+     ct:{high:'同議題歷史樣本 ≥8 件，基準較穩',low:'同議題歷史樣本 4–7 件，基準偏薄',none:'同議題樣本 <4 件，基準不可靠、不判'}},
   ];
-  const rows=subs.map(([t,key])=>{
-    const s=sp[key]||{}, none=(s.conf==='none');
+  const rows=subs.map(o=>{
+    const s=sp[o.k]||{}, none=(s.conf==='none');
     const col=s.fires?(strong?'var(--red)':'var(--org)'):'#5b67a0';
+    const ctip=(o.ct&&o.ct[s.conf])||'';
     return `<div class="sup-row ${none?'sup-dim':''}">
-      <div class="sup-rt">${t} ${none?'<span class="sup-na">資料不足，未納入</span>':`<span class="sup-conf c-${esc(s.conf||'')}">${confLbl[s.conf]||''}</span>`}${s.fires?'<span class="sup-conf c-high">已開火</span>':''}</div>
-      <div class="sup-rb">${none?'':_supBar(s.score,col)}<span class="sup-ev">${esc(s.evidence||'—')}</span></div>
+      <div class="sup-rt">${o.t}
+        <span class="sup-conf c-${esc(s.conf||'')}" title="${esc(ctip)}">${confLbl[s.conf]||''}</span>
+        ${s.fires?'<span class="sup-conf c-fire">⚑ 已開火</span>':'<span class="sup-conf c-quiet">未開火</span>'}</div>
+      <div class="sup-mean">${o.mean}</div>
+      <div class="sup-rb">${none?'':_supBar(s.score,col)}<span class="sup-ev">📌 本案：${esc(s.evidence||'—')}</span></div>
     </div>`;
   }).join('');
-  const gate = !sp.has_organic ? `<div class="sup-gate">⚠ 本案組織聲量（PTT 推文／社群留言）資料稀疏，背離研判信心受限 — 結果以「自然聲量 vs 報導量」為主時可能偏弱。</div>` : '';
+  const gate = !sp.has_organic ? `<div class="sup-gate">⚠ 本案組織聲量（PTT 推文／社群留言）資料稀疏，背離研判信心受限 — 以「自然聲量 vs 報導量」為主的判斷可能偏弱。</div>` : '';
+  const method=`
+    <span class="smh">指數怎麼算</span>
+    背離指數 ＝ <b>0.7 × 最高開火訊號分數 ＋ 0.3 × 其餘開火訊號的平均</b>（0–100）。<b>資料不足的訊號不會把分數往下拉</b>（停用而非計 0）。三個訊號都沒開火 → 指數 0。
+    <span class="smh">分級（每個事件依指數＋開火數判）</span>
+    <b>明顯背離·待查</b>：≥2 個訊號開火且指數 ≥60，或單一高信心極端值 ≥75（且事件有紅燈負面框架）。<br>
+    <b>偏低</b>：指數 ≥35。<b>正常</b>：其餘。正向／中性議題（紅燈 0）最高只到「偏低」，不套壓新聞框架。
+    <span class="smh">三個訊號的開火門檻</span>
+    🆚 <b>自然聲量 vs 報導量</b>：自然聲量(PTT推＋留言) ÷ 報導篇數 ≥ <b>3 倍</b> → 開火。<br>
+    📉 <b>引爆後媒體斷崖</b>：限引爆日 ≥8 篇且紅燈 ≥4 的負面爆量；引爆後 2 日平均比引爆日掉 <b>≥70%</b>，<b>且</b>引爆後 3 日內鄉民/留言仍 ≥15 則續燒 → 開火（信心高）。只掉得快、鄉民沒續燒 ＝ 自然退潮、不開火。<br>
+    📊 <b>預期規模落差</b>：本案峰值單日篇數 ＜ 同議題歷史峰值中位數，且該議題有 ≥4 件歷史樣本 → 開火（最弱、絕不單獨成立）。
+    <span class="smh">信心三級（每個事件、每個訊號各自判）</span>
+    <b>信心高</b>＝該事件有足夠底層資料支撐這個訊號；<b>信心低</b>＝有資料但不足以下定論；<b>資料不足</b>＝缺底層資料，該訊號停用、不計入指數（≠「正常」）。各訊號的信心門檻＝把滑鼠移到每列的「信心」標籤上即可看到本案依據。`;
   return `<div class="sub-panel sup-panel" style="border-color:#4a3a5a;margin:10px 0">
     <div class="sec-title">🔍 聲量背離指數 <span class="hint">「本該更熱卻沒」「報導異常驟降」的可能訊號 — 描述性、非定論、待查證</span></div>
     <div class="sup-head" style="background:${lvlBg}">
@@ -711,8 +746,10 @@ function suppressionPanel(e){
       <span class="sup-idx">背離指數 <b>${sp.index||0}</b> / 100</span>
       <span class="sup-tag">待查證</span>
     </div>
+    <div class="sup-intro">這個面板比對「事件的<b>真實熱度／應有規模</b>」和「<b>實際被報導的量</b>」。下面三個訊號各自獨立判定，<b>資料不足的訊號會自動停用、不計分</b>（不是當成正常）。指數越高＝越值得人工去查上游是否有壓稿/撤稿——但它<b>只是指路、不是證據</b>。</div>
     ${gate}
     <div class="sup-rows">${rows}</div>
+    <details class="sup-method"><summary>▸ 點開：完整判定方法、門檻與信心怎麼分</summary><div class="sup-method-b">${method}</div></details>
     <div class="sup-note">${esc(sp.note||'')}</div>
   </div>`;
 }
