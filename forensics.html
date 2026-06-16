@@ -18,6 +18,11 @@ h1 .sub{font-size:12px;color:var(--mut);font-weight:400}
 .panel{background:var(--panel);border:1px solid var(--bd);border-radius:12px;padding:14px;min-width:0}
 .sec-title{font-size:14px;font-weight:700;margin:0 0 10px;display:flex;align-items:center;gap:6px;color:var(--tx)}
 .sec-title .hint{font-weight:400;font-size:11px;color:var(--dim)}
+.ev-sort{display:inline-flex;gap:0;border:1px solid var(--bd);border-radius:7px;overflow:hidden}
+.ev-sort-btn{font:600 11px/1 inherit;color:var(--mut);background:transparent;border:0;border-left:1px solid var(--bd);padding:4px 9px;cursor:pointer;transition:.12s}
+.ev-sort-btn:first-child{border-left:0}
+.ev-sort-btn:hover{color:var(--tx);background:rgba(255,255,255,.05)}
+.ev-sort-btn.active{color:#0b1020;background:var(--acc)}
 /* 預警雷達 */
 .watch-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
 .watch-card{flex:0 0 250px;background:var(--panel2);border:1px solid #3d2a2a;border-left:3px solid var(--org);
@@ -226,7 +231,13 @@ svg text{font-family:inherit}
 
   <div class="layout">
     <div>
-      <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案 <span class="hint">依引爆日期排序（最新在最上面）</span></div>
+      <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案
+        <span class="ev-sort">
+          <button class="ev-sort-btn active" data-sort="new" onclick="setEvSort('new')">最新</button>
+          <button class="ev-sort-btn" data-sort="old" onclick="setEvSort('old')">最舊</button>
+          <button class="ev-sort-btn" data-sort="hot" onclick="setEvSort('hot')">最熱</button>
+        </span>
+        <span class="hint" id="evSortHint">依引爆日期，最新在最上面</span></div>
       <div id="evList"></div>
     </div>
     <div id="detail" class="panel"></div>
@@ -471,13 +482,28 @@ fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;re
   $('meta').textContent='⚠️ 資料載入失敗：'+e;
 });
 
+// 事件檔案三種排序：最新／最舊（依引爆日期）／最熱（依熱度分數 score）
+let EV_SORT='new';
+const _ig=e=>(e.phases&&e.phases.ignition)||'';
+function sortEvents(){
+  const E=DATA.events;
+  if(EV_SORT==='hot') E.sort((a,b)=>(b.score||0)-(a.score||0)|| (_ig(b).localeCompare(_ig(a))));
+  else if(EV_SORT==='old') E.sort((a,b)=>(_ig(a).localeCompare(_ig(b)))|| ((a.date_end||'').localeCompare(b.date_end||'')));
+  else E.sort((a,b)=>(_ig(b).localeCompare(_ig(a)))|| ((b.date_end||'').localeCompare(a.date_end||'')));
+}
+const _EV_HINT={new:'依引爆日期，最新在最上面',old:'依引爆日期，最舊在最上面',hot:'依熱度分數，最熱在最上面'};
+function setEvSort(mode){
+  if(EV_SORT===mode) return;
+  const nm=DATA.events[CUR]&&DATA.events[CUR].name;   // 用名稱保住目前選中卡片（排序會改索引）
+  EV_SORT=mode; sortEvents();
+  CUR=Math.max(0,DATA.events.findIndex(e=>e.name===nm));
+  renderList(DATA.events); renderDetail(DATA.events[CUR]);
+  const h=$('evSortHint'); if(h) h.textContent=_EV_HINT[mode];
+  document.querySelectorAll('.ev-sort-btn').forEach(b=>b.classList.toggle('active', b.dataset.sort===mode));
+}
 function render(){
   const d=DATA;
-  // 事件檔案依日期排序：引爆日最新的放最上面（同日再比最後活動日 date_end）
-  d.events.sort((a,b)=>{
-    const c=((b.phases&&b.phases.ignition)||'').localeCompare((a.phases&&a.phases.ignition)||'');
-    return c!==0?c:((b.date_end||'').localeCompare(a.date_end||''));
-  });
+  sortEvents();
   $('meta').textContent=`分析窗口 ${d.window.start} ～ ${d.window.end}（${d.window.days} 天）｜基底：去重新聞 ${d.base.articles.toLocaleString()} 篇 + 社群留言 ${d.base.comments.toLocaleString()} 則｜產製於 ${d.generated_at}`;
   renderWatch(d.watchlist);
   renderList(d.events);
