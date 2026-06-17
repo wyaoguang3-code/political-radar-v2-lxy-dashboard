@@ -64,7 +64,9 @@ border-radius:10px;padding:10px 12px;font-size:12px;transition:border-color .12s
 cursor:pointer;transition:border-color .12s,transform .08s}
 .ev-card:hover{border-color:var(--acc);transform:translateY(-1px)}
 .ev-card.active{border-color:var(--acc);background:#16203f;box-shadow:0 0 0 1px var(--acc)}
-.ev-card .name{font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.ev-card .name{font-weight:700;font-size:14px;display:flex;gap:7px;align-items:center}
+.ev-light{display:inline-block;width:12px;height:12px;border-radius:50%;flex:0 0 auto;border:1px solid rgba(255,255,255,.25)}
+.ev-light.red{background:var(--red)}.ev-light.yellow{background:var(--yel)}.ev-light.green{background:var(--grn)}
 .ev-card .name .score{font-size:11px;color:var(--dim);white-space:nowrap}
 .ev-row{display:flex;gap:6px;align-items:center;margin-top:5px;flex-wrap:wrap}
 .chip{font-size:10.5px;padding:1px 8px;border-radius:99px;border:1px solid var(--bd);color:var(--mut);white-space:nowrap}
@@ -284,10 +286,18 @@ svg text{font-family:inherit}
   <h1>🔬 事件解構 · 脈絡透明化 <span class="sub">台中輿情事件鑑識（盧秀燕基底）</span></h1>
   <div class="meta" id="meta">載入中…</div>
 
-  <div class="panel" id="watchPanel" style="border-left:3px solid var(--org)">
-    <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點。點卡片展開全部報導與應對</span></div>
-    <div class="watch-strip" id="watchStrip"></div>
-    <div id="watchDetail"></div>
+  <div class="layout">
+    <div>
+      <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案
+        <span class="ev-sort">
+          <button class="ev-sort-btn active" data-sort="new" onclick="setEvSort('new')">最新</button>
+          <button class="ev-sort-btn" data-sort="old" onclick="setEvSort('old')">最舊</button>
+          <button class="ev-sort-btn" data-sort="hot" onclick="setEvSort('hot')">最熱</button>
+        </span>
+        <span class="hint" id="evSortHint">依引爆日期，最新在最上面</span></div>
+      <div id="evList"></div>
+    </div>
+    <div id="detail" class="panel"></div>
   </div>
 
   <div class="panel map-panel">
@@ -302,18 +312,10 @@ svg text{font-family:inherit}
     <div id="mapUnplaced" class="map-unplaced"></div>
   </div>
 
-  <div class="layout">
-    <div>
-      <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案
-        <span class="ev-sort">
-          <button class="ev-sort-btn active" data-sort="new" onclick="setEvSort('new')">最新</button>
-          <button class="ev-sort-btn" data-sort="old" onclick="setEvSort('old')">最舊</button>
-          <button class="ev-sort-btn" data-sort="hot" onclick="setEvSort('hot')">最熱</button>
-        </span>
-        <span class="hint" id="evSortHint">依引爆日期，最新在最上面</span></div>
-      <div id="evList"></div>
-    </div>
-    <div id="detail" class="panel"></div>
+  <div class="panel" id="watchPanel" style="border-left:3px solid var(--org)">
+    <div class="sec-title">⚠️ 預警雷達 <span class="hint">正處「潛伏期」的微弱訊號 — 今天的 2-3 則，可能是明天的引爆點。點卡片展開全部報導與應對</span></div>
+    <div class="watch-strip" id="watchStrip"></div>
+    <div id="watchDetail"></div>
   </div>
 
   <div class="caveats" id="caveats"></div>
@@ -761,15 +763,11 @@ function sparkline(series,w,h){
 }
 
 function renderList(evs){
+  // 簡化卡片：紅綠黃燈（緊急度）＋ 案件名稱 ＋ 日期
   $('evList').innerHTML=evs.map((e,i)=>`
     <div class="ev-card ${i===CUR?'active':''}" onclick="CUR=${i};renderList(DATA.events);renderDetail(DATA.events[${i}])">
-      <div class="name"><span>${esc(e.name)}${e.suppression&&e.suppression.level&&e.suppression.level!=='正常'?`<span class="ev-supflag" title="聲量背離·待查證">⚠ ${esc(e.suppression.level)}</span>`:''}</span><span class="score">熱度 ${e.score.toLocaleString()}</span></div>
-      <div class="ev-row">
-        <span class="chip topic">${esc(e.topic)}</span>
-        <span class="chip fp-${esc(e.fingerprint.label)}">${esc(e.fingerprint.label)}</span>
-      </div>
-      ${sparkline(e.series,290,30)}
-      <div class="mini">${e.date_start.slice(5)}～${e.date_end.slice(5)}｜${e.n_total} 篇（<span class="sev-紅燈">紅 ${e.n_red}</span>）｜引爆 ${e.phases.ignition.slice(5)} (${e.phases.burst}x)</div>
+      <div class="name"><span class="ev-light ${evLevel(e)}" title="緊急度燈號"></span><span>${esc(e.name)}</span></div>
+      <div class="mini">${e.date_start.slice(5)}～${e.date_end.slice(5)}</div>
     </div>`).join('');
 }
 
