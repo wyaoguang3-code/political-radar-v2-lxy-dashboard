@@ -67,6 +67,13 @@ cursor:pointer;transition:border-color .12s,transform .08s}
 .ev-card .name{font-weight:700;font-size:14px;display:flex;gap:7px;align-items:center}
 .ev-light{display:inline-block;width:12px;height:12px;border-radius:50%;flex:0 0 auto;border:1px solid rgba(255,255,255,.25)}
 .ev-light.red{background:var(--red)}.ev-light.yellow{background:var(--yel)}.ev-light.green{background:var(--grn)}
+.ev-card .ev-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:6px}
+.ev-card .ev-date{color:var(--dim);font-size:11px}
+.ev-status{font-size:10px;font-weight:700;border-radius:99px;padding:1px 8px;white-space:nowrap;border:1px solid}
+.ev-status.st-resolved{color:var(--grn);border-color:#2a7a55;background:rgba(61,220,151,.1)}
+.ev-status.st-cooled{color:#8aa0c8;border-color:#3a4a7a;background:rgba(120,140,200,.08)}
+.ev-status.st-hot{color:var(--red);border-color:#7a2a35;background:rgba(255,93,108,.1)}
+.ev-status.st-pos{color:var(--grn);border-color:#2a7a55;background:rgba(61,220,151,.08)}
 .ev-card .name .score{font-size:11px;color:var(--dim);white-space:nowrap}
 .ev-row{display:flex;gap:6px;align-items:center;margin-top:5px;flex-wrap:wrap}
 .chip{font-size:10.5px;padding:1px 8px;border-radius:99px;border:1px solid var(--bd);color:var(--mut);white-space:nowrap}
@@ -560,13 +567,36 @@ fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;re
 // 事件檔案三種排序：最新／最舊（依引爆日期）／最熱（依熱度分數 score）
 let EV_SORT='new';
 const _ig=e=>(e.phases&&e.phases.ignition)||'';
+// 「目前熱度」＝現在還在燒：近 10 天序列、紅燈加權、指數衰減（越近權重越高），舊事件趨近 0
+let _todayMs=0;
+function _tms(){ if(!_todayMs) _todayMs=Date.parse(((DATA.window&&DATA.window.end)||'')+'T00:00:00')||Date.now(); return _todayMs; }
+function currentHeat(e){
+  let h=0; const t=_tms();
+  for(const s of (e.series||[])){
+    const d=(t-Date.parse(s.date+'T00:00:00'))/86400000;
+    if(d<0||d>10) continue;
+    h += ((s.n||0)+(s.red||0)*0.6)*Math.pow(0.6,d);
+  }
+  return h;
+}
+// 事件狀態：已逆轉(妥善處置) / 無熱度可冷處理 / 延燒中
+function eventStatus(e){
+  const rev=e.phases&&e.phases.reversal, ch=currentHeat(e), nonCrisis=((e.n_red||0)===0);
+  if(rev) return {t:'✓ 已逆轉·處置',c:'st-resolved',tip:'偵測到風向逆轉，議題已轉向／可收尾'};
+  if(ch<1.2) return nonCrisis
+    ? {t:'已冷卻',c:'st-cooled',tip:'近期已無聲量'}
+    : {t:'無熱度·可冷處理',c:'st-cooled',tip:'近期已無聲量；雖未必經實際處置，但已無延燒風險，冷處理即可'};
+  return nonCrisis
+    ? {t:'正向延續',c:'st-pos',tip:'正向／中性議題、聲量仍在'}
+    : {t:'🔥 延燒中',c:'st-hot',tip:'近期仍有負面聲量，需持續關注'};
+}
 function sortEvents(){
   const E=DATA.events;
-  if(EV_SORT==='hot') E.sort((a,b)=>(b.score||0)-(a.score||0)|| (_ig(b).localeCompare(_ig(a))));
+  if(EV_SORT==='hot') E.sort((a,b)=>(currentHeat(b)-currentHeat(a))|| ((b.score||0)-(a.score||0)));
   else if(EV_SORT==='old') E.sort((a,b)=>(_ig(a).localeCompare(_ig(b)))|| ((a.date_end||'').localeCompare(b.date_end||'')));
   else E.sort((a,b)=>(_ig(b).localeCompare(_ig(a)))|| ((b.date_end||'').localeCompare(a.date_end||'')));
 }
-const _EV_HINT={new:'依引爆日期，最新在最上面',old:'依引爆日期，最舊在最上面',hot:'依熱度分數，最熱在最上面'};
+const _EV_HINT={new:'依引爆日期，最新在最上面',old:'依引爆日期，最舊在最上面',hot:'依「目前熱度」（現在還在燒的）排序'};
 function setEvSort(mode){
   if(EV_SORT===mode) return;
   const nm=DATA.events[CUR]&&DATA.events[CUR].name;   // 用名稱保住目前選中卡片（排序會改索引）
@@ -763,12 +793,15 @@ function sparkline(series,w,h){
 }
 
 function renderList(evs){
-  // 簡化卡片：紅綠黃燈（緊急度）＋ 案件名稱 ＋ 日期
-  $('evList').innerHTML=evs.map((e,i)=>`
+  // 簡化卡片：紅綠黃燈（緊急度）＋ 案件名稱 ＋ 日期 ＋ 狀態標籤
+  $('evList').innerHTML=evs.map((e,i)=>{
+    const st=eventStatus(e);
+    return `
     <div class="ev-card ${i===CUR?'active':''}" onclick="CUR=${i};renderList(DATA.events);renderDetail(DATA.events[${i}])">
       <div class="name"><span class="ev-light ${evLevel(e)}" title="緊急度燈號"></span><span>${esc(e.name)}</span></div>
-      <div class="mini">${e.date_start.slice(5)}～${e.date_end.slice(5)}</div>
-    </div>`).join('');
+      <div class="ev-meta"><span class="ev-date">${e.date_start.slice(5)}～${e.date_end.slice(5)}</span><span class="ev-status ${st.c}" title="${esc(st.tip)}">${st.t}</span></div>
+    </div>`;
+  }).join('');
 }
 
 // 固定 7 日爆量視窗 ⇄ 全期 切換
