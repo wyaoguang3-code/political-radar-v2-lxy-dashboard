@@ -298,8 +298,8 @@ svg text{font-family:inherit}
       <div class="sec-title" style="margin:2px 0 8px">📂 事件檔案
         <span class="ev-sort">
           <button class="ev-sort-btn active" data-sort="new" onclick="setEvSort('new')">最新</button>
-          <button class="ev-sort-btn" data-sort="old" onclick="setEvSort('old')">最舊</button>
           <button class="ev-sort-btn" data-sort="hot" onclick="setEvSort('hot')">最熱</button>
+          <button class="ev-sort-btn" data-sort="done" onclick="setEvSort('done')">已處置</button>
         </span>
         <span class="hint" id="evSortHint">依引爆日期，最新在最上面</span></div>
       <div id="evList"></div>
@@ -579,13 +579,15 @@ function currentHeat(e){
   }
   return h;
 }
-// 事件狀態：已逆轉(妥善處置) / 無熱度可冷處理 / 延燒中
+// 「已處置好」＝風向逆轉(turned around) 或 市府應對主導敘事(nature 應對主導型)
+function isHandled(e){ return !!(e.phases&&(e.phases.reversal || e.phases.nature==='應對主導型')); }
+// 事件狀態：已處置 / 無熱度可冷處理 / 延燒中
 function eventStatus(e){
-  const rev=e.phases&&e.phases.reversal, ch=currentHeat(e), nonCrisis=((e.n_red||0)===0);
-  if(rev) return {t:'✓ 已逆轉·處置',c:'st-resolved',tip:'偵測到風向逆轉，議題已轉向／可收尾'};
+  const ch=currentHeat(e), nonCrisis=((e.n_red||0)===0);
+  if(isHandled(e)) return {t:'✓ 已處置',c:'st-resolved',tip:'市府應對主導敘事，或風向已逆轉 → 已妥善處置／可收尾'};
   if(ch<1.2) return nonCrisis
     ? {t:'已冷卻',c:'st-cooled',tip:'近期已無聲量'}
-    : {t:'無熱度·可冷處理',c:'st-cooled',tip:'近期已無聲量；雖未必經實際處置，但已無延燒風險，冷處理即可'};
+    : {t:'無熱度·可冷處理',c:'st-cooled',tip:'近期已無聲量；雖未經實際處置，但已無延燒風險，冷處理即可'};
   return nonCrisis
     ? {t:'正向延續',c:'st-pos',tip:'正向／中性議題、聲量仍在'}
     : {t:'🔥 延燒中',c:'st-hot',tip:'近期仍有負面聲量，需持續關注'};
@@ -593,10 +595,10 @@ function eventStatus(e){
 function sortEvents(){
   const E=DATA.events;
   if(EV_SORT==='hot') E.sort((a,b)=>(currentHeat(b)-currentHeat(a))|| ((b.score||0)-(a.score||0)));
-  else if(EV_SORT==='old') E.sort((a,b)=>(_ig(a).localeCompare(_ig(b)))|| ((a.date_end||'').localeCompare(b.date_end||'')));
+  else if(EV_SORT==='done') E.sort((a,b)=>{const ha=isHandled(a)?0:1,hb=isHandled(b)?0:1; return (ha-hb)|| (currentHeat(b)-currentHeat(a))|| (_ig(b).localeCompare(_ig(a)));});
   else E.sort((a,b)=>(_ig(b).localeCompare(_ig(a)))|| ((b.date_end||'').localeCompare(a.date_end||'')));
 }
-const _EV_HINT={new:'依引爆日期，最新在最上面',old:'依引爆日期，最舊在最上面',hot:'依「目前熱度」（現在還在燒的）排序'};
+const _EV_HINT={new:'依引爆日期，最新在最上面',hot:'依「目前熱度」（現在還在燒的）排序',done:'已處置好的排最上面；其餘按目前熱度（還在燒在前、已冷卻在後）'};
 function setEvSort(mode){
   if(EV_SORT===mode) return;
   const nm=DATA.events[CUR]&&DATA.events[CUR].name;   // 用名稱保住目前選中卡片（排序會改索引）
