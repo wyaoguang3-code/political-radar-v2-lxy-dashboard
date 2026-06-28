@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-06-28T02:33:40.107133+00:00",
+  "generated_at": "2026-06-28T02:49:26.080071+00:00",
   "metrics": {
-    "total_24h": 61,
+    "total_24h": 62,
     "prev_24h": 63,
-    "growth_pct": -3.17,
-    "news_24h": 56,
+    "growth_pct": -1.59,
+    "news_24h": 57,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 645,
+    "total": 646,
     "prev": 747,
-    "growth_pct": -13.65,
-    "news": 574,
+    "growth_pct": -13.52,
+    "news": 575,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,11 +28,11 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 293
+      "count": 289
     },
     {
       "platform": "youtube",
-      "count": 40
+      "count": 41
     },
     {
       "platform": "ptt",
@@ -42,7 +42,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 3176
+      "count": 3174
     },
     {
       "platform": "youtube",
@@ -148,7 +148,7 @@
     },
     {
       "hour": "2026-06-28 10:00",
-      "count": 0
+      "count": 1
     }
   ],
   "by_hour_7d": [
@@ -587,16 +587,20 @@
     {
       "hour": "2026-06-28 04:00",
       "count": 2
+    },
+    {
+      "hour": "2026-06-28 10:00",
+      "count": 1
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 293
+      "count": 289
     },
     {
       "platform": "youtube",
-      "count": 40
+      "count": 41
     },
     {
       "platform": "ptt",
@@ -606,11 +610,11 @@
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 293
+      "count": 289
     },
     {
       "platform": "youtube",
-      "count": 40
+      "count": 41
     },
     {
       "platform": "ptt",
@@ -618,29 +622,29 @@
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 70,
-    "蔣萬安": 238,
+    "盧秀燕": 71,
+    "蔣萬安": 233,
     "蔡其昌": 0,
-    "陳其邁": 30
+    "陳其邁": 31
   },
   "mention_compare_7d": {
-    "盧秀燕": 645,
-    "蔣萬安": 2241,
+    "盧秀燕": 646,
+    "蔣萬安": 2237,
     "蔡其昌": 276,
-    "陳其邁": 450
+    "陳其邁": 451
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 70,
+      "total": 71,
       "red": 0,
-      "yellow": 17,
+      "yellow": 18,
       "green": 53
     },
     "蔣萬安": {
-      "total": 238,
+      "total": 233,
       "red": 4,
-      "yellow": 170,
-      "green": 64
+      "yellow": 167,
+      "green": 62
     },
     "蔡其昌": {
       "total": 0,
@@ -649,10 +653,10 @@
       "green": 0
     },
     "陳其邁": {
-      "total": 30,
+      "total": 31,
       "red": 0,
       "yellow": 6,
-      "green": 24
+      "green": 25
     }
   },
   "self_favorability_history_7d": [
@@ -26470,14 +26474,22 @@
     },
     {
       "date": "2026-06-28",
-      "score": 80.2,
-      "total": 2,
+      "score": 65.2,
+      "total": 3,
       "red": 0,
-      "yellow": 0,
+      "yellow": 1,
       "green": 2,
       "crisis": 0,
       "samples_low": false,
       "articles": [
+        {
+          "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+          "time": "2026-06-28 10:29:38",
+          "severity": "yellow",
+          "publisher": "Google News→太報 TaiSounds",
+          "is_crisis": false
+        },
         {
           "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
@@ -26496,14 +26508,38 @@
         }
       ],
       "comments": {
-        "red": 117,
-        "yellow": 301,
-        "green": 61,
-        "total": 479,
-        "delta_total": -35,
+        "red": 118,
+        "yellow": 302,
+        "green": 62,
+        "total": 482,
+        "delta_total": -32,
         "stagnant": false
       },
       "comment_samples": [
+        {
+          "platform": "facebook",
+          "author": "蕭凱仁",
+          "text": "強大祖國引領方向，兩岸統一勢不可擋！",
+          "time_text": "1小時",
+          "url": "",
+          "signal": "yellow"
+        },
+        {
+          "platform": "facebook",
+          "author": "Shou Chung WU",
+          "text": "您是中國人，您要當中國人，就放棄台灣國籍，滾回去中國當個堂堂正正的中國人，不要死賴在台灣。到世界各國也不敢說自己是中國人，這種人，什麼人也不是，根本就是畜牲。",
+          "time_text": "46分鐘",
+          "url": "",
+          "signal": "red"
+        },
+        {
+          "platform": "facebook",
+          "author": "黃麗華",
+          "text": "市長 加油 大家都平安",
+          "time_text": "6分鐘",
+          "url": "",
+          "signal": "green"
+        },
         {
           "platform": "instagram",
           "author": "pachingo1",
@@ -27883,6 +27919,30 @@
   },
   "comments_by_date_7d": {
     "2026-06-28": [
+      {
+        "platform": "facebook",
+        "author": "蕭凱仁",
+        "text": "強大祖國引領方向，兩岸統一勢不可擋！",
+        "time_text": "1小時",
+        "url": "",
+        "signal": "yellow"
+      },
+      {
+        "platform": "facebook",
+        "author": "Shou Chung WU",
+        "text": "您是中國人，您要當中國人，就放棄台灣國籍，滾回去中國當個堂堂正正的中國人，不要死賴在台灣。到世界各國也不敢說自己是中國人，這種人，什麼人也不是，根本就是畜牲。",
+        "time_text": "46分鐘",
+        "url": "",
+        "signal": "red"
+      },
+      {
+        "platform": "facebook",
+        "author": "黃麗華",
+        "text": "市長 加油 大家都平安",
+        "time_text": "6分鐘",
+        "url": "",
+        "signal": "green"
+      },
       {
         "platform": "instagram",
         "author": "pachingo1",
@@ -85630,6 +85690,15 @@
   "mention_articles_24h": {
     "盧秀燕": [
       {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "platform": "news",
+        "publisher": "Google News→太報 TaiSounds",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
         "time": "2026-06-28 04:10:00",
@@ -86264,6 +86333,15 @@
     ],
     "蔣萬安": [
       {
+        "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+        "time": "2026-06-28 10:33:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
         "time": "2026-06-28 10:22:22",
@@ -86279,6 +86357,15 @@
         "platform": "news",
         "publisher": "Yahoo新聞",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "【中天直播#LIVE】首都之戰升溫! 蔣萬安.沈伯洋北市防洪交鋒20260628 @中天新聞CtiNews ​",
+        "url": "https://www.youtube.com/watch?v=wsrm8xG6E6I",
+        "time": "2026-06-28 09:41:12",
+        "platform": "youtube",
+        "publisher": null,
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -88347,69 +88434,6 @@
         "publisher": "Google News→鏡報",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "時雨量容受力何時可達88.8毫米？蔣萬安曝時間：規畫5到10年",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZRTMydnZjdXhmMWtSSUpGSXNxUHVWVXl4U09BeEZLRjRGVUxyRGNUREJmMUlnUkd0UEVhblNhMC1vVEVmNldqbWpYNmI1VmZp0gFWQVVfeXFMT1I0Rm1NelVuZ3pJU2g5S1N3Ulp4Z2dhcHhxRUo4M0ZYeVI5b2ZsbGpfUWhEZ3VYTkJJUm9hY3FlZmQ5cEV5TTFRUmQ0bndMM0tXVmRQdUE?oc=5",
-        "time": "2026-06-27 10:46:46",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "時雨量容受力何時可達88.8毫米？蔣萬安曝時間：規畫5到10年",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuSUNZRG5YeWJITlNaSmlHel9Oc3g0VS1SUHhzSFB0VDNGbWE2empTMzZpTzFIZ1dzOGdEN1h3WHQtNU9IdG90SVdJM0NFWm84bmJWeC1TNVBaSGJ1blJYVkFiRy3SAVZBVV95cUxPUjRGbU16VW5neklTaDlLU3dSWnhnZ2FweHFFSjgzRlh5UjlvZmxsal9RaERndVhOQklSb2FjcWVmZDlwRXlNMVFSZDRud0wzS1dWZFB1QQ?oc=5",
-        "time": "2026-06-27 10:46:46",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "勘災遇沈伯洋主動握手喊加油 蔣萬安：很自然的碰面",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBYQ2d3VVpEemRWeXB4eVhpalJqRUNHYkl3dmZRdm5XdlFDX0lYNHVlZXVmQ25qa1RVc2NfczVISC1nMmM1NFU0dWlRSzMtbDJjT1RsYWdsTGNDR0FPVVdOeVNuTdIBaEFVX3lxTE9YbTV6eHI3SDdleHBNNld1NUdWYnN1eG1GU0JuQURjeDJRaElFT3JpcGNteEtuNGJCZVJIN3RWRDBibENkcmM0QTNITEktemdmeGJBMUl3WnJTSHpqUm5LT2tGVTJPbnMx?oc=5",
-        "time": "2026-06-27 10:46:00",
-        "platform": "news",
-        "publisher": "Google News→鏡週刊Mirror Media",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "殷瑋「中離應變中心」上節目 邱明玉怒轟：乾脆去當蔣萬安發言人！",
-        "url": "https://tw.news.yahoo.com/%E6%AE%B7%E7%91%8B-%E4%B8%AD%E9%9B%A2%E6%87%89%E8%AE%8A%E4%B8%AD%E5%BF%83-%E4%B8%8A%E7%AF%80%E7%9B%AE-%E9%82%B1%E6%98%8E%E7%8E%89%E6%80%92%E8%BD%9F-%E4%B9%BE%E8%84%86%E5%8E%BB%E7%95%B6%E8%94%A3%E8%90%AC%E5%AE%89%E7%99%BC%E8%A8%80%E4%BA%BA-102427177.html",
-        "time": "2026-06-27 10:43:03",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNHBMamtycEVtcHdHR1ZfRjZWRU0wX3o3d05xZWVOb3h2SlNneEdBdl9GSmNmamJmVEJXRmYtWk4xRl8zbk1ISG9jRzNXWWFHclZlVlZFS2Y3ejNZazR3dVl6d09GVXdVdEhVd1lWOFNNOWctWTNCbFBBYm1ucjFrY1N0UGhnQmVxLTRrbHgtM0IwaDNT0gFSQVVfeXFMTU1LQko5Qi1rWlVicnM2MHdWemNUei0wa3laSk5taERjV2JnaHZUbC1VdVBENDNycmpYMWQtMHhEbHdqeWNlazJwdmYtYWctODFTUQ?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "platform": "news",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災 | 政治快訊 | 要聞",
-        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9aei1PamZrdzZuNHFtdGowc0N1T18zVE9odVE1M3Atc2dQRTdfMW9nSkF5UmxmWVRWU3M1Z1ZINjloM3d2djdiR09LVHQ?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "platform": "news",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災",
-        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9aei1PamZrdzZuNHFtdGowc0N1T18zVE9odVE1M3Atc2dQRTdfMW9nSkF5UmxmWVRWU3M1Z1ZINjloM3d2djdiR09LVHTSAVJBVV95cUxNTUtCSjlCLWtaVWJyczYwd1Z6Y1R6LTBreVpKTm1oRGNXYmdodlRsLVV1UEQ0M3JyalgxZC0weERsd2p5Y2VrMnB2Zi1hZy04MVNR?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "platform": "news",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [],
@@ -88501,6 +88525,15 @@
         "time": "2026-06-27 20:55:26",
         "platform": "news",
         "publisher": "Google News→PChome Online 新聞",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+        "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+        "time": "2026-06-27 20:55:26",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
       },
@@ -88692,6 +88725,15 @@
   },
   "mention_articles_7d": {
     "盧秀燕": [
+      {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "platform": "news",
+        "publisher": "Google News→太報 TaiSounds",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
       {
         "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
@@ -94601,6 +94643,15 @@
     ],
     "蔣萬安": [
       {
+        "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+        "time": "2026-06-28 10:33:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
         "time": "2026-06-28 10:22:22",
@@ -94616,6 +94667,15 @@
         "platform": "news",
         "publisher": "Yahoo新聞",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "【中天直播#LIVE】首都之戰升溫! 蔣萬安.沈伯洋北市防洪交鋒20260628 @中天新聞CtiNews ​",
+        "url": "https://www.youtube.com/watch?v=wsrm8xG6E6I",
+        "time": "2026-06-28 09:41:12",
+        "platform": "youtube",
+        "publisher": null,
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -114867,60 +114927,6 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "【中天直播 #LIVE】沈伯洋酸避談鄭麗文站台 蔣萬安反酸:他們應有很多話題 20260621@中天新聞CtiNews",
-        "url": "https://www.youtube.com/watch?v=8FG_PpRH9Jk",
-        "time": "2026-06-21 10:46:55",
-        "platform": "youtube",
-        "publisher": null,
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "豪雨後蟑螂老鼠湧現挨酸「火鍋料」 蔣萬安：已排班提升降雨容受力",
-        "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOWGNrLWphNWh5Ujk0SExlZHVNT3RxUWVyMEpqRFRoWENLMnZqN0xNU294UHVweHpDVUJsRm0yVjJidmhueDFnZ2Zrckg3dE56WUl1VjlONWJjQ0x3d3lyWE5KS1Q2Ynl3VzdLLW51YlZ0aVlTaFZkVzdSTzlpTEFYMFJyaVNXTlNaeTJUZElDcnVoX2piLUpzSU1hemJjWThjT09zNFVZa1JPMHdkTW9yalpwRkpaRmQydmk2ek5BT1hRWEQ5ZkNfMG1sS0JKcFNYVzFyRlpjYUtVZ2cwRFZkVlRScHJ5a2FWYnZScGlwSWd0QXJhT3NfTlg2UE92THV5eWsyQjRsdFg4amVXZW9OSl9YTVdvSGpwM0tRY2dJUEM1Zl9YSlZMTm53UmU5ci1Yd2h6QnoweU10MmRtU0p4NzNIaktWcURCTFFnY1FETzBDRU9aOE9Ka0R3akE0UGpOTkY4X01PTGpRbEtCcTlFTGpPbWxnT240OHBFZUVCRm1WNXJYR3VTZzdWY29Vbnp4alNJUWNadkZBWmM?oc=5",
-        "time": "2026-06-21 10:44:23",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-        "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxNbGJYWWdnaFZidGtqQ3dOdVRXajNhRm5SSDdQYy01U2Jycm5hMmJoQnhSVjU3X3hCWjZCVGxLS0NXbTU5ZnA2bi1wV0gtaDV0aWFzaGNocXFZU3FGWGgwd1A4S3E0S242Q1JVRi1hcVIwVkVaVFI3NlJLaEJjUjBOYWdEaWJRMDYzTjlOaTRpTFZlNl9obEx1alFFYTFoX0pneTBMMXQteGF3R3hnT3plRm5wTmVzZlBwVXRiQzdsb0xGX2pQc00tQTN2czl1T2x0UDlCWHBsMGlQUnN1RUlLcjlMQnJwbTg5OEI1d0VQb01iU3ozSGE3Y1NGZjYxTmVVQU1KNUZVbDJNSndzZUxubVRCQkJOajlMZ0hSdnl1UEpwR0VtbWN0aEZPSFRJWnJ3ME42UXlPeEhyb3RpZ2lJbXFhYWl3YzlXZ0NORkZNVGl2a0czVEVZNzRSanJNMFdyaV8xeDhDUzBTNS10eHFkNldYa2tCa2ota0tuMUpGUjUwRG5XWXlZTnBoSTZkOEU?oc=5",
-        "time": "2026-06-21 10:42:48",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "「殷市長」超搶戲？她憂弱化蔣萬安引藍營炸鍋 沈伯洋一劍封喉",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5VEFjbGg3NFZGZUJ0SXF1MldUbU9EbU96TmZDZVI3RWwyVGtGS0pYMFV3dXJBUFBfY2hlaEV1TG9vajhBN3ZWMU1Bc1NDUlZ3NWcxdTBwcXpGVUZTQjhnNQ?oc=5",
-        "time": "2026-06-21 10:37:21",
-        "platform": "news",
-        "publisher": "Google News→民視新聞網",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-        "url": "https://www.taisounds.com/news/content/71/263442",
-        "time": "2026-06-21 10:36:04",
-        "platform": "news",
-        "publisher": "太報",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "秦慧珠批殷瑋弱化蔣萬安 沈伯洋回應了",
-        "url": "https://www.setn.com/News.aspx?NewsID=1859696",
-        "time": "2026-06-21 10:36:02",
-        "platform": "news",
-        "publisher": "三立新聞網",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -117514,6 +117520,15 @@
         "time": "2026-06-27 20:55:26",
         "platform": "news",
         "publisher": "Google News→PChome Online 新聞",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+        "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+        "time": "2026-06-27 20:55:26",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
       },
@@ -121531,6 +121546,11 @@
   },
   "top_news": [
     {
+      "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+      "time": "2026-06-28 10:29:38"
+    },
+    {
       "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
       "time": "2026-06-28 04:10:00"
@@ -121624,14 +121644,16 @@
       "title": "中市霧峰桐林里暗坑巷復健完工 盧秀燕強調防汛整備絕不鬆懈",
       "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxPRkhHUGhmeEpfUkRrVWdza0RVdWVlbW9FeVV2OHd6QU42WnhpQmRyaGZwZ0pQUzYteW5vSy1pcTZFV3ltc3lpTXRkOHA0QmRIVU1QWC1uX3VoUEZqX3A5TjJwcWdraVYxcjUwNXVVM2kzVGRsQ19UNi1ZdmNFS2p4alJONEhNWUZOaU41bU1YbTVqcXctTFB6OXZYbVY2Snl6UGdFeVd3cUxEaG9iSHdDRDl2anZTOGxKOXpvRUd0X0NjZUtWR2dpcVNaZGt2M0JaMWxlQmJHbUpJM3pFUS1JN19adWpMT1IzTF9hTERDbk9XM3gtTzBnMGFrdWFpUFlnVG1WZ1pueURUU3lRaWhGUm10UWc3aDhfWi1sam9zUGZ2YXp0YjJDLUpHNUpvY0Q3c2pXdHhUb0ZFTGFDaGJfd1QtRThNZ09XWG1Wc2NTeDV4Mmk4WjFUQVVDMjhuRzc1QnRlVU9MNHBjUmtUOGxIMDhhdzRHeUlkVjItWGpyaWFiNzlZS0Q3cmV3U0ZNOTBxMHQyZWN6eEo?oc=5",
       "time": "2026-06-27 16:18:09"
-    },
-    {
-      "title": "藍營新秀實戰營熱身 盧秀燕獻聲：國民黨要認真栽培年輕人",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwUmdRZHdtSjlaU21lcFZJQnBXdzlrUlVlMTc5VE5QdXZMRUlNTWVPX05iMDhPU09XNkh5T3hRTG9fenlyVHI4VmY5X0hlRi1OVDRj?oc=5",
-      "time": "2026-06-27 16:04:00"
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+      "time": "2026-06-28 10:29:38",
+      "severity": "yellow"
+    },
     {
       "platform": "news",
       "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
@@ -121764,13 +121786,6 @@
       "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxPRkhHUGhmeEpfUkRrVWdza0RVdWVlbW9FeVV2OHd6QU42WnhpQmRyaGZwZ0pQUzYteW5vSy1pcTZFV3ltc3lpTXRkOHA0QmRIVU1QWC1uX3VoUEZqX3A5TjJwcWdraVYxcjUwNXVVM2kzVGRsQ19UNi1ZdmNFS2p4alJONEhNWUZOaU41bU1YbTVqcXctTFB6OXZYbVY2Snl6UGdFeVd3cUxEaG9iSHdDRDl2anZTOGxKOXpvRUd0X0NjZUtWR2dpcVNaZGt2M0JaMWxlQmJHbUpJM3pFUS1JN19adWpMT1IzTF9hTERDbk9XM3gtTzBnMGFrdWFpUFlnVG1WZ1pueURUU3lRaWhGUm10UWc3aDhfWi1sam9zUGZ2YXp0YjJDLUpHNUpvY0Q3c2pXdHhUb0ZFTGFDaGJfd1QtRThNZ09XWG1Wc2NTeDV4Mmk4WjFUQVVDMjhuRzc1QnRlVU9MNHBjUmtUOGxIMDhhdzRHeUlkVjItWGpyaWFiNzlZS0Q3cmV3U0ZNOTBxMHQyZWN6eEo?oc=5",
       "time": "2026-06-27 16:18:09",
       "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "藍營新秀實戰營熱身 盧秀燕獻聲：國民黨要認真栽培年輕人",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwUmdRZHdtSjlaU21lcFZJQnBXdzlrUlVlMTc5VE5QdXZMRUlNTWVPX05iMDhPU09XNkh5T3hRTG9fenlyVHI4VmY5X0hlRi1OVDRj?oc=5",
-      "time": "2026-06-27 16:04:00",
-      "severity": null
     }
   ],
   "latest_facebook_20": [
@@ -121877,6 +121892,16 @@
   ],
   "latest_news_20": [
     {
+      "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+      "time": "2026-06-28 10:33:00"
+    },
+    {
+      "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+      "time": "2026-06-28 10:29:38"
+    },
+    {
       "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
       "time": "2026-06-28 10:22:22"
@@ -121965,16 +121990,6 @@
       "title": "港湖淹水災後復原，港湖立委李彥秀安排立院財政委員會周一29日考察災後重建復原相關經費執行情形。民進黨北市長參選人、立委沈伯洋批李，這兩天他已去詢問相關補助要怎麼進行，不用等到周一排考察。國民黨港湖議員參選人陳冠安批雙標。",
       "url": "https://udn.com/news/story/124652/9593103?from=udn-ch1_breaknews-1-cate1-news",
       "time": "2026-06-28 09:18:11"
-    },
-    {
-      "title": "台北拿最多治水預算！藍白集體牽拖中南部",
-      "url": "https://www.setn.com/News.aspx?NewsID=1863493",
-      "time": "2026-06-28 09:18:06"
-    },
-    {
-      "title": "高雄女子步行疑闖紅燈 慘遭機車撞擊頭部重創送醫",
-      "url": "https://news.ltn.com.tw/news/society/breakingnews/5486528",
-      "time": "2026-06-28 09:12:17"
     }
   ],
   "person_sections": {
@@ -121989,6 +122004,13 @@
         }
       ],
       "news": [
+        {
+          "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+          "time": "2026-06-28 10:29:38",
+          "publisher": "Google News→太報 TaiSounds",
+          "severity": "yellow"
+        },
         {
           "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
@@ -122121,13 +122143,6 @@
           "time": "2026-06-27 16:18:09",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "藍營新秀實戰營熱身 盧秀燕獻聲：國民黨要認真栽培年輕人",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwUmdRZHdtSjlaU21lcFZJQnBXdzlrUlVlMTc5VE5QdXZMRUlNTWVPX05iMDhPU09XNkh5T3hRTG9fenlyVHI4VmY5X0hlRi1OVDRj?oc=5",
-          "time": "2026-06-27 16:04:00",
-          "publisher": "TVBS",
-          "severity": null
         }
       ]
     },
@@ -122177,6 +122192,13 @@
         }
       ],
       "news": [
+        {
+          "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+          "time": "2026-06-28 10:33:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
         {
           "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
@@ -122309,13 +122331,6 @@
           "time": "2026-06-28 02:29:11",
           "publisher": "Google News→美洲台灣日報",
           "severity": "yellow"
-        },
-        {
-          "title": "千人冒雨迎「山中綠寶石」 蔣萬安讚：竹筍界的輝達",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kS2xJV1loeGRzOXhKTmNEc1VYS1FYbFN5cFpIVzlSMXdETF9SakxUR2ZiR2ljaVN6bF9qQmFvcHpqV2NTTlBLd25HeTlvbFBQTmVhSjN5d2pPdlpkWnlZVDV6TXJqYmN6dVhfN3FfOVRNY3RKaXlaVkpmQnBKUQ?oc=5",
-          "time": "2026-06-28 00:05:00",
-          "publisher": "壹蘋新聞網",
-          "severity": null
         }
       ]
     },
@@ -122546,6 +122561,13 @@
           "severity": null
         },
         {
+          "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+          "time": "2026-06-27 20:55:26",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
           "title": "陪同卓揆勘災 陳其邁期盼更完善的城市防洪",
           "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNdy1LbHBZNmdqUWtGcW53R2hQcHVFQlZpazlLZDJZZnVQUVdrZjc3djVqdXJVRG9XMWduRTJHSUVTUHBIbjZxdkxuQ1NxMWFoQzhSSmJ3dmlwRWlxejUxMHFzOEx6U3ROdmxwM3owSXZOc05MU2pGSE81Y0VCOU5oamppZDE4MHRXeDdYeE8xaTV4S3BSbEhka1lvUGx6eG9sTlJhRGo3VWZfRlFjNnJWSUdrQ0FSemVaSWllOV81YXYwU28yTUpRVkt0S1JMSmlNckhpMEs3N0cyM3ViZnFnSnpESF9NWXR5c1pQRVkyeVVWSTNHMzdaUEVXNl9YME5haGFtMThXSW8xNklHXzV5RE9ZTjd4TUw2dURWLXYyRFFwSnZDb1BTdHZ2M1BYSjgxVWVKUnVIMlk?oc=5",
           "time": "2026-06-27 19:17:36",
@@ -122607,19 +122629,26 @@
           "time": "2026-06-27 17:09:45",
           "publisher": "Google News→kcg.gov.tw",
           "severity": null
-        },
-        {
-          "title": "卓揆、陳其邁視察典寶溪白米滯洪池",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByYjZUeENoZGFVSDJHMThIRXVBSXpXYXhoYjBIMjBwT1h0QURJa3dnWjlhSE42UVNucGRWRXpYTW9TdFJhVkVIUmNYSmFYV2lweFl3?oc=5",
-          "time": "2026-06-27 17:04:54",
-          "publisher": "Google News→臺灣導報",
-          "severity": null
         }
       ]
     }
   },
   "latest_by_platform_24h": {
     "news": [
+      {
+        "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+        "time": "2026-06-28 10:33:00",
+        "publisher": "三立新聞網",
+        "severity": "yellow"
+      },
+      {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "publisher": "Google News→太報 TaiSounds",
+        "severity": "yellow"
+      },
       {
         "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
@@ -122884,6 +122913,13 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaUl2Sm03dHcyRUg5d2lQTW9EMi1tWDBEZGRPaUdjcDdxSHlSeWNBamZPVWEzdDNRb2pIMWRrVXZjUkd1Y0IxSWJmLUMtVF8tcVlwWXc4MXRMdHZXakNITlIzZ1FKUEppcXRkY3EtczI0dXJMYlA5VHJKaTZUY2tVWFdaVUZQREJMUG9WRw?oc=5",
         "time": "2026-06-27 20:55:26",
         "publisher": "Google News→PChome Online 新聞",
+        "severity": null
+      },
+      {
+        "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+        "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+        "time": "2026-06-27 20:55:26",
+        "publisher": "Yahoo新聞",
         "severity": null
       },
       {
@@ -124621,58 +124657,16 @@
         "time": "2026-06-27 10:55:38",
         "publisher": "Google News→鏡報",
         "severity": null
-      },
-      {
-        "title": "時雨量容受力何時可達88.8毫米？蔣萬安曝時間：規畫5到10年",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZRTMydnZjdXhmMWtSSUpGSXNxUHVWVXl4U09BeEZLRjRGVUxyRGNUREJmMUlnUkd0UEVhblNhMC1vVEVmNldqbWpYNmI1VmZp0gFWQVVfeXFMT1I0Rm1NelVuZ3pJU2g5S1N3Ulp4Z2dhcHhxRUo4M0ZYeVI5b2ZsbGpfUWhEZ3VYTkJJUm9hY3FlZmQ5cEV5TTFRUmQ0bndMM0tXVmRQdUE?oc=5",
-        "time": "2026-06-27 10:46:46",
-        "publisher": "Google News→UDN",
-        "severity": null
-      },
-      {
-        "title": "時雨量容受力何時可達88.8毫米？蔣萬安曝時間：規畫5到10年",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuSUNZRG5YeWJITlNaSmlHel9Oc3g0VS1SUHhzSFB0VDNGbWE2empTMzZpTzFIZ1dzOGdEN1h3WHQtNU9IdG90SVdJM0NFWm84bmJWeC1TNVBaSGJ1blJYVkFiRy3SAVZBVV95cUxPUjRGbU16VW5neklTaDlLU3dSWnhnZ2FweHFFSjgzRlh5UjlvZmxsal9RaERndVhOQklSb2FjcWVmZDlwRXlNMVFSZDRud0wzS1dWZFB1QQ?oc=5",
-        "time": "2026-06-27 10:46:46",
-        "publisher": "Google News→UDN",
-        "severity": null
-      },
-      {
-        "title": "勘災遇沈伯洋主動握手喊加油 蔣萬安：很自然的碰面",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBYQ2d3VVpEemRWeXB4eVhpalJqRUNHYkl3dmZRdm5XdlFDX0lYNHVlZXVmQ25qa1RVc2NfczVISC1nMmM1NFU0dWlRSzMtbDJjT1RsYWdsTGNDR0FPVVdOeVNuTdIBaEFVX3lxTE9YbTV6eHI3SDdleHBNNld1NUdWYnN1eG1GU0JuQURjeDJRaElFT3JpcGNteEtuNGJCZVJIN3RWRDBibENkcmM0QTNITEktemdmeGJBMUl3WnJTSHpqUm5LT2tGVTJPbnMx?oc=5",
-        "time": "2026-06-27 10:46:00",
-        "publisher": "Google News→鏡週刊Mirror Media",
-        "severity": null
-      },
-      {
-        "title": "殷瑋「中離應變中心」上節目 邱明玉怒轟：乾脆去當蔣萬安發言人！",
-        "url": "https://tw.news.yahoo.com/%E6%AE%B7%E7%91%8B-%E4%B8%AD%E9%9B%A2%E6%87%89%E8%AE%8A%E4%B8%AD%E5%BF%83-%E4%B8%8A%E7%AF%80%E7%9B%AE-%E9%82%B1%E6%98%8E%E7%8E%89%E6%80%92%E8%BD%9F-%E4%B9%BE%E8%84%86%E5%8E%BB%E7%95%B6%E8%94%A3%E8%90%AC%E5%AE%89%E7%99%BC%E8%A8%80%E4%BA%BA-102427177.html",
-        "time": "2026-06-27 10:43:03",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNHBMamtycEVtcHdHR1ZfRjZWRU0wX3o3d05xZWVOb3h2SlNneEdBdl9GSmNmamJmVEJXRmYtWk4xRl8zbk1ISG9jRzNXWWFHclZlVlZFS2Y3ejNZazR3dVl6d09GVXdVdEhVd1lWOFNNOWctWTNCbFBBYm1ucjFrY1N0UGhnQmVxLTRrbHgtM0IwaDNT0gFSQVVfeXFMTU1LQko5Qi1rWlVicnM2MHdWemNUei0wa3laSk5taERjV2JnaHZUbC1VdVBENDNycmpYMWQtMHhEbHdqeWNlazJwdmYtYWctODFTUQ?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災 | 政治快訊 | 要聞",
-        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9aei1PamZrdzZuNHFtdGowc0N1T18zVE9odVE1M3Atc2dQRTdfMW9nSkF5UmxmWVRWU3M1Z1ZINjloM3d2djdiR09LVHQ?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安認了！花4000萬「災害平台」暴雨時故障：沒影響任何救災",
-        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9aei1PamZrdzZuNHFtdGowc0N1T18zVE9odVE1M3Atc2dQRTdfMW9nSkF5UmxmWVRWU3M1Z1ZINjloM3d2djdiR09LVHTSAVJBVV95cUxNTUtCSjlCLWtaVWJyczYwd1Z6Y1R6LTBreVpKTm1oRGNXYmdodlRsLVV1UEQ0M3JyalgxZC0weERsd2p5Y2VrMnB2Zi1hZy04MVNR?oc=5",
-        "time": "2026-06-27 10:33:35",
-        "publisher": "Google News→NOWnews今日新聞",
-        "severity": "yellow"
       }
     ],
     "youtube": [
+      {
+        "title": "【中天直播#LIVE】首都之戰升溫! 蔣萬安.沈伯洋北市防洪交鋒20260628 @中天新聞CtiNews ​",
+        "url": "https://www.youtube.com/watch?v=wsrm8xG6E6I",
+        "time": "2026-06-28 09:41:12",
+        "publisher": null,
+        "severity": null
+      },
       {
         "title": "蔣萬安.沈伯洋握手也能造神?殷瑋急讚\"有風度\" 研考會新業務? 內湖淹水市府喊正常!AI防洪.災防平台.雨量數據全挨轟?｜周楷 王時齊 主持｜【54陪審團 PART1】20260627｜三立新聞台",
         "url": "https://www.youtube.com/watch?v=nxgCKhy34zw",
@@ -124974,6 +124968,20 @@
   "latest_by_platform_7d": {
     "news": [
       {
+        "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+        "time": "2026-06-28 10:33:00",
+        "publisher": "三立新聞網",
+        "severity": "yellow"
+      },
+      {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "publisher": "Google News→太報 TaiSounds",
+        "severity": "yellow"
+      },
+      {
         "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
         "time": "2026-06-28 10:22:22",
@@ -125237,6 +125245,13 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaUl2Sm03dHcyRUg5d2lQTW9EMi1tWDBEZGRPaUdjcDdxSHlSeWNBamZPVWEzdDNRb2pIMWRrVXZjUkd1Y0IxSWJmLUMtVF8tcVlwWXc4MXRMdHZXakNITlIzZ1FKUEppcXRkY3EtczI0dXJMYlA5VHJKaTZUY2tVWFdaVUZQREJMUG9WRw?oc=5",
         "time": "2026-06-27 20:55:26",
         "publisher": "Google News→PChome Online 新聞",
+        "severity": null
+      },
+      {
+        "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+        "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+        "time": "2026-06-27 20:55:26",
+        "publisher": "Yahoo新聞",
         "severity": null
       },
       {
@@ -147169,44 +147184,16 @@
         "time": "2026-06-21 10:51:39",
         "publisher": "Yahoo新聞",
         "severity": null
-      },
-      {
-        "title": "豪雨後蟑螂老鼠湧現挨酸「火鍋料」 蔣萬安：已排班提升降雨容受力",
-        "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOWGNrLWphNWh5Ujk0SExlZHVNT3RxUWVyMEpqRFRoWENLMnZqN0xNU294UHVweHpDVUJsRm0yVjJidmhueDFnZ2Zrckg3dE56WUl1VjlONWJjQ0x3d3lyWE5KS1Q2Ynl3VzdLLW51YlZ0aVlTaFZkVzdSTzlpTEFYMFJyaVNXTlNaeTJUZElDcnVoX2piLUpzSU1hemJjWThjT09zNFVZa1JPMHdkTW9yalpwRkpaRmQydmk2ek5BT1hRWEQ5ZkNfMG1sS0JKcFNYVzFyRlpjYUtVZ2cwRFZkVlRScHJ5a2FWYnZScGlwSWd0QXJhT3NfTlg2UE92THV5eWsyQjRsdFg4amVXZW9OSl9YTVdvSGpwM0tRY2dJUEM1Zl9YSlZMTm53UmU5ci1Yd2h6QnoweU10MmRtU0p4NzNIaktWcURCTFFnY1FETzBDRU9aOE9Ka0R3akE0UGpOTkY4X01PTGpRbEtCcTlFTGpPbWxnT240OHBFZUVCRm1WNXJYR3VTZzdWY29Vbnp4alNJUWNadkZBWmM?oc=5",
-        "time": "2026-06-21 10:44:23",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-        "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxNbGJYWWdnaFZidGtqQ3dOdVRXajNhRm5SSDdQYy01U2Jycm5hMmJoQnhSVjU3X3hCWjZCVGxLS0NXbTU5ZnA2bi1wV0gtaDV0aWFzaGNocXFZU3FGWGgwd1A4S3E0S242Q1JVRi1hcVIwVkVaVFI3NlJLaEJjUjBOYWdEaWJRMDYzTjlOaTRpTFZlNl9obEx1alFFYTFoX0pneTBMMXQteGF3R3hnT3plRm5wTmVzZlBwVXRiQzdsb0xGX2pQc00tQTN2czl1T2x0UDlCWHBsMGlQUnN1RUlLcjlMQnJwbTg5OEI1d0VQb01iU3ozSGE3Y1NGZjYxTmVVQU1KNUZVbDJNSndzZUxubVRCQkJOajlMZ0hSdnl1UEpwR0VtbWN0aEZPSFRJWnJ3ME42UXlPeEhyb3RpZ2lJbXFhYWl3YzlXZ0NORkZNVGl2a0czVEVZNzRSanJNMFdyaV8xeDhDUzBTNS10eHFkNldYa2tCa2ota0tuMUpGUjUwRG5XWXlZTnBoSTZkOEU?oc=5",
-        "time": "2026-06-21 10:42:48",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "「殷市長」超搶戲？她憂弱化蔣萬安引藍營炸鍋 沈伯洋一劍封喉",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5VEFjbGg3NFZGZUJ0SXF1MldUbU9EbU96TmZDZVI3RWwyVGtGS0pYMFV3dXJBUFBfY2hlaEV1TG9vajhBN3ZWMU1Bc1NDUlZ3NWcxdTBwcXpGVUZTQjhnNQ?oc=5",
-        "time": "2026-06-21 10:37:21",
-        "publisher": "Google News→民視新聞網",
-        "severity": "yellow"
-      },
-      {
-        "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-        "url": "https://www.taisounds.com/news/content/71/263442",
-        "time": "2026-06-21 10:36:04",
-        "publisher": "太報",
-        "severity": "yellow"
-      },
-      {
-        "title": "秦慧珠批殷瑋弱化蔣萬安 沈伯洋回應了",
-        "url": "https://www.setn.com/News.aspx?NewsID=1859696",
-        "time": "2026-06-21 10:36:02",
-        "publisher": "三立新聞網",
-        "severity": "yellow"
       }
     ],
     "youtube": [
+      {
+        "title": "【中天直播#LIVE】首都之戰升溫! 蔣萬安.沈伯洋北市防洪交鋒20260628 @中天新聞CtiNews ​",
+        "url": "https://www.youtube.com/watch?v=wsrm8xG6E6I",
+        "time": "2026-06-28 09:41:12",
+        "publisher": null,
+        "severity": null
+      },
       {
         "title": "蔣萬安.沈伯洋握手也能造神?殷瑋急讚\"有風度\" 研考會新業務? 內湖淹水市府喊正常!AI防洪.災防平台.雨量數據全挨轟?｜周楷 王時齊 主持｜【54陪審團 PART1】20260627｜三立新聞台",
         "url": "https://www.youtube.com/watch?v=nxgCKhy34zw",
@@ -149586,13 +149573,6 @@
         "time": "2026-06-21 11:01:57",
         "publisher": null,
         "severity": null
-      },
-      {
-        "title": "【中天直播 #LIVE】沈伯洋酸避談鄭麗文站台 蔣萬安反酸:他們應有很多話題 20260621@中天新聞CtiNews",
-        "url": "https://www.youtube.com/watch?v=8FG_PpRH9Jk",
-        "time": "2026-06-21 10:46:55",
-        "publisher": null,
-        "severity": null
       }
     ],
     "ptt": [
@@ -149725,7 +149705,7 @@
           "text": "盧秀燕市政缺失Part1 一、 空氣污染與環境保護（1–15） ​訴求「市長換人、空氣換新」政見被質疑跳票。 ​針對台中火力發電廠（中火）的空汙改善政策被批流於政治對抗、缺乏實質減煤進展。 ​反對興建天然氣機組，遭批評阻礙「以氣換煤」的能源轉型進度。 ​忽視大肚山、后里等地區工業區廢氣偷排問題。 ​大里垃圾山堆積嚴重，去化速度緩慢。 ​全市垃圾焚化爐老舊，汰換與升級進度落後。 ​垃圾和廚餘處理政策缺乏長遠規劃，引發地方基層不滿。 ​資源回收率提升緩慢，源頭減量政策成效不彰。 ",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         }
       ],
@@ -149902,7 +149882,7 @@
           "text": "史上最空轉的台中市長 捷運藍線進度幾乎0% 陳水扁時代台灣高鐵7年完工，從台北到高雄。",
           "author": "凌文生",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -149910,7 +149890,7 @@
           "text": "盧秀燕市政缺失Part1 一、 空氣污染與環境保護（1–15） ​訴求「市長換人、空氣換新」政見被質疑跳票。 ​針對台中火力發電廠（中火）的空汙改善政策被批流於政治對抗、缺乏實質減煤進展。 ​反對興建天然氣機組，遭批評阻礙「以氣換煤」的能源轉型進度。 ​忽視大肚山、后里等地區工業區廢氣偷排問題。 ​大里垃圾山堆積嚴重，去化速度緩慢。 ​全市垃圾焚化爐老舊，汰換與升級進度落後。 ​垃圾和廚餘處理政策缺乏長遠規劃，引發地方基層不滿。 ​資源回收率提升緩慢，源頭減量政策成效不彰。 ",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         }
       ],
@@ -149947,7 +149927,7 @@
           "text": "別演戲了 海線根本被丟包 尤其身為龍井人 對於電廠回饋基金 到底在幹嘛 很不滿",
           "author": "陳永固",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -149955,7 +149935,7 @@
           "text": "盧秀燕市政缺失Part2 ​四、 經濟與重大建設（51–65） ​多項前瞻或重大建設政見達成率被在野黨質疑過低。 ​台中巨蛋歷經多次流標、經費追加，興建進度延宕。 ​綠美圖（市立圖書館及美術館）完工與開館時程一再推遲。 ​台中國際會展中心招商與完工進度未如預期。 ​產業轉型緩慢，過度依賴傳統製造業與房地產。 ​低薪問題未能有效改善，薪資水準在六都中偏低。 ​市府財政負債居高不下，非法定福利支出過多。 ​疫後商圈振興政策成效不彰，部分知名商圈（如逢甲、一中）出現沒落跡象。 ​招",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         }
       ],
@@ -150057,7 +150037,7 @@
           "text": "盧秀燕市政缺失Part2 ​四、 經濟與重大建設（51–65） ​多項前瞻或重大建設政見達成率被在野黨質疑過低。 ​台中巨蛋歷經多次流標、經費追加，興建進度延宕。 ​綠美圖（市立圖書館及美術館）完工與開館時程一再推遲。 ​台中國際會展中心招商與完工進度未如預期。 ​產業轉型緩慢，過度依賴傳統製造業與房地產。 ​低薪問題未能有效改善，薪資水準在六都中偏低。 ​市府財政負債居高不下，非法定福利支出過多。 ​疫後商圈振興政策成效不彰，部分知名商圈（如逢甲、一中）出現沒落跡象。 ​招",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         }
       ],
@@ -150783,7 +150763,7 @@
           "text": "#螳螂捕蟬黃雀在後 螳螂⇒#鄭麗文 蟬 ⇒#盧秀燕 黄雀⇒ ? (#誰是黄雀) #國民黨 的 #生態浩劫( #外來種) !",
           "author": "尤欽龍",
           "url": "",
-          "time_text": "9小時",
+          "time_text": "10小時",
           "signal": "yellow"
         },
         {
@@ -150791,7 +150771,7 @@
           "text": "鄭麗文要選總統了，2028沒妳的事了，妳下去休息吧。",
           "author": "Lerry Wang",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         }
       ],
@@ -150971,7 +150951,7 @@
           "text": "媒體人。善用媒體最佳擺拍。垃圾山要去尋。垃圾衝到市府門口。算市民送的大禮",
           "author": "劉秀蘭",
           "url": "",
-          "time_text": "3小時",
+          "time_text": "4小時",
           "signal": "red"
         },
         {
@@ -150979,7 +150959,7 @@
           "text": "怎不是去看 垃圾山 廚餘坑？",
           "author": "習維尼",
           "url": "",
-          "time_text": "7小時",
+          "time_text": "8小時",
           "signal": "red"
         },
         {
@@ -150987,7 +150967,7 @@
           "text": "廚餘湖都滿出來了！漫天臭味你沒聞到嗎？還有垃圾山都漂流了",
           "author": "唐麥修",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "red"
         },
         {
@@ -150995,7 +150975,7 @@
           "text": "垃圾山有沒有人顧.......",
           "author": "Alex Wu",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "red"
         },
         {
@@ -151003,7 +150983,7 @@
           "text": "垃圾市長拜託您、重視一下垃圾山、不要擺爛好嗎？",
           "author": "賴建銘",
           "url": "",
-          "time_text": "14小時",
+          "time_text": "15小時",
           "signal": "red"
         },
         {
@@ -151011,7 +150991,7 @@
           "text": "市長的家人朋友 對市長任內 垃圾山廚餘湖 非常擔心 你他媽就是不去看 盡做些擺拍裝可愛 真令人痛心",
           "author": "Hsiaoyi Lai",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151019,7 +150999,7 @@
           "text": "台中的垃圾山跟廚餘湖 不知道有沒有去擺拍作秀一下",
           "author": "Nier Nien",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151027,7 +151007,7 @@
           "text": "廖錦祥 聽說高雄不只美濃 連其他地方都發現垃圾山~",
           "author": "何泓漢",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151035,7 +151015,7 @@
           "text": "雨這麼大…八年來堆的垃圾山…還有萬里長城床墊…怎辦",
           "author": "John Hsiao",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151043,7 +151023,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？ 對反應幾次讓盧秀燕媽媽市長重視一下 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？ 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151051,7 +151031,7 @@
           "text": "我朋友住大里的垃圾山旁邊，說快被垃圾山臭死，你還在混 空氣換新沒有就算了，整個垃圾7年擺爛？！",
           "author": "白水晶",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151059,7 +151039,7 @@
           "text": "白水晶 太巧了 妳才4個朋友 其中一個就住在大里垃圾山 我猜另外兩個住在高雄垃圾山吧? 你則住在火力發電廠旁邊吧? 太假啦~ 青鳥假帳號!",
           "author": "Peter Zhang",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151067,7 +151047,7 @@
           "text": "Peter Zhang 我幾個朋友要你管 你太假了啦... 假帳號 也敢回嘴 裝死就沒這些阿雜事情？ 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151075,7 +151055,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151083,7 +151063,7 @@
           "text": "孫道夫 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151091,7 +151071,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "LuLu Yang",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151099,7 +151079,7 @@
           "text": "郭志堅 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151107,7 +151087,7 @@
           "text": "盧秀燕市政缺失Part1 一、 空氣污染與環境保護（1–15） ​訴求「市長換人、空氣換新」政見被質疑跳票。 ​針對台中火力發電廠（中火）的空汙改善政策被批流於政治對抗、缺乏實質減煤進展。 ​反對興建天然氣機組，遭批評阻礙「以氣換煤」的能源轉型進度。 ​忽視大肚山、后里等地區工業區廢氣偷排問題。 ​大里垃圾山堆積嚴重，去化速度緩慢。 ​全市垃圾焚化爐老舊，汰換與升級進度落後。 ​垃圾和廚餘處理政策缺乏長遠規劃，引發地方基層不滿。 ​資源回收率提升緩慢，源頭減量政策成效不彰。 ",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         },
         {
@@ -151115,7 +151095,7 @@
           "text": "Lin Lin 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151654,7 +151634,7 @@
           "text": "廚餘垃圾市長",
           "author": "Meng Chuan Yang",
           "url": "",
-          "time_text": "1小時",
+          "time_text": "2小時",
           "signal": "red"
         },
         {
@@ -151662,7 +151642,7 @@
           "text": "怎不是去看 垃圾山 廚餘坑？",
           "author": "習維尼",
           "url": "",
-          "time_text": "7小時",
+          "time_text": "8小時",
           "signal": "red"
         },
         {
@@ -151670,7 +151650,7 @@
           "text": "太空垃圾包跟廚餘泉幾天後太陽一曝照會很精彩的，台中的人真有福。",
           "author": "廖珀凱",
           "url": "",
-          "time_text": "7小時",
+          "time_text": "9小時",
           "signal": "red"
         },
         {
@@ -151678,7 +151658,7 @@
           "text": "擺拍全身好乾淨唷！拍橡皮艇幹嘛，划廚餘湖嗎？",
           "author": "陳俊洋",
           "url": "",
-          "time_text": "10小時",
+          "time_text": "11小時",
           "signal": "red"
         },
         {
@@ -151686,7 +151666,7 @@
           "text": "跟廚餘一樣噁心",
           "author": "Jia Cheng Hu",
           "url": "",
-          "time_text": "12小時",
+          "time_text": "13小時",
           "signal": "red"
         },
         {
@@ -151694,7 +151674,7 @@
           "text": "廚餘湖都滿出來了！漫天臭味你沒聞到嗎？還有垃圾山都漂流了",
           "author": "唐麥修",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "red"
         },
         {
@@ -151702,7 +151682,7 @@
           "text": "廚餘鍋會不會滿出來分享給大家",
           "author": "林合鴻",
           "url": "",
-          "time_text": "14小時",
+          "time_text": "15小時",
           "signal": "yellow"
         },
         {
@@ -151710,7 +151690,7 @@
           "text": "市長的家人朋友 對市長任內 垃圾山廚餘湖 非常擔心 你他媽就是不去看 盡做些擺拍裝可愛 真令人痛心",
           "author": "Hsiaoyi Lai",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151718,7 +151698,7 @@
           "text": "應該要趕緊查看看廚餘山被沖了多少進到山下或河流，擺拍沒城小露用",
           "author": "蔡凱安",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151726,7 +151706,7 @@
           "text": "台中的垃圾山跟廚餘湖 不知道有沒有去擺拍作秀一下",
           "author": "Nier Nien",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151734,7 +151714,7 @@
           "text": "是怕廚餘谷滿出來？",
           "author": "廖錦祥",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "yellow"
         },
         {
@@ -151742,7 +151722,7 @@
           "text": "想到滿坑滿谷的臭廚餘就覺得台中沒救了",
           "author": "鍾柚子",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "yellow"
         },
         {
@@ -151750,7 +151730,7 @@
           "text": "鍾柚子 一堆看起來很假的帳號 文不對題 只會講廚餘 活在過去 可憐",
           "author": "劉家宏",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "yellow"
         },
         {
@@ -151758,7 +151738,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？ 對反應幾次讓盧秀燕媽媽市長重視一下 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？ 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151766,7 +151746,7 @@
           "text": "她週邊的景色應該配這些入境 淝水千噸 廚餘千噸 34萬噸 萬里廢棄床墊 賣了千億元34萬坪土地 這些美好政績沒一起入境 台中人怎麼懷念盧秀燕 http://youtube.com/post/Ugkxi_R_6pUo8zHykG4S6Zab85pXjZq1w8TK?surface=shorts&data=AXmpSAF7GTn--RVaJ38TmbkEjBHycXloYA9ebyw7f5VkRg7u2ux46meGN8PkS738D1g0rhi0tvgmAFAB&si=7iNV",
           "author": "白水晶",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "yellow"
         },
         {
@@ -151774,7 +151754,7 @@
           "text": "Peter Zhang 我幾個朋友要你管 你太假了啦... 假帳號 也敢回嘴 裝死就沒這些阿雜事情？ 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151782,7 +151762,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151790,7 +151770,7 @@
           "text": "不會鬆懈？拿碗筷子等吃廚餘火鍋？",
           "author": "暗夜繁星",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "yellow"
         },
         {
@@ -151798,7 +151778,7 @@
           "text": "孫道夫 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151806,7 +151786,7 @@
           "text": "所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "LuLu Yang",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151814,7 +151794,7 @@
           "text": "郭志堅 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151822,7 +151802,7 @@
           "text": "黃松 看到 她週邊的景色應該配 淝水千噸 廚餘千噸 34萬噸 萬里廢棄床墊 這些美好政績沒一起入境 台中人怎麼懷念盧秀燕 http://youtube.com/post/Ugkxi_R_6pUo8zHykG4S6Zab85pXjZq1w8TK?surface=shorts&data=AXmpSAF7GTn--RVaJ38TmbkEjBHycXloYA9ebyw7f5VkRg7u2ux46meGN8PkS738D1g0rhi0tvgmAFAB&si=7iNVAiT421rBen",
           "author": "白水晶",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "yellow"
         },
         {
@@ -151830,7 +151810,7 @@
           "text": "盧秀燕市政缺失Part1 一、 空氣污染與環境保護（1–15） ​訴求「市長換人、空氣換新」政見被質疑跳票。 ​針對台中火力發電廠（中火）的空汙改善政策被批流於政治對抗、缺乏實質減煤進展。 ​反對興建天然氣機組，遭批評阻礙「以氣換煤」的能源轉型進度。 ​忽視大肚山、后里等地區工業區廢氣偷排問題。 ​大里垃圾山堆積嚴重，去化速度緩慢。 ​全市垃圾焚化爐老舊，汰換與升級進度落後。 ​垃圾和廚餘處理政策缺乏長遠規劃，引發地方基層不滿。 ​資源回收率提升緩慢，源頭減量政策成效不彰。 ",
           "author": "胡尹巽",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         },
         {
@@ -151838,7 +151818,7 @@
           "text": "廚餘坑會不會有問題？",
           "author": "Mark Hung",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "yellow"
         },
         {
@@ -151846,7 +151826,7 @@
           "text": "Mark Hung 放心我放很多綠蛙去吃廚餘了 綠蛙對台灣唯一的貢獻跟功能",
           "author": "王家修",
           "url": "",
-          "time_text": "16小時",
+          "time_text": "17小時",
           "signal": "red"
         },
         {
@@ -151854,7 +151834,7 @@
           "text": "Aron Li 而且還是不可燃垃圾，欸但是烤鳥是可燃，四捨五入青鳥應該是廚餘",
           "author": "戴正耀",
           "url": "",
-          "time_text": "14小時",
+          "time_text": "15小時",
           "signal": "red"
         },
         {
@@ -151862,7 +151842,7 @@
           "text": "Lin Lin 所以￼台中滿山滿谷，到處都是垃圾山？廚餘山。山崩了沒呀？",
           "author": "白水晶",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -151870,7 +151850,7 @@
           "text": "沒去視察廚餘太空包？",
           "author": "黃思翰",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         },
         {
@@ -151942,13 +151922,20 @@
       "lng": 120.70059807621135,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 28 / FB 10 / Threads 1",
-      "note": "24h 命中 39 則（新聞 28、留言 11）",
-      "news_count": 28,
+      "platform": "新聞 29 / FB 10 / Threads 1",
+      "note": "24h 命中 40 則（新聞 29、留言 11）",
+      "news_count": 29,
       "comment_count": 11,
-      "news_latest_at": "2026-06-27T20:10:00+00:00",
-      "news_full_expires_at": "2026-06-28T20:10:00+00:00",
+      "news_latest_at": "2026-06-28T02:29:38+00:00",
+      "news_full_expires_at": "2026-06-29T02:29:38+00:00",
       "news_articles": [
+        {
+          "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+          "time": "2026-06-28 10:29:38",
+          "publisher": "Google News→太報 TaiSounds",
+          "severity": "yellow"
+        },
         {
           "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
@@ -152152,7 +152139,7 @@
           "text": "秀燕、辛苦了！局處人員要繃緊神經、全員戒備中！苦民所苦、燈亮路平水溝通為基本要求！地下道暢通沒有垃圾～水自然很快退去",
           "author": "羅家彤",
           "url": "",
-          "time_text": "3小時",
+          "time_text": "4小時",
           "signal": "red"
         },
         {
@@ -152160,7 +152147,7 @@
           "text": "賴永城 2028已經沒有盧秀燕的事了",
           "author": "Naka Chen",
           "url": "",
-          "time_text": "10小時",
+          "time_text": "11小時",
           "signal": "yellow"
         },
         {
@@ -152168,7 +152155,7 @@
           "text": "豬瘟、雞瘟、火災，貪官污吏治理台中，結果搞到天災人禍連連！ 台中的所有溪流都被工業跟民生廢水污染了你不知道嗎！？ 你有多久沒有看到台中有滿天蜻蜓飛舞了！？ 你好意思把巨蛋跟綠美圖當作你個人的政績說嘴！？ 為了消化預算，好好的一條馬路挖了又挖、鋪好再挖！？ 柯文哲、賴清德、盧秀燕、朱立倫等各個德不配位，一堆連市長一職都無法勝任的政客，卻各個野心勃勃！ 台中一條條馬路挖了幾十年還在挖，一直挖馬路貪污國家經費會不會對不起國家！？ 利用台中捷運炒房炒地、圖利建商財團、讓青年背負一輩子",
           "author": "Barco Chen",
           "url": "",
-          "time_text": "12小時",
+          "time_text": "13小時",
           "signal": "red"
         },
         {
@@ -152176,7 +152163,7 @@
           "text": "下大雨外面在淹水妳躲家裡吹冷氣看電視，現在雨停了才出現，作秀燕",
           "author": "林原增",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "yellow"
         },
         {
@@ -152184,7 +152171,7 @@
           "text": "霧峰暗坑巷復建工程完工 盧秀燕市長視察肯定提升防災韌性 https://www.kingtop.com.tw/detail.php?type=lastest&id=51076",
           "author": "陳明",
           "url": "",
-          "time_text": "14小時",
+          "time_text": "15小時",
           "signal": "yellow"
         },
         {
@@ -152192,7 +152179,7 @@
           "text": "謝謝妳總是把市民當成自己的家人在照顧 盧秀燕市長加油 市府團隊加油！",
           "author": "何泓漢",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "green"
         },
         {
@@ -152200,7 +152187,7 @@
           "text": "鍾承綾 胡自強蓋歌劇院 林佳龍蓋台中火車站、整頓綠川、柳川、捷運 盧秀燕有什麼？",
           "author": "Ling Tsai",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "yellow"
         },
         {
@@ -152208,7 +152195,7 @@
           "text": "盧秀燕媽媽市長感謝辛苦妳了市長。",
           "author": "陳祈安",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "green"
         },
         {
@@ -152216,7 +152203,7 @@
           "text": "秀燕市長加油辛苦了",
           "author": "蔣勤福",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "green"
         },
         {
@@ -152224,7 +152211,7 @@
           "text": "賴清德總統 卓榮泰 韓國瑜院長 盧秀燕市長 臺中地方法院院長 王漢章 臺中地方檢察署 檢察長洪家原下台 貪污司法整天躲在44號監控被害人家屬 常常利用零晨睡覺製造噪音 詐騙黃閔琪 民事上訴狀 驗證碼：2APS4YVWUU E-mail：laifafashion@gmail.com 姓 名：林進來 聯絡地址：三鹿里國昌二街42號 聯絡電話：(0939057429) 信件編號：2026012980 標 題：賴清德總統 卓榮泰 韓國瑜院長 盧秀燕市長 臺中地方法院院長 王漢章 臺中",
           "author": "林進來",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         },
         {
@@ -152239,7 +152226,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 3,
-      "urgency_score": 45,
+      "urgency_score": 46,
       "is_urgent": true,
       "is_catchall": true,
       "keywords": [
@@ -153614,9 +153601,9 @@
       "lng": 120.8214,
       "level": "red",
       "source": "news",
-      "platform": "新聞 25",
-      "note": "24h 命中 25 則（新聞 25、留言 0）",
-      "news_count": 25,
+      "platform": "新聞 24",
+      "note": "24h 命中 24 則（新聞 24、留言 0）",
+      "news_count": 24,
       "comment_count": 0,
       "news_latest_at": "2026-06-28T01:00:17+00:00",
       "news_full_expires_at": "2026-06-29T01:00:17+00:00",
@@ -153788,20 +153775,13 @@
           "time": "2026-06-27 10:54:01",
           "publisher": "墨新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "266年古宅風華再現 苗栗四湖劉恩寬大伙房修復竣工",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LMzVsUkFQcVZGcm1uRm1ENkJBZWhvYkpYU0lwWERMMWZFZ0hjLXJBcEx3bEYyZ3dMNldKMExHT1lBME11SHZfcHZYazIyZDdPUHc?oc=5",
-          "time": "2026-06-27 10:49:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 12,
       "urgent_red_comments": 0,
-      "urgency_score": 34,
+      "urgency_score": 33,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -154534,9 +154514,9 @@
       "lng": 119.5793,
       "level": "red",
       "source": "news",
-      "platform": "新聞 56",
-      "note": "24h 命中 56 則（新聞 56、留言 0）",
-      "news_count": 56,
+      "platform": "新聞 50",
+      "note": "24h 命中 50 則（新聞 50、留言 0）",
+      "news_count": 50,
       "comment_count": 0,
       "news_latest_at": "2026-06-27T16:21:52+00:00",
       "news_full_expires_at": "2026-06-28T16:21:52+00:00",
@@ -154890,55 +154870,13 @@
           "time": "2026-06-27 10:57:02",
           "publisher": "自由時報",
           "severity": "red"
-        },
-        {
-          "title": "德國旅遊業者澎湖踩線 深度體驗海灣風光與海洋遊憩魅力",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlOEhNbmdTc1FzcGQteEJJVFc2Qi0yZU1oZDh1RU1wU1oyWlpnaFBQc1puWVluUThTSnZJR3RyYy1Oc0luNUJ2QjJaRnZDYUVJN04wZ2UwRVozcFNYWFZBZ1FzeDJXdXVXa3JJVQ?oc=5",
-          "time": "2026-06-27 10:43:20",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "讓澎湖真正路平 許智富提路挖一次就要做好",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1scUhReW1jdTRkSndkQlczNDA1bjcya3NidzlFYlN2ODhqbjlrcnEybGVqX2JuQVFud2NjWTVLNWpjS3pSRXg1TXhFdkQxNDd1VTdob0xzcXg4UG1XWGxrRGJ2S2JTSUpTbkhpQQ?oc=5",
-          "time": "2026-06-27 10:43:20",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "減少路口轉彎事故! 澎湖監理站攜手汽車貨運業者落實路口停讓",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9KZGF4LWk0dG5vWGxwRmNtUFdIQm9hWjREX1RjMnJZbnVscjUzYTVEVTBZNUt0ZmplR3V6WXV6MEhZd2N5MDcwYVNSb0ZUbmUtWDUxeDZGRGZOUFBhYWxmbC1QVmpTdHNPSEtB?oc=5",
-          "time": "2026-06-27 10:43:20",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "高雄榮總跨海攜手澎湖榮服處訪視榮民眷 守護長者安心御老",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoRVRHbGU4RGR6VHR5TEY3bjdvUnB1dk5nMG9nblBKV04tdC00YzhrNWpNZUxWQ05aYlNDdV9ZT1hCeUt1cExJTjdHaUhNOGppS25fdnhrLTZyTlYxNlBDSVAxaTlIRVZNcVFv?oc=5",
-          "time": "2026-06-27 10:43:20",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "澎湖島帆船系列賽登場近200好手在風雨中競技- 地方",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXdWhGOGtZY29PQkg1VXJWUHR3QnVmTE1NQ21ncHJDeXA2SkFsYjF6aWV2WWlKNlNFeHRKbnJpeGFoNERpdnBHY2JMdWJnNkFfSEJDa3d3akNEbUVpYktBdEJZTHQ1MllpdWFiZzd3?oc=5",
-          "time": "2026-06-27 10:40:39",
-          "publisher": "Google News→華視新聞網",
-          "severity": null
-        },
-        {
-          "title": "澎湖島帆船系列賽登場近200好手在風雨中競技| 運動",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MemtwNktpY0FUQzFTTXJ0MUlfc3I2Y1lNSlZZclA4VVJHaHRyd245OU1XUm1wcW9ZbFJWWEhtcXNrU2kySGxLUXd5YWozVHhXN29zb3VIMXJkWHBPTDhj?oc=5",
-          "time": "2026-06-27 10:40:00",
-          "publisher": "中央社",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 56,
+      "urgency_score": 50,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -154983,9 +154921,9 @@
       "lng": 120.358,
       "level": "red",
       "source": "news",
-      "platform": "新聞 65",
-      "note": "24h 命中 65 則（新聞 65、留言 0）",
-      "news_count": 65,
+      "platform": "新聞 62",
+      "note": "24h 命中 62 則（新聞 62、留言 0）",
+      "news_count": 62,
       "comment_count": 0,
       "news_latest_at": "2026-06-28T01:26:45+00:00",
       "news_full_expires_at": "2026-06-29T01:26:45+00:00",
@@ -155108,6 +155046,13 @@
           "time": "2026-06-27 21:00:51",
           "publisher": "墨新聞",
           "severity": "yellow"
+        },
+        {
+          "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
+          "time": "2026-06-27 20:55:26",
+          "publisher": "Yahoo新聞",
+          "severity": null
         },
         {
           "title": "蝴蝶谷步道落石砸人 登山團4死1傷 高雄客運司機遭兩車夾傷搶救不治",
@@ -155416,41 +155361,13 @@
           "time": "2026-06-27 11:24:24",
           "publisher": "自由時報",
           "severity": null
-        },
-        {
-          "title": "高雄木瓜農損破千萬! 政院研議納入\"免現勘\"範圍",
-          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E6%9C%A8%E7%93%9C%E8%BE%B2%E6%90%8D%E7%A0%B4%E5%8D%83%E8%90%AC-%E6%94%BF%E9%99%A2%E7%A0%94%E8%AD%B0%E7%B4%8D%E5%85%A5-%E5%85%8D%E7%8F%BE%E5%8B%98-%E7%AF%84%E5%9C%8D-104348458.html",
-          "time": "2026-06-27 10:43:48",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "不斷更新》暴雨狂炸！高雄桃源區上午08:00停班課 各縣市6/27放假一覽",
-          "url": "https://newtalk.tw/news/view/2026-06-27/1043709",
-          "time": "2026-06-27 10:43:47",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄榮總跨海攜手澎湖榮服處訪視榮民眷 守護長者安心御老",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBoRVRHbGU4RGR6VHR5TEY3bjdvUnB1dk5nMG9nblBKV04tdC00YzhrNWpNZUxWQ05aYlNDdV9ZT1hCeUt1cExJTjdHaUhNOGppS25fdnhrLTZyTlYxNlBDSVAxaTlIRVZNcVFv?oc=5",
-          "time": "2026-06-27 10:43:20",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "高雄「25淑女」悲劇震撼英國 台樂團巡演引爆歐洲觀眾淚海",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5485716",
-          "time": "2026-06-27 10:36:31",
-          "publisher": "自由時報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 2,
       "negativity_pct": 3,
       "urgent_red_comments": 0,
-      "urgency_score": 71,
+      "urgency_score": 68,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -156736,9 +156653,9 @@
       "lng": 121.30359807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 95",
-      "note": "24h 命中 95 則（新聞 95、留言 0）",
-      "news_count": 95,
+      "platform": "新聞 94",
+      "note": "24h 命中 94 則（新聞 94、留言 0）",
+      "news_count": 94,
       "comment_count": 0,
       "news_latest_at": "2026-06-28T00:00:00+00:00",
       "news_full_expires_at": "2026-06-29T00:00:00+00:00",
@@ -157400,20 +157317,13 @@
           "time": "2026-06-27 11:01:00",
           "publisher": "ETtoday",
           "severity": null
-        },
-        {
-          "title": "傻眼！桃園男面交領款不知成詐團幫兇 遭逮竟喊要回報「公司」",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE51UzZtbk1TR3hfWlRjQ1l6UW1QbUI1WUt5NjZ4d3ptS0xTNU05Um5iZjVmd3AyYmlSWFZFMm9mQWJmcUE0VXVxS2kxSUk?oc=5",
-          "time": "2026-06-27 10:46:24",
-          "publisher": "Google News→桃園電子報",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 1,
       "negativity_pct": 1,
       "urgent_red_comments": 0,
-      "urgency_score": 98,
+      "urgency_score": 97,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -157462,9 +157372,16 @@
       "note": "24h 命中 142 則（新聞 142、留言 0）",
       "news_count": 142,
       "comment_count": 0,
-      "news_latest_at": "2026-06-28T01:18:14+00:00",
-      "news_full_expires_at": "2026-06-29T01:18:14+00:00",
+      "news_latest_at": "2026-06-28T01:41:12+00:00",
+      "news_full_expires_at": "2026-06-29T01:41:12+00:00",
       "news_articles": [
+        {
+          "title": "【中天直播#LIVE】首都之戰升溫! 蔣萬安.沈伯洋北市防洪交鋒20260628 @中天新聞CtiNews ​",
+          "url": "https://www.youtube.com/watch?v=wsrm8xG6E6I",
+          "time": "2026-06-28 09:41:12",
+          "publisher": null,
+          "severity": null
+        },
         {
           "title": "台北國際食品系列展閉幕 促成採購商機上看1.5億美元",
           "url": "https://www.ctee.com.tw/news/20260627700783-430503",
@@ -158450,13 +158367,6 @@
           "url": "https://news.ebc.net.tw/news/living/558505",
           "time": "2026-06-27 11:05:00",
           "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "北市淹水補助「1情況」未達標準也可申請 4步驟須注意",
-          "url": "https://news.nextapple.com/life/20260627/54EF6FD231C0826819D74BD5710DF2A7",
-          "time": "2026-06-27 10:34:02",
-          "publisher": "壹蘋新聞網",
           "severity": "yellow"
         }
       ],
@@ -159641,9 +159551,16 @@
       "note": "24h 命中 154 則（新聞 154、留言 0）",
       "news_count": 154,
       "comment_count": 0,
-      "news_latest_at": "2026-06-28T01:09:12+00:00",
-      "news_full_expires_at": "2026-06-29T01:09:12+00:00",
+      "news_latest_at": "2026-06-28T01:43:23+00:00",
+      "news_full_expires_at": "2026-06-29T01:43:23+00:00",
       "news_articles": [
+        {
+          "title": "[Gossiping] [新聞] 台中拚AI與無人機產業升級 議員肯定江啟",
+          "url": "https://www.ptt.cc/bbs/Gossiping/M.1782611003.A.5A9.html",
+          "time": "2026-06-28 09:43:23",
+          "publisher": null,
+          "severity": null
+        },
         {
           "title": "[HatePolitics] [討論] 笑花蓮挺罪犯，台北台中大罷免也沒罷掉",
           "url": "https://www.ptt.cc/bbs/HatePolitics/M.1782608952.A.C69.html",
@@ -160714,13 +160631,6 @@
           "time": "2026-06-27 10:55:16",
           "publisher": "自由時報",
           "severity": "red"
-        },
-        {
-          "title": "台中蝴蝶谷步道落石奪命！4人OHCA、1失聯",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E8%9D%B4%E8%9D%B6%E8%B0%B7%E6%AD%A5%E9%81%93%E8%90%BD%E7%9F%B3%E5%A5%AA%E5%91%BD-4%E4%BA%BAohca-1%E5%A4%B1%E8%81%AF-104632555.html",
-          "time": "2026-06-27 10:46:32",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
         }
       ],
       "comments": [],
@@ -160762,10 +160672,20 @@
         "嘉市",
         "竹市"
       ],
-      "red_news_count": 49
+      "red_news_count": 48
     }
   ],
   "articles_24h": [
+    {
+      "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+      "time": "2026-06-28 10:29:38",
+      "platform": "news",
+      "publisher": "Google News→太報 TaiSounds",
+      "hour": "2026-06-28 10:00",
+      "severity": "yellow",
+      "is_negative": false
+    },
     {
       "title": "[Gossiping] [新聞] 豪雨狂炸台中！盧秀燕：達成零家戶進水",
       "url": "https://www.ptt.cc/bbs/Gossiping/M.1782563749.A.791.html",
@@ -161951,6 +161871,17 @@
     }
   ],
   "articles_7d": [
+    {
+      "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+      "time": "2026-06-28 10:29:38",
+      "platform": "news",
+      "publisher": "Google News→太報 TaiSounds",
+      "hour": "2026-06-28 10:00",
+      "day": "2026-06-28",
+      "severity": "yellow",
+      "is_negative": false
+    },
     {
       "title": "[Gossiping] [新聞] 豪雨狂炸台中！盧秀燕：達成零家戶進水",
       "url": "https://www.ptt.cc/bbs/Gossiping/M.1782563749.A.791.html",
@@ -173432,7 +173363,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 13417,
+    "sample_size": 13389,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -173627,11 +173558,17 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 574,
+        "news_count": 575,
         "negative_count": 10,
         "negativity_pct": 2,
-        "sentiment_score": 554.0,
+        "sentiment_score": 555.0,
         "articles": [
+          {
+            "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+            "time": "2026-06-28 10:29:38",
+            "is_negative": false
+          },
           {
             "title": "零家戶進水 暗坑巷復建完工 盧秀燕冒雨視察",
             "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JMjFmMDU0TWFUVldyTFR3VHYxSldxb1o4M3JXY1VBWlZ4UTY1bHViVWpkNlVnaERTVUV3dFMybmVEZmFkbGZyYkZvQ2xsYUJBcC01Ny1GWkkySUhxMTFpTXYwSnhsYWZkXzdF?oc=5",
@@ -177443,11 +177380,17 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 1929,
+        "news_count": 1925,
         "negative_count": 65,
         "negativity_pct": 3,
-        "sentiment_score": 1799.0,
+        "sentiment_score": 1795.0,
         "articles": [
+          {
+            "title": "蔣萬安發內湖淹水慰問金遭爆亂給？沈伯洋批造冊漏洞：建立SOP才具韌性",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9odm55OVBqdnhEVkVTNS13Z0J3bVZTSWF2cWtveWtNNUhhWU5idWpaLTVhS3I4a1cxdFR6bEFqQWxsOXpfQnl2cDBueWFJNHpYeVUtMS16ZEHSAV9BVV95cUxPdU5falV3YnJ5VXF1VFhCNm1qbWFkdXc1OU5acWN4ZU9RRXVGdU5zZVpLSDhqMU8tbElLb0pleC1EQ0FRemZjYlp1QTJTdEoyRjloRlozTElmZS1MUjhMdw?oc=5",
+            "time": "2026-06-28 10:33:00",
+            "is_negative": false
+          },
           {
             "title": "沈伯洋批蔣萬安「對空氣喊加油」大翻車！",
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mbXN1TXNvMU9hUjhZLVQ0ak9mbGJveHFXOUpIR083T1VjM3dldFlSRUY2QVVOdlhUWVNESjUtY09rMHBybWZRemdPcTdERTlRRS1J?oc=5",
@@ -188991,36 +188934,6 @@
             "url": "https://tw.news.yahoo.com/%E6%9C%89%E5%95%8F%E9%81%BF%E7%AD%94-%E8%94%A3%E8%90%AC%E5%AE%895%E5%BA%A6%E9%81%BF%E8%AB%87%E6%89%BE%E9%84%AD%E9%BA%97%E6%96%87%E7%AB%99%E5%8F%B0-%E6%9D%8E%E5%9B%9B%E5%B7%9D-%E7%85%A7%E4%B8%AD%E5%A4%AE%E8%A6%8F%E5%8A%83-105501722.html",
             "time": "2026-06-21 10:55:01",
             "is_negative": false
-          },
-          {
-            "title": "豪雨後蟑螂老鼠湧現挨酸「火鍋料」 蔣萬安：已排班提升降雨容受力",
-            "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOWGNrLWphNWh5Ujk0SExlZHVNT3RxUWVyMEpqRFRoWENLMnZqN0xNU294UHVweHpDVUJsRm0yVjJidmhueDFnZ2Zrckg3dE56WUl1VjlONWJjQ0x3d3lyWE5KS1Q2Ynl3VzdLLW51YlZ0aVlTaFZkVzdSTzlpTEFYMFJyaVNXTlNaeTJUZElDcnVoX2piLUpzSU1hemJjWThjT09zNFVZa1JPMHdkTW9yalpwRkpaRmQydmk2ek5BT1hRWEQ5ZkNfMG1sS0JKcFNYVzFyRlpjYUtVZ2cwRFZkVlRScHJ5a2FWYnZScGlwSWd0QXJhT3NfTlg2UE92THV5eWsyQjRsdFg4amVXZW9OSl9YTVdvSGpwM0tRY2dJUEM1Zl9YSlZMTm53UmU5ci1Yd2h6QnoweU10MmRtU0p4NzNIaktWcURCTFFnY1FETzBDRU9aOE9Ka0R3akE0UGpOTkY4X01PTGpRbEtCcTlFTGpPbWxnT240OHBFZUVCRm1WNXJYR3VTZzdWY29Vbnp4alNJUWNadkZBWmM?oc=5",
-            "time": "2026-06-21 10:44:23",
-            "is_negative": false
-          },
-          {
-            "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-            "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxNbGJYWWdnaFZidGtqQ3dOdVRXajNhRm5SSDdQYy01U2Jycm5hMmJoQnhSVjU3X3hCWjZCVGxLS0NXbTU5ZnA2bi1wV0gtaDV0aWFzaGNocXFZU3FGWGgwd1A4S3E0S242Q1JVRi1hcVIwVkVaVFI3NlJLaEJjUjBOYWdEaWJRMDYzTjlOaTRpTFZlNl9obEx1alFFYTFoX0pneTBMMXQteGF3R3hnT3plRm5wTmVzZlBwVXRiQzdsb0xGX2pQc00tQTN2czl1T2x0UDlCWHBsMGlQUnN1RUlLcjlMQnJwbTg5OEI1d0VQb01iU3ozSGE3Y1NGZjYxTmVVQU1KNUZVbDJNSndzZUxubVRCQkJOajlMZ0hSdnl1UEpwR0VtbWN0aEZPSFRJWnJ3ME42UXlPeEhyb3RpZ2lJbXFhYWl3YzlXZ0NORkZNVGl2a0czVEVZNzRSanJNMFdyaV8xeDhDUzBTNS10eHFkNldYa2tCa2ota0tuMUpGUjUwRG5XWXlZTnBoSTZkOEU?oc=5",
-            "time": "2026-06-21 10:42:48",
-            "is_negative": false
-          },
-          {
-            "title": "「殷市長」超搶戲？她憂弱化蔣萬安引藍營炸鍋 沈伯洋一劍封喉",
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5VEFjbGg3NFZGZUJ0SXF1MldUbU9EbU96TmZDZVI3RWwyVGtGS0pYMFV3dXJBUFBfY2hlaEV1TG9vajhBN3ZWMU1Bc1NDUlZ3NWcxdTBwcXpGVUZTQjhnNQ?oc=5",
-            "time": "2026-06-21 10:37:21",
-            "is_negative": false
-          },
-          {
-            "title": "殷瑋上前線槓綠議員戰沈伯洋 秦慧珠：弱化蔣萬安、外界看笑話",
-            "url": "https://www.taisounds.com/news/content/71/263442",
-            "time": "2026-06-21 10:36:04",
-            "is_negative": false
-          },
-          {
-            "title": "秦慧珠批殷瑋弱化蔣萬安 沈伯洋回應了",
-            "url": "https://www.setn.com/News.aspx?NewsID=1859696",
-            "time": "2026-06-21 10:36:02",
-            "is_negative": false
           }
         ]
       },
@@ -190081,10 +189994,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 425,
+        "news_count": 426,
         "negative_count": 0,
         "negativity_pct": 0,
-        "sentiment_score": 425.0,
+        "sentiment_score": 426.0,
         "articles": [
           {
             "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
@@ -190143,6 +190056,12 @@
           {
             "title": "中央地方聯手治水 陳其邁陪同卓揆視察典寶溪治水 - 社會新聞 - PChome Online 新聞",
             "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaUl2Sm03dHcyRUg5d2lQTW9EMi1tWDBEZGRPaUdjcDdxSHlSeWNBamZPVWEzdDNRb2pIMWRrVXZjUkd1Y0IxSWJmLUMtVF8tcVlwWXc4MXRMdHZXakNITlIzZ1FKUEppcXRkY3EtczI0dXJMYlA5VHJKaTZUY2tVWFdaVUZQREJMUG9WRw?oc=5",
+            "time": "2026-06-27 20:55:26",
+            "is_negative": false
+          },
+          {
+            "title": "大雨過後 陳其邁陪同卓榮泰 視察高雄滯洪池與農損",
+            "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNYk9MR19aUlY3RHByOGRhRGRSWWZpTV82QjRVcnZuQTd3T3o1eEdIOGI3QUM5eGhPX0pNQnpab0JkMGVseHdjZXJKNlJSVVQ4LWd3SzdTNk03RDR5YmNSd0M1UUU5bUJwTVVfajJyc3hfR3JGS01ZZFk3b1ZseDN1VkVPd1ZUWVdsTjBMb1QyMW5jZC10Um9oekVoUjNET2JMREljRERBV01BOHdOckJsei1jYXJnR3BMeGF2MGU3dFdVdVpRTGtFMFNwa3dzVldUaEVXQ2xIWEhoUGUtUThJUFlPQlZjWV9FUWxnWmctYmU1Mllhc3JmSHFTTEtncW1WdVFMOWVBRklZT1Ztc2ZzaS1mTGRoNk11eEgxbGZ6NmZjTEhxb3hnS0VpR1pVZVFDTEEycjI0MjVxd2NYXzlrUFNSWl9NQlVhT0lyYnFnU3RGODRNSE15U1dDM1dSdw?oc=5",
             "time": "2026-06-27 20:55:26",
             "is_negative": false
           },
@@ -192736,6 +192655,16 @@
     "minute": [],
     "hour": [
       {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "platform": "news",
+        "publisher": "Google News→太報 TaiSounds",
+        "hour": "2026-06-28 10:00",
+        "severity": "yellow",
+        "is_negative": false
+      },
+      {
         "title": "豪雨應變優先 盧秀燕市長取消AI選戰營行程坐鎮台中 視察復建工程慰勉第一線防災人員",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRFJKSWZVMTFZTEVwakdVTU50ZE12RXUwY1VfOFhOcHJvT2hfS3VvSGk4dWlLWjhPT0V1MExnTlg0dEVKdmMzTjFkWXdSNGNZcnpZcEZPeFNfai04eG9Yald0RlAxMFlhNmVQZFRWeG9aOV9fMjlYSGVzUFNrQVdNcjg5Vm9GdXdDbHlB?oc=5",
         "time": "2026-06-27 15:04:00",
@@ -193364,6 +193293,17 @@
       }
     ],
     "hour": [
+      {
+        "title": "秦慧珠點名盧秀燕處理「政客爽」 林家興：聽信鍾小平造謠資訊| 政治焦點",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuWXV0S0sybVhwelY1OW1pMFlBV0E2cEFqbDlsQ3oyMjRLbzExZnRBUV9aeWFZcXR5V2JGVFllNnd5WjNWR1RfNUEzbFljUlVrdDRVNWE0MWpHRjdT?oc=5",
+        "time": "2026-06-28 10:29:38",
+        "platform": "news",
+        "publisher": "Google News→太報 TaiSounds",
+        "hour": "2026-06-28 10:00",
+        "day": "2026-06-28",
+        "severity": "yellow",
+        "is_negative": false
+      },
       {
         "title": "豪雨應變優先 盧秀燕市長取消AI選戰營行程坐鎮台中 視察復建工程慰勉第一線防災人員",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRFJKSWZVMTFZTEVwakdVTU50ZE12RXUwY1VfOFhOcHJvT2hfS3VvSGk4dWlLWjhPT0V1MExnTlg0dEVKdmMzTjFkWXdSNGNZcnpZcEZPeFNfai04eG9Yald0RlAxMFlhNmVQZFRWeG9aOV9fMjlYSGVzUFNrQVdNcjg5Vm9GdXdDbHlB?oc=5",
@@ -199101,10 +199041,10 @@
   },
   "comments_history": {
     "today": {
-      "red": 100,
-      "yellow": 236,
-      "green": 82,
-      "total": 418
+      "red": 101,
+      "yellow": 237,
+      "green": 83,
+      "total": 421
     },
     "yesterday": {
       "red": 107,
