@@ -11,7 +11,7 @@
 //
 // Bump VERSION when changing SW logic to invalidate old caches.
 
-const VERSION = 'v2';
+const VERSION = 'v3';  // 2026-07-01 bump：清掉舊快取（含換 Supabase key 前的舊 config.js）→ 修 wyaoguang3 網域登入失敗
 const STATIC_CACHE = `lxy-static-${VERSION}`;
 const JSON_CACHE   = `lxy-json-${VERSION}`;
 
