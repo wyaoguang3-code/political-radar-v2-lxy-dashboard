@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "snapshot_at": "2026-07-04T04:53:11.502948+00:00",
+  "snapshot_at": "2026-07-04T05:08:38.843688+00:00",
   "hotspots": [
     {
       "title": "行人地獄討論",
@@ -130,6 +130,27 @@
       "comments": []
     },
     {
+      "title": "台南陳情/抗議",
+      "city": "台南",
+      "place": "台南市政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "黃偉哲宣示挺教師 南市訂「教師合理管教全攻略」提供陳情處理及管教指引",
+          "url": "https://newtalk.tw/news/view/2026-07-03/1045155",
+          "time": "2026-07-03 19:38:04",
+          "publisher": "新頭殼",
+          "severity": null
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "屏東陳情/抗議",
       "city": "屏東",
       "place": "屏東縣政府",
@@ -172,9 +193,9 @@
       "comments": []
     },
     {
-      "title": "台南陳情/抗議",
-      "city": "台南",
-      "place": "台南市政府",
+      "title": "台北詐騙案",
+      "city": "台北",
+      "place": "台北市政府",
       "level": "green",
       "news_count": 1,
       "comment_count": 0,
@@ -183,11 +204,11 @@
       "urgency_score": 4,
       "news_articles": [
         {
-          "title": "黃偉哲宣示挺教師 南市訂「教師合理管教全攻略」提供陳情處理及管教指引",
-          "url": "https://newtalk.tw/news/view/2026-07-03/1045155",
-          "time": "2026-07-03 19:38:04",
+          "title": "張文隆觀點》誰在縱容教學詐騙？致新北市教育局：監察院的查處不是給你們拿來「護短」的！",
+          "url": "https://newtalk.tw/news/view/2026-07-03/1045127",
+          "time": "2026-07-03 18:11:41",
           "publisher": "新頭殼",
-          "severity": null
+          "severity": "yellow"
         }
       ],
       "comments": []
@@ -208,27 +229,6 @@
           "url": "https://www.nexttv.com.tw/NextTV/News/Home/Life/2026-07-04/2396284.html",
           "time": "2026-07-04 12:16:51",
           "publisher": "壹電視",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "台北詐騙案",
-      "city": "台北",
-      "place": "台北市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "張文隆觀點》誰在縱容教學詐騙？致新北市教育局：監察院的查處不是給你們拿來「護短」的！",
-          "url": "https://newtalk.tw/news/view/2026-07-03/1045127",
-          "time": "2026-07-03 18:11:41",
-          "publisher": "新頭殼",
           "severity": "yellow"
         }
       ],
@@ -607,27 +607,6 @@
       "comments": []
     },
     {
-      "title": "基隆弊案爭議",
-      "city": "基隆",
-      "place": "基隆市政府",
-      "level": "yellow",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "翻拍性平案資料私傳家長會「幫關切」 基隆校長洩密罪起訴",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492758",
-          "time": "2026-07-03 15:12:35",
-          "publisher": "自由時報",
-          "severity": "red"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "台中弊案爭議",
       "city": "台中",
       "place": "台中市政府",
@@ -649,21 +628,49 @@
       "comments": []
     },
     {
-      "title": "桃園墜樓事件",
-      "city": "桃園",
-      "place": "桃園市政府",
+      "title": "基隆弊案爭議",
+      "city": "基隆",
+      "place": "基隆市政府",
       "level": "yellow",
-      "news_count": 4,
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "翻拍性平案資料私傳家長會「幫關切」 基隆校長洩密罪起訴",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492758",
+          "time": "2026-07-03 15:12:35",
+          "publisher": "自由時報",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "台中墜樓事件",
+      "city": "台中",
+      "place": "台中市政府",
+      "level": "yellow",
+      "news_count": 5,
       "comment_count": 0,
       "negativity_pct": 100,
       "is_urgent": true,
-      "urgency_score": 16,
+      "urgency_score": 20,
       "news_articles": [
         {
           "title": "台中知名建築師墜樓亡！曾操刀置地廣場桃園 生前發文曝人生體悟",
           "url": "https://news.tvbs.com.tw/local/3247776",
           "time": "2026-07-03 16:43:23",
           "publisher": "TVBS",
+          "severity": "yellow"
+        },
+        {
+          "title": "台中知名建築師驚傳墜樓身亡 曾參與台中豪宅、大型商場設計 2026-07-03 13:26",
+          "url": "https://www.ctwant.com/article/487681/",
+          "time": "2026-07-03 14:01:07",
+          "publisher": "CTWANT",
           "severity": "yellow"
         },
         {
@@ -681,11 +688,11 @@
           "severity": "yellow"
         },
         {
-          "title": "「置地廣場桃園」是他設計的！ 名建築師墜樓同業惋嘆",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBDMzZFeVpNZzdxZnRXdjJ0SjhlZEd5bTZ2eEhicUJwSmxOYW9WQ1N4WHZsZGRtLUJDLW5zekNjRVhNOGNTNG8wZUR0SVdIdTDSAWtBVV95cUxQWk82dGNXX1JJUDNFT0tadUIzZFdXTVhldkhmTXEtZW9ra01RMDFjeDVsYVVoVldaUjh6a0RJcGN1eFdhSnRMa0dOeVBubGl2OUN5QnVSbnR6aGJRa05uVVJZSmdMdGRtTGM4OA?oc=5",
-          "time": "2026-07-03 12:55:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
+          "title": "台中知名建築師墜樓亡 臉書湧入「R.I.P」、暖文惹鼻酸",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492635",
+          "time": "2026-07-03 13:28:03",
+          "publisher": "自由時報",
+          "severity": "red"
         }
       ],
       "comments": []
@@ -1426,62 +1433,6 @@
       "comments": []
     },
     {
-      "title": "台中墜樓事件",
-      "city": "台中",
-      "place": "台中市政府",
-      "level": "red",
-      "news_count": 6,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": true,
-      "urgency_score": 24,
-      "news_articles": [
-        {
-          "title": "台中知名建築師墜樓亡！曾操刀置地廣場桃園 生前發文曝人生體悟",
-          "url": "https://news.tvbs.com.tw/local/3247776",
-          "time": "2026-07-03 16:43:23",
-          "publisher": "TVBS",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中知名建築師驚傳墜樓身亡 曾參與台中豪宅、大型商場設計 2026-07-03 13:26",
-          "url": "https://www.ctwant.com/article/487681/",
-          "time": "2026-07-03 14:01:07",
-          "publisher": "CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "剛完成桃園大型商城案 國內知名建築師台中墜樓身亡",
-          "url": "https://www.chinatimes.com/realtimenews/20260703002581-260402",
-          "time": "2026-07-03 14:00:59",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "剛完成桃園大型商城案 國內知名建築師台中墜樓身亡",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tU1pQOS14TnM1UkhCVm9iQy1NOGRKcFNxbTlkbkpWZ0pJbHFCRDZGMllPVUdWOEN6VWtmZl9nTjdDVXY0T1hTS0xGX0hpSlgwaG8zNzZmMmhCVTAySngwUWRKbzA5OUMwQXBEWkR3?oc=5",
-          "time": "2026-07-03 13:41:32",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "台中知名建築師墜樓亡 臉書湧入「R.I.P」、暖文惹鼻酸",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492635",
-          "time": "2026-07-03 13:28:03",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "[Gossiping] [新聞] 知名建築師台中墜樓身亡 代表作遍及中",
-          "url": "https://www.ptt.cc/bbs/Gossiping/M.1783055297.A.A06.html",
-          "time": "2026-07-03 13:08:17",
-          "publisher": null,
-          "severity": "red"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "苗栗弊案爭議",
       "city": "苗栗",
       "place": "苗栗縣政府",
@@ -1675,11 +1626,11 @@
       "city": "台中",
       "place": "台中市北屯區",
       "level": "red",
-      "news_count": 15,
+      "news_count": 14,
       "comment_count": 3,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 22,
+      "urgency_score": 21,
       "news_articles": [
         {
           "title": "「準表態」將參選2028總統？ 盧秀燕：秀燕將啟程、有六才有八| 政治焦點",
@@ -1778,13 +1729,6 @@
           "time": "2026-07-03 13:50:44",
           "publisher": "Google News→美洲台灣日報",
           "severity": "yellow"
-        },
-        {
-          "title": "【#大新聞大爆卦】陳鳳馨爆柯志恩超越2018韓國瑜了!蔣萬安讓賴桑被迴力鏢轟爆了!盧秀燕聯手谷立言死死剋住民進黨了! 20260703 @大新聞大爆卦HotNewsTalk",
-          "url": "https://www.youtube.com/watch?v=xt6-6gNrHZA",
-          "time": "2026-07-03 12:56:06",
-          "publisher": null,
-          "severity": null
         }
       ],
       "comments": [
@@ -1971,6 +1915,244 @@
           "time": "2026-07-03 14:26:00",
           "publisher": "Yahoo新聞",
           "severity": null
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "基隆地方動態",
+      "city": "基隆",
+      "place": "基隆市政府",
+      "level": "red",
+      "news_count": 32,
+      "comment_count": 0,
+      "negativity_pct": 16,
+      "is_urgent": false,
+      "urgency_score": 47,
+      "news_articles": [
+        {
+          "title": "「一太e衛浴」扎根基隆 砸重金蓋新總部",
+          "url": "https://www.setn.com/News.aspx?NewsID=1866821",
+          "time": "2026-07-04 12:16:40",
+          "publisher": "三立新聞網",
+          "severity": null
+        },
+        {
+          "title": "基隆虐兒案家長痛批市府處置 童子瑋怒：兩週時間無作為",
+          "url": "https://newtalk.tw/news/view/2026-07-04/1045195",
+          "time": "2026-07-04 11:33:06",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆教保員集體虐童 家長不滿處分太輕蛋洗幼兒園",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5493504",
+          "time": "2026-07-04 11:21:25",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "基隆暑假親子活動登場 結合自然、音樂與料理體驗",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5493383",
+          "time": "2026-07-04 10:22:25",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "串聯全基隆 童子瑋規劃捷運路網願景",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1761269",
+          "time": "2026-07-04 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "基隆驚傳虐童！謝國樑祭鐵腕：涉案師終身禁教、園所遭停招1年",
+          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E9%A9%9A%E5%82%B3%E8%99%90%E7%AB%A5-%E8%AC%9D%E5%9C%8B%E6%A8%91%E7%A5%AD%E9%90%B5%E8%85%95-%E6%B6%89%E6%A1%88%E5%B8%AB%E7%B5%82%E8%BA%AB%E7%A6%81%E6%95%99-%E5%9C%92%E6%89%80%E9%81%AD%E5%81%9C%E6%8B%9B1%E5%B9%B4-015659472.html",
+          "time": "2026-07-04 01:56:59",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆虐童第二階段調查一週內完成 謝國樑：依法究責、追究到底！",
+          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E8%99%90%E7%AB%A5%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5%E8%AA%BF%E6%9F%A5-%E9%80%B1%E5%85%A7%E5%AE%8C%E6%88%90-%E8%AC%9D%E5%9C%8B%E6%A8%91-%E4%BE%9D%E6%B3%95%E7%A9%B6%E8%B2%AC-%E8%BF%BD%E7%A9%B6%E5%88%B0%E5%BA%95-014112742.html",
+          "time": "2026-07-04 01:41:12",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆幼兒園不當虐童停招一年 2名教保員終身不得聘任",
+          "url": "https://more-news.tw/657398/",
+          "time": "2026-07-04 01:22:08",
+          "publisher": "墨新聞",
+          "severity": "red"
+        },
+        {
+          "title": "翻轉50年老舊國宅！基隆安樂一期6號基地都更公聽會順利召開 下半年進入實質審議",
+          "url": "https://tw.news.yahoo.com/%E7%BF%BB%E8%BD%8950%E5%B9%B4%E8%80%81%E8%88%8A%E5%9C%8B%E5%AE%85-%E5%9F%BA%E9%9A%86%E5%AE%89%E6%A8%82-%E6%9C%9F6%E8%99%9F%E5%9F%BA%E5%9C%B0%E9%83%BD%E6%9B%B4%E5%85%AC%E8%81%BD%E6%9C%83%E9%A0%86%E5%88%A9%E5%8F%AC%E9%96%8B-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E9%80%B2%E5%85%A5%E5%AF%A6%E8%B3%AA%E5%AF%A9%E8%AD%B0-162300103.html",
+          "time": "2026-07-04 00:23:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "協助更生人復歸社會 基隆「向上學苑」 掛牌",
+          "url": "https://tw.news.yahoo.com/%E5%8D%94%E5%8A%A9%E6%9B%B4%E7%94%9F%E4%BA%BA%E5%BE%A9%E6%AD%B8%E7%A4%BE%E6%9C%83-%E5%9F%BA%E9%9A%86-%E5%90%91%E4%B8%8A%E5%AD%B8%E8%8B%91-%E6%8E%9B%E7%89%8C-155257457.html",
+          "time": "2026-07-03 23:52:57",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "「國家科技寶藏特展」7冃3日基隆海科館開幕",
+          "url": "https://tw.news.yahoo.com/%E5%9C%8B%E5%AE%B6%E7%A7%91%E6%8A%80%E5%AF%B6%E8%97%8F%E7%89%B9%E5%B1%95-7%E5%86%833%E6%97%A5%E5%9F%BA%E9%9A%86%E6%B5%B7%E7%A7%91%E9%A4%A8%E9%96%8B%E5%B9%95-152812219.html",
+          "time": "2026-07-03 23:28:12",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆查到致癌油存貨 1供應商下架306公斤",
+          "url": "https://news.ltn.com.tw/news/Keelung/breakingnews/5493188",
+          "time": "2026-07-03 20:59:31",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "基隆幼兒園虐童 2教保員各罰40萬",
+          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E5%B9%BC%E5%85%92%E5%9C%92%E8%99%90%E7%AB%A5-2%E6%95%99%E4%BF%9D%E5%93%A1%E5%90%84%E7%BD%B040%E8%90%AC-124519178.html",
+          "time": "2026-07-03 20:45:19",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "觀護協會副總會長捐贈基隆看守所運動飲料 防範熱傷害",
+          "url": "https://taiwanreports.com/archives/997218",
+          "time": "2026-07-03 19:48:40",
+          "publisher": "臺灣導報",
+          "severity": null
+        },
+        {
+          "title": "基隆安樂一期6號基地都更公聽會順利召開",
+          "url": "https://taiwanreports.com/archives/997214",
+          "time": "2026-07-03 19:46:10",
+          "publisher": "臺灣導報",
+          "severity": null
+        },
+        {
+          "title": "虐童零容忍 基隆某幼兒園判停招1年",
+          "url": "https://taiwanreports.com/archives/997207",
+          "time": "2026-07-03 19:44:11",
+          "publisher": "臺灣導報",
+          "severity": "yellow"
+        },
+        {
+          "title": "暑假在家起口角 基隆19歲姊姊持刀砍傷弟",
+          "url": "https://www.mnews.tw/story/20260703sot1645001",
+          "time": "2026-07-03 19:38:40",
+          "publisher": "鏡新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "在家疑似太吵 基隆19歲姐姐持刀砍傷弟弟",
+          "url": "https://www.cna.com.tw/news/asoc/202607030273.aspx",
+          "time": "2026-07-03 19:29:13",
+          "publisher": "中央社",
+          "severity": "yellow"
+        },
+        {
+          "title": "砸3億元買地自建！毅太企業扎根基隆 打造全台整體衛浴新里程碑",
+          "url": "https://tw.news.yahoo.com/%E7%A0%B83%E5%84%84%E5%85%83%E8%B2%B7%E5%9C%B0%E8%87%AA%E5%BB%BA-%E6%AF%85%E5%A4%AA%E4%BC%81%E6%A5%AD%E6%89%8E%E6%A0%B9%E5%9F%BA%E9%9A%86-%E6%89%93%E9%80%A0%E5%85%A8%E5%8F%B0%E6%95%B4%E9%AB%94%E8%A1%9B%E6%B5%B4%E6%96%B0%E9%87%8C%E7%A8%8B%E7%A2%91-110553272.html",
+          "time": "2026-07-03 19:05:53",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "基隆姊弟口角爆砍人 教育處探視少年媒介輔導諮商",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492936",
+          "time": "2026-07-03 17:07:56",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆19歲姊不滿弟太吵！怒持菜刀狠砍頸部",
+          "url": "https://www.setn.com/News.aspx?NewsID=1866415",
+          "time": "2026-07-03 16:43:22",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "暑假開始就出事！基隆19歲少女怒拿菜刀砍頸 弟弟濺血奪門求救",
+          "url": "https://www.mirrormedia.mg/story/20260703edi066",
+          "time": "2026-07-03 16:22:00",
+          "publisher": "鏡週刊",
+          "severity": "yellow"
+        },
+        {
+          "title": "嫌講電話太吵！基隆驚傳姊弟口角 18歲姊憤持菜刀砍傷親弟",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492852",
+          "time": "2026-07-03 16:06:49",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "基隆準公托疑不當對待幼童 勒令停招1年、2教保員各罰40萬",
+          "url": "https://news.pts.org.tw/article/815939",
+          "time": "2026-07-03 15:53:01",
+          "publisher": "公視 即時",
+          "severity": "yellow"
+        },
+        {
+          "title": "放暑假大吵！基隆19歲姊姊持刀砍弟 急致電媽媽求救",
+          "url": "https://news.ebc.net.tw/news/society/559447",
+          "time": "2026-07-03 15:30:00",
+          "publisher": "東森新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "(影)翻轉基隆遭邊緣化危機 童子瑋提出捷運整體路網藍圖",
+          "url": "https://newtalk.tw/news/view/2026-07-03/1045083",
+          "time": "2026-07-03 15:29:06",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "民進黨基隆市長參選人議長童子瑋今天提「基隆捷運整體路網」規畫，童子瑋說，基隆捷運應該以「雙主線」作為城市交通骨架。其中，「市區主線」由八堵串聯市中心，銜接已核定的基捷第一階段點，成為市中心通勤與觀光的重要動脈；「大武崙主線」則沿麥金路串聯長庚醫院商圈、國家新城，直達大武崙生活圈...",
+          "url": "https://udn.com/news/story/124652/9605206?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-07-03 15:20:54",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "行政院長卓榮泰今天到基隆出席毅太「企業營運總部暨整體衛浴廠」啟用典禮時致詞說，賴清德總統推動的8年增加1千億基金中小微企業轉型升級條例，現在巳在最後階段，將在9月立法院開議時送進立法院。但他無奈說，「雖然今年的預算還沒有完，明年的預算已經準備好了，但這就是現在國家的困難。」",
+          "url": "https://udn.com/news/story/6656/9605123?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-07-03 15:20:54",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "疑虐童 基隆某幼兒園停招1年、2教保員不得聘任",
+          "url": "https://www.cna.com.tw/news/aloc/202607030162.aspx",
+          "time": "2026-07-03 15:20:17",
+          "publisher": "中央社",
+          "severity": "yellow"
+        },
+        {
+          "title": "翻拍性平案資料私傳家長會「幫關切」 基隆校長洩密罪起訴",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492758",
+          "time": "2026-07-03 15:12:35",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "童子瑋提基隆捷運路網 雙主線雙轉運站串聯全基隆",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5492706",
+          "time": "2026-07-03 14:47:43",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "基隆幼兒園虐童懲處出爐！家長怒轟「罰6萬根本不痛不癢」",
+          "url": "https://news.nextapple.com/local/20260703/87D8B6AB4E2C75386B0B5B0CD793A723",
+          "time": "2026-07-03 13:31:59",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
         }
       ],
       "comments": []
@@ -2208,251 +2390,6 @@
           "url": "https://tw.news.yahoo.com/%E5%8D%97%E6%8A%95%E7%B8%A3%E5%BA%9C%E5%88%86%E4%BA%AB%E5%85%92%E7%AB%A5%E4%BA%A4%E9%80%9A%E5%AE%89%E5%85%A8%E5%AE%88%E5%89%87-%E8%B5%B7%E5%AE%88%E8%AD%B7%E5%AD%A9%E5%AD%90%E5%B9%B3%E5%AE%89-052238088.html",
           "time": "2026-07-03 13:22:38",
           "publisher": "Yahoo新聞",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "基隆地方動態",
-      "city": "基隆",
-      "place": "基隆市政府",
-      "level": "red",
-      "news_count": 33,
-      "comment_count": 0,
-      "negativity_pct": 15,
-      "is_urgent": false,
-      "urgency_score": 48,
-      "news_articles": [
-        {
-          "title": "「一太e衛浴」扎根基隆 砸重金蓋新總部",
-          "url": "https://www.setn.com/News.aspx?NewsID=1866821",
-          "time": "2026-07-04 12:16:40",
-          "publisher": "三立新聞網",
-          "severity": null
-        },
-        {
-          "title": "基隆虐兒案家長痛批市府處置 童子瑋怒：兩週時間無作為",
-          "url": "https://newtalk.tw/news/view/2026-07-04/1045195",
-          "time": "2026-07-04 11:33:06",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆教保員集體虐童 家長不滿處分太輕蛋洗幼兒園",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5493504",
-          "time": "2026-07-04 11:21:25",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "基隆暑假親子活動登場 結合自然、音樂與料理體驗",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5493383",
-          "time": "2026-07-04 10:22:25",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "串聯全基隆 童子瑋規劃捷運路網願景",
-          "url": "https://news.ltn.com.tw/news/politics/paper/1761269",
-          "time": "2026-07-04 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "基隆驚傳虐童！謝國樑祭鐵腕：涉案師終身禁教、園所遭停招1年",
-          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E9%A9%9A%E5%82%B3%E8%99%90%E7%AB%A5-%E8%AC%9D%E5%9C%8B%E6%A8%91%E7%A5%AD%E9%90%B5%E8%85%95-%E6%B6%89%E6%A1%88%E5%B8%AB%E7%B5%82%E8%BA%AB%E7%A6%81%E6%95%99-%E5%9C%92%E6%89%80%E9%81%AD%E5%81%9C%E6%8B%9B1%E5%B9%B4-015659472.html",
-          "time": "2026-07-04 01:56:59",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆虐童第二階段調查一週內完成 謝國樑：依法究責、追究到底！",
-          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E8%99%90%E7%AB%A5%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5%E8%AA%BF%E6%9F%A5-%E9%80%B1%E5%85%A7%E5%AE%8C%E6%88%90-%E8%AC%9D%E5%9C%8B%E6%A8%91-%E4%BE%9D%E6%B3%95%E7%A9%B6%E8%B2%AC-%E8%BF%BD%E7%A9%B6%E5%88%B0%E5%BA%95-014112742.html",
-          "time": "2026-07-04 01:41:12",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆幼兒園不當虐童停招一年 2名教保員終身不得聘任",
-          "url": "https://more-news.tw/657398/",
-          "time": "2026-07-04 01:22:08",
-          "publisher": "墨新聞",
-          "severity": "red"
-        },
-        {
-          "title": "翻轉50年老舊國宅！基隆安樂一期6號基地都更公聽會順利召開 下半年進入實質審議",
-          "url": "https://tw.news.yahoo.com/%E7%BF%BB%E8%BD%8950%E5%B9%B4%E8%80%81%E8%88%8A%E5%9C%8B%E5%AE%85-%E5%9F%BA%E9%9A%86%E5%AE%89%E6%A8%82-%E6%9C%9F6%E8%99%9F%E5%9F%BA%E5%9C%B0%E9%83%BD%E6%9B%B4%E5%85%AC%E8%81%BD%E6%9C%83%E9%A0%86%E5%88%A9%E5%8F%AC%E9%96%8B-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E9%80%B2%E5%85%A5%E5%AF%A6%E8%B3%AA%E5%AF%A9%E8%AD%B0-162300103.html",
-          "time": "2026-07-04 00:23:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "協助更生人復歸社會 基隆「向上學苑」 掛牌",
-          "url": "https://tw.news.yahoo.com/%E5%8D%94%E5%8A%A9%E6%9B%B4%E7%94%9F%E4%BA%BA%E5%BE%A9%E6%AD%B8%E7%A4%BE%E6%9C%83-%E5%9F%BA%E9%9A%86-%E5%90%91%E4%B8%8A%E5%AD%B8%E8%8B%91-%E6%8E%9B%E7%89%8C-155257457.html",
-          "time": "2026-07-03 23:52:57",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "「國家科技寶藏特展」7冃3日基隆海科館開幕",
-          "url": "https://tw.news.yahoo.com/%E5%9C%8B%E5%AE%B6%E7%A7%91%E6%8A%80%E5%AF%B6%E8%97%8F%E7%89%B9%E5%B1%95-7%E5%86%833%E6%97%A5%E5%9F%BA%E9%9A%86%E6%B5%B7%E7%A7%91%E9%A4%A8%E9%96%8B%E5%B9%95-152812219.html",
-          "time": "2026-07-03 23:28:12",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆查到致癌油存貨 1供應商下架306公斤",
-          "url": "https://news.ltn.com.tw/news/Keelung/breakingnews/5493188",
-          "time": "2026-07-03 20:59:31",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "基隆幼兒園虐童 2教保員各罰40萬",
-          "url": "https://tw.news.yahoo.com/%E5%9F%BA%E9%9A%86%E5%B9%BC%E5%85%92%E5%9C%92%E8%99%90%E7%AB%A5-2%E6%95%99%E4%BF%9D%E5%93%A1%E5%90%84%E7%BD%B040%E8%90%AC-124519178.html",
-          "time": "2026-07-03 20:45:19",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "觀護協會副總會長捐贈基隆看守所運動飲料 防範熱傷害",
-          "url": "https://taiwanreports.com/archives/997218",
-          "time": "2026-07-03 19:48:40",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "基隆安樂一期6號基地都更公聽會順利召開",
-          "url": "https://taiwanreports.com/archives/997214",
-          "time": "2026-07-03 19:46:10",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "虐童零容忍 基隆某幼兒園判停招1年",
-          "url": "https://taiwanreports.com/archives/997207",
-          "time": "2026-07-03 19:44:11",
-          "publisher": "臺灣導報",
-          "severity": "yellow"
-        },
-        {
-          "title": "暑假在家起口角 基隆19歲姊姊持刀砍傷弟",
-          "url": "https://www.mnews.tw/story/20260703sot1645001",
-          "time": "2026-07-03 19:38:40",
-          "publisher": "鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "在家疑似太吵 基隆19歲姐姐持刀砍傷弟弟",
-          "url": "https://www.cna.com.tw/news/asoc/202607030273.aspx",
-          "time": "2026-07-03 19:29:13",
-          "publisher": "中央社",
-          "severity": "yellow"
-        },
-        {
-          "title": "砸3億元買地自建！毅太企業扎根基隆 打造全台整體衛浴新里程碑",
-          "url": "https://tw.news.yahoo.com/%E7%A0%B83%E5%84%84%E5%85%83%E8%B2%B7%E5%9C%B0%E8%87%AA%E5%BB%BA-%E6%AF%85%E5%A4%AA%E4%BC%81%E6%A5%AD%E6%89%8E%E6%A0%B9%E5%9F%BA%E9%9A%86-%E6%89%93%E9%80%A0%E5%85%A8%E5%8F%B0%E6%95%B4%E9%AB%94%E8%A1%9B%E6%B5%B4%E6%96%B0%E9%87%8C%E7%A8%8B%E7%A2%91-110553272.html",
-          "time": "2026-07-03 19:05:53",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "基隆姊弟口角爆砍人 教育處探視少年媒介輔導諮商",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492936",
-          "time": "2026-07-03 17:07:56",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆19歲姊不滿弟太吵！怒持菜刀狠砍頸部",
-          "url": "https://www.setn.com/News.aspx?NewsID=1866415",
-          "time": "2026-07-03 16:43:22",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "暑假開始就出事！基隆19歲少女怒拿菜刀砍頸 弟弟濺血奪門求救",
-          "url": "https://www.mirrormedia.mg/story/20260703edi066",
-          "time": "2026-07-03 16:22:00",
-          "publisher": "鏡週刊",
-          "severity": "yellow"
-        },
-        {
-          "title": "嫌講電話太吵！基隆驚傳姊弟口角 18歲姊憤持菜刀砍傷親弟",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492852",
-          "time": "2026-07-03 16:06:49",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "基隆準公托疑不當對待幼童 勒令停招1年、2教保員各罰40萬",
-          "url": "https://news.pts.org.tw/article/815939",
-          "time": "2026-07-03 15:53:01",
-          "publisher": "公視 即時",
-          "severity": "yellow"
-        },
-        {
-          "title": "放暑假大吵！基隆19歲姊姊持刀砍弟 急致電媽媽求救",
-          "url": "https://news.ebc.net.tw/news/society/559447",
-          "time": "2026-07-03 15:30:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "(影)翻轉基隆遭邊緣化危機 童子瑋提出捷運整體路網藍圖",
-          "url": "https://newtalk.tw/news/view/2026-07-03/1045083",
-          "time": "2026-07-03 15:29:06",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "民進黨基隆市長參選人議長童子瑋今天提「基隆捷運整體路網」規畫，童子瑋說，基隆捷運應該以「雙主線」作為城市交通骨架。其中，「市區主線」由八堵串聯市中心，銜接已核定的基捷第一階段點，成為市中心通勤與觀光的重要動脈；「大武崙主線」則沿麥金路串聯長庚醫院商圈、國家新城，直達大武崙生活圈...",
-          "url": "https://udn.com/news/story/124652/9605206?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-07-03 15:20:54",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "行政院長卓榮泰今天到基隆出席毅太「企業營運總部暨整體衛浴廠」啟用典禮時致詞說，賴清德總統推動的8年增加1千億基金中小微企業轉型升級條例，現在巳在最後階段，將在9月立法院開議時送進立法院。但他無奈說，「雖然今年的預算還沒有完，明年的預算已經準備好了，但這就是現在國家的困難。」",
-          "url": "https://udn.com/news/story/6656/9605123?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-07-03 15:20:54",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "疑虐童 基隆某幼兒園停招1年、2教保員不得聘任",
-          "url": "https://www.cna.com.tw/news/aloc/202607030162.aspx",
-          "time": "2026-07-03 15:20:17",
-          "publisher": "中央社",
-          "severity": "yellow"
-        },
-        {
-          "title": "翻拍性平案資料私傳家長會「幫關切」 基隆校長洩密罪起訴",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5492758",
-          "time": "2026-07-03 15:12:35",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "童子瑋提基隆捷運路網 雙主線雙轉運站串聯全基隆",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5492706",
-          "time": "2026-07-03 14:47:43",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "基隆幼兒園虐童懲處出爐！家長怒轟「罰6萬根本不痛不癢」",
-          "url": "https://news.nextapple.com/local/20260703/87D8B6AB4E2C75386B0B5B0CD793A723",
-          "time": "2026-07-03 13:31:59",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "打造基隆交通新骨架 童子瑋端「6大路線」：串連未來30年願景",
-          "url": "https://cnews.com.tw/247260703a02/",
-          "time": "2026-07-03 13:04:03",
-          "publisher": "匯流新聞網",
           "severity": null
         }
       ],
@@ -2806,11 +2743,11 @@
       "city": "彰化",
       "place": "彰化縣政府",
       "level": "red",
-      "news_count": 50,
+      "news_count": 48,
       "comment_count": 0,
       "negativity_pct": 2,
       "is_urgent": false,
-      "urgency_score": 53,
+      "urgency_score": 51,
       "news_articles": [
         {
           "title": "杜告犬遭「鐵鍊、麻繩抽打「慘死！ 彰化惡飼主下場曝",
@@ -3147,20 +3084,6 @@
           "time": "2026-07-03 13:12:44",
           "publisher": "自由時報",
           "severity": "yellow"
-        },
-        {
-          "title": "不是八卦山、王功漁港！彰化最強景點冠軍「吃喝玩樂應有盡有、一天逛不完」：去過念念不忘",
-          "url": "https://www.storm.mg/lifestyle/11143661",
-          "time": "2026-07-03 12:57:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "沙拉油致癌物超標 彰化下架1130公斤問題油品",
-          "url": "https://www.cna.com.tw/news/aloc/202607030104.aspx",
-          "time": "2026-07-03 12:56:11",
-          "publisher": "中央社",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -3541,11 +3464,11 @@
       "city": "苗栗",
       "place": "苗栗縣政府",
       "level": "red",
-      "news_count": 55,
+      "news_count": 53,
       "comment_count": 0,
       "negativity_pct": 13,
       "is_urgent": false,
-      "urgency_score": 76,
+      "urgency_score": 74,
       "news_articles": [
         {
           "title": "180隻死雞丟溪中「放水流」 苗栗牧場業者棄屍遭起訴",
@@ -3917,20 +3840,6 @@
           "time": "2026-07-03 13:46:56",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "苗栗縣文化觀光局攜手淨灘迎開幕 通霄沙雕藝術節打造友善環境提升國際能見度",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqcE01aGRucElQa2pjbXhNRUZnM2JRdWpXaHhsdVhpaU5aVHlJcFpyNGxRX3phRmZIbFVrOHpFb2U5bGxjN0oxSjgwdzVZclJNc3c?oc=5",
-          "time": "2026-07-03 13:04:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "苗栗縣文觀局攜手淨灘活動 通霄沙雕藝術節打造友善環境 - 消費新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZWlBZzR4ckRHMlBmVXZoWjN1WlI1UlBONzF1MVUzbFRKTWlEdU9wcW9rS2o5ckM1b3NsSXZsbThRbW9vMkhlRjR3b01FOVJrWnJzLTc4TWptUGRhTEhnZW4xYmduNVJMcDBScnlUUi03eE9lYVU2bXRtdWFhMFhZTUc0TDQ3Z3lpMzFxSDQ2VzhqZw?oc=5",
-          "time": "2026-07-03 13:01:30",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -3940,11 +3849,11 @@
       "city": "台南",
       "place": "台南市政府",
       "level": "red",
-      "news_count": 60,
+      "news_count": 57,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 72,
+      "urgency_score": 69,
       "news_articles": [
         {
           "title": "高溫特報／台南熱飆38度！氣象署11縣市高溫警戒 新北、台北超熱 | 生活",
@@ -4344,27 +4253,6 @@
           "time": "2026-07-03 13:22:44",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "台南火車站前改善工程動土 預定116年底完工",
-          "url": "https://www.cna.com.tw/news/aloc/202607030108.aspx",
-          "time": "2026-07-03 13:07:22",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "國民黨：台南治水神話破功 賴清德竟造謠沒錢救災",
-          "url": "https://news.nextapple.com/politics/20260703/707F773C7B67C490E1CBA99793277132",
-          "time": "2026-07-03 13:05:02",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "看賴清德嘴蔣萬安 國民黨：三爺溪災情慘 賴「台南治水神話」破功",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vZm4yUkE4UEEtd2RmbmhaWnZBUHFKRkNEaW5pc2xXemNQbHpDLS1yMjJUNTBPZ2VNazYwdHljVkZqY2d5bjlWaklCazBqWnZQNU1uWnctUHA?oc=5",
-          "time": "2026-07-03 12:54:00",
-          "publisher": "Google News→梅花新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -5816,11 +5704,11 @@
       "city": "屏東",
       "place": "屏東縣政府",
       "level": "red",
-      "news_count": 81,
+      "news_count": 80,
       "comment_count": 0,
       "negativity_pct": 2,
       "is_urgent": false,
-      "urgency_score": 87,
+      "urgency_score": 86,
       "news_articles": [
         {
           "title": "屏東幼童疑遭虐全身瘀傷 縣府怒查：保母停托還違法偷收「立即廢照」",
@@ -6380,13 +6268,6 @@
           "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNZXdwcjY5Unc4RUtFblBzVFU1ZURhUzhYalptc2QzZUhlQUxyQlJ0UmJtdExBV29jb0kxUF9mSXpGVFlKeEJNaWhYVGpUMnNWQ2djNm9zYVpHbTNSNGRQOWVLOTV2S2gzQ25hdi1rYk9RbGJiLVV6dFdwbVltc2dlWWE0dlF2R0tRQ2FJTFhpMVduTjV0WDNMUk1ITkN5MzVGLVZveEVpbmRNUngwX2U1VzRVUkpDUDBhcmxMV3Rvd1BfbW51YWJKT2hoVldNU3RiWGhYR0RFNnduT2dkcDU3U1lhLW40aWl1Q200QkFDOXppbnMzMnNPWDVZWUF0LTNiYlF1Smt3NEx5R2FKcllPWjFfVng?oc=5",
           "time": "2026-07-03 13:20:41",
           "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "屏東熱飆38.7度！12縣市高溫警示",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9IR0FDV053MTNKMU5JMDZWRXNTZEl6T21ndGs5d2ZqNlFUemRobkRKajRKY0pFNnJYOXhsaDdwZzFvU0VicDBRUXAyc2ExV3RGc1R2bXRBbUd4X3hFTDQxbVNPeWnSAWpBVV95cUxQYkNTLTZhSmpFQjM5UGtScmlaak0zM2hOMTIxMGxFRzAxamtPajhLbHJVSzRTWDBoeDU4Q1BfMzQ2elRJR21NUmtqajVSZ2IxU1kyQXAxdE54anpXUVBYUm1peTlGOW95bHBB?oc=5",
-          "time": "2026-07-03 13:03:28",
-          "publisher": "自由時報",
           "severity": null
         }
       ],
@@ -7018,14 +6899,21 @@
     {
       "title": "高雄地方動態",
       "city": "高雄",
-      "place": "高雄市三民區",
+      "place": "高雄市楠梓區",
       "level": "red",
-      "news_count": 132,
+      "news_count": 128,
       "comment_count": 0,
       "negativity_pct": 5,
       "is_urgent": false,
-      "urgency_score": 153,
+      "urgency_score": 149,
       "news_articles": [
+        {
+          "title": "耗資7.1億元！高雄楠梓坑運動中心開幕 陳其邁笑稱被騙",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OYWRoTWZMYmVESVBDU1JZbmswbWFCWlp5RkFaY1Fwdy1TR2w5SVBYbEp2QmVoN0tMLVM4NklPajczRWlMVUZNam9ISGlodURR0gFWQVVfeXFMT3VDYUtQdUZ3a1RWZjAyc2FNTTJTOWM0V3B0bktUM0xMLU15R0xvNEpteVFKMWI3dEtzWnFxajBOWW13M21QUWtSajN6ZDhPeGV2Tzg1YkE?oc=5",
+          "time": "2026-07-04 12:42:58",
+          "publisher": "Google News→UDN",
+          "severity": null
+        },
         {
           "title": "【每日揭詐】高雄KTV歡唱變調！遭友人集體設局詐賭 男被逼簽500萬本票",
           "url": "https://www.taisounds.com/news/content/96/265629",
@@ -7914,41 +7802,6 @@
           "time": "2026-07-03 13:19:35",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "周子瑜等歌手高雄啤酒音樂節接力嗨唱 陳其邁呼籲搭捷運或輕軌",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWSHBOTzZ5a2lybnRCX3hqQmpUenFQQmpiTjFCQUFwOFdISDJxblJieUkwc0tqVTliWlUyRERzMDJxU18tWVAwT2xJZlZKTEo4amFrVHJNZVE3MWFLTXBwc3Q4c0zSAWpBVV95cUxQWFFXX09rM1Y4VkV0SHZYemE0MmtSR2x2M3c1V1VVRXZURFNQMm40SGtaR2wxSWtVU3lyVzlTYk8xdE8zbkQ0a2hRRjc5WDRyaVBnLUhrN0VxdGtFM3ZaQnlrM1A5RVlnak13?oc=5",
-          "time": "2026-07-03 13:08:02",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "周子瑜等歌手高雄啤酒音樂節接力嗨唱 陳其邁呼籲搭捷運或輕軌",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5492619",
-          "time": "2026-07-03 13:08:02",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "高雄VS.台北遮陽傘大對決！林育卉揭安全隱憂轟：初心是什麼？｜#頭家來開講",
-          "url": "https://www.youtube.com/watch?v=jr1EpSnfuTY",
-          "time": "2026-07-03 13:00:37",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "這一幕讓習近平很火大？高市早苗與莫迪手握手、日印聯手布局稀土！？-【關鍵時刻】每日懶人包 20260703",
-          "url": "https://www.youtube.com/watch?v=peYzdgObcdA",
-          "time": "2026-07-03 13:00:22",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "三民家商教甄遭控不公18校長挨告 高市教局：支應訴訟經費力挺校長",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5492598",
-          "time": "2026-07-03 12:58:53",
-          "publisher": "自由時報",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -7958,11 +7811,11 @@
       "city": "桃園",
       "place": "桃園市政府",
       "level": "red",
-      "news_count": 162,
+      "news_count": 156,
       "comment_count": 0,
       "negativity_pct": 4,
       "is_urgent": false,
-      "urgency_score": 183,
+      "urgency_score": 174,
       "news_articles": [
         {
           "title": "桃園推幼兒「永續與多元閱讀」 18所公立幼兒園展現豐碩創新成果",
@@ -9055,48 +8908,6 @@
           "time": "2026-07-03 13:20:09",
           "publisher": "Google News→taidaily.com",
           "severity": null
-        },
-        {
-          "title": "華通再出手擴產租用桃園觀音廠房/覓地建新廠- 新聞",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUW9JRDdielJaNjdzQUI0ZVRMaG83NTl3Y2JieDlqU09wNEIxR2ljbzdubS1fX0dYMXBQTllBRVNGbkJKNmxwNDV2LVFPZVhVNWNNSEtPNVFfLUtlcDRjWENtNEFIeE5zMDFGZWNFTnQxNFhyZlNENG40QkdkNWluQ3g4cDgzZG5Ya3NvN0lyZTFlQQ?oc=5",
-          "time": "2026-07-03 13:05:00",
-          "publisher": "Google News→MoneyDJ",
-          "severity": null
-        },
-        {
-          "title": "中華電信桃園營運處舉辦第二屆「小小航海王奇幻科學探險營」 陪伴偏鄉學童探索科技與永續新視野",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBjSldhc3lBcnBsbU9meGhnaHhHS3plcmx0Ni05Z2oxSFhfdW4yZkxwTkdVbGU5dm9pbXNjZXE3Z1JpWTdWZnh1eQ?oc=5",
-          "time": "2026-07-03 13:00:30",
-          "publisher": "Google News→台灣民眾電子報",
-          "severity": null
-        },
-        {
-          "title": "「置地廣場桃園」是他設計的！ 名建築師墜樓同業惋嘆",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBDMzZFeVpNZzdxZnRXdjJ0SjhlZEd5bTZ2eEhicUJwSmxOYW9WQ1N4WHZsZGRtLUJDLW5zekNjRVhNOGNTNG8wZUR0SVdIdTDSAWtBVV95cUxQWk82dGNXX1JJUDNFT0tadUIzZFdXTVhldkhmTXEtZW9ra01RMDFjeDVsYVVoVldaUjh6a0RJcGN1eFdhSnRMa0dOeVBubGl2OUN5QnVSbnR6aGJRa05uVVJZSmdMdGRtTGM4OA?oc=5",
-          "time": "2026-07-03 12:55:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        },
-        {
-          "title": "把「藍區生活」帶進桃園！心樸市集桃園寶山店開幕嚴選有機友善好物實踐永續| 唐可欣 | 品味生活",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1hNUwtalVmS09qMlZoVnFqeEFtSkpPbUZicl84cTlzWjkwX19HMUtBejlPd3FNaF9UMjdPazYwNzkxMDluUnpCSE5LX2MyZw?oc=5",
-          "time": "2026-07-03 12:54:29",
-          "publisher": "Google News→風傳媒",
-          "severity": null
-        },
-        {
-          "title": "把「藍區生活」帶進桃園！心樸市集桃園寶山店開幕 嚴選有機友善好物實踐永續",
-          "url": "https://www.storm.mg/article/11146802",
-          "time": "2026-07-03 12:54:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "桃園地景藝術節開跑！35公里海岸線增藝術氣息代表台灣走向國際- 瘋台灣",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14Ykw5bkowTnRiczBURVFoSmRDTWYtN1pPZ2tYZ2JYcHl3SGV4NWtxRFQ0bDJqanYyZWhaTTU1c25NS05jRmFQeDNjQm5WLVM1UFFPOTNQVnFNSUM5eUE1NnFvcmRCS0hpUzcwcg?oc=5",
-          "time": "2026-07-03 12:53:37",
-          "publisher": "Google News→觸mii",
-          "severity": null
         }
       ],
       "comments": []
@@ -9106,11 +8917,11 @@
       "city": "台北",
       "place": "台北市士林區",
       "level": "red",
-      "news_count": 179,
+      "news_count": 175,
       "comment_count": 0,
-      "negativity_pct": 4,
+      "negativity_pct": 5,
       "is_urgent": false,
-      "urgency_score": 203,
+      "urgency_score": 199,
       "news_articles": [
         {
           "title": "致癌油流入北市42校 蔣萬安認了：全面預防性下架 | 政治",
@@ -10336,34 +10147,6 @@
           "time": "2026-07-03 13:20:09",
           "publisher": "Google News→taidaily.com",
           "severity": null
-        },
-        {
-          "title": "《黑白大廚》小菜之王來台！MAMALEE主廚宋夏瑟蘭客座台北晶華 端出招牌蓮藕炸雞、羽衣甘藍煎餅",
-          "url": "https://tw.news.yahoo.com/%E9%BB%91%E7%99%BD%E5%A4%A7%E5%BB%9A-%E5%B0%8F%E8%8F%9C%E4%B9%8B%E7%8E%8B%E4%BE%86%E5%8F%B0-mamalee%E4%B8%BB%E5%BB%9A%E5%AE%8B%E5%A4%8F%E7%91%9F%E8%98%AD%E5%AE%A2%E5%BA%A7%E5%8F%B0%E5%8C%97%E6%99%B6%E8%8F%AF-%E7%AB%AF%E5%87%BA%E6%8B%9B%E7%89%8C%E8%93%AE%E8%97%95%E7%82%B8%E9%9B%9E-%E7%BE%BD%E8%A1%A3%E7%94%98%E8%97%8D%E7%85%8E%E9%A4%85-130800454.html",
-          "time": "2026-07-03 13:08:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄VS.台北遮陽傘大對決！林育卉揭安全隱憂轟：初心是什麼？｜#頭家來開講",
-          "url": "https://www.youtube.com/watch?v=jr1EpSnfuTY",
-          "time": "2026-07-03 13:00:37",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "北市4年砸92億推AI教育 每間教室暑假完成智慧大螢幕",
-          "url": "https://news.ltn.com.tw/news/Taipei/breakingnews/5492550",
-          "time": "2026-07-03 12:56:12",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "看賴清德嘴蔣萬安 國民黨：三爺溪災情慘 賴「台南治水神話」破功",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vZm4yUkE4UEEtd2RmbmhaWnZBUHFKRkNEaW5pc2xXemNQbHpDLS1yMjJUNTBPZ2VNazYwdHljVkZqY2d5bjlWaklCazBqWnZQNU1uWnctUHA?oc=5",
-          "time": "2026-07-03 12:54:00",
-          "publisher": "Google News→梅花新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -10373,11 +10156,11 @@
       "city": "台中",
       "place": "台中市北屯區",
       "level": "red",
-      "news_count": 182,
+      "news_count": 180,
       "comment_count": 0,
-      "negativity_pct": 8,
+      "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 224,
+      "urgency_score": 219,
       "news_articles": [
         {
           "title": "時薪1千徵「動物飼養員」 台中海洋館澄清「詐騙」",
@@ -11638,20 +11421,6 @@
           "time": "2026-07-03 13:08:43",
           "publisher": null,
           "severity": "red"
-        },
-        {
-          "title": "[Gossiping] [新聞] 知名建築師台中墜樓身亡 代表作遍及中",
-          "url": "https://www.ptt.cc/bbs/Gossiping/M.1783055297.A.A06.html",
-          "time": "2026-07-03 13:08:17",
-          "publisher": null,
-          "severity": "red"
-        },
-        {
-          "title": "台中勇腳伯散步迷航29公里 從后里走到大肚！暖警買車票助返家",
-          "url": "https://news.nextapple.com/local/20260703/8F234DBFD2F1E306CDFFA7571291D010",
-          "time": "2026-07-03 12:54:44",
-          "publisher": "壹蘋新聞網",
-          "severity": null
         }
       ],
       "comments": []
