@@ -60223,8 +60223,20 @@
     },
     {
       "date": "2026-07-24",
-      "snapshot_at": "2026-07-24T06:03:49.820936+00:00",
+      "snapshot_at": "2026-07-24T06:19:35.455744+00:00",
       "hotspots": [
+        {
+          "title": "垃圾山",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 3,
+          "sample_titles": []
+        },
         {
           "title": "盧秀燕訪美外交",
           "city": "台中",
@@ -60308,15 +60320,15 @@
           ]
         },
         {
-          "title": "垃圾山",
+          "title": "廚餘山",
           "city": "台中",
-          "place": "台中市霧峰區",
+          "place": "台中市政府",
           "level": "green",
           "news_count": 0,
-          "comment_count": 4,
+          "comment_count": 2,
           "negativity_pct": 0,
-          "is_urgent": true,
-          "urgency_score": 12,
+          "is_urgent": false,
+          "urgency_score": 6,
           "sample_titles": []
         },
         {
@@ -60336,27 +60348,15 @@
           ]
         },
         {
-          "title": "廚餘山",
-          "city": "台中",
-          "place": "台中市霧峰區",
-          "level": "green",
-          "news_count": 0,
-          "comment_count": 6,
-          "negativity_pct": 0,
-          "is_urgent": true,
-          "urgency_score": 18,
-          "sample_titles": []
-        },
-        {
           "title": "雲林地方動態",
           "city": "雲林",
           "place": "雲林縣政府",
           "level": "green",
-          "news_count": 15,
+          "news_count": 14,
           "comment_count": 0,
           "negativity_pct": 7,
           "is_urgent": false,
-          "urgency_score": 18,
+          "urgency_score": 17,
           "sample_titles": [
             "雲林深化濕地保育軟實力 宜梧國中獲全國科展鄉土教材獎",
             "屏東陸興高中、雲林大成商工解除專案輔導 教育部說明原因",
@@ -60531,11 +60531,11 @@
           "city": "南投",
           "place": "南投縣政府",
           "level": "yellow",
-          "news_count": 16,
+          "news_count": 14,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 16,
+          "urgency_score": 14,
           "sample_titles": [
             "活化舊南投高中宿舍 縣府攜手市公所打造托嬰中心與親子館",
             "南投縣國中小校長交接 象徵教育薪火相傳",
@@ -60579,11 +60579,11 @@
           "city": "彰化",
           "place": "彰化縣政府",
           "level": "yellow",
-          "news_count": 28,
+          "news_count": 27,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 28,
+          "urgency_score": 27,
           "sample_titles": [
             "彰化銀行「保險小學堂」前進原鄉部落  以健康力與防詐力守護樂齡生活",
             "不捨！彰化排隊名店謝家爌肉飯老闆驟逝 今起永久歇業",
@@ -60607,21 +60607,6 @@
           ]
         },
         {
-          "title": "台中弊案爭議",
-          "city": "台中",
-          "place": "台中市政府",
-          "level": "red",
-          "news_count": 2,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
-          "sample_titles": [
-            "[Gossiping] [新聞] 台中市3連霸里長高敏裕涉貪遭收押　民進",
-            "[TaichungBun] [新聞] 台中市3連霸里長高敏裕涉貪遭收押　民進"
-          ]
-        },
-        {
           "title": "新北弊案爭議",
           "city": "新北",
           "place": "新北市政府",
@@ -60634,6 +60619,21 @@
           "sample_titles": [
             "新北福音幼兒園不當管教案 1教保員1助理強制罪起訴",
             "新北福音幼兒園涉不當管教 2教保員強制罪起訴"
+          ]
+        },
+        {
+          "title": "台中弊案爭議",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "red",
+          "news_count": 2,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": true,
+          "urgency_score": 8,
+          "sample_titles": [
+            "[Gossiping] [新聞] 台中市3連霸里長高敏裕涉貪遭收押　民進",
+            "[TaichungBun] [新聞] 台中市3連霸里長高敏裕涉貪遭收押　民進"
           ]
         },
         {
@@ -60689,15 +60689,31 @@
           "city": "基隆",
           "place": "基隆市政府",
           "level": "red",
-          "news_count": 23,
+          "news_count": 22,
           "comment_count": 0,
-          "negativity_pct": 13,
+          "negativity_pct": 14,
           "is_urgent": false,
-          "urgency_score": 32,
+          "urgency_score": 31,
           "sample_titles": [
             "毒油風暴擴大，在野黨發動明日凱道反毒油抗議遊行。台北市長蔣萬安、台中市長盧秀燕、基隆市長謝國樑今日到立法院，與國民黨團、",
             "毒油風暴擴大，在野黨發動明日凱道反毒油抗議遊行。台北市長蔣萬安、台中市長盧秀燕、基隆市長謝國樑今赴立院與國民黨團、民眾黨",
             "中聯致癌油風暴，台北市長蔣萬安與台中市長盧秀燕、基隆市長謝國樑赴立院與國民黨團開記者會，批評中央。民進黨立院黨團幹事長莊"
+          ]
+        },
+        {
+          "title": "澎湖地方動態",
+          "city": "澎湖",
+          "place": "澎湖縣政府",
+          "level": "red",
+          "news_count": 29,
+          "comment_count": 0,
+          "negativity_pct": 3,
+          "is_urgent": false,
+          "urgency_score": 32,
+          "sample_titles": [
+            "澎湖縣長選將葉竹林提出「弱勢幸福工程」 盼讓社會支持體系更完整",
+            "澎湖最偏遠雙吉派出所落成 提供全天候警政服務",
+            "澎湖男毒駕拒檢撞傷騎士落跑 警45分鐘火速圍捕逮人送辦"
           ]
         },
         {
@@ -60717,31 +60733,15 @@
           ]
         },
         {
-          "title": "澎湖地方動態",
-          "city": "澎湖",
-          "place": "澎湖縣政府",
-          "level": "red",
-          "news_count": 31,
-          "comment_count": 0,
-          "negativity_pct": 3,
-          "is_urgent": false,
-          "urgency_score": 34,
-          "sample_titles": [
-            "澎湖縣長選將葉竹林提出「弱勢幸福工程」 盼讓社會支持體系更完整",
-            "澎湖最偏遠雙吉派出所落成 提供全天候警政服務",
-            "澎湖男毒駕拒檢撞傷騎士落跑 警45分鐘火速圍捕逮人送辦"
-          ]
-        },
-        {
           "title": "新竹市地方動態",
           "city": "新竹市",
           "place": "新竹市政府",
           "level": "red",
-          "news_count": 38,
+          "news_count": 35,
           "comment_count": 0,
           "negativity_pct": 3,
           "is_urgent": false,
-          "urgency_score": 41,
+          "urgency_score": 38,
           "sample_titles": [
             "竹市啟用無煙靈堂 宮廟捐款助弱勢殯葬專戶",
             "甲醛米粉流向校園？ 民進黨要求公布資料｜新竹市政府清查 學校並未使用到問題米粉",
@@ -60769,11 +60769,11 @@
           "city": "屏東",
           "place": "屏東縣政府",
           "level": "red",
-          "news_count": 54,
+          "news_count": 50,
           "comment_count": 0,
           "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 60,
+          "urgency_score": 56,
           "sample_titles": [
             "快訊／氣象署12縣市「高溫警戒」！臺南、屏東、花蓮、台東飆36度 | 天氣預報 | 生活",
             "快訊／氣象署12縣市「高溫警戒」！臺南、屏東、花蓮、台東飆36度",
@@ -60785,11 +60785,11 @@
           "city": "台南",
           "place": "台南市政府",
           "level": "red",
-          "news_count": 56,
+          "news_count": 54,
           "comment_count": 0,
           "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 62,
+          "urgency_score": 60,
           "sample_titles": [
             "總統賴清德昨天主持國家氣候變遷對策委員會，特別責成行政院副院長鄭麗君督導司法嚴格查緝地方非法之徒介入綠能產業發展，只是鄭",
             "立委郭國文、賴惠員今天上午共同舉行「酪梨＋牛奶－台南鮮在進行式」活動，推廣台南在地酪梨，並響應7月1日正式上路的國產鮮乳",
@@ -60817,11 +60817,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 87,
+          "news_count": 86,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 102,
+          "urgency_score": 101,
           "sample_titles": [
             "為厚植全社會防衛與後備韌性，國防部明天於台北復興崗營區舉辦「2026全國空氣軟槍競技射擊比賽－北區初賽」。活動以近百位後",
             "「頂樓戶都賣光了！」桃園豪宅建商：資金回流愈來愈明顯",
@@ -60833,11 +60833,11 @@
           "city": "高雄",
           "place": "高雄市鳳山區",
           "level": "red",
-          "news_count": 88,
+          "news_count": 86,
           "comment_count": 0,
           "negativity_pct": 8,
           "is_urgent": false,
-          "urgency_score": 109,
+          "urgency_score": 107,
           "sample_titles": [
             "高雄五星級飯店8月底熄燈！國旅大動盪4間全停業 內幕原因一次看 | 美食旅遊 | 生活",
             "司法改革黨今早針對中聯油脂毒油事件發起車隊遊行，前往高雄市府、行政院南服中心遞交陳情書。市長參選人、黨主席張靜指出，人民",
@@ -60849,11 +60849,11 @@
           "city": "台北",
           "place": "台北市南港區",
           "level": "red",
-          "news_count": 130,
+          "news_count": 128,
           "comment_count": 0,
           "negativity_pct": 8,
           "is_urgent": false,
-          "urgency_score": 160,
+          "urgency_score": 158,
           "sample_titles": [
             "蔣萬安不甩虐童！議員：他眼中台北爛命一條",
             "蔣萬安不甩虐童！議員：他眼中台北爛命一條 - 政治新聞 - PChome Online 新聞",
@@ -60865,11 +60865,11 @@
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "red",
-          "news_count": 151,
+          "news_count": 140,
           "comment_count": 0,
           "negativity_pct": 7,
           "is_urgent": false,
-          "urgency_score": 181,
+          "urgency_score": 170,
           "sample_titles": [
             "行政院在爭議聲中拍板高鐵延伸宜蘭，行政院前政務委員張景森在臉書貼文宣布從即日起，退出民進黨。張景森強調，無法認同閣揆卓榮",
             "批延伸宜蘭是「盲腸高鐵」 張景森宣布退出民進黨：無法認同卓榮泰",
@@ -60882,14 +60882,14 @@
           "place": "台中市政府",
           "level": "red",
           "news_count": 186,
-          "comment_count": 31,
+          "comment_count": 10,
           "negativity_pct": 3,
           "is_urgent": true,
-          "urgency_score": 255,
+          "urgency_score": 224,
           "sample_titles": [
+            "【投書】 從食安風暴看政治格局盧秀燕實務倡議制度展現國家治理高度",
             "商界大老批「一通電話都沒打」！盧秀燕嗆「他深綠的」 綠議員轟：別再貼政治標籤",
-            "遭商會理事長開轟 盧秀燕怒回他是「深綠」 綠抨產業求救聲政治化",
-            "號召民眾725上凱道 盧秀燕質疑中央「誰在包庇？」"
+            "遭商會理事長開轟 盧秀燕怒回他是「深綠」 綠抨產業求救聲政治化"
           ]
         },
         {
@@ -60897,15 +60897,15 @@
           "city": "台中",
           "place": "台中市西區",
           "level": "red",
-          "news_count": 306,
+          "news_count": 300,
           "comment_count": 0,
           "negativity_pct": 9,
           "is_urgent": false,
-          "urgency_score": 390,
+          "urgency_score": 384,
           "sample_titles": [
+            "中聯苯駢芘油品盧秀燕堅持寧嚴勿鬆！ 中市府喊卡：4大業者全配合",
             "有空去凱道無心市政? 台中商業會理事長痛批盧秀燕",
-            "中市府勸油品業者別上架 學者盼回歸科學檢驗",
-            "中市商會理事長質疑盧秀燕卸責食安 鄭照新：個人言論 | 中廣新聞網"
+            "中市府勸油品業者別上架 學者盼回歸科學檢驗"
           ]
         }
       ]
