@@ -64410,8 +64410,20 @@
     },
     {
       "date": "2026-07-30",
-      "snapshot_at": "2026-07-30T07:40:44.396259+00:00",
+      "snapshot_at": "2026-07-30T07:56:35.071928+00:00",
       "hotspots": [
+        {
+          "title": "垃圾山",
+          "city": "台中",
+          "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 3,
+          "sample_titles": []
+        },
         {
           "title": "盧秀燕訪美外交",
           "city": "台中",
@@ -64497,20 +64509,6 @@
           ]
         },
         {
-          "title": "南投車禍事件",
-          "city": "南投",
-          "place": "南投縣政府",
-          "level": "green",
-          "news_count": 1,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": false,
-          "urgency_score": 4,
-          "sample_titles": [
-            "南投台14甲死亡車禍！18歲重機男摔車外拋捲車底…「身體對折」遭輾斃"
-          ]
-        },
-        {
           "title": "台中車禍事件",
           "city": "台中",
           "place": "台中市政府",
@@ -64522,6 +64520,20 @@
           "urgency_score": 4,
           "sample_titles": [
             "台中又傳毒駕車禍！休旅車追撞休旅再撞對向自小客車 肇事車內搜出毒品駕駛還是通緝犯"
+          ]
+        },
+        {
+          "title": "南投車禍事件",
+          "city": "南投",
+          "place": "南投縣政府",
+          "level": "green",
+          "news_count": 1,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": false,
+          "urgency_score": 4,
+          "sample_titles": [
+            "南投台14甲死亡車禍！18歲重機男摔車外拋捲車底…「身體對折」遭輾斃"
           ]
         },
         {
@@ -64595,16 +64607,19 @@
           ]
         },
         {
-          "title": "垃圾山",
+          "title": "廚餘山",
           "city": "台中",
           "place": "台中市政府",
           "level": "green",
-          "news_count": 0,
-          "comment_count": 2,
+          "news_count": 2,
+          "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 6,
-          "sample_titles": []
+          "urgency_score": 2,
+          "sample_titles": [
+            "營養午餐免費不能犧牲品質 民進黨台中市議員陳雅惠促中市府提出全市廚餘解方",
+            "變相剝削？台中外埔園區廚餘處理暴增 地方回饋金未調整"
+          ]
         },
         {
           "title": "藍營路線爭議",
@@ -64634,21 +64649,6 @@
           "sample_titles": [
             "台中千坪農地違建工廠遭抗議20年 居民怒吼：明天換手另起爐灶",
             "蔣萬安變戰狼 藍營天王角力再升溫！一場凱道抗議，讓鄭麗文、盧秀燕角色更尷尬"
-          ]
-        },
-        {
-          "title": "廚餘山",
-          "city": "台中",
-          "place": "台中市政府",
-          "level": "green",
-          "news_count": 2,
-          "comment_count": 1,
-          "negativity_pct": 0,
-          "is_urgent": false,
-          "urgency_score": 5,
-          "sample_titles": [
-            "營養午餐免費不能犧牲品質 民進黨台中市議員陳雅惠促中市府提出全市廚餘解方",
-            "變相剝削？台中外埔園區廚餘處理暴增 地方回饋金未調整"
           ]
         },
         {
@@ -64795,11 +64795,11 @@
           "city": "新竹縣",
           "place": "新竹縣政府",
           "level": "yellow",
-          "news_count": 18,
+          "news_count": 16,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 18,
+          "urgency_score": 16,
           "sample_titles": [
             "新竹縣八月規劃40場社福活動 名額有限動作要快！",
             "新竹縣藝術與美感教育成果顯現 國中生李若歆榮獲全國導覽達人首獎",
@@ -64843,11 +64843,11 @@
           "city": "苗栗",
           "place": "苗栗縣政府",
           "level": "yellow",
-          "news_count": 52,
+          "news_count": 49,
           "comment_count": 0,
           "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 55,
+          "urgency_score": 52,
           "sample_titles": [
             "捕捉光影之美─「2026年苗栗縣攝影學會會員影展」山月軒登場",
             "暑假別讓孩子黏手機 苗栗借書寫心得還能換好禮",
@@ -64855,15 +64855,31 @@
           ]
         },
         {
+          "title": "澎湖地方動態",
+          "city": "澎湖",
+          "place": "澎湖縣政府",
+          "level": "yellow",
+          "news_count": 51,
+          "comment_count": 0,
+          "negativity_pct": 8,
+          "is_urgent": false,
+          "urgency_score": 63,
+          "sample_titles": [
+            "陸片《澎湖海戰》7原因上映前撤檔 學者：拍習近平馬屁拍到馬腿",
+            "澎湖西嶼陸域風電異地說明會突喊停 各界嚴陣以待防範捲土重來",
+            "武統神話翻車？《澎湖海戰》突撤檔學者揭：7大死穴嚇壞北京| Newtalk"
+          ]
+        },
+        {
           "title": "宜蘭地方動態",
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "yellow",
-          "news_count": 62,
+          "news_count": 57,
           "comment_count": 0,
           "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 65,
+          "urgency_score": 60,
           "sample_titles": [
             "擘劃宜蘭黃金十年！林國漳攜手韓瑩、黃適超 發表「一高二快 東西貫通 南北串聯」交通願景",
             "守護宜蘭每一個孩子！吳宗憲推「幼托安全四方針」 打造安心托育環境",
@@ -65000,11 +65016,11 @@
           "city": "新竹市",
           "place": "新竹市政府",
           "level": "red",
-          "news_count": 47,
+          "news_count": 46,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 47,
+          "urgency_score": 46,
           "sample_titles": [
             "預約更便利！高虹安市長宣布竹市「健檢365」報名系統全面升級 8月3日正式上線",
             "稱「甲醛炊粉煮一煮就能吃」？ 莊競程轟竹市府荒腔走板",
@@ -65016,31 +65032,15 @@
           "city": "台南",
           "place": "台南市政府",
           "level": "red",
-          "news_count": 49,
+          "news_count": 47,
           "comment_count": 0,
           "negativity_pct": 6,
           "is_urgent": false,
-          "urgency_score": 58,
+          "urgency_score": 56,
           "sample_titles": [
             "放鴿笭文化知識王擂台賽、桌遊PK賽 創新文化教育傳承台南百年民俗",
             "AI當健身教練 南市國中「深蹲挑戰助手」即時抓姿勢",
             "南市勞工局啟動熱危害預防專案檢查並鼓勵科技防災 守護勞工遠離熱疾病"
-          ]
-        },
-        {
-          "title": "澎湖地方動態",
-          "city": "澎湖",
-          "place": "澎湖縣政府",
-          "level": "red",
-          "news_count": 52,
-          "comment_count": 0,
-          "negativity_pct": 8,
-          "is_urgent": false,
-          "urgency_score": 64,
-          "sample_titles": [
-            "陸片《澎湖海戰》7原因上映前撤檔 學者：拍習近平馬屁拍到馬腿",
-            "澎湖西嶼陸域風電異地說明會突喊停 各界嚴陣以待防範捲土重來",
-            "武統神話翻車？《澎湖海戰》突撤檔學者揭：7大死穴嚇壞北京| Newtalk"
           ]
         },
         {
@@ -65064,11 +65064,11 @@
           "city": "新北",
           "place": "新北市政府",
           "level": "red",
-          "news_count": 81,
+          "news_count": 78,
           "comment_count": 0,
           "negativity_pct": 1,
           "is_urgent": false,
-          "urgency_score": 84,
+          "urgency_score": 81,
           "sample_titles": [
             "7/31台北、新北、嘉義7縣市停水！最長10小時沒水 影響範圍出爐 | 生活",
             "新北萬里消波塊驚見浮屍 遺留藍色運動鞋身分待查",
@@ -65080,11 +65080,11 @@
           "city": "屏東",
           "place": "屏東縣政府",
           "level": "red",
-          "news_count": 81,
+          "news_count": 79,
           "comment_count": 0,
           "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 90,
+          "urgency_score": 88,
           "sample_titles": [
             "趁人潮掩護下手偷竊　屏東婦人進超商「0元購」遭店員活逮",
             "2女酒駕雙亡......暑假機車事故死亡率攀升 屏東縣府強化交通防制",
@@ -65096,11 +65096,11 @@
           "city": "桃園",
           "place": "桃園市政府",
           "level": "red",
-          "news_count": 130,
+          "news_count": 122,
           "comment_count": 0,
-          "negativity_pct": 3,
+          "negativity_pct": 2,
           "is_urgent": false,
-          "urgency_score": 142,
+          "urgency_score": 128,
           "sample_titles": [
             "桃園地景藝術節移動式作品 元智大學師生展現海岸永續創意",
             "FAAS登桃園鐵玫瑰熱音賞 擔任決賽嘉賓鼓勵新秀",
@@ -65112,11 +65112,11 @@
           "city": "高雄",
           "place": "高雄市鳳山區",
           "level": "red",
-          "news_count": 136,
+          "news_count": 132,
           "comment_count": 0,
-          "negativity_pct": 10,
+          "negativity_pct": 9,
           "is_urgent": false,
-          "urgency_score": 175,
+          "urgency_score": 168,
           "sample_titles": [
             "遭指卸任後可能出國當「哈佛學人」的高雄市長陳其邁今天說，市長最重要是做好市政，政壇最不缺謠言，這不是市民要看到的事。做實",
             "登革熱風險升溫！台糖多處菜園、空地揪出積水孳生病媒蚊 高市府開罰9.6萬",
@@ -65128,15 +65128,15 @@
           "city": "台中",
           "place": "台中市西屯區",
           "level": "red",
-          "news_count": 144,
+          "news_count": 142,
           "comment_count": 0,
           "negativity_pct": 4,
           "is_urgent": false,
-          "urgency_score": 162,
+          "urgency_score": 160,
           "sample_titles": [
+            "中市免費營養午餐四菜流標 議員憂品質",
             "盧秀燕︰捷運藍線「命運多舛」喊話中央公平支持台中捷運建設",
-            "模型車底藏6.6公斤海洛因闖關！泰國毒郵包直送台中 黑市3千萬遭刑事局一網打盡",
-            "台北市長蔣萬安日前拋出倒閣提議，台中市長盧秀燕今天上午表示，若倒閣成功、國會解散重選，希望年底合併選舉。中選會主委游盈隆"
+            "模型車底藏6.6公斤海洛因闖關！泰國毒郵包直送台中 黑市3千萬遭刑事局一網打盡"
           ]
         },
         {
@@ -65144,11 +65144,11 @@
           "city": "花蓮",
           "place": "花蓮縣政府",
           "level": "red",
-          "news_count": 161,
+          "news_count": 157,
           "comment_count": 0,
-          "negativity_pct": 21,
+          "negativity_pct": 22,
           "is_urgent": false,
-          "urgency_score": 263,
+          "urgency_score": 259,
           "sample_titles": [
             "2026.07.30 14:28 扯！傅崐萁協商飆髒話 花蓮震災27億善款有詭？1／傅崐萁協商才爆粗口 韓國瑜動怒：會還",
             "去年爆料「花蓮鬼故事」 童子賢今這樣看縣府被搜索",
@@ -65160,15 +65160,15 @@
           "city": "台中",
           "place": "台中市清水區",
           "level": "red",
-          "news_count": 155,
+          "news_count": 160,
           "comment_count": 9,
           "negativity_pct": 5,
           "is_urgent": true,
-          "urgency_score": 198,
+          "urgency_score": 203,
           "sample_titles": [
-            "有這個可能性嗎？(#01J) 【若倒閣成功、國會解散 盧秀燕拋「2026中央地方合併大選」】 （圖／記者游瓊華翻攝）",
-            "有這個可能性嗎？(#01J) 【若倒閣成功、國會解散 盧秀燕拋「2026中央地方合併大選」】 （圖／記者游瓊華翻攝）",
-            "盧秀燕拋倒閣後「年底一起投」！游盈隆笑回：比天塌了機率大一點"
+            "盧秀燕喊倒閣若成功「國會改選併年底選舉」 游盈隆：機會只比天塌下來大一點 | 華視新聞",
+            "盧秀燕喊倒閣成功合併選舉 游盈隆妙喻：機會比天塌下來大一點而已",
+            "有這個可能性嗎？(#01J) 【若倒閣成功、國會解散 盧秀燕拋「2026中央地方合併大選」】 （圖／記者游瓊華翻攝）"
           ]
         },
         {
@@ -65176,15 +65176,15 @@
           "city": "台北",
           "place": "台北市信義區",
           "level": "red",
-          "news_count": 236,
+          "news_count": 232,
           "comment_count": 0,
           "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 269,
+          "urgency_score": 265,
           "sample_titles": [
+            "北市毒油門診首日上午掛蛋！遭疑浪費醫療資源 蔣萬安回應了",
             "訪美帶回城市治理解方！沈伯洋：要解決北市四大治理痛點 | 政治快訊 | 要聞",
-            "7/31台北、新北、嘉義7縣市停水！最長10小時沒水 影響範圍出爐 | 生活",
-            "沈伯洋曝訪美成果　主張「找到台北強項」、喊話蔣萬安回歸市政"
+            "7/31台北、新北、嘉義7縣市停水！最長10小時沒水 影響範圍出爐 | 生活"
           ]
         }
       ]
