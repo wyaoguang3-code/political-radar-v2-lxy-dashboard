@@ -1,6 +1,6 @@
 {
   "date": "2026-07-31",
-  "snapshot_at": "2026-07-31T13:18:04.745499+00:00",
+  "snapshot_at": "2026-07-31T13:34:02.895372+00:00",
   "hotspots": [
     {
       "title": "垃圾山",
@@ -23,6 +23,27 @@
           "signal": "red"
         }
       ]
+    },
+    {
+      "title": "台北車禍事件",
+      "city": "台北",
+      "place": "台北市政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "北市深夜路口車禍！小客車「外線鬼切」右轉 單車騎士遭擦撞",
+          "url": "https://www.chinatimes.com/realtimenews/20260731003518-260402",
+          "time": "2026-07-31 00:35:18",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
     },
     {
       "title": "花蓮車禍事件",
@@ -61,27 +82,6 @@
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE40NVB6UjFPN2RqSUtPcVVET2FzNTBXOG9pUkQzQXpsblVMejBBdlQtdnZaY0pFaGFpR2RlbFJtWi04TUVhRGh3aDU1R0Y?oc=5",
           "time": "2026-07-31 11:27:11",
           "publisher": "Google News→桃園電子報",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "台北車禍事件",
-      "city": "台北",
-      "place": "台北市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "北市深夜路口車禍！小客車「外線鬼切」右轉 單車騎士遭擦撞",
-          "url": "https://www.chinatimes.com/realtimenews/20260731003518-260402",
-          "time": "2026-07-31 00:35:18",
-          "publisher": "中時新聞網",
           "severity": "yellow"
         }
       ],
@@ -375,27 +375,6 @@
       "comments": []
     },
     {
-      "title": "花蓮弊案爭議",
-      "city": "花蓮",
-      "place": "花蓮縣政府",
-      "level": "yellow",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "《曾韋禎專欄》兩小報極力掩蓋花蓮地震善款弊案",
-          "url": "https://taronews.tw/2026/07/31/1205153/",
-          "time": "2026-07-31 08:51:19",
-          "publisher": "芋傳媒",
-          "severity": "red"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "宜蘭弊案爭議",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
@@ -411,6 +390,27 @@
           "url": "https://tw.news.yahoo.com/%E6%9E%97%E5%A7%BF%E5%A6%99%E5%89%8D%E7%A7%98%E6%9B%B8%E9%A9%9A%E5%82%B3%E7%8D%84%E4%B8%AD%E6%AD%BB%E4%BA%A1-%E8%A8%B1%E6%99%BA%E4%BF%A1%E8%A9%90%E9%A8%99%E5%88%A4%E5%88%9173%E5%B9%B4-%E7%AA%81%E7%99%BC%E8%83%83%E5%87%BA%E8%A1%80%E4%B8%8D%E6%B2%BB-123701903.html",
           "time": "2026-07-31 12:37:01",
           "publisher": "Yahoo新聞",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "花蓮弊案爭議",
+      "city": "花蓮",
+      "place": "花蓮縣政府",
+      "level": "yellow",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "《曾韋禎專欄》兩小報極力掩蓋花蓮地震善款弊案",
+          "url": "https://taronews.tw/2026/07/31/1205153/",
+          "time": "2026-07-31 08:51:19",
+          "publisher": "芋傳媒",
           "severity": "red"
         }
       ],
@@ -442,11 +442,11 @@
       "city": "新竹市",
       "place": "新竹市政府",
       "level": "yellow",
-      "news_count": 5,
+      "news_count": 3,
       "comment_count": 0,
       "negativity_pct": 100,
       "is_urgent": true,
-      "urgency_score": 20,
+      "urgency_score": 12,
       "news_articles": [
         {
           "title": "中正市場攤商 抗議竹市府逼撤離",
@@ -467,20 +467,6 @@
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12a1dDZV9LWU9LNVVHb29SMVFzYWVJOXhtVEM1M1pzMzhXYVlnQkhYT3o0cVJCaFVYbnNCTUM5eWNQdThiUjMyd0NveWkzOWo2TWc?oc=5",
           "time": "2026-07-30 22:06:38",
           "publisher": "Google News→fountmedia.io",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場搬遷攤商陳情要求補助竹市府：持續溝通- 地方",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9peHBNYzhuUm1oaTR3a0U1RlJTOXB1S1JQVUJraVBMTXNpblY0N09ObFBuWkVISGgwVk1od0xnWDRYczdYU2h6SS00bGhLTmVZa3M2bmRRLXprNzV4b01xVUdPN0FJMW15YlNnUTJR?oc=5",
-          "time": "2026-07-30 21:29:13",
-          "publisher": "Google News→news.cts.com.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場搬遷攤商陳情要求補助竹市府：持續溝通| 地方",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBvVi1pUlMyRzdVdk5CLUhvNElWWkRmQ3Z2Y3A0N25HNFRyU1JkZWF5VnY1dFRsbnVUMmF4MUp4TjdoMUduZ0IzNkxJaUc4T0lYMllwWFJnbWdnZlQyZUJJ?oc=5",
-          "time": "2026-07-30 21:29:00",
-          "publisher": "中央社",
           "severity": "yellow"
         }
       ],
@@ -1219,11 +1205,11 @@
       "city": "屏東",
       "place": "屏東縣政府",
       "level": "yellow",
-      "news_count": 83,
+      "news_count": 84,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 101,
+      "urgency_score": 102,
       "news_articles": [
         {
           "title": "台灣美食展 賴清德為屏東館揭幕推薦好味",
@@ -1266,6 +1252,13 @@
           "time": "2026-07-31 18:51:41",
           "publisher": "Google News→today.line.me",
           "severity": null
+        },
+        {
+          "title": "高雄九如橋欄杆挨批醜 陳其邁坦言不美觀",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE81M3IxVXlrQ245SHRSWXBRRkwzNUcyRzlmNFpmMXd3ZTlfZlBPYWRJeTZ6MFNuUUpRMUdWbjZJWkdnYmNZM0gwTNIBTEFVX3lxTE9SQzFDVDhGUF9sZzhBUHhXd21mV0ptajA0ZExVN3ZyWHE5WXh5eXZrbkUyWlFuSnRtbWlqWTEtR3p3bkV0anhTaFV6ZXQ?oc=5",
+          "time": "2026-07-31 18:47:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
         },
         {
           "title": "小琉球首見\"藍鈕扣\"嚇壞遊客 澎湖珊瑚礁陷窒息危機",
@@ -1355,7 +1348,7 @@
           "title": "5.6億元的高雄九如橋挨批醜 陳其邁坦承不美觀",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxMEFYcTg4OUFZNUZiRVhtQ0NSd3cxX2FMRUVyRW5BS1g2dFh0Z2ZONjFKdHBDOTF6dVNmNUhyc1BhQ0JRdTNiU0duTy3SAVJBVV95cUxNU1dsWC1GQlZ5ekNHNEJ4bHE0N3RCVlFUMlhoUFA0a2d2X2tOV2dNUl81Z0dfU1JZRlJkUlNUQjVHY25sTC1RMFREY2hWckMtWmhR?oc=5",
           "time": "2026-07-31 16:49:00",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -1446,7 +1439,7 @@
           "title": "高雄新九如橋今通車陳其邁認「欄杆實在醜」：市民提出意見就該面對- 政治",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aZFREZzhTb2FYUWJNMmxPWEhSSUxpVWhrVGdiOVh6TEJQSGZUbHFzbzB0RmxwTjZ6RWxOM1Nub08wUjFxWGMxT0diWTZDUUVjWThMSk5Wb2lEMjRISW1BNWJsQzhIV3hlQWxyVWszaFdyZw?oc=5",
           "time": "2026-07-31 15:08:00",
-          "publisher": "Google News→news.cts.com.tw",
+          "publisher": "Google News→華視新聞網",
           "severity": "yellow"
         },
         {
@@ -1516,7 +1509,7 @@
           "title": "高雄九如橋欄杆挨批醜陳其邁坦言不美觀| 地方",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5EVVNEcFREYlNLSUtKaERtUHEzUEVteXRTSEVuMnlzdmd6UVlrbGNYaGc2ZFRSSVRWQ2R1NDMwNTktbWZLQk0wY3lHQ1F4SFdEck1DSlhCbUtOZUNPRnI0?oc=5",
           "time": "2026-07-31 14:01:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": "yellow"
         },
         {
@@ -2913,11 +2906,11 @@
       "city": "新竹縣",
       "place": "新竹縣政府",
       "level": "red",
-      "news_count": 29,
+      "news_count": 28,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 35,
+      "urgency_score": 34,
       "news_articles": [
         {
           "title": "新竹縣新、卸任校長交接 楊文科勉為教育點燈開創新局",
@@ -3113,13 +3106,6 @@
           "url": "https://www.cna.com.tw/news/aloc/202607300384.aspx",
           "time": "2026-07-30 22:02:38",
           "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "新竹縣免費勞動法令諮詢開跑 律師一對一解答勞資問題",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11V0otaUdtOTR6UWg3Z3l3WmtnUDZpMGNxUzV4cTdwRXBPZVBPOTVCVm5Fb3A1TGFaaXRoVWdTaTkwb19CaTJIcVhHWUJqTGJvTGc?oc=5",
-          "time": "2026-07-30 21:26:00",
-          "publisher": "Google News→蕃新聞",
           "severity": null
         }
       ],
@@ -3721,6 +3707,377 @@
       "comments": []
     },
     {
+      "title": "新竹市地方動態",
+      "city": "新竹市",
+      "place": "新竹市政府",
+      "level": "red",
+      "news_count": 51,
+      "comment_count": 0,
+      "negativity_pct": 8,
+      "is_urgent": false,
+      "urgency_score": 63,
+      "news_articles": [
+        {
+          "title": "115年市長盃田徑公開賽登場 9縣市91隊會師竹市競技 高虹安市長鳴槍為1,101名選手加油",
+          "url": "https://more-news.tw/681748/",
+          "time": "2026-07-31 20:55:39",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "高虹安市長表揚竹市特優里長及績優民政人員 肯定基層治理重要力量",
+          "url": "https://more-news.tw/681746/",
+          "time": "2026-07-31 20:55:24",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "國家太空中心TASA iSPARK星創基地落腳竹市 高虹安市長：打造太空產業創新聚落",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=54cddaec-c2de-4dc9-9407-899cb1bab386",
+          "time": "2026-07-31 19:02:16",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "竹市明好農耕牌炊粉擴大抽驗6品項是否含甲醛 4品項仍有疑慮待複驗",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5524520",
+          "time": "2026-07-31 18:20:42",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "竹市明好農耕牌炊粉擴大抽驗6品項是否含甲醛4品項仍有疑慮待複驗- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxNVBFM3B2ajZHOEhJbUd0M3hWdEhqWFAzM0Q3RkJKNGRqb3RBVGt2ZU05M2FMU0FVcGlKeGNKU01uWDdwNlpQb2dndlNxSkpCY1hxcWh1SUZMUko5ZTVoSy1wZG0?oc=5",
+          "time": "2026-07-31 18:20:42",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "竹市府攜手UNIQLO「衣起竹夢」職場體驗 助弱勢脫貧 | 中廣新聞網",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QNWpMVWxmYjdXYmFMaDdWa0dETTdaSkk4VmRTV0lKN1VidUswRjRzZW5sVURKT0RibDVGX2JwZ3haYzF6RVZjT3hZX0sycXgxTmc3VnhB?oc=5",
+          "time": "2026-07-31 17:52:57",
+          "publisher": "Google News→today.line.me",
+          "severity": null
+        },
+        {
+          "title": "竹市擴大抽驗15家米粉業者、23項產品是否含甲醛結果出爐- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lVXVZUmZGQ09nSGhCXzBFRWVMdHc5WFBtTUZ1QXVucXRwaHRBbnVZMHdadzE5SXhpbzYtc3lfR2hWakdZSFVadWd3WHI0b19TRVoyelBhQnBlWG95dEVKZENHYW8?oc=5",
+          "time": "2026-07-31 17:44:56",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "竹市擴大抽驗15家米粉業者、23項產品是否含甲醛 結果出爐",
+          "url": "https://news.ltn.com.tw/news/HsinchuCity/breakingnews/5524490",
+          "time": "2026-07-31 17:44:56",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "新竹市米粉抽驗結果出爐 15家業者共23項產品全數未檢出甲醛",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhaUxUYS1fazZyTmVZRFRuUllZN1J4R2loa0NGVlphSVlTVmtWQzZ6QnlDeXc1dkxBejk1S1R2Q25sS0labTMwSGFNRkwzbGl00gFWQVVfeXFMUEtrTmJEdlhVTVAwRmt4eFMzc2dubnM0Vml1MzVUTjllVkxKcHJ6X2xlbXNrd2I5RDNLQ19DdzdDUnROOWZmcHNYWlR5bXFldVY5QkcwSEE?oc=5",
+          "time": "2026-07-31 17:19:37",
+          "publisher": "Google News→udn.com",
+          "severity": null
+        },
+        {
+          "title": "新竹市米粉製造業甲醛抽驗結果出爐！15家業者共23項產品「全數未檢出」",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=2406e9b8-605a-4cdc-93b6-92b70ca81bdd",
+          "time": "2026-07-31 17:15:51",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "《POP IN》聯展登場 高虹安：國際大師古蹟現地創作 用美學讓世界看見竹市",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEaGxYWF9XeUZNMHFpblBDRmpWUWtKaFhWZGhiZUhJeGNuWkx6S1NkNTJCWHZyR3A5bmhRalRJclUtN0FMc2VpSEVNSTN0UmhBb0E?oc=5",
+          "time": "2026-07-31 16:22:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "全國學生自治幹部齊聚竹市！第15屆「植響」幹訓首度移師非六都",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93S2o1TENKRm1nZGlrYmRSeExuX2JmVG0xbnNwWVVnaTBuZFliZEcyM3ZtNnVUbGlUMDRuLTVGU3BfS0laWENNQjRBY01pcW5iMElsb21R?oc=5",
+          "time": "2026-07-31 16:01:28",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "深耕地方、服務市民！高虹安市長表揚竹市特優里長及績優民政人員",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TSWoxQXNvaDR4c0xJYWozbWxzdV9GcjBZbHBBdDVLRWtwSmZxXzdsdTk1eFNqaC1PSWZXTnlTYno3VnJldU5tQ05qV2ZsVDdQUDFLcHlB?oc=5",
+          "time": "2026-07-31 15:58:11",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "115年市長盃田徑公開賽 9縣市91隊會師竹市競技 高虹安市長鳴槍為選手加油",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qZ1YwRHZLbEhaWkt1UFNrYTBNOHJGSG1QNUV1RW5LQjg1U3ltc1BpRnp4aE5IZy1CZm81dnljZzFuYkVGTGxVNjYwbDZNMDQyWVp2Wkln?oc=5",
+          "time": "2026-07-31 15:45:16",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "普普藝術席捲風城！《POP IN》國際聯展登場 高虹安市長：國際大師古蹟現地創作 用美學讓世界看見竹市",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=b69ce37c-fab5-4894-8256-e8fa0df1c936",
+          "time": "2026-07-31 15:27:45",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "全國學生自治幹部齊聚竹市 第15屆「植響」幹訓首度移師非六都",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRZFFQSkVnSWVwNU80dkJqMzBMYmFqbjFKQ1BzckxOMDVCZGFQcWVSWkZuUXIwcmZDNTRfUEY1SWVwRGZackU2YWV1MXB0U18xWUhaUjlKZ3EwaXNuTXfSAUtBVV95cUxQUHNTQmhMMTFIbGhVcHotSVVaZjBzOVFmY3B2MkpJUmtzRzRsQ3dVYVdCRVR2NTM1SEh0cEl1LW5VbUg5WW9BMGxSUEU?oc=5",
+          "time": "2026-07-31 15:02:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "普普藝術席捲風城！《POP IN》國際聯展登場 高虹安：用美學讓世界看見竹市",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBPcTlfY3dFWlU2eXREU2pCam4zMTFRX0RHVXZ5aHc4SDQ4MjcwMG9YcWVHVVAzY24zMGR6RVhqR0ZHZXpYWWVVUHNVbw?oc=5",
+          "time": "2026-07-31 14:20:00",
+          "publisher": "Google News→FTNN 新聞網",
+          "severity": null
+        },
+        {
+          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗 高虹安市長：公私協力助弱勢家戶培力就業",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OUERGVzE1UmxjZEhaY0pMckRrRldLMVB5QmdyN2s2TUcyeTdXc2pjY251N3IyQ2hPWU1kMU5SN0VJN0Z2NWc?oc=5",
+          "time": "2026-07-31 13:48:45",
+          "publisher": "Google News→台灣新聞雲報",
+          "severity": null
+        },
+        {
+          "title": "深耕地方、服務市民！高虹安市長表揚竹市特優里長及績優民政人員 肯定基層治理重要力量",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=isfocusnews&id=30210&serno=14d595ec-47e3-4c67-9e8f-3f7b8365474e",
+          "time": "2026-07-31 13:45:28",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "全國學生自治幹部齊聚竹市！第15屆「植響」幹訓首度移師非六都 高虹安市長：產官學跨界攜手培力青年公共參與",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=e1d70775-254b-4cbb-9e79-85e00ff44f6a",
+          "time": "2026-07-31 13:45:28",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "新竹市府人事調整！ 竹縣前教育局長楊郡慈8/3接任發言人",
+          "url": "https://news.nextapple.com/politics/20260731/C9F403ADB9EBC5FEDCF1584D3C94E14E",
+          "time": "2026-07-31 13:10:06",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗 高虹安市長：公私協力助弱勢家戶培力就業",
+          "url": "https://more-news.tw/681050/",
+          "time": "2026-07-31 12:54:58",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "竹市長盃田徑公開賽登場 9縣市91隊會師競技",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE80M0RYZVcwZ0tzSkU2cTRqNGU2TWFkalYySGJOa1V0NjJMTkV3Yk03TlFKNFZ2dVVyYlpVMm13WlJGQ0tUQXp2Z01HZ0hOeDAzb1E?oc=5",
+          "time": "2026-07-31 12:44:00",
+          "publisher": "Google News→n.yam.com",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府發言人由前新竹縣教育局長楊郡慈接任 強化多元管道政策說明",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA0RjcwU0h6ajRuYnR5U19nODJRNTAxSGJ3T1ZIQllXelBvbk9qb2FlNEFyZDZLNW1LQjgzVVQ3QWYtSXJZWGNjRmsyUE9yQXdBTnc?oc=5",
+          "time": "2026-07-31 12:39:00",
+          "publisher": "Google News→n.yam.com",
+          "severity": null
+        },
+        {
+          "title": "前竹縣教育局長楊郡慈 出任竹市府發言人 | 中廣新聞網",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VU2JnMDBpdld1clFySVZoZGt6TFNSa1ljVXhhNlNicnAwQ0RyV3F4UWEzbnRYYUJIWDNqdmp4dXNFM1B4dlFDU2NEZ1l5c0t6S01wYmtR?oc=5",
+          "time": "2026-07-31 12:23:50",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "最新人事調整！前新竹縣教育局長楊郡慈 接任新竹市府發言人",
+          "url": "https://news.nextapple.com/politics/20260731/4B763C842586C39C4D6EB7613497676C",
+          "time": "2026-07-31 12:14:59",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "前竹縣教育局長楊郡慈 出任竹市府發言人",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOVnRkU2dvOTh2Tlg1dW0zNVRnX3FhZTJhU2FyQm9QUTJ1Wm1pUEFnV1VwUGcwS0lDQjJXR1NlTDkwcnBUOWMzZl9kWk9ZeS1OZ2NpTkJaeWRWVDZRaTRsSHlzcmRmb3BwZG9Sdl9GbWRYQTdVVE9oN0FENXhTWlN0blZBTm5NX3BGM3lfS3JKYzNRMHVrN1BkeVBGTmcyZ0EzQlZoS3dRNG5SbGxaN3pvLTBLTDRUTVludVJaRDk3cEpSaVhaYTlTb2w1aTRtZ3lNZEp3NU5ZcGFqdFZQUXJEZ3M5eE80ampTLVludlVIY0thZXdKRVk5U1Uxc1ZweDZZNmpoWmViWDRNWHRrS1pHc19QYnMxeDBuckF4M2phNDNrTnFmNHdUQnd3NWI?oc=5",
+          "time": "2026-07-31 12:12:52",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府發布最新人事調整 發言人由前新竹縣教育局長楊郡慈接任",
+          "url": "https://n.yam.com/Article/20260731973664",
+          "time": "2026-07-31 12:00:00",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府發言人由前新竹縣教育局長楊郡慈接任　強化多元管道政策說明",
+          "url": "https://n.yam.com/Article/20260731188913",
+          "time": "2026-07-31 12:00:00",
+          "publisher": "蕃新聞→亞太新聞網",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府最新人事調整 楊郡慈接任發言人",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRdThhZGowdFhjZk45OUZRcTk3QXRZaHY4U1F4SlpheWpxLVZiZHNHem53bjdlaXBFLUZSOWg1Q1otTUcyZzZhZ3Nqaw?oc=5",
+          "time": "2026-07-31 10:51:00",
+          "publisher": "Google News→FTNN 新聞網",
+          "severity": null
+        },
+        {
+          "title": "竹市首創「5實」懸浮微粒物質災害應變演練 高虹安市長：科技防災再升級、強化城市韌性",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=6c722e5d-7583-40eb-b809-fd4aa8209e02",
+          "time": "2026-07-31 10:35:43",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗　高虹安市長：公私協力助弱勢家戶培力就業",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=a46c6685-ba16-4656-8b6f-b033ea792417",
+          "time": "2026-07-31 10:35:43",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府發布最新人事調整 發言人由前新竹縣教育局長楊郡慈接任 強化多元管道政策說明",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=6dd35c35-8d6c-4074-ad3e-d4a812644ad7",
+          "time": "2026-07-31 10:35:43",
+          "publisher": "新竹市政府",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府最新人事調整楊郡慈接任發言人| 鏡週刊",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnNUpHRmM0WFBJOXBfMXhwSm5URjBmczFjdno3MzRJVEhxYU1qSFFXWUhoRklNRzNHVktXc0hTOENHd0VrTVo3TS1ZTmVyMU9PMTBSSGpB?oc=5",
+          "time": "2026-07-31 10:24:53",
+          "publisher": "Google News→LINE TODAY",
+          "severity": null
+        },
+        {
+          "title": "竹市中正市場攤商遭逼11月底需離開 市府同意8月再開協調會",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5523850",
+          "time": "2026-07-31 10:20:50",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "竹市中正市場攤商遭逼11月底需離開市府同意8月再開協調會- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55YjJkYS1hTXgyeFhIeXpRQXl4M1pTYmFmRE1IRDdKYlRZSTFZVGtvRERwZWFBZnRWbmN5Wjk4Q080SkpjTUtBTmk3akhfeWRPM0hweDVmYk9nSDZMM2pBY1kzZlU?oc=5",
+          "time": "2026-07-31 10:20:50",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "竹市府推生成式AI實作培訓 強化公務應用打造智慧行政新模式",
+          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPY1ptSkYyaExmeXZsd1dPSWxnRkk4N3dfR3Itc3k5SVptRWYxT2Mzc2ZzZlJWOVd2SkhHM01iczJZVWl6QXZfQnFudFVkUE9CRnJVZG01SDZjU0paaTEwRkhXLUJVczZLTGVoQno4LUVzMVpyZHpqdDM3Q21qLS1tYkFaUGNqZW8yRjk1VFZsT19ZVW1kR1N5RlJ2V3pYandrdm1lbGdjT2d4WlVRUl81OWkwM0x4Y1pkbl93OHF3VGJlZnhEd0s1ektPTWZLdW5ISklRRDU5cVNuTTFtUGhrR1FFTjg4SF9jLUNhYlItZGJybXlFaTl4MHpXeG80VEVMZjR4UDBpS19CbUFmNTNxcHdVZnVyUDMxa0JNZm1oV2c0dm96bzkwQ3BhR0V5ZE5UX2N1eHl1a2xTV0dkbnZnRWRKb0F5eVg1SGJNb3h3?oc=5",
+          "time": "2026-07-31 10:19:47",
+          "publisher": "Google News→yesmedia.com.tw",
+          "severity": null
+        },
+        {
+          "title": "新竹市府發布最新人事 前新竹縣教育局長楊郡慈接任發言人",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TR3lZTjlXS04xd0t4b1YyR0J0U1hxdlpYTEtudmlvdVRGeHBHdTlDekVRMUxRYTJwb1JqT0NwZTFrMi1mOXJWc3RlcXBBWkd1aksxMzNrUVB2UHZ2bFHSAUtBVV95cUxON0duQlYzS3hkcTdvZjJHY0lkLXVDRmJqM3RnNnUtMTNvZ09YNDhXdmY0b1JWeEdUbjg4clNtc1h0azE3RENxajROdzQ?oc=5",
+          "time": "2026-07-31 10:13:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "新竹市政府最新人事調整 楊郡慈接任發言人",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01Q1NVNU5IQUZWakt2TjBmaXVqbTJtbzJfdmNFc2JxZEowSm0xSGJtMWFrRWE2UEJZRjNkeTFUMVN5UUFnREQ0X3lEdTNGOUNHcFVCTm80QTNFOWfSAWBBVV95cUxPOXpfMkxsMU54WktMcWQyR2xuZklIYTdRUVBaRW05Snl2M3NYVlFCR1Zfal9tUExDeFJtOGFROXZqTUctR25oZ3Z3UFQzOVJTTW5vTnc1ZmtwNWluaW5xUjY?oc=5",
+          "time": "2026-07-31 10:03:00",
+          "publisher": "Google News→鏡週刊Mirror Media",
+          "severity": null
+        },
+        {
+          "title": "新竹市人事調整！竹縣前教育局長楊郡慈接任市府發言人",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IRjU3QkRfNDdfZ0FLa1lBeUdsejVoVWs0TXdRcHBUN1NmSXJ4M193WkdEWEdjeDU3Wml2aGI3b09wR0FRTTNFOUEwUDZvVDRm0gFWQVVfeXFMUFRhS2kxZW4tS0oyOS0xREVZSG1RREVfeWtCWkRJdG5za1V2XzdGa3pnU2Q4SUNQM2hranppVFluSjBNckZXNkFRYkpLVHBwMTlNVGhBVmc?oc=5",
+          "time": "2026-07-31 10:00:29",
+          "publisher": "Google News→UDN",
+          "severity": null
+        },
+        {
+          "title": "打造智慧行政新模式 新竹市府辦理生成式AI實作課程",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wbEJ2ZjBuQkFxTzlfTHZqQW5yekZZdVpFTHljQjJnNDRNRXNvR3kxMUZfZnctbFFHcFdpTjNHd3VXbXdROFFDVWRkLWZLOGFlYVZlMUZzb3lHMTVreXNDU0tQT1JpMG9L?oc=5",
+          "time": "2026-07-31 09:16:46",
+          "publisher": "Google News→元丰傳媒",
+          "severity": null
+        },
+        {
+          "title": "特定人士惡意曲解市府食安說明 竹市衛生局嚴正駁斥：勿斷章取義、散播不實訊息",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30207&serno=c11eca34-0dac-42e5-a6d5-99d102654c9c",
+          "time": "2026-07-31 07:40:06",
+          "publisher": "新竹市政府",
+          "severity": "yellow"
+        },
+        {
+          "title": "中正市場攤商 抗議竹市府逼撤離",
+          "url": "https://news.ltn.com.tw/news/HsinchuCity/paper/1764750",
+          "time": "2026-07-31 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "竹市衛局長稱「甲醛炊粉煮一煮就可吃」 挨批錯誤衛教",
+          "url": "https://news.ltn.com.tw/news/HsinchuCity/paper/1764749",
+          "time": "2026-07-31 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "中正市場攤商抗議竹市府逼撤離- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlaTY0TVdqTjJHeE9LdS02TkJJcnVTTnRidkdBVHhPUVNwYnktajZWQ000Y0tZRWlySUNOV1lPdWhYc3Zrc01KVGtJbm5iOGg1eG9RcXJ6Y0IxeG8?oc=5",
+          "time": "2026-07-31 05:30:00",
+          "publisher": "Google News→news.ltn.com.tw",
+          "severity": "yellow"
+        },
+        {
+          "title": "甲醛炊粉案 綠批竹市府錯估食安風險",
+          "url": "https://tw.news.yahoo.com/%E7%94%B2%E9%86%9B%E7%82%8A%E7%B2%89%E6%A1%88-%E7%B6%A0%E6%89%B9%E7%AB%B9%E5%B8%82%E5%BA%9C%E9%8C%AF%E4%BC%B0%E9%A3%9F%E5%AE%89%E9%A2%A8%E9%9A%AA-201000587.html",
+          "time": "2026-07-31 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "竹市府最新人事調整 前新竹縣教育局長楊郡慈接任發言人",
+          "url": "https://tw.news.yahoo.com/%E7%AB%B9%E5%B8%82%E5%BA%9C%E6%9C%80%E6%96%B0%E4%BA%BA%E4%BA%8B%E8%AA%BF%E6%95%B4-%E5%89%8D%E6%96%B0%E7%AB%B9%E7%B8%A3%E6%95%99%E8%82%B2%E5%B1%80%E9%95%B7%E6%A5%8A%E9%83%A1%E6%85%88%E6%8E%A5%E4%BB%BB%E7%99%BC%E8%A8%80%E4%BA%BA-020405991.html",
+          "time": "2026-07-31 02:04:05",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "竹市115年複合式災害防救演習！ 動員667人次驗證緊急應變體系",
+          "url": "https://news.nextapple.com/local/20260731/9CD8E0F929B9AA521D8F3002CDC5D0D5",
+          "time": "2026-07-31 00:10:00",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "盧媽嗨辦鍋烤節！不怕苯駢芘？  甲醛炊粉講不清？竹市府失能？ 2026.07.30【台灣向前行 Part5】",
+          "url": "https://www.youtube.com/watch?v=kzScZ_Va9aE",
+          "time": "2026-07-31 00:09:37",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "新竹市災害防救演習登場 模擬複合式災情考驗危機應變 | 台灣好新聞",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5HVzB0NjdHcHVCaHJuSDlzOWVYYzRadWRDSFJYQVJPMndrelRpNG01eFFjRm9HakhXM3BiUmY5U3Q2SjNTY3Fid2p5ckM4Q1FBZlgyeFV3?oc=5",
+          "time": "2026-07-30 22:10:48",
+          "publisher": "Google News→today.line.me",
+          "severity": null
+        },
+        {
+          "title": "中正市場搬遷攤商陳情要求補助 竹市府：持續溝通",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12a1dDZV9LWU9LNVVHb29SMVFzYWVJOXhtVEM1M1pzMzhXYVlnQkhYT3o0cVJCaFVYbnNCTUM5eWNQdThiUjMyd0NveWkzOWo2TWc?oc=5",
+          "time": "2026-07-30 22:06:38",
+          "publisher": "Google News→fountmedia.io",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "宜蘭地方動態",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
@@ -4099,400 +4456,15 @@
       "comments": []
     },
     {
-      "title": "新竹市地方動態",
-      "city": "新竹市",
-      "place": "新竹市政府",
-      "level": "red",
-      "news_count": 53,
-      "comment_count": 0,
-      "negativity_pct": 11,
-      "is_urgent": false,
-      "urgency_score": 71,
-      "news_articles": [
-        {
-          "title": "115年市長盃田徑公開賽登場 9縣市91隊會師竹市競技 高虹安市長鳴槍為1,101名選手加油",
-          "url": "https://more-news.tw/681748/",
-          "time": "2026-07-31 20:55:39",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "高虹安市長表揚竹市特優里長及績優民政人員 肯定基層治理重要力量",
-          "url": "https://more-news.tw/681746/",
-          "time": "2026-07-31 20:55:24",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "國家太空中心TASA iSPARK星創基地落腳竹市 高虹安市長：打造太空產業創新聚落",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=54cddaec-c2de-4dc9-9407-899cb1bab386",
-          "time": "2026-07-31 19:02:16",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "竹市明好農耕牌炊粉擴大抽驗6品項是否含甲醛 4品項仍有疑慮待複驗",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5524520",
-          "time": "2026-07-31 18:20:42",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "竹市明好農耕牌炊粉擴大抽驗6品項是否含甲醛4品項仍有疑慮待複驗- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxNVBFM3B2ajZHOEhJbUd0M3hWdEhqWFAzM0Q3RkJKNGRqb3RBVGt2ZU05M2FMU0FVcGlKeGNKU01uWDdwNlpQb2dndlNxSkpCY1hxcWh1SUZMUko5ZTVoSy1wZG0?oc=5",
-          "time": "2026-07-31 18:20:42",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "竹市府攜手UNIQLO「衣起竹夢」職場體驗 助弱勢脫貧 | 中廣新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QNWpMVWxmYjdXYmFMaDdWa0dETTdaSkk4VmRTV0lKN1VidUswRjRzZW5sVURKT0RibDVGX2JwZ3haYzF6RVZjT3hZX0sycXgxTmc3VnhB?oc=5",
-          "time": "2026-07-31 17:52:57",
-          "publisher": "Google News→today.line.me",
-          "severity": null
-        },
-        {
-          "title": "竹市擴大抽驗15家米粉業者、23項產品是否含甲醛結果出爐- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lVXVZUmZGQ09nSGhCXzBFRWVMdHc5WFBtTUZ1QXVucXRwaHRBbnVZMHdadzE5SXhpbzYtc3lfR2hWakdZSFVadWd3WHI0b19TRVoyelBhQnBlWG95dEVKZENHYW8?oc=5",
-          "time": "2026-07-31 17:44:56",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "竹市擴大抽驗15家米粉業者、23項產品是否含甲醛 結果出爐",
-          "url": "https://news.ltn.com.tw/news/HsinchuCity/breakingnews/5524490",
-          "time": "2026-07-31 17:44:56",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "新竹市米粉抽驗結果出爐 15家業者共23項產品全數未檢出甲醛",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhaUxUYS1fazZyTmVZRFRuUllZN1J4R2loa0NGVlphSVlTVmtWQzZ6QnlDeXc1dkxBejk1S1R2Q25sS0labTMwSGFNRkwzbGl00gFWQVVfeXFMUEtrTmJEdlhVTVAwRmt4eFMzc2dubnM0Vml1MzVUTjllVkxKcHJ6X2xlbXNrd2I5RDNLQ19DdzdDUnROOWZmcHNYWlR5bXFldVY5QkcwSEE?oc=5",
-          "time": "2026-07-31 17:19:37",
-          "publisher": "Google News→udn.com",
-          "severity": null
-        },
-        {
-          "title": "新竹市米粉製造業甲醛抽驗結果出爐！15家業者共23項產品「全數未檢出」",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=2406e9b8-605a-4cdc-93b6-92b70ca81bdd",
-          "time": "2026-07-31 17:15:51",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "《POP IN》聯展登場 高虹安：國際大師古蹟現地創作 用美學讓世界看見竹市",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEaGxYWF9XeUZNMHFpblBDRmpWUWtKaFhWZGhiZUhJeGNuWkx6S1NkNTJCWHZyR3A5bmhRalRJclUtN0FMc2VpSEVNSTN0UmhBb0E?oc=5",
-          "time": "2026-07-31 16:22:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "全國學生自治幹部齊聚竹市！第15屆「植響」幹訓首度移師非六都",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93S2o1TENKRm1nZGlrYmRSeExuX2JmVG0xbnNwWVVnaTBuZFliZEcyM3ZtNnVUbGlUMDRuLTVGU3BfS0laWENNQjRBY01pcW5iMElsb21R?oc=5",
-          "time": "2026-07-31 16:01:28",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "深耕地方、服務市民！高虹安市長表揚竹市特優里長及績優民政人員",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TSWoxQXNvaDR4c0xJYWozbWxzdV9GcjBZbHBBdDVLRWtwSmZxXzdsdTk1eFNqaC1PSWZXTnlTYno3VnJldU5tQ05qV2ZsVDdQUDFLcHlB?oc=5",
-          "time": "2026-07-31 15:58:11",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "115年市長盃田徑公開賽 9縣市91隊會師竹市競技 高虹安市長鳴槍為選手加油",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qZ1YwRHZLbEhaWkt1UFNrYTBNOHJGSG1QNUV1RW5LQjg1U3ltc1BpRnp4aE5IZy1CZm81dnljZzFuYkVGTGxVNjYwbDZNMDQyWVp2Wkln?oc=5",
-          "time": "2026-07-31 15:45:16",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "普普藝術席捲風城！《POP IN》國際聯展登場 高虹安市長：國際大師古蹟現地創作 用美學讓世界看見竹市",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=b69ce37c-fab5-4894-8256-e8fa0df1c936",
-          "time": "2026-07-31 15:27:45",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "全國學生自治幹部齊聚竹市 第15屆「植響」幹訓首度移師非六都",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRZFFQSkVnSWVwNU80dkJqMzBMYmFqbjFKQ1BzckxOMDVCZGFQcWVSWkZuUXIwcmZDNTRfUEY1SWVwRGZackU2YWV1MXB0U18xWUhaUjlKZ3EwaXNuTXfSAUtBVV95cUxQUHNTQmhMMTFIbGhVcHotSVVaZjBzOVFmY3B2MkpJUmtzRzRsQ3dVYVdCRVR2NTM1SEh0cEl1LW5VbUg5WW9BMGxSUEU?oc=5",
-          "time": "2026-07-31 15:02:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "普普藝術席捲風城！《POP IN》國際聯展登場 高虹安：用美學讓世界看見竹市",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBPcTlfY3dFWlU2eXREU2pCam4zMTFRX0RHVXZ5aHc4SDQ4MjcwMG9YcWVHVVAzY24zMGR6RVhqR0ZHZXpYWWVVUHNVbw?oc=5",
-          "time": "2026-07-31 14:20:00",
-          "publisher": "Google News→FTNN 新聞網",
-          "severity": null
-        },
-        {
-          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗 高虹安市長：公私協力助弱勢家戶培力就業",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OUERGVzE1UmxjZEhaY0pMckRrRldLMVB5QmdyN2s2TUcyeTdXc2pjY251N3IyQ2hPWU1kMU5SN0VJN0Z2NWc?oc=5",
-          "time": "2026-07-31 13:48:45",
-          "publisher": "Google News→台灣新聞雲報",
-          "severity": null
-        },
-        {
-          "title": "深耕地方、服務市民！高虹安市長表揚竹市特優里長及績優民政人員 肯定基層治理重要力量",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=isfocusnews&id=30210&serno=14d595ec-47e3-4c67-9e8f-3f7b8365474e",
-          "time": "2026-07-31 13:45:28",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "全國學生自治幹部齊聚竹市！第15屆「植響」幹訓首度移師非六都 高虹安市長：產官學跨界攜手培力青年公共參與",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=e1d70775-254b-4cbb-9e79-85e00ff44f6a",
-          "time": "2026-07-31 13:45:28",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "新竹市府人事調整！ 竹縣前教育局長楊郡慈8/3接任發言人",
-          "url": "https://news.nextapple.com/politics/20260731/C9F403ADB9EBC5FEDCF1584D3C94E14E",
-          "time": "2026-07-31 13:10:06",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗 高虹安市長：公私協力助弱勢家戶培力就業",
-          "url": "https://more-news.tw/681050/",
-          "time": "2026-07-31 12:54:58",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "竹市長盃田徑公開賽登場 9縣市91隊會師競技",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE80M0RYZVcwZ0tzSkU2cTRqNGU2TWFkalYySGJOa1V0NjJMTkV3Yk03TlFKNFZ2dVVyYlpVMm13WlJGQ0tUQXp2Z01HZ0hOeDAzb1E?oc=5",
-          "time": "2026-07-31 12:44:00",
-          "publisher": "Google News→n.yam.com",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府發言人由前新竹縣教育局長楊郡慈接任 強化多元管道政策說明",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA0RjcwU0h6ajRuYnR5U19nODJRNTAxSGJ3T1ZIQllXelBvbk9qb2FlNEFyZDZLNW1LQjgzVVQ3QWYtSXJZWGNjRmsyUE9yQXdBTnc?oc=5",
-          "time": "2026-07-31 12:39:00",
-          "publisher": "Google News→n.yam.com",
-          "severity": null
-        },
-        {
-          "title": "前竹縣教育局長楊郡慈 出任竹市府發言人 | 中廣新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VU2JnMDBpdld1clFySVZoZGt6TFNSa1ljVXhhNlNicnAwQ0RyV3F4UWEzbnRYYUJIWDNqdmp4dXNFM1B4dlFDU2NEZ1l5c0t6S01wYmtR?oc=5",
-          "time": "2026-07-31 12:23:50",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "最新人事調整！前新竹縣教育局長楊郡慈 接任新竹市府發言人",
-          "url": "https://news.nextapple.com/politics/20260731/4B763C842586C39C4D6EB7613497676C",
-          "time": "2026-07-31 12:14:59",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "前竹縣教育局長楊郡慈 出任竹市府發言人",
-          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOVnRkU2dvOTh2Tlg1dW0zNVRnX3FhZTJhU2FyQm9QUTJ1Wm1pUEFnV1VwUGcwS0lDQjJXR1NlTDkwcnBUOWMzZl9kWk9ZeS1OZ2NpTkJaeWRWVDZRaTRsSHlzcmRmb3BwZG9Sdl9GbWRYQTdVVE9oN0FENXhTWlN0blZBTm5NX3BGM3lfS3JKYzNRMHVrN1BkeVBGTmcyZ0EzQlZoS3dRNG5SbGxaN3pvLTBLTDRUTVludVJaRDk3cEpSaVhaYTlTb2w1aTRtZ3lNZEp3NU5ZcGFqdFZQUXJEZ3M5eE80ampTLVludlVIY0thZXdKRVk5U1Uxc1ZweDZZNmpoWmViWDRNWHRrS1pHc19QYnMxeDBuckF4M2phNDNrTnFmNHdUQnd3NWI?oc=5",
-          "time": "2026-07-31 12:12:52",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府發布最新人事調整 發言人由前新竹縣教育局長楊郡慈接任",
-          "url": "https://n.yam.com/Article/20260731973664",
-          "time": "2026-07-31 12:00:00",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府發言人由前新竹縣教育局長楊郡慈接任　強化多元管道政策說明",
-          "url": "https://n.yam.com/Article/20260731188913",
-          "time": "2026-07-31 12:00:00",
-          "publisher": "蕃新聞→亞太新聞網",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府最新人事調整 楊郡慈接任發言人",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRdThhZGowdFhjZk45OUZRcTk3QXRZaHY4U1F4SlpheWpxLVZiZHNHem53bjdlaXBFLUZSOWg1Q1otTUcyZzZhZ3Nqaw?oc=5",
-          "time": "2026-07-31 10:51:00",
-          "publisher": "Google News→FTNN 新聞網",
-          "severity": null
-        },
-        {
-          "title": "竹市首創「5實」懸浮微粒物質災害應變演練 高虹安市長：科技防災再升級、強化城市韌性",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=6c722e5d-7583-40eb-b809-fd4aa8209e02",
-          "time": "2026-07-31 10:35:43",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "竹市府攜手UNIQLO辦「衣起竹夢」職場體驗　高虹安市長：公私協力助弱勢家戶培力就業",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=a46c6685-ba16-4656-8b6f-b033ea792417",
-          "time": "2026-07-31 10:35:43",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府發布最新人事調整 發言人由前新竹縣教育局長楊郡慈接任 強化多元管道政策說明",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=6dd35c35-8d6c-4074-ad3e-d4a812644ad7",
-          "time": "2026-07-31 10:35:43",
-          "publisher": "新竹市政府",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府最新人事調整楊郡慈接任發言人| 鏡週刊",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnNUpHRmM0WFBJOXBfMXhwSm5URjBmczFjdno3MzRJVEhxYU1qSFFXWUhoRklNRzNHVktXc0hTOENHd0VrTVo3TS1ZTmVyMU9PMTBSSGpB?oc=5",
-          "time": "2026-07-31 10:24:53",
-          "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "竹市中正市場攤商遭逼11月底需離開 市府同意8月再開協調會",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5523850",
-          "time": "2026-07-31 10:20:50",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "竹市中正市場攤商遭逼11月底需離開市府同意8月再開協調會- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55YjJkYS1hTXgyeFhIeXpRQXl4M1pTYmFmRE1IRDdKYlRZSTFZVGtvRERwZWFBZnRWbmN5Wjk4Q080SkpjTUtBTmk3akhfeWRPM0hweDVmYk9nSDZMM2pBY1kzZlU?oc=5",
-          "time": "2026-07-31 10:20:50",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "竹市府推生成式AI實作培訓 強化公務應用打造智慧行政新模式",
-          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPY1ptSkYyaExmeXZsd1dPSWxnRkk4N3dfR3Itc3k5SVptRWYxT2Mzc2ZzZlJWOVd2SkhHM01iczJZVWl6QXZfQnFudFVkUE9CRnJVZG01SDZjU0paaTEwRkhXLUJVczZLTGVoQno4LUVzMVpyZHpqdDM3Q21qLS1tYkFaUGNqZW8yRjk1VFZsT19ZVW1kR1N5RlJ2V3pYandrdm1lbGdjT2d4WlVRUl81OWkwM0x4Y1pkbl93OHF3VGJlZnhEd0s1ektPTWZLdW5ISklRRDU5cVNuTTFtUGhrR1FFTjg4SF9jLUNhYlItZGJybXlFaTl4MHpXeG80VEVMZjR4UDBpS19CbUFmNTNxcHdVZnVyUDMxa0JNZm1oV2c0dm96bzkwQ3BhR0V5ZE5UX2N1eHl1a2xTV0dkbnZnRWRKb0F5eVg1SGJNb3h3?oc=5",
-          "time": "2026-07-31 10:19:47",
-          "publisher": "Google News→yesmedia.com.tw",
-          "severity": null
-        },
-        {
-          "title": "新竹市府發布最新人事 前新竹縣教育局長楊郡慈接任發言人",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TR3lZTjlXS04xd0t4b1YyR0J0U1hxdlpYTEtudmlvdVRGeHBHdTlDekVRMUxRYTJwb1JqT0NwZTFrMi1mOXJWc3RlcXBBWkd1aksxMzNrUVB2UHZ2bFHSAUtBVV95cUxON0duQlYzS3hkcTdvZjJHY0lkLXVDRmJqM3RnNnUtMTNvZ09YNDhXdmY0b1JWeEdUbjg4clNtc1h0azE3RENxajROdzQ?oc=5",
-          "time": "2026-07-31 10:13:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "新竹市政府最新人事調整 楊郡慈接任發言人",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01Q1NVNU5IQUZWakt2TjBmaXVqbTJtbzJfdmNFc2JxZEowSm0xSGJtMWFrRWE2UEJZRjNkeTFUMVN5UUFnREQ0X3lEdTNGOUNHcFVCTm80QTNFOWfSAWBBVV95cUxPOXpfMkxsMU54WktMcWQyR2xuZklIYTdRUVBaRW05Snl2M3NYVlFCR1Zfal9tUExDeFJtOGFROXZqTUctR25oZ3Z3UFQzOVJTTW5vTnc1ZmtwNWluaW5xUjY?oc=5",
-          "time": "2026-07-31 10:03:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": null
-        },
-        {
-          "title": "新竹市人事調整！竹縣前教育局長楊郡慈接任市府發言人",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IRjU3QkRfNDdfZ0FLa1lBeUdsejVoVWs0TXdRcHBUN1NmSXJ4M193WkdEWEdjeDU3Wml2aGI3b09wR0FRTTNFOUEwUDZvVDRm0gFWQVVfeXFMUFRhS2kxZW4tS0oyOS0xREVZSG1RREVfeWtCWkRJdG5za1V2XzdGa3pnU2Q4SUNQM2hranppVFluSjBNckZXNkFRYkpLVHBwMTlNVGhBVmc?oc=5",
-          "time": "2026-07-31 10:00:29",
-          "publisher": "Google News→UDN",
-          "severity": null
-        },
-        {
-          "title": "打造智慧行政新模式 新竹市府辦理生成式AI實作課程",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wbEJ2ZjBuQkFxTzlfTHZqQW5yekZZdVpFTHljQjJnNDRNRXNvR3kxMUZfZnctbFFHcFdpTjNHd3VXbXdROFFDVWRkLWZLOGFlYVZlMUZzb3lHMTVreXNDU0tQT1JpMG9L?oc=5",
-          "time": "2026-07-31 09:16:46",
-          "publisher": "Google News→元丰傳媒",
-          "severity": null
-        },
-        {
-          "title": "特定人士惡意曲解市府食安說明 竹市衛生局嚴正駁斥：勿斷章取義、散播不實訊息",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30207&serno=c11eca34-0dac-42e5-a6d5-99d102654c9c",
-          "time": "2026-07-31 07:40:06",
-          "publisher": "新竹市政府",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場攤商 抗議竹市府逼撤離",
-          "url": "https://news.ltn.com.tw/news/HsinchuCity/paper/1764750",
-          "time": "2026-07-31 05:30:00",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "竹市衛局長稱「甲醛炊粉煮一煮就可吃」 挨批錯誤衛教",
-          "url": "https://news.ltn.com.tw/news/HsinchuCity/paper/1764749",
-          "time": "2026-07-31 05:30:00",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場攤商抗議竹市府逼撤離- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlaTY0TVdqTjJHeE9LdS02TkJJcnVTTnRidkdBVHhPUVNwYnktajZWQ000Y0tZRWlySUNOV1lPdWhYc3Zrc01KVGtJbm5iOGg1eG9RcXJ6Y0IxeG8?oc=5",
-          "time": "2026-07-31 05:30:00",
-          "publisher": "Google News→news.ltn.com.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "甲醛炊粉案 綠批竹市府錯估食安風險",
-          "url": "https://tw.news.yahoo.com/%E7%94%B2%E9%86%9B%E7%82%8A%E7%B2%89%E6%A1%88-%E7%B6%A0%E6%89%B9%E7%AB%B9%E5%B8%82%E5%BA%9C%E9%8C%AF%E4%BC%B0%E9%A3%9F%E5%AE%89%E9%A2%A8%E9%9A%AA-201000587.html",
-          "time": "2026-07-31 04:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "竹市府最新人事調整 前新竹縣教育局長楊郡慈接任發言人",
-          "url": "https://tw.news.yahoo.com/%E7%AB%B9%E5%B8%82%E5%BA%9C%E6%9C%80%E6%96%B0%E4%BA%BA%E4%BA%8B%E8%AA%BF%E6%95%B4-%E5%89%8D%E6%96%B0%E7%AB%B9%E7%B8%A3%E6%95%99%E8%82%B2%E5%B1%80%E9%95%B7%E6%A5%8A%E9%83%A1%E6%85%88%E6%8E%A5%E4%BB%BB%E7%99%BC%E8%A8%80%E4%BA%BA-020405991.html",
-          "time": "2026-07-31 02:04:05",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "竹市115年複合式災害防救演習！ 動員667人次驗證緊急應變體系",
-          "url": "https://news.nextapple.com/local/20260731/9CD8E0F929B9AA521D8F3002CDC5D0D5",
-          "time": "2026-07-31 00:10:00",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "盧媽嗨辦鍋烤節！不怕苯駢芘？  甲醛炊粉講不清？竹市府失能？ 2026.07.30【台灣向前行 Part5】",
-          "url": "https://www.youtube.com/watch?v=kzScZ_Va9aE",
-          "time": "2026-07-31 00:09:37",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "新竹市災害防救演習登場 模擬複合式災情考驗危機應變 | 台灣好新聞",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5HVzB0NjdHcHVCaHJuSDlzOWVYYzRadWRDSFJYQVJPMndrelRpNG01eFFjRm9HakhXM3BiUmY5U3Q2SjNTY3Fid2p5ckM4Q1FBZlgyeFV3?oc=5",
-          "time": "2026-07-30 22:10:48",
-          "publisher": "Google News→today.line.me",
-          "severity": null
-        },
-        {
-          "title": "中正市場搬遷攤商陳情要求補助 竹市府：持續溝通",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12a1dDZV9LWU9LNVVHb29SMVFzYWVJOXhtVEM1M1pzMzhXYVlnQkhYT3o0cVJCaFVYbnNCTUM5eWNQdThiUjMyd0NveWkzOWo2TWc?oc=5",
-          "time": "2026-07-30 22:06:38",
-          "publisher": "Google News→fountmedia.io",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場搬遷攤商陳情要求補助竹市府：持續溝通- 地方",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9peHBNYzhuUm1oaTR3a0U1RlJTOXB1S1JQVUJraVBMTXNpblY0N09ObFBuWkVISGgwVk1od0xnWDRYczdYU2h6SS00bGhLTmVZa3M2bmRRLXprNzV4b01xVUdPN0FJMW15YlNnUTJR?oc=5",
-          "time": "2026-07-30 21:29:13",
-          "publisher": "Google News→news.cts.com.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "中正市場搬遷攤商陳情要求補助竹市府：持續溝通| 地方",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBvVi1pUlMyRzdVdk5CLUhvNElWWkRmQ3Z2Y3A0N25HNFRyU1JkZWF5VnY1dFRsbnVUMmF4MUp4TjdoMUduZ0IzNkxJaUc4T0lYMllwWFJnbWdnZlQyZUJJ?oc=5",
-          "time": "2026-07-30 21:29:00",
-          "publisher": "中央社",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "花蓮地方動態",
       "city": "花蓮",
       "place": "花蓮縣政府",
       "level": "red",
-      "news_count": 61,
+      "news_count": 60,
       "comment_count": 0,
-      "negativity_pct": 20,
+      "negativity_pct": 18,
       "is_urgent": false,
-      "urgency_score": 97,
+      "urgency_score": 93,
       "news_articles": [
         {
           "title": "熊本強震殷鑑 花蓮市防災推演",
@@ -4913,13 +4885,6 @@
           "time": "2026-07-30 22:05:00",
           "publisher": "Google News→蕃新聞",
           "severity": null
-        },
-        {
-          "title": "花蓮28億地震善款流向遭檢調搜索！童子賢吐心聲：希望用在受災百姓身上",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBXYU8tUVduX05VazgtMlVDTWsweGIxQ00xUVBzTVpBQThVbjRmQlBKaHVnSG03ZmdJbjJFLVNfVkY2Wm42NVkybTZZUQ?oc=5",
-          "time": "2026-07-30 21:33:33",
-          "publisher": "三立新聞網",
-          "severity": "red"
         }
       ],
       "comments": []
@@ -4929,11 +4894,11 @@
       "city": "新北",
       "place": "新北市政府",
       "level": "red",
-      "news_count": 63,
+      "news_count": 62,
       "comment_count": 0,
       "negativity_pct": 3,
       "is_urgent": false,
-      "urgency_score": 69,
+      "urgency_score": 68,
       "news_articles": [
         {
           "title": "奧運金牌林郁婷今天現身民進黨新北市長參選人蘇巧慧的影片，感謝蘇巧慧為選手爭取資源，並在低潮時為她發聲。國民黨李四川則承諾...",
@@ -5368,13 +5333,6 @@
           "time": "2026-07-30 22:31:51",
           "publisher": "太報",
           "severity": null
-        },
-        {
-          "title": "議員批柑城橋不通土城產業園區 新北：擬先開放機車",
-          "url": "https://www.cna.com.tw/news/aloc/202607300372.aspx",
-          "time": "2026-07-30 21:20:09",
-          "publisher": "中央社",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -5874,17 +5832,24 @@
       "city": "台中",
       "place": "台中市政府",
       "level": "red",
-      "news_count": 73,
+      "news_count": 75,
       "comment_count": 9,
       "negativity_pct": 4,
       "is_urgent": true,
-      "urgency_score": 101,
+      "urgency_score": 103,
       "news_articles": [
         {
           "title": "蔣萬安聲量壓過盧秀燕？鄭照新：民調到最後會變總和不是擠壓 | 何長澤 | 地方新聞",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9pcUYxSkNsZDFXeEhUTDZvUVNOS1BXSEhuWC1SbDNqNzNkU19mMm9wRVpCVHF3Y08zazZ5RlY4bW9FYzZObXg3LXBOUG9OZw?oc=5",
           "time": "2026-07-31 20:35:31",
           "publisher": "Google News→風傳媒",
+          "severity": null
+        },
+        {
+          "title": "傳盧秀燕年底卸任開競辦備戰2028 副手鄭照新：不會讓大家失望",
+          "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxOOXRhU1JZb1Bnbkd0OGJZeW9kZWE3ekVhYWlRMVdQTE9yZmpLamRTT3NLUnlfZHYxR0xLTlByWjhwbm1CM0gxc01zeTNGWTVMbXVhd1N5Q3hlQTRYZUNkRWx3azZjU2RKS2JrSUdjMUE1QlQtVEZBbnpHZmZUa1dVcXhaTjZFWldWWWN1YThqbmd5aGpsT3o2a01EQ2djU3AyQnJibktZR21ycnpCYzA0YWpmYTNzMmNYNXBZQzZPWk1VbVZnSmVCdzQ5bldXNVdvbkRxUG5hQVB6akJkcDFUVDFPOVpXVnBxcHloTmhVYm1uZWxOa1V3RVh3MU83WlpPOW9yOXl6aXZ3dkdaTG11Z3ZvTldiUWxoQzFJV0pHSGFvbnowYjBXMzNacXJaNGtEX1RBV3Y5SmphVlJJcGNZZC02YnlpX0hRRmI3SmdHb2h5SVhpNnNIemVseXdzNXZmb0ZFcmtMbUNTRHZUVkxnMVJmQlhYNm1wd3NxeDZUZzVCNjF2aUNn?oc=5",
+          "time": "2026-07-31 20:16:00",
+          "publisher": "Yahoo新聞",
           "severity": null
         },
         {
@@ -5961,7 +5926,7 @@
           "title": "問盧秀燕是否備戰2028？鄭照新神回應：「光芹姊沒有老花」",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ScG8yY0pkU1ZVMmFvTVNsTTQteVlSSExTZm9JOEFJb1BXa2tfSGdjSUZ6Y0pwWVktR3dKamJxeWhTUno3ZjlNSm5pYnFGMTJnRnc?oc=5",
           "time": "2026-07-31 16:44:00",
-          "publisher": "Google News→n.yam.com",
+          "publisher": "Google News→蕃新聞",
           "severity": null
         },
         {
@@ -6003,7 +5968,7 @@
           "title": "倒閣改選「天塌下來怎麼辦？」盧秀燕搬女媧補天妙回游盈隆 背後真正用意曝光",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5lbDc4d3VhWG1vN2pzSDlEUW02QmgtZGpERmdPckU0SG1zX0hiUDlGRHVqVWRLLW5lbVlmQklMWUhZc1JvRUQyZ2hkSnFXREctdDZDbW9VYUhBdGRjXzEydXhkUdIBaEFVX3lxTE9GTXA4YnViYlY3V085Sm9EeGhid0pvUFZlSW5NS1hXR0NvNEJSOUdfM2w1Q2w1MjdXemdheklpbUJUYzVSX1haX2oyQlhEZE0tY1J0UVA5dzV1bjRxUXlyekUzcjF4MXh2?oc=5",
           "time": "2026-07-31 16:15:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
+          "publisher": "Google News→mirrormedia.mg",
           "severity": "yellow"
         },
         {
@@ -6042,6 +6007,13 @@
           "severity": null
         },
         {
+          "title": "「痟拍雞」拚2028？林俊憲：蔣萬安一出手 盧秀燕恐凶多吉少 | Newtalk",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1WbzNmMmozRHFaRFJUQ09zR1JoS1drdWRHMGVZbjB3RFV5cDBRSUFVbjZrNUNSR2ViVGdYOWc1b0tjZjB1ZG5BTHpkaFZZYW1mOE9BRm9B?oc=5",
+          "time": "2026-07-31 15:49:30",
+          "publisher": "Google News→LINE TODAY",
+          "severity": "yellow"
+        },
+        {
           "title": "「痟拍雞」拚2028？林俊憲：蔣萬安一出手盧秀燕恐凶多吉少| 政治",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9uel9lZG5hYmJhYnRhUmg2UUF5WEkxS0NXMXZGeHpwUWJLanBKU2gxcHRiMV93OUlhR1hyRGdzWExjTnNuSUpSakYwTGpLNHA1akh3Qzc0TmJOR1U?oc=5",
           "time": "2026-07-31 15:37:23",
@@ -6073,7 +6045,7 @@
           "title": "蔣萬安盧秀燕再質疑油品案食藥署：絕無護航| 生活",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBlZGtjYmE2NExISFEtU0ZnZy0tQnBDVEowdkFXZzhLTmkwNUc1c1VmaTllb1pER3hacWs3OHMxdnZHd3JPcklOaXItNFJkejJrand4UUJPTHdlTFBmTzE0?oc=5",
           "time": "2026-07-31 15:23:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": "red"
         },
         {
@@ -6269,7 +6241,7 @@
           "title": "談完「補天」秒封口！被問藍白合作5席不分區 盧秀燕一句留伏筆",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9sc01lSkQzNU9yNkRfdXlOWU1yOVBEZFBOT012WkNLdFJ0bVhQNFpxMWc5dmtWbVVmcjdXYXFiTnc2bDJVMWRtZ1I5dzjSAVJBVV95cUxNWWhyelViaEcxVGd6bUFDSXpnRy13WG1PT1l6WVFHSjdXSlM2b1FhZmdWVmtYTFBjX2dXT19Id05qcnc2d1pYa3BlUmJmOGp2cjNn?oc=5",
           "time": "2026-07-31 11:20:49",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -6325,7 +6297,7 @@
           "title": "「距離抓到門神只差一步」！盧秀燕追打專家會議：該有人負責了",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XeWt5WVpraHdNYndjZ2dzaTNuNFpabGl6MkM1bFpvUktITEtPNDVsa0NRYkllTGs3ams2QWxBdjdCbjNpWEh4a1JwTUV5YzVyUFHSAVJBVV95cUxNV3lreVlaa2h3TWJ3Y2dnc2kzbjRaWmxpejJDNWxab1JLSExLTzQ1bGtDUWJJZUxrN2prNkFsQXY3Qm4zaVhIeGtScE1FeWM1clBR?oc=5",
           "time": "2026-07-31 10:56:37",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -6472,11 +6444,11 @@
       "city": "桃園",
       "place": "桃園市政府",
       "level": "red",
-      "news_count": 133,
+      "news_count": 130,
       "comment_count": 0,
       "negativity_pct": 5,
       "is_urgent": false,
-      "urgency_score": 154,
+      "urgency_score": 151,
       "news_articles": [
         {
           "title": "NBA兩屆灌籃王拉文震撼降臨 桃園夢幻合體高錦瑋、張善政",
@@ -7387,27 +7359,6 @@
           "time": "2026-07-30 21:34:10",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "華航10月28日重啟桃園直飛重慶！兩岸直航擋不住了？梁文傑釋善意「不介入」，放手讓航空公司決定| 楊騰凱 | 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MSlJJd1otdm5jVnIzdTQxQlNmUjdoUzVWb1J6WlZ3ZmtSSTJYdDNNT2NnM2haYmdmNHptdDNnZUhOU2dQeTc0Q1BOUFJ6QQ?oc=5",
-          "time": "2026-07-30 21:29:55",
-          "publisher": "Google News→風傳媒",
-          "severity": "yellow"
-        },
-        {
-          "title": "華航10月28日重啟桃園直飛重慶！兩岸直航擋不住了？梁文傑釋善意「不介入」，放手讓航空公司決定",
-          "url": "https://www.storm.mg/article/11152952",
-          "time": "2026-07-30 21:29:00",
-          "publisher": "風傳媒",
-          "severity": "yellow"
-        },
-        {
-          "title": "桃園區模範父親表揚大會 肯定每位爸爸對社會及家庭的貢獻",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE91eFNvLW11V0tQTnFYTHRiUWZ5SVlPNDBJaExqMzFQOHVnSjRMRk1DV1dfUlY5YThQRWxfM1lXQ2h4MG5sQXFBTkV1Z1FKQnZkUEE?oc=5",
-          "time": "2026-07-30 21:26:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -7417,11 +7368,11 @@
       "city": "台中",
       "place": "台中市大里區",
       "level": "red",
-      "news_count": 136,
+      "news_count": 134,
       "comment_count": 0,
       "negativity_pct": 9,
       "is_urgent": false,
-      "urgency_score": 172,
+      "urgency_score": 170,
       "news_articles": [
         {
           "title": "江啟臣肯定台中國際幸福度",
@@ -7798,7 +7749,7 @@
           "title": "姜至剛澄清！爆中聯代表7/3也赴台中市府 駁「中央門神說」",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UblNMd0tQZXllMHJHb1M0WGo4eXBKQUJYS1ByUkhjVmwtNE9LQVNFc0ZfajU5MGtsbHBrTkZKWWIzQXEtSG1PZlFaZUhRb2NNMnRrWDY4Nk45MEc4?oc=5",
           "time": "2026-07-31 15:45:00",
-          "publisher": "Google News→太報 TaiSounds",
+          "publisher": "Google News→taisounds.com",
           "severity": "yellow"
         },
         {
@@ -7854,7 +7805,7 @@
           "title": "套翁曉玲邏輯 陳淑華批中市府預算搞造神",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9yVFo2MjdWUVRITk9VeGViemM2ZFhrM1RqR3VaLTBneG9JWTZ4VVRpYXltZW1OMXNtSlV4akVDeFNFRDIwTHJxcWJsQlPSAVJBVV95cUxOcGQ3VUZEZ3B1S2dTSHJleXJFUDYzbE1Zb1FtTUdaOVhTR2xJQW1ZdlFQeVBNTXI1b3pWaG1sdDBRXzRyUnRrOHNVekVka0VoVXBn?oc=5",
           "time": "2026-07-31 15:13:33",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -7875,7 +7826,7 @@
           "title": "中市102位校園長布達交接 盧秀燕勉有心有愛打造幸福校園",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BNDEydXM3cWhPd1lDbmxsbUR2RG9qSFdrWEZ2QnR1RDR0MmJzWlhFeXNGaHBjN2FKSGVxNndBVDVVQ1JCdVlIMzhocUpLbnRIa1E?oc=5",
           "time": "2026-07-31 15:04:00",
-          "publisher": "Google News→n.yam.com",
+          "publisher": "Google News→蕃新聞",
           "severity": null
         },
         {
@@ -7924,7 +7875,7 @@
           "title": "想邀蔣萬安來台中吃火鍋！ 盧秀燕提「台北火鍋論」：為鍋烤節免費代言- 政治",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tbU9VcDVyeHlBU2pSU2lJWWN1UjNQNUhWMGR3YXBBcnVRY2trN2JnLTc5M1B4a0lTMUJabUlTRjJNQkFMMXN1UDVZSThnYXAyY2ltUkxDMGloNFFZU0xNMWpDa1FobDdLMllDWVZlUzdQUQ?oc=5",
           "time": "2026-07-31 14:25:00",
-          "publisher": "Google News→news.cts.com.tw",
+          "publisher": "Google News→華視新聞網",
           "severity": null
         },
         {
@@ -7987,7 +7938,7 @@
           "title": "台中鍋烤節起跑盧秀燕想邀蔣萬安來吃火鍋| 地方",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sQlRRdVdfNXZsalZueGF2NEdzVXZnYUZrN3JwYVJaaWFXcmY5YzQwNVlPa3cyNTRZcVMtdldYVmNSeFBDdTQ3Vk9qeWdvcGtMZC13d3NhMGtIUko0dC1r?oc=5",
           "time": "2026-07-31 13:37:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": null
         },
         {
@@ -8085,7 +8036,7 @@
           "title": "外界猛炒「盧蔣心結」！盧秀燕爆料：蔣萬安曾變裝朝聖台中燒肉",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pV1E1N3R5cjVXU1g2UDByblUtV1RUbS1xS0Z3bjBESGtKUi1GLVBpOEZqTDJsbWRjZG9NRDExTWFxNjJLUk9KeDBYUUxVb3NNaUHSAVJBVV95cUxPaVdRNTd0eXI1V1NYNlAwcm5VLVdUVG0tcUtGd24wREhrSlItRi1QaThGakwybG1kY2RvTUQxMU1hcTYyS1JPSngwWFFMVW9zTWlB?oc=5",
           "time": "2026-07-31 12:17:16",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -8360,20 +8311,6 @@
           "time": "2026-07-30 21:47:29",
           "publisher": "墨新聞",
           "severity": null
-        },
-        {
-          "title": "中選會游主委訪中市交流選務整備 盧市長：中央地方攜手確保公平選舉",
-          "url": "https://more-news.tw/680523/",
-          "time": "2026-07-30 21:29:22",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "台中免費午餐傳「4菜1湯」縮水盧秀燕責成教育局了解| 自由電子報",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9SUlBNYVliVkQyZ2JDaHhFQXRzWDhjcmxTNm1SX2dRT3dRUXM3NjhKLW56TFJodndQUFhScnYyTUdPNHRpd0FCSEl4azgtdzQyNjF1c2dR?oc=5",
-          "time": "2026-07-30 21:20:50",
-          "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -8469,6 +8406,13 @@
         {
           "title": "北市爆發多起兒虐案! 沈伯洋劍指蔣萬安包庇問題幼兒園",
           "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxNTVVtZjk1YjZkU2REWkdMV2VvZkUwUko0NjJzcTczZlppSklKajBQTHlrMHhrLXVHLWwwQ2VkZlJqU1Fmcks1UElHZ3hoa2xMRGZaQTZuclhFeTlBSTZ4LUdLbWRxV3VHSG9HQ3hXaDNibkp4OHdZMlVCOXoxcWZmdHBiTXRLcFFVVVV3U3dGNThNSmhGdkR4UDFHTXFEUURNc0cwZ3E1WXBmd2Vsc3B5RlQwcmFfR0oxdkxzNFQ4Q011S2pfdFVTcDk0S3h4ZFNDeGJmNW5reDE3dWVNbnNfMlNJWEhUQUg4MUc5S0Q2bFBJcmlzVUU4Xzhza1cyamhjdFZXQnhQbDRIRXhaQWdOeVRQa3pKUXFneEZ3aHBZbDlKSm5lRmVUUGNiQ0ZKU2VPd0t5Y2RsUDZwRE1DV1dMTEQtYUpBMElCejJib3Z3dkdzVHJicW50V2tnM1pTaXpEUHZoLVcwNlp4MEVXUDM5aDhxYWQ?oc=5",
+          "time": "2026-07-31 20:22:02",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "北市爆發多起兒虐案! 沈伯洋劍指蔣萬安包庇問題幼兒園",
+          "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxOR3ByejlCaVJJa3l2YzQ1Nl9uX1MtMUQ3UTJCbjM5Sk51MHdwSlhZZEZGUFdIQXFjeC1vcjZ1bUsyRHZXZDRuLTJhVzFOYnNCSEJleFViRFFIR05kR1NGOUpkaHRfV2lVMzdwYU5rWFExWlQ5cGVwRVg2WjV4ZEpTenRCV3JqTmlmNDFZT3VsZmdDR0xYNFJZOHJoaXNqVVBJOXYyWnpsQ3ZfRGJnTjBUZXNkcHBWR1ZYb0FGOG5lQXRZX0Nja19ydFZlcGFCMGh2OXJUT0NpazUzcGJEaXpjRUNMVS15c3J0bzlERERab1M2a3VJRFNHOEl5TXRxSFlZMVRSRHM5OUx4TUp1VlJnNHF6QS1QTWxuUFdHcnQ0YjRlc1V6N25wZkNmcDJIYmUwaUJGTC1wVXFQckdQOHlKWFNaNFhlV3VIRGthaE9DNEp6akNzb3U4QWtVZTNOdk9wUmN4NDZ2YkNkZkxKQkpNNGduVGw?oc=5",
           "time": "2026-07-31 20:22:02",
           "publisher": "Yahoo新聞",
           "severity": "red"
@@ -8967,7 +8911,7 @@
           "title": "想邀蔣萬安來台中吃火鍋！ 盧秀燕提「台北火鍋論」：為鍋烤節免費代言- 政治",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tbU9VcDVyeHlBU2pSU2lJWWN1UjNQNUhWMGR3YXBBcnVRY2trN2JnLTc5M1B4a0lTMUJabUlTRjJNQkFMMXN1UDVZSThnYXAyY2ltUkxDMGloNFFZU0xNMWpDa1FobDdLMllDWVZlUzdQUQ?oc=5",
           "time": "2026-07-31 14:25:00",
-          "publisher": "Google News→news.cts.com.tw",
+          "publisher": "Google News→華視新聞網",
           "severity": null
         },
         {
@@ -9030,7 +8974,7 @@
           "title": "北市大附中揭牌蔣萬安：培育人才帶動地方發展| 地方",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02bUU5X01lemxKYjRtVXZvSndDeTBWVlBXOXVGVWlaejJfQ043ZVoxWmk3VlVzVS1JcDFzbHhjOUFRVXJKRGVtLW9EUE1oRzh5djBqZXg1cE9SR0ZXLWFV?oc=5",
           "time": "2026-07-31 14:01:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": null
         },
         {
@@ -9044,7 +8988,7 @@
           "title": "北市4年8起重大兒虐綠委要蔣萬安負起政治責任| 政治",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sXzk5MWNubUhmcF9ZY3FsQjJIVXhLc1dZUHVHMEhORHRYRktfWWxuMmc4YWYtV2lDSWI5b2xFNVVieFZmdmRfd3hxYUl4bWYwYXliWk5ZaFlDY0N6ZlFV?oc=5",
           "time": "2026-07-31 13:52:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": "yellow"
         },
         {
@@ -9135,7 +9079,7 @@
           "title": "台中鍋烤節起跑盧秀燕想邀蔣萬安來吃火鍋| 地方",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sQlRRdVdfNXZsalZueGF2NEdzVXZnYUZrN3JwYVJaaWFXcmY5YzQwNVlPa3cyNTRZcVMtdldYVmNSeFBDdTQ3Vk9qeWdvcGtMZC13d3NhMGtIUko0dC1r?oc=5",
           "time": "2026-07-31 13:37:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": null
         },
         {
@@ -9261,7 +9205,7 @@
           "title": "外界猛炒「盧蔣心結」！盧秀燕爆料：蔣萬安曾變裝朝聖台中燒肉",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pV1E1N3R5cjVXU1g2UDByblUtV1RUbS1xS0Z3bjBESGtKUi1GLVBpOEZqTDJsbWRjZG9NRDExTWFxNjJLUk9KeDBYUUxVb3NNaUHSAVJBVV95cUxPaVdRNTd0eXI1V1NYNlAwcm5VLVdUVG0tcUtGd24wREhrSlItRi1QaThGakwybG1kY2RvTUQxMU1hcTYyS1JPSngwWFFMVW9zTWlB?oc=5",
           "time": "2026-07-31 12:17:16",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -9669,13 +9613,6 @@
           "time": "2026-07-30 22:00:00",
           "publisher": "Google News→news.tvbs.com.tw",
           "severity": "yellow"
-        },
-        {
-          "title": "李治安代表市長蔣萬安赴成功嶺 慰問北市役男送暖打氣",
-          "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPZTNZMlBCZUtIelRuOURKbEl3Z0RQbS1xVjFIZVBJQ2p4MVE5Z2xQOXVFdUFJMjJ5YVU2OUZYRUEtZGZyWEU4UjBYQldPS2J6cGNVRjFkMmRRektzMHZLRG5Wa29rYUg5Y1lHT2xFRFNYWGpUbXZfd2RhdFRLWHpiMXdOei1tVXhueTVITlhPV0JLczVOUHBYa3N0c0hWX0lfM3A3VE5hSGp6REVLRXc0R18wZzk3UzhscXhOSjFZb0o2c1dIcmtZOU5GR2Y1ODRvakJtZnBEZ1BSZEZPQWtNVjQtRDVsS2hMTDZYdUlWX0tKOWxoRU5ZcUxhVXJDOWl0aWg4UVpLMDFGQzF3WTIzUHdBY0xDVlpCMzNUeEFaMmRSaXVRbUt5VjNwU192V1c5dVVsSEJ4Nm5CWWJtQ0pWbGNMQ19QcUtPRmpuWWxWemtDVFRLNnU5X1hkaFJMLUhpanVuaHlibXJJTW1GZTk1V0NQRkQ?oc=5",
-          "time": "2026-07-30 21:28:35",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -9685,11 +9622,11 @@
       "city": "高雄",
       "place": "高雄市左營區",
       "level": "red",
-      "news_count": 205,
+      "news_count": 204,
       "comment_count": 0,
       "negativity_pct": 9,
       "is_urgent": false,
-      "urgency_score": 259,
+      "urgency_score": 258,
       "news_articles": [
         {
           "title": "高市預計8/3視察災區 永旺商場搜救仍持續1／熊本強震35死！高市最快8/3訪災區 與災民對話",
@@ -9837,6 +9774,13 @@
           "time": "2026-07-31 18:59:44",
           "publisher": "自由時報",
           "severity": null
+        },
+        {
+          "title": "高雄九如橋欄杆挨批醜 陳其邁坦言不美觀",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE81M3IxVXlrQ245SHRSWXBRRkwzNUcyRzlmNFpmMXd3ZTlfZlBPYWRJeTZ6MFNuUUpRMUdWbjZJWkdnYmNZM0gwTNIBTEFVX3lxTE9SQzFDVDhGUF9sZzhBUHhXd21mV0ptajA0ZExVN3ZyWHE5WXh5eXZrbkUyWlFuSnRtbWlqWTEtR3p3bkV0anhTaFV6ZXQ?oc=5",
+          "time": "2026-07-31 18:47:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
         },
         {
           "title": "高市府捐1500萬日幣助熊本 陳其邁：姊姊城市有難一定要互相幫忙",
@@ -10017,7 +9961,7 @@
           "title": "5.6億元的高雄九如橋挨批醜 陳其邁坦承不美觀",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxMEFYcTg4OUFZNUZiRVhtQ0NSd3cxX2FMRUVyRW5BS1g2dFh0Z2ZONjFKdHBDOTF6dVNmNUhyc1BhQ0JRdTNiU0duTy3SAVJBVV95cUxNU1dsWC1GQlZ5ekNHNEJ4bHE0N3RCVlFUMlhoUFA0a2d2X2tOV2dNUl81Z0dfU1JZRlJkUlNUQjVHY25sTC1RMFREY2hWckMtWmhR?oc=5",
           "time": "2026-07-31 16:49:00",
-          "publisher": "Google News→NOWnews今日新聞",
+          "publisher": "Google News→nownews.com",
           "severity": "yellow"
         },
         {
@@ -10220,7 +10164,7 @@
           "title": "高雄新九如橋今通車陳其邁認「欄杆實在醜」：市民提出意見就該面對- 政治",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aZFREZzhTb2FYUWJNMmxPWEhSSUxpVWhrVGdiOVh6TEJQSGZUbHFzbzB0RmxwTjZ6RWxOM1Nub08wUjFxWGMxT0diWTZDUUVjWThMSk5Wb2lEMjRISW1BNWJsQzhIV3hlQWxyVWszaFdyZw?oc=5",
           "time": "2026-07-31 15:08:00",
-          "publisher": "Google News→news.cts.com.tw",
+          "publisher": "Google News→華視新聞網",
           "severity": "yellow"
         },
         {
@@ -10332,7 +10276,7 @@
           "title": "高雄九如橋欄杆挨批醜陳其邁坦言不美觀| 地方",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5EVVNEcFREYlNLSUtKaERtUHEzUEVteXRTSEVuMnlzdmd6UVlrbGNYaGc2ZFRSSVRWQ2R1NDMwNTktbWZLQk0wY3lHQ1F4SFdEck1DSlhCbUtOZUNPRnI0?oc=5",
           "time": "2026-07-31 14:01:00",
-          "publisher": "中央社",
+          "publisher": "Google News→cna.com.tw",
           "severity": "yellow"
         },
         {
@@ -10738,7 +10682,7 @@
           "title": "熊本規模7.1強震 陳其邁捐50萬日圓、高市府捐1500萬日圓助重建 | 政治 | CTWANT",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56VXZleVRQZzlJZ0o2X1hCWnFOWFBQUUdINWtWa3ZrQjBHcjFyVU5qeDB1M1k2Y0JXSjE2aTlrbnpYT1hHaFdDb3dJSjUzR0XSAVRBVV95cUxQTEZoSG1VbmRhVHFIRWRCZnNVajRNMDZoZDlzMEdTNXQxOFJtbWtibnZZc2NDS3RZQ243SHdQaElQd0o4bGJ5eUtZdmg2UEtxWXJjTU0?oc=5",
           "time": "2026-07-31 10:00:36",
-          "publisher": "Google News→ctwant.com",
+          "publisher": "Google News→CTWANT",
           "severity": null
         },
         {
@@ -11110,20 +11054,6 @@
           "url": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxQU2hSNXdvcUc2YnA0ekxrbXZNQUtTYTZPQ1lzOE5PclpRUkw3S09iZEx3UXU1enF0WDdldUtUZVBfbU0xVV9JalZOMkpfMXU0dGt3N0kzZEpmZjJNZkUyU2xMUG02MF9sRzAwS1ZLbjA2a0RocVd2czVpZmJNbWMwS2hURWc0M0w0aVFfdUoyM3BGQ3hTeXl1T19fVnNXQ2ZDQ01vQWFDeGpVNmlpdkFJWDBVUFJmTW1Rd2o5OTlfdW1DWWVvOGNSMGJJNm1QakhMb0s4RFM1alZ2QzhZQ2lZMFlRRmJhUW5TV2IxcTIyWkxVd1N4TDVEcE1ORU0xdVBqeE45d3pYSGc4VkNKUDE4VGRfdmFMd0N1MlNsUUkyc1VONkc3c3NDMV9jNFprY19ETFZsa29kTUpSOFVIUERDOTJ1SFI3cHVlVHRVcmRjZkxwc0Y3Z2tiOWZSdF9NME5ZUkQ0WlFRWkdYZV9KbFJubzBhaFk5Q0x1TXc?oc=5",
           "time": "2026-07-30 21:34:00",
           "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "霹靂舞》巴黎奧運雙金牌領銜 世界四大冠軍齊聚高雄",
-          "url": "https://tw.sports.yahoo.com/news/%E9%9C%B9%E9%9D%82%E8%88%9E-%E5%B7%B4%E9%BB%8E%E5%A5%A7%E9%81%8B%E9%9B%99%E9%87%91%E7%89%8C%E9%A0%98%E9%8A%9C-%E4%B8%96%E7%95%8C%E5%9B%9B%E5%A4%A7%E5%86%A0%E8%BB%8D%E9%BD%8A%E8%81%9A%E9%AB%98%E9%9B%84-133116048.html",
-          "time": "2026-07-30 21:31:16",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "巴黎奧運雙冠軍齊聚港都！2026高雄霹靂舞國際大賽頂尖對決鎖定衛武營",
-          "url": "https://focus.586.com.tw/2026/07/30/p397689/",
-          "time": "2026-07-30 21:21:03",
-          "publisher": "焦點時報",
           "severity": null
         }
       ],
