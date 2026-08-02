@@ -1,6 +1,6 @@
 {
   "date": "2026-08-02",
-  "snapshot_at": "2026-08-02T02:08:40.553452+00:00",
+  "snapshot_at": "2026-08-02T02:27:37.090378+00:00",
   "hotspots": [
     {
       "title": "苗栗火災事件",
@@ -18,6 +18,27 @@
           "url": "https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=979392",
           "time": "2026-08-01 20:42:14",
           "publisher": "苗栗縣政府",
+          "severity": null
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "彰化車禍事件",
+      "city": "彰化",
+      "place": "彰化縣政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "從921大地震到重大車禍搶救 彰化5消防員獲「資深救護貢獻獎」",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525370",
+          "time": "2026-08-01 16:36:44",
+          "publisher": "自由時報",
           "severity": null
         }
       ],
@@ -59,69 +80,6 @@
           "title": "花蓮車禍！小貨車疑闖紅燈撞上機車 騎士右手骨折送醫",
           "url": "https://news.nextapple.com/local/20260801/F26CFCD23F9EC8D01D69119120B26D62",
           "time": "2026-08-01 14:21:41",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "彰化車禍事件",
-      "city": "彰化",
-      "place": "彰化縣政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "從921大地震到重大車禍搶救 彰化5消防員獲「資深救護貢獻獎」",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525370",
-          "time": "2026-08-01 16:36:44",
-          "publisher": "自由時報",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "桃園陳情/抗議",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "新屋砂石分篩場汙染 地方抗議促遷",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%B1%8B%E7%A0%82%E7%9F%B3%E5%88%86%E7%AF%A9%E5%A0%B4%E6%B1%99%E6%9F%93-%E5%9C%B0%E6%96%B9%E6%8A%97%E8%AD%B0%E4%BF%83%E9%81%B7-201000843.html",
-          "time": "2026-08-02 04:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "新竹縣陳情/抗議",
-      "city": "新竹縣",
-      "place": "新竹縣政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "民眾投訴｜遠東新新埔廠「砍樹式」偷拆巨型煙囪 無照施工遭勒令停工",
-          "url": "https://news.nextapple.com/local/20260801/4F203050E024BBF95611337DF005A132",
-          "time": "2026-08-01 13:10:41",
           "publisher": "壹蘋新聞網",
           "severity": "yellow"
         }
@@ -171,6 +129,48 @@
       "comments": []
     },
     {
+      "title": "桃園陳情/抗議",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "新屋砂石分篩場汙染 地方抗議促遷",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%B1%8B%E7%A0%82%E7%9F%B3%E5%88%86%E7%AF%A9%E5%A0%B4%E6%B1%99%E6%9F%93-%E5%9C%B0%E6%96%B9%E6%8A%97%E8%AD%B0%E4%BF%83%E9%81%B7-201000843.html",
+          "time": "2026-08-02 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "新竹縣陳情/抗議",
+      "city": "新竹縣",
+      "place": "新竹縣政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "民眾投訴｜遠東新新埔廠「砍樹式」偷拆巨型煙囪 無照施工遭勒令停工",
+          "url": "https://news.nextapple.com/local/20260801/4F203050E024BBF95611337DF005A132",
+          "time": "2026-08-01 13:10:41",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "台中空氣污染",
       "city": "台中",
       "place": "台中市政府",
@@ -186,6 +186,48 @@
           "url": "https://n.yam.com/Article/20260801355329",
           "time": "2026-08-01 12:00:00",
           "publisher": "蕃新聞→享新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "新竹市詐騙案",
+      "city": "新竹市",
+      "place": "新竹市政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "防範不動產詐騙！竹市府呼籲申辦「地籍異動即時通」 守護財產安全",
+          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=b739322f-be5f-477b-8485-b2af4474a694",
+          "time": "2026-08-02 09:26:08",
+          "publisher": "新竹市政府",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "屏東詐騙案",
+      "city": "屏東",
+      "place": "屏東縣政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "防詐限量小錢虎！屏東警攔阻詐騙保住2100萬 聯名慈天宮虎爺加持",
+          "url": "https://tw.news.yahoo.com/%E9%98%B2%E8%A9%90%E9%99%90%E9%87%8F%E5%B0%8F%E9%8C%A2%E8%99%8E-%E5%B1%8F%E6%9D%B1%E8%AD%A6%E6%94%94%E9%98%BB%E8%A9%90%E9%A8%99%E4%BF%9D%E4%BD%8F2100%E8%90%AC-%E8%81%AF%E5%90%8D%E6%85%88%E5%A4%A9%E5%AE%AE%E8%99%8E%E7%88%BA%E5%8A%A0%E6%8C%81-120500557.html",
+          "time": "2026-08-01 12:05:00",
+          "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
       ],
@@ -213,27 +255,6 @@
       "comments": []
     },
     {
-      "title": "新竹市詐騙案",
-      "city": "新竹市",
-      "place": "新竹市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "防範不動產詐騙！竹市府呼籲申辦「地籍異動即時通」 守護財產安全",
-          "url": "https://www.hccg.gov.tw/hccg/app/data/view?module=municipalnews&id=30122&serno=b739322f-be5f-477b-8485-b2af4474a694",
-          "time": "2026-08-02 09:26:08",
-          "publisher": "新竹市政府",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "台北詐騙案",
       "city": "台北",
       "place": "台北市政府",
@@ -249,27 +270,6 @@
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BNnJVRFZQaHlaM0ZpTGhtUThqeVFZSGE5VUNtSWdNbThJZTg5ODJsOEg4N0NYT0pzcDdnS2dXcVJEczRFNHpmcHRfc23SAVJBVV95cUxOUnFxX0lZQjExRFR1YVRlUk9fcE9FNkh0a1BqNVNld2NkTlo5OGFPb0FpOXpySzNhaXNyRy1jSnNRU0oxcHdKTzdESFJDUzFUOV9B?oc=5",
           "time": "2026-08-01 10:44:03",
           "publisher": "Google News→NOWnews今日新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "屏東詐騙案",
-      "city": "屏東",
-      "place": "屏東縣政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "防詐限量小錢虎！屏東警攔阻詐騙保住2100萬 聯名慈天宮虎爺加持",
-          "url": "https://tw.news.yahoo.com/%E9%98%B2%E8%A9%90%E9%99%90%E9%87%8F%E5%B0%8F%E9%8C%A2%E8%99%8E-%E5%B1%8F%E6%9D%B1%E8%AD%A6%E6%94%94%E9%98%BB%E8%A9%90%E9%A8%99%E4%BF%9D%E4%BD%8F2100%E8%90%AC-%E8%81%AF%E5%90%8D%E6%85%88%E5%A4%A9%E5%AE%AE%E8%99%8E%E7%88%BA%E5%8A%A0%E6%8C%81-120500557.html",
-          "time": "2026-08-01 12:05:00",
-          "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
       ],
@@ -300,7 +300,7 @@
           "text": "@mychen1952 你好像不知道盧市府圖利顏家導致藍線延宕 為什麼同樣是國民黨只卡盧秀燕不卡侯友宜 侯友宜八年四條線捷運都在他任內通車 是因為盧市長圖利顏家所導致 再加上盧市府太晚成立捷運工程局 去年2025年才成立 她應該2020年就成立 這樣才會對臺中捷運建設更前進一步 但是現在她這樣做會對臺中捷運建設受到很大的影響",
           "author": "ian_163088",
           "url": "",
-          "time_text": "21小時",
+          "time_text": "22小時",
           "signal": "red"
         }
       ]
@@ -499,11 +499,11 @@
       "city": "基隆",
       "place": "基隆市政府",
       "level": "green",
-      "news_count": 14,
+      "news_count": 13,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 14,
+      "urgency_score": 13,
       "news_articles": [
         {
           "title": "基隆麥金、基金路圓環 將拆除",
@@ -594,13 +594,6 @@
           "url": "https://n.yam.com/Article/20260801216691",
           "time": "2026-08-01 12:00:00",
           "publisher": "蕃新聞→報新聞",
-          "severity": null
-        },
-        {
-          "title": "蜘蛛人 陪伴青春成長 基隆少年警察隊結合電影欣賞宣導犯罪預防",
-          "url": "https://tw.news.yahoo.com/%E8%9C%98%E8%9B%9B%E4%BA%BA-%E9%99%AA%E4%BC%B4%E9%9D%92%E6%98%A5%E6%88%90%E9%95%B7-%E5%9F%BA%E9%9A%86%E5%B0%91%E5%B9%B4%E8%AD%A6%E5%AF%9F%E9%9A%8A%E7%B5%90%E5%90%88%E9%9B%BB%E5%BD%B1%E6%AC%A3%E8%B3%9E%E5%AE%A3%E5%B0%8E%E7%8A%AF%E7%BD%AA%E9%A0%90%E9%98%B2-102124796.html",
-          "time": "2026-08-01 10:21:24",
-          "publisher": "Yahoo新聞",
           "severity": null
         }
       ],
@@ -747,41 +740,6 @@
       "comments": []
     },
     {
-      "title": "苗栗車禍事件",
-      "city": "苗栗",
-      "place": "苗栗縣政府",
-      "level": "yellow",
-      "news_count": 3,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": true,
-      "urgency_score": 12,
-      "news_articles": [
-        {
-          "title": "苗栗黃昏市場前車禍！2行人違規闖馬路…騎士煞不住「3人送醫」",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WRE5LQVVyc1hkM0RKclVfX2xwNnV3OUxPbzlSdm1BVFVuU0tpMnhlU2pNRHlqR0gtcWZwalpVd29RRVJsQlNnQ2ZrQmZLY3h4U1VoMDZwMHlWMkhjZ1HSAUtBVV95cUxQMng1aUFKcnNYa2UxWjU2aFk4OUNNVzZHTkRtWm56ZS12cVI3c2RhZkpfRVBpSG1SX0pNdW41SzZDd0R4MXlFaVg0Wjg?oc=5",
-          "time": "2026-08-02 08:16:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
-        },
-        {
-          "title": "影／車禍驚悚畫面曝光 苗栗77歲老婦插花課程結束返家途中疑自撞身亡",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PX2ZzSHVkVkFaRlpDbGhmeXQ0bkk4VnAzYlA3M2hEZTdkbDVLM1ZEeC14T3haNTV3dUgyRlQ0WVFwZlpwTXd4MHlYMm1YY19K0gFWQVVfeXFMT2FjcDVBVndId1MzaGp0ZUw3YUFoc1dFclpWXzJ0U3Q1V1dLSWVsenFGeTZqQXRLVE1SdGhDZThuMFNUWEFJajV3SmJ3OVVIbnNyM1RMRmc?oc=5",
-          "time": "2026-08-01 13:44:18",
-          "publisher": "Google News→udn.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "影／車禍驚悚畫面曝光苗栗77歲老婦插花課程結束返家途中疑自撞身亡| 時事",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9leUY0S1N3a0FPQjNpeE5ka0x1SHljcXJoZUJFOGRFdFNfODFaWGlKMzA0SzFNSURQSUVIS0VRTElUSVRsakJYeTVn?oc=5",
-          "time": "2026-08-01 13:44:00",
-          "publisher": "Google News→video.udn.com",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "台中車禍事件",
       "city": "台中",
       "place": "台中市政府",
@@ -811,6 +769,41 @@
           "url": "https://tw.news.yahoo.com/%E5%8F%B0%E4%B8%AD%E9%A9%9A%E6%82%9A%E8%BB%8A%E7%A6%8D-%E8%B2%A8%E8%BB%8A%E5%B7%A6%E8%BD%89%E6%92%9E%E9%A3%9B%E6%96%91%E9%A6%AC%E7%B7%9A%E8%B7%AF%E4%BA%BA-%E7%94%B7%E9%81%AD%E8%BC%BE-%E5%8D%A1%E8%BC%AA%E4%B8%8B-%E6%BB%BF%E5%9C%B0%E9%AE%AE%E8%A1%80-111600003.html",
           "time": "2026-08-01 11:16:00",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "苗栗車禍事件",
+      "city": "苗栗",
+      "place": "苗栗縣政府",
+      "level": "yellow",
+      "news_count": 3,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": true,
+      "urgency_score": 12,
+      "news_articles": [
+        {
+          "title": "苗栗黃昏市場前車禍！2行人違規闖馬路…騎士煞不住「3人送醫」",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WRE5LQVVyc1hkM0RKclVfX2xwNnV3OUxPbzlSdm1BVFVuU0tpMnhlU2pNRHlqR0gtcWZwalpVd29RRVJsQlNnQ2ZrQmZLY3h4U1VoMDZwMHlWMkhjZ1HSAUtBVV95cUxQMng1aUFKcnNYa2UxWjU2aFk4OUNNVzZHTkRtWm56ZS12cVI3c2RhZkpfRVBpSG1SX0pNdW41SzZDd0R4MXlFaVg0Wjg?oc=5",
+          "time": "2026-08-02 08:16:00",
+          "publisher": "ETtoday",
+          "severity": "yellow"
+        },
+        {
+          "title": "影／車禍驚悚畫面曝光 苗栗77歲老婦插花課程結束返家途中疑自撞身亡",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PX2ZzSHVkVkFaRlpDbGhmeXQ0bkk4VnAzYlA3M2hEZTdkbDVLM1ZEeC14T3haNTV3dUgyRlQ0WVFwZlpwTXd4MHlYMm1YY19K0gFWQVVfeXFMT2FjcDVBVndId1MzaGp0ZUw3YUFoc1dFclpWXzJ0U3Q1V1dLSWVsenFGeTZqQXRLVE1SdGhDZThuMFNUWEFJajV3SmJ3OVVIbnNyM1RMRmc?oc=5",
+          "time": "2026-08-01 13:44:18",
+          "publisher": "Google News→udn.com",
+          "severity": "yellow"
+        },
+        {
+          "title": "影／車禍驚悚畫面曝光苗栗77歲老婦插花課程結束返家途中疑自撞身亡| 時事",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9leUY0S1N3a0FPQjNpeE5ka0x1SHljcXJoZUJFOGRFdFNfODFaWGlKMzA0SzFNSURQSUVIS0VRTElUSVRsakJYeTVn?oc=5",
+          "time": "2026-08-01 13:44:00",
+          "publisher": "Google News→video.udn.com",
           "severity": "yellow"
         }
       ],
@@ -886,11 +879,11 @@
       "city": "台東",
       "place": "台東縣政府",
       "level": "yellow",
-      "news_count": 14,
+      "news_count": 13,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 14,
+      "urgency_score": 13,
       "news_articles": [
         {
           "title": "台東地震安全講習 台日應對政策交流",
@@ -981,13 +974,6 @@
           "url": "https://tw.news.yahoo.com/%E5%8A%89%E6%AB%82%E8%B1%AA%E6%A3%84%E9%81%B82026%E5%8F%B0%E6%9D%B1%E7%B8%A3%E9%95%B7-%E5%82%B3%E8%94%A1%E8%8B%B1%E6%96%87%E5%8B%B8%E9%80%80-%E9%99%B3%E7%91%A9%E5%9B%9E%E6%87%89-103315212.html",
           "time": "2026-08-01 10:33:15",
           "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "劉櫂豪退選陳瑩整合成功 台東縣長選戰藍綠對決",
-          "url": "https://taronews.tw/2026/08/01/1205269/",
-          "time": "2026-08-01 10:13:38",
-          "publisher": "芋傳媒",
           "severity": "yellow"
         }
       ],
@@ -1313,11 +1299,11 @@
       "city": "澎湖",
       "place": "澎湖縣政府",
       "level": "yellow",
-      "news_count": 34,
+      "news_count": 29,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 34,
+      "urgency_score": 29,
       "news_articles": [
         {
           "title": "發現新澎湖 白天探索海島新亮點、夜晚追七龍珠花火 2026 澎湖花火節8月4日夜晚相約花火盛會",
@@ -1521,41 +1507,6 @@
           "time": "2026-08-01 10:32:00",
           "publisher": "Google News→工商時報",
           "severity": "yellow"
-        },
-        {
-          "title": "澎湖禁漁區深夜不平靜 海保署查獲漁船起網、疑潛水打魚",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5524984",
-          "time": "2026-08-01 10:19:27",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "澎湖禁漁區深夜不平靜海保署查獲漁船起網、疑潛水打魚- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9xREFBOW1KcUhjeTl5aUVLYmJrQW9qb184RkgwT05MZ3NyVWxHRHF0SEEwRnBLZWQwVDVQY0JzUEJWQjlhQ2hFd1dMNnJBNzk0U0pCRzNrODR0ZW5TeVFWemZTRTk?oc=5",
-          "time": "2026-08-01 10:19:27",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "澎湖廚餘場飄惡臭惹民怨 環保局：勘查溝渠未聞明顯異味",
-          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxPVzl1VTRtWk9DVS1jMlJqN3VYVkIybWpfX0lndUVUazlCYzhfVXJLejhPcURJV2N3SzZHbzlBcUI2M2JDMkRMNlE2MlljZTFhamRJR1RfWEZ4eEI4cHIzajhDSmtSSkxubm0tdmFLNGFZYXFYYU5Pa29mYXpGejM1Q0ptNFo0a3dqaXFxcXdpT1lmQkdZQng4ZkVxRWMzRTk2RGp6dzVhMm8zWWtxOTlnUFBMcElOdlJ6NUx1bG90WnBNUUhSRjJfdi0ycEs1cEVsaHhmSTQwV1lrYl94OFBXYmdTeHkxRkZzcFdjT2hHazVKeG96WVhBRVFabjh0d09EaHg4dllFbnBiTDdYbGhFcjNLU1FzWGtBN2s3YkJaMXVEVEtFZTlVeHBycEJvenhzUWM4MTVNRzFJVTJWU0hZV0prUFAwUTUtSFVOUEEtWjNpbVJ4UFp5eldRYXQ0OEZfZHdBLUM4SzY2UzdwbnpPS3lWd2JuZw?oc=5",
-          "time": "2026-08-01 10:16:14",
-          "publisher": "Google News→tw.news.yahoo.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "不用口號愛澎湖 民進黨澎湖縣黨部聯合發起愛心捐血活動",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5524977",
-          "time": "2026-08-01 10:13:29",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "不用口號愛澎湖 民進黨澎湖縣黨部聯合發起愛心捐血活動",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zTEZnLWR0Z05Md3J5VHhHaU9wTHNQTkdZc1pFZWtGRnFpaHlKQl9qQzJtbjJya1J3S3R2c0xMOE5MZk1QazlFcklyNXcxZzhobFVsdFVrZDRkaFlmQnNtRXFnd0o?oc=5",
-          "time": "2026-08-01 10:13:00",
-          "publisher": "自由時報",
-          "severity": null
         }
       ],
       "comments": []
@@ -1565,11 +1516,11 @@
       "city": "花蓮",
       "place": "花蓮縣政府",
       "level": "yellow",
-      "news_count": 48,
+      "news_count": 47,
       "comment_count": 0,
       "negativity_pct": 6,
       "is_urgent": false,
-      "urgency_score": 57,
+      "urgency_score": 56,
       "news_articles": [
         {
           "title": "花蓮市部落豐年祭熱鬧登場",
@@ -1898,13 +1849,6 @@
           "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBZem9YZG1uWTUxRnVUTEdtTUxpRkhIMmhCSWxVM2lkTUlORndPOWN6NVR4QUNGWjR2NG1oOTh0eHFJdS1fVmNGR3lR?oc=5",
           "time": "2026-08-01 10:31:55",
           "publisher": "Google News→更生新聞網",
-          "severity": null
-        },
-        {
-          "title": "「Yah~講真！今天不來會後悔」花蓮市原住民族日市集熱鬧登場",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9MRUpHLUI0WFpzbDdaNW1uVENhandFS1hqb21IMU9ZMzhhSzhLc2daU055MFN0ckxDUkZBQWRKWFVaRnFzRU01cnp3?oc=5",
-          "time": "2026-08-01 10:27:12",
-          "publisher": "Google News→ksnews.com.tw",
           "severity": null
         }
       ],
@@ -2349,11 +2293,11 @@
       "city": "新竹市",
       "place": "新竹市政府",
       "level": "red",
-      "news_count": 29,
+      "news_count": 27,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 35,
+      "urgency_score": 33,
       "news_articles": [
         {
           "title": "防範不動產詐騙！竹市府呼籲申辦「地籍異動即時通」 守護財產安全",
@@ -2543,20 +2487,6 @@
           "time": "2026-08-01 10:29:59",
           "publisher": "自由時報",
           "severity": "red"
-        },
-        {
-          "title": "守護肺健康 竹市推免費LDCT肺癌篩檢",
-          "url": "https://tw.news.yahoo.com/%E5%AE%88%E8%AD%B7%E8%82%BA%E5%81%A5%E5%BA%B7-%E7%AB%B9%E5%B8%82%E6%8E%A8%E5%85%8D%E8%B2%BBldct%E8%82%BA%E7%99%8C%E7%AF%A9%E6%AA%A2-021639980.html",
-          "time": "2026-08-01 10:16:39",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "世界肺癌日守護肺健康！竹市推免費LDCT肺癌篩檢 提醒高風險族群定期受檢",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfYTRpdHBmN01LOWhlN0pRR2JQRndlUW9FM1JhM3QtSjVNT0tjUnFhSVVKQk95MzJuNm1hZTNBSlNJTHNnN0tRMDN4VndqazdNNWJMbnZB?oc=5",
-          "time": "2026-08-01 10:09:30",
-          "publisher": "中央社",
-          "severity": null
         }
       ],
       "comments": []
@@ -4704,6 +4634,881 @@
       "comments": []
     },
     {
+      "title": "高雄地方動態",
+      "city": "高雄",
+      "place": "高雄市楠梓區",
+      "level": "red",
+      "news_count": 123,
+      "comment_count": 0,
+      "negativity_pct": 7,
+      "is_urgent": false,
+      "urgency_score": 150,
+      "news_articles": [
+        {
+          "title": "昔高雄氣爆熊本伸援陳其邁：患難見真情、應援義不容辭- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OYnlHM2xObTlkTm5fdk15VXBsZ1R3SHlBbHJhUmNhYWdSN29lS00xaThyejg5ZGpLVF95VDhuanl0ajJRU2phVXU1SXE4S0RPWmZ0MjJVemZUMVdjUnpEcENlWmRWdF9xdXc?oc=5",
+          "time": "2026-08-02 09:48:04",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "衛福部社安網績優表揚 高雄市勇奪4個人1團體大獎",
+          "url": "https://n.yam.com/Article/20260802526030",
+          "time": "2026-08-02 09:26:21",
+          "publisher": "蕃新聞→News586",
+          "severity": null
+        },
+        {
+          "title": "【毒油風暴】台糖5月就拒收中聯超標油！高市府爆毒油案關鍵新事證 中聯高層竟隱匿",
+          "url": "https://n.yam.com/Article/20260802292855",
+          "time": "2026-08-02 09:26:21",
+          "publisher": "蕃新聞→愛傳媒",
+          "severity": "red"
+        },
+        {
+          "title": "高雄深愛築夢市集吸引逾2千人 身障朋友展才藝拚創業圓夢",
+          "url": "https://n.yam.com/Article/20260802260840",
+          "time": "2026-08-02 09:26:21",
+          "publisher": "蕃新聞→波新聞",
+          "severity": null
+        },
+        {
+          "title": "致癌毒油5月就通報！中聯蓋牌隱匿…高市府急發聲",
+          "url": "https://tw.news.yahoo.com/%E8%87%B4%E7%99%8C%E6%AF%92%E6%B2%B95%E6%9C%88%E5%B0%B1%E9%80%9A%E5%A0%B1-%E4%B8%AD%E8%81%AF%E8%93%8B%E7%89%8C%E9%9A%B1%E5%8C%BF-%E9%AB%98%E5%B8%82%E5%BA%9C%E6%80%A5%E7%99%BC%E8%81%B2-010800629.html",
+          "time": "2026-08-02 09:08:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "台電「雄積三、四線」8/1完工送電 台積電高雄廠周邊供電能力翻倍",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5525729",
+          "time": "2026-08-02 08:47:05",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台糖5月就通報苯駢芘超標！ 高市衛生局：相關油品未進入生產製程",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B0%B1%E9%80%9A%E5%A0%B1%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E9%AB%98%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%80-%E7%9B%B8%E9%97%9C%E6%B2%B9%E5%93%81%E6%9C%AA%E9%80%B2%E5%85%A5%E7%94%9F%E7%94%A2%E8%A3%BD%E7%A8%8B-003034376.html",
+          "time": "2026-08-02 08:30:34",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "高雄深愛築夢市集湧2千人 世界級視障樂團感動全場",
+          "url": "https://focus.586.com.tw/2026/08/02/p397973/",
+          "time": "2026-08-02 08:28:57",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "楠梓園區供電大升級 台電高雄新輸電線提前2年完工",
+          "url": "https://focus.586.com.tw/2026/08/02/p397969/",
+          "time": "2026-08-02 08:25:00",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "衛福部強化社安網績優表揚 高市4人員及1團體上榜",
+          "url": "https://newtalk.tw/news/view/2026-08-02/1050777",
+          "time": "2026-08-02 07:03:35",
+          "publisher": "新頭殼",
+          "severity": null
+        },
+        {
+          "title": "涉中聯油品7/9已預防性下架 高市衛生局：台糖未收311油槽半成品原料油",
+          "url": "https://newtalk.tw/news/view/2026-08-02/1050776",
+          "time": "2026-08-02 06:36:33",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "台灣老店／蝦拚揚名傳家味 高雄五福扁食",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%81%A3%E8%80%81%E5%BA%97-%E8%9D%A6%E6%8B%9A%E6%8F%9A%E5%90%8D%E5%82%B3%E5%AE%B6%E5%91%B3-%E9%AB%98%E9%9B%84%E4%BA%94%E7%A6%8F%E6%89%81%E9%A3%9F-222859991.html",
+          "time": "2026-08-02 06:28:59",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄造價最貴、功能最強 三民運動中心啟用",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/paper/1765047",
+          "time": "2026-08-02 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "搶原民票 高雄市長、台東縣長選戰端牛肉",
+          "url": "https://tw.news.yahoo.com/%E6%90%B6%E5%8E%9F%E6%B0%91%E7%A5%A8-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7-%E5%8F%B0%E6%9D%B1%E7%B8%A3%E9%95%B7%E9%81%B8%E6%88%B0%E7%AB%AF%E7%89%9B%E8%82%89-201000036.html",
+          "time": "2026-08-02 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄 欠7萬元設局誘殺棄屍 判無期",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84-%E6%AC%A07%E8%90%AC%E5%85%83%E8%A8%AD%E5%B1%80%E8%AA%98%E6%AE%BA%E6%A3%84%E5%B1%8D-%E5%88%A4%E7%84%A1%E6%9C%9F-201000782.html",
+          "time": "2026-08-02 04:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "中聯毒油案重大進展！高市府曝台糖5月已拒收超標油品",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%AF%92%E6%B2%B9%E6%A1%88%E9%87%8D%E5%A4%A7%E9%80%B2%E5%B1%95-%E9%AB%98%E5%B8%82%E5%BA%9C%E6%9B%9D%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B7%B2%E6%8B%92%E6%94%B6%E8%B6%85%E6%A8%99%E6%B2%B9%E5%93%81-173213258.html",
+          "time": "2026-08-02 01:32:13",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "台日大港水果祭高雄開幕 陳其邁：水果是最甜外交",
+          "url": "https://n.yam.com/Article/20260802963382",
+          "time": "2026-08-02 01:24:23",
+          "publisher": "蕃新聞→藍雀新傳媒",
+          "severity": null
+        },
+        {
+          "title": "高市早苗二度發文補列台灣 感謝22個亞洲國家與地區聲援熊本強震",
+          "url": "https://www.fountmedia.io/article/408821",
+          "time": "2026-08-02 01:24:07",
+          "publisher": "放言Fount Media",
+          "severity": null
+        },
+        {
+          "title": "媒體報導台糖今年5月已通報中聯油脂311號油槽原料油檢驗不合格，高雄市衛生局指出，經查台糖拒收該批不合格半成品原料油，相...",
+          "url": "https://udn.com/news/story/124948/9665346?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-02 01:23:40",
+          "publisher": "聯合新聞網",
+          "severity": "red"
+        },
+        {
+          "title": "台中地院昨裁定中聯公司廠長陳明榮收押禁見。中院認定，陳5月即接獲台糖通知苯駢芘超標，卻未通報，直到消息外流、吹哨者行動後才「不得不」通報；高市衛生局發出聲明澄清，台糖購買的是301號油槽原料油，與出問題的311號油槽不同，且311號半成品因苯駢芘超標遭台糖拒收，未進入台糖製程。",
+          "url": "https://udn.com/news/story/124948/9665344?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-02 01:23:40",
+          "publisher": "聯合新聞網",
+          "severity": "red"
+        },
+        {
+          "title": "高市府：台糖拒收 中聯不合格原料油未入製程",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525675",
+          "time": "2026-08-02 01:06:03",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "5月即通報中聯超標 高雄衛生局：311油槽原料油台糖未收貨",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525668",
+          "time": "2026-08-02 00:22:06",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "台日大港水果祭高雄開幕 陳其邁：水果是最甜外交",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZbU9zS0RabjYyVTVkTzd2cmhrYWx3VmlQb0M0R2ItLUkxVzVxNlYyUEZvVFF3X0RlLTB5MWpVSGtyMmxuNVczUU53VVBfRlFRUkE?oc=5",
+          "time": "2026-08-02 00:05:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "才退休就悲慘遇劫！高雄男毒駕拖行撞死人 家屬怒：應鞭刑",
+          "url": "https://tw.news.yahoo.com/%E6%89%8D%E9%80%80%E4%BC%91%E5%B0%B1%E6%82%B2%E6%85%98%E9%81%87%E5%8A%AB-%E9%AB%98%E9%9B%84%E7%94%B7%E6%AF%92%E9%A7%95%E6%8B%96%E8%A1%8C%E6%92%9E%E6%AD%BB%E4%BA%BA-%E5%AE%B6%E5%B1%AC%E6%80%92-%E6%87%89%E9%9E%AD%E5%88%91-235525345.html",
+          "time": "2026-08-01 23:55:25",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93LUhjSlYtY0RxOTR1TDJfVW5JYTljbUNFRG9leHgzemdwNlM1VnF3UGN4RWV3M2tka0hzbHAzZWpJNFAtY2ZOMlhJeE9aTVg4eFZyeHpn?oc=5",
+          "time": "2026-08-01 23:54:22",
+          "publisher": "Google News→藍雀新傳媒",
+          "severity": null
+        },
+        {
+          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHLTZmdXl5UnZiSUI4OGRxaGVET2drRlFod0FqSkgtZ001RzE2a0xtNDBPVXFLd0ROMHJCVEJLLTRhcjl2NFhkOVI1ZFZ4QTlGSFE?oc=5",
+          "time": "2026-08-01 23:54:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "衛福部社安網績優表揚 高雄勇奪4名績優人員、1績優團體殊榮",
+          "url": "https://more-news.tw/682585/",
+          "time": "2026-08-01 22:55:26",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄男涉毒駕撞死騎士肇逃 駕駛聲押車主10萬交保",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E7%94%B7%E6%B6%89%E6%AF%92%E9%A7%95%E6%92%9E%E6%AD%BB%E9%A8%8E%E5%A3%AB%E8%82%87%E9%80%83-%E9%A7%95%E9%A7%9B%E8%81%B2%E6%8A%BC%E8%BB%8A%E4%B8%BB10%E8%90%AC%E4%BA%A4%E4%BF%9D-145308626.html",
+          "time": "2026-08-01 22:53:08",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "九如橋變高雄版巴黎藝術橋？「綠水鬼」竟被鎖護欄 警急站崗",
+          "url": "https://tw.news.yahoo.com/%E4%B9%9D%E5%A6%82%E6%A9%8B%E8%AE%8A%E9%AB%98%E9%9B%84%E7%89%88%E5%B7%B4%E9%BB%8E%E8%97%9D%E8%A1%93%E6%A9%8B-%E7%B6%A0%E6%B0%B4%E9%AC%BC-%E7%AB%9F%E8%A2%AB%E9%8E%96%E8%AD%B7%E6%AC%84-%E8%AD%A6%E6%80%A5%E7%AB%99%E5%B4%97-142846330.html",
+          "time": "2026-08-01 22:28:46",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "捐款熊本賑災緣由 粉專PO圖：12年前高雄氣爆時熊本曾相助",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525623",
+          "time": "2026-08-01 22:12:58",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "毒油風暴支線！法院曝台糖5月就反映 食藥署：交高雄衛生局了解",
+          "url": "https://tw.news.yahoo.com/%E6%AF%92%E6%B2%B9%E9%A2%A8%E6%9A%B4%E6%94%AF%E7%B7%9A-%E6%B3%95%E9%99%A2%E6%9B%9D%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B0%B1%E5%8F%8D%E6%98%A0-%E9%A3%9F%E8%97%A5%E7%BD%B2-%E4%BA%A4%E9%AB%98%E9%9B%84%E8%A1%9B%E7%94%9F%E5%B1%80%E4%BA%86%E8%A7%A3-134818518.html",
+          "time": "2026-08-01 21:48:18",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "2026旗津風箏節登場 陳其邁加碼盛夏券共享高雄夏日魅力",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB1dGRpdXVUbXQ1TFA3RjZVN0FCRWhZMTExSTQtTUpjT3dhQUFjRmxWUnFzVS1peExaX3Joa0htWEVfd2l6WmJWRmtfU2R3UFlzZGc?oc=5",
+          "time": "2026-08-01 21:08:00",
+          "publisher": "Google News→n.yam.com",
+          "severity": null
+        },
+        {
+          "title": "百攤鮮果飄香高雄！台日大港水果祭開幕 陳其邁：水果是最甜外交邀全民挺熊本",
+          "url": "https://news.google.com/rss/articles/CBMi4wNBVV95cUxNYXJoaktqeE9VS21ONlppM3FWeTVkTEVTU204R0FyVkltcm9RZE1tYm1NT3FXcm1JWlZ1cUhkOFhKd2xJWnFRZHVDcmdoOWt3eVg1NHpxNUxmWnlZNWVJUFJVdXdaakpCQUowT215MW1STHNyRmpDSy1BSEhDUkFyb2xHOW9TY0dfMmFxSVUtQ0dSUG1kSnA4bGdjZDJHTDByQWNqV1FSSkMxUGxKUlY0anQtZHE2VjFVRXpTMnhvVGNYMDFGX3BGR1Z3cmVFOVRBc2JoMENWNUQ0WnRTRlh5VEVNbzBOT0Y4eUxNV1V1eUlrY2xPdy0wc1NJbFZLVndmNVUzcFExb2lqQ1JOTmVxbkRwS3ppNF8waUcyamg0UTZYTDBDQTFaU3M2QmNkYTlPLVR3Qk1JZ3ZFU1VOdjlNU3NwdkdlRVRmSFpyVEh2UzZudkFCTHF3TU1KYnQ2MkdEZ3JEaTVCVzRwTXhpcWRHUjlOSFZJRGdVRUVlQmhIMzBpc2N6a1hkeDROSXlCd1NncGgzOTdHNVpjNkFwWmN2UmN2NG50bDZjVzVSUlROOWhLU25nSWJDUVBkOVc3QnMwcEp4NGtjRHZya3d5djZJMFJaLUFQcjJrRFBHRmVrdEdFZlE?oc=5",
+          "time": "2026-08-01 21:02:14",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "中聯致癌油案延燒！台糖5月就通報 食藥署：請高雄市衛生局了解 | 生活焦點 | 要聞",
+          "url": "https://www.nownews.com/news/6862240",
+          "time": "2026-08-01 20:42:21",
+          "publisher": "NOWnews今日新聞",
+          "severity": "red"
+        },
+        {
+          "title": "高雄男毒駕闖燈猛撞　機車拖行350米、六旬翁遇劫慘死",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-01/2424044.html",
+          "time": "2026-08-01 20:41:51",
+          "publisher": "壹電視",
+          "severity": "red"
+        },
+        {
+          "title": "中聯油脂爆案外案 食藥署：交高雄市衛生局查未通報疑雲",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525583",
+          "time": "2026-08-01 20:41:28",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "8月1日是原住民族日，民進黨高雄市長參選人賴瑞隆、國民黨高雄市長參選人柯志恩分別提出原民政策，聚焦文化傳承、原鄉建設、青...",
+          "url": "https://udn.com/news/story/124652/9664999?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-01 20:41:25",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "旗津風箏節 高市府今夏加碼推優惠",
+          "url": "https://tw.news.yahoo.com/%E6%97%97%E6%B4%A5%E9%A2%A8%E7%AE%8F%E7%AF%80-%E9%AB%98%E5%B8%82%E5%BA%9C%E4%BB%8A%E5%A4%8F%E5%8A%A0%E7%A2%BC%E6%8E%A8%E5%84%AA%E6%83%A0-123600937.html",
+          "time": "2026-08-01 20:36:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高市三民運動中心 首設HYROX據點",
+          "url": "https://www.cdns.com.tw/articles/1438313",
+          "time": "2026-08-01 20:30:50",
+          "publisher": "中華日報",
+          "severity": null
+        },
+        {
+          "title": "高雄市旗艦級「三民運動中心」盛大開幕 打造全齡活力新地標",
+          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%97%97%E8%89%A6%E7%B4%9A-%E4%B8%89%E6%B0%91%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83-%E7%9B%9B%E5%A4%A7%E9%96%8B%E5%B9%95-%E6%89%93%E9%80%A0%E5%85%A8%E9%BD%A1%E6%B4%BB%E5%8A%9B%E6%96%B0%E5%9C%B0%E6%A8%99-122922964.html",
+          "time": "2026-08-01 20:29:22",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄加盟展推國產鮮乳 祭50萬陀螺大獎",
+          "url": "https://www.cdns.com.tw/articles/1438304",
+          "time": "2026-08-01 20:28:40",
+          "publisher": "中華日報",
+          "severity": null
+        },
+        {
+          "title": "恐嚇索賄綠能業者 高市議員收押",
+          "url": "https://www.cdns.com.tw/articles/1438306",
+          "time": "2026-08-01 20:27:29",
+          "publisher": "中華日報",
+          "severity": "red"
+        },
+        {
+          "title": "2026旗津風箏節盛大登場陳其邁：加碼盛夏券共享高雄夏日魅力– 地方新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBjZDVRcmQ4NGVOOWcwZUxLbks5Ri00Vjg4T1pFcHF2WHNvd3dyMVpyUnB3ZlpRakczb0haNXFpSl9uN1dqQnRPem9HVS1DdTlk?oc=5",
+          "time": "2026-08-01 20:15:59",
+          "publisher": "Google News→taidaily.com",
+          "severity": null
+        },
+        {
+          "title": "巴黎藝術橋翻版? 高雄九如橋護欄不只未來鎖 「勞力士綠水鬼」也來了",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525556",
+          "time": "2026-08-01 20:06:57",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "原民日提五大政策願景！柯志恩：打造城鄉共好、文化共榮的高雄",
+          "url": "https://www.storm.mg/article/11153330",
+          "time": "2026-08-01 20:01:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高雄男子涉毒駕撞死騎士 依過失致死等罪聲押",
+          "url": "https://news.pts.org.tw/article/820406",
+          "time": "2026-08-01 19:55:48",
+          "publisher": "公視 即時",
+          "severity": "red"
+        },
+        {
+          "title": "旗艦級健身新地標 高雄三民運動中心開幕",
+          "url": "https://tw.news.yahoo.com/%E6%97%97%E8%89%A6%E7%B4%9A%E5%81%A5%E8%BA%AB%E6%96%B0%E5%9C%B0%E6%A8%99-%E9%AB%98%E9%9B%84%E4%B8%89%E6%B0%91%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83%E9%96%8B%E5%B9%95-114822554.html",
+          "time": "2026-08-01 19:48:22",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "不能只照顧三個原鄉 柯志恩提5大政策打造城鄉共好高雄",
+          "url": "https://newtalk.tw/news/view/2026-08-01/1050761",
+          "time": "2026-08-01 19:39:46",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "高雄旗津風箏節開跑！ 30米大鯨魚壓軸登場　小朋友喊好好玩",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Life/2026-08-01/2423936.html",
+          "time": "2026-08-01 18:54:16",
+          "publisher": "壹電視",
+          "severity": null
+        },
+        {
+          "title": "熊本強震36死 永旺商場內部最新影像曝1／熊本強震36死、1543棟房毀！ 高市8/3赴災區視察",
+          "url": "https://www.mnews.tw/story/20260801sot120004",
+          "time": "2026-08-01 18:54:08",
+          "publisher": "鏡新聞",
+          "severity": "red"
+        },
+        {
+          "title": "民進黨高雄市長參選人、立委賴瑞隆今天下午於岡山壽天宮活動中心舉行「岡山區里長後援會成立大會」，多名岡山區里長到場力挺，賴瑞隆針對地方發展提出「岡山三支箭」政見，宣示將承接「關鍵第四棒」，延續市長陳其邁的市政成果。",
+          "url": "https://udn.com/news/story/124652/9664969?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-01 18:54:07",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "9680噸御風實習船首開放 高雄港吸逾200人登船參觀",
+          "url": "https://www.chinatimes.com/realtimenews/20260801002690-260405",
+          "time": "2026-08-01 18:54:00",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "高市早苗提台灣卻有「玄機」！網喊不在意：知道背後辛苦",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5525505",
+          "time": "2026-08-01 18:36:19",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "衛福部社安網績優表揚！高雄勇奪4名績優人員、1績優團體展現社福實力",
+          "url": "https://www.storm.mg/article/11153321",
+          "time": "2026-08-01 18:06:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高雄加盟展掀陀螺旋風 買國產鮮乳滿300元可參賽、送50萬元大獎",
+          "url": "https://www.storm.mg/article/11153311",
+          "time": "2026-08-01 18:03:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高市農業局助攻青年農民與蜂農 推產業交流、受理蜂群災損現金救助",
+          "url": "https://www.storm.mg/article/11153313",
+          "time": "2026-08-01 17:18:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高雄客委會帶路「臺灣茶之路」 六龜、美濃走讀掀起客庄風土旅遊熱潮",
+          "url": "https://focus.586.com.tw/2026/08/01/p397895/",
+          "time": "2026-08-01 17:17:33",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "《家庭教師》快閃店在高雄！699元福袋價值破千 20週年造景必拍 | 電玩",
+          "url": "https://www.nownews.com/news/6862206",
+          "time": "2026-08-01 17:12:23",
+          "publisher": "NOWnews今日新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄韓籍老婦用餐 饅頭卡喉噎死",
+          "url": "https://today.line.me/tw/v2/article/285704343",
+          "time": "2026-08-01 17:11:39",
+          "publisher": "Line Today",
+          "severity": "red"
+        },
+        {
+          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思",
+          "url": "https://www.taisounds.com/news/content/71/280842",
+          "time": "2026-08-01 17:11:37",
+          "publisher": "太報",
+          "severity": null
+        },
+        {
+          "title": "高雄加盟展陀螺開戰 千名親子搶喝國產鮮乳",
+          "url": "https://www.storm.mg/article/11153309",
+          "time": "2026-08-01 17:09:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高雄騎士壓到石塊摔車怒提國賠 因「這句話」法院判免賠",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525374",
+          "time": "2026-08-01 16:44:24",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "高雄梓官死亡車禍！75歲翁遭小貨車擦撞 傷重3天後不治",
+          "url": "https://www.thehubnews.net/archives/650252",
+          "time": "2026-08-01 16:33:00",
+          "publisher": "新頭條",
+          "severity": "yellow"
+        },
+        {
+          "title": "點亮半導體園區！台電高雄楠梓「雄積三、四線」完工送電 供電量翻倍",
+          "url": "https://tw.news.yahoo.com/%E9%BB%9E%E4%BA%AE%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%9C%92%E5%8D%80-%E5%8F%B0%E9%9B%BB%E9%AB%98%E9%9B%84%E6%A5%A0%E6%A2%93-%E9%9B%84%E7%A9%8D%E4%B8%89-%E5%9B%9B%E7%B7%9A-%E5%AE%8C%E5%B7%A5%E9%80%81%E9%9B%BB-082710058.html",
+          "time": "2026-08-01 16:27:10",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "三民運動中心開幕高市長陳其邁：中央地方攜手打造旗艦級運動據點– 地方新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5wQlZEa1E2bjQ2VW1Zbk5DZXZ5bUU1VUNCRnZXUVN2LXlqVHpMSHFQV1VrM281ejhDTWdVS1cwc2hZbFg0dTltTy0xeUFpNzha?oc=5",
+          "time": "2026-08-01 16:20:31",
+          "publisher": "Google News→taidaily.com",
+          "severity": null
+        },
+        {
+          "title": "高雄三民運動中心開幕 全台首座HYROX據點正式啟用",
+          "url": "https://focus.586.com.tw/2026/08/01/p397870/",
+          "time": "2026-08-01 16:19:49",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "高雄「喪屍」毒駕闖紅燈撞死62歲騎士！休旅車拖行機車350公尺 再釀火燒車",
+          "url": "https://www.thehubnews.net/archives/650250",
+          "time": "2026-08-01 16:17:00",
+          "publisher": "新頭條",
+          "severity": "red"
+        },
+        {
+          "title": "傅崐萁爆粗口後道歉稱沒辦法除惡務盡反轟賴清德.陳其邁國罵鼻祖 民進黨不要雙標!高市早苗謝各國關懷卻漏賴 藍委:送暖被澆冷水 地緣政治太殘酷?/全程CC字幕｜TVBS新聞",
+          "url": "https://www.youtube.com/watch?v=st3LCvyYm48",
+          "time": "2026-08-01 16:00:20",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "左轉車「違規」未禮讓！高雄女騎60萬重機碰撞噴飛 頭部重創送醫",
+          "url": "https://www.thehubnews.net/archives/650248",
+          "time": "2026-08-01 16:00:00",
+          "publisher": "新頭條",
+          "severity": "yellow"
+        },
+        {
+          "title": "全台最狂戰鬥陀螺賽登場 高雄加盟展「白色旋風國產鮮乳陀螺爭霸賽」送總值50萬陀螺",
+          "url": "https://focus.586.com.tw/2026/08/01/p397864/",
+          "time": "2026-08-01 15:49:40",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思",
+          "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPeDBtaWJ0X3pGc0NIZEp4aWJPVGR6M3N4M3Vnc3JEeWpHTDdKUHNPSS11Vk5hOVI1b1c5VzJfdGdTOFRKSWdKWk5CZ1JFeDh3bnhXT1NrYUMzbE1BRTB1T3JtNmZsMmNBbng0a1M1c0w3a2ZoQmU1eHhlaTZRUmxzNVpyb2YwR1p0ZjNPSEZwaVZpSmVTZVMxQXhWRk1vVi1ya2xkVnU4eVBaUlJHMGMyNmljLTAxU2Q3Rmo0cUxTeWxqRmoxd3dHRkNhMldubTFjei1oLUQxUjA5WGxZVG9WcE1sczRSY2VQYTFyOHc3R3NfclZTczNieWRkb0JtbnVzNEdab1ZCWFFaTmNvUzJCQklxcE1fajVhSDJFSno4SGl5clBnTEs1eVZGWmkyUGtKQW5XWDc0cFo2UVVsWjdoMQ?oc=5",
+          "time": "2026-08-01 15:41:20",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思| 政治焦點",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5OTJZMnkyTU1kWTh1eWFhY1dWR1llZkVwUklQaGVucU45Q0VSM1RHbUoyV2Q0MzdRVXh2X2o0MVF0WjNlZ1B1Nkp3eU5jWXZCUmYtZEllcUZLNklw?oc=5",
+          "time": "2026-08-01 15:41:20",
+          "publisher": "Google News→太報 TaiSounds",
+          "severity": null
+        },
+        {
+          "title": "柯志恩指前鎮小港值得更好 將成為高雄下個黃金十年的核心",
+          "url": "https://www.cdns.com.tw/articles/1438097",
+          "time": "2026-08-01 15:28:39",
+          "publisher": "中華日報",
+          "severity": "yellow"
+        },
+        {
+          "title": "LaLaport高雄還沒開幕！鳳山這區房價「挑戰5字頭」：這類人買爆 | 地產居家 | 生活",
+          "url": "https://www.nownews.com/news/6862024",
+          "time": "2026-08-01 15:26:25",
+          "publisher": "NOWnews今日新聞",
+          "severity": null
+        },
+        {
+          "title": "闖燈拒檢！ 高雄毒駕男飆逃涉35項違規　挨罰58萬",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-01/2423628.html",
+          "time": "2026-08-01 15:25:55",
+          "publisher": "壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "高雄左營全球限量BMW M4失控自撞！全球僅250輛 車主崩潰：有錢也買不到了",
+          "url": "https://www.ctwant.com/article/491682/",
+          "time": "2026-08-01 15:25:47",
+          "publisher": "CTWANT",
+          "severity": null
+        },
+        {
+          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市",
+          "url": "https://www.ctwant.com/article/491685/",
+          "time": "2026-08-01 15:25:47",
+          "publisher": "CTWANT",
+          "severity": "yellow"
+        },
+        {
+          "title": "翻轉南臺灣國際教育 高雄芬蘭外僑學校9月1日盛大開學",
+          "url": "https://www.ctee.com.tw/news/20260801700286-431204",
+          "time": "2026-08-01 15:25:42",
+          "publisher": "工商時報",
+          "severity": null
+        },
+        {
+          "title": "高雄市長陳其邁今天表示，未經當事人同意，利用深偽技術偽造聲音是犯罪，不論偽造總統賴清德或台北市長蔣萬安的聲音都非常不應該...",
+          "url": "https://udn.com/news/story/6656/9664711?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-01 15:25:33",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "學生上車道幫撿麵包引熱議 高雄警：散落物最高罰1.8萬",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525300",
+          "time": "2026-08-01 15:13:28",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "父親節聚餐免煩惱！高雄翰品酒店推星級外帶、桌席與日料優",
+          "url": "https://tw.news.yahoo.com/%E7%88%B6%E8%A6%AA%E7%AF%80%E8%81%9A%E9%A4%90%E5%85%8D%E7%85%A9%E6%83%B1-%E9%AB%98%E9%9B%84%E7%BF%B0%E5%93%81%E9%85%92%E5%BA%97%E6%8E%A8%E6%98%9F%E7%B4%9A%E5%A4%96%E5%B8%B6-%E6%A1%8C%E5%B8%AD%E8%88%87%E6%97%A5%E6%96%99%E5%84%AA-070929300.html",
+          "time": "2026-08-01 15:09:29",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "蔡英文也喜歡的樂團「滅火器」前進高雄 解鎖「雙蛋雙加場」！開賣日出爐",
+          "url": "https://news.nextapple.com/entertainment/20260801/217D3C2B50468A43AD9F3097595A7BB5",
+          "time": "2026-08-01 15:07:02",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "綠營緩頰：台日友好不會生變　高市未感謝賴強震牽動中日台角力？#少康戰情室 20260731-2 #吳崢 #周榆修 #尹乃菁 #費鴻泰 #葉元之",
+          "url": "https://www.youtube.com/watch?v=nX4rohWlBrQ",
+          "time": "2026-08-01 15:06:14",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "高雄親子遊樂園區8/8開園！30設施免費玩 交通攻略一次看",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525286",
+          "time": "2026-08-01 14:57:53",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "不配合最高罰15萬！ 高雄「城鎮韌性防空演習」8/7登場",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525283",
+          "time": "2026-08-01 14:55:50",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "傅崐萁爆粗口後道歉稱沒辦法除惡務盡反轟賴清德.陳其邁國罵鼻祖 民進黨不要雙標!高市早苗謝各國關懷卻漏賴 藍委:送暖被澆冷水 地緣政治太殘酷?/全程CC字幕｜TVBS新聞",
+          "url": "https://www.youtube.com/watch?v=m9iK2ArOmYQ",
+          "time": "2026-08-01 14:45:01",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "觀世音菩薩開光圓滿 高雄東照山關帝廟湧入大批信眾朝聖 8月法會、祝壽盛典接力登場",
+          "url": "https://tw.news.yahoo.com/%E8%A7%80%E4%B8%96%E9%9F%B3%E8%8F%A9%E8%96%A9%E9%96%8B%E5%85%89%E5%9C%93%E6%BB%BF-%E9%AB%98%E9%9B%84%E6%9D%B1%E7%85%A7%E5%B1%B1%E9%97%9C%E5%B8%9D%E5%BB%9F%E6%B9%A7%E5%85%A5%E5%A4%A7%E6%89%B9%E4%BF%A1%E7%9C%BE%E6%9C%9D%E8%81%96-8%E6%9C%88%E6%B3%95%E6%9C%83-%E7%A5%9D%E5%A3%BD%E7%9B%9B%E5%85%B8%E6%8E%A5%E5%8A%9B%E7%99%BB%E5%A0%B4-064429671.html",
+          "time": "2026-08-01 14:44:29",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
+          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPUWszOVFIUV9BQ2tDT0FSQnl0Zk1hTklPQ1hVY0U4V3dPZHkxRVN5T2wybll6N0NmTnpLVGJaRjUzSC02T3U5a2ZqTnR0MHNTMjJSc3NONEQwR3ZVUEh1WXZrYkhQQ0pXXzZmdlUwSzBkZDZfc0VBVVhMWmtoSW1STU9CczNTVmdzekduYkpyNzdOSXRZbVkzU2V6RFE0bkJDYWlXUVlrNEtaSzRKN1BKUmpGNzd6U1BGc0x0LTlfV2tRVHF5c2pNSERXY3UwY2Z4emo0Z29GelA0ZXBEU2V1ZEZIMTFGTkJ2aFhIcWhQNFBxbGxDUDE3aTRxQXJlWHlEZTl4ZGc0XzlvYm5qWS1wT0p5Q1QxemdrdFBxZFBaVWFqa0x3X29IZ29ZN0ZQWlQ5YnB1WjJLZnV3RVU3TlQ0T1k5REF3Zk1MS1g4bllkLVc0LXpOUjh4aGpn?oc=5",
+          "time": "2026-08-01 14:41:35",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525245",
+          "time": "2026-08-01 14:41:35",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeUpZMlplUExjTnJUa21NYzRBSGtrQ1gtLW9sNGFEQmd2dmN4Q1ZtcFlLejROMjBuVzF2aXZtRGtxY3hYSEtkVWlGanc3NHRROFdFU2txcm9la0xQN1ZMQ083cXpVejR0dXkwS2lSUEZmVk1RTWRMSS1zLTNTd0FHd2c2UUFJdw?oc=5",
+          "time": "2026-08-01 14:41:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市",
+          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxQd3N5c3Z0RjRxUmYycmpKOFRwOERIUDlxcTF0OTJmeFRxaW04M2ZWRjlENm53N0haY3E1T0t6ME5TQl9vRWpoelRnclJIci1wT1V3UGIzSGtTN09tcTQ2U1duMVdYOE5xQm1XQUtNbkhxa2Q1MEoyZk9MQWZkQXBQNjJya0JieUI5TEdJM1pBSVU5TEhpb2ViM2NnZjNlTDZHMUVtMnI5eURuckJPWmxwMkJqcmY0Zkt5OTltUTluSFQ1eVFIODBtcVk0UWZMZHRVVmp1MUtUVHJCUjYwazdLVTdKMzdndXBhUGN2aVBKbWtkX0o3R0JOaTVlbzBWWENiSTY3YnN3cFQzSGZFT0dsY2k3cHVOUDNxWW1IRG5aTDRzVVZOei13bVRIMkhzSGtCYnhqZjBrb1I0TkJ4RUtwMG5LYlo0aTJZQTFhMm8ybVp6MTB6VTdueGtaZjltNnZJektMNXhjOXNzSWdmQlpWUHlxUzd0V3NUcWZyN05ISV9pUQ?oc=5",
+          "time": "2026-08-01 14:34:08",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "又是毒駕！ 高雄男闖紅燈左轉撞機車 拖行竄火煙騎士命喪輪下",
+          "url": "https://news.nextapple.com/local/20260801/293C26FD30180A0834F37616AD7F3506",
+          "time": "2026-08-01 14:30:41",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "世界最大魚「包圍」高雄輕軌 鯨鯊彩繪列車行駛至9/7",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525226",
+          "time": "2026-08-01 14:28:17",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市 | 政治 | CTWANT",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yTWY2MWJzaDB2NEdSSmluOHAzLWtqNTFwSVpWbmVvNmYwUTdVQXRidTVtdFd1SVVDWE9HOC1oUFpvbHIzYXdqclZZcG4tdmvSAVRBVV95cUxPNWJtbDQ0WTdRVzV4WHNOaW0tRVhfQUFidnA3WEZOZC1VNEx5aWR0OFBhWXQtMTJmZzF2OEpwczZVNWswVmowUVo0aFR0RVB2RlI3TDk?oc=5",
+          "time": "2026-08-01 14:24:14",
+          "publisher": "Google News→CTWANT",
+          "severity": null
+        },
+        {
+          "title": "部長李洋與高雄市長陳其邁體驗雪橇訓練！運動部補助三民運動中心開幕",
+          "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxOZGpCaXBFR0JWM1ZfR1YxQnFXUTlacmhpSDJQSjZfb1ZsVkh5U0ZWTElVajBEcV9GRnJLeXJxRmFROGo0ZXNiWGkzYVUweGVrRktWemx6TW5heXBjT2hMcHRJT2tjVFFManJPWmJyRms4OUdNQ3MwallUdmxqX3FhWHJvN1dHeFo2UjREYW5WWXNjYS1EMk9NZ3VxUzNkQXRoMEFuVk5GX0ZzcmE3QWt0QTBMQm5HMU10ZUVabVNib0dMc284ZURSN3d4dmNBUm5RU2lCaFFjVzFhN3ZyMkIzOHJueElUZWV2eGM0a3FmbzMwTWdRZWstSl9NVWtCc29CVVk0enNxTHJYSjJNcVFkQTBsTWtzdHQydUJBOHd1blVsT0JUbll5ZVA4SVFPWkxfaG04c0lXdVdlRXMta3JFYnpZUXBLazB1eWNsU1BTR3M4WG12SXNja3NwQTRqWVJvODBmYklyTURHS0Z2QkJTN3kzZ2JEZXBSdnkycE1EZzdNOFFEN0o4TGxvczJzdjh2cGY1NGQ4RHp1THRhLW1SaEFpVU9LQjJRZi02YjBIMHJJZ3BLNFNUT3BBTkExM1JfQW1PTFhna2p6TmlCc1J5VDlR?oc=5",
+          "time": "2026-08-01 14:18:55",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "AI智慧、無人商機助攻 高雄加盟展推低門檻創業",
+          "url": "https://www.cna.com.tw/news/aloc/202608010098.aspx",
+          "time": "2026-08-01 14:10:35",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "運動部長李洋上月30日赴立法院教育及文化委員會報告，國民黨召委羅廷瑋與民進黨立委陳培瑜為發言程序爆發口角，李洋一度站在備詢台前約10分鐘，遭質疑「罰站」。李洋今出席高雄三民運動中心開幕，被媒體問及是否委屈或疲累，他未正面回應；高雄市長陳其邁說，金牌選手撐得住，該打屁股的是立法院。",
+          "url": "https://udn.com/news/story/6656/9664495?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-01 13:46:12",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "小野麗莎重回高雄「水啦」連發！邀金曲歌后吳蓓雅合唱《我願意》",
+          "url": "https://news.nextapple.com/entertainment/20260801/F40D41ACEBF6B55D688FCD44BE17E7C5",
+          "time": "2026-08-01 13:44:13",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "綜合／部長李洋與高雄市長陳其邁體驗雪橇訓練！運動部補助三民運動中心開幕",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zUS1SeUd2WkVsakg5TzlnOFpQOFJRMFFnMzhKSm9fZGpfRDdYWTYyVmtMdDdEVF9DNTh2MU9MMGZnTHp3T1ZDTTZOMTdjUlZ2NWdjZG9XWm90N3M2LUtKQQ?oc=5",
+          "time": "2026-08-01 13:36:46",
+          "publisher": "Google News→民視新聞網",
+          "severity": null
+        },
+        {
+          "title": "高市早苗感謝文「第一時間漏掉台灣」？ 矢板明夫向日方查證揭真相",
+          "url": "https://www.mirrormedia.mg/story/20260801edi007",
+          "time": "2026-08-01 13:32:00",
+          "publisher": "鏡週刊",
+          "severity": "yellow"
+        },
+        {
+          "title": "高雄新九如橋通車！陳其邁認設計漏氣修正中 柯志恩這樣說",
+          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxNZklmYnJodzl4bE9KdURyUnBCYW9zV2JXMm8zSmxidVpXMUxKSTQ5VDZrWjh0QzZhOTR6cTZTNTR4b25LMW5jVzlub3VkMGQ0X3dJLXdVZFYwYWFRR1lfOXd0WHBOVjFFMURtMmlpcHFmX2lJMnNuSDdCcFNrUWJ3alVWTFpCcWRheUdRS2hhdEhmUWFUcHNiUlpxNFF4Y3A3aVNkOXJCbWlodkdkR0t1NUNSR2hRa3NkNWZEOC1SUklhRWF6aUV3dGhMX0l5amxfNV93LVEwMGJMdEIxVDBXVnBUVGk4cjhHd2FBSS1kdjF4b3FYSGdMdHIyMUtWUEctS3hBaXJKS0NlVE9RTG1CQTFlb1RqZ2tQeTRuazgzSm5jSUI3QmhjMnZCOElTa3dzeGpaeU94TWNoVXhnVmdmOVVlQU5oMkdUWmJsemRUdk9uYUhBZTlYWG1vMFdLOXRCZEo0cDNLdVpsME0xM2l3VkdGNFlCUkJ3WUhscFNFUHJPdw?oc=5",
+          "time": "2026-08-01 13:28:55",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "戴資穎宣傳被阻止！滅火器高雄巨蛋又秒殺 霸氣宣布加場",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5525180",
+          "time": "2026-08-01 13:21:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "闖紅燈拒檢狂逃3公里！高雄男毒駕遭逮 恐吞近58萬罰單",
+          "url": "https://tw.news.yahoo.com/%E9%97%96%E7%B4%85%E7%87%88%E6%8B%92%E6%AA%A2%E7%8B%82%E9%80%833%E5%85%AC%E9%87%8C-%E9%AB%98%E9%9B%84%E7%94%B7%E6%AF%92%E9%A7%95%E9%81%AD%E9%80%AE-%E6%81%90%E5%90%9E%E8%BF%9158%E8%90%AC%E7%BD%B0%E5%96%AE-051100587.html",
+          "time": "2026-08-01 13:11:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "快新聞／高雄新九如橋通車！陳其邁認設計漏氣修正中 柯志恩這樣說",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzR3B2MWhuNjItWGlfaXZOT1NycGp4eVFFdzdzNGVhSFEyd2hDYkJjNm50VFM1bWd1dmp6WE5jbndjNEZQcUhGeVVTVk5saHZUc3NDQnRBUGgxckJtZjZ5Zw?oc=5",
+          "time": "2026-08-01 13:02:02",
+          "publisher": "Google News→民視新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "高市議員陳明澤涉光電回扣案收押禁見 陳其邁：尊重司法",
+          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNcm9jR19rbXAycTN3NkdTSk52el9tTmRwbzZSUVVzOTBIcFhDR3FmeFJGNUxJV2FxaDl5NlJzMHZtWXViYmtPWVRaYzZwVjQySlN2MmJJcGwyRE41b3IwVDkzN1F4ejdXYk1vSVZJOE9PMWxxSjNJbkgwQ2lfNEVPeGFuRHRqZ2E4MWl1TUhTMElNODNGc0ZOTHNfR3ktdmdMQTJmWTBSUm93NklpMlI1cDUxYTBLR1JlajBhWUtSZk1mc2lEOElwcy1femhPcVF6VEt0b3k2bWgtUGtEWXFiUUFhS0dqWm5EQnRjbkRtSndSc21ORjhoVUpyQVRMSDBqNnliWFNMR0pqbEVQVS1CV3c2b3BZYVFmY1BSZDRMekNpelhUbWlZbTFWX2FBMS0wUFhoZUJ4aGt4V3RLZ0hyRFpzUDdXZlhmcHhja2lqTDFDTUVWZm1mMlNUNGhkNnVvcWpHMG5nNGZIa3ByOVFCb28wTDhKdw?oc=5",
+          "time": "2026-08-01 12:58:17",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "高市議員陳明澤涉光電回扣案收押禁見 陳其邁：尊重司法",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525137",
+          "time": "2026-08-01 12:43:19",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "高市議員陳明澤涉光電回扣案收押禁見陳其邁：尊重司法- 社會",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OV2RSX1BTbmU5VC1NX1ZUUU54OTVGVGRqY3V4N3VOLXByT2IyZGVkWE0xdks0R1NadW9xU0FQdmhrTDZ1Vm5XbWxlSmVEMjZNRjB4Q05ZeXZHUlktOVZ5cS1YaU9PUW5P?oc=5",
+          "time": "2026-08-01 12:43:19",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "高雄登全球11月最佳旅遊城市 陳其邁：CP值最高",
+          "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOMDIzV284dnZjaDZKbDFaSXRmdWg3Y1RPc2xLTTJWc3VMRlNhWkVhd0VhSGR1WnpHUWU2eUZXUm9ucEtIb25fNklHUkFhUWcydUlMUDVRUWpSRXZmLV9yTWwzQm9CSFVPR0RfV0hERnNRaDJPZm1hcTg1cDZOeHVmX3BPVUcwZXRwMDVUbjZ0WmM2R3lOdGZuc1A4V0lPVVlBZlY3a3RINXVHNnJUdHFfY1RldmFnejlrZ1NkNmd4VjVwN3BBcEVaZVk0Y3JVQmxwYkJOTlpkbUx5SExESnZ3dDNIMk02aS1YTnZRZTdYN3dWc3dyQnZvZE1obnkweDk0MlYxQUNIMVRIbUNZdmtVZXQ4dUZyelQ5cGgtVzdtRjZLSDRnNjc4b1RfbkM2M2dXaVVv?oc=5",
+          "time": "2026-08-01 12:42:58",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "高雄登全球11月最佳旅遊城市陳其邁：CP值最高- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2eEJhZnROYWk0eEhsQzR3MFE5a0NmbmN4a21fck1Xa291a2kyamozTU53UHExRS1SUkpXazcyaFFSZ3pCTXNuRThVRk5QTUtvS2t5cVJOak5hb3lOVUtMcjdNNGY?oc=5",
+          "time": "2026-08-01 12:32:49",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "高雄登全球11月最佳旅遊城市 陳其邁：CP值最高",
+          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525121",
+          "time": "2026-08-01 12:32:49",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "賴清德熱臉貼冷屁股！？高市謝各國領袖獨漏台灣藏玄機【#國民大會 精華】20260731 #謝寒冰 #王育敏",
+          "url": "https://www.youtube.com/watch?v=TxY1_mNxsdc",
+          "time": "2026-08-01 12:30:28",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "高雄銀髮好聲音開唱 近60長者拚進總決賽",
+          "url": "https://www.storm.mg/article/11153278",
+          "time": "2026-08-01 12:24:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "高雄市「三民運動中心」盛大開幕 打造旗艦級全齡活力新地標",
+          "url": "https://n.yam.com/Article/20260801761117",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→今傳媒",
+          "severity": null
+        },
+        {
+          "title": "高市都發局亞灣智慧公宅工程熱危害防制有成 獲勞工局肯定",
+          "url": "https://n.yam.com/Article/20260801100827",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→今傳媒",
+          "severity": null
+        },
+        {
+          "title": "柯志恩提出原民5大政策 打造城鄉共好的高雄",
+          "url": "https://n.yam.com/Article/20260801861310",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→今傳媒",
+          "severity": null
+        },
+        {
+          "title": "觀世音菩薩開光圓滿 高雄東照山關帝廟萬眾朝聖 八月祈福法會接續登場",
+          "url": "https://n.yam.com/Article/20260801649425",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→Talknews說新聞",
+          "severity": null
+        },
+        {
+          "title": "2026旗津風箏節登場  陳其邁加碼盛夏券共享高雄夏日魅力",
+          "url": "https://n.yam.com/Article/20260801448066",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→三星傳媒",
+          "severity": null
+        },
+        {
+          "title": "百攤鮮果飄香高雄！台日大港水果祭開幕　陳其邁：水果是最甜外交邀全民挺熊本",
+          "url": "https://n.yam.com/Article/20260801660460",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→台灣好報",
+          "severity": null
+        },
+        {
+          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
+          "url": "https://n.yam.com/Article/20260801561959",
+          "time": "2026-08-01 12:00:00",
+          "publisher": "蕃新聞→藍雀新傳媒",
+          "severity": null
+        },
+        {
+          "title": "高市早苗「第一時間沒感謝台灣」被罵翻！他逆風揭真相：這件事應到此為止",
+          "url": "https://news.nextapple.com/international/20260801/0D4D00F27EFAE2C3E96505D7C59A0CA4",
+          "time": "2026-08-01 11:58:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "高市早苗感謝名單沒賴清德？矢板明夫揭背後原因：基於X平台互動方式",
+          "url": "https://www.taisounds.com/news/content/71/280788",
+          "time": "2026-08-01 10:34:50",
+          "publisher": "太報",
+          "severity": null
+        },
+        {
+          "title": "衝刺暑假商機 墾丁飯店攜手高雄酒店拚「雙城漫旅」",
+          "url": "https://playing.ltn.com.tw/article/32618",
+          "time": "2026-08-01 10:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "玩兩面手法收光電場千萬回扣 民進黨高市議員陳明澤今晨收押",
+          "url": "https://news.nextapple.com/local/20260801/E0749D67CB689426C20EE3F57996AE77",
+          "time": "2026-08-01 10:27:37",
+          "publisher": "壹蘋新聞網",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "桃園地方動態",
       "city": "桃園",
       "place": "桃園市政府",
@@ -5593,895 +6398,6 @@
       "comments": []
     },
     {
-      "title": "高雄地方動態",
-      "city": "高雄",
-      "place": "高雄市楠梓區",
-      "level": "red",
-      "news_count": 125,
-      "comment_count": 0,
-      "negativity_pct": 7,
-      "is_urgent": false,
-      "urgency_score": 152,
-      "news_articles": [
-        {
-          "title": "衛福部社安網績優表揚 高雄市勇奪4個人1團體大獎",
-          "url": "https://n.yam.com/Article/20260802526030",
-          "time": "2026-08-02 09:26:21",
-          "publisher": "蕃新聞→News586",
-          "severity": null
-        },
-        {
-          "title": "【毒油風暴】台糖5月就拒收中聯超標油！高市府爆毒油案關鍵新事證 中聯高層竟隱匿",
-          "url": "https://n.yam.com/Article/20260802292855",
-          "time": "2026-08-02 09:26:21",
-          "publisher": "蕃新聞→愛傳媒",
-          "severity": "red"
-        },
-        {
-          "title": "高雄深愛築夢市集吸引逾2千人 身障朋友展才藝拚創業圓夢",
-          "url": "https://n.yam.com/Article/20260802260840",
-          "time": "2026-08-02 09:26:21",
-          "publisher": "蕃新聞→波新聞",
-          "severity": null
-        },
-        {
-          "title": "致癌毒油5月就通報！中聯蓋牌隱匿…高市府急發聲",
-          "url": "https://tw.news.yahoo.com/%E8%87%B4%E7%99%8C%E6%AF%92%E6%B2%B95%E6%9C%88%E5%B0%B1%E9%80%9A%E5%A0%B1-%E4%B8%AD%E8%81%AF%E8%93%8B%E7%89%8C%E9%9A%B1%E5%8C%BF-%E9%AB%98%E5%B8%82%E5%BA%9C%E6%80%A5%E7%99%BC%E8%81%B2-010800629.html",
-          "time": "2026-08-02 09:08:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "台電「雄積三、四線」8/1完工送電 台積電高雄廠周邊供電能力翻倍",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5525729",
-          "time": "2026-08-02 08:47:05",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "台糖5月就通報苯駢芘超標！ 高市衛生局：相關油品未進入生產製程",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B0%B1%E9%80%9A%E5%A0%B1%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E9%AB%98%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%80-%E7%9B%B8%E9%97%9C%E6%B2%B9%E5%93%81%E6%9C%AA%E9%80%B2%E5%85%A5%E7%94%9F%E7%94%A2%E8%A3%BD%E7%A8%8B-003034376.html",
-          "time": "2026-08-02 08:30:34",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "高雄深愛築夢市集湧2千人 世界級視障樂團感動全場",
-          "url": "https://focus.586.com.tw/2026/08/02/p397973/",
-          "time": "2026-08-02 08:28:57",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "楠梓園區供電大升級 台電高雄新輸電線提前2年完工",
-          "url": "https://focus.586.com.tw/2026/08/02/p397969/",
-          "time": "2026-08-02 08:25:00",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "衛福部強化社安網績優表揚 高市4人員及1團體上榜",
-          "url": "https://newtalk.tw/news/view/2026-08-02/1050777",
-          "time": "2026-08-02 07:03:35",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "涉中聯油品7/9已預防性下架 高市衛生局：台糖未收311油槽半成品原料油",
-          "url": "https://newtalk.tw/news/view/2026-08-02/1050776",
-          "time": "2026-08-02 06:36:33",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "台灣老店／蝦拚揚名傳家味 高雄五福扁食",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E7%81%A3%E8%80%81%E5%BA%97-%E8%9D%A6%E6%8B%9A%E6%8F%9A%E5%90%8D%E5%82%B3%E5%AE%B6%E5%91%B3-%E9%AB%98%E9%9B%84%E4%BA%94%E7%A6%8F%E6%89%81%E9%A3%9F-222859991.html",
-          "time": "2026-08-02 06:28:59",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄造價最貴、功能最強 三民運動中心啟用",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/paper/1765047",
-          "time": "2026-08-02 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "搶原民票 高雄市長、台東縣長選戰端牛肉",
-          "url": "https://tw.news.yahoo.com/%E6%90%B6%E5%8E%9F%E6%B0%91%E7%A5%A8-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7-%E5%8F%B0%E6%9D%B1%E7%B8%A3%E9%95%B7%E9%81%B8%E6%88%B0%E7%AB%AF%E7%89%9B%E8%82%89-201000036.html",
-          "time": "2026-08-02 04:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄 欠7萬元設局誘殺棄屍 判無期",
-          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84-%E6%AC%A07%E8%90%AC%E5%85%83%E8%A8%AD%E5%B1%80%E8%AA%98%E6%AE%BA%E6%A3%84%E5%B1%8D-%E5%88%A4%E7%84%A1%E6%9C%9F-201000782.html",
-          "time": "2026-08-02 04:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "中聯毒油案重大進展！高市府曝台糖5月已拒收超標油品",
-          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E8%81%AF%E6%AF%92%E6%B2%B9%E6%A1%88%E9%87%8D%E5%A4%A7%E9%80%B2%E5%B1%95-%E9%AB%98%E5%B8%82%E5%BA%9C%E6%9B%9D%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B7%B2%E6%8B%92%E6%94%B6%E8%B6%85%E6%A8%99%E6%B2%B9%E5%93%81-173213258.html",
-          "time": "2026-08-02 01:32:13",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "台日大港水果祭高雄開幕 陳其邁：水果是最甜外交",
-          "url": "https://n.yam.com/Article/20260802963382",
-          "time": "2026-08-02 01:24:23",
-          "publisher": "蕃新聞→藍雀新傳媒",
-          "severity": null
-        },
-        {
-          "title": "高市早苗二度發文補列台灣 感謝22個亞洲國家與地區聲援熊本強震",
-          "url": "https://www.fountmedia.io/article/408821",
-          "time": "2026-08-02 01:24:07",
-          "publisher": "放言Fount Media",
-          "severity": null
-        },
-        {
-          "title": "媒體報導台糖今年5月已通報中聯油脂311號油槽原料油檢驗不合格，高雄市衛生局指出，經查台糖拒收該批不合格半成品原料油，相...",
-          "url": "https://udn.com/news/story/124948/9665346?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-02 01:23:40",
-          "publisher": "聯合新聞網",
-          "severity": "red"
-        },
-        {
-          "title": "台中地院昨裁定中聯公司廠長陳明榮收押禁見。中院認定，陳5月即接獲台糖通知苯駢芘超標，卻未通報，直到消息外流、吹哨者行動後才「不得不」通報；高市衛生局發出聲明澄清，台糖購買的是301號油槽原料油，與出問題的311號油槽不同，且311號半成品因苯駢芘超標遭台糖拒收，未進入台糖製程。",
-          "url": "https://udn.com/news/story/124948/9665344?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-02 01:23:40",
-          "publisher": "聯合新聞網",
-          "severity": "red"
-        },
-        {
-          "title": "高市府：台糖拒收 中聯不合格原料油未入製程",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525675",
-          "time": "2026-08-02 01:06:03",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "5月即通報中聯超標 高雄衛生局：311油槽原料油台糖未收貨",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525668",
-          "time": "2026-08-02 00:22:06",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "台日大港水果祭高雄開幕 陳其邁：水果是最甜外交",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZbU9zS0RabjYyVTVkTzd2cmhrYWx3VmlQb0M0R2ItLUkxVzVxNlYyUEZvVFF3X0RlLTB5MWpVSGtyMmxuNVczUU53VVBfRlFRUkE?oc=5",
-          "time": "2026-08-02 00:05:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "才退休就悲慘遇劫！高雄男毒駕拖行撞死人 家屬怒：應鞭刑",
-          "url": "https://tw.news.yahoo.com/%E6%89%8D%E9%80%80%E4%BC%91%E5%B0%B1%E6%82%B2%E6%85%98%E9%81%87%E5%8A%AB-%E9%AB%98%E9%9B%84%E7%94%B7%E6%AF%92%E9%A7%95%E6%8B%96%E8%A1%8C%E6%92%9E%E6%AD%BB%E4%BA%BA-%E5%AE%B6%E5%B1%AC%E6%80%92-%E6%87%89%E9%9E%AD%E5%88%91-235525345.html",
-          "time": "2026-08-01 23:55:25",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93LUhjSlYtY0RxOTR1TDJfVW5JYTljbUNFRG9leHgzemdwNlM1VnF3UGN4RWV3M2tka0hzbHAzZWpJNFAtY2ZOMlhJeE9aTVg4eFZyeHpn?oc=5",
-          "time": "2026-08-01 23:54:22",
-          "publisher": "Google News→藍雀新傳媒",
-          "severity": null
-        },
-        {
-          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHLTZmdXl5UnZiSUI4OGRxaGVET2drRlFod0FqSkgtZ001RzE2a0xtNDBPVXFLd0ROMHJCVEJLLTRhcjl2NFhkOVI1ZFZ4QTlGSFE?oc=5",
-          "time": "2026-08-01 23:54:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "衛福部社安網績優表揚 高雄勇奪4名績優人員、1績優團體殊榮",
-          "url": "https://more-news.tw/682585/",
-          "time": "2026-08-01 22:55:26",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄男涉毒駕撞死騎士肇逃 駕駛聲押車主10萬交保",
-          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E7%94%B7%E6%B6%89%E6%AF%92%E9%A7%95%E6%92%9E%E6%AD%BB%E9%A8%8E%E5%A3%AB%E8%82%87%E9%80%83-%E9%A7%95%E9%A7%9B%E8%81%B2%E6%8A%BC%E8%BB%8A%E4%B8%BB10%E8%90%AC%E4%BA%A4%E4%BF%9D-145308626.html",
-          "time": "2026-08-01 22:53:08",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "九如橋變高雄版巴黎藝術橋？「綠水鬼」竟被鎖護欄 警急站崗",
-          "url": "https://tw.news.yahoo.com/%E4%B9%9D%E5%A6%82%E6%A9%8B%E8%AE%8A%E9%AB%98%E9%9B%84%E7%89%88%E5%B7%B4%E9%BB%8E%E8%97%9D%E8%A1%93%E6%A9%8B-%E7%B6%A0%E6%B0%B4%E9%AC%BC-%E7%AB%9F%E8%A2%AB%E9%8E%96%E8%AD%B7%E6%AC%84-%E8%AD%A6%E6%80%A5%E7%AB%99%E5%B4%97-142846330.html",
-          "time": "2026-08-01 22:28:46",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "捐款熊本賑災緣由 粉專PO圖：12年前高雄氣爆時熊本曾相助",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525623",
-          "time": "2026-08-01 22:12:58",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "毒油風暴支線！法院曝台糖5月就反映 食藥署：交高雄衛生局了解",
-          "url": "https://tw.news.yahoo.com/%E6%AF%92%E6%B2%B9%E9%A2%A8%E6%9A%B4%E6%94%AF%E7%B7%9A-%E6%B3%95%E9%99%A2%E6%9B%9D%E5%8F%B0%E7%B3%965%E6%9C%88%E5%B0%B1%E5%8F%8D%E6%98%A0-%E9%A3%9F%E8%97%A5%E7%BD%B2-%E4%BA%A4%E9%AB%98%E9%9B%84%E8%A1%9B%E7%94%9F%E5%B1%80%E4%BA%86%E8%A7%A3-134818518.html",
-          "time": "2026-08-01 21:48:18",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "2026旗津風箏節登場 陳其邁加碼盛夏券共享高雄夏日魅力",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB1dGRpdXVUbXQ1TFA3RjZVN0FCRWhZMTExSTQtTUpjT3dhQUFjRmxWUnFzVS1peExaX3Joa0htWEVfd2l6WmJWRmtfU2R3UFlzZGc?oc=5",
-          "time": "2026-08-01 21:08:00",
-          "publisher": "Google News→n.yam.com",
-          "severity": null
-        },
-        {
-          "title": "百攤鮮果飄香高雄！台日大港水果祭開幕 陳其邁：水果是最甜外交邀全民挺熊本",
-          "url": "https://news.google.com/rss/articles/CBMi4wNBVV95cUxNYXJoaktqeE9VS21ONlppM3FWeTVkTEVTU204R0FyVkltcm9RZE1tYm1NT3FXcm1JWlZ1cUhkOFhKd2xJWnFRZHVDcmdoOWt3eVg1NHpxNUxmWnlZNWVJUFJVdXdaakpCQUowT215MW1STHNyRmpDSy1BSEhDUkFyb2xHOW9TY0dfMmFxSVUtQ0dSUG1kSnA4bGdjZDJHTDByQWNqV1FSSkMxUGxKUlY0anQtZHE2VjFVRXpTMnhvVGNYMDFGX3BGR1Z3cmVFOVRBc2JoMENWNUQ0WnRTRlh5VEVNbzBOT0Y4eUxNV1V1eUlrY2xPdy0wc1NJbFZLVndmNVUzcFExb2lqQ1JOTmVxbkRwS3ppNF8waUcyamg0UTZYTDBDQTFaU3M2QmNkYTlPLVR3Qk1JZ3ZFU1VOdjlNU3NwdkdlRVRmSFpyVEh2UzZudkFCTHF3TU1KYnQ2MkdEZ3JEaTVCVzRwTXhpcWRHUjlOSFZJRGdVRUVlQmhIMzBpc2N6a1hkeDROSXlCd1NncGgzOTdHNVpjNkFwWmN2UmN2NG50bDZjVzVSUlROOWhLU25nSWJDUVBkOVc3QnMwcEp4NGtjRHZya3d5djZJMFJaLUFQcjJrRFBHRmVrdEdFZlE?oc=5",
-          "time": "2026-08-01 21:02:14",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "中聯致癌油案延燒！台糖5月就通報 食藥署：請高雄市衛生局了解 | 生活焦點 | 要聞",
-          "url": "https://www.nownews.com/news/6862240",
-          "time": "2026-08-01 20:42:21",
-          "publisher": "NOWnews今日新聞",
-          "severity": "red"
-        },
-        {
-          "title": "高雄男毒駕闖燈猛撞　機車拖行350米、六旬翁遇劫慘死",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-01/2424044.html",
-          "time": "2026-08-01 20:41:51",
-          "publisher": "壹電視",
-          "severity": "red"
-        },
-        {
-          "title": "中聯油脂爆案外案 食藥署：交高雄市衛生局查未通報疑雲",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525583",
-          "time": "2026-08-01 20:41:28",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "8月1日是原住民族日，民進黨高雄市長參選人賴瑞隆、國民黨高雄市長參選人柯志恩分別提出原民政策，聚焦文化傳承、原鄉建設、青...",
-          "url": "https://udn.com/news/story/124652/9664999?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-01 20:41:25",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "旗津風箏節 高市府今夏加碼推優惠",
-          "url": "https://tw.news.yahoo.com/%E6%97%97%E6%B4%A5%E9%A2%A8%E7%AE%8F%E7%AF%80-%E9%AB%98%E5%B8%82%E5%BA%9C%E4%BB%8A%E5%A4%8F%E5%8A%A0%E7%A2%BC%E6%8E%A8%E5%84%AA%E6%83%A0-123600937.html",
-          "time": "2026-08-01 20:36:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高市三民運動中心 首設HYROX據點",
-          "url": "https://www.cdns.com.tw/articles/1438313",
-          "time": "2026-08-01 20:30:50",
-          "publisher": "中華日報",
-          "severity": null
-        },
-        {
-          "title": "高雄市旗艦級「三民運動中心」盛大開幕 打造全齡活力新地標",
-          "url": "https://tw.news.yahoo.com/%E9%AB%98%E9%9B%84%E5%B8%82%E6%97%97%E8%89%A6%E7%B4%9A-%E4%B8%89%E6%B0%91%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83-%E7%9B%9B%E5%A4%A7%E9%96%8B%E5%B9%95-%E6%89%93%E9%80%A0%E5%85%A8%E9%BD%A1%E6%B4%BB%E5%8A%9B%E6%96%B0%E5%9C%B0%E6%A8%99-122922964.html",
-          "time": "2026-08-01 20:29:22",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄加盟展推國產鮮乳 祭50萬陀螺大獎",
-          "url": "https://www.cdns.com.tw/articles/1438304",
-          "time": "2026-08-01 20:28:40",
-          "publisher": "中華日報",
-          "severity": null
-        },
-        {
-          "title": "恐嚇索賄綠能業者 高市議員收押",
-          "url": "https://www.cdns.com.tw/articles/1438306",
-          "time": "2026-08-01 20:27:29",
-          "publisher": "中華日報",
-          "severity": "red"
-        },
-        {
-          "title": "2026旗津風箏節盛大登場陳其邁：加碼盛夏券共享高雄夏日魅力– 地方新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBjZDVRcmQ4NGVOOWcwZUxLbks5Ri00Vjg4T1pFcHF2WHNvd3dyMVpyUnB3ZlpRakczb0haNXFpSl9uN1dqQnRPem9HVS1DdTlk?oc=5",
-          "time": "2026-08-01 20:15:59",
-          "publisher": "Google News→taidaily.com",
-          "severity": null
-        },
-        {
-          "title": "巴黎藝術橋翻版? 高雄九如橋護欄不只未來鎖 「勞力士綠水鬼」也來了",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525556",
-          "time": "2026-08-01 20:06:57",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "原民日提五大政策願景！柯志恩：打造城鄉共好、文化共榮的高雄",
-          "url": "https://www.storm.mg/article/11153330",
-          "time": "2026-08-01 20:01:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高雄男子涉毒駕撞死騎士 依過失致死等罪聲押",
-          "url": "https://news.pts.org.tw/article/820406",
-          "time": "2026-08-01 19:55:48",
-          "publisher": "公視 即時",
-          "severity": "red"
-        },
-        {
-          "title": "旗艦級健身新地標 高雄三民運動中心開幕",
-          "url": "https://tw.news.yahoo.com/%E6%97%97%E8%89%A6%E7%B4%9A%E5%81%A5%E8%BA%AB%E6%96%B0%E5%9C%B0%E6%A8%99-%E9%AB%98%E9%9B%84%E4%B8%89%E6%B0%91%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83%E9%96%8B%E5%B9%95-114822554.html",
-          "time": "2026-08-01 19:48:22",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "不能只照顧三個原鄉 柯志恩提5大政策打造城鄉共好高雄",
-          "url": "https://newtalk.tw/news/view/2026-08-01/1050761",
-          "time": "2026-08-01 19:39:46",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄旗津風箏節開跑！ 30米大鯨魚壓軸登場　小朋友喊好好玩",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Life/2026-08-01/2423936.html",
-          "time": "2026-08-01 18:54:16",
-          "publisher": "壹電視",
-          "severity": null
-        },
-        {
-          "title": "熊本強震36死 永旺商場內部最新影像曝1／熊本強震36死、1543棟房毀！ 高市8/3赴災區視察",
-          "url": "https://www.mnews.tw/story/20260801sot120004",
-          "time": "2026-08-01 18:54:08",
-          "publisher": "鏡新聞",
-          "severity": "red"
-        },
-        {
-          "title": "民進黨高雄市長參選人、立委賴瑞隆今天下午於岡山壽天宮活動中心舉行「岡山區里長後援會成立大會」，多名岡山區里長到場力挺，賴瑞隆針對地方發展提出「岡山三支箭」政見，宣示將承接「關鍵第四棒」，延續市長陳其邁的市政成果。",
-          "url": "https://udn.com/news/story/124652/9664969?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-01 18:54:07",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "9680噸御風實習船首開放 高雄港吸逾200人登船參觀",
-          "url": "https://www.chinatimes.com/realtimenews/20260801002690-260405",
-          "time": "2026-08-01 18:54:00",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "高市早苗提台灣卻有「玄機」！網喊不在意：知道背後辛苦",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5525505",
-          "time": "2026-08-01 18:36:19",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "衛福部社安網績優表揚！高雄勇奪4名績優人員、1績優團體展現社福實力",
-          "url": "https://www.storm.mg/article/11153321",
-          "time": "2026-08-01 18:06:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高雄加盟展掀陀螺旋風 買國產鮮乳滿300元可參賽、送50萬元大獎",
-          "url": "https://www.storm.mg/article/11153311",
-          "time": "2026-08-01 18:03:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高市農業局助攻青年農民與蜂農 推產業交流、受理蜂群災損現金救助",
-          "url": "https://www.storm.mg/article/11153313",
-          "time": "2026-08-01 17:18:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高雄客委會帶路「臺灣茶之路」 六龜、美濃走讀掀起客庄風土旅遊熱潮",
-          "url": "https://focus.586.com.tw/2026/08/01/p397895/",
-          "time": "2026-08-01 17:17:33",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "《家庭教師》快閃店在高雄！699元福袋價值破千 20週年造景必拍 | 電玩",
-          "url": "https://www.nownews.com/news/6862206",
-          "time": "2026-08-01 17:12:23",
-          "publisher": "NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄韓籍老婦用餐 饅頭卡喉噎死",
-          "url": "https://today.line.me/tw/v2/article/285704343",
-          "time": "2026-08-01 17:11:39",
-          "publisher": "Line Today",
-          "severity": "red"
-        },
-        {
-          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思",
-          "url": "https://www.taisounds.com/news/content/71/280842",
-          "time": "2026-08-01 17:11:37",
-          "publisher": "太報",
-          "severity": null
-        },
-        {
-          "title": "高雄加盟展陀螺開戰 千名親子搶喝國產鮮乳",
-          "url": "https://www.storm.mg/article/11153309",
-          "time": "2026-08-01 17:09:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高雄騎士壓到石塊摔車怒提國賠 因「這句話」法院判免賠",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525374",
-          "time": "2026-08-01 16:44:24",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄梓官死亡車禍！75歲翁遭小貨車擦撞 傷重3天後不治",
-          "url": "https://www.thehubnews.net/archives/650252",
-          "time": "2026-08-01 16:33:00",
-          "publisher": "新頭條",
-          "severity": "yellow"
-        },
-        {
-          "title": "點亮半導體園區！台電高雄楠梓「雄積三、四線」完工送電 供電量翻倍",
-          "url": "https://tw.news.yahoo.com/%E9%BB%9E%E4%BA%AE%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%9C%92%E5%8D%80-%E5%8F%B0%E9%9B%BB%E9%AB%98%E9%9B%84%E6%A5%A0%E6%A2%93-%E9%9B%84%E7%A9%8D%E4%B8%89-%E5%9B%9B%E7%B7%9A-%E5%AE%8C%E5%B7%A5%E9%80%81%E9%9B%BB-082710058.html",
-          "time": "2026-08-01 16:27:10",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "三民運動中心開幕高市長陳其邁：中央地方攜手打造旗艦級運動據點– 地方新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5wQlZEa1E2bjQ2VW1Zbk5DZXZ5bUU1VUNCRnZXUVN2LXlqVHpMSHFQV1VrM281ejhDTWdVS1cwc2hZbFg0dTltTy0xeUFpNzha?oc=5",
-          "time": "2026-08-01 16:20:31",
-          "publisher": "Google News→taidaily.com",
-          "severity": null
-        },
-        {
-          "title": "高雄三民運動中心開幕 全台首座HYROX據點正式啟用",
-          "url": "https://focus.586.com.tw/2026/08/01/p397870/",
-          "time": "2026-08-01 16:19:49",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "高雄「喪屍」毒駕闖紅燈撞死62歲騎士！休旅車拖行機車350公尺 再釀火燒車",
-          "url": "https://www.thehubnews.net/archives/650250",
-          "time": "2026-08-01 16:17:00",
-          "publisher": "新頭條",
-          "severity": "red"
-        },
-        {
-          "title": "傅崐萁爆粗口後道歉稱沒辦法除惡務盡反轟賴清德.陳其邁國罵鼻祖 民進黨不要雙標!高市早苗謝各國關懷卻漏賴 藍委:送暖被澆冷水 地緣政治太殘酷?/全程CC字幕｜TVBS新聞",
-          "url": "https://www.youtube.com/watch?v=st3LCvyYm48",
-          "time": "2026-08-01 16:00:20",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "左轉車「違規」未禮讓！高雄女騎60萬重機碰撞噴飛 頭部重創送醫",
-          "url": "https://www.thehubnews.net/archives/650248",
-          "time": "2026-08-01 16:00:00",
-          "publisher": "新頭條",
-          "severity": "yellow"
-        },
-        {
-          "title": "全台最狂戰鬥陀螺賽登場 高雄加盟展「白色旋風國產鮮乳陀螺爭霸賽」送總值50萬陀螺",
-          "url": "https://focus.586.com.tw/2026/08/01/p397864/",
-          "time": "2026-08-01 15:49:40",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思",
-          "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPeDBtaWJ0X3pGc0NIZEp4aWJPVGR6M3N4M3Vnc3JEeWpHTDdKUHNPSS11Vk5hOVI1b1c5VzJfdGdTOFRKSWdKWk5CZ1JFeDh3bnhXT1NrYUMzbE1BRTB1T3JtNmZsMmNBbng0a1M1c0w3a2ZoQmU1eHhlaTZRUmxzNVpyb2YwR1p0ZjNPSEZwaVZpSmVTZVMxQXhWRk1vVi1ya2xkVnU4eVBaUlJHMGMyNmljLTAxU2Q3Rmo0cUxTeWxqRmoxd3dHRkNhMldubTFjei1oLUQxUjA5WGxZVG9WcE1sczRSY2VQYTFyOHc3R3NfclZTczNieWRkb0JtbnVzNEdab1ZCWFFaTmNvUzJCQklxcE1fajVhSDJFSno4SGl5clBnTEs1eVZGWmkyUGtKQW5XWDc0cFo2UVVsWjdoMQ?oc=5",
-          "time": "2026-08-01 15:41:20",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "一直都記得！高雄八一氣爆12周年 3任市長陳其邁、陳菊、許立明獻花追思| 政治焦點",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5OTJZMnkyTU1kWTh1eWFhY1dWR1llZkVwUklQaGVucU45Q0VSM1RHbUoyV2Q0MzdRVXh2X2o0MVF0WjNlZ1B1Nkp3eU5jWXZCUmYtZEllcUZLNklw?oc=5",
-          "time": "2026-08-01 15:41:20",
-          "publisher": "Google News→太報 TaiSounds",
-          "severity": null
-        },
-        {
-          "title": "柯志恩指前鎮小港值得更好 將成為高雄下個黃金十年的核心",
-          "url": "https://www.cdns.com.tw/articles/1438097",
-          "time": "2026-08-01 15:28:39",
-          "publisher": "中華日報",
-          "severity": "yellow"
-        },
-        {
-          "title": "LaLaport高雄還沒開幕！鳳山這區房價「挑戰5字頭」：這類人買爆 | 地產居家 | 生活",
-          "url": "https://www.nownews.com/news/6862024",
-          "time": "2026-08-01 15:26:25",
-          "publisher": "NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "闖燈拒檢！ 高雄毒駕男飆逃涉35項違規　挨罰58萬",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-01/2423628.html",
-          "time": "2026-08-01 15:25:55",
-          "publisher": "壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄左營全球限量BMW M4失控自撞！全球僅250輛 車主崩潰：有錢也買不到了",
-          "url": "https://www.ctwant.com/article/491682/",
-          "time": "2026-08-01 15:25:47",
-          "publisher": "CTWANT",
-          "severity": null
-        },
-        {
-          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市",
-          "url": "https://www.ctwant.com/article/491685/",
-          "time": "2026-08-01 15:25:47",
-          "publisher": "CTWANT",
-          "severity": "yellow"
-        },
-        {
-          "title": "翻轉南臺灣國際教育 高雄芬蘭外僑學校9月1日盛大開學",
-          "url": "https://www.ctee.com.tw/news/20260801700286-431204",
-          "time": "2026-08-01 15:25:42",
-          "publisher": "工商時報",
-          "severity": null
-        },
-        {
-          "title": "高雄市長陳其邁今天表示，未經當事人同意，利用深偽技術偽造聲音是犯罪，不論偽造總統賴清德或台北市長蔣萬安的聲音都非常不應該...",
-          "url": "https://udn.com/news/story/6656/9664711?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-01 15:25:33",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "學生上車道幫撿麵包引熱議 高雄警：散落物最高罰1.8萬",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525300",
-          "time": "2026-08-01 15:13:28",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "父親節聚餐免煩惱！高雄翰品酒店推星級外帶、桌席與日料優",
-          "url": "https://tw.news.yahoo.com/%E7%88%B6%E8%A6%AA%E7%AF%80%E8%81%9A%E9%A4%90%E5%85%8D%E7%85%A9%E6%83%B1-%E9%AB%98%E9%9B%84%E7%BF%B0%E5%93%81%E9%85%92%E5%BA%97%E6%8E%A8%E6%98%9F%E7%B4%9A%E5%A4%96%E5%B8%B6-%E6%A1%8C%E5%B8%AD%E8%88%87%E6%97%A5%E6%96%99%E5%84%AA-070929300.html",
-          "time": "2026-08-01 15:09:29",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "蔡英文也喜歡的樂團「滅火器」前進高雄 解鎖「雙蛋雙加場」！開賣日出爐",
-          "url": "https://news.nextapple.com/entertainment/20260801/217D3C2B50468A43AD9F3097595A7BB5",
-          "time": "2026-08-01 15:07:02",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "綠營緩頰：台日友好不會生變　高市未感謝賴強震牽動中日台角力？#少康戰情室 20260731-2 #吳崢 #周榆修 #尹乃菁 #費鴻泰 #葉元之",
-          "url": "https://www.youtube.com/watch?v=nX4rohWlBrQ",
-          "time": "2026-08-01 15:06:14",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "高雄親子遊樂園區8/8開園！30設施免費玩 交通攻略一次看",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525286",
-          "time": "2026-08-01 14:57:53",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "不配合最高罰15萬！ 高雄「城鎮韌性防空演習」8/7登場",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525283",
-          "time": "2026-08-01 14:55:50",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "傅崐萁爆粗口後道歉稱沒辦法除惡務盡反轟賴清德.陳其邁國罵鼻祖 民進黨不要雙標!高市早苗謝各國關懷卻漏賴 藍委:送暖被澆冷水 地緣政治太殘酷?/全程CC字幕｜TVBS新聞",
-          "url": "https://www.youtube.com/watch?v=m9iK2ArOmYQ",
-          "time": "2026-08-01 14:45:01",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "觀世音菩薩開光圓滿 高雄東照山關帝廟湧入大批信眾朝聖 8月法會、祝壽盛典接力登場",
-          "url": "https://tw.news.yahoo.com/%E8%A7%80%E4%B8%96%E9%9F%B3%E8%8F%A9%E8%96%A9%E9%96%8B%E5%85%89%E5%9C%93%E6%BB%BF-%E9%AB%98%E9%9B%84%E6%9D%B1%E7%85%A7%E5%B1%B1%E9%97%9C%E5%B8%9D%E5%BB%9F%E6%B9%A7%E5%85%A5%E5%A4%A7%E6%89%B9%E4%BF%A1%E7%9C%BE%E6%9C%9D%E8%81%96-8%E6%9C%88%E6%B3%95%E6%9C%83-%E7%A5%9D%E5%A3%BD%E7%9B%9B%E5%85%B8%E6%8E%A5%E5%8A%9B%E7%99%BB%E5%A0%B4-064429671.html",
-          "time": "2026-08-01 14:44:29",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPUWszOVFIUV9BQ2tDT0FSQnl0Zk1hTklPQ1hVY0U4V3dPZHkxRVN5T2wybll6N0NmTnpLVGJaRjUzSC02T3U5a2ZqTnR0MHNTMjJSc3NONEQwR3ZVUEh1WXZrYkhQQ0pXXzZmdlUwSzBkZDZfc0VBVVhMWmtoSW1STU9CczNTVmdzekduYkpyNzdOSXRZbVkzU2V6RFE0bkJDYWlXUVlrNEtaSzRKN1BKUmpGNzd6U1BGc0x0LTlfV2tRVHF5c2pNSERXY3UwY2Z4emo0Z29GelA0ZXBEU2V1ZEZIMTFGTkJ2aFhIcWhQNFBxbGxDUDE3aTRxQXJlWHlEZTl4ZGc0XzlvYm5qWS1wT0p5Q1QxemdrdFBxZFBaVWFqa0x3X29IZ29ZN0ZQWlQ5YnB1WjJLZnV3RVU3TlQ0T1k5REF3Zk1MS1g4bllkLVc0LXpOUjh4aGpn?oc=5",
-          "time": "2026-08-01 14:41:35",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5525245",
-          "time": "2026-08-01 14:41:35",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "高雄三民運動中心HYROX成亮點 陳其邁推25公斤雪橇卡關",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeUpZMlplUExjTnJUa21NYzRBSGtrQ1gtLW9sNGFEQmd2dmN4Q1ZtcFlLejROMjBuVzF2aXZtRGtxY3hYSEtkVWlGanc3NHRROFdFU2txcm9la0xQN1ZMQ083cXpVejR0dXkwS2lSUEZmVk1RTWRMSS1zLTNTd0FHd2c2UUFJdw?oc=5",
-          "time": "2026-08-01 14:41:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市",
-          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxQd3N5c3Z0RjRxUmYycmpKOFRwOERIUDlxcTF0OTJmeFRxaW04M2ZWRjlENm53N0haY3E1T0t6ME5TQl9vRWpoelRnclJIci1wT1V3UGIzSGtTN09tcTQ2U1duMVdYOE5xQm1XQUtNbkhxa2Q1MEoyZk9MQWZkQXBQNjJya0JieUI5TEdJM1pBSVU5TEhpb2ViM2NnZjNlTDZHMUVtMnI5eURuckJPWmxwMkJqcmY0Zkt5OTltUTluSFQ1eVFIODBtcVk0UWZMZHRVVmp1MUtUVHJCUjYwazdLVTdKMzdndXBhUGN2aVBKbWtkX0o3R0JOaTVlbzBWWENiSTY3YnN3cFQzSGZFT0dsY2k3cHVOUDNxWW1IRG5aTDRzVVZOei13bVRIMkhzSGtCYnhqZjBrb1I0TkJ4RUtwMG5LYlo0aTJZQTFhMm8ybVp6MTB6VTdueGtaZjltNnZJektMNXhjOXNzSWdmQlpWUHlxUzd0V3NUcWZyN05ISV9pUQ?oc=5",
-          "time": "2026-08-01 14:34:08",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "又是毒駕！ 高雄男闖紅燈左轉撞機車 拖行竄火煙騎士命喪輪下",
-          "url": "https://news.nextapple.com/local/20260801/293C26FD30180A0834F37616AD7F3506",
-          "time": "2026-08-01 14:30:41",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "世界最大魚「包圍」高雄輕軌 鯨鯊彩繪列車行駛至9/7",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525226",
-          "time": "2026-08-01 14:28:17",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "憶高雄氣爆事故永難忘 陳其邁獻花追思：努力守護這座城市 | 政治 | CTWANT",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yTWY2MWJzaDB2NEdSSmluOHAzLWtqNTFwSVpWbmVvNmYwUTdVQXRidTVtdFd1SVVDWE9HOC1oUFpvbHIzYXdqclZZcG4tdmvSAVRBVV95cUxPNWJtbDQ0WTdRVzV4WHNOaW0tRVhfQUFidnA3WEZOZC1VNEx5aWR0OFBhWXQtMTJmZzF2OEpwczZVNWswVmowUVo0aFR0RVB2RlI3TDk?oc=5",
-          "time": "2026-08-01 14:24:14",
-          "publisher": "Google News→CTWANT",
-          "severity": null
-        },
-        {
-          "title": "部長李洋與高雄市長陳其邁體驗雪橇訓練！運動部補助三民運動中心開幕",
-          "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxOZGpCaXBFR0JWM1ZfR1YxQnFXUTlacmhpSDJQSjZfb1ZsVkh5U0ZWTElVajBEcV9GRnJLeXJxRmFROGo0ZXNiWGkzYVUweGVrRktWemx6TW5heXBjT2hMcHRJT2tjVFFManJPWmJyRms4OUdNQ3MwallUdmxqX3FhWHJvN1dHeFo2UjREYW5WWXNjYS1EMk9NZ3VxUzNkQXRoMEFuVk5GX0ZzcmE3QWt0QTBMQm5HMU10ZUVabVNib0dMc284ZURSN3d4dmNBUm5RU2lCaFFjVzFhN3ZyMkIzOHJueElUZWV2eGM0a3FmbzMwTWdRZWstSl9NVWtCc29CVVk0enNxTHJYSjJNcVFkQTBsTWtzdHQydUJBOHd1blVsT0JUbll5ZVA4SVFPWkxfaG04c0lXdVdlRXMta3JFYnpZUXBLazB1eWNsU1BTR3M4WG12SXNja3NwQTRqWVJvODBmYklyTURHS0Z2QkJTN3kzZ2JEZXBSdnkycE1EZzdNOFFEN0o4TGxvczJzdjh2cGY1NGQ4RHp1THRhLW1SaEFpVU9LQjJRZi02YjBIMHJJZ3BLNFNUT3BBTkExM1JfQW1PTFhna2p6TmlCc1J5VDlR?oc=5",
-          "time": "2026-08-01 14:18:55",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "AI智慧、無人商機助攻 高雄加盟展推低門檻創業",
-          "url": "https://www.cna.com.tw/news/aloc/202608010098.aspx",
-          "time": "2026-08-01 14:10:35",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "運動部長李洋上月30日赴立法院教育及文化委員會報告，國民黨召委羅廷瑋與民進黨立委陳培瑜為發言程序爆發口角，李洋一度站在備詢台前約10分鐘，遭質疑「罰站」。李洋今出席高雄三民運動中心開幕，被媒體問及是否委屈或疲累，他未正面回應；高雄市長陳其邁說，金牌選手撐得住，該打屁股的是立法院。",
-          "url": "https://udn.com/news/story/6656/9664495?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-01 13:46:12",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "小野麗莎重回高雄「水啦」連發！邀金曲歌后吳蓓雅合唱《我願意》",
-          "url": "https://news.nextapple.com/entertainment/20260801/F40D41ACEBF6B55D688FCD44BE17E7C5",
-          "time": "2026-08-01 13:44:13",
-          "publisher": "壹蘋新聞網",
-          "severity": null
-        },
-        {
-          "title": "綜合／部長李洋與高雄市長陳其邁體驗雪橇訓練！運動部補助三民運動中心開幕",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zUS1SeUd2WkVsakg5TzlnOFpQOFJRMFFnMzhKSm9fZGpfRDdYWTYyVmtMdDdEVF9DNTh2MU9MMGZnTHp3T1ZDTTZOMTdjUlZ2NWdjZG9XWm90N3M2LUtKQQ?oc=5",
-          "time": "2026-08-01 13:36:46",
-          "publisher": "Google News→民視新聞網",
-          "severity": null
-        },
-        {
-          "title": "高市早苗感謝文「第一時間漏掉台灣」？ 矢板明夫向日方查證揭真相",
-          "url": "https://www.mirrormedia.mg/story/20260801edi007",
-          "time": "2026-08-01 13:32:00",
-          "publisher": "鏡週刊",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄新九如橋通車！陳其邁認設計漏氣修正中 柯志恩這樣說",
-          "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxNZklmYnJodzl4bE9KdURyUnBCYW9zV2JXMm8zSmxidVpXMUxKSTQ5VDZrWjh0QzZhOTR6cTZTNTR4b25LMW5jVzlub3VkMGQ0X3dJLXdVZFYwYWFRR1lfOXd0WHBOVjFFMURtMmlpcHFmX2lJMnNuSDdCcFNrUWJ3alVWTFpCcWRheUdRS2hhdEhmUWFUcHNiUlpxNFF4Y3A3aVNkOXJCbWlodkdkR0t1NUNSR2hRa3NkNWZEOC1SUklhRWF6aUV3dGhMX0l5amxfNV93LVEwMGJMdEIxVDBXVnBUVGk4cjhHd2FBSS1kdjF4b3FYSGdMdHIyMUtWUEctS3hBaXJKS0NlVE9RTG1CQTFlb1RqZ2tQeTRuazgzSm5jSUI3QmhjMnZCOElTa3dzeGpaeU94TWNoVXhnVmdmOVVlQU5oMkdUWmJsemRUdk9uYUhBZTlYWG1vMFdLOXRCZEo0cDNLdVpsME0xM2l3VkdGNFlCUkJ3WUhscFNFUHJPdw?oc=5",
-          "time": "2026-08-01 13:28:55",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "戴資穎宣傳被阻止！滅火器高雄巨蛋又秒殺 霸氣宣布加場",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5525180",
-          "time": "2026-08-01 13:21:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "闖紅燈拒檢狂逃3公里！高雄男毒駕遭逮 恐吞近58萬罰單",
-          "url": "https://tw.news.yahoo.com/%E9%97%96%E7%B4%85%E7%87%88%E6%8B%92%E6%AA%A2%E7%8B%82%E9%80%833%E5%85%AC%E9%87%8C-%E9%AB%98%E9%9B%84%E7%94%B7%E6%AF%92%E9%A7%95%E9%81%AD%E9%80%AE-%E6%81%90%E5%90%9E%E8%BF%9158%E8%90%AC%E7%BD%B0%E5%96%AE-051100587.html",
-          "time": "2026-08-01 13:11:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "快新聞／高雄新九如橋通車！陳其邁認設計漏氣修正中 柯志恩這樣說",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzR3B2MWhuNjItWGlfaXZOT1NycGp4eVFFdzdzNGVhSFEyd2hDYkJjNm50VFM1bWd1dmp6WE5jbndjNEZQcUhGeVVTVk5saHZUc3NDQnRBUGgxckJtZjZ5Zw?oc=5",
-          "time": "2026-08-01 13:02:02",
-          "publisher": "Google News→民視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "高市議員陳明澤涉光電回扣案收押禁見 陳其邁：尊重司法",
-          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNcm9jR19rbXAycTN3NkdTSk52el9tTmRwbzZSUVVzOTBIcFhDR3FmeFJGNUxJV2FxaDl5NlJzMHZtWXViYmtPWVRaYzZwVjQySlN2MmJJcGwyRE41b3IwVDkzN1F4ejdXYk1vSVZJOE9PMWxxSjNJbkgwQ2lfNEVPeGFuRHRqZ2E4MWl1TUhTMElNODNGc0ZOTHNfR3ktdmdMQTJmWTBSUm93NklpMlI1cDUxYTBLR1JlajBhWUtSZk1mc2lEOElwcy1femhPcVF6VEt0b3k2bWgtUGtEWXFiUUFhS0dqWm5EQnRjbkRtSndSc21ORjhoVUpyQVRMSDBqNnliWFNMR0pqbEVQVS1CV3c2b3BZYVFmY1BSZDRMekNpelhUbWlZbTFWX2FBMS0wUFhoZUJ4aGt4V3RLZ0hyRFpzUDdXZlhmcHhja2lqTDFDTUVWZm1mMlNUNGhkNnVvcWpHMG5nNGZIa3ByOVFCb28wTDhKdw?oc=5",
-          "time": "2026-08-01 12:58:17",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "高市議員陳明澤涉光電回扣案收押禁見 陳其邁：尊重司法",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5525137",
-          "time": "2026-08-01 12:43:19",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "高市議員陳明澤涉光電回扣案收押禁見陳其邁：尊重司法- 社會",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OV2RSX1BTbmU5VC1NX1ZUUU54OTVGVGRqY3V4N3VOLXByT2IyZGVkWE0xdks0R1NadW9xU0FQdmhrTDZ1Vm5XbWxlSmVEMjZNRjB4Q05ZeXZHUlktOVZ5cS1YaU9PUW5P?oc=5",
-          "time": "2026-08-01 12:43:19",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "高雄登全球11月最佳旅遊城市 陳其邁：CP值最高",
-          "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxOMDIzV284dnZjaDZKbDFaSXRmdWg3Y1RPc2xLTTJWc3VMRlNhWkVhd0VhSGR1WnpHUWU2eUZXUm9ucEtIb25fNklHUkFhUWcydUlMUDVRUWpSRXZmLV9yTWwzQm9CSFVPR0RfV0hERnNRaDJPZm1hcTg1cDZOeHVmX3BPVUcwZXRwMDVUbjZ0WmM2R3lOdGZuc1A4V0lPVVlBZlY3a3RINXVHNnJUdHFfY1RldmFnejlrZ1NkNmd4VjVwN3BBcEVaZVk0Y3JVQmxwYkJOTlpkbUx5SExESnZ3dDNIMk02aS1YTnZRZTdYN3dWc3dyQnZvZE1obnkweDk0MlYxQUNIMVRIbUNZdmtVZXQ4dUZyelQ5cGgtVzdtRjZLSDRnNjc4b1RfbkM2M2dXaVVv?oc=5",
-          "time": "2026-08-01 12:42:58",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "高雄登全球11月最佳旅遊城市陳其邁：CP值最高- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2eEJhZnROYWk0eEhsQzR3MFE5a0NmbmN4a21fck1Xa291a2kyamozTU53UHExRS1SUkpXazcyaFFSZ3pCTXNuRThVRk5QTUtvS2t5cVJOak5hb3lOVUtMcjdNNGY?oc=5",
-          "time": "2026-08-01 12:32:49",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "高雄登全球11月最佳旅遊城市 陳其邁：CP值最高",
-          "url": "https://news.ltn.com.tw/news/Kaohsiung/breakingnews/5525121",
-          "time": "2026-08-01 12:32:49",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "賴清德熱臉貼冷屁股！？高市謝各國領袖獨漏台灣藏玄機【#國民大會 精華】20260731 #謝寒冰 #王育敏",
-          "url": "https://www.youtube.com/watch?v=TxY1_mNxsdc",
-          "time": "2026-08-01 12:30:28",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "高雄銀髮好聲音開唱 近60長者拚進總決賽",
-          "url": "https://www.storm.mg/article/11153278",
-          "time": "2026-08-01 12:24:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "高雄市「三民運動中心」盛大開幕 打造旗艦級全齡活力新地標",
-          "url": "https://n.yam.com/Article/20260801761117",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→今傳媒",
-          "severity": null
-        },
-        {
-          "title": "高市都發局亞灣智慧公宅工程熱危害防制有成 獲勞工局肯定",
-          "url": "https://n.yam.com/Article/20260801100827",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→今傳媒",
-          "severity": null
-        },
-        {
-          "title": "柯志恩提出原民5大政策 打造城鄉共好的高雄",
-          "url": "https://n.yam.com/Article/20260801861310",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→今傳媒",
-          "severity": null
-        },
-        {
-          "title": "觀世音菩薩開光圓滿 高雄東照山關帝廟萬眾朝聖 八月祈福法會接續登場",
-          "url": "https://n.yam.com/Article/20260801649425",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→Talknews說新聞",
-          "severity": null
-        },
-        {
-          "title": "2026旗津風箏節登場  陳其邁加碼盛夏券共享高雄夏日魅力",
-          "url": "https://n.yam.com/Article/20260801448066",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→三星傳媒",
-          "severity": null
-        },
-        {
-          "title": "百攤鮮果飄香高雄！台日大港水果祭開幕　陳其邁：水果是最甜外交邀全民挺熊本",
-          "url": "https://n.yam.com/Article/20260801660460",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→台灣好報",
-          "severity": null
-        },
-        {
-          "title": "三民運動中心啟用 陳其邁：北高雄最豪華複合運動園區",
-          "url": "https://n.yam.com/Article/20260801561959",
-          "time": "2026-08-01 12:00:00",
-          "publisher": "蕃新聞→藍雀新傳媒",
-          "severity": null
-        },
-        {
-          "title": "高市早苗「第一時間沒感謝台灣」被罵翻！他逆風揭真相：這件事應到此為止",
-          "url": "https://news.nextapple.com/international/20260801/0D4D00F27EFAE2C3E96505D7C59A0CA4",
-          "time": "2026-08-01 11:58:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "高市早苗感謝名單沒賴清德？矢板明夫揭背後原因：基於X平台互動方式",
-          "url": "https://www.taisounds.com/news/content/71/280788",
-          "time": "2026-08-01 10:34:50",
-          "publisher": "太報",
-          "severity": null
-        },
-        {
-          "title": "衝刺暑假商機 墾丁飯店攜手高雄酒店拚「雙城漫旅」",
-          "url": "https://playing.ltn.com.tw/article/32618",
-          "time": "2026-08-01 10:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "玩兩面手法收光電場千萬回扣 民進黨高市議員陳明澤今晨收押",
-          "url": "https://news.nextapple.com/local/20260801/E0749D67CB689426C20EE3F57996AE77",
-          "time": "2026-08-01 10:27:37",
-          "publisher": "壹蘋新聞網",
-          "severity": "red"
-        },
-        {
-          "title": "高雄7歲「重車迷」獨自路邊拍貨櫃車 路人嚇壞報警",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5524994",
-          "time": "2026-08-01 10:25:07",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "高雄議員陳明澤涉恐嚇索賄 橋頭地院裁准羈押禁見",
-          "url": "https://taronews.tw/2026/08/01/1205264/",
-          "time": "2026-08-01 10:09:14",
-          "publisher": "芋傳媒",
-          "severity": "red"
-        },
-        {
-          "title": "高雄氣爆滿12年！陳其邁點燭光追思 揭市府具體精進措施",
-          "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQYTdTaGQzeFlRYkY3d2ZOVGdIVDkyRGM3cGxHMGpTdHg5OEs1ekgtSkpuS05SXzRVUUM3MElGNlFQaGIweFBINkZDdVhSTmRfTjJrX0FraG1paFlON214REV1ZUREa0ZzNjJvdTdDTnozMWpidVFteHVCeEFZU3BITEViV3p5d0YtQzZCWXh4M193MTV5R3hNTzc0dVo1bU81NVdwSWczenJ1WXdoWUhsVDVvWGN0eHpXNU02RTNXa3EzSV9JZXVQaUFrdFhfczFjNmxoSVhLWUpGS2V4STVoVjNORDN5UXdpUlk2R3FTakZSU1hGd2FqVFk5ek43M3F2QmhHSldDMkNQUTFxMl90S2ttWTRCMzBJbVU0TU42RFI5eXhLR2lOaG52TnNyc1d5SXMzV2Z2dEZYdy1pcUowa0wxN2IyY19aSkh1dGIyd3I1UTYxVkVxTnM4VmxFaVpKaC15VFVSRncyUE9W?oc=5",
-          "time": "2026-08-01 10:08:55",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "台中市政動態",
       "city": "台中",
       "place": "台中市政府",
@@ -6492,6 +6408,20 @@
       "is_urgent": true,
       "urgency_score": 139,
       "news_articles": [
+        {
+          "title": "怒轟民進黨未護食安 盧秀燕：2026全民倒閣、2028全民倒賴",
+          "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPSDgzNDdSN3o4eEhLd2szUDFxVEh0Z3FXRXMtb1FJVS1BeWRHbktxRVlocDYxOUVkZU9wSzBzYjlIQU8zcENPN2VNU1BzTUtqN2hIOWw5eTN2QTl0YjIya3ExdDNGY25aelo5ZFp4Y3VGMHdoWkZlYVE4aTNLOGdRUGRCYkU4eUoxeVZ2ZS1hUGJkU1ctVGVpTVRFeG9LakNUeHZJNFBuc002UzNtMkdBXzFoM3ZqR0pYOTF4TnRucmE0OHVzakFoeGFlVk1reXZiWHVXOEloMVdtZzhBVWg5dmtQd1dJVG1GM0hfUFlhM1ZROHJrVXc1ZVFlVENxdGNuMG5XM0pMZmlQaVRSc3RGSG5Pa2dGYXJMR2FLRHNEd3E0YnNOa2ZxR19oQTZpc0ZxUDVaelhpS3ViWmFhTElmY0NCSTc5NTU0ZWd2WnJUdUdCUQ?oc=5",
+          "time": "2026-08-02 10:03:56",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "震撼開第一槍！他揭「盧秀燕驚人轉變」：2028徹底謀定",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QV3dFMzZWc2Y5UWpuMDRhbjl4WDMzQU9sY1c5OEctRy0yRkFDVmpaWUc1TE5SNVg3T2ZoQzBYVUxkaTEwRElPSFNtaE5TTFczNElR?oc=5",
+          "time": "2026-08-02 10:00:00",
+          "publisher": "TVBS",
+          "severity": null
+        },
         {
           "title": "怒轟民進黨未護食安 盧秀燕：2026全民倒閣、2028 全民倒賴",
           "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9nMnNiQTdUcTlZTFNJa2V4UWNFRThfa0V5Z3EzOThON2xIcHVkRjAwUkkzQ0pRM1loRWtwaGtzSnhjbzNCbVdqbVBn?oc=5",
@@ -7289,20 +7219,6 @@
           "time": "2026-08-01 10:32:42",
           "publisher": "新頭殼",
           "severity": null
-        },
-        {
-          "title": "盧秀燕「緩慢前行」換檔？喊2028倒賴 陳學聖曝她已謀定不缺席",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95-%E7%B7%A9%E6%85%A2%E5%89%8D%E8%A1%8C-%E6%8F%9B%E6%AA%94-%E5%96%8A2028%E5%80%92%E8%B3%B4-%E9%99%B3%E5%AD%B8%E8%81%96%E6%9B%9D%E5%A5%B9%E5%B7%B2%E8%AC%80%E5%AE%9A%E4%B8%8D%E7%BC%BA%E5%B8%AD-101856141.html",
-          "time": "2026-08-01 10:18:56",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "與蔣萬安「倒閣論」尬車 盧秀燕今喊九合一選舉「對賴政府投不信任票」",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHXzBCNkctLWh6aVd2VGFEcmxmRWt5SmRKR2lrY1J5R3R1X2Q3a1N2ZWtobmUwaFZFNXFnNVFZc2tlaE9ia0dpeTBid3RwVGVjU0g4am8wcExPdTZH?oc=5",
-          "time": "2026-08-01 10:12:59",
-          "publisher": "Google News→太報 TaiSounds",
-          "severity": "yellow"
         }
       ],
       "comments": [
@@ -7367,7 +7283,7 @@
           "text": "盧秀燕你封鎖我臉書，眾望知。😍",
           "author": "errgerlu",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "yellow"
         },
         {
@@ -7383,7 +7299,7 @@
           "text": "盧秀燕下台",
           "author": "sho5230",
           "url": "",
-          "time_text": "6天",
+          "time_text": "1 週",
           "signal": "red"
         }
       ]
@@ -7393,12 +7309,19 @@
       "city": "台北",
       "place": "台北市南港區",
       "level": "red",
-      "news_count": 167,
+      "news_count": 166,
       "comment_count": 0,
-      "negativity_pct": 8,
+      "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 206,
+      "urgency_score": 202,
       "news_articles": [
+        {
+          "title": "台北市長網路民調太驚人！沈伯洋52.9%輾壓蔣萬安 黃揚明：贏麻了",
+          "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxNOUJySUU2UFFQVEFUNFBKUkxIWEFtQk81NXZOa1pDdkRsNV9fblNZNF84SWpQa19qaTJUX29Hb0pDRG0zcE45SGVndG1YQnBIeUtFcmNkWWFUMXg0QXRHV0JtdWI5NVhfdzNKSFlMVlVoS3BHQUF1TnhXWnpxZHVhS0JuQWRfcWdwdnNIT0JZdFUyaHJzTkFpN1ktUDVRVmZPcDcyWVdNR3NjNTV3aGNxQ3o2V045Y09lQVBmMFFnMDBsUnN3bFg4bHN0VzJBd3hRT1lIVklXbDEwUi1renBOc2VtNnRHTDJPdlpsNUF4VEI1dVZTdTQwYlJ5dklKMkFKUVJqOG9kZmlQRGFuV1FoMnhwSDZObWVmZmwwRlRzcDBiYTJsc3RpaXotMkJvZFJKUXAxbDNmU1MzNWNPOUJtUjBxR1hGelU1UlVhWmE2V185MmFGb3hUQ3lFb1ZmVjRTNHFFNw?oc=5",
+          "time": "2026-08-02 10:03:49",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
         {
           "title": "北市8/13城鎮韌性演習 賴清德、蔣萬安料同框視察添2028想像",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXeXJhRVgwc2NaWHdzcnl4cjNKQ1RlRWtSbF9nRmlhekZKbDh3SlpFaVFJdU9pcnI0ZVdzaHV4QmtfTktYU09aWUJLQW9tVkg2dTYzbHEwd01JZ29u?oc=5",
@@ -8553,20 +8476,6 @@
           "time": "2026-08-01 10:35:05",
           "publisher": "聯合新聞網",
           "severity": null
-        },
-        {
-          "title": "蔣萬安狂甩鍋？北市兒虐連環爆竟質疑對手 沈伯洋怒轟：換我當市長",
-          "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%8B%82%E7%94%A9%E9%8D%8B-%E5%8C%97%E5%B8%82%E5%85%92%E8%99%90%E9%80%A3%E7%92%B0%E7%88%86%E7%AB%9F%E8%B3%AA%E7%96%91%E5%B0%8D%E6%89%8B-%E6%B2%88%E4%BC%AF%E6%B4%8B%E6%80%92%E8%BD%9F-%E6%8F%9B%E6%88%91%E7%95%B6%E5%B8%82%E9%95%B7-095654065.html",
-          "time": "2026-08-01 10:18:52",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "北市兒虐案頻傳！藍營轟跑通告缺席兒虐專報 沈伯洋打臉：我在口試啦",
-          "url": "https://www.ettoday.net/news/20260801/3211379.htm",
-          "time": "2026-08-01 10:10:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -8576,11 +8485,11 @@
       "city": "台中",
       "place": "台中市沙鹿區",
       "level": "red",
-      "news_count": 172,
+      "news_count": 171,
       "comment_count": 0,
       "negativity_pct": 9,
       "is_urgent": false,
-      "urgency_score": 217,
+      "urgency_score": 216,
       "news_articles": [
         {
           "title": "獨家》慶祝盧秀燕當選也行？台中前地政局長吳存金貪污緩刑5年確定",
@@ -9778,13 +9687,6 @@
           "time": "2026-08-01 10:32:50",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "台中「藍天白雲橋」河堤驚見男屍！ 大坑晨運民眾嚇壞急報警",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5524985",
-          "time": "2026-08-01 10:27:00",
-          "publisher": "自由時報",
-          "severity": "yellow"
         }
       ],
       "comments": []
