@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-08-04T23:32:57.153345+00:00",
+  "generated_at": "2026-08-04T23:48:36.941099+00:00",
   "metrics": {
-    "total_24h": 289,
-    "prev_24h": 356,
-    "growth_pct": -18.82,
-    "news_24h": 223,
+    "total_24h": 288,
+    "prev_24h": 357,
+    "growth_pct": -19.33,
+    "news_24h": 222,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -15,8 +15,8 @@
   },
   "metrics_7d": {
     "total": 1756,
-    "prev": 1648,
-    "growth_pct": 6.55,
+    "prev": 1647,
+    "growth_pct": 6.62,
     "news": 1483,
     "anomaly": {
       "level": "綠",
@@ -28,7 +28,7 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 508
+      "count": 505
     },
     {
       "platform": "youtube",
@@ -42,7 +42,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 4742
+      "count": 4738
     },
     {
       "platform": "youtube",
@@ -148,14 +148,10 @@
     },
     {
       "hour": "2026-08-05 07:00",
-      "count": 0
+      "count": 1
     }
   ],
   "by_hour_7d": [
-    {
-      "hour": "2026-07-29 07:00",
-      "count": 1
-    },
     {
       "hour": "2026-07-29 09:00",
       "count": 2
@@ -739,12 +735,16 @@
     {
       "hour": "2026-08-05 00:00",
       "count": 1
+    },
+    {
+      "hour": "2026-08-05 07:00",
+      "count": 1
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 508
+      "count": 505
     },
     {
       "platform": "youtube",
@@ -758,7 +758,7 @@
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 508
+      "count": 505
     },
     {
       "platform": "youtube",
@@ -770,29 +770,29 @@
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 306,
-    "蔣萬安": 215,
+    "盧秀燕": 305,
+    "蔣萬安": 213,
     "蔡其昌": 1,
     "陳其邁": 148
   },
   "mention_compare_7d": {
     "盧秀燕": 1756,
-    "蔣萬安": 3117,
+    "蔣萬安": 3113,
     "蔡其昌": 95,
-    "陳其邁": 1221
+    "陳其邁": 1220
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 306,
+      "total": 305,
       "red": 32,
-      "yellow": 190,
+      "yellow": 189,
       "green": 84
     },
     "蔣萬安": {
-      "total": 215,
+      "total": 213,
       "red": 23,
       "yellow": 114,
-      "green": 78
+      "green": 76
     },
     "蔡其昌": {
       "total": 1,
@@ -16782,14 +16782,22 @@
     },
     {
       "date": "2026-08-05",
-      "score": 31.9,
-      "total": 1,
-      "red": 0,
+      "score": 19.4,
+      "total": 2,
+      "red": 1,
       "yellow": 1,
       "green": 0,
       "crisis": 0,
       "samples_low": false,
       "articles": [
+        {
+          "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+          "time": "2026-08-05 07:31:03",
+          "severity": "red",
+          "publisher": "Google News→中時新聞網",
+          "is_crisis": false
+        },
         {
           "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
           "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -17718,11 +17726,19 @@
       },
       {
         "date": "2026-08-05",
-        "red": 0,
+        "red": 1,
         "yellow": 0,
         "green": 0,
-        "total": 0,
-        "articles": []
+        "total": 1,
+        "articles": [
+          {
+            "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+            "time": "2026-08-05 07:31:03",
+            "severity": "red",
+            "publisher": "Google News→中時新聞網"
+          }
+        ]
       }
     ],
     "鍋烤": [
@@ -180168,6 +180184,15 @@
   "mention_articles_24h": {
     "盧秀燕": [
       {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "severity": "red",
+        "co_mentioned": []
+      },
+      {
         "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
         "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
         "time": "2026-08-05 00:54:31",
@@ -183019,24 +183044,6 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-        "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "盧秀燕批台糖未依「食安法」通報致癌油 林靜儀嗆：原料油是能吃膩？",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53LVA2ZTZfcHNSenpVdHlfeTVjTnRfWF9hSkxIMUpSOUZId1JYT1RWN3RLNkNxYTFhcUFlN2NzZmk4TWw0b3ltTzRIZFVGQ2NKaUVF0gFYQVVfeXFMUEI0VTVsZ0U1SmVITFVza2RqNkdHUE1SeEs4VHJCbzZJck5VakY3SHhxX056OGVSWUJ6Ui1wN0ZQcDBfWFp0ZEFDUjJoN2VRc29KZFFSOTUtdA?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "red",
-        "co_mentioned": []
       }
     ],
     "蔣萬安": [
@@ -185073,24 +185080,6 @@
         "publisher": "Google News→facebook.com",
         "severity": "red",
         "co_mentioned": []
-      },
-      {
-        "title": "沈伯洋提蔣萬安優點：比如說啦…比如說… 最後答案全場大讚",
-        "url": "https://www.ettoday.net/news/20260804/3212778.htm",
-        "time": "2026-08-04 07:45:00",
-        "platform": "news",
-        "publisher": "ETtoday",
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "沈伯洋提蔣萬安優點：比如說啦…比如說… 最後答案全場大讚",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BRE5VRnFKblF2THljZDlPZ00zRG1vNmVTMW1wemZVLXgteVhNSGlCeUFaSHB6QmFLcjJLdFpKc3lKQkZHOEFqQ0EyZ2pzRHFRLWJpSndNUmxGdXJjY0HSAUtBVV95cUxQdXVGWVNRN1NVdlN5NXl6T2ZYb3J1cTgxaDBuYzRhSC1maU9MeDAxNFVKZDM5TlI5dmlxeU9QRVdTbUlpVnJneVNsSWM?oc=5",
-        "time": "2026-08-04 07:45:00",
-        "platform": "news",
-        "publisher": "ETtoday",
-        "severity": null,
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -186462,6 +186451,15 @@
   },
   "mention_articles_7d": {
     "盧秀燕": [
+      {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "severity": "red",
+        "co_mentioned": []
+      },
       {
         "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
         "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -202929,17 +202927,6 @@
         "publisher": null,
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-        "time": "2026-07-29 07:34:51",
-        "platform": "news",
-        "publisher": "中時新聞網",
-        "severity": "yellow",
-        "co_mentioned": [
-          "蔣萬安"
-        ]
       }
     ],
     "蔣萬安": [
@@ -232546,44 +232533,6 @@
         "publisher": null,
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安慘了！喊「衝我來」被綠委當眾告發",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E5%96%8A-%E8%A1%9D%E6%88%91%E4%BE%86-%E8%A2%AB%E7%B6%A0%E5%A7%94%E7%95%B6%E7%9C%BE%E5%91%8A%E7%99%BC-073910182.html",
-        "time": "2026-07-29 07:39:10",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "red",
-        "co_mentioned": []
-      },
-      {
-        "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-        "time": "2026-07-29 07:34:51",
-        "platform": "news",
-        "publisher": "中時新聞網",
-        "severity": "yellow",
-        "co_mentioned": [
-          "盧秀燕"
-        ]
-      },
-      {
-        "title": "公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-        "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPRmxkQzhuOVhiSTRUX0R4M3FBaGlVU1VjbFpwd210TzV0am1EUWR6VGNXYXp6YkNNUVhEV2x0Z0QyOHlTdm96UTBYcjdNZm9EaWJSS3l0ODh4M0d1bzR5OFIxaWwybHR2TnQ3QmMyc25MNGxMMGtJQk1XWG92cXRseXVIc2MzSXZjMVprbmowZWZOMk12QXE2YjJSa3ZoXzdwa2drN2stQXdWZE5vU081NVFOaFJOUWdybUxtZEQ2Y3o3UjdRSEpBTmlMWDJrNklsU2xYNktfeGlKM2hvczFiMDI5VUpzVHlmVUFTZnJZZm1aQTVNSGh2VVhsMUN3aW56YjNXUEJVZTIwTmFYcmpjU1AxbEI2R3p1b2p0N09JMjZUSWtWdURfQVNSZk5DSWtjaUJBMlFjaURKUVF3bDNUZTdDQWVvRTdDYkhHYmM3QTNlaWRkNDl0Q2dzNU9sRzJhbjczLTloblFORWVFZy14dm1JNDlwMGdTa2xZbWlLNkVZMnAtYkJEbjJmLUliRm5YNGF2dTFOeE5aeml5Q2hQSTVzdVRuTzk2MHc?oc=5",
-        "time": "2026-07-29 07:34:30",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "快新聞／公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBDYUxjY1pHcVhlNERoSV82eXRNMjVzMDlXUHNGcFpTVUhKTHE1X2pmTXhSa3J1aFZvMDhGam9WQmtxMlh4TjVOemlFeVJhc3d6bXZkdEdmQzZSbDE2bVZxNg?oc=5",
-        "time": "2026-07-29 07:34:30",
-        "platform": "news",
-        "publisher": "Google News→民視新聞網",
-        "severity": "red",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -245546,19 +245495,15 @@
         "co_mentioned": [
           "蔣萬安"
         ]
-      },
-      {
-        "title": "佛光盃國際大學籃球賽開幕 市長陳其邁歡迎國內外青年勁旅齊聚高雄",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RNjRnYXFsTGdzSkdhdFNIekkxQ3pGNUZBUm9rX1JUZ2dzcmZWV2hCSzNFbDZrdUlsSDhRTkJnLW5QamJDb1Z2VHNIbzVGTlFZV0E?oc=5",
-        "time": "2026-07-29 07:42:40",
-        "platform": "news",
-        "publisher": "Google News→蕃新聞",
-        "severity": null,
-        "co_mentioned": []
       }
     ]
   },
   "top_news": [
+    {
+      "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+      "time": "2026-08-05 07:31:03"
+    },
     {
       "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
       "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -245653,14 +245598,16 @@
       "title": "台中市長盧秀燕今天表示，台灣糖業股份有限公司知情不報，經濟部、衛生福利部等曲解法令、罔顧食品安全，護航台糖；衛福部否認，...",
       "url": "https://udn.com/news/story/124948/9670653?from=udn-ch1_breaknews-1-cate1-news",
       "time": "2026-08-04 20:48:04"
-    },
-    {
-      "title": "蔣萬安生世之謎！盧秀燕汽油食用油分不清楚？中國頒「鎖國」新法！《仲江開講》",
-      "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxQd2xqdzBJMUYyOGZuSGpQOFBGdFROR1dQcHZZNGs2allaZWZtd0lKaFNrNUxvdHNoRk1lU0hvVkRLXzFqMWhwY1ZHMUNXU0dQZmZfR0ZOaFRfcHBlSHJoZHF1Z0l6MnZEa2I2c3RrYTdsQ1lGNWpsNW5xaEQ5SkZIVFV6empFd2ZjTkktX2p4RjBYR1JEeHBYNnJUV2l2ZGdXeDlYVDZtU0p5cXJBd2xnRWlaMEtjR0FLXzQweU5GTGdnRFRLZjI2YWdYVnA2UkZrUDlSZjMwdDZDNmtpRnhrbjJvSHdmWDEyc0FRRG9obFlIbVpDQlJXc3V6N1V3ZkRvc1hzdFlnYXhON20zQmJPU2RWUU9KY2NSZjlHNzFPWmtmLXg5d0JGeXNRVTdmMGpHY01QY3NSVGJRMzJLMzhKenpBM0twLVlzQnFtUjJLLWE1dW4xN2VTdEpfS1lCRHZhd3JXWjJwTjQ1cTBNTEZLQWM5VmR6dGZlUFNyTjJRY05UZTFOVW9YYTZtNURFTWd2?oc=5",
-      "time": "2026-08-04 20:45:20"
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+      "time": "2026-08-05 07:31:03",
+      "severity": "red"
+    },
     {
       "platform": "news",
       "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
@@ -245793,13 +245740,6 @@
       "url": "https://udn.com/news/story/124948/9670653?from=udn-ch1_breaknews-1-cate1-news",
       "time": "2026-08-04 20:48:04",
       "severity": "red"
-    },
-    {
-      "platform": "news",
-      "title": "蔣萬安生世之謎！盧秀燕汽油食用油分不清楚？中國頒「鎖國」新法！《仲江開講》",
-      "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxQd2xqdzBJMUYyOGZuSGpQOFBGdFROR1dQcHZZNGs2allaZWZtd0lKaFNrNUxvdHNoRk1lU0hvVkRLXzFqMWhwY1ZHMUNXU0dQZmZfR0ZOaFRfcHBlSHJoZHF1Z0l6MnZEa2I2c3RrYTdsQ1lGNWpsNW5xaEQ5SkZIVFV6empFd2ZjTkktX2p4RjBYR1JEeHBYNnJUV2l2ZGdXeDlYVDZtU0p5cXJBd2xnRWlaMEtjR0FLXzQweU5GTGdnRFRLZjI2YWdYVnA2UkZrUDlSZjMwdDZDNmtpRnhrbjJvSHdmWDEyc0FRRG9obFlIbVpDQlJXc3V6N1V3ZkRvc1hzdFlnYXhON20zQmJPU2RWUU9KY2NSZjlHNzFPWmtmLXg5d0JGeXNRVTdmMGpHY01QY3NSVGJRMzJLMzhKenpBM0twLVlzQnFtUjJLLWE1dW4xN2VTdEpfS1lCRHZhd3JXWjJwTjQ1cTBNTEZLQWM5VmR6dGZlUFNyTjJRY05UZTFOVW9YYTZtNURFTWd2?oc=5",
-      "time": "2026-08-04 20:45:20",
-      "severity": "yellow"
     }
   ],
   "latest_facebook_20": [
@@ -245906,6 +245846,11 @@
   ],
   "latest_news_20": [
     {
+      "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+      "time": "2026-08-05 07:31:03"
+    },
+    {
       "title": "中聯福懋各重罰300萬 台南驗出苦茶油有毒",
       "url": "https://n.yam.com/Article/20260805354393",
       "time": "2026-08-05 06:54:43"
@@ -245999,11 +245944,6 @@
       "title": "台南忠義路三段拓寬 拚11月底通車",
       "url": "https://news.ltn.com.tw/news/Tainan/paper/1765438",
       "time": "2026-08-05 05:30:00"
-    },
-    {
-      "title": "北市教師「午餐指導費」 議員爭取依鐘點核發",
-      "url": "https://news.ltn.com.tw/news/Taipei/paper/1765458",
-      "time": "2026-08-05 05:30:00"
     }
   ],
   "person_sections": {
@@ -246018,6 +245958,13 @@
         }
       ],
       "news": [
+        {
+          "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+          "time": "2026-08-05 07:31:03",
+          "publisher": "中時新聞網",
+          "severity": "red"
+        },
         {
           "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
           "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -246150,13 +246097,6 @@
           "time": "2026-08-04 20:48:04",
           "publisher": "聯合新聞網",
           "severity": "red"
-        },
-        {
-          "title": "蔣萬安生世之謎！盧秀燕汽油食用油分不清楚？中國頒「鎖國」新法！《仲江開講》",
-          "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxQd2xqdzBJMUYyOGZuSGpQOFBGdFROR1dQcHZZNGs2allaZWZtd0lKaFNrNUxvdHNoRk1lU0hvVkRLXzFqMWhwY1ZHMUNXU0dQZmZfR0ZOaFRfcHBlSHJoZHF1Z0l6MnZEa2I2c3RrYTdsQ1lGNWpsNW5xaEQ5SkZIVFV6empFd2ZjTkktX2p4RjBYR1JEeHBYNnJUV2l2ZGdXeDlYVDZtU0p5cXJBd2xnRWlaMEtjR0FLXzQweU5GTGdnRFRLZjI2YWdYVnA2UkZrUDlSZjMwdDZDNmtpRnhrbjJvSHdmWDEyc0FRRG9obFlIbVpDQlJXc3V6N1V3ZkRvc1hzdFlnYXhON20zQmJPU2RWUU9KY2NSZjlHNzFPWmtmLXg5d0JGeXNRVTdmMGpHY01QY3NSVGJRMzJLMzhKenpBM0twLVlzQnFtUjJLLWE1dW4xN2VTdEpfS1lCRHZhd3JXWjJwTjQ1cTBNTEZLQWM5VmR6dGZlUFNyTjJRY05UZTFOVW9YYTZtNURFTWd2?oc=5",
-          "time": "2026-08-04 20:45:20",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ]
     },
@@ -246649,6 +246589,13 @@
   },
   "latest_by_platform_24h": {
     "news": [
+      {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "publisher": "中時新聞網",
+        "severity": "red"
+      },
       {
         "title": "黎榮章觀點：凱道遊行後 蔣萬安政治能量更上層樓？",
         "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSUFabHJpWGw1NmhqNFRoXzNkZTg2N2RNNkVtS3JPVFg4cUV1QWdiMkJjOWg4VHZfeFMyWG90RWF4ek9BNzBvdTFaY1dYOHNlRW9QMGVBMXlrd3ljWUQyR0hxcUdaMHg3S2xxaWJtMl9OMUVyb2hfLUpTNnkwMUVka2xrTnN0WmREYl9laFo4d1EtbV9aeTFKallvWkdsMkJaOU9lVXZObm5QWkhtRHVIZGVLSGN1Zm9rQXdiWGR2U2tLd29MWlprVGNWVlhDa2FXalR6OWpTNFp3eTV4VjRDSWNLNDdKelVUamszNERQWXoxdlcyWFVqbnUyY3d4Qlp2V2dPcWVyZXEyZEt4US1iV1hMTE5yX3o1d0hOUzN2emVxd0FlaUFqdGF2R3V6MlR5ZVJwNGI1ZkdkdDZLb2x2OGh5eENTMWEwUHFDczVRdmgtZw?oc=5",
@@ -250176,34 +250123,6 @@
         "time": "2026-08-04 07:58:32",
         "publisher": "Google News→facebook.com",
         "severity": "red"
-      },
-      {
-        "title": "沈伯洋提蔣萬安優點：比如說啦…比如說… 最後答案全場大讚",
-        "url": "https://www.ettoday.net/news/20260804/3212778.htm",
-        "time": "2026-08-04 07:45:00",
-        "publisher": "ETtoday",
-        "severity": null
-      },
-      {
-        "title": "沈伯洋提蔣萬安優點：比如說啦…比如說… 最後答案全場大讚",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BRE5VRnFKblF2THljZDlPZ00zRG1vNmVTMW1wemZVLXgteVhNSGlCeUFaSHB6QmFLcjJLdFpKc3lKQkZHOEFqQ0EyZ2pzRHFRLWJpSndNUmxGdXJjY0HSAUtBVV95cUxQdXVGWVNRN1NVdlN5NXl6T2ZYb3J1cTgxaDBuYzRhSC1maU9MeDAxNFVKZDM5TlI5dmlxeU9QRVdTbUlpVnJneVNsSWM?oc=5",
-        "time": "2026-08-04 07:45:00",
-        "publisher": "ETtoday",
-        "severity": null
-      },
-      {
-        "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-        "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "盧秀燕批台糖未依「食安法」通報致癌油 林靜儀嗆：原料油是能吃膩？",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53LVA2ZTZfcHNSenpVdHlfeTVjTnRfWF9hSkxIMUpSOUZId1JYT1RWN3RLNkNxYTFhcUFlN2NzZmk4TWw0b3ltTzRIZFVGQ2NKaUVF0gFYQVVfeXFMUEI0VTVsZ0U1SmVITFVza2RqNkdHUE1SeEs4VHJCbzZJck5VakY3SHhxX056OGVSWUJ6Ui1wN0ZQcDBfWFp0ZEFDUjJoN2VRc29KZFFSOTUtdA?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "publisher": "Google News→UDN",
-        "severity": "red"
       }
     ],
     "youtube": [
@@ -250913,6 +250832,13 @@
   },
   "latest_by_platform_7d": {
     "news": [
+      {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "publisher": "中時新聞網",
+        "severity": "red"
+      },
       {
         "title": "黎榮章觀點：凱道遊行後 蔣萬安政治能量更上層樓？",
         "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOSUFabHJpWGw1NmhqNFRoXzNkZTg2N2RNNkVtS3JPVFg4cUV1QWdiMkJjOWg4VHZfeFMyWG90RWF4ek9BNzBvdTFaY1dYOHNlRW9QMGVBMXlrd3ljWUQyR0hxcUdaMHg3S2xxaWJtMl9OMUVyb2hfLUpTNnkwMUVka2xrTnN0WmREYl9laFo4d1EtbV9aeTFKallvWkdsMkJaOU9lVXZObm5QWkhtRHVIZGVLSGN1Zm9rQXdiWGR2U2tLd29MWlprVGNWVlhDa2FXalR6OWpTNFp3eTV4VjRDSWNLNDdKelVUamszNERQWXoxdlcyWFVqbnUyY3d4Qlp2V2dPcWVyZXEyZEt4US1iV1hMTE5yX3o1d0hOUzN2emVxd0FlaUFqdGF2R3V6MlR5ZVJwNGI1ZkdkdDZLb2x2OGh5eENTMWEwUHFDczVRdmgtZw?oc=5",
@@ -284071,41 +283997,6 @@
         "time": "2026-07-29 08:02:00",
         "publisher": "東森新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "佛光盃國際大學籃球賽開幕 市長陳其邁歡迎國內外青年勁旅齊聚高雄",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RNjRnYXFsTGdzSkdhdFNIekkxQ3pGNUZBUm9rX1JUZ2dzcmZWV2hCSzNFbDZrdUlsSDhRTkJnLW5QamJDb1Z2VHNIbzVGTlFZV0E?oc=5",
-        "time": "2026-07-29 07:42:40",
-        "publisher": "Google News→蕃新聞",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安慘了！喊「衝我來」被綠委當眾告發",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E5%96%8A-%E8%A1%9D%E6%88%91%E4%BE%86-%E8%A2%AB%E7%B6%A0%E5%A7%94%E7%95%B6%E7%9C%BE%E5%91%8A%E7%99%BC-073910182.html",
-        "time": "2026-07-29 07:39:10",
-        "publisher": "Yahoo新聞",
-        "severity": "red"
-      },
-      {
-        "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-        "time": "2026-07-29 07:34:51",
-        "publisher": "中時新聞網",
-        "severity": "yellow"
-      },
-      {
-        "title": "公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-        "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPRmxkQzhuOVhiSTRUX0R4M3FBaGlVU1VjbFpwd210TzV0am1EUWR6VGNXYXp6YkNNUVhEV2x0Z0QyOHlTdm96UTBYcjdNZm9EaWJSS3l0ODh4M0d1bzR5OFIxaWwybHR2TnQ3QmMyc25MNGxMMGtJQk1XWG92cXRseXVIc2MzSXZjMVprbmowZWZOMk12QXE2YjJSa3ZoXzdwa2drN2stQXdWZE5vU081NVFOaFJOUWdybUxtZEQ2Y3o3UjdRSEpBTmlMWDJrNklsU2xYNktfeGlKM2hvczFiMDI5VUpzVHlmVUFTZnJZZm1aQTVNSGh2VVhsMUN3aW56YjNXUEJVZTIwTmFYcmpjU1AxbEI2R3p1b2p0N09JMjZUSWtWdURfQVNSZk5DSWtjaUJBMlFjaURKUVF3bDNUZTdDQWVvRTdDYkhHYmM3QTNlaWRkNDl0Q2dzNU9sRzJhbjczLTloblFORWVFZy14dm1JNDlwMGdTa2xZbWlLNkVZMnAtYkJEbjJmLUliRm5YNGF2dTFOeE5aeml5Q2hQSTVzdVRuTzk2MHc?oc=5",
-        "time": "2026-07-29 07:34:30",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "快新聞／公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBDYUxjY1pHcVhlNERoSV82eXRNMjVzMDlXUHNGcFpTVUhKTHE1X2pmTXhSa3J1aFZvMDhGam9WQmtxMlh4TjVOemlFeVJhc3d6bXZkdEdmQzZSbDE2bVZxNg?oc=5",
-        "time": "2026-07-29 07:34:30",
-        "publisher": "Google News→民視新聞網",
-        "severity": "red"
       }
     ],
     "youtube": [
@@ -289214,7 +289105,7 @@
           "title": "中市銷毀364噸回收油轉生質柴油 、歐洲野火災損逾1120億、東京多摩動物園3獅疑熱死",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9WSG1uSlhpdnNSMmM3T09rbHp3dWZNUDhfcjJrSmVmeU9xSGo2UVBlUE5xSEEweW1JVFNCeVV4bDN3WW5ZUk1BRg?oc=5",
           "time": "2026-08-04 10:29:59",
-          "publisher": "Google News→e-info.org.tw",
+          "publisher": "Google News→環境資訊中心",
           "severity": "red"
         }
       ],
@@ -289227,45 +289118,6 @@
       "is_catchall": false,
       "keywords": [
         "火災"
-      ],
-      "red_news_count": 1
-    },
-    {
-      "title": "台南弊案爭議",
-      "city": "台南",
-      "place": "台南市政府",
-      "lat": 22.9908,
-      "lng": 120.2133,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-04T08:53:34+00:00",
-      "news_full_expires_at": "2026-08-05T08:53:34+00:00",
-      "news_articles": [
-        {
-          "title": "陸軍八軍團步兵203旅日前遭台南地檢署搜索，帶回前旅長宋蔚達及3名軍官，皆涉貪污案件。該旅今年將參加漢光42號演習，軍方強調全力配合司法調查。",
-          "url": "https://udn.com/news/story/10930/9670066?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-04 16:53:34",
-          "publisher": "聯合新聞網",
-          "severity": "red"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false,
-      "keywords": [
-        "弊案",
-        "貪污",
-        "收押",
-        "起訴",
-        "判刑"
       ],
       "red_news_count": 1
     },
@@ -289289,6 +289141,45 @@
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UcEhORHY1ZWx1MjBQWktpbF96QksxdlVJZWJxYVU3OFc4LWQwbGZuakx0aVFvLU1GaDlmVTIzOGQtOWx6R2tlTnN4Y3RDNWZGZGo2R05FYzZZNkNpZjVLOS12MEZWMWRCM3lpNDFaZDJ3RlcyemFvVURlMFIxUFU?oc=5",
           "time": "2026-08-04 13:16:00",
           "publisher": "Google News→壹電視",
+          "severity": "red"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false,
+      "keywords": [
+        "弊案",
+        "貪污",
+        "收押",
+        "起訴",
+        "判刑"
+      ],
+      "red_news_count": 1
+    },
+    {
+      "title": "台南弊案爭議",
+      "city": "台南",
+      "place": "台南市政府",
+      "lat": 22.9908,
+      "lng": 120.2133,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-04T08:53:34+00:00",
+      "news_full_expires_at": "2026-08-05T08:53:34+00:00",
+      "news_articles": [
+        {
+          "title": "陸軍八軍團步兵203旅日前遭台南地檢署搜索，帶回前旅長宋蔚達及3名軍官，皆涉貪污案件。該旅今年將參加漢光42號演習，軍方強調全力配合司法調查。",
+          "url": "https://udn.com/news/story/10930/9670066?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-04 16:53:34",
+          "publisher": "聯合新聞網",
           "severity": "red"
         }
       ],
@@ -289770,9 +289661,9 @@
       "lng": 121.0177,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 22",
-      "note": "24h 命中 22 則（新聞 22、留言 0）",
-      "news_count": 22,
+      "platform": "新聞 18",
+      "note": "24h 命中 18 則（新聞 18、留言 0）",
+      "news_count": 18,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T18:01:24+00:00",
       "news_full_expires_at": "2026-08-05T18:01:24+00:00",
@@ -289902,41 +289793,13 @@
           "time": "2026-08-04 11:21:36",
           "publisher": "中時新聞網",
           "severity": "yellow"
-        },
-        {
-          "title": "新竹縣訪查2萬戶獨老 75歲以上優先關懷",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQYVZOVzFIczlRck1ZY3UxSUNjNjk4ODR2OVNGbGNTdFItVWlYS2NVNHV4ZncyYkh5d2dxUW1CV010QjFXSE1JZUt6OEFxcUZkX0tlNFFDUE1nZHdSRXBnZ0VBVEpSQjVNbVFKM19tbmE2RDM3RjhDS0tjVTR1aERyZzB5YWlEV0tpN0RlUG5UTTMtRm1xNHl0STJYLXNSeFpBNmxLV1NLWi1WSTctYmZSaXI0OUtVc2E5TTZ6ZnhMa2pVRkR1T3dwMEtHWlViZklYMVY5TTdmV1NOaEFqTDBsNDRHb3o5Z3JzYUN2U2FWQ1VEbWhjbWlsUUlaZjhBTzhkcS1NT1JDRTNpNExZSnVTVlVoM0hCLVk1?oc=5",
-          "time": "2026-08-04 07:48:07",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新竹縣訪查2萬戶獨老 75歲以上優先關懷 - 社會新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObHVxLUV6aWVwZXl0aEJwVldtS3pKZXlFT1ZXb0tGQ212QmYyU0xLYnY3cUV3dGxmUVFWcTN1YXVwekVlNTFqNkdlWkF5NDFjRUVHei1GVnk4M1locDJGLVZmZG9CWlRyZGc4M2NpVGg3QXp2VDhMRWdJSDBBdk9OT253YU1IVTdwdW01SQ?oc=5",
-          "time": "2026-08-04 07:48:07",
-          "publisher": "Google News→news.pchome.com.tw",
-          "severity": null
-        },
-        {
-          "title": "新竹縣、新北圖書館一證通啟用 千萬冊館藏一卡借",
-          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOQjVhVTg3eHl6bjh3ZGtzcy1aV1BiVWZrcEJqd3ZkaFBXcjFrOE4ybjBSbm9wYTdCc0VTNkhEbjJyd1pTUEtJVGpWT1RKbjYycWdLRDNYNkJyYUlCRDcxYl9qVThTOVFNc1RRR1gzZWt4NHdLRHRRTV80SEFwWXVLYnZ2LUwyMDBxY0FLako4TmxGQnNUMmZVVkRkOE5reEdGZWtneFVINzl3NFVkSlRlelZsQUp3RVBwZE40VkYzSExEeUZuUC1OcTVDdFdjalJRbTlkWUlnVjRucE5ZTkQzaTZneTlJeDRLQS1hdHZZQ0gwLVVkeXdBalRuTnlFMjRQRUM2SFRtdG1jRmVLbUVhem5uN2NDWmh6V3B2RUVjcHpVdjVCNWxnQVIybDlDeFF6R2FMWEVPSlpuUWd2?oc=5",
-          "time": "2026-08-04 07:40:23",
-          "publisher": "Google News→tw.news.yahoo.com",
-          "severity": null
-        },
-        {
-          "title": "新竹縣、新北圖書館一證通啟用 千萬冊館藏一卡借 - 生活新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONF9JSE50YnZTalFuLUQ1bDdHMUxHNk5oelFlRGc0QUp3b0RLVldOTHRRZWZ2bUZrSndqem9Vb2xoeXpuc0VEeTV3cWFiZzB4U2tjMk9CbjE3Y0RfWlB3RDVPSmpZdkNtb1VTdS05REtJbG9QWTM5WmdZQU1sYVAwdUp3YmVjbUkzdGFJ?oc=5",
-          "time": "2026-08-04 07:40:23",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 22,
+      "urgency_score": 18,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -289981,9 +289844,9 @@
       "lng": 119.5793,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 28",
-      "note": "24h 命中 28 則（新聞 28、留言 0）",
-      "news_count": 28,
+      "platform": "新聞 26",
+      "note": "24h 命中 26 則（新聞 26、留言 0）",
+      "news_count": 26,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T14:35:00+00:00",
       "news_full_expires_at": "2026-08-05T14:35:00+00:00",
@@ -290169,27 +290032,13 @@
           "time": "2026-08-04 11:39:07",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "北醫楓杏服務團赴澎湖跳島義診 首站鳥嶼服務47人次",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pcXNyTi16WnBxSU1MUm5IU2pDTmQ4amhqTU9WdVBHRlp3S1JTY3l1bjJTTjlhcFRTOVNyaUJhX3Z5aUtNOW9JRnpDWUtqR2thdTJ6c1JJVnNwbGNx?oc=5",
-          "time": "2026-08-04 07:44:14",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
-        },
-        {
-          "title": "污水接管改善居住環境 澎湖縣政府補助住宅廢除化糞池",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwODFQbDI1cEUwVnBMSWRPeVY0OGE3SmhiVW5PNTRnLW1zdmtXUGQxVjFkT2V1clc0UFNwMnJFV1Y3ZXh3MzlzSHdONHNnLW92dzRqaS1GdG96N1RfSXdoZlVKck9LLWE3UlE?oc=5",
-          "time": "2026-08-04 07:34:14",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 28,
+      "urgency_score": 26,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -290855,154 +290704,6 @@
       "red_news_count": 2
     },
     {
-      "title": "嘉義市地方動態",
-      "city": "嘉義市",
-      "place": "嘉義市政府",
-      "lat": 23.4816,
-      "lng": 120.45169807621136,
-      "level": "red",
-      "source": "news",
-      "platform": "新聞 13",
-      "note": "24h 命中 13 則（新聞 13、留言 0）",
-      "news_count": 13,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-04T13:10:21+00:00",
-      "news_full_expires_at": "2026-08-05T13:10:21+00:00",
-      "news_articles": [
-        {
-          "title": "嘉義市前瞻停車場建設勇奪國家卓越建設獎3金1優質 打造人本永續城市",
-          "url": "https://www.thehubnews.net/archives/651262",
-          "time": "2026-08-04 21:10:21",
-          "publisher": "新頭條",
-          "severity": null
-        },
-        {
-          "title": "嘉市前瞻停車場建設再獲肯定",
-          "url": "https://taiwanreports.com/archives/1003930",
-          "time": "2026-08-04 18:57:27",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "台南問題苦茶油源頭有嘉義市 地檢署火速分案 突擊查扣封存",
-          "url": "https://www.chinatimes.com/realtimenews/20260804004090-260402",
-          "time": "2026-08-04 18:48:43",
-          "publisher": "中時新聞網",
-          "severity": "red"
-        },
-        {
-          "title": "嘉義市追查問題苦茶油流向及下架回收情形",
-          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E8%BF%BD%E6%9F%A5%E5%95%8F%E9%A1%8C%E8%8B%A6%E8%8C%B6%E6%B2%B9%E6%B5%81%E5%90%91%E5%8F%8A%E4%B8%8B%E6%9E%B6%E5%9B%9E%E6%94%B6%E6%83%85%E5%BD%A2-083000207.html",
-          "time": "2026-08-04 16:30:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "東山苦茶油購自嘉義市源發製油廠 衛生局稽查封存20公斤庫存",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5528281",
-          "time": "2026-08-04 16:25:54",
-          "publisher": "自由時報",
-          "severity": "red"
-        },
-        {
-          "title": "嘉義市源發油廠苦茶油苯駢芘超標 問題產品下架封存",
-          "url": "https://www.cna.com.tw/news/aloc/202608040177.aspx",
-          "time": "2026-08-04 15:58:20",
-          "publisher": "中央社",
-          "severity": "red"
-        },
-        {
-          "title": "嘉市公共建設再傳捷報 國家卓越建設獎摘3金1優質",
-          "url": "https://focus.586.com.tw/2026/08/04/p398271/",
-          "time": "2026-08-04 15:45:59",
-          "publisher": "焦點時報",
-          "severity": null
-        },
-        {
-          "title": "東山苦茶油超標燒進嘉市 衛生局追流向、下游全面通知停售",
-          "url": "https://more-news.tw/684637/",
-          "time": "2026-08-04 15:09:55",
-          "publisher": "墨新聞",
-          "severity": "red"
-        },
-        {
-          "title": "嘉義市追查臺南市衛生局通知問題苦茶油流向及下架回收情形",
-          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E8%BF%BD%E6%9F%A5%E8%87%BA%E5%8D%97%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%80%E9%80%9A%E7%9F%A5%E5%95%8F%E9%A1%8C%E8%8B%A6%E8%8C%B6%E6%B2%B9%E6%B5%81%E5%90%91%E5%8F%8A%E4%B8%8B%E6%9E%B6%E5%9B%9E%E6%94%B6%E6%83%85%E5%BD%A2-064216003.html",
-          "time": "2026-08-04 14:42:16",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "嘉市追查臺南市衛生局通知問題苦茶油流向及下架回收情形",
-          "url": "https://n.yam.com/Article/20260804247115",
-          "time": "2026-08-04 12:00:00",
-          "publisher": "蕃新聞→三星傳媒",
-          "severity": "red"
-        },
-        {
-          "title": "男子疑似遭假交友詐騙 嘉市警民合作逮獲二名嫌犯",
-          "url": "https://tw.news.yahoo.com/%E7%94%B7%E5%AD%90%E7%96%91%E4%BC%BC%E9%81%AD%E5%81%87%E4%BA%A4%E5%8F%8B%E8%A9%90%E9%A8%99-%E5%98%89%E5%B8%82%E8%AD%A6%E6%B0%91%E5%90%88%E4%BD%9C%E9%80%AE%E7%8D%B2%E4%BA%8C%E5%90%8D%E5%AB%8C%E7%8A%AF-113615774.html",
-          "time": "2026-08-04 11:36:15",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "嘉義市屋頂光電加碼補助上路 最高可領32萬",
-          "url": "https://more-news.tw/684288/",
-          "time": "2026-08-04 10:28:03",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "苦茶油苯駢芘超標 嘉市源發油廠下架封存問題產品",
-          "url": "https://tw.news.yahoo.com/%E8%8B%A6%E8%8C%B6%E6%B2%B9%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E5%98%89%E5%B8%82%E6%BA%90%E7%99%BC%E6%B2%B9%E5%BB%A0%E4%B8%8B%E6%9E%B6%E5%B0%81%E5%AD%98%E5%95%8F%E9%A1%8C%E7%94%A2%E5%93%81-075820501.html",
-          "time": "2026-08-04 07:58:20",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 8,
-      "urgent_red_comments": 0,
-      "urgency_score": 16,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 8
-    },
-    {
       "title": "南投地方動態",
       "city": "南投",
       "place": "南投縣政府",
@@ -291149,6 +290850,154 @@
         "竹市"
       ],
       "red_news_count": 3
+    },
+    {
+      "title": "嘉義市地方動態",
+      "city": "嘉義市",
+      "place": "嘉義市政府",
+      "lat": 23.4816,
+      "lng": 120.45169807621136,
+      "level": "red",
+      "source": "news",
+      "platform": "新聞 13",
+      "note": "24h 命中 13 則（新聞 13、留言 0）",
+      "news_count": 13,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-04T13:10:21+00:00",
+      "news_full_expires_at": "2026-08-05T13:10:21+00:00",
+      "news_articles": [
+        {
+          "title": "嘉義市前瞻停車場建設勇奪國家卓越建設獎3金1優質 打造人本永續城市",
+          "url": "https://www.thehubnews.net/archives/651262",
+          "time": "2026-08-04 21:10:21",
+          "publisher": "新頭條",
+          "severity": null
+        },
+        {
+          "title": "嘉市前瞻停車場建設再獲肯定",
+          "url": "https://taiwanreports.com/archives/1003930",
+          "time": "2026-08-04 18:57:27",
+          "publisher": "臺灣導報",
+          "severity": null
+        },
+        {
+          "title": "台南問題苦茶油源頭有嘉義市 地檢署火速分案 突擊查扣封存",
+          "url": "https://www.chinatimes.com/realtimenews/20260804004090-260402",
+          "time": "2026-08-04 18:48:43",
+          "publisher": "中時新聞網",
+          "severity": "red"
+        },
+        {
+          "title": "嘉義市追查問題苦茶油流向及下架回收情形",
+          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E8%BF%BD%E6%9F%A5%E5%95%8F%E9%A1%8C%E8%8B%A6%E8%8C%B6%E6%B2%B9%E6%B5%81%E5%90%91%E5%8F%8A%E4%B8%8B%E6%9E%B6%E5%9B%9E%E6%94%B6%E6%83%85%E5%BD%A2-083000207.html",
+          "time": "2026-08-04 16:30:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "東山苦茶油購自嘉義市源發製油廠 衛生局稽查封存20公斤庫存",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5528281",
+          "time": "2026-08-04 16:25:54",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
+        {
+          "title": "嘉義市源發油廠苦茶油苯駢芘超標 問題產品下架封存",
+          "url": "https://www.cna.com.tw/news/aloc/202608040177.aspx",
+          "time": "2026-08-04 15:58:20",
+          "publisher": "中央社",
+          "severity": "red"
+        },
+        {
+          "title": "嘉市公共建設再傳捷報 國家卓越建設獎摘3金1優質",
+          "url": "https://focus.586.com.tw/2026/08/04/p398271/",
+          "time": "2026-08-04 15:45:59",
+          "publisher": "焦點時報",
+          "severity": null
+        },
+        {
+          "title": "東山苦茶油超標燒進嘉市 衛生局追流向、下游全面通知停售",
+          "url": "https://more-news.tw/684637/",
+          "time": "2026-08-04 15:09:55",
+          "publisher": "墨新聞",
+          "severity": "red"
+        },
+        {
+          "title": "嘉義市追查臺南市衛生局通知問題苦茶油流向及下架回收情形",
+          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E5%B8%82%E8%BF%BD%E6%9F%A5%E8%87%BA%E5%8D%97%E5%B8%82%E8%A1%9B%E7%94%9F%E5%B1%80%E9%80%9A%E7%9F%A5%E5%95%8F%E9%A1%8C%E8%8B%A6%E8%8C%B6%E6%B2%B9%E6%B5%81%E5%90%91%E5%8F%8A%E4%B8%8B%E6%9E%B6%E5%9B%9E%E6%94%B6%E6%83%85%E5%BD%A2-064216003.html",
+          "time": "2026-08-04 14:42:16",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "嘉市追查臺南市衛生局通知問題苦茶油流向及下架回收情形",
+          "url": "https://n.yam.com/Article/20260804247115",
+          "time": "2026-08-04 12:00:00",
+          "publisher": "蕃新聞→三星傳媒",
+          "severity": "red"
+        },
+        {
+          "title": "男子疑似遭假交友詐騙 嘉市警民合作逮獲二名嫌犯",
+          "url": "https://tw.news.yahoo.com/%E7%94%B7%E5%AD%90%E7%96%91%E4%BC%BC%E9%81%AD%E5%81%87%E4%BA%A4%E5%8F%8B%E8%A9%90%E9%A8%99-%E5%98%89%E5%B8%82%E8%AD%A6%E6%B0%91%E5%90%88%E4%BD%9C%E9%80%AE%E7%8D%B2%E4%BA%8C%E5%90%8D%E5%AB%8C%E7%8A%AF-113615774.html",
+          "time": "2026-08-04 11:36:15",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "嘉義市屋頂光電加碼補助上路 最高可領32萬",
+          "url": "https://more-news.tw/684288/",
+          "time": "2026-08-04 10:28:03",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "苦茶油苯駢芘超標 嘉市源發油廠下架封存問題產品",
+          "url": "https://tw.news.yahoo.com/%E8%8B%A6%E8%8C%B6%E6%B2%B9%E8%8B%AF%E9%A7%A2%E8%8A%98%E8%B6%85%E6%A8%99-%E5%98%89%E5%B8%82%E6%BA%90%E7%99%BC%E6%B2%B9%E5%BB%A0%E4%B8%8B%E6%9E%B6%E5%B0%81%E5%AD%98%E5%95%8F%E9%A1%8C%E7%94%A2%E5%93%81-075820501.html",
+          "time": "2026-08-04 07:58:20",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 8,
+      "urgent_red_comments": 0,
+      "urgency_score": 16,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 8
     },
     {
       "title": "彰化地方動態",
@@ -293475,9 +293324,9 @@
       "lng": 121.46310192378864,
       "level": "red",
       "source": "news",
-      "platform": "新聞 92",
-      "note": "24h 命中 92 則（新聞 92、留言 0）",
-      "news_count": 92,
+      "platform": "新聞 90",
+      "note": "24h 命中 90 則（新聞 90、留言 0）",
+      "news_count": 90,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T21:18:11+00:00",
       "news_full_expires_at": "2026-08-05T21:18:11+00:00",
@@ -294111,27 +293960,13 @@
           "time": "2026-08-04 08:03:01",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "新竹縣、新北圖書館一證通啟用 千萬冊館藏一卡借",
-          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOQjVhVTg3eHl6bjh3ZGtzcy1aV1BiVWZrcEJqd3ZkaFBXcjFrOE4ybjBSbm9wYTdCc0VTNkhEbjJyd1pTUEtJVGpWT1RKbjYycWdLRDNYNkJyYUlCRDcxYl9qVThTOVFNc1RRR1gzZWt4NHdLRHRRTV80SEFwWXVLYnZ2LUwyMDBxY0FLako4TmxGQnNUMmZVVkRkOE5reEdGZWtneFVINzl3NFVkSlRlelZsQUp3RVBwZE40VkYzSExEeUZuUC1OcTVDdFdjalJRbTlkWUlnVjRucE5ZTkQzaTZneTlJeDRLQS1hdHZZQ0gwLVVkeXdBalRuTnlFMjRQRUM2SFRtdG1jRmVLbUVhem5uN2NDWmh6V3B2RUVjcHpVdjVCNWxnQVIybDlDeFF6R2FMWEVPSlpuUWd2?oc=5",
-          "time": "2026-08-04 07:40:23",
-          "publisher": "Google News→tw.news.yahoo.com",
-          "severity": null
-        },
-        {
-          "title": "新竹縣、新北圖書館一證通啟用 千萬冊館藏一卡借 - 生活新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONF9JSE50YnZTalFuLUQ1bDdHMUxHNk5oelFlRGc0QUp3b0RLVldOTHRRZWZ2bUZrSndqem9Vb2xoeXpuc0VEeTV3cWFiZzB4U2tjMk9CbjE3Y0RfWlB3RDVPSmpZdkNtb1VTdS05REtJbG9QWTM5WmdZQU1sYVAwdUp3YmVjbUkzdGFJ?oc=5",
-          "time": "2026-08-04 07:40:23",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 6,
       "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 110,
+      "urgency_score": 108,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -294176,9 +294011,9 @@
       "lng": 120.21589807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 109",
-      "note": "24h 命中 109 則（新聞 109、留言 0）",
-      "news_count": 109,
+      "platform": "新聞 108",
+      "note": "24h 命中 108 則（新聞 108、留言 0）",
+      "news_count": 108,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T22:54:43+00:00",
       "news_full_expires_at": "2026-08-05T22:54:43+00:00",
@@ -294938,20 +294773,13 @@
           "time": "2026-08-04 08:14:45",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-          "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-          "time": "2026-08-04 07:37:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 9,
       "negativity_pct": 8,
       "urgent_red_comments": 0,
-      "urgency_score": 136,
+      "urgency_score": 135,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -294996,9 +294824,9 @@
       "lng": 120.5489,
       "level": "red",
       "source": "news",
-      "platform": "新聞 140",
-      "note": "24h 命中 140 則（新聞 140、留言 0）",
-      "news_count": 140,
+      "platform": "新聞 135",
+      "note": "24h 命中 135 則（新聞 135、留言 0）",
+      "news_count": 135,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T21:30:00+00:00",
       "news_full_expires_at": "2026-08-05T21:30:00+00:00",
@@ -295947,48 +295775,13 @@
           "time": "2026-08-04 07:58:00",
           "publisher": "ETtoday",
           "severity": "yellow"
-        },
-        {
-          "title": "屏東富商遭虐殺1／曖昧10女遭人夫發現姦情 軍工老董情欲私生活手機揭祕",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xYk1PaExlTkxfczQzVFFCUjJ0ZW1RbjU0MzF1dW5KckhjbHh6NVdvU3h5bXlYU0I1V2tTTWVlMGxDazlxdlQ3TU9EN204M2NLWkVyRnBNSzNFZE3SAWBBVV95cUxNMElDc01QcW1aTUlodHM3RUR3dnBBc2o0VVlEZk1Fb3dKUnNYaUVjUFFISU93RzRxRUZXeGY1TVlhUG9SS3pyRUhOaUxldW5aSDdwMWVzRVoyVHpTR20xWEg?oc=5",
-          "time": "2026-08-04 07:40:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "red"
-        },
-        {
-          "title": "屏東富商遭虐殺2／涉多起財務糾紛官司纏身 鎢鈷老闆黑歷史曝光",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE44WnlrT1ZFM1JqcVRfc2VTcDRFdnJxa1hZS3EySFRDOHNHN0hWQmdta3RmZ016Qlp1VThMa29RZnM4Q1lqMmNIQkxQNWxWMnY3SXVUVWNMV3JRQnPSAWBBVV95cUxNY2tzSzhUWGFkdGF2Wi1xdjlhNVFTN3QzUVFlM3c5dDFTb0FHam1fcDBCSEFULTVuRm01TWtTUEVUdFVrMDUtR0JDMV82a0ljMkM4WDM0YzVUMG1KTUk5alA?oc=5",
-          "time": "2026-08-04 07:40:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "red"
-        },
-        {
-          "title": "屏東富商遭虐殺／球棒爆頭綑成木乃伊慘死 屏東貴金屬老闆虐殺案直指情、仇殺",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxM1MyOGtseXQ3SXlHZlRiRjdnaHZtTDRqX19VR09kT1A5OHZFTGpTTEROSWRPWmtJUi1QdWUwOGcybm1zdVdORnVhejBuT19aZEdyZjczbnQyX3fSAWBBVV95cUxQODdLZFRTZHhuRk5UWlRWaER1S3JEZm9DeDlfMFo4SDQ4TE1Hay1reTZmemptX1c3SExBRWp2M3lVME9xVzZPVmRSeVJ6dVFZU0V0WUh1eTRMcXBTbzRpQVA?oc=5",
-          "time": "2026-08-04 07:40:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "yellow"
-        },
-        {
-          "title": "屏東富商遭虐殺3／犯案球棒木棍全留在命案現場 一跡證揭凶手與他有深仇大恨",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zcVM5Z3JWVm10WUZmZF9ZbzZ4NmhmWDdsT1paZ1M1VVg1ZlhsQldMdlJKcGRZTEw5TDZuVEtfRG5VRnJBcGU1XzdPenhLVnBjQzlGbmEwTEpIZTDSAWBBVV95cUxPdjBxMVJKYldvcl9iR0prZU81Wlh6YjNHWEpEMUd3NGtQR00xVjRKd29jMkZSRDkzd0ZzUDI4bnRRQ3g4d0JFM1pnNHQ5dFVhb1FETW0zYWVGRFEtVnhjVUc?oc=5",
-          "time": "2026-08-04 07:40:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "yellow"
-        },
-        {
-          "title": "屏東富商遭虐殺4／命案現場監視保全全失靈 一線索警方認定熟人行凶",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMzhocGZzZGJNeXVQNTFvWmd6My11UkttbmpCUmRiLW9SRGR1UTA0Y2ZJejBTa3djdDd6NWd5OXI0UEhjU1lKcDRweVZ4RzJfUUJHb1Ryd3dmN03SAWBBVV95cUxQVUpERFEydTZlRWx5Vzl1MkZsY0RGMUU2YWdFd21pejU5WlFUSENDWTBQVWdnVEdzYXkxOEhlVVhXem1XeExTaEhONnowRDF5cXpEdGxoMkpjdUNJS0dNX0Q?oc=5",
-          "time": "2026-08-04 07:40:00",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 8,
       "negativity_pct": 6,
       "urgent_red_comments": 0,
-      "urgency_score": 164,
+      "urgency_score": 159,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -296023,7 +295816,7 @@
         "嘉市",
         "竹市"
       ],
-      "red_news_count": 24
+      "red_news_count": 22
     },
     {
       "title": "高雄地方動態",
@@ -299603,9 +299396,16 @@
       "note": "24h 命中 187 則（新聞 175、留言 12）",
       "news_count": 175,
       "comment_count": 12,
-      "news_latest_at": "2026-08-04T16:54:31+00:00",
-      "news_full_expires_at": "2026-08-05T16:54:31+00:00",
+      "news_latest_at": "2026-08-04T23:31:03+00:00",
+      "news_full_expires_at": "2026-08-05T23:31:03+00:00",
       "news_articles": [
+        {
+          "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+          "time": "2026-08-05 07:31:03",
+          "publisher": "中時新聞網",
+          "severity": "red"
+        },
         {
           "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
           "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -300823,13 +300623,6 @@
           "time": "2026-08-04 08:03:50",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕批台糖未依「食安法」通報致癌油 林靜儀嗆：原料油是能吃膩？",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53LVA2ZTZfcHNSenpVdHlfeTVjTnRfWF9hSkxIMUpSOUZId1JYT1RWN3RLNkNxYTFhcUFlN2NzZmk4TWw0b3ltTzRIZFVGQ2NKaUVF0gFYQVVfeXFMUEI0VTVsZ0U1SmVITFVza2RqNkdHUE1SeEs4VHJCbzZJck5VakY3SHhxX056OGVSWUJ6Ui1wN0ZQcDBfWFp0ZEFDUjJoN2VRc29KZFFSOTUtdA?oc=5",
-          "time": "2026-08-04 07:37:00",
-          "publisher": "Google News→UDN",
-          "severity": "red"
         }
       ],
       "comments": [
@@ -300875,6 +300668,14 @@
         },
         {
           "platform": "instagram",
+          "text": "盧秀燕你封鎖我臉書，眾望知。😍",
+          "author": "errgerlu",
+          "url": "",
+          "time_text": "3天",
+          "signal": "yellow"
+        },
+        {
+          "platform": "instagram",
           "text": "好好笑，支持盧秀燕和國民黨的留言都是假帳號。可悲",
           "author": "haojheliao",
           "url": "",
@@ -300903,14 +300704,6 @@
           "author": "7dayswilson",
           "url": "",
           "time_text": "1 天",
-          "signal": "yellow"
-        },
-        {
-          "platform": "instagram",
-          "text": "盧秀燕你封鎖我臉書，眾望知。😍",
-          "author": "errgerlu",
-          "url": "",
-          "time_text": "3天",
           "signal": "yellow"
         },
         {
@@ -300949,9 +300742,9 @@
       "lng": 120.566,
       "level": "red",
       "source": "news",
-      "platform": "新聞 293",
-      "note": "24h 命中 293 則（新聞 293、留言 0）",
-      "news_count": 293,
+      "platform": "新聞 292",
+      "note": "24h 命中 292 則（新聞 292、留言 0）",
+      "news_count": 292,
       "comment_count": 0,
       "news_latest_at": "2026-08-04T21:30:00+00:00",
       "news_full_expires_at": "2026-08-05T21:30:00+00:00",
@@ -302766,7 +302559,7 @@
           "title": "中市銷毀364噸回收油轉生質柴油 、歐洲野火災損逾1120億、東京多摩動物園3獅疑熱死",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9WSG1uSlhpdnNSMmM3T09rbHp3dWZNUDhfcjJrSmVmeU9xSGo2UVBlUE5xSEEweW1JVFNCeVV4bDN3WW5ZUk1BRg?oc=5",
           "time": "2026-08-04 10:29:59",
-          "publisher": "Google News→e-info.org.tw",
+          "publisher": "Google News→環境資訊中心",
           "severity": "red"
         },
         {
@@ -302999,20 +302792,13 @@
           "time": "2026-08-04 08:02:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-          "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-          "time": "2026-08-04 07:37:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 16,
       "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 341,
+      "urgency_score": 340,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -303051,6 +302837,16 @@
     }
   ],
   "articles_24h": [
+    {
+      "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+      "time": "2026-08-05 07:31:03",
+      "platform": "news",
+      "publisher": "中時新聞網",
+      "hour": "2026-08-05 07:00",
+      "severity": "red",
+      "is_negative": false
+    },
     {
       "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
       "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -305920,29 +305716,18 @@
       "hour": "2026-08-04 08:00",
       "severity": "yellow",
       "is_negative": false
-    },
-    {
-      "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-      "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-      "time": "2026-08-04 07:37:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "hour": "2026-08-04 07:00",
-      "severity": "yellow",
-      "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_24h": [
     {
       "title": "盧秀燕批台糖未依「食安法」通報致癌油 林靜儀嗆：原料油是能吃膩？",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53LVA2ZTZfcHNSenpVdHlfeTVjTnRfWF9hSkxIMUpSOUZId1JYT1RWN3RLNkNxYTFhcUFlN2NzZmk4TWw0b3ltTzRIZFVGQ2NKaUVF0gFYQVVfeXFMUEI0VTVsZ0U1SmVITFVza2RqNkdHUE1SeEs4VHJCbzZJck5VakY3SHhxX056OGVSWUJ6Ui1wN0ZQcDBfWFp0ZEFDUjJoN2VRc29KZFFSOTUtdA?oc=5",
       "time": "2026-08-04 07:37:00",
       "platform": "news",
       "publisher": "Google News→UDN",
-      "hour": "2026-08-04 07:00",
       "severity": "red",
       "is_negative": false
-    }
-  ],
-  "articles_prev_24h": [
+    },
     {
       "title": "打臉盧秀燕！黃偉哲打卡「台糖油品部」：這裡是賣汽油",
       "url": "https://tw.news.yahoo.com/%E6%89%93%E8%87%89%E7%9B%A7%E7%A7%80%E7%87%95-%E9%BB%83%E5%81%89%E5%93%B2%E6%89%93%E5%8D%A1-%E5%8F%B0%E7%B3%96%E6%B2%B9%E5%93%81%E9%83%A8-%E9%80%99%E8%A3%A1%E6%98%AF%E8%B3%A3%E6%B1%BD%E6%B2%B9-063100666.html",
@@ -306062,6 +305847,15 @@
     },
     {
       "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
+      "url": "https://tw.news.yahoo.com/%E6%89%AF-%E6%B2%B9%E5%93%81%E9%83%A8%E5%9C%A8%E5%8F%B0%E5%8D%97-%E7%B3%97%E5%A4%A7-%E4%BB%96%E6%9B%9D%E7%9B%A7%E7%A7%80%E7%87%95%E5%A4%A7%E7%BF%BB%E8%BB%8A-%E9%80%A3%E6%B1%BD%E6%9F%B4%E6%B2%B9%E9%83%BD%E7%A1%AC%E6%8B%97%E6%88%90%E7%82%92%E8%8F%9C%E7%9A%84%E6%B2%B9-233700668.html",
+      "time": "2026-08-03 23:37:00",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5pVkh3RmNCTEZTY0lvOEl6OXdpeWs5a0pjRFFERGVnSW8wRDFwWTVqNkQ3WWVWNFRWU21TSXg4U255LVlZS0lNcNIBTEFVX3lxTE5ibmp0OTFrTVRRNjNJU0VXVUp3LWpmRE93QlN0eW14U01faGZBS3dCeTN6SGt6SFJVa05jdDk0MkRQUzg5RXM3T0g5LXI?oc=5",
       "time": "2026-08-03 23:37:00",
       "platform": "news",
@@ -306069,15 +305863,6 @@
       "severity": "yellow",
       "is_negative": false,
       "hour": "2026-08-03 23:00"
-    },
-    {
-      "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-      "url": "https://tw.news.yahoo.com/%E6%89%AF-%E6%B2%B9%E5%93%81%E9%83%A8%E5%9C%A8%E5%8F%B0%E5%8D%97-%E7%B3%97%E5%A4%A7-%E4%BB%96%E6%9B%9D%E7%9B%A7%E7%A7%80%E7%87%95%E5%A4%A7%E7%BF%BB%E8%BB%8A-%E9%80%A3%E6%B1%BD%E6%9F%B4%E6%B2%B9%E9%83%BD%E7%A1%AC%E6%8B%97%E6%88%90%E7%82%92%E8%8F%9C%E7%9A%84%E6%B2%B9-233700668.html",
-      "time": "2026-08-03 23:37:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "severity": "yellow",
-      "is_negative": false
     },
     {
       "title": "倒閣不成變花招？回防毒油案？  苗博雅轟藍：大玩選票提款機！【台灣向前行 搶先看】2026.08.03",
@@ -309180,6 +308965,17 @@
     }
   ],
   "articles_7d": [
+    {
+      "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+      "time": "2026-08-05 07:31:03",
+      "platform": "news",
+      "publisher": "中時新聞網",
+      "hour": "2026-08-05 07:00",
+      "day": "2026-08-05",
+      "severity": "red",
+      "is_negative": false
+    },
     {
       "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
       "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -326460,20 +326256,18 @@
       "day": "2026-07-29",
       "severity": null,
       "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_7d": [
     {
       "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
       "time": "2026-07-29 07:34:51",
       "platform": "news",
       "publisher": "中時新聞網",
-      "hour": "2026-07-29 07:00",
-      "day": "2026-07-29",
       "severity": "yellow",
       "is_negative": false
-    }
-  ],
-  "articles_prev_7d": [
+    },
     {
       "title": "蔣萬安拋「倒閣」盧秀燕表態「可討論」 砲轟中央有內鬼",
       "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQTzZ1eUE1S3ZlUEdueV9TLVR3S3AzMmxUVUZnLUt5WEVMM2cyYkVCS2FpTXVkU05xLXpnTFZiSzZKVW9XdEw3RzB3Qk1JRGFSdV9kdTduLXBJaVVLNnlOa0R2a1lJbHFVY1dEU09mVE5YNTVPbmpheGcxeE5qWFA2U2FiamhYVUJYaUJMb0dmSG1zUGktREk2N0l0dDl2eEd4ZllBZUVHTDlldWlBdnIxc19IMUdObjlobUQ4eUd4OGxuTEFOSUMtUkVScVJ6REtsMmg0OFhub2hTNGxZUlllc1RVVU9NejQtR2JOMnBpc01PZDdjNlY3SHM4MXFIeWkwVHBRRzFueDBpU3JUWU9QU01kakIwcnN6cFRjMjE4NmplMWVPR2Rzc24zT1pDaFdDUUhjaGY4c1UxY19HSEFGXzNRcldIcDFLTGNPdFhuNy1uelhf?oc=5",
@@ -339550,6 +339344,15 @@
       "is_negative": false
     },
     {
+      "title": "陳其邁1段話！她「對比蔣萬安、盧秀燕」嘆：慶幸六都市長有正常人",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9iQV81a2tzbTNLZGpJd3ZkcTl6N2ZFSVBaS2wtR3pnWnRKenUwNUxqVlhWR3hZWXhJQUN0Y0diRTd4RGNuYVk4T9IBTEFVX3lxTFBlWWZ4RllocnhSbW9Wbl9La2JnODh5S2JlcUJGdnE3OXJOdE5hMXBRYnJ3TlFZTXdqZi02VXlYRllyQjZRbk41UTQ5YVo?oc=5",
+      "time": "2026-07-22 07:58:00",
+      "platform": "news",
+      "publisher": "三立新聞網",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
       "title": "陳培瑜稱蔣萬安、盧秀燕從未查驗苯駢芘 號召上街是為卸責中央",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE96N3Qtb3ZpYlkwSnBNRzcxb0l1NGlKdG5sSzZiUUZoTXJNWU16QURFZlA0bl8zblM4MnR1QndjVFA2dVJPMUFSVlBvZlFRTFlE0gFWQVVfeXFMTzRKcFJIaGVBcU5VTjRnTm92OVVtSjFfUmdwUWFHOEd0LVZzRl9iRi1wZUE3SFZQOThEcWxRYlNfUEUtby1peTUxb2VlS1U3YzFSV2xwakE?oc=5",
       "time": "2026-07-22 07:54:18",
@@ -339584,38 +339387,10 @@
       "publisher": null,
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "陳其邁1段話！她「對比蔣萬安、盧秀燕」嘆：慶幸六都市長有正常人",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9iQV81a2tzbTNLZGpJd3ZkcTl6N2ZFSVBaS2wtR3pnWnRKenUwNUxqVlhWR3hZWXhJQUN0Y0diRTd4RGNuYVk4T9IBTEFVX3lxTFBlWWZ4RllocnhSbW9Wbl9La2JnODh5S2JlcUJGdnE3OXJOdE5hMXBRYnJ3TlFZTXdqZi02VXlYRllyQjZRbk41UTQ5YVo?oc=5",
-      "time": "2026-07-22 07:36:00",
-      "platform": "news",
-      "publisher": "三立新聞網",
-      "severity": "yellow",
-      "is_negative": false,
-      "hour": "2026-07-22 07:00"
-    },
-    {
-      "title": "陳其邁1段話！她「對比蔣萬安、盧秀燕」嘆：慶幸六都市長有正常人",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPMU1kMmtkOHVGVERyanpkM0pzU1hrdGg2Q0R0a2taMzNrVS15bVNOeUxENWJSclQ1UGZaREFaZ0hXTGtmMTJncVdxTnBKemM5WEFNMjZmOWlCWUVkZEhsWjdMMW9jUS1PN04waFFSSW45REdjZjRjUXg5X1pzNTFVZjBJSjBYS1pIX3FadHE2Qm5RcnU0NUNIcE1kY182VFpNQm92RDAyc3hYLTQ1SmUxeVBDMkRLbFJvRF82SGV5ZW93NDlSa0VsZ1BnTVdScTh3WXVGY2tFb21DYmpHQXowSXQtQjByMld6aEVQaE9kQWN1aGpzQUNxT2tkaUpMMHd0Rzl2cVdjYjdrX3p0alE?oc=5",
-      "time": "2026-07-22 07:36:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "severity": "yellow",
-      "is_negative": false
-    },
-    {
-      "title": "[Gossiping] [新聞] 盧秀燕搬賴清德12年前發言救火：自己講的話要記住！",
-      "url": "https://www.ptt.cc/bbs/Gossiping/M.1784676950.A.A93.html",
-      "time": "2026-07-22 07:35:50",
-      "platform": "ptt",
-      "publisher": null,
-      "severity": null,
-      "is_negative": false
     }
   ],
   "media_framing_7d": {
-    "sample_size": 14408,
+    "sample_size": 14395,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -339627,6 +339402,12 @@
         "negativity_pct": 5,
         "sentiment_score": 1341.0,
         "articles": [
+          {
+            "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+            "time": "2026-08-05 07:31:03",
+            "is_negative": false
+          },
           {
             "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
             "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxOdlVsYTlKTTJFczVhaEMzZmZCNXAzdGQtTFdvLWtJY1hzb3lBWmhqbllIS1JiNWJ3bzdrdG5HMXZiSFBnbHVaMWd4UHZkUENCakFNT28wTmEtOUpoYzJ0N2xySV9KN3lRSWlaNmMtRDFkdng1MUJ4MXVLSU1FMHgwMDRaa1E5ZG5KVkNYYlhfNXFFVVk3NzlpYUhUTFlwQ3B0emRaaGotUFFUa2hQcW9wUExneU5vMXBwOW14YnN4NWxRX0xBZ0MwOG9ySFhCUHQzbjRkSE9GN1FZakhVRFd6LUM4aE5rSHBDa05oRUhqR2lERjVDUUotOUYzT0VkY3R0SDhwdlo5VXdHeHRYZm80S2EtbHhyYVZTRktESnRXTE5zc0hxNlNZMDBEZHEzLXp6SXpxQTBTOTNqSUtTbGh0ZVhWY3RPOFZ6b2dlaU0wWTZETHVxZTh0MktJblctUTA?oc=5",
@@ -348518,22 +348299,16 @@
             "url": "https://www.storm.mg/lifestyle/11152387",
             "time": "2026-07-29 10:00:00",
             "is_negative": false
-          },
-          {
-            "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-            "time": "2026-07-29 07:34:51",
-            "is_negative": false
           }
         ]
       },
       {
         "city": "台中",
         "candidate": "蔣萬安",
-        "news_count": 155,
+        "news_count": 154,
         "negative_count": 12,
         "negativity_pct": 8,
-        "sentiment_score": 131.0,
+        "sentiment_score": 130.0,
         "articles": [
           {
             "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
@@ -349458,12 +349233,6 @@
             "url": "https://www.storm.mg/lifestyle/11152387",
             "time": "2026-07-29 10:00:00",
             "is_negative": false
-          },
-          {
-            "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-            "time": "2026-07-29 07:34:51",
-            "is_negative": false
           }
         ]
       },
@@ -349796,10 +349565,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 2653,
+        "news_count": 2649,
         "negative_count": 128,
         "negativity_pct": 5,
-        "sentiment_score": 2397.0,
+        "sentiment_score": 2393.0,
         "articles": [
           {
             "title": "黎榮章觀點：凱道遊行後 蔣萬安政治能量更上層樓？",
@@ -365694,30 +365463,6 @@
             "url": "https://news.ebc.net.tw/news/politics/563562",
             "time": "2026-07-29 08:02:00",
             "is_negative": false
-          },
-          {
-            "title": "蔣萬安慘了！喊「衝我來」被綠委當眾告發",
-            "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E5%96%8A-%E8%A1%9D%E6%88%91%E4%BE%86-%E8%A2%AB%E7%B6%A0%E5%A7%94%E7%95%B6%E7%9C%BE%E5%91%8A%E7%99%BC-073910182.html",
-            "time": "2026-07-29 07:39:10",
-            "is_negative": false
-          },
-          {
-            "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-            "time": "2026-07-29 07:34:51",
-            "is_negative": false
-          },
-          {
-            "title": "公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-            "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPRmxkQzhuOVhiSTRUX0R4M3FBaGlVU1VjbFpwd210TzV0am1EUWR6VGNXYXp6YkNNUVhEV2x0Z0QyOHlTdm96UTBYcjdNZm9EaWJSS3l0ODh4M0d1bzR5OFIxaWwybHR2TnQ3QmMyc25MNGxMMGtJQk1XWG92cXRseXVIc2MzSXZjMVprbmowZWZOMk12QXE2YjJSa3ZoXzdwa2drN2stQXdWZE5vU081NVFOaFJOUWdybUxtZEQ2Y3o3UjdRSEpBTmlMWDJrNklsU2xYNktfeGlKM2hvczFiMDI5VUpzVHlmVUFTZnJZZm1aQTVNSGh2VVhsMUN3aW56YjNXUEJVZTIwTmFYcmpjU1AxbEI2R3p1b2p0N09JMjZUSWtWdURfQVNSZk5DSWtjaUJBMlFjaURKUVF3bDNUZTdDQWVvRTdDYkhHYmM3QTNlaWRkNDl0Q2dzNU9sRzJhbjczLTloblFORWVFZy14dm1JNDlwMGdTa2xZbWlLNkVZMnAtYkJEbjJmLUliRm5YNGF2dTFOeE5aeml5Q2hQSTVzdVRuTzk2MHc?oc=5",
-            "time": "2026-07-29 07:34:30",
-            "is_negative": false
-          },
-          {
-            "title": "快新聞／公然違法？蔣萬安竟自爆「拜託小編做影片」 律師怒轟：這2事怎沒這擔當",
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBDYUxjY1pHcVhlNERoSV82eXRNMjVzMDlXUHNGcFpTVUhKTHE1X2pmTXhSa3J1aFZvMDhGam9WQmtxMlh4TjVOemlFeVJhc3d6bXZkdEdmQzZSbDE2bVZxNg?oc=5",
-            "time": "2026-07-29 07:34:30",
-            "is_negative": false
           }
         ]
       },
@@ -368212,10 +367957,10 @@
       {
         "city": "台北",
         "candidate": "盧秀燕",
-        "news_count": 159,
+        "news_count": 158,
         "negative_count": 14,
         "negativity_pct": 9,
-        "sentiment_score": 131.0,
+        "sentiment_score": 130.0,
         "articles": [
           {
             "title": "盧秀燕、蔣萬安提倒閣？專心市政好好上班，有多難？？ #DPPNEWS",
@@ -369163,12 +368908,6 @@
             "title": "不是韓國瑜、盧秀燕！蔣萬安點名「綠營1大咖」是最佳閣揆人選：施政滿意度高、很為人民著想",
             "url": "https://www.storm.mg/lifestyle/11152387",
             "time": "2026-07-29 10:00:00",
-            "is_negative": false
-          },
-          {
-            "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-            "time": "2026-07-29 07:34:51",
             "is_negative": false
           }
         ]
@@ -372558,10 +372297,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 1096,
+        "news_count": 1095,
         "negative_count": 43,
         "negativity_pct": 4,
-        "sentiment_score": 1010.0,
+        "sentiment_score": 1009.0,
         "articles": [
           {
             "title": "迎8月8日開幕！陳其邁指示高雄親子遊樂園全面整備迎接全台遊客",
@@ -379132,12 +378871,6 @@
             "url": "https://news.ebc.net.tw/news/politics/563562",
             "time": "2026-07-29 08:02:00",
             "is_negative": false
-          },
-          {
-            "title": "佛光盃國際大學籃球賽開幕 市長陳其邁歡迎國內外青年勁旅齊聚高雄",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RNjRnYXFsTGdzSkdhdFNIekkxQ3pGNUZBUm9rX1JUZ2dzcmZWV2hCSzNFbDZrdUlsSDhRTkJnLW5QamJDb1Z2VHNIbzVGTlFZV0E?oc=5",
-            "time": "2026-07-29 07:42:40",
-            "is_negative": false
           }
         ]
       },
@@ -381812,6 +381545,16 @@
   "event_stream": {
     "minute": [
       {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "hour": "2026-08-05 07:00",
+        "severity": "red",
+        "is_negative": false
+      },
+      {
         "title": "台中市長盧秀燕今天表示，台灣糖業股份有限公司知情不報，經濟部、衛生福利部等曲解法令、罔顧食品安全，護航台糖；衛福部否認，...",
         "url": "https://udn.com/news/story/124948/9670653?from=udn-ch1_breaknews-1-cate1-news",
         "time": "2026-08-04 20:48:04",
@@ -382088,16 +381831,6 @@
         "platform": "news",
         "publisher": "新頭殼",
         "hour": "2026-08-04 08:00",
-        "severity": "red",
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕批台糖未依「食安法」通報致癌油 林靜儀嗆：原料油是能吃膩？",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53LVA2ZTZfcHNSenpVdHlfeTVjTnRfWF9hSkxIMUpSOUZId1JYT1RWN3RLNkNxYTFhcUFlN2NzZmk4TWw0b3ltTzRIZFVGQ2NKaUVF0gFYQVVfeXFMUEI0VTVsZ0U1SmVITFVza2RqNkdHUE1SeEs4VHJCbzZJck5VakY3SHhxX056OGVSWUJ6Ui1wN0ZQcDBfWFp0ZEFDUjJoN2VRc29KZFFSOTUtdA?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "hour": "2026-08-04 07:00",
         "severity": "red",
         "is_negative": false
       }
@@ -383872,16 +383605,6 @@
         "hour": "2026-08-04 08:00",
         "severity": "yellow",
         "is_negative": false
-      },
-      {
-        "title": "扯「油品部在台南」糗大！他曝盧秀燕大翻車：連汽柴油都硬拗成炒菜的油",
-        "url": "https://news.google.com/rss/articles/CBMitANBVV95cUxPcE84b0NyeVBSSFlrSWJKR2hJbnBZc3hXLTZmaTN6TVhaNVdSM0M1akE3V0pjZ0tHNnlYLUtxWkduTXB5cW52dVJFS3NKWUZLaWNfVHhOMWVkRzQ1OXp1RDRySDRkS19iSEI2eGloUkxTT09OQ0FnS180SDVHS3B1U2t5Zzg1RldXYzFZYkRGQU1oYU5GX3lIZ2FJOF9lMlVia0h4Ykxaa3JpTFdhYkRwZDRJcFAyYnJTTG9kZGVBclR4aWZWbVhsZmN3Y0pfOTNiU28zZllmbGF1TTJxTGNDaTVUN2tjZ01tUUlTZElWUmlKTXFCZnFuejk3OGtYUTE3VWlmYTd4amVSN1VROHNkY3RvYlRhVkR6Q0JqRnVtUjlTSWhaWTNiZE5zS0tRUUlyUmJmTWJhYnFVUnlST0RmMl85MnY2VVRBcVBOdldzMGNWV0JsZDBtNVFFOU0tVUlMU0xERHFZY1BUOElsZUNRSjdXWlY3azRJRTBmZTREdENmc2U4bTBkUGdFVlNvc3lLRm5PQUhlWHdMTXJKVWJRWk9INngyeV96RW1pZTVrQTdPNEFy?oc=5",
-        "time": "2026-08-04 07:37:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-08-04 07:00",
-        "severity": "yellow",
-        "is_negative": false
       }
     ],
     "day": [
@@ -384709,6 +384432,17 @@
   },
   "event_stream_7d": {
     "minute": [
+      {
+        "title": "1分鐘看政治》毒油案盧秀燕怒轟高官嘴臉噁心公投一票多案？游盈隆拜託暫緩- 政治",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OM3UyOFNtWUNuYTQxWXYtazRuUHBURDZjdnR3T1IwMFIxcm9DLUJqVW1MRlNYMU9NemJsYy1mMnVXOGtUa2N6dmx4Rml1NmNfd1AwOWJtV2dyazZnNmp4UGFQaEk0VkxVYjhMLWhB?oc=5",
+        "time": "2026-08-05 07:31:03",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "hour": "2026-08-05 07:00",
+        "day": "2026-08-05",
+        "severity": "red",
+        "is_negative": false
+      },
       {
         "title": "台中市長盧秀燕今天表示，台灣糖業股份有限公司知情不報，經濟部、衛生福利部等曲解法令、罔顧食品安全，護航台糖；衛福部否認，...",
         "url": "https://udn.com/news/story/124948/9670653?from=udn-ch1_breaknews-1-cate1-news",
@@ -395960,17 +395694,6 @@
         "platform": "news",
         "publisher": "Google News→UDN",
         "hour": "2026-07-29 10:00",
-        "day": "2026-07-29",
-        "severity": "yellow",
-        "is_negative": false
-      },
-      {
-        "title": "1分鐘看政治》神秘20％誰定的？盧秀燕開嗆中央有內鬼蔣萬安重話批查水表- 政治",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xVXZqT2JsLVhZaW91a2FrczM1SU1YbkhjYnZYSFBvZlN1ejNDYU1kak9vM3ZQSkFnWEtkWGJCaV8tNTRHVzBMd0lvV2x2RU9pdlBzQ3J5NjZDLXRjZktNYkF3OHowRV85NFhLYnNR?oc=5",
-        "time": "2026-07-29 07:34:51",
-        "platform": "news",
-        "publisher": "中時新聞網",
-        "hour": "2026-07-29 07:00",
         "day": "2026-07-29",
         "severity": "yellow",
         "is_negative": false
