@@ -286,9 +286,18 @@ tr.cn-first td:first-child{border-left:3px solid var(--red)}
 @media(max-width:1000px){.hour-hist{gap:0}}
 .empty{color:var(--dim);font-size:12px;padding:6px 0}
 svg text{font-family:inherit}
+#gateNotice{display:none;max-width:520px;margin:120px auto;padding:28px 32px;background:var(--panel);border:1px solid var(--bd);border-radius:14px;text-align:center;font-size:15px;line-height:1.8}
+#gateNotice a{color:var(--acc);font-weight:700}
+body.forensics-locked .wrap{display:none!important}
+body.forensics-locked #gateNotice{display:block}
 </style>
+<!-- 登入閘（比照戰情儀表板）：預設鎖住，確認登入且在允許清單才載資料＋渲染 -->
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script defer src="./lib/config.js?v=2026-08-03-gate"></script>
 </head>
-<body>
+<body class="forensics-locked">
+<div id="gateNotice">🔒 本頁需登入才能檢視<br>
+  請先到 <a href="./index.html">戰情儀表板</a> 登入（帳號需在允許清單內），再回到本頁。</div>
 <div class="wrap">
   <h1>🔬 事件解構 · 脈絡透明化 <span class="sub">台中輿情事件鑑識（盧秀燕基底）</span></h1>
   <div class="meta" id="meta">載入中…</div>
@@ -559,8 +568,28 @@ function renderChain(e){
         :`<div class="chain-link"><div class="chain-body"><div class="chain-title">${esc(l.title)}</div><div class="chain-find">${esc(l.finding)}</div><div class="chain-ev">↳ 證據：${esc(l.evidence)}</div></div></div>`;}).join('')}</div></div>`;
 }
 
-fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(e=>{
-  $('meta').textContent='⚠️ 資料載入失敗：'+e;
+// 登入閘：確認 session + am_i_approved 才解鎖並載資料（未授權者停在 gateNotice）
+function __loadForensics(){
+  fetch('./forensics_lxy.json?t='+Date.now()).then(r=>r.json()).then(d=>{DATA=d;render();}).catch(e=>{
+    $('meta').textContent='⚠️ 資料載入失敗：'+e;
+  });
+}
+window.addEventListener('load', function(){
+  try{
+    var cfg=window.LxyConfig||{};
+    if(!window.supabase||!cfg.SUPABASE_URL){ return; }   // 資源沒載到 → 保持鎖定
+    var sb=window.supabase.createClient(cfg.SUPABASE_URL,cfg.SUPABASE_ANON_KEY);
+    sb.auth.getSession().then(function(s){
+      var sess=s&&s.data&&s.data.session;
+      if(!sess) return;                                   // 未登入 → 鎖定
+      return sb.rpc('am_i_approved').then(function(r){
+        if(r&&r.data===true){
+          document.body.classList.remove('forensics-locked');
+          __loadForensics();
+        }
+      });
+    }).catch(function(){ /* 保持鎖定 */ });
+  }catch(e){ /* 保持鎖定 */ }
 });
 
 // 事件檔案三種排序：最新／最舊（依引爆日期）／最熱（依熱度分數 score）

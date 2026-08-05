@@ -19,8 +19,11 @@
   <link rel="stylesheet" href="./style.css?v=2026-05-20-legal" />
   <!-- Customer config 提前到 <head>、確保 body inline script 跟 app.js render 時都已備好 -->
   <script defer src="./lib/config.js?v=2026-05-18-customer-cfg"></script>
+  <!-- 登入閘（比照 zjg）：未授權時整版資料區隱藏。
+       預設就鎖（body 帶 dash-locked），app.js 確認是核准帳號後才解鎖 → 不會閃資料。 -->
+  <style>body.dash-locked .panel,body.dash-locked .cards{display:none!important}</style>
 </head>
-<body>
+<body class="dash-locked">
   <header>
     <div class="header-row">
       <div>
@@ -34,6 +37,11 @@
       </div>
     </div>
   </header>
+
+  <!-- 有登入但未在允許清單 → 明確告知（而不是空白畫面以為壞了） -->
+  <div id="unauthorizedBanner" role="alert" style="display:none;margin:0 0 14px;padding:12px 16px;border-radius:10px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.5);color:#ffd98a;font-size:14px;line-height:1.5">
+    ⚠️ 你的帳號 <b id="unauthEmail" style="color:#fff"></b> 已登入，但<b>尚未獲授權</b>檢視此儀表板的資料。請聯絡管理員把你的 email 加入允許清單後再使用。
+  </div>
 
   <!-- Auth modal (login + signup tabs) -->
   <div id="authModal" class="lxy-modal hidden" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
@@ -666,7 +674,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- config.js 已提早到 <head> 載入、不需要再載一次 -->
   <script defer src="./lib/db.js?v=2026-05-19-feedback-loop"></script>
-  <script defer src="./app.js?v=2026-05-29-rpc-charts"></script>
+  <script defer src="./app.js?v=2026-08-03-auth-gate"></script>
   <script>
     // Service Worker — 2nd-visit speed-up + offline fallback.
     // Registered after page load so it doesn't compete with critical resources.

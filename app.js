@@ -3982,6 +3982,7 @@ function initRealtimeToasts() {
 const _auth = {
   user:    null,
   isAdmin: false,
+  approved: false,   // 登入閘：在 approved_viewers/admin 名單內才能看資料
   /** Map<"target_type|target_id", correction row> 給 UI render 「已修正」 badge 用 */
   corrections: new Map(),
 };
@@ -4081,6 +4082,9 @@ async function handleAuthSubmit(e) {
     } else {
       await LxyDB.signIn(email, pwd);
       closeAuthModal();
+      // 登入閘：重載讓 dashboard 用已登入 session 重新打 RPC
+      // （沒這行會停在登入前的 401 空畫面）
+      location.reload();
     }
   } catch (e2) {
     err.textContent = e2.message || String(e2);
@@ -4093,22 +4097,44 @@ async function refreshAuthBar() {
   const logoutBtn = document.getElementById('authLogoutBtn');
   if (!status) return;
   const user = _auth.user;
+  const banner = document.getElementById('unauthorizedBanner');
   if (user) {
     _auth.isAdmin = await LxyDB.isAdmin();
+    // 在觀看允許清單嗎？（admin 也算）。am_i_approved() 回 boolean，未獲授權者資料 RPC 會被擋。
+    _auth.approved = _auth.isAdmin || await LxyDB.client().rpc('am_i_approved')
+      .then(function (r) { return r && r.data === true; }).catch(function () { return false; });
     status.classList.remove('auth-status-guest');
-    status.classList.toggle('auth-status-admin', _auth.isAdmin);
-    status.classList.toggle('auth-status-user', !_auth.isAdmin);
-    status.textContent = (_auth.isAdmin ? '✓ admin · ' : '已登入 · ') + user.email;
+    if (_auth.approved) {
+      status.classList.toggle('auth-status-admin', _auth.isAdmin);
+      status.classList.toggle('auth-status-user', !_auth.isAdmin);
+      status.textContent = (_auth.isAdmin ? '✓ admin · ' : '已登入 · ') + user.email;
+      if (banner) banner.style.display = 'none';
+    } else {
+      // 有登入但不在名單 → 明確提示，而不是讓他看空白圖表以為壞了
+      status.classList.remove('auth-status-admin', 'auth-status-user');
+      status.classList.add('auth-status-guest');
+      status.textContent = '⚠️ 未獲授權 · ' + user.email;
+      if (banner) {
+        var em = document.getElementById('unauthEmail');
+        if (em) em.textContent = user.email;
+        banner.style.display = '';
+      }
+    }
     loginBtn.style.display = 'none';
     logoutBtn.style.display = '';
   } else {
     _auth.isAdmin = false;
+    _auth.approved = false;
+    if (banner) banner.style.display = 'none';
     status.classList.add('auth-status-guest');
     status.classList.remove('auth-status-user', 'auth-status-admin');
     status.textContent = '未登入';
     loginBtn.style.display = '';
     logoutBtn.style.display = 'none';
   }
+  // 未獲授權（含未登入）→ 鎖住所有資料區塊（只留 header + 登入/未授權提示）。
+  // 同時擋掉「靜態檔」那幾區（事件解構/議題熱度/選舉預測等）對未授權者的顯示。
+  document.body.classList.toggle('dash-locked', !_auth.approved);
 }
 
 // --- Correction modal ---
