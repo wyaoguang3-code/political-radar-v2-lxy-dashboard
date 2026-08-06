@@ -11,7 +11,7 @@
 //
 // Bump VERSION when changing SW logic to invalidate old caches.
 
-const VERSION = 'v4';  // 2026-08-03 bump：登入閘上線（app.js/index/forensics 改版）→ 逼全部 client 重抓
+const VERSION = 'v5';  // 2026-08-06 bump：app.js 8/6 改版但 ?v= 未動 → 回訪客 SW 吃舊快取；連同 ?v= 一起 bump 逼全部 client 重抓
 const STATIC_CACHE = `lxy-static-${VERSION}`;
 const JSON_CACHE   = `lxy-json-${VERSION}`;
 
