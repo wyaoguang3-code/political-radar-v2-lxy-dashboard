@@ -1,6 +1,6 @@
 {
   "date": "2026-08-06",
-  "snapshot_at": "2026-08-06T10:19:11.742930+00:00",
+  "snapshot_at": "2026-08-06T10:34:47.922468+00:00",
   "hotspots": [
     {
       "title": "屏東車禍事件",
@@ -45,6 +45,27 @@
       "comments": []
     },
     {
+      "title": "南投詐騙案",
+      "city": "南投",
+      "place": "南投縣政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "許縣長出席南投縣地政士公會會員大會 勉公私協力防堵詐騙",
+          "url": "https://more-news.tw/686715/",
+          "time": "2026-08-06 16:54:42",
+          "publisher": "墨新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "台中詐騙案",
       "city": "台中",
       "place": "台中市政府",
@@ -66,21 +87,28 @@
       "comments": []
     },
     {
-      "title": "南投詐騙案",
-      "city": "南投",
-      "place": "南投縣政府",
+      "title": "花蓮車禍事件",
+      "city": "花蓮",
+      "place": "花蓮縣政府",
       "level": "green",
-      "news_count": 1,
+      "news_count": 2,
       "comment_count": 0,
       "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
+      "is_urgent": true,
+      "urgency_score": 8,
       "news_articles": [
         {
-          "title": "許縣長出席南投縣地政士公會會員大會 勉公私協力防堵詐騙",
-          "url": "https://more-news.tw/686715/",
-          "time": "2026-08-06 16:54:42",
-          "publisher": "墨新聞",
+          "title": "花蓮恐怖車禍! 婦過馬路遭騎士衝撞 頭部出血失去意識",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MNklNM0dzUGZjTFRtazRzUnY0ZkMxdElFQzVmemwyNkdhbzRjM2o2UVg4cExsY0dLaTBJZnhyalNDTnl6QTBVT2I0eGZmU2FGS1M0QXNqdHUyS0thaG9iTw?oc=5",
+          "time": "2026-08-06 15:38:57",
+          "publisher": "Google News→民視新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "花蓮恐怖車禍！老翁騎車猛撞行人再撞2車 8旬婦頭部出血重傷",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1fR3ExWE5GSDF4d0lleVRVUEtrd1VhTm5iUTN1elBXMlNNMEE0VkkyeFJQcVZiTHFqaXNOOGdwang3SURpYncxdWlyTF9WZGs?oc=5",
+          "time": "2026-08-06 10:34:00",
+          "publisher": "TVBS",
           "severity": "yellow"
         }
       ],
@@ -109,34 +137,6 @@
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42WE5iTjdtU19oQTR2VkdKRzhCSFNaWGY5VVQwR19BWmFRUTNPTC05eWQ5Vm9KZmpBTWtFc09LS0N4Vmxfc1dtWC1VQzZTdUJGWjBzYjBobTItbmJzUFdIR3B1Mml1YzE1LTFGVDJGQWlRb091eXRhQnVaSGpWanc?oc=5",
           "time": "2026-08-06 11:44:00",
           "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "花蓮車禍事件",
-      "city": "花蓮",
-      "place": "花蓮縣政府",
-      "level": "green",
-      "news_count": 2,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": true,
-      "urgency_score": 8,
-      "news_articles": [
-        {
-          "title": "花蓮恐怖車禍! 婦過馬路遭騎士衝撞 頭部出血失去意識",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MNklNM0dzUGZjTFRtazRzUnY0ZkMxdElFQzVmemwyNkdhbzRjM2o2UVg4cExsY0dLaTBJZnhyalNDTnl6QTBVT2I0eGZmU2FGS1M0QXNqdHUyS0thaG9iTw?oc=5",
-          "time": "2026-08-06 15:38:57",
-          "publisher": "Google News→民視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "花蓮恐怖車禍！老翁騎車猛撞行人再撞2車 8旬婦頭部出血重傷",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1fR3ExWE5GSDF4d0lleVRVUEtrd1VhTm5iUTN1elBXMlNNMEE0VkkyeFJQcVZiTHFqaXNOOGdwang3SURpYncxdWlyTF9WZGs?oc=5",
-          "time": "2026-08-06 10:34:00",
-          "publisher": "TVBS",
           "severity": "yellow"
         }
       ],
@@ -562,9 +562,9 @@
       "comments": []
     },
     {
-      "title": "台中弊案爭議",
-      "city": "台中",
-      "place": "台中市政府",
+      "title": "屏東弊案爭議",
+      "city": "屏東",
+      "place": "屏東縣政府",
       "level": "yellow",
       "news_count": 1,
       "comment_count": 0,
@@ -573,10 +573,10 @@
       "urgency_score": 4,
       "news_articles": [
         {
-          "title": "女兒涉詐團人頭戶遭判刑 台中市警局長吳敬田：我更能苦民所苦",
-          "url": "https://www.cdns.com.tw/articles/1440174",
-          "time": "2026-08-05 19:46:44",
-          "publisher": "中華日報",
+          "title": "【新聞一點靈】屏東鎢金董座命案非關國安！ 警逮前員工　疑偷竊失風犯案　屏東鎢金大亨黑歷史曝光　曾涉多起官司 「詐騙遭判刑」",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-04/2428612.html",
+          "time": "2026-08-06 15:47:13",
+          "publisher": "壹電視",
           "severity": "red"
         }
       ],
@@ -604,9 +604,9 @@
       "comments": []
     },
     {
-      "title": "屏東弊案爭議",
-      "city": "屏東",
-      "place": "屏東縣政府",
+      "title": "台中弊案爭議",
+      "city": "台中",
+      "place": "台中市政府",
       "level": "yellow",
       "news_count": 1,
       "comment_count": 0,
@@ -615,10 +615,10 @@
       "urgency_score": 4,
       "news_articles": [
         {
-          "title": "【新聞一點靈】屏東鎢金董座命案非關國安！ 警逮前員工　疑偷竊失風犯案　屏東鎢金大亨黑歷史曝光　曾涉多起官司 「詐騙遭判刑」",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Society/2026-08-04/2428612.html",
-          "time": "2026-08-06 15:47:13",
-          "publisher": "壹電視",
+          "title": "女兒涉詐團人頭戶遭判刑 台中市警局長吳敬田：我更能苦民所苦",
+          "url": "https://www.cdns.com.tw/articles/1440174",
+          "time": "2026-08-05 19:46:44",
+          "publisher": "中華日報",
           "severity": "red"
         }
       ],
@@ -846,11 +846,11 @@
       "city": "宜蘭",
       "place": "宜蘭縣政府",
       "level": "yellow",
-      "news_count": 7,
+      "news_count": 6,
       "comment_count": 0,
       "negativity_pct": 100,
       "is_urgent": true,
-      "urgency_score": 28,
+      "urgency_score": 24,
       "news_articles": [
         {
           "title": "宜蘭車禍！ 泛舟貨車碰撞轎車「衝入田裡」 | TVBS",
@@ -892,13 +892,6 @@
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nUXhGcnZPYmM5UTA4bWUycG5tX0ZhOTFiWjMwM0gtanYxMTYzVkQtUVM0cUMtMHUxeDZJd2c4ZXFpM3dIbGdEQS1xRXlBSW9fNTlUMi13?oc=5",
           "time": "2026-08-05 18:56:51",
           "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
-        },
-        {
-          "title": "「體操騎士」驚險翻落地 宜蘭、員山兩起車禍兩騎士傷",
-          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxPZnZIaFo4NmJLS0RVWTExVWhXWTVYYWxMcTc2UzRzZG9tUEUzblloRzVlSFVIUmsyZUJXelNRTkp5RmJnalNHdlktUGVqQ2c1Y2trMDVETW5pMk40VWZxZ3dHaWpZMnRwS3g3bmxyaVp1d0VKeWUtd3FJMnRQSzY3WUtZdFZIUlBmbjFkWEIwUkpkUWJkWVhuWHBGb0ktaE1SLVRQVVVOUlp5NFRpZlNYQy1HX19UVVIwZlFmSXRFeHBwRUMzcFFkQ3M0OG1UYTVZNWRTemdIc1pXVHBlSEp3VEhkZG5tQTRJMThKRHBVNE56Nnp4WldxSm1jMTdwNE5CSV9zVVBFbWZtRm9RalZiUGNqSmZjUkdzUjVERnFzVXNmV2xxanlLV1Y3cTZBbXpSY2szQVpMeDBxZ2lJSzVwLVZUbWdndnR4OXlvS3dJX2hOZHc?oc=5",
-          "time": "2026-08-05 18:32:52",
-          "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
       ],
@@ -1383,11 +1376,11 @@
       "city": "金門",
       "place": "金門縣政府",
       "level": "yellow",
-      "news_count": 38,
+      "news_count": 29,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 38,
+      "urgency_score": 29,
       "news_articles": [
         {
           "title": "全台首創！金門縣民卡升級「數位卡」 手機悠遊付App搞定生活繳費",
@@ -1591,69 +1584,6 @@
           "time": "2026-08-05 18:54:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "漢光演習首日！中國海警假借「執法巡查」侵擾金門 海巡迫近強勢驅離",
-          "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxQSmdQVi1GbEFERkRFc2FGSkgwZWN1YWVkY1loNzZsbUhWRmd1WXJOazlyazA4aDR0NktaNUM3S3pxNWFxYW5OYWNlRGozNmIxeFNDX0ZoNTRCU2lnQy1yV0FpdjdZbVV4LW9SUzlrbURMNVZjd25BWll4WFFkUm9jMVVVVE5jZ2dTTF90VjQ2QkdVM200Y0JqUDdGcG1NYzAtNjFZSlBYTnhNQldXSVZVOXREMEY3RkIxbVpTZXVnd096TEtQbWdxZjFsS3d6dXVaUXZoczAxcm05bWxuS1RhT3A4d3NwS19GeFhZOTRBNDQ0aGFnRWc2bXVtNlFOcG1hbDY0QmZ4NHhuQi1yTmY1d0U2Vjc4Y19NamVEcnQyZmE2QlhQYjVXRldXZldtTnB2YXVwbHFpenJPUHZkYzkxMFZsc0pwVlAySUdCWDRDa2lsS3FzSUFfVHNMSGpja3R4cDBtbl9NUUN5UWZ5THBzUXZ5M3RLRmIxdzg0aGNzZjdfYzIxZFlEUnFFZG9pc1M3SnRjdzVNTEdVNDJIWXNYR3ktTXZZMmpR?oc=5",
-          "time": "2026-08-05 18:34:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "影/大陸海警船再度侵擾金門海域 海巡艦艇併航監控廣播驅離",
-          "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxPTDdBN2Z1M0FnRmZVcUpLbWQyQnV3OUhHd2dNYTQ2T3pDNDBnbWxHMHJFS0lLU0dCRW1OQ09iMC1VdkZwTVNjR0wzVVpsYk5wUHphUDZDVjRqai1jNWgyTUZxNzN0VllfMnBnblpiZjlrSllzSHUzaHVVQnQxYlJqZ09vb2xRTFJiNnRtb2RaR3N3V2Qwa0RCOWhXWHFEeHhXdjJmWXZ2RE9mdDBWRmUtUjRhOHQtUVlVaEJXU1JNTVRwMUtJMUdLY0hDYTFWR3FyT3Uyajk5bVVqcHBjUmVoVFNYNU5Zd3BLLXpjNThfNE9GRENwV1huZ0RSOXJITlVBM0xxc3FpTFBNanFGcWEyNW1jMUFfNVFSck1mYndwdFoxRmJhTU5YY24wTXJJWDJGalVqQWF4UjViMktBM3hNSnlnQlJYZGY1Y0NpSjg3LTViM2dfaUhsVmRvQmZJenFnUktaQlI3TlhXRFpwX3FFNmVFd3hFR282OFZ6cGgxb3FOc05ZYVRGWHlWaFc1UQ?oc=5",
-          "time": "2026-08-05 18:33:15",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "海巡艇嚴密監控強勢驅離中國海警假借執法巡查再度侵擾金門- 政治新聞- PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYnZOdVZJMGRDN0RzREZ1OXpaRkVQOTlFekJvZVhxUjJQSDlOdS1DVW84QUJlWkkxMVRzQ3J3SlB3MkZ2N3ZoakVGZ2FRUlRQbzFkaWxHYXhPQS1hNmpyM211bmdSRGdWYkFBMlRwamtNOGQwMmw3MjJZYXlISTR1Z19xWEJHMFdzclE?oc=5",
-          "time": "2026-08-05 18:31:07",
-          "publisher": "Google News→PChome Online 新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "海巡艇嚴密監控強勢驅離 中國海警假借執法巡查再度侵擾金門",
-          "url": "https://cnews.com.tw/204260805a04/",
-          "time": "2026-08-05 18:31:07",
-          "publisher": "匯流新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "中國海警4艘船再侵金門限制水域 海巡一對一併航強勢驅離",
-          "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxOYTVNUTRWdEFBbldOSEJmMl92UXd6OHJLOS1BNTdwdUVuVUNydkFzN3MxemZoM2h3bjluOFMtQllOSFFRX3ZURjJOZVRScDZiUXI1TUU4cEZ5U2Fmdjc5TExFVTZWWVRmSmJMM2VPTWxnSHd1NGliajdiTDUwWGVJd2VPcmc5Q0wxTmlHTjRlM1JnNGtCdTVaRGJ6Z1RLY2RBSzd1cm5MTTJGVDVmaS1fNWJRVHNYZkNReEtIUW5JVGpLQVlRSUk0NklFdDJOUW96NG9EakZzTWNkNm8tVDdOS2NHQk82Y0hDNElpejJiMkFQR3c3dUF1N1FHMTRZZk9kTFprU2N2UUppVHo1M2tiTWljSXc4SzhMRFN3WVFGNFhrQS1lendwdkVkUG1GV1BOa3NiRjR2alZ2MTJpOW5qMU0zYnRhM0JlMW5haEN5aTVoZnAzOWp5YWRTRjBQaHFDZUJ5YWpuM1pzY2Rl?oc=5",
-          "time": "2026-08-05 18:27:53",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "中國4海警船又闖金門限制水域 海巡1對1監控強勢驅離",
-          "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOUmhwSXpCN2hoZnllN0ExRjBXRE9nU3hnbHl3STBrU3VXbTlHa0xzWm5qSE5xNXc4QU91RFlmWUFRdmZKempxZHVGYXhSLWRxXzRnQXVDckl1UkFGN2lCT0hHODVvVm9BNE1PMFFUWHdyc2xQWHJYNUowTHBRaHlBbGlpQnF1Y2RMMlNFcFhIMTZia0R3dTRNUkpMRGpGakt1WjBpdVVRZkMxWU5rQlBYZ25YTS11MjYxY0NfTG12QWJvdjdSZEdod3dvZ3Z3YzlWZHdkNmJmamloVHc0RHd1d0dDcmR6bjZndzNBRWMwQzh1cjFSVHJTV29HUlVMM2tvb05sQXRWLXI4TGVVU1VicDJZMm92M0MtLTMyWVZfR0JpeHlDZkJDRXFwZVZvYnZaYy0wc05keDJ0WUIzMkczRi1xcjdzbHZiaXdBc1Vubllodk84TC1XclhvWEtXSUtI?oc=5",
-          "time": "2026-08-05 18:27:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "4艘中國海警船又近金門限制水域「執法」 海巡「1對1」併航監控並驅離",
-          "url": "https://news.google.com/rss/articles/CBMi4wNBVV95cUxPaWFGRmkyMkhDX0w2N21XWVZ0UGZ1bTdPZTRodnVCZUJKSUh2ZnJ4c0JJbDlWT1UtaVIxbTFPVW1VSnFuaGRZd0tTWXdaMDZ1MFBNZVNOTUI2bTFucHJlUUhEWVRRNXJVTVZUQkNRcDlEZktmZmlJQS1iNDJHcmkyYVByMFdyNWZ0czNySm9vODlienNGNldUUU95VjRNVEZ6cGJJQWNLa3VWcldUbFdIZTd2dFFwUnpYcHBlUnBySXVRTVhFWFIwY0ZfUXBscEdXT0dJQ2xYZWlQSXh2X0N3b2oyVzktUXVPOEtITjBiLWhlNWhBVk1iVWpZRTV4Y1hRVk5IM2ZZd0lQSlNoSC1yZzFibUFmZGgyMmlsWXlrNWMxNVVTZ1NBUERXbjkxWnhNSlgzNTRITmdGZ1dlRUpLaG5KRzY4UlhidDNDdF85eU8xejRxNkpIeVZ3UG9BUXFvdWI3U3hqTURIa3RfcWpVVjdzUFNLUmNMdDhwazBoMHJ0Qm53dUZnYjdaV2R0WFVlQkgtNWlsRVA1ZV9mQlNKLWtSR3dxUnluYl9oaFRGYU5Ma1R2WDJ2WjlNZmpqRVpGOXctUEh1SjlKdFBDNVktN0RqLXpLRG94Z2toTkRvSHFQa0E?oc=5",
-          "time": "2026-08-05 18:23:24",
-          "publisher": "Google News→台灣好新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "漢光42／漢光演習首日 中國海警持續騷擾金門水域 | 中央廣播電臺",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9pZFlzNWx6NUY0d0tmR3NZc19BYS1NcjZYSGhuVzBLTVBiU1VKbUVMRkotaEthaDBqS05ZTDRXUUVnU0hLTmxvQm5SREpKVnZ6SlVMUFlR?oc=5",
-          "time": "2026-08-05 18:21:29",
-          "publisher": "Google News→LINE TODAY",
-          "severity": "yellow"
-        },
-        {
-          "title": "中國海警再侵金門海域 海巡強勢驅離嚴密監控",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfM1Bqc0NONGJSd2RhaTRRMXl3M1ZEWTRxb3FISmtMYU1haVg0cmhrOVBRWHFGdmIzNC14RzZFMTJtOGVNVDVqXy15WTdDUHhwREZIZXlSSQ?oc=5",
-          "time": "2026-08-05 18:20:12",
-          "publisher": "Google News→台視新聞網",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -1663,11 +1593,11 @@
       "city": "苗栗",
       "place": "苗栗縣政府",
       "level": "yellow",
-      "news_count": 53,
+      "news_count": 50,
       "comment_count": 0,
       "negativity_pct": 8,
       "is_urgent": false,
-      "urgency_score": 65,
+      "urgency_score": 62,
       "news_articles": [
         {
           "title": "玉清宮捐500萬助弱勢！連4年挹注苗栗縣府 | 中華日報",
@@ -2018,27 +1948,6 @@
           "time": "2026-08-05 18:42:44",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "苗栗後龍首辦鎮級教師表揚",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WNWNkNXAxSDQ5aFNqdGlhdlVuZXFJMm56NWFfMGFvZUk5b1JGM3pjOV9wRi05LURsSWFGdW45dG93bnBzODdidTlieDhoRTA2T2V4RQ?oc=5",
-          "time": "2026-08-05 18:27:00",
-          "publisher": "Google News→臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "陳品安籲苗栗縣府退回土資場案：拒假大矽谷之名變相埋廢土",
-          "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxOTWtvZGkxaFFMbkt3QzhjQXFEMjZicDAzVmtOZW55dzd0c3FQenJfTWpLZjdGX0MtSlV6RkViSkV3U2w3VFlTV29RWUhHTU84R09Vb0NJMXJFME04dDZ3T096N0o3dG9JbEVQRTNTbnU1aVlQLWcyN0lnSUU3OXY0QUVCbTNkY2ZpUTJ6VXY3STlDa1ZSUEVUaDdfMll3dWUxVy1HSDhSM2l4cWxWd2NpWENlcEtLQnIzZTkwQncyQmYtbUxNLXg2MzY0VU82VmNTV0tMSkVRbm82N1ZPNzhVNWVDbVlNcHR4bi1JWDN1OWtFNEhMYTVxcjVyR0hrc2U0ek5KaTJKbGk0RXhVdWR2QmVTY2xobjNpcnlxeFpSQ1Jwb2FlNjNlYlZvTml6NjJqLXhLaERSTFVuYTVOVVdaQTlCWTZNMmhtQ3hqN3oteDZ4cFBNNHQxeXdFd1FsVVpvQWJjcXZNQjFQRDZjOFFsNDhacTZjV1ZpZ1NkNi00TDF5akhUWmF0anEtUG0?oc=5",
-          "time": "2026-08-05 18:22:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "苗栗首推藝術共融慈善專場",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA5WmZvWXJsV1oxc09kdEw0MGNmaTN4aHNWV1dYd0RYdVExUjVwM3B1SURtVk40aXpvSDBaUnZSSEZTRmVvbExfdTV4LXViellMZXhZTQ?oc=5",
-          "time": "2026-08-05 18:21:45",
-          "publisher": "Google News→臺灣導報",
-          "severity": null
         }
       ],
       "comments": []
@@ -2048,11 +1957,11 @@
       "city": "宜蘭",
       "place": "宜蘭縣政府",
       "level": "yellow",
-      "news_count": 66,
+      "news_count": 62,
       "comment_count": 0,
-      "negativity_pct": 14,
+      "negativity_pct": 13,
       "is_urgent": false,
-      "urgency_score": 93,
+      "urgency_score": 86,
       "news_articles": [
         {
           "title": "宜蘭戰車夜間機動馳援西部 漢光演習驗證跨區快速打擊戰力 | 中華日報",
@@ -2487,34 +2396,6 @@
           "time": "2026-08-05 18:56:51",
           "publisher": "Google News→LINE TODAY",
           "severity": "yellow"
-        },
-        {
-          "title": "明天天氣全台高溫宜蘭注意焚風 中南部入夜防大雨",
-          "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPTVJRRHllcFpURmJGNmhQUGZ0QldkX0NPODFCQ19jWDJSQzlhSlIwRWlMQnRaLW1VSm5MaDN4ck9LTXd2cTlrUTdNZDlOT25NM2MtNVJ4Wi1NV3JidVFweDlSalhEMEpJMmE4ZmNVSkF4NkM5SVhoMmJiajBoQnN6Mkp2allTakhnakxQbXdBUmJndjc4OXI3dnNXNXpYLWRzdmF4M3h5RFNRQ2czUHZMRFpqY045ckVncTAwbEZJeVg1NGk1SndubDh3cW5hcDlwV0JmTkM5MGhhNEZKSjNQNkItajhvMWNRRnhjeFdyNDY1Tl94M19rNkg0S1FGUnNWYmJVbmtzV1ZoY2FJV0tKNElGWXI3eFBaOWlvaFJXYnpBT2F1bGxxLS1IQ0huMjNRRUI5MUxpNXd4MDVoX2s3M1FSQzFMVHVTVHpMYkg0NUh2YVNpZ1lFSzc0akE?oc=5",
-          "time": "2026-08-05 18:34:09",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "「體操騎士」驚險翻落地 宜蘭、員山兩起車禍兩騎士傷",
-          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxPZnZIaFo4NmJLS0RVWTExVWhXWTVYYWxMcTc2UzRzZG9tUEUzblloRzVlSFVIUmsyZUJXelNRTkp5RmJnalNHdlktUGVqQ2c1Y2trMDVETW5pMk40VWZxZ3dHaWpZMnRwS3g3bmxyaVp1d0VKeWUtd3FJMnRQSzY3WUtZdFZIUlBmbjFkWEIwUkpkUWJkWVhuWHBGb0ktaE1SLVRQVVVOUlp5NFRpZlNYQy1HX19UVVIwZlFmSXRFeHBwRUMzcFFkQ3M0OG1UYTVZNWRTemdIc1pXVHBlSEp3VEhkZG5tQTRJMThKRHBVNE56Nnp4WldxSm1jMTdwNE5CSV9zVVBFbWZtRm9RalZiUGNqSmZjUkdzUjVERnFzVXNmV2xxanlLV1Y3cTZBbXpSY2szQVpMeDBxZ2lJSzVwLVZUbWdndnR4OXlvS3dJX2hOZHc?oc=5",
-          "time": "2026-08-05 18:32:52",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "宜蘭首座AI智慧回收機啟用 全天回收還能換好物",
-          "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNUWdLM04yTzk0YXpQVmw5Z2k5RFdwYVZZOW53RlNoNWdGWnFMeTNPa1h1emZqbVk2bDJyRE5QQUZKellxVmhLYXlxR3NPamVQWk5kbnJWVERRaGZMNUpXNTFuMl9GYlF6Tk5JTV9FU05pVUMzeGQ5aG9QMU1tMXdadm5LNWxoT0tqZlJtejVzOTRoVGN5clkwZTVDRml6ZTdmbzQ2ZzZDWWJoc2dJR0FrTEJIZ2MxVUtXcXViT0hwbURJUzkzSEszRjRVV3RFbFBmZGRiMGNCc1UxcWJwQVVMZUdRbnVER1o3NXVlYkZSdHNOQXZGdHUwWHltUjdCNmFfcDlUdWhWWXpSUkJaT0k1N2w0azNUY2xWWmNLRGh4T0Q0SXRPWkI3X0VUaXU5ck5UOWlvMmhJMzlCS0pqR2FOdQ?oc=5",
-          "time": "2026-08-05 18:27:31",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "《風的足跡》集章活動開跑 宜蘭轉運站公共藝術邀您走進幾米故事",
-          "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxNdUlBSE5hcGJnVFE3dFFFQ2UwdHNGTHN0SDIxbDhrVVlxXzYyQTVTLWhkSzdPdmZfZTdtTTJndFZ6QWs0ZWtjZG81UmphNFpoRUhkclpoaUliTl9FZzJZbVhFN1pvZF92eUxOLV9uZTcwY1BqZnozaXplb3V5WnR1WTZ1YXJPYmtZTXlTTnBSb0RkMi1fSmFnc0FfUzRkYks5WXFMRVJYQkliVWtNM2RVZlFMQ2MzWG5aUlhqeWw0a2xKNkxvTmUxdlEtTG0yN1JIQ0k0dnpZZWlHRmZDVFQzZ29ERWp6RjJhTmNjbHBRRlBDY0xhN0EwLTZ6cGZWY05adjBVMFpFTFZEcXdxcy0wZTRDVGo3WS14RWJ6a0pjN2FQSXQyWE9DR3EzZ3IxNHcwenpQYmhXRGl4UUNFMXdPZnhIajhkVzQzNjl6M1hpQ2dLMTlBNmtRXzZENGtqckhMdUloLXRRcVVGbkRLbDVUakdoVlZtRFFERW5WbHpJc2VKeDlBRy1JWWNidEI5OFJGdkRoNVFyYUNDQQ?oc=5",
-          "time": "2026-08-05 18:21:09",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -5187,6 +5068,545 @@
       "comments": []
     },
     {
+      "title": "新北地方動態",
+      "city": "新北",
+      "place": "新北市政府",
+      "level": "red",
+      "news_count": 75,
+      "comment_count": 0,
+      "negativity_pct": 8,
+      "is_urgent": false,
+      "urgency_score": 93,
+      "news_articles": [
+        {
+          "title": "賴清德總統6日前往新北八里視導漢光42號演習，實地了解八里守備區部隊執行戰力防護、兵力保存及戰場應變作為，並慰勉參演官兵辛勞。",
+          "url": "https://udn.com/news/story/10930/9675232?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 17:22:52",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "2026.08.06 17:15 割頸案新進展！ 新北教育局依法公開「楊承勳」姓名",
+          "url": "https://www.mnews.tw/story/20260806sot1706001",
+          "time": "2026-08-06 17:22:52",
+          "publisher": "鏡新聞",
+          "severity": null
+        },
+        {
+          "title": "只有崔始源能停！本尊好奇找上門親問：停車可以嗎 新北店員粉樂壞",
+          "url": "https://www.mnews.tw/story/20260806nm033",
+          "time": "2026-08-06 17:22:52",
+          "publisher": "鏡新聞",
+          "severity": null
+        },
+        {
+          "title": "經費增加完訓率卻降低 黃淑君批新北校園性平調查人力不足",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530762",
+          "time": "2026-08-06 17:09:32",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北市第15屆婦女大學成果展 女子拾光 光彩SHINE耀 展現女性活力",
+          "url": "https://more-news.tw/686695/",
+          "time": "2026-08-06 16:38:26",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "新北預售屋餘屋破1.8萬戶 淡水3507戶賣壓最重五股土城去化衝破8成",
+          "url": "https://news.nextapple.com/property/20260806/EB903415F29F34CAD6EA71EB5C4AFB33",
+          "time": "2026-08-06 16:30:00",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "國軍漢光42號實兵演習今天進入第2天，北部區域除聚焦台北、八里作戰分區一帶的演練外，空軍愛國者飛彈發射車組、天弓飛彈發射...",
+          "url": "https://udn.com/news/story/10930/9674843?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 15:47:09",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "總統賴清德今天前往新北八里視導漢光42號演習，他登上八里艦聽取海巡艤裝裝備介紹及濱海打擊場景說明，並實地視導飛彈槽，了解...",
+          "url": "https://udn.com/news/story/10930/9674841?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 15:47:09",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "新北割頸案近3年！受害少年姓名解禁公開 父心碎發聲",
+          "url": "https://news.ebc.net.tw/news/society/564982",
+          "time": "2026-08-06 15:39:00",
+          "publisher": "東森新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北技職升學成效佳 四技二專登記分發傳捷報",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%8A%80%E8%81%B7%E5%8D%87%E5%AD%B8%E6%88%90%E6%95%88%E4%BD%B3-%E5%9B%9B%E6%8A%80%E4%BA%8C%E5%B0%88%E7%99%BB%E8%A8%98%E5%88%86%E7%99%BC%E5%82%B3%E6%8D%B7%E5%A0%B1-073342581.html",
+          "time": "2026-08-06 15:33:42",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北校園割頸案亡者姓名「楊承勳」解禁 用於紀念、校安教育",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530696",
+          "time": "2026-08-06 15:18:23",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北住都發布永續報告書 首次導入SROI算社會影響力",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BD%8F%E9%83%BD%E7%99%BC%E5%B8%83%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8-%E9%A6%96%E6%AC%A1%E5%B0%8E%E5%85%A5sroi%E7%AE%97%E7%A4%BE%E6%9C%83%E5%BD%B1%E9%9F%BF%E5%8A%9B-071608929.html",
+          "time": "2026-08-06 15:16:08",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "漢光42》弓三飛彈北市機動防空部署 雙溪遊艇碼頭丶河濱公園現蹤",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5530517",
+          "time": "2026-08-06 15:05:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "AI掀職場變革 新北青年局支持「跨世代來發聲！理想職場提案會」助青年跨越世代溝通挑戰",
+          "url": "https://www.cdns.com.tw/articles/1440439",
+          "time": "2026-08-06 14:41:55",
+          "publisher": "中華日報",
+          "severity": null
+        },
+        {
+          "title": "新北行動治理 侯友宜督導基層建設 推動瑞芳礦業文化保存 打造山海觀光新品牌",
+          "url": "https://www.cdns.com.tw/articles/1440436",
+          "time": "2026-08-06 14:39:23",
+          "publisher": "中華日報",
+          "severity": null
+        },
+        {
+          "title": "新北榮服處防詐宣導 榮民提高警覺",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%A6%AE%E6%9C%8D%E8%99%95%E9%98%B2%E8%A9%90%E5%AE%A3%E5%B0%8E-%E6%A6%AE%E6%B0%91%E6%8F%90%E9%AB%98%E8%AD%A6%E8%A6%BA-063400543.html",
+          "time": "2026-08-06 14:34:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "8/7台北、新北、雲林12縣市停水！最長10小時沒水 影響範圍出爐 | 天氣預報 | 生活",
+          "url": "https://www.nownews.com/news/6863576",
+          "time": "2026-08-06 14:11:48",
+          "publisher": "NOWnews今日新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "2026選戰逼近，民進黨新北市長參選人蘇巧慧今天公布社群影片，鶯歌在地的「新旺集瓷」品牌總監吳佳樺獻聲力挺蘇巧慧，感謝蘇巧慧這十年來對文化產業的幫忙，讓他們在遇到品牌發展瓶頸時，得到輔導資源的挹注，讓品牌能繼續向前走。",
+          "url": "https://udn.com/news/story/124652/9674573?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 14:11:40",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "社宅、都更不只算成本！新北首用SROI評估社會效益 社宅入住率達95%",
+          "url": "https://tw.stock.yahoo.com/news/%E7%A4%BE%E5%AE%85%E3%80%81%E9%83%BD%E6%9B%B4%E4%B8%8D%E5%8F%AA%E7%AE%97%E6%88%90%E6%9C%AC%EF%BC%81%E6%96%B0%E5%8C%97%E9%A6%96%E7%94%A8sroi%E8%A9%95%E4%BC%B0%E7%A4%BE%E6%9C%83%E6%95%88%E7%9B%8A-%E7%A4%BE%E5%AE%85%E5%85%A5%E4%BD%8F%E7%8E%87%E9%81%9495-055710968.html",
+          "time": "2026-08-06 13:57:10",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北校園割頸案近3年 受害學生「楊承勳」姓名正式解禁",
+          "url": "https://news.nextapple.com/local/20260806/85600E3D98B7744B8979DA943F279033",
+          "time": "2026-08-06 13:44:59",
+          "publisher": "壹蘋新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "15年來近6萬名女性參與！新北婦女大學成果展 秀歌舞才藝展活力",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530457",
+          "time": "2026-08-06 13:40:33",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "國防海巡高層全到齊！賴清德親登八里艦 視導漢光「台北港防衛戰」",
+          "url": "https://tw.news.yahoo.com/%E5%9C%8B%E9%98%B2%E6%B5%B7%E5%B7%A1%E9%AB%98%E5%B1%A4%E5%85%A8%E5%88%B0%E9%BD%8A-%E8%B3%B4%E6%B8%85%E5%BE%B7%E8%A6%AA%E7%99%BB%E5%85%AB%E9%87%8C%E8%89%A6-%E8%A6%96%E5%B0%8E%E6%BC%A2%E5%85%89-%E5%8F%B0%E5%8C%97%E6%B8%AF%E9%98%B2%E8%A1%9B%E6%88%B0-053700154.html",
+          "time": "2026-08-06 13:37:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安光環帶不動李四川！顏蔚慈：兩人形象完全搭不上，外溢新北很困難",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41TmNwLVZzazlBMzRpNXBxZXNnRHVpRVY5Sy1MZ0lPOHFxUEZBTkE5Z2IzMDRPckFob1Fvb3NLdXF2Q3Z6dXlGRURFYl83QVh1Tmc?oc=5",
+          "time": "2026-08-06 13:27:42",
+          "publisher": "Google News→放言Fount Media",
+          "severity": "yellow"
+        },
+        {
+          "title": "今天是關聖帝君聖誕，國民黨新北市長參選人李四川一早到新莊武聖廟參拜，透露自己辦公室內也供奉著一尊關聖帝君聖像，是市長侯友宜市長傳承給他。侯友宜說，帶著關公的精神，「我祝福我的兄弟能夠一切順利，為人民努力做事，加油。」",
+          "url": "https://udn.com/news/story/124652/9674387?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 12:43:00",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "獲侯友宜傳承勝選關公聖像 李四川：秉持祂的忠義為新北做事",
+          "url": "https://www.ettoday.net/news/20260806/3214464.htm",
+          "time": "2026-08-06 12:43:00",
+          "publisher": "ETtoday",
+          "severity": null
+        },
+        {
+          "title": "新北人妻曬內褲被沾「嘉明」！竟是老公爺爺帶回房磨蹭 氣炸提告",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BA%BA%E5%A6%BB%E6%9B%AC%E5%85%A7%E8%A4%B2%E8%A2%AB%E6%B2%BE-%E5%98%89%E6%98%8E-%E7%AB%9F%E6%98%AF%E8%80%81%E5%85%AC%E7%88%BA%E7%88%BA%E5%B8%B6%E5%9B%9E%E6%88%BF%E7%A3%A8%E8%B9%AD-%E6%B0%A3%E7%82%B8%E6%8F%90%E5%91%8A-042300146.html",
+          "time": "2026-08-06 12:23:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北議員山田摩衣秘書遭恐嚇 嫌犯涉毒品、詐欺通緝",
+          "url": "https://taronews.tw/2026/08/06/1205729/",
+          "time": "2026-08-06 12:18:50",
+          "publisher": "芋傳媒",
+          "severity": "yellow"
+        },
+        {
+          "title": "秘書遭持刀恐嚇 山田摩衣籲新北市府正視治安毒品問題",
+          "url": "https://tw.news.yahoo.com/%E7%A7%98%E6%9B%B8%E9%81%AD%E6%8C%81%E5%88%80%E6%81%90%E5%9A%87-%E5%B1%B1%E7%94%B0%E6%91%A9%E8%A1%A3%E7%B1%B2%E6%96%B0%E5%8C%97%E5%B8%82%E5%BA%9C%E6%AD%A3%E8%A6%96%E6%B2%BB%E5%AE%89%E6%AF%92%E5%93%81%E5%95%8F%E9%A1%8C-041454588.html",
+          "time": "2026-08-06 12:14:54",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "秘書在服務處旁遭亮刀恐嚇 山田摩衣：希望新北市府更重視治安",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5530344",
+          "time": "2026-08-06 12:00:09",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北推出漢光演習因應措施 交通局：淡江大橋、光復橋、市道106線將進行管制",
+          "url": "https://n.yam.com/Article/20260806982421",
+          "time": "2026-08-06 12:00:00",
+          "publisher": "蕃新聞→大成報",
+          "severity": null
+        },
+        {
+          "title": "新北升學再創高峰 四技二專登記分發錄取率達94％",
+          "url": "https://n.yam.com/Article/20260806976556",
+          "time": "2026-08-06 12:00:00",
+          "publisher": "蕃新聞→大成報",
+          "severity": null
+        },
+        {
+          "title": "李四川臉書曝侯友宜傳承關公像 宣示承擔責任接棒新北",
+          "url": "https://www.cdns.com.tw/articles/1440393",
+          "time": "2026-08-06 11:31:52",
+          "publisher": "中華日報",
+          "severity": "yellow"
+        },
+        {
+          "title": "今天是關聖帝君聖誕，國、民兩黨新北市長參選人都到市定古蹟新莊武聖廟參加祭典，2人沒有太多交流只有握手致意，蘇巧慧提及新莊地區未來發展願景，李四川則在臉書說了一段傳承市長侯友宜的關聖帝君雕像故事。",
+          "url": "https://udn.com/news/story/124652/9674051?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 11:23:51",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "民進黨新北市長參選人蘇巧慧、國民黨新北市長參選人李四川今天同台出席新莊武聖廟關聖帝君聖誕秋祭三獻禮，兩人相互握手致意，並各自帶領黨籍市議員參選人參香祈福。",
+          "url": "https://udn.com/news/story/124652/9674040?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 11:23:51",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "守護山海與人心 靈鷲山無生道場、聖山寺獲新北表揚",
+          "url": "https://www.chinatimes.com/realtimenews/20260806001863-260421",
+          "time": "2026-08-06 11:23:49",
+          "publisher": "中時新聞網",
+          "severity": null
+        },
+        {
+          "title": "新北市長選戰／關聖帝君聖誕 李四川、蘇巧慧同赴武聖廟參香拚文化政見",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E6%88%B0-%E9%97%9C%E8%81%96%E5%B8%9D%E5%90%9B%E8%81%96%E8%AA%95-%E6%9D%8E%E5%9B%9B%E5%B7%9D-%E8%98%87%E5%B7%A7%E6%85%A7%E5%90%8C%E8%B5%B4%E6%AD%A6%E8%81%96%E5%BB%9F%E5%8F%83%E9%A6%99%E6%8B%9A%E6%96%87%E5%8C%96%E6%94%BF%E8%A6%8B-030819247.html",
+          "time": "2026-08-06 11:08:19",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北人妻黑內褲曬陽台竟遭惡意噴精掛回！怒調監視器竟是老公爺爺所為",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BA%BA%E5%A6%BB%E9%BB%91%E5%85%A7%E8%A4%B2%E6%9B%AC%E9%99%BD%E5%8F%B0%E7%AB%9F%E9%81%AD%E6%83%A1%E6%84%8F%E5%99%B4%E7%B2%BE%E6%8E%9B%E5%9B%9E-%E6%80%92%E8%AA%BF%E7%9B%A3%E8%A6%96%E5%99%A8%E7%AB%9F%E6%98%AF%E8%80%81%E5%85%AC%E7%88%BA%E7%88%BA%E6%89%80%E7%82%BA-025400380.html",
+          "time": "2026-08-06 10:54:00",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台北板橋馥華艾美酒店全新開幕 感官藝術策展打造旅居新風格",
+          "url": "https://n.yam.com/Article/20260806920434",
+          "time": "2026-08-06 10:10:53",
+          "publisher": "蕃新聞→旅奇傳媒",
+          "severity": null
+        },
+        {
+          "title": "今天是關聖帝君聖誕，國民黨新北市長參選人李四川一早到新莊武聖廟參拜，他指關聖帝君沉靜莊嚴，默默照看眾生「重忠義，守然諾」，也透露自己辦公室內也供奉著一尊關聖帝君聖像，且那尊聖像是侯友宜市長傳承給他，未來會秉持關聖帝君的忠義、堅毅、守信的精神，全力以赴，接下侯市長這一棒。",
+          "url": "https://udn.com/news/story/124652/9673975?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-06 10:10:40",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "新北男遊新竹突心跳停止 「生命之鏈」接力搶命成功",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5530201",
+          "time": "2026-08-06 09:50:25",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北男遊新竹突心跳停止「生命之鏈」接力搶命成功- 社會",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jMkpzOFlmT3o0dDY0YkJ1MlJ1a1g5V29rY3EwckNNWE1BQ05ERkV4b1hzVy1penhjMVJFenNfWkRKOWFXcWpUaU02OXdxdjBna2FURzJjaWRHaWE5WnRTd0tJRFRCYzlE?oc=5",
+          "time": "2026-08-06 09:50:25",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "央行政策降溫預售買氣，新北預售待售餘屋突破1.8萬戶",
+          "url": "https://tw.stock.yahoo.com/news/%E5%A4%AE%E8%A1%8C%E6%94%BF%E7%AD%96%E9%99%8D%E6%BA%AB%E9%A0%90%E5%94%AE%E8%B2%B7%E6%B0%A3-%E6%96%B0%E5%8C%97%E9%A0%90%E5%94%AE%E5%BE%85%E5%94%AE%E9%A4%98%E5%B1%8B%E7%AA%81%E7%A0%B41-8%E8%90%AC%E6%88%B6-014525099.html",
+          "time": "2026-08-06 09:45:25",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "淡水賣壓最大！新北待售餘屋 突破1.8萬戶",
+          "url": "https://www.ctee.com.tw/news/20260806700098-430602",
+          "time": "2026-08-06 08:56:52",
+          "publisher": "工商時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "熱血防詐 新北攜五大公會打造公益與產權安全雙防線",
+          "url": "https://tw.news.yahoo.com/%E7%86%B1%E8%A1%80%E9%98%B2%E8%A9%90-%E6%96%B0%E5%8C%97%E6%94%9C%E4%BA%94%E5%A4%A7%E5%85%AC%E6%9C%83%E6%89%93%E9%80%A0%E5%85%AC%E7%9B%8A%E8%88%87%E7%94%A2%E6%AC%8A%E5%AE%89%E5%85%A8%E9%9B%99%E9%98%B2%E7%B7%9A-073545406.html",
+          "time": "2026-08-06 07:35:45",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "迎戰AI職場新局 新北推跨世代對話 建立勞資雙向溝通",
+          "url": "https://tw.news.yahoo.com/%E8%BF%8E%E6%88%B0ai%E8%81%B7%E5%A0%B4%E6%96%B0%E5%B1%80-%E6%96%B0%E5%8C%97%E6%8E%A8%E8%B7%A8%E4%B8%96%E4%BB%A3%E5%B0%8D%E8%A9%B1-%E5%BB%BA%E7%AB%8B%E5%8B%9E%E8%B3%87%E9%9B%99%E5%90%91%E6%BA%9D%E9%80%9A-073231366.html",
+          "time": "2026-08-06 07:32:31",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北觀旅局邀賞九份紅燈籠祭 最大亮點跨界合作「霹靂布袋戲」",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E8%A7%80%E6%97%85%E5%B1%80%E9%82%80%E8%B3%9E%E4%B9%9D%E4%BB%BD%E7%B4%85%E7%87%88%E7%B1%A0%E7%A5%AD-%E6%9C%80%E5%A4%A7%E4%BA%AE%E9%BB%9E%E8%B7%A8%E7%95%8C%E5%90%88%E4%BD%9C-%E9%9C%B9%E9%9D%82%E5%B8%83%E8%A2%8B%E6%88%B2-071924874.html",
+          "time": "2026-08-06 07:19:24",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "家戶數比板橋少6萬戶 新北「這區」預售交易量反超車 關鍵原因曝光",
+          "url": "https://estate.ltn.com.tw/article/28581",
+          "time": "2026-08-06 07:16:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "中颱白海豚逼近 侯友宜：新北高標準防範全力防災",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E9%A2%B1%E7%99%BD%E6%B5%B7%E8%B1%9A%E9%80%BC%E8%BF%91-%E4%BE%AF%E5%8F%8B%E5%AE%9C-%E6%96%B0%E5%8C%97%E9%AB%98%E6%A8%99%E6%BA%96%E9%98%B2%E7%AF%84%E5%85%A8%E5%8A%9B%E9%98%B2%E7%81%BD-070140831.html",
+          "time": "2026-08-06 07:01:40",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "白海豚逼近新北超前部署 侯：防颱高標準整備守護市民",
+          "url": "https://tw.news.yahoo.com/%E7%99%BD%E6%B5%B7%E8%B1%9A%E9%80%BC%E8%BF%91%E6%96%B0%E5%8C%97%E8%B6%85%E5%89%8D%E9%83%A8%E7%BD%B2-%E4%BE%AF-%E9%98%B2%E9%A2%B1%E9%AB%98%E6%A8%99%E6%BA%96%E6%95%B4%E5%82%99%E5%AE%88%E8%AD%B7%E5%B8%82%E6%B0%91-060143072.html",
+          "time": "2026-08-06 06:01:43",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "生日前夕收可疑簡訊 新北八旬榮民警覺求證成功避詐",
+          "url": "https://tw.news.yahoo.com/%E7%94%9F%E6%97%A5%E5%89%8D%E5%A4%95%E6%94%B6%E5%8F%AF%E7%96%91%E7%B0%A1%E8%A8%8A-%E6%96%B0%E5%8C%97%E5%85%AB%E6%97%AC%E6%A6%AE%E6%B0%91%E8%AD%A6%E8%A6%BA%E6%B1%82%E8%AD%89%E6%88%90%E5%8A%9F%E9%81%BF%E8%A9%90-054346179.html",
+          "time": "2026-08-06 05:43:46",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "嘉義排路華德福實小 吸引新北學童就讀",
+          "url": "https://news.ltn.com.tw/news/ChiayiCounty/paper/1765596",
+          "time": "2026-08-06 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "新北「鮮奶幸福週」3成未領 議員促延長期限",
+          "url": "https://news.ltn.com.tw/news/NewTaipei/paper/1765571",
+          "time": "2026-08-06 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "嘉義排路華德福實小吸引新北學童就讀- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jdktqajJycVhSQ3lvSTlYaktOM2JYSlRkbVh0czdtUWxPMTc0UjNBbDhmTm9IM0dWVlU3LUNqT0dMY1NyZmhVcW1zZjZRUG5mOGJMeThlcldZdnc?oc=5",
+          "time": "2026-08-06 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "嘉義排路華德福實小吸引新北學童就讀- 嘉義縣",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRWJpUlB0QWdZdVE2UU03eXlEYm1sVmVsVTF6SE1pLUQ1YnBicFpRcDNpa3RrZy1xV3hPYXpiRHFpWkowRWR2Wk1lc0Y1UkV0QmNNQ0JQUlFNNUkzcC1JNnA4QjRyZw?oc=5",
+          "time": "2026-08-06 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "快訊／新北三重工地驚傳墜樓意外！水電工電梯井內4樓墜落2樓重傷昏迷",
+          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E6%96%B0%E5%8C%97%E4%B8%89%E9%87%8D%E5%B7%A5%E5%9C%B0%E9%A9%9A%E5%82%B3%E5%A2%9C%E6%A8%93%E6%84%8F%E5%A4%96-%E6%B0%B4%E9%9B%BB%E5%B7%A5%E9%9B%BB%E6%A2%AF%E4%BA%95%E5%85%A74%E6%A8%93%E5%A2%9C%E8%90%BD2%E6%A8%93%E9%87%8D%E5%82%B7%E6%98%8F%E8%BF%B7-040600698.html",
+          "time": "2026-08-06 04:06:00",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "新北議員服務處秘書遭亮刀恐嚇 查獲嫌為通緝犯",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E8%AD%B0%E5%93%A1%E6%9C%8D%E5%8B%99%E8%99%95%E7%A7%98%E6%9B%B8%E9%81%AD%E4%BA%AE%E5%88%80%E6%81%90%E5%9A%87-%E6%9F%A5%E7%8D%B2%E5%AB%8C%E7%82%BA%E9%80%9A%E7%B7%9D%E7%8A%AF-040456571.html",
+          "time": "2026-08-06 04:04:56",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北校園廣告人10周年 影像講座再升級",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%A0%A1%E5%9C%92%E5%BB%A3%E5%91%8A%E4%BA%BA10%E5%91%A8%E5%B9%B4-%E5%BD%B1%E5%83%8F%E8%AC%9B%E5%BA%A7%E5%86%8D%E5%8D%87%E7%B4%9A-192542101.html",
+          "time": "2026-08-06 03:25:42",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "陪爸爸一起開鍋 井賀鍋物北上插旗新北 推父親節優惠",
+          "url": "https://n.yam.com/Article/20260806362757",
+          "time": "2026-08-06 03:03:42",
+          "publisher": "蕃新聞→理財周刊",
+          "severity": null
+        },
+        {
+          "title": "新北預售待售餘屋破1.8萬戶 淡水待售餘屋破3千戶居冠",
+          "url": "https://n.yam.com/Article/20260806435333",
+          "time": "2026-08-06 03:03:42",
+          "publisher": "蕃新聞→理財周刊",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北捷運8年4線通車 日均運量飆升13倍",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%8D%B7%E9%81%8B8%E5%B9%B44%E7%B7%9A%E9%80%9A%E8%BB%8A-%E6%97%A5%E5%9D%87%E9%81%8B%E9%87%8F%E9%A3%86%E5%8D%8713%E5%80%8D-185321125.html",
+          "time": "2026-08-06 02:53:21",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "影/新北市議員山田摩衣服務處旁「驚見男子揮刀」！雙案通緝犯遭逮",
+          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E6%96%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1%E5%B1%B1%E7%94%B0%E6%91%A9%E8%A1%A3%E6%9C%8D%E5%8B%99%E8%99%95%E6%97%81-%E9%A9%9A%E8%A6%8B%E7%94%B7%E5%AD%90%E6%8F%AE%E5%88%80-%E9%9B%99%E6%A1%88%E9%80%9A%E7%B7%9D%E7%8A%AF%E9%81%AD%E9%80%AE-022221279.html",
+          "time": "2026-08-06 02:22:21",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "張芳同報社檢字排版工作拉拔7兒女 曾為醫治小兒麻痺女兒千里奔波 獲頒新北市模範父親表揚",
+          "url": "https://www.thehubnews.net/archives/651767",
+          "time": "2026-08-05 23:29:39",
+          "publisher": "新頭條",
+          "severity": null
+        },
+        {
+          "title": "新北市推動四環八線捷運路網 串聯基北北桃千萬人口通勤需求",
+          "url": "https://www.thehubnews.net/archives/651778",
+          "time": "2026-08-05 23:01:41",
+          "publisher": "新頭條",
+          "severity": null
+        },
+        {
+          "title": "落實行人路權與安全通行 新北市府團隊榮獲馬路好行14項大獎",
+          "url": "https://www.thehubnews.net/archives/651764",
+          "time": "2026-08-05 22:48:49",
+          "publisher": "新頭條",
+          "severity": null
+        },
+        {
+          "title": "火鍋熱戰！南霸天「井賀」插旗新北 鎖定學生族群",
+          "url": "https://tw.news.yahoo.com/%E7%81%AB%E9%8D%8B%E7%86%B1%E6%88%B0-%E5%8D%97%E9%9C%B8%E5%A4%A9-%E4%BA%95%E8%B3%80-%E6%8F%92%E6%97%97%E6%96%B0%E5%8C%97-%E9%8E%96%E5%AE%9A%E5%AD%B8%E7%94%9F%E6%97%8F%E7%BE%A4-144800823.html",
+          "time": "2026-08-05 22:48:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "國民黨新北市長參選人李四川今天走訪樹林養蜂場及鶯歌宮廟、農會活動，主打農業行銷、交通建設；民進黨市長參選人蘇巧慧則提出成...",
+          "url": "https://udn.com/news/story/124652/9673167?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-05 22:01:25",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "犬隻留置頂樓露台致墜落死亡 飼主遭新北動保處開罰1.5萬元",
+          "url": "https://news.pts.org.tw/article/821017",
+          "time": "2026-08-05 20:56:26",
+          "publisher": "公視 即時",
+          "severity": "yellow"
+        },
+        {
+          "title": "犬隻墜樓亡 飼主遭新北動保罰1.5萬元",
+          "url": "https://newtalk.tw/news/view/2026-08-05/1051598",
+          "time": "2026-08-05 20:55:04",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "最佳管理奪金 新北中和安邦社宅獲國家卓越建設獎",
+          "url": "https://cnews.com.tw/204260805a10/",
+          "time": "2026-08-05 20:24:44",
+          "publisher": "匯流新聞網",
+          "severity": null
+        },
+        {
+          "title": "新北樹林犬隻墜樓亡 飼主未做好安全防護遭罰1.5萬元",
+          "url": "https://www.cna.com.tw/news/asoc/202608050323.aspx",
+          "time": "2026-08-05 20:18:05",
+          "publisher": "中央社",
+          "severity": "yellow"
+        },
+        {
+          "title": "新北李蘇對決 四大關鍵變數",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%9D%8E%E8%98%87%E5%B0%8D%E6%B1%BA-%E5%9B%9B%E5%A4%A7%E9%97%9C%E9%8D%B5%E8%AE%8A%E6%95%B8-201000508.html",
+          "time": "2026-08-05 20:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北 深入綠票倉 川伯稱29區皆本命區",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97-%E6%B7%B1%E5%85%A5%E7%B6%A0%E7%A5%A8%E5%80%89-%E5%B7%9D%E4%BC%AF%E7%A8%B129%E5%8D%80%E7%9A%86%E6%9C%AC%E5%91%BD%E5%8D%80-201000937.html",
+          "time": "2026-08-05 20:10:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北40校長AI共創藍圖 智慧領導驅動校園創新",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%9740%E6%A0%A1%E9%95%B7ai%E5%85%B1%E5%89%B5%E8%97%8D%E5%9C%96-%E6%99%BA%E6%85%A7%E9%A0%98%E5%B0%8E%E9%A9%85%E5%8B%95%E6%A0%A1%E5%9C%92%E5%89%B5%E6%96%B0-113505647.html",
+          "time": "2026-08-05 19:35:05",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "新北推銀髮電競、原民AI課程 玩出多元新面向 臺灣原創遊戲同樂會8月15日登場",
+          "url": "https://www.storm.mg/article/11154378",
+          "time": "2026-08-05 19:24:00",
+          "publisher": "風傳媒",
+          "severity": null
+        },
+        {
+          "title": "「新北校園廣告人」10周年 影像講座再升級 特邀學長姐傳承經驗",
+          "url": "https://www.storm.mg/article/11154377",
+          "time": "2026-08-05 19:07:00",
+          "publisher": "風傳媒",
+          "severity": null
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "花蓮地方動態",
       "city": "花蓮",
       "place": "花蓮縣政府",
@@ -5720,552 +6140,6 @@
           "url": "https://www.youtube.com/watch?v=rjFCRL8mH_U",
           "time": "2026-08-05 18:38:55",
           "publisher": null,
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "新北地方動態",
-      "city": "新北",
-      "place": "新北市政府",
-      "level": "red",
-      "news_count": 76,
-      "comment_count": 0,
-      "negativity_pct": 8,
-      "is_urgent": false,
-      "urgency_score": 94,
-      "news_articles": [
-        {
-          "title": "賴清德總統6日前往新北八里視導漢光42號演習，實地了解八里守備區部隊執行戰力防護、兵力保存及戰場應變作為，並慰勉參演官兵辛勞。",
-          "url": "https://udn.com/news/story/10930/9675232?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 17:22:52",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "2026.08.06 17:15 割頸案新進展！ 新北教育局依法公開「楊承勳」姓名",
-          "url": "https://www.mnews.tw/story/20260806sot1706001",
-          "time": "2026-08-06 17:22:52",
-          "publisher": "鏡新聞",
-          "severity": null
-        },
-        {
-          "title": "只有崔始源能停！本尊好奇找上門親問：停車可以嗎 新北店員粉樂壞",
-          "url": "https://www.mnews.tw/story/20260806nm033",
-          "time": "2026-08-06 17:22:52",
-          "publisher": "鏡新聞",
-          "severity": null
-        },
-        {
-          "title": "經費增加完訓率卻降低 黃淑君批新北校園性平調查人力不足",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530762",
-          "time": "2026-08-06 17:09:32",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北市第15屆婦女大學成果展 女子拾光 光彩SHINE耀 展現女性活力",
-          "url": "https://more-news.tw/686695/",
-          "time": "2026-08-06 16:38:26",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "新北預售屋餘屋破1.8萬戶 淡水3507戶賣壓最重五股土城去化衝破8成",
-          "url": "https://news.nextapple.com/property/20260806/EB903415F29F34CAD6EA71EB5C4AFB33",
-          "time": "2026-08-06 16:30:00",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "國軍漢光42號實兵演習今天進入第2天，北部區域除聚焦台北、八里作戰分區一帶的演練外，空軍愛國者飛彈發射車組、天弓飛彈發射...",
-          "url": "https://udn.com/news/story/10930/9674843?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 15:47:09",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "總統賴清德今天前往新北八里視導漢光42號演習，他登上八里艦聽取海巡艤裝裝備介紹及濱海打擊場景說明，並實地視導飛彈槽，了解...",
-          "url": "https://udn.com/news/story/10930/9674841?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 15:47:09",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "新北割頸案近3年！受害少年姓名解禁公開 父心碎發聲",
-          "url": "https://news.ebc.net.tw/news/society/564982",
-          "time": "2026-08-06 15:39:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北技職升學成效佳 四技二專登記分發傳捷報",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%8A%80%E8%81%B7%E5%8D%87%E5%AD%B8%E6%88%90%E6%95%88%E4%BD%B3-%E5%9B%9B%E6%8A%80%E4%BA%8C%E5%B0%88%E7%99%BB%E8%A8%98%E5%88%86%E7%99%BC%E5%82%B3%E6%8D%B7%E5%A0%B1-073342581.html",
-          "time": "2026-08-06 15:33:42",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北校園割頸案亡者姓名「楊承勳」解禁 用於紀念、校安教育",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530696",
-          "time": "2026-08-06 15:18:23",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北住都發布永續報告書 首次導入SROI算社會影響力",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BD%8F%E9%83%BD%E7%99%BC%E5%B8%83%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8-%E9%A6%96%E6%AC%A1%E5%B0%8E%E5%85%A5sroi%E7%AE%97%E7%A4%BE%E6%9C%83%E5%BD%B1%E9%9F%BF%E5%8A%9B-071608929.html",
-          "time": "2026-08-06 15:16:08",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "漢光42》弓三飛彈北市機動防空部署 雙溪遊艇碼頭丶河濱公園現蹤",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5530517",
-          "time": "2026-08-06 15:05:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "AI掀職場變革 新北青年局支持「跨世代來發聲！理想職場提案會」助青年跨越世代溝通挑戰",
-          "url": "https://www.cdns.com.tw/articles/1440439",
-          "time": "2026-08-06 14:41:55",
-          "publisher": "中華日報",
-          "severity": null
-        },
-        {
-          "title": "新北行動治理 侯友宜督導基層建設 推動瑞芳礦業文化保存 打造山海觀光新品牌",
-          "url": "https://www.cdns.com.tw/articles/1440436",
-          "time": "2026-08-06 14:39:23",
-          "publisher": "中華日報",
-          "severity": null
-        },
-        {
-          "title": "新北榮服處防詐宣導 榮民提高警覺",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%A6%AE%E6%9C%8D%E8%99%95%E9%98%B2%E8%A9%90%E5%AE%A3%E5%B0%8E-%E6%A6%AE%E6%B0%91%E6%8F%90%E9%AB%98%E8%AD%A6%E8%A6%BA-063400543.html",
-          "time": "2026-08-06 14:34:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "8/7台北、新北、雲林12縣市停水！最長10小時沒水 影響範圍出爐 | 天氣預報 | 生活",
-          "url": "https://www.nownews.com/news/6863576",
-          "time": "2026-08-06 14:11:48",
-          "publisher": "NOWnews今日新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "2026選戰逼近，民進黨新北市長參選人蘇巧慧今天公布社群影片，鶯歌在地的「新旺集瓷」品牌總監吳佳樺獻聲力挺蘇巧慧，感謝蘇巧慧這十年來對文化產業的幫忙，讓他們在遇到品牌發展瓶頸時，得到輔導資源的挹注，讓品牌能繼續向前走。",
-          "url": "https://udn.com/news/story/124652/9674573?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 14:11:40",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "社宅、都更不只算成本！新北首用SROI評估社會效益 社宅入住率達95%",
-          "url": "https://tw.stock.yahoo.com/news/%E7%A4%BE%E5%AE%85%E3%80%81%E9%83%BD%E6%9B%B4%E4%B8%8D%E5%8F%AA%E7%AE%97%E6%88%90%E6%9C%AC%EF%BC%81%E6%96%B0%E5%8C%97%E9%A6%96%E7%94%A8sroi%E8%A9%95%E4%BC%B0%E7%A4%BE%E6%9C%83%E6%95%88%E7%9B%8A-%E7%A4%BE%E5%AE%85%E5%85%A5%E4%BD%8F%E7%8E%87%E9%81%9495-055710968.html",
-          "time": "2026-08-06 13:57:10",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北校園割頸案近3年 受害學生「楊承勳」姓名正式解禁",
-          "url": "https://news.nextapple.com/local/20260806/85600E3D98B7744B8979DA943F279033",
-          "time": "2026-08-06 13:44:59",
-          "publisher": "壹蘋新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "15年來近6萬名女性參與！新北婦女大學成果展 秀歌舞才藝展活力",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5530457",
-          "time": "2026-08-06 13:40:33",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "國防海巡高層全到齊！賴清德親登八里艦 視導漢光「台北港防衛戰」",
-          "url": "https://tw.news.yahoo.com/%E5%9C%8B%E9%98%B2%E6%B5%B7%E5%B7%A1%E9%AB%98%E5%B1%A4%E5%85%A8%E5%88%B0%E9%BD%8A-%E8%B3%B4%E6%B8%85%E5%BE%B7%E8%A6%AA%E7%99%BB%E5%85%AB%E9%87%8C%E8%89%A6-%E8%A6%96%E5%B0%8E%E6%BC%A2%E5%85%89-%E5%8F%B0%E5%8C%97%E6%B8%AF%E9%98%B2%E8%A1%9B%E6%88%B0-053700154.html",
-          "time": "2026-08-06 13:37:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安光環帶不動李四川！顏蔚慈：兩人形象完全搭不上，外溢新北很困難",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41TmNwLVZzazlBMzRpNXBxZXNnRHVpRVY5Sy1MZ0lPOHFxUEZBTkE5Z2IzMDRPckFob1Fvb3NLdXF2Q3Z6dXlGRURFYl83QVh1Tmc?oc=5",
-          "time": "2026-08-06 13:27:42",
-          "publisher": "Google News→放言Fount Media",
-          "severity": "yellow"
-        },
-        {
-          "title": "今天是關聖帝君聖誕，國民黨新北市長參選人李四川一早到新莊武聖廟參拜，透露自己辦公室內也供奉著一尊關聖帝君聖像，是市長侯友宜市長傳承給他。侯友宜說，帶著關公的精神，「我祝福我的兄弟能夠一切順利，為人民努力做事，加油。」",
-          "url": "https://udn.com/news/story/124652/9674387?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 12:43:00",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "獲侯友宜傳承勝選關公聖像 李四川：秉持祂的忠義為新北做事",
-          "url": "https://www.ettoday.net/news/20260806/3214464.htm",
-          "time": "2026-08-06 12:43:00",
-          "publisher": "ETtoday",
-          "severity": null
-        },
-        {
-          "title": "新北人妻曬內褲被沾「嘉明」！竟是老公爺爺帶回房磨蹭 氣炸提告",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BA%BA%E5%A6%BB%E6%9B%AC%E5%85%A7%E8%A4%B2%E8%A2%AB%E6%B2%BE-%E5%98%89%E6%98%8E-%E7%AB%9F%E6%98%AF%E8%80%81%E5%85%AC%E7%88%BA%E7%88%BA%E5%B8%B6%E5%9B%9E%E6%88%BF%E7%A3%A8%E8%B9%AD-%E6%B0%A3%E7%82%B8%E6%8F%90%E5%91%8A-042300146.html",
-          "time": "2026-08-06 12:23:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北議員山田摩衣秘書遭恐嚇 嫌犯涉毒品、詐欺通緝",
-          "url": "https://taronews.tw/2026/08/06/1205729/",
-          "time": "2026-08-06 12:18:50",
-          "publisher": "芋傳媒",
-          "severity": "yellow"
-        },
-        {
-          "title": "秘書遭持刀恐嚇 山田摩衣籲新北市府正視治安毒品問題",
-          "url": "https://tw.news.yahoo.com/%E7%A7%98%E6%9B%B8%E9%81%AD%E6%8C%81%E5%88%80%E6%81%90%E5%9A%87-%E5%B1%B1%E7%94%B0%E6%91%A9%E8%A1%A3%E7%B1%B2%E6%96%B0%E5%8C%97%E5%B8%82%E5%BA%9C%E6%AD%A3%E8%A6%96%E6%B2%BB%E5%AE%89%E6%AF%92%E5%93%81%E5%95%8F%E9%A1%8C-041454588.html",
-          "time": "2026-08-06 12:14:54",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "秘書在服務處旁遭亮刀恐嚇 山田摩衣：希望新北市府更重視治安",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5530344",
-          "time": "2026-08-06 12:00:09",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北推出漢光演習因應措施 交通局：淡江大橋、光復橋、市道106線將進行管制",
-          "url": "https://n.yam.com/Article/20260806982421",
-          "time": "2026-08-06 12:00:00",
-          "publisher": "蕃新聞→大成報",
-          "severity": null
-        },
-        {
-          "title": "新北升學再創高峰 四技二專登記分發錄取率達94％",
-          "url": "https://n.yam.com/Article/20260806976556",
-          "time": "2026-08-06 12:00:00",
-          "publisher": "蕃新聞→大成報",
-          "severity": null
-        },
-        {
-          "title": "李四川臉書曝侯友宜傳承關公像 宣示承擔責任接棒新北",
-          "url": "https://www.cdns.com.tw/articles/1440393",
-          "time": "2026-08-06 11:31:52",
-          "publisher": "中華日報",
-          "severity": "yellow"
-        },
-        {
-          "title": "今天是關聖帝君聖誕，國、民兩黨新北市長參選人都到市定古蹟新莊武聖廟參加祭典，2人沒有太多交流只有握手致意，蘇巧慧提及新莊地區未來發展願景，李四川則在臉書說了一段傳承市長侯友宜的關聖帝君雕像故事。",
-          "url": "https://udn.com/news/story/124652/9674051?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 11:23:51",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "民進黨新北市長參選人蘇巧慧、國民黨新北市長參選人李四川今天同台出席新莊武聖廟關聖帝君聖誕秋祭三獻禮，兩人相互握手致意，並各自帶領黨籍市議員參選人參香祈福。",
-          "url": "https://udn.com/news/story/124652/9674040?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 11:23:51",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "守護山海與人心 靈鷲山無生道場、聖山寺獲新北表揚",
-          "url": "https://www.chinatimes.com/realtimenews/20260806001863-260421",
-          "time": "2026-08-06 11:23:49",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "新北市長選戰／關聖帝君聖誕 李四川、蘇巧慧同赴武聖廟參香拚文化政見",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E6%88%B0-%E9%97%9C%E8%81%96%E5%B8%9D%E5%90%9B%E8%81%96%E8%AA%95-%E6%9D%8E%E5%9B%9B%E5%B7%9D-%E8%98%87%E5%B7%A7%E6%85%A7%E5%90%8C%E8%B5%B4%E6%AD%A6%E8%81%96%E5%BB%9F%E5%8F%83%E9%A6%99%E6%8B%9A%E6%96%87%E5%8C%96%E6%94%BF%E8%A6%8B-030819247.html",
-          "time": "2026-08-06 11:08:19",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北人妻黑內褲曬陽台竟遭惡意噴精掛回！怒調監視器竟是老公爺爺所為",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E4%BA%BA%E5%A6%BB%E9%BB%91%E5%85%A7%E8%A4%B2%E6%9B%AC%E9%99%BD%E5%8F%B0%E7%AB%9F%E9%81%AD%E6%83%A1%E6%84%8F%E5%99%B4%E7%B2%BE%E6%8E%9B%E5%9B%9E-%E6%80%92%E8%AA%BF%E7%9B%A3%E8%A6%96%E5%99%A8%E7%AB%9F%E6%98%AF%E8%80%81%E5%85%AC%E7%88%BA%E7%88%BA%E6%89%80%E7%82%BA-025400380.html",
-          "time": "2026-08-06 10:54:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台北板橋馥華艾美酒店全新開幕 感官藝術策展打造旅居新風格",
-          "url": "https://n.yam.com/Article/20260806920434",
-          "time": "2026-08-06 10:10:53",
-          "publisher": "蕃新聞→旅奇傳媒",
-          "severity": null
-        },
-        {
-          "title": "今天是關聖帝君聖誕，國民黨新北市長參選人李四川一早到新莊武聖廟參拜，他指關聖帝君沉靜莊嚴，默默照看眾生「重忠義，守然諾」，也透露自己辦公室內也供奉著一尊關聖帝君聖像，且那尊聖像是侯友宜市長傳承給他，未來會秉持關聖帝君的忠義、堅毅、守信的精神，全力以赴，接下侯市長這一棒。",
-          "url": "https://udn.com/news/story/124652/9673975?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-06 10:10:40",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "新北男遊新竹突心跳停止 「生命之鏈」接力搶命成功",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5530201",
-          "time": "2026-08-06 09:50:25",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北男遊新竹突心跳停止「生命之鏈」接力搶命成功- 社會",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jMkpzOFlmT3o0dDY0YkJ1MlJ1a1g5V29rY3EwckNNWE1BQ05ERkV4b1hzVy1penhjMVJFenNfWkRKOWFXcWpUaU02OXdxdjBna2FURzJjaWRHaWE5WnRTd0tJRFRCYzlE?oc=5",
-          "time": "2026-08-06 09:50:25",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "央行政策降溫預售買氣，新北預售待售餘屋突破1.8萬戶",
-          "url": "https://tw.stock.yahoo.com/news/%E5%A4%AE%E8%A1%8C%E6%94%BF%E7%AD%96%E9%99%8D%E6%BA%AB%E9%A0%90%E5%94%AE%E8%B2%B7%E6%B0%A3-%E6%96%B0%E5%8C%97%E9%A0%90%E5%94%AE%E5%BE%85%E5%94%AE%E9%A4%98%E5%B1%8B%E7%AA%81%E7%A0%B41-8%E8%90%AC%E6%88%B6-014525099.html",
-          "time": "2026-08-06 09:45:25",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "淡水賣壓最大！新北待售餘屋 突破1.8萬戶",
-          "url": "https://www.ctee.com.tw/news/20260806700098-430602",
-          "time": "2026-08-06 08:56:52",
-          "publisher": "工商時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "熱血防詐 新北攜五大公會打造公益與產權安全雙防線",
-          "url": "https://tw.news.yahoo.com/%E7%86%B1%E8%A1%80%E9%98%B2%E8%A9%90-%E6%96%B0%E5%8C%97%E6%94%9C%E4%BA%94%E5%A4%A7%E5%85%AC%E6%9C%83%E6%89%93%E9%80%A0%E5%85%AC%E7%9B%8A%E8%88%87%E7%94%A2%E6%AC%8A%E5%AE%89%E5%85%A8%E9%9B%99%E9%98%B2%E7%B7%9A-073545406.html",
-          "time": "2026-08-06 07:35:45",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "迎戰AI職場新局 新北推跨世代對話 建立勞資雙向溝通",
-          "url": "https://tw.news.yahoo.com/%E8%BF%8E%E6%88%B0ai%E8%81%B7%E5%A0%B4%E6%96%B0%E5%B1%80-%E6%96%B0%E5%8C%97%E6%8E%A8%E8%B7%A8%E4%B8%96%E4%BB%A3%E5%B0%8D%E8%A9%B1-%E5%BB%BA%E7%AB%8B%E5%8B%9E%E8%B3%87%E9%9B%99%E5%90%91%E6%BA%9D%E9%80%9A-073231366.html",
-          "time": "2026-08-06 07:32:31",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北觀旅局邀賞九份紅燈籠祭 最大亮點跨界合作「霹靂布袋戲」",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E8%A7%80%E6%97%85%E5%B1%80%E9%82%80%E8%B3%9E%E4%B9%9D%E4%BB%BD%E7%B4%85%E7%87%88%E7%B1%A0%E7%A5%AD-%E6%9C%80%E5%A4%A7%E4%BA%AE%E9%BB%9E%E8%B7%A8%E7%95%8C%E5%90%88%E4%BD%9C-%E9%9C%B9%E9%9D%82%E5%B8%83%E8%A2%8B%E6%88%B2-071924874.html",
-          "time": "2026-08-06 07:19:24",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "家戶數比板橋少6萬戶 新北「這區」預售交易量反超車 關鍵原因曝光",
-          "url": "https://estate.ltn.com.tw/article/28581",
-          "time": "2026-08-06 07:16:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "中颱白海豚逼近 侯友宜：新北高標準防範全力防災",
-          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E9%A2%B1%E7%99%BD%E6%B5%B7%E8%B1%9A%E9%80%BC%E8%BF%91-%E4%BE%AF%E5%8F%8B%E5%AE%9C-%E6%96%B0%E5%8C%97%E9%AB%98%E6%A8%99%E6%BA%96%E9%98%B2%E7%AF%84%E5%85%A8%E5%8A%9B%E9%98%B2%E7%81%BD-070140831.html",
-          "time": "2026-08-06 07:01:40",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "白海豚逼近新北超前部署 侯：防颱高標準整備守護市民",
-          "url": "https://tw.news.yahoo.com/%E7%99%BD%E6%B5%B7%E8%B1%9A%E9%80%BC%E8%BF%91%E6%96%B0%E5%8C%97%E8%B6%85%E5%89%8D%E9%83%A8%E7%BD%B2-%E4%BE%AF-%E9%98%B2%E9%A2%B1%E9%AB%98%E6%A8%99%E6%BA%96%E6%95%B4%E5%82%99%E5%AE%88%E8%AD%B7%E5%B8%82%E6%B0%91-060143072.html",
-          "time": "2026-08-06 06:01:43",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "生日前夕收可疑簡訊 新北八旬榮民警覺求證成功避詐",
-          "url": "https://tw.news.yahoo.com/%E7%94%9F%E6%97%A5%E5%89%8D%E5%A4%95%E6%94%B6%E5%8F%AF%E7%96%91%E7%B0%A1%E8%A8%8A-%E6%96%B0%E5%8C%97%E5%85%AB%E6%97%AC%E6%A6%AE%E6%B0%91%E8%AD%A6%E8%A6%BA%E6%B1%82%E8%AD%89%E6%88%90%E5%8A%9F%E9%81%BF%E8%A9%90-054346179.html",
-          "time": "2026-08-06 05:43:46",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "嘉義排路華德福實小 吸引新北學童就讀",
-          "url": "https://news.ltn.com.tw/news/ChiayiCounty/paper/1765596",
-          "time": "2026-08-06 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "新北「鮮奶幸福週」3成未領 議員促延長期限",
-          "url": "https://news.ltn.com.tw/news/NewTaipei/paper/1765571",
-          "time": "2026-08-06 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "嘉義排路華德福實小吸引新北學童就讀- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jdktqajJycVhSQ3lvSTlYaktOM2JYSlRkbVh0czdtUWxPMTc0UjNBbDhmTm9IM0dWVlU3LUNqT0dMY1NyZmhVcW1zZjZRUG5mOGJMeThlcldZdnc?oc=5",
-          "time": "2026-08-06 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "嘉義排路華德福實小吸引新北學童就讀- 嘉義縣",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRWJpUlB0QWdZdVE2UU03eXlEYm1sVmVsVTF6SE1pLUQ1YnBicFpRcDNpa3RrZy1xV3hPYXpiRHFpWkowRWR2Wk1lc0Y1UkV0QmNNQ0JQUlFNNUkzcC1JNnA4QjRyZw?oc=5",
-          "time": "2026-08-06 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "快訊／新北三重工地驚傳墜樓意外！水電工電梯井內4樓墜落2樓重傷昏迷",
-          "url": "https://tw.news.yahoo.com/%E5%BF%AB%E8%A8%8A-%E6%96%B0%E5%8C%97%E4%B8%89%E9%87%8D%E5%B7%A5%E5%9C%B0%E9%A9%9A%E5%82%B3%E5%A2%9C%E6%A8%93%E6%84%8F%E5%A4%96-%E6%B0%B4%E9%9B%BB%E5%B7%A5%E9%9B%BB%E6%A2%AF%E4%BA%95%E5%85%A74%E6%A8%93%E5%A2%9C%E8%90%BD2%E6%A8%93%E9%87%8D%E5%82%B7%E6%98%8F%E8%BF%B7-040600698.html",
-          "time": "2026-08-06 04:06:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "新北議員服務處秘書遭亮刀恐嚇 查獲嫌為通緝犯",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E8%AD%B0%E5%93%A1%E6%9C%8D%E5%8B%99%E8%99%95%E7%A7%98%E6%9B%B8%E9%81%AD%E4%BA%AE%E5%88%80%E6%81%90%E5%9A%87-%E6%9F%A5%E7%8D%B2%E5%AB%8C%E7%82%BA%E9%80%9A%E7%B7%9D%E7%8A%AF-040456571.html",
-          "time": "2026-08-06 04:04:56",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北校園廣告人10周年 影像講座再升級",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%A0%A1%E5%9C%92%E5%BB%A3%E5%91%8A%E4%BA%BA10%E5%91%A8%E5%B9%B4-%E5%BD%B1%E5%83%8F%E8%AC%9B%E5%BA%A7%E5%86%8D%E5%8D%87%E7%B4%9A-192542101.html",
-          "time": "2026-08-06 03:25:42",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "陪爸爸一起開鍋 井賀鍋物北上插旗新北 推父親節優惠",
-          "url": "https://n.yam.com/Article/20260806362757",
-          "time": "2026-08-06 03:03:42",
-          "publisher": "蕃新聞→理財周刊",
-          "severity": null
-        },
-        {
-          "title": "新北預售待售餘屋破1.8萬戶 淡水待售餘屋破3千戶居冠",
-          "url": "https://n.yam.com/Article/20260806435333",
-          "time": "2026-08-06 03:03:42",
-          "publisher": "蕃新聞→理財周刊",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北捷運8年4線通車 日均運量飆升13倍",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%8D%B7%E9%81%8B8%E5%B9%B44%E7%B7%9A%E9%80%9A%E8%BB%8A-%E6%97%A5%E5%9D%87%E9%81%8B%E9%87%8F%E9%A3%86%E5%8D%8713%E5%80%8D-185321125.html",
-          "time": "2026-08-06 02:53:21",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "影/新北市議員山田摩衣服務處旁「驚見男子揮刀」！雙案通緝犯遭逮",
-          "url": "https://tw.news.yahoo.com/%E5%BD%B1-%E6%96%B0%E5%8C%97%E5%B8%82%E8%AD%B0%E5%93%A1%E5%B1%B1%E7%94%B0%E6%91%A9%E8%A1%A3%E6%9C%8D%E5%8B%99%E8%99%95%E6%97%81-%E9%A9%9A%E8%A6%8B%E7%94%B7%E5%AD%90%E6%8F%AE%E5%88%80-%E9%9B%99%E6%A1%88%E9%80%9A%E7%B7%9D%E7%8A%AF%E9%81%AD%E9%80%AE-022221279.html",
-          "time": "2026-08-06 02:22:21",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "張芳同報社檢字排版工作拉拔7兒女 曾為醫治小兒麻痺女兒千里奔波 獲頒新北市模範父親表揚",
-          "url": "https://www.thehubnews.net/archives/651767",
-          "time": "2026-08-05 23:29:39",
-          "publisher": "新頭條",
-          "severity": null
-        },
-        {
-          "title": "新北市推動四環八線捷運路網 串聯基北北桃千萬人口通勤需求",
-          "url": "https://www.thehubnews.net/archives/651778",
-          "time": "2026-08-05 23:01:41",
-          "publisher": "新頭條",
-          "severity": null
-        },
-        {
-          "title": "落實行人路權與安全通行 新北市府團隊榮獲馬路好行14項大獎",
-          "url": "https://www.thehubnews.net/archives/651764",
-          "time": "2026-08-05 22:48:49",
-          "publisher": "新頭條",
-          "severity": null
-        },
-        {
-          "title": "火鍋熱戰！南霸天「井賀」插旗新北 鎖定學生族群",
-          "url": "https://tw.news.yahoo.com/%E7%81%AB%E9%8D%8B%E7%86%B1%E6%88%B0-%E5%8D%97%E9%9C%B8%E5%A4%A9-%E4%BA%95%E8%B3%80-%E6%8F%92%E6%97%97%E6%96%B0%E5%8C%97-%E9%8E%96%E5%AE%9A%E5%AD%B8%E7%94%9F%E6%97%8F%E7%BE%A4-144800823.html",
-          "time": "2026-08-05 22:48:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "國民黨新北市長參選人李四川今天走訪樹林養蜂場及鶯歌宮廟、農會活動，主打農業行銷、交通建設；民進黨市長參選人蘇巧慧則提出成...",
-          "url": "https://udn.com/news/story/124652/9673167?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-05 22:01:25",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "犬隻留置頂樓露台致墜落死亡 飼主遭新北動保處開罰1.5萬元",
-          "url": "https://news.pts.org.tw/article/821017",
-          "time": "2026-08-05 20:56:26",
-          "publisher": "公視 即時",
-          "severity": "yellow"
-        },
-        {
-          "title": "犬隻墜樓亡 飼主遭新北動保罰1.5萬元",
-          "url": "https://newtalk.tw/news/view/2026-08-05/1051598",
-          "time": "2026-08-05 20:55:04",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "最佳管理奪金 新北中和安邦社宅獲國家卓越建設獎",
-          "url": "https://cnews.com.tw/204260805a10/",
-          "time": "2026-08-05 20:24:44",
-          "publisher": "匯流新聞網",
-          "severity": null
-        },
-        {
-          "title": "新北樹林犬隻墜樓亡 飼主未做好安全防護遭罰1.5萬元",
-          "url": "https://www.cna.com.tw/news/asoc/202608050323.aspx",
-          "time": "2026-08-05 20:18:05",
-          "publisher": "中央社",
-          "severity": "yellow"
-        },
-        {
-          "title": "新北李蘇對決 四大關鍵變數",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%9D%8E%E8%98%87%E5%B0%8D%E6%B1%BA-%E5%9B%9B%E5%A4%A7%E9%97%9C%E9%8D%B5%E8%AE%8A%E6%95%B8-201000508.html",
-          "time": "2026-08-05 20:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北 深入綠票倉 川伯稱29區皆本命區",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97-%E6%B7%B1%E5%85%A5%E7%B6%A0%E7%A5%A8%E5%80%89-%E5%B7%9D%E4%BC%AF%E7%A8%B129%E5%8D%80%E7%9A%86%E6%9C%AC%E5%91%BD%E5%8D%80-201000937.html",
-          "time": "2026-08-05 20:10:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北40校長AI共創藍圖 智慧領導驅動校園創新",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%9740%E6%A0%A1%E9%95%B7ai%E5%85%B1%E5%89%B5%E8%97%8D%E5%9C%96-%E6%99%BA%E6%85%A7%E9%A0%98%E5%B0%8E%E9%A9%85%E5%8B%95%E6%A0%A1%E5%9C%92%E5%89%B5%E6%96%B0-113505647.html",
-          "time": "2026-08-05 19:35:05",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "新北推銀髮電競、原民AI課程 玩出多元新面向 臺灣原創遊戲同樂會8月15日登場",
-          "url": "https://www.storm.mg/article/11154378",
-          "time": "2026-08-05 19:24:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "「新北校園廣告人」10周年 影像講座再升級 特邀學長姐傳承經驗",
-          "url": "https://www.storm.mg/article/11154377",
-          "time": "2026-08-05 19:07:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "新北下一座城市核心在哪？劉和然揭四大都心計畫，重新塑造2030年後樣貌",
-          "url": "https://www.thehubnews.net/archives/651652",
-          "time": "2026-08-05 18:22:36",
-          "publisher": "新頭條",
           "severity": null
         }
       ],
@@ -6871,11 +6745,11 @@
       "city": "台中",
       "place": "台中市政府",
       "level": "red",
-      "news_count": 94,
+      "news_count": 90,
       "comment_count": 24,
       "negativity_pct": 0,
       "is_urgent": true,
-      "urgency_score": 134,
+      "urgency_score": 130,
       "news_articles": [
         {
           "title": "盧秀燕稱「賴清德一個月未談食安」！李坤城神回「這1句話」！",
@@ -7506,34 +7380,6 @@
           "time": "2026-08-05 18:43:59",
           "publisher": null,
           "severity": null
-        },
-        {
-          "title": "盧秀燕喊總統管好食安 賴清德：在野亂仍堅定推動國政",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiZWVIcWtfaUZqcDN6T1VDMWoyNjgzNHV5SWFybGFiaF9nbE9WQjZibXpvX3h5MXdUY2JtUXNsV09fZU1ZWUN4c3NlSW1yUUFFLUh3RUlUNWZBUzBtdkVj0gFkQVVfeXFMT3lmamxZZ04tV3J4Nm4zNVZVSDhaZFFXSmZJNGp0TGpRd1JueHhkTkc0aUVVRlZXZElNY3ZSNFBGU0ZOWTRoTmFWYzNvS1o0bXdGYkdCcUNHOXk3WWV3UVkxR09Meg?oc=5",
-          "time": "2026-08-05 18:31:00",
-          "publisher": "Google News→大纪元",
-          "severity": "yellow"
-        },
-        {
-          "title": "46億元水湳轉運中心啟用 盧秀燕：「七轉七接」打造智慧轉乘樞紐",
-          "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxOOVNxeWJ6Z1RfTm5FMndDR2tQeWsycUtWWDBXMWpqWmJqVXdiUFJabHpFVXk5SEFfdXpKRnRjanZVZjNZVWVwQmVQY21qQUNHczZFNjJmV000NmNJMTlxUHpaVGZLNTVXT2tCaVh2dlhzbFdUeHhFOU1pNi03QzEzUDd3RWJMSFBTcGpiQndmaG5TSjJnVlY1Rk9kLTVEdGU4Y092c0tkUkY3d1N1NnpGYVU0VGRTbzU3cDBvMndIMHpPZS11bm5GS18zWVUzYllRaHJtUGNYM045NEtnRUsyTGJlcS0tdlgyUl83RlA1VGVyVVh6OEdHVnZJMzJkWFA3VGowWngtZHJwTF9lZjZ2Qnl6LUZ5NVlJMmhuZm4zYV9kbFM4N1oyRW1TcHZMbG5oZDdEOHRqTzM2Smw0dFJQYjAtLVEzOUE5MFNvT3JiS3Z4NDBoMGxXRFB4T21BVmg0SnpzRFZpNHZuYmRqdWM2NkljX0x1UkE4RW91ZHZ0TEk0MXpEUlE?oc=5",
-          "time": "2026-08-05 18:27:13",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "46億元水湳轉運中心啟用 盧秀燕：「七轉七接」打造智慧轉乘樞紐",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5sRVJhSlYtMEpxaW5KZmR6ZEZMeThnM3puaUJSRTZJMnlsaFAtMVlkaUhHd0doa3RzSzVSMUNja2VXR1NOaUtacGRVZ3ZvSWRDM1RDR2NTRQ?oc=5",
-          "time": "2026-08-05 18:27:09",
-          "publisher": "Google News→觀傳媒",
-          "severity": null
-        },
-        {
-          "title": "[Gossiping] [新聞] 盧秀燕「1操作」大翻車！他揭2026國民黨",
-          "url": "https://www.ptt.cc/bbs/Gossiping/M.1785925223.A.C5A.html",
-          "time": "2026-08-05 18:20:23",
-          "publisher": null,
-          "severity": null
         }
       ],
       "comments": [
@@ -7736,11 +7582,11 @@
       "city": "高雄",
       "place": "高雄市前鎮區",
       "level": "red",
-      "news_count": 126,
+      "news_count": 125,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 153,
+      "urgency_score": 152,
       "news_articles": [
         {
           "title": "王鴻薇控台糖董事與陳其邁關係密切 高市府駁斥反問 : 為何南僑三度捐款給妳? | 自由電子報",
@@ -8616,13 +8462,6 @@
           "time": "2026-08-05 18:48:00",
           "publisher": "風傳媒",
           "severity": null
-        },
-        {
-          "title": "跨國合作援助熊本高效率 日媒大篇幅聚焦「高雄模式」",
-          "url": "https://news.nextapple.com/local/20260805/36D779DD7F427F1FA6E3CF3F62F06EBD",
-          "time": "2026-08-05 18:32:05",
-          "publisher": "壹蘋新聞網",
-          "severity": null
         }
       ],
       "comments": []
@@ -8632,11 +8471,11 @@
       "city": "桃園",
       "place": "桃園市政府",
       "level": "red",
-      "news_count": 179,
+      "news_count": 177,
       "comment_count": 0,
       "negativity_pct": 8,
       "is_urgent": false,
-      "urgency_score": 221,
+      "urgency_score": 219,
       "news_articles": [
         {
           "title": "不讓行人6千罰單拖著不繳 桃園分署追出「欠款235萬」 鐵腕扣帳扣車",
@@ -9875,20 +9714,6 @@
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lUGJCemswNm5SU0ZQeXpRaGdPMTJabGRUNTNjSmFISHlVaG1sWXRFYzdvZHNDRS13eG91dzB6NTdsR3hOcDBaaGdHZkMxdGF0QjAxdmVB?oc=5",
           "time": "2026-08-05 18:36:58",
           "publisher": "Google News→LINE TODAY",
-          "severity": null
-        },
-        {
-          "title": "桃園淨零永續成果亮眼！張善政表揚179項績優單位 綠色採購突破109億元創新高",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5GejM2dzRlWVVDSmI0Um5mX3FPZUF4LXRKSVgzZU55azlaVjUyUHU2ODlQay1mbnJEWFpkM1lVbDRPcjFxeFE?oc=5",
-          "time": "2026-08-05 18:28:05",
-          "publisher": "Google News→台灣新聞雲報",
-          "severity": null
-        },
-        {
-          "title": "工研院攜桃園打造跨域創新平台 匯聚逾200家新創及40家產業共拓全球商機",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NNUU5X3VkWk52MGFsQ1l5TVU3MS01NWtRS3p6RHJnUEU0eDVlMjBlUF8xOURaNUZZa3pXU05Pb2hhTWxacHQxdEVKQWNpOHVGWUE?oc=5",
-          "time": "2026-08-05 18:28:00",
-          "publisher": "Google News→蕃新聞",
           "severity": null
         }
       ],
@@ -11453,11 +11278,11 @@
       "city": "台中",
       "place": "台中市西屯區",
       "level": "red",
-      "news_count": 304,
+      "news_count": 301,
       "comment_count": 0,
       "negativity_pct": 6,
       "is_urgent": false,
-      "urgency_score": 355,
+      "urgency_score": 352,
       "news_articles": [
         {
           "title": "致癌油風暴走調？政院、中市府互嗆政治攻擊",
@@ -13564,27 +13389,6 @@
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XTk5lNEw3bEEzNVhiZW11bFBzbEhDbG12NUxaakVHSmlKb1BZSG0yTXpTUGhkS1AtVEM5Ri05NFZtLV9ZVGhlank2eXVtWWozSUtQYkFJcU56c3kzN3dZ?oc=5",
           "time": "2026-08-05 18:41:00",
           "publisher": "Google News→工商時報",
-          "severity": null
-        },
-        {
-          "title": "【#原音重現】「給我一種京華城的既視感！」黃智賢怒轟中市府想方設法讓中聯油復工！再點名一媒體標題下\"台糖毒油\" 黃智賢嗆「憑什麼說台糖毒油」:都不用做人？｜三立新聞網 SETN.com",
-          "url": "https://www.youtube.com/watch?v=YjiRyEtCpyY",
-          "time": "2026-08-05 18:31:06",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "獨家／台中貨車左轉「鷗翼門突開」 廚具半成品噴砸賓士",
-          "url": "https://news.ebc.net.tw/news/society/564877",
-          "time": "2026-08-05 18:27:00",
-          "publisher": "東森新聞",
-          "severity": null
-        },
-        {
-          "title": "中市校長會議創新跨域參訪 強化教育領導力 - 政府消息新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUmdjMHFBTWU1TmwxdzJuWjVuOXBhdnZ0M2JHZTNSaExjX2FGc094eTc2Q1pIVGRXVVZhUzNHU2E1dGxSUXJEUlR6TWhSSUdvbTZLYUcyVFBJMk9sLXQ2MGhDUHBoMS12SVgzYzFaNW1uZlRSS1hBRld3XzAwZjI2VGVrNDBDdVIyaEE?oc=5",
-          "time": "2026-08-05 18:21:56",
-          "publisher": "Google News→news.pchome.com.tw",
           "severity": null
         }
       ],
