@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-08-15T21:37:39.478188+00:00",
+  "generated_at": "2026-08-15T21:53:18.580176+00:00",
   "metrics": {
-    "total_24h": 121,
+    "total_24h": 123,
     "prev_24h": 161,
-    "growth_pct": -24.84,
-    "news_24h": 112,
+    "growth_pct": -23.6,
+    "news_24h": 114,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 1099,
+    "total": 1101,
     "prev": 1687,
-    "growth_pct": -34.85,
-    "news": 971,
+    "growth_pct": -34.74,
+    "news": 973,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,7 +28,7 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 520
+      "count": 522
     },
     {
       "platform": "youtube",
@@ -42,7 +42,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 3317
+      "count": 3320
     },
     {
       "platform": "youtube",
@@ -148,14 +148,10 @@
     },
     {
       "hour": "2026-08-16 05:00",
-      "count": 0
+      "count": 2
     }
   ],
   "by_hour_7d": [
-    {
-      "hour": "2026-08-09 05:00",
-      "count": 1
-    },
     {
       "hour": "2026-08-09 07:00",
       "count": 1
@@ -662,7 +658,7 @@
     },
     {
       "hour": "2026-08-15 17:00",
-      "count": 12
+      "count": 13
     },
     {
       "hour": "2026-08-15 18:00",
@@ -687,12 +683,16 @@
     {
       "hour": "2026-08-16 00:00",
       "count": 1
+    },
+    {
+      "hour": "2026-08-16 05:00",
+      "count": 2
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 520
+      "count": 522
     },
     {
       "platform": "youtube",
@@ -706,7 +706,7 @@
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 520
+      "count": 522
     },
     {
       "platform": "youtube",
@@ -718,35 +718,35 @@
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 140,
-    "蔣萬安": 385,
-    "蔡其昌": 3,
+    "盧秀燕": 143,
+    "蔣萬安": 383,
+    "蔡其昌": 4,
     "陳其邁": 35
   },
   "mention_compare_7d": {
-    "盧秀燕": 1099,
+    "盧秀燕": 1101,
     "蔣萬安": 2469,
-    "蔡其昌": 105,
+    "蔡其昌": 106,
     "陳其邁": 182
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 140,
-      "red": 14,
-      "yellow": 44,
-      "green": 82
+      "total": 143,
+      "red": 15,
+      "yellow": 45,
+      "green": 83
     },
     "蔣萬安": {
-      "total": 385,
+      "total": 383,
       "red": 9,
-      "yellow": 257,
+      "yellow": 255,
       "green": 119
     },
     "蔡其昌": {
-      "total": 3,
+      "total": 4,
       "red": 0,
       "yellow": 2,
-      "green": 1
+      "green": 2
     },
     "陳其邁": {
       "total": 35,
@@ -3321,7 +3321,7 @@
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SU0lHaVI5TmlFeUJnSS1sWC1kcDZxeGpQQTdrN09DdEVQWVNTSVA0dWdLUk9HNTltbnVpWU9nTWFVUkpLUFVjX1lUVzNWSm53QW9zTmc2QXlFOFZxM2fSAUtBVV95cUxOd3lUOHpXNEJHWlM2R1M4VmJsdkcyOWE1STlnTGdCSnNRZzJEZkxGUTVxMzJJSmRNaDIySjVjY0tUb3ZGOFlnX0Rtdnc?oc=5",
           "time": "2026-08-11 13:40:00",
           "severity": "red",
-          "publisher": "Google News→ETtoday新聞雲",
+          "publisher": "Google News→ettoday.net",
           "is_crisis": true
         },
         {
@@ -11541,7 +11541,7 @@
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PTHFWRXZPZEVEX2tkWW1qQms2anR4U1k4bUhWVnZIcUI4WjQ4YmNpdGtlM3VMWjVoNFBGVE9VckFnMk81ZGF5bXpCSzlpZU0?oc=5",
           "time": "2026-08-13 14:04:07",
           "severity": "yellow",
-          "publisher": "Google News→翻爆",
+          "publisher": "Google News→turnnewsapp.com",
           "is_crisis": false
         },
         {
@@ -23620,11 +23620,11 @@
     },
     {
       "date": "2026-08-15",
-      "score": 54.9,
-      "total": 140,
+      "score": 55.1,
+      "total": 141,
       "red": 14,
       "yellow": 50,
-      "green": 76,
+      "green": 77,
       "crisis": 0,
       "samples_low": false,
       "articles": [
@@ -23865,7 +23865,7 @@
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
           "time": "2026-08-15 17:32:00",
           "severity": "green",
-          "publisher": "Google News→ETtoday新聞雲",
+          "publisher": "Google News→ettoday.net",
           "is_crisis": false
         },
         {
@@ -23903,6 +23903,14 @@
         {
           "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+          "time": "2026-08-15 17:04:00",
+          "severity": "green",
+          "publisher": "Google News→壹蘋新聞網",
+          "is_crisis": false
+        },
+        {
+          "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
           "time": "2026-08-15 17:04:00",
           "severity": "green",
           "publisher": "Google News→壹蘋新聞網",
@@ -26218,14 +26226,30 @@
     },
     {
       "date": "2026-08-16",
-      "score": 39.7,
-      "total": 0,
-      "red": 0,
-      "yellow": 0,
+      "score": 20.7,
+      "total": 2,
+      "red": 1,
+      "yellow": 1,
       "green": 0,
       "crisis": 0,
       "samples_low": false,
       "articles": [
+        {
+          "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "severity": "yellow",
+          "publisher": "Google News→自由時報",
+          "is_crisis": false
+        },
+        {
+          "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "severity": "red",
+          "publisher": "Google News→自由時報",
+          "is_crisis": false
+        },
         {
           "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
           "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
@@ -27214,11 +27238,18 @@
       },
       {
         "date": "2026-08-16",
-        "red": 0,
+        "red": 1,
         "yellow": 0,
         "green": 0,
-        "total": 0,
+        "total": 1,
         "articles": [
+          {
+            "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+            "time": "2026-08-16 05:30:00",
+            "severity": "red",
+            "publisher": "Google News→自由時報"
+          },
           {
             "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
             "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
@@ -67868,6 +67899,24 @@
   "mention_articles_24h": {
     "盧秀燕": [
       {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "red",
+        "co_mentioned": []
+      },
+      {
         "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
         "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
         "time": "2026-08-16 00:28:11",
@@ -68142,7 +68191,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -68185,6 +68234,15 @@
       {
         "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+        "time": "2026-08-15 17:04:00",
+        "platform": "news",
+        "publisher": "壹蘋新聞網",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
         "time": "2026-08-15 17:04:00",
         "platform": "news",
         "publisher": "壹蘋新聞網",
@@ -69138,6 +69196,15 @@
     ],
     "蔣萬安": [
       {
+        "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
         "url": "https://www.fountmedia.io/article/413712",
         "time": "2026-08-16 03:11:27",
@@ -69565,7 +69632,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
         "time": "2026-08-15 18:39:12",
         "platform": "news",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": null,
         "co_mentioned": []
       },
@@ -69970,7 +70037,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LTi1HQmExUlpuTmxWaW8tZVc2cHl1aXM3aXJnRG5SczM1TDQ3Um9vNkJCWVFsdWo5VlluY2hLOG5oVlhnbExsODRTUXgzaWV6YkFwUFltMFV6TGU2aFHSAUtBVV95cUxNMjhfanVpdFhyaVZhUF90bnQwNE41UEhwbFNIRlBHbXJFYkplVzVrY2lKT0lzTE5GQUxETFBKeDY5cW5nbGdDVzFLOE0?oc=5",
         "time": "2026-08-15 16:28:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -69997,7 +70064,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9OX1Q1cERPSW9oc29mQ2xWVklCNzk5M3F5Ql85SEtUbHlhemV3dEZJMjdrUFNNWmphRjZIc01Hby1mU3Nibnk5MnFFSHd3OEVmVHpkdWR6bExudG9oTEHSAUtBVV95cUxQeHlHTy1VcG8tUzJBc0xrc2ExR3dXcnlOZ3ppTDhzSUdfV1ZuM0tuSXhuMmRnUVNObTR3TmF6amtiTHptdWxHbk1OSW8?oc=5",
         "time": "2026-08-15 16:19:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -70471,7 +70538,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRbnpVU25fVkxfMHZwSDdnSUFDampZNVVqcjJ3VjVPUVhoMU5mRkVfNFBCWUFIWTNlYzZGelZIUE1RR3lLUGtKOWFYUktvUVMtTzRrWGlQWWhhcHI2OGfSAUtBVV95cUxQSHFDdVkyUDEwN1pfdTNlNjZzQm5BWUtRTU8xTXNFZjdUcTVKT0FfSG15N1NIb2xIdjhtVG1tQkJiNV9FUjJmT1dmZFU?oc=5",
         "time": "2026-08-15 14:04:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -70516,7 +70583,7 @@
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZSEdNRTVwYzlpNDYtd2h5TG9qSVE5V1ZnSmRUWF9fcGxNZzNGdzJTaUpUbl9JREMtc3cxN2NXdXY4TU80VllGR3Bsd2JmaDlGNzktcU41aDI0RGs?oc=5",
         "time": "2026-08-15 14:00:00",
         "platform": "news",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -70660,7 +70727,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBQay1qaUtMdllGbkMzcEoxNEMyamMycXlPZGlqMFFfZk5MV2FDNVlQd1ZKNTJWeE5oY2E4OEV3Ym5lWnQ1U0V1RnBPMllzVVFZNkVucGdsUFI0QWZ5OVHSAUtBVV95cUxNTVJiZndQVDZJTlU1TWhDRUY4OFBpNjdrVFFKNWhwRjJqWU42WmN4OEt1NGg1UjJxa3dtV293X2U3RlJybnpTTzNNZEU?oc=5",
         "time": "2026-08-15 13:49:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -70734,7 +70801,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QQXNRWWIzekk4TkJFbnBob3lzbjJzV0RIZ3p0Umt3RUd1c2tWNW43MVptVDBjTGVVdzg2cGYwbEpBS3M1eWhaTTJmRUd1a2pNZ3hWTmJwR1hwbjFjRXfSAUtBVV95cUxOblJ1Q0M4ZERyYjV4a1I3TXREd2drM0RILXJDTjZXdlQ5eXVqMkQ0N3BoeXAxTkRlVTluTXdIdFRBcnBvYkd4emxoZlU?oc=5",
         "time": "2026-08-15 13:37:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -71049,7 +71116,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PLW44cGR4ZTNLa1pYcERWMzVyZUEwM21HRnpmNDJIVTBLZExnek1JaHZ2NUNTTW81NHZPT3NENzlxMFdlYktfeVZxaE5VUkJGUVpPVEtUWm4zT2VxelHSAUtBVV95cUxOLVVRdjBKUldwRGNreUFrZktsSkdzY2hwcC1td3BxOXVTLWRHSXlLbjZkYWhfdmdlZndJcEZuSWNDNVFMbDFPSGNObVU?oc=5",
         "time": "2026-08-15 12:29:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -72582,36 +72649,18 @@
         "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安痛批「賣釋迦變賣台」！梁文傑反嗆：陸委會什麼時候說過",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%97%9B%E6%89%B9-%E8%B3%A3%E9%87%8B%E8%BF%A6%E8%AE%8A%E8%B3%A3%E5%8F%B0-%E6%A2%81%E6%96%87%E5%82%91%E5%8F%8D%E5%97%86-%E9%99%B8%E5%A7%94%E6%9C%83%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E8%AA%AA%E9%81%8E-054455131.html",
-        "time": "2026-08-15 05:44:55",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-        "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxONElra3lkejVQQ1F4WUdNWVpMOFhJUDFBdkFxUXk1V21pRm54NjJCSDlPX3o5TXE1aHRUcVFFQ1c1ZTBZTUJkRkFURU5FMXJPUUhUTXlVdUJRcDhiZ2NlQmNheVRQWTlJc1RsY09QU0NqbzY0RzZ1ZkZ4MHVsM3RQckViZFMwZW5DeE51MUhnR1Z2MGxOZWVDLVktNjBEdm5fVFBEN2NCdF9SZDV3RWszUGVkMHF2c2laVDczVy1XbFkwbW5JWll2bVpuUTNZSnFSNWhSZmJNaGF0Sk50aHFDVU81RWMwTHBlbXFOckpZX3lsa2k5VldYUUJFa0ZXWENsb0pyX3Jqcm1iZTNnS3ZJY2xVcXBwcm9CY2M5VkRNTW40QXhGODhaSzhkZGM5NUhUSVByb0JwMjNpd3M5bGh4RUYwdHdZc0EyZ3pNQ1I4c29qU2ZQbkFBM0I4TlNIZkI4UDFVclEzQ29PaUpEUDMtb0ctVUVPMUhVNW4wNjJXR2h5Y0hwMV9PSm1ZZ24xbnNENU1VUjZVUHpmN2RvRlNrN2VkVXQxMy1FdlB1a01yWWNZTms5ZjdMbkdRSGp5M3lOS0lBMFczc2ExY083Rk0zbzREMVFHUlc2N3JESGtDTGVIM2hpWU8wb1RnVDlTZm9fM0JtemFVYUVEeXVYZ0lyOTdaeThiMGlOd013b3VRSzUzUTYwS05Ub1JySHpETHFYRS1fdkxBeS1EOURUU3hQbTEtbUlHY0NqNGUyb1A4ekRvaksyWjJZYw?oc=5",
-        "time": "2026-08-15 05:40:03",
-        "platform": "news",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-        "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxQQ2FzaVFWWEVGbWhJanRnUzRKVk5meVNlNWxqZWpOeW41Z2ZaLVZXQjdZUU1LN3gwSXhEZWVxUWo5RHpGT3hKWmR2UTZlWW5uM3dzcnN0dV9VYlAzd28tV1RPaFVUX3N2SVJxNXpQZXRaZThpNWIxdDFVNGNYX05iOE1FM2pHaXdtTm8ydE9wX3NXdWFqY3VJZ1hIcnNJNkdtSlJmT2R1QmltR09wcWxDZ2x0dk41VWIzajh4WU8xRkh2bEJrQ0UxcE5ZdDF4OHNaYkZtcXN5Z1RTQlZuNmJUa180NTR4S0w5VHNsM1B0enE3aVZod0t6SHJ3R0dfNnN4OUdHOUw2T1NLd2FKZVM4QWFKNTRxTjkzZFhxcHl4OGpzSzZIbERpNy1wS053M1VIMmxhRTJEdXBhOW1FLTRsN0Q4bnZUUTJYaVhOd3pfbUZJdHFST0UxOHdFOHRWTEg0SUl5U1JlMnRjM09vVGxOSkh5VFNkNy1EUGJIa01pQ3htUkFNWDlBMHpsdFJqendzTmxVeVBPZE1xcDNOaXdkUkFFNHV3Nks2elZrV0JfSERsbkhqVDlQV21jc3JHSGJ4dTJkSWZxS0pfaW9FMXVRR1J2VnRsX3JVSkM1X0NrQVBTQXhFRHNMZVVrWTZ2RkJjelV2T2IzcFliLUxUQVVlNWZDbENPWVg3NFl1RkI2TWVkQzkwSGw1SWMtMDNMcTZRR3BVQzFzQkpZWXgwaUEya3ZrWXRfcTB3bFVoNS04ZS1PQThNdmJ0cm9R?oc=5",
-        "time": "2026-08-15 05:40:03",
-        "platform": "news",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
+      {
+        "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
       {
         "title": "【CNEWS】總預算遭刪480億！吳思瑤痛批「全民都是輸家」 黃國昌反轟「倒因為果」：蔡其昌不是也簽名了嗎？",
         "url": "https://cnews.com.tw/%e3%80%90cnews%e3%80%91%e7%b8%bd%e9%a0%90%e7%ae%97%e9%81%ad%e5%88%aa480%e5%84%84%ef%bc%81%e5%90%b3%e6%80%9d%e7%91%a4%e7%97%9b%e6%89%b9%e3%80%8c%e5%85%a8%e6%b0%91%e9%83%bd%e6%98%af%e8%bc%b8%e5%ae%b6/",
@@ -72961,6 +73010,24 @@
   "mention_articles_7d": {
     "盧秀燕": [
       {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "red",
+        "co_mentioned": []
+      },
+      {
         "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
         "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
         "time": "2026-08-16 00:28:11",
@@ -73235,7 +73302,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -73278,6 +73345,15 @@
       {
         "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+        "time": "2026-08-15 17:04:00",
+        "platform": "news",
+        "publisher": "壹蘋新聞網",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
         "time": "2026-08-15 17:04:00",
         "platform": "news",
         "publisher": "壹蘋新聞網",
@@ -76111,7 +76187,7 @@
         "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PTHFWRXZPZEVEX2tkWW1qQms2anR4U1k4bUhWVnZIcUI4WjQ4YmNpdGtlM3VMWjVoNFBGVE9VckFnMk81ZGF5bXpCSzlpZU0?oc=5",
         "time": "2026-08-13 14:04:07",
         "platform": "news",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -79474,7 +79550,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SU0lHaVI5TmlFeUJnSS1sWC1kcDZxeGpQQTdrN09DdEVQWVNTSVA0dWdLUk9HNTltbnVpWU9nTWFVUkpLUFVjX1lUVzNWSm53QW9zTmc2QXlFOFZxM2fSAUtBVV95cUxOd3lUOHpXNEJHWlM2R1M4VmJsdkcyOWE1STlnTGdCSnNRZzJEZkxGUTVxMzJJSmRNaDIySjVjY0tUb3ZGOFlnX0Rtdnc?oc=5",
         "time": "2026-08-11 13:40:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "red",
         "co_mentioned": []
       },
@@ -83222,18 +83298,18 @@
         "publisher": "Yahoo新聞",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
-        "url": "https://tw.news.yahoo.com/%E6%B0%91%E7%9C%BE%E9%BB%A8%E9%99%B3%E6%B8%85%E9%BE%8D%E6%8F%92%E6%97%97%E6%9D%B1%E5%8B%A2%E5%8A%8D%E6%8C%87%E7%AB%8B%E5%A7%94%E8%A3%9C%E9%81%B8-%E5%9C%8B%E6%B0%91%E9%BB%A8%E4%B9%9F%E5%82%B3%E4%BA%BA%E9%81%B8%E6%80%8E%E9%BA%BC%E5%90%88-%E7%9B%A7%E7%A7%80%E7%87%95-%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-055100621.html",
-        "time": "2026-08-09 05:51:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": []
       }
     ],
     "蔣萬安": [
+      {
+        "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
       {
         "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
         "url": "https://www.fountmedia.io/article/413712",
@@ -83662,7 +83738,7 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
         "time": "2026-08-15 18:39:12",
         "platform": "news",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": null,
         "co_mentioned": []
       },
@@ -84067,7 +84143,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LTi1HQmExUlpuTmxWaW8tZVc2cHl1aXM3aXJnRG5SczM1TDQ3Um9vNkJCWVFsdWo5VlluY2hLOG5oVlhnbExsODRTUXgzaWV6YkFwUFltMFV6TGU2aFHSAUtBVV95cUxNMjhfanVpdFhyaVZhUF90bnQwNE41UEhwbFNIRlBHbXJFYkplVzVrY2lKT0lzTE5GQUxETFBKeDY5cW5nbGdDVzFLOE0?oc=5",
         "time": "2026-08-15 16:28:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -84094,7 +84170,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9OX1Q1cERPSW9oc29mQ2xWVklCNzk5M3F5Ql85SEtUbHlhemV3dEZJMjdrUFNNWmphRjZIc01Hby1mU3Nibnk5MnFFSHd3OEVmVHpkdWR6bExudG9oTEHSAUtBVV95cUxQeHlHTy1VcG8tUzJBc0xrc2ExR3dXcnlOZ3ppTDhzSUdfV1ZuM0tuSXhuMmRnUVNObTR3TmF6amtiTHptdWxHbk1OSW8?oc=5",
         "time": "2026-08-15 16:19:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -84568,7 +84644,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRbnpVU25fVkxfMHZwSDdnSUFDampZNVVqcjJ3VjVPUVhoMU5mRkVfNFBCWUFIWTNlYzZGelZIUE1RR3lLUGtKOWFYUktvUVMtTzRrWGlQWWhhcHI2OGfSAUtBVV95cUxQSHFDdVkyUDEwN1pfdTNlNjZzQm5BWUtRTU8xTXNFZjdUcTVKT0FfSG15N1NIb2xIdjhtVG1tQkJiNV9FUjJmT1dmZFU?oc=5",
         "time": "2026-08-15 14:04:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -84613,7 +84689,7 @@
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZSEdNRTVwYzlpNDYtd2h5TG9qSVE5V1ZnSmRUWF9fcGxNZzNGdzJTaUpUbl9JREMtc3cxN2NXdXY4TU80VllGR3Bsd2JmaDlGNzktcU41aDI0RGs?oc=5",
         "time": "2026-08-15 14:00:00",
         "platform": "news",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -84757,7 +84833,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBQay1qaUtMdllGbkMzcEoxNEMyamMycXlPZGlqMFFfZk5MV2FDNVlQd1ZKNTJWeE5oY2E4OEV3Ym5lWnQ1U0V1RnBPMllzVVFZNkVucGdsUFI0QWZ5OVHSAUtBVV95cUxNTVJiZndQVDZJTlU1TWhDRUY4OFBpNjdrVFFKNWhwRjJqWU42WmN4OEt1NGg1UjJxa3dtV293X2U3RlJybnpTTzNNZEU?oc=5",
         "time": "2026-08-15 13:49:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -84831,7 +84907,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QQXNRWWIzekk4TkJFbnBob3lzbjJzV0RIZ3p0Umt3RUd1c2tWNW43MVptVDBjTGVVdzg2cGYwbEpBS3M1eWhaTTJmRUd1a2pNZ3hWTmJwR1hwbjFjRXfSAUtBVV95cUxOblJ1Q0M4ZERyYjV4a1I3TXREd2drM0RILXJDTjZXdlQ5eXVqMkQ0N3BoeXAxTkRlVTluTXdIdFRBcnBvYkd4emxoZlU?oc=5",
         "time": "2026-08-15 13:37:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -85146,7 +85222,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PLW44cGR4ZTNLa1pYcERWMzVyZUEwM21HRnpmNDJIVTBLZExnek1JaHZ2NUNTTW81NHZPT3NENzlxMFdlYktfeVZxaE5VUkJGUVpPVEtUWm4zT2VxelHSAUtBVV95cUxOLVVRdjBKUldwRGNreUFrZktsSkdzY2hwcC1td3BxOXVTLWRHSXlLbjZkYWhfdmdlZndJcEZuSWNDNVFMbDFPSGNObVU?oc=5",
         "time": "2026-08-15 12:29:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -105822,18 +105898,18 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安稱白海豚沒陸警不放颱風假 吳思瑤轟「洗記憶」：用騙票討好市民",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%A8%B1%E7%99%BD%E6%B5%B7%E8%B1%9A%E6%B2%92%E9%99%B8%E8%AD%A6%E4%B8%8D%E6%94%BE%E9%A2%B1%E9%A2%A8%E5%81%87-%E5%90%B3%E6%80%9D%E7%91%A4%E8%BD%9F-%E6%B4%97%E8%A8%98%E6%86%B6-%E7%94%A8%E9%A8%99%E7%A5%A8%E8%A8%8E%E5%A5%BD%E5%B8%82%E6%B0%91-054500525.html",
-        "time": "2026-08-09 05:45:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
+      {
+        "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": null,
+        "co_mentioned": []
+      },
       {
         "title": "【CNEWS】總預算遭刪480億！吳思瑤痛批「全民都是輸家」 黃國昌反轟「倒因為果」：蔡其昌不是也簽名了嗎？",
         "url": "https://cnews.com.tw/%e3%80%90cnews%e3%80%91%e7%b8%bd%e9%a0%90%e7%ae%97%e9%81%ad%e5%88%aa480%e5%84%84%ef%bc%81%e5%90%b3%e6%80%9d%e7%91%a4%e7%97%9b%e6%89%b9%e3%80%8c%e5%85%a8%e6%b0%91%e9%83%bd%e6%98%af%e8%bc%b8%e5%ae%b6/",
@@ -106055,7 +106131,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11TVVOSzJPYVRFdVFnU2RvZnJDWmdDd2syRkoxTG4tRzZlQ053RWYtYldRb1hxdm92a2ZoRk1vdFZhbmU1ZnJ4MTlxeG5iSnE1Vzl6OXdxVzFSTEJEWVHSAUtBVV95cUxNRHR3S3ZFTEJRVy1CVER2UXMxXzZKWDJqZ1lLbllrcTl6cUFZZTF4LU94cW45OVRTb3NRby1TaktRSFlEUmVHWWJtekk?oc=5",
         "time": "2026-08-14 10:34:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -106100,7 +106176,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WTldzOXpMalp2YlVsb3lZRU0ydDhVZ1RLUXkxWEhDRnJ2RmVFZmRkWUtKbTBPeDZ1ZWJIazVIenFianBqblJIVm1vdGhaS2o5c3hIcTYxXzJMbXNoUmfSAUtBVV95cUxQenpaYklqT0gtQXdPeWtndEw5b1VTRTlBOENiLUl1ZXBaZU9qeGI5S3JCY0xFS25PbURpMnk2RTNQUjZPUHA2cTcwZDA?oc=5",
         "time": "2026-08-13 22:39:01",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -106655,7 +106731,7 @@
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jZzBZU1BXR196dnEyaXc2MVNIdDdsVDdaS2EtMzJEb2YyM3NscU1TUUxFcjRmSjZCVTc5MHdrUWYtbTVFb3RlZTNSaENwY3FqX2ZPLU5IaXBJaHM?oc=5",
         "time": "2026-08-11 19:28:35",
         "platform": "news",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -106747,7 +106823,7 @@
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fMmxtNW82YW9MN1pKTHZSMnI0QzNhemRCUjZNQkUxeU15Rks1bTIwQ1NMb0JrSXEwX05PNEk4Mmk1aUNCSXZKWGktSVdhNUkxazNj?oc=5",
         "time": "2026-08-09 15:01:53",
         "platform": "news",
-        "publisher": "Google News→中天新聞網",
+        "publisher": "Google News→ctinews.com",
         "severity": null,
         "co_mentioned": []
       },
@@ -107127,7 +107203,7 @@
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95eU95NjhIdnFPUUc4YTNhbzR2R205Q2tNNEg4T1k1VVhsZGJRVkZtV0VBSEdQQU1hWHQ1dXZNWFJWOTIwbXo1VXlzeWppel9MTUpF?oc=5",
         "time": "2026-08-14 21:10:32",
         "platform": "news",
-        "publisher": "Google News→中天新聞網",
+        "publisher": "Google News→ctinews.com",
         "severity": null,
         "co_mentioned": []
       },
@@ -107262,7 +107338,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54QTRhVUxZYmF0SEp2d2pxNE5WcVZvMGM2U25FZFkzY3pEUTBXUkhhN1JVOGhoYWRGWFBvRk4yR3ZIdHQ1ODFVbDBOaTlBak1nRHNzTjAzREdSNzlTNnfSAUtBVV95cUxONko1cF9pc0J2eXlSNHpZaWsyYlg5RnI5QWNOcTJOeWhpUFMzYlMyblpaTXM5ZVdoTWlpb2JTMVctTG9sOF8ycXJBdm8?oc=5",
         "time": "2026-08-14 18:47:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -107559,7 +107635,7 @@
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xLTZFUWNGZng3Qy1XdVlDSTN2WDM3RWx2bWpJT3VBTlpRdHBMcFFFQlN5S3d6UFBXT2g4NzNJbkctMXJtZVZVTmxfMm9vZXRDQ3JUU2ljT3prX1U?oc=5",
         "time": "2026-08-12 18:53:00",
         "platform": "news",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -107793,7 +107869,7 @@
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzTEhOUmRSekpyMi02eWZadzR2Sll3aFpwemRjV3NjS3ZHeGtLZnYtZVdYWDl6Z3NUeHpxY0ttdXQwS3dqclI2OTNIaw?oc=5",
         "time": "2026-08-12 15:49:00",
         "platform": "news",
-        "publisher": "Google News→ftnn.com.tw",
+        "publisher": "Google News→FTNN 新聞網",
         "severity": null,
         "co_mentioned": []
       },
@@ -108213,7 +108289,7 @@
         "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxQcXlOMnVPWWc2M01IbVlJSTF5UENCeHVjRFNfd241ZThVdXdlblpiVTJtTU9SazRvN1l6N0l2RWdQd2o0VnpobnJXN1JLN2laRDVIMEZNZTJwQ0V4WGFBZ1gxQzlpOTZ6QmRnSm4zUWZ2UGFCaEVzMEItZG5WblJhU2FZUUppclFiUmNEb0pfZ3RCa21XMHFGbmNxNHFfZXhzVk5UazFrbFdDa18xaU5HOGZYWlZPbUtaa1dzSUxnWFhIREpxNGFEdG9sRjdpT2FJUXlRUGQtU1lzeFF2dld0MWdvN3B2blphNV9rVVR1YUZpTGFORE1yWWJWVmdtSktEaDdVTjJ5aHViVWgwSnJ0QkdHNGZaRVFrbV94TWNScnNZRjRmclI4UDhkZXJjNV94Z1l2MUUyZDlyRWU4eGFfd1Q1OU4yempQcmR3cERQeEFzNGVZTjBaSWR3WDhJRjA5RmtpVGVfVEhuU2NnTW51TEN0RmNlSGloeTRaTnZFR2otUDRKeFczaHBZclE4aFRHT1liUGVWQ0tEVnRjaUlCTmYxX1RYMlJtNk03bVl3?oc=5",
         "time": "2026-08-11 00:10:02",
         "platform": "news",
-        "publisher": "Google News→台灣好新聞",
+        "publisher": "Google News→taiwanhot.net",
         "severity": null,
         "co_mentioned": []
       },
@@ -108448,6 +108524,16 @@
   },
   "top_news": [
     {
+      "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
+      "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
       "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHa3lYdUxDQkt5TThRR3d6U0F2SXZZd1NwTEhlSWpiU1NzLTdLS2RCZDRpZEF4ekNNbGJKNkUzT01yd041aktPNGRrdE84QUY5VVVId0NIRG85T0F0U2VxZl9yR1FOM0ZyTkE?oc=5",
       "time": "2026-08-15 22:36:18"
@@ -108536,19 +108622,23 @@
       "title": "盧秀燕訪西螺力挺張嘉郡大讚65歲健保、雙語政見– 政治",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBlX09XVWdDMkdMQWpNcy1LY2lfNGZoanR0UzZfY2JwUzYxUFVfTFRwNGQ5WWtYajBibnNOQlhZd3RIS1NTS2M1MUxZMjFOQQ?oc=5",
       "time": "2026-08-15 19:03:20"
-    },
-    {
-      "title": "賴清德赴雲林幫劉建國站台 盧秀燕也在雲林「尬場」",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBlSGJ3Tnh1WGZOSTdLbU1leXZaSVc1eXBFbjVHSW9jemhkT3VheDYwaDFRTkg4alhLajBsQVdYR01CeHFNVWpsMEN3R2VHeS1WVHRRNDk0ZDnSAV5BVV95cUxQcEZzZm5aUW4tbjAzVmdEbU9TMllBMlN0MzhrNi1HdnBFcTFuUTl5eFExVUcweXplVnRsNFdLd1B4VjFUYW83YTVoemhVRmFzZnl1MjRCaXgteDJkdGRR?oc=5",
-      "time": "2026-08-15 18:35:00"
-    },
-    {
-      "title": "盧秀燕訪西螺參拜啖美食 盛讚張嘉郡拋政見讓雲林更進步",
-      "url": "https://www.storm.mg/article/11156796",
-      "time": "2026-08-15 18:31:00"
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "severity": "yellow"
+    },
+    {
+      "platform": "news",
+      "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "severity": "red"
+    },
     {
       "platform": "news",
       "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
@@ -108674,20 +108764,6 @@
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBlX09XVWdDMkdMQWpNcy1LY2lfNGZoanR0UzZfY2JwUzYxUFVfTFRwNGQ5WWtYajBibnNOQlhZd3RIS1NTS2M1MUxZMjFOQQ?oc=5",
       "time": "2026-08-15 19:03:20",
       "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "【交叉提及：劉建國】賴清德赴雲林幫劉建國站台 盧秀燕也在雲林「尬場」",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBlSGJ3Tnh1WGZOSTdLbU1leXZaSVc1eXBFbjVHSW9jemhkT3VheDYwaDFRTkg4alhLajBsQVdYR01CeHFNVWpsMEN3R2VHeS1WVHRRNDk0ZDnSAV5BVV95cUxQcEZzZm5aUW4tbjAzVmdEbU9TMllBMlN0MzhrNi1HdnBFcTFuUTl5eFExVUcweXplVnRsNFdLd1B4VjFUYW83YTVoemhVRmFzZnl1MjRCaXgteDJkdGRR?oc=5",
-      "time": "2026-08-15 18:35:00",
-      "severity": "yellow"
-    },
-    {
-      "platform": "news",
-      "title": "【交叉提及：張嘉郡】盧秀燕訪西螺參拜啖美食 盛讚張嘉郡拋政見讓雲林更進步",
-      "url": "https://www.storm.mg/article/11156796",
-      "time": "2026-08-15 18:31:00",
-      "severity": null
     }
   ],
   "latest_facebook_20": [
@@ -108794,6 +108870,26 @@
   ],
   "latest_news_20": [
     {
+      "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
+      "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
+      "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
+      "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+      "time": "2026-08-16 05:30:00"
+    },
+    {
       "title": "青少年夏日盛典「屏東青春祭」登場 集結在地高中職社團展演",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56Rm9EYWl0VXNQaUY5LVlMRHhTai1jbnVnWWFISWNHMGpHN1hBMGZxSWxUQ243VDgtMmRRMEpjbDdXOG5mekliWXhGdkx4azE4eXRxNlo4dFpUZUI0Y1RmbG51ZTRpbmpsNHhYTWFB?oc=5",
       "time": "2026-08-16 05:05:00"
@@ -108872,26 +108968,6 @@
       "title": "2026夏日無糖生活祭開跑 連江縣衛生局邀民眾清爽無糖享好康",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9yQmJXY3FheFVIZDhnbzRhaEFBazVGanhCZ09hTFhPU1prRGxQRlZuT0R3RkpsWkdicUF5N1ZkUjFWR0RNQVJV?oc=5",
       "time": "2026-08-16 02:59:07"
-    },
-    {
-      "title": "澎湖花火節倒數！8/18觀音亭 交響樂×無人機光影×600秒海上煙火秀登場",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LSFFWQmNZUnN3UFRwenB5dUVSQjEtXzhwZ1N2Y1pOLWs2SEZyOHNHZ3EtcDJOMEJNQnpLbmpCZ3ZSeDNUdmxZUnpQd3IxeFJNeWc?oc=5",
-      "time": "2026-08-16 02:55:00"
-    },
-    {
-      "title": "健康台灣深耕論壇桃園敏盛登場 石崇良：攜手打造韌性智慧醫療",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WcHlyT3JOM2ZJaHBIVEZyc1hfajAwbl9mZ1dmcFdhX0U2d3RjaWxpMmdOT201TmtXUDR4VmxxSzRQNXdKNnNPcG5wZmxpVXM3aWJMamNielF0WURsbEHSAUtBVV95cUxNNW40ZXZwMFJLTzI2cUNLUVNjWi15eExQNHhnc0JweF9UY083d3VUeDEzR3l2VVhkLWpBbm1tQXZHQTY4ZHhsbTJXRlk?oc=5",
-      "time": "2026-08-16 02:52:05"
-    },
-    {
-      "title": "連江縣政府強化釣客安全管理 跨機關聯手守護馬祖海域安全 、預防勝於發生",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBCSHUtQzVremVfREM2MXlWWG40WmxfekUxQXB4SXhfOXFVY1Y3ZHcxN1llUkNicEVpcEFYRk9UdmlvSVNkaXhj?oc=5",
-      "time": "2026-08-16 02:51:42"
-    },
-    {
-      "title": "桃園藝文特區「都會音樂節、藝文同樂會」接力登場 拚商圈升級",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44RHFOVVlTcWNOY1psVVRzd3pkS1M4NlhrbHF3NkNrQUlkTjN1YnJkWlVkeEV5WGVVcVdjdGhYWUQxSjVaVERGNWk1b19fZkxFQUdFUUh5RzBXMlJDdlHSAUtBVV95cUxNaV8wdDRaek9QQkRmVTdJalBRV3pyU0FaM3RCa3JWUzY5Mm0tTFpLblYxekJYQjlZVzJ1Rks2OENnTGwya012cHdnVDg?oc=5",
-      "time": "2026-08-16 02:50:39"
     }
   ],
   "person_sections": {
@@ -108906,6 +108982,20 @@
         }
       ],
       "news": [
+        {
+          "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHa3lYdUxDQkt5TThRR3d6U0F2SXZZd1NwTEhlSWpiU1NzLTdLS2RCZDRpZEF4ekNNbGJKNkUzT01yd041aktPNGRrdE84QUY5VVVId0NIRG85T0F0U2VxZl9yR1FOM0ZyTkE?oc=5",
@@ -109031,20 +109121,6 @@
           "time": "2026-08-15 19:03:20",
           "publisher": "Google News→創新聞",
           "severity": null
-        },
-        {
-          "title": "賴清德赴雲林幫劉建國站台 盧秀燕也在雲林「尬場」",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBlSGJ3Tnh1WGZOSTdLbU1leXZaSVc1eXBFbjVHSW9jemhkT3VheDYwaDFRTkg4alhLajBsQVdYR01CeHFNVWpsMEN3R2VHeS1WVHRRNDk0ZDnSAV5BVV95cUxQcEZzZm5aUW4tbjAzVmdEbU9TMllBMlN0MzhrNi1HdnBFcTFuUTl5eFExVUcweXplVnRsNFdLd1B4VjFUYW83YTVoemhVRmFzZnl1MjRCaXgteDJkdGRR?oc=5",
-          "time": "2026-08-15 18:35:00",
-          "publisher": "Google News→鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕訪西螺參拜啖美食 盛讚張嘉郡拋政見讓雲林更進步",
-          "url": "https://www.storm.mg/article/11156796",
-          "time": "2026-08-15 18:31:00",
-          "publisher": "風傳媒",
-          "severity": null
         }
       ]
     },
@@ -109094,6 +109170,13 @@
         }
       ],
       "news": [
+        {
+          "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
           "url": "https://www.fountmedia.io/article/413712",
@@ -109226,19 +109309,19 @@
           "time": "2026-08-15 20:24:05",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "花蓮團結大會不見鄭麗文！蔣萬安化身母雞授旗游淑貞 喊團結一心",
-          "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxQMmQ0MXN1U2k4Smt0WG83SHlOR3E5Y2d0c1FpVVRoaWJ0UldSZnpUc1RIU25UV09PV2JzWHRNTDZVcG5abktCNXczRDJrWk1DYjY4Vk1ZaW5HRzVBell6M09QVFRhRllaRHR0NXJtUjFvTi1VMzV2MlE2TTQ1RlctQlZfOTlWTXZJbllTaEJLRTg5enlIZWJmTEFOaWhvTUlia3QtTHFWQ29ZbTgxWW1YWDlLTHUtbnhFdlpONlVUV2xmdjlJZzFqT1lVVG9aVXJ4WEpkVWR4c3ZzaUU0bmphbnpycHVvOFhnbFhUamlJVlAwNFoxTHVJRnk5TDhnZkRuMDRjNUZTYldGVVJuUGZSSDlzQUhmLV92ZG5HdXVFMGR2YklzWElXVzFybEdBV2hZcGhoeGFsTDNkRWZmX2JxSHV5b3VLSzZFWm55TEJEXzRrNkFFYjhHbEp2aG16XzFMM3piRlNWSGxNN2czbkppSW4yb2FncVhFWkhYTGhJR1lDRzh6MUZpeDY3NTNkeVhXRXFaeGltY3lVRWs?oc=5",
-          "time": "2026-08-15 20:04:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ]
     },
     "蔡其昌": {
       "facebook": [],
       "news": [
+        {
+          "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
         {
           "title": "【CNEWS】總預算遭刪480億！吳思瑤痛批「全民都是輸家」 黃國昌反轟「倒因為果」：蔡其昌不是也簽名了嗎？",
           "url": "https://cnews.com.tw/%e3%80%90cnews%e3%80%91%e7%b8%bd%e9%a0%90%e7%ae%97%e9%81%ad%e5%88%aa480%e5%84%84%ef%bc%81%e5%90%b3%e6%80%9d%e7%91%a4%e7%97%9b%e6%89%b9%e3%80%8c%e5%85%a8%e6%b0%91%e9%83%bd%e6%98%af%e8%bc%b8%e5%ae%b6/",
@@ -109368,13 +109451,6 @@
         {
           "title": "立法院表決大戰「鞭刑公投」蔡其昌、蔡易餘一度投錯票| 政治 | 要聞",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qclZYY1lKSnVPMUdBVE80ODFLMGFJYWUyby1iRWg3TDBfd041eDBjUmNfaC1zSzRRUDFEbWxaUENCMWRhbjF6UWltMTlvejUySWtqd3JhQVgzV0xNbGVaQ0NORng0QnRQMlZQQUpmeFRtZw?oc=5",
-          "time": "2026-08-14 13:00:45",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
-        },
-        {
-          "title": "立法院表決大戰 「鞭刑公投」蔡其昌、蔡易餘一度投錯票",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rZGtTRWM0NUJSdkJ4RWtReWFnYk5WUTczRmxoRmRfSG9DRzdxclgxT0R1RDhoVWV2ZjFnbHkzWGZydmtJeEs2WWFMSmxtSFFtNDA5RXRKWjNURm04VXR1d0MzV1JQRm1HV1dhMlVYR1NVRlIy0gFWQVVfeXFMT3VzMm4tUGwwMmlyd0FIUEMwblNUVk1RUUktQ25jVGtucFZWb0Rra0Q2SUtPYkRHeFU5dDEzRDNia0JJM0ltTUNJRHllX2xkc2M3X1lNdUE?oc=5",
           "time": "2026-08-14 13:00:45",
           "publisher": "Google News→UDN",
           "severity": "yellow"
@@ -109537,6 +109613,34 @@
   },
   "latest_by_platform_24h": {
     "news": [
+      {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "red"
+      },
+      {
+        "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
       {
         "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
         "url": "https://www.fountmedia.io/article/413712",
@@ -110143,7 +110247,7 @@
         "title": "花蓮藍軍大造勢！蔣萬安授旗挺游淑貞 謝龍介喊「要選貞的」集中票源",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
         "time": "2026-08-15 18:39:12",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": null
       },
       {
@@ -110381,7 +110485,7 @@
         "title": "【交叉提及：張嘉郡】盧秀燕西螺福興宮參香！送蒜頭給張嘉郡 盼「精打細算」拚雲林",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -110443,6 +110547,13 @@
       {
         "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+        "time": "2026-08-15 17:04:00",
+        "publisher": "壹蘋新聞網",
+        "severity": null
+      },
+      {
+        "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
         "time": "2026-08-15 17:04:00",
         "publisher": "壹蘋新聞網",
         "severity": null
@@ -110563,7 +110674,7 @@
         "title": "沈伯洋酸蔣萬安不顧食安 北市府反擊：毒油案有拿出一樣標準？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LTi1HQmExUlpuTmxWaW8tZVc2cHl1aXM3aXJnRG5SczM1TDQ3Um9vNkJCWVFsdWo5VlluY2hLOG5oVlhnbExsODRTUXgzaWV6YkFwUFltMFV6TGU2aFHSAUtBVV95cUxNMjhfanVpdFhyaVZhUF90bnQwNE41UEhwbFNIRlBHbXJFYkplVzVrY2lKT0lzTE5GQUxETFBKeDY5cW5nbGdDVzFLOE0?oc=5",
         "time": "2026-08-15 16:28:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -110577,7 +110688,7 @@
         "title": "沈伯洋批蔣萬安沒顧好食安 殷瑋反酸：上台質詢食安幾次？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9OX1Q1cERPSW9oc29mQ2xWVklCNzk5M3F5Ql85SEtUbHlhemV3dEZJMjdrUFNNWmphRjZIc01Hby1mU3Nibnk5MnFFSHd3OEVmVHpkdWR6bExudG9oTEHSAUtBVV95cUxQeHlHTy1VcG8tUzJBc0xrc2ExR3dXcnlOZ3ppTDhzSUdfV1ZuM0tuSXhuMmRnUVNObTR3TmF6amtiTHptdWxHbk1OSW8?oc=5",
         "time": "2026-08-15 16:19:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -111165,7 +111276,7 @@
         "title": "「羅東女婿」人氣夯！蔣萬安合體吳宗憲掃街 民眾喊凍蒜搶合照",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRbnpVU25fVkxfMHZwSDdnSUFDampZNVVqcjJ3VjVPUVhoMU5mRkVfNFBCWUFIWTNlYzZGelZIUE1RR3lLUGtKOWFYUktvUVMtTzRrWGlQWWhhcHI2OGfSAUtBVV95cUxQSHFDdVkyUDEwN1pfdTNlNjZzQm5BWUtRTU8xTXNFZjdUcTVKT0FfSG15N1NIb2xIdjhtVG1tQkJiNV9FUjJmT1dmZFU?oc=5",
         "time": "2026-08-15 14:04:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -111200,7 +111311,7 @@
         "title": "沈伯洋酸赴傅崐萁地盤喊倒閣「很嗆」 蔣萬安反擊了",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZSEdNRTVwYzlpNDYtd2h5TG9qSVE5V1ZnSmRUWF9fcGxNZzNGdzJTaUpUbl9JREMtc3cxN2NXdXY4TU80VllGR3Bsd2JmaDlGNzktcU41aDI0RGs?oc=5",
         "time": "2026-08-15 14:00:00",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow"
       },
       {
@@ -111326,7 +111437,7 @@
         "title": "中央總預算昨通過 蔣萬安：行政院依法副署執行才不負人民期待",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBQay1qaUtMdllGbkMzcEoxNEMyamMycXlPZGlqMFFfZk5MV2FDNVlQd1ZKNTJWeE5oY2E4OEV3Ym5lWnQ1U0V1RnBPMllzVVFZNkVucGdsUFI0QWZ5OVHSAUtBVV95cUxNTVJiZndQVDZJTlU1TWhDRUY4OFBpNjdrVFFKNWhwRjJqWU42WmN4OEt1NGg1UjJxa3dtV293X2U3RlJybnpTTzNNZEU?oc=5",
         "time": "2026-08-15 13:49:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -111403,7 +111514,7 @@
         "title": "梁文傑嗆管太寬？ 蔣萬安酸：賣鳳梨釋迦變賣台嗎？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QQXNRWWIzekk4TkJFbnBob3lzbjJzV0RIZ3p0Umt3RUd1c2tWNW43MVptVDBjTGVVdzg2cGYwbEpBS3M1eWhaTTJmRUd1a2pNZ3hWTmJwR1hwbjFjRXfSAUtBVV95cUxOblJ1Q0M4ZERyYjV4a1I3TXREd2drM0RILXJDTjZXdlQ5eXVqMkQ0N3BoeXAxTkRlVTluTXdIdFRBcnBvYkd4emxoZlU?oc=5",
         "time": "2026-08-15 13:37:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -111858,7 +111969,7 @@
         "title": "蔣萬安嗆「賣釋迦變賣台」 梁文傑：陸委會什麼人說過？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PLW44cGR4ZTNLa1pYcERWMzVyZUEwM21HRnpmNDJIVTBLZExnek1JaHZ2NUNTTW81NHZPT3NENzlxMFdlYktfeVZxaE5VUkJGUVpPVEtUWm4zT2VxelHSAUtBVV95cUxOLVVRdjBKUldwRGNreUFrZktsSkdzY2hwcC1td3BxOXVTLWRHSXlLbjZkYWhfdmdlZndJcEZuSWNDNVFMbDFPSGNObVU?oc=5",
         "time": "2026-08-15 12:29:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -113155,27 +113266,6 @@
         "time": "2026-08-15 05:55:55",
         "publisher": "Yahoo新聞",
         "severity": null
-      },
-      {
-        "title": "蔣萬安痛批「賣釋迦變賣台」！梁文傑反嗆：陸委會什麼時候說過",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%97%9B%E6%89%B9-%E8%B3%A3%E9%87%8B%E8%BF%A6%E8%AE%8A%E8%B3%A3%E5%8F%B0-%E6%A2%81%E6%96%87%E5%82%91%E5%8F%8D%E5%97%86-%E9%99%B8%E5%A7%94%E6%9C%83%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E8%AA%AA%E9%81%8E-054455131.html",
-        "time": "2026-08-15 05:44:55",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-        "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxONElra3lkejVQQ1F4WUdNWVpMOFhJUDFBdkFxUXk1V21pRm54NjJCSDlPX3o5TXE1aHRUcVFFQ1c1ZTBZTUJkRkFURU5FMXJPUUhUTXlVdUJRcDhiZ2NlQmNheVRQWTlJc1RsY09QU0NqbzY0RzZ1ZkZ4MHVsM3RQckViZFMwZW5DeE51MUhnR1Z2MGxOZWVDLVktNjBEdm5fVFBEN2NCdF9SZDV3RWszUGVkMHF2c2laVDczVy1XbFkwbW5JWll2bVpuUTNZSnFSNWhSZmJNaGF0Sk50aHFDVU81RWMwTHBlbXFOckpZX3lsa2k5VldYUUJFa0ZXWENsb0pyX3Jqcm1iZTNnS3ZJY2xVcXBwcm9CY2M5VkRNTW40QXhGODhaSzhkZGM5NUhUSVByb0JwMjNpd3M5bGh4RUYwdHdZc0EyZ3pNQ1I4c29qU2ZQbkFBM0I4TlNIZkI4UDFVclEzQ29PaUpEUDMtb0ctVUVPMUhVNW4wNjJXR2h5Y0hwMV9PSm1ZZ24xbnNENU1VUjZVUHpmN2RvRlNrN2VkVXQxMy1FdlB1a01yWWNZTms5ZjdMbkdRSGp5M3lOS0lBMFczc2ExY083Rk0zbzREMVFHUlc2N3JESGtDTGVIM2hpWU8wb1RnVDlTZm9fM0JtemFVYUVEeXVYZ0lyOTdaeThiMGlOd013b3VRSzUzUTYwS05Ub1JySHpETHFYRS1fdkxBeS1EOURUU3hQbTEtbUlHY0NqNGUyb1A4ekRvaksyWjJZYw?oc=5",
-        "time": "2026-08-15 05:40:03",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow"
-      },
-      {
-        "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-        "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxQQ2FzaVFWWEVGbWhJanRnUzRKVk5meVNlNWxqZWpOeW41Z2ZaLVZXQjdZUU1LN3gwSXhEZWVxUWo5RHpGT3hKWmR2UTZlWW5uM3dzcnN0dV9VYlAzd28tV1RPaFVUX3N2SVJxNXpQZXRaZThpNWIxdDFVNGNYX05iOE1FM2pHaXdtTm8ydE9wX3NXdWFqY3VJZ1hIcnNJNkdtSlJmT2R1QmltR09wcWxDZ2x0dk41VWIzajh4WU8xRkh2bEJrQ0UxcE5ZdDF4OHNaYkZtcXN5Z1RTQlZuNmJUa180NTR4S0w5VHNsM1B0enE3aVZod0t6SHJ3R0dfNnN4OUdHOUw2T1NLd2FKZVM4QWFKNTRxTjkzZFhxcHl4OGpzSzZIbERpNy1wS053M1VIMmxhRTJEdXBhOW1FLTRsN0Q4bnZUUTJYaVhOd3pfbUZJdHFST0UxOHdFOHRWTEg0SUl5U1JlMnRjM09vVGxOSkh5VFNkNy1EUGJIa01pQ3htUkFNWDlBMHpsdFJqendzTmxVeVBPZE1xcDNOaXdkUkFFNHV3Nks2elZrV0JfSERsbkhqVDlQV21jc3JHSGJ4dTJkSWZxS0pfaW9FMXVRR1J2VnRsX3JVSkM1X0NrQVBTQXhFRHNMZVVrWTZ2RkJjelV2T2IzcFliLUxUQVVlNWZDbENPWVg3NFl1RkI2TWVkQzkwSGw1SWMtMDNMcTZRR3BVQzFzQkpZWXgwaUEya3ZrWXRfcTB3bFVoNS04ZS1PQThNdmJ0cm9R?oc=5",
-        "time": "2026-08-15 05:40:03",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow"
       }
     ],
     "ptt": [
@@ -113458,6 +113548,34 @@
   },
   "latest_by_platform_7d": {
     "news": [
+      {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": "red"
+      },
+      {
+        "title": "新聞分析》蔡其昌擴張可以談的範圍- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3eGJjTGZ4SThkSXhGSjloQjJWdmxyMXJQeThMQzdFRjN1emdpdmp6VHd6SUNjaU80M2EyNTFKWXdNVHVDWHhzYVYxT3BaZ0FaNGdla25velFDQmRZSmFFTQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "publisher": "自由時報",
+        "severity": null
+      },
       {
         "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
         "url": "https://www.fountmedia.io/article/413712",
@@ -114064,7 +114182,7 @@
         "title": "花蓮藍軍大造勢！蔣萬安授旗挺游淑貞 謝龍介喊「要選貞的」集中票源",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
         "time": "2026-08-15 18:39:12",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": null
       },
       {
@@ -114302,7 +114420,7 @@
         "title": "【交叉提及：張嘉郡】盧秀燕西螺福興宮參香！送蒜頭給張嘉郡 盼「精打細算」拚雲林",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -114364,6 +114482,13 @@
       {
         "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+        "time": "2026-08-15 17:04:00",
+        "publisher": "壹蘋新聞網",
+        "severity": null
+      },
+      {
+        "title": "【交叉提及：張嘉郡】盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
         "time": "2026-08-15 17:04:00",
         "publisher": "壹蘋新聞網",
         "severity": null
@@ -114484,7 +114609,7 @@
         "title": "沈伯洋酸蔣萬安不顧食安 北市府反擊：毒油案有拿出一樣標準？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LTi1HQmExUlpuTmxWaW8tZVc2cHl1aXM3aXJnRG5SczM1TDQ3Um9vNkJCWVFsdWo5VlluY2hLOG5oVlhnbExsODRTUXgzaWV6YkFwUFltMFV6TGU2aFHSAUtBVV95cUxNMjhfanVpdFhyaVZhUF90bnQwNE41UEhwbFNIRlBHbXJFYkplVzVrY2lKT0lzTE5GQUxETFBKeDY5cW5nbGdDVzFLOE0?oc=5",
         "time": "2026-08-15 16:28:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -114498,7 +114623,7 @@
         "title": "沈伯洋批蔣萬安沒顧好食安 殷瑋反酸：上台質詢食安幾次？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9OX1Q1cERPSW9oc29mQ2xWVklCNzk5M3F5Ql85SEtUbHlhemV3dEZJMjdrUFNNWmphRjZIc01Hby1mU3Nibnk5MnFFSHd3OEVmVHpkdWR6bExudG9oTEHSAUtBVV95cUxQeHlHTy1VcG8tUzJBc0xrc2ExR3dXcnlOZ3ppTDhzSUdfV1ZuM0tuSXhuMmRnUVNObTR3TmF6amtiTHptdWxHbk1OSW8?oc=5",
         "time": "2026-08-15 16:19:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -115086,7 +115211,7 @@
         "title": "「羅東女婿」人氣夯！蔣萬安合體吳宗憲掃街 民眾喊凍蒜搶合照",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRbnpVU25fVkxfMHZwSDdnSUFDampZNVVqcjJ3VjVPUVhoMU5mRkVfNFBCWUFIWTNlYzZGelZIUE1RR3lLUGtKOWFYUktvUVMtTzRrWGlQWWhhcHI2OGfSAUtBVV95cUxQSHFDdVkyUDEwN1pfdTNlNjZzQm5BWUtRTU8xTXNFZjdUcTVKT0FfSG15N1NIb2xIdjhtVG1tQkJiNV9FUjJmT1dmZFU?oc=5",
         "time": "2026-08-15 14:04:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -115121,7 +115246,7 @@
         "title": "沈伯洋酸赴傅崐萁地盤喊倒閣「很嗆」 蔣萬安反擊了",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZSEdNRTVwYzlpNDYtd2h5TG9qSVE5V1ZnSmRUWF9fcGxNZzNGdzJTaUpUbl9JREMtc3cxN2NXdXY4TU80VllGR3Bsd2JmaDlGNzktcU41aDI0RGs?oc=5",
         "time": "2026-08-15 14:00:00",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow"
       },
       {
@@ -115247,7 +115372,7 @@
         "title": "中央總預算昨通過 蔣萬安：行政院依法副署執行才不負人民期待",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBQay1qaUtMdllGbkMzcEoxNEMyamMycXlPZGlqMFFfZk5MV2FDNVlQd1ZKNTJWeE5oY2E4OEV3Ym5lWnQ1U0V1RnBPMllzVVFZNkVucGdsUFI0QWZ5OVHSAUtBVV95cUxNTVJiZndQVDZJTlU1TWhDRUY4OFBpNjdrVFFKNWhwRjJqWU42WmN4OEt1NGg1UjJxa3dtV293X2U3RlJybnpTTzNNZEU?oc=5",
         "time": "2026-08-15 13:49:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -115324,7 +115449,7 @@
         "title": "梁文傑嗆管太寬？ 蔣萬安酸：賣鳳梨釋迦變賣台嗎？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QQXNRWWIzekk4TkJFbnBob3lzbjJzV0RIZ3p0Umt3RUd1c2tWNW43MVptVDBjTGVVdzg2cGYwbEpBS3M1eWhaTTJmRUd1a2pNZ3hWTmJwR1hwbjFjRXfSAUtBVV95cUxOblJ1Q0M4ZERyYjV4a1I3TXREd2drM0RILXJDTjZXdlQ5eXVqMkQ0N3BoeXAxTkRlVTluTXdIdFRBcnBvYkd4emxoZlU?oc=5",
         "time": "2026-08-15 13:37:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -115779,7 +115904,7 @@
         "title": "蔣萬安嗆「賣釋迦變賣台」 梁文傑：陸委會什麼人說過？",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PLW44cGR4ZTNLa1pYcERWMzVyZUEwM21HRnpmNDJIVTBLZExnek1JaHZ2NUNTTW81NHZPT3NENzlxMFdlYktfeVZxaE5VUkJGUVpPVEtUWm4zT2VxelHSAUtBVV95cUxOLVVRdjBKUldwRGNreUFrZktsSkdzY2hwcC1td3BxOXVTLWRHSXlLbjZkYWhfdmdlZndJcEZuSWNDNVFMbDFPSGNObVU?oc=5",
         "time": "2026-08-15 12:29:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -117613,7 +117738,7 @@
         "title": "陳其邁卸任前出書《高雄，緊緊緊！2314天極限轉型》",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95eU95NjhIdnFPUUc4YTNhbzR2R205Q2tNNEg4T1k1VVhsZGJRVkZtV0VBSEdQQU1hWHQ1dXZNWFJWOTIwbXo1VXlzeWppel9MTUpF?oc=5",
         "time": "2026-08-14 21:10:32",
-        "publisher": "Google News→中天新聞網",
+        "publisher": "Google News→ctinews.com",
         "severity": null
       },
       {
@@ -117823,7 +117948,7 @@
         "title": "為何都在半夜打電話？蔡英文滿頭問號 陳其邁「畢業回顧」搶先曝",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE54QTRhVUxZYmF0SEp2d2pxNE5WcVZvMGM2U25FZFkzY3pEUTBXUkhhN1JVOGhoYWRGWFBvRk4yR3ZIdHQ1ODFVbDBOaTlBak1nRHNzTjAzREdSNzlTNnfSAUtBVV95cUxONko1cF9pc0J2eXlSNHpZaWsyYlg5RnI5QWNOcTJOeWhpUFMzYlMyblpaTXM5ZVdoTWlpb2JTMVctTG9sOF8ycXJBdm8?oc=5",
         "time": "2026-08-14 18:47:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -120000,7 +120125,7 @@
         "title": "12強、奧運資格賽在台灣打 蔡其昌謝棒協：盼地主隊賽程可相對有利",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11TVVOSzJPYVRFdVFnU2RvZnJDWmdDd2syRkoxTG4tRzZlQ053RWYtYldRb1hxdm92a2ZoRk1vdFZhbmU1ZnJ4MTlxeG5iSnE1Vzl6OXdxVzFSTEJEWVHSAUtBVV95cUxNRHR3S3ZFTEJRVy1CVER2UXMxXzZKWDJqZ1lLbllrcTl6cUFZZTF4LU94cW45OVRTb3NRby1TaktRSFlEUmVHWWJtekk?oc=5",
         "time": "2026-08-14 10:34:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": null
       },
       {
@@ -120721,7 +120846,7 @@
         "title": "韓國瑜驚天一怒！ 蔡其昌還原「神預言」曝傅崐萁一舉動踩紅線",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WTldzOXpMalp2YlVsb3lZRU0ydDhVZ1RLUXkxWEhDRnJ2RmVFZmRkWUtKbTBPeDZ1ZWJIazVIenFianBqblJIVm1vdGhaS2o5c3hIcTYxXzJMbXNoUmfSAUtBVV95cUxQenpaYklqT0gtQXdPeWtndEw5b1VTRTlBOENiLUl1ZXBaZU9qeGI5S3JCY0xFS25PbURpMnk2RTNQUjZPUHA2cTcwZDA?oc=5",
         "time": "2026-08-13 22:39:01",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "yellow"
       },
       {
@@ -121792,7 +121917,7 @@
         "title": "賴征台中舊案重啟 盧秀燕直言啟人疑竇",
         "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PTHFWRXZPZEVEX2tkWW1qQms2anR4U1k4bUhWVnZIcUI4WjQ4YmNpdGtlM3VMWjVoNFBGVE9VckFnMk81ZGF5bXpCSzlpZU0?oc=5",
         "time": "2026-08-13 14:04:07",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "severity": "yellow"
       },
       {
@@ -123731,7 +123856,7 @@
         "title": "賴瑞隆拚接棒陳其邁提「大南方計畫」 酸柯志恩只是「客場選手」",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xLTZFUWNGZng3Qy1XdVlDSTN2WDM3RWx2bWpJT3VBTlpRdHBMcFFFQlN5S3d6UFBXT2g4NzNJbkctMXJtZVZVTmxfMm9vZXRDQ3JUU2ljT3prX1U?oc=5",
         "time": "2026-08-12 18:53:00",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow"
       },
       {
@@ -124641,7 +124766,7 @@
         "title": "讚陳其邁五星市長 賴清德拋3大保證挺賴瑞隆：一棒接一棒、高雄更棒！",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzTEhOUmRSekpyMi02eWZadzR2Sll3aFpwemRjV3NjS3ZHeGtLZnYtZVdYWDl6Z3NUeHpxY0ttdXQwS3dqclI2OTNIaw?oc=5",
         "time": "2026-08-12 15:49:00",
-        "publisher": "Google News→ftnn.com.tw",
+        "publisher": "Google News→FTNN 新聞網",
         "severity": null
       },
       {
@@ -126923,7 +127048,7 @@
         "title": "傅崐萁5度缺席 蔡其昌：韓國瑜恐感慨自己不如藍黨團總召",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jZzBZU1BXR196dnEyaXc2MVNIdDdsVDdaS2EtMzJEb2YyM3NscU1TUUxFcjRmSjZCVTc5MHdrUWYtbTVFb3RlZTNSaENwY3FqX2ZPLU5IaXBJaHM?oc=5",
         "time": "2026-08-11 19:28:35",
-        "publisher": "Google News→上報Up Media",
+        "publisher": "Google News→upmedia.mg",
         "severity": "yellow"
       },
       {
@@ -127966,7 +128091,7 @@
         "title": "中市府驚傳搜索！盧秀燕愛將15萬交保 市府：同仁不滿升遷檢舉",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SU0lHaVI5TmlFeUJnSS1sWC1kcDZxeGpQQTdrN09DdEVQWVNTSVA0dWdLUk9HNTltbnVpWU9nTWFVUkpLUFVjX1lUVzNWSm53QW9zTmc2QXlFOFZxM2fSAUtBVV95cUxOd3lUOHpXNEJHWlM2R1M4VmJsdkcyOWE1STlnTGdCSnNRZzJEZkxGUTVxMzJJSmRNaDIySjVjY0tUb3ZGOFlnX0Rtdnc?oc=5",
         "time": "2026-08-11 13:40:00",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "severity": "red"
       },
       {
@@ -129807,7 +129932,7 @@
         "title": "高雄積極推動產業轉型 陳其邁：展現傳統產業轉型升級韌性與能量",
         "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxQcXlOMnVPWWc2M01IbVlJSTF5UENCeHVjRFNfd241ZThVdXdlblpiVTJtTU9SazRvN1l6N0l2RWdQd2o0VnpobnJXN1JLN2laRDVIMEZNZTJwQ0V4WGFBZ1gxQzlpOTZ6QmRnSm4zUWZ2UGFCaEVzMEItZG5WblJhU2FZUUppclFiUmNEb0pfZ3RCa21XMHFGbmNxNHFfZXhzVk5UazFrbFdDa18xaU5HOGZYWlZPbUtaa1dzSUxnWFhIREpxNGFEdG9sRjdpT2FJUXlRUGQtU1lzeFF2dld0MWdvN3B2blphNV9rVVR1YUZpTGFORE1yWWJWVmdtSktEaDdVTjJ5aHViVWgwSnJ0QkdHNGZaRVFrbV94TWNScnNZRjRmclI4UDhkZXJjNV94Z1l2MUUyZDlyRWU4eGFfd1Q1OU4yempQcmR3cERQeEFzNGVZTjBaSWR3WDhJRjA5RmtpVGVfVEhuU2NnTW51TEN0RmNlSGloeTRaTnZFR2otUDRKeFczaHBZclE4aFRHT1liUGVWQ0tEVnRjaUlCTmYxX1RYMlJtNk03bVl3?oc=5",
         "time": "2026-08-11 00:10:02",
-        "publisher": "Google News→台灣好新聞",
+        "publisher": "Google News→taiwanhot.net",
         "severity": null
       },
       {
@@ -134728,7 +134853,7 @@
         "title": "前NBA巨星驚喜宣布年底訪台！華盛頓巧遇蔡其昌 喊話要環島",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fMmxtNW82YW9MN1pKTHZSMnI0QzNhemRCUjZNQkUxeU15Rks1bTIwQ1NMb0JrSXEwX05PNEk4Mmk1aUNCSXZKWGktSVdhNUkxazNj?oc=5",
         "time": "2026-08-09 15:01:53",
-        "publisher": "Google News→中天新聞網",
+        "publisher": "Google News→ctinews.com",
         "severity": null
       },
       {
@@ -136660,20 +136785,6 @@
         "title": "蔣萬安甩鍋糗了！稱不放假因氣象署沒發陸警 沈伯洋舉1例狠打臉",
         "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%94%A9%E9%8D%8B%E7%B3%97%E4%BA%86-%E7%A8%B1%E4%B8%8D%E6%94%BE%E5%81%87%E5%9B%A0%E6%B0%A3%E8%B1%A1%E7%BD%B2%E6%B2%92%E7%99%BC%E9%99%B8%E8%AD%A6-%E6%B2%88%E4%BC%AF%E6%B4%8B%E8%88%891%E4%BE%8B%E7%8B%A0%E6%89%93%E8%87%89-054335987.html",
         "time": "2026-08-09 05:55:24",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
-        "url": "https://tw.news.yahoo.com/%E6%B0%91%E7%9C%BE%E9%BB%A8%E9%99%B3%E6%B8%85%E9%BE%8D%E6%8F%92%E6%97%97%E6%9D%B1%E5%8B%A2%E5%8A%8D%E6%8C%87%E7%AB%8B%E5%A7%94%E8%A3%9C%E9%81%B8-%E5%9C%8B%E6%B0%91%E9%BB%A8%E4%B9%9F%E5%82%B3%E4%BA%BA%E9%81%B8%E6%80%8E%E9%BA%BC%E5%90%88-%E7%9B%A7%E7%A7%80%E7%87%95-%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-055100621.html",
-        "time": "2026-08-09 05:51:00",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安稱白海豚沒陸警不放颱風假 吳思瑤轟「洗記憶」：用騙票討好市民",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%A8%B1%E7%99%BD%E6%B5%B7%E8%B1%9A%E6%B2%92%E9%99%B8%E8%AD%A6%E4%B8%8D%E6%94%BE%E9%A2%B1%E9%A2%A8%E5%81%87-%E5%90%B3%E6%80%9D%E7%91%A4%E8%BD%9F-%E6%B4%97%E8%A8%98%E6%86%B6-%E7%94%A8%E9%A8%99%E7%A5%A8%E8%A8%8E%E5%A5%BD%E5%B8%82%E6%B0%91-054500525.html",
-        "time": "2026-08-09 05:45:00",
         "publisher": "Yahoo新聞",
         "severity": "yellow"
       }
@@ -139121,41 +139232,6 @@
       "red_news_count": 0
     },
     {
-      "title": "高雄詐騙案",
-      "city": "高雄",
-      "place": "高雄市政府",
-      "lat": 22.6232,
-      "lng": 120.31539807621135,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 1",
-      "note": "24h 命中 1 則（新聞 1、留言 0）",
-      "news_count": 1,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-15T03:48:41+00:00",
-      "news_full_expires_at": "2026-08-16T03:48:41+00:00",
-      "news_articles": [
-        {
-          "title": "旗山警銀聯手識破假檢警 成功攔阻140萬保單解約詐騙",
-          "url": "https://tw.news.yahoo.com/%E6%97%97%E5%B1%B1%E8%AD%A6%E9%8A%80%E8%81%AF%E6%89%8B%E8%AD%98%E7%A0%B4%E5%81%87%E6%AA%A2%E8%AD%A6-%E6%88%90%E5%8A%9F%E6%94%94%E9%98%BB140%E8%90%AC%E4%BF%9D%E5%96%AE%E8%A7%A3%E7%B4%84%E8%A9%90%E9%A8%99-114841923.html",
-          "time": "2026-08-15 11:48:41",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 100,
-      "urgent_red_comments": 0,
-      "urgency_score": 4,
-      "is_urgent": false,
-      "is_catchall": false,
-      "keywords": [
-        "詐騙"
-      ],
-      "red_news_count": 0
-    },
-    {
       "title": "金門詐騙案",
       "city": "金門",
       "place": "金門縣政府",
@@ -139174,6 +139250,41 @@
           "title": "「金門中秋博狀元餅」活動竟遭冒名徵才詐騙 縣府迅速示警防詐",
           "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E4%B8%AD%E7%A7%8B%E5%8D%9A%E7%8B%80%E5%85%83%E9%A4%85-%E6%B4%BB%E5%8B%95%E7%AB%9F%E9%81%AD%E5%86%92%E5%90%8D%E5%BE%B5%E6%89%8D%E8%A9%90%E9%A8%99-%E7%B8%A3%E5%BA%9C%E8%BF%85%E9%80%9F%E7%A4%BA%E8%AD%A6%E9%98%B2%E8%A9%90-222804753.html",
           "time": "2026-08-15 06:28:04",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 100,
+      "urgent_red_comments": 0,
+      "urgency_score": 4,
+      "is_urgent": false,
+      "is_catchall": false,
+      "keywords": [
+        "詐騙"
+      ],
+      "red_news_count": 0
+    },
+    {
+      "title": "高雄詐騙案",
+      "city": "高雄",
+      "place": "高雄市政府",
+      "lat": 22.6232,
+      "lng": 120.31539807621135,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-15T03:48:41+00:00",
+      "news_full_expires_at": "2026-08-16T03:48:41+00:00",
+      "news_articles": [
+        {
+          "title": "旗山警銀聯手識破假檢警 成功攔阻140萬保單解約詐騙",
+          "url": "https://tw.news.yahoo.com/%E6%97%97%E5%B1%B1%E8%AD%A6%E9%8A%80%E8%81%AF%E6%89%8B%E8%AD%98%E7%A0%B4%E5%81%87%E6%AA%A2%E8%AD%A6-%E6%88%90%E5%8A%9F%E6%94%94%E9%98%BB140%E8%90%AC%E4%BF%9D%E5%96%AE%E8%A7%A3%E7%B4%84%E8%A9%90%E9%A8%99-114841923.html",
+          "time": "2026-08-15 11:48:41",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
@@ -140966,6 +141077,259 @@
       "red_news_count": 0
     },
     {
+      "title": "台東地方動態",
+      "city": "台東",
+      "place": "台東縣政府",
+      "lat": 22.7583,
+      "lng": 121.1444,
+      "level": "yellow",
+      "source": "news",
+      "platform": "新聞 28",
+      "note": "24h 命中 28 則（新聞 28、留言 0）",
+      "news_count": 28,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-15T15:53:16+00:00",
+      "news_full_expires_at": "2026-08-16T15:53:16+00:00",
+      "news_articles": [
+        {
+          "title": "張善政率桃園市府團隊參訪台東博覽會 饒慶鈴分享城市策展與地方治理經驗",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5LV191dE5wLVFuN2U5OFk5WFhEdFQ3SXBZTk9ORkVqUkxTMjM0ZGJUSVA2aEI1dGRXN0xqbmVlX2lTUQ?oc=5",
+          "time": "2026-08-15 23:53:16",
+          "publisher": "Google News→墨新聞-MORE News",
+          "severity": null
+        },
+        {
+          "title": "「桃園X台東」雙邊城市交流 張市長率團參訪臺東博覽會",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lNmtNaTR2ejE4SnB4ai1Zb0RsbEdib2I4QUgzRGtTMkhHUWpQVEhzcERrZjl4ejRPcHBhM3hZYXBKMFpLNHhvaE93VVprbVl4TmQ2Zk9iMW56WHBiOTViZTdCaEhZcXZvZm14NQ?oc=5",
+          "time": "2026-08-15 20:58:17",
+          "publisher": "Google News→tycg.gov.tw",
+          "severity": null
+        },
+        {
+          "title": "蔣萬安為饒慶鈴槓梁文傑！「管到台東去」吃飽太閒？【頭家來開講】2026.08.15｜民視讚夯.com",
+          "url": "https://www.youtube.com/watch?v=p1UdK1t_zDk",
+          "time": "2026-08-15 20:00:08",
+          "publisher": null,
+          "severity": null
+        },
+        {
+          "title": "蔣萬安要陸委會道歉 梁文傑:管到台東會不會管太寬?",
+          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOZjRMZ2JDNlVnVGZZdHVTMHZOc1RyZG1LQ0xtMHJPeW5RcVhpM3hmVWxLajJTQ1o5WlpIaFZoNlY4TWFwRFRkc2hYdGwzaEx6ZGhtOFpWQTE5U3JLaVJUUnkwa1FXdTR1a25nczNqSEJJSURES0xDbEJEVkE4d29iZ3VLN2NwaUhwWVU3bTJuZHpVZzFaVncweEZDTDBUa2ZlR0ZidnpTalM4ZlJmOTE1c0xoenNrc0ZyZ044MERPXzdEcldMZHB5X2c5UjV2WGtGTWJ6YW1rVVppUTZWdUh0eDdqRXNOMTZ3bVZ2VXN6SWI5QWZhOTk3RENIMjdPMUhmWGdLbEhpNzdVZUJtdTF3ZWtfSjhSeTJPYW1kdW1CMkFpR0lLNW9MSlJURTQ2TmRrZ183UzhsOTFtRFk1X0pQaEdLbmFuVlV1bnpTZ0pMZS1DRWdCUHh2eU1kT0dGQQ?oc=5",
+          "time": "2026-08-15 19:08:17",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5dGRrakJyU0VrajBQdnhhLW5sQjV4el92bms1TzJ1LVk4XzJNV0dJaUZtaDNRYVFpbXhtRGV2a0FnSWZYRzJqZWxKcHY2OWw1VnYxcHlR?oc=5",
+          "time": "2026-08-15 18:14:45",
+          "publisher": "Google News→cna.com.tw",
+          "severity": null
+        },
+        {
+          "title": "張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗 交流暗空觀光與地方品牌發展",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5MWEY1bkRtU3h6dlp1NVBOZ2ZZVGhIWFVmWXBRQUNoMUxDdjRhNkJGSlBIR2tseVMwaVNqQUlPaFlvMXYzX0E?oc=5",
+          "time": "2026-08-15 18:13:22",
+          "publisher": "Google News→台灣新聞雲報",
+          "severity": null
+        },
+        {
+          "title": "桃園市長張善政今天下午率市府團隊到台東參訪台東博覽會，針對日前2名中國籍偷渡客搭乘橡皮艇登台，最後在桃園朝陽森林公園遭逮一事表示，偷渡客問題基本上屬於國安事務，由中央海巡署主政，地方則負責一般治安，市府警察局會充分掌握，也會與中央做好分工。",
+          "url": "https://udn.com/news/story/6656/9693609?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-15 17:04:56",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東市區純茶手搖飲 質感茶飲店用天然茶葉泡出回甘日常",
+          "url": "https://more-news.tw/694543/",
+          "time": "2026-08-15 15:54:34",
+          "publisher": "墨新聞",
+          "severity": null
+        },
+        {
+          "title": "【新聞一點靈】北市長選戰最新民調　蔣萬安、沈伯洋差距縮小至15.4%　蔣萬安嗆欠饒慶鈴道歉　梁文傑：從台北管到台東會不會太寬了？",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437358.html",
+          "time": "2026-08-15 15:49:23",
+          "publisher": "壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "【新聞一點靈】北市長選戰最新民調 蔣萬安、沈伯洋差距縮小至15.4% 蔣萬安嗆欠饒慶鈴道歉 梁文傑：從台北管到台東會不會太寬了？",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT205dDlXTWdLYzM2WjdaSFZrQlFpaFNTdGt6VFplcjhEdmpsclhuNXkwS0FEQ2c4ZTlWV3RONXR1X3ZTLWlGWTNqTXNfaHh2RWx2Zm9wLXNzNGpUa3B5OTBNdmRWc0xvaFVYSk9MWEZTTllIWFpLbXhjMnRacGN2OA?oc=5",
+          "time": "2026-08-15 15:33:00",
+          "publisher": "Google News→壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安嗆欠饒慶鈴道歉　梁文傑：從台北管到台東會不會太寬了？",
+          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437254.html",
+          "time": "2026-08-15 14:25:40",
+          "publisher": "壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安嗆欠饒慶鈴道歉 梁文傑：從台北管到台東會不會太寬了？",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcGNtM3NMeTVpd1NfWXhyS3JEZTRZSXpEdFM3LURBdl9aZ3FnWEh5N0lmRElfQlVwSEVpOFpVRGpCb3MwWHdsb0VMMW1MX2N5aEZweHRacVFEVVRtd3JRSnJHMmJQMi1rejlJZXVUQ2VYN25vRWRvRE16ZHNUT2tHdA?oc=5",
+          "time": "2026-08-15 14:18:10",
+          "publisher": "Google News→壹電視",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東縣長饒慶鈴預錄影片參與海峽論壇的爭議，這兩天變成台北市長蔣萬安和陸委會副主委梁文傑的隔空交鋒。蔣萬安今天早上稱「難道賣鳳梨釋迦就變成賣台嗎」，梁文傑隨後反問，陸委會從未如此指控，若蔣萬安真的聽過陸委會說任何人「賣台」，「歡迎具體指出來」。",
+          "url": "https://udn.com/news/story/6656/9693233?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-15 13:07:27",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "影／張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗 交流暗空觀光與地方品牌發展",
+          "url": "https://n.yam.com/Article/20260815262634",
+          "time": "2026-08-15 12:00:00",
+          "publisher": "蕃新聞→互傳媒",
+          "severity": null
+        },
+        {
+          "title": "蔣萬安要陸委會道歉 梁文傑:管到台東會不會管太寬?",
+          "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E8%A6%81%E9%99%B8%E5%A7%94%E6%9C%83%E9%81%93%E6%AD%89-%E6%A2%81%E6%96%87%E5%82%91-%E7%AE%A1%E5%88%B0%E5%8F%B0%E6%9D%B1%E6%9C%83%E4%B8%8D%E6%9C%83%E7%AE%A1%E5%A4%AA%E5%AF%AC-110817380.html",
+          "time": "2026-08-15 11:31:02",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "虎頭蜂又來了！台東池上2工人遭蜂襲幸遇巡警救援| 2026九合一選舉",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44N3BEa1hCSEJFVWJ6YUhZelU1S2JtMC1ta28ySEZHWDFqeWY3MF95M2pXOE0zRGUzZXZTcDVLOVRTOHlYRTVvN213czZsXzFwWVIyN09R?oc=5",
+          "time": "2026-08-15 11:05:00",
+          "publisher": "Google News→UDN",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東縣長饒慶鈴預錄影片參與海峽論壇，經調查後認定不予處分，台北市長蔣萬安昨指陸委會欠饒慶鈴及5個農業團體一個道歉，陸委會副主委梁文傑也反擊「從台北管到台東會不會太寬了？」蔣萬安上午受訪指出，賣鳳梨釋迦就變成賣台嗎？這非常可笑。",
+          "url": "https://udn.com/news/story/6656/9693020?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-15 10:41:17",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬",
+          "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQNW9LOVhzNWZxQ01Kam9Vb0hMSk51eGNEbHhTcnVfdWlVTUtFNTFkN0JlMm50NmkxVFV1b29uRUxPOFdZcHBxUktjRWpUVkhBSzRhcnpWbXN5NlQtNWpVVmtUdzlLNlBrNm9GRlVjSm1Mek5NejVKQm5oYnlfS2VMc1dmbFYtbzJOaUd3UWVIUVI4cFRfRlZMczgxWnJTSmtEbHl2OVFxekJ5S3RMajJmazRiWU9ub3Q4UEwxN3k1MUw0UzBiU0hnb2Nma3NYTjRhRmFNNHk0NlJzd1gwdi1ObjUwYlZmekhhc3oydkdxQ0FmMEgzRnJnbHI0b1A3cVJJRE9qQTdzMC1pcnB0czRMaGNIRHVhdEc5dVRPT21BLTdGTVRuSmdIR3dGdVhIQ3dYaGVzV1BBWXg0T0YtZEJSQ0R2czhsT19oMHlXUUUzaXkwZlhZNWVxTVhUY2JWUWJSLS0tWjNJenlKWG41?oc=5",
+          "time": "2026-08-15 10:24:52",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "梁文傑嗆「台北管到台東會不會太寬？」 蔣萬安反酸一句",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BQldva3lUdmdzX0NrXzY5cFNXSUV0Z2dhTFpZSDlmR0N3MXlPd1cyRVpqcXlQVmNicFRJSnFhbjFPSThRbV9KelB2dVVYSTZoR3NnTHZuVjBsc0JSVzJOYWplUWJTM2RBSERGTU13?oc=5",
+          "time": "2026-08-15 10:20:00",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "桃市府取經台東博覽會 張善政：從慢食到舊站都值得學習",
+          "url": "https://tw.news.yahoo.com/%E6%A1%83%E5%B8%82%E5%BA%9C%E5%8F%96%E7%B6%93%E5%8F%B0%E6%9D%B1%E5%8D%9A%E8%A6%BD%E6%9C%83-%E5%BC%B5%E5%96%84%E6%94%BF-%E5%BE%9E%E6%85%A2%E9%A3%9F%E5%88%B0%E8%88%8A%E7%AB%99%E9%83%BD%E5%80%BC%E5%BE%97%E5%AD%B8%E7%BF%92-101604491.html",
+          "time": "2026-08-15 10:16:04",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtMjVnaC1rYkxOUkE0b3pJY2lvaVI3bDNtVTFHM1JDQmM5d1E1SnVMbnJZak9TdkFEVThia1haM0FRRnFhMUhzeNIBTEFVX3lxTE1fODJzUzdsdkl4OU1MNUVTX2RwdmFualFJT1JZd3pmT1JUd3hlbHU5Qjk2TnkzRkR3cXFhdVBVLWxHUUpyQTdza0JVOEw?oc=5",
+          "time": "2026-08-15 10:11:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬| 政治",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtMjVnaC1rYkxOUkE0b3pJY2lvaVI3bDNtVTFHM1JDQmM5d1E1SnVMbnJZak9TdkFEVThia1haM0FRRnFhMUhzeA?oc=5",
+          "time": "2026-08-15 10:11:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安替饒慶鈴討道歉 梁文傑開嗆：從台北管到台東會不會太寬？ | 要聞",
+          "url": "https://www.nownews.com/news/6866089",
+          "time": "2026-08-15 09:24:49",
+          "publisher": "NOWnews今日新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安替饒慶鈴討道歉 梁文傑開嗆：從台北管到台東會不會太寬？",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9mOWpnbjdXYmVIQVpMTV93aHV3NHZSbmlxbVVVN2p3S2lMX2hOemF1NXktRXFCQUNxc05TZlZ3Szl1OWtZaS0zUnZLU2XSAVJBVV95cUxPSDBINjN0ZzEyZ1JOWkJOenZfdkc4MEcwd1doVzB6RW1QRkJpRGs0UnVoWHhjdGRXS2JPanBhbTk2dk9IV0RyYXpjQ2FXaHpSNnZB?oc=5",
+          "time": "2026-08-15 09:12:03",
+          "publisher": "Google News→NOWnews今日新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬",
+          "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNRkpGMXFGVkhaLVlveGhYZk96ZzBCeGZKUXM0a3drcktWanVvSGtJUWNMeVo3eFRCZWxnUXduM1pIVlU5c2FOYlJOZ25FaVhPUHlleDVuT0QwZ0RRYVRPRDFzbjJReDR4R2RvNWxXUDdoZlZQc1IxYVdZTjNRdDROVVItaGhIOFVLUmFoMldkamNWVHFJY3ZOOFZBT1RjMWFRQUpCUHBqTkNqS2NTWmVFWkhLekpZRU9nbms4RTRzblowbWdGV2JyTXdpUk1ISnVMZ0xsQ0R1NzBUdzNYX1hieUZ5VjJMcFF1ejZYOGFTblR6TXhIcmlRVkVyV0xlX1pMMjdjRmdaRlFWTm9aS3BTMzFFekhKM2tHRG8zbURUdXN5eVFFbW9wN1V6MUdQUV9QLTM5djdYOFgxRWVIMFpmSHZjUGhwU3N6SnR6cFByc1hKNFkzNWtZeU5Zdjg2Y2ktSkdMWjRyLWpPLUttVldzYWpZcnJKRDhtdzBfaUZTX0c2SnpSN25DMjBXNUE0anl2Qk9rbThEb1E1T3ZlU1NxUGxIREgwQQ?oc=5",
+          "time": "2026-08-15 08:33:57",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬",
+          "url": "https://newtalk.tw/news/view/2026-08-15/1053540",
+          "time": "2026-08-15 08:13:57",
+          "publisher": "新頭殼",
+          "severity": "yellow"
+        },
+        {
+          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬| 政治",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10NU9Qcl9aeEUwdU5PT0NCSktibnNMY2M3VjlxMEo2VV9kMEdZQnJnSWxNR1VCbE1yMVB4TXJYOFNnZnpHeEVyLWNtMDV6Q01UNUpJWEttUkEzXzg?oc=5",
+          "time": "2026-08-15 08:13:35",
+          "publisher": "Google News→Newtalk新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東醉男辱罵警察「大塊呆」！涉妨害公務判罰1萬元",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E6%9D%B1%E9%86%89%E7%94%B7%E8%BE%B1%E7%BD%B5%E8%AD%A6%E5%AF%9F-%E5%A4%A7%E5%A1%8A%E5%91%86-%E6%B6%89%E5%A6%A8%E5%AE%B3%E5%85%AC%E5%8B%99%E5%88%A4%E7%BD%B01%E8%90%AC%E5%85%83-064557209.html",
+          "time": "2026-08-15 06:45:57",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 4,
+      "urgent_red_comments": 0,
+      "urgency_score": 31,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
       "title": "苗栗地方動態",
       "city": "苗栗",
       "place": "苗栗縣政府",
@@ -141226,273 +141590,6 @@
       "red_news_count": 0
     },
     {
-      "title": "台東地方動態",
-      "city": "台東",
-      "place": "台東縣政府",
-      "lat": 22.7583,
-      "lng": 121.1444,
-      "level": "yellow",
-      "source": "news",
-      "platform": "新聞 30",
-      "note": "24h 命中 30 則（新聞 30、留言 0）",
-      "news_count": 30,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-15T15:53:16+00:00",
-      "news_full_expires_at": "2026-08-16T15:53:16+00:00",
-      "news_articles": [
-        {
-          "title": "張善政率桃園市府團隊參訪台東博覽會 饒慶鈴分享城市策展與地方治理經驗",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5LV191dE5wLVFuN2U5OFk5WFhEdFQ3SXBZTk9ORkVqUkxTMjM0ZGJUSVA2aEI1dGRXN0xqbmVlX2lTUQ?oc=5",
-          "time": "2026-08-15 23:53:16",
-          "publisher": "Google News→墨新聞-MORE News",
-          "severity": null
-        },
-        {
-          "title": "「桃園X台東」雙邊城市交流 張市長率團參訪臺東博覽會",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lNmtNaTR2ejE4SnB4ai1Zb0RsbEdib2I4QUgzRGtTMkhHUWpQVEhzcERrZjl4ejRPcHBhM3hZYXBKMFpLNHhvaE93VVprbVl4TmQ2Zk9iMW56WHBiOTViZTdCaEhZcXZvZm14NQ?oc=5",
-          "time": "2026-08-15 20:58:17",
-          "publisher": "Google News→tycg.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "蔣萬安為饒慶鈴槓梁文傑！「管到台東去」吃飽太閒？【頭家來開講】2026.08.15｜民視讚夯.com",
-          "url": "https://www.youtube.com/watch?v=p1UdK1t_zDk",
-          "time": "2026-08-15 20:00:08",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "蔣萬安要陸委會道歉 梁文傑:管到台東會不會管太寬?",
-          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOZjRMZ2JDNlVnVGZZdHVTMHZOc1RyZG1LQ0xtMHJPeW5RcVhpM3hmVWxLajJTQ1o5WlpIaFZoNlY4TWFwRFRkc2hYdGwzaEx6ZGhtOFpWQTE5U3JLaVJUUnkwa1FXdTR1a25nczNqSEJJSURES0xDbEJEVkE4d29iZ3VLN2NwaUhwWVU3bTJuZHpVZzFaVncweEZDTDBUa2ZlR0ZidnpTalM4ZlJmOTE1c0xoenNrc0ZyZ044MERPXzdEcldMZHB5X2c5UjV2WGtGTWJ6YW1rVVppUTZWdUh0eDdqRXNOMTZ3bVZ2VXN6SWI5QWZhOTk3RENIMjdPMUhmWGdLbEhpNzdVZUJtdTF3ZWtfSjhSeTJPYW1kdW1CMkFpR0lLNW9MSlJURTQ2TmRrZ183UzhsOTFtRFk1X0pQaEdLbmFuVlV1bnpTZ0pMZS1DRWdCUHh2eU1kT0dGQQ?oc=5",
-          "time": "2026-08-15 19:08:17",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB5dGRrakJyU0VrajBQdnhhLW5sQjV4el92bms1TzJ1LVk4XzJNV0dJaUZtaDNRYVFpbXhtRGV2a0FnSWZYRzJqZWxKcHY2OWw1VnYxcHlR?oc=5",
-          "time": "2026-08-15 18:14:45",
-          "publisher": "Google News→cna.com.tw",
-          "severity": null
-        },
-        {
-          "title": "張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗 交流暗空觀光與地方品牌發展",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5MWEY1bkRtU3h6dlp1NVBOZ2ZZVGhIWFVmWXBRQUNoMUxDdjRhNkJGSlBIR2tseVMwaVNqQUlPaFlvMXYzX0E?oc=5",
-          "time": "2026-08-15 18:13:22",
-          "publisher": "Google News→台灣新聞雲報",
-          "severity": null
-        },
-        {
-          "title": "桃園市長張善政今天下午率市府團隊到台東參訪台東博覽會，針對日前2名中國籍偷渡客搭乘橡皮艇登台，最後在桃園朝陽森林公園遭逮一事表示，偷渡客問題基本上屬於國安事務，由中央海巡署主政，地方則負責一般治安，市府警察局會充分掌握，也會與中央做好分工。",
-          "url": "https://udn.com/news/story/6656/9693609?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-15 17:04:56",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "台東市區純茶手搖飲 質感茶飲店用天然茶葉泡出回甘日常",
-          "url": "https://more-news.tw/694543/",
-          "time": "2026-08-15 15:54:34",
-          "publisher": "墨新聞",
-          "severity": null
-        },
-        {
-          "title": "【新聞一點靈】北市長選戰最新民調　蔣萬安、沈伯洋差距縮小至15.4%　蔣萬安嗆欠饒慶鈴道歉　梁文傑：從台北管到台東會不會太寬了？",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437358.html",
-          "time": "2026-08-15 15:49:23",
-          "publisher": "壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "【新聞一點靈】北市長選戰最新民調 蔣萬安、沈伯洋差距縮小至15.4% 蔣萬安嗆欠饒慶鈴道歉 梁文傑：從台北管到台東會不會太寬了？",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT205dDlXTWdLYzM2WjdaSFZrQlFpaFNTdGt6VFplcjhEdmpsclhuNXkwS0FEQ2c4ZTlWV3RONXR1X3ZTLWlGWTNqTXNfaHh2RWx2Zm9wLXNzNGpUa3B5OTBNdmRWc0xvaFVYSk9MWEZTTllIWFpLbXhjMnRacGN2OA?oc=5",
-          "time": "2026-08-15 15:33:00",
-          "publisher": "Google News→壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安嗆欠饒慶鈴道歉　梁文傑：從台北管到台東會不會太寬了？",
-          "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437254.html",
-          "time": "2026-08-15 14:25:40",
-          "publisher": "壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安嗆欠饒慶鈴道歉 梁文傑：從台北管到台東會不會太寬了？",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcGNtM3NMeTVpd1NfWXhyS3JEZTRZSXpEdFM3LURBdl9aZ3FnWEh5N0lmRElfQlVwSEVpOFpVRGpCb3MwWHdsb0VMMW1MX2N5aEZweHRacVFEVVRtd3JRSnJHMmJQMi1rejlJZXVUQ2VYN25vRWRvRE16ZHNUT2tHdA?oc=5",
-          "time": "2026-08-15 14:18:10",
-          "publisher": "Google News→壹電視",
-          "severity": "yellow"
-        },
-        {
-          "title": "台東縣長饒慶鈴預錄影片參與海峽論壇的爭議，這兩天變成台北市長蔣萬安和陸委會副主委梁文傑的隔空交鋒。蔣萬安今天早上稱「難道賣鳳梨釋迦就變成賣台嗎」，梁文傑隨後反問，陸委會從未如此指控，若蔣萬安真的聽過陸委會說任何人「賣台」，「歡迎具體指出來」。",
-          "url": "https://udn.com/news/story/6656/9693233?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-15 13:07:27",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "影／張善政率桃園市府團隊走訪東博會 饒慶鈴分享城市策展經驗 交流暗空觀光與地方品牌發展",
-          "url": "https://n.yam.com/Article/20260815262634",
-          "time": "2026-08-15 12:00:00",
-          "publisher": "蕃新聞→互傳媒",
-          "severity": null
-        },
-        {
-          "title": "蔣萬安要陸委會道歉 梁文傑:管到台東會不會管太寬?",
-          "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E8%A6%81%E9%99%B8%E5%A7%94%E6%9C%83%E9%81%93%E6%AD%89-%E6%A2%81%E6%96%87%E5%82%91-%E7%AE%A1%E5%88%B0%E5%8F%B0%E6%9D%B1%E6%9C%83%E4%B8%8D%E6%9C%83%E7%AE%A1%E5%A4%AA%E5%AF%AC-110817380.html",
-          "time": "2026-08-15 11:31:02",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "虎頭蜂又來了！台東池上2工人遭蜂襲幸遇巡警救援| 2026九合一選舉",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44N3BEa1hCSEJFVWJ6YUhZelU1S2JtMC1ta28ySEZHWDFqeWY3MF95M2pXOE0zRGUzZXZTcDVLOVRTOHlYRTVvN213czZsXzFwWVIyN09R?oc=5",
-          "time": "2026-08-15 11:05:00",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
-        },
-        {
-          "title": "台東縣長饒慶鈴預錄影片參與海峽論壇，經調查後認定不予處分，台北市長蔣萬安昨指陸委會欠饒慶鈴及5個農業團體一個道歉，陸委會副主委梁文傑也反擊「從台北管到台東會不會太寬了？」蔣萬安上午受訪指出，賣鳳梨釋迦就變成賣台嗎？這非常可笑。",
-          "url": "https://udn.com/news/story/6656/9693020?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-15 10:41:17",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬",
-          "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQNW9LOVhzNWZxQ01Kam9Vb0hMSk51eGNEbHhTcnVfdWlVTUtFNTFkN0JlMm50NmkxVFV1b29uRUxPOFdZcHBxUktjRWpUVkhBSzRhcnpWbXN5NlQtNWpVVmtUdzlLNlBrNm9GRlVjSm1Mek5NejVKQm5oYnlfS2VMc1dmbFYtbzJOaUd3UWVIUVI4cFRfRlZMczgxWnJTSmtEbHl2OVFxekJ5S3RMajJmazRiWU9ub3Q4UEwxN3k1MUw0UzBiU0hnb2Nma3NYTjRhRmFNNHk0NlJzd1gwdi1ObjUwYlZmekhhc3oydkdxQ0FmMEgzRnJnbHI0b1A3cVJJRE9qQTdzMC1pcnB0czRMaGNIRHVhdEc5dVRPT21BLTdGTVRuSmdIR3dGdVhIQ3dYaGVzV1BBWXg0T0YtZEJSQ0R2czhsT19oMHlXUUUzaXkwZlhZNWVxTVhUY2JWUWJSLS0tWjNJenlKWG41?oc=5",
-          "time": "2026-08-15 10:24:52",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "梁文傑嗆「台北管到台東會不會太寬？」 蔣萬安反酸一句",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BQldva3lUdmdzX0NrXzY5cFNXSUV0Z2dhTFpZSDlmR0N3MXlPd1cyRVpqcXlQVmNicFRJSnFhbjFPSThRbV9KelB2dVVYSTZoR3NnTHZuVjBsc0JSVzJOYWplUWJTM2RBSERGTU13?oc=5",
-          "time": "2026-08-15 10:20:00",
-          "publisher": "中時新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "桃市府取經台東博覽會 張善政：從慢食到舊站都值得學習",
-          "url": "https://tw.news.yahoo.com/%E6%A1%83%E5%B8%82%E5%BA%9C%E5%8F%96%E7%B6%93%E5%8F%B0%E6%9D%B1%E5%8D%9A%E8%A6%BD%E6%9C%83-%E5%BC%B5%E5%96%84%E6%94%BF-%E5%BE%9E%E6%85%A2%E9%A3%9F%E5%88%B0%E8%88%8A%E7%AB%99%E9%83%BD%E5%80%BC%E5%BE%97%E5%AD%B8%E7%BF%92-101604491.html",
-          "time": "2026-08-15 10:16:04",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtMjVnaC1rYkxOUkE0b3pJY2lvaVI3bDNtVTFHM1JDQmM5d1E1SnVMbnJZak9TdkFEVThia1haM0FRRnFhMUhzeNIBTEFVX3lxTE1fODJzUzdsdkl4OU1MNUVTX2RwdmFualFJT1JZd3pmT1JUd3hlbHU5Qjk2TnkzRkR3cXFhdVBVLWxHUUpyQTdza0JVOEw?oc=5",
-          "time": "2026-08-15 10:11:00",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "梁文傑酸「台北管到台東」 蔣萬安再嗆：可笑！陸委會管太寬| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtMjVnaC1rYkxOUkE0b3pJY2lvaVI3bDNtVTFHM1JDQmM5d1E1SnVMbnJZak9TdkFEVThia1haM0FRRnFhMUhzeA?oc=5",
-          "time": "2026-08-15 10:11:00",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安替饒慶鈴討道歉 梁文傑開嗆：從台北管到台東會不會太寬？ | 要聞",
-          "url": "https://www.nownews.com/news/6866089",
-          "time": "2026-08-15 09:24:49",
-          "publisher": "NOWnews今日新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安替饒慶鈴討道歉 梁文傑開嗆：從台北管到台東會不會太寬？",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9mOWpnbjdXYmVIQVpMTV93aHV3NHZSbmlxbVVVN2p3S2lMX2hOemF1NXktRXFCQUNxc05TZlZ3Szl1OWtZaS0zUnZLU2XSAVJBVV95cUxPSDBINjN0ZzEyZ1JOWkJOenZfdkc4MEcwd1doVzB6RW1QRkJpRGs0UnVoWHhjdGRXS2JPanBhbTk2dk9IV0RyYXpjQ2FXaHpSNnZB?oc=5",
-          "time": "2026-08-15 09:12:03",
-          "publisher": "Google News→NOWnews今日新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬",
-          "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNRkpGMXFGVkhaLVlveGhYZk96ZzBCeGZKUXM0a3drcktWanVvSGtJUWNMeVo3eFRCZWxnUXduM1pIVlU5c2FOYlJOZ25FaVhPUHlleDVuT0QwZ0RRYVRPRDFzbjJReDR4R2RvNWxXUDdoZlZQc1IxYVdZTjNRdDROVVItaGhIOFVLUmFoMldkamNWVHFJY3ZOOFZBT1RjMWFRQUpCUHBqTkNqS2NTWmVFWkhLekpZRU9nbms4RTRzblowbWdGV2JyTXdpUk1ISnVMZ0xsQ0R1NzBUdzNYX1hieUZ5VjJMcFF1ejZYOGFTblR6TXhIcmlRVkVyV0xlX1pMMjdjRmdaRlFWTm9aS3BTMzFFekhKM2tHRG8zbURUdXN5eVFFbW9wN1V6MUdQUV9QLTM5djdYOFgxRWVIMFpmSHZjUGhwU3N6SnR6cFByc1hKNFkzNWtZeU5Zdjg2Y2ktSkdMWjRyLWpPLUttVldzYWpZcnJKRDhtdzBfaUZTX0c2SnpSN25DMjBXNUE0anl2Qk9rbThEb1E1T3ZlU1NxUGxIREgwQQ?oc=5",
-          "time": "2026-08-15 08:33:57",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬",
-          "url": "https://newtalk.tw/news/view/2026-08-15/1053540",
-          "time": "2026-08-15 08:13:57",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安要陸委會向饒慶鈴道歉！梁文傑：從台北管到台東會不會太寬| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10NU9Qcl9aeEUwdU5PT0NCSktibnNMY2M3VjlxMEo2VV9kMEdZQnJnSWxNR1VCbE1yMVB4TXJYOFNnZnpHeEVyLWNtMDV6Q01UNUpJWEttUkEzXzg?oc=5",
-          "time": "2026-08-15 08:13:35",
-          "publisher": "Google News→Newtalk新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "台東醉男辱罵警察「大塊呆」！涉妨害公務判罰1萬元",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E6%9D%B1%E9%86%89%E7%94%B7%E8%BE%B1%E7%BD%B5%E8%AD%A6%E5%AF%9F-%E5%A4%A7%E5%A1%8A%E5%91%86-%E6%B6%89%E5%A6%A8%E5%AE%B3%E5%85%AC%E5%8B%99%E5%88%A4%E7%BD%B01%E8%90%AC%E5%85%83-064557209.html",
-          "time": "2026-08-15 06:45:57",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-          "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxONElra3lkejVQQ1F4WUdNWVpMOFhJUDFBdkFxUXk1V21pRm54NjJCSDlPX3o5TXE1aHRUcVFFQ1c1ZTBZTUJkRkFURU5FMXJPUUhUTXlVdUJRcDhiZ2NlQmNheVRQWTlJc1RsY09QU0NqbzY0RzZ1ZkZ4MHVsM3RQckViZFMwZW5DeE51MUhnR1Z2MGxOZWVDLVktNjBEdm5fVFBEN2NCdF9SZDV3RWszUGVkMHF2c2laVDczVy1XbFkwbW5JWll2bVpuUTNZSnFSNWhSZmJNaGF0Sk50aHFDVU81RWMwTHBlbXFOckpZX3lsa2k5VldYUUJFa0ZXWENsb0pyX3Jqcm1iZTNnS3ZJY2xVcXBwcm9CY2M5VkRNTW40QXhGODhaSzhkZGM5NUhUSVByb0JwMjNpd3M5bGh4RUYwdHdZc0EyZ3pNQ1I4c29qU2ZQbkFBM0I4TlNIZkI4UDFVclEzQ29PaUpEUDMtb0ctVUVPMUhVNW4wNjJXR2h5Y0hwMV9PSm1ZZ24xbnNENU1VUjZVUHpmN2RvRlNrN2VkVXQxMy1FdlB1a01yWWNZTms5ZjdMbkdRSGp5M3lOS0lBMFczc2ExY083Rk0zbzREMVFHUlc2N3JESGtDTGVIM2hpWU8wb1RnVDlTZm9fM0JtemFVYUVEeXVYZ0lyOTdaeThiMGlOd013b3VRSzUzUTYwS05Ub1JySHpETHFYRS1fdkxBeS1EOURUU3hQbTEtbUlHY0NqNGUyb1A4ekRvaksyWjJZYw?oc=5",
-          "time": "2026-08-15 05:40:03",
-          "publisher": "Google News→facebook.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-          "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxQQ2FzaVFWWEVGbWhJanRnUzRKVk5meVNlNWxqZWpOeW41Z2ZaLVZXQjdZUU1LN3gwSXhEZWVxUWo5RHpGT3hKWmR2UTZlWW5uM3dzcnN0dV9VYlAzd28tV1RPaFVUX3N2SVJxNXpQZXRaZThpNWIxdDFVNGNYX05iOE1FM2pHaXdtTm8ydE9wX3NXdWFqY3VJZ1hIcnNJNkdtSlJmT2R1QmltR09wcWxDZ2x0dk41VWIzajh4WU8xRkh2bEJrQ0UxcE5ZdDF4OHNaYkZtcXN5Z1RTQlZuNmJUa180NTR4S0w5VHNsM1B0enE3aVZod0t6SHJ3R0dfNnN4OUdHOUw2T1NLd2FKZVM4QWFKNTRxTjkzZFhxcHl4OGpzSzZIbERpNy1wS053M1VIMmxhRTJEdXBhOW1FLTRsN0Q4bnZUUTJYaVhOd3pfbUZJdHFST0UxOHdFOHRWTEg0SUl5U1JlMnRjM09vVGxOSkh5VFNkNy1EUGJIa01pQ3htUkFNWDlBMHpsdFJqendzTmxVeVBPZE1xcDNOaXdkUkFFNHV3Nks2elZrV0JfSERsbkhqVDlQV21jc3JHSGJ4dTJkSWZxS0pfaW9FMXVRR1J2VnRsX3JVSkM1X0NrQVBTQXhFRHNMZVVrWTZ2RkJjelV2T2IzcFliLUxUQVVlNWZDbENPWVg3NFl1RkI2TWVkQzkwSGw1SWMtMDNMcTZRR3BVQzFzQkpZWXgwaUEya3ZrWXRfcTB3bFVoNS04ZS1PQThNdmJ0cm9R?oc=5",
-          "time": "2026-08-15 05:40:03",
-          "publisher": "Google News→facebook.com",
-          "severity": "yellow"
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 3,
-      "urgent_red_comments": 0,
-      "urgency_score": 33,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 0
-    },
-    {
       "title": "澎湖地方動態",
       "city": "澎湖",
       "place": "澎湖縣政府",
@@ -141500,9 +141597,9 @@
       "lng": 119.5793,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 33",
-      "note": "24h 命中 33 則（新聞 33、留言 0）",
-      "news_count": 33,
+      "platform": "新聞 31",
+      "note": "24h 命中 31 則（新聞 31、留言 0）",
+      "news_count": 31,
       "comment_count": 0,
       "news_latest_at": "2026-08-15T19:02:44+00:00",
       "news_full_expires_at": "2026-08-16T19:02:44+00:00",
@@ -141723,27 +141820,13 @@
           "time": "2026-08-15 07:00:00",
           "publisher": "Google News→PChome Online 新聞",
           "severity": null
-        },
-        {
-          "title": "觀點投書：〈奧德賽〉可以超越希臘，為什麼〈澎湖海戰〉不能超越滿漢？ | 謝東森 | 評論",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80OUhZeVVGRWpDUFhvOUI5bGJYQ0V3RGlCdkNqT1RSMVlyVUFsOEF3MEVIWGk3SGRzZG1yVGhqclF4QUxWRzMwMUctRno5dw?oc=5",
-          "time": "2026-08-15 05:50:00",
-          "publisher": "Google News→風傳媒",
-          "severity": null
-        },
-        {
-          "title": "觀點投書：〈奧德賽〉可以超越希臘，為什麼〈澎湖海戰〉不能超越滿漢？",
-          "url": "https://www.storm.mg/article/11155528",
-          "time": "2026-08-15 05:50:00",
-          "publisher": "風傳媒",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 33,
+      "urgency_score": 31,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -141788,9 +141871,9 @@
       "lng": 121.46829807621135,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 70",
-      "note": "24h 命中 70 則（新聞 70、留言 0）",
-      "news_count": 70,
+      "platform": "新聞 69",
+      "note": "24h 命中 69 則（新聞 69、留言 0）",
+      "news_count": 69,
       "comment_count": 0,
       "news_latest_at": "2026-08-15T16:16:31+00:00",
       "news_full_expires_at": "2026-08-16T16:16:31+00:00",
@@ -142277,20 +142360,13 @@
           "time": "2026-08-15 07:03:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "「新北美樂地2.0」活化三重閒置公地 57格免費機車位上路",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E7%BE%8E%E6%A8%82%E5%9C%B02-0-%E6%B4%BB%E5%8C%96%E4%B8%89%E9%87%8D%E9%96%92%E7%BD%AE%E5%85%AC%E5%9C%B0-57%E6%A0%BC%E5%85%8D%E8%B2%BB%E6%A9%9F%E8%BB%8A%E4%BD%8D%E4%B8%8A%E8%B7%AF-055043058.html",
-          "time": "2026-08-15 05:50:43",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 4,
       "urgent_red_comments": 0,
-      "urgency_score": 79,
+      "urgency_score": 78,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -142335,13 +142411,20 @@
       "lng": 120.4313,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 95",
-      "note": "24h 命中 95 則（新聞 95、留言 0）",
-      "news_count": 95,
+      "platform": "新聞 97",
+      "note": "24h 命中 97 則（新聞 97、留言 0）",
+      "news_count": 97,
       "comment_count": 0,
-      "news_latest_at": "2026-08-15T15:39:37+00:00",
-      "news_full_expires_at": "2026-08-16T15:39:37+00:00",
+      "news_latest_at": "2026-08-15T21:30:00+00:00",
+      "news_full_expires_at": "2026-08-16T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "2026.08.15 22:32 《掌中老將前行 續寫本土文化》精品偶揚名國際、詔安客語演繹新聲！看雲林偶戲守護者如何扎根校園 傳承布袋戲不滅火光",
           "url": "https://www.mnews.tw/story/20260815rep002",
@@ -142507,7 +142590,7 @@
           "title": "盧秀燕西螺福興宮參香！送蒜頭給張嘉郡 盼「精打細算」拚雲林",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
           "time": "2026-08-15 17:32:00",
-          "publisher": "ETtoday",
+          "publisher": "Google News→ettoday.net",
           "severity": null
         },
         {
@@ -142534,6 +142617,13 @@
         {
           "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+          "time": "2026-08-15 17:04:00",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
           "time": "2026-08-15 17:04:00",
           "publisher": "壹蘋新聞網",
           "severity": null
@@ -143012,7 +143102,7 @@
       "negative_news_count": 1,
       "negativity_pct": 1,
       "urgent_red_comments": 0,
-      "urgency_score": 98,
+      "urgency_score": 100,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -143561,13 +143651,20 @@
       "lng": 120.5429,
       "level": "red",
       "source": "news",
-      "platform": "新聞 60",
-      "note": "24h 命中 60 則（新聞 60、留言 0）",
-      "news_count": 60,
+      "platform": "新聞 61",
+      "note": "24h 命中 61 則（新聞 61、留言 0）",
+      "news_count": 61,
       "comment_count": 0,
-      "news_latest_at": "2026-08-15T15:39:36+00:00",
-      "news_full_expires_at": "2026-08-16T15:39:36+00:00",
+      "news_latest_at": "2026-08-15T21:35:12+00:00",
+      "news_full_expires_at": "2026-08-16T21:35:12+00:00",
       "news_articles": [
+        {
+          "title": "吃人夠夠風機蓋我家【#民間特偵組265-3】 #shorts #民間特偵組 #風機入侵酪農 #風機入侵 #彰化酪農區",
+          "url": "https://www.youtube.com/watch?v=TkMWWF_S0Uk",
+          "time": "2026-08-16 05:35:12",
+          "publisher": null,
+          "severity": null
+        },
         {
           "title": "國民黨昨天彰化縣長參選人魏平政舉辦三場說明會，縣長王惠美不僅都未到場，卻與賴清德總統同台，今天再陪同行政院長卓榮泰參訪行程，甚至與民進黨縣長參選人陳素月同框，引起藍營基層反彈。魏平政則表示，王惠美陪同總統及閣揆參訪是公務行程，但也希望王惠美在公務閒暇之餘，能為他站台。",
           "url": "https://udn.com/news/story/124652/9693901?from=udn-ch1_breaknews-1-cate1-news",
@@ -143733,7 +143830,7 @@
           "title": "盧秀燕西螺福興宮參香！送蒜頭給張嘉郡 盼「精打細算」拚雲林",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
           "time": "2026-08-15 17:32:00",
-          "publisher": "ETtoday",
+          "publisher": "Google News→ettoday.net",
           "severity": null
         },
         {
@@ -143993,7 +144090,7 @@
       "negative_news_count": 4,
       "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 72,
+      "urgency_score": 73,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -144577,9 +144674,9 @@
       "lng": 120.5489,
       "level": "red",
       "source": "news",
-      "platform": "新聞 101",
-      "note": "24h 命中 101 則（新聞 101、留言 0）",
-      "news_count": 101,
+      "platform": "新聞 99",
+      "note": "24h 命中 99 則（新聞 99、留言 0）",
+      "news_count": 99,
       "comment_count": 0,
       "news_latest_at": "2026-08-15T21:05:00+00:00",
       "news_full_expires_at": "2026-08-16T21:05:00+00:00",
@@ -145276,27 +145373,13 @@
           "time": "2026-08-15 07:49:26",
           "publisher": "Yahoo新聞",
           "severity": "red"
-        },
-        {
-          "title": "民進黨屏東縣黨部布局 徵召蘇清波選枋寮鄉長、王永豐戰新埤鄉長",
-          "url": "https://newtalk.tw/news/view/2026-08-15/1053515",
-          "time": "2026-08-15 05:46:53",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "民進黨屏東縣黨部布局徵召蘇清波選枋寮鄉長、王永豐戰新埤鄉長| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PcjJERlA4TUFzenE0Q1N6RTF0eGlYbGpCNm9LZzlSQ0d0ajNQckctYXplRGxJTmFqVkxNcFg2VGdhRFF5WWR0YndYOGJqbzhCWVFlRHQ3NU0xMVE?oc=5",
-          "time": "2026-08-15 05:46:53",
-          "publisher": "Google News→Newtalk新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 23,
       "negativity_pct": 23,
       "urgent_red_comments": 0,
-      "urgency_score": 170,
+      "urgency_score": 168,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -145341,9 +145424,9 @@
       "lng": 120.314,
       "level": "red",
       "source": "news",
-      "platform": "新聞 117",
-      "note": "24h 命中 117 則（新聞 117、留言 0）",
-      "news_count": 117,
+      "platform": "新聞 118",
+      "note": "24h 命中 118 則（新聞 118、留言 0）",
+      "news_count": 118,
       "comment_count": 0,
       "news_latest_at": "2026-08-15T17:29:35+00:00",
       "news_full_expires_at": "2026-08-16T17:29:35+00:00",
@@ -145972,6 +146055,13 @@
           "severity": null
         },
         {
+          "title": "中秋送禮也能做公益！高雄議會豪購1067盒身障禮盒　76.5萬元創新高",
+          "url": "https://n.yam.com/Article/20260815733058",
+          "time": "2026-08-15 12:00:00",
+          "publisher": "蕃新聞→台灣好報",
+          "severity": "yellow"
+        },
+        {
           "title": "小泉進次郎參拜靖國神社 高市早苗未現身「僅供奉1物」",
           "url": "https://news.nextapple.com/international/20260815/4A892CEC3F175874476EC5A199EA4A1A",
           "time": "2026-08-15 11:29:59",
@@ -146172,7 +146262,7 @@
       "negative_news_count": 5,
       "negativity_pct": 4,
       "urgent_red_comments": 0,
-      "urgency_score": 132,
+      "urgency_score": 133,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -146473,7 +146563,7 @@
           "title": "花蓮藍軍大造勢！蔣萬安授旗挺游淑貞 謝龍介喊「要選貞的」集中票源",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
           "time": "2026-08-15 18:39:12",
-          "publisher": "Google News→翻爆",
+          "publisher": "Google News→turnnewsapp.com",
           "severity": null
         },
         {
@@ -149377,13 +149467,27 @@
       "lng": 120.70059807621135,
       "level": "red",
       "source": "news",
-      "platform": "新聞 179",
-      "note": "24h 命中 179 則（新聞 179、留言 0）",
-      "news_count": 179,
+      "platform": "新聞 182",
+      "note": "24h 命中 182 則（新聞 182、留言 0）",
+      "news_count": 182,
       "comment_count": 0,
-      "news_latest_at": "2026-08-15T19:55:35+00:00",
-      "news_full_expires_at": "2026-08-16T19:55:35+00:00",
+      "news_latest_at": "2026-08-15T21:30:00+00:00",
+      "news_full_expires_at": "2026-08-16T21:30:00+00:00",
       "news_articles": [
+        {
+          "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+          "time": "2026-08-16 05:30:00",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "中部公立醫學中心首座 台中榮總質子中心啟用",
           "url": "https://tw.news.yahoo.com/%E4%B8%AD%E9%83%A8%E5%85%AC%E7%AB%8B%E9%86%AB%E5%AD%B8%E4%B8%AD%E5%BF%83%E9%A6%96%E5%BA%A7-%E5%8F%B0%E4%B8%AD%E6%A6%AE%E7%B8%BD%E8%B3%AA%E5%AD%90%E4%B8%AD%E5%BF%83%E5%95%9F%E7%94%A8-195535557.html",
@@ -149633,7 +149737,7 @@
           "title": "盧秀燕西螺福興宮參香！送蒜頭給張嘉郡 盼「精打細算」拚雲林",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
           "time": "2026-08-15 17:32:00",
-          "publisher": "ETtoday",
+          "publisher": "Google News→ettoday.net",
           "severity": null
         },
         {
@@ -149688,6 +149792,13 @@
         {
           "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+          "time": "2026-08-15 17:04:00",
+          "publisher": "壹蘋新聞網",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
           "time": "2026-08-15 17:04:00",
           "publisher": "壹蘋新聞網",
           "severity": null
@@ -150639,10 +150750,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 8,
-      "negativity_pct": 4,
+      "negative_news_count": 9,
+      "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 203,
+      "urgency_score": 209,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -150677,7 +150788,7 @@
         "嘉市",
         "竹市"
       ],
-      "red_news_count": 17
+      "red_news_count": 18
     },
     {
       "title": "台北地方動態",
@@ -150687,9 +150798,9 @@
       "lng": 121.499,
       "level": "red",
       "source": "news",
-      "platform": "新聞 322",
-      "note": "24h 命中 322 則（新聞 322、留言 0）",
-      "news_count": 322,
+      "platform": "新聞 320",
+      "note": "24h 命中 320 則（新聞 320、留言 0）",
+      "news_count": 320,
       "comment_count": 0,
       "news_latest_at": "2026-08-15T18:02:00+00:00",
       "news_full_expires_at": "2026-08-16T18:02:00+00:00",
@@ -151174,7 +151285,7 @@
           "title": "花蓮藍軍大造勢！蔣萬安授旗挺游淑貞 謝龍介喊「要選貞的」集中票源",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ad25CaUNGcXNTa0U5Sm5HNGFBUGQwRGxrNEI3U1F2UlNnaWhoT3FpUFFjQzhyYm9tOHBLX3VJb0EtXzB2RV9TckFrWXg2LXlWMFlmZktYOUdvTmVqVjd4NWNqVXk0SGs4Q0luLVk4WE1VNlU?oc=5",
           "time": "2026-08-15 18:39:12",
-          "publisher": "Google News→翻爆",
+          "publisher": "Google News→turnnewsapp.com",
           "severity": null
         },
         {
@@ -151426,7 +151537,7 @@
           "title": "沈伯洋酸蔣萬安不顧食安 北市府反擊：毒油案有拿出一樣標準？",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LTi1HQmExUlpuTmxWaW8tZVc2cHl1aXM3aXJnRG5SczM1TDQ3Um9vNkJCWVFsdWo5VlluY2hLOG5oVlhnbExsODRTUXgzaWV6YkFwUFltMFV6TGU2aFHSAUtBVV95cUxNMjhfanVpdFhyaVZhUF90bnQwNE41UEhwbFNIRlBHbXJFYkplVzVrY2lKT0lzTE5GQUxETFBKeDY5cW5nbGdDVzFLOE0?oc=5",
           "time": "2026-08-15 16:28:00",
-          "publisher": "ETtoday",
+          "publisher": "Google News→ettoday.net",
           "severity": "yellow"
         },
         {
@@ -152933,27 +153044,13 @@
           "time": "2026-08-15 05:58:00",
           "publisher": "三立新聞網",
           "severity": "yellow"
-        },
-        {
-          "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-          "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxONElra3lkejVQQ1F4WUdNWVpMOFhJUDFBdkFxUXk1V21pRm54NjJCSDlPX3o5TXE1aHRUcVFFQ1c1ZTBZTUJkRkFURU5FMXJPUUhUTXlVdUJRcDhiZ2NlQmNheVRQWTlJc1RsY09QU0NqbzY0RzZ1ZkZ4MHVsM3RQckViZFMwZW5DeE51MUhnR1Z2MGxOZWVDLVktNjBEdm5fVFBEN2NCdF9SZDV3RWszUGVkMHF2c2laVDczVy1XbFkwbW5JWll2bVpuUTNZSnFSNWhSZmJNaGF0Sk50aHFDVU81RWMwTHBlbXFOckpZX3lsa2k5VldYUUJFa0ZXWENsb0pyX3Jqcm1iZTNnS3ZJY2xVcXBwcm9CY2M5VkRNTW40QXhGODhaSzhkZGM5NUhUSVByb0JwMjNpd3M5bGh4RUYwdHdZc0EyZ3pNQ1I4c29qU2ZQbkFBM0I4TlNIZkI4UDFVclEzQ29PaUpEUDMtb0ctVUVPMUhVNW4wNjJXR2h5Y0hwMV9PSm1ZZ24xbnNENU1VUjZVUHpmN2RvRlNrN2VkVXQxMy1FdlB1a01yWWNZTms5ZjdMbkdRSGp5M3lOS0lBMFczc2ExY083Rk0zbzREMVFHUlc2N3JESGtDTGVIM2hpWU8wb1RnVDlTZm9fM0JtemFVYUVEeXVYZ0lyOTdaeThiMGlOd013b3VRSzUzUTYwS05Ub1JySHpETHFYRS1fdkxBeS1EOURUU3hQbTEtbUlHY0NqNGUyb1A4ekRvaksyWjJZYw?oc=5",
-          "time": "2026-08-15 05:40:03",
-          "publisher": "Google News→facebook.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "【蔣萬安要陸委會向饒慶鈴道歉！梁文傑：台北管到台東會不會太寬？】 （圖／記者蔡紹堅攝、記者徐文彬攝）",
-          "url": "https://news.google.com/rss/articles/CBMiygRBVV95cUxQQ2FzaVFWWEVGbWhJanRnUzRKVk5meVNlNWxqZWpOeW41Z2ZaLVZXQjdZUU1LN3gwSXhEZWVxUWo5RHpGT3hKWmR2UTZlWW5uM3dzcnN0dV9VYlAzd28tV1RPaFVUX3N2SVJxNXpQZXRaZThpNWIxdDFVNGNYX05iOE1FM2pHaXdtTm8ydE9wX3NXdWFqY3VJZ1hIcnNJNkdtSlJmT2R1QmltR09wcWxDZ2x0dk41VWIzajh4WU8xRkh2bEJrQ0UxcE5ZdDF4OHNaYkZtcXN5Z1RTQlZuNmJUa180NTR4S0w5VHNsM1B0enE3aVZod0t6SHJ3R0dfNnN4OUdHOUw2T1NLd2FKZVM4QWFKNTRxTjkzZFhxcHl4OGpzSzZIbERpNy1wS053M1VIMmxhRTJEdXBhOW1FLTRsN0Q4bnZUUTJYaVhOd3pfbUZJdHFST0UxOHdFOHRWTEg0SUl5U1JlMnRjM09vVGxOSkh5VFNkNy1EUGJIa01pQ3htUkFNWDlBMHpsdFJqendzTmxVeVBPZE1xcDNOaXdkUkFFNHV3Nks2elZrV0JfSERsbkhqVDlQV21jc3JHSGJ4dTJkSWZxS0pfaW9FMXVRR1J2VnRsX3JVSkM1X0NrQVBTQXhFRHNMZVVrWTZ2RkJjelV2T2IzcFliLUxUQVVlNWZDbENPWVg3NFl1RkI2TWVkQzkwSGw1SWMtMDNMcTZRR3BVQzFzQkpZWXgwaUEya3ZrWXRfcTB3bFVoNS04ZS1PQThNdmJ0cm9R?oc=5",
-          "time": "2026-08-15 05:40:03",
-          "publisher": "Google News→facebook.com",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 11,
       "negativity_pct": 3,
       "urgent_red_comments": 0,
-      "urgency_score": 355,
+      "urgency_score": 353,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -152992,6 +153089,26 @@
     }
   ],
   "articles_24h": [
+    {
+      "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "platform": "news",
+      "publisher": "自由時報",
+      "hour": "2026-08-16 05:00",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "platform": "news",
+      "publisher": "自由時報",
+      "hour": "2026-08-16 05:00",
+      "severity": "red",
+      "is_negative": true
+    },
     {
       "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
       "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
@@ -153227,7 +153344,7 @@
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
       "time": "2026-08-15 17:32:00",
       "platform": "news",
-      "publisher": "ETtoday",
+      "publisher": "Google News→ettoday.net",
       "hour": "2026-08-15 17:00",
       "severity": null,
       "is_negative": false
@@ -155680,6 +155797,28 @@
   ],
   "articles_7d": [
     {
+      "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "platform": "news",
+      "publisher": "自由時報",
+      "hour": "2026-08-16 05:00",
+      "day": "2026-08-16",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+      "time": "2026-08-16 05:30:00",
+      "platform": "news",
+      "publisher": "自由時報",
+      "hour": "2026-08-16 05:00",
+      "day": "2026-08-16",
+      "severity": "red",
+      "is_negative": true
+    },
+    {
       "title": "[Gossiping] [新聞] 董事長是盧秀燕親妹！鍋烤節1400萬標案中",
       "url": "https://www.ptt.cc/bbs/Gossiping/M.1786811291.A.6A5.html",
       "time": "2026-08-16 00:28:11",
@@ -155915,7 +156054,7 @@
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
       "time": "2026-08-15 17:32:00",
       "platform": "news",
-      "publisher": "ETtoday",
+      "publisher": "Google News→ettoday.net",
       "hour": "2026-08-15 17:00",
       "day": "2026-08-15",
       "severity": null,
@@ -159369,7 +159508,7 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PTHFWRXZPZEVEX2tkWW1qQms2anR4U1k4bUhWVnZIcUI4WjQ4YmNpdGtlM3VMWjVoNFBGVE9VckFnMk81ZGF5bXpCSzlpZU0?oc=5",
       "time": "2026-08-13 00:00:00",
       "platform": "news",
-      "publisher": "Google News→翻爆",
+      "publisher": "Google News→turnnewsapp.com",
       "hour": "2026-08-13 00:00",
       "day": "2026-08-13",
       "severity": "yellow",
@@ -162383,7 +162522,7 @@
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SU0lHaVI5TmlFeUJnSS1sWC1kcDZxeGpQQTdrN09DdEVQWVNTSVA0dWdLUk9HNTltbnVpWU9nTWFVUkpLUFVjX1lUVzNWSm53QW9zTmc2QXlFOFZxM2fSAUtBVV95cUxOd3lUOHpXNEJHWlM2R1M4VmJsdkcyOWE1STlnTGdCSnNRZzJEZkxGUTVxMzJJSmRNaDIySjVjY0tUb3ZGOFlnX0Rtdnc?oc=5",
       "time": "2026-08-11 13:40:00",
       "platform": "news",
-      "publisher": "ETtoday",
+      "publisher": "Google News→ettoday.net",
       "hour": "2026-08-11 13:00",
       "day": "2026-08-11",
       "severity": "red",
@@ -166009,6 +166148,17 @@
       "is_negative": false
     },
     {
+      "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
+      "url": "https://news.google.com/rss/articles/CBMilARBVV95cUxQVTVERHNKM0x4dm5hbXpIQ3hjRTFQWkNQUDZhUHZkeDE2dFA1QUhVUXh0YmU1dWRLY3ZGTzJUX1lILTJzZmpDb09kN3R2WUdFNHgxVWNDWm9BWGU2aWZuZHRMd0E0aGV1REc5VlVtQkxVQnE3dGowa3FaNENkQmd6ZDBRLXBISVgwRDBzdXdiSWFqZnR6QWRuTjBneW8zeVE0Uk1UTThCMUh0VXhiQU1yLXF4SWVFUzJFVEFtdWExNmx0THhWMmVKcmRnbDIxTnAxVmUxTm5nNllqcmZYWXhVQmo3dzAtcGlYOHc1YUxmOVhwTEs0Q1Y2RTJFbkNOTjFzU1l0QVFGU1F6Y3pEQ1FsUWJOUFdwOHpwbzd3RjhFVG9nTDViQmVYclBiNkp2V1NUVjhjWUFMTzFjU0oybWtnN3ZmOVB0dkNOckdyY3ZQMHhzOElDZ2Y0cVZYRVN0dDFuZmp6eUpBbE9WVVk2RXBZSkZBRjQ0WDllRzZtVXcyVmszYXpjSUxVRDZFcjhtMm0zMnQyV0RKYjY2NUZDRzQ5U3ZhcHBGcG94dEJCME8wcnRGTmlqM3ZtSXZkSWhsc1ZRVVlIZ2FHR3dJakpBczUtbjBTZVlmb25ISW10Qk5TOS1kUUZBcG15VkxiSllwQ3ZzcjFZdDFORXBsalZrQWtQZVZXOTV3bVV1dGg0c1VVUWlOTlEx?oc=5",
+      "time": "2026-08-09 11:55:39",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "hour": "2026-08-09 11:00",
+      "day": "2026-08-09",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "盧秀燕南下輔選蘇清泉 周春米再提非洲豬瘟：她欠豬農一個道歉",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9sWURvR2lsa1ZtMVF3Tnl3S0xmOUprSDFsUnJpR213SjJiWC13UUI5SjJoWE5FSUh1UGx5d3E3YkVxa0UzVWM3MFk3RGNrd09SbHBOTEJuQ29ubklnYmpHX0x1U0hRVVdWQzZIMERGMVE5MDQ?oc=5",
       "time": "2026-08-09 11:45:16",
@@ -166249,20 +166399,18 @@
       "day": "2026-08-09",
       "severity": null,
       "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_7d": [
     {
       "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
       "url": "https://tw.news.yahoo.com/%E6%B0%91%E7%9C%BE%E9%BB%A8%E9%99%B3%E6%B8%85%E9%BE%8D%E6%8F%92%E6%97%97%E6%9D%B1%E5%8B%A2%E5%8A%8D%E6%8C%87%E7%AB%8B%E5%A7%94%E8%A3%9C%E9%81%B8-%E5%9C%8B%E6%B0%91%E9%BB%A8%E4%B9%9F%E5%82%B3%E4%BA%BA%E9%81%B8%E6%80%8E%E9%BA%BC%E5%90%88-%E7%9B%A7%E7%A7%80%E7%87%95-%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-055100621.html",
       "time": "2026-08-09 05:51:00",
       "platform": "news",
       "publisher": "Yahoo新聞",
-      "hour": "2026-08-09 05:00",
-      "day": "2026-08-09",
       "severity": null,
       "is_negative": false
-    }
-  ],
-  "articles_prev_7d": [
+    },
     {
       "title": "布局2028？盧秀燕跨黨派力挺陳清龍：藍白同心共創未來",
       "url": "https://tw.news.yahoo.com/%E5%B8%83%E5%B1%802028-%E7%9B%A7%E7%A7%80%E7%87%95%E8%B7%A8%E9%BB%A8%E6%B4%BE%E5%8A%9B%E6%8C%BA%E9%99%B3%E6%B8%85%E9%BE%8D-%E8%97%8D%E7%99%BD%E5%90%8C%E5%BF%83%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-052336488.html",
@@ -178891,6 +179039,24 @@
       "is_negative": false
     },
     {
+      "title": "接棒盧秀燕！ 江啟臣攜手張清照發表雙港海線交通藍圖",
+      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOUHlPYkl3VUFDY005Yk9GblMtalk3NTBCNmdqUHBzZEx1MVBBMjI3U013VE5raDhpSmQ3V1BkVlhxWU9neEcydkJvNHVyMmVXSnBZVDBXOGlSRDBSYTB3SGpJYjJIY0xxZHN0eFNFSXlHbmFrR0tPY0RMeTdrOGlGZ3dRVG9aREdtSlNMV2M4a2hnNnNkZWxHMmJ2c05zdnoyU2lVOFJEV3huSjlmaW50d1BONmNNVVhJaUpHUWZ1dGRaQ0ltUl8yYU12R21yNzRIRUQwbGlNelJuYTlFaUQ3X2RmX0dYMGwyeVF3VXNBRm5UcDVqdXRvaDZYZFE0WFVfeXVHSWVWSkJzQXFKVjJBZy01YjhPZE14WWxXMTFZZDlNWEtrcE85TEFkT29TUDYwREdDQm9aelZYRGZ1QVBPdVZmRTcwT0NuQk95cEFTOVFMSTY3UXdCYklUcWNBLXBJMnJtTFRGbG8?oc=5",
+      "time": "2026-08-02 13:43:00",
+      "platform": "news",
+      "publisher": "Google News→tw.news.yahoo.com",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "接棒盧秀燕！ 江啟臣攜手張清照發表雙港海線交通藍圖",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5NMUY3ajd5SWtIZDBuNVJJM2pyZGJQaGVsMVk0YkVQQ1pvYlpEZzdtSVFDYkwwSmItQXJEVnpUVFVLNndrNFZ0aUtB?oc=5",
+      "time": "2026-08-02 13:43:00",
+      "platform": "news",
+      "publisher": "匯流新聞網",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "中台灣藍白合起手式? 黃國昌預告黨慶合體盧秀燕",
       "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNbllSZ2x6T3dBWExtaUFkUVQyTXlZVFVwZjhqZ1Q1b3VnanhnWFF2SjZ3ei1pWEhDcDY0MS1lQjdzSTMteTFzWU9aUko4UExfcWtweW56bHZGdW1EYWJUcGwwZjVuMG1jRVA0bmlINE9NeVctRjNLQXFhSnJqU3NCMFllbGVsa0Y5bHVwaWhzckdpUUtDTDJtZFdvalhub1IzeEhRaVRaaHkxMHV1LWthdGpMTmZqdmpReFptN0VLYTlYRlUyalhxYzlnRHMtamVGRm9fNnBpZlduSmp6b1dISzc4b3ZpYmtqcWtKQl85YlBGeHJGNzE1VlJJUm5XbEFRTkZkQXU2VWhScGtTVlBCYnBlb3g2a01hUzl0c1RiMU1LUnA1Z2QtdkZDNk4zaHVUY2lIMjh6M0J3WG8zNF9ZUmdZeXl3QURhQWhsdk1BTnU?oc=5",
       "time": "2026-08-02 13:36:42",
@@ -179903,39 +180069,10 @@
       "publisher": "自由時報",
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "接棒盧秀燕！ 江啟臣攜手張清照發表雙港海線交通藍圖",
-      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOUHlPYkl3VUFDY005Yk9GblMtalk3NTBCNmdqUHBzZEx1MVBBMjI3U013VE5raDhpSmQ3V1BkVlhxWU9neEcydkJvNHVyMmVXSnBZVDBXOGlSRDBSYTB3SGpJYjJIY0xxZHN0eFNFSXlHbmFrR0tPY0RMeTdrOGlGZ3dRVG9aREdtSlNMV2M4a2hnNnNkZWxHMmJ2c05zdnoyU2lVOFJEV3huSjlmaW50d1BONmNNVVhJaUpHUWZ1dGRaQ0ltUl8yYU12R21yNzRIRUQwbGlNelJuYTlFaUQ3X2RmX0dYMGwyeVF3VXNBRm5UcDVqdXRvaDZYZFE0WFVfeXVHSWVWSkJzQXFKVjJBZy01YjhPZE14WWxXMTFZZDlNWEtrcE85TEFkT29TUDYwREdDQm9aelZYRGZ1QVBPdVZmRTcwT0NuQk95cEFTOVFMSTY3UXdCYklUcWNBLXBJMnJtTFRGbG8?oc=5",
-      "time": "2026-08-02 05:43:00",
-      "platform": "news",
-      "publisher": "Google News→tw.news.yahoo.com",
-      "severity": null,
-      "is_negative": false,
-      "hour": "2026-08-02 05:00"
-    },
-    {
-      "title": "接棒盧秀燕！ 江啟臣攜手張清照發表雙港海線交通藍圖",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5NMUY3ajd5SWtIZDBuNVJJM2pyZGJQaGVsMVk0YkVQQ1pvYlpEZzdtSVFDYkwwSmItQXJEVnpUVFVLNndrNFZ0aUtB?oc=5",
-      "time": "2026-08-02 05:43:00",
-      "platform": "news",
-      "publisher": "匯流新聞網",
-      "severity": null,
-      "is_negative": false,
-      "hour": "2026-08-02 05:00"
-    },
-    {
-      "title": "接棒盧秀燕！ 江啟臣攜手張清照發表雙港海線交通藍圖",
-      "url": "https://tw.news.yahoo.com/%E6%8E%A5%E6%A3%92%E7%9B%A7%E7%A7%80%E7%87%95-%E6%B1%9F%E5%95%9F%E8%87%A3%E6%94%9C%E6%89%8B%E5%BC%B5%E6%B8%85%E7%85%A7%E7%99%BC%E8%A1%A8%E9%9B%99%E6%B8%AF%E6%B5%B7%E7%B7%9A%E4%BA%A4%E9%80%9A%E8%97%8D%E5%9C%96-054300781.html",
-      "time": "2026-08-02 05:43:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "severity": null,
-      "is_negative": false
     }
   ],
   "media_framing_7d": {
-    "sample_size": 13693,
+    "sample_size": 13697,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -180024,11 +180161,23 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 971,
-        "negative_count": 126,
+        "news_count": 973,
+        "negative_count": 127,
         "negativity_pct": 13,
         "sentiment_score": 719.0,
         "articles": [
+          {
+            "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+            "time": "2026-08-16 05:30:00",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+            "time": "2026-08-16 05:30:00",
+            "is_negative": true
+          },
           {
             "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHa3lYdUxDQkt5TThRR3d6U0F2SXZZd1NwTEhlSWpiU1NzLTdLS2RCZDRpZEF4ekNNbGJKNkUzT01yd041aktPNGRrdE84QUY5VVVId0NIRG85T0F0U2VxZl9yR1FOM0ZyTkE?oc=5",
@@ -180218,6 +180367,12 @@
           {
             "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+            "time": "2026-08-15 17:04:00",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
             "time": "2026-08-15 17:04:00",
             "is_negative": false
           },
@@ -185848,12 +186003,6 @@
             "url": "https://tw.news.yahoo.com/%E8%97%8D%E7%99%BD%E6%8F%90%E5%89%8D%E5%B8%83%E5%B1%802028-%E9%BB%83%E5%9C%8B%E6%98%8C%E7%8E%87%E7%99%BD%E5%A7%94%E6%8C%BA%E6%B1%9F%E5%95%9F%E8%87%A3-%E7%9B%A7%E7%A7%80%E7%87%95%E5%96%8A-%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-074000439.html",
             "time": "2026-08-09 07:40:00",
             "is_negative": false
-          },
-          {
-            "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
-            "url": "https://tw.news.yahoo.com/%E6%B0%91%E7%9C%BE%E9%BB%A8%E9%99%B3%E6%B8%85%E9%BE%8D%E6%8F%92%E6%97%97%E6%9D%B1%E5%8B%A2%E5%8A%8D%E6%8C%87%E7%AB%8B%E5%A7%94%E8%A3%9C%E9%81%B8-%E5%9C%8B%E6%B0%91%E9%BB%A8%E4%B9%9F%E5%82%B3%E4%BA%BA%E9%81%B8%E6%80%8E%E9%BA%BC%E5%90%88-%E7%9B%A7%E7%A7%80%E7%87%95-%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-055100621.html",
-            "time": "2026-08-09 05:51:00",
-            "is_negative": false
           }
         ]
       },
@@ -186725,6 +186874,12 @@
         "negativity_pct": 7,
         "sentiment_score": 1885.0,
         "articles": [
+          {
+            "title": "蔣萬安頻赴外縣市輔選 議員︰若替民眾黨站台恐爆「內戰」",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kWDBsbXNqbHg5bmk3UTh5Zm9COG1YT041Y1pqX2NscEljOGJtOVlfV2dyVXE4RWYzdlZxSUxacXB6bksxXzlYc0NORGFncGVvUmxVTkd4RmM1eVNHclIxSQ?oc=5",
+            "time": "2026-08-16 05:30:00",
+            "is_negative": false
+          },
           {
             "title": "藍白國會過半卻不修法、硬砸14億辦公投！黃帝穎痛批「正事不做」：蔣萬安喊倒閣也無人敢接招",
             "url": "https://www.fountmedia.io/article/413712",
@@ -199972,12 +200127,6 @@
             "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%94%A9%E9%8D%8B%E7%B3%97%E4%BA%86-%E7%A8%B1%E4%B8%8D%E6%94%BE%E5%81%87%E5%9B%A0%E6%B0%A3%E8%B1%A1%E7%BD%B2%E6%B2%92%E7%99%BC%E9%99%B8%E8%AD%A6-%E6%B2%88%E4%BC%AF%E6%B4%8B%E8%88%891%E4%BE%8B%E7%8B%A0%E6%89%93%E8%87%89-054335987.html",
             "time": "2026-08-09 05:55:24",
             "is_negative": false
-          },
-          {
-            "title": "蔣萬安稱白海豚沒陸警不放颱風假 吳思瑤轟「洗記憶」：用騙票討好市民",
-            "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E7%A8%B1%E7%99%BD%E6%B5%B7%E8%B1%9A%E6%B2%92%E9%99%B8%E8%AD%A6%E4%B8%8D%E6%94%BE%E9%A2%B1%E9%A2%A8%E5%81%87-%E5%90%B3%E6%80%9D%E7%91%A4%E8%BD%9F-%E6%B4%97%E8%A8%98%E6%86%B6-%E7%94%A8%E9%A8%99%E7%A5%A8%E8%A8%8E%E5%A5%BD%E5%B8%82%E6%B0%91-054500525.html",
-            "time": "2026-08-09 05:45:00",
-            "is_negative": false
           }
         ]
       },
@@ -203428,11 +203577,17 @@
       {
         "city": "雲林",
         "candidate": "盧秀燕",
-        "news_count": 58,
+        "news_count": 60,
         "negative_count": 0,
         "negativity_pct": 0,
-        "sentiment_score": 58.0,
+        "sentiment_score": 60.0,
         "articles": [
+          {
+            "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+            "time": "2026-08-16 05:30:00",
+            "is_negative": false
+          },
           {
             "title": "雲林尬場？ 賴清德南下輔選劉建國　強碰盧秀燕為張嘉郡造勢",
             "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437637.html",
@@ -203526,6 +203681,12 @@
           {
             "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFRQaU1vM2Y3MjRVU2FVZE43MGxkNWhoNUJtSVY0X1dJU0szMDF6dVRBZXpFNXZ3eG4wa0tfTUdkSUlaZnVtbENpU0NHR2FZT3Y0cnJDUW43clV1eFlTbURtelllRHYxZXFOcDEzSlhkY29sbG0wcHhQbDk5aVJTUHBn?oc=5",
+            "time": "2026-08-15 17:04:00",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕走訪雲林交流 張嘉郡：盼未來與各縣市合作、推動資源共享",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRGh1aXZMYlptRXpGTndOcE5ERlIyZ2plT3Y4NmE1enlJYWwtNVJaTk1meE15b3NPTmptNUNMemdkOXlrSFlTSlp6ZmpET0hHcUdzQlh2S0ZlRk9WT3JSX3BKVzdkYmlSbk9JbDhNUU1JR1JLQTRCUm1jVmtoSHVkbWJKWQ?oc=5",
             "time": "2026-08-15 17:04:00",
             "is_negative": false
           },
@@ -204922,6 +205083,16 @@
   "event_stream": {
     "minute": [
       {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "hour": "2026-08-16 05:00",
+        "severity": "red",
+        "is_negative": true
+      },
+      {
         "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHa3lYdUxDQkt5TThRR3d6U0F2SXZZd1NwTEhlSWpiU1NzLTdLS2RCZDRpZEF4ekNNbGJKNkUzT01yd041aktPNGRrdE84QUY5VVVId0NIRG85T0F0U2VxZl9yR1FOM0ZyTkE?oc=5",
         "time": "2026-08-15 22:36:18",
@@ -205043,6 +205214,16 @@
       }
     ],
     "hour": [
+      {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "hour": "2026-08-16 05:00",
+        "severity": "yellow",
+        "is_negative": false
+      },
       {
         "title": "雲林尬場？ 賴清德南下輔選劉建國　強碰盧秀燕為張嘉郡造勢",
         "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437637.html",
@@ -205540,7 +205721,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "hour": "2026-08-15 17:00",
         "severity": null,
         "is_negative": false
@@ -206139,6 +206320,17 @@
   },
   "event_stream_7d": {
     "minute": [
+      {
+        "title": "盧秀燕胞妹當董座中視拿鍋烤節1400萬標案引質疑- 臺中市",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlTzhXNnJrc1RuVkpZX3N4ajhfTUNGTmxqaVRiWGxkVlNPYW1tdUV5NWtEMHJmVW1BM1pLc2xHOWxObjk1elE4MzBTMldORTc2SGxlV3I5TktfVndzMzJTVw?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "hour": "2026-08-16 05:00",
+        "day": "2026-08-16",
+        "severity": "red",
+        "is_negative": true
+      },
       {
         "title": "鍋烤節標案盧秀燕親妹得標杜承哲：完全沒人敢再提蘇巧慧家人- 政治",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHa3lYdUxDQkt5TThRR3d6U0F2SXZZd1NwTEhlSWpiU1NzLTdLS2RCZDRpZEF4ekNNbGJKNkUzT01yd041aktPNGRrdE84QUY5VVVId0NIRG85T0F0U2VxZl9yR1FOM0ZyTkE?oc=5",
@@ -207662,7 +207854,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SU0lHaVI5TmlFeUJnSS1sWC1kcDZxeGpQQTdrN09DdEVQWVNTSVA0dWdLUk9HNTltbnVpWU9nTWFVUkpLUFVjX1lUVzNWSm53QW9zTmc2QXlFOFZxM2fSAUtBVV95cUxOd3lUOHpXNEJHWlM2R1M4VmJsdkcyOWE1STlnTGdCSnNRZzJEZkxGUTVxMzJJSmRNaDIySjVjY0tUb3ZGOFlnX0Rtdnc?oc=5",
         "time": "2026-08-11 13:40:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "hour": "2026-08-11 13:00",
         "day": "2026-08-11",
         "severity": "red",
@@ -208066,6 +208258,17 @@
       }
     ],
     "hour": [
+      {
+        "title": "雲林縣長選戰熱賴清德、盧秀燕輔選尬場- 政治",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdVpjR1I1b1lWZGk0LTBhWmtGR2FDcm51LW43ak9kcm9kOHRsbDZhWTBQc0NlNm5ucDFDNTdVSk5XRjltbUJDSWJCUkc0SFN3b1c0UHJjZkhlX292cTFjSQ?oc=5",
+        "time": "2026-08-16 05:30:00",
+        "platform": "news",
+        "publisher": "自由時報",
+        "hour": "2026-08-16 05:00",
+        "day": "2026-08-16",
+        "severity": "yellow",
+        "is_negative": false
+      },
       {
         "title": "雲林尬場？ 賴清德南下輔選劉建國　強碰盧秀燕為張嘉郡造勢",
         "url": "https://www.nexttv.com.tw/NextTV/News/Home/Politics/2026-08-15/2437637.html",
@@ -209908,7 +210111,7 @@
         "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5PTHFWRXZPZEVEX2tkWW1qQms2anR4U1k4bUhWVnZIcUI4WjQ4YmNpdGtlM3VMWjVoNFBGVE9VckFnMk81ZGF5bXpCSzlpZU0?oc=5",
         "time": "2026-08-13 00:00:00",
         "platform": "news",
-        "publisher": "Google News→翻爆",
+        "publisher": "Google News→turnnewsapp.com",
         "hour": "2026-08-13 00:00",
         "day": "2026-08-13",
         "severity": "yellow",
@@ -212396,7 +212599,7 @@
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yb0hWVzFPenNON1RpVGptcHl3SVF5aDhpTTJXQ3lwaTR3akg5WXdkUGVGZE42Z3NxWTlpeGNackVvV21ieEx5U3pqTVBrbFB3ZkNGc2x0R01lMDRtOVHSAUtBVV95cUxPWXU4ekxCR0V1SDlWZVBDeWNMME5HRGdiM21HT3hwZFN6alRISXhRdWprRmZXMFJ5QXB4NTBkNkNMRV96clYyZklVS3c?oc=5",
         "time": "2026-08-15 17:32:00",
         "platform": "news",
-        "publisher": "ETtoday",
+        "publisher": "Google News→ettoday.net",
         "hour": "2026-08-15 17:00",
         "day": "2026-08-15",
         "severity": null,
@@ -216594,6 +216797,17 @@
         "is_negative": false
       },
       {
+        "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
+        "url": "https://news.google.com/rss/articles/CBMilARBVV95cUxQVTVERHNKM0x4dm5hbXpIQ3hjRTFQWkNQUDZhUHZkeDE2dFA1QUhVUXh0YmU1dWRLY3ZGTzJUX1lILTJzZmpDb09kN3R2WUdFNHgxVWNDWm9BWGU2aWZuZHRMd0E0aGV1REc5VlVtQkxVQnE3dGowa3FaNENkQmd6ZDBRLXBISVgwRDBzdXdiSWFqZnR6QWRuTjBneW8zeVE0Uk1UTThCMUh0VXhiQU1yLXF4SWVFUzJFVEFtdWExNmx0THhWMmVKcmRnbDIxTnAxVmUxTm5nNllqcmZYWXhVQmo3dzAtcGlYOHc1YUxmOVhwTEs0Q1Y2RTJFbkNOTjFzU1l0QVFGU1F6Y3pEQ1FsUWJOUFdwOHpwbzd3RjhFVG9nTDViQmVYclBiNkp2V1NUVjhjWUFMTzFjU0oybWtnN3ZmOVB0dkNOckdyY3ZQMHhzOElDZ2Y0cVZYRVN0dDFuZmp6eUpBbE9WVVk2RXBZSkZBRjQ0WDllRzZtVXcyVmszYXpjSUxVRDZFcjhtMm0zMnQyV0RKYjY2NUZDRzQ5U3ZhcHBGcG94dEJCME8wcnRGTmlqM3ZtSXZkSWhsc1ZRVVlIZ2FHR3dJakpBczUtbjBTZVlmb25ISW10Qk5TOS1kUUZBcG15VkxiSllwQ3ZzcjFZdDFORXBsalZrQWtQZVZXOTV3bVV1dGg0c1VVUWlOTlEx?oc=5",
+        "time": "2026-08-09 11:55:39",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-08-09 11:00",
+        "day": "2026-08-09",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "同框柯文哲、黃國昌 盧秀燕喊「藍白合心」",
         "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPZUNOMHl2bmt6RGV4MXk0ZHl1UVJLendQdkl2VENMbFlDTHBvcWZMaVUzZURqR2tOaFA5UEpFemdKejVUZEZ3NS1vWXhaUTQtX3lzbi1lMnNXUFI3ci1tNllzajBzV25RUFZwRWtHSW5IdEpJZVFHSTVEY3lTYS1oVEN0blVaTlVHMThUQ2dyUlJfeGlTU0VPR1AxSTNKWHVlTUlEVlQ2NFVLNmJhWENzZ0x1T2ZTOElyMFZ0MkRac0FzaVJQUmM2SXUwaktXU3YyNW00clhpZTN4YmVKeWxQRVlkU290V2RCbDBobWhPTzNvVXdVeUdDd0o5aTFwZTdRNGlOM1Y2UFA0ekFGSWhwYlpESUkyVGs?oc=5",
         "time": "2026-08-09 11:42:11",
@@ -216710,17 +216924,6 @@
         "platform": "news",
         "publisher": "Yahoo新聞",
         "hour": "2026-08-09 07:00",
-        "day": "2026-08-09",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "民眾黨陳清龍插旗東勢劍指立委補選、國民黨也傳人選怎麼合？盧秀燕：共創未來、有商有量",
-        "url": "https://tw.news.yahoo.com/%E6%B0%91%E7%9C%BE%E9%BB%A8%E9%99%B3%E6%B8%85%E9%BE%8D%E6%8F%92%E6%97%97%E6%9D%B1%E5%8B%A2%E5%8A%8D%E6%8C%87%E7%AB%8B%E5%A7%94%E8%A3%9C%E9%81%B8-%E5%9C%8B%E6%B0%91%E9%BB%A8%E4%B9%9F%E5%82%B3%E4%BA%BA%E9%81%B8%E6%80%8E%E9%BA%BC%E5%90%88-%E7%9B%A7%E7%A7%80%E7%87%95-%E5%85%B1%E5%89%B5%E6%9C%AA%E4%BE%86-%E6%9C%89%E5%95%86%E6%9C%89%E9%87%8F-055100621.html",
-        "time": "2026-08-09 05:51:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-08-09 05:00",
         "day": "2026-08-09",
         "severity": null,
         "is_negative": false
