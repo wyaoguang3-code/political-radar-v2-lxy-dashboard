@@ -80225,7 +80225,7 @@
     },
     {
       "date": "2026-08-21",
-      "snapshot_at": "2026-08-20T21:52:37.901597+00:00",
+      "snapshot_at": "2026-08-20T22:08:14.817081+00:00",
       "hotspots": [
         {
           "title": "廚餘山",
@@ -80243,6 +80243,18 @@
           "title": "垃圾山",
           "city": "台中",
           "place": "台中市政府",
+          "level": "green",
+          "news_count": 0,
+          "comment_count": 1,
+          "negativity_pct": 0,
+          "is_urgent": false,
+          "urgency_score": 3,
+          "sample_titles": []
+        },
+        {
+          "title": "台北軍購爭議",
+          "city": "台北",
+          "place": "台北市政府",
           "level": "green",
           "news_count": 0,
           "comment_count": 1,
@@ -80336,20 +80348,6 @@
           ]
         },
         {
-          "title": "高雄詐騙案",
-          "city": "高雄",
-          "place": "高雄市政府",
-          "level": "green",
-          "news_count": 1,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": false,
-          "urgency_score": 4,
-          "sample_titles": [
-            "肉夾饃投資詐騙！高雄男吸金逾千萬搞消失 20多人受害"
-          ]
-        },
-        {
           "title": "台南詐騙案",
           "city": "台南",
           "place": "台南市政府",
@@ -80394,6 +80392,21 @@
           ]
         },
         {
+          "title": "苗栗詐騙案",
+          "city": "苗栗",
+          "place": "苗栗縣政府",
+          "level": "green",
+          "news_count": 2,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": true,
+          "urgency_score": 8,
+          "sample_titles": [
+            "假冒社大與樂齡課程詐騙猖獗！苗栗縣政府急示警「先查證、再報名」",
+            "假冒社大與樂齡課程詐騙猖獗！苗栗縣政府急示警 呼籲認明官方管道守護個資與財產安全"
+          ]
+        },
+        {
           "title": "桃園詐騙案",
           "city": "桃園",
           "place": "桃園市政府",
@@ -80424,21 +80437,6 @@
           ]
         },
         {
-          "title": "苗栗詐騙案",
-          "city": "苗栗",
-          "place": "苗栗縣政府",
-          "level": "green",
-          "news_count": 2,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
-          "sample_titles": [
-            "假冒社大與樂齡課程詐騙猖獗！苗栗縣政府急示警「先查證、再報名」",
-            "假冒社大與樂齡課程詐騙猖獗！苗栗縣政府急示警 呼籲認明官方管道守護個資與財產安全"
-          ]
-        },
-        {
           "title": "連江地方動態",
           "city": "連江",
           "place": "連江縣（馬祖）",
@@ -80460,10 +80458,10 @@
           "place": "台中市政府",
           "level": "green",
           "news_count": 0,
-          "comment_count": 5,
+          "comment_count": 6,
           "negativity_pct": 0,
           "is_urgent": true,
-          "urgency_score": 11,
+          "urgency_score": 12,
           "sample_titles": []
         },
         {
@@ -80483,22 +80481,6 @@
           ]
         },
         {
-          "title": "嘉義市地方動態",
-          "city": "嘉義市",
-          "place": "嘉義市政府",
-          "level": "green",
-          "news_count": 8,
-          "comment_count": 0,
-          "negativity_pct": 12,
-          "is_urgent": false,
-          "urgency_score": 11,
-          "sample_titles": [
-            "傳承KANO永不放棄精神 嘉義市民生國中棒球隊睽違多年再戰沖繩",
-            "年底嘉市長選戰升溫，市選委會上午張貼選舉公告，市長、議員及里長「三合一」選舉即將登記。無黨籍市長參選人、台北藝術大學前校",
-            "好暖！嘉市「粉圓冰阿婆」復出 北中南網友號召買冰讓阿嬤早點下班"
-          ]
-        },
-        {
           "title": "台東地方動態",
           "city": "台東",
           "place": "台東縣政府",
@@ -80512,6 +80494,22 @@
             "陳瑩推出競選新視覺、新看板、新口號 主打「台東，世界的入口」",
             "陳瑩喊台東是世界入口 吳秀華成立婦女後援會",
             "距離年底投票日只剩一百天。民進黨台東縣長參選人、立委陳瑩張掛縱谷線「天空款」、海岸線「大海款」及南迴線「日出款」三款新看"
+          ]
+        },
+        {
+          "title": "嘉義市地方動態",
+          "city": "嘉義市",
+          "place": "嘉義市政府",
+          "level": "green",
+          "news_count": 8,
+          "comment_count": 0,
+          "negativity_pct": 12,
+          "is_urgent": false,
+          "urgency_score": 11,
+          "sample_titles": [
+            "傳承KANO永不放棄精神 嘉義市民生國中棒球隊睽違多年再戰沖繩",
+            "年底嘉市長選戰升溫，市選委會上午張貼選舉公告，市長、議員及里長「三合一」選舉即將登記。無黨籍市長參選人、台北藝術大學前校",
+            "好暖！嘉市「粉圓冰阿婆」復出 北中南網友號召買冰讓阿嬤早點下班"
           ]
         },
         {
@@ -80583,11 +80581,11 @@
           "city": "基隆",
           "place": "基隆市政府",
           "level": "yellow",
-          "news_count": 11,
+          "news_count": 9,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 11,
+          "urgency_score": 9,
           "sample_titles": [
             "陪伴慢飛天使勇敢追夢閃耀星光 基隆身障兒童溫馨畢典",
             "基隆男疑不熟路況　提前停煞遭後車按喇叭、下車怒嗆險釀衝突",
@@ -80631,15 +80629,15 @@
           "city": "台中",
           "place": "台中市政府",
           "level": "yellow",
-          "news_count": 53,
+          "news_count": 55,
           "comment_count": 7,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 64,
+          "urgency_score": 66,
           "sample_titles": [
+            "中流完工六年無法啟用議員批盧秀燕兩任期無人負責- 生活",
             "卓揆拒副署…盧秀燕：國家領導人不該帶頭毀憲",
-            "卓揆拒副署…盧秀燕：國家領導人不該帶頭毀憲| 2026九合一選舉",
-            "出席台灣地方政府聯合會成立 盧秀燕：未來國民黨執政「韓蔣盧都在」"
+            "卓揆拒副署…盧秀燕：國家領導人不該帶頭毀憲| 2026九合一選舉"
           ]
         },
         {
@@ -80658,21 +80656,6 @@
           ]
         },
         {
-          "title": "新竹縣弊案爭議",
-          "city": "新竹縣",
-          "place": "新竹縣政府",
-          "level": "red",
-          "news_count": 2,
-          "comment_count": 0,
-          "negativity_pct": 100,
-          "is_urgent": true,
-          "urgency_score": 8,
-          "sample_titles": [
-            "竹縣慘淪營建廢土場獲利破億！關西大旱坑狂倒百車...38人起訴",
-            "湖口軍營淪垃圾山 6家環保蟑螂假鋪路倒廢棄物 起訴沒收13億"
-          ]
-        },
-        {
           "title": "桃園弊案爭議",
           "city": "桃園",
           "place": "桃園市政府",
@@ -80685,6 +80668,21 @@
           "sample_titles": [
             "泵浦短路引燃百噸植物油 桃園2男涉公共危險罪起訴",
             "泵浦短路引燃百噸植物油桃園2男涉公共危險罪起訴- 社會"
+          ]
+        },
+        {
+          "title": "新竹縣弊案爭議",
+          "city": "新竹縣",
+          "place": "新竹縣政府",
+          "level": "red",
+          "news_count": 2,
+          "comment_count": 0,
+          "negativity_pct": 100,
+          "is_urgent": true,
+          "urgency_score": 8,
+          "sample_titles": [
+            "竹縣慘淪營建廢土場獲利破億！關西大旱坑狂倒百車...38人起訴",
+            "湖口軍營淪垃圾山 6家環保蟑螂假鋪路倒廢棄物 起訴沒收13億"
           ]
         },
         {
@@ -80804,31 +80802,15 @@
           "city": "宜蘭",
           "place": "宜蘭縣政府",
           "level": "red",
-          "news_count": 49,
+          "news_count": 48,
           "comment_count": 0,
           "negativity_pct": 0,
           "is_urgent": false,
-          "urgency_score": 49,
+          "urgency_score": 48,
           "sample_titles": [
             "【#大新聞大爆卦】韓國瑜逼出綠XXXX黨嘴臉了!董智森譙萊爾跟金正恩沒兩樣!宜蘭老農不忍了攔車罵賴桑了!20260820",
             "【#大新聞大爆卦 上】韓國瑜看穿卓示軟兩手騙局了!陳琬惠爆宜蘭老農攔車罵賴了! 完整版 @大新聞大爆卦HotNewsTa",
             "台灣北部七縣市這樣串聯：從台北城市到宜蘭海岸，不同天數的玩法節奏建議"
-          ]
-        },
-        {
-          "title": "彰化地方動態",
-          "city": "彰化",
-          "place": "彰化縣政府",
-          "level": "red",
-          "news_count": 52,
-          "comment_count": 0,
-          "negativity_pct": 12,
-          "is_urgent": false,
-          "urgency_score": 70,
-          "sample_titles": [
-            "彰化伸港工程師8年0缺勤　「疑似道路設計問題」命喪3姊弟車禍同條路",
-            "提名釀心結？彰化藍營陷內鬨？ 無意扛輔選？王惠美豁出去了？2026.08.20【台灣向前行 Part4】",
-            "國民黨8縣市拉警報？ 彰化整合卡死「花東也告急」？ 李四川昔參選三不承諾「全跳票」？ 蔡英文合體蘇巧慧「川伯急了」？│許"
           ]
         },
         {
@@ -80845,6 +80827,22 @@
             "精彩片段》網媒新北民調！李四川39.9%、蘇巧慧37.3%！看好度川＞蘇？【新聞面對面】2026.08.20",
             "新北榮服處祭悼在臺亡故榮民 緬懷奉獻精神",
             "新北首頒資深里長獎 90歲蘇樹木、服務40年林榮彩、86歲特優里長楊秀彥受肯定"
+          ]
+        },
+        {
+          "title": "彰化地方動態",
+          "city": "彰化",
+          "place": "彰化縣政府",
+          "level": "red",
+          "news_count": 52,
+          "comment_count": 0,
+          "negativity_pct": 12,
+          "is_urgent": false,
+          "urgency_score": 70,
+          "sample_titles": [
+            "彰化伸港工程師8年0缺勤　「疑似道路設計問題」命喪3姊弟車禍同條路",
+            "提名釀心結？彰化藍營陷內鬨？ 無意扛輔選？王惠美豁出去了？2026.08.20【台灣向前行 Part4】",
+            "國民黨8縣市拉警報？ 彰化整合卡死「花東也告急」？ 李四川昔參選三不承諾「全跳票」？ 蔡英文合體蘇巧慧「川伯急了」？│許"
           ]
         },
         {
@@ -80868,15 +80866,15 @@
           "city": "高雄",
           "place": "高雄市鳳山區",
           "level": "red",
-          "news_count": 112,
+          "news_count": 111,
           "comment_count": 0,
-          "negativity_pct": 4,
+          "negativity_pct": 3,
           "is_urgent": false,
-          "urgency_score": 124,
+          "urgency_score": 120,
           "sample_titles": [
+            "陳其邁執政6年 高雄招商逾2.7兆",
             "高雄210名里長獲表揚 市府將提升里鄰長福利及保障",
-            "雨一直下！高雄鳳山安全島再現「神秘菇菇」",
-            "《高雄，緊緊緊！2314天極限轉型》明起預購 蔡英文、蘇貞昌接力力挺"
+            "雨一直下！高雄鳳山安全島再現「神秘菇菇」"
           ]
         },
         {
@@ -80884,11 +80882,11 @@
           "city": "台中",
           "place": "台中市北屯區",
           "level": "red",
-          "news_count": 146,
+          "news_count": 145,
           "comment_count": 0,
           "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 167,
+          "urgency_score": 166,
           "sample_titles": [
             "國旅補助9月上路 中市府加碼、週週住台中 度假一整年",
             "台中市115學年度國教地方輔導體系授證典禮",
@@ -80900,15 +80898,15 @@
           "city": "台北",
           "place": "台北市信義區",
           "level": "red",
-          "news_count": 154,
+          "news_count": 155,
           "comment_count": 0,
           "negativity_pct": 5,
           "is_urgent": false,
-          "urgency_score": 178,
+          "urgency_score": 179,
           "sample_titles": [
+            "蔣萬安上任3年410件孩童不當管教議員批沒人負責- 臺北市",
             "台北至少410童涉遭虐 許淑華怒問蔣萬安「一句重話都不說」",
-            "台北至少410童涉遭虐 許淑華怒問蔣萬安「一句重話都不說」",
-            "台灣地方縣市首長、議員選舉進入倒數100天，民進黨台北市長參選人沈伯洋今天與立法委員吳思瑤，陪同行政院長卓榮泰訪視赴國科"
+            "台北至少410童涉遭虐 許淑華怒問蔣萬安「一句重話都不說」"
           ]
         }
       ]
