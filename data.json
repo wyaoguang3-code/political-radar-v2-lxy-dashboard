@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-08-30T18:47:51.507968+00:00",
+  "generated_at": "2026-08-30T19:03:31.658110+00:00",
   "metrics": {
-    "total_24h": 111,
+    "total_24h": 113,
     "prev_24h": 100,
-    "growth_pct": 11.0,
-    "news_24h": 99,
+    "growth_pct": 13.0,
+    "news_24h": 101,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 1470,
+    "total": 1472,
     "prev": 1112,
-    "growth_pct": 32.19,
-    "news": 1277,
+    "growth_pct": 32.37,
+    "news": 1279,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -42,7 +42,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 3430
+      "count": 3432
     },
     {
       "platform": "youtube",
@@ -54,10 +54,6 @@
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-08-30 03:00",
-      "count": 1
-    },
     {
       "hour": "2026-08-30 04:00",
       "count": 4
@@ -92,7 +88,7 @@
     },
     {
       "hour": "2026-08-30 12:00",
-      "count": 20
+      "count": 24
     },
     {
       "hour": "2026-08-30 13:00",
@@ -116,7 +112,7 @@
     },
     {
       "hour": "2026-08-30 18:00",
-      "count": 9
+      "count": 6
     },
     {
       "hour": "2026-08-30 19:00",
@@ -140,7 +136,7 @@
     },
     {
       "hour": "2026-08-31 00:00",
-      "count": 2
+      "count": 3
     },
     {
       "hour": "2026-08-31 01:00",
@@ -148,6 +144,10 @@
     },
     {
       "hour": "2026-08-31 02:00",
+      "count": 0
+    },
+    {
+      "hour": "2026-08-31 03:00",
       "count": 0
     }
   ],
@@ -686,7 +686,7 @@
     },
     {
       "hour": "2026-08-30 12:00",
-      "count": 21
+      "count": 22
     },
     {
       "hour": "2026-08-30 13:00",
@@ -734,7 +734,7 @@
     },
     {
       "hour": "2026-08-31 00:00",
-      "count": 2
+      "count": 3
     },
     {
       "hour": "2026-08-31 01:00",
@@ -770,28 +770,28 @@
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 134,
-    "蔣萬安": 356,
+    "盧秀燕": 136,
+    "蔣萬安": 354,
     "蔡其昌": 3,
     "陳其邁": 6
   },
   "mention_compare_7d": {
-    "盧秀燕": 1470,
+    "盧秀燕": 1472,
     "蔣萬安": 1977,
     "蔡其昌": 34,
     "陳其邁": 728
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 134,
+      "total": 136,
       "red": 0,
       "yellow": 78,
-      "green": 56
+      "green": 58
     },
     "蔣萬安": {
-      "total": 356,
+      "total": 354,
       "red": 14,
-      "yellow": 278,
+      "yellow": 276,
       "green": 64
     },
     "蔡其昌": {
@@ -42528,11 +42528,11 @@
     },
     {
       "date": "2026-08-30",
-      "score": 46.8,
-      "total": 122,
+      "score": 47.1,
+      "total": 123,
       "red": 0,
       "yellow": 83,
-      "green": 39,
+      "green": 40,
       "crisis": 0,
       "samples_low": false,
       "articles": [
@@ -43350,6 +43350,14 @@
           "time": "2026-08-30 12:00:00",
           "severity": "yellow",
           "publisher": "蕃新聞→愛傳媒",
+          "is_crisis": false
+        },
+        {
+          "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+          "url": "https://n.yam.com/Article/20260830573378",
+          "time": "2026-08-30 12:00:00",
+          "severity": "green",
+          "publisher": "蕃新聞→新頭條",
           "is_crisis": false
         },
         {
@@ -45751,10 +45759,10 @@
     {
       "date": "2026-08-31",
       "score": 77.4,
-      "total": 3,
+      "total": 4,
       "red": 0,
       "yellow": 0,
-      "green": 3,
+      "green": 4,
       "crisis": 0,
       "samples_low": false,
       "articles": [
@@ -45785,6 +45793,14 @@
         {
           "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+          "time": "2026-08-31 00:00:00",
+          "severity": "green",
+          "publisher": "Google News→UDN",
+          "is_crisis": false
+        },
+        {
+          "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
           "time": "2026-08-31 00:00:00",
           "severity": "green",
           "publisher": "Google News→UDN",
@@ -46295,8 +46311,8 @@
         "date": "2026-08-30",
         "red": 0,
         "yellow": 24,
-        "green": 30,
-        "total": 54,
+        "green": 31,
+        "total": 55,
         "articles": [
           {
             "title": "盧秀燕、江啟臣、黃國昌 PK戰鬥陀螺",
@@ -46607,6 +46623,13 @@
             "publisher": "蕃新聞→創新聞"
           },
           {
+            "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+            "url": "https://n.yam.com/Article/20260830573378",
+            "time": "2026-08-30 12:00:00",
+            "severity": "green",
+            "publisher": "蕃新聞→新頭條"
+          },
+          {
             "title": "藍白合破局？盧秀燕、黃國昌台中對戰戰鬥陀螺這樣說- 政治",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjSTRybjF3X1ctNDJaLWhjNm9wQUNYQWswSjNJLVBfaktDV1pyWmxrQ1pDNy1yb3NSRVA2WEl4QkFBMGwxNW5sOE5qRlJoTVNMQnFJTjdVRExCRVdCMVhxSDU4UElpUmUtaWc?oc=5",
             "time": "2026-08-30 11:51:21",
@@ -46682,8 +46705,8 @@
         "date": "2026-08-31",
         "red": 0,
         "yellow": 0,
-        "green": 3,
-        "total": 3,
+        "green": 4,
+        "total": 4,
         "articles": [
           {
             "title": "台中戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌PK",
@@ -46702,6 +46725,13 @@
           {
             "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+            "time": "2026-08-31 00:00:00",
+            "severity": "green",
+            "publisher": "Google News→UDN"
+          },
+          {
+            "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
             "time": "2026-08-31 00:00:00",
             "severity": "green",
             "publisher": "Google News→UDN"
@@ -137304,6 +137334,15 @@
         "co_mentioned": []
       },
       {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "platform": "news",
+        "publisher": "Google News→UDN",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "[Gossiping] [新聞] 總統府認了月餅「棄單」 謝謝盧秀燕接手",
         "url": "https://www.ptt.cc/bbs/Gossiping/M.1788103444.A.AAE.html",
         "time": "2026-08-30 23:24:04",
@@ -138221,6 +138260,15 @@
         "platform": "news",
         "publisher": "蕃新聞→愛傳媒",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→新頭條",
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -141666,24 +141714,6 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安慘了！被問遮陽傘造價千萬竟扯前鎮漁港3千萬變81億 高雄市長參選人氣炸：出來辯論",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E8%A2%AB%E5%95%8F%E9%81%AE%E9%99%BD%E5%82%98%E9%80%A0%E5%83%B9%E5%8D%83%E8%90%AC%E7%AB%9F%E6%89%AF%E5%89%8D%E9%8E%AE%E6%BC%81%E6%B8%AF3%E5%8D%83%E8%90%AC%E8%AE%8A81%E5%84%84-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E5%8F%83%E9%81%B8%E4%BA%BA%E6%B0%A3%E7%82%B8-%E5%87%BA%E4%BE%86%E8%BE%AF%E8%AB%96-025400262.html",
-        "time": "2026-08-30 02:54:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安請接招！沈伯洋再下市政辯論戰帖 優先議題包括兒虐、交通、衛生",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E8%AB%8B%E6%8E%A5%E6%8B%9B-%E6%B2%88%E4%BC%AF%E6%B4%8B%E5%86%8D%E4%B8%8B%E5%B8%82%E6%94%BF%E8%BE%AF%E8%AB%96%E6%88%B0%E5%B8%96-%E5%84%AA%E5%85%88%E8%AD%B0%E9%A1%8C%E5%8C%85%E6%8B%AC%E5%85%92%E8%99%90-%E4%BA%A4%E9%80%9A-%E8%A1%9B%E7%94%9F-025100267.html",
-        "time": "2026-08-30 02:51:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
@@ -141806,6 +141836,15 @@
       {
         "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "platform": "news",
+        "publisher": "Google News→UDN",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
         "time": "2026-08-31 00:00:00",
         "platform": "news",
         "publisher": "Google News→UDN",
@@ -142730,6 +142769,15 @@
         "platform": "news",
         "publisher": "蕃新聞→愛傳媒",
         "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→新頭條",
+        "severity": null,
         "co_mentioned": []
       },
       {
@@ -180978,6 +181026,11 @@
       "time": "2026-08-31 00:00:00"
     },
     {
+      "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+      "time": "2026-08-31 00:00:00"
+    },
+    {
       "title": "盧秀燕談藍白合：合則兩利、分則兩敗",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tNS03cnl4RGlNWngta3NZcElWQ0VuemVGYWVRR3l4Q0VMd1pjZWFCNzB0aExrZHB2UXE5enZLQnMtcXpnYjVKMF9yZ2Jsc3B3LXR1WFlZb2RwU1ZYOUwwMXh4NG8yZkZRT3BiVUtCOFI?oc=5",
       "time": "2026-08-30 21:40:00"
@@ -181056,11 +181109,6 @@
       "title": "台中戰鬥陀螺嘉年華熱鬧開幕 盧秀燕、江啟臣、黃國昌同台PK戰鬥陀螺",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4ydDRtUmdTWVowNU1VWWdUWlVHcW45UzVXSUNkU3BNOG93VWtzZVh2aGFOd1BodzVDNHRiZUVyYUFRNXo4MFNwZm9GcXdXcklDUzRfRQ?oc=5",
       "time": "2026-08-30 19:10:06"
-    },
-    {
-      "title": "台中戰鬥陀螺嘉年華熱鬧開幕 盧秀燕、江啟臣、黃國昌同台PK戰鬥陀螺",
-      "url": "https://taiwanreports.com/archives/1009613",
-      "time": "2026-08-30 19:08:04"
     }
   ],
   "top_news_7d": [
@@ -181082,6 +181130,13 @@
       "platform": "news",
       "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+      "time": "2026-08-31 00:00:00",
+      "severity": null
+    },
+    {
+      "platform": "news",
+      "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
       "time": "2026-08-31 00:00:00",
       "severity": null
     },
@@ -181195,13 +181250,6 @@
       "title": "台中戰鬥陀螺嘉年華熱鬧開幕 盧秀燕、江啟臣、黃國昌同台PK戰鬥陀螺",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4ydDRtUmdTWVowNU1VWWdUWlVHcW45UzVXSUNkU3BNOG93VWtzZVh2aGFOd1BodzVDNHRiZUVyYUFRNXo4MFNwZm9GcXdXcklDUzRfRQ?oc=5",
       "time": "2026-08-30 19:10:06",
-      "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "台中戰鬥陀螺嘉年華熱鬧開幕 盧秀燕、江啟臣、黃國昌同台PK戰鬥陀螺",
-      "url": "https://taiwanreports.com/archives/1009613",
-      "time": "2026-08-30 19:08:04",
       "severity": null
     }
   ],
@@ -181443,6 +181491,13 @@
           "severity": null
         },
         {
+          "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+          "time": "2026-08-31 00:00:00",
+          "publisher": "Google News→UDN",
+          "severity": null
+        },
+        {
           "title": "盧秀燕談藍白合：合則兩利、分則兩敗",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9tNS03cnl4RGlNWngta3NZcElWQ0VuemVGYWVRR3l4Q0VMd1pjZWFCNzB0aExrZHB2UXE5enZLQnMtcXpnYjVKMF9yZ2Jsc3B3LXR1WFlZb2RwU1ZYOUwwMXh4NG8yZkZRT3BiVUtCOFI?oc=5",
           "time": "2026-08-30 21:40:00",
@@ -181552,13 +181607,6 @@
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4ydDRtUmdTWVowNU1VWWdUWlVHcW45UzVXSUNkU3BNOG93VWtzZVh2aGFOd1BodzVDNHRiZUVyYUFRNXo4MFNwZm9GcXdXcklDUzRfRQ?oc=5",
           "time": "2026-08-30 19:10:06",
           "publisher": "Google News→臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "台中戰鬥陀螺嘉年華熱鬧開幕 盧秀燕、江啟臣、黃國昌同台PK戰鬥陀螺",
-          "url": "https://taiwanreports.com/archives/1009613",
-          "time": "2026-08-30 19:08:04",
-          "publisher": "臺灣導報",
           "severity": null
         }
       ]
@@ -182121,6 +182169,13 @@
         "time": "2026-08-31 00:00:00",
         "publisher": "Google News→UDN",
         "severity": "yellow"
+      },
+      {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "publisher": "Google News→UDN",
+        "severity": null
       },
       {
         "title": "再攻當年疫苗採購 蔣萬安五度怒批政府包庇.黑箱",
@@ -184073,6 +184128,13 @@
         "url": "https://n.yam.com/Article/20260830152842",
         "time": "2026-08-30 12:00:00",
         "publisher": "蕃新聞→台灣好新聞",
+        "severity": null
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "publisher": "蕃新聞→新頭條",
         "severity": null
       },
       {
@@ -185271,20 +185333,6 @@
         "time": "2026-08-30 03:28:42",
         "publisher": "Yahoo新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安慘了！被問遮陽傘造價千萬竟扯前鎮漁港3千萬變81億 高雄市長參選人氣炸：出來辯論",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E8%A2%AB%E5%95%8F%E9%81%AE%E9%99%BD%E5%82%98%E9%80%A0%E5%83%B9%E5%8D%83%E8%90%AC%E7%AB%9F%E6%89%AF%E5%89%8D%E9%8E%AE%E6%BC%81%E6%B8%AF3%E5%8D%83%E8%90%AC%E8%AE%8A81%E5%84%84-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E5%8F%83%E9%81%B8%E4%BA%BA%E6%B0%A3%E7%82%B8-%E5%87%BA%E4%BE%86%E8%BE%AF%E8%AB%96-025400262.html",
-        "time": "2026-08-30 02:54:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安請接招！沈伯洋再下市政辯論戰帖 優先議題包括兒虐、交通、衛生",
-        "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E8%AB%8B%E6%8E%A5%E6%8B%9B-%E6%B2%88%E4%BC%AF%E6%B4%8B%E5%86%8D%E4%B8%8B%E5%B8%82%E6%94%BF%E8%BE%AF%E8%AB%96%E6%88%B0%E5%B8%96-%E5%84%AA%E5%85%88%E8%AD%B0%E9%A1%8C%E5%8C%85%E6%8B%AC%E5%85%92%E8%99%90-%E4%BA%A4%E9%80%9A-%E8%A1%9B%E7%94%9F-025100267.html",
-        "time": "2026-08-30 02:51:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
       }
     ],
     "ptt": [
@@ -185608,6 +185656,13 @@
         "time": "2026-08-31 00:00:00",
         "publisher": "Google News→UDN",
         "severity": "yellow"
+      },
+      {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "publisher": "Google News→UDN",
+        "severity": null
       },
       {
         "title": "再攻當年疫苗採購 蔣萬安五度怒批政府包庇.黑箱",
@@ -187560,6 +187615,13 @@
         "url": "https://n.yam.com/Article/20260830152842",
         "time": "2026-08-30 12:00:00",
         "publisher": "蕃新聞→台灣好新聞",
+        "severity": null
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "publisher": "蕃新聞→新頭條",
         "severity": null
       },
       {
@@ -212951,6 +213013,70 @@
       "red_news_count": 0
     },
     {
+      "title": "連江地方動態",
+      "city": "連江",
+      "place": "連江縣（馬祖）",
+      "lat": 26.1601,
+      "lng": 119.9514,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 1",
+      "note": "24h 命中 1 則（新聞 1、留言 0）",
+      "news_count": 1,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-30T05:59:38+00:00",
+      "news_full_expires_at": "2026-08-31T05:59:38+00:00",
+      "news_articles": [
+        {
+          "title": "總統盃3對3籃球賽 連江縣4支隊伍出線 10月31日凱道決賽",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFByZFktdGdzUF9TbFNFbm1HQVM0WUVZRG94UW9PelRCSWRkSzhINk9vc09rWXl2OWViR1pTdGxVNk80dktvZk9LWV9KS2FYZjZXZG1OZm1BdGxSU1dvUlE?oc=5",
+          "time": "2026-08-30 13:59:38",
+          "publisher": "Google News→matsu-news.gov.tw",
+          "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 0,
+      "negativity_pct": 0,
+      "urgent_red_comments": 0,
+      "urgency_score": 1,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
       "title": "台北軍購爭議",
       "city": "台北",
       "place": "台北市政府",
@@ -213080,77 +213206,6 @@
       "red_news_count": 0
     },
     {
-      "title": "連江地方動態",
-      "city": "連江",
-      "place": "連江縣（馬祖）",
-      "lat": 26.1601,
-      "lng": 119.9514,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 2",
-      "note": "24h 命中 2 則（新聞 2、留言 0）",
-      "news_count": 2,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-30T05:59:38+00:00",
-      "news_full_expires_at": "2026-08-31T05:59:38+00:00",
-      "news_articles": [
-        {
-          "title": "總統盃3對3籃球賽 連江縣4支隊伍出線 10月31日凱道決賽",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFByZFktdGdzUF9TbFNFbm1HQVM0WUVZRG94UW9PelRCSWRkSzhINk9vc09rWXl2OWViR1pTdGxVNk80dktvZk9LWV9KS2FYZjZXZG1OZm1BdGxSU1dvUlE?oc=5",
-          "time": "2026-08-30 13:59:38",
-          "publisher": "Google News→matsu-news.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "馬祖好物跨海圈粉！連江SBIR成果亮相桃園冷飲節 地方創生走出新路",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1UWFVGX2ZFd3RkLXB2ZXJrcEp6d21DbHRDb1NGVXpWVEZTYkNTeG9oU1pSWEhtbnNEOGFlSE1LTHVTRmdEb01r?oc=5",
-          "time": "2026-08-30 02:52:46",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 2,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
-      ],
-      "red_news_count": 0
-    },
-    {
       "title": "藍營路線爭議",
       "city": "台中",
       "place": "台中市政府",
@@ -213218,98 +213273,6 @@
         "黨團大會",
         "開除韓國瑜",
         "舔共"
-      ],
-      "red_news_count": 0
-    },
-    {
-      "title": "雲林地方動態",
-      "city": "雲林",
-      "place": "雲林縣政府",
-      "lat": 23.7092,
-      "lng": 120.4313,
-      "level": "green",
-      "source": "news",
-      "platform": "新聞 5",
-      "note": "24h 命中 5 則（新聞 5、留言 0）",
-      "news_count": 5,
-      "comment_count": 0,
-      "news_latest_at": "2026-08-30T11:10:21+00:00",
-      "news_full_expires_at": "2026-08-31T11:10:21+00:00",
-      "news_articles": [
-        {
-          "title": "雲林青少年劇場夏令營成果發表",
-          "url": "https://taiwanreports.com/archives/1009626",
-          "time": "2026-08-30 19:10:21",
-          "publisher": "臺灣導報",
-          "severity": null
-        },
-        {
-          "title": "快訊／10縣市豪雨特報！彰化、雲林國家級警報 氣象署：恐下冰雹 | 天氣預報 | 生活",
-          "url": "https://www.nownews.com/news/6870594",
-          "time": "2026-08-30 15:19:52",
-          "publisher": "NOWnews今日新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "年齡不是限制！雲林40銀髮長輩變身伸展台主角 秀出人生最美風采",
-          "url": "https://news.ltn.com.tw/news/Yunlin/breakingnews/5557042",
-          "time": "2026-08-30 12:37:02",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "搶救小校2-1》少子化偏鄉小校不裁併 雲林靠「轉型」殺出一條路",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5556843",
-          "time": "2026-08-30 11:00:00",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "雲林線上徵才專區 一站式平台更便民",
-          "url": "https://news.ltn.com.tw/news/Yunlin/paper/1768637",
-          "time": "2026-08-30 05:30:00",
-          "publisher": "自由時報",
-          "severity": null
-        }
-      ],
-      "comments": [],
-      "negative_news_count": 0,
-      "negativity_pct": 0,
-      "urgent_red_comments": 0,
-      "urgency_score": 5,
-      "is_urgent": false,
-      "is_catchall": true,
-      "keywords": [
-        "台北",
-        "新北",
-        "桃園",
-        "台中",
-        "台南",
-        "高雄",
-        "基隆",
-        "新竹市",
-        "嘉義市",
-        "新竹縣",
-        "苗栗",
-        "彰化",
-        "南投",
-        "雲林",
-        "嘉義縣",
-        "屏東",
-        "宜蘭",
-        "花蓮",
-        "台東",
-        "澎湖",
-        "金門",
-        "連江",
-        "馬祖",
-        "北市",
-        "中市",
-        "南市",
-        "高市",
-        "基市",
-        "嘉市",
-        "竹市"
       ],
       "red_news_count": 0
     },
@@ -213406,82 +213369,61 @@
       "red_news_count": 0
     },
     {
-      "title": "台東地方動態",
-      "city": "台東",
-      "place": "台東縣政府",
-      "lat": 22.7583,
-      "lng": 121.1444,
+      "title": "雲林地方動態",
+      "city": "雲林",
+      "place": "雲林縣政府",
+      "lat": 23.7092,
+      "lng": 120.4313,
       "level": "green",
       "source": "news",
-      "platform": "新聞 8",
-      "note": "24h 命中 8 則（新聞 8、留言 0）",
-      "news_count": 8,
+      "platform": "新聞 5",
+      "note": "24h 命中 5 則（新聞 5、留言 0）",
+      "news_count": 5,
       "comment_count": 0,
-      "news_latest_at": "2026-08-30T16:00:00+00:00",
-      "news_full_expires_at": "2026-08-31T16:00:00+00:00",
+      "news_latest_at": "2026-08-30T11:10:21+00:00",
+      "news_full_expires_at": "2026-08-31T11:10:21+00:00",
       "news_articles": [
         {
-          "title": "天氣持續不穩定台東屏東留意大雨 周三後水氣逐漸減少",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1PU0tRQ1dXQkR3djdvS0U4a25KeEd0RkE2VzY2bzhMbTk2VjhvbmZUdU1jb1doMWh3Nk04U09SR2tlYTlWTUJhNzhFSlpsVDRnakxaWXlzbGs?oc=5",
-          "time": "2026-08-31 00:00:00",
-          "publisher": "Google News→梅花新聞網",
+          "title": "雲林青少年劇場夏令營成果發表",
+          "url": "https://taiwanreports.com/archives/1009626",
+          "time": "2026-08-30 19:10:21",
+          "publisher": "臺灣導報",
           "severity": null
         },
         {
-          "title": "週一暴雨狂炸南台灣 台東下到紫紅",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5557417",
-          "time": "2026-08-30 21:38:35",
-          "publisher": "自由時報",
+          "title": "快訊／10縣市豪雨特報！彰化、雲林國家級警報 氣象署：恐下冰雹 | 天氣預報 | 生活",
+          "url": "https://www.nownews.com/news/6870594",
+          "time": "2026-08-30 15:19:52",
+          "publisher": "NOWnews今日新聞",
           "severity": "yellow"
         },
         {
-          "title": "南高屏、台東注意！明起雨勢變大「有強降雨機會」 氣象粉專急：做好防災",
-          "url": "https://tw.news.yahoo.com/%E5%8D%97%E9%AB%98%E5%B1%8F-%E5%8F%B0%E6%9D%B1%E6%B3%A8%E6%84%8F-%E6%98%8E%E8%B5%B7%E9%9B%A8%E5%8B%A2%E8%AE%8A%E5%A4%A7-%E6%9C%89%E5%BC%B7%E9%99%8D%E9%9B%A8%E6%A9%9F%E6%9C%83-%E6%B0%A3%E8%B1%A1%E7%B2%89%E5%B0%88%E6%80%A5-081400859.html",
-          "time": "2026-08-30 16:14:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "宏泰人壽金融小學堂走入台東偏鄉 陪伴學童學習儲蓄與防詐",
-          "url": "https://money.udn.com/money/story/5613/9723000",
-          "time": "2026-08-30 15:42:48",
-          "publisher": "經濟日報",
-          "severity": null
-        },
-        {
-          "title": "AI影片抹黑台東農產 縣府駁斥並呼籲認明標章",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5556994",
-          "time": "2026-08-30 11:50:40",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "台東縣長饒慶鈴之父、立法院前副院長饒穎奇21日辭世，享耆壽93歲。饒慶鈴追悼說，父親對她的愛藏很深，一直是她的從政導師，擔任縣長8年，一次都沒有走進她的縣長辦公室，傳授的秘訣更只有「做自己就好了，記得多為台東想一點」。",
-          "url": "https://udn.com/news/story/6656/9722570?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-30 11:08:35",
-          "publisher": "聯合新聞網",
-          "severity": null
-        },
-        {
-          "title": "阿美族古調 進台東教室",
-          "url": "https://news.ltn.com.tw/news/life/paper/1768588",
-          "time": "2026-08-30 05:30:00",
+          "title": "年齡不是限制！雲林40銀髮長輩變身伸展台主角 秀出人生最美風采",
+          "url": "https://news.ltn.com.tw/news/Yunlin/breakingnews/5557042",
+          "time": "2026-08-30 12:37:02",
           "publisher": "自由時報",
           "severity": null
         },
         {
-          "title": "台東東岸舖食節 部份金幣9/30到期",
-          "url": "https://news.ltn.com.tw/news/Taitung/paper/1768664",
+          "title": "搶救小校2-1》少子化偏鄉小校不裁併 雲林靠「轉型」殺出一條路",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5556843",
+          "time": "2026-08-30 11:00:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "雲林線上徵才專區 一站式平台更便民",
+          "url": "https://news.ltn.com.tw/news/Yunlin/paper/1768637",
           "time": "2026-08-30 05:30:00",
           "publisher": "自由時報",
           "severity": null
         }
       ],
       "comments": [],
-      "negative_news_count": 1,
-      "negativity_pct": 12,
+      "negative_news_count": 0,
+      "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 11,
+      "urgency_score": 5,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -213745,6 +213687,119 @@
       "red_news_count": 0
     },
     {
+      "title": "台東地方動態",
+      "city": "台東",
+      "place": "台東縣政府",
+      "lat": 22.7583,
+      "lng": 121.1444,
+      "level": "green",
+      "source": "news",
+      "platform": "新聞 8",
+      "note": "24h 命中 8 則（新聞 8、留言 0）",
+      "news_count": 8,
+      "comment_count": 0,
+      "news_latest_at": "2026-08-30T16:00:00+00:00",
+      "news_full_expires_at": "2026-08-31T16:00:00+00:00",
+      "news_articles": [
+        {
+          "title": "天氣持續不穩定台東屏東留意大雨 周三後水氣逐漸減少",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1PU0tRQ1dXQkR3djdvS0U4a25KeEd0RkE2VzY2bzhMbTk2VjhvbmZUdU1jb1doMWh3Nk04U09SR2tlYTlWTUJhNzhFSlpsVDRnakxaWXlzbGs?oc=5",
+          "time": "2026-08-31 00:00:00",
+          "publisher": "Google News→梅花新聞網",
+          "severity": null
+        },
+        {
+          "title": "週一暴雨狂炸南台灣 台東下到紫紅",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5557417",
+          "time": "2026-08-30 21:38:35",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "南高屏、台東注意！明起雨勢變大「有強降雨機會」 氣象粉專急：做好防災",
+          "url": "https://tw.news.yahoo.com/%E5%8D%97%E9%AB%98%E5%B1%8F-%E5%8F%B0%E6%9D%B1%E6%B3%A8%E6%84%8F-%E6%98%8E%E8%B5%B7%E9%9B%A8%E5%8B%A2%E8%AE%8A%E5%A4%A7-%E6%9C%89%E5%BC%B7%E9%99%8D%E9%9B%A8%E6%A9%9F%E6%9C%83-%E6%B0%A3%E8%B1%A1%E7%B2%89%E5%B0%88%E6%80%A5-081400859.html",
+          "time": "2026-08-30 16:14:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "宏泰人壽金融小學堂走入台東偏鄉 陪伴學童學習儲蓄與防詐",
+          "url": "https://money.udn.com/money/story/5613/9723000",
+          "time": "2026-08-30 15:42:48",
+          "publisher": "經濟日報",
+          "severity": null
+        },
+        {
+          "title": "AI影片抹黑台東農產 縣府駁斥並呼籲認明標章",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5556994",
+          "time": "2026-08-30 11:50:40",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "台東縣長饒慶鈴之父、立法院前副院長饒穎奇21日辭世，享耆壽93歲。饒慶鈴追悼說，父親對她的愛藏很深，一直是她的從政導師，擔任縣長8年，一次都沒有走進她的縣長辦公室，傳授的秘訣更只有「做自己就好了，記得多為台東想一點」。",
+          "url": "https://udn.com/news/story/6656/9722570?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-30 11:08:35",
+          "publisher": "聯合新聞網",
+          "severity": null
+        },
+        {
+          "title": "阿美族古調 進台東教室",
+          "url": "https://news.ltn.com.tw/news/life/paper/1768588",
+          "time": "2026-08-30 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "台東東岸舖食節 部份金幣9/30到期",
+          "url": "https://news.ltn.com.tw/news/Taitung/paper/1768664",
+          "time": "2026-08-30 05:30:00",
+          "publisher": "自由時報",
+          "severity": null
+        }
+      ],
+      "comments": [],
+      "negative_news_count": 1,
+      "negativity_pct": 12,
+      "urgent_red_comments": 0,
+      "urgency_score": 11,
+      "is_urgent": false,
+      "is_catchall": true,
+      "keywords": [
+        "台北",
+        "新北",
+        "桃園",
+        "台中",
+        "台南",
+        "高雄",
+        "基隆",
+        "新竹市",
+        "嘉義市",
+        "新竹縣",
+        "苗栗",
+        "彰化",
+        "南投",
+        "雲林",
+        "嘉義縣",
+        "屏東",
+        "宜蘭",
+        "花蓮",
+        "台東",
+        "澎湖",
+        "金門",
+        "連江",
+        "馬祖",
+        "北市",
+        "中市",
+        "南市",
+        "高市",
+        "基市",
+        "嘉市",
+        "竹市"
+      ],
+      "red_news_count": 0
+    },
+    {
       "title": "垃圾山",
       "city": "台中",
       "place": "台中市大里區",
@@ -213963,25 +214018,25 @@
       "red_news_count": 0
     },
     {
-      "title": "屏東弊案爭議",
-      "city": "屏東",
-      "place": "屏東縣政府",
-      "lat": 22.552,
-      "lng": 120.5489,
+      "title": "新竹市弊案爭議",
+      "city": "新竹市",
+      "place": "新竹市政府",
+      "lat": 24.8153,
+      "lng": 120.97009807621136,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-08-30T13:59:00+00:00",
-      "news_full_expires_at": "2026-08-31T13:59:00+00:00",
+      "news_latest_at": "2026-08-30T03:08:35+00:00",
+      "news_full_expires_at": "2026-08-31T03:08:35+00:00",
       "news_articles": [
         {
-          "title": "前屏東枋寮鄉長陳亞麟貪污判8年 二審疑屢傳不到遭通緝",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5557491",
-          "time": "2026-08-30 21:59:00",
-          "publisher": "自由時報",
+          "title": "新竹地檢署偵辦新竹市立棒球場工程案近四年，前市長林智堅被控圖利等罪獲不起訴，掀起綠白攻防，尤其針對球場是否被倒廢棄物仍各執一詞。對此，林智堅稍早在臉書發文，他說，收到不起訴處分書，他的心情相當平靜，對於這個結果，並不意外，只是終於真相大白。「雲在青天水在瓶」、「輕舟已過萬重山」，這兩句話正是此刻他的心境。",
+          "url": "https://udn.com/news/story/6656/9722549?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-08-30 11:08:35",
+          "publisher": "聯合新聞網",
           "severity": "red"
         }
       ],
@@ -214002,25 +214057,25 @@
       "red_news_count": 1
     },
     {
-      "title": "新竹市弊案爭議",
-      "city": "新竹市",
-      "place": "新竹市政府",
-      "lat": 24.8153,
-      "lng": 120.97009807621136,
+      "title": "屏東弊案爭議",
+      "city": "屏東",
+      "place": "屏東縣政府",
+      "lat": 22.552,
+      "lng": 120.5489,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-08-30T03:08:35+00:00",
-      "news_full_expires_at": "2026-08-31T03:08:35+00:00",
+      "news_latest_at": "2026-08-30T13:59:00+00:00",
+      "news_full_expires_at": "2026-08-31T13:59:00+00:00",
       "news_articles": [
         {
-          "title": "新竹地檢署偵辦新竹市立棒球場工程案近四年，前市長林智堅被控圖利等罪獲不起訴，掀起綠白攻防，尤其針對球場是否被倒廢棄物仍各執一詞。對此，林智堅稍早在臉書發文，他說，收到不起訴處分書，他的心情相當平靜，對於這個結果，並不意外，只是終於真相大白。「雲在青天水在瓶」、「輕舟已過萬重山」，這兩句話正是此刻他的心境。",
-          "url": "https://udn.com/news/story/6656/9722549?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-08-30 11:08:35",
-          "publisher": "聯合新聞網",
+          "title": "前屏東枋寮鄉長陳亞麟貪污判8年 二審疑屢傳不到遭通緝",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5557491",
+          "time": "2026-08-30 21:59:00",
+          "publisher": "自由時報",
           "severity": "red"
         }
       ],
@@ -215264,9 +215319,9 @@
       "lng": 121.301,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 63",
-      "note": "24h 命中 63 則（新聞 63、留言 0）",
-      "news_count": 63,
+      "platform": "新聞 62",
+      "note": "24h 命中 62 則（新聞 62、留言 0）",
+      "news_count": 62,
       "comment_count": 0,
       "news_latest_at": "2026-08-30T17:24:18+00:00",
       "news_full_expires_at": "2026-08-31T17:24:18+00:00",
@@ -215704,20 +215759,13 @@
           "time": "2026-08-30 04:10:00",
           "publisher": "中時新聞網",
           "severity": null
-        },
-        {
-          "title": "馬祖好物跨海圈粉！連江SBIR成果亮相桃園冷飲節 地方創生走出新路",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1UWFVGX2ZFd3RkLXB2ZXJrcEp6d21DbHRDb1NGVXpWVEZTYkNTeG9oU1pSWEhtbnNEOGFlSE1LTHVTRmdEb01r?oc=5",
-          "time": "2026-08-30 02:52:46",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 1,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 66,
+      "urgency_score": 65,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -215762,9 +215810,9 @@
       "lng": 120.64430192378865,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 95 / Threads 62 / FB 12 / IG 4",
-      "note": "24h 命中 173 則（新聞 95、留言 78）",
-      "news_count": 95,
+      "platform": "新聞 97 / Threads 62 / FB 12 / IG 4",
+      "note": "24h 命中 175 則（新聞 97、留言 78）",
+      "news_count": 97,
       "comment_count": 78,
       "news_latest_at": "2026-08-30T16:39:52+00:00",
       "news_full_expires_at": "2026-08-31T16:39:52+00:00",
@@ -215779,6 +215827,13 @@
         {
           "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+          "time": "2026-08-31 00:00:00",
+          "publisher": "Google News→UDN",
+          "severity": null
+        },
+        {
+          "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
           "time": "2026-08-31 00:00:00",
           "publisher": "Google News→UDN",
           "severity": null
@@ -216264,6 +216319,13 @@
           "url": "https://n.yam.com/Article/20260830872468",
           "time": "2026-08-30 12:00:00",
           "publisher": "蕃新聞→創新聞",
+          "severity": null
+        },
+        {
+          "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+          "url": "https://n.yam.com/Article/20260830573378",
+          "time": "2026-08-30 12:00:00",
+          "publisher": "蕃新聞→新頭條",
           "severity": null
         },
         {
@@ -217064,7 +217126,7 @@
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 49,
-      "urgency_score": 271,
+      "urgency_score": 273,
       "is_urgent": true,
       "is_catchall": true,
       "keywords": [
@@ -219369,9 +219431,9 @@
       "lng": 120.323,
       "level": "red",
       "source": "news",
-      "platform": "新聞 109",
-      "note": "24h 命中 109 則（新聞 109、留言 0）",
-      "news_count": 109,
+      "platform": "新聞 108",
+      "note": "24h 命中 108 則（新聞 108、留言 0）",
+      "news_count": 108,
       "comment_count": 0,
       "news_latest_at": "2026-08-30T18:12:46+00:00",
       "news_full_expires_at": "2026-08-31T18:12:46+00:00",
@@ -220131,20 +220193,13 @@
           "time": "2026-08-30 03:33:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "蔣萬安慘了！被問遮陽傘造價千萬竟扯前鎮漁港3千萬變81億 高雄市長參選人氣炸：出來辯論",
-          "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E8%A2%AB%E5%95%8F%E9%81%AE%E9%99%BD%E5%82%98%E9%80%A0%E5%83%B9%E5%8D%83%E8%90%AC%E7%AB%9F%E6%89%AF%E5%89%8D%E9%8E%AE%E6%BC%81%E6%B8%AF3%E5%8D%83%E8%90%AC%E8%AE%8A81%E5%84%84-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E5%8F%83%E9%81%B8%E4%BA%BA%E6%B0%A3%E7%82%B8-%E5%87%BA%E4%BE%86%E8%BE%AF%E8%AB%96-025400262.html",
-          "time": "2026-08-30 02:54:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 13,
       "negativity_pct": 12,
       "urgent_red_comments": 0,
-      "urgency_score": 148,
+      "urgency_score": 147,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -221114,9 +221169,9 @@
       "lng": 121.564,
       "level": "red",
       "source": "news",
-      "platform": "新聞 182",
-      "note": "24h 命中 182 則（新聞 182、留言 0）",
-      "news_count": 182,
+      "platform": "新聞 181",
+      "note": "24h 命中 181 則（新聞 181、留言 0）",
+      "news_count": 181,
       "comment_count": 0,
       "news_latest_at": "2026-08-30T18:12:46+00:00",
       "news_full_expires_at": "2026-08-31T18:12:46+00:00",
@@ -222387,20 +222442,13 @@
           "time": "2026-08-30 03:14:25",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "蔣萬安慘了！被問遮陽傘造價千萬竟扯前鎮漁港3千萬變81億 高雄市長參選人氣炸：出來辯論",
-          "url": "https://tw.news.yahoo.com/%E8%94%A3%E8%90%AC%E5%AE%89%E6%85%98%E4%BA%86-%E8%A2%AB%E5%95%8F%E9%81%AE%E9%99%BD%E5%82%98%E9%80%A0%E5%83%B9%E5%8D%83%E8%90%AC%E7%AB%9F%E6%89%AF%E5%89%8D%E9%8E%AE%E6%BC%81%E6%B8%AF3%E5%8D%83%E8%90%AC%E8%AE%8A81%E5%84%84-%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E5%8F%83%E9%81%B8%E4%BA%BA%E6%B0%A3%E7%82%B8-%E5%87%BA%E4%BE%86%E8%BE%AF%E8%AB%96-025400262.html",
-          "time": "2026-08-30 02:54:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 17,
       "negativity_pct": 9,
       "urgent_red_comments": 0,
-      "urgency_score": 233,
+      "urgency_score": 232,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -222462,6 +222510,16 @@
     {
       "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+      "time": "2026-08-31 00:00:00",
+      "platform": "news",
+      "publisher": "Google News→UDN",
+      "hour": "2026-08-31 00:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
       "time": "2026-08-31 00:00:00",
       "platform": "news",
       "publisher": "Google News→UDN",
@@ -222646,36 +222704,6 @@
       "platform": "news",
       "publisher": "臺灣導報",
       "hour": "2026-08-30 19:00",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Google News→新頭條",
-      "hour": "2026-08-30 18:00",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "hour": "2026-08-30 18:00",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Google News→蕃新聞",
-      "hour": "2026-08-30 18:00",
       "severity": null,
       "is_negative": false
     },
@@ -223210,6 +223238,36 @@
       "is_negative": false
     },
     {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Google News→新頭條",
+      "hour": "2026-08-30 12:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "hour": "2026-08-30 12:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Google News→蕃新聞",
+      "hour": "2026-08-30 12:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "六都首創戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌同場PK",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kTFZjOG9VVDlQWVhIbFZBS0Y2ZnFiSGhOR1ZJTE15eG5XRGVVNjRWYmw0aEdVWVUtXzJ5Y2s4dWhDS0ZWTE1ub2poRF9pQTlydWc?oc=5",
       "time": "2026-08-30 12:00:00",
@@ -223277,6 +223335,16 @@
       "publisher": "蕃新聞→愛傳媒",
       "hour": "2026-08-30 12:00",
       "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://n.yam.com/Article/20260830573378",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "蕃新聞→新頭條",
+      "hour": "2026-08-30 12:00",
+      "severity": null,
       "is_negative": false
     },
     {
@@ -224503,6 +224571,17 @@
       "is_negative": false
     },
     {
+      "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+      "time": "2026-08-31 00:00:00",
+      "platform": "news",
+      "publisher": "Google News→UDN",
+      "hour": "2026-08-31 00:00",
+      "day": "2026-08-31",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "[Gossiping] [新聞] 總統府認了月餅「棄單」 謝謝盧秀燕接手",
       "url": "https://www.ptt.cc/bbs/Gossiping/M.1788103444.A.AAE.html",
       "time": "2026-08-30 23:24:04",
@@ -224696,39 +224775,6 @@
       "platform": "news",
       "publisher": "臺灣導報",
       "hour": "2026-08-30 19:00",
-      "day": "2026-08-30",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Google News→新頭條",
-      "hour": "2026-08-30 18:00",
-      "day": "2026-08-30",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "hour": "2026-08-30 18:00",
-      "day": "2026-08-30",
-      "severity": null,
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
-      "time": "2026-08-30 18:46:00",
-      "platform": "news",
-      "publisher": "Google News→蕃新聞",
-      "hour": "2026-08-30 18:00",
       "day": "2026-08-30",
       "severity": null,
       "is_negative": false
@@ -225295,6 +225341,39 @@
       "is_negative": false
     },
     {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Google News→新頭條",
+      "hour": "2026-08-30 12:00",
+      "day": "2026-08-30",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "hour": "2026-08-30 12:00",
+      "day": "2026-08-30",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "Google News→蕃新聞",
+      "hour": "2026-08-30 12:00",
+      "day": "2026-08-30",
+      "severity": null,
+      "is_negative": false
+    },
+    {
       "title": "六都首創戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌同場PK",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kTFZjOG9VVDlQWVhIbFZBS0Y2ZnFiSGhOR1ZJTE15eG5XRGVVNjRWYmw0aEdVWVUtXzJ5Y2s4dWhDS0ZWTE1ub2poRF9pQTlydWc?oc=5",
       "time": "2026-08-30 12:00:00",
@@ -225369,6 +225448,17 @@
       "hour": "2026-08-30 12:00",
       "day": "2026-08-30",
       "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+      "url": "https://n.yam.com/Article/20260830573378",
+      "time": "2026-08-30 12:00:00",
+      "platform": "news",
+      "publisher": "蕃新聞→新頭條",
+      "hour": "2026-08-30 12:00",
+      "day": "2026-08-30",
+      "severity": null,
       "is_negative": false
     },
     {
@@ -247156,7 +247246,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 14020,
+    "sample_size": 14022,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -247407,10 +247497,10 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 1277,
+        "news_count": 1279,
         "negative_count": 38,
         "negativity_pct": 3,
-        "sentiment_score": 1201.0,
+        "sentiment_score": 1203.0,
         "articles": [
           {
             "title": "台中戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌PK",
@@ -247427,6 +247517,12 @@
           {
             "title": "藍白攜手！盧秀燕黃國昌江啟臣 戰鬥陀螺合體",
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF0gFYQVVfeXFMT3hsX2djblBQeTZ4Nk9vUHFxZUpRT3FTRFlST1RoWllmOXhXM0V5SHR2ei1fOW5ycDQ2emRySU1KYTBiS0lzNHNRclRZcVJoNlRxT2d0dGVjNA?oc=5",
+            "time": "2026-08-31 00:00:00",
+            "is_negative": false
+          },
+          {
+            "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
             "time": "2026-08-31 00:00:00",
             "is_negative": false
           },
@@ -247967,6 +248063,12 @@
           {
             "title": "藍白大咖齊聚台中！盧秀燕籲「合則兩利、分則兩敗」　柯文哲表態支持江啟臣",
             "url": "https://n.yam.com/Article/20260830568119",
+            "time": "2026-08-30 12:00:00",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+            "url": "https://n.yam.com/Article/20260830573378",
             "time": "2026-08-30 12:00:00",
             "is_negative": false
           },
@@ -274996,6 +275098,16 @@
         "is_negative": false
       },
       {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "platform": "news",
+        "publisher": "Google News→UDN",
+        "hour": "2026-08-31 00:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "[Gossiping] [新聞] 總統府認了月餅「棄單」 謝謝盧秀燕接手",
         "url": "https://www.ptt.cc/bbs/Gossiping/M.1788103444.A.AAE.html",
         "time": "2026-08-30 23:24:04",
@@ -275082,36 +275194,6 @@
         "platform": "news",
         "publisher": "臺灣導報",
         "hour": "2026-08-30 19:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Google News→新頭條",
-        "hour": "2026-08-30 18:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-08-30 18:00",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Google News→蕃新聞",
-        "hour": "2026-08-30 18:00",
         "severity": null,
         "is_negative": false
       },
@@ -275306,6 +275388,36 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Google News→新頭條",
+        "hour": "2026-08-30 12:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-08-30 12:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Google News→蕃新聞",
+        "hour": "2026-08-30 12:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "六都首創戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌同場PK",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kTFZjOG9VVDlQWVhIbFZBS0Y2ZnFiSGhOR1ZJTE15eG5XRGVVNjRWYmw0aEdVWVUtXzJ5Y2s4dWhDS0ZWTE1ub2poRF9pQTlydWc?oc=5",
         "time": "2026-08-30 12:00:00",
@@ -275351,6 +275463,16 @@
         "time": "2026-08-30 12:00:00",
         "platform": "news",
         "publisher": "蕃新聞→創新聞",
+        "hour": "2026-08-30 12:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→新頭條",
         "hour": "2026-08-30 12:00",
         "severity": null,
         "is_negative": false
@@ -283518,6 +283640,17 @@
         "is_negative": false
       },
       {
+        "title": "藍白攜手！盧秀燕黃國昌江啟臣戰鬥陀螺合體| 縣市長議員選戰| 要聞",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JUmFFUXVJNVd5V2did19OcWw4MnoxcWV6VkZaVjh2UENFM096ZW9DRVJqdklWTFJQXzV2OUdzRF9GTFB1QUNIU2RGSzZJcXgzMmxF?oc=5",
+        "time": "2026-08-31 00:00:00",
+        "platform": "news",
+        "publisher": "Google News→UDN",
+        "hour": "2026-08-31 00:00",
+        "day": "2026-08-31",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "[Gossiping] [新聞] 總統府認了月餅「棄單」 謝謝盧秀燕接手",
         "url": "https://www.ptt.cc/bbs/Gossiping/M.1788103444.A.AAE.html",
         "time": "2026-08-30 23:24:04",
@@ -283612,39 +283745,6 @@
         "platform": "news",
         "publisher": "臺灣導報",
         "hour": "2026-08-30 19:00",
-        "day": "2026-08-30",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Google News→新頭條",
-        "hour": "2026-08-30 18:00",
-        "day": "2026-08-30",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-08-30 18:00",
-        "day": "2026-08-30",
-        "severity": null,
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
-        "time": "2026-08-30 18:46:00",
-        "platform": "news",
-        "publisher": "Google News→蕃新聞",
-        "hour": "2026-08-30 18:00",
         "day": "2026-08-30",
         "severity": null,
         "is_negative": false
@@ -283859,6 +283959,39 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VbE02MEVVNVhyblJWZGRFOFlfcUZUUVo4eXJxTDBEWmZHajNaeVFyQmNnZHBQaDJ3Wl93NWdNR1hHSDA5VjNwWUZmdTRlZnpQajJONA?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Google News→新頭條",
+        "hour": "2026-08-30 12:00",
+        "day": "2026-08-30",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMisANBVV95cUxPX0MwVy1laEtNSE9oblVWZmVFNlAtdjF1SF9RVWYtYVZwTV9VQk82aUhFY2d4YlBtUDdxSFkxWFNmbjd3VFkwdHJLWk9yRVA2ajV1bWtySG1MbDVrX0FVcGJSQ1VrNVBPM3QyYkdUeVM3T1ZIMTZDRWNXd3FBczE4elQ3TEV5TDZKUmpUQlZZQzM2bVJHWmdKRUFzSzFOVThmazZPNGgzU2NQbmdUeFF0TjREOFhwQ2xkaFNUdHBXT1Fpb3AxVk9kRzRDZ3VVZG4wMUdiSTY2NW5XRzdJNnItZjRvY3pUU2JFM3duOU5Gc2R2WGlUY0d5bEFZMlZYYjdGUlJMWUdyVzdyOEpCbXY5OUN2NWdaSTRadVN6V3daLUhMakxXTzNhZ0NqNmtDV0Y3azFVMzJldmVQQ1FBM2RVbXNIWXg2TVM4RDVqT0xqTHE1UndoSEZ3ejlyajlqTDVOU0pGMlFFY1RtVDk0T3lCSnFTdkRYeFVJVmZTcmE2VkdnSTJlcWRkWlJKUU1ScmVPazl1WUhrTVYxX1d2QXEyam5qek1rdl9KanRUM2tKUFI?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-08-30 12:00",
+        "day": "2026-08-30",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nOEdDRVctZXY4eWwtd0l3OXNTcGVHekRsMUlsTHYwbTdmZXdOTTdlX0o5U2V3Q0YtVGJRN2hiNjdvQ1dlRHdzaFRjMEo4azNYeVE?oc=5",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "Google News→蕃新聞",
+        "hour": "2026-08-30 12:00",
+        "day": "2026-08-30",
+        "severity": null,
+        "is_negative": false
+      },
+      {
         "title": "六都首創戰鬥陀螺嘉年華 盧秀燕、江啟臣、黃國昌同場PK",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5kTFZjOG9VVDlQWVhIbFZBS0Y2ZnFiSGhOR1ZJTE15eG5XRGVVNjRWYmw0aEdVWVUtXzJ5Y2s4dWhDS0ZWTE1ub2poRF9pQTlydWc?oc=5",
         "time": "2026-08-30 12:00:00",
@@ -283908,6 +284041,17 @@
         "time": "2026-08-30 12:00:00",
         "platform": "news",
         "publisher": "蕃新聞→創新聞",
+        "hour": "2026-08-30 12:00",
+        "day": "2026-08-30",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、黃國昌同場PK戰鬥陀螺！六都首創嘉年華 256名額5分鐘秒殺",
+        "url": "https://n.yam.com/Article/20260830573378",
+        "time": "2026-08-30 12:00:00",
+        "platform": "news",
+        "publisher": "蕃新聞→新頭條",
         "hour": "2026-08-30 12:00",
         "day": "2026-08-30",
         "severity": null,
