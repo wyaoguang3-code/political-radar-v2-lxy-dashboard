@@ -811,7 +811,10 @@ function renderRedCommentsPanel(){
       if (c.url) {
         textHtml = `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">${textHtml}</a>`;
       }
-      li.innerHTML = `${authorHtml}<br/>${textHtml}`;
+      const stickerTag = c.kind === 'image'
+        ? '<span class="sticker-tag" title="這則是貼圖／表情，內容為系統辨識">🖼 貼圖</span>'
+        : '';
+      li.innerHTML = `${authorHtml}<br/>${stickerTag}${textHtml}`;
       return li;
     };
     reds.slice(0, INITIAL_RED).forEach(c => ul.appendChild(renderRedLi(c)));
@@ -1199,13 +1202,16 @@ function renderModalBody(){
     const url = c.url
       ? `<div class="linkrow"><a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">原文連結 ↗</a></div>`
       : '';
+    const stickerTag = c.kind === 'image'
+      ? '<span class="sticker-tag" title="這則是貼圖／表情，內容為系統辨識">🖼 貼圖</span>'
+      : '';
     div.innerHTML = `
       <div class="hdr">
         <span class="author">${escapeHtml(c.author || '匿名')}</span>
         <span class="when">${escapeHtml(c.time_text || '')}</span>
         <span class="light-chip ${lightClass}">${lightLabel}</span>
       </div>
-      <div class="text">${escapeHtml(c.text || '')}</div>
+      <div class="text">${stickerTag}${escapeHtml(c.text || '')}</div>
       ${url}
     `;
     // LLM feedback loop — admin sees 🚩 標錯了 on each comment.
