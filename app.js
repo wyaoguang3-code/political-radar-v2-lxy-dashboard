@@ -3799,18 +3799,29 @@ async function run(){
         const target = evt?.native?.target;
         if (target) target.style.cursor = els.length ? 'pointer' : 'default';
       },
-      onClick: (evt, els) => {
+      onClick: async (evt, els) => {
         if (!els.length) return;
         const idx = els[0].index;
         const plat = byPlatform[idx]?.platform;
         if (!plat) return;
         const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
-        const items = (map[plat] || []).map(x => ({
+        let items = (map[plat] || []).map(x => ({
           title: x.title, url: x.url, time: x.time, publisher: x.publisher,
           severity: x.severity,
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
         const hoursForRpc = mode === '7d' ? 168 : 24;
+        // youtube 等平台沒被預載進 latest_by_platform（載入只預抓 facebook/news）
+        // → 開窗時即時補抓，才不會顯示空清單。
+        if (!items.length && typeof LxyDB !== 'undefined') {
+          try {
+            const arr = await LxyDB.dashboardLatestByPlatform(plat, hoursForRpc, 50);
+            items = (arr || []).map(x => ({
+              title: x.title, url: x.url, time: x.time,
+              publisher: x.publisher, severity: x.severity,
+            }));
+          } catch (e) { /* 保持空清單，modal 內還有 newsFetchFn 可再試 */ }
+        }
         // 真實平台 total (byPlatform[idx].count 是圓餅圖那一塊的實際數字)
         const realTotal = byPlatform[idx]?.count || items.length;
         openArticlesModal(`平台分佈 — ${plat}（${modeLabel}）`,
