@@ -214,11 +214,34 @@ const _STICKER_NOISE = /^(oleh Pembuat|by the maker|by the creator|Sticker|Stike
 function stickerView(c){
   const lines = String((c && c.text) ?? '').split('\n');
   const kept = lines.filter(ln => !_STICKER_NOISE.test(ln.trim()));
-  const isSticker = (c && c.kind === 'image') || (kept.length < lines.length);
-  const body = kept.join('\n').trim();
+  let isSticker = (c && c.kind === 'image') || (kept.length < lines.length);
+  let body = kept.join('\n').trim();
+  if (_STICKER_GENERIC.test(body)) { isSticker = true; body = ''; }   // 佔位字樣 → 統一（貼圖）
   return { isSticker: isSticker, body: body || (isSticker ? '（貼圖）' : '') };
 }
 const STICKER_TAG_HTML = '<span class="sticker-tag" title="這則是貼圖／表情，內容為系統辨識">🖼 貼圖</span>';
+
+// 「內容只是佔位」的貼圖字樣（早期交接格式把貼圖寫成這些字）→ 一律視為貼圖、統一顯示（貼圖）
+const _STICKER_GENERIC = /^(🖼\s*)?(貼圖|\[貼圖\]|未知動圖|動圖|GIF|💬\s*表情回應)$/i;
+
+// 篩「最新一批抓取」＝最新貼文快照。
+// 原理：採集端每包只抓「最新貼文」的全部留言，入庫時整批刷新 first_seen_at；
+// 舊貼文的留言不再被刷新 → 取 max(first_seen_at) 往回 10 分鐘內的列，就是當前貼文。
+// （單包入庫只需數秒；10 分鐘既容納單包，又不會把上一輪其他批次圈進來）
+function latestBatchOnly(list){
+  if (!list || !list.length) return list || [];
+  let maxT = 0;
+  for (const c of list){
+    const t = c && c.first_seen_at ? Date.parse(c.first_seen_at) : NaN;
+    if (!isNaN(t) && t > maxT) maxT = t;
+  }
+  if (!maxT) return list;
+  const cutoff = maxT - 10 * 60 * 1000;
+  return list.filter(c => {
+    const t = c && c.first_seen_at ? Date.parse(c.first_seen_at) : NaN;
+    return !isNaN(t) && t >= cutoff;
+  });
+}
 
 // Format updated_at strings consistently as Taiwan time.
 // Two input shapes coexist (RPC vs JSON fallback):
@@ -3120,9 +3143,29 @@ async function run(){
           LxyDB.recentComments('instagram', 5000, hours).catch(() => null),
           LxyDB.recentComments('threads',   5000, hours).catch(() => null),
         ]);
-        if (fbCmt)      state.comments.facebook  = fbCmt;
-        if (igCmt)      state.comments.instagram = igCmt;
-        if (threadsCmt) state.comments.threads   = threadsCmt;
+        // 24h 視圖：只留「最新一批抓取」＝候選人最新貼文的留言。
+        // 資料庫是累積制（歷史都留著給 7 天趨勢/事後追查用），但卡片要對得上
+        // 「最新貼文的實際留言數」，所以取每平台最近一次入庫的那批。
+        const pick = (isWeek ? (x => x) : latestBatchOnly);
+        if (fbCmt)      state.comments.facebook  = pick(fbCmt);
+        if (igCmt)      state.comments.instagram = pick(igCmt);
+        if (threadsCmt) state.comments.threads   = pick(threadsCmt);
+        // 卡片數字改由同一批留言算（不再用 24h 視窗的 RPC 總數）→ 卡片 ≡ 彈窗 ≡ 最新貼文
+        if (!isWeek && state.socialSignals) {
+          ['facebook', 'instagram', 'threads'].forEach(p => {
+            const arr = state.comments[p];
+            if (!Array.isArray(arr) || !state.socialSignals[p]) return;
+            let red = 0, yellow = 0, green = 0;
+            arr.forEach(c => {
+              if (c.signal === 'red') red++;
+              else if (c.signal === 'yellow') yellow++;
+              else green++;
+            });
+            Object.assign(state.socialSignals[p], {
+              total: arr.length, red: red, yellow: yellow, green: green,
+            });
+          });
+        }
       } catch (e) { /* keep JSON fallback */ }
       if (metrics)      { if (isWeek) d.metrics_7d = metrics; else d.metrics = metrics; }
       if (byHour)       { if (isWeek) d.by_hour_7d = byHour; else d.by_hour = byHour; }
