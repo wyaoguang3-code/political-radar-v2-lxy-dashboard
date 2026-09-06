@@ -206,6 +206,51 @@ function escapeHtml(s){
   ));
 }
 
+// 留言時間來自不同語系的社群帳號，資料可能是 `1d`、`1 hari`、
+// `7 jam` 或英文 `2 hours ago`。畫面一律轉成中文；無法辨識的日期／文字
+// 保留原值，避免誤改像 2026-09-07 這類絕對日期。
+function formatCommentTimeZh(value){
+  const original = String(value ?? '').trim();
+  if (!original) return '';
+
+  let text = original.replace(/\s+/g, ' ').trim();
+  const lower = text.toLocaleLowerCase('en-US')
+    .replace(/[.,]$/, '')
+    .replace(/\s+(?:yang\s+lalu|ago|lalu)$/, '')
+    .trim();
+
+  const fixed = {
+    'just now': '剛剛',
+    'baru saja': '剛剛',
+    'sebentar tadi': '剛剛',
+    'today': '今天',
+    'hari ini': '今天',
+    'yesterday': '昨天',
+    'kemarin': '昨天',
+  };
+  if (fixed[lower]) return fixed[lower];
+
+  const chinese = lower.match(/^(\d+(?:[.,]\d+)?)\s*(秒(?:鐘)?|分鐘|分|小時|時|天|日|週|周|個月|月|年)(?:前)?$/);
+  if (chinese) {
+    const unit = { '秒鐘':'秒', '分':'分鐘', '時':'小時', '日':'天', '周':'週', '月':'個月' }[chinese[2]] || chinese[2];
+    return `${chinese[1]}${unit}`;
+  }
+
+  const relative = lower.match(/^(\d+(?:[.,]\d+)?)\s*(seconds?|secs?|sec|s|detik|saat|minutes?|mins?|min|m|menit|minit|hours?|hrs?|hr|h|jam|days?|d|hari|weeks?|wks?|wk|w|minggu|months?|mos?|mo|bulan|years?|yrs?|yr|y|tahun)$/);
+  if (!relative) return text;
+
+  const amount = relative[1];
+  const unit = relative[2];
+  if (/^(?:seconds?|secs?|sec|s|detik|saat)$/.test(unit)) return `${amount}秒`;
+  if (/^(?:minutes?|mins?|min|m|menit|minit)$/.test(unit)) return `${amount}分鐘`;
+  if (/^(?:hours?|hrs?|hr|h|jam)$/.test(unit)) return `${amount}小時`;
+  if (/^(?:days?|d|hari)$/.test(unit)) return `${amount}天`;
+  if (/^(?:weeks?|wks?|wk|w|minggu)$/.test(unit)) return `${amount}週`;
+  if (/^(?:months?|mos?|mo|bulan)$/.test(unit)) return `${amount}個月`;
+  if (/^(?:years?|yrs?|yr|y|tahun)$/.test(unit)) return `${amount}年`;
+  return text;
+}
+
 // FB 印尼語系下貼圖只回傳「oleh Pembuat」（由作者）這種屬性字、不是描述，
 // 爬蟲把它當一般文字存（kind=text）。這裡剝掉純貼圖屬性字行：
 //   剩真內容 → 顯示真內容（並標貼圖）；沒剩 → 顯示「（貼圖）」。
@@ -854,7 +899,7 @@ function renderRedCommentsPanel(){
     const renderRedLi = (c) => {
       const li = document.createElement('li');
       const authorHtml = `<span class="author">${escapeHtml(c.author || '匿名')}</span>` +
-                        (c.time_text ? `<span class="when">（${escapeHtml(c.time_text)}）</span>` : '');
+                        (c.time_text ? `<span class="when">（${escapeHtml(formatCommentTimeZh(c.time_text))}）</span>` : '');
       const sv = stickerView(c);
       let textHtml = escapeHtml(sv.body);
       // FB 的 c.url 只是留言者個人檔案（沒用）→ FB 不套連結；threads/IG 才連原文。
@@ -1256,7 +1301,7 @@ function renderModalBody(){
     div.innerHTML = `
       <div class="hdr">
         <span class="author">${escapeHtml(c.author || '匿名')}</span>
-        <span class="when">${escapeHtml(c.time_text || '')}</span>
+        <span class="when">${escapeHtml(formatCommentTimeZh(c.time_text))}</span>
         <span class="light-chip ${lightClass}">${lightLabel}</span>
       </div>
       <div class="text">${stickerTag}${escapeHtml(sv.body)}</div>
@@ -3010,7 +3055,7 @@ function openHotspotDetailModal(h, markersByTitle){
     const platCls = PLATFORM_CHIP_CLASS[c.platform] || '';
     const platName = PLATFORM_DISPLAY[c.platform] || c.platform;
     const sigCls = c.signal === 'red' ? 'red' : c.signal === 'yellow' ? 'yellow' : c.signal === 'green' ? 'green' : '';
-    const time = c.time_text ? `<span class="hd-c-time">${escapeHtml(c.time_text)}</span>` : '';
+    const time = c.time_text ? `<span class="hd-c-time">${escapeHtml(formatCommentTimeZh(c.time_text))}</span>` : '';
     const author = c.author ? `<span class="hd-c-author">${escapeHtml(c.author)}</span>` : '';
     const sigChip = sigCls ? `<span class="light-chip ${sigCls}">${sigCls === 'red' ? '🔴' : sigCls === 'yellow' ? '🟡' : '🟢'}</span>` : '';
     // FB 留言 url 只是個人檔案（沒用）→ FB 不顯示原文；threads/IG 才顯示。
