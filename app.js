@@ -251,6 +251,22 @@ function formatCommentTimeZh(value){
   return text;
 }
 
+// RPC、靜態 JSON 與各平台採集器曾使用不同欄位名稱；統一取出媒體／頻道名稱。
+// 顯示時明確加上「來源：」，避免同標題的轉載新聞被誤認為同一筆。
+function publisherOf(article){
+  if (!article) return '';
+  return String(
+    article.publisher || article.native_source || article.source ||
+    article.author || article.author_name || article.channel || article.channel_name || ''
+  ).trim();
+}
+
+function publisherLabel(article){
+  const publisher = publisherOf(article);
+  if (!publisher) return '';
+  return /^(?:來源|媒體|頻道)[:：]/.test(publisher) ? publisher : `來源：${publisher}`;
+}
+
 // FB 印尼語系下貼圖只回傳「oleh Pembuat」（由作者）這種屬性字、不是描述，
 // 爬蟲把它當一般文字存（kind=text）。這裡剝掉純貼圖屬性字行：
 //   剩真內容 → 顯示真內容（並標貼圖）；沒剩 → 顯示「（貼圖）」。
@@ -1803,7 +1819,7 @@ function openArticlesModal(title, note, articles, commentsList, loadMoreCtx, tot
     title: a.title || '（無標題）',
     url: a.url || '',
     time: a.time || '',
-    publisher: a.publisher || '',
+    publisher: publisherOf(a),
     is_negative: !!a.is_negative,
     severity: a.severity || (a.is_negative ? 'yellow' : null),  // 沒 severity 的舊資料退回二級
   }));
@@ -2861,10 +2877,11 @@ function openMentionModal(name){
       const t = (x.time || '').slice(5, 16);
       meta.textContent = `${t}　[${x.platform || '-'}]　`;
       li.appendChild(meta);
-      if (x.publisher){
+      const publisher = publisherLabel(x);
+      if (publisher){
         const pub = document.createElement('span');
         pub.className = 'hd-news-publisher';
-        pub.textContent = x.publisher;
+        pub.textContent = publisher;
         li.appendChild(pub);
       }
       if (co.length > 0) {
@@ -2999,10 +3016,11 @@ function openHotspotDetailModal(h, markersByTitle){
     meta.className = 'mention-meta';
     meta.textContent = `${(x.time || '').slice(5, 16)}　`;
     li.appendChild(meta);
-    if (x.publisher){
+    const publisher = publisherLabel(x);
+    if (publisher){
       const pub = document.createElement('span');
       pub.className = 'hd-news-publisher';
-      pub.textContent = x.publisher;
+      pub.textContent = publisher;
       li.appendChild(pub);
     }
     const a = document.createElement('a');
@@ -3494,9 +3512,10 @@ async function run(){
     const renderArticleLi = (x) => {
       const li=document.createElement('li');
       attachSeverityBadge(li, x);
-      if (x.publisher){
+      const publisher = publisherLabel(x);
+      if (publisher){
         const pub=document.createElement('span'); pub.className='hd-news-publisher';
-        pub.textContent=x.publisher; li.appendChild(pub);
+        pub.textContent=publisher; li.appendChild(pub);
       }
       const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
       a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
@@ -3558,9 +3577,10 @@ async function run(){
   const renderArticleLiPerson = (x) => {
     const li=document.createElement('li');
     attachSeverityBadge(li, x);
-    if (x.publisher){
+    const publisher = publisherLabel(x);
+    if (publisher){
       const pub=document.createElement('span'); pub.className='hd-news-publisher';
-      pub.textContent=x.publisher; li.appendChild(pub);
+      pub.textContent=publisher; li.appendChild(pub);
     }
     const a=document.createElement('a'); a.href=x.url; a.target='_blank'; a.rel='noopener';
     a.textContent=displayText(x)+(x.time?`（${x.time.slice(5,16)}）`:'' );
@@ -3862,7 +3882,7 @@ async function run(){
         if (!plat) return;
         const map = pick(d, 'latest_by_platform_24h', 'latest_by_platform_7d') || {};
         let items = (map[plat] || []).map(x => ({
-          title: x.title, url: x.url, time: x.time, publisher: x.publisher,
+          title: x.title, url: x.url, time: x.time, publisher: publisherOf(x),
           severity: x.severity,
         }));
         const modeLabel = mode === '7d' ? '近 7 日' : '近 24h';
@@ -3874,7 +3894,7 @@ async function run(){
             const arr = await LxyDB.dashboardLatestByPlatform(plat, hoursForRpc, 50);
             items = (arr || []).map(x => ({
               title: x.title, url: x.url, time: x.time,
-              publisher: x.publisher, severity: x.severity,
+              publisher: publisherOf(x), severity: x.severity,
             }));
           } catch (e) { /* 保持空清單，modal 內還有 newsFetchFn 可再試 */ }
         }
@@ -3888,7 +3908,7 @@ async function run(){
                               LxyDB.dashboardLatestByPlatform(plat, hoursForRpc, newLimit)
                                 .then(arr => (arr || []).map(x => ({
                                   title: x.title, url: x.url, time: x.time,
-                                  publisher: x.publisher, severity: x.severity,
+                                  publisher: publisherOf(x), severity: x.severity,
                                 }))),
                             newsBatch: 50,
                           },
