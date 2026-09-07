@@ -3465,6 +3465,11 @@ async function run(){
   };
   const renderTopNewsLi = (x) => {
     const li=document.createElement('li');
+    const publisher = publisherLabel(x);
+    if (publisher){
+      const pub=document.createElement('span'); pub.className='hd-news-publisher';
+      pub.textContent=publisher; li.appendChild(pub);
+    }
     const a=document.createElement('a');
     a.href=x.url; a.target='_blank'; a.rel='noopener';
     a.textContent=displayText(x) + (x.time ? `（${x.time.slice(5,16)}）` : '');
