@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "snapshot_at": "2026-09-16T19:41:13.235858+00:00",
+  "snapshot_at": "2026-09-16T19:57:01.656511+00:00",
   "hotspots": [
     {
       "title": "台中鼠患事件",
@@ -389,6 +389,27 @@
       "comments": []
     },
     {
+      "title": "台南火災事件",
+      "city": "台南",
+      "place": "台南市政府",
+      "level": "yellow",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "安南火災爆炸案車損有錢可領 汽車最高1.5萬",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5575916",
+          "time": "2026-09-16 14:53:56",
+          "publisher": "自由時報",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "花蓮火災事件",
       "city": "花蓮",
       "place": "花蓮縣政府",
@@ -410,7 +431,7 @@
       "comments": []
     },
     {
-      "title": "台南火災事件",
+      "title": "台南弊案爭議",
       "city": "台南",
       "place": "台南市政府",
       "level": "yellow",
@@ -421,10 +442,10 @@
       "urgency_score": 4,
       "news_articles": [
         {
-          "title": "安南火災爆炸案車損有錢可領 汽車最高1.5萬",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5575916",
-          "time": "2026-09-16 14:53:56",
-          "publisher": "自由時報",
+          "title": "【新新聞】新光第三代林伯翰遭收押 台南光電最大爛尾「誠新綠能」債主大揭秘",
+          "url": "https://www.storm.mg/article/5553383",
+          "time": "2026-09-16 08:30:00",
+          "publisher": "風傳媒",
           "severity": "red"
         }
       ],
@@ -467,27 +488,6 @@
           "url": "https://news.ltn.com.tw/news/politics/paper/1770803",
           "time": "2026-09-16 05:30:00",
           "publisher": "自由時報",
-          "severity": "red"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "台南弊案爭議",
-      "city": "台南",
-      "place": "台南市政府",
-      "level": "yellow",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "【新新聞】新光第三代林伯翰遭收押 台南光電最大爛尾「誠新綠能」債主大揭秘",
-          "url": "https://www.storm.mg/article/5553383",
-          "time": "2026-09-16 08:30:00",
-          "publisher": "風傳媒",
           "severity": "red"
         }
       ],
@@ -3470,55 +3470,6 @@
       "comments": []
     },
     {
-      "title": "桃園弊案爭議",
-      "city": "桃園",
-      "place": "桃園市政府",
-      "level": "red",
-      "news_count": 5,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": true,
-      "urgency_score": 20,
-      "news_articles": [
-        {
-          "title": "3萬幫肇逃友頂罪！桃園男「只收到一萬」還被拆穿判刑",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XR2czTjloaVpfal9xNDZucS1GaHV6R2ZlQzhBejlyREFXWm1LelVvSFdpclhjZ0NuTHJydHlrWDN4aDhacjJ0U08tRlk5dDQ?oc=5",
-          "time": "2026-09-16 14:35:00",
-          "publisher": "TVBS",
-          "severity": "red"
-        },
-        {
-          "title": "為賺3萬幫頂罪肇逃 桃園男「只收到1萬」還被判刑3個月",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51V1lkZlZ1R3o0ZzRsR0F5S1Q5YUtKR0dXYk1Jc3V4VzV2Z19hUDhZX2RtR2hydFRTQWkxZGdaQUE4cXU2RDFBTHpLQWxjdjVkOE5fN1VtUktITnRqeUHSAUtBVV95cUxPdndZRVRRTnZndjhaaFpaVkVfSDVNUFdBdXI1bFpSVzgtV19VM0x5TktVNXlRdmVvQVpQSTJyTG5qamtoTXB5eUF6Ujg?oc=5",
-          "time": "2026-09-16 11:21:00",
-          "publisher": "ETtoday",
-          "severity": "red"
-        },
-        {
-          "title": "桃園陰陽師欠債 騙信徒「付百萬殺兒」遭起訴",
-          "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOdWJ2U2UzSG9CQ2JXVlhTLWZ3NXE5U2RNZ2RveTlkQ1RROWpnR3BjdUpKZFpqNllsUFN4eFdCTVJLZmcxWURYMWZ5VVRVSUJGcEJUTTY3MEstQnV2RHJoTEIzTDhyY1JhSmI4eExYdUc5ZUl4T0dPY3NRam5VbDREUEMteGNjQTF6MFBTX2Q5SjR1STZQTXBhMnVjSkRSTFh3bTQ5MkI5TkZRY0xQOG1lUWFzWG15UU9nbWpQenEybHBjcVc5NWtoM0NiQzg5QjdOQm9oX2h6YnNUVDBEcnhwVnl0SFNobS10ZDlyWWxYODVPOE1Nd18xU2ZIbXRMcFZOYncwMUJzWnF4eldkNnZ1SGdPd1NQYzhNUWJfZE9EdGVqZ19pOTZ0YXpPZVVFZm8?oc=5",
-          "time": "2026-09-16 10:48:45",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "桃園陰陽師欠債 騙信徒「付百萬殺兒」遭起訴",
-          "url": "https://news.ebc.net.tw/news/society/571506",
-          "time": "2026-09-16 10:40:00",
-          "publisher": "東森新聞",
-          "severity": "red"
-        },
-        {
-          "title": "桃園假「陰陽師」連續毒殺2人！教唆父殺子、強打海洛因詐保 檢起訴7人建請續押",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjRHM5eFp1RlE5U0xfaWthdmhIVkZVUnhLYWd2akZ2dG1sNTRpMk5jN1N3Mk1kZE1na0N0NG1kSGM0a3pUU3hLbE9kLTBjU0syckE?oc=5",
-          "time": "2026-09-16 09:46:49",
-          "publisher": "Google News→鏡報",
-          "severity": "red"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "嘉義市弊案爭議",
       "city": "嘉義市",
       "place": "嘉義市政府",
@@ -3562,6 +3513,55 @@
           "url": "https://tw.news.yahoo.com/%E5%89%8D%E5%98%89%E7%BE%A9%E5%B8%82%E6%AD%A3%E5%89%AF%E8%AD%B0%E9%95%B7%E8%B2%B7%E6%88%BF%E8%B6%85%E8%B2%B84000%E8%90%AC%E5%88%A4%E5%88%91%E5%AE%9A%E8%AE%9E-%E9%80%99%E5%A4%A9-%E7%99%BC%E7%9B%A3%E5%9F%B7%E8%A1%8C-121732828.html",
           "time": "2026-09-16 12:17:32",
           "publisher": "Yahoo新聞",
+          "severity": "red"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "桃園弊案爭議",
+      "city": "桃園",
+      "place": "桃園市政府",
+      "level": "red",
+      "news_count": 5,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": true,
+      "urgency_score": 20,
+      "news_articles": [
+        {
+          "title": "3萬幫肇逃友頂罪！桃園男「只收到一萬」還被拆穿判刑",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5XR2czTjloaVpfal9xNDZucS1GaHV6R2ZlQzhBejlyREFXWm1LelVvSFdpclhjZ0NuTHJydHlrWDN4aDhacjJ0U08tRlk5dDQ?oc=5",
+          "time": "2026-09-16 14:35:00",
+          "publisher": "TVBS",
+          "severity": "red"
+        },
+        {
+          "title": "為賺3萬幫頂罪肇逃 桃園男「只收到1萬」還被判刑3個月",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51V1lkZlZ1R3o0ZzRsR0F5S1Q5YUtKR0dXYk1Jc3V4VzV2Z19hUDhZX2RtR2hydFRTQWkxZGdaQUE4cXU2RDFBTHpLQWxjdjVkOE5fN1VtUktITnRqeUHSAUtBVV95cUxPdndZRVRRTnZndjhaaFpaVkVfSDVNUFdBdXI1bFpSVzgtV19VM0x5TktVNXlRdmVvQVpQSTJyTG5qamtoTXB5eUF6Ujg?oc=5",
+          "time": "2026-09-16 11:21:00",
+          "publisher": "ETtoday",
+          "severity": "red"
+        },
+        {
+          "title": "桃園陰陽師欠債 騙信徒「付百萬殺兒」遭起訴",
+          "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOdWJ2U2UzSG9CQ2JXVlhTLWZ3NXE5U2RNZ2RveTlkQ1RROWpnR3BjdUpKZFpqNllsUFN4eFdCTVJLZmcxWURYMWZ5VVRVSUJGcEJUTTY3MEstQnV2RHJoTEIzTDhyY1JhSmI4eExYdUc5ZUl4T0dPY3NRam5VbDREUEMteGNjQTF6MFBTX2Q5SjR1STZQTXBhMnVjSkRSTFh3bTQ5MkI5TkZRY0xQOG1lUWFzWG15UU9nbWpQenEybHBjcVc5NWtoM0NiQzg5QjdOQm9oX2h6YnNUVDBEcnhwVnl0SFNobS10ZDlyWWxYODVPOE1Nd18xU2ZIbXRMcFZOYncwMUJzWnF4eldkNnZ1SGdPd1NQYzhNUWJfZE9EdGVqZ19pOTZ0YXpPZVVFZm8?oc=5",
+          "time": "2026-09-16 10:48:45",
+          "publisher": "Yahoo新聞",
+          "severity": "red"
+        },
+        {
+          "title": "桃園陰陽師欠債 騙信徒「付百萬殺兒」遭起訴",
+          "url": "https://news.ebc.net.tw/news/society/571506",
+          "time": "2026-09-16 10:40:00",
+          "publisher": "東森新聞",
+          "severity": "red"
+        },
+        {
+          "title": "桃園假「陰陽師」連續毒殺2人！教唆父殺子、強打海洛因詐保 檢起訴7人建請續押",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjRHM5eFp1RlE5U0xfaWthdmhIVkZVUnhLYWd2akZ2dG1sNTRpMk5jN1N3Mk1kZE1na0N0NG1kSGM0a3pUU3hLbE9kLTBjU0syckE?oc=5",
+          "time": "2026-09-16 09:46:49",
+          "publisher": "Google News→鏡報",
           "severity": "red"
         }
       ],
@@ -7793,11 +7793,11 @@
       "city": "新北",
       "place": "新北市政府",
       "level": "red",
-      "news_count": 101,
+      "news_count": 100,
       "comment_count": 0,
       "negativity_pct": 6,
       "is_urgent": false,
-      "urgency_score": 119,
+      "urgency_score": 118,
       "news_articles": [
         {
           "title": "新北重劃區預售與成屋價差大揭密 鳳鳴、仁義每坪價差逾三成！",
@@ -8498,13 +8498,6 @@
           "time": "2026-09-16 04:10:00",
           "publisher": "Yahoo新聞",
           "severity": "red"
-        },
-        {
-          "title": "新北市防災教育講習 跨區分享企業防災新思維",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E5%B8%82%E9%98%B2%E7%81%BD%E6%95%99%E8%82%B2%E8%AC%9B%E7%BF%92-%E8%B7%A8%E5%8D%80%E5%88%86%E4%BA%AB%E4%BC%81%E6%A5%AD%E9%98%B2%E7%81%BD%E6%96%B0%E6%80%9D%E7%B6%AD-194127090.html",
-          "time": "2026-09-16 03:41:27",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -12336,11 +12329,11 @@
       "city": "台北",
       "place": "台北市信義區",
       "level": "red",
-      "news_count": 289,
+      "news_count": 288,
       "comment_count": 0,
       "negativity_pct": 9,
       "is_urgent": false,
-      "urgency_score": 364,
+      "urgency_score": 363,
       "news_articles": [
         {
           "title": "新光三越週年慶 台北南西店打頭陣 10/1全台首波開跑",
@@ -14356,13 +14349,6 @@
           "url": "https://www.nownews.com/news/6875325",
           "time": "2026-09-16 04:21:51",
           "publisher": "NOWnews今日新聞",
-          "severity": null
-        },
-        {
-          "title": "新北市防災教育講習 跨區分享企業防災新思維",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E5%B8%82%E9%98%B2%E7%81%BD%E6%95%99%E8%82%B2%E8%AC%9B%E7%BF%92-%E8%B7%A8%E5%8D%80%E5%88%86%E4%BA%AB%E4%BC%81%E6%A5%AD%E9%98%B2%E7%81%BD%E6%96%B0%E6%80%9D%E7%B6%AD-194127090.html",
-          "time": "2026-09-16 03:41:27",
-          "publisher": "Yahoo新聞",
           "severity": null
         }
       ],
