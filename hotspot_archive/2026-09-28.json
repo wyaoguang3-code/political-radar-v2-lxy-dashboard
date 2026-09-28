@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "snapshot_at": "2026-09-28T00:20:34.945793+00:00",
+  "snapshot_at": "2026-09-28T00:36:22.064815+00:00",
   "hotspots": [
     {
       "title": "台北鼠患事件",
@@ -45,6 +45,27 @@
       "comments": []
     },
     {
+      "title": "高雄車禍事件",
+      "city": "高雄",
+      "place": "高雄市苓雅區",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "國1苓雅段車禍！貨車碰撞慘變形 10多箱礦泉水散滿地",
+          "url": "https://tw.news.yahoo.com/%E5%9C%8B1%E8%8B%93%E9%9B%85%E6%AE%B5%E8%BB%8A%E7%A6%8D-%E8%B2%A8%E8%BB%8A%E7%A2%B0%E6%92%9E%E6%85%98%E8%AE%8A%E5%BD%A2-10%E5%A4%9A%E7%AE%B1%E7%A4%A6%E6%B3%89%E6%B0%B4%E6%95%A3%E6%BB%BF%E5%9C%B0-053044728.html",
+          "time": "2026-09-27 13:30:44",
+          "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "台中車禍事件",
       "city": "台中",
       "place": "台中市政府",
@@ -61,27 +82,6 @@
           "time": "2026-09-27 14:18:18",
           "publisher": "TVBS",
           "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "台南車禍事件",
-      "city": "台南",
-      "place": "台南市政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "台南佳里驚傳車禍！2車對撞慘變鐵屑 釀5傷..童慘叫喊痛",
-          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8D%97%E4%BD%B3%E9%87%8C%E9%A9%9A%E5%82%B3%E8%BB%8A%E7%A6%8D-2%E8%BB%8A%E5%B0%8D%E6%92%9E%E6%85%98%E8%AE%8A%E9%90%B5%E5%B1%91-%E9%87%805%E5%82%B7-%E7%AB%A5%E6%85%98%E5%8F%AB%E5%96%8A%E7%97%9B-092607057.html",
-          "time": "2026-09-27 17:26:07",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": []
@@ -108,9 +108,9 @@
       "comments": []
     },
     {
-      "title": "高雄車禍事件",
-      "city": "高雄",
-      "place": "高雄市苓雅區",
+      "title": "台南車禍事件",
+      "city": "台南",
+      "place": "台南市政府",
       "level": "green",
       "news_count": 1,
       "comment_count": 0,
@@ -119,9 +119,9 @@
       "urgency_score": 4,
       "news_articles": [
         {
-          "title": "國1苓雅段車禍！貨車碰撞慘變形 10多箱礦泉水散滿地",
-          "url": "https://tw.news.yahoo.com/%E5%9C%8B1%E8%8B%93%E9%9B%85%E6%AE%B5%E8%BB%8A%E7%A6%8D-%E8%B2%A8%E8%BB%8A%E7%A2%B0%E6%92%9E%E6%85%98%E8%AE%8A%E5%BD%A2-10%E5%A4%9A%E7%AE%B1%E7%A4%A6%E6%B3%89%E6%B0%B4%E6%95%A3%E6%BB%BF%E5%9C%B0-053044728.html",
-          "time": "2026-09-27 13:30:44",
+          "title": "台南佳里驚傳車禍！2車對撞慘變鐵屑 釀5傷..童慘叫喊痛",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E5%8D%97%E4%BD%B3%E9%87%8C%E9%A9%9A%E5%82%B3%E8%BB%8A%E7%A6%8D-2%E8%BB%8A%E5%B0%8D%E6%92%9E%E6%85%98%E8%AE%8A%E9%90%B5%E5%B1%91-%E9%87%805%E5%82%B7-%E7%AB%A5%E6%85%98%E5%8F%AB%E5%96%8A%E7%97%9B-092607057.html",
+          "time": "2026-09-27 17:26:07",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
@@ -490,7 +490,7 @@
           "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Ic2xvSU02WEV2NGI3TmRueENjLU81N2lfZVVSckJtZGxNN1plTTFfSzBsMEhzbDdMZGhNcTZDM1ZfaXBKUEU1c19lZXJWR0Fiek52MjBGRFA4VFVYRC1DNHQ4UVc3cko1d1HSAW9BVV95cUxOT3I0TVVHTHdVZkhPcm5qYldFVmhWeXE5emQtQUR4SFJJM3BBYV82R0txT0xvSFh3OUZVejRaeWdqQnQ2MU5FRjctM1p4dHhVRGZ4SFA5cE9uZ1lKUkVRaXdCYjR2UDA0dHdOLWFlTlU?oc=5",
           "time": "2026-09-28 06:51:48",
-          "publisher": "Google News→news.ltn.com.tw",
+          "publisher": "自由時報",
           "severity": "yellow"
         },
         {
@@ -847,6 +847,153 @@
       "comments": []
     },
     {
+      "title": "新竹縣地方動態",
+      "city": "新竹縣",
+      "place": "新竹縣政府",
+      "level": "yellow",
+      "news_count": 19,
+      "comment_count": 0,
+      "negativity_pct": 0,
+      "is_urgent": false,
+      "urgency_score": 19,
+      "news_articles": [
+        {
+          "title": "決戰新竹縣：雙強爭霸牽動北台灣政治版圖 誰能點亮幸福感？",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBpelNSSFJudG9zX0k2aUVqS1ZzR2dCYWxLbEppYm9lRUtEeWRBWDZvdVNKRmFsZExtQWhGd24wOXpUNG9vdGxz?oc=5",
+          "time": "2026-09-27 23:41:25",
+          "publisher": "Google News→886.news",
+          "severity": null
+        },
+        {
+          "title": "新竹縣教師節大禮包！千元敬師禮券、考核獎金提前發放",
+          "url": "https://tw.news.yahoo.com/%E6%96%B0%E7%AB%B9%E7%B8%A3%E6%95%99%E5%B8%AB%E7%AF%80%E5%A4%A7%E7%A6%AE%E5%8C%85-%E5%8D%83%E5%85%83%E6%95%AC%E5%B8%AB%E7%A6%AE%E5%88%B8-%E8%80%83%E6%A0%B8%E7%8D%8E%E9%87%91%E6%8F%90%E5%89%8D%E7%99%BC%E6%94%BE-131512291.html",
+          "time": "2026-09-27 21:15:12",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "教師節敬師大禮包！ 新竹縣1000元禮券+考核獎金提前入帳",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VQVVsVW96OHk0QmdIUlhrZjFMa1pPcEJ2UUs1T1cwdUt4anVlclZFWHp2SDc1d0hoVjQwd0VFcUhuZ3Q3ZmVKOERQVWNTdDlEQ0E?oc=5",
+          "time": "2026-09-27 20:18:52",
+          "publisher": "Google News→【飛揚新聞】",
+          "severity": null
+        },
+        {
+          "title": "新竹縣發放雙重敬師大禮包！1000元禮券+考核獎金提前入帳",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hbDIxUWFmYlQyUWFRaW11ZUFDOGYyQjRYeU5yQnBpX3pVeGg5c19zRnRTS05KYnFHOVBBS0RUYllJcFJxellzUU1mS0dXQmY2Nnc?oc=5",
+          "time": "2026-09-27 20:15:00",
+          "publisher": "Google News→蕃新聞",
+          "severity": null
+        },
+        {
+          "title": "徐欣瑩提新竹縣育兒政見 強化臨托增2歲專班",
+          "url": "https://www.cna.com.tw/news/aipl/202609270118.aspx",
+          "time": "2026-09-27 15:35:32",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "徐欣瑩提新竹縣育兒政見強化臨托增2歲專班- 地方",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhMGpuZm05NU0tTlIxQml0NzgtMm53ZjRlUm15aFJreWVtVFc1dDVReE4yZnNhbFJsZ0xRT2ZhRnFQUVZyZmw1Rm1ubC1ZejR5d09JVmpmbUt4dTEtSTRlY3JtWGZmeXkzMU5rOG1R?oc=5",
+          "time": "2026-09-27 15:35:32",
+          "publisher": "Google News→華視新聞網",
+          "severity": null
+        },
+        {
+          "title": "徐欣瑩提新竹縣育兒政見強化臨托增2歲專班| 政治",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RVmdQMmFPeEZOZjRpcmRZcFdweHljOU8tTk9CLWRoQmtad0s0bU95SnFlSllMdTJKWFZpWXNTbzRrN0NsbGI5N3dSNDE4Z08zUTU0Nm1hNjJVSHVfZ1pr?oc=5",
+          "time": "2026-09-27 15:35:00",
+          "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "演唱會凝聚竹北市民情感 邱臣遠：續辦且引進多元化文化展演",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587653",
+          "time": "2026-09-27 15:19:14",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "慶祝教師節 新竹縣送出敬師獎勵金、教師考核獎金兩大禮包祝賀",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qLWxpRndCSTBKTzZaamMyUFJvV1hCcjA4Y2ttemZTYWRKMGxRZExOUTlRei1STllmNDZLRGU4SjJPVHBZbXJTRjJYbEdFSW9jcmN1YkRUTDZIZlA0MUk5VnlHZnc1T1VW?oc=5",
+          "time": "2026-09-27 15:14:35",
+          "publisher": "Google News→元丰傳媒",
+          "severity": null
+        },
+        {
+          "title": "延續鄭朝方竹北市政建設與藝文能量 曾聖凱：不負「善待竹北」懇託",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587632",
+          "time": "2026-09-27 14:50:32",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
+          "title": "竹北藍白分裂會外溢？ 柯文哲雲林合體張嘉郡：她沒問題啦",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587474",
+          "time": "2026-09-27 12:25:37",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "全台家庭教育支出下滑 新竹縣四點六萬元遙遙領先",
+          "url": "https://n.yam.com/Article/20260927645889",
+          "time": "2026-09-27 12:00:00",
+          "publisher": "蕃新聞→臺灣郵報",
+          "severity": null
+        },
+        {
+          "title": "民進黨新竹縣長參選人、竹北市長鄭朝方昨晚舉辦「三天王竹北演唱會」，在竹北市長選戰藍白合作破局、藍綠白三方參選的局面下，鄭朝方邀民進黨竹北市長參選人曾聖凱、民眾黨竹北市長參選人邱臣遠同台，兩人輪番獻唱，鄭朝方更公開喊話，希望兩人未來「善待竹北」。",
+          "url": "https://udn.com/news/story/124652/9779885?from=udn-ch1_breaknews-1-cate1-news",
+          "time": "2026-09-27 11:58:18",
+          "publisher": "聯合新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "教師節雙重禮！新竹縣發千元敬師禮券考核獎金也提前入袋| 桃竹苗| 地方",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5WZUlqQ2t2SGxsMHN0RUhxM0NQLXh0RUpyUFRCcU9hWFY2YmtRd2JHRUl0V2FFRFFzUmRvWE9ydXRpeUU3MzZqUWhvQ2hWbkRJ?oc=5",
+          "time": "2026-09-27 10:34:38",
+          "publisher": "Google News→UDN",
+          "severity": null
+        },
+        {
+          "title": "教師節雙重禮！新竹縣發千元敬師禮券 考核獎金也提前入袋",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5WZUlqQ2t2SGxsMHN0RUhxM0NQLXh0RUpyUFRCcU9hWFY2YmtRd2JHRUl0V2FFRFFzUmRvWE9ydXRpeUU3MzZqUWhvQ2hWbkRJ0gFWQVVfeXFMUFktdkNWYms2MTlfSnRsQ2lHVG9HY0RESFJnYzF0Nm9yRXpuWGtzTUdMT1dOT0tpRmlzT1diUHNVREVQTkhLZl8zUXdGZ01sTGpobkplVmc?oc=5",
+          "time": "2026-09-27 10:34:38",
+          "publisher": "Google News→udn.com",
+          "severity": null
+        },
+        {
+          "title": "養兒帳單大不同！新竹縣市教育支出包辦冠亞軍 全國平均反呈下滑趨勢",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE13Ql9yeHFidWpZdlE0eklNenNzNHo5U1EyZlA4VUt5UjM5MGQwM3ZVQWdmbS10Mm9wT082OTV3WTJtalJsV0tQR18wTVJpTVlOQTRyNW1XMVBiVzNGd0s3NkhtTG8tNUZxWmtockZrcw?oc=5",
+          "time": "2026-09-27 10:09:00",
+          "publisher": "Google News→knews.com.tw",
+          "severity": "yellow"
+        },
+        {
+          "title": "養兒教育帳單大不同新竹縣家庭年花4.6萬冠全台| 財經",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BbmZoY2FwRmt3b1FLd29QS2kxc1Y5RmcxUnlyaUhYU1NRYm9lcXd1Vk5HNXE0Q0s2bXU1YTFKRXVaUFIyMkszMkMtN1EwRkFhTFdFSEh5aFFFWDA?oc=5",
+          "time": "2026-09-27 09:53:16",
+          "publisher": "Google News→Newtalk新聞",
+          "severity": null
+        },
+        {
+          "title": "養兒教育帳單大不同 新竹縣家庭年花4.6萬冠全台",
+          "url": "https://newtalk.tw/news/view/2026-09-27/1062132",
+          "time": "2026-09-27 09:53:16",
+          "publisher": "新頭殼",
+          "severity": null
+        },
+        {
+          "title": "養兒教育帳單大不同新竹縣家庭年花4.6萬冠全台| 家庭兩性| 生活",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9XNnJxSGxuT3hXQzdobk81NEkwU2RTNVdPZ0xBcWtrRU5FZl9ZeTFvaEVxTW1IbnRkWXVwd2tFQzV6c25IQ0MweG5KR050YWU5?oc=5",
+          "time": "2026-09-27 08:46:36",
+          "publisher": "Google News→UDN",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "金門地方動態",
       "city": "金門",
       "place": "金門縣政府",
@@ -995,167 +1142,6 @@
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1pZlF0NGpQYUluWEd4NzNiVUFac053UXZYdlh3MW5YaElROWl1dkl2QnBWUkp6SmpyZ3lHR3JjT2M2STBiT2syX0tlZDE?oc=5",
           "time": "2026-09-27 13:49:34",
           "publisher": "Google News→桃園電子報",
-          "severity": null
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "新竹縣地方動態",
-      "city": "新竹縣",
-      "place": "新竹縣政府",
-      "level": "yellow",
-      "news_count": 21,
-      "comment_count": 0,
-      "negativity_pct": 0,
-      "is_urgent": false,
-      "urgency_score": 21,
-      "news_articles": [
-        {
-          "title": "決戰新竹縣：雙強爭霸牽動北台灣政治版圖 誰能點亮幸福感？",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBpelNSSFJudG9zX0k2aUVqS1ZzR2dCYWxLbEppYm9lRUtEeWRBWDZvdVNKRmFsZExtQWhGd24wOXpUNG9vdGxz?oc=5",
-          "time": "2026-09-27 23:41:25",
-          "publisher": "Google News→886.news",
-          "severity": null
-        },
-        {
-          "title": "新竹縣教師節大禮包！千元敬師禮券、考核獎金提前發放",
-          "url": "https://tw.news.yahoo.com/%E6%96%B0%E7%AB%B9%E7%B8%A3%E6%95%99%E5%B8%AB%E7%AF%80%E5%A4%A7%E7%A6%AE%E5%8C%85-%E5%8D%83%E5%85%83%E6%95%AC%E5%B8%AB%E7%A6%AE%E5%88%B8-%E8%80%83%E6%A0%B8%E7%8D%8E%E9%87%91%E6%8F%90%E5%89%8D%E7%99%BC%E6%94%BE-131512291.html",
-          "time": "2026-09-27 21:15:12",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "教師節敬師大禮包！ 新竹縣1000元禮券+考核獎金提前入帳",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VQVVsVW96OHk0QmdIUlhrZjFMa1pPcEJ2UUs1T1cwdUt4anVlclZFWHp2SDc1d0hoVjQwd0VFcUhuZ3Q3ZmVKOERQVWNTdDlEQ0E?oc=5",
-          "time": "2026-09-27 20:18:52",
-          "publisher": "Google News→【飛揚新聞】",
-          "severity": null
-        },
-        {
-          "title": "新竹縣發放雙重敬師大禮包！1000元禮券+考核獎金提前入帳",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hbDIxUWFmYlQyUWFRaW11ZUFDOGYyQjRYeU5yQnBpX3pVeGg5c19zRnRTS05KYnFHOVBBS0RUYllJcFJxellzUU1mS0dXQmY2Nnc?oc=5",
-          "time": "2026-09-27 20:15:00",
-          "publisher": "Google News→蕃新聞",
-          "severity": null
-        },
-        {
-          "title": "徐欣瑩提新竹縣育兒政見 強化臨托增2歲專班",
-          "url": "https://www.cna.com.tw/news/aipl/202609270118.aspx",
-          "time": "2026-09-27 15:35:32",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "徐欣瑩提新竹縣育兒政見強化臨托增2歲專班- 地方",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhMGpuZm05NU0tTlIxQml0NzgtMm53ZjRlUm15aFJreWVtVFc1dDVReE4yZnNhbFJsZ0xRT2ZhRnFQUVZyZmw1Rm1ubC1ZejR5d09JVmpmbUt4dTEtSTRlY3JtWGZmeXkzMU5rOG1R?oc=5",
-          "time": "2026-09-27 15:35:32",
-          "publisher": "Google News→華視新聞網",
-          "severity": null
-        },
-        {
-          "title": "徐欣瑩提新竹縣育兒政見強化臨托增2歲專班| 政治",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RVmdQMmFPeEZOZjRpcmRZcFdweHljOU8tTk9CLWRoQmtad0s0bU95SnFlSllMdTJKWFZpWXNTbzRrN0NsbGI5N3dSNDE4Z08zUTU0Nm1hNjJVSHVfZ1pr?oc=5",
-          "time": "2026-09-27 15:35:00",
-          "publisher": "中央社",
-          "severity": null
-        },
-        {
-          "title": "演唱會凝聚竹北市民情感 邱臣遠：續辦且引進多元化文化展演",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587653",
-          "time": "2026-09-27 15:19:14",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "慶祝教師節 新竹縣送出敬師獎勵金、教師考核獎金兩大禮包祝賀",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qLWxpRndCSTBKTzZaamMyUFJvV1hCcjA4Y2ttemZTYWRKMGxRZExOUTlRei1STllmNDZLRGU4SjJPVHBZbXJTRjJYbEdFSW9jcmN1YkRUTDZIZlA0MUk5VnlHZnc1T1VW?oc=5",
-          "time": "2026-09-27 15:14:35",
-          "publisher": "Google News→元丰傳媒",
-          "severity": null
-        },
-        {
-          "title": "延續鄭朝方竹北市政建設與藝文能量 曾聖凱：不負「善待竹北」懇託",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587632",
-          "time": "2026-09-27 14:50:32",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "竹北藍白分裂會外溢？ 柯文哲雲林合體張嘉郡：她沒問題啦",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587474",
-          "time": "2026-09-27 12:25:37",
-          "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "全台家庭教育支出下滑 新竹縣四點六萬元遙遙領先",
-          "url": "https://n.yam.com/Article/20260927645889",
-          "time": "2026-09-27 12:00:00",
-          "publisher": "蕃新聞→臺灣郵報",
-          "severity": null
-        },
-        {
-          "title": "民進黨新竹縣長參選人、竹北市長鄭朝方昨晚舉辦「三天王竹北演唱會」，在竹北市長選戰藍白合作破局、藍綠白三方參選的局面下，鄭朝方邀民進黨竹北市長參選人曾聖凱、民眾黨竹北市長參選人邱臣遠同台，兩人輪番獻唱，鄭朝方更公開喊話，希望兩人未來「善待竹北」。",
-          "url": "https://udn.com/news/story/124652/9779885?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-09-27 11:58:18",
-          "publisher": "聯合新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "教師節雙重禮！新竹縣發千元敬師禮券考核獎金也提前入袋| 桃竹苗| 地方",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5WZUlqQ2t2SGxsMHN0RUhxM0NQLXh0RUpyUFRCcU9hWFY2YmtRd2JHRUl0V2FFRFFzUmRvWE9ydXRpeUU3MzZqUWhvQ2hWbkRJ?oc=5",
-          "time": "2026-09-27 10:34:38",
-          "publisher": "Google News→UDN",
-          "severity": null
-        },
-        {
-          "title": "教師節雙重禮！新竹縣發千元敬師禮券 考核獎金也提前入袋",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5WZUlqQ2t2SGxsMHN0RUhxM0NQLXh0RUpyUFRCcU9hWFY2YmtRd2JHRUl0V2FFRFFzUmRvWE9ydXRpeUU3MzZqUWhvQ2hWbkRJ0gFWQVVfeXFMUFktdkNWYms2MTlfSnRsQ2lHVG9HY0RESFJnYzF0Nm9yRXpuWGtzTUdMT1dOT0tpRmlzT1diUHNVREVQTkhLZl8zUXdGZ01sTGpobkplVmc?oc=5",
-          "time": "2026-09-27 10:34:38",
-          "publisher": "Google News→udn.com",
-          "severity": null
-        },
-        {
-          "title": "養兒帳單大不同！新竹縣市教育支出包辦冠亞軍 全國平均反呈下滑趨勢",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE13Ql9yeHFidWpZdlE0eklNenNzNHo5U1EyZlA4VUt5UjM5MGQwM3ZVQWdmbS10Mm9wT082OTV3WTJtalJsV0tQR18wTVJpTVlOQTRyNW1XMVBiVzNGd0s3NkhtTG8tNUZxWmtockZrcw?oc=5",
-          "time": "2026-09-27 10:09:00",
-          "publisher": "Google News→knews.com.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "養兒教育帳單大不同新竹縣家庭年花4.6萬冠全台| 財經",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BbmZoY2FwRmt3b1FLd29QS2kxc1Y5RmcxUnlyaUhYU1NRYm9lcXd1Vk5HNXE0Q0s2bXU1YTFKRXVaUFIyMkszMkMtN1EwRkFhTFdFSEh5aFFFWDA?oc=5",
-          "time": "2026-09-27 09:53:16",
-          "publisher": "Google News→Newtalk新聞",
-          "severity": null
-        },
-        {
-          "title": "養兒教育帳單大不同 新竹縣家庭年花4.6萬冠全台",
-          "url": "https://newtalk.tw/news/view/2026-09-27/1062132",
-          "time": "2026-09-27 09:53:16",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "養兒教育帳單大不同新竹縣家庭年花4.6萬冠全台| 家庭兩性| 生活",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9XNnJxSGxuT3hXQzdobk81NEkwU2RTNVdPZ0xBcWtrRU5FZl9ZeTFvaEVxTW1IbnRkWXVwd2tFQzV6c25IQ0MweG5KR050YWU5?oc=5",
-          "time": "2026-09-27 08:46:36",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
-        },
-        {
-          "title": "養兒教育帳單大不同 新竹縣家庭年花4.6萬冠全台",
-          "url": "https://tw.news.yahoo.com/%E9%A4%8A%E5%85%92%E6%95%99%E8%82%B2%E5%B8%B3%E5%96%AE%E5%A4%A7%E4%B8%8D%E5%90%8C-%E6%96%B0%E7%AB%B9%E7%B8%A3%E5%AE%B6%E5%BA%AD%E5%B9%B4%E8%8A%B14-6%E8%90%AC%E5%86%A0%E5%85%A8%E5%8F%B0-002139539.html",
-          "time": "2026-09-27 08:21:39",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "養兒教育帳單大不同新竹縣家庭年花4.6萬冠全台| 生活",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Qd2o1SzV2SXdzcDhmaGxNNUNWa0pwN0diazNBOS1VT0tkT1BEOHpPc2doN0JmS3RkVi02OTNoVmptMi1oTzB3MHV0SVZ2MlI5aFI3dTBwX29tUklVNXZF?oc=5",
-          "time": "2026-09-27 08:21:00",
-          "publisher": "中央社",
           "severity": null
         }
       ],
@@ -1771,7 +1757,7 @@
           "title": "稱要推綠色交通 盧秀燕做8年 大眾運輸反衰退",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nSkhhb0VVelRsSXZBMHpMUVZXTF9WVlpYSUN0UkVEQm81T2xNS0l4cU1ZSFhQVUN4Q1V6TjFSeXQydlNVUUZRUktJLUgxN1EzSzRBd05JRlRzY1HSAWBBVV95cUxQa2h0NHRJX1NZczdraHpJMkM0Sk5uRG0zR1ZKT0V0Ym56X29rMnd3VlhsbHVjUUw2aHBDUE9tTG5ldl8tUHUtU1d3Sm1BaV9BeWRoNFlid0dhT1V1ZEI4Q00?oc=5",
           "time": "2026-09-28 05:30:00",
-          "publisher": "Google News→news.ltn.com.tw",
+          "publisher": "自由時報",
           "severity": "yellow"
         },
         {
@@ -3444,7 +3430,7 @@
           "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Ic2xvSU02WEV2NGI3TmRueENjLU81N2lfZVVSckJtZGxNN1plTTFfSzBsMEhzbDdMZGhNcTZDM1ZfaXBKUEU1c19lZXJWR0Fiek52MjBGRFA4VFVYRC1DNHQ4UVc3cko1d1HSAW9BVV95cUxOT3I0TVVHTHdVZkhPcm5qYldFVmhWeXE5emQtQUR4SFJJM3BBYV82R0txT0xvSFh3OUZVejRaeWdqQnQ2MU5FRjctM1p4dHhVRGZ4SFA5cE9uZ1lKUkVRaXdCYjR2UDA0dHdOLWFlTlU?oc=5",
           "time": "2026-09-28 06:51:48",
-          "publisher": "Google News→news.ltn.com.tw",
+          "publisher": "自由時報",
           "severity": "yellow"
         },
         {
@@ -4855,11 +4841,11 @@
       "city": "苗栗",
       "place": "苗栗縣政府",
       "level": "red",
-      "news_count": 36,
+      "news_count": 35,
       "comment_count": 0,
       "negativity_pct": 11,
       "is_urgent": false,
-      "urgency_score": 48,
+      "urgency_score": 47,
       "news_articles": [
         {
           "title": "登記參選資格審查 苗栗17人資格不符",
@@ -5104,13 +5090,6 @@
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OQ0E1eWp6M3hmQ0tyanZZbXBoZThyMWYxMzRHQ0V5TzZnMUxxaExoLVVmWURIcGRPUlBWNUtMYXE1aXVNZGxoSzNBcmVYTjNUa1U4bFZRSTkxbnpBcU5DenRVN2HSAWpBVV95cUxQSkEyMThFbzJPVDRYMW8taW4tVlQ0OUlySDAtWDNzRzFEWlViLU1RTFhVTDdUNWpsQm03WjJMUURBYXZCSGJ3SnRobEZPaGVNdnR2S2hTbzBlOHp3cXFzUkwzRXZSTzlPV0l3?oc=5",
           "time": "2026-09-27 10:02:36",
           "publisher": "Google News→news.ltn.com.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "夢幻粉黛亂子草恐危害生態 苗栗縣政府出手了",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhUEI0TWxWUnNEUmg3cjgtLTJiNGg0bzlQUFluOXV0OTNrbnpVeEJ2MDFGaFlGQkFOODZjM1NjcFNiWVFOZUd3WHkyQV85UnFr0gFWQVVfeXFMUGpYUWFReUdXRU9NRGwzVngteko3NlFFS0dtZ000SnBMWWFmTnRBcWRGT3dULUlvekVSR3hqN0J1STg3ZnFLOE5lMGU4S2hFXzhuSHVGQ1E?oc=5",
-          "time": "2026-09-27 08:35:11",
-          "publisher": "Google News→UDN",
           "severity": "yellow"
         }
       ],
@@ -5401,11 +5380,11 @@
       "city": "新北",
       "place": "新北市政府",
       "level": "red",
-      "news_count": 73,
+      "news_count": 72,
       "comment_count": 0,
-      "negativity_pct": 16,
+      "negativity_pct": 17,
       "is_urgent": false,
-      "urgency_score": 109,
+      "urgency_score": 108,
       "news_articles": [
         {
           "title": "新北推10大寵物旅遊路線 671友善店家",
@@ -5908,13 +5887,6 @@
           "title": "新北激戰！ 李四川、蘇巧慧各帶小雞「成立競總」",
           "url": "https://tw.news.yahoo.com/%E6%96%B0%E5%8C%97%E6%BF%80%E6%88%B0-%E6%9D%8E%E5%9B%9B%E5%B7%9D-%E8%98%87%E5%B7%A7%E6%85%A7%E5%90%84%E5%B8%B6%E5%B0%8F%E9%9B%9E-%E6%88%90%E7%AB%8B%E7%AB%B6%E7%B8%BD-090000670.html",
           "time": "2026-09-27 09:00:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "世界旅遊日帶毛孩出發！新北推10大寵物旅遊路線、671家友善店家一次看",
-          "url": "https://tw.news.yahoo.com/%E4%B8%96%E7%95%8C%E6%97%85%E9%81%8A%E6%97%A5%E5%B8%B6%E6%AF%9B%E5%AD%A9%E5%87%BA%E7%99%BC-%E6%96%B0%E5%8C%97%E6%8E%A810%E5%A4%A7%E5%AF%B5%E7%89%A9%E6%97%85%E9%81%8A%E8%B7%AF%E7%B7%9A-671%E5%AE%B6%E5%8F%8B%E5%96%84%E5%BA%97%E5%AE%B6-%E6%AC%A1%E7%9C%8B-002458282.html",
-          "time": "2026-09-27 08:24:58",
           "publisher": "Yahoo新聞",
           "severity": null
         }
@@ -8411,11 +8383,11 @@
       "city": "台北",
       "place": "台北市松山區",
       "level": "red",
-      "news_count": 224,
+      "news_count": 219,
       "comment_count": 0,
       "negativity_pct": 14,
       "is_urgent": false,
-      "urgency_score": 317,
+      "urgency_score": 312,
       "news_articles": [
         {
           "title": "鋼琴王子開後門／北市大專任甄試無人錄取 落榜教師開學竟變身授課老師",
@@ -8603,7 +8575,7 @@
           "title": "台北市長大對決！蔣萬安、沈伯洋西門町街頭民調 結果超懸殊",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PRzFPQnpiSWI1LUxLdFQtRWpqR2hOU3FqMF82TzBYS3VtRjZKWkhNRTNkeUU3QWVtcWh2dkZXbFFlX3lxOUFpclE5OTNleElwZmNV?oc=5",
           "time": "2026-09-27 21:45:41",
-          "publisher": "Google News→中天新聞網",
+          "publisher": "Google News→ctinews.com",
           "severity": null
         },
         {
@@ -9044,7 +9016,7 @@
           "title": "台北砍樹爭議未歇 蔣萬安：原則只增不減、明年底續增3550棵樹",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85eE4xOG9EOERHUGg5ZmJhR0pZYVp5bHozWGNndFg0Sl9qV0NfTzUzOXo2OVJTclIxT25nTS0tUFhoaG93STNBQnVwM0thR0hsTFVnb2hWTUgybTlnMzVSTDF5ZkhIM1hTcHfSAW9BVV95cUxOYzVMcklFbU9pUGNxT0JfWmZCc1Y3T0FBTmRWMkRtSmJnQU1VVXV1ajBZV1dma1lfMDVVaUVUdVphcHdjcnRqaUJ5M0xoNkpValZjcGt0Y2pyMENPbHRObWF1MVB6ME5zbm1sMVpQNE0?oc=5",
           "time": "2026-09-27 16:46:16",
-          "publisher": "Google News→news.ltn.com.tw",
+          "publisher": "自由時報",
           "severity": "yellow"
         },
         {
@@ -9949,41 +9921,6 @@
           "time": "2026-09-27 08:43:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "北市都更工地火警！建管處將開罰9萬要求停工 蔣萬安發聲",
-          "url": "https://tw.news.yahoo.com/%E5%8C%97%E5%B8%82%E9%83%BD%E6%9B%B4%E5%B7%A5%E5%9C%B0%E7%81%AB%E8%AD%A6-%E5%BB%BA%E7%AE%A1%E8%99%95%E5%B0%87%E9%96%8B%E7%BD%B09%E8%90%AC%E8%A6%81%E6%B1%82%E5%81%9C%E5%B7%A5-%E8%94%A3%E8%90%AC%E5%AE%89%E7%99%BC%E8%81%B2-003500126.html",
-          "time": "2026-09-27 08:35:00",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
-        },
-        {
-          "title": "北市都更工地火警！建管處將開罰9萬要求停工 蔣萬安發聲",
-          "url": "https://news.ebc.net.tw/news/society/573125",
-          "time": "2026-09-27 08:35:00",
-          "publisher": "東森新聞",
-          "severity": "red"
-        },
-        {
-          "title": "2026全球城市指數出爐！台北狠甩香港、深圳 亞洲最強是「這國」",
-          "url": "https://tw.news.yahoo.com/2026%E5%85%A8%E7%90%83%E5%9F%8E%E5%B8%82%E6%8C%87%E6%95%B8%E5%87%BA%E7%88%90-%E5%8F%B0%E5%8C%97%E7%8B%A0%E7%94%A9%E9%A6%99%E6%B8%AF-%E6%B7%B1%E5%9C%B3-%E4%BA%9E%E6%B4%B2%E6%9C%80%E5%BC%B7%E6%98%AF-%E9%80%99%E5%9C%8B-003000901.html",
-          "time": "2026-09-27 08:30:00",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "北市嘉興街公辦都更工地昨晚驚傳火警 全面停工調查",
-          "url": "https://newtalk.tw/news/view/2026-09-27/1062127",
-          "time": "2026-09-27 08:25:25",
-          "publisher": "新頭殼",
-          "severity": "red"
-        },
-        {
-          "title": "北市大安區工地火警！地下3樓搶救難度高 蔣萬安勒令停工、最高罰9萬",
-          "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPTFBSbFV2Y21RZnZaWnhhS3lnX3hqWjBOWXNuZ0s1d3YxMGRGN2ljbEIwOTQyeDFpd0JTbGpuZHdvT2YzampaNllvU3BWcFducXV5WFpGTy1mVXVlYnlNQXZvVGJGcjJJaWdBemhadEQySHFISHBsS29JSDJQLXNEQTJ2Z2M1TEZRVENkSkdYWFN6RXBvSldnVlkycnJJZEx4b1h3NVdvOHVua2RMZFJPM0Jray1IOFByY3dIQXlJV09HVWpTaGpFd3p2QWZwYzZXczRpZkhQX2VmeW5rRWRZbWhoeEZOcTNUZHBOVnBLRHRLbE5yUzRNRjQ2clA0eUJPTnNOeldUVzB4TFdTTUNuUjFIc2pWdzNyWHpuUm1BajhLUDBJZVVENkdmT0Zva0JmWTBiYW55ZE9JSHh5WWZ5TGpBTFQ5Z2dHSEJfTGc0Z2RkUzg2QmkycXpqTllMbXBlVnNJQ1VtZ2FmWDBJeG1qS0RjRmUxd2J2U0t0Q2h3NmtfcTJCWGNSOXBaX1hKeXR6U29tOEpGbG1EdkdlVEN4ZTJSQUV0RVNmZ3c?oc=5",
-          "time": "2026-09-27 08:22:57",
-          "publisher": "Yahoo新聞",
-          "severity": "red"
         }
       ],
       "comments": []
