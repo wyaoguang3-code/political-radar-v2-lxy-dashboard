@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-09-28T05:57:04.941983+00:00",
+  "generated_at": "2026-09-28T06:12:55.780837+00:00",
   "metrics": {
-    "total_24h": 28,
-    "prev_24h": 30,
-    "growth_pct": -6.67,
-    "news_24h": 25,
+    "total_24h": 29,
+    "prev_24h": 29,
+    "growth_pct": 0.0,
+    "news_24h": 26,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 643,
-    "prev": 1031,
-    "growth_pct": -37.63,
-    "news": 609,
+    "total": 644,
+    "prev": 1028,
+    "growth_pct": -37.35,
+    "news": 610,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,21 +28,21 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 602
+      "count": 600
     },
     {
       "platform": "youtube",
-      "count": 29
+      "count": 28
     }
   ],
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 4114
+      "count": 4100
     },
     {
       "platform": "youtube",
-      "count": 531
+      "count": 530
     },
     {
       "platform": "ptt",
@@ -50,10 +50,6 @@
     }
   ],
   "by_hour": [
-    {
-      "hour": "2026-09-27 14:00",
-      "count": 0
-    },
     {
       "hour": "2026-09-27 15:00",
       "count": 1
@@ -144,7 +140,11 @@
     },
     {
       "hour": "2026-09-28 13:00",
-      "count": 5
+      "count": 6
+    },
+    {
+      "hour": "2026-09-28 14:00",
+      "count": 0
     }
   ],
   "by_hour_7d": [
@@ -590,58 +590,58 @@
     },
     {
       "hour": "2026-09-28 13:00",
-      "count": 8
+      "count": 9
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 602
+      "count": 600
     },
     {
       "platform": "youtube",
-      "count": 29
+      "count": 28
     }
   ],
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 602
+      "count": 600
     },
     {
       "platform": "youtube",
-      "count": 29
+      "count": 28
     }
   ],
   "mention_compare_24h": {
-    "盧秀燕": 38,
-    "蔣萬安": 540,
-    "蔡其昌": 67,
+    "盧秀燕": 39,
+    "蔣萬安": 535,
+    "蔡其昌": 68,
     "陳其邁": 2
   },
   "mention_compare_7d": {
-    "盧秀燕": 643,
-    "蔣萬安": 3688,
-    "蔡其昌": 81,
-    "陳其邁": 367
+    "盧秀燕": 644,
+    "蔣萬安": 3671,
+    "蔡其昌": 82,
+    "陳其邁": 363
   },
   "voice_breakdown_24h": {
     "盧秀燕": {
-      "total": 38,
+      "total": 39,
       "red": 0,
       "yellow": 3,
-      "green": 35
+      "green": 36
     },
     "蔣萬安": {
-      "total": 540,
-      "red": 32,
-      "yellow": 371,
-      "green": 137
+      "total": 535,
+      "red": 31,
+      "yellow": 368,
+      "green": 136
     },
     "蔡其昌": {
-      "total": 67,
+      "total": 68,
       "red": 0,
-      "yellow": 28,
+      "yellow": 29,
       "green": 39
     },
     "陳其邁": {
@@ -20501,7 +20501,7 @@
           "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOS09JVkhGVmhHVFE2MmM5V1pqMS1GRHNsem50U2NnaHZGRXNmSzhYX2lDVFJEaXBxNDFSTTUxMTdnUXJxSEs2SW9UX19neTh3dy1PV01mRHN2VnhHcG5WQk9VcDNUWTVGSHFCNk82NmxDTWJzODJhOGtmM01oeGllaWRIWVh6U2pjRHZJeHpsZFRTTUd0SHBWU1ZUWFJmVU1TOHRKM2VTWmdXQlR3ZHpTMWdoQnIxR0dmXy1udWxUbXBDOW9CbTVERVFXWlFsZkJ0ZVBveTA0bnpVY0pIbnBGRXczaVdGM09ZSzJoZ1VlcU8yUXNwT0R1ZGluYmx1UzJhN0FxSGx4aFhTcmtyUmV5OFYxTEk0a3huUzR3dDc2el8zWHY4YWhKTWdqYUNaU2ZNRTdGemM4TGtNODZ3WlFtUVluS2ppamc0dzBwQm11OG14NTRhX2swd1g1NGJlX21YMVJ0blpWREtzSjk3ME1kczFOMVp2Zw?oc=5",
           "time": "2026-09-25 14:36:17",
           "severity": "yellow",
-          "publisher": "Google News→Yahoo新聞",
+          "publisher": "Google News→tw.news.yahoo.com",
           "is_crisis": false
         },
         {
@@ -28482,14 +28482,22 @@
     },
     {
       "date": "2026-09-28",
-      "score": 80.9,
-      "total": 33,
+      "score": 81.0,
+      "total": 34,
       "red": 0,
       "yellow": 3,
-      "green": 30,
+      "green": 31,
       "crisis": 0,
       "samples_low": false,
       "articles": [
+        {
+          "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+          "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+          "time": "2026-09-28 13:42:53",
+          "severity": "green",
+          "publisher": "Google News→tw.news.yahoo.com",
+          "is_crisis": false
+        },
         {
           "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -29683,9 +29691,16 @@
         "date": "2026-09-28",
         "red": 0,
         "yellow": 0,
-        "green": 4,
-        "total": 4,
+        "green": 5,
+        "total": 5,
         "articles": [
+          {
+            "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+            "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+            "time": "2026-09-28 13:42:53",
+            "severity": "green",
+            "publisher": "Google News→tw.news.yahoo.com"
+          },
           {
             "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5RlBtbzJJV01fcVYtNV9UazRYaERiXy1xdzJHS1JTWHdvOFplN0RsaG5lUWlwSDF6VG1yUmplQWVaSjFhVGg5SDE2c1J0NFNaLXR3d1JmNnJ4YTYyT0xHWm1QMVNOY2ZJaVHSAW9BVV95cUxQampUY2IzMXdZd2RRZF9Vb3FIVnFvc0JieHZkb3BtS1hWYnlmbTJ0NWpBSkJ4dWJKUHhHeDYxUnVvQnJVWjJoZ1dIZnBoRng3Zjg4VzBEMVQ0TThHdEZGS2ZGel9yR2wxb29XXzZ5MG8?oc=5",
@@ -59669,6 +59684,15 @@
   "mention_articles_24h": {
     "盧秀燕": [
       {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:42:53",
+        "platform": "news",
+        "publisher": "Google News→tw.news.yahoo.com",
+        "severity": null,
+        "co_mentioned": []
+      },
+      {
         "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
         "time": "2026-09-28 13:38:02",
@@ -60122,6 +60146,15 @@
         "time": "2026-09-28 13:32:00",
         "platform": "news",
         "publisher": "Google News→mnews.tw",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+        "time": "2026-09-28 13:30:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -64881,63 +64914,18 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "跟風鍘美 台派傳演《貍貓換太子》劍指蔣萬安？鄭家純：很蠢！",
-        "url": "https://news.nextapple.com/politics/20260927/064014BEF0809F1769D9FCD091480883",
-        "time": "2026-09-27 14:07:36",
-        "platform": "news",
-        "publisher": "壹蘋新聞網",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "旅美學者爆：蘇巧慧立院學歷「LLM寫成SJD」跟蔣萬安一樣",
-        "url": "https://news.nextapple.com/politics/20260927/AB062140434E70E4A10515F86B5DED6C",
-        "time": "2026-09-27 14:07:27",
-        "platform": "news",
-        "publisher": "壹蘋新聞網",
-        "severity": "red",
-        "co_mentioned": []
-      },
-      {
-        "title": "【戰情不斷電】信民民調蔣萬安僅贏沈伯洋1.2%　張善政被賴清德狂讚 #少康戰情室",
-        "url": "https://www.youtube.com/watch?v=oPQY5LGOnbM",
-        "time": "2026-09-27 14:00:25",
-        "platform": "youtube",
-        "publisher": null,
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14dHppZGtsZWlydUhuQmRiSGhmRml1UmVPejlVVDBuaDMwV0U4bHN5X0V1UjZQenhhVnZJblM3ajlsNU9EaGg2MUhHNnp4SGNvWWxqMUF5cmZZZk9Qa2lMN2I3cm5OTFdfb1HSAW9BVV95cUxQWGRrSk9xeDVUYVRacDEtU0tjOWdya3B4S3FVYjNfdzJUVGRiSlVOLVE5c3liSG1Cb21FSkpUM2VFREJjbnBmS3pway00M0ZjS0J5ejZ0ZDVnbm5TV3gzLWxZRlVTdjJpUTNwRDJOQUU?oc=5",
-        "time": "2026-09-27 14:00:01",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587448",
-        "time": "2026-09-27 14:00:01",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚- 政治",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14dHppZGtsZWlydUhuQmRiSGhmRml1UmVPejlVVDBuaDMwV0U4bHN5X0V1UjZQenhhVnZJblM3ajlsNU9EaGg2MUhHNnp4SGNvWWxqMUF5cmZZZk9Qa2lMN2I3cm5OTFdfb1E?oc=5",
-        "time": "2026-09-27 14:00:01",
-        "platform": "news",
-        "publisher": "Google News→news.ltn.com.tw",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
+      {
+        "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+        "time": "2026-09-28 13:43:32",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
       {
         "title": "不接受Taiwan毛巾被擋！ 蔡其昌怒「中國打壓」",
         "url": "https://www.mnews.tw/story/20260928sot1101001",
@@ -65011,7 +64999,7 @@
         "co_mentioned": []
       },
       {
-        "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
+        "title": "沈伯洋「雞蛋糕加東泉辣椒醬」引發決鬥 何欣純、蔡其昌也接連抗議",
         "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
         "time": "2026-09-28 06:51:48",
         "platform": "news",
@@ -65565,6 +65553,15 @@
   },
   "mention_articles_7d": {
     "盧秀燕": [
+      {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:42:53",
+        "platform": "news",
+        "publisher": "Google News→tw.news.yahoo.com",
+        "severity": null,
+        "co_mentioned": []
+      },
       {
         "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -67246,7 +67243,7 @@
         "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOS09JVkhGVmhHVFE2MmM5V1pqMS1GRHNsem50U2NnaHZGRXNmSzhYX2lDVFJEaXBxNDFSTTUxMTdnUXJxSEs2SW9UX19neTh3dy1PV01mRHN2VnhHcG5WQk9VcDNUWTVGSHFCNk82NmxDTWJzODJhOGtmM01oeGllaWRIWVh6U2pjRHZJeHpsZFRTTUd0SHBWU1ZUWFJmVU1TOHRKM2VTWmdXQlR3ZHpTMWdoQnIxR0dmXy1udWxUbXBDOW9CbTVERVFXWlFsZkJ0ZVBveTA0bnpVY0pIbnBGRXczaVdGM09ZSzJoZ1VlcU8yUXNwT0R1ZGluYmx1UzJhN0FxSGx4aFhTcmtyUmV5OFYxTEk0a3huUzR3dDc2el8zWHY4YWhKTWdqYUNaU2ZNRTdGemM4TGtNODZ3WlFtUVluS2ppamc0dzBwQm11OG14NTRhX2swd1g1NGJlX21YMVJ0blpWREtzSjk3ME1kczFOMVp2Zw?oc=5",
         "time": "2026-09-25 14:36:17",
         "platform": "news",
-        "publisher": "Yahoo新聞",
+        "publisher": "Google News→tw.news.yahoo.com",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -71576,6 +71573,15 @@
         "co_mentioned": []
       },
       {
+        "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+        "time": "2026-09-28 13:30:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "影》盧秀燕談「洋流」：蔣萬安、江啟臣都會高票順利當選",
         "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOVFpPLUVZS2dGVTNfbml3emVnanlIZUJiVWd1cTZnMmdjeWhSUENfYUY1bk55R0JaX3I0QVNxZDB1bVBDVFpqQkFZcl9NRmJzdmliQlVpYml4Q2hKM1FhdjdKTzNicld0SXp3SGtVNHBWd3JpWXdGcW9RQjZHODBaNlFkajdsMHE5c3NSbkhUMXZ4WndJQXJlWUt0SHNrLXRwMjE4aDVXcmhGaWstY3lCV0VHamZnUVNwdHdReDhuNFBidm9zYnUxQnIybVhJTnpsSFhzTnpXVGlKMXQ0dmR4WTVtX1dtcjFoS2ZGbDJ6MHpJdmRaSXI5UllfR0I0cGdWdjYwMmV5RU8wM3lYdVY1Rm42UlNiejhGUXE2OUp0OTczLUptemRmLU9TdE1ITV9Ec3liRTZQMTh1cXMzR2NfS2Z2SGxGS1c0VmhoY1pORWxGcDVx?oc=5",
         "time": "2026-09-28 13:26:15",
@@ -104761,179 +104767,18 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "鬍鬚張少東表態挺蔣遭抵制 蔣萬安1張照、7字發聲了",
-        "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOZEdDRnpDcmlOQmRiVTdIeEdtNVBWemFCLVozbU54X0xUWUd3WUo4SjY0eTNKSTg5cDVVaDRnMzBPMzZQaDRCSGVDejJJS0lVVTN6WFZtYXp4WVUycHphbm1pR0VkaUF1c1BrVWZFUzdDNk1JUlNkTEg3SFBkUU5mVkx6U2I4UHdTTW9TdFJBSElRZTNwR0hjSGtHSHhjN2hocXYzNmJkSG1DcjJ5dGpmZm9yTW9EOGVLQ1g2TUVlQzc5c0liN3l5TkxSZ00wbXdlbHBPUTdfZlhGcmpwZHkwbXVOTUJGNm1WeTh4c0tHVHM5U0ZlaE5wOWNRRnpzVFhxdGFTMzh3di1EY3lrOHViTkFyTjlzcDdxVzZxZm8zSWkyRjlZMG1VOGNzRTlyVHByOThIU3lhdmlYVHpYWFRMMWM2a3Y0dlZXUGRodEpQQ3JhU01z?oc=5",
-        "time": "2026-09-21 14:10:41",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安答應上節目還不夠！沈伯洋追辯論同意書：兩家電視台已邀約 主張交叉詰問",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYUFFIRUZOaFQ1Y01FZndLQTBQY2tRbS1FcGo2dG9RN2RXN1VpaXJCNkY5M0M2UWNWeEhQSmNHZ3RaaG9WV0w5Mk80dnlMcDA5UGc?oc=5",
-        "time": "2026-09-21 14:06:11",
-        "platform": "news",
-        "publisher": "Google News→放言Fount Media",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "鬍鬚張少東「挺蔣萬安」遭出征 市長「學歷」備受質疑｜#鏡新聞",
-        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQZmtRSlM4T0hfd1RKcU9uck5UUWQ4cnRfRDgxTUtlaDRrLVRORHVQdHlubXpucmE0ZmdZczk2X2tkU1RDOGI4OFp5LVZNZDFnVlo0VmlSUGZTWldQenJLTF9TQ0RnV0V3Wk5PdkJ0NEU2ZjEwaFB3eUlHSWVTaENoOEhGenU2Z25rbUthYjdDUVFpSVhxWWVLTDZuQzRtNTJtMC1wMnNsMmdJTjYtN0FfSnRYUVJyZGRldTVianBsbEI5SEFKU1V3NTlaY1pROTN6M21TTHJVaUlBX1EycU91Y0dmb3pyejI0dTVvZjVwNEF1cU1QNnpyR2RMNThiX0pmX2l3a2VxLTJvVnBzTVUzS1JwWEhQaFNK?oc=5",
-        "time": "2026-09-21 14:05:01",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "陳其邁"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": [
-          "陳其邁"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "陳其邁"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-        "time": "2026-09-21 14:04:00",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "陳其邁"
-        ]
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸| 政治",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2T3F3SzdvUFJNbGZtTm9ZTDRSdU81M1hTcHJqMXo0NUxhUUh6aWYwVjBuelI5d3lfdWdIUkVTVVpOYjNGRDdhVUh4cy1TYm9PQ0tNUDREV213aUU?oc=5",
-        "time": "2026-09-21 14:01:00",
-        "platform": "news",
-        "publisher": "Google News→Newtalk新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPRU1YQnNPaWZhZjlzc2x5cG00WWxmaVktaEFSMGFDU3FpZE9JbE9YejhiTE9ZbGt0VV9TQmUzWHhjY1E1MkQ4eEZaTDAxNFhuWFVoT3RBZGU4QWJXcWRnYzNfX01vZktZQmFUZDdvMVR2WnlHSVVMcjZjM3RGWGN6RVBTQVhRRUJHcVVodmJ6YUlid3RsMW85Vl92WFNxeUp3Wi1zd3FnNlRyX3ZRLU1EaEhkWFlEMlIwNkU1dXZ5UlNvOU05ZC15OUh4QnZlWFhrZ2t0T2xUU2M3VXlCdzdLZ0MwM0dhVDlYMVRIM08zbTFydGxoYXoxUks4ZlE5Smpud0Rhc3haelB6dGsyVjRCZGN5VERHeUY0dlp2a0s4RWwtMm1pVHpGMkJncmY1R0RVU3ZxMUpVT1hFek9PeUEtQjRCckNIeFhq?oc=5",
-        "time": "2026-09-21 14:01:00",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-        "url": "https://newtalk.tw/news/view/2026-09-21/1061033",
-        "time": "2026-09-21 14:01:00",
-        "platform": "news",
-        "publisher": "新頭殼",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "沈伯洋暗酸hot pot「會燙傷」! 蔣萬安回應：「怕燙溫度可以調 醬料加點酸沒問題」 ｜TVBS新聞",
-        "url": "https://www.youtube.com/watch?v=l2hYsbTAi78",
-        "time": "2026-09-21 14:00:02",
-        "platform": "youtube",
-        "publisher": null,
-        "severity": null,
-        "co_mentioned": []
-      },
-      {
-        "title": "挺蔣萬安遭出征！白委洪毓祥請助理吃鬍鬚張：別和商家過不去| 政治焦點",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rMDg0VFlBZU1CNGx5Y1ByeFpLV0lWcXdXVDQwWTh5dnREaEVvVVJjVU0xQS1jWWU0QV92QWk4aWg2akZvN1RwUThteWdYUHZDcXhIcEV1QlhLVnpO?oc=5",
-        "time": "2026-09-21 13:58:37",
-        "platform": "news",
-        "publisher": "Google News→太報 TaiSounds",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55bjd2QjdhaVRxQ3VMN1RSYmdLMzBYTVFYcFpqYXplYmNlTDd3NlJjTDN1VGZFMGdYYjkzYmJRWTJUb2IybjJwNTlUSlFSVURpQmZzay1Wblc?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制 臉書貼文以行動力挺",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yb3hPRm91RFhlX3d6dXdRV3A4M0ZSR2VRWXN3Y09IMDJmeHVsUE4zZXV4Nno5bmJQN0N5MTZaY3lnY3pEVVpyd1M3NE1pTkdrM3pV0gFYQVVfeXFMUEV5NzBrdVZCNC1JS3JtYXFvLThNcl96bkRFQVhESzdsbUxsZVR4NnJrbGZ6ckFUUno1T0FjdlNiamQ4UlM5Y2hyMmxzOWpFSnpoWi01VDhtQw?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kaWNMaEFsRUhJQ2hiS1pVa2c4SVVGaU85RFlDbDV3X3NRbFQ3ZV9xd2x2b0w0WnI1bjhjOXlLRUk3aGs5djVMMWhINEdHbHd5MjQyME5uRWNnOTFFdWg2N0dlU01fM3h6OVE?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "platform": "news",
-        "publisher": "Google News→UDN",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xVnFndVZfQ3pfeHFUWjlHOGIzdklIQnhETzJuZ1BXY25FRzNkNlowMjZiUXBxbEJwZnJxemxvMVcwNGNjUXgxZkZQaWFLaW5RZ0owcV9kLTA1WTctZGfSAUtBVV95cUxOSWJEal9fNnhwdkVXVnN4S1Q3dFNIS0E0R1NPZ0d5RllQQUtTaGQwNVJTN3laanowYWFOT2drWFJ3aG1NMkJPNkczdWs?oc=5",
-        "time": "2026-09-21 13:57:00",
-        "platform": "news",
-        "publisher": "Google News→ettoday.net",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-        "url": "https://www.ettoday.net/news/20260921/3241295.htm",
-        "time": "2026-09-21 13:57:00",
-        "platform": "news",
-        "publisher": "ETtoday",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "東門市場茄苳樹遭誤砍 蔣萬安：廠商、市府人員失職嚴懲不貸",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAyaUFlZFRWb2xVbG5JbEFlaDdueklCREZ6QlNnbUZ4enRMckZxX0hod0c1M0lDc194TmtremhqOXJTWElvNkR3MDlsaWtqc0c2bk4yYXlURHlSWVhiSzZzd2pUVzl2MU9pUmtYcUF5bURZcWM?oc=5",
-        "time": "2026-09-21 13:56:54",
-        "platform": "news",
-        "publisher": "Google News→翻爆",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [
+      {
+        "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+        "time": "2026-09-28 13:43:32",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
       {
         "title": "不接受Taiwan毛巾被擋！ 蔡其昌怒「中國打壓」",
         "url": "https://www.mnews.tw/story/20260928sot1101001",
@@ -105007,7 +104852,7 @@
         "co_mentioned": []
       },
       {
-        "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
+        "title": "沈伯洋「雞蛋糕加東泉辣椒醬」引發決鬥 何欣純、蔡其昌也接連抗議",
         "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
         "time": "2026-09-28 06:51:48",
         "platform": "news",
@@ -106319,7 +106164,7 @@
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWTnNCZkNFcFVCZDRoRjVnbGRLdzFNVmhabVRGUUFVdllXZENDVzAyaDU5RzIzMnF3LU1iZktZejJPUExSaUNJVjJOMWZUNVY2dlpSR0x4ODBvaUQ4bUtuLTdrRm0xaVFkek4xaGZrYXRXNlBvUFRaS3d3Zk4?oc=5",
         "time": "2026-09-24 15:16:20",
         "platform": "news",
-        "publisher": "Google News→ttv.com.tw",
+        "publisher": "Google News→台視全球資訊網",
         "severity": null,
         "co_mentioned": []
       },
@@ -106861,7 +106706,7 @@
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JZTcxc1ZvWkduNGpGb2JFZkdkWnktQ1FtT3o5MndRWDk5eEtyWVdfMXR3MnJpazFGbHZOV0l3RllVa1NUQkRBeXY4bzFkbXlHbXfSAVJBVV95cUxNSWU3MXNWb1pHbjRqRm9iRWZHZFp5LUNRbU96OTJ3UVg5OXhLcllXXzF0dzJyaWsxRmx2TldJd0ZZVWtTVEJEQXl2OG8xZG15R213?oc=5",
         "time": "2026-09-23 22:44:25",
         "platform": "news",
-        "publisher": "Google News→今傳媒 JNEWS",
+        "publisher": "Google News→focusnews.com.tw",
         "severity": null,
         "co_mentioned": []
       },
@@ -109029,54 +108874,16 @@
         "co_mentioned": [
           "蔣萬安"
         ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "蔣萬安"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": null,
-        "co_mentioned": [
-          "蔣萬安"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-        "time": "2026-09-21 14:04:04",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "蔣萬安"
-        ]
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-        "time": "2026-09-21 14:04:00",
-        "platform": "news",
-        "publisher": "自由時報",
-        "severity": null,
-        "co_mentioned": [
-          "蔣萬安"
-        ]
       }
     ]
   },
   "top_news": [
+    {
+      "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+      "time": "2026-09-28 13:42:53",
+      "publisher": "Google News→tw.news.yahoo.com"
+    },
     {
       "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -109190,15 +108997,16 @@
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3cjFyRlZxV0hRRnBZWVNrbm02U1owbkxoaDBVMUlrMUJhSks0a0FqZGNxaWlUUmw1ZmNsdWFFTTdrcVVlQ3QyR19GaGxRRGdTQVhB0gFYQVVfeXFMTUZ2LWt4X0Q0TlRVMURrYmowckdRcGhUdEN1c0NNczVwUzlzVjBsdjlCSUFLMGRYQVpPZmVFdXlXa2dCRjYzc2RZR3hqMUw3bHBCOWRwaG5rTw?oc=5",
       "time": "2026-09-28 11:20:58",
       "publisher": "Google News→UDN"
-    },
-    {
-      "title": "怎麼看「洋流」？ 盧秀燕笑說這兩個人一定當選！",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54S3gwXzlqQ2ZaamVpMVBmbWZyUnYwMHQxMFRjdXk2dmVodUV0ZkFzVGI1TjJ5M2xERm5PUE5kMEs2ZEtwRWMzVUE0NmJFMDRISURHU3Rub0Y?oc=5",
-      "time": "2026-09-28 11:20:00",
-      "publisher": "Google News→UDN"
     }
   ],
   "top_news_7d": [
+    {
+      "platform": "news",
+      "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+      "time": "2026-09-28 13:42:53",
+      "severity": null
+    },
     {
       "platform": "news",
       "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
@@ -109330,13 +109138,6 @@
       "title": "怎麼看「洋流」？ 盧秀燕笑說這兩個人一定當選！",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3cjFyRlZxV0hRRnBZWVNrbm02U1owbkxoaDBVMUlrMUJhSks0a0FqZGNxaWlUUmw1ZmNsdWFFTTdrcVVlQ3QyR19GaGxRRGdTQVhB0gFYQVVfeXFMTUZ2LWt4X0Q0TlRVMURrYmowckdRcGhUdEN1c0NNczVwUzlzVjBsdjlCSUFLMGRYQVpPZmVFdXlXa2dCRjYzc2RZR3hqMUw3bHBCOWRwaG5rTw?oc=5",
       "time": "2026-09-28 11:20:58",
-      "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "怎麼看「洋流」？ 盧秀燕笑說這兩個人一定當選！",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54S3gwXzlqQ2ZaamVpMVBmbWZyUnYwMHQxMFRjdXk2dmVodUV0ZkFzVGI1TjJ5M2xERm5PUE5kMEs2ZEtwRWMzVUE0NmJFMDRISURHU3Rub0Y?oc=5",
-      "time": "2026-09-28 11:20:00",
       "severity": null
     }
   ],
@@ -109454,6 +109255,16 @@
       "time": "2026-09-28 13:44:15"
     },
     {
+      "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+      "time": "2026-09-28 13:43:32"
+    },
+    {
+      "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+      "time": "2026-09-28 13:42:53"
+    },
+    {
       "title": "揭蔣萬安學歷人設、英文不好 「公子沈」：沈伯洋是博士真貨 相比高下立判",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLenpDa1d4U3M2OXdCejFGdzFYaThkU3poWDJod1F5NzZWekNUSjV1Qms0bmJjLVVjQ0tSaXNnb3c4ZkgzVG9hX3czemoyRHYyTGtpOVMyN2R2WW1VbzQ2YVBrV184SW5KbmfSAW9BVV95cUxORGE1bHNfV0oxYW9pUTZULTBmaEZSU29LUmVVRm1JdzdreVlUblRiMWJVeE9BR0wtVVEwZzYtaHdVWWJzMzJfSVpDcEYwRTV5U0pqc0t1UF9UejdpcGNFWjhjVGNJV1BSeVZWM0ozT3c?oc=5",
       "time": "2026-09-28 13:42:43"
@@ -109494,6 +109305,11 @@
       "time": "2026-09-28 13:32:00"
     },
     {
+      "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+      "time": "2026-09-28 13:30:00"
+    },
+    {
       "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5RlBtbzJJV01fcVYtNV9UazRYaERiXy1xdzJHS1JTWHdvOFplN0RsaG5lUWlwSDF6VG1yUmplQWVaSjFhVGg5SDE2c1J0NFNaLXR3d1JmNnJ4YTYyT0xHWm1QMVNOY2ZJaVHSAW9BVV95cUxQampUY2IzMXdZd2RRZF9Vb3FIVnFvc0JieHZkb3BtS1hWYnlmbTJ0NWpBSkJ4dWJKUHhHeDYxUnVvQnJVWjJoZ1dIZnBoRng3Zjg4VzBEMVQ0TThHdEZGS2ZGel9yR2wxb29XXzZ5MG8?oc=5",
       "time": "2026-09-28 13:26:20"
@@ -109527,21 +109343,6 @@
       "title": "盧秀燕回防娘家冷看洋流！力捧江啟臣 盼接棒完成2重大建設",
       "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNWE83ZGlsRFNmemxnUnVndXdILTR5UURKVWRCeGc3c2NTLXVoSWJGS013MjJ3cEVicENEZ1Mya2tuUUhDYmM2V2pCVXZfMlNqX044eVdZTVdiZ3gwVldwVkZEaWlWNGMzZWREQ1RadXgzSnI4UEVURGtyMEx3Mk5CSmdJQkJQWHczMmp0amluaGRiWVI2dGJkQ0xuZVdoM3NmdU9ZRjZIckk0MTNKekxqZHJFYkF3Y1U4Vll6a1FucS1nMGJ3Uk5hVkpOb1czTUdIeDJvMGpzZkRvdUJGQjdfYWZLZUVBYkRzakNmb3hzc21XdGNvMFA1LVR4UnVaRTRsRmFLRTVXd0hLaUR6ekUxQ0xQblFmUV8xWjFreWc3RXVkS3YteDlYcjJLbDd4MjZnOEpYZ1pSUzNtZTFOWHpySWY0STFVbzBldE1KN25JMkp3SEp2QnhTaEdHak9IaE9CMm5MNENsOTJWTlBUQmxFUlR5SzhSQWU0WVdzRjAxZjdwTWs?oc=5",
       "time": "2026-09-28 13:17:57"
-    },
-    {
-      "title": "【送給蔣萬安、沈伯洋「甘蔗差很多」？福德宮董事長親揭背後意涵】 甘蔗的意涵真多～（#豬頭皮）",
-      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxOaWMzRldnYzg3RzRUdXFrdU9PRTl3WVV1dldMejRDaFJsX09qZEs5Ny1jdks4SHgzdEhsTS1aRzBMTWdHeGFuRkM3ZzktM2NNaDlGaDdLNkJpQ0FBNGZaLVREbzJQOHZ1aDhEcFRXbWFSbzZnb2NOblNSV0tudGE5QTFsTldIaERaWnJ6ZnFycml6OUhFeUZTYWFwWWx2bkFOTUFkZDFzVnFzSGZkelFKSEs0T0pTSFhTOEhCVEpLNnEzeE54X2JicjhsbDFzcTRUcUd4WkV2LUxzbklHRXAxVkpNcGVqNUx3STI1b293YW13SVR3X0lzZmtVWFJMOUdwS25ma3Z0WTlKMmRKektFTzZ5WG91RHV5RmduODduZFBDekNhSFpVR0lLUGZVajVDbzI4d3ZaSzczQkVfZnJibWU5djlNenZ2TXdQcTZkV2dzUFZSNENTa0hmb016cVhDZWY1NklaMFFMbC1sc2pYek5ZOFE2ekdYNERXZVFMMjQ2SG13QWUtbEY3ZmFKelVqUWpvU2F6cTZwMGVZRnV3Ymo2Q283R1FDMFdDTXlWUnNWQk5PaHNfUnZ5Yk8xQVRMdkU1THVFUWZpU3prbVhzcVJJazM3aFhIWnVBNjdTRHVJYXgwSzlfUzBoa21pV0Y1c0wySVVsTVFmckdqTEppa2NCT3YtWmN6anpVcw?oc=5",
-      "time": "2026-09-28 13:12:04"
-    },
-    {
-      "title": "蔣萬安SJD變JD！北市府甩鍋立院 山田摩衣轟：吃豆腐10年",
-      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPMTJ6MnJ5dkJPQ2RvYTZXdS1aUFo2eDlDczZSdjhvNHlEeWtGTDVwVWhiT0FYYldZbm83MjB5MGJGSDZwMmllTWRoU0xkYXJvRU5qQTF2elRkOXAzVnhDZmo2aC1QWmwzZmxILXhELVhKc3E0YXpRLVZmelpWRTJRLUZPcFJ3bEMxYjRHZEtJMWc2YV8weFdSYklIQm9tQkQyTFQtcWNZZC1PNGEwcVQ1Zi1XWkhjamppNHRic2h4YnRNSlNpeC1VM2JSM2RIZzBwUHcwMXMxekRBZHVybnJrV0tXX1hpenAzQVNZM2xWRDhSNDBOaGdpamkwNW5pY1gwQUlFcnRVSzJlNE03Tm5WRG5sbGFqQi01NnFzLTlMendCbFFWeFpFWTZ5NEFjZU9kZVg0bE4yRWFyWVBodldicDNWMm45Y1NXc2ZISHp6STA?oc=5",
-      "time": "2026-09-28 13:12:00"
-    },
-    {
-      "title": "影／蔣萬安跨區輔選基隆 再次啓動「國安連線」",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9CYlo0NXZ6UUZQWGFWSEJWY0NxN1JUYlVYM3JLLVV4UndGOGZIVFhuYTZFbGlnc1JPTmFNby1qT1BEY1VYeVprS0pUTnJKREx0amdj0gFYQVVfeXFMUGN5YU5IMzJnYzY1UHllNnB5ZFlvbDJ1cVZ6VjUtX1lDOVcxekx2RnVSS3NmZmlhanZCdXVFNlI1bHFrZDFjVFAxVU1EWTQ3ZDc0d1pLeHhtRg?oc=5",
-      "time": "2026-09-28 13:11:26"
     }
   ],
   "person_sections": {
@@ -109556,6 +109357,13 @@
         }
       ],
       "news": [
+        {
+          "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+          "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+          "time": "2026-09-28 13:42:53",
+          "publisher": "Google News→tw.news.yahoo.com",
+          "severity": null
+        },
         {
           "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -109688,13 +109496,6 @@
           "time": "2026-09-28 11:20:58",
           "publisher": "Google News→UDN",
           "severity": null
-        },
-        {
-          "title": "怎麼看「洋流」？ 盧秀燕笑說這兩個人一定當選！",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54S3gwXzlqQ2ZaamVpMVBmbWZyUnYwMHQxMFRjdXk2dmVodUV0ZkFzVGI1TjJ5M2xERm5PUE5kMEs2ZEtwRWMzVUE0NmJFMDRISURHU3Rub0Y?oc=5",
-          "time": "2026-09-28 11:20:00",
-          "publisher": "Google News→UDN",
-          "severity": null
         }
       ]
     },
@@ -109808,6 +109609,13 @@
           "severity": "yellow"
         },
         {
+          "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+          "time": "2026-09-28 13:30:00",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
+        {
           "title": "影》盧秀燕談「洋流」：蔣萬安、江啟臣都會高票順利當選",
           "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOVFpPLUVZS2dGVTNfbml3emVnanlIZUJiVWd1cTZnMmdjeWhSUENfYUY1bk55R0JaX3I0QVNxZDB1bVBDVFpqQkFZcl9NRmJzdmliQlVpYml4Q2hKM1FhdjdKTzNicld0SXp3SGtVNHBWd3JpWXdGcW9RQjZHODBaNlFkajdsMHE5c3NSbkhUMXZ4WndJQXJlWUt0SHNrLXRwMjE4aDVXcmhGaWstY3lCV0VHamZnUVNwdHdReDhuNFBidm9zYnUxQnIybVhJTnpsSFhzTnpXVGlKMXQ0dmR4WTVtX1dtcjFoS2ZGbDJ6MHpJdmRaSXI5UllfR0I0cGdWdjYwMmV5RU8wM3lYdVY1Rm42UlNiejhGUXE2OUp0OTczLUptemRmLU9TdE1ITV9Ec3liRTZQMTh1cXMzR2NfS2Z2SGxGS1c0VmhoY1pORWxGcDVx?oc=5",
           "time": "2026-09-28 13:26:15",
@@ -109876,19 +109684,19 @@
           "time": "2026-09-28 13:03:18",
           "publisher": "TVBS",
           "severity": "yellow"
-        },
-        {
-          "title": "台北市長蔣萬安、基隆市長謝國樑今在基隆，宣布「國安連線」再次啟動。謝說，國安連線不只是4年前的選舉口號，更是基隆、台北的合力治理成果。蔣呼應，兩人用4年施政成績單爭取民眾認同，希望鄉親讓他們繼續為大家打拚，讓台北、基隆所有的市民再贏一次。",
-          "url": "https://udn.com/news/story/124652/9781255?from=udn-ch1_breaknews-1-cate1-news",
-          "time": "2026-09-28 13:03:18",
-          "publisher": "聯合新聞網",
-          "severity": null
         }
       ]
     },
     "蔡其昌": {
       "facebook": [],
       "news": [
+        {
+          "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+          "time": "2026-09-28 13:43:32",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "不接受Taiwan毛巾被擋！ 蔡其昌怒「中國打壓」",
           "url": "https://www.mnews.tw/story/20260928sot1101001",
@@ -109946,7 +109754,7 @@
           "severity": "yellow"
         },
         {
-          "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
+          "title": "沈伯洋「雞蛋糕加東泉辣椒醬」引發決鬥 何欣純、蔡其昌也接連抗議",
           "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
           "time": "2026-09-28 06:51:48",
           "publisher": "Google News→tw.news.yahoo.com",
@@ -110020,13 +109828,6 @@
           "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxOSmhfRDRlUGZyc1NlMlhTb3FZSFkzM2VlN2FUdHc3bkpaNTRVRVR0LVNtNFlCNlF0ckw1bGlIcy1Ta1h6YVBMZHNlRGdsa3phRVV5Rmg4MkR0bTBicTdOU09mU256aXJBdy1xVFVNdGttempERVkxMW5nVTU3VUpiRXRMZ2tiWmJTcjJ5amZtODFheVlYMVhVLXppc29kRnRyTmRHbWZCXzZvTUVDRDMyZUNPbDJQRUxPa1NudnF3dUQxVnFuUHBVMkh4bGEwRU5CT2NwQnF2eVhmYk1qTHFXUWhXZ1Y5Q3VOckplcjkzS2Q2QnNiWkpHcWdOSnJGeTNGMmRvQUtzZllsRjg4X3ZiZ183SW9rVVJGbkptVGx5UEJ2LTF5YXJ1QmRpNVduNFJUT05feUNvdDN0TWhVdkxKN1Q4Skc5TmFHbnV5dXhNZ3I1anVRYjNhV3hRdVh1UV95bmxsakF0ZWVFWHo0eUpmMW1zS253WGNOQkJ2VU1NdEhQLU44UTlEMW1hdTNPcnc?oc=5",
           "time": "2026-09-27 20:40:53",
           "publisher": "Google News→tw.news.yahoo.com",
-          "severity": null
-        },
-        {
-          "title": "沈伯洋在雞蛋糕加東泉辣椒醬 蔡其昌鄭重聲明「無法接受」",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRTh4S241SkkzVlBRLWhPbW1NOWZyaThiUTFTcG40aHZGVVhIUG1iYnQ2OEtQTHhPdEtYaEdnbEJKdl8xWmlTOTYyOFJscUxIbi1oZGFHNWFqaEFNUGdYWFZORkZxQV8ybDZYTFdmVmxydV9SU3g0TUxNMS1fd3V1MHNsU0ctUQ?oc=5",
-          "time": "2026-09-27 20:19:00",
-          "publisher": "自由時報",
           "severity": null
         }
       ]
@@ -110202,6 +110003,20 @@
         "severity": "yellow"
       },
       {
+        "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+        "time": "2026-09-28 13:43:32",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:42:53",
+        "publisher": "Google News→tw.news.yahoo.com",
+        "severity": null
+      },
+      {
         "title": "揭蔣萬安學歷人設、英文不好 「公子沈」：沈伯洋是博士真貨 相比高下立判",
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLenpDa1d4U3M2OXdCejFGdzFYaThkU3poWDJod1F5NzZWekNUSjV1Qms0bmJjLVVjQ0tSaXNnb3c4ZkgzVG9hX3czemoyRHYyTGtpOVMyN2R2WW1VbzQ2YVBrV184SW5KbmfSAW9BVV95cUxORGE1bHNfV0oxYW9pUTZULTBmaEZSU29LUmVVRm1JdzdreVlUblRiMWJVeE9BR0wtVVEwZzYtaHdVWWJzMzJfSVpDcEYwRTV5U0pqc0t1UF9UejdpcGNFWjhjVGNJV1BSeVZWM0ozT3c?oc=5",
         "time": "2026-09-28 13:42:43",
@@ -110255,6 +110070,13 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tb3Y4ZVhOZ3E0WWZ3S3NUc243cXJzN1RHZnJhbnI4OWozT0FPdVpMeGRqRE93b1JpQjNaMy1LTXVKV1J6cVdEbG83NmRGZm50ejlkMEtqV3bSAV5BVV95cUxPQmVzUkhOajg2NzVDd00ybkhJRXJCUER4LVJrYnRsZ3Q1RG90VUNqcU5lOWE4VDZqMTJWMlZWUDJyZU0zNnBkVmhob2ZZbUhhZXpza1NzR0VfUXBXSWh3?oc=5",
         "time": "2026-09-28 13:32:00",
         "publisher": "Google News→mnews.tw",
+        "severity": "yellow"
+      },
+      {
+        "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+        "time": "2026-09-28 13:30:00",
+        "publisher": "三立新聞網",
         "severity": "yellow"
       },
       {
@@ -111518,7 +111340,7 @@
         "severity": "yellow"
       },
       {
-        "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
+        "title": "沈伯洋「雞蛋糕加東泉辣椒醬」引發決鬥 何欣純、蔡其昌也接連抗議",
         "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
         "time": "2026-09-28 06:51:48",
         "publisher": "Google News→tw.news.yahoo.com",
@@ -114365,41 +114187,6 @@
         "time": "2026-09-27 14:14:53",
         "publisher": "Yahoo新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "跟風鍘美 台派傳演《貍貓換太子》劍指蔣萬安？鄭家純：很蠢！",
-        "url": "https://news.nextapple.com/politics/20260927/064014BEF0809F1769D9FCD091480883",
-        "time": "2026-09-27 14:07:36",
-        "publisher": "壹蘋新聞網",
-        "severity": "yellow"
-      },
-      {
-        "title": "旅美學者爆：蘇巧慧立院學歷「LLM寫成SJD」跟蔣萬安一樣",
-        "url": "https://news.nextapple.com/politics/20260927/AB062140434E70E4A10515F86B5DED6C",
-        "time": "2026-09-27 14:07:27",
-        "publisher": "壹蘋新聞網",
-        "severity": "red"
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14dHppZGtsZWlydUhuQmRiSGhmRml1UmVPejlVVDBuaDMwV0U4bHN5X0V1UjZQenhhVnZJblM3ajlsNU9EaGg2MUhHNnp4SGNvWWxqMUF5cmZZZk9Qa2lMN2I3cm5OTFdfb1HSAW9BVV95cUxQWGRrSk9xeDVUYVRacDEtU0tjOWdya3B4S3FVYjNfdzJUVGRiSlVOLVE5c3liSG1Cb21FSkpUM2VFREJjbnBmS3pway00M0ZjS0J5ejZ0ZDVnbm5TV3gzLWxZRlVTdjJpUTNwRDJOQUU?oc=5",
-        "time": "2026-09-27 14:00:01",
-        "publisher": "自由時報",
-        "severity": "yellow"
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587448",
-        "time": "2026-09-27 14:00:01",
-        "publisher": "自由時報",
-        "severity": "yellow"
-      },
-      {
-        "title": "本命區廟方猛酸蔣萬安「選舉才來」！ 沈伯洋沒補刀反做1事讓網大讚- 政治",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14dHppZGtsZWlydUhuQmRiSGhmRml1UmVPejlVVDBuaDMwV0U4bHN5X0V1UjZQenhhVnZJblM3ajlsNU9EaGg2MUhHNnp4SGNvWWxqMUF5cmZZZk9Qa2lMN2I3cm5OTFdfb1E?oc=5",
-        "time": "2026-09-27 14:00:01",
-        "publisher": "Google News→news.ltn.com.tw",
-        "severity": "yellow"
       }
     ],
     "youtube": [
@@ -114598,13 +114385,6 @@
         "time": "2026-09-27 14:51:10",
         "publisher": null,
         "severity": null
-      },
-      {
-        "title": "【戰情不斷電】信民民調蔣萬安僅贏沈伯洋1.2%　張善政被賴清德狂讚 #少康戰情室",
-        "url": "https://www.youtube.com/watch?v=oPQY5LGOnbM",
-        "time": "2026-09-27 14:00:25",
-        "publisher": null,
-        "severity": null
       }
     ]
   },
@@ -114623,6 +114403,20 @@
         "time": "2026-09-28 13:44:15",
         "publisher": "Google News→tw.news.yahoo.com",
         "severity": "yellow"
+      },
+      {
+        "title": "年輕人不挺綠了？蔡其昌憶當年「入國民黨有點丟臉」 林飛帆曝10年心聲",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwZmxmTktUUkxyTHpZa1lNcjBRQnloVG9MWmJCOGlJREYxc21DNXpKc2RrTF9ubHZrQW43M3JaUmo1alVJRF8yeHdFWWgzNm0wYkRicWFOU3RDQzBMXzhtWENQLWZWR0xzRGfSAW9BVV95cUxNTjNtZXZkbXVMYnBpN1lfQjRyUGVjdEd5Z2Z4S010RkdnSnp1UTBmNFhXZ0NHeDVjal83TlhmSVBnWGhVb2NFLVNRX1dUTGd5aVNicUVIS1JkbmdmOGpISUF1TlkzSk5mN2RPdElfbkE?oc=5",
+        "time": "2026-09-28 13:43:32",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:42:53",
+        "publisher": "Google News→tw.news.yahoo.com",
+        "severity": null
       },
       {
         "title": "揭蔣萬安學歷人設、英文不好 「公子沈」：沈伯洋是博士真貨 相比高下立判",
@@ -114678,6 +114472,13 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tb3Y4ZVhOZ3E0WWZ3S3NUc243cXJzN1RHZnJhbnI4OWozT0FPdVpMeGRqRE93b1JpQjNaMy1LTXVKV1J6cVdEbG83NmRGZm50ejlkMEtqV3bSAV5BVV95cUxPQmVzUkhOajg2NzVDd00ybkhJRXJCUER4LVJrYnRsZ3Q1RG90VUNqcU5lOWE4VDZqMTJWMlZWUDJyZU0zNnBkVmhob2ZZbUhhZXpza1NzR0VfUXBXSWh3?oc=5",
         "time": "2026-09-28 13:32:00",
         "publisher": "Google News→mnews.tw",
+        "severity": "yellow"
+      },
+      {
+        "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+        "time": "2026-09-28 13:30:00",
+        "publisher": "三立新聞網",
         "severity": "yellow"
       },
       {
@@ -115941,7 +115742,7 @@
         "severity": "yellow"
       },
       {
-        "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
+        "title": "沈伯洋「雞蛋糕加東泉辣椒醬」引發決鬥 何欣純、蔡其昌也接連抗議",
         "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
         "time": "2026-09-28 06:51:48",
         "publisher": "Google News→tw.news.yahoo.com",
@@ -125457,7 +125258,7 @@
         "title": "盧秀燕關切川習會涉台議題 林俊憲：別這麼急著想選總統",
         "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOS09JVkhGVmhHVFE2MmM5V1pqMS1GRHNsem50U2NnaHZGRXNmSzhYX2lDVFJEaXBxNDFSTTUxMTdnUXJxSEs2SW9UX19neTh3dy1PV01mRHN2VnhHcG5WQk9VcDNUWTVGSHFCNk82NmxDTWJzODJhOGtmM01oeGllaWRIWVh6U2pjRHZJeHpsZFRTTUd0SHBWU1ZUWFJmVU1TOHRKM2VTWmdXQlR3ZHpTMWdoQnIxR0dmXy1udWxUbXBDOW9CbTVERVFXWlFsZkJ0ZVBveTA0bnpVY0pIbnBGRXczaVdGM09ZSzJoZ1VlcU8yUXNwT0R1ZGluYmx1UzJhN0FxSGx4aFhTcmtyUmV5OFYxTEk0a3huUzR3dDc2el8zWHY4YWhKTWdqYUNaU2ZNRTdGemM4TGtNODZ3WlFtUVluS2ppamc0dzBwQm11OG14NTRhX2swd1g1NGJlX21YMVJ0blpWREtzSjk3ME1kczFOMVp2Zw?oc=5",
         "time": "2026-09-25 14:36:17",
-        "publisher": "Yahoo新聞",
+        "publisher": "Google News→tw.news.yahoo.com",
         "severity": "yellow"
       },
       {
@@ -127725,7 +127526,7 @@
         "title": "陪賴瑞隆登記 陳其邁送球棒「選對人走對路」",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWTnNCZkNFcFVCZDRoRjVnbGRLdzFNVmhabVRGUUFVdllXZENDVzAyaDU5RzIzMnF3LU1iZktZejJPUExSaUNJVjJOMWZUNVY2dlpSR0x4ODBvaUQ4bUtuLTdrRm0xaVFkek4xaGZrYXRXNlBvUFRaS3d3Zk4?oc=5",
         "time": "2026-09-24 15:16:20",
-        "publisher": "Google News→ttv.com.tw",
+        "publisher": "Google News→台視全球資訊網",
         "severity": null
       },
       {
@@ -130952,7 +130753,7 @@
         "title": "陳其邁陪同總統出席「世界臺灣商會聯合總會第32屆年會僑務委員會惜別晚宴」",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JZTcxc1ZvWkduNGpGb2JFZkdkWnktQ1FtT3o5MndRWDk5eEtyWVdfMXR3MnJpazFGbHZOV0l3RllVa1NUQkRBeXY4bzFkbXlHbXfSAVJBVV95cUxNSWU3MXNWb1pHbjRqRm9iRWZHZFp5LUNRbU96OTJ3UVg5OXhLcllXXzF0dzJyaWsxRmx2TldJd0ZZVWtTVEJEQXl2OG8xZG15R213?oc=5",
         "time": "2026-09-23 22:44:25",
-        "publisher": "Google News→今傳媒 JNEWS",
+        "publisher": "Google News→focusnews.com.tw",
         "severity": null
       },
       {
@@ -143288,125 +143089,6 @@
         "time": "2026-09-21 14:12:51",
         "publisher": "Yahoo新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "鬍鬚張少東表態挺蔣遭抵制 蔣萬安1張照、7字發聲了",
-        "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOZEdDRnpDcmlOQmRiVTdIeEdtNVBWemFCLVozbU54X0xUWUd3WUo4SjY0eTNKSTg5cDVVaDRnMzBPMzZQaDRCSGVDejJJS0lVVTN6WFZtYXp4WVUycHphbm1pR0VkaUF1c1BrVWZFUzdDNk1JUlNkTEg3SFBkUU5mVkx6U2I4UHdTTW9TdFJBSElRZTNwR0hjSGtHSHhjN2hocXYzNmJkSG1DcjJ5dGpmZm9yTW9EOGVLQ1g2TUVlQzc5c0liN3l5TkxSZ00wbXdlbHBPUTdfZlhGcmpwZHkwbXVOTUJGNm1WeTh4c0tHVHM5U0ZlaE5wOWNRRnpzVFhxdGFTMzh3di1EY3lrOHViTkFyTjlzcDdxVzZxZm8zSWkyRjlZMG1VOGNzRTlyVHByOThIU3lhdmlYVHpYWFRMMWM2a3Y0dlZXUGRodEpQQ3JhU01z?oc=5",
-        "time": "2026-09-21 14:10:41",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安答應上節目還不夠！沈伯洋追辯論同意書：兩家電視台已邀約 主張交叉詰問",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYUFFIRUZOaFQ1Y01FZndLQTBQY2tRbS1FcGo2dG9RN2RXN1VpaXJCNkY5M0M2UWNWeEhQSmNHZ3RaaG9WV0w5Mk80dnlMcDA5UGc?oc=5",
-        "time": "2026-09-21 14:06:11",
-        "publisher": "Google News→放言Fount Media",
-        "severity": "yellow"
-      },
-      {
-        "title": "鬍鬚張少東「挺蔣萬安」遭出征 市長「學歷」備受質疑｜#鏡新聞",
-        "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQZmtRSlM4T0hfd1RKcU9uck5UUWQ4cnRfRDgxTUtlaDRrLVRORHVQdHlubXpucmE0ZmdZczk2X2tkU1RDOGI4OFp5LVZNZDFnVlo0VmlSUGZTWldQenJLTF9TQ0RnV0V3Wk5PdkJ0NEU2ZjEwaFB3eUlHSWVTaENoOEhGenU2Z25rbUthYjdDUVFpSVhxWWVLTDZuQzRtNTJtMC1wMnNsMmdJTjYtN0FfSnRYUVJyZGRldTVianBsbEI5SEFKU1V3NTlaY1pROTN6M21TTHJVaUlBX1EycU91Y0dmb3pyejI0dTVvZjVwNEF1cU1QNnpyR2RMNThiX0pmX2l3a2VxLTJvVnBzTVUzS1JwWEhQaFNK?oc=5",
-        "time": "2026-09-21 14:05:01",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-        "time": "2026-09-21 14:04:04",
-        "publisher": "Yahoo新聞",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-        "time": "2026-09-21 14:04:04",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-        "time": "2026-09-21 14:04:00",
-        "publisher": "自由時報",
-        "severity": null
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸| 政治",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2T3F3SzdvUFJNbGZtTm9ZTDRSdU81M1hTcHJqMXo0NUxhUUh6aWYwVjBuelI5d3lfdWdIUkVTVVpOYjNGRDdhVUh4cy1TYm9PQ0tNUDREV213aUU?oc=5",
-        "time": "2026-09-21 14:01:00",
-        "publisher": "Google News→Newtalk新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPRU1YQnNPaWZhZjlzc2x5cG00WWxmaVktaEFSMGFDU3FpZE9JbE9YejhiTE9ZbGt0VV9TQmUzWHhjY1E1MkQ4eEZaTDAxNFhuWFVoT3RBZGU4QWJXcWRnYzNfX01vZktZQmFUZDdvMVR2WnlHSVVMcjZjM3RGWGN6RVBTQVhRRUJHcVVodmJ6YUlid3RsMW85Vl92WFNxeUp3Wi1zd3FnNlRyX3ZRLU1EaEhkWFlEMlIwNkU1dXZ5UlNvOU05ZC15OUh4QnZlWFhrZ2t0T2xUU2M3VXlCdzdLZ0MwM0dhVDlYMVRIM08zbTFydGxoYXoxUks4ZlE5Smpud0Rhc3haelB6dGsyVjRCZGN5VERHeUY0dlp2a0s4RWwtMm1pVHpGMkJncmY1R0RVU3ZxMUpVT1hFek9PeUEtQjRCckNIeFhq?oc=5",
-        "time": "2026-09-21 14:01:00",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-        "url": "https://newtalk.tw/news/view/2026-09-21/1061033",
-        "time": "2026-09-21 14:01:00",
-        "publisher": "新頭殼",
-        "severity": "yellow"
-      },
-      {
-        "title": "挺蔣萬安遭出征！白委洪毓祥請助理吃鬍鬚張：別和商家過不去| 政治焦點",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rMDg0VFlBZU1CNGx5Y1ByeFpLV0lWcXdXVDQwWTh5dnREaEVvVVJjVU0xQS1jWWU0QV92QWk4aWg2akZvN1RwUThteWdYUHZDcXhIcEV1QlhLVnpO?oc=5",
-        "time": "2026-09-21 13:58:37",
-        "publisher": "Google News→太報 TaiSounds",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55bjd2QjdhaVRxQ3VMN1RSYmdLMzBYTVFYcFpqYXplYmNlTDd3NlJjTDN1VGZFMGdYYjkzYmJRWTJUb2IybjJwNTlUSlFSVURpQmZzay1Wblc?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "publisher": "Google News→UDN",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制 臉書貼文以行動力挺",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yb3hPRm91RFhlX3d6dXdRV3A4M0ZSR2VRWXN3Y09IMDJmeHVsUE4zZXV4Nno5bmJQN0N5MTZaY3lnY3pEVVpyd1M3NE1pTkdrM3pV0gFYQVVfeXFMUEV5NzBrdVZCNC1JS3JtYXFvLThNcl96bkRFQVhESzdsbUxsZVR4NnJrbGZ6ckFUUno1T0FjdlNiamQ4UlM5Y2hyMmxzOWpFSnpoWi01VDhtQw?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "publisher": "Google News→UDN",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kaWNMaEFsRUhJQ2hiS1pVa2c4SVVGaU85RFlDbDV3X3NRbFQ3ZV9xd2x2b0w0WnI1bjhjOXlLRUk3aGs5djVMMWhINEdHbHd5MjQyME5uRWNnOTFFdWg2N0dlU01fM3h6OVE?oc=5",
-        "time": "2026-09-21 13:57:09",
-        "publisher": "Google News→UDN",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xVnFndVZfQ3pfeHFUWjlHOGIzdklIQnhETzJuZ1BXY25FRzNkNlowMjZiUXBxbEJwZnJxemxvMVcwNGNjUXgxZkZQaWFLaW5RZ0owcV9kLTA1WTctZGfSAUtBVV95cUxOSWJEal9fNnhwdkVXVnN4S1Q3dFNIS0E0R1NPZ0d5RllQQUtTaGQwNVJTN3laanowYWFOT2drWFJ3aG1NMkJPNkczdWs?oc=5",
-        "time": "2026-09-21 13:57:00",
-        "publisher": "Google News→ettoday.net",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-        "url": "https://www.ettoday.net/news/20260921/3241295.htm",
-        "time": "2026-09-21 13:57:00",
-        "publisher": "ETtoday",
-        "severity": "yellow"
-      },
-      {
-        "title": "東門市場茄苳樹遭誤砍 蔣萬安：廠商、市府人員失職嚴懲不貸",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAyaUFlZFRWb2xVbG5JbEFlaDdueklCREZ6QlNnbUZ4enRMckZxX0hod0c1M0lDc194TmtremhqOXJTWElvNkR3MDlsaWtqc0c2bk4yYXlURHlSWVhiSzZzd2pUVzl2MU9pUmtYcUF5bURZcWM?oc=5",
-        "time": "2026-09-21 13:56:54",
-        "publisher": "Google News→翻爆",
-        "severity": "yellow"
       }
     ],
     "youtube": [
@@ -147117,13 +146799,6 @@
         "title": "沈伯洋「內涵菁英」完勝蔣萬安？李文成揭對比酸：蔣只下姓氏跟長得帥！｜#挑戰新聞｜民視讚夯.com",
         "url": "https://www.youtube.com/watch?v=ly0le7q3Tvc",
         "time": "2026-09-21 14:54:42",
-        "publisher": null,
-        "severity": null
-      },
-      {
-        "title": "沈伯洋暗酸hot pot「會燙傷」! 蔣萬安回應：「怕燙溫度可以調 醬料加點酸沒問題」 ｜TVBS新聞",
-        "url": "https://www.youtube.com/watch?v=l2hYsbTAi78",
-        "time": "2026-09-21 14:00:02",
         "publisher": null,
         "severity": null
       }
@@ -148123,9 +147798,9 @@
       "lng": 120.64430192378865,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 4",
-      "note": "24h 命中 4 則（新聞 4、留言 0）",
-      "news_count": 4,
+      "platform": "新聞 3",
+      "note": "24h 命中 3 則（新聞 3、留言 0）",
+      "news_count": 3,
       "comment_count": 0,
       "news_latest_at": "2026-09-27T23:27:29+00:00",
       "news_full_expires_at": "2026-09-28T23:27:29+00:00",
@@ -148146,13 +147821,6 @@
         },
         {
           "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
-          "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
-          "time": "2026-09-28 06:51:48",
-          "publisher": "Google News→tw.news.yahoo.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5588060",
           "time": "2026-09-28 06:51:48",
           "publisher": "自由時報",
@@ -148160,10 +147828,10 @@
         }
       ],
       "comments": [],
-      "negative_news_count": 4,
+      "negative_news_count": 3,
       "negativity_pct": 100,
       "urgent_red_comments": 0,
-      "urgency_score": 16,
+      "urgency_score": 12,
       "is_urgent": true,
       "is_catchall": false,
       "keywords": [
@@ -149931,9 +149599,9 @@
       "lng": 121.301,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 89",
-      "note": "24h 命中 89 則（新聞 89、留言 0）",
-      "news_count": 89,
+      "platform": "新聞 88",
+      "note": "24h 命中 88 則（新聞 88、留言 0）",
+      "news_count": 88,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -150553,20 +150221,13 @@
           "time": "2026-09-27 14:18:21",
           "publisher": "自由時報",
           "severity": null
-        },
-        {
-          "title": "桃園購物節狂潮來襲，三大車商傾力相助!經發局宣布10月「月月抽」加碼多台汽車，結合統領週年慶、台灣設計展掀消費熱潮",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1WTzUyS2tHRURtVHBDUUVseXJVVHhwanZ0UGpIOXVQcDhVbmd4SW14ay1ZcEtGODVKMldXb2dqNjFzVWZaNGoxbTFkRTI4UkRCdkhUaA?oc=5",
-          "time": "2026-09-27 14:11:11",
-          "publisher": "Google News→崛起新傳媒",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 2,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 95,
+      "urgency_score": 94,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -150611,9 +150272,9 @@
       "lng": 121.7378,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 101",
-      "note": "24h 命中 101 則（新聞 101、留言 0）",
-      "news_count": 101,
+      "platform": "新聞 100",
+      "note": "24h 命中 100 則（新聞 100、留言 0）",
+      "news_count": 100,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T04:49:58+00:00",
       "news_full_expires_at": "2026-09-29T04:49:58+00:00",
@@ -151317,20 +150978,13 @@
           "time": "2026-09-27 14:12:38",
           "publisher": "自由時報",
           "severity": "yellow"
-        },
-        {
-          "title": "吳宗憲宜蘭競總成立 鄭麗文嗆林國漳肥貓：背後是新潮流賴清德",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBIRkZ4M2lTVFY4TnlkelBqZkdLNVhNcjljSTFyYU9pNlFfVzM0NVM1bFMxSjVMbXU2aW93R1lTYUMyWFVCM1d6eFZ6ZVdUb1NJZldMYWY4eWxDR204VkHSAUtBVV95cUxNblN2TTQ2UWlMdUE2ZUNNamlpZzNDbEdOZlNCbHZERkllRF9aOVFoVXcwU1BMTElZcmttamM2Z1c0Z29JWVlvOHRyZnc?oc=5",
-          "time": "2026-09-27 14:05:00",
-          "publisher": "ETtoday",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 101,
+      "urgency_score": 100,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -151431,9 +151085,9 @@
       "lng": 121.7392,
       "level": "red",
       "source": "news",
-      "platform": "新聞 34",
-      "note": "24h 命中 34 則（新聞 34、留言 0）",
-      "news_count": 34,
+      "platform": "新聞 33",
+      "note": "24h 命中 33 則（新聞 33、留言 0）",
+      "news_count": 33,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:40:40+00:00",
       "news_full_expires_at": "2026-09-29T05:40:40+00:00",
@@ -151668,20 +151322,13 @@
           "time": "2026-09-27 14:20:30",
           "publisher": "自由時報",
           "severity": null
-        },
-        {
-          "title": "童子瑋偕童子賢遊基隆港「童子連線」 若當選盼吸引科技企業投資",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587576",
-          "time": "2026-09-27 14:04:24",
-          "publisher": "自由時報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 5,
       "negativity_pct": 15,
       "urgent_red_comments": 0,
-      "urgency_score": 49,
+      "urgency_score": 48,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -151726,9 +151373,9 @@
       "lng": 120.8214,
       "level": "red",
       "source": "news",
-      "platform": "新聞 43",
-      "note": "24h 命中 43 則（新聞 43、留言 0）",
-      "news_count": 43,
+      "platform": "新聞 41",
+      "note": "24h 命中 41 則（新聞 41、留言 0）",
+      "news_count": 41,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -152019,27 +151666,13 @@
           "time": "2026-09-27 14:18:18",
           "publisher": "苗栗縣政府",
           "severity": null
-        },
-        {
-          "title": "甘露梨在新加坡秒殺搶光！苗栗茶點接力上架",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5WQ1lVRmJncmFqM0JQNnRabUp1clJsZ1dyWHhjWVFCQ1ZhcF9OQTRpRUtLM2JZMWloNlJzbmxVRWlTRnpWTTAzY2dLNGtnSW84WmFRR0V0LUU4YnNDZlU2d0JEdGc3enZhb3F2OG5B?oc=5",
-          "time": "2026-09-27 14:10:12",
-          "publisher": "中時新聞網",
-          "severity": null
-        },
-        {
-          "title": "甘露梨在新加坡秒殺搶光！苗栗茶點接力上架- 生活",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBtejJEek1xeGtrZlVLS3ZLMmtYcEFtZDVIcU1DcHpjdTJJaWJRenI1OG1kNzI3bnctanBQaTdXOUkyYjBxS1h3WmdTOFMwZEJWbUhvTk5PT1ozczE5NFBR?oc=5",
-          "time": "2026-09-27 14:10:00",
-          "publisher": "Google News→工商時報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 5,
       "negativity_pct": 12,
       "urgent_red_comments": 0,
-      "urgency_score": 58,
+      "urgency_score": 56,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -152084,9 +151717,9 @@
       "lng": 120.21589807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 43",
-      "note": "24h 命中 43 則（新聞 43、留言 0）",
-      "news_count": 43,
+      "platform": "新聞 42",
+      "note": "24h 命中 42 則（新聞 42、留言 0）",
+      "news_count": 42,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -152384,20 +152017,13 @@
           "time": "2026-09-27 14:15:39",
           "publisher": "自由時報",
           "severity": null
-        },
-        {
-          "title": "台南中秋連假前2天遊客近80萬 國華友愛商圈最夯",
-          "url": "https://www.cna.com.tw/news/aloc/202609270091.aspx",
-          "time": "2026-09-27 14:02:34",
-          "publisher": "中央社",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 6,
       "negativity_pct": 14,
       "urgent_red_comments": 0,
-      "urgency_score": 61,
+      "urgency_score": 60,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -152940,9 +152566,9 @@
       "lng": 120.5489,
       "level": "red",
       "source": "news",
-      "platform": "新聞 91",
-      "note": "24h 命中 91 則（新聞 91、留言 0）",
-      "news_count": 91,
+      "platform": "新聞 88",
+      "note": "24h 命中 88 則（新聞 88、留言 0）",
+      "news_count": 88,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -153562,34 +153188,13 @@
           "time": "2026-09-27 14:18:18",
           "publisher": "聯合新聞網",
           "severity": null
-        },
-        {
-          "title": "墾丁、小琉球輸了！屏東最強景點吸990萬人朝聖，遊客讚：免門票美食多有特色、 全家大小值得來",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9fS0JGRlotUVpPams1STlUaV9mZVptekdMRHROSk9USTlxN2xMQW9NcUY4U3d0Mk5sRUpWWndFa3lwUkx5RGxUM09EMnd5TWNy?oc=5",
-          "time": "2026-09-27 14:06:03",
-          "publisher": "Google News→風傳媒",
-          "severity": null
-        },
-        {
-          "title": "墾丁、小琉球輸了！屏東最強景點吸990萬人朝聖，遊客讚：免門票美食多有特色、全家大小值得來",
-          "url": "https://www.storm.mg/lifestyle/11167906",
-          "time": "2026-09-27 14:06:00",
-          "publisher": "風傳媒",
-          "severity": null
-        },
-        {
-          "title": "柯志恩「要吃屏東香蕉」賴瑞隆旗山後援會成立大喊「旗山香蕉最好吃」",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbU16NlRnOHlobGpHVExzUWNGTkQtVnBITWpqRzZzeklscFVGMEY1MjdrNmJSeVd0dWQ4eVpLTmN5NHd3QkVaOVFVeGpwcWNNMGNV0gFYQVVfeXFMTWZ1NkN3elNkTWVDb1RKV0hxVE4zUl9oYzVpc3gwQi1oN1ZwNXhwbm5JVC1QUi15b1N2MkhhV0laR0JrZDdxdm0yX0ZFanAxanhRUFZfQWwyUg?oc=5",
-          "time": "2026-09-27 13:57:13",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 91,
+      "urgency_score": 88,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -153634,9 +153239,9 @@
       "lng": 121.60409807621136,
       "level": "red",
       "source": "news",
-      "platform": "新聞 103",
-      "note": "24h 命中 103 則（新聞 103、留言 0）",
-      "news_count": 103,
+      "platform": "新聞 100",
+      "note": "24h 命中 100 則（新聞 100、留言 0）",
+      "news_count": 100,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -154340,34 +153945,13 @@
           "time": "2026-09-27 14:15:58",
           "publisher": "Google News→花蓮最速報",
           "severity": null
-        },
-        {
-          "title": "中秋連假不停歇！戴于文辦完親子活動再掃美崙早市 推在地振興券 讓消費走進市場、留在花蓮",
-          "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPOGIzN2hLemVPMTV6WXpvSzlQNDExMVMwN3FZWFBab1FWcXZiOUpTenNVY0VJR00zb2l6X3VtNXEtdmlmMDlQdDJkMXlkOFB2Zlg5c3pSZmVhT0FSRk1va1RzWU9VSWpfNG5LLThhR05zSWluYmQ1TUhSdXJzUTREYmZwZWdzWXhMQ3BBLUtnX2M1T2JianJoZFFlQlpFRzFVeFhmNkFlY3JIYkFpXzh1LWlJaVlvbEdXN1BPeEZ4ZmI4UzhzeXJkUmtRY2xlbXdSMVpsbzFaSjZMdWtJWnA2MWRNaF9sVld2OTZsLWlWQ2xCZHlodTRMVWFBczgybnhhOXB1ZWxaRHVsWDhlWFNhZXRQMmFBdVcxN3FZb1RhWlVEMU1FaVhFdUdNMXh3bnRNcXhnOQ?oc=5",
-          "time": "2026-09-27 14:06:13",
-          "publisher": "Google News→花蓮最速報",
-          "severity": null
-        },
-        {
-          "title": "蕭美琴回花蓮出席林則葹、陳思伃聯合競總成立",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPel9tM2xGQ2JRczFScTMyRndIN3Q4ZFU0eWp1UnNkTUVfNGIxSnhrMGkxaThnS3o5QkhwQWhaOHI1UWZBV2NiamlUSnZFQl9wSTlnYmZjRHBUZFBtQ2J1VzQtbmVfZ2M4bkhyQlhadU1kNWYtOF9lbi1zaVhGOVgtVEd2c3BJRjNvR28xRU1SUlhmWWk4VUp2UUtFa1NIc2VyNk0wN3ROMjNTZmtvMG9QSUFiU2EtVnI2QXpqeW51dlpaSFRLUEE?oc=5",
-          "time": "2026-09-27 14:04:35",
-          "publisher": "Google News→花蓮最速報",
-          "severity": null
-        },
-        {
-          "title": "蕭美琴花蓮站台 獨漏同黨參選人？綠駁「放棄說」：徐國勇到場力挺",
-          "url": "https://tw.news.yahoo.com/%E8%95%AD%E7%BE%8E%E7%90%B4%E8%8A%B1%E8%93%AE%E7%AB%99%E5%8F%B0-%E7%8D%A8%E6%BC%8F%E5%90%8C%E9%BB%A8%E5%8F%83%E9%81%B8%E4%BA%BA-%E7%B6%A0%E9%A7%81-%E6%94%BE%E6%A3%84%E8%AA%AA-%E5%BE%90%E5%9C%8B%E5%8B%87%E5%88%B0%E5%A0%B4%E5%8A%9B%E6%8C%BA-140256130.html",
-          "time": "2026-09-27 14:02:56",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 2,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 109,
+      "urgency_score": 106,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -154412,13 +153996,20 @@
       "lng": 120.6427,
       "level": "red",
       "source": "news",
-      "platform": "新聞 130",
-      "note": "24h 命中 130 則（新聞 130、留言 0）",
-      "news_count": 130,
+      "platform": "新聞 128",
+      "note": "24h 命中 128 則（新聞 128、留言 0）",
+      "news_count": 128,
       "comment_count": 0,
-      "news_latest_at": "2026-09-28T05:38:02+00:00",
-      "news_full_expires_at": "2026-09-29T05:38:02+00:00",
+      "news_latest_at": "2026-09-28T05:42:53+00:00",
+      "news_full_expires_at": "2026-09-29T05:42:53+00:00",
       "news_articles": [
+        {
+          "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+          "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+          "time": "2026-09-28 13:42:53",
+          "publisher": "Google News→tw.news.yahoo.com",
+          "severity": null
+        },
         {
           "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -154725,13 +154316,6 @@
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Ic2xvSU02WEV2NGI3TmRueENjLU81N2lfZVVSckJtZGxNN1plTTFfSzBsMEhzbDdMZGhNcTZDM1ZfaXBKUEU1c19lZXJWR0Fiek52MjBGRFA4VFVYRC1DNHQ4UVc3cko1d1HSAW9BVV95cUxOT3I0TVVHTHdVZkhPcm5qYldFVmhWeXE5emQtQUR4SFJJM3BBYV82R0txT0xvSFh3OUZVejRaeWdqQnQ2MU5FRjctM1p4dHhVRGZ4SFA5cE9uZ1lKUkVRaXdCYjR2UDA0dHdOLWFlTlU?oc=5",
           "time": "2026-09-28 06:51:48",
           "publisher": "自由時報",
-          "severity": "yellow"
-        },
-        {
-          "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
-          "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
-          "time": "2026-09-28 06:51:48",
-          "publisher": "Google News→tw.news.yahoo.com",
           "severity": "yellow"
         },
         {
@@ -155314,27 +154898,13 @@
           "time": "2026-09-27 14:13:05",
           "publisher": "壹蘋新聞網",
           "severity": null
-        },
-        {
-          "title": "動作超熟練！沈伯洋赴台中「自備戰鬥陀螺」比賽 網驚：真的懂玩",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5587528",
-          "time": "2026-09-27 14:08:26",
-          "publisher": "自由時報",
-          "severity": null
-        },
-        {
-          "title": "[HatePolitics] [討論] TVBS:「洋流」流向台中&amp;「洋流」湧現台中！",
-          "url": "https://www.ptt.cc/bbs/HatePolitics/M.1790489304.A.8E0.html",
-          "time": "2026-09-27 14:08:24",
-          "publisher": null,
-          "severity": null
         }
       ],
       "comments": [],
-      "negative_news_count": 8,
-      "negativity_pct": 6,
+      "negative_news_count": 7,
+      "negativity_pct": 5,
       "urgent_red_comments": 0,
-      "urgency_score": 154,
+      "urgency_score": 149,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -155379,9 +154949,9 @@
       "lng": 120.358,
       "level": "red",
       "source": "news",
-      "platform": "新聞 151",
-      "note": "24h 命中 151 則（新聞 151、留言 0）",
-      "news_count": 151,
+      "platform": "新聞 148",
+      "note": "24h 命中 148 則（新聞 148、留言 0）",
+      "news_count": 148,
       "comment_count": 0,
       "news_latest_at": "2026-09-28T05:03:18+00:00",
       "news_full_expires_at": "2026-09-29T05:03:18+00:00",
@@ -156421,34 +155991,13 @@
           "time": "2026-09-27 14:18:18",
           "publisher": "聯合新聞網",
           "severity": null
-        },
-        {
-          "title": "旗山後援會成立 賴瑞隆拋「東高雄大願景」市政藍圖",
-          "url": "https://newtalk.tw/news/view/2026-09-27/1062178",
-          "time": "2026-09-27 14:12:05",
-          "publisher": "新頭殼",
-          "severity": null
-        },
-        {
-          "title": "日本嚴格緊縮外國人政策！高市早苗推「永住新制」 收入、語言門檻全拉高",
-          "url": "https://tw.news.yahoo.com/%E6%97%A5%E6%9C%AC%E5%9A%B4%E6%A0%BC%E7%B7%8A%E7%B8%AE%E5%A4%96%E5%9C%8B%E4%BA%BA%E6%94%BF%E7%AD%96-%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%8E%A8-%E6%B0%B8%E4%BD%8F%E6%96%B0%E5%88%B6-%E6%94%B6%E5%85%A5-%E8%AA%9E%E8%A8%80%E9%96%80%E6%AA%BB%E5%85%A8%E6%8B%89%E9%AB%98-060257532.html",
-          "time": "2026-09-27 14:02:57",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "柯志恩「要吃屏東香蕉」賴瑞隆旗山後援會成立大喊「旗山香蕉最好吃」",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbU16NlRnOHlobGpHVExzUWNGTkQtVnBITWpqRzZzeklscFVGMEY1MjdrNmJSeVd0dWQ4eVpLTmN5NHd3QkVaOVFVeGpwcWNNMGNV0gFYQVVfeXFMTWZ1NkN3elNkTWVDb1RKV0hxVE4zUl9oYzVpc3gwQi1oN1ZwNXhwbm5JVC1QUi15b1N2MkhhV0laR0JrZDdxdm0yX0ZFanAxanhRUFZfQWwyUg?oc=5",
-          "time": "2026-09-27 13:57:13",
-          "publisher": "Google News→UDN",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 14,
       "negativity_pct": 9,
       "urgent_red_comments": 0,
-      "urgency_score": 193,
+      "urgency_score": 190,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -158124,6 +157673,16 @@
     },
     {
       "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+      "time": "2026-09-28 13:26:20",
+      "platform": "news",
+      "publisher": "Google News→tw.news.yahoo.com",
+      "hour": "2026-09-28 13:00",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5RlBtbzJJV01fcVYtNV9UazRYaERiXy1xdzJHS1JTWHdvOFplN0RsaG5lUWlwSDF6VG1yUmplQWVaSjFhVGg5SDE2c1J0NFNaLXR3d1JmNnJ4YTYyT0xHWm1QMVNOY2ZJaVHSAW9BVV95cUxQampUY2IzMXdZd2RRZF9Vb3FIVnFvc0JieHZkb3BtS1hWYnlmbTJ0NWpBSkJ4dWJKUHhHeDYxUnVvQnJVWjJoZ1dIZnBoRng3Zjg4VzBEMVQ0TThHdEZGS2ZGel9yR2wxb29XXzZ5MG8?oc=5",
       "time": "2026-09-28 13:26:20",
       "platform": "news",
@@ -158658,15 +158217,6 @@
       "publisher": "Google News→台灣生活新聞",
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "吳品叡邀盧秀燕站台賴總統27日為蔡易餘助講- 地方",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBGQXFSYjRMMzBWTWtDSWg1Qml3MDRwUnB3TmhLb1pteFZLd1NmOEZaWVVfMmEzU0ozbWdtNG11ZFpTdlZ1ak1jTEU3bW5adTBRRWJDenNaVURucmpxZUNCc2puYVRzSW45NGRVTW93?oc=5",
-      "time": "2026-09-26 13:57:02",
-      "platform": "news",
-      "publisher": "Google News→華視新聞網",
-      "severity": null,
-      "is_negative": false
     }
   ],
   "articles_7d": [
@@ -158676,6 +158226,17 @@
       "time": "2026-09-28 13:38:02",
       "platform": "news",
       "publisher": "Google News→Newtalk新聞",
+      "hour": "2026-09-28 13:00",
+      "day": "2026-09-28",
+      "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+      "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+      "time": "2026-09-28 13:26:20",
+      "platform": "news",
+      "publisher": "Google News→tw.news.yahoo.com",
       "hour": "2026-09-28 13:00",
       "day": "2026-09-28",
       "severity": null,
@@ -160556,7 +160117,7 @@
       "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOS09JVkhGVmhHVFE2MmM5V1pqMS1GRHNsem50U2NnaHZGRXNmSzhYX2lDVFJEaXBxNDFSTTUxMTdnUXJxSEs2SW9UX19neTh3dy1PV01mRHN2VnhHcG5WQk9VcDNUWTVGSHFCNk82NmxDTWJzODJhOGtmM01oeGllaWRIWVh6U2pjRHZJeHpsZFRTTUd0SHBWU1ZUWFJmVU1TOHRKM2VTWmdXQlR3ZHpTMWdoQnIxR0dmXy1udWxUbXBDOW9CbTVERVFXWlFsZkJ0ZVBveTA0bnpVY0pIbnBGRXczaVdGM09ZSzJoZ1VlcU8yUXNwT0R1ZGluYmx1UzJhN0FxSGx4aFhTcmtyUmV5OFYxTEk0a3huUzR3dDc2el8zWHY4YWhKTWdqYUNaU2ZNRTdGemM4TGtNODZ3WlFtUVluS2ppamc0dzBwQm11OG14NTRhX2swd1g1NGJlX21YMVJ0blpWREtzSjk3ME1kczFOMVp2Zw?oc=5",
       "time": "2026-09-25 13:53:00",
       "platform": "news",
-      "publisher": "Yahoo新聞",
+      "publisher": "Google News→tw.news.yahoo.com",
       "hour": "2026-09-25 13:00",
       "day": "2026-09-25",
       "severity": "yellow",
@@ -173057,43 +172618,15 @@
     {
       "title": "盧秀燕再拋「在野大聯盟」 綠委：打臉鄭麗文！薑還是老的辣",
       "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQZ0xXbGJfOHpXUVVYS05oNFBHYXNIcS1TWGRBeUVZalREdURrMzZ6Z0NBTDhXS2k3ZVhGTTVXXzNTYnhVUGIzNVFwVl9xNjhVUkpsWlYwZ3oyVEtRaDU3NzRvcFZHSmUweUx5N2NXcVBMenowREVQMmVkVkpUaDgtZVBkOEl2NDFPRWUxUWNwc3E4cVE0TWhuMUlCR252MENKWkxsS2N4amtGZXNSeHZySC1rSUEyZWFCSzdickVybTdkMWtnQzI0Q0hhYl9uODRleEdIVFpTbFAwbUZ3LTRUdUlrOFFCbFp5T253eWo2OGhFaS1NaWVfSWEwMXdoQ2dfbjRfZUdVY08ycktaS213WFJ4dDBqdlFoRTBDSllvRHdvNTlrMmtlQ2FwZVJ1a1hzMEJVVVNXaWRtRkxrNE1JZjE1eF9Xc3Y3TDZjZW1tSnpaZXFCTDhRTy10eXZWU3NrNFQ2R2k3a1Jub0k5?oc=5",
-      "time": "2026-09-14 14:08:00",
+      "time": "2026-09-14 14:15:03",
       "platform": "news",
       "publisher": "Google News→tw.news.yahoo.com",
-      "severity": "yellow",
-      "is_negative": false,
-      "hour": "2026-09-14 14:00"
-    },
-    {
-      "title": "盧秀燕再拋「在野大聯盟」 綠委：打臉鄭麗文！薑還是老的辣",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBLRk1TRDlOUnUzZWdlaVpzQm9JZGk0YlRkcl9WdFpCS3Z5SzE5ckJDa2k4bjI2dm5obGtJaFN1d1hsTXNib000UdIBTEFVX3lxTE43VzktMDRWNmJqUWVaMXpwc3RTblctN09SQ3RaaXlrMmdINGNkTmxmdVd1NDZnS005ZUdFeWFhdjJqZVVvUUVHczJfRno?oc=5",
-      "time": "2026-09-14 14:08:00",
-      "platform": "news",
-      "publisher": "三立新聞網",
-      "severity": "yellow",
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕拋「在野大聯盟」 蔣萬安接球：北市就是要藍白席次最大化",
-      "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxQdnpaSjg2UkotcDFfWDU4MWZIQTkyUkd0VXR1aU5IbW5IbU1Qd3lGSTYyMVZTWlVMVjVfOVdVZDdraFRJVFhkVTJJbDJXQ0RTZjVMbDNyZXVwTUFfYkVBOTBvblQ5dmJjUFdLS056d0ZYYnUzYTBvZnE5Vm5xWTg2NTZFVFhWRzQ2SVNwZ3FEZ05OVlJ2ZHpiWkRUMnNON1B5dXczYjJhaUNYWUF0TjRDaDlHMG1kVVlNR3ZOeVdrT1libFBVeFV2LW9LdnFXYkdqaGtKNmlUdlNCSGR5Q3RVOUt0d09fbThJTG1YaHdGSm53c3hFRmtrY0hQYXhKVmNLOWNjdzNZejh2M0NHY3ZOTjJmV1phc2dJNERUSlNuLWJycllMSkVuX00xc3NhTjJzNUw1SzV2TEtKQVFmYzVpTjFDZWxjZ01nOFVFekttbFg3VjFTVFlYUVo3N2l4V01aeHhjRjBRWTFCUzV4RzA2dWc2bGNkWlo4cnY2RlMzRHQ4a2J0dmpWMVY3ZGw0T0k?oc=5",
-      "time": "2026-09-14 14:06:00",
-      "platform": "news",
-      "publisher": "Yahoo新聞",
-      "severity": "yellow",
-      "is_negative": false
-    },
-    {
-      "title": "盧秀燕拋「在野大聯盟」 蔣萬安接球：北市就是要藍白席次最大化",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Fdk1xaVItcjF0RGN2M3lzbklrNDRZVVZkRTNkdUlGMXFodG5wS3prVUN4MWRzVGNRRi1QMGZWNUFIQVpSLVZKbGZ1dw?oc=5",
-      "time": "2026-09-14 14:06:00",
-      "platform": "news",
-      "publisher": "Google News→ftnn.com.tw",
       "severity": "yellow",
       "is_negative": false
     }
   ],
   "media_framing_7d": {
-    "sample_size": 13865,
+    "sample_size": 13819,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -173176,11 +172709,17 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 609,
+        "news_count": 610,
         "negative_count": 17,
         "negativity_pct": 3,
-        "sentiment_score": 575.0,
+        "sentiment_score": 576.0,
         "articles": [
+          {
+            "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+            "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+            "time": "2026-09-28 13:42:53",
+            "is_negative": false
+          },
           {
             "title": "胡志強盧秀燕同台力挺！江啟臣趕場輔選喊大台中「要強要勇」",
             "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uVWY3am10eERSdXF4alpBY3dFMms0NEZUYngxOGV1aVN5TW45aDNhQUdnMzZONVQySWl3NHBLTG9fZ0VNNzdzZGd1VDFSWWhHTDc0SU9vajloNTA?oc=5",
@@ -177186,10 +176725,10 @@
       {
         "city": "台中",
         "candidate": "蔡其昌",
-        "news_count": 6,
-        "negative_count": 4,
-        "negativity_pct": 67,
-        "sentiment_score": -2.0,
+        "news_count": 5,
+        "negative_count": 3,
+        "negativity_pct": 60,
+        "sentiment_score": -1.0,
         "articles": [
           {
             "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議- 股市爆料同學會",
@@ -177200,12 +176739,6 @@
           {
             "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Ic2xvSU02WEV2NGI3TmRueENjLU81N2lfZVVSckJtZGxNN1plTTFfSzBsMEhzbDdMZGhNcTZDM1ZfaXBKUEU1c19lZXJWR0Fiek52MjBGRFA4VFVYRC1DNHQ4UVc3cko1d1HSAW9BVV95cUxOT3I0TVVHTHdVZkhPcm5qYldFVmhWeXE5emQtQUR4SFJJM3BBYV82R0txT0xvSFh3OUZVejRaeWdqQnQ2MU5FRjctM1p4dHhVRGZ4SFA5cE9uZ1lKUkVRaXdCYjR2UDA0dHdOLWFlTlU?oc=5",
-            "time": "2026-09-28 06:51:48",
-            "is_negative": true
-          },
-          {
-            "title": "沈伯洋在「雞蛋糕加東泉辣椒醬」 台中人何欣純、蔡其昌抗議",
-            "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQa1RZbUdiME9EeDlTQ0V5cFV6aGtOU2hmNVFuN1FrVnBQeFNKTEdWZ2hMRGt2dW9zZHVIRjR4OFdaTGxndW15SlRGblVoaXNyUlZLM1hvWW9TQWNtVmZOS0FrQmxFNnRPQVVzeU1PX1NvbkIyalBWUllBWFZpZC0wWnotTTZERm1Rdk4tcEtHeFZrUU5XNFdPRWtlclhMbG1fbjNSNHRyblE4LTFBTXhtLU5JcG5NZkQyTmt0bDRBUTVIM3Flb3dMZTY4TXpJUlV5MXBqcFJ2VG5rY2JDRThSaHU0ODhPSVBDZU5qb3o4UHBCc3FXREZobVN5YkJ1Qm5QNXBvTE1rSW9wdGZ0QUVpaEIwQk5hcnJWZzVuTEdXNV90ZW96a25OZjNBRmxFNU9waWVxeDFzQkswX2hfSHBJdDZHb0Z6aEl4dGJlNVY0VVk1QklqQ1lUNGhUSVVuUjBJOEtEYmU0Y3JEU0hMUHkyVFoxM1dGYU0?oc=5",
             "time": "2026-09-28 06:51:48",
             "is_negative": true
           },
@@ -177232,10 +176765,10 @@
       {
         "city": "台北",
         "candidate": "蔣萬安",
-        "news_count": 3173,
-        "negative_count": 394,
+        "news_count": 3157,
+        "negative_count": 393,
         "negativity_pct": 12,
-        "sentiment_score": 2385.0,
+        "sentiment_score": 2371.0,
         "articles": [
           {
             "title": "發文16度提「台灣」挨酸選情告急 蔣萬安：愛台灣非民進黨專利",
@@ -177289,6 +176822,12 @@
             "title": "被扯進蔣萬安修改學歷風波 游錫堃：躺著也中槍",
             "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tb3Y4ZVhOZ3E0WWZ3S3NUc243cXJzN1RHZnJhbnI4OWozT0FPdVpMeGRqRE93b1JpQjNaMy1LTXVKV1J6cVdEbG83NmRGZm50ejlkMEtqV3bSAV5BVV95cUxPQmVzUkhOajg2NzVDd00ybkhJRXJCUER4LVJrYnRsZ3Q1RG90VUNqcU5lOWE4VDZqMTJWMlZWUDJyZU0zNnBkVmhob2ZZbUhhZXpza1NzR0VfUXBXSWh3?oc=5",
             "time": "2026-09-28 13:32:00",
+            "is_negative": false
+          },
+          {
+            "title": "蔣萬安高喊「Team Taiwan」！臉書遭網灌爆 狂酸：要選舉才這樣說",
+            "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEM3k3eUozRUZaSVBwTEEzZVQxMk1pQkpwaEVUeC1ybXA1RmRlWlZtZUpycWZMdlJvZS1lOE1KbHB0NVFNVGRPMtIBTEFVX3lxTE5SakdYcUluYXBHa1JQbmVyZWtDcl9RcXBWNGJGYlZRWGxSTFN3UTh2bDNBd0l3U0wwR01HT0xRZ25faXlZZVdBVXVxMms?oc=5",
+            "time": "2026-09-28 13:30:00",
             "is_negative": false
           },
           {
@@ -196172,108 +195711,6 @@
             "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxNWVBDcGt1ZG9wZmt6LVl2MjM0SXBLZXdlUEk4SnFMTGFFSXRRanRYOE1wWFJEYWMxVFdTWXVidmd5a2tpV1gwaFRXck9kTjJYV0t2RFRWcEp5MnlrT1FvUVNpbUhLMjduZjJFWFNDODNSUlBDZFdsaG5SbC1KZXBZbXU4ZGFJOFVFTDdjZHBfSjdpN0s0VklhNUJlbE5vZkpfWm9ISVhXQkR6RzZ3aG1oUTZEU3RlenFKMmZlbGlXa0JScXYtWjRhSEFTNnNCSlFVanNwNk10YkYxNlJRMUVDWDA5QjhmQlRDUnBSX0RuMjIyQnljOGJUa1dVdERpUWJpajA4MUFYOVdMMEFLMWJ3cmJFUzVyR19HT3ZDSWlzb01hOF96VHVkUGE1M3NlMXhxdHVIblJ1UGQ1WDAxTXZuTTRjV20zY29ERmhSX0ZTSlFMcUFFZ3VKdmh0eUZBSy1yQllvc1hxQXdKc21uYjJ3aE9pOWtaS0FYdldESURjNHJ2N19PZzVtczh6dGN0V2hv?oc=5",
             "time": "2026-09-21 14:12:51",
             "is_negative": false
-          },
-          {
-            "title": "鬍鬚張少東表態挺蔣遭抵制 蔣萬安1張照、7字發聲了",
-            "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOZEdDRnpDcmlOQmRiVTdIeEdtNVBWemFCLVozbU54X0xUWUd3WUo4SjY0eTNKSTg5cDVVaDRnMzBPMzZQaDRCSGVDejJJS0lVVTN6WFZtYXp4WVUycHphbm1pR0VkaUF1c1BrVWZFUzdDNk1JUlNkTEg3SFBkUU5mVkx6U2I4UHdTTW9TdFJBSElRZTNwR0hjSGtHSHhjN2hocXYzNmJkSG1DcjJ5dGpmZm9yTW9EOGVLQ1g2TUVlQzc5c0liN3l5TkxSZ00wbXdlbHBPUTdfZlhGcmpwZHkwbXVOTUJGNm1WeTh4c0tHVHM5U0ZlaE5wOWNRRnpzVFhxdGFTMzh3di1EY3lrOHViTkFyTjlzcDdxVzZxZm8zSWkyRjlZMG1VOGNzRTlyVHByOThIU3lhdmlYVHpYWFRMMWM2a3Y0dlZXUGRodEpQQ3JhU01z?oc=5",
-            "time": "2026-09-21 14:10:41",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安答應上節目還不夠！沈伯洋追辯論同意書：兩家電視台已邀約 主張交叉詰問",
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYUFFIRUZOaFQ1Y01FZndLQTBQY2tRbS1FcGo2dG9RN2RXN1VpaXJCNkY5M0M2UWNWeEhQSmNHZ3RaaG9WV0w5Mk80dnlMcDA5UGc?oc=5",
-            "time": "2026-09-21 14:06:11",
-            "is_negative": false
-          },
-          {
-            "title": "鬍鬚張少東「挺蔣萬安」遭出征 市長「學歷」備受質疑｜#鏡新聞",
-            "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQZmtRSlM4T0hfd1RKcU9uck5UUWQ4cnRfRDgxTUtlaDRrLVRORHVQdHlubXpucmE0ZmdZczk2X2tkU1RDOGI4OFp5LVZNZDFnVlo0VmlSUGZTWldQenJLTF9TQ0RnV0V3Wk5PdkJ0NEU2ZjEwaFB3eUlHSWVTaENoOEhGenU2Z25rbUthYjdDUVFpSVhxWWVLTDZuQzRtNTJtMC1wMnNsMmdJTjYtN0FfSnRYUVJyZGRldTVianBsbEI5SEFKU1V3NTlaY1pROTN6M21TTHJVaUlBX1EycU91Y0dmb3pyejI0dTVvZjVwNEF1cU1QNnpyR2RMNThiX0pmX2l3a2VxLTJvVnBzTVUzS1JwWEhQaFNK?oc=5",
-            "time": "2026-09-21 14:05:01",
-            "is_negative": true
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-            "time": "2026-09-21 14:04:00",
-            "is_negative": false
-          },
-          {
-            "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸| 政治",
-            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB2T3F3SzdvUFJNbGZtTm9ZTDRSdU81M1hTcHJqMXo0NUxhUUh6aWYwVjBuelI5d3lfdWdIUkVTVVpOYjNGRDdhVUh4cy1TYm9PQ0tNUDREV213aUU?oc=5",
-            "time": "2026-09-21 14:01:00",
-            "is_negative": false
-          },
-          {
-            "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-            "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPRU1YQnNPaWZhZjlzc2x5cG00WWxmaVktaEFSMGFDU3FpZE9JbE9YejhiTE9ZbGt0VV9TQmUzWHhjY1E1MkQ4eEZaTDAxNFhuWFVoT3RBZGU4QWJXcWRnYzNfX01vZktZQmFUZDdvMVR2WnlHSVVMcjZjM3RGWGN6RVBTQVhRRUJHcVVodmJ6YUlid3RsMW85Vl92WFNxeUp3Wi1zd3FnNlRyX3ZRLU1EaEhkWFlEMlIwNkU1dXZ5UlNvOU05ZC15OUh4QnZlWFhrZ2t0T2xUU2M3VXlCdzdLZ0MwM0dhVDlYMVRIM08zbTFydGxoYXoxUks4ZlE5Smpud0Rhc3haelB6dGsyVjRCZGN5VERHeUY0dlp2a0s4RWwtMm1pVHpGMkJncmY1R0RVU3ZxMUpVT1hFek9PeUEtQjRCckNIeFhq?oc=5",
-            "time": "2026-09-21 14:01:00",
-            "is_negative": false
-          },
-          {
-            "title": "台北路樹遭「誤砍」 蔣萬安：台北市政府一定嚴懲不貸",
-            "url": "https://newtalk.tw/news/view/2026-09-21/1061033",
-            "time": "2026-09-21 14:01:00",
-            "is_negative": false
-          },
-          {
-            "title": "挺蔣萬安遭出征！白委洪毓祥請助理吃鬍鬚張：別和商家過不去| 政治焦點",
-            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rMDg0VFlBZU1CNGx5Y1ByeFpLV0lWcXdXVDQwWTh5dnREaEVvVVJjVU0xQS1jWWU0QV92QWk4aWg2akZvN1RwUThteWdYUHZDcXhIcEV1QlhLVnpO?oc=5",
-            "time": "2026-09-21 13:58:37",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安午餐吃鬍鬚張無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55bjd2QjdhaVRxQ3VMN1RSYmdLMzBYTVFYcFpqYXplYmNlTDd3NlJjTDN1VGZFMGdYYjkzYmJRWTJUb2IybjJwNTlUSlFSVURpQmZzay1Wblc?oc=5",
-            "time": "2026-09-21 13:57:09",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制 臉書貼文以行動力挺",
-            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yb3hPRm91RFhlX3d6dXdRV3A4M0ZSR2VRWXN3Y09IMDJmeHVsUE4zZXV4Nno5bmJQN0N5MTZaY3lnY3pEVVpyd1M3NE1pTkdrM3pV0gFYQVVfeXFMUEV5NzBrdVZCNC1JS3JtYXFvLThNcl96bkRFQVhESzdsbUxsZVR4NnJrbGZ6ckFUUno1T0FjdlNiamQ4UlM5Y2hyMmxzOWpFSnpoWi01VDhtQw?oc=5",
-            "time": "2026-09-21 13:57:09",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安午餐吃鬍鬚張！無懼青鳥出征抵制臉書貼文以行動力挺| 2026九合一選舉",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kaWNMaEFsRUhJQ2hiS1pVa2c4SVVGaU85RFlDbDV3X3NRbFQ3ZV9xd2x2b0w0WnI1bjhjOXlLRUk3aGs5djVMMWhINEdHbHd5MjQyME5uRWNnOTFFdWg2N0dlU01fM3h6OVE?oc=5",
-            "time": "2026-09-21 13:57:09",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1xVnFndVZfQ3pfeHFUWjlHOGIzdklIQnhETzJuZ1BXY25FRzNkNlowMjZiUXBxbEJwZnJxemxvMVcwNGNjUXgxZkZQaWFLaW5RZ0owcV9kLTA1WTctZGfSAUtBVV95cUxOSWJEal9fNnhwdkVXVnN4S1Q3dFNIS0E0R1NPZ0d5RllQQUtTaGQwNVJTN3laanowYWFOT2drWFJ3aG1NMkJPNkczdWs?oc=5",
-            "time": "2026-09-21 13:57:00",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安聲援鬍鬚張少東！ 大口吃滷肉飯笑了「我不喜歡攪拌」",
-            "url": "https://www.ettoday.net/news/20260921/3241295.htm",
-            "time": "2026-09-21 13:57:00",
-            "is_negative": false
-          },
-          {
-            "title": "東門市場茄苳樹遭誤砍 蔣萬安：廠商、市府人員失職嚴懲不貸",
-            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAyaUFlZFRWb2xVbG5JbEFlaDdueklCREZ6QlNnbUZ4enRMckZxX0hod0c1M0lDc194TmtremhqOXJTWElvNkR3MDlsaWtqc0c2bk4yYXlURHlSWVhiSzZzd2pUVzl2MU9pUmtYcUF5bURZcWM?oc=5",
-            "time": "2026-09-21 13:56:54",
-            "is_negative": false
           }
         ]
       },
@@ -196596,10 +196033,10 @@
       {
         "city": "台北",
         "candidate": "陳其邁",
-        "news_count": 46,
+        "news_count": 42,
         "negative_count": 0,
         "negativity_pct": 0,
-        "sentiment_score": 46.0,
+        "sentiment_score": 42.0,
         "articles": [
           {
             "title": "沈伯洋民調逼近蔣萬安！陳其邁大讚「有料」 看好洋流效應外溢全國",
@@ -196851,30 +196288,6 @@
             "title": "蔣萬安竟稱「高雄進步」 陳其邁：當市長就是把困難克服",
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA5YXVUaGw2eGtkdVB0OFZCbXVESTlNMW8tNk5YWDllUnZETk9xR3R1OUhqTlB1WUd1YkwtMDZsN2dMMzZ4b29LV0h6WW94X1A4eVU4?oc=5",
             "time": "2026-09-21 14:19:00",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-            "time": "2026-09-21 14:04:00",
             "is_negative": false
           }
         ]
@@ -198926,10 +198339,10 @@
       {
         "city": "高雄",
         "candidate": "陳其邁",
-        "news_count": 344,
+        "news_count": 340,
         "negative_count": 0,
         "negativity_pct": 0,
-        "sentiment_score": 344.0,
+        "sentiment_score": 340.0,
         "articles": [
           {
             "title": "「2026夏祭新鮮市：相揪來旗山」蕉城映像行旅攜手「旗山x沖繩國際食旅祭」熱鬧登場陳其邁力推高雄在地農產邀民眾漫遊旗山感受山城豐沛活力",
@@ -200970,40 +200383,16 @@
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA5YXVUaGw2eGtkdVB0OFZCbXVESTlNMW8tNk5YWDllUnZETk9xR3R1OUhqTlB1WUd1YkwtMDZsN2dMMzZ4b29LV0h6WW94X1A4eVU4?oc=5",
             "time": "2026-09-21 14:19:00",
             "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-            "time": "2026-09-21 14:04:00",
-            "is_negative": false
           }
         ]
       },
       {
         "city": "高雄",
         "candidate": "蔣萬安",
-        "news_count": 57,
+        "news_count": 53,
         "negative_count": 0,
         "negativity_pct": 0,
-        "sentiment_score": 57.0,
+        "sentiment_score": 53.0,
         "articles": [
           {
             "title": "一圖看／「洋流」衝蔣萬安得票？藍2026熱區曝 新北、高雄關鍵對決",
@@ -201322,30 +200711,6 @@
             "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA5YXVUaGw2eGtkdVB0OFZCbXVESTlNMW8tNk5YWDllUnZETk9xR3R1OUhqTlB1WUd1YkwtMDZsN2dMMzZ4b29LV0h6WW94X1A4eVU4?oc=5",
             "time": "2026-09-21 14:19:00",
             "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aVVF1b1FVU21NdFRsZ1ZSWWtSdExDRVJVYlpfbmRfdVR6REJNaVNtVTJSMDBNTnVMSm9Ob2wySS1XVmdtTUczRkQyQ0pldkN1N3R3Q1RGNzIwUHBZN21hcHp1Z1hIR1VOalHSAW9BVV95cUxOX3R6dlY0Q2FKd2loNUZTbFZYVjVTR3VaLXJ2aVJXWXBtSHdhb2ttVGIxdThVSmhkakhXb0phZ1NLb2JwWExLeEtxUDg0VmxRbW5WN3VnNW92UVEzZmVLN0cyMDVmZ1FCY1N6MnRwTnc?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQcTVQbkFRbk4wYjdsWF9xaTFqX1FuX0tpd3h1WVBLNmNvOXY0MGI5WkprQW9MZUd3SG82YjctTVlHT1IyR21RamJaaHZRZ2Y2S2N1OHZpZE1mVi1oak43eXFVQm82Y0FZVDc4ajJ1eV9saUlIZmJzWE05MFZsQ1p0ejY3ZjBzUjhyb1dvb0pIZW5pbklZUGtEeDdGV2NFVHYwMW1fTUF5S3pTd0VQeVAwMkExZ3lBcUJUMGFEYUZBUlZTQUcwQlA4WnhhSXVRZkhxMkR3My1aWVZ4RlEwYVhEQmtZaTFjZF9hV1JGQzZabElVQTZtVGdTMGE3MlBjRF9VMkxVOWZ5Zm5LRkxqN0NtTmlkTm13N2VSZS1Hck9NYldXdw?oc=5",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.ltn.com.tw/news/politics/breakingnews/5581102",
-            "time": "2026-09-21 14:04:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安讚「高雄進步看得見」 陳其邁回應了",
-            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQODZNanl3MFVHQ1VDZzJWY2I1a2tPc25IVVNucmZwZDRaUVlvZXhlRDllejYwbVZmUWpuOVprU25ETlJtVWtldkdnQlU1bjU4QW51YzlWd0tpcnRyNGdiLVFyeVdXN1dhMHpJNk9jcVRBbHVNQ2JRc3Q2TEVvSE1uaThUb0taUQ?oc=5",
-            "time": "2026-09-21 14:04:00",
-            "is_negative": false
           }
         ]
       },
@@ -201546,6 +200911,16 @@
         "time": "2026-09-28 13:38:02",
         "platform": "news",
         "publisher": "Google News→Newtalk新聞",
+        "hour": "2026-09-28 13:00",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:26:20",
+        "platform": "news",
+        "publisher": "Google News→tw.news.yahoo.com",
         "hour": "2026-09-28 13:00",
         "severity": null,
         "is_negative": false
@@ -202340,7 +201715,7 @@
         "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOS09JVkhGVmhHVFE2MmM5V1pqMS1GRHNsem50U2NnaHZGRXNmSzhYX2lDVFJEaXBxNDFSTTUxMTdnUXJxSEs2SW9UX19neTh3dy1PV01mRHN2VnhHcG5WQk9VcDNUWTVGSHFCNk82NmxDTWJzODJhOGtmM01oeGllaWRIWVh6U2pjRHZJeHpsZFRTTUd0SHBWU1ZUWFJmVU1TOHRKM2VTWmdXQlR3ZHpTMWdoQnIxR0dmXy1udWxUbXBDOW9CbTVERVFXWlFsZkJ0ZVBveTA0bnpVY0pIbnBGRXczaVdGM09ZSzJoZ1VlcU8yUXNwT0R1ZGluYmx1UzJhN0FxSGx4aFhTcmtyUmV5OFYxTEk0a3huUzR3dDc2el8zWHY4YWhKTWdqYUNaU2ZNRTdGemM4TGtNODZ3WlFtUVluS2ppamc0dzBwQm11OG14NTRhX2swd1g1NGJlX21YMVJ0blpWREtzSjk3ME1kczFOMVp2Zw?oc=5",
         "time": "2026-09-25 13:53:00",
         "platform": "news",
-        "publisher": "Yahoo新聞",
+        "publisher": "Google News→tw.news.yahoo.com",
         "hour": "2026-09-25 13:00",
         "day": "2026-09-25",
         "severity": "yellow",
@@ -204818,6 +204193,17 @@
         "time": "2026-09-28 13:38:02",
         "platform": "news",
         "publisher": "Google News→Newtalk新聞",
+        "hour": "2026-09-28 13:00",
+        "day": "2026-09-28",
+        "severity": null,
+        "is_negative": false
+      },
+      {
+        "title": "中市議員參選人吳宗學競總成立 盧秀燕稱「瓦斯添」變「瓦斯學」",
+        "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxNcXpRei1LZVdjZ0pyU0lMRXIwU3BzUHIwU0t1Mk45dG9tOGJ3cy1zV1hqcTJaMFNWZ0hzamJfcmZwMERqaGwxQTBkOHhZR2JJaHY1YVZDb1NBcGpwblR2OTNzcEo5ZUxaUXVNX0NHbE5CeXRKSnRaSGVSTTI5ZE1GUDNCNHEycHdLMnU3dnpsSFRXVHdXcnhJNVVpZ0lLOW00Z05DbUd3RE4ySmgzZFliNExxdHduMTRtUHBvS3NDTXMxdElMWVo0SUlxWkoxSVRpUV9iTEVuS3hYVXZQU1JkT0sxZUNVcjRkRUd1SnRvR1J0TWlYVHJ2YzZxcERPQk5TTG1GeHR5UjE2RFF0UFhWTUc2RXkwdmR2NnFKVy1pYU1kT1JqbVhfbkQ2R0ViQ2c4YUk4dGxVZVlkUU9DUFJCNzVadTNxZ3NFWm1iajNtM1owZExXaTE0UlhaeFRiOW1vSUhzV2FwU1lULWlZNGx4MTNuU2UteWMxdHFsSzlvUGxBOFZy?oc=5",
+        "time": "2026-09-28 13:26:20",
+        "platform": "news",
+        "publisher": "Google News→tw.news.yahoo.com",
         "hour": "2026-09-28 13:00",
         "day": "2026-09-28",
         "severity": null,
@@ -207991,9 +207377,9 @@
     },
     "yesterday": {
       "red": 9,
-      "yellow": 20,
+      "yellow": 17,
       "green": 5,
-      "total": 34
+      "total": 31
     },
     "yesterday_redyellow": [
       {
@@ -208227,33 +207613,6 @@
         "text": "游登亦 喔 我是中間選民喔～",
         "time_text": "",
         "url": "https://www.facebook.com/hsiao.kuan.chun?comment_id=Y29tbWVudDoxNjc4MjI5NzgwMzI1MjU3XzE0OTA5NDUwOTMwNTMyMjU%3D&__tn__=R",
-        "signal": "yellow",
-        "signal_zh": "黃燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "顏振榮",
-        "text": "民調可能又要第一了",
-        "time_text": "32 minutes ago",
-        "url": "https://www.facebook.com/yan.zhen.rong.971164?comment_id=Y29tbWVudDoxNjc4MjI5NzgwMzI1MjU3XzEzNTkyMzM1ODI2NTcyMTg%3D&__tn__=R",
-        "signal": "yellow",
-        "signal_zh": "黃燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "李東霖",
-        "text": "許喬壹 一直都在吃！沒停止過，物價漲我消費得起啊！油呢？中聯不是台中負責，是在哭？",
-        "time_text": "",
-        "url": "https://www.facebook.com/li.dong.lin.827727?comment_id=Y29tbWVudDoxNjc4MjI5NzgwMzI1MjU3XzgzNjc4MzYyNjE2MTMzMQ%3D%3D&__tn__=R",
-        "signal": "yellow",
-        "signal_zh": "黃燈"
-      },
-      {
-        "platform": "facebook",
-        "author": "Yu Chris",
-        "text": "毒油事件市府官員誰要負責？",
-        "time_text": "31 minutes ago",
-        "url": "https://www.facebook.com/chris.yu.5243?comment_id=Y29tbWVudDoxNjc4MjI5NzgwMzI1MjU3XzE0MDYwOTQ4MjA5MDQ3NzA%3D&__tn__=R",
         "signal": "yellow",
         "signal_zh": "黃燈"
       }
