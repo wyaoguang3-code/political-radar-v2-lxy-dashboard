@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "snapshot_at": "2026-09-29T18:14:55.531537+00:00",
+  "snapshot_at": "2026-09-29T18:30:45.703599+00:00",
   "hotspots": [
     {
       "title": "盧秀燕訪美外交",
@@ -66,27 +66,6 @@
       "comments": []
     },
     {
-      "title": "彰化車禍事件",
-      "city": "彰化",
-      "place": "彰化縣政府",
-      "level": "green",
-      "news_count": 1,
-      "comment_count": 0,
-      "negativity_pct": 100,
-      "is_urgent": false,
-      "urgency_score": 4,
-      "news_articles": [
-        {
-          "title": "中秋收假北返出車禍！國1員林段連3撞…「8車撞成一團」大排長龍",
-          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E7%A7%8B%E6%94%B6%E5%81%87%E5%8C%97%E8%BF%94%E5%87%BA%E8%BB%8A%E7%A6%8D-%E5%9C%8B1%E5%93%A1%E6%9E%97%E6%AE%B5%E9%80%A33%E6%92%9E-8%E8%BB%8A%E6%92%9E%E6%88%90-%E5%9C%98-%E5%A4%A7%E6%8E%92%E9%95%B7%E9%BE%8D-032000138.html",
-          "time": "2026-09-29 03:20:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
       "title": "宜蘭車禍事件",
       "city": "宜蘭",
       "place": "宜蘭縣政府",
@@ -102,6 +81,27 @@
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1idE9icnctbG1DeS01d3FBelUxTmd1SkloZFIza3E5TWktTDAzYmdHaGdqY1hlekRMUF90UTB0YTlUU09GUGdYaFlwdEM3czZY?oc=5",
           "time": "2026-09-29 13:23:18",
           "publisher": "Google News→UDN",
+          "severity": "yellow"
+        }
+      ],
+      "comments": []
+    },
+    {
+      "title": "彰化車禍事件",
+      "city": "彰化",
+      "place": "彰化縣政府",
+      "level": "green",
+      "news_count": 1,
+      "comment_count": 0,
+      "negativity_pct": 100,
+      "is_urgent": false,
+      "urgency_score": 4,
+      "news_articles": [
+        {
+          "title": "中秋收假北返出車禍！國1員林段連3撞…「8車撞成一團」大排長龍",
+          "url": "https://tw.news.yahoo.com/%E4%B8%AD%E7%A7%8B%E6%94%B6%E5%81%87%E5%8C%97%E8%BF%94%E5%87%BA%E8%BB%8A%E7%A6%8D-%E5%9C%8B1%E5%93%A1%E6%9E%97%E6%AE%B5%E9%80%A33%E6%92%9E-8%E8%BB%8A%E6%92%9E%E6%88%90-%E5%9C%98-%E5%A4%A7%E6%8E%92%E9%95%B7%E9%BE%8D-032000138.html",
+          "time": "2026-09-29 03:20:00",
+          "publisher": "Yahoo新聞",
           "severity": "yellow"
         }
       ],
@@ -380,12 +380,19 @@
       "city": "嘉義縣",
       "place": "嘉義縣政府",
       "level": "green",
-      "news_count": 7,
+      "news_count": 10,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 7,
+      "urgency_score": 10,
       "news_articles": [
+        {
+          "title": "嘉義縣響應台灣女孩日 「獨嘉花漾」10/3登場",
+          "url": "https://tw.news.yahoo.com/%E5%98%89%E7%BE%A9%E7%B8%A3%E9%9F%BF%E6%87%89%E5%8F%B0%E7%81%A3%E5%A5%B3%E5%AD%A9%E6%97%A5-%E7%8D%A8%E5%98%89%E8%8A%B1%E6%BC%BE-10-3%E7%99%BB%E5%A0%B4-172557871.html",
+          "time": "2026-09-30 01:25:57",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
         {
           "title": "嘉義縣警察局攜手金融、農漁會、超商及地政 聯防守護縣民財產",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xR1RDYTRzcnhBNG1tM1doTTZWbDhHUzA3azgwOEwzTU5paEsyejd2YVg0VWpmczhqT3VvbURJMWRleTRyNjdCQklDd24yLV9ZdW0yYlZCTmpFT1BOR2NnYnU5dUZrdWNfc3J3?oc=5",
@@ -398,6 +405,20 @@
           "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNS2Rpck5Yay1od0VsSU9NNXZWelUtLVA1MEYxbVZ1MmlyVXIxME9NN05MMGNNZ1p1U2xfRG4tY0E4aEJKeVNWUHhuYzV5eEcyTHJLX20xemJlQVg4Q0JabDZHaktLZV91UWNNc2dLNGVaR1ZIc18xOERvaFc5aVVJajVXTmJwdXFyRkJBUGVkVXJmcmNub2lBT0pCRHgtTlp2NlFMeEVMM0p3QkRYZ1ZTRUF1OGxmTVpZS2R4VlBRWWdOdlBLR3hVdlg0N2lpTk5FUnNaWXdsVk5JSlMyWkJvNW92RkVzYzRKQXVpTnVXeHpmMkJWaFJYQUMyV1d4Y2VTV2J2WldMSXNUbTBBcGVQSjNkUFRzbGxXRG1KWEVwaGE5V0NCbXhKcGRtc0FqOUlyU1lzOUVsT3pOdVkxSFNsdlRkVTY?oc=5",
           "time": "2026-09-29 19:51:00",
           "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣府升級竹崎奉天岩暖心中繼站完工啟用- 政府消息新聞",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLTFIWGtJcURZdWJrYk5BcktsOEtJZVNIeGpTV2wyMnhaSzI5U3gzLW5iMWNaOHBwZjMxNU9wWkNJeVlGeHVCbmZwcXJTRVdVYmcyc3lXZ21KWjlJWjlhaDBfemJ6ODB2OFZxdFIwRWpEbnctUTR6cDliM0NsZW5uRi1XYno?oc=5",
+          "time": "2026-09-29 19:51:00",
+          "publisher": "Google News→PChome Online 新聞",
+          "severity": null
+        },
+        {
+          "title": "嘉義縣響應台灣女孩日 「獨嘉花漾」10/3縣府前登場",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0zWm0yWFBuLXpjNGZyN0tiazVON1V3RTBqc09oM3ZjWTY3R2pnQVBZUy1WTzY1djFYVnhfRnJzSWxMSEpJOTB3Q2hpTmVVR1ZhTXFOMUxseUpkdm5rQ21nODNB?oc=5",
+          "time": "2026-09-29 19:10:05",
+          "publisher": "Google News→三星傳媒",
           "severity": null
         },
         {
@@ -712,6 +733,97 @@
       "comments": []
     },
     {
+      "title": "連江地方動態",
+      "city": "連江",
+      "place": "連江縣（馬祖）",
+      "level": "yellow",
+      "news_count": 11,
+      "comment_count": 0,
+      "negativity_pct": 0,
+      "is_urgent": false,
+      "urgency_score": 11,
+      "news_articles": [
+        {
+          "title": "馬祖防衛指揮部指揮官主持慶生餐會 凝聚部隊向心",
+          "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNUHF2TTJnVEppRjN3S1RCYkMxaGc0Q2RpMXJXQmsxS3VuUlhSbTFSblB3WXhzaFZHXzVDUXR1Ym0wekNnUV9XU204czk3X1dINTFCLV9nQTZmTzFTcUtDR3BXTXJLX19kell3cjV0QXY0U01OZk9FLWNTMlZMSTZaY0RVWXdQWkdPbENuY19mN0ptX1dGeG9uODRCN0ZsOUFYZlZjakpQbVRHRWxxSDZfSF9xWW1JRDFwX3JzLVNUQU1ReVIyX0RyZ2M2b3ZkV3draVZkUUlCbjg5dGF6ZjdnVWNGdkxCWW1WT2JESmdEVWdGczlzTHY5a241UG1TcU1kWm9XVmdpdk5kRC1STk03VzBTa3Z0UDRaWC01TDFPQm9GN0Zxc05rd0x5a1RkT2xjVmtnNUVTMmY5SGNMRHprZnI3R3JKNUVLcTk5NmRNYm9kdVVNLUVFcS0wS1E?oc=5",
+          "time": "2026-09-30 00:36:00",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "攜含肉月餅入境馬祖 男子遭罰20萬",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qSjFUeVM5eWlzUmNGa0szaTYwVzlrX3BGMjNLVTIybGY1eHFTZzVEcU5iNUNOd21pam1RSl9JSkdHaUxyZzVIUjVval9jWUZmR24wSW8xZzhwVkV3eHc?oc=5",
+          "time": "2026-09-30 00:03:05",
+          "publisher": "Google News→matsu-news.gov.tw",
+          "severity": "yellow"
+        },
+        {
+          "title": "馬祖機場暫停起降 新台馬輪延後開航疏運旅客",
+          "url": "https://news.cts.com.tw/cna/life/202609/202609293083967.html",
+          "time": "2026-09-29 22:18:21",
+          "publisher": "華視新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "好貴的月餅！帶含肉月餅入境馬祖 男子遭罰20萬元",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KcV9xVHRiWnh1WndoN2JiT1p1UkVZczhYcUdpVFZUUk0xSHI1Q0dXbjNEVTNZaWQxVTlzRGRHSENWSmNTN3NEd0FUcE5iMVZlYnZ4YmExNENKdml2SFE?oc=5",
+          "time": "2026-09-29 17:12:09",
+          "publisher": "Google News→matsu-news.gov.tw",
+          "severity": "yellow"
+        },
+        {
+          "title": "莒光代表隊出征連江縣運 陳樂禮率隊南竿參賽 王禮民碼頭迎接打氣",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE8yQjhsOUtnNnlQOUEyY1hKZFBoY0FCVmVFd0k3Q200QjB0cTg5TG1NZTMwUk5zMTRQTFE3QU5xZGVuWFJ6RWFr?oc=5",
+          "time": "2026-09-29 16:52:14",
+          "publisher": "Google News→886.news",
+          "severity": null
+        },
+        {
+          "title": "北竿代表隊整裝出發迎戰115年連江縣運 鄉長吳金平率隊赴南竿為選手加油",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBnTVZRZUNuUS1rX1NhRzhfSXJIZHEzSWM2b3RodGQwV1laYl80YjVyel9hUzBBWHd3bklmTEVLdUxINkVRdXl3?oc=5",
+          "time": "2026-09-29 15:36:08",
+          "publisher": "Google News→台灣新聞雲",
+          "severity": null
+        },
+        {
+          "title": "馬祖好物前進歐洲 駐WTO 代表團採購老酒與忍冬啤酒 登國際舞台 | 食品餐飲 | 商情",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Xckl6ZFVsSTQ5WUxqSWtfT21aMGdGNU9VQ1VfUlota1RFblhWWDVYV2Y0QzhnN2N6eUhYTUlVd1RWSW9JWVRXNVFpTkR0YVN4bFlCVUVUek1Mdw?oc=5",
+          "time": "2026-09-29 10:00:28",
+          "publisher": "Google News→經濟日報",
+          "severity": null
+        },
+        {
+          "title": "旅客注意！馬祖機場暫關閉 新台馬輪延後開航",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE90NlNRRTdFR1pFS0JkZVYzdXZlTkxLWWxlYnVobzhIWHQ0S1VYZ1prd2xxSkdBaFVuOVVCWmxXYXhpWHpVT3QtcURmMWh4UQ?oc=5",
+          "time": "2026-09-29 09:40:00",
+          "publisher": "TVBS",
+          "severity": "yellow"
+        },
+        {
+          "title": "濃霧低雲鎖馬祖！南北竿機場7時起「航班全暫停起降」",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZaHVEbFdiY3hlREM0Nm9XVDhFYnJpbkFnZGNBbnBOWEdkblR0V3E1bnF2My1RdlJPekpBSDRsSmVENm5wS1U1QjdPQ29sdXJiTFd1UA?oc=5",
+          "time": "2026-09-29 09:17:00",
+          "publisher": "東森新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "一週天氣預報》全台天氣變化、未來氣溫及降雨機率一次看 颱風「舒力基」位在日本南方海域，向東北方向移動，對臺灣天氣無直接影響。今、明（29日、30日）兩天臺灣各地及澎湖、金門、馬祖大多為晴到多雲，午後山區有零星短暫陣雨。 44 分鐘前 ｜ 生活 一週天氣預報》全台天氣變化、未來氣溫及降雨機率一次看 44 分鐘前 ｜ 生活",
+          "url": "https://news.tvbs.com.tw/life/2734738",
+          "time": "2026-09-29 08:18:16",
+          "publisher": "TVBS",
+          "severity": null
+        },
+        {
+          "title": "今日賽事(9/29)第11屆離島聯合運動會暨115年連江縣運動會",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iNV9KalBqZGdZTkNPa1hUTVFFOEVtX1dMM0hsN3VuMXo4Y3NCcUJ6MnpoU0FMb0RrNkQ2WlFTM05XY3B5ak1jamRHQTVMSENCV3JpRGJTODhhU20ySGc?oc=5",
+          "time": "2026-09-29 02:40:06",
+          "publisher": "Google News→matsu-news.gov.tw",
+          "severity": null
+        }
+      ],
+      "comments": []
+    },
+    {
       "title": "雲林地方動態",
       "city": "雲林",
       "place": "雲林縣政府",
@@ -798,104 +910,6 @@
           "time": "2026-09-29 04:10:00",
           "publisher": "中時新聞網",
           "severity": "yellow"
-        }
-      ],
-      "comments": []
-    },
-    {
-      "title": "連江地方動態",
-      "city": "連江",
-      "place": "連江縣（馬祖）",
-      "level": "yellow",
-      "news_count": 12,
-      "comment_count": 0,
-      "negativity_pct": 0,
-      "is_urgent": false,
-      "urgency_score": 12,
-      "news_articles": [
-        {
-          "title": "攜含肉月餅入境馬祖 男子遭罰20萬",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qSjFUeVM5eWlzUmNGa0szaTYwVzlrX3BGMjNLVTIybGY1eHFTZzVEcU5iNUNOd21pam1RSl9JSkdHaUxyZzVIUjVval9jWUZmR24wSW8xZzhwVkV3eHc?oc=5",
-          "time": "2026-09-30 00:03:05",
-          "publisher": "Google News→matsu-news.gov.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "馬祖機場暫停起降 新台馬輪延後開航疏運旅客",
-          "url": "https://news.cts.com.tw/cna/life/202609/202609293083967.html",
-          "time": "2026-09-29 22:18:21",
-          "publisher": "華視新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "好貴的月餅！帶含肉月餅入境馬祖 男子遭罰20萬元",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KcV9xVHRiWnh1WndoN2JiT1p1UkVZczhYcUdpVFZUUk0xSHI1Q0dXbjNEVTNZaWQxVTlzRGRHSENWSmNTN3NEd0FUcE5iMVZlYnZ4YmExNENKdml2SFE?oc=5",
-          "time": "2026-09-29 17:12:09",
-          "publisher": "Google News→matsu-news.gov.tw",
-          "severity": "yellow"
-        },
-        {
-          "title": "莒光代表隊出征連江縣運 陳樂禮率隊南竿參賽 王禮民碼頭迎接打氣",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE8yQjhsOUtnNnlQOUEyY1hKZFBoY0FCVmVFd0k3Q200QjB0cTg5TG1NZTMwUk5zMTRQTFE3QU5xZGVuWFJ6RWFr?oc=5",
-          "time": "2026-09-29 16:52:14",
-          "publisher": "Google News→886.news",
-          "severity": null
-        },
-        {
-          "title": "北竿代表隊整裝出發迎戰115年連江縣運 鄉長吳金平率隊赴南竿為選手加油",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBnTVZRZUNuUS1rX1NhRzhfSXJIZHEzSWM2b3RodGQwV1laYl80YjVyel9hUzBBWHd3bklmTEVLdUxINkVRdXl3?oc=5",
-          "time": "2026-09-29 15:36:08",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        },
-        {
-          "title": "馬祖好物前進歐洲 駐WTO 代表團採購老酒與忍冬啤酒 登國際舞台 | 食品餐飲 | 商情",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Xckl6ZFVsSTQ5WUxqSWtfT21aMGdGNU9VQ1VfUlota1RFblhWWDVYV2Y0QzhnN2N6eUhYTUlVd1RWSW9JWVRXNVFpTkR0YVN4bFlCVUVUek1Mdw?oc=5",
-          "time": "2026-09-29 10:00:28",
-          "publisher": "Google News→經濟日報",
-          "severity": null
-        },
-        {
-          "title": "旅客注意！馬祖機場暫關閉 新台馬輪延後開航",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE90NlNRRTdFR1pFS0JkZVYzdXZlTkxLWWxlYnVobzhIWHQ0S1VYZ1prd2xxSkdBaFVuOVVCWmxXYXhpWHpVT3QtcURmMWh4UQ?oc=5",
-          "time": "2026-09-29 09:40:00",
-          "publisher": "TVBS",
-          "severity": "yellow"
-        },
-        {
-          "title": "濃霧低雲鎖馬祖！南北竿機場7時起「航班全暫停起降」",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZaHVEbFdiY3hlREM0Nm9XVDhFYnJpbkFnZGNBbnBOWEdkblR0V3E1bnF2My1RdlJPekpBSDRsSmVENm5wS1U1QjdPQ29sdXJiTFd1UA?oc=5",
-          "time": "2026-09-29 09:17:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "一週天氣預報》全台天氣變化、未來氣溫及降雨機率一次看 颱風「舒力基」位在日本南方海域，向東北方向移動，對臺灣天氣無直接影響。今、明（29日、30日）兩天臺灣各地及澎湖、金門、馬祖大多為晴到多雲，午後山區有零星短暫陣雨。 44 分鐘前 ｜ 生活 一週天氣預報》全台天氣變化、未來氣溫及降雨機率一次看 44 分鐘前 ｜ 生活",
-          "url": "https://news.tvbs.com.tw/life/2734738",
-          "time": "2026-09-29 08:18:16",
-          "publisher": "TVBS",
-          "severity": null
-        },
-        {
-          "title": "今日賽事(9/29)第11屆離島聯合運動會暨115年連江縣運動會",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iNV9KalBqZGdZTkNPa1hUTVFFOEVtX1dMM0hsN3VuMXo4Y3NCcUJ6MnpoU0FMb0RrNkQ2WlFTM05XY3B5ak1jamRHQTVMSENCV3JpRGJTODhhU20ySGc?oc=5",
-          "time": "2026-09-29 02:40:06",
-          "publisher": "Google News→matsu-news.gov.tw",
-          "severity": null
-        },
-        {
-          "title": "連江縣紅十字會秋節送暖 捐贈大同之家輪椅及加菜金",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5RSktlVnI4Sk9RTGhjMVJUbVNaSFBtdkU2Q1Z3MXROMk1jZzlld3luTTJfNHNWZThZdjNESEFBVEJLalhUNXhn?oc=5",
-          "time": "2026-09-29 02:20:59",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
-        },
-        {
-          "title": "10月疫苗接種時程出爐！連江縣各鄉衛生所門診時間看這裡",
-          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1CcEc5UEdNUjNxeHNEaVBGb1Zsbk1QbEhVMmNOX1c3M2x6c2ZBbi1VUlhoMUZVTGRZYUFzTFRRYXJBSEJsOGUw?oc=5",
-          "time": "2026-09-29 02:18:29",
-          "publisher": "Google News→台灣新聞雲",
-          "severity": null
         }
       ],
       "comments": []
@@ -1451,11 +1465,11 @@
       "city": "金門",
       "place": "金門縣政府",
       "level": "yellow",
-      "news_count": 56,
+      "news_count": 57,
       "comment_count": 0,
-      "negativity_pct": 14,
+      "negativity_pct": 16,
       "is_urgent": false,
-      "urgency_score": 80,
+      "urgency_score": 84,
       "news_articles": [
         {
           "title": "-金門農工家長會改選 黃萱萱接任新會長共育農工學子",
@@ -1546,6 +1560,13 @@
           "url": "https://tw.news.yahoo.com/%E9%87%91%E9%96%80%E5%B9%BC%E5%85%92%E5%9C%92%E7%A9%BF%E6%B8%85%E6%B6%BC%E6%9F%9A%E5%AD%90%E8%A3%9D%E9%80%9B%E8%B6%85%E5%B8%82%E7%88%86%E7%88%AD%E8%AD%B0-%E7%B8%A3%E5%BA%9C%E5%9B%9E%E6%87%89%E4%BA%86-101334262.html",
           "time": "2026-09-29 18:13:34",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "金門幼兒園穿清涼柚子裝逛超市爆爭議縣府回應了- 生活",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBibi1kVHBiblVDT1dGaW1Ha0dvc1lKcFpSSjZYb3lEakFjUHhwS2EwQkRCWGN0Wk1JZmhkVTIxNHd4cHJSQXVja3VxUzFCQ1UyQ2tiWFoxMTFZQlJIbVBj?oc=5",
+          "time": "2026-09-29 18:08:00",
+          "publisher": "Google News→工商時報",
           "severity": "yellow"
         },
         {
@@ -1857,12 +1878,19 @@
       "city": "台中",
       "place": "台中市政府",
       "level": "yellow",
-      "news_count": 117,
+      "news_count": 118,
       "comment_count": 9,
       "negativity_pct": 2,
       "is_urgent": false,
-      "urgency_score": 134,
+      "urgency_score": 135,
       "news_articles": [
+        {
+          "title": "為整合密會王金平備戰2028？盧秀燕：向其請益",
+          "url": "https://www.setn.com/news/1914801",
+          "time": "2026-09-30 01:48:16",
+          "publisher": "三立新聞網",
+          "severity": "yellow"
+        },
         {
           "title": "為整合密會王金平備戰2028？盧秀燕：向其請益",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1KcFZrWmhFSEVWbHhhRWlNNWM5UTdQaVZYdC1TdnJDdnhtVGx2WnZHc0U4dEJxUjVtUkV0bEJ5YnlnNFYxOVI0MtIBTEFVX3lxTFBTckt1YkdVbG40ZjFnQlhUZjhlYkhnVDdYbUpUNVhKT0N4bUNCZDlMajRQSzdidEFZajRoVWJGdWdfczNDSFQ5SHptOHI?oc=5",
@@ -2966,11 +2994,11 @@
       "city": "新竹縣",
       "place": "新竹縣政府",
       "level": "red",
-      "news_count": 19,
+      "news_count": 21,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 19,
+      "urgency_score": 21,
       "news_articles": [
         {
           "title": "新竹縣全國古蹟日活動「造圳者:竹東圳與九牧第的百年密碼」，探索孕育台灣經濟奇蹟的百年水脈",
@@ -3085,8 +3113,22 @@
           "severity": null
         },
         {
+          "title": "鄭朝方10/3競總成立揮軍新竹縣 喊「全縣縣民都是主任委員」",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Lcl9SSnVia0ttbUwtdlkxRERDU1l6NzFHdVNlTVJHbE0wS3hxOVhJdk5BYWVvcHFNUWdfU01VVGtMMFRsY0lfY3A4VFg0UFJVX1VNb1hoU0RpcG5xZER5SERRenNzZFNJcWfSAW9BVV95cUxNTVJsZHdnbHZ2cW9ycEg1LVZFMVkyLXlPWFlZREM3OFVVVVJ5QVBXb0E4OW9pWkFzZzliSFdTYkdpMDBsZGlnQ0FBVjJWSm1NWFB6ajRDNTNFa25lWkZGOWcwWTlXdzFySjFKd0dhSUU?oc=5",
+          "time": "2026-09-29 10:56:24",
+          "publisher": "自由時報",
+          "severity": null
+        },
+        {
           "title": "北埔2民宅私釀酒藏612公升新竹縣府聯手警調查獲| 法律前線| 社會",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhaXBrdnlWZGJKeXhaV2hUelBWLVlSZTdIUW1jdWZTdUhldU55bFRuR3k2X1ptd1llSHd2LVo1eWFYcE5sZ2JFUlFhbE4tbE1L?oc=5",
+          "time": "2026-09-29 10:29:50",
+          "publisher": "Google News→UDN",
+          "severity": "yellow"
+        },
+        {
+          "title": "北埔2民宅私釀酒藏612公升新竹縣府聯手警調查獲| 法律前線| 社會",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOWhtVE9FWnNmUERReEdpd3VYNWNReGNqcXpIQXN0bnVWWEZzWDR0Ykl2TW93UGhaQjBVakNfYjNYNE5pTExTNEtRalM0a3lfdVhDOHZoMXY2cF93d05kS1BiSFU4czBHanQzcGowZWprLVljUVprRFF4VVEyTnB4RA?oc=5",
           "time": "2026-09-29 10:29:50",
           "publisher": "Google News→UDN",
           "severity": "yellow"
@@ -6014,7 +6056,7 @@
           "title": "周佳琪成立競總拼連任守護屏東市安居樂業好生活| 政治",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9FT0FDSUJhQ2d2ejhLbC1vYkw2bDg1empHTVF3SFRqNDVTcVJlcERtVjNUc1g0b1RPalpia1hiNV9WMWFNMkl3MnJVcXZ3dFRDUWdGMFdOeTJ3dGM?oc=5",
           "time": "2026-09-29 07:32:00",
-          "publisher": "Google News→Newtalk新聞",
+          "publisher": "Google News→newtalk.tw",
           "severity": null
         },
         {
@@ -6130,11 +6172,11 @@
       "city": "桃園",
       "place": "桃園市政府",
       "level": "red",
-      "news_count": 103,
+      "news_count": 105,
       "comment_count": 0,
       "negativity_pct": 3,
       "is_urgent": false,
-      "urgency_score": 112,
+      "urgency_score": 114,
       "news_articles": [
         {
           "title": "2波東北風接連影響 桃園以北、宜蘭下週雨勢增強",
@@ -6197,6 +6239,13 @@
           "url": "https://tw.news.yahoo.com/%E6%A1%83%E5%9C%92%E5%BB%A3%E8%88%88%E5%9C%8B%E5%B0%8F%E9%96%B1%E8%AE%80%E6%95%99%E8%82%B2-%E7%8D%B2%E8%82%AF%E5%AE%9A-132321473.html",
           "time": "2026-09-29 21:23:21",
           "publisher": "Yahoo新聞",
+          "severity": null
+        },
+        {
+          "title": "賴清德稱張善政「國政人才」 楊朝偉籲建設經費更應給予桃園支持",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOXzVOTXBnLXZtbmdncUs4dDVRbnBCSTA3ZVhyMUdkTzJncW5ZSXk1T25WbU53b3pWLTRqMkEyOVNtMHZHN2RNUHp0NV9sZWVXNjZwZEk1S3NySHYtWFRJT3hKaVZKUWx3eGtUeThDS3N0U3B0ZjFSckZUM0lCOTNWMWZSR2pMT09FRW5vVA?oc=5",
+          "time": "2026-09-29 21:06:07",
+          "publisher": "Google News→PChome Online 新聞",
           "severity": null
         },
         {
@@ -6352,6 +6401,13 @@
           "time": "2026-09-29 17:19:53",
           "publisher": "Google News→GNN 新聞網",
           "severity": null
+        },
+        {
+          "title": "【有片】由愛生恨？龜山男球棒狂砸前女友轎車 打爛玻璃赴警局自首 | 桃園電子報",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zQ3YtenhRNnBXOG9ib1JZcXQxbWgyb2VpQUswWDhlUXJrcGdPTXg1WGdNWTkxRnlZbFpmQlp3ZXRrVVRRbzRGZzhpXzFGMC00Tm4tUmZB?oc=5",
+          "time": "2026-09-29 17:10:29",
+          "publisher": "Google News→LINE TODAY",
+          "severity": "yellow"
         },
         {
           "title": "李懿怕中秋塞車「挑戰走路回桃園」！ 耗時8小時飆5萬步驚呆網",
@@ -6865,11 +6921,11 @@
       "city": "花蓮",
       "place": "花蓮縣政府",
       "level": "red",
-      "news_count": 128,
+      "news_count": 118,
       "comment_count": 0,
       "negativity_pct": 0,
       "is_urgent": false,
-      "urgency_score": 128,
+      "urgency_score": 118,
       "news_articles": [
         {
           "title": "2到6歲幼兒 花蓮送托、自己帶都補助",
@@ -7695,76 +7751,6 @@
           "url": "https://news.google.com/rss/articles/CBMi2wNBVV95cUxQQ2F1akMtUGMyT2JLVkxYR3Q3VU9iWFpUVlQzcmFYSlNJYlNvTkFQRm9LRldrLURSYmZUZ1N3NEEyYlRtd0I2SkZ0SXYwTFpCdjlWMGFHVzR6Y1J4MmlMVE05S084Z0tQQ3E2b0Z6dk0yYmlQOGxCZDNkdjVKR21MN01TSjVBNEFQcXRQbXJTaldGWWVpRGZQS3MtRmVPeXZCTUpzUlRfR2ExT3NBTUgwWXJ6U0h1ejU2U2lwWk1qQTlIc2tVLWpVUmFTQ0w0Y0JraVg0cDZpZjRtU0w5azlHTVNWZkFPYWhDYTE4eGMwLXRFZWR6QnBUSFJVMDJLNExic1MwN3JkdGhtWkhSaHI1VUtrdU9WeUttV21xdnhUd0taQ3F4R1BBZU9pSUE1a01yMXdLNzZDRXRqSGhvQUNOWlpEd1RPdXUtZXo4clc5S3pzTFBoczk5NEJxLUtXYlEzaTZKS1BCT0pFY0pGNzhLcU1TYTY3Y2V0UFJnSjFPV1p4Uy1ILTJpZzhuWDlLczJhWnlFak15Q1ViS2Jjd2V3VU1OcVRPbEpoTnVpbTJ0SGxkVXdTRVZPeWVtLXdIX0lkY1ktTVplbmhoN3NEc0tHeW5tYXJHQXBXQkxv?oc=5",
           "time": "2026-09-29 02:31:53",
           "publisher": "Google News→facebook.com",
-          "severity": "yellow"
-        },
-        {
-          "title": "02:20臺灣東部海域規模5.0地震 最大震度花蓮縣水璉、花蓮縣花蓮市3級",
-          "url": "https://tw.news.yahoo.com/02-20%E8%87%BA%E7%81%A3%E6%9D%B1%E9%83%A8%E6%B5%B7%E5%9F%9F%E8%A6%8F%E6%A8%A15-0%E5%9C%B0%E9%9C%87-%E6%9C%80%E5%A4%A7%E9%9C%87%E5%BA%A6%E8%8A%B1%E8%93%AE%E7%B8%A3%E6%B0%B4%E7%92%89-%E8%8A%B1%E8%93%AE%E7%B8%A3%E8%8A%B1%E8%93%AE%E5%B8%823%E7%B4%9A-183000265.html",
-          "time": "2026-09-29 02:30:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "02:20臺灣東部海域規模5.0地震 最大震度花蓮縣水璉、花蓮縣花蓮市3級",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1DMFEyWG0zMkVuWnRyc2xTc1o2eXVvb3RrZWJLckpvWmhKNDBGNHlCeHJfU1dzYW1NVndrbngtQnAxNmh5TFNHeUFuMzVTV09KN0wxODJB0gFbQVVfeXFMUG1MMUdRODJiTWFIb19md0RnZTJ4bGtGdDNZTzMyOUpxcFJTMGU2bHdBTUw3TTlUTE9Td3pHaHprN0lmR29Pb1ludzdXWjZ1OElTYkN2SlRSLUo2SQ?oc=5",
-          "time": "2026-09-29 02:30:00",
-          "publisher": "Google News→鏡新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "第066號 9月29日2時20分 規模 5 花蓮縣政府東南方 33.3 公里 (位於臺灣東部海域)",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9iUXdHaFczYlZXcldGOHpoejliSzJhZ0NBdHQweWhYQXBrRjNsSm96MldUU2hQM3lJal80Z0ZqVGNTcXl3enBRTU9xdnR0cU5PdGlTQU8xaDFIaS1jZG9sTUp5UjhqczZJaWROV3BGSUpubk0wV1hyWQ?oc=5",
-          "time": "2026-09-29 02:29:12",
-          "publisher": "Google News→中央氣象署地震測報中心",
-          "severity": "yellow"
-        },
-        {
-          "title": "地牛翻身！2:20 花蓮發生規模5.0地震",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MNmxfUGxDQVRObzdoeTNBeThWRGNTYjJkcHU5MGxTdVZfRV84VVBOOUJ3R0RGd0l2ZEg4TmFWc3hBUFRTbkJESDdHWG1YSV9HVmtUUg?oc=5",
-          "time": "2026-09-29 02:27:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "快訊》02:20臺灣東部海域發生規模5.0有感地震 最大震度花蓮縣水璉、花蓮縣花蓮市3級",
-          "url": "https://newtalk.tw/news/view/2026-09-29/1062353",
-          "time": "2026-09-29 02:26:01",
-          "publisher": "新頭殼",
-          "severity": "yellow"
-        },
-        {
-          "title": "快訊》02:20臺灣東部海域發生規模5.0有感地震 最大震度花蓮縣水璉、花蓮縣花蓮市3級",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5mdWhOV1E4cGNoSWVpRWtQNXVLc3FlUndXT2ItOHFGQVdrWmVfSzdkRDdWRW52TzhfQ1l5alBwVUFVelBzczBCUldyUEdXdlhwT1RGTFNJWnR3bTQ?oc=5",
-          "time": "2026-09-29 02:26:00",
-          "publisher": "Google News→Newtalk新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "地震速報／02:20花蓮地區地震，預估震度3級",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1STWJCZWtSZDlGY09zSzVyb1Nvb0duZHAySXQxT0Z2Vk5hZW51ZlZMZEdHeFJHQkhBb2JLRE16ZDhNSkVBQ1RVRQ?oc=5",
-          "time": "2026-09-29 02:21:05",
-          "publisher": "三立新聞網",
-          "severity": "yellow"
-        },
-        {
-          "title": "速報／02:20花蓮地區地震，預估震度3級",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBScmdEbUx0TUVXaEtudlowbjlLeVI3YUxaYV80Q2sxbXBKNlR1ckUzWUluX1FydTFIeDB1dko3UGp2VVBSLTl1cE82aHREUklxTnNTSm9aS2gzRm1U0gFiQVVfeXFMT3FZN0pxRmw3U2xrbFlERllXU1pvMTVHX25oRjd5UDRlNl9BcEFHUEhKdUZrUndEOWs3YlNWZHEzNUx2ZVNzd3ZUUDBRbTZNQ0xsVkVTNXY1MDIweTFzbWpQTkE?oc=5",
-          "time": "2026-09-29 02:21:05",
-          "publisher": "Google News→鏡週刊Mirror Media",
-          "severity": "yellow"
-        },
-        {
-          "title": "地震速報！ 09/29 02:20左右 花蓮地區發生有感地震",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93bGRxaDRORDFTMk5HZU16SW94blpWVjUtU1M1dm5leWtKZG5MTWczSFh0bERLTVltVlZEOW50NEZtRnlvN3ZlMGN4S0dsUFN6Unk1MA?oc=5",
-          "time": "2026-09-29 02:21:00",
-          "publisher": "東森新聞",
-          "severity": "yellow"
-        },
-        {
-          "title": "第066號 9月29日2時20分 規模 5 花蓮縣政府東南方 33.3 公里 (位於臺灣東部海域)",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE15TkZ5SmZGZFc5TXhBRlI0ekEza3N1dmZtV0tlMHRpTm9KTWlWeUVEM2JFSVZ0YjM3LTZlVllyQUl0THRtRnhpUE5pdDc3akhMMjk0VUcyVzNWWU5XOWhfWkVPQTE2YkRx?oc=5",
-          "time": "2026-09-29 02:20:00",
-          "publisher": "Google News→中央氣象署地震測報中心",
           "severity": "yellow"
         }
       ],
@@ -8748,12 +8734,33 @@
       "city": "台中",
       "place": "台中市南屯區",
       "level": "red",
-      "news_count": 144,
+      "news_count": 147,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 174,
+      "urgency_score": 177,
       "news_articles": [
+        {
+          "title": "台中敬老愛心卡搭小黃 10/1起每趟最高補助100元",
+          "url": "https://news.cts.com.tw/cna/local/202609/202609283083795.html",
+          "time": "2026-09-30 01:48:17",
+          "publisher": "華視新聞網",
+          "severity": null
+        },
+        {
+          "title": "台中民宿坐地起價7.7萬變11萬 客拒絕被取消訂位 結局大逆轉業者慘了",
+          "url": "https://www.chinatimes.com/realtimenews/20260930000093-260405",
+          "time": "2026-09-30 01:48:16",
+          "publisher": "中時新聞網",
+          "severity": "yellow"
+        },
+        {
+          "title": "下午買包子竟然還要排！台中大肚人氣老店，蛋黃肉包出爐就被掃",
+          "url": "https://tw.news.yahoo.com/%E4%B8%8B%E5%8D%88%E8%B2%B7%E5%8C%85%E5%AD%90%E7%AB%9F%E7%84%B6%E9%82%84%E8%A6%81%E6%8E%92%EF%BC%81%E5%8F%B0%E4%B8%AD%E5%A4%A7%E8%82%9A%E4%BA%BA%E6%B0%A3%E8%80%81%E5%BA%97%EF%BC%8C%E8%9B%8B%E9%BB%83%E8%82%89%E5%8C%85%E5%87%BA%E7%88%90%E5%B0%B1%E8%A2%AB%E6%8E%83-163816959.html",
+          "time": "2026-09-30 00:38:16",
+          "publisher": "Yahoo新聞",
+          "severity": null
+        },
         {
           "title": "[HatePolitics] [討論] 台中毒媽媽堅持川普會軍售中國",
           "url": "https://www.ptt.cc/bbs/HatePolitics/M.1790699803.A.F5B.html",
@@ -9602,6 +9609,13 @@
           "severity": null
         },
         {
+          "title": "守護市民呼吸健康 中市環保局升級移動式空品監測站精準掌握污染",
+          "url": "https://www.thehubnews.net/archives/669656",
+          "time": "2026-09-29 10:19:58",
+          "publisher": "新頭條",
+          "severity": null
+        },
+        {
           "title": "中秋連假爆出遊潮 陳世凱實測「台中-台北」2小時順暢返程",
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5589111",
           "time": "2026-09-29 10:17:51",
@@ -9754,13 +9768,6 @@
           "time": "2026-09-29 03:30:22",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "盧秀燕震撼出手！動用「神秘王牌」鎮守新北 助攻李四川",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E9%9C%87%E6%92%BC%E5%87%BA%E6%89%8B-%E5%8B%95%E7%94%A8-%E7%A5%9E%E7%A7%98%E7%8E%8B%E7%89%8C-%E9%8E%AE%E5%AE%88%E6%96%B0%E5%8C%97-%E5%8A%A9%E6%94%BB%E6%9D%8E%E5%9B%9B%E5%B7%9D-022023358.html",
-          "time": "2026-09-29 02:20:23",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -9770,12 +9777,19 @@
       "city": "新北",
       "place": "新北市政府",
       "level": "red",
-      "news_count": 149,
+      "news_count": 150,
       "comment_count": 0,
       "negativity_pct": 8,
       "is_urgent": false,
-      "urgency_score": 185,
+      "urgency_score": 186,
       "news_articles": [
+        {
+          "title": "新北父疑逼女兒掛不雅字紙板遊街 涉違反保護令遭羈押禁見",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5590111",
+          "time": "2026-09-30 00:48:04",
+          "publisher": "自由時報",
+          "severity": "red"
+        },
         {
           "title": "抓到人了！新北女童被逼掛「畜生」紙板遊街 警方當場逮捕惡父、檢聲押禁見",
           "url": "https://tw.news.yahoo.com/%E6%8A%93%E5%88%B0%E4%BA%BA%E4%BA%86-%E6%96%B0%E5%8C%97%E5%A5%B3%E7%AB%A5%E8%A2%AB%E9%80%BC%E6%8E%9B-%E7%95%9C%E7%94%9F-%E7%B4%99%E6%9D%BF%E9%81%8A%E8%A1%97-%E8%AD%A6%E6%96%B9%E7%95%B6%E5%A0%B4%E9%80%AE%E6%8D%95%E6%83%A1%E7%88%B6-160528442.html",
@@ -10344,6 +10358,13 @@
           "severity": "red"
         },
         {
+          "title": "涉詐領63萬助理費 新北議員白珮茹遭訴求刑8年半",
+          "url": "https://cnews.com.tw/224260929a01/",
+          "time": "2026-09-29 12:11:58",
+          "publisher": "匯流新聞網",
+          "severity": "red"
+        },
+        {
           "title": "國民黨新北5連霸議員白珮茹涉詐助理費63萬元 被起訴求刑8年6月",
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5589208",
           "time": "2026-09-29 12:03:34",
@@ -10811,13 +10832,6 @@
           "time": "2026-09-29 03:18:00",
           "publisher": "Yahoo新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "盧秀燕震撼出手！動用「神秘王牌」鎮守新北 助攻李四川",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E9%9C%87%E6%92%BC%E5%87%BA%E6%89%8B-%E5%8B%95%E7%94%A8-%E7%A5%9E%E7%A7%98%E7%8E%8B%E7%89%8C-%E9%8E%AE%E5%AE%88%E6%96%B0%E5%8C%97-%E5%8A%A9%E6%94%BB%E6%9D%8E%E5%9B%9B%E5%B7%9D-022023358.html",
-          "time": "2026-09-29 02:20:23",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": []
@@ -10827,11 +10841,11 @@
       "city": "台北",
       "place": "台北市信義區",
       "level": "red",
-      "news_count": 273,
+      "news_count": 274,
       "comment_count": 0,
       "negativity_pct": 7,
       "is_urgent": false,
-      "urgency_score": 333,
+      "urgency_score": 334,
       "news_articles": [
         {
           "title": "快訊》北市暗夜惡火！第一果菜市場電動板車起火「濃煙竄天」",
@@ -12210,6 +12224,13 @@
           "url": "https://n.yam.com/Article/20260929542373",
           "time": "2026-09-29 12:00:00",
           "publisher": "中央社",
+          "severity": null
+        },
+        {
+          "title": "「台北順起來」VS「台北安可」　沈伯洋、蔣萬安競選小物價格比一比",
+          "url": "https://n.yam.com/Article/20260929653704",
+          "time": "2026-09-29 12:00:00",
+          "publisher": "蕃新聞→上報",
           "severity": null
         },
         {
