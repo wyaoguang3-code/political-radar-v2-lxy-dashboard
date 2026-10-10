@@ -1,11 +1,11 @@
 {
   "site_name": "政治戰情儀表板（lxy）",
-  "generated_at": "2026-10-10T23:22:20.516354+00:00",
+  "generated_at": "2026-10-10T23:38:05.045262+00:00",
   "metrics": {
-    "total_24h": 130,
-    "prev_24h": 6,
-    "growth_pct": 2066.67,
-    "news_24h": 126,
+    "total_24h": 131,
+    "prev_24h": 7,
+    "growth_pct": 1771.43,
+    "news_24h": 127,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -14,10 +14,10 @@
     }
   },
   "metrics_7d": {
-    "total": 607,
+    "total": 608,
     "prev": 813,
-    "growth_pct": -25.34,
-    "news": 585,
+    "growth_pct": -25.22,
+    "news": 586,
     "anomaly": {
       "level": "綠",
       "current_hour_count": 0,
@@ -28,7 +28,7 @@
   "by_platform": [
     {
       "platform": "news",
-      "count": 718
+      "count": 715
     },
     {
       "platform": "youtube",
@@ -42,7 +42,7 @@
   "by_platform_7d": [
     {
       "platform": "news",
-      "count": 6068
+      "count": 6069
     },
     {
       "platform": "youtube",
@@ -60,7 +60,7 @@
     },
     {
       "hour": "2026-10-10 09:00",
-      "count": 16
+      "count": 18
     },
     {
       "hour": "2026-10-10 10:00",
@@ -136,7 +136,7 @@
     },
     {
       "hour": "2026-10-11 04:00",
-      "count": 1
+      "count": 2
     },
     {
       "hour": "2026-10-11 05:00",
@@ -522,13 +522,13 @@
     },
     {
       "hour": "2026-10-11 04:00",
-      "count": 1
+      "count": 2
     }
   ],
   "mention_by_platform_24h": [
     {
       "platform": "news",
-      "count": 718
+      "count": 715
     },
     {
       "platform": "youtube",
@@ -542,7 +542,7 @@
   "alias_by_platform_24h": [
     {
       "platform": "news",
-      "count": 718
+      "count": 715
     },
     {
       "platform": "youtube",
@@ -555,12 +555,12 @@
   ],
   "mention_compare_24h": {
     "盧秀燕": 145,
-    "蔣萬安": 582,
+    "蔣萬安": 580,
     "蔡其昌": 0,
-    "陳其邁": 61
+    "陳其邁": 60
   },
   "mention_compare_7d": {
-    "盧秀燕": 607,
+    "盧秀燕": 608,
     "蔣萬安": 5698,
     "蔡其昌": 52,
     "陳其邁": 464
@@ -573,9 +573,9 @@
       "green": 108
     },
     "蔣萬安": {
-      "total": 582,
+      "total": 580,
       "red": 1,
-      "yellow": 430,
+      "yellow": 428,
       "green": 151
     },
     "蔡其昌": {
@@ -585,10 +585,10 @@
       "green": 0
     },
     "陳其邁": {
-      "total": 61,
+      "total": 60,
       "red": 0,
       "yellow": 0,
-      "green": 61
+      "green": 60
     }
   },
   "self_favorability_history_7d": [
@@ -9095,9 +9095,9 @@
     {
       "date": "2026-10-11",
       "score": 36.9,
-      "total": 3,
+      "total": 4,
       "red": 0,
-      "yellow": 3,
+      "yellow": 4,
       "green": 0,
       "crisis": 0,
       "samples_low": false,
@@ -9108,6 +9108,14 @@
           "time": "2026-10-11 04:10:00",
           "severity": "yellow",
           "publisher": "Google News→Yahoo新聞",
+          "is_crisis": false
+        },
+        {
+          "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+          "time": "2026-10-11 04:10:00",
+          "severity": "yellow",
+          "publisher": "Google News→中時新聞網",
           "is_crisis": false
         },
         {
@@ -9128,14 +9136,30 @@
         }
       ],
       "comments": {
-        "red": 98,
+        "red": 99,
         "yellow": 311,
-        "green": 73,
-        "total": 482,
-        "delta_total": -374,
+        "green": 74,
+        "total": 484,
+        "delta_total": -372,
         "stagnant": false
       },
       "comment_samples": [
+        {
+          "platform": "facebook",
+          "author": "薩薩",
+          "text": "空氣還是一樣爛",
+          "time_text": "1小時",
+          "url": "",
+          "signal": "yellow"
+        },
+        {
+          "platform": "facebook",
+          "author": "武田佳諺",
+          "text": "雙10國慶 快樂喔 祝福 市長 秀燕喔",
+          "time_text": "27分鐘",
+          "url": "",
+          "signal": "green"
+        },
         {
           "platform": "facebook",
           "author": "黃伊伊",
@@ -10811,6 +10835,22 @@
   },
   "comments_by_date_7d": {
     "2026-10-11": [
+      {
+        "platform": "facebook",
+        "author": "薩薩",
+        "text": "空氣還是一樣爛",
+        "time_text": "1小時",
+        "url": "",
+        "signal": "yellow"
+      },
+      {
+        "platform": "facebook",
+        "author": "武田佳諺",
+        "text": "雙10國慶 快樂喔 祝福 市長 秀燕喔",
+        "time_text": "27分鐘",
+        "url": "",
+        "signal": "green"
+      },
       {
         "platform": "facebook",
         "author": "黃伊伊",
@@ -26285,6 +26325,15 @@
         "co_mentioned": []
       },
       {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "盧秀燕籲賴清德 應學蔡英文克制",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XY1dxVTFLZ0Y1bkFkV1FpZ3l4aU5kWC1SSzBKdWE3NURMaHdJUWY4c0ZqM1ZBNThUVW1VUHFyUmFnakdVQ3BGbTNsMHVBQUsyTDFTOHJpVEItbEhnQ0JrdFJYeXhnQmVHbTdQZ3RtZ0xldTU4TUcw0gFYQVVfeXFMTWliMnRsZFNBQVpER3o0bWV3Q3FXRDItbkZQdnlnS0dtQkQtMDk4QU1YSENoOU1ZT2E3eURFOVhWR1Jsa3pxaGpMVDE3RzNsNldsYmQ3eHVBdA?oc=5",
         "time": "2026-10-11 00:15:28",
@@ -27574,18 +27623,27 @@
         "publisher": "Google News→新華報導",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-        "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%9C%8B%E6%85%B6%E6%8F%90-5%E5%80%8B%E5%A0%85%E6%8C%81-%E9%BB%83%E5%81%A5%E8%B1%AA-%E8%AA%AA%E6%98%8E%E7%95%B6%E4%BB%8A%E8%B3%B4%E6%B8%85%E5%BE%B7%E5%9C%8B%E6%94%BF%E5%9B%B0%E5%A2%83-073651712.html",
-        "time": "2026-10-10 07:36:51",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔣萬安": [
+      {
+        "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+        "time": "2026-10-11 07:11:08",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+        "time": "2026-10-11 07:07:08",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
       {
         "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
@@ -27610,6 +27668,15 @@
         "time": "2026-10-11 06:23:00",
         "platform": "news",
         "publisher": "Yahoo新聞",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+        "time": "2026-10-11 06:18:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -31249,7 +31316,7 @@
         "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Y3lqbU1xNkw3cmktU1Y1STZMSjNhLXNfaEhnVFJpc1BmTlp5WmdmV2lZa2F6WFZXbmZhNWFueFNmdXdfM3NnSjdVX0YwZw?oc=5",
         "time": "2026-10-10 12:48:00",
         "platform": "news",
-        "publisher": "Google News→Storm.mg",
+        "publisher": "Google News→風傳媒",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -32782,51 +32849,6 @@
         "publisher": "Yahoo新聞",
         "severity": "yellow",
         "co_mentioned": []
-      },
-      {
-        "title": "北市民＝韓粉？蔣萬安民調緊繃「嘆1事」惹議 當年同情況遭韓粉灌爆",
-        "url": "https://tw.news.yahoo.com/%E5%8C%97%E5%B8%82%E6%B0%91-%E9%9F%93%E7%B2%89-%E8%94%A3%E8%90%AC%E5%AE%89%E6%B0%91%E8%AA%BF%E7%B7%8A%E7%B9%83-%E5%98%861%E4%BA%8B-%E6%83%B9%E8%AD%B0-073716424.html",
-        "time": "2026-10-10 07:37:16",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "社工界要李彥秀道歉！蔣萬安：源頭是沈伯洋",
-        "url": "https://tw.news.yahoo.com/%E7%A4%BE%E5%B7%A5%E7%95%8C%E8%A6%81%E6%9D%8E%E5%BD%A5%E7%A7%80%E9%81%93%E6%AD%89-%E8%94%A3%E8%90%AC%E5%AE%89-%E6%BA%90%E9%A0%AD%E6%98%AF%E6%B2%88%E4%BC%AF%E6%B4%8B-073704950.html",
-        "time": "2026-10-10 07:37:04",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "點出蔣萬安最大問題！他曝「內部資料」勸1招反擊：綠最怕這件事",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xZk5TSk44OGllSlNmamVEUmJaZVVySFlFeWVlRHVqS2M1VEZ4MURaUnlraS1GdU9zRm5ad2NvRXFnSE5Cc1dfd1VvWXk3dUF3WEZJ?oc=5",
-        "time": "2026-10-10 07:27:00",
-        "platform": "news",
-        "publisher": "TVBS",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安選情出大事！連「政界上古神獸」都敢冷落 6屆藍議員親抖內幕",
-        "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxPbC1GdDhKNloxS0R6S0R5bHJzUWVkMzlIYUpqVk1sUzZOc2h2ZnphUE9SLUtrTHUxNGZ1Zi01ckY0UlNIZVFrOHd1czRKajM0UmtZSnBCMm9MYnlKY1BSRllEang5OTdZR1dDaHFoOEMzM1RoZmFXdFg2UWp2d2dFRFZKa1AyMXVBSmptQ0JhQ3ZKc3VoT2ZwSmRiN2s0cThPbUd2VVN4bG96ZE1wSDVTS2dkLVNuWFdKQjl5eTd6X0U2VmdJcmtoVzc2NVpraGZONmdRWWZucmF2VkRCRXdOU2N4NVI1VTZDLUNtTlEtZkVxdG13UGI3Q3I0bTJCT29rZmM4QmEwbkcxTVk5MjE4N08zSlU1Y0hqVzd5WERkbk51aDhnWnhGZS03a212Q1l5T3RWbjhGUHBnOWhvS3VwSzdjTHl1c0lTajFYWGhNTF9tQUdMcEpXVXpuaEdQRC11d2gyYjVrOV9SMzU1T005WExlLVg1OUtvb2FmOHFuNXdLRTFRS1pxX2NnbWpsN2FGR25NSlFmQVdvVGhybkE?oc=5",
-        "time": "2026-10-10 07:23:55",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "快新聞／蔣萬安選情出大事！連「政界上古神獸」都敢冷落 6屆藍議員親抖內幕",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NN3JXekNxdGhfTFJJZkF2NkZjVTg3VTNHYWRjVHVzRUJDYk02TzdieXhubVdzV0lvZGVWNUpUbEZYOUJOVTh1TUtZY3NldDItS1RyMTludFJPZWxYazFQeA?oc=5",
-        "time": "2026-10-10 07:23:55",
-        "platform": "news",
-        "publisher": "Google News→民視新聞網",
-        "severity": "yellow",
-        "co_mentioned": []
       }
     ],
     "蔡其昌": [],
@@ -33370,15 +33392,6 @@
         "publisher": "Google News→LINE TODAY",
         "severity": null,
         "co_mentioned": []
-      },
-      {
-        "title": "出席路竹運動中心開幕典禮 陳其邁：整合學校空間打造全齡友善運動場館",
-        "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNSFdXQm1RUkxVRDk0cTdkWDZlNmNXVDNVbG1VT0Ixa0tqZkxFai03cEI2WHN6QWtpM29GOXhSdjhwV1BXWFhzbEZueEZMVVFKT0FlaUdtb0FWWVV0eHpxNFJ6ZldNNkhoSmdlMFJuNGZYMDIzclNTOTVsVmhpamRDdmR3TF8wcFZVSEQ5dU9CVzFnXzVOY3FCaUV2N3lPWWJNME1LMmlDREhQZ1hNLWI4dUJWVzJENWQ5UWl5aEszMVFiYXozTTBuS05CR1daRHBhNTZMc1pEWDQwcUFDTXY0NkR2UFNGU21RRFQxcDMtRlVfQ0JycTVGMU52U1hmWTJCQUd6a1Y5THM3NmpmdzkzMEFFNV9nSWl3Y2FuR1VpRHNka0w2Tl9mYV9sc2I3aGtrRjVZTk1iclcyLTlmVFNDNUxhMjR0OW03dl9QOGp1ZE5aanVNeHc3bE4zSDRvSnNObjZZbUE0TzRDOFUxdEVIaXZTSGRkUDNGZkp2WFNrbElNVVhKWWl3S3Frbm9EaUFsNG9WV1RqUUlRVnJCdFZKWXBtSzA4V1RzNVZYd2h1VGNRTEd1QmM1OWI0SkdjNlhhYlhmaTJFOXEwMDctWWdfck1R?oc=5",
-        "time": "2026-10-10 07:22:30",
-        "platform": "news",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null,
-        "co_mentioned": []
       }
     ]
   },
@@ -33390,6 +33403,15 @@
         "time": "2026-10-11 04:10:00",
         "platform": "news",
         "publisher": "Yahoo新聞",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "platform": "news",
+        "publisher": "中時新聞網",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -38942,6 +38964,24 @@
     ],
     "蔣萬安": [
       {
+        "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+        "time": "2026-10-11 07:11:08",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+        "time": "2026-10-11 07:07:08",
+        "platform": "news",
+        "publisher": "自由時報",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
         "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
         "time": "2026-10-11 07:00:00",
@@ -38965,6 +39005,15 @@
         "time": "2026-10-11 06:23:00",
         "platform": "news",
         "publisher": "Yahoo新聞",
+        "severity": "yellow",
+        "co_mentioned": []
+      },
+      {
+        "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+        "time": "2026-10-11 06:18:00",
+        "platform": "news",
+        "publisher": "三立新聞網",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -42604,7 +42653,7 @@
         "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Y3lqbU1xNkw3cmktU1Y1STZMSjNhLXNfaEhnVFJpc1BmTlp5WmdmV2lZa2F6WFZXbmZhNWFueFNmdXdfM3NnSjdVX0YwZw?oc=5",
         "time": "2026-10-10 12:48:00",
         "platform": "news",
-        "publisher": "Google News→Storm.mg",
+        "publisher": "Google News→風傳媒",
         "severity": "yellow",
         "co_mentioned": []
       },
@@ -90438,33 +90487,6 @@
         "title": "蔣萬安轟沈伯洋毒品論述 林智群曝資料戳破：北市府正在做這些事",
         "url": "https://www.ettoday.net/news/20261004/3248630.htm",
         "time": "2026-10-04 07:42:00",
-        "platform": "news",
-        "publisher": "ETtoday",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安FB遭灌爆 「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOcDN0bnMxdHlMcTIzdEVKV3BuM05IVFhqdHB4N2UzNTAzQ0UtZUFwRzU0LVc2U1RjMTJGdmFyMWFIS2hVemdlc2tXMDNvUzZLTHNtMWJnbEpfbkZnX2dnQXoyN3k1STRZalB2YWYzcE56SVZXWHNvN2dNM0lMR1NHMTNuamVWdWVvT0RDQW94SHlIMktKR0hlTGY2VGkzWkxEbl8wTlNrQkxTeGl2ZmFuR1NaTWZmQ1Z6aV93YVcyM3ZvZnVyenZ5OUpTaEdrbWZybHRXN2JzalVtN0pHYXBKOGFnZlVPZWRzZHJqOENTX1c2djIxNWdjQTlra2ZURHFIS3BJcWpadmZHQ1VDcV9IRW5DbmJKaEQ5UmV4Sng1TW8tUVFjdEVVckk1a2pnSXZ2WUt4c2xaeTJoVzJSUVRmdHY1TXVHaHlfT1lWbW1hS1ZlU3A3T0N4azVYNXlkUVRFeS0xUEZGNTBPOW9QYXhYNHEtQ1N2NUE?oc=5",
-        "time": "2026-10-04 07:35:04",
-        "platform": "news",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zWnBQVDUxem5kSXBJc3RDMlJ2ZkJlUlA1RmZCUGw1N3lvVC15YV9oVDJpMUdSTURYdk45YUpTUTZrNVJwS0EwYjNBZmFjWElFU0xJODhoTjRxVG9wbEHSAUtBVV95cUxOQnFEWlBILWFjWlVPdHN0WXh5ZzBDS3FFd0N1U2R2ZWRhQVRzUV9YeTMtdDlxU3RRQjU0cnFIY3FYZkEyellpaWxnVHM?oc=5",
-        "time": "2026-10-04 07:23:00",
-        "platform": "news",
-        "publisher": "ETtoday",
-        "severity": "yellow",
-        "co_mentioned": []
-      },
-      {
-        "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://www.ettoday.net/news/20261004/3248626.htm",
-        "time": "2026-10-04 07:23:00",
         "platform": "news",
         "publisher": "ETtoday",
         "severity": "yellow",
@@ -95310,6 +95332,12 @@
       "publisher": "Yahoo新聞"
     },
     {
+      "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+      "time": "2026-10-11 04:10:00",
+      "publisher": "中時新聞網"
+    },
+    {
       "title": "盧秀燕籲賴清德 應學蔡英文克制",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XY1dxVTFLZ0Y1bkFkV1FpZ3l4aU5kWC1SSzBKdWE3NURMaHdJUWY4c0ZqM1ZBNThUVW1VUHFyUmFnakdVQ3BGbTNsMHVBQUsyTDFTOHJpVEItbEhnQ0JrdFJYeXhnQmVHbTdQZ3RtZ0xldTU4TUcw0gFYQVVfeXFMTWliMnRsZFNBQVpER3o0bWV3Q3FXRDItbkZQdnlnS0dtQkQtMDk4QU1YSENoOU1ZT2E3eURFOVhWR1Jsa3pxaGpMVDE3RzNsNldsYmQ3eHVBdA?oc=5",
       "time": "2026-10-11 00:15:28",
@@ -95416,12 +95444,6 @@
       "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQSkE2NFduenp2QTdGNU5UckhVOXIwaXBndk9xYnEzQnNVTllLYkpjRi04VGFTSUJYUk42dVd4NnVwMFAzeXE5YnFYcXVTOUh1TEs1TG9uRWRNMmlod0t4cUlZMUI5cVloTS05Q2picmhnUFl3QlQ1eVhYeExoNmdWaGtIb3hPaFdVQ1VUeThmSlUwM2JWSUl0T2ZILWxhbnBuUHhzaFhUcmE3NVFjeGlHZ2lmWGdaTEpKQXlUSV9aSldGc1dsY3g0NnlCZ2tjdTNISUd4ZU8zZDVoUWxwaUpoUGJLQzV2b09TWUVsY2dDdlpnYzB0bUFWR05TZVo1VDNsSXVUNGVoVHRqQnlKUkRucVpiZHcwd1pfMlBydUpBQlVjUQ?oc=5",
       "time": "2026-10-10 18:49:33",
       "publisher": "Yahoo新聞"
-    },
-    {
-      "title": "中市國慶升旗萬人盛況 盧秀燕許諾拚到最後一秒",
-      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPZ1lKSHVzYm94VDdmby1Bc29WRHZYUU9JYnYyR2phbldNa0p0ZGFfWmhFWlQ1NXJGaUZ1d3dYM0xmeERTX0Roa1BENnJ1dnllRklfaGRNTmw1Qy15MU95QzJTNVgzUHA3UHBUdFRONEhfVEhUalFSS0Z3TmZIZXo3Rkg3TTRtYjA5cFBWcWFMYjJ0dGpEejlpOTl0S0ozTGF1NjA0LVo4QzgxMWpsZGdXZDNteVl5QjRuZmFSLVhoUFltNHkwbmlqbXhBTXp1Tk9nTUR0d0dZdDFQT3NubWdnLVh5d0pLRGR5QWpZRjBHbF9tbjdaaVR1REtwc01IenRQdEpKTUZ3c1BFYzFJa29BR01VLUZoYkI3RUNTRHdqTDVBbzBZbl9jSy15dDR1TEZVSExFUllxbm9SUkVPMVNmNkhXcUJaUQ?oc=5",
-      "time": "2026-10-10 18:48:34",
-      "publisher": "Yahoo新聞"
     }
   ],
   "top_news_7d": [
@@ -95429,6 +95451,13 @@
       "platform": "news",
       "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
       "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
+      "time": "2026-10-11 04:10:00",
+      "severity": "yellow"
+    },
+    {
+      "platform": "news",
+      "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
       "time": "2026-10-11 04:10:00",
       "severity": "yellow"
     },
@@ -95557,13 +95586,6 @@
       "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQSkE2NFduenp2QTdGNU5UckhVOXIwaXBndk9xYnEzQnNVTllLYkpjRi04VGFTSUJYUk42dVd4NnVwMFAzeXE5YnFYcXVTOUh1TEs1TG9uRWRNMmlod0t4cUlZMUI5cVloTS05Q2picmhnUFl3QlQ1eVhYeExoNmdWaGtIb3hPaFdVQ1VUeThmSlUwM2JWSUl0T2ZILWxhbnBuUHhzaFhUcmE3NVFjeGlHZ2lmWGdaTEpKQXlUSV9aSldGc1dsY3g0NnlCZ2tjdTNISUd4ZU8zZDVoUWxwaUpoUGJLQzV2b09TWUVsY2dDdlpnYzB0bUFWR05TZVo1VDNsSXVUNGVoVHRqQnlKUkRucVpiZHcwd1pfMlBydUpBQlVjUQ?oc=5",
       "time": "2026-10-10 18:49:33",
       "severity": null
-    },
-    {
-      "platform": "news",
-      "title": "中市國慶升旗萬人盛況 盧秀燕許諾拚到最後一秒",
-      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPZ1lKSHVzYm94VDdmby1Bc29WRHZYUU9JYnYyR2phbldNa0p0ZGFfWmhFWlQ1NXJGaUZ1d3dYM0xmeERTX0Roa1BENnJ1dnllRklfaGRNTmw1Qy15MU95QzJTNVgzUHA3UHBUdFRONEhfVEhUalFSS0Z3TmZIZXo3Rkg3TTRtYjA5cFBWcWFMYjJ0dGpEejlpOTl0S0ozTGF1NjA0LVo4QzgxMWpsZGdXZDNteVl5QjRuZmFSLVhoUFltNHkwbmlqbXhBTXp1Tk9nTUR0d0dZdDFQT3NubWdnLVh5d0pLRGR5QWpZRjBHbF9tbjdaaVR1REtwc01IenRQdEpKTUZ3c1BFYzFJa29BR01VLUZoYkI3RUNTRHdqTDVBbzBZbl9jSy15dDR1TEZVSExFUllxbm9SUkVPMVNmNkhXcUJaUQ?oc=5",
-      "time": "2026-10-10 18:48:34",
-      "severity": null
     }
   ],
   "latest_facebook_20": [
@@ -95670,6 +95692,16 @@
   ],
   "latest_news_20": [
     {
+      "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+      "time": "2026-10-11 07:11:08"
+    },
+    {
+      "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+      "time": "2026-10-11 07:07:08"
+    },
+    {
       "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
       "time": "2026-10-11 07:00:00"
@@ -95688,6 +95720,11 @@
       "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
       "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQVUZORHY3Q3BIY2xkTWFfWFcyOHQtd2RPTFNyTEpOcmdpS0Z2SER6ZE1DVkNmLWFOMEk4YWVlem1RcWdrSENuX3J3SG5ObkI4WTlQSGNOejhZajl3a1VyTW5RRENaNC1KQXlnWU9zM2M1b0cyQmltQXRPc1FCU1MtWGhIUWMwZURhTy1BM0lpVlVVOWV0M2FOcVFac3F1S0tLSjRHV0VEUWtoVWc4R0NfTkpFUnJjamlDQXFzdEY0blplTTU2V003alRSbEs3WU5wYzVCLXdFblhHOWgxQnRRa3c1aWZHNm5TdFg4eDhCcW9vS203RGJLTmpVc2NCQ0lRY3dZTk1TVnZFOGhNVUZNRlBBbV9pR1VXckZucndJOHFrUmJ4WVpjV2dpekVBUmhEcllNWnd4Z181N0RwOEMxNGRGZlFRaHl1UG9Bc2RwR1prckwwZUdJRkJLMmUzSXZVc1ZwOS1vckR5bnNlOVNXVko4OV9mdTdRM2lXQnEwd0tIZTBlM2pJVXdLVFNyNFVLZDIyZ0FueFpDODk4S0E?oc=5",
       "time": "2026-10-11 06:23:00"
+    },
+    {
+      "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+      "time": "2026-10-11 06:18:00"
     },
     {
       "title": "美國重大槍擊釀9死…屋內外遍布屍體！警長驚吐：慘烈程度令人震驚",
@@ -95753,21 +95790,6 @@
       "title": "宜蘭百年餅舖辦捐血 「好運開漳」糕挺林國漳",
       "url": "https://news.ltn.com.tw/news/Yilan/paper/1774114",
       "time": "2026-10-11 05:30:00"
-    },
-    {
-      "title": "嘉市營養午餐食材費 明年擬+5元",
-      "url": "https://news.ltn.com.tw/news/ChiayiCity/paper/1774065",
-      "time": "2026-10-11 05:30:00"
-    },
-    {
-      "title": "屏東智慧農校 盼增無人機考照級別",
-      "url": "https://news.ltn.com.tw/news/Pingtung/paper/1774049",
-      "time": "2026-10-11 05:30:00"
-    },
-    {
-      "title": "蔣萬安市場拜票 遇綁洋流飄帶未握手",
-      "url": "https://news.ltn.com.tw/news/Taipei/paper/1774097",
-      "time": "2026-10-11 05:30:00"
     }
   ],
   "person_sections": {
@@ -95787,6 +95809,13 @@
           "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
           "time": "2026-10-11 04:10:00",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+          "time": "2026-10-11 04:10:00",
+          "publisher": "中時新聞網",
           "severity": "yellow"
         },
         {
@@ -95914,13 +95943,6 @@
           "time": "2026-10-10 18:49:33",
           "publisher": "Yahoo新聞",
           "severity": null
-        },
-        {
-          "title": "中市國慶升旗萬人盛況 盧秀燕許諾拚到最後一秒",
-          "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPZ1lKSHVzYm94VDdmby1Bc29WRHZYUU9JYnYyR2phbldNa0p0ZGFfWmhFWlQ1NXJGaUZ1d3dYM0xmeERTX0Roa1BENnJ1dnllRklfaGRNTmw1Qy15MU95QzJTNVgzUHA3UHBUdFRONEhfVEhUalFSS0Z3TmZIZXo3Rkg3TTRtYjA5cFBWcWFMYjJ0dGpEejlpOTl0S0ozTGF1NjA0LVo4QzgxMWpsZGdXZDNteVl5QjRuZmFSLVhoUFltNHkwbmlqbXhBTXp1Tk9nTUR0d0dZdDFQT3NubWdnLVh5d0pLRGR5QWpZRjBHbF9tbjdaaVR1REtwc01IenRQdEpKTUZ3c1BFYzFJa29BR01VLUZoYkI3RUNTRHdqTDVBbzBZbl9jSy15dDR1TEZVSExFUllxbm9SUkVPMVNmNkhXcUJaUQ?oc=5",
-          "time": "2026-10-10 18:48:34",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ]
     },
@@ -95971,6 +95993,20 @@
       ],
       "news": [
         {
+          "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+          "time": "2026-10-11 07:11:08",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
+          "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+          "time": "2026-10-11 07:07:08",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
+        {
           "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
           "time": "2026-10-11 07:00:00",
@@ -95989,6 +96025,13 @@
           "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQVUZORHY3Q3BIY2xkTWFfWFcyOHQtd2RPTFNyTEpOcmdpS0Z2SER6ZE1DVkNmLWFOMEk4YWVlem1RcWdrSENuX3J3SG5ObkI4WTlQSGNOejhZajl3a1VyTW5RRENaNC1KQXlnWU9zM2M1b0cyQmltQXRPc1FCU1MtWGhIUWMwZURhTy1BM0lpVlVVOWV0M2FOcVFac3F1S0tLSjRHV0VEUWtoVWc4R0NfTkpFUnJjamlDQXFzdEY0blplTTU2V003alRSbEs3WU5wYzVCLXdFblhHOWgxQnRRa3c1aWZHNm5TdFg4eDhCcW9vS203RGJLTmpVc2NCQ0lRY3dZTk1TVnZFOGhNVUZNRlBBbV9pR1VXckZucndJOHFrUmJ4WVpjV2dpekVBUmhEcllNWnd4Z181N0RwOEMxNGRGZlFRaHl1UG9Bc2RwR1prckwwZUdJRkJLMmUzSXZVc1ZwOS1vckR5bnNlOVNXVko4OV9mdTdRM2lXQnEwd0tIZTBlM2pJVXdLVFNyNFVLZDIyZ0FueFpDODk4S0E?oc=5",
           "time": "2026-10-11 06:23:00",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+          "time": "2026-10-11 06:18:00",
+          "publisher": "三立新聞網",
           "severity": "yellow"
         },
         {
@@ -96086,27 +96129,6 @@
           "title": "【蔣萬安宮廟進場遭洋流包圍吶喊「我們的市長沈伯洋」】 （#大表哥）",
           "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxPNVlSYzU5c3hsaEtZZWZQejl0UGlCOEt4RHkyX3pIVWZabnlCWHpyc0V1a3pPdWpyRW9hc3hmWlNTLThGZlZELWE0LWhYeXNnNUdZLWFXamxncVBPS2JTYWVXUVhLYmd6ZFdpejFhYkktUlFBeVROVGpBdndCQjZFQlNmU3ZDOGtUT2tEZFRwYTJ0ZEpiR2hyWnp2X0cxQi1iRnpjcHBSbHhUZEQ4aUdYR01kTkhRWjM2RUFXaFhVNzRHa1l5ZjlZWnp0Yk5paV81UmVROU1tTE9vOVNnZjNrVHNaSUstU1VfRGphZS1FN2RZcmRMcFlIcGEyR0xmbHNGUVJPVlFJMlFaUURLdzNMbmhSbEtCQnVTb0xmcjBYSTlQWFF1b1JlVGlmSVJpSC10aVY4NTBoZHJCOGZGY1VkNlkwRzE1ZmJkS2pEeEVscVJtMklPMGRocERSVmZRRE9tbzdURnN1b1RiMzY5bFRjbzQ1azUxcVEyTmNuaUdhLXhacUM4ZE5FZ0RZZDQ3UGFGTGZqaA?oc=5",
           "time": "2026-10-11 01:40:03",
-          "publisher": "Google News→Facebook",
-          "severity": "yellow"
-        },
-        {
-          "title": "先讚沈伯洋魅力無與倫比 廣照宮董座又喊：希望蔣萬安繼續連任",
-          "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxOQjhvVG5zNmxMTFJLcURXaGx4SGpiVHFzb3hoNlVCeWdnWTFFQVBnZEZ6SFFIN181TXpJOXlUbmZtYllwa0lJV25ReUhrSDZnMnhCa3FQU0pENmlJWlF5dFE3MUZ2dVdHb29uamp5QWxILVNsNXlzR09CUndCYVEwZ28yZWlsbDR2U1RJN1VJNEZkai1HWXJ1S0tlbnhIN2VqcXgxS2hzNlRmZEl6TnNDckJ2VVpXWmQzSDBPMFFQWjJ4UFpGVWhFLTBfbkNabW5OQjRuTGhrYkx0a09FUi0zWlRzZ2lmODlFYXhBa29vWFJyYTdBU09lV080Ymc1RXJuYlJ3QW5mUFNXVngtc3dSa2JsNTdKM3dGcS1CRGtpbTVURHVlcVZWWkhHeV9pbkc4aWJHLVc1MXQ3Z0s5REszN2VlVnFqZnlzc04xT2tkcjVPNnJmaHZ2VWViaVRoeUNROE9pNnVnWUNCMnNjdDF1cTJfZFZCeTdsWUVGZTk1QmVESUJrc2IwQ20xcEhQOFZMMTNLOTRVcnZSZw?oc=5",
-          "time": "2026-10-11 01:08:19",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "先讚沈伯洋魅力無與倫比 廣照宮董座又喊：希望蔣萬安繼續連任",
-          "url": "https://tw.news.yahoo.com/%E5%85%88%E8%AE%9A%E6%B2%88%E4%BC%AF%E6%B4%8B%E9%AD%85%E5%8A%9B%E7%84%A1%E8%88%87%E5%80%AB%E6%AF%94-%E5%BB%A3%E7%85%A7%E5%AE%AE%E8%91%A3%E5%BA%A7%E5%8F%88%E5%96%8A-%E5%B8%8C%E6%9C%9B%E8%94%A3%E8%90%AC%E5%AE%89%E7%B9%BC%E7%BA%8C%E9%80%A3%E4%BB%BB-170819984.html",
-          "time": "2026-10-11 01:08:19",
-          "publisher": "Yahoo新聞",
-          "severity": null
-        },
-        {
-          "title": "ETtoday新聞雲. . 【焦點一幕】蔣萬安、沈伯洋同場廣照宮 緊牽雙手溝通！民眾高喊要辯論",
-          "url": "https://news.google.com/rss/articles/CBMivANBVV95cUxNcVRoWnhUU21KVUdoWmtFSWFWM05fOUtzRFVpRkJ5R3pseUwzVExUNE1iZHpLdXRvVGtHU1RIazJxZzFfUDR6XzBZLVhUT3MzLUloQXktRnVrVmhxN3FVbTN1Nnk2VjBIb3V1TFo5ZEN1TXVPZGg2MFdXWm8tVWJQMExBNFlDVTI4TFg1QzgwMElVRUhqZkt2ZmF2ZXV1bEd5MFdmTWlWSkg5X3AzVVI1RVNEd0s0Zlo0M0JNYUl4V3BDQ1VQajFNODlkNTVXa3hyX1ZPQ290ck9nZS1UeG1hYmhUTnFIX3hkUmNHMUhGbERnV0hxczBQeWxIeWY0T1VjTkh6ellMb2RUeG9zdE1hd1hJMDBYR2JNZjkzaEhiN2Z1bmxDUFA1cjUzUkJGbDRhQ0VWd0d5YmpmR1hhS0tyY1RUUy0yS2N2eTZFZFB4bVRjZmxzbURBOGVVbjBuczNZdXhpc3Q3d0hwbDRod2NwcWVyenZWdklRVXUwY0Q0LTBaQkZROG9jclZ1VnNsaFdaQUgwWE52N0IwSEF1YkpnM0JDTkFEMTc0TmFqOXBGbXhUa1UySWREdW9XYVM?oc=5",
-          "time": "2026-10-11 00:27:12",
           "publisher": "Google News→Facebook",
           "severity": "yellow"
         }
@@ -96414,6 +96436,20 @@
   "latest_by_platform_24h": {
     "news": [
       {
+        "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+        "time": "2026-10-11 07:11:08",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+        "time": "2026-10-11 07:07:08",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
         "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
         "time": "2026-10-11 07:00:00",
@@ -96432,6 +96468,13 @@
         "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQVUZORHY3Q3BIY2xkTWFfWFcyOHQtd2RPTFNyTEpOcmdpS0Z2SER6ZE1DVkNmLWFOMEk4YWVlem1RcWdrSENuX3J3SG5ObkI4WTlQSGNOejhZajl3a1VyTW5RRENaNC1KQXlnWU9zM2M1b0cyQmltQXRPc1FCU1MtWGhIUWMwZURhTy1BM0lpVlVVOWV0M2FOcVFac3F1S0tLSjRHV0VEUWtoVWc4R0NfTkpFUnJjamlDQXFzdEY0blplTTU2V003alRSbEs3WU5wYzVCLXdFblhHOWgxQnRRa3c1aWZHNm5TdFg4eDhCcW9vS203RGJLTmpVc2NCQ0lRY3dZTk1TVnZFOGhNVUZNRlBBbV9pR1VXckZucndJOHFrUmJ4WVpjV2dpekVBUmhEcllNWnd4Z181N0RwOEMxNGRGZlFRaHl1UG9Bc2RwR1prckwwZUdJRkJLMmUzSXZVc1ZwOS1vckR5bnNlOVNXVko4OV9mdTdRM2lXQnEwd0tIZTBlM2pJVXdLVFNyNFVLZDIyZ0FueFpDODk4S0E?oc=5",
         "time": "2026-10-11 06:23:00",
         "publisher": "Yahoo新聞",
+        "severity": "yellow"
+      },
+      {
+        "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+        "time": "2026-10-11 06:18:00",
+        "publisher": "三立新聞網",
         "severity": "yellow"
       },
       {
@@ -96481,6 +96524,13 @@
         "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
         "time": "2026-10-11 04:10:00",
         "publisher": "Yahoo新聞",
+        "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "publisher": "中時新聞網",
         "severity": "yellow"
       },
       {
@@ -99672,7 +99722,7 @@
         "title": "沈伯洋逆轉勝，蔣萬安直接選總統？陳揮文揭國民黨輸台北「2大好處」：劇本都有了| 李瑋萱 | 新聞",
         "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Y3lqbU1xNkw3cmktU1Y1STZMSjNhLXNfaEhnVFJpc1BmTlp5WmdmV2lZa2F6WFZXbmZhNWFueFNmdXdfM3NnSjdVX0YwZw?oc=5",
         "time": "2026-10-10 12:48:00",
-        "publisher": "Google News→Storm.mg",
+        "publisher": "Google News→風傳媒",
         "severity": "yellow"
       },
       {
@@ -101389,55 +101439,6 @@
         "time": "2026-10-10 07:39:26",
         "publisher": "Yahoo新聞",
         "severity": "yellow"
-      },
-      {
-        "title": "北市民＝韓粉？蔣萬安民調緊繃「嘆1事」惹議 當年同情況遭韓粉灌爆",
-        "url": "https://tw.news.yahoo.com/%E5%8C%97%E5%B8%82%E6%B0%91-%E9%9F%93%E7%B2%89-%E8%94%A3%E8%90%AC%E5%AE%89%E6%B0%91%E8%AA%BF%E7%B7%8A%E7%B9%83-%E5%98%861%E4%BA%8B-%E6%83%B9%E8%AD%B0-073716424.html",
-        "time": "2026-10-10 07:37:16",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "社工界要李彥秀道歉！蔣萬安：源頭是沈伯洋",
-        "url": "https://tw.news.yahoo.com/%E7%A4%BE%E5%B7%A5%E7%95%8C%E8%A6%81%E6%9D%8E%E5%BD%A5%E7%A7%80%E9%81%93%E6%AD%89-%E8%94%A3%E8%90%AC%E5%AE%89-%E6%BA%90%E9%A0%AD%E6%98%AF%E6%B2%88%E4%BC%AF%E6%B4%8B-073704950.html",
-        "time": "2026-10-10 07:37:04",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-        "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%9C%8B%E6%85%B6%E6%8F%90-5%E5%80%8B%E5%A0%85%E6%8C%81-%E9%BB%83%E5%81%A5%E8%B1%AA-%E8%AA%AA%E6%98%8E%E7%95%B6%E4%BB%8A%E8%B3%B4%E6%B8%85%E5%BE%B7%E5%9C%8B%E6%94%BF%E5%9B%B0%E5%A2%83-073651712.html",
-        "time": "2026-10-10 07:36:51",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "點出蔣萬安最大問題！他曝「內部資料」勸1招反擊：綠最怕這件事",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xZk5TSk44OGllSlNmamVEUmJaZVVySFlFeWVlRHVqS2M1VEZ4MURaUnlraS1GdU9zRm5ad2NvRXFnSE5Cc1dfd1VvWXk3dUF3WEZJ?oc=5",
-        "time": "2026-10-10 07:27:00",
-        "publisher": "TVBS",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安選情出大事！連「政界上古神獸」都敢冷落 6屆藍議員親抖內幕",
-        "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxPbC1GdDhKNloxS0R6S0R5bHJzUWVkMzlIYUpqVk1sUzZOc2h2ZnphUE9SLUtrTHUxNGZ1Zi01ckY0UlNIZVFrOHd1czRKajM0UmtZSnBCMm9MYnlKY1BSRllEang5OTdZR1dDaHFoOEMzM1RoZmFXdFg2UWp2d2dFRFZKa1AyMXVBSmptQ0JhQ3ZKc3VoT2ZwSmRiN2s0cThPbUd2VVN4bG96ZE1wSDVTS2dkLVNuWFdKQjl5eTd6X0U2VmdJcmtoVzc2NVpraGZONmdRWWZucmF2VkRCRXdOU2N4NVI1VTZDLUNtTlEtZkVxdG13UGI3Q3I0bTJCT29rZmM4QmEwbkcxTVk5MjE4N08zSlU1Y0hqVzd5WERkbk51aDhnWnhGZS03a212Q1l5T3RWbjhGUHBnOWhvS3VwSzdjTHl1c0lTajFYWGhNTF9tQUdMcEpXVXpuaEdQRC11d2gyYjVrOV9SMzU1T005WExlLVg1OUtvb2FmOHFuNXdLRTFRS1pxX2NnbWpsN2FGR25NSlFmQVdvVGhybkE?oc=5",
-        "time": "2026-10-10 07:23:55",
-        "publisher": "Yahoo新聞",
-        "severity": "yellow"
-      },
-      {
-        "title": "快新聞／蔣萬安選情出大事！連「政界上古神獸」都敢冷落 6屆藍議員親抖內幕",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NN3JXekNxdGhfTFJJZkF2NkZjVTg3VTNHYWRjVHVzRUJDYk02TzdieXhubVdzV0lvZGVWNUpUbEZYOUJOVTh1TUtZY3NldDItS1RyMTludFJPZWxYazFQeA?oc=5",
-        "time": "2026-10-10 07:23:55",
-        "publisher": "Google News→民視新聞網",
-        "severity": "yellow"
-      },
-      {
-        "title": "出席路竹運動中心開幕典禮 陳其邁：整合學校空間打造全齡友善運動場館",
-        "url": "https://news.google.com/rss/articles/CBMi0gNBVV95cUxNSFdXQm1RUkxVRDk0cTdkWDZlNmNXVDNVbG1VT0Ixa0tqZkxFai03cEI2WHN6QWtpM29GOXhSdjhwV1BXWFhzbEZueEZMVVFKT0FlaUdtb0FWWVV0eHpxNFJ6ZldNNkhoSmdlMFJuNGZYMDIzclNTOTVsVmhpamRDdmR3TF8wcFZVSEQ5dU9CVzFnXzVOY3FCaUV2N3lPWWJNME1LMmlDREhQZ1hNLWI4dUJWVzJENWQ5UWl5aEszMVFiYXozTTBuS05CR1daRHBhNTZMc1pEWDQwcUFDTXY0NkR2UFNGU21RRFQxcDMtRlVfQ0JycTVGMU52U1hmWTJCQUd6a1Y5THM3NmpmdzkzMEFFNV9nSWl3Y2FuR1VpRHNka0w2Tl9mYV9sc2I3aGtrRjVZTk1iclcyLTlmVFNDNUxhMjR0OW03dl9QOGp1ZE5aanVNeHc3bE4zSDRvSnNObjZZbUE0TzRDOFUxdEVIaXZTSGRkUDNGZkp2WFNrbElNVVhKWWl3S3Frbm9EaUFsNG9WV1RqUUlRVnJCdFZKWXBtSzA4V1RzNVZYd2h1VGNRTEd1QmM1OWI0SkdjNlhhYlhmaTJFOXEwMDctWWdfck1R?oc=5",
-        "time": "2026-10-10 07:22:30",
-        "publisher": "Google News→台灣好新聞",
-        "severity": null
       }
     ],
     "ptt": [
@@ -101924,6 +101925,20 @@
   "latest_by_platform_7d": {
     "news": [
       {
+        "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+        "time": "2026-10-11 07:11:08",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
+        "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+        "time": "2026-10-11 07:07:08",
+        "publisher": "自由時報",
+        "severity": "yellow"
+      },
+      {
         "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
         "time": "2026-10-11 07:00:00",
@@ -101942,6 +101957,13 @@
         "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQVUZORHY3Q3BIY2xkTWFfWFcyOHQtd2RPTFNyTEpOcmdpS0Z2SER6ZE1DVkNmLWFOMEk4YWVlem1RcWdrSENuX3J3SG5ObkI4WTlQSGNOejhZajl3a1VyTW5RRENaNC1KQXlnWU9zM2M1b0cyQmltQXRPc1FCU1MtWGhIUWMwZURhTy1BM0lpVlVVOWV0M2FOcVFac3F1S0tLSjRHV0VEUWtoVWc4R0NfTkpFUnJjamlDQXFzdEY0blplTTU2V003alRSbEs3WU5wYzVCLXdFblhHOWgxQnRRa3c1aWZHNm5TdFg4eDhCcW9vS203RGJLTmpVc2NCQ0lRY3dZTk1TVnZFOGhNVUZNRlBBbV9pR1VXckZucndJOHFrUmJ4WVpjV2dpekVBUmhEcllNWnd4Z181N0RwOEMxNGRGZlFRaHl1UG9Bc2RwR1prckwwZUdJRkJLMmUzSXZVc1ZwOS1vckR5bnNlOVNXVko4OV9mdTdRM2lXQnEwd0tIZTBlM2pJVXdLVFNyNFVLZDIyZ0FueFpDODk4S0E?oc=5",
         "time": "2026-10-11 06:23:00",
         "publisher": "Yahoo新聞",
+        "severity": "yellow"
+      },
+      {
+        "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+        "time": "2026-10-11 06:18:00",
+        "publisher": "三立新聞網",
         "severity": "yellow"
       },
       {
@@ -101991,6 +102013,13 @@
         "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
         "time": "2026-10-11 04:10:00",
         "publisher": "Yahoo新聞",
+        "severity": "yellow"
+      },
+      {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "publisher": "中時新聞網",
         "severity": "yellow"
       },
       {
@@ -105182,7 +105211,7 @@
         "title": "沈伯洋逆轉勝，蔣萬安直接選總統？陳揮文揭國民黨輸台北「2大好處」：劇本都有了| 李瑋萱 | 新聞",
         "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Y3lqbU1xNkw3cmktU1Y1STZMSjNhLXNfaEhnVFJpc1BmTlp5WmdmV2lZa2F6WFZXbmZhNWFueFNmdXdfM3NnSjdVX0YwZw?oc=5",
         "time": "2026-10-10 12:48:00",
-        "publisher": "Google News→Storm.mg",
+        "publisher": "Google News→風傳媒",
         "severity": "yellow"
       },
       {
@@ -144377,27 +144406,6 @@
         "time": "2026-10-04 07:42:00",
         "publisher": "ETtoday",
         "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安FB遭灌爆 「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOcDN0bnMxdHlMcTIzdEVKV3BuM05IVFhqdHB4N2UzNTAzQ0UtZUFwRzU0LVc2U1RjMTJGdmFyMWFIS2hVemdlc2tXMDNvUzZLTHNtMWJnbEpfbkZnX2dnQXoyN3k1STRZalB2YWYzcE56SVZXWHNvN2dNM0lMR1NHMTNuamVWdWVvT0RDQW94SHlIMktKR0hlTGY2VGkzWkxEbl8wTlNrQkxTeGl2ZmFuR1NaTWZmQ1Z6aV93YVcyM3ZvZnVyenZ5OUpTaEdrbWZybHRXN2JzalVtN0pHYXBKOGFnZlVPZWRzZHJqOENTX1c2djIxNWdjQTlra2ZURHFIS3BJcWpadmZHQ1VDcV9IRW5DbmJKaEQ5UmV4Sng1TW8tUVFjdEVVckk1a2pnSXZ2WUt4c2xaeTJoVzJSUVRmdHY1TXVHaHlfT1lWbW1hS1ZlU3A3T0N4azVYNXlkUVRFeS0xUEZGNTBPOW9QYXhYNHEtQ1N2NUE?oc=5",
-        "time": "2026-10-04 07:35:04",
-        "publisher": "Google News→facebook.com",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zWnBQVDUxem5kSXBJc3RDMlJ2ZkJlUlA1RmZCUGw1N3lvVC15YV9oVDJpMUdSTURYdk45YUpTUTZrNVJwS0EwYjNBZmFjWElFU0xJODhoTjRxVG9wbEHSAUtBVV95cUxOQnFEWlBILWFjWlVPdHN0WXh5ZzBDS3FFd0N1U2R2ZWRhQVRzUV9YeTMtdDlxU3RRQjU0cnFIY3FYZkEyellpaWxnVHM?oc=5",
-        "time": "2026-10-04 07:23:00",
-        "publisher": "ETtoday",
-        "severity": "yellow"
-      },
-      {
-        "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-        "url": "https://www.ettoday.net/news/20261004/3248626.htm",
-        "time": "2026-10-04 07:23:00",
-        "publisher": "ETtoday",
-        "severity": "yellow"
       }
     ],
     "ptt": [
@@ -148795,7 +148803,7 @@
           "text": "慶祝國慶！許願.很靈的。 1.把保外就醫的陳水扁，抓回去關起來。 2.國家機密的軍購案-把蔡英文驅逐出境。放逐。 3.不排除把蔡英文+陳水扁都判死刑。 4.中華民國萬歲！",
           "author": "陳歆潔",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "red"
         }
       ],
@@ -149124,7 +149132,7 @@
           "text": "盧市長為啥把自己的家弄得到處垃圾廚餘？為什麼讓自己的家成為豬瘟破口？為什麼讓自己的家人吃到毒油？為什麼讓自己的家裡平白無故死那麼多人？為什麼把社宅用地賣給財團？為什麼廢土亂傾倒？為什麼自己家沒有第二條捷運？為什麼家裡有床墊萬里長城？為什麼讓家裡空氣越來越髒？為什麼讓家裡有教練性侵學生？為什麼讓豐原詐騙導致全家自殺？ 如果台中真的是你的家，那怎麼會把家弄得亂七八糟？",
           "author": "方昰翔",
           "url": "",
-          "time_text": "7小時",
+          "time_text": "8小時",
           "signal": "red"
         },
         {
@@ -149132,7 +149140,7 @@
           "text": "妳的家也是垃圾山、床墊城、廚餘塚嗎？",
           "author": "Gary Lin",
           "url": "",
-          "time_text": "10小時",
+          "time_text": "11小時",
           "signal": "red"
         },
         {
@@ -149140,7 +149148,7 @@
           "text": "張瑞嘉 還有垃圾山 廚餘湖跟兩次毀掉國內豬肉產業",
           "author": "Yu Kari",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         }
       ],
@@ -149177,7 +149185,7 @@
           "text": "妳的家也是垃圾山、床墊城、廚餘塚嗎？",
           "author": "Gary Lin",
           "url": "",
-          "time_text": "10小時",
+          "time_text": "11小時",
           "signal": "red"
         },
         {
@@ -149185,7 +149193,7 @@
           "text": "張瑞嘉 還有垃圾山 廚餘湖跟兩次毀掉國內豬肉產業",
           "author": "Yu Kari",
           "url": "",
-          "time_text": "15小時",
+          "time_text": "16小時",
           "signal": "red"
         },
         {
@@ -149238,7 +149246,7 @@
           "text": "中華民國生日快樂～ 感恩市長媽媽及市府團隊讓捷運綠線完成，期待捷運藍線到來",
           "author": "J Bee Bee",
           "url": "",
-          "time_text": "3小時",
+          "time_text": "4小時",
           "signal": "green"
         },
         {
@@ -149246,7 +149254,7 @@
           "text": "8年=捷運藍線開工，算是政績還是停機？",
           "author": "Rossi Wang",
           "url": "",
-          "time_text": "6小時",
+          "time_text": "7小時",
           "signal": "yellow"
         },
         {
@@ -149254,7 +149262,7 @@
           "text": "讚啦！臺中市是宜居的城市，我住台中也有30幾年了，我很期待捷運藍線，什麼時候動工？臺中市民等很久很久了耶！",
           "author": "蔡明哲",
           "url": "",
-          "time_text": "6小時",
+          "time_text": "7小時",
           "signal": "yellow"
         },
         {
@@ -149262,7 +149270,7 @@
           "text": "雙十公車看得到吃不到，說免費但是快一小時才一班 捷運藍線八年才準備開工 購物節不知道在幹嘛 唉….",
           "author": "黃弘軒",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "red"
         },
         {
@@ -149270,7 +149278,7 @@
           "text": "開不了工的開工 完不了工的完工 捷運藍線跟巨蛋通通搞定 八年做做滿不中途溜走 這種政治人物真的太少見了",
           "author": "林祐良",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         }
       ],
@@ -149499,25 +149507,25 @@
       "red_news_count": 0
     },
     {
-      "title": "台南弊案爭議",
-      "city": "台南",
-      "place": "台南市政府",
-      "lat": 22.9908,
-      "lng": 120.2133,
+      "title": "新竹市弊案爭議",
+      "city": "新竹市",
+      "place": "新竹市政府",
+      "lat": 24.8153,
+      "lng": 120.97009807621136,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-10-10T03:07:23+00:00",
-      "news_full_expires_at": "2026-10-11T03:07:23+00:00",
+      "news_latest_at": "2026-10-10T04:17:37+00:00",
+      "news_full_expires_at": "2026-10-11T04:17:37+00:00",
       "news_articles": [
         {
-          "title": "沒撞到也有事！台南男紅線違停擋視線 害騎士自摔亡遭判刑",
-          "url": "https://tw.news.yahoo.com/%E6%B2%92%E6%92%9E%E5%88%B0%E4%B9%9F%E6%9C%89%E4%BA%8B-%E5%8F%B0%E5%8D%97%E7%94%B7%E7%B4%85%E7%B7%9A%E9%81%95%E5%81%9C%E6%93%8B%E8%A6%96%E7%B7%9A-%E5%AE%B3%E9%A8%8E%E5%A3%AB%E8%87%AA%E6%91%94%E4%BA%A1%E9%81%AD%E5%88%A4%E5%88%91-110723811.html",
-          "time": "2026-10-10 11:07:23",
-          "publisher": "Yahoo新聞",
+          "title": "竹市20多名警涉白單案遭停職起訴！基層不滿面臨訴訟高層卻享盡好處",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5601653",
+          "time": "2026-10-10 12:17:37",
+          "publisher": "自由時報",
           "severity": "red"
         }
       ],
@@ -149538,25 +149546,25 @@
       "red_news_count": 1
     },
     {
-      "title": "新竹市弊案爭議",
-      "city": "新竹市",
-      "place": "新竹市政府",
-      "lat": 24.8153,
-      "lng": 120.97009807621136,
+      "title": "台南弊案爭議",
+      "city": "台南",
+      "place": "台南市政府",
+      "lat": 22.9908,
+      "lng": 120.2133,
       "level": "yellow",
       "source": "news",
       "platform": "新聞 1",
       "note": "24h 命中 1 則（新聞 1、留言 0）",
       "news_count": 1,
       "comment_count": 0,
-      "news_latest_at": "2026-10-10T04:17:37+00:00",
-      "news_full_expires_at": "2026-10-11T04:17:37+00:00",
+      "news_latest_at": "2026-10-10T03:07:23+00:00",
+      "news_full_expires_at": "2026-10-11T03:07:23+00:00",
       "news_articles": [
         {
-          "title": "竹市20多名警涉白單案遭停職起訴！基層不滿面臨訴訟高層卻享盡好處",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5601653",
-          "time": "2026-10-10 12:17:37",
-          "publisher": "自由時報",
+          "title": "沒撞到也有事！台南男紅線違停擋視線 害騎士自摔亡遭判刑",
+          "url": "https://tw.news.yahoo.com/%E6%B2%92%E6%92%9E%E5%88%B0%E4%B9%9F%E6%9C%89%E4%BA%8B-%E5%8F%B0%E5%8D%97%E7%94%B7%E7%B4%85%E7%B7%9A%E9%81%95%E5%81%9C%E6%93%8B%E8%A6%96%E7%B7%9A-%E5%AE%B3%E9%A8%8E%E5%A3%AB%E8%87%AA%E6%91%94%E4%BA%A1%E9%81%AD%E5%88%A4%E5%88%91-110723811.html",
+          "time": "2026-10-10 11:07:23",
+          "publisher": "Yahoo新聞",
           "severity": "red"
         }
       ],
@@ -150386,9 +150394,9 @@
       "lng": 119.5793,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 29",
-      "note": "24h 命中 29 則（新聞 29、留言 0）",
-      "news_count": 29,
+      "platform": "新聞 28",
+      "note": "24h 命中 28 則（新聞 28、留言 0）",
+      "news_count": 28,
       "comment_count": 0,
       "news_latest_at": "2026-10-10T16:09:48+00:00",
       "news_full_expires_at": "2026-10-11T16:09:48+00:00",
@@ -150588,20 +150596,13 @@
           "time": "2026-10-10 09:15:56",
           "publisher": "Google News→LINE TODAY",
           "severity": "yellow"
-        },
-        {
-          "title": "澎湖青溪婦女協會歌舞齊發 伴四季長輩歡度重陽節",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5sTlAyLUFQNzF5b0VoTXlXR1h1V3dWWEZ0WElaeklXaWZpd2d0b1pnNld4TTJ2SUFXZ3QxWGpQRWJxbmFfUUJaUGliZlpzMkNVN0drLWw1cDlGVVJDampfemtZc0haR0ZxNlE?oc=5",
-          "time": "2026-10-10 07:31:18",
-          "publisher": "Google News→澎湖日報",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 0,
-      "urgency_score": 29,
+      "urgency_score": 28,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -151201,9 +151202,9 @@
       "lng": 121.60409807621136,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 44",
-      "note": "24h 命中 44 則（新聞 44、留言 0）",
-      "news_count": 44,
+      "platform": "新聞 43",
+      "note": "24h 命中 43 則（新聞 43、留言 0）",
+      "news_count": 43,
       "comment_count": 0,
       "news_latest_at": "2026-10-10T20:10:00+00:00",
       "news_full_expires_at": "2026-10-11T20:10:00+00:00",
@@ -151508,20 +151509,13 @@
           "time": "2026-10-10 09:00:00",
           "publisher": "Google News→新住民全球新聞網",
           "severity": null
-        },
-        {
-          "title": "花蓮中興部落國慶閱兵創新 女蛙兵、輕航機展愛國精神",
-          "url": "https://tw.news.yahoo.com/%E8%8A%B1%E8%93%AE%E4%B8%AD%E8%88%88%E9%83%A8%E8%90%BD%E5%9C%8B%E6%85%B6%E9%96%B1%E5%85%B5%E5%89%B5%E6%96%B0-%E5%A5%B3%E8%9B%99%E5%85%B5-%E8%BC%95%E8%88%AA%E6%A9%9F%E5%B1%95%E6%84%9B%E5%9C%8B%E7%B2%BE%E7%A5%9E-072356971.html",
-          "time": "2026-10-10 07:23:56",
-          "publisher": "Yahoo新聞",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 7,
       "urgent_red_comments": 0,
-      "urgency_score": 53,
+      "urgency_score": 52,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -152639,10 +152633,10 @@
       "lng": 120.6469,
       "level": "yellow",
       "source": "news + comment",
-      "platform": "新聞 99 / FB 16",
-      "note": "24h 命中 115 則（新聞 99、留言 16）",
+      "platform": "新聞 99 / FB 17",
+      "note": "24h 命中 116 則（新聞 99、留言 17）",
       "news_count": 99,
-      "comment_count": 16,
+      "comment_count": 17,
       "news_latest_at": "2026-10-10T20:10:00+00:00",
       "news_full_expires_at": "2026-10-11T20:10:00+00:00",
       "news_articles": [
@@ -152651,6 +152645,13 @@
           "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
           "time": "2026-10-11 04:10:00",
           "publisher": "Yahoo新聞",
+          "severity": "yellow"
+        },
+        {
+          "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+          "time": "2026-10-11 04:10:00",
+          "publisher": "中時新聞網",
           "severity": "yellow"
         },
         {
@@ -153331,22 +153332,23 @@
           "time": "2026-10-10 08:57:00",
           "publisher": "Google News→新華報導",
           "severity": null
-        },
-        {
-          "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-          "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%9C%8B%E6%85%B6%E6%8F%90-5%E5%80%8B%E5%A0%85%E6%8C%81-%E9%BB%83%E5%81%A5%E8%B1%AA-%E8%AA%AA%E6%98%8E%E7%95%B6%E4%BB%8A%E8%B3%B4%E6%B8%85%E5%BE%B7%E5%9C%8B%E6%94%BF%E5%9B%B0%E5%A2%83-073651712.html",
-          "time": "2026-10-10 07:36:51",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [
         {
           "platform": "facebook",
+          "text": "雙10國慶 快樂喔 祝福 市長 秀燕喔",
+          "author": "武田佳諺",
+          "url": "",
+          "time_text": "27分鐘",
+          "signal": "green"
+        },
+        {
+          "platform": "facebook",
           "text": "盧秀燕就是台灣政治史最無能且無恥的政客，x萬安就是學他，一被檢驗就露出馬腳兵敗如山倒 你為了顏氏王朝顏家的煤炭事業永續發大財，阻擋台電把中火轉為天然氣燃電，無能還無恥",
           "author": "黃太災",
           "url": "",
-          "time_text": "9小時",
+          "time_text": "10小時",
           "signal": "red"
         },
         {
@@ -153354,7 +153356,7 @@
           "text": "中國傳出鼠疫疫情，請盧秀燕市長提高警覺、做好防疫準備，別讓台中成為防疫破口！",
           "author": "Wassily Ko",
           "url": "",
-          "time_text": "10小時",
+          "time_text": "11小時",
           "signal": "yellow"
         },
         {
@@ -153362,7 +153364,7 @@
           "text": "堅持中華民國與台海和平是所有人的期盼 唯有社會安定城市繁榮 大家才能安居樂業過好日子 盧秀燕市長這番話展現真正的格局與遠見 令人動容!",
           "author": "楊佩琪",
           "url": "",
-          "time_text": "13小時",
+          "time_text": "14小時",
           "signal": "yellow"
         },
         {
@@ -153370,7 +153372,7 @@
           "text": "秀燕姊辛苦了！",
           "author": "FuMien Tien",
           "url": "",
-          "time_text": "17小時",
+          "time_text": "18小時",
           "signal": "green"
         },
         {
@@ -153378,7 +153380,7 @@
           "text": "秀燕市長雙十國慶快樂",
           "author": "廖元彰",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         },
         {
@@ -153386,7 +153388,7 @@
           "text": "八年任期快到了真的好捨不得 秀燕媽媽把台中當成自己家在顧 無論妳未來在哪裡 鄉親都會全力支持妳",
           "author": "梁凱軒",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "green"
         },
         {
@@ -153394,7 +153396,7 @@
           "text": "民進黨中央平時卡台中卡得要死 幸好秀燕媽媽在議會講求家和萬事興 把台中建設一個個蓋起來 真的太感人了",
           "author": "Gloria Lin",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         },
         {
@@ -153402,7 +153404,7 @@
           "text": "秀燕媽媽真的辛苦了",
           "author": "Lena Chan",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "green"
         },
         {
@@ -153410,7 +153412,7 @@
           "text": "綠營執政只會讓台海變危險 看看盧秀燕提出五個堅持 堅持民生優先跟台海和平 這才是我們要的領導人啦",
           "author": "錢華",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         },
         {
@@ -153418,7 +153420,7 @@
           "text": "感謝秀燕市長這八年無私的付出 辛苦了",
           "author": "伍鐵多",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "green"
         },
         {
@@ -153426,7 +153428,7 @@
           "text": "支持秀燕媽媽選總統",
           "author": "Bennet Cheng",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "green"
         },
         {
@@ -153434,7 +153436,7 @@
           "text": "看到大面國旗跟無人機進場真的眼眶泛淚 中華民國就是要大家一起團結 挺盧秀燕挺國民黨 台灣才會更好",
           "author": "黃庭方",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "green"
         },
         {
@@ -153442,7 +153444,7 @@
           "text": "民進黨只會花大錢搞意識形態 看看盧秀燕做老人健保營養午餐這些實質福利 誰才是真正愛百姓 一目瞭然啦",
           "author": "Cityy Toy",
           "url": "",
-          "time_text": "18小時",
+          "time_text": "19小時",
           "signal": "yellow"
         },
         {
@@ -153450,7 +153452,7 @@
           "text": "堅持中華民國守護台灣 秀燕好樣的",
           "author": "陳宏怡",
           "url": "",
-          "time_text": "19小時",
+          "time_text": "20小時",
           "signal": "green"
         },
         {
@@ -153458,7 +153460,7 @@
           "text": "看了謝龍介的一段影片，台南去年有154萬張罰單，全市70幾處科技執法，還有190幾支測速照相，他當選台南市長後至少要拿掉一半。既然市長有這種權力，盧秀燕為什麼不做？妳知道不當罰單有多少嗎？尤其是惡意舉發！",
           "author": "Kenny Tsai",
           "url": "",
-          "time_text": "19小時",
+          "time_text": "20小時",
           "signal": "yellow"
         },
         {
@@ -153466,14 +153468,14 @@
           "text": "秀燕讚啦",
           "author": "林蘭櫻",
           "url": "",
-          "time_text": "19小時",
+          "time_text": "20小時",
           "signal": "green"
         }
       ],
       "negative_news_count": 0,
       "negativity_pct": 0,
       "urgent_red_comments": 1,
-      "urgency_score": 117,
+      "urgency_score": 118,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -153489,9 +153491,9 @@
       "lng": 120.69259807621135,
       "level": "yellow",
       "source": "news",
-      "platform": "新聞 120",
-      "note": "24h 命中 120 則（新聞 120、留言 0）",
-      "news_count": 120,
+      "platform": "新聞 119",
+      "note": "24h 命中 119 則（新聞 119、留言 0）",
+      "news_count": 119,
       "comment_count": 0,
       "news_latest_at": "2026-10-10T22:22:55+00:00",
       "news_full_expires_at": "2026-10-11T22:22:55+00:00",
@@ -154328,20 +154330,13 @@
           "time": "2026-10-10 07:50:15",
           "publisher": null,
           "severity": null
-        },
-        {
-          "title": "昔命中柯文哲空亡！命理師驚天斷言「何欣純當選台中市長」",
-          "url": "https://news.nextapple.com/politics/20261010/03AF75ED42D3303B9946F827BA7A0192",
-          "time": "2026-10-10 07:30:00",
-          "publisher": "壹蘋新聞網",
-          "severity": null
         }
       ],
       "comments": [],
       "negative_news_count": 2,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 126,
+      "urgency_score": 125,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -156717,9 +156712,9 @@
       "lng": 120.314,
       "level": "red",
       "source": "news",
-      "platform": "新聞 139",
-      "note": "24h 命中 139 則（新聞 139、留言 0）",
-      "news_count": 139,
+      "platform": "新聞 137",
+      "note": "24h 命中 137 則（新聞 137、留言 0）",
+      "news_count": 137,
       "comment_count": 0,
       "news_latest_at": "2026-10-10T21:30:00+00:00",
       "news_full_expires_at": "2026-10-11T21:30:00+00:00",
@@ -157682,27 +157677,13 @@
           "time": "2026-10-10 08:12:26",
           "publisher": "墨新聞",
           "severity": "yellow"
-        },
-        {
-          "title": "【中天直播 #LIVE】國民黨高雄市黨代表支持 柯志恩迎向勝選座談會 20261010 @中天電視CtiTv",
-          "url": "https://www.youtube.com/watch?v=InkrMiJKHds",
-          "time": "2026-10-10 07:27:15",
-          "publisher": null,
-          "severity": null
-        },
-        {
-          "title": "下流當有趣！偷拍吊帶襪還狂嗆「這句話」高雄噁男踢鐵板連帶公司賠慘",
-          "url": "https://tw.news.yahoo.com/%E4%B8%8B%E6%B5%81%E7%95%B6%E6%9C%89%E8%B6%A3-%E5%81%B7%E6%8B%8D%E5%90%8A%E5%B8%B6%E8%A5%AA%E9%82%84%E7%8B%82%E5%97%86-%E9%80%99%E5%8F%A5%E8%A9%B1-%E9%AB%98%E9%9B%84%E5%99%81%E7%94%B7%E8%B8%A2%E9%90%B5%E6%9D%BF%E9%80%A3%E5%B8%B6%E5%85%AC%E5%8F%B8%E8%B3%A0%E6%85%98-072300371.html",
-          "time": "2026-10-10 07:23:00",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
       "negative_news_count": 3,
       "negativity_pct": 2,
       "urgent_red_comments": 0,
-      "urgency_score": 148,
+      "urgency_score": 146,
       "is_urgent": false,
       "is_catchall": true,
       "keywords": [
@@ -157751,9 +157732,16 @@
       "note": "24h 命中 199 則（新聞 199、留言 0）",
       "news_count": 199,
       "comment_count": 0,
-      "news_latest_at": "2026-10-10T21:30:00+00:00",
-      "news_full_expires_at": "2026-10-11T21:30:00+00:00",
+      "news_latest_at": "2026-10-10T23:11:08+00:00",
+      "news_full_expires_at": "2026-10-11T23:11:08+00:00",
       "news_articles": [
+        {
+          "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+          "time": "2026-10-11 07:11:08",
+          "publisher": "自由時報",
+          "severity": "yellow"
+        },
         {
           "title": "雙十升旗 北市市府路成大型畫布",
           "url": "https://news.ltn.com.tw/news/Taipei/paper/1774095",
@@ -158801,7 +158789,7 @@
           "title": "沈伯洋逆轉勝，蔣萬安直接選總統？陳揮文揭國民黨輸台北「2大好處」：劇本都有了| 李瑋萱 | 新聞",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5Y3lqbU1xNkw3cmktU1Y1STZMSjNhLXNfaEhnVFJpc1BmTlp5WmdmV2lZa2F6WFZXbmZhNWFueFNmdXdfM3NnSjdVX0YwZw?oc=5",
           "time": "2026-10-10 12:48:00",
-          "publisher": "Google News→Storm.mg",
+          "publisher": "Google News→風傳媒",
           "severity": "yellow"
         },
         {
@@ -159139,13 +159127,6 @@
           "time": "2026-10-10 08:00:00",
           "publisher": "壹蘋新聞網",
           "severity": null
-        },
-        {
-          "title": "北市民＝韓粉？蔣萬安民調緊繃「嘆1事」惹議 當年同情況遭韓粉灌爆",
-          "url": "https://tw.news.yahoo.com/%E5%8C%97%E5%B8%82%E6%B0%91-%E9%9F%93%E7%B2%89-%E8%94%A3%E8%90%AC%E5%AE%89%E6%B0%91%E8%AA%BF%E7%B7%8A%E7%B9%83-%E5%98%861%E4%BA%8B-%E6%83%B9%E8%AD%B0-073716424.html",
-          "time": "2026-10-10 07:37:16",
-          "publisher": "Yahoo新聞",
-          "severity": "yellow"
         }
       ],
       "comments": [],
@@ -159197,6 +159178,16 @@
       "time": "2026-10-11 04:10:00",
       "platform": "news",
       "publisher": "Yahoo新聞",
+      "hour": "2026-10-11 04:00",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+      "time": "2026-10-11 04:10:00",
+      "platform": "news",
+      "publisher": "中時新聞網",
       "hour": "2026-10-11 04:00",
       "severity": "yellow",
       "is_negative": false
@@ -160332,6 +160323,16 @@
       "is_negative": false
     },
     {
+      "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WYUR6bDYwSnpHY0x1TWZxZVNaQ01vN1MzZVZIemdtZlBTcEJoZFRrWmlUeTBFTTlpSUI2cGJTQTFudUdscnBQbzFCdEZIYTBQVlQ0?oc=5",
+      "time": "2026-10-10 09:47:00",
+      "platform": "news",
+      "publisher": "Google News→中天新聞網",
+      "hour": "2026-10-10 09:00",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
       "title": "盧秀燕國慶提出「5個堅持」！卸任倒數喊話 台中要幸福就得選對人",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSGFYMmp1c3d3NWdORkxOb3BjbmF6UWhiUUhHT284ZFNsZk1yd0E1R1J3M0dtWUwyVkxwRjVZb1hzWWEtRFVuWlJCUXU0NGRabDNGdW42MDNxSjJXclZaSS1LOEttNVFtYkladTNoZkh0R2lOWktjdVp4OExQVnJuY05jcw?oc=5",
       "time": "2026-10-10 09:47:00",
@@ -160359,6 +160360,16 @@
       "publisher": "Yahoo新聞",
       "hour": "2026-10-10 09:00",
       "severity": null,
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
+      "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxPclAzcEtKMzJZSjZVVnJzWWtDbG9ST1plTXRXZ1JBYmRRWHFOZ1FvMzYzNEhKTHJvdVk3LUE4dFlJTkIwa0JtNGF1ZTFpZVM5MGhCVWJzeUpnYWZNZFV1OG40UFBENHQ2VW9TNkNoTTVZY2hWQ3ZkOWcwQUprTnNRZ2lxemZNdGZaY1AwZlR5X0Vpay11YWxIbmIwNVhzbFZsTm5sZkp3QkttTUVoQW0wVGwzQll2VUZic3gzZ2N1LWZzM2UtSXh3QmxhS0FaQ3FjNENIVVBubFdfbmloMXRLbEFibzNpeE1ZNHhlSThGMGNiblMyRFhORnlmakEzTDJsZ0t4SGVzR2dod2pGTjVZU1pjVzVCNWdwUUlreGFyWWFaTFdWNm9jV2E5amFHSG9QMUtwc1BEd1lwaGRkQTVRbU9rcGQ2QklEUS1sQlNzU19sR0d4NWdNdUxLby0zT3d4M09KYWRzS0NVelJq?oc=5",
+      "time": "2026-10-10 09:47:00",
+      "platform": "news",
+      "publisher": "Yahoo新聞",
+      "hour": "2026-10-10 09:00",
+      "severity": "yellow",
       "is_negative": false
     },
     {
@@ -160470,29 +160481,18 @@
       "hour": "2026-10-10 08:00",
       "severity": null,
       "is_negative": false
-    },
-    {
-      "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WYUR6bDYwSnpHY0x1TWZxZVNaQ01vN1MzZVZIemdtZlBTcEJoZFRrWmlUeTBFTTlpSUI2cGJTQTFudUdscnBQbzFCdEZIYTBQVlQ0?oc=5",
-      "time": "2026-10-10 07:36:51",
-      "platform": "news",
-      "publisher": "Google News→中天新聞網",
-      "hour": "2026-10-10 07:00",
-      "severity": "yellow",
-      "is_negative": false
-    },
+    }
+  ],
+  "articles_prev_24h": [
     {
       "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
       "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%9C%8B%E6%85%B6%E6%8F%90-5%E5%80%8B%E5%A0%85%E6%8C%81-%E9%BB%83%E5%81%A5%E8%B1%AA-%E8%AA%AA%E6%98%8E%E7%95%B6%E4%BB%8A%E8%B3%B4%E6%B8%85%E5%BE%B7%E5%9C%8B%E6%94%BF%E5%9B%B0%E5%A2%83-073651712.html",
       "time": "2026-10-10 07:36:51",
       "platform": "news",
       "publisher": "Yahoo新聞",
-      "hour": "2026-10-10 07:00",
       "severity": "yellow",
       "is_negative": false
-    }
-  ],
-  "articles_prev_24h": [
+    },
     {
       "title": "國慶升旗成選戰同框焦點！盧秀燕、江啟臣、何欣純同台 無人機掛國旗吸睛",
       "url": "https://news.google.com/rss/articles/CBMiwANBVV95cUxOeFRHVnpkMjB0S2ZjemNvS0t6V0pGd0dTY3ZvbEs4S3p0NkZKNHh0cThfM2I1MHkyNmcwZzVrSXprUWxmbFo3dW8zU1dyNkYwUmVCS0pFRVhpY25weUVPbGs3SnBSdG9vLXZmTDRLSVhsNDd3c3BrZ3c1WGtfM2NmaFBTRHN6MUZkWDMwQ3hvN1FDWDJLVUwwcUNHX3BUNnZqLTFuVHc0cl9HeEVkRmVkbk1HTENYdTFYWW1zNHdGUDVKdkR6SENLZlVRTExodjdBbDVNb0RkZVNfb2MzbGNwSTBNTzZPY3dPNXlSQ2haakJmNGVxamRKZzBfUVJPSVJsdjNaUVpnUlhXNFhCd09pWFY1N2tKVG5lRzQ3SHZ4bkJjWk9GUzRBcExodjc1dVJDSHAtcmFpVVpuMVpfZzB2eDRrWkRLTzZTUVNkMFhaZElhWDlFMjhxaHpOaER5eXBNVmhpQWZvOFRmMXlranRnTGJRbnhSTEx4a3RLWXU2Vk9TQVlsdXo5c0VQMzdGNHJpZUtYOGIwWDRsbVExMmptNWw0UldrRmFVaGJpT2o3bmRpY0VDdlQ5T0FZRmJ0ejFf?oc=5",
@@ -160555,6 +160555,17 @@
       "time": "2026-10-11 04:10:00",
       "platform": "news",
       "publisher": "Yahoo新聞",
+      "hour": "2026-10-11 04:00",
+      "day": "2026-10-11",
+      "severity": "yellow",
+      "is_negative": false
+    },
+    {
+      "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+      "time": "2026-10-11 04:10:00",
+      "platform": "news",
+      "publisher": "中時新聞網",
       "hour": "2026-10-11 04:00",
       "day": "2026-10-11",
       "severity": "yellow",
@@ -169277,7 +169288,7 @@
       "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOZC16VGZlcXg4MHJ1R2s5RXpCZTFZT1RuM0JjVVlJWWVhWlN4MnQtbzBDVm01OERzM1hjUTd5WEFySmtTQTZRYUQwcG51LTNlTDRlbW4tN2pFVU9VbHN3eXItZDFEaFc3eG5hazY1YllmNXdUQkdUNDBpUzhPb3dhYzRzN1JqeDZPa3RYaHNLaFllYmJzbXhkQUdYSDdqNGpZMURackd3LTgwR2loeVA4a21xMlFYaFdRNlc5dlpJRUowXzUydWZGTlhITm5LU1AxMld5Z0dOVW9HdFNoMjUybkZOcDBGS2JXMWZuSk81WE0wTjNiejVFVkJHOEM1SHRWcW1ZeWRDVWp4bUh3N3BPVnd4YXY2MWlqS0VYZ0lLNlFuQlE0R29pTDk5ZEtKSG9FYTJ5SmRZSWRKWHBCanpBcTBjOE1sZUFPZ1pMNlJDTDNJQQ?oc=5",
       "time": "2026-10-01 10:02:20",
       "platform": "news",
-      "publisher": "Google News→tw.news.yahoo.com",
+      "publisher": "Yahoo新聞",
       "severity": null,
       "is_negative": false,
       "hour": "2026-10-01 10:00"
@@ -172550,7 +172561,7 @@
     }
   ],
   "media_framing_7d": {
-    "sample_size": 16269,
+    "sample_size": 16255,
     "min_sample": 3,
     "window": "7 days",
     "cells": [
@@ -172763,14 +172774,20 @@
       {
         "city": "台中",
         "candidate": "盧秀燕",
-        "news_count": 585,
+        "news_count": 586,
         "negative_count": 5,
         "negativity_pct": 1,
-        "sentiment_score": 575.0,
+        "sentiment_score": 576.0,
         "articles": [
           {
             "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
             "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOT3BnMzQxXy11TmE5OC0tUjlKX0lfRnFVRF9qZzdhQVNxSnduekJWTTA5MFJHVV9lM3NoMlVoVllsRlMwOE5JWG02RHZGZ3F3clhDSGlxU3dHb3RGUEVOeGNIUE9yb0hYUHNqcWpoLW0yaERVajJ5WnhmWUpyTC0zMEtMbXJoekM0ajNGSkRyejVlNTlkb0V5X3ppOGFESTZ3SFBBNkVDR1NrV2NyNFl6THNFN3RiMnN6SDZSVWIyZlV3eFplSDJTN2F0VE44YnRwX1BORE1wc0owcldHVFA0RUNCbzBuSGw5RHVKZXUtdlc0WDFaUWVWQktQOVFsb21Ca0pEc0FXbU5MMG5SMkp1ckdzXzJCRVQ4M1pVUktnQktIbnA3RmNreEVTME5WeFBBbnJTNkhuLUVMcFk?oc=5",
+            "time": "2026-10-11 04:10:00",
+            "is_negative": false
+          },
+          {
+            "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
             "time": "2026-10-11 04:10:00",
             "is_negative": false
           },
@@ -176591,6 +176608,18 @@
         "sentiment_score": 4208.0,
         "articles": [
           {
+            "title": "虧蔣萬安？台北101國慶煙火「夜空驚見火鍋」 董事長賈永婕親解背後意義",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rQlhiT2RMT0ZiUFZOS0xDdmV2RFdkVnZTaV9rc2VlM0VHZ2hLQnMtV0ExRTF1c0VMX0U5ZXNLOTZZNzk4NzdjLUR3WjNuTzBtQ0F3QlhVY2dHWEVO0gFiQVVfeXFMTldoMV9ZNFBvZm5TWmhPaUlveWREYmF2azJwOW10WGJUSlc4NEYxY3NHT2hNSFJ2akVFeThKWEFhRFh2dF9qQVlnRVR5cWJGelJTZngzajhXQUFSOE5OT1M4V3c?oc=5",
+            "time": "2026-10-11 07:11:08",
+            "is_negative": false
+          },
+          {
+            "title": "沈伯洋求辦4電視台辯論 許貴雅受不了蔣萬安「自以為聰明的話術」",
+            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Sb0R5SXloOTE0emZ0UWx1ZkxwbzhQWGhLa0dtZGJpMm5CYWJla2htMFZnQlpJZkRuM29DS0RUNlItSFBZVmVOUGhsMHhNYVBTNWVJb3FmSG9OQ21w0gFiQVVfeXFMUHRjRmppMlF4dXZLb1NLZnhrTzNkRFhrZjhhMGU0VFB2UXpFVEFRTlFkM2Q4ZElWUjdXcHNJVTdoeDRDdDN3V1FZRHlCVW1HWllhdEFGTUlGLWpKaGh6Tk40UXc?oc=5",
+            "time": "2026-10-11 07:07:08",
+            "is_negative": false
+          },
+          {
             "title": "周末精選｜首場辯論交鋒！蔣萬安正式迎戰沈伯洋 藍議員揭攻防1大關鍵",
             "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53UF83V3ZNU2FIeGZXY2IzbWFtOVNrTnZRaUNFQkFzX1lHQldzMkhYQlA1cllLdlJmSXBTb2kzcmpHTGVlZk5PcFZONm8tR1NMYm5wVV9ENlJqY2lNUkxaME41Z3pZVlNySVJDbDJrdw?oc=5",
             "time": "2026-10-11 07:00:00",
@@ -176606,6 +176635,12 @@
             "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
             "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQVUZORHY3Q3BIY2xkTWFfWFcyOHQtd2RPTFNyTEpOcmdpS0Z2SER6ZE1DVkNmLWFOMEk4YWVlem1RcWdrSENuX3J3SG5ObkI4WTlQSGNOejhZajl3a1VyTW5RRENaNC1KQXlnWU9zM2M1b0cyQmltQXRPc1FCU1MtWGhIUWMwZURhTy1BM0lpVlVVOWV0M2FOcVFac3F1S0tLSjRHV0VEUWtoVWc4R0NfTkpFUnJjamlDQXFzdEY0blplTTU2V003alRSbEs3WU5wYzVCLXdFblhHOWgxQnRRa3c1aWZHNm5TdFg4eDhCcW9vS203RGJLTmpVc2NCQ0lRY3dZTk1TVnZFOGhNVUZNRlBBbV9pR1VXckZucndJOHFrUmJ4WVpjV2dpekVBUmhEcllNWnd4Z181N0RwOEMxNGRGZlFRaHl1UG9Bc2RwR1prckwwZUdJRkJLMmUzSXZVc1ZwOS1vckR5bnNlOVNXVko4OV9mdTdRM2lXQnEwd0tIZTBlM2pJVXdLVFNyNFVLZDIyZ0FueFpDODk4S0E?oc=5",
             "time": "2026-10-11 06:23:00",
+            "is_negative": false
+          },
+          {
+            "title": "沈伯洋當面遞辯論戰帖「原因曝光」！她爆內幕：等了蔣萬安陣營59小時",
+            "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ya2QybER6TnV5QW1aQ1prSVhrbThpT3JxYUp1VGVuSjFyNnhpaUNtbXVTMG5NZ0xTWWlXakNSeUZVRlRMMzEyRdIBTEFVX3lxTE9JRUhMNkQyRWpBelBBOFZ1RGJ4Umo2aHQyYlNHNG9Uc1JRNFdXTjJnQ2VYbURneWpzNVYxNHVaWXFBdkY4dFV5Si1uYmQ?oc=5",
+            "time": "2026-10-11 06:18:00",
             "is_negative": false
           },
           {
@@ -207099,24 +207134,6 @@
             "url": "https://www.ettoday.net/news/20261004/3248630.htm",
             "time": "2026-10-04 07:42:00",
             "is_negative": false
-          },
-          {
-            "title": "蔣萬安FB遭灌爆 「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-            "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOcDN0bnMxdHlMcTIzdEVKV3BuM05IVFhqdHB4N2UzNTAzQ0UtZUFwRzU0LVc2U1RjMTJGdmFyMWFIS2hVemdlc2tXMDNvUzZLTHNtMWJnbEpfbkZnX2dnQXoyN3k1STRZalB2YWYzcE56SVZXWHNvN2dNM0lMR1NHMTNuamVWdWVvT0RDQW94SHlIMktKR0hlTGY2VGkzWkxEbl8wTlNrQkxTeGl2ZmFuR1NaTWZmQ1Z6aV93YVcyM3ZvZnVyenZ5OUpTaEdrbWZybHRXN2JzalVtN0pHYXBKOGFnZlVPZWRzZHJqOENTX1c2djIxNWdjQTlra2ZURHFIS3BJcWpadmZHQ1VDcV9IRW5DbmJKaEQ5UmV4Sng1TW8tUVFjdEVVckk1a2pnSXZ2WUt4c2xaeTJoVzJSUVRmdHY1TXVHaHlfT1lWbW1hS1ZlU3A3T0N4azVYNXlkUVRFeS0xUEZGNTBPOW9QYXhYNHEtQ1N2NUE?oc=5",
-            "time": "2026-10-04 07:35:04",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zWnBQVDUxem5kSXBJc3RDMlJ2ZkJlUlA1RmZCUGw1N3lvVC15YV9oVDJpMUdSTURYdk45YUpTUTZrNVJwS0EwYjNBZmFjWElFU0xJODhoTjRxVG9wbEHSAUtBVV95cUxOQnFEWlBILWFjWlVPdHN0WXh5ZzBDS3FFd0N1U2R2ZWRhQVRzUV9YeTMtdDlxU3RRQjU0cnFIY3FYZkEyellpaWxnVHM?oc=5",
-            "time": "2026-10-04 07:23:00",
-            "is_negative": false
-          },
-          {
-            "title": "蔣萬安FB遭灌爆「9小時破30萬留言」 競辦：經費在燃燒辛苦了",
-            "url": "https://www.ettoday.net/news/20261004/3248626.htm",
-            "time": "2026-10-04 07:23:00",
-            "is_negative": false
           }
         ]
       },
@@ -212544,6 +212561,16 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "platform": "news",
+        "publisher": "中時新聞網",
+        "hour": "2026-10-11 04:00",
+        "severity": "yellow",
+        "is_negative": false
+      },
+      {
         "title": "盧秀燕籲賴清德 應學蔡英文克制",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XY1dxVTFLZ0Y1bkFkV1FpZ3l4aU5kWC1SSzBKdWE3NURMaHdJUWY4c0ZqM1ZBNThUVW1VUHFyUmFnakdVQ3BGbTNsMHVBQUsyTDFTOHJpVEItbEhnQ0JrdFJYeXhnQmVHbTdQZ3RtZ0xldTU4TUcw0gFYQVVfeXFMTWliMnRsZFNBQVpER3o0bWV3Q3FXRDItbkZQdnlnS0dtQkQtMDk4QU1YSENoOU1ZT2E3eURFOVhWR1Jsa3pxaGpMVDE3RzNsNldsYmQ3eHVBdA?oc=5",
         "time": "2026-10-11 00:15:28",
@@ -212774,6 +212801,26 @@
         "is_negative": false
       },
       {
+        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WYUR6bDYwSnpHY0x1TWZxZVNaQ01vN1MzZVZIemdtZlBTcEJoZFRrWmlUeTBFTTlpSUI2cGJTQTFudUdscnBQbzFCdEZIYTBQVlQ0?oc=5",
+        "time": "2026-10-10 09:47:00",
+        "platform": "news",
+        "publisher": "Google News→中天新聞網",
+        "hour": "2026-10-10 09:00",
+        "severity": "yellow",
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
+        "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxPclAzcEtKMzJZSjZVVnJzWWtDbG9ST1plTXRXZ1JBYmRRWHFOZ1FvMzYzNEhKTHJvdVk3LUE4dFlJTkIwa0JtNGF1ZTFpZVM5MGhCVWJzeUpnYWZNZFV1OG40UFBENHQ2VW9TNkNoTTVZY2hWQ3ZkOWcwQUprTnNRZ2lxemZNdGZaY1AwZlR5X0Vpay11YWxIbmIwNVhzbFZsTm5sZkp3QkttTUVoQW0wVGwzQll2VUZic3gzZ2N1LWZzM2UtSXh3QmxhS0FaQ3FjNENIVVBubFdfbmloMXRLbEFibzNpeE1ZNHhlSThGMGNiblMyRFhORnlmakEzTDJsZ0t4SGVzR2dod2pGTjVZU1pjVzVCNWdwUUlreGFyWWFaTFdWNm9jV2E5amFHSG9QMUtwc1BEd1lwaGRkQTVRbU9rcGQ2QklEUS1sQlNzU19sR0d4NWdNdUxLby0zT3d4M09KYWRzS0NVelJq?oc=5",
+        "time": "2026-10-10 09:47:00",
+        "platform": "news",
+        "publisher": "Yahoo新聞",
+        "hour": "2026-10-10 09:00",
+        "severity": "yellow",
+        "is_negative": false
+      },
+      {
         "title": "蔡英文喊領導人要克制 盧秀燕讚講得好：賴總統應參考",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Wdlk1VnlYd3lLQ0hnTUhSOE5na1BhOVNSVnQwVnQxM0pWbEpMMjFKZWdSN2d6Q3NNQVhVcjVlTVFDZ0NnMHJFTkZ6NDBTaTVyOGV4UzloT1BXd0hmR2dGcXJMRElHYmh3Yk5iOUh3?oc=5",
         "time": "2026-10-10 09:41:43",
@@ -212800,26 +212847,6 @@
         "platform": "news",
         "publisher": "中時新聞網",
         "hour": "2026-10-10 09:00",
-        "severity": "yellow",
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WYUR6bDYwSnpHY0x1TWZxZVNaQ01vN1MzZVZIemdtZlBTcEJoZFRrWmlUeTBFTTlpSUI2cGJTQTFudUdscnBQbzFCdEZIYTBQVlQ0?oc=5",
-        "time": "2026-10-10 07:36:51",
-        "platform": "news",
-        "publisher": "Google News→中天新聞網",
-        "hour": "2026-10-10 07:00",
-        "severity": "yellow",
-        "is_negative": false
-      },
-      {
-        "title": "盧秀燕國慶提「5個堅持」！黃健豪：說明當今賴清德國政困境",
-        "url": "https://tw.news.yahoo.com/%E7%9B%A7%E7%A7%80%E7%87%95%E5%9C%8B%E6%85%B6%E6%8F%90-5%E5%80%8B%E5%A0%85%E6%8C%81-%E9%BB%83%E5%81%A5%E8%B1%AA-%E8%AA%AA%E6%98%8E%E7%95%B6%E4%BB%8A%E8%B3%B4%E6%B8%85%E5%BE%B7%E5%9C%8B%E6%94%BF%E5%9B%B0%E5%A2%83-073651712.html",
-        "time": "2026-10-10 07:36:51",
-        "platform": "news",
-        "publisher": "Yahoo新聞",
-        "hour": "2026-10-10 07:00",
         "severity": "yellow",
         "is_negative": false
       }
@@ -214078,6 +214105,17 @@
         "time": "2026-10-11 04:10:00",
         "platform": "news",
         "publisher": "Yahoo新聞",
+        "hour": "2026-10-11 04:00",
+        "day": "2026-10-11",
+        "severity": "yellow",
+        "is_negative": false
+      },
+      {
+        "title": "盧秀燕、江啟臣、何欣純同框唱國歌 交鋒無人機",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWN0JpS0VqMTJsdEVhaU5WcGQ5SEF3bVpNd0JvUEJMendTcnp6REJJMkowbl9VeEFrTVhjMnBVOUpLaUc3M0NQVGxFdTBRQm5fbkprdk8yVUFZSzQzUnhva0ZMVTJjbEVIbEM4?oc=5",
+        "time": "2026-10-11 04:10:00",
+        "platform": "news",
+        "publisher": "中時新聞網",
         "hour": "2026-10-11 04:00",
         "day": "2026-10-11",
         "severity": "yellow",
@@ -219623,9 +219661,9 @@
   "comments_history": {
     "today": {
       "red": 95,
-      "yellow": 334,
-      "green": 76,
-      "total": 505
+      "yellow": 335,
+      "green": 77,
+      "total": 507
     },
     "yesterday": {
       "red": 5,
